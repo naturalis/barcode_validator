@@ -45,8 +45,8 @@ def main(fasta_file_path, bold_sheet, actions):
         # Persist the results to a database
         if 'persist' in actions:
             persist_result(result)
-
-        logging.debug(result)
+        else:
+            print(result)
 
     logging.info("Analysis completed")
 
@@ -58,7 +58,8 @@ if __name__ == "__main__":
     parser.add_argument("-f", "--fasta_file", help="Path to the input FASTA file")
     parser.add_argument("-c", "--config_file", help="Path to the configuration YAML file")
     parser.add_argument("-b", "--bold_sheet", help="BOLD XLSX spreadsheet with Lab Sheet and Taxonomy tabs")
-    parser.add_argument("-a", "--action", help="Comma-separated list of actions, e.g. id,stops,persist")
+    parser.add_argument("-a", "--action", help="Comma-separated list of actions, e.g. id,stops,persist",
+                        default='id,stops')
     parser.add_argument("-v", "--verbosity", choices=['DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL'],
                         default='INFO', help="Set the logging verbosity (default: INFO)")
     args = parser.parse_args()
