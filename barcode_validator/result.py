@@ -5,7 +5,7 @@ class DNAAnalysisResult:
     def __init__(self, process_id):
         self.process_id = process_id
         self._seq_length = None
-        self._obs_taxon = None
+        self._obs_taxon = []  # Changed to an empty list
         self._exp_taxon = None
         self._species = None
         self._stop_codons = []
@@ -27,9 +27,15 @@ class DNAAnalysisResult:
 
     @obs_taxon.setter
     def obs_taxon(self, value):
-        if not isinstance(value, str):
-            raise ValueError("obs_taxon must be a string")
+        if not isinstance(value, list) or not all(isinstance(item, str) for item in value):
+            raise ValueError("obs_taxon must be a list of strings")
         self._obs_taxon = value
+
+    def add_obs_taxon(self, taxon):
+        if not isinstance(taxon, str):
+            raise ValueError("Taxon must be a string")
+        if taxon not in self._obs_taxon:
+            self._obs_taxon.append(taxon)
 
     @property
     def exp_taxon(self):
@@ -82,7 +88,7 @@ class DNAAnalysisResult:
         return self.seq_length >= min_length if self.seq_length is not None else False
 
     def check_taxonomy(self):
-        return self.obs_taxon.lower() == self.exp_taxon.lower() if self.obs_taxon and self.exp_taxon else False
+        return self.exp_taxon in [taxon for taxon in self.obs_taxon] if self.obs_taxon and self.exp_taxon else False
 
     def check_pseudogene(self):
         return len(self.stop_codons) == 0
@@ -91,12 +97,6 @@ class DNAAnalysisResult:
         return self.check_length() and self.check_taxonomy() and self.check_pseudogene()
 
     def __str__(self):
-        return f"DNAAnalysisResult for {self.process_id}:\n" \
-               f" Sequence Length: {self.seq_length}\n" \
-               f" Observed Taxon: {self.obs_taxon}\n" \
-               f" Expected Taxon: {self.exp_taxon}\n" \
-               f" Species: {self.species}\n" \
-               f" Stop Codons: {self.stop_codons}\n" \
-               f" Ambiguities: {self.ambiguities}\n" \
-               f" Passes All Checks: {self.passes_all_checks()}"
-
+        results = [self.process_id, self.seq_length, ', '.join(self.obs_taxon), self.exp_taxon, self.species,
+                   self.stop_codons, self.ambiguities, self.passes_all_checks()]
+        return '\t'.join(map(str, results))
