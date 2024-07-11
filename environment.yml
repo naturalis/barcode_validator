@@ -1,0 +1,17 @@
+name: bge-barcode-checker
+channels:
+  - defaults
+  - bioconda
+  - conda-forge
+dependencies:
+  - biopython
+  - requests
+  - gspread
+  - oauth2client
+  - pyyaml
+  - pandas
+  - hmmer
+  - pip
+  - pip:
+    - subprocess.run
+    - boldigger2
