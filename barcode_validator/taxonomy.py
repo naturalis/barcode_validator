@@ -115,7 +115,7 @@ def run_boldigger2(sequence):
 
     # Create a temporary file for the input sequence
     with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.fasta') as temp_input:
-        SeqIO.write(SeqRecord(sequence, id="query"), temp_input, "fasta")
+        SeqIO.write(sequence, temp_input, "fasta")
         temp_input_name = temp_input.name
 
     # Run boldigger2
@@ -134,4 +134,5 @@ def run_boldigger2(sequence):
     query_rows = df.loc[df['ID'] == 'query']
     column_name = str(config.get('level')).lower()
     for _, row in query_rows.iterrows():
+        logging.info(f'Found taxonomy: {row[column_name]}')
         return [row[column_name]]
