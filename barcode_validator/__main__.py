@@ -32,7 +32,7 @@ def main(fasta_file_path, bold_sheet, actions):
             level = config.get('level')
             result.exp_taxon = mapping[process_id][level]
             result.obs_taxon = run_seqid(record)
-            result.species = mapping[process_id]['Species']
+            result.species = mapping[process_id]['species']
 
         # Check if sequence has no early stop codons
         if 'stops' in actions:
