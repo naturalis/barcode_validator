@@ -1,12 +1,15 @@
 import logging
 import tempfile
 import subprocess
+import warnings
 from copy import deepcopy
 from config import Config
 from Bio import SeqIO
+from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from Bio.Data import CodonTable
-
+from Bio import BiopythonDeprecationWarning
+warnings.filterwarnings("error", category=BiopythonDeprecationWarning)
 
 """
 alignment.py
@@ -78,28 +81,37 @@ def translate_sequence(dna_sequence):
     logging.warning("PLEASE NOTE: this first base needs to be removed to arrive at a multiple of 3 for AA translation")
     logging.warning("PLEASE NOTE: here we remove this base so that the result is 657 bases")
 
-    # Clone and phase sequence
+    # Clone and phase sequence by starting from the second base (i.e. index 1 in 0-based indexing)
     cloned_seq = deepcopy(dna_sequence)
     raw = cloned_seq.seq
     cloned_seq.letter_annotations = {}
     cloned_seq.seq = raw[1:]
 
-    # Splice codons that have missing or gap characters
+    # Skip codons that have missing, ambiguous or gap characters
     seq_str = str(cloned_seq.seq).upper()
     valid_codons = []
     for i in range(0, len(seq_str), 3):
         codon = seq_str[i:i + 3]
         if len(codon) == 3 and all(base in 'ACGT' for base in codon):
             valid_codons.append(codon)
-    cloned_seq.seq = ''.join(valid_codons)
+
+    # Create a new Seq object from the valid codons
+    valid_seq = Seq(''.join(valid_codons))
 
     # Do the translation
     config = Config()
     table_idx = config.get('translation_table')
     ct = CodonTable.unambiguous_dna_by_id[table_idx]
-    amino_acid_sequence = cloned_seq.translate(table=ct)
-    logging.debug(f"Translated sequence: {amino_acid_sequence.seq}")
-    return amino_acid_sequence
+    amino_acid_sequence = valid_seq.translate(table=ct)
+
+    # Create a new SeqRecord for the amino acid sequence
+    amino_acid_record = SeqRecord(amino_acid_sequence,
+                                  id=cloned_seq.id,
+                                  name=cloned_seq.name,
+                                  description="translated sequence")
+
+    logging.debug(f"Translated sequence: {amino_acid_record.seq}")
+    return amino_acid_record
 
 
 def parse_fasta(file_path):
