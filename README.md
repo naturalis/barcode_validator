@@ -15,10 +15,9 @@ what is provided here is a service that does the following:
 2. Check to see if there are no early stop codons in the amino acid translation. Early
    stop codons may indicate the erroneous amplification of a pseudogene copy, such as
    a NUMT sequence.
-3. Persist the validation results somewhere. At present this is done in a
-   [Google spreadsheet](https://docs.google.com/spreadsheets/d/1xJJKLAgDFvPxRnoTPfmDmTsZkq5o6i5fsQvOydMd068/edit?gid=0#gid=0),
-   but the design is such that this can be extended to allow for writing to, for example,
-   the core sequence cloud (CSC).
+3. Persist the validation results somewhere. At present nothing is effectively done with
+   this, but the hooks are there to persist to some data store, like a google sheet, a
+   database, or a file. Now the output is simply printed to the console as TSV.
 
 Quick start
 -----------
