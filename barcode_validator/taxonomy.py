@@ -9,7 +9,6 @@ from Bio.SeqRecord import SeqRecord
 from Bio.Blast import NCBIWWW, NCBIXML
 from Bio import Entrez
 from config import Config
-from collections import Counter
 
 
 def fetch_bold_taxonomy(spreadsheet):
@@ -102,15 +101,13 @@ def run_blast(sequence):
             logging.error(f"Error fetching taxonomy for {accession}: {e}")
 
     # Apply majority rule consensus at the specified level
-    taxa_at_level = [lineage.get(target_level) for lineage in lineages if target_level in lineage]
+    taxa_at_level = list(set(lineage.get(target_level) for lineage in lineages if target_level in lineage))
     if taxa_at_level:
-        consensus_taxon = Counter(taxa_at_level).most_common(1)[0][0]
+        logging.info(f'Taxa at {target_level} level: {taxa_at_level}')
+        return taxa_at_level
     else:
-        consensus_taxon = "Unknown"
-
-    # Report and return consensus taxon
-    logging.info(f"Consensus taxon at {target_level} level: {consensus_taxon}")
-    return consensus_taxon
+        logging.warning(f"No taxa found at {target_level} level")
+        return ["Unknown"]
 
 
 def run_boldigger2(sequence):
@@ -137,4 +134,4 @@ def run_boldigger2(sequence):
     query_rows = df.loc[df['ID'] == 'query']
     column_name = str(config.get('level')).lower()
     for _, row in query_rows.iterrows():
-        return row[column_name]
+        return [row[column_name]]
