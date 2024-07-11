@@ -19,3 +19,16 @@ what is provided here is a service that does the following:
    [Google spreadsheet](https://docs.google.com/spreadsheets/d/1xJJKLAgDFvPxRnoTPfmDmTsZkq5o6i5fsQvOydMd068/edit?gid=0#gid=0),
    but the design is such that this can be extended to allow for writing to, for example,
    the core sequence cloud (CSC).
+
+Quick start
+-----------
+
+```
+python barcode_validator -h
+```
+
+For example:
+
+```
+python barcode_validator -f examples/mge.fa -c config/config.yml -b examples/bold.xlsx
+```
