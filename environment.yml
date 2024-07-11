@@ -1,4 +1,4 @@
-name: bge-barcode-checker
+name: barcode_validator
 channels:
   - defaults
   - bioconda
