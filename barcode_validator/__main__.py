@@ -41,6 +41,7 @@ def main(fasta_file_path, bold_sheet, actions):
             amino_acid_sequence = translate_sequence(aligned_sequence)
             result.stop_codons = get_stop_codons(amino_acid_sequence)
             result.seq_length = marker_seqlength(aligned_sequence)
+            result.ambiguities = num_ambiguous(record)
 
         # Persist the results to a database
         if 'persist' in actions:

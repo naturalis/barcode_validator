@@ -64,6 +64,15 @@ def marker_seqlength(sequence):
     return len(cloned_seq)
 
 
+def num_ambiguous(sequence):
+    logging.info("Calculating number of ambiguous bases in sequence")
+
+    # Clone the sequence, count the number of ambiguous bases
+    cloned_seq = deepcopy(sequence)
+    cloned_seq.letter_annotations = {}
+    return len([base for base in cloned_seq.seq if base not in 'acgtnACGTN-~?'])
+
+
 def unalign_sequence(sequence):
     logging.info("Removing gaps from aligned sequence")
     unaligned_sequence = sequence.seq.replace('-', '')
