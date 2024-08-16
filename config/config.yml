@@ -8,12 +8,29 @@ persist: gspread
 gspread: https://docs.google.com/spreadsheets/d/1xJJKLAgDFvPxRnoTPfmDmTsZkq5o6i5fsQvOydMd068/
 credentials_file: ../examples/credentials.json
 
-# Configuration of the ID checking service. At present this is limited to boldigger2, which additionally requires
-# a username and password.
+# Configuration of the ID checking service. This can be either boldigger2, blast, or localblast. The first two are
+# remote services, the last one is a local blast service.
 #idcheck: boldigger2
-idcheck: blast
+#idcheck: blast
+idcheck: localblast
+
+# Which taxonomic level to use for the ID check.
 level: family
-email: bioinformatics@naturalis.nl
+
+# Needed for the blast web service.
+#email: bioinformatics@naturalis.nl
+
+# Configuration for local blast. This is used when the idcheck is set to localblast.
+blast_db: /home/rutger.vos/data/ncbi/nt/nt
+num_threads: 24 # MaaS 37
+evalue: 1e-5
+max_target_seqs: 10
+word_size: 28
+BLASTDB_LMDB_MAP_SIZE: 180000000000 # MaaS 37, 180GB
+
+# Location of the NCBI taxonomy dump. This must be the tar file that contains the nodes.dmp and names.dmp files.
+# When downloaded, the tar file is gzip compressed. This needs to be uncompressed before use, e.g. with `gunzip`.
+ncbi_taxonomy: /home/rutger.vos/data/ncbi/taxdump/taxdump.tar
 
 # Configuration for logging. The verbosity level specified here is overridden by the value provided on the command
 # line with the -v/-verbosity argument. The log file is written to the current working directory.
