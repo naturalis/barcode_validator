@@ -16,7 +16,7 @@ from nbt.Phylo.NCBITaxdmp import Parser as NCBIParser
 
 def read_bold_taxonomy(spreadsheet):
     logging.info("Reading BOLD taxonomy")
-    return BOLDParser(spreadsheet).parse()
+    return BOLDParser(open(spreadsheet)).parse()
 
 
 def read_ncbi_taxonomy(tarfile):
