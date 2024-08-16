@@ -12,42 +12,51 @@ def main(fasta_file_path, bold_sheet, actions):
 
     # Pre-fetch process ID => taxonomy mapping
     if 'id' in actions:
+        ncbi_tree = read_ncbi_taxonomy(config.get('ncbi_taxonomy'))
         if bold_sheet:
-            mapping = fetch_bold_taxonomy(bold_sheet)
+            bold_tree = read_bold_taxonomy(bold_sheet)
         else:
             raise ValueError("ID action requested but no BOLD spreadsheet provided")
 
     # Start reading the FASTA file
     with open(fasta_file_path, 'r') as file:
-        record = next(SeqIO.parse(file, 'fasta'))
-        process_id = record.id.split('_')[0]
-        logging.info(f'Processing FASTA record {process_id}')
+        for record in SeqIO.parse(file, 'fasta'):
+            process_id = record.id.split('_')[0]
+            logging.info(f'Processing FASTA record {process_id}')
 
-        # Instantiate result object, unalign sequence
-        result = DNAAnalysisResult(process_id)
-        record = unalign_sequence(record)
+            # Lookup species from process_id
+            tip = list(bold_tree.find_clades({'guid': {'processid': process_id}}))[0]
+            species = tip.name
+            for node in bold_tree.root.get_path(tip):
+                if node.rank == config.get('level'):
+                    taxon = node.name
+            logging.info(f"Species: {species}")
 
-        # Do the ID check
-        if 'id' in actions:
-            level = config.get('level')
-            result.exp_taxon = mapping[process_id][level]
-            result.obs_taxon = run_seqid(record)
-            result.species = mapping[process_id]['species']
+            # Instantiate result object, unalign sequence
+            result = DNAAnalysisResult(process_id)
+            record = unalign_sequence(record)
 
-        # Check if sequence has no early stop codons
-        if 'stops' in actions:
-            aligned_sequence = align_to_hmm(record)
-            logging.debug(f"Sequence aligned to HMM: {aligned_sequence.seq}")
-            amino_acid_sequence = translate_sequence(aligned_sequence)
-            result.stop_codons = get_stop_codons(amino_acid_sequence)
-            result.seq_length = marker_seqlength(aligned_sequence)
-            result.ambiguities = num_ambiguous(record)
+            # Do the ID check
+            if 'id' in actions:
+                level = config.get('level')
+                result.exp_taxon = taxon
+                result.obs_taxon = run_seqid(record, ncbi_tree)
+                result.species = species
 
-        # Persist the results to a database
-        if 'persist' in actions:
-            persist_result(result)
-        else:
-            print(result)
+            # Check if sequence has no early stop codons
+            if 'stops' in actions:
+                aligned_sequence = align_to_hmm(record)
+                logging.debug(f"Sequence aligned to HMM: {aligned_sequence.seq}")
+                amino_acid_sequence = translate_sequence(aligned_sequence)
+                result.stop_codons = get_stop_codons(amino_acid_sequence)
+                result.seq_length = marker_seqlength(aligned_sequence)
+                result.ambiguities = num_ambiguous(record)
+
+            # Persist the results to a database
+            if 'persist' in actions:
+                persist_result(result)
+            else:
+                print(result)
 
     logging.info("Analysis completed")
 
