@@ -9,50 +9,21 @@ from Bio.SeqRecord import SeqRecord
 from Bio.Blast import NCBIWWW, NCBIXML
 from Bio import Entrez
 from config import Config
+from nbt.Phylo.BOLDXLSXIO import Parser as BOLDParser
+from nbt.Phylo.NCBITaxdmp import Parser as NCBIParser
 
 
-def fetch_bold_taxonomy(spreadsheet):
-    # Check if the file exists
-    if not os.path.exists(spreadsheet):
-        raise FileNotFoundError(f"The file {spreadsheet} does not exist.")
-
-    # Read the Excel file
-    xl = pd.ExcelFile(spreadsheet)
-
-    # Check if required sheets exist
-    required_sheets = ['Lab Sheet', 'Taxonomy']
-    if not all(sheet in xl.sheet_names for sheet in required_sheets):
-        raise ValueError("The Excel file must contain 'Lab Sheet' and 'Taxonomy' tabs.")
-
-    # Read 'Lab Sheet' tab
-    lab_sheet = pd.read_excel(xl, sheet_name='Lab Sheet', header=2)
-
-    # Create mapping dict for Lab Sheet
-    lab_mapping = dict(zip(lab_sheet['Sample ID'], lab_sheet['Process ID']))
-
-    # Read 'Taxonomy' tab
-    taxonomy = pd.read_excel(xl, sheet_name='Taxonomy', header=2)
-
-    # List of taxonomy columns. These are ucfirst in the BOLD Excel file.
-    taxonomy_columns = ['Phylum', 'Class', 'Order', 'Family', 'Subfamily', 'Tribe', 'Genus', 'Species', 'Subspecies']
-
-    # Create mapping dict for Taxonomy
-    taxonomy_mapping = {}
-    for _, row in taxonomy.iterrows():
-        sample_id = row['Sample ID']
-        taxonomy_dict = {col.lower(): row[col] for col in taxonomy_columns}
-        taxonomy_mapping[sample_id] = taxonomy_dict
-
-    # Combine the two mappings
-    result = {}
-    for sample_id, process_id in lab_mapping.items():
-        if sample_id in taxonomy_mapping:
-            result[process_id] = taxonomy_mapping[sample_id]
-
-    return result
+def read_bold_taxonomy(spreadsheet):
+    logging.info("Reading BOLD taxonomy")
+    return BOLDParser(spreadsheet).parse()
 
 
-def run_seqid(sequence):
+def read_ncbi_taxonomy(tarfile):
+    logging.info("Reading NCBI taxonomy")
+    return NCBIParser(tarfile).parse()
+
+
+def run_seqid(sequence, ncbi_tree):
     logging.info("Running sequence ID check")
     config = Config()
     method = config.get('idcheck')
@@ -60,13 +31,75 @@ def run_seqid(sequence):
         return run_boldigger2(sequence)
     elif method == 'blast':
         return run_blast(sequence)
+    elif method == 'localblast':
+        return run_localblast(sequence, ncbi_tree)
     else:
         logging.error(f"Invalid ID check method '{method}' specified in config file")
     pass
 
 
-def run_blast(sequence):
+def run_localblast(sequence, tree):
+    logging.info("Running local BLASTN...")
 
+    # Create a temporary file for the input sequence
+    with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.fasta') as temp_input:
+        SeqIO.write(sequence, temp_input, "fasta")
+        temp_input_name = temp_input.name
+    blast_result = f"{temp_input_name}.tsv"  # output file name, as blast TSV (see -outfmt option)
+
+    # Prepare local BLASTN run
+    config = Config()
+    os.environ['BLASTDB_LMDB_MAP_SIZE'] = config.get('BLASTDB_LMDB_MAP_SIZE')
+    try:
+
+        # Run BLASTN
+        subprocess.run(['blastn',
+                        '-db', config.get('blast_db'),
+                        '-num_threads', config.get('num_threads'),
+                        '-evalue', config.get('evalue'),
+                        '-max_target_seqs', config.get('max_target_seqs'),
+                        '-word_size', config.get('word_size'),
+                        '-query', temp_input_name,
+                        '-task', 'megablast',
+                        '-outfmt', "6 qseqid sseqid pident length qstart qend sstart send evalue bitscore staxids",
+                        '-out', blast_result
+                        ],
+                       check=True)
+
+        # Parse BLAST result
+        distinct_taxids = set()
+        with open(blast_result, 'r') as file:
+            for line in file:
+                columns = line.strip().split('\t')
+                if columns:
+                    taxid_field = columns[-1]
+                    taxids = taxid_field.split(';')
+                    distinct_taxids.update(taxid.strip() for taxid in taxids if taxid.strip())
+        return collect_lineages(distinct_taxids, tree)
+
+    # Handle exception
+    except subprocess.CalledProcessError as e:
+        logging.error(f"Error running local BLASTN: {e}")
+        raise
+
+
+def collect_lineages(taxids, tree):
+    lineages = []
+    tips = []
+    for tip in tree.get_terminals():
+        taxid = tip.guids['taxon']
+        if taxid in taxids:
+            tips.append(tip)
+    for tip in tips:
+        lineage = []
+        for node in tree.root.get_path(tip):
+            if node.rank == str(config.get('level')).lower():
+                lineage.append(node.name)
+        lineages.append(lineage)
+    return lineages
+
+
+def run_blast(sequence):
     # Get config singleton
     config = Config()
     Entrez.email = config.get('email')
