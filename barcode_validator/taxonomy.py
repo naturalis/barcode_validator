@@ -19,9 +19,9 @@ def read_bold_taxonomy(spreadsheet):
     return BOLDParser(open(spreadsheet)).parse()
 
 
-def read_ncbi_taxonomy(tarfile):
+def read_ncbi_taxonomy(taxdump):
     logging.info("Reading NCBI taxonomy")
-    tar = tarfile.open(tarfile, "r:gz")
+    tar = tarfile.open(taxdump, "r:gz")
     return NCBIParser(tar).parse()
 
 
