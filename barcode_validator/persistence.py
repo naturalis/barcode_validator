@@ -1,5 +1,5 @@
 import logging
-import gspread
+# import gspread
 import os
 import datetime
 from config import Config
