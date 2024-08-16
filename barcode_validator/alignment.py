@@ -73,13 +73,40 @@ def num_ambiguous(sequence):
     return len([base for base in cloned_seq.seq if base not in 'acgtnACGTN-~?'])
 
 
+#def unalign_sequence(sequence):
+#    logging.info("Removing gaps from aligned sequence")
+#    unaligned_sequence = sequence.seq.replace('-', '')
+#    unaligned_sequence = unaligned_sequence.replace('~', '')
+#    sequence.seq = unaligned_sequence
+#    logging.debug(f"Unaligned sequence length: {len(unaligned_sequence)}")
+#    return sequence
+
+
 def unalign_sequence(sequence):
+    """
+    Remove gaps from an aligned sequence.
+
+    :param sequence: A BioPython SeqRecord object
+    :return: A new SeqRecord object with gaps removed
+    """
     logging.info("Removing gaps from aligned sequence")
-    unaligned_sequence = sequence.seq.replace('-', '')
-    unaligned_sequence = unaligned_sequence.replace('~', '')
-    sequence.seq = unaligned_sequence
-    logging.debug(f"Unaligned sequence length: {len(unaligned_sequence)}")
-    return sequence
+    if isinstance(sequence, SeqRecord):
+        # Convert Seq to string, remove gaps, then convert back to Seq
+        unaligned_sequence = str(sequence.seq).replace('-', '')
+        return SeqRecord(
+            Seq(unaligned_sequence),
+            id=sequence.id,
+            name=sequence.name,
+            description=sequence.description
+        )
+    elif isinstance(sequence, Seq):
+        # If it's just a Seq object, convert to string, remove gaps, then back to Seq
+        return Seq(str(sequence).replace('-', ''))
+    elif isinstance(sequence, str):
+        # If it's a string, just remove the gaps
+        return sequence.replace('-', '')
+    else:
+        raise TypeError(f"Unexpected type for sequence: {type(sequence)}")
 
 
 def translate_sequence(dna_sequence):
