@@ -1,6 +1,7 @@
 import logging
 import tempfile
 import subprocess
+import io
 import os
 import time
 import pandas as pd
@@ -10,7 +11,6 @@ from Bio.SeqRecord import SeqRecord
 from Bio.Blast import NCBIWWW, NCBIXML
 from Bio import Entrez
 from config import Config
-from io import BytesIO
 from nbt.Phylo.BOLDXLSXIO import Parser as BOLDParser
 from nbt.Phylo.NCBITaxdmp import Parser as NCBIParser
 
