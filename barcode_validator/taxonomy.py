@@ -10,13 +10,26 @@ from Bio.SeqRecord import SeqRecord
 from Bio.Blast import NCBIWWW, NCBIXML
 from Bio import Entrez
 from config import Config
+from io import BytesIO
 from nbt.Phylo.BOLDXLSXIO import Parser as BOLDParser
 from nbt.Phylo.NCBITaxdmp import Parser as NCBIParser
 
 
+#def read_bold_taxonomy(spreadsheet):
+#    logging.info("Reading BOLD taxonomy")
+#    return BOLDParser(open(spreadsheet)).parse()
+
+
 def read_bold_taxonomy(spreadsheet):
-    logging.info("Reading BOLD taxonomy")
-    return BOLDParser(open(spreadsheet)).parse()
+    # Read the Excel file using openpyxl engine
+    xl = pd.ExcelFile(spreadsheet, engine='openpyxl')
+
+    # Create a file-like object to pass to BOLDParser
+    buffer = BytesIO()
+    xl.book.save(buffer)
+    buffer.seek(0)
+
+    return BOLDParser(buffer).parse()
 
 
 def read_ncbi_taxonomy(taxdump):
