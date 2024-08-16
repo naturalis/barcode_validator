@@ -29,8 +29,8 @@ word_size: 28
 BLASTDB_LMDB_MAP_SIZE: 180000000000 # MaaS 37, 180GB
 
 # Location of the NCBI taxonomy dump. This must be the tar file that contains the nodes.dmp and names.dmp files.
-# When downloaded, the tar file is gzip compressed. This needs to be uncompressed before use, e.g. with `gunzip`.
-ncbi_taxonomy: /home/rutger.vos/data/ncbi/taxdump/taxdump.tar
+# http://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz
+ncbi_taxonomy: /home/rutger.vos/data/ncbi/taxdump/taxdump.tar.gz
 
 # Configuration for logging. The verbosity level specified here is overridden by the value provided on the command
 # line with the -v/-verbosity argument. The log file is written to the current working directory.

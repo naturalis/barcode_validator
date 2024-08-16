@@ -4,6 +4,7 @@ import subprocess
 import os
 import time
 import pandas as pd
+import tarfile
 from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
 from Bio.Blast import NCBIWWW, NCBIXML
@@ -20,7 +21,8 @@ def read_bold_taxonomy(spreadsheet):
 
 def read_ncbi_taxonomy(tarfile):
     logging.info("Reading NCBI taxonomy")
-    return NCBIParser(tarfile).parse()
+    tar = tarfile.open(tarfile, "r:gz")
+    return NCBIParser(tar).parse()
 
 
 def run_seqid(sequence, ncbi_tree):
