@@ -21,15 +21,12 @@ from nbt.Phylo.NCBITaxdmp import Parser as NCBIParser
 
 
 def read_bold_taxonomy(spreadsheet):
-    # Read the Excel file using openpyxl engine
-    xl = pd.ExcelFile(spreadsheet, engine='openpyxl')
+    # Read the Excel file into a BytesIO object
+    with open(spreadsheet, 'rb') as file:
+        excel_data = io.BytesIO(file.read())
 
-    # Create a file-like object to pass to BOLDParser
-    buffer = BytesIO()
-    xl.book.save(buffer)
-    buffer.seek(0)
-
-    return BOLDParser(buffer).parse()
+    # Pass the BytesIO object to BOLDParser
+    return BOLDParser(excel_data).parse()
 
 
 def read_ncbi_taxonomy(taxdump):
