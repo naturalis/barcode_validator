@@ -100,7 +100,7 @@ def collect_lineages(taxids, tree):
     for tip in tips:
         lineage = []
         for node in tree.root.get_path(tip):
-            if node.rank == str(config.get('level')).lower():
+            if node.taxonomic_rank == str(config.get('level')).lower():
                 lineage.append(node.name)
         lineages.append(lineage)
     return lineages
