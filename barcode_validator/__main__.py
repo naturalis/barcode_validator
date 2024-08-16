@@ -35,7 +35,7 @@ def main(fasta_file_path, bold_sheet, actions):
             tip = get_tip_by_processid(process_id, bold_tree)
             species = tip.name
             for node in bold_tree.root.get_path(tip):
-                if node.rank == config.get('level'):
+                if node.taxonomic_rank == config.get('level'):
                     taxon = node.name
             logging.info(f"Species: {species}")
 
