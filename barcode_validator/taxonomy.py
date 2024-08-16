@@ -61,11 +61,11 @@ def run_localblast(sequence, tree):
 
         # Run BLASTN
         subprocess.run(['blastn',
-                        '-db', config.get('blast_db'),
-                        '-num_threads', config.get('num_threads'),
-                        '-evalue', config.get('evalue'),
-                        '-max_target_seqs', config.get('max_target_seqs'),
-                        '-word_size', config.get('word_size'),
+                        '-db', str(config.get('blast_db')),
+                        '-num_threads', str(config.get('num_threads')),
+                        '-evalue', str(config.get('evalue')),
+                        '-max_target_seqs', str(config.get('max_target_seqs')),
+                        '-word_size', str(config.get('word_size')),
                         '-query', temp_input_name,
                         '-task', 'megablast',
                         '-outfmt', "6 qseqid sseqid pident length qstart qend sstart send evalue bitscore staxids",
