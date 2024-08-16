@@ -56,7 +56,7 @@ def run_localblast(sequence, tree):
 
     # Prepare local BLASTN run
     config = Config()
-    os.environ['BLASTDB_LMDB_MAP_SIZE'] = config.get('BLASTDB_LMDB_MAP_SIZE')
+    os.environ['BLASTDB_LMDB_MAP_SIZE'] = str(config.get('BLASTDB_LMDB_MAP_SIZE'))
     try:
 
         # Run BLASTN
