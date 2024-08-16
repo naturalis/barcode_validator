@@ -15,11 +15,6 @@ from nbt.Phylo.BOLDXLSXIO import Parser as BOLDParser
 from nbt.Phylo.NCBITaxdmp import Parser as NCBIParser
 
 
-#def read_bold_taxonomy(spreadsheet):
-#    logging.info("Reading BOLD taxonomy")
-#    return BOLDParser(open(spreadsheet)).parse()
-
-
 def read_bold_taxonomy(spreadsheet):
     # Read the Excel file into a BytesIO object
     with open(spreadsheet, 'rb') as file:

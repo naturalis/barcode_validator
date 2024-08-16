@@ -7,6 +7,13 @@ from barcode_validator.persistence import *
 from barcode_validator.result import DNAAnalysisResult
 
 
+def get_tip_by_processid(process_id, tree):
+    for tip in tree.get_terminals():
+        if tip.guids['processid'] == process_id:
+            return tip
+    return None
+
+
 def main(fasta_file_path, bold_sheet, actions):
     logging.info(f"Starting analysis for file: {fasta_file_path}")
 
@@ -25,7 +32,7 @@ def main(fasta_file_path, bold_sheet, actions):
             logging.info(f'Processing FASTA record {process_id}')
 
             # Lookup species from process_id
-            tip = list(bold_tree.find_clades({'guid': {'processid': process_id}}))[0]
+            tip = get_tip_by_processid(process_id, bold_tree)
             species = tip.name
             for node in bold_tree.root.get_path(tip):
                 if node.rank == config.get('level'):
