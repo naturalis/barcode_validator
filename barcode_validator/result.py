@@ -1,4 +1,5 @@
 from config import Config
+import logging
 
 
 class DNAAnalysisResult:
