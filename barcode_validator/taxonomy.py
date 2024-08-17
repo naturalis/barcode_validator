@@ -93,6 +93,7 @@ def run_localblast(sequence, tree):
 def collect_lineages(taxids, tree):
     lineages = []
     tips = []
+    config = Config()
     for tip in tree.get_terminals():
         taxid = tip.guids['taxon']
         if taxid in taxids:
