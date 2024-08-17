@@ -82,6 +82,8 @@ def run_localblast(sequence, tree):
                     taxid_field = columns[-1]
                     taxids = taxid_field.split(';')
                     distinct_taxids.update(taxid.strip() for taxid in taxids if taxid.strip())
+        logging.info(f'{len(distinct_taxids)} distinct taxids found in BLAST result')
+        logging.debug(distinct_taxids)
         return collect_lineages(distinct_taxids, tree)
 
     # Handle exception
@@ -98,12 +100,17 @@ def collect_lineages(taxids, tree):
         taxid = tip.guids['taxon']
         if taxid in taxids:
             tips.append(tip)
+            logging.debug(f'Found tip {tip.name} with taxid {taxid}')
+    logging.info(f'Found {len(tips)} tips for {len(taxids)} in the tree')
     for tip in tips:
         lineage = []
         for node in tree.root.get_path(tip):
+            logging.debug(f'Traversing {node} from lineage {tip}')
             if node.taxonomic_rank == str(config.get('level')).lower():
                 lineage.append(node.name)
+                logging.info(f'Found ancestor {node} for {tip.name}')
         lineages.append(lineage)
+    logging.info(f'Collected {len(lineages)} lineages')
     return lineages
 
 
