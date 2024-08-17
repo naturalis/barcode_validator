@@ -103,15 +103,15 @@ def collect_lineages(taxids, tree):
             logging.debug(f'Found tip {tip.name} with taxid {taxid}')
     logging.info(f'Found {len(tips)} tips for {len(taxids)} in the tree')
     for tip in tips:
-        lineage = []
+        lineage = set()
         for node in tree.root.get_path(tip):
             logging.debug(f'Traversing {node} from lineage {tip}')
             if node.taxonomic_rank == str(config.get('level')).lower():
-                lineage.append(node.name)
+                lineage.update(node.name)
                 logging.info(f'Found ancestor {node} for {tip.name}')
         lineages.append(lineage)
-    logging.info(f'Collected {len(lineages)} lineages')
-    return lineages
+    logging.info(f'Collected {len(lineages)} distinct lineages')
+    return list(lineages)
 
 
 def run_blast(sequence):
