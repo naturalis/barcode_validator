@@ -28,6 +28,7 @@ class DNAAnalysisResult:
     @obs_taxon.setter
     def obs_taxon(self, value):
         if not isinstance(value, list) or not all(isinstance(item, str) for item in value):
+            logging.error(value)
             raise ValueError("obs_taxon must be a list of strings")
         self._obs_taxon = value
 
