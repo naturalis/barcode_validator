@@ -113,8 +113,8 @@ def collect_lineages(taxids, tree):
         for node in tree.root.get_path(tip):
             logging.debug(f'Traversing {node} from lineage {tip}')
             if node.taxonomic_rank == str(config.get('level')).lower():
-                taxa.update(node.name)
-                logging.info(f'Found ancestor {node} for {tip.name}')
+                taxa.add(node.name)
+                logging.info(f"Found ancestor '{node}' for '{tip.name}'")
     logging.info(f'Collected {len(taxa)} higher taxa')
     return list(taxa)
 
