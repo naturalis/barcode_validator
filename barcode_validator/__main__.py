@@ -78,7 +78,7 @@ if __name__ == "__main__":
     parser.add_argument("-a", "--action", help="Comma-separated list of actions, e.g. id,stops,persist",
                         default='id,stops')
     parser.add_argument("-v", "--verbosity", choices=['DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL'],
-                        default='INFO', help="Set the logging verbosity (default: INFO)")
+                        help="Set the logging verbosity (default: INFO)")
     args = parser.parse_args()
 
     # Setup configuration
