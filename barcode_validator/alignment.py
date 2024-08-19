@@ -52,16 +52,22 @@ def align_to_hmm(sequence):
 
 
 def marker_seqlength(sequence):
+    """
+    Calculate the length of the sequence within the marker region,
+    excluding gaps and ambiguous bases.
+    :param sequence: A BioPython SeqRecord object
+    :return: The length of the sequence within the marker region
+    """
     logging.info("Calculating non-missing bases within marker region")
 
-    # Clone the sequence, remove gaps and missing in the sequence
-    cloned_seq = deepcopy(sequence)
-    cloned_seq.letter_annotations = {}
-    cloned_seq.seq = cloned_seq.seq.replace('-', '')
-    cloned_seq.seq = cloned_seq.seq.replace('N', '')
-    cloned_seq.seq = cloned_seq.seq.replace('n', '')
-    logging.debug(f"Within marker sequence length: {len(cloned_seq)}")
-    return len(cloned_seq)
+    # Operate on the cloned sequence string directly
+    raw_seq = str(sequence.seq)
+    raw_seq = raw_seq.replace('-', '')
+    raw_seq = raw_seq.replace('N', '')
+    raw_seq = raw_seq.replace('n', '')
+
+    logging.debug(f"Within marker sequence length: {len(raw_seq)}")
+    return len(raw_seq)
 
 
 def num_ambiguous(sequence):
