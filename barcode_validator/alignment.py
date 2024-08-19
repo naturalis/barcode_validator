@@ -181,18 +181,19 @@ def translate_sequence(dna_sequence):
 
 def parse_fasta(file_path):
     """
-    Parse a FASTA file and return the process ID and sequence record. The process ID is the first part of the
-    sequence ID, which is assumed to be separated by an underscore.
+    Parse a FASTA file and yield the process ID and sequence record for each entry.
+    The process ID is the first part of the sequence ID, which is assumed to be separated by an underscore.
+
     :param file_path: Local path to the FASTA file
-    :return: A tuple containing the process ID and the sequence record
+    :yield: A tuple containing the process ID and the sequence record for each entry
     """
     logging.info(f"Parsing FASTA file: {file_path}")
     with open(file_path, 'r') as file:
-        record = next(SeqIO.parse(file, 'fasta'))
-        process_id = record.id.split('_')[0]
-    logging.debug(f"Parsed process ID: {process_id}")
-    logging.debug(f"Sequence length: {len(record.seq)}")
-    return process_id, record
+        for record in SeqIO.parse(file, 'fasta'):
+            process_id = record.id.split('_')[0]
+            logging.debug(f"Parsed process ID: {process_id}")
+            logging.debug(f"Sequence length: {len(record.seq)}")
+            yield process_id, unalign_sequence(record)
 
 
 def get_stop_codons(amino_acid_sequence):
