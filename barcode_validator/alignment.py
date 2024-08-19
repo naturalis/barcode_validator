@@ -22,6 +22,15 @@ indication of off-target amplification of a pseudogene.
 
 
 def align_to_hmm(sequence):
+    """
+    Align a sequence to an HMM using hmmalign. The location of the HMM file is specified in the
+    configuration file as 'hmm_file'. hmmalign is run with the '--trim' option to remove any
+    leading or trailing ends of the input sequence that fall outside the HMM. The output is
+    parsed as a Stockholm format file and returned as a SeqRecord object, i.e. it has the sequence
+    annotations (which include per-residue confidence scores) preserved.
+    :param sequence: A BioPython SeqRecord object
+    :return: A BioPython SeqRecord object containing the aligned sequence
+    """
     logging.info("Aligning sequence to HMM")
     config = Config()
     hmm_file = config.get('hmm_file')
@@ -71,6 +80,11 @@ def marker_seqlength(sequence):
 
 
 def num_ambiguous(sequence):
+    """
+    Calculate the number of ambiguous bases in a sequence.
+    :param sequence: A BioPython SeqRecord object
+    :return: The number of ambiguous bases in the sequence
+    """
     logging.info("Calculating number of ambiguous bases in sequence")
 
     # Clone the sequence, count the number of ambiguous bases
@@ -116,6 +130,15 @@ def unalign_sequence(sequence):
 
 
 def translate_sequence(dna_sequence):
+    """
+    Translate a DNA sequence to amino acids using the translation table specified in the configuration file.
+    The translation table is specified as an integer in the configuration file, which corresponds to the
+    NCBI translation table ID. The translated sequence is returned as an amino acid SeqRecord object. Note that
+    the first base of the DNA sequence is removed to ensure that the sequence length is a multiple of 3 (i.e.
+    the canonical 658bp COI-5P marker is out of phase by one base).
+    :param dna_sequence: A BioPython SeqRecord object containing a DNA sequence
+    :return: A BioPython SeqRecord object containing the translated amino acid sequence
+    """
     logging.info("Translating DNA sequence to amino acids")
 
     # Warn user
@@ -157,6 +180,12 @@ def translate_sequence(dna_sequence):
 
 
 def parse_fasta(file_path):
+    """
+    Parse a FASTA file and return the process ID and sequence record. The process ID is the first part of the
+    sequence ID, which is assumed to be separated by an underscore.
+    :param file_path: Local path to the FASTA file
+    :return: A tuple containing the process ID and the sequence record
+    """
     logging.info(f"Parsing FASTA file: {file_path}")
     with open(file_path, 'r') as file:
         record = next(SeqIO.parse(file, 'fasta'))
@@ -167,5 +196,10 @@ def parse_fasta(file_path):
 
 
 def get_stop_codons(amino_acid_sequence):
+    """
+    Get the positions of stop codons in an amino acid sequence.
+    :param amino_acid_sequence: A BioPython SeqRecord object containing an amino acid sequence
+    :return: A list of integers representing the positions of stop codons in the sequence
+    """
     logging.info("Getting stop codon positions")
     return [i for i, char in enumerate(amino_acid_sequence.seq) if char == '*']
