@@ -51,7 +51,7 @@ def _log_output(stream, log_level):
     :param log_level: A logging level
     :return:
     """
-    for msg in stream:
+    for msg in io.TextIOWrapper(stream, encoding='utf-8'):
         msg = msg.strip()
         if msg:
             logging.log(log_level, f"BLASTN output: {msg}")
@@ -87,7 +87,7 @@ def run_localblast(sequence, tree):
                                     '-task', 'megablast',
                                     '-outfmt', outfmt,
                                     '-out', blast_result
-                                    ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+                                    ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
 
         # Start threads to handle stdout and stderr and wait for the process to complete
         threading.Thread(target=_log_output, args=(process.stdout, logging.INFO)).start()
