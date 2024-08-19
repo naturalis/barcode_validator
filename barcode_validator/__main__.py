@@ -1,5 +1,8 @@
 import argparse
 import yaml
+import sys
+import traceback
+import logging
 from barcode_validator.config import Config
 from barcode_validator.alignment import *
 from barcode_validator.taxonomy import *

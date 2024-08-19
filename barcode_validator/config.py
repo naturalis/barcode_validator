@@ -1,6 +1,21 @@
 import os
+import sys
 import yaml
 import logging
+import traceback
+
+
+def exception_handler(exc_type, exc_value, exc_traceback):
+    """
+    Custom exception handler to log uncaught exceptions
+    """
+    if issubclass(exc_type, KeyboardInterrupt):
+        # Don't log keyboard interrupt (Ctrl+C)
+        sys.__excepthook__(exc_type, exc_value, exc_traceback)
+        return
+
+    # Log the exception
+    logging.error("Uncaught exception", exc_info=(exc_type, exc_value, exc_traceback))
 
 
 class Config:
@@ -75,6 +90,8 @@ class Config:
                             format='%(asctime)s - %(levelname)s - %(message)s',
                             filename=self.config_data.get('log_file'),
                             filemode='a')
+
+        sys.excepthook = exception_handler
 
     def get(self, key, default=None):
         """
