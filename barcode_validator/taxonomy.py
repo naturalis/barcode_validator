@@ -7,7 +7,6 @@ import time
 import pandas as pd
 import tarfile
 from Bio import SeqIO
-from Bio.SeqRecord import SeqRecord
 from Bio.Blast import NCBIWWW, NCBIXML
 from Bio import Entrez
 from config import Config
@@ -93,25 +92,31 @@ def run_localblast(sequence, tree):
 
 
 def collect_lineages(taxids, tree):
-    lineages = []
     tips = []
     config = Config()
+
+    # Iterate over all tips in the NCBI taxonomy tree
+    # to collect all tips with the specified taxids
     for tip in tree.get_terminals():
         taxid = tip.guids['taxon']
+
+        # Focal tip is annotated with an NCBI taxon ID in the provided lists
         if taxid in taxids:
             tips.append(tip)
             logging.debug(f'Found tip {tip.name} with taxid {taxid}')
     logging.info(f'Found {len(tips)} tips for {len(taxids)} in the tree')
+
+    # Iterate over the collected tips to find their lineages to build a set
+    # of distinct higher taxa with the specified rank
+    taxa = set()
     for tip in tips:
-        lineage = set()
         for node in tree.root.get_path(tip):
             logging.debug(f'Traversing {node} from lineage {tip}')
             if node.taxonomic_rank == str(config.get('level')).lower():
-                lineage.update(node.name)
+                taxa.update(node.name)
                 logging.info(f'Found ancestor {node} for {tip.name}')
-        lineages.append(list(lineage))
-    logging.info(f'Collected {len(lineages)} distinct lineages')
-    return lineages
+    logging.info(f'Collected {len(taxa)} higher taxa')
+    return list(taxa)
 
 
 def run_blast(sequence):
