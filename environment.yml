@@ -5,14 +5,15 @@ channels:
   - conda-forge
 dependencies:
   - biopython
+  - ete3
+  - blast
   - requests
-  - gspread
-  - oauth2client
   - pyyaml
   - pandas
   - hmmer
+  - openpyxl
   - xlrd=1.1.0
   - pip
   - pip:
     - subprocess.run
-    - boldigger2
+    - git+ssh://git@gitlab.com/naturalis/bii/bioinformatics/nbt.git
