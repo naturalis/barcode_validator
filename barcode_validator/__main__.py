@@ -28,15 +28,14 @@ def main(fasta_file_path, bold_sheet):
             logging.info(f'Processing FASTA record {process_id}')
             result = DNAAnalysisResult(process_id)
 
-            # Lookup species name from process_id
-            tip = get_tip_by_processid(process_id, bold_tree)
-            result.species = tip.name
+            # Lookup species Taxon from process_id
+            result.species = get_tip_by_processid(process_id, bold_tree)
             logging.info(f"Species: {result.species}")
 
             # Lookup expected and observed higher taxon
-            for node in bold_tree.root.get_path(tip):
+            for node in bold_tree.root.get_path(result.species):
                 if node.taxonomic_rank == config.get('level'):
-                    result.exp_taxon = node.name
+                    result.exp_taxon = node
                     break
             result.obs_taxon = run_seqid(record, ncbi_tree)
 
