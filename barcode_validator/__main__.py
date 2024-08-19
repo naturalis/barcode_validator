@@ -45,7 +45,6 @@ def main(fasta_file_path, bold_sheet, actions):
 
             # Do the ID check
             if 'id' in actions:
-                level = config.get('level')
                 result.exp_taxon = taxon
                 result.obs_taxon = run_seqid(record, ncbi_tree)
                 result.species = species
