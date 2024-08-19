@@ -149,13 +149,14 @@ def collect_higher_taxa(taxids, tree):
 
     # Iterate over the collected tips to find their lineages to build a set
     # of distinct higher taxa with the specified rank
-    taxa = set()
+    taxa = []
     for tip in tips:
         for node in tree.root.get_path(tip):
             logging.debug(f'Traversing {node} from lineage {tip}')
             if node.taxonomic_rank == str(config.get('level')).lower():
-                taxa.add(node)
-                logging.info(f"Found ancestor '{node}' for '{tip}'")
+                if node not in taxa:  # Check for uniqueness
+                    taxa.append(node)
+                    logging.info(f"Found ancestor '{node}' for '{tip}'")
     logging.info(f'Collected {len(taxa)} higher taxa')
     return list(taxa)
 
