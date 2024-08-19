@@ -109,9 +109,9 @@ def collect_lineages(taxids, tree):
             if node.taxonomic_rank == str(config.get('level')).lower():
                 lineage.update(node.name)
                 logging.info(f'Found ancestor {node} for {tip.name}')
-        lineages.append(lineage)
+        lineages.append(list(lineage))
     logging.info(f'Collected {len(lineages)} distinct lineages')
-    return list(lineages)
+    return lineages
 
 
 def run_blast(sequence):
