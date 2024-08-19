@@ -145,8 +145,8 @@ def collect_higher_taxa(taxids, tree):
         for node in tree.root.get_path(tip):
             logging.debug(f'Traversing {node} from lineage {tip}')
             if node.taxonomic_rank == str(config.get('level')).lower():
-                taxa.add(node.name)
-                logging.info(f"Found ancestor '{node}' for '{tip.name}'")
+                taxa.add(node)
+                logging.info(f"Found ancestor '{node}' for '{tip}'")
     logging.info(f'Collected {len(taxa)} higher taxa')
     return list(taxa)
 
