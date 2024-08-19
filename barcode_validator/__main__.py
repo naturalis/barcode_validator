@@ -3,6 +3,8 @@ import yaml
 import sys
 import traceback
 import logging
+
+import barcode_validator.result
 from barcode_validator.config import Config
 from barcode_validator.alignment import *
 from barcode_validator.taxonomy import *
@@ -18,6 +20,7 @@ def get_tip_by_processid(process_id, tree):
 
 def main(fasta_file_path, bold_sheet):
     logging.info(f"Starting analysis for file: {fasta_file_path}")
+    print(barcode_validator.result.result_fields())  # print TSV header
 
     # Create taxonomy trees
     ncbi_tree = read_ncbi_taxonomy(config.get('ncbi_taxonomy'))
