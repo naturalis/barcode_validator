@@ -51,7 +51,7 @@ def _log_output(stream, log_level):
     :param log_level: A logging level
     :return:
     """
-    for msg in io.TextIOWrapper(stream, encoding='utf-8'):
+    for msg in stream:
         msg = msg.strip()
         if msg:
             logging.log(log_level, f"BLASTN output: {msg}")
