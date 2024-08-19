@@ -37,7 +37,7 @@ def main(fasta_file_path, bold_sheet):
                 if node.taxonomic_rank == config.get('level'):
                     result.exp_taxon = node
                     break
-            result.obs_taxon = run_seqid(record, ncbi_tree)
+            result.obs_taxon = run_localblast(record, ncbi_tree)
 
             # Compute sequence quality metrics
             aligned_sequence = align_to_hmm(record)
