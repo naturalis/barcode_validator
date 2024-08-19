@@ -3,7 +3,7 @@ import tempfile
 import subprocess
 import warnings
 from copy import deepcopy
-from config import Config
+from barcode_validator.config import Config
 from Bio import SeqIO
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord

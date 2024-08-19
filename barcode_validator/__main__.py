@@ -1,6 +1,6 @@
 import argparse
 import yaml
-from config import Config
+from barcode_validator.config import Config
 from barcode_validator.alignment import *
 from barcode_validator.taxonomy import *
 from barcode_validator.persistence import *

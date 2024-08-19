@@ -9,7 +9,7 @@ import tarfile
 from Bio import SeqIO
 from Bio.Blast import NCBIWWW, NCBIXML
 from Bio import Entrez
-from config import Config
+from barcode_validator.config import Config
 from nbt.Phylo.BOLDXLSXIO import Parser as BOLDParser
 from nbt.Phylo.NCBITaxdmp import Parser as NCBIParser
 

@@ -2,7 +2,7 @@ import logging
 # import gspread
 import os
 import datetime
-from config import Config
+from barcode_validator.config import Config
 # from oauth2client.service_account import ServiceAccountCredentials
 
 
