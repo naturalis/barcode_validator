@@ -21,34 +21,33 @@ def main(fasta_file_path, bold_sheet):
     bold_tree = read_bold_taxonomy(bold_sheet)
 
     # Open the FASTA file and process each record
-    with open(fasta_file_path, 'r') as file:
-        for process_id, record in parse_fasta(file):
+    for process_id, record in parse_fasta(fasta_file_path):
 
-            # Instantiate result object with process ID
-            logging.info(f'Processing FASTA record {process_id}')
-            result = DNAAnalysisResult(process_id)
+        # Instantiate result object with process ID
+        logging.info(f'Processing FASTA record {process_id}')
+        result = DNAAnalysisResult(process_id)
 
-            # Lookup species Taxon from process_id
-            result.species = get_tip_by_processid(process_id, bold_tree)
-            logging.info(f"Species: {result.species}")
+        # Lookup species Taxon from process_id
+        result.species = get_tip_by_processid(process_id, bold_tree)
+        logging.info(f"Species: {result.species}")
 
-            # Lookup expected and observed higher taxon
-            for node in bold_tree.root.get_path(result.species):
-                if node.taxonomic_rank == config.get('level'):
-                    result.exp_taxon = node
-                    break
-            result.obs_taxon = run_localblast(record, ncbi_tree)
+        # Lookup expected and observed higher taxon
+        for node in bold_tree.root.get_path(result.species):
+            if node.taxonomic_rank == config.get('level'):
+                result.exp_taxon = node
+                break
+        result.obs_taxon = run_localblast(record, ncbi_tree)
 
-            # Compute sequence quality metrics
-            aligned_sequence = align_to_hmm(record)
-            logging.debug(f"Sequence aligned to HMM: {aligned_sequence.seq}")
-            amino_acid_sequence = translate_sequence(aligned_sequence)
-            result.stop_codons = get_stop_codons(amino_acid_sequence)
-            result.seq_length = marker_seqlength(aligned_sequence)
-            result.ambiguities = num_ambiguous(record)
+        # Compute sequence quality metrics
+        aligned_sequence = align_to_hmm(record)
+        logging.debug(f"Sequence aligned to HMM: {aligned_sequence.seq}")
+        amino_acid_sequence = translate_sequence(aligned_sequence)
+        result.stop_codons = get_stop_codons(amino_acid_sequence)
+        result.seq_length = marker_seqlength(aligned_sequence)
+        result.ambiguities = num_ambiguous(record)
 
-            # Stringify the result
-            print(result)
+        # Stringify the result
+        print(result)
 
     logging.info("Analysis completed")
 
