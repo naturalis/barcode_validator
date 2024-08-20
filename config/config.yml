@@ -4,6 +4,10 @@ hmm_file: ../examples/COI-5P.hmm
 # Which taxonomic level to use for the ID check.
 level: family
 
+# Where to constrain the BLAST search. This indicates the higher taxon level to which the expected taxon belongs and
+# to which the search should be constrained. This is used to speed up the search and to avoid false positives.
+constrain: class
+
 # Configuration for local blast. This is used when the idcheck is set to localblast.
 blast_db: /home/rutger.vos/data/ncbi/nt/nt
 num_threads: 24 # MaaS 37
