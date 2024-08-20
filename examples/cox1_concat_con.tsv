@@ -1,0 +1,38 @@
+Process ID	Sequence Length	Observed Taxon	Expected Taxon	Species	Stop Codons	Ambiguities	Passes All Checks
+Loading node names...
+2605308 names loaded.
+336045 synonyms loaded.
+Loading nodes...
+2605308 nodes loaded.
+Linking nodes...
+Tree is loaded.
+BSNHM182-24	82		Baetidae (family)	Baetis nubecularis (species)	[]	0	False
+BSNHM064-24	593	Aphididae (family), Coccinellidae (family), Micropterigidae (family), Gelechiidae (family), Tortricidae (family), Choreutidae (family), Leptoceridae (family)	Hydroptilidae (family)	Hydroptila stellifera (species)	[]	0	False
+BSNHM098-24	657	Tortricidae (family), Geometridae (family), Hydroptilidae (family)	Hydroptilidae (family)	Stactobia eatoniella (species)	[]	0	True
+BSNHM184-24	629	Perlodidae (family)	Perlodidae (family)	Isoperla viridinervis (species)	[]	0	True
+BSNHM141-24	656	Nemouridae (family)	Nemouridae (family)	Protonemura montana (species)	[]	0	True
+BSNHM110-24	657	Leptoceridae (family)	Leptoceridae (family)	Adicella syriaca (species)	[]	0	True
+BSNHM173-24	106	Staphylinidae (family), Endomychidae (family), Ceratopogonidae (family), Tortricidae (family)	Perlodidae (family)	Isoperla insularis (species)	[]	0	False
+BSNHM029-24	444	Tettigoniidae (family), Acrididae (family), Reduviidae (family), Curculionidae (family), Dermestidae (family), Bostrichidae (family), Ptinidae (family), Ulidiidae (family), Vespidae (family)	Hydroptilidae (family)	Oxyethira unidentata (species)	[]	0	False
+BSNHM068-24	656	Limnephilidae (family)	Limnephilidae (family)	Colpotaulius incisus (species)	[]	0	True
+BSNHM017-24	657	Lycaenidae (family)	Hydroptilidae (family)	Oxyethira spinosella (species)	[]	0	False
+BSNHM076-24	573	Hydroptilidae (family)	Hydroptilidae (family)	Hydroptila sylvestris (species)	[]	0	True
+BSNHM093-24	506	Polycentropodidae (family)	Polycentropodidae (family)	Cyrnus cintranus (species)	[]	0	True
+BSNHM004-24	657	Hydropsychidae (family)	Hydropsychidae (family)	Diplectrona meridionalis (species)	[]	0	True
+BSNHM035-24	556	Psychomyiidae (family)	Psychomyiidae (family)	Tinodes locuples (species)	[]	0	True
+BSNHM061-24	657	Glossosomatidae (family)	Glossosomatidae (family)	Agapetus caucasicus (species)	[]	0	True
+BSNHM146-24	641	Tettigoniidae (family), Acrididae (family), Curculionidae (family), Dermestidae (family), Bostrichidae (family), Ptinidae (family), Ulidiidae (family), Vespidae (family), Tetracampidae (family)	Leptoceridae (family)	Parasetodes respersellus (species)	[]	0	False
+BSNHM148-24	657	Psychomyiidae (family)	Psychomyiidae (family)	Tinodes cinereus (species)	[]	0	True
+BSNHM140-24	656	Taeniopterygidae (family), Leuctridae (family), Elmidae (family)	Leuctridae (family)	Leuctra fraterna (species)	[]	0	True
+BSNHM185-24	652	Nemouridae (family), Taeniopterygidae (family), Sepsidae (family), Anthomyiidae (family), Scathophagidae (family)	Taeniopterygidae (family)	Oemopteryx loewii (species)	[]	0	True
+BSNHM167-24	356	Scarabaeidae (family), Phoridae (family), Tachinidae (family), Hydroptilidae (family)	Hydroptilidae (family)	Hydroptila occulta (species)	[41, 62, 95]	0	False
+BSNHM044-24	656	Limnephilidae (family)	Limnephilidae (family)	Drusus improvisus (species)	[]	0	True
+BSNHM123-24	656	Limnephilidae (family)	Limnephilidae (family)	Grammotaulius submaculatus (species)	[]	0	True
+BSNHM019-24	657	Tortricidae (family), Choreutidae (family), Limacodidae (family), Zygaenidae (family), Leptoceridae (family)	Leptoceridae (family)	Oecetis struckii (species)	[]	0	True
+BSNHM032-24	638	Limnephilidae (family)	Limnephilidae (family)	Drusus destitutus (species)	[]	0	True
+BSNHM003-24	657	Glossosomatidae (family)	Glossosomatidae (family)	Agapetus iridipennis (species)	[]	0	True
+BSNHM069-24	657	Tortricidae (family), Erebidae (family), Nymphalidae (family), Hesperiidae (family), Philopotamidae (family)	Philopotamidae (family)	Philopotamus corsicanus (species)	[]	0	True
+BSNHM043-24	657	Tortricidae (family), Prodoxidae (family), Nepticulidae (family), Leptoceridae (family)	Leptoceridae (family)	Triaenodes conspersus (species)	[]	0	True
+BSNHM126-24	657	Heptageniidae (family)	Heptageniidae (family)	Ecdyonurus forcipula (species)	[]	0	True
+BSNHM087-24	657	Hydropsychidae (family)	Hydropsychidae (family)	Diplectrona magna (species)	[]	0	True
+BSNHM049-24	105	Glossosomatidae (family)	Glossosomatidae (family)	Agapetus moselyi (species)	[]	0	False
