@@ -3,7 +3,8 @@ import yaml
 import logging
 import barcode_validator.result
 from barcode_validator.config import Config
-from barcode_validator.alignment import parse_fasta, align_to_hmm, translate_sequence, get_stop_codons, marker_seqlength, num_ambiguous
+from barcode_validator.alignment import parse_fasta, align_to_hmm, translate_sequence, get_stop_codons, \
+    marker_seqlength, num_ambiguous
 from barcode_validator.taxonomy import read_ncbi_taxonomy, read_bold_taxonomy, get_tip_by_processid, run_localblast
 from barcode_validator.result import DNAAnalysisResult
 
