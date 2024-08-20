@@ -1,11 +1,4 @@
 Process ID	Sequence Length	Observed Taxon	Expected Taxon	Species	Stop Codons	Ambiguities	Passes All Checks
-Loading node names...
-2605308 names loaded.
-336045 synonyms loaded.
-Loading nodes...
-2605308 nodes loaded.
-Linking nodes...
-Tree is loaded.
 BSNHM182-24	82		Baetidae (family)	Baetis nubecularis (species)	[]	0	False
 BSNHM064-24	593	Aphididae (family), Coccinellidae (family), Micropterigidae (family), Gelechiidae (family), Tortricidae (family), Choreutidae (family), Leptoceridae (family)	Hydroptilidae (family)	Hydroptila stellifera (species)	[]	0	False
 BSNHM098-24	657	Tortricidae (family), Geometridae (family), Hydroptilidae (family)	Hydroptilidae (family)	Stactobia eatoniella (species)	[]	0	True
