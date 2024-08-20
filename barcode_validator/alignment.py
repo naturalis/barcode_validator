@@ -16,7 +16,7 @@ alignment.py
 
 This module contains the functions for technical QA on sequence results, including operations
 to align/unalign the sequence against an HMM, calculate the length of the sequence inside the
-barcode marker region, and calculate the number of stop codons, which is intended as an 
+barcode marker region, and calculate the number of stop codons, which is intended as an
 indication of off-target amplification of a pseudogene.
 """
 
@@ -91,15 +91,6 @@ def num_ambiguous(sequence):
     cloned_seq = deepcopy(sequence)
     cloned_seq.letter_annotations = {}
     return len([base for base in cloned_seq.seq if base not in 'acgtnACGTN-~?'])
-
-
-#def unalign_sequence(sequence):
-#    logging.info("Removing gaps from aligned sequence")
-#    unaligned_sequence = sequence.seq.replace('-', '')
-#    unaligned_sequence = unaligned_sequence.replace('~', '')
-#    sequence.seq = unaligned_sequence
-#    logging.debug(f"Unaligned sequence length: {len(unaligned_sequence)}")
-#    return sequence
 
 
 def unalign_sequence(sequence):
