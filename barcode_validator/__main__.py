@@ -11,13 +11,6 @@ from barcode_validator.taxonomy import *
 from barcode_validator.result import DNAAnalysisResult
 
 
-def get_tip_by_processid(process_id, tree):
-    for tip in tree.get_terminals():
-        if tip.guids['processid'] == process_id:
-            return tip
-    return None
-
-
 def main(fasta_file_path, bold_sheet):
     logging.info(f"Starting analysis for file: {fasta_file_path}")
     print(barcode_validator.result.result_fields())  # print TSV header
@@ -42,7 +35,7 @@ def main(fasta_file_path, bold_sheet):
             if node.taxonomic_rank == config.get('level'):
                 result.exp_taxon = node
                 break
-        result.obs_taxon = run_localblast(record, ncbi_tree)
+        result.obs_taxon = run_localblast(record, ncbi_tree, bold_tree)
 
         # Compute sequence quality metrics
         aligned_sequence = align_to_hmm(record)
