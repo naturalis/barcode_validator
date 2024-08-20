@@ -6,9 +6,57 @@ import io
 import os
 import tarfile
 from Bio import SeqIO
+from Bio.Phylo import BaseTree
 from barcode_validator.config import Config
 from nbt.Phylo.BOLDXLSXIO import Parser as BOLDParser
 from nbt.Phylo.NCBITaxdmp import Parser as NCBIParser
+from nbt.Taxon import Taxon
+
+
+def get_tip_by_processid(process_id, tree):
+    """
+    Get a tip from the BOLD tree by its 'processid' attribute.
+    :param process_id: A process ID
+    :param tree: The BOLD tree
+    :return: A Taxon object
+    """
+    for tip in tree.get_terminals():
+        if tip.guids['processid'] == process_id:
+            return tip
+    return None
+
+
+def build_constraint_set(bold_tip: Taxon, bold_tree: BaseTree, ncbi_tree: BaseTree) -> set:
+    """
+    Given a tip from the BOLD tree, looks up its path to the root, fetching the interior node
+    at the specified taxonomic rank. Then, traverses the NCBI tree to find the corresponding
+    node at the same rank. From there, all terminal descendants of the NCBI node are collected
+    and their taxids are returned as a set.
+    :param bold_tip: A Taxon object from the BOLD tree
+    :param bold_tree: A BaseTree object created by BOLDParser()
+    :param ncbi_tree: A BaseTree object created by NCBIParser()
+    :return: A set of NCBI taxids
+    """
+    config = Config()
+    constraint_set = set()
+
+    # Find the node at the specified taxonomic rank in the BOLD that subtends the tip
+    level = str(config.get('constraint')).lower()
+    bold_ancestor = next(node for node in bold_tree.get_path(bold_tip) if node.taxonomic_rank == level)
+    logging.debug(f"Found bold node '{bold_ancestor}' at rank '{level}'")
+
+    # Find the corresponding node at the same rank in the NCBI tree
+    ncbi_ancestor = next(node for node in ncbi_tree.get_nonterminals()
+                         if node.name == bold_ancestor.name and node.taxonomic_rank == level)
+    if ncbi_ancestor:
+        logging.debug(f"Found ncbi node '{ncbi_ancestor}' at rank '{level}'")
+    else:
+        raise ValueError(f"Could not find NCBI node for BOLD node '{bold_ancestor}'")
+
+    # Collect all terminal descendants of the NCBI node
+    for tip in ncbi_ancestor.get_terminals():
+        constraint_set.add(tip.guids['taxon'])
+    return constraint_set
 
 
 def read_bold_taxonomy(spreadsheet):
@@ -57,11 +105,12 @@ def _log_output(stream, log_level):
             logging.log(log_level, f"BLASTN output: {msg}")
 
 
-def run_localblast(sequence, tree):
+def run_localblast(sequence, ncbi_tree, bold_tree):
     """
     Run a local BLASTN search against a local database and return the taxonomic lineages of the hits.
     :param sequence: A Bio.SeqRecord object
-    :param tree: A Bio.Phylo.BaseTree object created by NCBIParser()
+    :param ncbi_tree: A Bio.Phylo.BaseTree object created by NCBIParser()
+    :param bold_tree: A Bio.Phylo.BaseTree object created by BOLDParser()
     :return: A list of distinct higher taxa at the specified rank
     """
     logging.info("Running local BLASTN...")
@@ -70,7 +119,15 @@ def run_localblast(sequence, tree):
     with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.fasta') as temp_input:
         SeqIO.write(sequence, temp_input, "fasta")
         temp_input_name = temp_input.name
-    blast_result = f"{temp_input_name}.tsv"  # output file name, as blast TSV (see -outfmt option)
+
+    # Write the constraints to a TXT file
+    constraints_file = f"{temp_input_name}.txt"
+    with open(constraints_file, 'w') as f:
+        for taxon_id in build_constraint_set(get_tip_by_processid(sequence.id, bold_tree), bold_tree, ncbi_tree):
+            f.write(f"{taxon_id}\n")
+
+    # Specify the output file name, as blast TSV (see -outfmt option)
+    blast_result = f"{temp_input_name}.tsv"
 
     # Run local BLASTN
     config = Config()
@@ -84,18 +141,20 @@ def run_localblast(sequence, tree):
                                     '-max_target_seqs', str(config.get('max_target_seqs')),
                                     '-word_size', str(config.get('word_size')),
                                     '-query', temp_input_name,
+                                    '-taxids', constraints_file,
                                     '-task', 'megablast',
                                     '-outfmt', outfmt,
                                     '-out', blast_result
                                     ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
 
         # Start threads to handle stdout and stderr and wait for the process to complete
+        # TODO: inject process ID into log messages
         threading.Thread(target=_log_output, args=(process.stdout, logging.INFO)).start()
         threading.Thread(target=_log_output, args=(process.stderr, logging.ERROR)).start()
         return_code = process.wait()
         if return_code != 0:
             raise subprocess.CalledProcessError(return_code, 'blastn')
-        return parse_blast_result(blast_result, tree)
+        return parse_blast_result(blast_result, ncbi_tree)
 
     # Handle exception
     except subprocess.CalledProcessError as e:
@@ -159,5 +218,3 @@ def collect_higher_taxa(taxids, tree):
                     logging.info(f"Found ancestor '{node}' for '{tip}'")
     logging.info(f'Collected {len(taxa)} higher taxa')
     return list(taxa)
-
-
