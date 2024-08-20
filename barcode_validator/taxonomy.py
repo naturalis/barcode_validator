@@ -20,6 +20,7 @@ def get_tip_by_processid(process_id, tree):
     :param tree: The BOLD tree
     :return: A Taxon object
     """
+    logging.info(f'Looking up tip by process ID: {process_id}')
     for tip in tree.get_terminals():
         if tip.guids['processid'] == process_id:
             return tip
@@ -37,12 +38,16 @@ def build_constraint_set(bold_tip: Taxon, bold_tree: BaseTree, ncbi_tree: BaseTr
     :param ncbi_tree: A BaseTree object created by NCBIParser()
     :return: A set of NCBI taxids
     """
+    # Is there a node?
+    if not bold_tip:
+        raise ValueError("No BOLD node provided")
+
     config = Config()
     constraint_set = set()
 
     # Find the node at the specified taxonomic rank in the BOLD that subtends the tip
     level = str(config.get('constraint')).lower()
-    bold_ancestor = next(node for node in bold_tree.root.get_path(bold_tip) if node.taxonomic_rank == level)
+    bold_ancestor = next(node for node in bold_tree.get_path(bold_tip) if node.taxonomic_rank == level)
     logging.debug(f"Found bold node '{bold_ancestor}' at rank '{level}'")
 
     # Find the corresponding node at the same rank in the NCBI tree
