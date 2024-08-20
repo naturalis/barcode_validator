@@ -182,6 +182,7 @@ def parse_fasta(file_path):
     with open(file_path, 'r') as file:
         for record in SeqIO.parse(file, 'fasta'):
             process_id = record.id.split('_')[0]
+            record.id = process_id
             logging.debug(f"Parsed process ID: {process_id}")
             logging.debug(f"Sequence length: {len(record.seq)}")
             yield process_id, unalign_sequence(record)
