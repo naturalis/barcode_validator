@@ -47,24 +47,25 @@ def build_constraint_set(bold_tip: Taxon, bold_tree: BaseTree, ncbi_tree: BaseTr
 
     # Find the node at the specified taxonomic rank in the BOLD that subtends the tip
     level = str(config.get('constraint')).lower()
-    bold_ancestor = None
+    ba = None
     for node in bold_tree.get_path(bold_tip):
+        logging.debug(node)
         if node.taxonomic_rank == level:
-            bold_ancestor = node
+            ba = node
             break
-    logging.debug(f"Found bold node '{bold_ancestor}' at rank '{level}'")
+    logging.info(f"Expected {bold_tip.taxonomic_rank} {bold_tip.name} is member of {level} {ba}")
 
     # Find the corresponding node at the same rank in the NCBI tree
     ncbi_ancestor = None
     for node in ncbi_tree.get_nonterminals():
-        if node.name == bold_ancestor.name and node.taxonomic_rank == level:
+        if node.name == ba.name and node.taxonomic_rank == level:
             ncbi_ancestor = node
             break
 
     if ncbi_ancestor:
         logging.debug(f"Found ncbi node '{ncbi_ancestor}' at rank '{level}'")
     else:
-        raise ValueError(f"Could not find NCBI node for BOLD node '{bold_ancestor}'")
+        raise ValueError(f"Could not find NCBI node for BOLD node '{ba}'")
 
     # Collect all terminal descendants of the NCBI node
     for tip in ncbi_ancestor.get_terminals():
