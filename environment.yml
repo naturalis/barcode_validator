@@ -16,4 +16,4 @@ dependencies:
   - pip
   - pip:
     - subprocess.run
-    - git+ssh://git@gitlab.com/naturalis/bii/bioinformatics/nbt.git
+    - nbitk
