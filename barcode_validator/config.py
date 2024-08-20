@@ -2,7 +2,6 @@ import os
 import sys
 import yaml
 import logging
-import traceback
 
 
 def exception_handler(exc_type, exc_value, exc_traceback):
