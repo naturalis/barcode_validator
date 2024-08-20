@@ -22,7 +22,7 @@ def get_tip_by_processid(process_id, tree):
     """
     logging.info(f'Looking up tip by process ID: {process_id}')
     for tip in tree.get_terminals():
-        if tip.guids['processid'] == process_id:
+        if tip.guids[process_id]:
             return tip
     return None
 
