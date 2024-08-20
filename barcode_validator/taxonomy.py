@@ -47,6 +47,7 @@ def build_constraint_set(bold_tip: Taxon, bold_tree: BaseTree, ncbi_tree: BaseTr
 
     # Find the node at the specified taxonomic rank in the BOLD that subtends the tip
     level = str(config.get('constraint')).lower()
+    bold_ancestor = None
     for node in bold_tree.get_path(bold_tip):
         if node.taxonomic_rank == level:
             bold_ancestor = node
@@ -54,6 +55,7 @@ def build_constraint_set(bold_tip: Taxon, bold_tree: BaseTree, ncbi_tree: BaseTr
     logging.debug(f"Found bold node '{bold_ancestor}' at rank '{level}'")
 
     # Find the corresponding node at the same rank in the NCBI tree
+    ncbi_ancestor = None
     for node in ncbi_tree.get_nonterminals():
         if node.name == bold_ancestor.name and node.taxonomic_rank == level:
             ncbi_ancestor = node
