@@ -29,12 +29,13 @@ def ncbi_tree():
 
 
 def test_get_tip_by_processid(bold_tree):
-    process_id = "BGENL1996-24"
-    tip = get_tip_by_processid(process_id, bold_tree)
-
-    assert isinstance(tip, Taxon)
-    assert tip.name == "Eremochlorita tessellata"
-    assert tip.taxonomic_rank == "species"
+    for tip in bold_tree.get_terminals():
+        if tip.name == "Halesus tessellatus":
+            assert tip.guids["BSNHM166-24"] == "BGE_00002_F11"
+            assert tip.taxonomic_rank == "species"
+            break
+    tip = get_tip_by_processid("BSNHM166-24", bold_tree)
+    assert tip.name == "Halesus tessellatus"
 
 
 def test_bold_tree_ancestry(bold_tree):
