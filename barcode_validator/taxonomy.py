@@ -27,7 +27,7 @@ def get_tip_by_processid(process_id, tree):
     return None
 
 
-def build_constraint_set(bold_tip: Taxon, bold_tree: BaseTree, ncbi_tree: BaseTree) -> set:
+def build_constraint(bold_tip: Taxon, bold_tree: BaseTree, ncbi_tree: BaseTree) -> str:
     """
     Given a tip from the BOLD tree, looks up its path to the root, fetching the interior node
     at the specified taxonomic rank. Then, traverses the NCBI tree to find the corresponding
@@ -36,16 +36,11 @@ def build_constraint_set(bold_tip: Taxon, bold_tree: BaseTree, ncbi_tree: BaseTr
     :param bold_tip: A Taxon object from the BOLD tree
     :param bold_tree: A BaseTree object created by BOLDParser()
     :param ncbi_tree: A BaseTree object created by NCBIParser()
-    :return: A set of NCBI taxids
+    :return: An NCBI taxon ID
     """
-    # Is there a node?
-    if not bold_tip:
-        raise ValueError("No BOLD node provided")
-
     config = Config()
-    constraint_set = set()
 
-    # Find the node at the specified taxonomic rank in the BOLD that subtends the tip
+    # Find the node at the specified taxonomic rank in the BOLD lineage that subtends the tip
     level = str(config.get('constrain')).lower()
     bold_anc = next(node for node in bold_tree.get_path(bold_tip) if node.taxonomic_rank == level)
     logging.info(f"BOLD {bold_tip.taxonomic_rank} {bold_tip.name} is member of {level} {bold_anc.name}")
@@ -53,15 +48,13 @@ def build_constraint_set(bold_tip: Taxon, bold_tree: BaseTree, ncbi_tree: BaseTr
     # Find the corresponding node at the same rank in the NCBI tree
     ncbi_anc = next(node for node in ncbi_tree.get_nonterminals()
                     if node.name == bold_anc.name and node.taxonomic_rank == level)
+
+    # Return or die
     if ncbi_anc:
         logging.info(f"Corresponding ncbi node is taxon:{ncbi_anc.guids['taxon']}")
+        return ncbi_anc.guids['taxon']
     else:
         raise ValueError(f"Could not find NCBI node for BOLD node '{bold_anc}'")
-
-    # Collect all terminal descendants of the NCBI node
-    for tip in ncbi_anc.get_terminals():
-        constraint_set.add(tip.guids['taxon'])
-    return constraint_set
 
 
 def read_bold_taxonomy(spreadsheet):
@@ -126,11 +119,8 @@ def run_localblast(sequence, ncbi_tree, bold_tree):
         SeqIO.write(sequence, temp_input, "fasta")
         temp_input_name = temp_input.name
 
-    # Write the constraints to a TXT file
-    constraints_file = f"{temp_input_name}.txt"
-    with open(constraints_file, 'w') as f:
-        for taxon_id in build_constraint_set(get_tip_by_processid(sequence.id, bold_tree), bold_tree, ncbi_tree):
-            f.write(f"{taxon_id}\n")
+    # Lookup the higher level taxon to limit the search to
+    constraint = build_constraint(get_tip_by_processid(sequence.id, bold_tree), bold_tree, ncbi_tree)
 
     # Specify the output file name, as blast TSV (see -outfmt option)
     blast_result = f"{temp_input_name}.tsv"
@@ -138,6 +128,7 @@ def run_localblast(sequence, ncbi_tree, bold_tree):
     # Run local BLASTN
     config = Config()
     os.environ['BLASTDB_LMDB_MAP_SIZE'] = str(config.get('BLASTDB_LMDB_MAP_SIZE'))
+    os.environ['BLASTDB'] = str(config.get('BLASTDB'))
     try:
         outfmt = "6 qseqid sseqid pident length qstart qend sstart send evalue bitscore staxids"
         process = subprocess.Popen(['blastn',
@@ -147,7 +138,7 @@ def run_localblast(sequence, ncbi_tree, bold_tree):
                                     '-max_target_seqs', str(config.get('max_target_seqs')),
                                     '-word_size', str(config.get('word_size')),
                                     '-query', temp_input_name,
-                                    '-taxids', constraints_file,
+                                    '-taxids', constraint,
                                     '-task', 'megablast',
                                     '-outfmt', outfmt,
                                     '-out', blast_result
