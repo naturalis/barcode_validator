@@ -205,4 +205,3 @@ class DNAAnalysisResult:
             self.passes_all_checks()
         ]
         return '\t'.join(map(str, results))
-
