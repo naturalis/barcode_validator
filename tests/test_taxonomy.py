@@ -3,7 +3,7 @@ import requests
 import tempfile
 from pathlib import Path
 from Bio.Phylo import BaseTree
-from nbt.Taxon import Taxon
+from nbitk.Taxon import Taxon
 from taxonomy import read_bold_taxonomy, read_ncbi_taxonomy, get_tip_by_processid
 
 
