@@ -2,7 +2,6 @@ import pytest
 import requests
 import tempfile
 from pathlib import Path
-from Bio.Phylo import BaseTree
 from nbitk.Taxon import Taxon
 from barcode_validator.taxonomy import read_bold_taxonomy, read_ncbi_taxonomy, get_tip_by_processid
 
