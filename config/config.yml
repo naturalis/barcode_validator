@@ -15,6 +15,7 @@ evalue: 1e-5
 max_target_seqs: 10
 word_size: 28
 BLASTDB_LMDB_MAP_SIZE: 180000000000 # MaaS 37, 180GB
+BLASTDB: /home/rutger.vos/data/ncbi/nt
 
 # Location of the NCBI taxonomy dump. This must be the tar file that contains the nodes.dmp and names.dmp files.
 # http://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz
