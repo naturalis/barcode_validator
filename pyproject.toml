@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "barcode_validator"
+dynamic = ["version"]
+authors = [
+    {name = "Rutger Vos", email = "rutger.vos@naturalis.nl"},
+]
+description = "A python package for validating DNA barcodes as produced by the BGE consortium."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "nbitk",
+    "biopython",
+    "requests",
+]
+
+[tool.setuptools_scm]
+write_to = "barcode_validator/_version.py"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["barcode_validator*"]
