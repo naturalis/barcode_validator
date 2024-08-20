@@ -1,5 +1,5 @@
 from barcode_validator.config import Config
-from nbt.Taxon import Taxon
+from nbitk.Taxon import Taxon
 from typing import List, Optional
 import logging
 

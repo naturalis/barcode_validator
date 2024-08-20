@@ -8,9 +8,9 @@ import tarfile
 from Bio import SeqIO
 from Bio.Phylo import BaseTree
 from barcode_validator.config import Config
-from nbt.Phylo.BOLDXLSXIO import Parser as BOLDParser
-from nbt.Phylo.NCBITaxdmp import Parser as NCBIParser
-from nbt.Taxon import Taxon
+from nbitk.Phylo.BOLDXLSXIO import Parser as BOLDParser
+from nbitk.Phylo.NCBITaxdmp import Parser as NCBIParser
+from nbitk.Taxon import Taxon
 
 
 def get_tip_by_processid(process_id, tree):
