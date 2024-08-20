@@ -15,6 +15,7 @@ dependencies = [
     "nbitk",
     "biopython",
     "requests",
+    "PyYAML",
 ]
 
 [tool.setuptools_scm]
