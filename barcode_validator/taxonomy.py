@@ -46,29 +46,20 @@ def build_constraint_set(bold_tip: Taxon, bold_tree: BaseTree, ncbi_tree: BaseTr
     constraint_set = set()
 
     # Find the node at the specified taxonomic rank in the BOLD that subtends the tip
-    level = str(config.get('constraint')).lower()
-    ba = None
-    for node in bold_tree.get_path(bold_tip):
-        logging.debug(node)
-        if node.taxonomic_rank == level:
-            ba = node
-            break
-    logging.info(f"Expected {bold_tip.taxonomic_rank} {bold_tip.name} is member of {level} {ba}")
+    level = str(config.get('constrain')).lower()
+    bold_anc = next(node for node in bold_tree.get_path(bold_tip) if node.taxonomic_rank == level)
+    logging.info(f"BOLD {bold_tip.taxonomic_rank} {bold_tip.name} is member of {level} {bold_anc.name}")
 
     # Find the corresponding node at the same rank in the NCBI tree
-    ncbi_ancestor = None
-    for node in ncbi_tree.get_nonterminals():
-        if node.name == ba.name and node.taxonomic_rank == level:
-            ncbi_ancestor = node
-            break
-
-    if ncbi_ancestor:
-        logging.debug(f"Found ncbi node '{ncbi_ancestor}' at rank '{level}'")
+    ncbi_anc = next(node for node in ncbi_tree.get_nonterminals()
+                    if node.name == bold_anc.name and node.taxonomic_rank == level)
+    if ncbi_anc:
+        logging.info(f"Corresponding ncbi node is taxon:{ncbi_anc.guids['taxon']}")
     else:
-        raise ValueError(f"Could not find NCBI node for BOLD node '{ba}'")
+        raise ValueError(f"Could not find NCBI node for BOLD node '{bold_anc}'")
 
     # Collect all terminal descendants of the NCBI node
-    for tip in ncbi_ancestor.get_terminals():
+    for tip in ncbi_anc.get_terminals():
         constraint_set.add(tip.guids['taxon'])
     return constraint_set
 
