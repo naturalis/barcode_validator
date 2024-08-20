@@ -92,17 +92,18 @@ def read_ncbi_taxonomy(taxdump):
     return NCBIParser(tar).parse()
 
 
-def _log_output(stream, log_level):
+def _log_output(stream, log_level, processid):
     """
     Log the output of a subprocess to the logger at the specified level.
     :param stream: A stream object
     :param log_level: A logging level
+    :param processid: A process ID
     :return:
     """
     for msg in stream:
         msg = msg.strip()
         if msg:
-            logging.log(log_level, f"BLASTN output: {msg}")
+            logging.log(log_level, f"BLASTN output for {processid}: {msg}")
 
 
 def run_localblast(sequence, ncbi_tree, bold_tree):
@@ -148,9 +149,8 @@ def run_localblast(sequence, ncbi_tree, bold_tree):
                                     ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
 
         # Start threads to handle stdout and stderr and wait for the process to complete
-        # TODO: inject process ID into log messages
-        threading.Thread(target=_log_output, args=(process.stdout, logging.INFO)).start()
-        threading.Thread(target=_log_output, args=(process.stderr, logging.ERROR)).start()
+        threading.Thread(target=_log_output, args=(process.stdout, logging.INFO, sequence.id)).start()
+        threading.Thread(target=_log_output, args=(process.stderr, logging.ERROR, sequence.id)).start()
         return_code = process.wait()
         if return_code != 0:
             raise subprocess.CalledProcessError(return_code, 'blastn')
