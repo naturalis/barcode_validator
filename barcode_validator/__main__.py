@@ -20,35 +20,46 @@ def main(fasta_file_path, bold_sheet):
     # Open the FASTA file and process each record
     for process_id, record in parse_fasta(fasta_file_path):
 
-        # Instantiate result object with process ID and calculate raw stats
-        logging.info(f'Processing FASTA record {process_id}')
-        result = DNAAnalysisResult(process_id)
-        result.full_length = len(record.seq)
-        result.full_ambiguities = num_ambiguous(record)
-
-        # Lookup species Taxon from process_id
-        result.species = get_tip_by_processid(process_id, bold_tree)
-        logging.info(f"Species: {result.species}")
-
-        # Lookup expected and observed higher taxon
-        for node in bold_tree.root.get_path(result.species):
-            if node.taxonomic_rank == config.get('level'):
-                result.exp_taxon = node
-                break
-        result.obs_taxon = run_localblast(record, ncbi_tree, bold_tree)
-
-        # Compute sequence quality metrics
-        aligned_sequence = align_to_hmm(record)
-        logging.debug(f"Sequence aligned to HMM: {aligned_sequence.seq}")
-        amino_acid_sequence = translate_sequence(aligned_sequence)
-        result.stop_codons = get_stop_codons(amino_acid_sequence)
-        result.seq_length = marker_seqlength(aligned_sequence)
-        result.ambiguities = num_ambiguous(aligned_sequence)
-
-        # Stringify the result
+        # Validate the record. Here we are only printing the result as a TSV row
+        # but we can do more with the result object. In particular, we can use the
+        # result.calculate_ranks() method to get the barcode and full sequence ranks
+        # as well as a list of messages. These we would attach to the pull request
+        # as part of the review process.
+        result = validate_record(bold_tree, ncbi_tree, process_id, record)
         print(result)
 
     logging.info("Analysis completed")
+
+
+def validate_record(bold_tree, ncbi_tree, process_id, record):
+
+    # Instantiate result object with process ID and calculate full sequence stats
+    logging.info(f'Processing FASTA record {process_id}')
+    result = DNAAnalysisResult(process_id)
+    result.full_length = len(record.seq)
+    result.full_ambiguities = num_ambiguous(record)
+
+    # Lookup species Taxon from process_id
+    result.species = get_tip_by_processid(process_id, bold_tree)
+    logging.info(f"Species: {result.species}")
+
+    # Lookup expected and observed higher taxon
+    for node in bold_tree.root.get_path(result.species):
+        if node.taxonomic_rank == config.get('level'):
+            result.exp_taxon = node
+            break
+    result.obs_taxon = run_localblast(record, ncbi_tree, bold_tree)
+
+    # Compute marker quality metrics
+    aligned_sequence = align_to_hmm(record)
+    logging.debug(f"Sequence aligned to HMM: {aligned_sequence.seq}")
+    amino_acid_sequence = translate_sequence(aligned_sequence)
+    result.stop_codons = get_stop_codons(amino_acid_sequence)
+    result.seq_length = marker_seqlength(aligned_sequence)
+    result.ambiguities = num_ambiguous(aligned_sequence)
+
+    # Done
+    return result
 
 
 if __name__ == "__main__":
