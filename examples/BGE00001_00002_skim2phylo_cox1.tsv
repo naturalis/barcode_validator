@@ -1,88 +1,113 @@
-BSNHM166-24	524	Limnephilidae	Limnephilidae	Halesus tessellatus	[]	0	True
-BSNHM124-24	657	Psychomyiidae, Ecnomidae, Polycentropodidae	Polycentropodidae	Polycentropus mortoni	[]	0	True
-BSNHM101-24	657	Psychomyiidae	Rhyacophilidae	Rhyacophila meyeri	[]	0	False
-BSNHM019-24	657	Leptoceridae	Leptoceridae	Oecetis struckii	[]	0	True
-BSNHM118-24	199	Brachycentridae	Brachycentridae	Micrasema nigrum	[]	0	False
-BSNHM186-24	209	Drosophilidae, Beraeidae, Carabidae, Corydalidae, Chloropidae, Syrphidae	Beraeidae	Beraea aureomarginata	[]	0	False
-BSNHM140-24	656	Taeniopterygidae, Leuctridae, Elmidae	Leuctridae	Leuctra fraterna	[]	0	True
-BSNHM142-24	274	Nolidae, Elachistidae, Hydroptilidae, Euteliidae, Tineidae, Noctuidae, Sphingidae	Hydroptilidae	Hydroptila uncinata	[9, 20, 58]	0	False
-BSNHM047-24	657	Psychomyiidae	Psychomyiidae	Tinodes maroccanus	[]	0	True
-BSNHM150-24	656	Heptageniidae	Heptageniidae	Epeorus torrentium	[]	0	True
-BSNHM087-24	657	Hydropsychidae	Hydropsychidae	Diplectrona magna	[]	0	True
-BSNHM008-24	120	Limnephilidae	Limnephilidae	Annitella pyrenaea	[]	0	False
-BSNHM110-24	657	Leptoceridae	Leptoceridae	Adicella syriaca	[]	0	True
-BSNHM068-24	1	Limnephilidae	Limnephilidae	Colpotaulius incisus	[]	0	False
-BSNHM068-24	346	Limnephilidae	Limnephilidae	Colpotaulius incisus	[]	0	False
-BSNHM073-24	360	Goeridae	Goeridae	Silo graellsii	[]	0	False
-BSNHM088-24	657	Hydroptilidae, Nymphalidae	Hydroptilidae	Hydroptila uncinata	[]	0	True
-BSNHM131-24	361	Limnephilidae	Limnephilidae	Drusus destitutus	[]	0	False
-BSNHM108-24	656	Noctuidae, Rhyacophilidae, Muscidae	Rhyacophilidae	Rhyacophila hartigi	[]	0	True
-BSNHM168-24	221	Limnephilidae	Limnephilidae	Dicosmoecus palatus	[35, 60]	0	False
-BSNHM057-24	365	Philopotamidae	Philopotamidae	Philopotamus achemenus	[]	0	False
-BSNHM065-24	483	Staphylinidae	Hydroptilidae	Stactobia caspersi	[46, 68, 75, 87, 94, 105, 115, 117]	0	False
-BSNHM091-24	124	Limnephilidae	Limnephilidae	Annitella chomiacensis	[]	0	False
-BSNHM091-24	203	Limnephilidae, Phryganeidae	Limnephilidae	Annitella chomiacensis	[]	0	False
-BSNHM054-24	656	Leptoceridae	Leptoceridae	Athripsodes fulvoguttatus	[]	0	True
-BSNHM177-24	117	Limnephilidae	Limnephilidae	Colpotaulius incisus	[]	0	False
-BSNHM143-24	237	Limnephilidae	Limnephilidae	Drusus destitutus	[]	0	False
-BSNHM017-24	657	Lycaenidae, Hydroptilidae, Nymphalidae	Hydroptilidae	Oxyethira spinosella	[]	0	True
-BSNHM155-24	245	Limnephilidae	Limnephilidae	Halesus tessellatus	[]	0	False
-BSNHM027-24	657	Rhinophoridae, Hepialidae, Glossosomatidae, Noctuidae, Palaeosetidae	Glossosomatidae	Glossosoma capitatum	[]	0	True
-BSNHM034-24	294	Polycentropodidae	Polycentropodidae	Plectrocnemia praestans	[]	0	False
-BSNHM176-24	656	Nymphalidae, Hydroptilidae, Pieridae, Lycaenidae, Anaplasmataceae	Hydroptilidae	Stactobia mclachlani	[]	0	True
-BSNHM082-24	657	Psychomyiidae	Psychomyiidae	Tinodes algiricus	[]	0	True
-BSNHM056-24	35	Limnephilidae	Limnephilidae	Halesus tessellatus	[]	0	False
-BSNHM024-24	206	Rhyacophilidae	Rhyacophilidae	Rhyacophila rougemonti	[]	0	False
-BSNHM032-24	408	Limnephilidae	Limnephilidae	Drusus destitutus	[]	0	False
-BSNHM098-24	657	Lycaenidae, Nymphalidae, Crambidae	Hydroptilidae	Stactobia eatoniella	[]	0	False
-BSNHM115-24	654	Potamanthidae, Isonychiidae, Heptageniidae, Leptophlebiidae, Ephemeridae	Leptophlebiidae	Thraulus bellus	[]	0	True
-BSNHM152-24	38	Nemouridae, Taeniopterygidae, Leuctridae, Elmidae	Leuctridae	Leuctra signifera	[]	0	False
-BSNHM144-24	656	Papilionidae, Geometridae, Rhyacophilidae, Muscidae	Rhyacophilidae	Rhyacophila meyeri	[]	0	True
-BSNHM043-24	657	Leptoceridae	Leptoceridae	Triaenodes conspersus	[]	0	True
-BSNHM106-24	657	Conoesucidae, Nymphalidae, Beraeidae, Odontoceridae, Sericostomatidae, Palaeosetidae	Beraeidae	Beraeodina palpalis	[]	0	True
-BSNHM107-24	27	Leptoceridae	Leptoceridae	Athripsodes leucophaeus	[]	0	False
-BSNHM107-24	657	Leptoceridae	Leptoceridae	Athripsodes leucophaeus	[]	0	True
-BSNHM095-24	90	Erebidae, Noctuidae, Nymphalidae, Rhyacophilidae	Rhyacophilidae	Rhyacophila pallida	[]	0	False
-BSNHM095-24	50	Sarcophagidae, Nymphalidae, Hesperiidae, Rhyacophilidae, Culicidae, Syrphidae	Rhyacophilidae	Rhyacophila pallida	[]	0	False
-BSNHM042-24	161	Leptoceridae	Leptoceridae	Athripsodes cuneorum	[]	0	False
-BSNHM085-24	656	Goeridae, Uenoidae, Limnephilidae, Phryganeidae	Goeridae	Silo rufescens	[]	0	True
-BSNHM021-24	656	Limnephilidae	Limnephilidae	Potamophylax millenii	[]	0	True
-BSNHM136-24	324	Psychomyiidae	Psychomyiidae	Psychomyia ctenophora	[]	0	False
-BSNHM074-24	301	Goeridae, Brachycentridae, Phryganeidae, Crambidae	Brachycentridae	Micrasema togatum	[58, 88, 95, 96]	0	False
-BSNHM074-24	656	Brachycentridae, Limnephilidae, Lepidostomatidae, Goeridae, Uenoidae	Brachycentridae	Micrasema togatum	[]	0	True
-BSNHM181-24	146	Nymphalidae, Rhyacophilidae, Lycaenidae, Megalopygidae, Culicidae	Rhyacophilidae	Rhyacophila martynovi	[]	0	False
-BSNHM122-24	54	Leptoceridae	Leptoceridae	Leptocerus lusitanicus	[5]	0	False
-BSNHM122-24	498	Leptoceridae, Palaeosetidae	Leptoceridae	Leptocerus lusitanicus	[]	0	False
-BSNHM058-24	657	Ecnomidae, Psychomyiidae, Polycentropodidae	Polycentropodidae	Polycentropus divergens	[]	0	True
-BSNHM185-24	656	Nemouridae, Taeniopterygidae, Capniidae	Taeniopterygidae	Oemopteryx loewii	[]	0	True
-BSNHM062-24	656	Goeridae, Brachycentridae, Lepidostomatidae, Uenoidae	Brachycentridae	Micrasema nigrum	[]	0	True
-BSNHM111-24	352	Limnephilidae	Limnephilidae	Grammotaulius sibiricus	[]	0	False
-BSNHM141-24	656	Nemouridae	Nemouridae	Protonemura montana	[]	0	True
-BSNHM011-24	657	Psychomyiidae	Psychomyiidae	Tinodes cortensis	[]	0	True
-BSNHM104-24	439	Chloroperlidae	Chloroperlidae	Isoptena serricornis	[]	0	False
-BSNHM072-24	104	Sericostomatidae	Sericostomatidae	Sericostoma maclachlanianum	[]	0	False
-BSNHM039-24	657	Polleniidae, Leiodidae, Hepialidae, Glossosomatidae, Cylindrotomidae	Glossosomatidae	Glossosoma spoliatum	[]	0	True
-BSNHM070-24	657	Unknown	Psychomyiidae	Tinodes agaricinus	[]	0	False
-BSNHM126-24	657	Heptageniidae	Heptageniidae	Ecdyonurus forcipula	[]	0	True
-BSNHM003-24	657	Glossosomatidae, Palaeosetidae, Geometridae	Glossosomatidae	Agapetus iridipennis	[]	0	True
-BSNHM080-24	435	Limnephilidae	Limnephilidae	Limnephilus ponticus	[]	0	False
-BSNHM145-24	656	Hominidae	Hydroptilidae	Hydroptila acuta	[]	0	False
-BSNHM148-24	657	Psychomyiidae	Psychomyiidae	Tinodes cinereus	[]	0	True
-BSNHM061-24	299	Nymphalidae, Glossosomatidae, Noctuidae, Geometridae	Glossosomatidae	Agapetus caucasicus	[]	0	False
-BSNHM055-24	655	Limnephilidae	Limnephilidae	Acrophylax vernalis	[]	0	True
-BSNHM007-24	426	Leptoceridae	Leptoceridae	Erotesis melanella	[3, 10, 14, 30, 33, 58, 71, 73, 77, 87, 89, 91, 99, 101]	0	False
-BSNHM171-24	657	Geometridae, Gelechiidae, Glossosomatidae, Hepialidae	Thremmatidae	Thremma sardoum	[]	0	False
-BSNHM158-24	160	Limnephilidae	Limnephilidae	Micropterna malaspina	[]	0	False
-BSNHM158-24	19	Limnephilidae, Molannidae	Limnephilidae	Micropterna malaspina	[]	0	False
-BSNHM086-24	190	Geometridae, Nymphalidae, Glossosomatidae, Attevidae	Glossosomatidae	Agapetus cyrenensis	[]	0	False
-BSNHM086-24	657	Erebidae, Nymphalidae, Glossosomatidae, Rhyacophilidae	Glossosomatidae	Agapetus cyrenensis	[]	0	True
-BSNHM114-24	246	Carabidae, Hydrophilidae, Heptageniidae	Heptageniidae	Ecdyonurus bellieri	[]	0	False
-BSNHM123-24	656	Limnephilidae	Limnephilidae	Grammotaulius submaculatus	[]	0	True
-BSNHM102-24	61	Heptageniidae	Heptageniidae	Ecdyonurus austriacus	[]	0	False
-BSNHM102-24	182	Hydrophilidae, Siphlonuridae, Heptageniidae, Leptophlebiidae, Ephemerellidae	Heptageniidae	Ecdyonurus austriacus	[]	0	False
-BSNHM004-24	657	Hydropsychidae	Hydropsychidae	Diplectrona meridionalis	[]	0	True
-BSNHM134-24	657	Leptoceridae	Leptoceridae	Mystacides azurea	[]	0	True
-BSNHM059-24	657	Psychomyiidae	Psychomyiidae	Tinodes pollensa	[]	0	True
-BSNHM018-24	295	Nymphalidae, Limacodidae, Pieridae, Lycaenidae, Zygaenidae	Hydroptilidae	Stactobia mclachlani	[]	0	False
-BSNHM018-24	30	Lycidae, Membracidae, Hydraenidae	Hydroptilidae	Stactobia mclachlani	[]	0	False
-BSNHM172-24	657	Leptoceridae	Heptageniidae	Heptagenia coerulans	[]	0	False
+Process ID	Sequence Length	Observed Taxon	Expected Taxon	Species	Stop Codons	Ambiguities	Passes All Checks
+BSNHM166-24	524	Limnephilidae (family)	Limnephilidae (family)	Halesus tessellatus (species)	[]	0	True
+BSNHM124-24	657	Polycentropodidae (family), Psychomyiidae (family)	Polycentropodidae (family)	Polycentropus mortoni (species)	[]	0	True
+BSNHM101-24	657	Psychomyiidae (family)	Rhyacophilidae (family)	Rhyacophila meyeri (species)	[]	0	False
+BSNHM019-24	657	Tortricidae (family), Choreutidae (family), Limacodidae (family), Zygaenidae (family), Leptoceridae (family)	Leptoceridae (family)	Oecetis struckii (species)	[]	0	True
+BSNHM118-24	199	Brachycentridae (family)	Brachycentridae (family)	Micrasema nigrum (species)	[]	0	False
+BSNHM186-24	209	Syrphidae (family), Chloropidae (family), Drosophilidae (family), Tachinidae (family), Geometridae (family), Beraeidae (family), Corydalidae (family)	Beraeidae (family)	Beraea aureomarginata (species)	[]	0	False
+BSNHM140-24	656	Taeniopterygidae (family), Leuctridae (family), Elmidae (family)	Leuctridae (family)	Leuctra fraterna (species)	[]	0	True
+BSNHM142-24	274	Endomychidae (family), Tineidae (family), Sphingidae (family)	Hydroptilidae (family)	Hydroptila uncinata (species)	[9, 20, 58]	0	False
+BSNHM047-24	657	Psychomyiidae (family)	Psychomyiidae (family)	Tinodes maroccanus (species)	[]	0	True
+BSNHM150-24	656	Heptageniidae (family)	Heptageniidae (family)	Epeorus torrentium (species)	[]	0	True
+BSNHM087-24	657	Hydropsychidae (family)	Hydropsychidae (family)	Diplectrona magna (species)	[]	0	True
+BSNHM008-24	120	Limnephilidae (family)	Limnephilidae (family)	Annitella pyrenaea (species)	[]	0	False
+BSNHM110-24	657	Leptoceridae (family)	Leptoceridae (family)	Adicella syriaca (species)	[]	0	True
+BSNHM068-24	1		Limnephilidae (family)	Colpotaulius incisus (species)	[]	0	False
+BSNHM068-24	346	Limnephilidae (family)	Limnephilidae (family)	Colpotaulius incisus (species)	[]	0	False
+BSNHM073-24	360	Goeridae (family)	Goeridae (family)	Silo graellsii (species)	[]	0	False
+BSNHM088-24	657	Tachinidae (family), Depressariidae (family), Nymphalidae (family), Hydroptilidae (family)	Hydroptilidae (family)	Hydroptila uncinata (species)	[]	0	True
+BSNHM131-24	361	Limnephilidae (family)	Limnephilidae (family)	Drusus destitutus (species)	[]	0	False
+BSNHM108-24	656	Muscidae (family), Rhyacophilidae (family)	Rhyacophilidae (family)	Rhyacophila hartigi (species)	[]	0	True
+BSNHM168-24	221	Limnephilidae (family)	Limnephilidae (family)	Dicosmoecus palatus (species)	[35, 60]	0	False
+BSNHM057-24	365	Philopotamidae (family)	Philopotamidae (family)	Philopotamus achemenus (species)	[]	0	False
+BSNHM065-24	483	Staphylinidae (family)	Hydroptilidae (family)	Stactobia caspersi (species)	[46, 68, 75, 87, 94, 105, 115, 117]	0	False
+BSNHM091-24	124	Phalangopsidae (family), Cicadidae (family), Limnephilidae (family)	Limnephilidae (family)	Annitella chomiacensis (species)	[]	0	False
+BSNHM091-24	203	Limnephilidae (family), Phryganeidae (family)	Limnephilidae (family)	Annitella chomiacensis (species)	[]	0	False
+BSNHM054-24	656	Tortricidae (family), Limacodidae (family), Pyralidae (family), Leptoceridae (family)	Leptoceridae (family)	Athripsodes fulvoguttatus (species)	[]	0	True
+BSNHM177-24	117	Limnephilidae (family)	Limnephilidae (family)	Colpotaulius incisus (species)	[]	0	False
+BSNHM143-24	237	Limnephilidae (family)	Limnephilidae (family)	Drusus destitutus (species)	[]	0	False
+BSNHM017-24	657	Lycaenidae (family), Hydroptilidae (family)	Hydroptilidae (family)	Oxyethira spinosella (species)	[]	0	True
+BSNHM155-24	245	Limnephilidae (family)	Limnephilidae (family)	Halesus tessellatus (species)	[]	0	False
+BSNHM027-24	657	Zygaenidae (family), Noctuidae (family), Notodontidae (family), Nolidae (family), Erebidae (family), Glossosomatidae (family)	Glossosomatidae (family)	Glossosoma capitatum (species)	[]	0	True
+BSNHM034-24	294	Polycentropodidae (family)	Polycentropodidae (family)	Plectrocnemia praestans (species)	[]	0	False
+BSNHM176-24	656	Pieridae (family), Lycaenidae (family), Geometridae (family)	Hydroptilidae (family)	Stactobia mclachlani (species)	[]	0	False
+BSNHM082-24	657	Psychomyiidae (family)	Psychomyiidae (family)	Tinodes algiricus (species)	[]	0	True
+BSNHM056-24	35	Limnephilidae (family)	Limnephilidae (family)	Halesus tessellatus (species)	[]	0	False
+BSNHM024-24	206	Rhyacophilidae (family)	Rhyacophilidae (family)	Rhyacophila rougemonti (species)	[]	0	False
+BSNHM032-24	408	Limnephilidae (family)	Limnephilidae (family)	Drusus destitutus (species)	[]	0	False
+BSNHM098-24	657	Nymphalidae (family), Geometridae (family)	Hydroptilidae (family)	Stactobia eatoniella (species)	[]	0	False
+BSNHM115-24	654	Caenidae (family), Potamanthidae (family), Perlidae (family), Chloroperlidae (family), Leuctridae (family), Chironomidae (family), Corydalidae (family)	Leptophlebiidae (family)	Thraulus bellus (species)	[]	0	False
+BSNHM152-24	38	Perlodidae (family), Nemouridae (family), Capniidae (family), Taeniopterygidae (family), Leuctridae (family)	Leuctridae (family)	Leuctra signifera (species)	[]	0	False
+BSNHM144-24	656	Culicidae (family), Muscidae (family), Noctuidae (family), Erebidae (family), Geometridae (family), Rhyacophilidae (family)	Rhyacophilidae (family)	Rhyacophila meyeri (species)	[]	0	True
+BSNHM043-24	657	Tortricidae (family), Prodoxidae (family), Nepticulidae (family), Leptoceridae (family)	Leptoceridae (family)	Triaenodes conspersus (species)	[]	0	True
+BSNHM106-24	657	Syrphidae (family), Crambidae (family), Odontoceridae (family), Sericostomatidae (family), Beraeidae (family), Conoesucidae (family)	Beraeidae (family)	Beraeodina palpalis (species)	[]	0	True
+BSNHM107-24	27	Leptoceridae (family)	Leptoceridae (family)	Athripsodes leucophaeus (species)	[]	0	False
+BSNHM107-24	657	Leptoceridae (family)	Leptoceridae (family)	Athripsodes leucophaeus (species)	[]	0	True
+BSNHM095-24	90	Noctuidae (family), Nymphalidae (family), Rhyacophilidae (family)	Rhyacophilidae (family)	Rhyacophila pallida (species)	[]	0	False
+BSNHM095-24	50	Sarcophagidae (family), Nymphalidae (family), Rhyacophilidae (family)	Rhyacophilidae (family)	Rhyacophila pallida (species)	[]	0	False
+BSNHM042-24	161	Syrphidae (family), Erebidae (family), Adelidae (family), Leptoceridae (family)	Leptoceridae (family)	Athripsodes cuneorum (species)	[]	0	False
+BSNHM085-24	656	Limnephilidae (family), Uenoidae (family), Goeridae (family)	Goeridae (family)	Silo rufescens (species)	[]	0	True
+BSNHM021-24	656	Limnephilidae (family)	Limnephilidae (family)	Potamophylax millenii (species)	[]	0	True
+BSNHM136-24	324	Psychomyiidae (family)	Psychomyiidae (family)	Psychomyia ctenophora (species)	[]	0	False
+BSNHM074-24	301	Crambidae (family), Geometridae (family), Goeridae (family), Brachycentridae (family), Phryganeidae (family)	Brachycentridae (family)	Micrasema togatum (species)	[58, 88, 95, 96]	0	False
+BSNHM074-24	656	Limnephilidae (family), Uenoidae (family), Goeridae (family), Brachycentridae (family)	Brachycentridae (family)	Micrasema togatum (species)	[]	0	True
+BSNHM181-24	146	Culicidae (family), Erebidae (family), Nymphalidae (family), Rhyacophilidae (family)	Rhyacophilidae (family)	Rhyacophila martynovi (species)	[]	0	False
+BSNHM122-24	54		Leptoceridae (family)	Leptocerus lusitanicus (species)	[5]	0	False
+BSNHM122-24	498	Tephritidae (family), Adelidae (family), Leptoceridae (family)	Leptoceridae (family)	Leptocerus lusitanicus (species)	[]	0	False
+BSNHM058-24	657	Polycentropodidae (family), Psychomyiidae (family), Ecnomidae (family)	Polycentropodidae (family)	Polycentropus divergens (species)	[]	0	True
+BSNHM185-24	656	Nemouridae (family), Capniidae (family), Taeniopterygidae (family)	Taeniopterygidae (family)	Oemopteryx loewii (species)	[]	0	True
+BSNHM062-24	656	Uenoidae (family), Goeridae (family), Brachycentridae (family), Lepidostomatidae (family)	Brachycentridae (family)	Micrasema nigrum (species)	[]	0	True
+BSNHM111-24	352	Limnephilidae (family)	Limnephilidae (family)	Grammotaulius sibiricus (species)	[]	0	False
+BSNHM141-24	656	Nemouridae (family)	Nemouridae (family)	Protonemura montana (species)	[]	0	True
+BSNHM011-24	657	Psychomyiidae (family)	Psychomyiidae (family)	Tinodes cortensis (species)	[]	0	True
+BSNHM104-24	439	Chloroperlidae (family)	Chloroperlidae (family)	Isoptena serricornis (species)	[]	0	False
+BSNHM072-24	104	Sericostomatidae (family)	Sericostomatidae (family)	Sericostoma maclachlanianum (species)	[]	0	False
+BSNHM039-24	657	Hepialidae (family), Crambidae (family), Geometridae (family), Glossosomatidae (family)	Glossosomatidae (family)	Glossosoma spoliatum (species)	[]	0	True
+BSNHM070-24	657	Psychomyiidae (family)	Psychomyiidae (family)	Tinodes agaricinus (species)	[]	0	True
+BSNHM126-24	657	Heptageniidae (family)	Heptageniidae (family)	Ecdyonurus forcipula (species)	[]	0	True
+BSNHM003-24	657	Glossosomatidae (family)	Glossosomatidae (family)	Agapetus iridipennis (species)	[]	0	True
+BSNHM080-24	435	Limnephilidae (family)	Limnephilidae (family)	Limnephilus ponticus (species)	[]	0	False
+BSNHM145-24	656	Tettigoniidae (family), Acrididae (family), Ninidae (family), Curculionidae (family), Bostrichidae (family), Ptinidae (family), Vespidae (family), Tetracampidae (family)	Hydroptilidae (family)	Hydroptila acuta (species)	[]	0	False
+BSNHM148-24	657	Psychomyiidae (family)	Psychomyiidae (family)	Tinodes cinereus (species)	[]	0	True
+BSNHM061-24	299	Sphingidae (family), Nymphalidae (family), Geometridae (family), Glossosomatidae (family)	Glossosomatidae (family)	Agapetus caucasicus (species)	[]	0	False
+BSNHM055-24	655	Limnephilidae (family)	Limnephilidae (family)	Acrophylax vernalis (species)	[]	0	True
+BSNHM007-24	426	Culicidae (family), Erebidae (family), Leptoceridae (family)	Leptoceridae (family)	Erotesis melanella (species)	[3, 10, 14, 30, 33, 58, 71, 73, 77, 87, 89, 91, 99, 101]	0	False
+BSNHM171-24	657	Hepialidae (family), Pieridae (family), Hesperiidae (family), Geometridae (family), Glossosomatidae (family)	Thremmatidae (family)	Thremma sardoum (species)	[]	0	False
+BSNHM158-24	160	Hybotidae (family), Crambidae (family), Limnephilidae (family), Uenoidae (family), Goeridae (family)	Limnephilidae (family)	Micropterna malaspina (species)	[]	0	False
+BSNHM158-24	19	Molannidae (family), Limnephilidae (family)	Limnephilidae (family)	Micropterna malaspina (species)	[]	0	False
+BSNHM086-24	190	Gelechiidae (family), Hesperiidae (family), Geometridae (family), Glossosomatidae (family)	Glossosomatidae (family)	Agapetus cyrenensis (species)	[]	0	False
+BSNHM086-24	657	Papilionidae (family), Nymphalidae (family), Glossosomatidae (family)	Glossosomatidae (family)	Agapetus cyrenensis (species)	[]	0	True
+BSNHM114-24	246	Heptageniidae (family)	Heptageniidae (family)	Ecdyonurus bellieri (species)	[]	0	False
+BSNHM123-24	656	Limnephilidae (family)	Limnephilidae (family)	Grammotaulius submaculatus (species)	[]	0	True
+BSNHM102-24	61	Heptageniidae (family), Ephemeridae (family), Simuliidae (family)	Heptageniidae (family)	Ecdyonurus austriacus (species)	[]	0	False
+BSNHM102-24	182	Heptageniidae (family), Leptophlebiidae (family), Dytiscidae (family)	Heptageniidae (family)	Ecdyonurus austriacus (species)	[]	0	False
+BSNHM004-24	657	Hydropsychidae (family)	Hydropsychidae (family)	Diplectrona meridionalis (species)	[]	0	True
+BSNHM134-24	657	Pieridae (family), Geometridae (family), Leptoceridae (family), Odontoceridae (family), Calamoceratidae (family)	Leptoceridae (family)	Mystacides azurea (species)	[]	0	True
+BSNHM059-24	657	Psychomyiidae (family)	Psychomyiidae (family)	Tinodes pollensa (species)	[]	0	True
+BSNHM018-24	295	Zygaenidae (family), Lycaenidae (family), Nymphalidae (family), Geometridae (family)	Hydroptilidae (family)	Stactobia mclachlani (species)	[]	0	False
+BSNHM018-24	30		Hydroptilidae (family)	Stactobia mclachlani (species)	[]	0	False
+BSNHM172-24	657	Tortricidae (family), Choreutidae (family), Limacodidae (family), Zygaenidae (family), Leptoceridae (family)	Heptageniidae (family)	Heptagenia coerulans (species)	[]	0	False
+BSNHM151-24	655	Anostostomatidae (family), Nemouridae (family), Capniidae (family), Taeniopterygidae (family)	Perlidae (family)	Dinocras ferreri (species)	[]	0	False
+BSNHM009-24	104	Lonchodidae (family), Carabidae (family), Acroceridae (family), Nymphalidae (family), Goeridae (family), Chrysopidae (family)	Limnephilidae (family)	Platyphylax frauenfeldi (species)	[]	0	False
+BSNHM149-24	1	Staphylinidae (family), Culicidae (family), Simuliidae (family), Calliphoridae (family), Euteliidae (family), Sericostomatidae (family), Beraeidae (family), Conoesucidae (family), Corydalidae (family)	Sericostomatidae (family)	Sericostoma clypeatum (species)	[]	0	False
+BSNHM067-24	192	Limnephilidae (family)	Limnephilidae (family)	Allogamus corsicus (species)	[53]	0	False
+BSNHM044-24	206	Limnephilidae (family)	Limnephilidae (family)	Drusus improvisus (species)	[59]	0	False
+BSNHM044-24	657	Limnephilidae (family)	Limnephilidae (family)	Drusus improvisus (species)	[]	0	True
+BSNHM053-24	653	Gracillariidae (family), Tortricidae (family), Noctuidae (family), Nolidae (family), Erebidae (family), Lycaenidae (family), Geometridae (family)	Hydroptilidae (family)	Stactobia beatensis (species)	[]	0	False
+BSNHM188-24	656	Limnephilidae (family)	Limnephilidae (family)	Potamophylax millenii (species)	[]	0	True
+BSNHM048-24	657	Muscidae (family), Tortricidae (family), Noctuidae (family), Rhyacophilidae (family)	Rhyacophilidae (family)	Rhyacophila trifasciata (species)	[]	0	True
+BSNHM023-24	657	Psychomyiidae (family)	Psychomyiidae (family)	Tinodes griseus (species)	[]	0	True
+BSNHM180-24	1	Syrphidae (family), Tachinidae (family), Noctuidae (family), Erebidae (family), Crambidae (family), Philopotamidae (family)	Philopotamidae (family)	Wormaldia mediana (species)	[]	0	False
+BSNHM038-24	580	Culicidae (family), Syrphidae (family), Tachinidae (family), Erebidae (family), Nymphalidae (family), Geometridae (family), Beraeidae (family)	Beraeidae (family)	Ernodes nigroauratus (species)	[20, 25, 53, 55, 67, 81, 89, 103, 106, 111, 125, 126, 135, 142]	0	False
+BSNHM041-24	321	Staphylinidae (family), Endomychidae (family), Calliphoridae (family), Tachinidae (family), Noctuidae (family), Nymphalidae (family)	Hydroptilidae (family)	Stactobia atra (species)	[]	0	False
+BSNHM071-24	657	Muscidae (family), Coleophoridae (family), Geometridae (family), Uraniidae (family), Rhyacophilidae (family)	Rhyacophilidae (family)	Rhyacophila angelieri (species)	[]	0	True
+BSNHM147-24	182	Limnephilidae (family)	Limnephilidae (family)	Limnephilus tauricus (species)	[]	0	False
+BSNHM147-24	480	Limnephilidae (family)	Limnephilidae (family)	Limnephilus tauricus (species)	[]	0	False
+BSNHM179-24	161	Limnephilidae (family)	Limnephilidae (family)	Drusus chapmani (species)	[]	0	False
+BSNHM179-24	104	Culicidae (family), Limnephilidae (family)	Limnephilidae (family)	Drusus chapmani (species)	[]	0	False
+BSNHM045-24	118	Limnephilidae (family)	Limnephilidae (family)	Rhadicoleptus ucenorum (species)	[33]	0	False
+BSNHM184-24	72	Perlodidae (family), Capniidae (family), Leuctridae (family), Calliphoridae (family), Corydalidae (family)	Perlodidae (family)	Isoperla viridinervis (species)	[]	0	False
+BSNHM069-24	657	Erebidae (family), Nymphalidae (family), Hesperiidae (family), Philopotamidae (family)	Philopotamidae (family)	Philopotamus corsicanus (species)	[]	0	True
+BSNHM006-24	655	Pieridae (family), Lycaenidae (family), Nymphalidae (family)	Hydroptilidae (family)	Stactobia malacantosa (species)	[]	0	False
+BSNHM099-24	30	Limnephilidae (family)	Limnephilidae (family)	Ecclisopteryx discoidea (species)	[]	0	False
+BSNHM157-24	130	Limnephilidae (family)	Limnephilidae (family)	Consorophylax montivagus (species)	[]	0	False
