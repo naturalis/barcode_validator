@@ -1,6 +1,6 @@
 from barcode_validator.config import Config
 from nbitk.Taxon import Taxon
-from typing import List, Optional
+from typing import List, Optional, Tuple
 import logging
 
 
@@ -17,16 +17,18 @@ class DNAAnalysisResult:
     def __init__(self, process_id):
         self.process_id: str = process_id
         self._seq_length: Optional[int] = None
+        self._full_length: Optional[int] = None
         self._obs_taxon: List[Taxon] = []
         self._exp_taxon: Optional[Taxon] = None
         self._species: Optional[Taxon] = None
         self._stop_codons = []
         self._ambiguities = None
+        self._full_ambiguities = None
 
     @property
     def seq_length(self) -> Optional[int]:
         """
-        Getter for the sequence length.
+        Getter for the sequence length within the marker region.
         :return: an integer representing the sequence length
         """
         return self._seq_length
@@ -34,13 +36,32 @@ class DNAAnalysisResult:
     @seq_length.setter
     def seq_length(self, value: int) -> None:
         """
-        Setter for the sequence length.
+        Setter for the sequence length within the marker region.
         :param value: an integer representing the sequence length
         :return:
         """
         if not isinstance(value, int) or value <= 0:
             raise ValueError("seq_length must be a positive integer")
         self._seq_length = value
+
+    @property
+    def full_length(self) -> Optional[int]:
+        """
+        Getter for the full sequence length.
+        :return: an integer representing the sequence length
+        """
+        return self._full_length
+
+    @full_length.setter
+    def full_length(self, value: int) -> None:
+        """
+        Setter for the full sequence length.
+        :param value: an integer representing the sequence length
+        :return:
+        """
+        if not isinstance(value, int) or value <= 0:
+            raise ValueError("full_length must be a positive integer")
+        self._full_length = value
 
     @property
     def obs_taxon(self) -> List[Taxon]:
@@ -133,7 +154,7 @@ class DNAAnalysisResult:
     @property
     def ambiguities(self) -> Optional[int]:
         """
-        Getter for the number of ambiguities.
+        Getter for the number of ambiguities within the marker region.
         :return: An integer representing the number of ambiguities
         """
         return self._ambiguities
@@ -141,13 +162,32 @@ class DNAAnalysisResult:
     @ambiguities.setter
     def ambiguities(self, n_ambiguities: int) -> None:
         """
-        Setter for the number of ambiguities.
+        Setter for the number of ambiguities within the marker region.
         :param n_ambiguities: An integer representing the number of ambiguities
         :return:
         """
         if not isinstance(n_ambiguities, int) or n_ambiguities < 0:
             raise ValueError("ambiguities must be a non-negative integer")
         self._ambiguities = n_ambiguities
+
+    @property
+    def full_ambiguities(self) -> Optional[int]:
+        """
+        Getter for the total number of ambiguities.
+        :return: An integer representing the number of ambiguities
+        """
+        return self._full_ambiguities
+
+    @full_ambiguities.setter
+    def full_ambiguities(self, n_ambiguities: int) -> None:
+        """
+        Setter for the total number of ambiguities.
+        :param n_ambiguities: An integer representing the number of ambiguities
+        :return:
+        """
+        if not isinstance(n_ambiguities, int) or n_ambiguities < 0:
+            raise ValueError("ambiguities must be a non-negative integer")
+        self._full_ambiguities = n_ambiguities
 
     def add_stop_codon(self, position: int) -> None:
         """
@@ -188,6 +228,96 @@ class DNAAnalysisResult:
         :return: A boolean indicating whether the sequence passes all checks
         """
         return self.check_length() and self.check_taxonomy() and self.check_pseudogene()
+
+    def calculate_ranks(self, verbosity: int = 2) -> Tuple[int, int, str]:
+        """
+        Calculate barcode_rank and full_rank, and generate messages based on verbosity.
+
+        :param verbosity: 1=errors only, 2=errors+warnings, 3=errors+warnings+info
+        :return: Tuple of (barcode_rank, full_rank, messages)
+        """
+        barcode_rank = 8
+        full_rank = 6
+        messages = []
+
+        # Calculate barcode_rank
+        if self.seq_length is not None and self.ambiguities is not None:
+            if self.seq_length >= 650 and self.ambiguities == 0:
+                barcode_rank = 1
+                if verbosity >= 3:
+                    messages.append("\U0001F947\U0001F31F BIN compliant, perfect")
+            elif self.seq_length >= 500 and self.ambiguities == 0:
+                barcode_rank = 2
+                if verbosity >= 3:
+                    messages.append("\U0001F947 BIN compliant")
+            elif self.seq_length >= 650 and 1 <= self.ambiguities <= 6:
+                barcode_rank = 3
+                if verbosity >= 3:
+                    messages.append("\U0001F948 BIN compliant")
+                if verbosity >= 2:
+                    messages.append("\u2753 Marker may be chimeric")
+            elif self.seq_length >= 500 and 1 <= self.ambiguities <= 6:
+                barcode_rank = 4
+                if verbosity >= 3:
+                    messages.append("\U0001F949 BIN compliant")
+                if verbosity >= 2:
+                    messages.append("\u2753 Marker may be chimeric")
+            elif 400 <= self.seq_length < 500 and self.ambiguities == 0:
+                barcode_rank = 5
+                if verbosity >= 3:
+                    messages.append("\u26A0 Useful marker sequence")
+                if verbosity >= 2:
+                    messages.append("\u2757 Not BIN compliant")
+            elif 300 <= self.seq_length < 400 and self.ambiguities == 0:
+                barcode_rank = 6
+                if verbosity >= 3:
+                    messages.append("\u26A0 Useful marker sequence")
+                if verbosity >= 2:
+                    messages.append("\u203C Not BIN compliant")
+            elif (self.seq_length < 300 and self.ambiguities == 0) or (
+                    self.seq_length < 500 and 1 <= self.ambiguities <= 6):
+                barcode_rank = 7
+                if verbosity >= 3:
+                    messages.append("\u26A0 Useful marker sequence")
+                if verbosity >= 2:
+                    messages.append("\u203C Not BIN compliant")
+
+        if barcode_rank == 8 and verbosity >= 1:
+            messages.append("\u26D4 Unacceptable marker sequence")
+
+        # Calculate full_rank
+        if self.full_length is not None and self.full_ambiguities is not None:
+            if self.full_length >= 1500 and self.full_ambiguities == 0:
+                full_rank = 1
+                if verbosity >= 3:
+                    messages.append("\U0001F947 Excellent full length, no ambiguities")
+            elif self.full_length >= 1000 and self.full_ambiguities == 0:
+                full_rank = 2
+                if verbosity >= 3:
+                    messages.append("\U0001F948 Good full length, no ambiguities")
+            elif self.full_length >= 1500 and 1 <= self.full_ambiguities < 15:
+                full_rank = 3
+                if verbosity >= 3:
+                    messages.append("\U0001F947 Excellent full length")
+                if verbosity >= 2:
+                    messages.append("\u2757 Some ambiguities in full sequence")
+            elif self.full_length >= 1000 and 1 <= self.full_ambiguities < 15:
+                full_rank = 4
+                if verbosity >= 3:
+                    messages.append("\U0001F948 Good full length")
+                if verbosity >= 2:
+                    messages.append("\u2757 Some ambiguities in full sequence")
+            elif self.full_length < 1000 and 0 <= self.full_ambiguities < 15:
+                full_rank = 5
+                if verbosity >= 3:
+                    messages.append("\U0001F949 Acceptable full length")
+                if self.full_ambiguities > 0 and verbosity >= 2:
+                    messages.append("\u2757 Some ambiguities in full sequence")
+
+        if full_rank == 6 and verbosity >= 1:
+            messages.append("\u26D4 Unacceptable full sequence")
+
+        return barcode_rank, full_rank, "\n".join(messages)
 
     def __str__(self) -> str:
         """
