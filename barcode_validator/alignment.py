@@ -86,11 +86,7 @@ def num_ambiguous(sequence):
     :return: The number of ambiguous bases in the sequence
     """
     logging.info("Calculating number of ambiguous bases in sequence")
-
-    # Clone the sequence, count the number of ambiguous bases
-    cloned_seq = deepcopy(sequence)
-    cloned_seq.letter_annotations = {}
-    return len([base for base in cloned_seq.seq if base not in 'acgtnACGTN-~?'])
+    return len([base for base in sequence.seq if base not in 'acgtnACGTN-~?'])
 
 
 def unalign_sequence(sequence):

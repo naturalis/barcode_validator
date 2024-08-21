@@ -20,9 +20,11 @@ def main(fasta_file_path, bold_sheet):
     # Open the FASTA file and process each record
     for process_id, record in parse_fasta(fasta_file_path):
 
-        # Instantiate result object with process ID
+        # Instantiate result object with process ID and calculate raw stats
         logging.info(f'Processing FASTA record {process_id}')
         result = DNAAnalysisResult(process_id)
+        result.full_length = len(record.seq)
+        result.full_ambiguities = num_ambiguous(record)
 
         # Lookup species Taxon from process_id
         result.species = get_tip_by_processid(process_id, bold_tree)
@@ -41,7 +43,7 @@ def main(fasta_file_path, bold_sheet):
         amino_acid_sequence = translate_sequence(aligned_sequence)
         result.stop_codons = get_stop_codons(amino_acid_sequence)
         result.seq_length = marker_seqlength(aligned_sequence)
-        result.ambiguities = num_ambiguous(record)
+        result.ambiguities = num_ambiguous(aligned_sequence)
 
         # Stringify the result
         print(result)
