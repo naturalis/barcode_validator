@@ -1,4 +1,3 @@
-from barcode_validator.config import Config
 from nbitk.Taxon import Taxon
 from typing import List, Optional, Tuple
 import logging
@@ -204,9 +203,7 @@ class DNAAnalysisResult:
         Check if the sequence length meets the minimum requirement.
         :return: A boolean indicating whether the sequence length is valid
         """
-        config = Config()
-        min_length = config.get('min_seq_length')
-        return self.seq_length >= min_length if self.seq_length is not None else False
+        return self.seq_length >= 500 if self.seq_length is not None else False
 
     def check_taxonomy(self) -> bool:
         """
