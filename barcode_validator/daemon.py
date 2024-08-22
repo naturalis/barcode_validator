@@ -5,6 +5,7 @@ import os
 import subprocess
 import logging
 import sqlite3
+import traceback
 import base64
 from datetime import datetime, timedelta
 from config import Config
@@ -139,7 +140,10 @@ def process_pr(config, validator, conn, pr_number, branch):
                       (datetime.now(), pr_number))
             conn.commit()
         except Exception as e:
-            logging.error(f"Error processing PR {pr_number}: {str(e)}")
+            error_msg = f"Error processing PR {pr_number}: {str(e)}\n"
+            error_msg += "Stack trace:\n"
+            error_msg += traceback.format_exc()
+            logging.error(error_msg)
             c.execute("UPDATE prs SET status = 'error', last_updated = ? WHERE pr_number = ?",
                       (datetime.now(), pr_number))
             conn.commit()
