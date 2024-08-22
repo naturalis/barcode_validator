@@ -4,6 +4,7 @@
 repo_location: ../
 repo_owner: naturalis
 repo_name: barcode_validator
+pr_db_file: ../examples/pr_status.db
 
 # Alignment configuration. This needs the location of an HMM file for the focal marker. This is used in conjunction with
 # `hmmalign` from the HMMER package to align the sequences to the HMM. The assumption is that the executable is in the
