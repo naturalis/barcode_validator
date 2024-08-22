@@ -10,13 +10,12 @@ from Bio.Phylo.BaseTree import Tree
 
 
 class BarcodeValidator:
-    def __init__(self, config_file: str):
+    def __init__(self, config: Config):
         """
         Initialize the BarcodeValidator object.
-        :param config_file: A path to a YAML configuration file
+        :param config: An instance of the Config class
         """
-        self.config = Config()
-        self.config.load_config(config_file)
+        self.config = config
         self.ncbi_tree: Optional[Tree] = None
         self.bold_tree: Optional[Tree] = None
 
