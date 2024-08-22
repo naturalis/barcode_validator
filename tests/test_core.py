@@ -21,7 +21,7 @@ def mock_config():
 
 @pytest.fixture
 def barcode_validator(mock_config):
-    return BarcodeValidator('dummy_config.yml')
+    return BarcodeValidator(mock_config)
 
 
 @pytest.fixture
