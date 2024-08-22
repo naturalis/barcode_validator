@@ -1,4 +1,5 @@
-examples/credentials.json
+# env.sh contains GITHUB_TOKEN and PYTHONPATH
+env.sh
 .idea
 
 # Byte-compiled / optimized / DLL files
