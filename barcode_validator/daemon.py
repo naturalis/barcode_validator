@@ -63,30 +63,44 @@ def run_validation(config, pr_number, branch, validator):
     :param validator: A BarcodeValidator object
     :return: A list of validation results
     """
+    logging.info(f"Starting validation for PR {pr_number}")
 
     # Go to local clone and fetch the PR
     repo_location = config.get('repo_location')
+    logging.info(f"Changing directory to {repo_location}")
     os.chdir(repo_location)
-    subprocess.run(['git', 'fetch', 'origin', f'{branch}:pr-{pr_number}'])
-    subprocess.run(['git', 'checkout', f'pr-{pr_number}'])
+
+    # Fetch the latest changes
+    logging.info(f"Fetching latest changes for PR {pr_number}")
+    run_git_command(['git', 'fetch', 'origin'], "Failed to fetch from origin")
+
+    # Create or reset the PR branch
+    pr_branch = f"pr-{pr_number}"
+    logging.info(f"Creating/resetting branch {pr_branch}")
+    run_git_command(['git', 'checkout', '-B', pr_branch, f'origin/{branch}'],
+                    f"Failed to create/reset branch {pr_branch}")
 
     # Get the FASTA files from the PR
+    logging.info(f"Getting files for PR {pr_number}")
     files = get_pr_files(config, pr_number)
     fasta_files = [f for f in files if f['filename'].endswith(('.fasta', '.fa', '.fas'))]
+    logging.info(f"Found {len(fasta_files)} FASTA files in PR {pr_number}")
 
     # Run the validation process for each FASTA file
     all_results = []
     for file in fasta_files:
+        logging.info(f"Processing file: {file['filename']}")
 
         # Fetch file content
         file_url = file['raw_url']
+        logging.info(f"Fetching file from {file_url}")
         response = requests.get(file_url, headers=headers)
         if response.status_code == 200:
-
             # Create directory if it doesn't exist
             os.makedirs(os.path.dirname(file['filename']), exist_ok=True)
 
             # Save file content
+            logging.info(f"Saving file content to {file['filename']}")
             with open(file['filename'], 'wb') as f:
                 f.write(response.content)
 
@@ -98,6 +112,7 @@ def run_validation(config, pr_number, branch, validator):
         else:
             logging.error(f"Failed to fetch file {file['filename']}: {response.status_code}")
 
+    logging.info(f"Validation complete for PR {pr_number}")
     return all_results
 
 
@@ -120,6 +135,15 @@ def post_comment(config, pr_number, results):
 
     payload = {'body': comment}
     requests.post(url, headers=headers, json=payload)
+
+
+def run_git_command(command, error_message):
+    """Run a git command and log any errors."""
+    result = subprocess.run(command, capture_output=True, text=True)
+    if result.returncode != 0:
+        logging.error(f"{error_message}: {result.stderr}")
+        raise RuntimeError(f"Git command failed: {' '.join(command)}")
+    return result.stdout
 
 
 def process_pr(config, validator, conn, pr_number, branch):
