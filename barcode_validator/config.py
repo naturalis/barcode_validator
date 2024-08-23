@@ -22,7 +22,6 @@ def exception_handler(exc_type, exc_value, exc_traceback):
 
 class Config:
     _instance = None
-    _initialized = False
 
     def __new__(cls):
         if cls._instance is None:
@@ -30,10 +29,15 @@ class Config:
         return cls._instance
 
     def __init__(self):
-        if not self._initialized:
+        if not hasattr(self, 'initialized'):
             self.config_data = None
             self.config_path = None
-            self._initialized = True
+            self.initialized = True
+
+    @classmethod
+    def reset(cls):
+        """Reset the singleton instance for testing purposes."""
+        cls._instance = None
 
     def load_config(self, config_path):
         """

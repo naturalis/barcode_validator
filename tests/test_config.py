@@ -118,6 +118,10 @@ def test_contains_method(config_instance, valid_config_data):
 
 
 def test_config_singleton():
+
+    # Reset the singleton instance
+    Config.reset()
+
     # Construct and check path to expected default config file
     current_dir = Path(__file__).parent
     default_config_path = current_dir.parent / 'config' / 'config.yml'
