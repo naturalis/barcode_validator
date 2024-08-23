@@ -13,7 +13,7 @@ class Config:
         return cls._instance
 
     def __init__(self):
-        if not hasattr(self, 'initialized'):
+        if not hasattr(self, 'initialized') or not self.initialized:
             self.config_data = None
             self.config_path = None
             self.initialized = False
