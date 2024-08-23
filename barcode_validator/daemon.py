@@ -116,7 +116,7 @@ def run_validation(config, pr_number, branch, validator):
     return all_results
 
 
-def post_comment(config, pr_number, results):
+def post_results(config, pr_number, results):
     """
     Post a comment to a pull request with the validation results.
     :param config: The Config object
@@ -124,15 +124,27 @@ def post_comment(config, pr_number, results):
     :param results: A list of validation results
     :return: None
     """
-    url = f'https://api.github.com/repos/{config.get("repo_owner")}/{config.get("repo_name")}/issues/{pr_number}/comments'
     comment = "## Validation Results\n\n"
     for file, result in results:
         comment += f"### {file}\n"
         barcode_rank, full_rank, messages = result.calculate_ranks(verbosity=3)
-        comment += f"Barcode Rank: {barcode_rank}\n"
-        comment += f"Full Rank: {full_rank}\n"
+        comment += f"- Process ID: {result.process_id}\n"
+        comment += f"- Barcode Rank: {barcode_rank}\n"
+        comment += f"- Full Rank: {full_rank}\n"
         comment += f"Messages:\n{messages}\n\n"
 
+    post_comment(config, pr_number, comment)
+
+
+def post_comment(config, pr_number, comment):
+    """
+    Post a comment to a pull request.
+    :param config: The Config object
+    :param pr_number: The pull request number
+    :param comment: The comment to post
+    :return: None
+    """
+    url = f'https://api.github.com/repos/{config.get("repo_owner")}/{config.get("repo_name")}/issues/{pr_number}/comments'
     payload = {'body': comment}
     requests.post(url, headers=headers, json=payload)
 
@@ -153,16 +165,27 @@ def process_pr(config, validator, conn, pr_number, branch):
 
     if row is None or row[0] == 'pending':
         try:
+
+            # Start processing the PR
             c.execute("INSERT OR REPLACE INTO prs (pr_number, status, last_updated) VALUES (?, 'processing', ?)",
                       (pr_number, datetime.now()))
             conn.commit()
+            logging.info(f"Changed status of PR {pr_number} to 'processing'")
+            post_comment(config, pr_number, "\u1F916 - Hi! I'm barcode-validator and I'm going to validate the FASTA "
+                                            "files in this PR. Please wait a moment while I process the files.")
 
+            # Run the validation process
             results = run_validation(config, pr_number, branch, validator)
-            post_comment(config, pr_number, results)
+            post_results(config, pr_number, results)
 
+            # Update the PR status
             c.execute("UPDATE prs SET status = 'completed', last_updated = ? WHERE pr_number = ?",
                       (datetime.now(), pr_number))
             conn.commit()
+            logging.info(f"Changed status of PR {pr_number} to 'completed'")
+            post_comment(config, pr_number, "\u1F916 - Validation complete. If all looks good, "
+                                            "notify @rvosa to merge this PR.")
+
         except Exception as e:
             error_msg = f"Error processing PR {pr_number}: {str(e)}\n"
             error_msg += "Stack trace:\n"
@@ -171,6 +194,7 @@ def process_pr(config, validator, conn, pr_number, branch):
             c.execute("UPDATE prs SET status = 'error', last_updated = ? WHERE pr_number = ?",
                       (datetime.now(), pr_number))
             conn.commit()
+            post_comment(config, pr_number, f"\u1F916 - {error_msg}")
 
 
 def main(config_file, verbosity):
@@ -185,10 +209,11 @@ def main(config_file, verbosity):
     config = Config()
     config.load_config(config_file)
     config.setup_logging(verbosity)
+    logging.info("*** Barcode Validator Daemon starting ***")
 
     # Set up the database connection for tracking PRs
     try:
-        logging.info(f"Going to initialize database at {config.get('pr_db_file')}")
+        logging.info(f"Going to initialize PR database at {config.get('pr_db_file')}")
         conn = setup_database(config)
         logging.info("Database initialized")
     except Exception as e:
@@ -219,6 +244,7 @@ def main(config_file, verbosity):
 
             # Iterate over the files in the PR and process if any are FASTA files
             if any(f['filename'].endswith(('.fasta', '.fa', '.fas')) for f in files):
+                logging.info(f"Processing PR {pr['number']}")
                 process_pr(config, validator, conn, pr_number, pr['head']['ref'])
 
         # Clean up old completed PRs
