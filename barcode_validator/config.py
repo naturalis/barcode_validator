@@ -124,7 +124,7 @@ class Config:
         :return: str: A string representation of the Config object.
         """
         return (f"Config Object:\n"
-                f"  Initialized: {self._initialized}\n"
+                f"  Initialized: {self.initialized}\n"
                 f"  Config Path: {self.config_path}\n"
                 f"  Config Data: {self.config_data}")
 
@@ -133,6 +133,6 @@ class Config:
         Return a string representation of the Config object.
         :return: str: A string representation of the Config object.
         """
-        return (f"Config(_initialized={self._initialized}, "
+        return (f"Config(_initialized={self.initialized}, "
                 f"config_path='{self.config_path}', "
                 f"config_data={self.config_data})")
