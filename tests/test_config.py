@@ -1,6 +1,7 @@
 import pytest
 import os
 import yaml
+from pathlib import Path
 from unittest.mock import patch, mock_open
 from barcode_validator.config import Config
 
@@ -114,3 +115,22 @@ def test_contains_method(config_instance, valid_config_data):
 
     assert "repo_owner" in config_instance
     assert "non_existent_key" not in config_instance
+
+
+def test_config_singleton():
+    # Construct and check path to expected default config file
+    current_dir = Path(__file__).parent
+    default_config_path = current_dir.parent / 'config' / 'config.yml'
+    if not default_config_path.exists():
+        raise FileNotFoundError(f"Default config file not found at {default_config_path}")
+
+    # Load the config file twice
+    config1 = Config()
+    config1.load_config(str(default_config_path))
+    config2 = Config()
+
+    # Additional checks
+    assert config1 is config2, "Config objects are not the same instance"
+    assert config1.config_path == str(default_config_path), "Config path is incorrect"
+    assert config1.config_data is not None, "Config data is None"
+    assert 'constrain' in config1.config_data, "'constrain' key is missing from config data"
