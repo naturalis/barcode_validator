@@ -126,13 +126,29 @@ def post_results(config, pr_number, results):
     """
     comment = "## Validation Results\n\n"
     for file, result in results:
-        comment += f"### {file}\n"
+        comment += f"## {file}\n"
         barcode_rank, full_rank, messages = result.calculate_ranks(verbosity=3)
-        comment += f"- Process ID: {result.process_id}\n"
-        comment += f"- Barcode Rank: {barcode_rank}\n"
-        comment += f"- Full Rank: {full_rank}\n"
-        comment += f"Messages:\n{messages}\n\n"
-
+        status_emoji = "✅" if result.passes_all_checks() else "❗"
+        comment += f"""
+---
+### {status_emoji} Process ID: {result.process_id}
+- Taxonomic check passed: **{result.check_taxonomy()}**
+  - Expected species as registered at BOLD: {result.species}
+  - Expected {config.get('level')} as registered at BOLD: {result.exp_taxon}
+  - Observed BLAST hits at {config.get('level')} level: {result.obs_taxon}
+- BIN-compliant sequence length passed: **{result.check_length()}**
+  - Net length aligned to marker region: {result.length}  
+  - Full sequence length: {result.full_length}
+- Sequence quality check passed: **{result.check_seq_quality()}**
+  - Ambiguities in marker region: {result.ambiguities}
+  - Ambiguities in full sequence: {result.full_ambiguities}
+  - Stop codons: {len(result.stop_codons)}
+- Rankings:
+  - Barcode rank: {barcode_rank}
+  - Full rank: {full_rank}
+  - Messages: 
+    {messages}
+"""
     post_comment(config, pr_number, comment)
 
 
