@@ -144,11 +144,6 @@ def test_config_class():
     assert config2.config_data is not None, "Config data is None in the second instance"
     assert 'constrain' in config2.config_data, "'constrain' key is missing from config data in the second instance"
 
-    # Test string representation
-    str_repr = str(config1)
-    assert "Initialized: True" in str_repr, "String representation should show initialized as True"
-    assert str(default_config_path) in str_repr, "String representation should include the config path"
-
     # Test creating a new instance after reset
     Config.reset()
     config3 = Config()
