@@ -211,6 +211,7 @@ def main(config_file, verbosity):
     config.load_config(config_file)
     config.setup_logging(verbosity)
     logging.info("*** Barcode Validator Daemon starting ***")
+    logging.info(config)
 
     # Set up the database connection for tracking PRs
     try:
