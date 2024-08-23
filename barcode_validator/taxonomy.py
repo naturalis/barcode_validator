@@ -42,6 +42,7 @@ def build_constraint(bold_tip: Taxon, bold_tree: BaseTree, ncbi_tree: BaseTree) 
 
     # Find the node at the specified taxonomic rank in the BOLD lineage that subtends the tip
     level = str(config.get('constrain')).lower()
+    logging.info(f"Going to traverse BOLD taxonomy for the {level} to which {bold_tip.name} belongs")
     bold_anc = next(node for node in bold_tree.root.get_path(bold_tip) if node.taxonomic_rank == level)
     logging.info(f"BOLD {bold_tip.taxonomic_rank} {bold_tip.name} is member of {level} {bold_anc.name}")
 
@@ -70,6 +71,7 @@ def read_bold_taxonomy(spreadsheet):
     :return: A BaseTree object with Taxon nodes
     """
     # Read the Excel file into a BytesIO object
+    logging.info(f"Reading BOLD taxonomy from {spreadsheet}")
     with open(spreadsheet, 'rb') as file:
         excel_data = io.BytesIO(file.read())
 
@@ -85,7 +87,7 @@ def read_ncbi_taxonomy(taxdump):
     :param taxdump: A path to the taxdump tarball
     :return: A BaseTree object with Taxon nodes
     """
-    logging.info("Reading NCBI taxonomy")
+    logging.info(f"Reading NCBI taxonomy from {taxdump}")
     tar = tarfile.open(taxdump, "r:gz")
     return NCBIParser(tar).parse()
 
