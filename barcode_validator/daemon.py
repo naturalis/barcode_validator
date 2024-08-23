@@ -137,7 +137,7 @@ def post_results(config, pr_number, results):
   - Expected {config.get('level')} as registered at BOLD: {result.exp_taxon}
   - Observed BLAST hits at {config.get('level')} level: {result.obs_taxon}
 - BIN-compliant sequence length passed: **{result.check_length()}**
-  - Net length aligned to marker region: {result.length}  
+  - Net length aligned to marker region: {result.seq_length}  
   - Full sequence length: {result.full_length}
 - Sequence quality check passed: **{result.check_seq_quality()}**
   - Ambiguities in marker region: {result.ambiguities}
