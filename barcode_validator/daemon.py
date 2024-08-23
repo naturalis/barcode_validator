@@ -171,8 +171,9 @@ def process_pr(config, validator, conn, pr_number, branch):
                       (pr_number, datetime.now()))
             conn.commit()
             logging.info(f"Changed status of PR {pr_number} to 'processing'")
-            post_comment(config, pr_number, "\u1F916 - Hi! I'm barcode-validator and I'm going to validate the FASTA "
-                                            "files in this PR. Please wait a moment while I process the files.")
+            post_comment(config, pr_number, "\U0001F916 - Hi! This is an automated message from the barcode validation "
+                                            "robot. I'm going to validate the FASTA files in this PR. Please wait a "
+                                            "moment while I process the files.")
 
             # Run the validation process
             results = run_validation(config, pr_number, branch, validator)
@@ -183,7 +184,7 @@ def process_pr(config, validator, conn, pr_number, branch):
                       (datetime.now(), pr_number))
             conn.commit()
             logging.info(f"Changed status of PR {pr_number} to 'completed'")
-            post_comment(config, pr_number, "\u1F916 - Validation complete. If all looks good, "
+            post_comment(config, pr_number, "\U0001F916 - Validation complete. If all looks good, "
                                             "notify @rvosa to merge this PR.")
 
         except Exception as e:
@@ -194,7 +195,7 @@ def process_pr(config, validator, conn, pr_number, branch):
             c.execute("UPDATE prs SET status = 'error', last_updated = ? WHERE pr_number = ?",
                       (datetime.now(), pr_number))
             conn.commit()
-            post_comment(config, pr_number, f"\u1F916 - {error_msg}")
+            post_comment(config, pr_number, f"\U0001F916 - {error_msg}")
 
 
 def main(config_file, verbosity):
@@ -248,10 +249,10 @@ def main(config_file, verbosity):
                 process_pr(config, validator, conn, pr_number, pr['head']['ref'])
 
         # Clean up old completed PRs
-#        c = conn.cursor()
-#        c.execute("DELETE FROM prs WHERE status = 'completed' AND last_updated < ?",
-#                  (datetime.now() - timedelta(days=7),))
-#        conn.commit()
+        #        c = conn.cursor()
+        #        c.execute("DELETE FROM prs WHERE status = 'completed' AND last_updated < ?",
+        #                  (datetime.now() - timedelta(days=7),))
+        #        conn.commit()
 
         time.sleep(POLL_INTERVAL)
 
