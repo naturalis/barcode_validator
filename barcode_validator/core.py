@@ -36,7 +36,7 @@ class BarcodeValidator:
         :return: A list of DNAAnalysisResult objects
         """
         results = []
-        for process_id, record in parse_fasta(fasta_file_path):
+        for process_id, record, json_config in parse_fasta(fasta_file_path):
             result = self.validate_record(process_id, record)
             results.append(result)
         return results
