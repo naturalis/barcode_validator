@@ -188,8 +188,8 @@ def process_pr(config, validator, conn, pr_number, branch):
             conn.commit()
             logging.info(f"Changed status of PR {pr_number} to 'processing'")
             post_comment(config, pr_number, "\U0001F916 - Hi! This is an automated message from the barcode validation "
-                                            "robot. I'm going to validate the FASTA files in this PR. Please wait "
-                                            "while while I process the files. This takes about two minutes per "
+                                            "robot. I'm going to validate the FASTA files in your request. Please wait "
+                                            "while I process the files. This takes about two minutes per "
                                             "sequence.")
 
             # Run the validation process
