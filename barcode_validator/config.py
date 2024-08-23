@@ -26,13 +26,13 @@ class Config:
     def __new__(cls):
         if cls._instance is None:
             cls._instance = super(Config, cls).__new__(cls)
+            cls._instance._initialize()
         return cls._instance
 
-    def __init__(self):
-        if not hasattr(self, 'initialized'):
-            self.config_data = None
-            self.config_path = None
-            self.initialized = True
+    def _initialize(self):
+        self.config_data = None
+        self.config_path = None
+        self.initialized = False
 
     @classmethod
     def reset(cls):
@@ -42,9 +42,9 @@ class Config:
     def load_config(self, config_path):
         """
         Load the configuration from a YAML file.
-        :param: config_path (str): Path to the configuration YAML file.
-        :raise: FileNotFoundError: If the config file doesn't exist.
-        yaml.YAMLError: If there's an error parsing the YAML file.
+        :param config_path: Path to the configuration YAML file.
+        :raise FileNotFoundError: If the config file doesn't exist.
+        :raise yaml.YAMLError: If there's an error parsing the YAML file.
         """
         self.config_path = config_path
         if not os.path.exists(config_path):
@@ -58,6 +58,7 @@ class Config:
 
         # Convert relative paths to absolute paths
         self._process_relative_paths(os.path.dirname(os.path.abspath(config_path)))
+        self.initialized = True
 
     def _process_relative_paths(self, config_dir):
         """

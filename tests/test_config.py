@@ -117,24 +117,40 @@ def test_contains_method(config_instance, valid_config_data):
     assert "non_existent_key" not in config_instance
 
 
-def test_config_singleton():
-
-    # Reset the singleton instance
+def test_config_class():
+    # Reset the singleton for testing purposes
     Config.reset()
 
-    # Construct and check path to expected default config file
+    # Get the directory of the current file (assumed to be in the tests folder)
     current_dir = Path(__file__).parent
     default_config_path = current_dir.parent / 'config' / 'config.yml'
-    if not default_config_path.exists():
-        raise FileNotFoundError(f"Default config file not found at {default_config_path}")
 
-    # Load the config file twice
+    # Initialize the first instance
     config1 = Config()
+    assert not config1.initialized, "Config should not be initialized before loading"
+
     config1.load_config(str(default_config_path))
+    assert config1.initialized, "Config should be initialized after loading"
+
+    # Create a second instance
     config2 = Config()
 
-    # Additional checks
+    # They should be the same object and both initialized
     assert config1 is config2, "Config objects are not the same instance"
-    assert config1.config_path == str(default_config_path), "Config path is incorrect"
-    assert config1.config_data is not None, "Config data is None"
-    assert 'constrain' in config1.config_data, "'constrain' key is missing from config data"
+    assert config2.initialized, "Second instance should be initialized"
+
+    # Check if the second instance has the loaded configuration
+    assert config2.config_path == str(default_config_path), "Config path is not preserved in the second instance"
+    assert config2.config_data is not None, "Config data is None in the second instance"
+    assert 'constrain' in config2.config_data, "'constrain' key is missing from config data in the second instance"
+
+    # Test string representation
+    str_repr = str(config1)
+    assert "Initialized: True" in str_repr, "String representation should show initialized as True"
+    assert str(default_config_path) in str_repr, "String representation should include the config path"
+
+    # Test creating a new instance after reset
+    Config.reset()
+    config3 = Config()
+    assert not config3.initialized, "New instance after reset should not be initialized"
+    assert config3 is not config1, "New instance after reset should be a different object"
