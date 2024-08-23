@@ -3,7 +3,6 @@ import tempfile
 import subprocess
 import warnings
 from copy import deepcopy
-from barcode_validator.config import Config
 from Bio import SeqIO
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
@@ -27,7 +26,7 @@ def align_to_hmm(sequence, config):
     configuration file as 'hmm_file'. hmmalign is run with the '--trim' option to remove any
     leading or trailing ends of the input sequence that fall outside the HMM. The output is
     parsed as a Stockholm format file and returned as a SeqRecord object, i.e. it has the sequence
-    annotations (which include per-residue confidence scores) preserved.
+    annotations (which include per-residue posterior probabilities) preserved.
     :param sequence: A BioPython SeqRecord object
     :param config: An instance of the Config class
     :return: A BioPython SeqRecord object containing the aligned sequence
@@ -63,7 +62,7 @@ def align_to_hmm(sequence, config):
 def marker_seqlength(sequence):
     """
     Calculate the length of the sequence within the marker region,
-    excluding gaps and ambiguous bases.
+    excluding gaps, but including Ns and IUAPC ambiguity codes. Both '-' and '~' are considered gaps.
     :param sequence: A BioPython SeqRecord object
     :return: The length of the sequence within the marker region
     """
@@ -72,8 +71,7 @@ def marker_seqlength(sequence):
     # Operate on the cloned sequence string directly
     raw_seq = str(sequence.seq)
     raw_seq = raw_seq.replace('-', '')
-    raw_seq = raw_seq.replace('N', '')
-    raw_seq = raw_seq.replace('n', '')
+    raw_seq = raw_seq.replace('~', '')
 
     logging.debug(f"Within marker sequence length: {len(raw_seq)}")
     return len(raw_seq)
@@ -81,17 +79,23 @@ def marker_seqlength(sequence):
 
 def num_ambiguous(sequence):
     """
-    Calculate the number of ambiguous bases in a sequence.
+    Calculate the number of ambiguous bases in a sequence. This is a count of all symbols that are not
+    acgtACGT-~ or, in other words, all IUPAC single character ambiguity letters including n/N.
+
     :param sequence: A BioPython SeqRecord object
     :return: The number of ambiguous bases in the sequence
     """
     logging.info("Calculating number of ambiguous bases in sequence")
-    return len([base for base in sequence.seq if base not in 'acgtnACGTN-~?'])
+    return len([base for base in sequence.seq if base not in 'acgtACGT-~'])
 
 
 def unalign_sequence(sequence):
     """
-    Remove gaps from an aligned sequence.
+    Remove gaps, i.e. '-' symbols, from an aligned sequence.
+    Returns a new instance of the sequence with gaps removed.
+    Note that, in the case of sequences aligned with hmmalign,
+    this probably has undefined (i.e. bad) consequences for the per-residue
+    posterior probability vector.
 
     :param sequence: A BioPython SeqRecord object
     :return: A new SeqRecord object with gaps removed
@@ -99,7 +103,7 @@ def unalign_sequence(sequence):
     logging.info("Removing gaps from aligned sequence")
     if isinstance(sequence, SeqRecord):
         # Convert Seq to string, remove gaps, then convert back to Seq
-        unaligned_sequence = str(sequence.seq).replace('-', '')
+        unaligned_sequence = str(sequence.seq).replace('-', '').replace('~', '')
         return SeqRecord(
             Seq(unaligned_sequence),
             id=sequence.id,
@@ -108,10 +112,10 @@ def unalign_sequence(sequence):
         )
     elif isinstance(sequence, Seq):
         # If it's just a Seq object, convert to string, remove gaps, then back to Seq
-        return Seq(str(sequence).replace('-', ''))
+        return Seq(str(sequence).replace('-', '').replace('~', ''))
     elif isinstance(sequence, str):
         # If it's a string, just remove the gaps
-        return sequence.replace('-', '')
+        return sequence.replace('-', '').replace('~', '')
     else:
         raise TypeError(f"Unexpected type for sequence: {type(sequence)}")
 
@@ -124,7 +128,7 @@ def translate_sequence(dna_sequence, config):
     the first base of the DNA sequence is removed to ensure that the sequence length is a multiple of 3 (i.e.
     the canonical 658bp COI-5P marker is out of phase by one base).
     :param dna_sequence: A BioPython SeqRecord object containing a DNA sequence
-
+    :param config: An instance of the Config class
     :return: A BioPython SeqRecord object containing the translated amino acid sequence
     """
     logging.info("Translating DNA sequence to amino acids")
@@ -171,6 +175,8 @@ def parse_fasta(file_path):
     Parse a FASTA file and yield the process ID and sequence record for each entry.
     The process ID is the first part of the sequence ID, which is assumed to be separated by an underscore.
 
+    TODO: attempt to parse anything after the first { to the end of the line as JSON configuration data
+
     :param file_path: Local path to the FASTA file
     :yield: A tuple containing the process ID and the sequence record for each entry
     """
@@ -186,7 +192,7 @@ def parse_fasta(file_path):
 
 def get_stop_codons(amino_acid_sequence):
     """
-    Get the positions of stop codons in an amino acid sequence.
+    Get the positions of stop codons in an amino acid sequence, which are represented by the '*' character.
     :param amino_acid_sequence: A BioPython SeqRecord object containing an amino acid sequence
     :return: A list of integers representing the positions of stop codons in the sequence
     """
