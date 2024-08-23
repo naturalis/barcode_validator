@@ -19,8 +19,6 @@ class Config:
             self.initialized = False
 
     def load_config(self, config_path):
-        if self.initialized:
-            return  # Config already loaded, do nothing
 
         self.config_path = config_path
         if not os.path.exists(config_path):
