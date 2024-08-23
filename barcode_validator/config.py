@@ -2,43 +2,38 @@ import os
 import sys
 import yaml
 import logging
-from threading import Lock
 
 
 class Config:
     _instance = None
-    _lock = Lock()
 
     def __new__(cls):
-        with cls._lock:
-            if cls._instance is None:
-                cls._instance = super(Config, cls).__new__(cls)
-                cls._instance._initialize()
+        if cls._instance is None:
+            cls._instance = super(Config, cls).__new__(cls)
         return cls._instance
 
-    def _initialize(self):
-        self.config_data = None
-        self.config_path = None
-        self.initialized = False
-        self._load_lock = Lock()
+    def __init__(self):
+        if not hasattr(self, 'initialized'):
+            self.config_data = None
+            self.config_path = None
+            self.initialized = False
 
     def load_config(self, config_path):
-        with self._load_lock:
-            if self.initialized:
-                return  # Config already loaded, do nothing
+        if self.initialized:
+            return  # Config already loaded, do nothing
 
-            self.config_path = config_path
-            if not os.path.exists(config_path):
-                raise FileNotFoundError(f"Config file not found: {config_path}")
+        self.config_path = config_path
+        if not os.path.exists(config_path):
+            raise FileNotFoundError(f"Config file not found: {config_path}")
 
-            with open(config_path, 'r') as config_file:
-                try:
-                    self.config_data = yaml.safe_load(config_file)
-                except yaml.YAMLError as e:
-                    raise yaml.YAMLError(f"Error parsing config file: {e}")
+        with open(config_path, 'r') as config_file:
+            try:
+                self.config_data = yaml.safe_load(config_file)
+            except yaml.YAMLError as e:
+                raise yaml.YAMLError(f"Error parsing config file: {e}")
 
-            self._process_relative_paths(os.path.dirname(os.path.abspath(config_path)))
-            self.initialized = True
+        self._process_relative_paths(os.path.dirname(os.path.abspath(config_path)))
+        self.initialized = True
 
     def _process_relative_paths(self, config_dir):
         for key, value in self.config_data.items():
@@ -69,9 +64,8 @@ class Config:
 
     @classmethod
     def reset(cls):
-        with cls._lock:
-            if cls._instance is not None:
-                cls._instance = None
+        if cls._instance is not None:
+            cls._instance = None
 
     def setup_logging(self, cmd_log_level=None):
         if not self.initialized:
