@@ -1,7 +1,7 @@
 import json
 from nbitk.Taxon import Taxon
 from typing import Dict, List, Any
-from result import DNAAnalysisResult  # Assuming this is the import for your DNAAnalysisResult class
+from barcode_validator.result import DNAAnalysisResult
 
 
 class DNAAnalysisEncoder(json.JSONEncoder):
