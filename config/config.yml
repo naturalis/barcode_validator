@@ -1,7 +1,7 @@
 # Detauls of the repository. This is where the daemon will find local files in pull requests and how it will compose
 # the URLs to the various pull request service endpoints. For the endpoints we are quite intimately tied to GitHub
 # and the GitHub API (e.g. in the structure of the JSON that is returned), so this is not very flexible.
-repo_location: ../
+repo_location: ./
 repo_owner: naturalis
 repo_name: barcode_validator
 pr_db_file: ../examples/pr_status.db

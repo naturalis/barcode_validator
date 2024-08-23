@@ -7,7 +7,6 @@ import os
 import tarfile
 from Bio import SeqIO
 from Bio.Phylo import BaseTree
-from barcode_validator.config import Config
 from nbitk.Phylo.BOLDXLSXIO import Parser as BOLDParser
 from nbitk.Phylo.NCBITaxdmp import Parser as NCBIParser
 from nbitk.Taxon import Taxon
@@ -27,7 +26,7 @@ def get_tip_by_processid(process_id, tree):
     return None
 
 
-def build_constraint(bold_tip: Taxon, bold_tree: BaseTree, ncbi_tree: BaseTree) -> str:
+def build_constraint(bold_tip: Taxon, bold_tree: BaseTree, ncbi_tree: BaseTree, constraint_level: str) -> str:
     """
     Given a tip from the BOLD tree, looks up its path to the root, fetching the interior node
     at the specified taxonomic rank. Then, traverses the NCBI tree to find the corresponding
@@ -36,18 +35,18 @@ def build_constraint(bold_tip: Taxon, bold_tree: BaseTree, ncbi_tree: BaseTree) 
     :param bold_tip: A Taxon object from the BOLD tree
     :param bold_tree: A BaseTree object created by BOLDParser()
     :param ncbi_tree: A BaseTree object created by NCBIParser()
+    :param constraint_level: A taxonomic rank to constrain the search to
     :return: An NCBI taxon ID
     """
-    config = Config()
 
     # Find the node at the specified taxonomic rank in the BOLD lineage that subtends the tip
-    level = str(config.get('constrain')).lower()
-    bold_anc = next(node for node in bold_tree.get_path(bold_tip) if node.taxonomic_rank == level)
-    logging.info(f"BOLD {bold_tip.taxonomic_rank} {bold_tip.name} is member of {level} {bold_anc.name}")
+    logging.info(f"Going to traverse BOLD taxonomy for the {constraint_level} to which {bold_tip} belongs")
+    bold_anc = next(node for node in bold_tree.root.get_path(bold_tip) if node.taxonomic_rank == constraint_level)
+    logging.info(f"BOLD {bold_tip.taxonomic_rank} {bold_tip.name} is member of {constraint_level} {bold_anc.name}")
 
     # Find the corresponding node at the same rank in the NCBI tree
     ncbi_anc = next(node for node in ncbi_tree.get_nonterminals()
-                    if node.name == bold_anc.name and node.taxonomic_rank == level)
+                    if node.name == bold_anc.name and node.taxonomic_rank == constraint_level)
 
     # Return or die
     if ncbi_anc:
@@ -70,6 +69,7 @@ def read_bold_taxonomy(spreadsheet):
     :return: A BaseTree object with Taxon nodes
     """
     # Read the Excel file into a BytesIO object
+    logging.info(f"Reading BOLD taxonomy from {spreadsheet}")
     with open(spreadsheet, 'rb') as file:
         excel_data = io.BytesIO(file.read())
 
@@ -85,7 +85,7 @@ def read_ncbi_taxonomy(taxdump):
     :param taxdump: A path to the taxdump tarball
     :return: A BaseTree object with Taxon nodes
     """
-    logging.info("Reading NCBI taxonomy")
+    logging.info(f"Reading NCBI taxonomy from {taxdump}")
     tar = tarfile.open(taxdump, "r:gz")
     return NCBIParser(tar).parse()
 
@@ -104,15 +104,17 @@ def _log_output(stream, log_level, processid):
             logging.log(log_level, f"BLASTN output for {processid}: {msg}")
 
 
-def run_localblast(sequence, ncbi_tree, bold_tree):
+def run_localblast(sequence, ncbi_tree, bold_tree, config):
     """
     Run a local BLASTN search against a local database and return the taxonomic lineages of the hits.
     :param sequence: A Bio.SeqRecord object
     :param ncbi_tree: A Bio.Phylo.BaseTree object created by NCBIParser()
     :param bold_tree: A Bio.Phylo.BaseTree object created by BOLDParser()
+    :param config: A Config object
     :return: A list of distinct higher taxa at the specified rank
     """
     logging.info("Running local BLASTN...")
+    level = config.get('constrain')
 
     # Create a temporary file for the input sequence
     with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.fasta') as temp_input:
@@ -120,13 +122,12 @@ def run_localblast(sequence, ncbi_tree, bold_tree):
         temp_input_name = temp_input.name
 
     # Lookup the higher level taxon to limit the search to
-    constraint = build_constraint(get_tip_by_processid(sequence.id, bold_tree), bold_tree, ncbi_tree)
+    constraint = build_constraint(get_tip_by_processid(sequence.id, bold_tree), bold_tree, ncbi_tree, level)
 
     # Specify the output file name, as blast TSV (see -outfmt option)
     blast_result = f"{temp_input_name}.tsv"
 
     # Run local BLASTN
-    config = Config()
     os.environ['BLASTDB_LMDB_MAP_SIZE'] = str(config.get('BLASTDB_LMDB_MAP_SIZE'))
     os.environ['BLASTDB'] = str(config.get('BLASTDB'))
     try:
@@ -150,7 +151,7 @@ def run_localblast(sequence, ncbi_tree, bold_tree):
         return_code = process.wait()
         if return_code != 0:
             raise subprocess.CalledProcessError(return_code, 'blastn')
-        return parse_blast_result(blast_result, ncbi_tree)
+        return parse_blast_result(blast_result, ncbi_tree, config)
 
     # Handle exception
     except subprocess.CalledProcessError as e:
@@ -158,11 +159,12 @@ def run_localblast(sequence, ncbi_tree, bold_tree):
         raise
 
 
-def parse_blast_result(blast_result, tree):
+def parse_blast_result(blast_result, tree, config):
     """
     Parse the BLAST result file and return the distinct higher taxa that sit at the configured taxonomic level.
     :param blast_result: A path to the BLAST result file
     :param tree: A Bio.Phylo.BaseTree object created by NCBIParser()
+    :param config: A Config object
     :return: A list of distinct higher taxa at the specified rank
     """
     # Parse BLAST result
@@ -176,20 +178,20 @@ def parse_blast_result(blast_result, tree):
                 distinct_taxids.update(taxid.strip() for taxid in taxids if taxid.strip())
     logging.info(f'{len(distinct_taxids)} distinct taxids found in BLAST result')
     logging.debug(distinct_taxids)
-    return collect_higher_taxa(distinct_taxids, tree)
+    return collect_higher_taxa(distinct_taxids, tree, config)
 
 
-def collect_higher_taxa(taxids, tree):
+def collect_higher_taxa(taxids, tree, config):
     """
     Collect the distinct higher taxa that sit at the configured taxonomic level for an input set of NCBI taxids. For
     example, if the taxonomic level is 'family', the function will return a list of distinct families that are
     encountered in the traversal of the tree from the tips with the specified taxids to the root.
     :param taxids: A set of NCBI taxids
     :param tree: A Bio.Phylo.BaseTree object created by NCBIParser()
+    :param config: A Config object
     :return: A list of distinct higher taxa at the specified rank
     """
     tips = []
-    config = Config()
 
     # Iterate over all tips in the NCBI taxonomy tree
     # to collect all tips with the specified taxids

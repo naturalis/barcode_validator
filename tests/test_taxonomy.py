@@ -45,6 +45,13 @@ def test_bold_tree_ancestry(bold_tree):
     assert class_ancestor.name == "Insecta"
 
 
+def test_regression_1(bold_tree):
+    process_id = "BGENL191-23"
+    tip = get_tip_by_processid(process_id, bold_tree)
+    class_ancestor = next(node for node in bold_tree.root.get_path(tip) if node.taxonomic_rank == "class")
+    assert class_ancestor.name == "Insecta"
+
+
 def test_ncbi_tree_structure(ncbi_tree):
     insecta_node = next(node for node in ncbi_tree.get_nonterminals()
                         if node.name == "Insecta" and node.taxonomic_rank == "class")

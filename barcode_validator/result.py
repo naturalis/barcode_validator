@@ -219,12 +219,26 @@ class DNAAnalysisResult:
         """
         return len(self.stop_codons) == 0
 
+    def check_ambiguities(self) -> bool:
+        """
+        Check if the sequence contains ambiguities, i.e. if the number of ambiguities is zero.
+        :return: A boolean indicating whether the sequence contains ambiguities
+        """
+        return self.ambiguities == 0
+
+    def check_seq_quality(self) -> bool:
+        """
+        Check if the sequence passes the quality checks for ambiguities and early stop codons
+        :return: A boolean indicating whether the sequence passes all checks
+        """
+        return self.check_pseudogene() and self.check_ambiguities()
+
     def passes_all_checks(self) -> bool:
         """
         Check if the sequence passes all quality checks.
         :return: A boolean indicating whether the sequence passes all checks
         """
-        return self.check_length() and self.check_taxonomy() and self.check_pseudogene()
+        return self.check_length() and self.check_taxonomy() and self.check_seq_quality()
 
     def calculate_ranks(self, verbosity: int = 2) -> Tuple[int, int, str]:
         """
