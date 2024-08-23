@@ -99,6 +99,22 @@ def test_load_config_invalid_yaml(config_instance):
                 config_instance.load_config("dummy_path")
 
 
+def test_local_instance(config_instance, valid_config_data):
+    with patch("builtins.open", mock_open(read_data=yaml.dump(valid_config_data))):
+        with patch("os.path.exists", return_value=True):
+            config_instance.load_config("dummy_path")
+
+    # Create a local instance, i.e. a deep copy detached from the global singleton
+    local_config = config_instance.detach()
+
+    # Modify the local configuration
+    local_config.set('custom_key', 'custom_value')
+
+    # The global configuration remains unchanged
+    assert 'custom_key' not in config_instance.config_data
+    assert local_config.get('custom_key') == 'custom_value'
+
+
 def test_get_nonexistent_key(config_instance, valid_config_data):
     with patch("builtins.open", mock_open(read_data=yaml.dump(valid_config_data))):
         with patch("os.path.exists", return_value=True):
@@ -118,8 +134,6 @@ def test_contains_method(config_instance, valid_config_data):
 
 
 def test_config_class():
-    # Reset the singleton for testing purposes
-    Config.reset()
 
     # Get the directory of the current file (assumed to be in the tests folder)
     current_dir = Path(__file__).parent
@@ -133,10 +147,10 @@ def test_config_class():
     assert config1.initialized, "Config should be initialized after loading"
 
     # Create a second instance
-    config2 = Config()
+    config2 = config1.detach()
 
     # They should be the same object and both initialized
-    assert config1 is config2, "Config objects are not the same instance"
+    assert config1 is not config2, "Config objects are not the same instance"
     assert config2.initialized, "Second instance should be initialized"
 
     # Check if the second instance has the loaded configuration
@@ -145,7 +159,6 @@ def test_config_class():
     assert 'constrain' in config2.config_data, "'constrain' key is missing from config data in the second instance"
 
     # Test creating a new instance after reset
-    Config.reset()
     config3 = Config()
     assert not config3.initialized, "New instance after reset should not be initialized"
     assert config3 is not config1, "New instance after reset should be a different object"

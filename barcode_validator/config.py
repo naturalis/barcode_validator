@@ -1,22 +1,16 @@
 import os
 import sys
 import yaml
+import copy
 import logging
 
 
 class Config:
-    _instance = None
-
-    def __new__(cls):
-        if cls._instance is None:
-            cls._instance = super(Config, cls).__new__(cls)
-        return cls._instance
 
     def __init__(self):
-        if not hasattr(self, 'initialized') or not self.initialized:
-            self.config_data = None
-            self.config_path = None
-            self.initialized = False
+        self.config_data = None
+        self.config_path = None
+        self.initialized = False
 
     def load_config(self, config_path):
 
@@ -43,6 +37,20 @@ class Config:
             raise RuntimeError("Configuration not loaded. Call load_config first.")
         return self.config_data.get(key, default)
 
+    def set(self, key, value):
+        if not self.initialized:
+            raise RuntimeError("Configuration not loaded. Call load_config first.")
+        self.config_data[key] = value
+
+    def detach(self):
+        if not self.initialized:
+            raise RuntimeError("Configuration not loaded. Call load_config first.")
+        new_config = Config()
+        new_config.config_data = copy.deepcopy(self.config_data)
+        new_config.config_path = self.config_path
+        new_config.initialized = True
+        return new_config
+
     def __getitem__(self, key):
         if not self.initialized:
             raise RuntimeError("Configuration not loaded. Call load_config first.")
@@ -59,11 +67,6 @@ class Config:
 
     def __repr__(self):
         return f"Config(initialized={self.initialized}, config_path='{self.config_path}')"
-
-    @classmethod
-    def reset(cls):
-        if cls._instance is not None:
-            cls._instance = None
 
     def setup_logging(self, cmd_log_level=None):
         if not self.initialized:
