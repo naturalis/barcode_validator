@@ -73,25 +73,24 @@ class Config:
             if cls._instance is not None:
                 cls._instance = None
 
+    def setup_logging(self, cmd_log_level=None):
+        if not self.initialized:
+            raise RuntimeError("Configuration not loaded. Call load_config first.")
 
-def setup_logging(config, cmd_log_level=None):
-    if not config.initialized:
-        raise RuntimeError("Configuration not loaded. Call load_config first.")
+        log_level = self.get('log_level', 'INFO')
+        if cmd_log_level:
+            log_level = cmd_log_level
 
-    log_level = config.get('log_level', 'INFO')
-    if cmd_log_level:
-        log_level = cmd_log_level
+        numeric_level = getattr(logging, log_level.upper(), None)
+        if not isinstance(numeric_level, int):
+            raise ValueError(f'Invalid log level: {log_level}')
 
-    numeric_level = getattr(logging, log_level.upper(), None)
-    if not isinstance(numeric_level, int):
-        raise ValueError(f'Invalid log level: {log_level}')
+        logging.basicConfig(level=numeric_level,
+                            format='%(asctime)s - %(levelname)s - %(message)s',
+                            filename=self.get('log_file'),
+                            filemode='a')
 
-    logging.basicConfig(level=numeric_level,
-                        format='%(asctime)s - %(levelname)s - %(message)s',
-                        filename=config.get('log_file'),
-                        filemode='a')
-
-    sys.excepthook = exception_handler
+        sys.excepthook = exception_handler
 
 
 def exception_handler(exc_type, exc_value, exc_traceback):
