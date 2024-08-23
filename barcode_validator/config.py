@@ -6,7 +6,10 @@ import logging
 
 def exception_handler(exc_type, exc_value, exc_traceback):
     """
-    Custom exception handler to log uncaught exceptions
+    Custom exception handler to log uncaught exceptions.
+    :param exc_type: Exception type
+    :param exc_value: Exception value
+    :param exc_traceback: Exception traceback
     """
     if issubclass(exc_type, KeyboardInterrupt):
         # Don't log keyboard interrupt (Ctrl+C)
@@ -35,12 +38,8 @@ class Config:
     def load_config(self, config_path):
         """
         Load the configuration from a YAML file.
-
-        Args:
-        config_path (str): Path to the configuration YAML file.
-
-        Raises:
-        FileNotFoundError: If the config file doesn't exist.
+        :param: config_path (str): Path to the configuration YAML file.
+        :raise: FileNotFoundError: If the config file doesn't exist.
         yaml.YAMLError: If there's an error parsing the YAML file.
         """
         self.config_path = config_path
@@ -59,9 +58,7 @@ class Config:
     def _process_relative_paths(self, config_dir):
         """
         Convert relative paths in the config to absolute paths.
-
-        Args:
-        config_dir (str): Directory of the config file.
+        :param: config_dir (str): Directory of the config file.
         """
         for key, value in self.config_data.items():
             if isinstance(value, str) and not os.path.isabs(value) and key.endswith('_file'):
@@ -70,9 +67,7 @@ class Config:
     def setup_logging(self, cmd_log_level=None):
         """
         Set up logging based on the configuration file and command line argument.
-
-        Args:
-        cmd_log_level (str, optional): Log level from command line, overrides config file if provided.
+        :param: cmd_log_level (str, optional): Log level from command line, overrides config file if provided.
         """
         if self.config_data is None:
             raise ValueError("Configuration has not been loaded. Call load_config first.")
@@ -95,28 +90,17 @@ class Config:
     def get(self, key, default=None):
         """
         Get a configuration value.
-
-        Args:
-        key (str): The configuration key to retrieve.
-        default: The default value to return if the key is not found.
-
-        Returns:
-        The value associated with the key, or the default value if not found.
+        :param: key (str): The configuration key to retrieve.
+        :return: The value associated with the key, or the default value if not found.
         """
         return self.config_data.get(key, default) if self.config_data else default
 
     def __getitem__(self, key):
         """
         Allow dictionary-style access to configuration values.
-
-        Args:
-        key (str): The configuration key to retrieve.
-
-        Returns:
-        The value associated with the key.
-
-        Raises:
-        KeyError: If the key is not found in the configuration.
+        :param: key (str): The configuration key to retrieve.
+        :return: The value associated with the key.
+        :raises: KeyError: If the key is not found in the configuration.
         """
         if self.config_data is None:
             raise ValueError("Configuration has not been loaded. Call load_config first.")
@@ -125,11 +109,26 @@ class Config:
     def __contains__(self, key):
         """
         Check if a key exists in the configuration.
-
-        Args:
-        key (str): The configuration key to check.
-
-        Returns:
-        bool: True if the key exists, False otherwise.
+        :param: key (str): The configuration key to check.
+        :return: bool: True if the key exists, False otherwise.
         """
         return self.config_data is not None and key in self.config_data
+
+    def __str__(self):
+        """
+        Return a string representation of the Config object.
+        :return: str: A string representation of the Config object.
+        """
+        return (f"Config Object:\n"
+                f"  Initialized: {self._initialized}\n"
+                f"  Config Path: {self.config_path}\n"
+                f"  Config Data: {self.config_data}")
+
+    def __repr__(self):
+        """
+        Return a string representation of the Config object.
+        :return: str: A string representation of the Config object.
+        """
+        return (f"Config(_initialized={self._initialized}, "
+                f"config_path='{self.config_path}', "
+                f"config_data={self.config_data})")
