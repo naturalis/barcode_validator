@@ -21,7 +21,7 @@ indication of off-target amplification of a pseudogene.
 """
 
 
-def align_to_hmm(sequence):
+def align_to_hmm(sequence, config):
     """
     Align a sequence to an HMM using hmmalign. The location of the HMM file is specified in the
     configuration file as 'hmm_file'. hmmalign is run with the '--trim' option to remove any
@@ -29,10 +29,10 @@ def align_to_hmm(sequence):
     parsed as a Stockholm format file and returned as a SeqRecord object, i.e. it has the sequence
     annotations (which include per-residue confidence scores) preserved.
     :param sequence: A BioPython SeqRecord object
+    :param config: An instance of the Config class
     :return: A BioPython SeqRecord object containing the aligned sequence
     """
     logging.info("Aligning sequence to HMM")
-    config = Config()
     hmm_file = config.get('hmm_file')
 
     # Create a temporary file for the input sequence
@@ -116,7 +116,7 @@ def unalign_sequence(sequence):
         raise TypeError(f"Unexpected type for sequence: {type(sequence)}")
 
 
-def translate_sequence(dna_sequence):
+def translate_sequence(dna_sequence, config):
     """
     Translate a DNA sequence to amino acids using the translation table specified in the configuration file.
     The translation table is specified as an integer in the configuration file, which corresponds to the
@@ -124,6 +124,7 @@ def translate_sequence(dna_sequence):
     the first base of the DNA sequence is removed to ensure that the sequence length is a multiple of 3 (i.e.
     the canonical 658bp COI-5P marker is out of phase by one base).
     :param dna_sequence: A BioPython SeqRecord object containing a DNA sequence
+
     :return: A BioPython SeqRecord object containing the translated amino acid sequence
     """
     logging.info("Translating DNA sequence to amino acids")
@@ -151,7 +152,6 @@ def translate_sequence(dna_sequence):
     valid_seq = Seq(''.join(valid_codons))
 
     # Do the translation
-    config = Config()
     table_idx = config.get('translation_table')
     ct = CodonTable.unambiguous_dna_by_id[table_idx]
     amino_acid_sequence = valid_seq.translate(table=ct)

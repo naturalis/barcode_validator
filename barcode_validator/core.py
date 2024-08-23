@@ -61,11 +61,11 @@ class BarcodeValidator:
             if node.taxonomic_rank == self.config.get('level'):
                 result.exp_taxon = node
                 break
-        result.obs_taxon = run_localblast(record, self.ncbi_tree, self.bold_tree)
+        result.obs_taxon = run_localblast(record, self.ncbi_tree, self.bold_tree, self.config)
 
         # Compute marker quality metrics
-        aligned_sequence = align_to_hmm(record)
-        amino_acid_sequence = translate_sequence(aligned_sequence)
+        aligned_sequence = align_to_hmm(record, self.config)
+        amino_acid_sequence = translate_sequence(aligned_sequence, self.config)
         result.stop_codons = get_stop_codons(amino_acid_sequence)
         result.seq_length = marker_seqlength(aligned_sequence)
         result.ambiguities = num_ambiguous(aligned_sequence)
