@@ -43,6 +43,7 @@ def build_constraint(bold_tip: Taxon, bold_tree: BaseTree, ncbi_tree: BaseTree) 
     # Find the node at the specified taxonomic rank in the BOLD lineage that subtends the tip
     level = str(config.get('constrain')).lower()
     logging.info(f"Going to traverse BOLD taxonomy for the {level} to which {bold_tip} belongs")
+    logging.info(config)
     bold_anc = next(node for node in bold_tree.root.get_path(bold_tip) if node.taxonomic_rank == level)
     logging.info(f"BOLD {bold_tip.taxonomic_rank} {bold_tip.name} is member of {level} {bold_anc.name}")
 
