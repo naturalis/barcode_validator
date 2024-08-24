@@ -76,6 +76,35 @@ def test_parse_fasta():
     assert result[0][0] == "BGENL191-23"
 
 
+def test_parse_fasta_with_json():
+    # Get the directory of the current file (assumed to be in the tests folder)
+    current_dir = Path(__file__).parent
+    example_fasta = current_dir.parent / 'examples' / 'mge_meta.fa'
+
+    result = list(parse_fasta(example_fasta))
+
+    # Check the number of entries
+    assert len(result) == 1, "Expected one entry in the FASTA file"
+
+    # Unpack the single result
+    process_id, sequence, json_config = result[0]
+
+    # Check the process ID
+    assert process_id == "BGENL191-23", "Process ID mismatch"
+
+    # Check the sequence
+    assert isinstance(sequence, SeqRecord), "Sequence should be a SeqRecord object"
+    assert len(sequence.seq) > 0, "Sequence should not be empty"
+
+    # Check the JSON configuration
+    assert json_config is not None, "JSON configuration should be present"
+    assert json_config["level"] == "order", "Incorrect 'level' in JSON config"
+    assert json_config["translation_table"] == 5, "Incorrect 'translation_table' in JSON config"
+
+    # Check that the JSON part is removed from the sequence description
+    assert "{" not in sequence.description, "JSON should be removed from sequence description"
+
+
 def test_get_stop_codons():
     aa_seq = SeqRecord(Seq("M*EF*GH"), id="test", name="Test")
     result = get_stop_codons(aa_seq)

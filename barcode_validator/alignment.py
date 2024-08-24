@@ -2,6 +2,7 @@ import logging
 import tempfile
 import subprocess
 import warnings
+import json
 from copy import deepcopy
 from Bio import SeqIO
 from Bio.Seq import Seq
@@ -172,22 +173,36 @@ def translate_sequence(dna_sequence, config):
 
 def parse_fasta(file_path):
     """
-    Parse a FASTA file and yield the process ID and sequence record for each entry.
+    Parse a FASTA file and yield the process ID, sequence record, and optional JSON configuration for each entry.
     The process ID is the first part of the sequence ID, which is assumed to be separated by an underscore.
-
-    TODO: attempt to parse anything after the first { to the end of the line as JSON configuration data
+    Any JSON configuration data after the first '{' in the header is parsed and returned.
 
     :param file_path: Local path to the FASTA file
-    :yield: A tuple containing the process ID and the sequence record for each entry
+    :yield: A tuple containing the process ID, the sequence record, and the JSON configuration (or None) for each entry
     """
     logging.info(f"Parsing FASTA file: {file_path}")
     with open(file_path, 'r') as file:
         for record in SeqIO.parse(file, 'fasta'):
             process_id = record.id.split('_')[0]
+
+            # Attempt to parse JSON from the description
+            json_config = None
+            json_start = record.description.find('{')
+            if json_start != -1:
+                try:
+                    json_str = record.description[json_start:]
+                    json_config = json.loads(json_str)
+                    # Remove the JSON part from the description
+                    record.description = record.description[:json_start].strip()
+                except json.JSONDecodeError as e:
+                    logging.warning(f"Failed to parse JSON for {process_id}: {e}")
+
             record.id = process_id
             logging.debug(f"Parsed process ID: {process_id}")
             logging.debug(f"Sequence length: {len(record.seq)}")
-            yield process_id, unalign_sequence(record)
+            logging.debug(f"JSON config: {json_config}")
+
+            yield process_id, unalign_sequence(record), json_config
 
 
 def get_stop_codons(amino_acid_sequence):

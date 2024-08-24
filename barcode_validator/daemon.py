@@ -124,31 +124,35 @@ def post_results(config, pr_number, results):
     :param results: A list of validation results
     :return: None
     """
-    comment = "## Validation Results\n\n"
-    for file, result in results:
-        comment += f"## File: {file}\n"
-        barcode_rank, full_rank, messages = result.calculate_ranks(verbosity=3)
-        status_emoji = "✅" if result.passes_all_checks() else "❗"
-        obs_taxon_names = "\n".join(f"    - {taxon.name}" for taxon in result.obs_taxon)
+    comment = "# Validation Results\n\n"
+    for file, r in results:
+        barcode_rank, full_rank, messages = r.calculate_ranks(verbosity=3)
+        status_emoji = "✅" if r.passes_all_checks() else "❗"
+        obs_taxon_names = "\n".join(f"    - {taxon.name}" for taxon in r.obs_taxon)
         comment += f"""
-### {status_emoji} Process ID: {result.process_id}
-- Taxonomic check passed: **{result.check_taxonomy()}**
-  - Expected species as registered at BOLD: {result.species}
-  - Expected {config.get('level')} as registered at BOLD: {result.exp_taxon}
+<details>
+<summary style="cursor: pointer; color: blue;"> {status_emoji} Process ID: {r.process_id} </summary>
+
+- File: {file}
+- {"✅" if r.check_taxonomy() else "❗"} **Taxonomic check**
+  - Expected species as registered at BOLD: {r.species}
+  - Expected {config.get('level')} as registered at BOLD: {r.exp_taxon}
   - Observed BLAST hits at {config.get('level')} level: 
 {obs_taxon_names}  
-- BIN-compliant sequence length passed: **{result.check_length()}**
-  - Net length aligned to marker region: {result.seq_length}  
-  - Full sequence length: {result.full_length}
-- Sequence quality check passed: **{result.check_seq_quality()}**
-  - Ambiguities in marker region: {result.ambiguities}
-  - Ambiguities in full sequence: {result.full_ambiguities}
-  - Stop codons: {len(result.stop_codons)}
+- {"✅" if r.check_length() else "❗"} **Sequence length**
+  - Net length aligned to marker region: {r.seq_length}  
+  - Full sequence length: {r.full_length}
+- {"✅" if r.check_seq_quality() else "❗"} **Sequence quality**
+  - Ambiguities in marker region: {r.ambiguities}
+  - Ambiguities in full sequence: {r.full_ambiguities}
+  - Stop codons: {len(r.stop_codons)}
 - Rankings:
   - Barcode rank: {barcode_rank}
   - Full rank: {full_rank}
   - Messages: 
     {messages}
+
+</details>
 """
     post_comment(config, pr_number, comment)
 

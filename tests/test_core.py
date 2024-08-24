@@ -48,8 +48,8 @@ def test_initialize(barcode_validator, mock_trees):
 @patch('barcode_validator.core.parse_fasta')
 def test_validate_fasta(mock_parse_fasta, barcode_validator):
     mock_parse_fasta.return_value = [
-        ('process_id1', SeqRecord(Seq('ATCG'), id='seq1')),
-        ('process_id2', SeqRecord(Seq('GCTA'), id='seq2'))
+        ('process_id1', SeqRecord(Seq('ATCG'), id='seq1'), None),
+        ('process_id2', SeqRecord(Seq('GCTA'), id='seq2'), None)
     ]
 
     with patch.object(barcode_validator, 'validate_record') as mock_validate_record:
