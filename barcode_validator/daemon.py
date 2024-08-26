@@ -137,9 +137,9 @@ def post_results(config, pr_number, results):
                 current_file_handle.close()
 
                 # Now commit the file to the PR
-                tsv_name = f"{file}.tsv"
+                tsv_name = f"{current_file_name}.tsv"
                 run_git_command(['git', 'add', tsv_name], f"Failed to add {tsv_name}")
-                run_git_command(['git', 'commit', '-m', f"Add validation results for {file}"],
+                run_git_command(['git', 'commit', '-m', f"Add validation results for {current_file_name}"],
                                 f"Failed to commit {tsv_name}")
 
             # Open the new file and write the header
