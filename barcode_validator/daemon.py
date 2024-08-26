@@ -117,6 +117,17 @@ def run_validation(config, pr_number, branch, validator):
     return all_results
 
 
+def commit_file(filename, message):
+    """
+    Commit a file to the local git repository.
+    :param filename: The name of the file to commit
+    :param message: The commit message
+    :return: None
+    """
+    run_git_command(['git', 'add', filename], f"Failed to add {filename}")
+    run_git_command(['git', 'commit', '-m', message], f"Failed to commit {filename}")
+
+
 def post_results(config, pr_number, results):
     """
     Post a comment to a pull request with the validation results.
@@ -138,9 +149,8 @@ def post_results(config, pr_number, results):
 
                 # Now commit the file to the PR
                 tsv_name = f"{current_file_name}.tsv"
-                run_git_command(['git', 'add', tsv_name], f"Failed to add {tsv_name}")
-                run_git_command(['git', 'commit', '-m', f"Add validation results for {current_file_name}"],
-                                f"Failed to commit {tsv_name}")
+                commit_file(current_file_name, f"Add validated FASTA file {current_file_name}")
+                commit_file(tsv_name, f"Add validation results for {current_file_name}")
 
             # Open the new file and write the header
             current_file_handle = open(f"{file}.tsv", 'w')
@@ -159,6 +169,8 @@ def post_results(config, pr_number, results):
 
     # Post the markdown comment and push the TSV files
     post_comment(config, pr_number, comment)
+    commit_file(current_file_name, f"Add validated FASTA file {current_file_name}")
+    commit_file(f"{current_file_name}.tsv", f"Add validation results for {current_file_name}")
     run_git_command(['git', 'push', 'origin', f"pr-{pr_number}"], f"Failed to push branch pr-{pr_number}")
 
 
