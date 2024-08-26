@@ -362,7 +362,7 @@ class DNAAnalysisResult:
             self.process_id,
             self.exp_taxon.name,
             self.species.name,
-            self.exp_taxon.name if self.exp_taxon in self.obs_taxon else None,
+            self.exp_taxon.name if self.check_taxonomy() else None,
             self.level,
             'BLAST',
             self.seq_length,

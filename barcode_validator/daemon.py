@@ -141,25 +141,26 @@ def post_results(config, pr_number, results):
     current_file_name = None
     for file, r in results:
 
+        # If this is true, then current_file_name is None or previous file
         if file != current_file_name:
 
-            # Close the previous file handle if it exists
+            # Close the previous file handle if it exists, i.e. current_file_name was not None
             if current_file_handle:
-                current_file_handle.close()
 
-                # Now commit the file to the PR
+                # Finalize the file and commit it
+                current_file_handle.close()
                 tsv_name = f"{current_file_name}.tsv"
                 commit_file(current_file_name, f"Add validated FASTA file {current_file_name}")
                 commit_file(tsv_name, f"Add validation results for {current_file_name}")
 
-            # Open the new file and write the header
-            current_file_handle = open(f"{file}.tsv", 'w')
+            # Open the new file and write the header, happens both when current_file_name is None or previous file
+            current_file_handle = open(f"{file}.tsv", 'w', buffering=1)
             hlist = result_fields(config.get('level'))
             hlist.append('fasta_file')
             current_file_handle.write('\t'.join(hlist) + '\n')
             current_file_name = file
 
-        # Generate the TSV file
+        # Generate the TSV file, with an extra column ('fasta_file') for the analyzed file name
         rlist = r.get_values()
         rlist.append(file)
         current_file_handle.write('\t'.join(map(str, rlist)) + '\n')
@@ -169,6 +170,7 @@ def post_results(config, pr_number, results):
 
     # Post the markdown comment and push the TSV files
     post_comment(config, pr_number, comment)
+    current_file_handle.close()
     commit_file(current_file_name, f"Add validated FASTA file {current_file_name}")
     commit_file(f"{current_file_name}.tsv", f"Add validation results for {current_file_name}")
     run_git_command(['git', 'push', 'origin', f"pr-{pr_number}"], f"Failed to push branch pr-{pr_number}")
