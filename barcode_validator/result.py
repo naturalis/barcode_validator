@@ -3,15 +3,6 @@ from typing import List, Optional, Tuple
 import logging
 
 
-def result_fields():
-    """
-    Returns a tab-separated string containing the result fields.
-    :return:
-    """
-    return "Process ID\tSequence Length\tObserved Taxon\tExpected Taxon\tSpecies\tStop Codons\tAmbiguities\tPasses " \
-           "All Checks"
-
-
 class DNAAnalysisResult:
     def __init__(self, process_id):
         self.process_id: str = process_id
@@ -20,9 +11,41 @@ class DNAAnalysisResult:
         self._obs_taxon: List[Taxon] = []
         self._exp_taxon: Optional[Taxon] = None
         self._species: Optional[Taxon] = None
-        self._stop_codons = []
-        self._ambiguities = None
-        self._full_ambiguities = None
+        self._stop_codons: List[int] = []
+        self._ambiguities: Optional[int] = None
+        self._full_ambiguities: Optional[int] = None
+        self._level: Optional[str] = None
+
+    @property
+    def level(self) -> Optional[str]:
+        """
+        Getter for the taxonomic level.
+        :return: A string representing the taxonomic level
+        """
+        return self._level
+
+    @level.setter
+    def level(self, level: str) -> None:
+        """
+        Setter for the taxonomic level.
+        :param level: A string representing the taxonomic level
+        :return:
+        """
+        levels = [
+            'kingdom',
+            'phylum',
+            'class',
+            'order',
+            'family',
+            'subfamily',
+            'tribe',
+            'genus',
+            'species',
+            'subspecies'
+        ]
+        if not isinstance(level, str) or level.lower() not in levels:
+            raise ValueError(f"level must be a string from {levels}")
+        self._level = level
 
     @property
     def seq_length(self) -> Optional[int]:
@@ -330,19 +353,58 @@ class DNAAnalysisResult:
 
         return barcode_rank, full_rank, "\n".join(messages)
 
+    def get_values(self) -> list:
+        """
+        String representation of the result object.
+        :return: A list of values representing the result object
+        """
+        return [
+            self.process_id,
+            self.exp_taxon.name,
+            self.species.name,
+            self.exp_taxon.name if self.exp_taxon in self.obs_taxon else None,
+            self.level,
+            'BLAST',
+            self.seq_length,
+            self.full_length,
+            self.ambiguities,
+            self.full_ambiguities,
+            len(self.stop_codons)
+        ]
+
     def __str__(self) -> str:
         """
         String representation of the result object.
-        :return: A tab-separated string containing the result fields
+        :return: A tab-separated string representing the result object
         """
-        results = [
-            self.process_id,
-            self.seq_length,
-            ', '.join(str(taxon) for taxon in self.obs_taxon),  # Convert each Taxon to string
-            str(self.exp_taxon),  # Convert Taxon to string
-            str(self.species),  # Convert Taxon to string
-            self.stop_codons,
-            self.ambiguities,
-            self.passes_all_checks()
-        ]
-        return '\t'.join(map(str, results))
+        return '\t'.join(map(str, self.get_values()))
+
+
+def result_fields(level: str = 'family') -> List[str]:
+    """
+    Returns a tab-separated string containing the result fields.
+    :return:
+    """
+    return [
+        "processid",
+
+        # These are parts of the lineage submitted to BOLD
+        level,  # by default, this column header will say 'family', and its values will be exp_taxon
+        "species",
+
+        # These are the results of the BLAST check. Either
+        # they match the submitted lineage of identification is empty
+        "identification",  # this will be the same as exp_taxon if exp_taxon in obs_taxon, else None
+        "identification_rank",  # this will the value of level
+        "identification_method",   # BLAST
+
+        # Bases within the marker region
+        "nuc_basecount",
+
+        # Non-BCDM terms
+        # Bases within the full sequence
+        "nuc_full_basecount",
+        "ambig_basecount",
+        "ambig_full_basecount",
+        "stop_codons",
+    ]
