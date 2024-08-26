@@ -1,2 +1,0 @@
-processid	family	species	identification	identification_rank	identification_method	nuc_basecount	nuc_full_basecount	ambig_basecount	ambig_full_basecount	stop_codons	fasta_file
-BGENL270-23	Tortricidae	Cydia semicinctana	Tortricidae	None	BLAST	657	1515	0	0	0	data/BGENL270-23_cns.fas
