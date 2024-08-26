@@ -6,10 +6,11 @@ import subprocess
 import logging
 import sqlite3
 import traceback
-import base64
-from datetime import datetime, timedelta
+from datetime import datetime
 from config import Config
 from barcode_validator.core import BarcodeValidator
+from barcode_validator.result import result_fields
+
 
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
 POLL_INTERVAL = 300  # 5 minutes
@@ -125,11 +126,55 @@ def post_results(config, pr_number, results):
     :return: None
     """
     comment = "# Validation Results\n\n"
+    current_file_handle = None
+    current_file_name = None
     for file, r in results:
-        barcode_rank, full_rank, messages = r.calculate_ranks(verbosity=3)
-        status_emoji = "✅" if r.passes_all_checks() else "❗"
-        obs_taxon_names = "\n".join(f"    - {taxon.name}" for taxon in r.obs_taxon)
-        comment += f"""
+
+        if file != current_file_name:
+
+            # Close the previous file handle if it exists
+            if current_file_handle:
+                current_file_handle.close()
+
+                # Now commit the file to the PR
+                tsv_name = f"{file}.tsv"
+                run_git_command(['git', 'add', tsv_name], f"Failed to add {tsv_name}")
+                run_git_command(['git', 'commit', '-m', f"Add validation results for {file}"],
+                                f"Failed to commit {tsv_name}")
+
+            # Open the new file and write the header
+            current_file_handle = open(f"{file}.tsv", 'w')
+            hlist = result_fields(config.get('level'))
+            hlist.append('fasta_file')
+            current_file_handle.write('\t'.join(hlist) + '\n')
+            current_file_name = file
+
+        # Generate the TSV file
+        rlist = r.get_values()
+        rlist.append(file)
+        current_file_handle.write('\t'.join(map(str, rlist)) + '\n')
+
+        # Generate the comment to post
+        comment = generate_markdown(comment, config, file, r)
+
+    # Post the markdown comment and push the TSV files
+    post_comment(config, pr_number, comment)
+    run_git_command(['git', 'push', 'origin', f"pr-{pr_number}"], f"Failed to push branch pr-{pr_number}")
+
+
+def generate_markdown(comment, config, file, r):
+    """
+    Generate a markdown comment for a validation result.
+    :param comment: The current comment string
+    :param config: The Config object
+    :param file: The file name
+    :param r: A DNAAnalysisResult object
+    :return: The updated comment string
+    """
+    barcode_rank, full_rank, messages = r.calculate_ranks(verbosity=3)
+    status_emoji = "✅" if r.passes_all_checks() else "❗"
+    obs_taxon_names = "\n".join(f"    - {taxon.name}" for taxon in r.obs_taxon)
+    comment += f"""
 <details>
 <summary style="cursor: pointer; color: blue;"> {status_emoji} Process ID: {r.process_id} </summary>
 
@@ -154,7 +199,7 @@ def post_results(config, pr_number, results):
 
 </details>
 """
-    post_comment(config, pr_number, comment)
+    return comment
 
 
 def post_comment(config, pr_number, comment):
