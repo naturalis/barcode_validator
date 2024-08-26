@@ -11,15 +11,20 @@ def main(fasta_file_path):
     validator = BarcodeValidator(config)
     validator.initialize()
 
+    # Print header
     logging.info(f"Starting analysis for file: {fasta_file_path}")
-    print(barcode_validator.result.result_fields())  # print TSV header
+    header = barcode_validator.result.result_fields()
+    header.append('fasta_file')
+    print('\t'.join(header))  # print TSV header
 
     # Validate the FASTA file
     results = validator.validate_fasta(fasta_file_path)
 
     # Print results
     for result in results:
-        print(result)
+        values = result.get_values()
+        values.append(fasta_file_path)
+        print('\t'.join(map(str, values)))
 
     logging.info("Analysis completed")
 
