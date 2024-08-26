@@ -161,6 +161,8 @@ def post_results(config, pr_number, results):
             current_file_name = file
 
         # Generate the TSV file, with an extra column ('fasta_file') for the analyzed file name
+        # and a specificaton of the taxonomic level ('identification_rank')
+        r.level = config.get('level')
         rlist = r.get_values()
         rlist.append(file)
         current_file_handle.write('\t'.join(map(str, rlist)) + '\n')
