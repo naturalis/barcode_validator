@@ -29,5 +29,5 @@ python barcode_validator -h
 For example:
 
 ```
-python barcode_validator -f examples/mge.fa -c config/config.yml -b examples/bold.xlsx
+python barcode_validator -f examples/mge.fa -c config/config.yml
 ```
