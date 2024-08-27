@@ -376,11 +376,13 @@ class DNAAnalysisResult:
         String representation of the result object.
         :return: A list of values representing the result object
         """
+        exp_taxon_name = self.exp_taxon.name if self.exp_taxon else None
+        species_name = self.species.name if self.species else None
         return [
             self.process_id,
-            self.exp_taxon.name,
-            self.species.name,
-            self.exp_taxon.name if self.check_taxonomy() else None,
+            exp_taxon_name,
+            species_name,
+            exp_taxon_name if self.check_taxonomy() else None,
             self.level,
             'BLAST',
             self.seq_length,
