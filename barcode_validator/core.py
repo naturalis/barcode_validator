@@ -55,7 +55,14 @@ class BarcodeValidator:
         result.full_ambiguities = num_ambiguous(record)
 
         # Lookup expected species and higher taxon, infer observed higher taxa from blast
-        result.species = get_tip_by_processid(process_id, self.bold_tree)
+        sp = get_tip_by_processid(process_id, self.bold_tree)  # TODO: what if this fails?
+        if sp is None:
+            logging.warning(f"Process ID {process_id} not found in BOLD tree.")
+            result.error = f"{process_id} not in BOLD"
+            return result
+
+        # Can safely assume species is not None here
+        result.species = sp
         logging.info(f"Species: {result.species}")
         for node in self.bold_tree.root.get_path(result.species):
             if node.taxonomic_rank == self.config.get('level'):

@@ -15,6 +15,24 @@ class DNAAnalysisResult:
         self._ambiguities: Optional[int] = None
         self._full_ambiguities: Optional[int] = None
         self._level: Optional[str] = None
+        self._error: Optional[str] = None
+
+    @property
+    def error(self) -> Optional[str]:
+        """
+        Getter for the error message.
+        :return: A string representing the error message
+        """
+        return self._error
+
+    @error.setter
+    def error(self, error: str) -> None:
+        """
+        Setter for the error message.
+        :param error: A string representing the error message
+        :return:
+        """
+        self._error = error
 
     @property
     def level(self) -> Optional[str]:
@@ -369,7 +387,8 @@ class DNAAnalysisResult:
             self.full_length,
             self.ambiguities,
             self.full_ambiguities,
-            len(self.stop_codons)
+            len(self.stop_codons),
+            self.error
         ]
 
     def __str__(self) -> str:
@@ -407,4 +426,5 @@ def result_fields(level: str = 'family') -> List[str]:
         "ambig_basecount",
         "ambig_full_basecount",
         "stop_codons",
+        "error",
     ]

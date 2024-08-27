@@ -195,6 +195,7 @@ def generate_markdown(comment, config, file, r):
 <summary style="cursor: pointer; color: blue;"> {status_emoji} Process ID: {r.process_id} </summary>
 
 - File: {file}
+- {"✅ No errors" if r.error is None else f"⛔{r.error}"}
 - {"✅" if r.check_taxonomy() else "❗"} **Taxonomic check**
   - Expected species as registered at BOLD: {r.species}
   - Expected {config.get('level')} as registered at BOLD: {r.exp_taxon}
