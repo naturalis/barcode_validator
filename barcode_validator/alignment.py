@@ -33,6 +33,9 @@ def align_to_hmm(sequence, config):
     :return: A BioPython SeqRecord object containing the aligned sequence
     """
     logging.info("Aligning sequence to HMM")
+    if len(sequence.seq) == 0:
+        logging.warning("Empty sequence provided for alignment")
+        return None
     hmm_file = config.get('hmm_file')
 
     # Create a temporary file for the input sequence
