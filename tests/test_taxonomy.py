@@ -2,7 +2,7 @@ import pytest
 import requests
 import tempfile
 from pathlib import Path
-from Bio import SeqRecord
+from barcode_validator.alignment import parse_fasta
 from barcode_validator.config import Config
 from barcode_validator.taxonomy import read_bold_taxonomy, read_ncbi_taxonomy, get_tip_by_processid, run_localblast
 
@@ -40,7 +40,10 @@ def test_get_tip_by_processid(bold_tree):
 
 
 def test_none_sequence_blast():
-    seq = SeqRecord.SeqRecord('')
+    current_dir = Path(__file__).parent
+    example_fasta = current_dir.parent / 'examples' / 'empty_seq.fa'
+    result = list(parse_fasta(example_fasta))
+    seq = result[0][1]
     con = Config()
     con.initialized = True
     con.config_data = {"constrain": "family"}
