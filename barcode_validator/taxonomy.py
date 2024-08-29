@@ -117,7 +117,7 @@ def run_localblast(sequence, ncbi_tree, bold_tree, config):
     level = config.get('constrain')
 
     # Check if there is a sequence
-    if not sequence.seq:
+    if len(sequence.seq) == 0:
         return None
 
     # Create a temporary file for the input sequence
