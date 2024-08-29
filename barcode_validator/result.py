@@ -80,7 +80,7 @@ class DNAAnalysisResult:
         :param value: an integer representing the sequence length
         :return:
         """
-        if not isinstance(value, int) or value <= 0:
+        if not isinstance(value, int) or value < 0:
             raise ValueError("seq_length must be a positive integer")
         self._seq_length = value
 
@@ -99,7 +99,7 @@ class DNAAnalysisResult:
         :param value: an integer representing the sequence length
         :return:
         """
-        if not isinstance(value, int) or value <= 0:
+        if not isinstance(value, int) or value < 0:
             raise ValueError("full_length must be a positive integer")
         self._full_length = value
 
