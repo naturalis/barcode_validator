@@ -116,6 +116,10 @@ def run_localblast(sequence, ncbi_tree, bold_tree, config):
     logging.info("Running local BLASTN...")
     level = config.get('constrain')
 
+    # Check if there is a sequence
+    if not sequence.seq:
+        return None
+
     # Create a temporary file for the input sequence
     with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.fasta') as temp_input:
         SeqIO.write(sequence, temp_input, "fasta")

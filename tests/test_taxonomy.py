@@ -2,7 +2,9 @@ import pytest
 import requests
 import tempfile
 from pathlib import Path
-from barcode_validator.taxonomy import read_bold_taxonomy, read_ncbi_taxonomy, get_tip_by_processid
+from Bio import SeqRecord
+from barcode_validator.config import Config
+from barcode_validator.taxonomy import read_bold_taxonomy, read_ncbi_taxonomy, get_tip_by_processid, run_localblast
 
 
 @pytest.fixture
@@ -35,6 +37,14 @@ def test_get_tip_by_processid(bold_tree):
             break
     tip = get_tip_by_processid("BSNHM166-24", bold_tree)
     assert tip.name == "Halesus tessellatus"
+
+
+def test_none_sequence_blast():
+    seq = SeqRecord.SeqRecord(None)
+    con = Config()
+    con.initialized = True
+    con.config_data = {"constrain": "family"}
+    assert run_localblast(seq, None, None, con) is None
 
 
 def test_bold_tree_ancestry(bold_tree):
