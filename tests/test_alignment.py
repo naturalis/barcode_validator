@@ -76,6 +76,23 @@ def test_parse_fasta():
     assert result[0][0] == "BGENL191-23"
 
 
+def test_parse_fasta_empty_file():
+    current_dir = Path(__file__).parent
+    example_fasta = current_dir.parent / 'examples' / 'empty_seq.fa'
+
+    result = list(parse_fasta(example_fasta))
+    assert len(result) == 1
+    assert len(result[0][1].seq) == 0
+
+
+def test_align_fasta_empty_file():
+    current_dir = Path(__file__).parent
+    example_fasta = current_dir.parent / 'examples' / 'empty_seq.fa'
+    result = list(parse_fasta(example_fasta))
+    seq = result[0][1]
+    assert align_to_hmm(seq, None) is None
+
+
 def test_parse_fasta_with_json():
     # Get the directory of the current file (assumed to be in the tests folder)
     current_dir = Path(__file__).parent
