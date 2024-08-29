@@ -69,6 +69,8 @@ class BarcodeValidator:
                 result.exp_taxon = node
                 break
         obs_taxon = run_localblast(record, self.ncbi_tree, self.bold_tree, self.config)
+
+        # Handle BLAST failure
         if obs_taxon is None:
             logging.warning(f"Local BLAST failed for {process_id}")
             result.error = f"Local BLAST failed for sequence '{record.seq}'"
@@ -77,10 +79,14 @@ class BarcodeValidator:
 
         # Compute marker quality metrics
         aligned_sequence = align_to_hmm(record, self.config)
-        amino_acid_sequence = translate_sequence(aligned_sequence, self.config)
-        result.stop_codons = get_stop_codons(amino_acid_sequence)
-        result.seq_length = marker_seqlength(aligned_sequence)
-        result.ambiguities = num_ambiguous(aligned_sequence)
+        if aligned_sequence is None:
+            logging.warning(f"Alignment failed for {process_id}")
+            result.error = f"Alignment failed for sequence '{record.seq}'"
+        else:
+            amino_acid_sequence = translate_sequence(aligned_sequence, self.config)
+            result.stop_codons = get_stop_codons(amino_acid_sequence)
+            result.seq_length = marker_seqlength(aligned_sequence)
+            result.ambiguities = num_ambiguous(aligned_sequence)
 
         # Return the result object
         return result
