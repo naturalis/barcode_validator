@@ -68,7 +68,12 @@ class BarcodeValidator:
             if node.taxonomic_rank == self.config.get('level'):
                 result.exp_taxon = node
                 break
-        result.obs_taxon = run_localblast(record, self.ncbi_tree, self.bold_tree, self.config)
+        obs_taxon = run_localblast(record, self.ncbi_tree, self.bold_tree, self.config)
+        if obs_taxon is None:
+            logging.warning(f"Local BLAST failed for {process_id}")
+            result.error = f"Local BLAST failed for sequence '{record.seq}'"
+        else:
+            result.obs_taxon = obs_taxon
 
         # Compute marker quality metrics
         aligned_sequence = align_to_hmm(record, self.config)
