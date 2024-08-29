@@ -40,7 +40,7 @@ def test_get_tip_by_processid(bold_tree):
 
 
 def test_none_sequence_blast():
-    seq = SeqRecord.SeqRecord(None)
+    seq = SeqRecord.SeqRecord('')
     con = Config()
     con.initialized = True
     con.config_data = {"constrain": "family"}
