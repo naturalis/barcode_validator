@@ -4,8 +4,7 @@ import tarfile
 from typing import List, Optional
 from barcode_validator.config import Config
 from barcode_validator.taxonomy import BlastRunner
-from barcode_validator.alignment import parse_fasta, align_to_hmm, translate_sequence, get_stop_codons, \
-    marker_seqlength, num_ambiguous
+from barcode_validator.alignment import SequenceHandler
 from barcode_validator.result import DNAAnalysisResult
 from Bio.SeqRecord import SeqRecord
 from Bio.Phylo.BaseTree import Tree
@@ -42,7 +41,7 @@ class BarcodeValidator:
         :return: A list of DNAAnalysisResult objects
         """
         results = []
-        for process_id, record, json_config in parse_fasta(fasta_file_path):
+        for process_id, record, json_config in SequenceHandler.parse_fasta(fasta_file_path):
             scoped_config = config.local_clone(json_config)
             result = self.validate_record(process_id, record, scoped_config)
             results.append(result)
@@ -148,15 +147,15 @@ class BarcodeValidator:
 
         # Instantiate result object with process ID and calculate full sequence stats
         result.full_length = len(record.seq)
-        result.full_ambiguities = num_ambiguous(record)
+        result.full_ambiguities = SequenceHandler.num_ambiguous(record)
 
         # Compute marker quality metrics
-        aligned_sequence = align_to_hmm(record, config.get('hmm_file'))
+        aligned_sequence = SequenceHandler.align_to_hmm(record, config.get('hmm_file'))
         if aligned_sequence is None:
             logging.warning(f"Alignment failed for {result.process_id}")
             result.error = f"Alignment failed for sequence '{record.seq}'"
         else:
-            amino_acid_sequence = translate_sequence(aligned_sequence, config.get('translation_table'))
-            result.stop_codons = get_stop_codons(amino_acid_sequence)
-            result.seq_length = marker_seqlength(aligned_sequence)
-            result.ambiguities = num_ambiguous(aligned_sequence)
+            amino_acid_sequence = SequenceHandler.translate_sequence(aligned_sequence, config.get('translation_table'))
+            result.stop_codons = SequenceHandler.get_stop_codons(amino_acid_sequence)
+            result.seq_length = SequenceHandler.marker_seqlength(aligned_sequence)
+            result.ambiguities = SequenceHandler.num_ambiguous(aligned_sequence)
