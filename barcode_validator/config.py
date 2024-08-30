@@ -51,6 +51,15 @@ class Config:
         new_config.initialized = True
         return new_config
 
+    def local_clone(self, updates=None):
+        if not self.initialized:
+            raise RuntimeError("Configuration not loaded. Call load_config first.")
+        new_config = self.detach()
+        if updates:
+            for key, value in updates.items():
+                new_config.set(key, value)
+        return new_config
+
     def __getitem__(self, key):
         if not self.initialized:
             raise RuntimeError("Configuration not loaded. Call load_config first.")

@@ -133,6 +133,38 @@ def test_contains_method(config_instance, valid_config_data):
     assert "non_existent_key" not in config_instance
 
 
+def test_update_config(config_instance, valid_config_data):
+    with patch("builtins.open", mock_open(read_data=yaml.dump(valid_config_data))):
+        with patch("os.path.exists", return_value=True):
+            config_instance.load_config("dummy_path")
+
+    updates = {
+        "repo_owner": "new_owner",
+        "repo_name": "new_repo",
+        "hmm_file": "/new/path/to/hmm_file.hmm",
+        "bold_sheet_file": "/new/path/to/bold_sheet.xlsx",
+        "level": "genus",
+        "constrain": "order",
+        "num_threads": 12,
+        "evalue": 1e-6,
+        "max_target_seqs": 5,
+        "word_size": 20,
+        "BLASTDB_LMDB_MAP_SIZE": 90000000000,
+        "translation_table": 1,
+        "log_level": "DEBUG"
+    }
+
+    updated_config = config_instance.local_clone(updates)
+
+    for key, value in updates.items():
+        assert updated_config.get(key) == value
+        assert config_instance.get(key) != updated_config.get(key)
+
+    for key, value in valid_config_data.items():
+        if key not in updates:
+            assert updated_config.get(key) == value
+
+
 def test_config_class():
 
     # Get the directory of the current file (assumed to be in the tests folder)
