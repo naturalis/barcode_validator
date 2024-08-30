@@ -4,7 +4,7 @@ from Bio.SeqRecord import SeqRecord
 from Bio.Seq import Seq
 from Bio.Phylo.BaseTree import Tree
 from barcode_validator.config import Config
-from taxonomy import BlastRunner
+from barcode_validator.taxonomy import BlastRunner
 from nbitk.Taxon import Taxon
 
 
@@ -39,9 +39,9 @@ def test_init(blast_runner, mock_config):
     assert blast_runner.BLASTDB == '/path/to/blastdb'
 
 
-@patch('taxonomy.tempfile.NamedTemporaryFile')
-@patch('taxonomy.SeqIO.write')
-@patch('taxonomy.subprocess.Popen')
+@patch('barcode_validator.taxonomy.tempfile.NamedTemporaryFile')
+@patch('barcode_validator.taxonomy.SeqIO.write')
+@patch('barcode_validator.taxonomy.subprocess.Popen')
 def test_run_localblast(mock_popen, mock_seqio_write, mock_temp_file, blast_runner):
     mock_temp_file.return_value.__enter__.return_value.name = 'temp_file.fasta'
     mock_process = Mock()
