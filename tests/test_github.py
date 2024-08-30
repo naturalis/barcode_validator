@@ -2,7 +2,7 @@ import pytest
 from unittest.mock import Mock, patch
 import os
 import subprocess
-from github import GitHubClient
+from barcode_validator.github import GitHubClient
 
 
 @pytest.fixture
@@ -10,7 +10,7 @@ def github_client():
     return GitHubClient("test_owner", "test_repo", "test_token", "/test/clone/path")
 
 
-@patch('github.requests.get')
+@patch('barcode_validator.github.requests.get')
 def test_get_open_prs(mock_get, github_client):
     mock_response = Mock()
     mock_response.json.return_value = [{"number": 1, "title": "Test PR"}]
@@ -26,7 +26,7 @@ def test_get_open_prs(mock_get, github_client):
     )
 
 
-@patch('github.requests.get')
+@patch('barcode_validator.github.requests.get')
 def test_get_pr_files(mock_get, github_client):
     mock_response = Mock()
     mock_response.json.return_value = [{"filename": "test.py", "status": "modified"}]
@@ -41,7 +41,7 @@ def test_get_pr_files(mock_get, github_client):
     )
 
 
-@patch('github.requests.post')
+@patch('barcode_validator.github.requests.post')
 def test_post_comment(mock_post, github_client):
     mock_response = Mock()
     mock_response.json.return_value = {"id": 1, "body": "Test comment"}
@@ -57,9 +57,9 @@ def test_post_comment(mock_post, github_client):
     )
 
 
-@patch('github.subprocess.run')
-@patch('github.os.getcwd')
-@patch('github.os.chdir')
+@patch('barcode_validator.github.subprocess.run')
+@patch('barcode_validator.github.os.getcwd')
+@patch('barcode_validator.github.os.chdir')
 def test_run_git_command(mock_chdir, mock_getcwd, mock_run, github_client):
     mock_getcwd.return_value = "/test/clone/path"
     mock_result = Mock()
@@ -75,7 +75,7 @@ def test_run_git_command(mock_chdir, mock_getcwd, mock_run, github_client):
     mock_chdir.assert_not_called()
 
 
-@patch('github.GitHubClient.run_git_command')
+@patch('barcode_validator.github.GitHubClient.run_git_command')
 def test_commit_file(mock_run_git_command, github_client):
     github_client.commit_file("test.py", "Test commit")
 
@@ -83,8 +83,8 @@ def test_commit_file(mock_run_git_command, github_client):
     mock_run_git_command.assert_any_call(['git', 'commit', '-m', 'Test commit'], "Failed to commit test.py")
 
 
-@patch('github.os.getcwd')
-@patch('github.os.chdir')
+@patch('barcode_validator.github.os.getcwd')
+@patch('barcode_validator.github.os.chdir')
 def test_ensure_correct_directory(mock_chdir, mock_getcwd, github_client):
     mock_getcwd.return_value = "/wrong/path"
 
@@ -94,7 +94,7 @@ def test_ensure_correct_directory(mock_chdir, mock_getcwd, github_client):
     mock_chdir.assert_called_once_with("/test/clone/path")
 
 
-@patch('github.requests.get')
+@patch('barcode_validator.github.requests.get')
 def test_get_open_prs_error(mock_get, github_client):
     mock_response = Mock()
     mock_response.raise_for_status.side_effect = Exception("API Error")
