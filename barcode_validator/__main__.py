@@ -2,7 +2,7 @@ import argparse
 import logging
 from barcode_validator.config import Config
 from barcode_validator.core import BarcodeValidator
-import barcode_validator.result
+from barcode_validator.result import DNAAnalysisResult
 
 
 def main(fasta_file_path):
@@ -13,7 +13,7 @@ def main(fasta_file_path):
 
     # Print header
     logging.info(f"Starting analysis for file: {fasta_file_path}")
-    header = barcode_validator.result.result_fields()
+    header = DNAAnalysisResult.result_fields(config.get('level'))
     header.append('fasta_file')
     print('\t'.join(header))  # print TSV header
 

@@ -400,33 +400,33 @@ class DNAAnalysisResult:
         """
         return '\t'.join(map(str, self.get_values()))
 
+    @classmethod
+    def result_fields(cls, level: str = 'family') -> List[str]:
+        """
+        Returns a tab-separated string containing the result fields.
+        :return:
+        """
+        return [
+            "processid",
 
-def result_fields(level: str = 'family') -> List[str]:
-    """
-    Returns a tab-separated string containing the result fields.
-    :return:
-    """
-    return [
-        "processid",
+            # These are parts of the lineage submitted to BOLD
+            level,  # by default, this column header will say 'family', and its values will be exp_taxon
+            "species",
 
-        # These are parts of the lineage submitted to BOLD
-        level,  # by default, this column header will say 'family', and its values will be exp_taxon
-        "species",
+            # These are the results of the BLAST check. Either
+            # they match the submitted lineage of identification is empty
+            "identification",  # this will be the same as exp_taxon if exp_taxon in obs_taxon, else None
+            "identification_rank",  # this will the value of level
+            "identification_method",   # BLAST
 
-        # These are the results of the BLAST check. Either
-        # they match the submitted lineage of identification is empty
-        "identification",  # this will be the same as exp_taxon if exp_taxon in obs_taxon, else None
-        "identification_rank",  # this will the value of level
-        "identification_method",   # BLAST
+            # Bases within the marker region
+            "nuc_basecount",
 
-        # Bases within the marker region
-        "nuc_basecount",
-
-        # Non-BCDM terms
-        # Bases within the full sequence
-        "nuc_full_basecount",
-        "ambig_basecount",
-        "ambig_full_basecount",
-        "stop_codons",
-        "error",
-    ]
+            # Non-BCDM terms
+            # Bases within the full sequence
+            "nuc_full_basecount",
+            "ambig_basecount",
+            "ambig_full_basecount",
+            "stop_codons",
+            "error",
+        ]
