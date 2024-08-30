@@ -88,6 +88,7 @@ class BarcodeValidator:
             # Run local BLAST to find observed taxon at the specified rank
             constraint = self.build_constraint(sp, config.get('constrain'))
             br = BlastRunner(config)
+            br.ncbi_tree = self.ncbi_tree
             obs_taxon = br.run_localblast(record, constraint, config.get('level'))
 
             # Handle BLAST failure
