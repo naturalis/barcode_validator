@@ -7,9 +7,9 @@ import sqlite3
 import traceback
 from datetime import datetime
 from typing import Optional
-from .config import Config
-from .core import BarcodeValidator
-from .github import GitHubClient
+from barcode_validator.config import Config
+from barcode_validator.core import BarcodeValidator
+from barcode_validator.github import GitHubClient
 
 
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
