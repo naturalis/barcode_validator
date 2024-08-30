@@ -29,7 +29,7 @@ class BlastRunner:
         """
         Initialize the BarcodeValidator object.
         """
-        self.ncbi_tree: Optional[Tree] = config.get('ncbi_tree')
+        self.ncbi_tree: Optional[Tree] = Optional[Tree]
         self.blast_db: Optional[str] = config.get('blast_db')
         self.num_threads: Optional[int] = config.get('num_threads')
         self.evalue: Optional[float] = config.get('evalue')
