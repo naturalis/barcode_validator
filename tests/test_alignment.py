@@ -3,8 +3,7 @@ from pathlib import Path
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from unittest.mock import patch, Mock
-from barcode_validator.alignment import (align_to_hmm, marker_seqlength, num_ambiguous, unalign_sequence,
-                                         translate_sequence, parse_fasta, get_stop_codons)
+from barcode_validator.alignment import SequenceHandler
 
 
 @pytest.fixture
@@ -36,33 +35,33 @@ def test_align_to_hmm(mock_config, sample_sequence):
         mock_temp_file().__enter__().name = 'temp_file'
         mock_parse.return_value = iter([sample_sequence])
 
-        result = align_to_hmm(sample_sequence, mock_config)
+        result = SequenceHandler.align_to_hmm(sample_sequence, mock_config)
 
         assert mock_run.called
         assert isinstance(result, SeqRecord)
 
 
 def test_marker_seqlength(sample_aligned_sequence):
-    result = marker_seqlength(sample_aligned_sequence)
+    result = SequenceHandler.marker_seqlength(sample_aligned_sequence)
     assert result == 9  # see line 28, all gaps removed, but Ns count
 
 
 def test_num_ambiguous(sample_aligned_sequence):
-    result = num_ambiguous(sample_aligned_sequence)
+    result = SequenceHandler.num_ambiguous(sample_aligned_sequence)
     assert result == 1  # One 'N' in the sequence
 
 
 def test_unalign_sequence():
     aligned_seq = SeqRecord(Seq("A-T-G-C-N"), id="test", name="Test")
-    result = unalign_sequence(aligned_seq)
+    result = SequenceHandler.unalign_sequence(aligned_seq)
     assert str(result.seq) == "ATGCN"
 
 
-def test_translate_sequence(mock_config):
+def test_translate_sequence():
     dna_seq = SeqRecord(Seq("ATGGAATAA"), id="test", name="Test")
     with patch('Bio.Seq.Seq.translate') as mock_translate:
         mock_translate.return_value = Seq("ME*")
-        result = translate_sequence(dna_seq, mock_config)
+        result = SequenceHandler.translate_sequence(dna_seq, 5)
         assert str(result.seq) == "ME*"
 
 
@@ -71,7 +70,7 @@ def test_parse_fasta():
     current_dir = Path(__file__).parent
     example_fasta = current_dir.parent / 'examples' / 'mge.fa'
 
-    result = list(parse_fasta(example_fasta))
+    result = list(SequenceHandler.parse_fasta(example_fasta))
     assert len(result) == 1
     assert result[0][0] == "BGENL191-23"
 
@@ -80,7 +79,7 @@ def test_parse_fasta_empty_file():
     current_dir = Path(__file__).parent
     example_fasta = current_dir.parent / 'examples' / 'empty_seq.fa'
 
-    result = list(parse_fasta(example_fasta))
+    result = list(SequenceHandler.parse_fasta(example_fasta))
     assert len(result) == 1
     assert len(result[0][1].seq) == 0
 
@@ -88,9 +87,9 @@ def test_parse_fasta_empty_file():
 def test_align_fasta_empty_file():
     current_dir = Path(__file__).parent
     example_fasta = current_dir.parent / 'examples' / 'empty_seq.fa'
-    result = list(parse_fasta(example_fasta))
+    result = list(SequenceHandler.parse_fasta(example_fasta))
     seq = result[0][1]
-    assert align_to_hmm(seq, None) is None
+    assert SequenceHandler.align_to_hmm(seq, None) is None
 
 
 def test_parse_fasta_with_json():
@@ -98,7 +97,7 @@ def test_parse_fasta_with_json():
     current_dir = Path(__file__).parent
     example_fasta = current_dir.parent / 'examples' / 'mge_meta.fa'
 
-    result = list(parse_fasta(example_fasta))
+    result = list(SequenceHandler.parse_fasta(example_fasta))
 
     # Check the number of entries
     assert len(result) == 1, "Expected one entry in the FASTA file"
@@ -124,25 +123,25 @@ def test_parse_fasta_with_json():
 
 def test_get_stop_codons():
     aa_seq = SeqRecord(Seq("M*EF*GH"), id="test", name="Test")
-    result = get_stop_codons(aa_seq)
+    result = SequenceHandler.get_stop_codons(aa_seq)
     assert result == [1, 4]
 
 
 def test_unalign_sequence_with_tilde():
     aligned_seq = SeqRecord(Seq("A~T~G~C~N"), id="test", name="Test")
-    result = unalign_sequence(aligned_seq)
+    result = SequenceHandler.unalign_sequence(aligned_seq)
     assert str(result.seq) == "ATGCN"
 
 
 def test_unalign_sequence_with_string_input():
     aligned_seq = "A-T-G-C-N"
-    result = unalign_sequence(aligned_seq)
+    result = SequenceHandler.unalign_sequence(aligned_seq)
     assert result == "ATGCN"
 
 
 def test_unalign_sequence_with_invalid_input():
     with pytest.raises(TypeError):
-        unalign_sequence(123)
+        SequenceHandler.unalign_sequence(123)
 
 
 def test_translate_sequence_with_ambiguous_bases(mock_config):
@@ -150,47 +149,47 @@ def test_translate_sequence_with_ambiguous_bases(mock_config):
     # that shifts the phase of the sequence. This is why the sequence is shifted by one base and
     # why we insert a gap at the beginning of this test sequence.
     dna_seq = SeqRecord(Seq("-ATGNNATAA"), id="test", name="Test")
-    result = translate_sequence(dna_seq, mock_config)
+    result = SequenceHandler.translate_sequence(dna_seq, 5)
     assert str(result.seq) == "M*"  # The NN codon is skipped
 
 
 def test_marker_seqlength_with_tilde():
     seq = SeqRecord(Seq("ATG~C~N~TGCA"), id="test", name="Test")
-    result = marker_seqlength(seq)
+    result = SequenceHandler.marker_seqlength(seq)
     assert result == 9  # 12 total - 3 tildes
 
 
 def test_num_ambiguous_with_multiple_ambiguous_bases():
     seq = SeqRecord(Seq("ATGCNRYSWKMBDHV"), id="test", name="Test")
-    result = num_ambiguous(seq)
+    result = SequenceHandler.num_ambiguous(seq)
     assert result == 11  # All except A, T, G, C are ambiguous
 
 
 def test_get_stop_codons_no_stops():
     aa_seq = SeqRecord(Seq("MEFGH"), id="test", name="Test")
-    result = get_stop_codons(aa_seq)
+    result = SequenceHandler.get_stop_codons(aa_seq)
     assert result == []
 
 
 def test_marker_seqlength_empty_sequence():
     seq = SeqRecord(Seq(""), id="test", name="Test")
-    result = marker_seqlength(seq)
+    result = SequenceHandler.marker_seqlength(seq)
     assert result == 0
 
 
 def test_num_ambiguous_empty_sequence():
     seq = SeqRecord(Seq(""), id="test", name="Test")
-    result = num_ambiguous(seq)
+    result = SequenceHandler.num_ambiguous(seq)
     assert result == 0
 
 
 def test_get_stop_codons_empty_sequence():
     aa_seq = SeqRecord(Seq(""), id="test", name="Test")
-    result = get_stop_codons(aa_seq)
+    result = SequenceHandler.get_stop_codons(aa_seq)
     assert result == []
 
 
 def test_translate_sequence_empty_sequence(mock_config):
     dna_seq = SeqRecord(Seq(""), id="test", name="Test")
-    result = translate_sequence(dna_seq, mock_config)
+    result = SequenceHandler.translate_sequence(dna_seq, 5)
     assert str(result.seq) == ""
