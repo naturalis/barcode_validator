@@ -8,8 +8,8 @@ import barcode_validator.result
 def main(fasta_file_path):
 
     # Initialize BarcodeValidator
-    validator = BarcodeValidator(config)
-    validator.initialize()
+    validator = BarcodeValidator()
+    validator.initialize(config.get('ncbi_taxonomy'), config.get('bold_sheet_file'))
 
     # Print header
     logging.info(f"Starting analysis for file: {fasta_file_path}")
@@ -18,7 +18,7 @@ def main(fasta_file_path):
     print('\t'.join(header))  # print TSV header
 
     # Validate the FASTA file
-    results = validator.validate_fasta(fasta_file_path)
+    results = validator.validate_fasta(fasta_file_path, config)
 
     # Print results
     for result in results:
