@@ -48,6 +48,7 @@ class GitHubClient:
         url = f"{self.base_url}/issues/{pr_number}/comments"
         data = {"body": comment}
         response = requests.post(url, headers=self.headers, json=data)
+        logging.info(response)
         response.raise_for_status()
         return response.json()
 
