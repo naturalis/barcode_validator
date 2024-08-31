@@ -100,8 +100,9 @@ class ValidationDaemon:
         self.conn.commit()
         logging.info(f"Changed status of PR {pr_number} to 'processing'")
         self.gc.post_comment(pr_number, "\U0001F916 - Hi! This is an automated message from the barcode validation "
-                                        "robot. I'm going to validate the FASTA files in your request. Please wait "
-                                        "while I process the files. This takes about two minutes per sequence.")
+                                        "robot. I'm going to validate the FASTA files in your request. This takes " 
+                                        "less than two minutes per sequence (about two hours per plate). Subscribe "
+                                        "to this thread to get updates. You can safely close this tab.")
 
     def finalize_pr(self, pr_number):
         """
