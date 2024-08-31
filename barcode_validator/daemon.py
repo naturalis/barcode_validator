@@ -241,32 +241,31 @@ class ValidationDaemon:
         barcode_rank, full_rank, messages = r.calculate_ranks(verbosity=3)
         status_emoji = "✅" if r.passes_all_checks() else "❗"
         obs_taxon_names = "\n".join(f"    - {taxon.name}" for taxon in r.obs_taxon)
-        comment += f"""
-    <details>
-    <summary style="cursor: pointer; color: blue;"> {status_emoji} Process ID: {r.process_id} </summary>
+        message_items = "\n".join(f"    - {m}" for m in messages)
+        comment += f"""<details>
+<summary> {status_emoji} Process ID: {r.process_id} </summary>
     
-    - File: {file}
-    - {"✅ No errors" if r.error is None else f"⛔{r.error}"}
-    - {"✅" if r.check_taxonomy() else "❗"} **Taxonomic check**
-      - Expected species as registered at BOLD: {r.species}
-      - Expected {config.get('level')} as registered at BOLD: {r.exp_taxon}
-      - Observed BLAST hits at {config.get('level')} level: 
-    {obs_taxon_names}  
-    - {"✅" if r.check_length() else "❗"} **Sequence length**
-      - Net length aligned to marker region: {r.seq_length}  
-      - Full sequence length: {r.full_length}
-    - {"✅" if r.check_seq_quality() else "❗"} **Sequence quality**
-      - Ambiguities in marker region: {r.ambiguities}
-      - Ambiguities in full sequence: {r.full_ambiguities}
-      - Stop codons: {len(r.stop_codons)}
-    - Rankings:
-      - Barcode rank: {barcode_rank}
-      - Full rank: {full_rank}
-      - Messages: 
-        {messages}
+- File: {file}
+- {"✅ No errors" if r.error is None else f"⛔{r.error}"}
+- {"✅" if r.check_taxonomy() else "❗"} **Taxonomic check**
+  - Expected species as registered at BOLD: {r.species}
+  - Expected {config.get('level')} as registered at BOLD: {r.exp_taxon}
+  - Observed BLAST hits at {config.get('level')} level: 
+{obs_taxon_names}  
+- {"✅" if r.check_length() else "❗"} **Sequence length**
+  - Net length aligned to marker region: {r.seq_length}  
+  - Full sequence length: {r.full_length}
+- {"✅" if r.check_seq_quality() else "❗"} **Sequence quality**
+  - Ambiguities in marker region: {r.ambiguities}
+  - Ambiguities in full sequence: {r.full_ambiguities}
+  - Stop codons: {len(r.stop_codons)}
+- Rankings:
+  - Barcode rank: {barcode_rank}
+  - Full rank: {full_rank}
+  - Messages: 
+{message_items}
     
-    </details>
-    """
+</details>"""
         return comment
 
 
