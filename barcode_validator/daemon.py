@@ -10,6 +10,7 @@ from typing import Optional
 from barcode_validator.config import Config
 from barcode_validator.core import BarcodeValidator
 from barcode_validator.github import GitHubClient
+from barcode_validator.result import DNAAnalysisResult
 
 
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
@@ -121,13 +122,13 @@ class ValidationDaemon:
         :param config: The Config object
         :param pr_number: The pull request number
         :param branch: The branch name
-        :return: A list of validation results
+        :return: A dict where keys are FASTA file names and values are lists of DNAAnalysisResult objects
         """
         logging.info(f"Starting validation for PR {pr_number}")
         fasta_files = self.fetch_pr_fastas(branch, pr_number)
 
         # Run the validation process for each FASTA file
-        all_results = []
+        all_results = {}
         for file in fasta_files:
             logging.info(f"Processing file: {file['filename']}")
 
@@ -144,11 +145,11 @@ class ValidationDaemon:
                 with open(file['filename'], 'wb') as f:
                     f.write(response.content)
 
-                # Validate file
+                # Validate file, store results
                 logging.info(f"Validating {file['filename']}...")
                 results = self.bv.validate_fasta(file['filename'], config)
+                all_results[file['filename']] = results
                 logging.info(f"Validation complete for {file['filename']}")
-                all_results.extend([(file['filename'], result) for result in results])
             else:
                 logging.error(f"Failed to fetch file {file['filename']}: {response.status_code}")
 
@@ -180,52 +181,48 @@ class ValidationDaemon:
         logging.info(f"Found {len(fasta_files)} FASTA files in PR {pr_number}")
         return fasta_files
 
-    def post_pr_results(self, config, pr_number, results):
+    def post_pr_results(self, config, pr_number, resultset):
         """
         Post a comment to a pull request with the validation results.
         :param config: The Config object
         :param pr_number: The pull request number
-        :param results: A list of validation results
+        :param resultset: A dict where keys are FASTA file names and values are lists of DNAAnalysisResult objects
         :return: None
         """
-        comment = "# Validation Results\n\n"
-        current_file_handle = None
-        current_file_name = None
-        for file, r in results:
+        for file, results in resultset.items():
 
-            # If this is true, then current_file_name is None or previous file
-            if file != current_file_name:
+            # Open a new TSV file for each file
+            tsv_name = f"{file}.tsv"
+            tsv_fh = open(tsv_name, 'w', buffering=1)
 
-                # Close the previous file handle if it exists, i.e. current_file_name was not None
-                if current_file_handle:
-                    # Finalize the file and commit it
-                    current_file_handle.close()
-                    tsv_name = f"{current_file_name}.tsv"
-                    self.gc.commit_file(current_file_name, f"Add validated FASTA file {current_file_name}")
-                    self.gc.commit_file(tsv_name, f"Add validation results for {current_file_name}")
+            # Configure the header for the TSV file by specifying the taxonomic rank at which we matched obs_taxon
+            # and by adding a column that specifies the FASTA file name
+            hlist = DNAAnalysisResult.result_fields(config.get('level'))
+            hlist.append('fasta_file')
+            tsv_fh.write('\t'.join(hlist) + '\n')
 
-                # Open the new file and write the header, happens both when current_file_name is None or previous file
-                current_file_handle = open(f"{file}.tsv", 'w', buffering=1)
-                hlist = r.result_fields(config.get('level'))
-                hlist.append('fasta_file')
-                current_file_handle.write('\t'.join(hlist) + '\n')
-                current_file_name = file
+            # Write the result objects to the TSV file
+            for r in results:
+                r.level = config.get('level')  # will be serialized to identification_rank
+                rlist = r.get_values()  # will include obs_taxon
+                rlist.append(file)  # add the FASTA file name under the 'fasta_file' column
+                tsv_fh.write('\t'.join(map(str, rlist)) + '\n')
 
-            # Generate the TSV file, with an extra column ('fasta_file') for the analyzed file name
-            # and a specificaton of the taxonomic level ('identification_rank')
-            r.level = config.get('level')
-            rlist = r.get_values()
-            rlist.append(file)
-            current_file_handle.write('\t'.join(map(str, rlist)) + '\n')
+            # Close the TSV file and commit the files
+            tsv_fh.close()
+            logging.info(f"Going to commit {file} and {tsv_name}")
+            self.gc.commit_file(file, f"Validated FASTA file {file} for #PR{pr_number}")
+            self.gc.commit_file(tsv_name, f"Results from FASTA file {file} for #PR{pr_number}")
 
-            # Generate the comment to post
-            comment = self.generate_markdown(comment, config, file, r)
+            # Post a comment with the validation results for the file
+            logging.info(f"Posting comment for {file}")
+            comment = f"# Validation Results for {file}\n\n"
+            for r in results:
+                comment = self.generate_markdown(comment, config, file, r)
+            self.gc.post_comment(pr_number, comment)
 
-        # Post the markdown comment and push the TSV files
-        self.gc.post_comment(pr_number, comment)
-        current_file_handle.close()
-        self.gc.commit_file(current_file_name, f"Add validated FASTA file {current_file_name}")
-        self.gc.commit_file(f"{current_file_name}.tsv", f"Add validation results for {current_file_name}")
+        # Push the TSV files
+        logging.info(f"Pushing commits for PR {pr_number}")
         self.gc.run_git_command(['git', 'push', 'origin', f"pr-{pr_number}"], f"Failed to push branch pr-{pr_number}")
 
     @classmethod
