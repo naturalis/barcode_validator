@@ -241,7 +241,8 @@ class ValidationDaemon:
         barcode_rank, full_rank, messages = r.calculate_ranks(verbosity=3)
         status_emoji = "✅" if r.passes_all_checks() else "❗"
         obs_taxon_names = "\n".join(f"    - {taxon.name}" for taxon in r.obs_taxon)
-        message_items = "\n".join(f"    - {m}" for m in messages)
+        messages_list = messages.split('\n') if isinstance(messages, str) else messages
+        message_items = "\n".join(f"    - {m}" for m in messages_list)
         comment += f"""<details>
 <summary> {status_emoji} Process ID: {r.process_id} </summary>
     
