@@ -70,8 +70,8 @@ class BarcodeValidator:
         :param result: A DNAAnalysisResult object
         """
 
-        # Lookup expected species in BOLD tree
-        sp = self.get_tip_by_processid(result.process_id)
+        # Lookup expected taxon in BOLD tree
+        sp = self.get_node_by_processid(result.process_id)
         if sp is None:
             logging.warning(f"Process ID {result.process_id} not found in BOLD tree.")
             result.error = f"{result.process_id} not in BOLD"
@@ -98,16 +98,16 @@ class BarcodeValidator:
             else:
                 result.obs_taxon = obs_taxon
 
-    def get_tip_by_processid(self, process_id):
+    def get_node_by_processid(self, process_id):
         """
-        Get a tip from the BOLD tree by its 'processid' attribute.
+        Get a node from the BOLD tree by its 'processid' attribute.
         :param process_id: A process ID
         :return: A Taxon object
         """
         logging.info(f'Looking up tip by process ID: {process_id}')
-        for tip in self.bold_tree.get_terminals():
-            if process_id in tip.guids:
-                return tip
+        for node in self.bold_tree.find_clades():
+            if process_id in node.guids:
+                return node
         return None
 
     def build_constraint(self, bold_tip: Taxon, rank: str) -> str:
