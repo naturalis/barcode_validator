@@ -97,7 +97,7 @@ def test_validate_taxonomy(mock_trees, mock_config):
 
     mock_trees.bold_tree.root.get_path.return_value = [mock_exp_taxon, mock_species]
 
-    with patch.object(mock_trees, 'get_tip_by_processid', return_value=mock_species), \
+    with patch.object(mock_trees, 'get_node_by_processid', return_value=mock_species), \
             patch.object(mock_trees, 'build_constraint', return_value='1234'), \
             patch('barcode_validator.core.BlastRunner') as MockBlastRunner:
         MockBlastRunner.return_value.run_localblast.return_value = mock_obs_taxon
@@ -110,12 +110,12 @@ def test_validate_taxonomy(mock_trees, mock_config):
         assert result.error is None
 
     # Test error case when species is not found
-    with patch.object(mock_trees, 'get_tip_by_processid', return_value=None):
+    with patch.object(mock_trees, 'get_node_by_processid', return_value=None):
         mock_trees.validate_taxonomy(mock_config, record, result)
         assert result.error == "process1 not in BOLD"
 
     # Test error case when BLAST fails
-    with patch.object(mock_trees, 'get_tip_by_processid', return_value=mock_species), \
+    with patch.object(mock_trees, 'get_node_by_processid', return_value=mock_species), \
             patch.object(mock_trees, 'build_constraint', return_value='1234'), \
             patch('barcode_validator.core.BlastRunner') as MockBlastRunner:
         MockBlastRunner.return_value.run_localblast.return_value = None
