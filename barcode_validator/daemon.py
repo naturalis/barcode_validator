@@ -2,12 +2,12 @@ import argparse
 import requests
 import time
 import os
-import logging
 import sqlite3
 import traceback
 from datetime import datetime
 from typing import Optional
-from barcode_validator.config import Config
+from nbitk.config import Config
+from nbitk.logger import get_formatted_logger
 from barcode_validator.core import BarcodeValidator
 from barcode_validator.github import GitHubClient
 from barcode_validator.result import DNAAnalysisResult
@@ -23,18 +23,20 @@ class ValidationDaemon:
         self.bv: Optional[BarcodeValidator] = None
         self.gc: Optional[GitHubClient] = None
         self.conn: Optional[sqlite3.Connection] = None
+        self.logger = None
 
     def initialize(self, config: Config):
-        self.bv = BarcodeValidator()
+        self.logger = get_formatted_logger(__name__, config)
+        self.bv = BarcodeValidator(self.logger)
         self.bv.initialize(config.get('ncbi_taxonomy'), config.get('bold_sheet_file'))
         self.gc = GitHubClient(config.get('repo_owner'), config.get('repo_name'), GITHUB_TOKEN,
                                config.get('repo_location'))
         try:
-            logging.info(f"Going to initialize PR database at {config.get('pr_db_file')}")
+            self.logger.info(f"Going to initialize PR database at {config.get('pr_db_file')}")
             self.conn = self.setup_database(config.get('pr_db_file'))
-            logging.info("Database initialized")
+            self.logger.info("Database initialized")
         except Exception as e:
-            logging.error(f"Error setting up database: {str(e)}")
+            self.logger.error(f"Error setting up database: {str(e)}")
             exit(1)
 
     @classmethod
@@ -82,7 +84,7 @@ class ValidationDaemon:
                 error_msg = f"Error processing PR {pr_number}: {str(e)}\n"
                 error_msg += "Stack trace:\n"
                 error_msg += traceback.format_exc()
-                logging.error(error_msg)
+                self.logger.error(error_msg)
                 c.execute("UPDATE prs SET status = 'error', last_updated = ? WHERE pr_number = ?",
                           (datetime.now(), pr_number))
                 self.conn.commit()
@@ -98,7 +100,7 @@ class ValidationDaemon:
         c.execute("INSERT OR REPLACE INTO prs (pr_number, status, last_updated) VALUES (?, 'processing', ?)",
                   (pr_number, datetime.now()))
         self.conn.commit()
-        logging.info(f"Changed status of PR {pr_number} to 'processing'")
+        self.logger.info(f"Changed status of PR {pr_number} to 'processing'")
         self.gc.post_comment(pr_number, "\U0001F916 - Hi! This is an automated message from the barcode validation "
                                         "robot. I'm going to validate the FASTA files in your request. This takes " 
                                         "less than two minutes per sequence (about two hours per plate). Subscribe "
@@ -114,7 +116,7 @@ class ValidationDaemon:
         c.execute("UPDATE prs SET status = 'completed', last_updated = ? WHERE pr_number = ?",
                   (datetime.now(), pr_number))
         self.conn.commit()
-        logging.info(f"Changed status of PR {pr_number} to 'completed'")
+        self.logger.info(f"Changed status of PR {pr_number} to 'completed'")
         self.gc.post_comment(pr_number, "\U0001F916 - Validation complete. If all looks good, notify @rvosa to merge.")
 
     def validate_pr(self, config, pr_number, branch):
@@ -125,36 +127,36 @@ class ValidationDaemon:
         :param branch: The branch name
         :return: A dict where keys are FASTA file names and values are lists of DNAAnalysisResult objects
         """
-        logging.info(f"Starting validation for PR {pr_number}")
+        self.logger.info(f"Starting validation for PR {pr_number}")
         fasta_files = self.fetch_pr_fastas(branch, pr_number)
 
         # Run the validation process for each FASTA file
         all_results = {}
         for file in fasta_files:
-            logging.info(f"Processing file: {file['filename']}")
+            self.logger.info(f"Processing file: {file['filename']}")
 
             # Fetch file content
             file_url = file['raw_url']
-            logging.info(f"Fetching file from {file_url}")
+            self.logger.info(f"Fetching file from {file_url}")
             response = requests.get(file_url, headers=self.gc.headers)
             if response.status_code == 200:
                 # Create directory if it doesn't exist
                 os.makedirs(os.path.dirname(file['filename']), exist_ok=True)
 
                 # Save file content
-                logging.info(f"Saving file content to {file['filename']}")
+                self.logger.info(f"Saving file content to {file['filename']}")
                 with open(file['filename'], 'wb') as f:
                     f.write(response.content)
 
                 # Validate file, store results
-                logging.info(f"Validating {file['filename']}...")
+                self.logger.info(f"Validating {file['filename']}...")
                 results = self.bv.validate_fasta(file['filename'], config)
                 all_results[file['filename']] = results
-                logging.info(f"Validation complete for {file['filename']}")
+                self.logger.info(f"Validation complete for {file['filename']}")
             else:
-                logging.error(f"Failed to fetch file {file['filename']}: {response.status_code}")
+                self.logger.error(f"Failed to fetch file {file['filename']}: {response.status_code}")
 
-        logging.info(f"Validation complete for PR {pr_number}")
+        self.logger.info(f"Validation complete for PR {pr_number}")
         return all_results
 
     def fetch_pr_fastas(self, branch, pr_number):
@@ -166,20 +168,20 @@ class ValidationDaemon:
         """
 
         # Fetch the latest changes
-        logging.info(f"Fetching latest changes for PR {pr_number}")
+        self.logger.info(f"Fetching latest changes for PR {pr_number}")
         self.gc.run_git_command(['git', 'fetch', 'origin'], "Failed to fetch from origin")
 
         # Create or reset the PR branch
         pr_branch = f"pr-{pr_number}"
-        logging.info(f"Creating/resetting branch {pr_branch}")
+        self.logger.info(f"Creating/resetting branch {pr_branch}")
         self.gc.run_git_command(['git', 'checkout', '-B', pr_branch, f'origin/{branch}'],
                                 f"Failed to create/reset branch {pr_branch}")
 
         # Get the FASTA files from the PR
-        logging.info(f"Getting files for PR {pr_number}")
+        self.logger.info(f"Getting files for PR {pr_number}")
         files = self.gc.get_pr_files(pr_number)
         fasta_files = [f for f in files if f['filename'].endswith(('.fasta', '.fa', '.fas'))]
-        logging.info(f"Found {len(fasta_files)} FASTA files in PR {pr_number}")
+        self.logger.info(f"Found {len(fasta_files)} FASTA files in PR {pr_number}")
         return fasta_files
 
     def post_pr_results(self, config, pr_number, resultset):
@@ -211,19 +213,19 @@ class ValidationDaemon:
 
             # Close the TSV file and commit the files
             tsv_fh.close()
-            logging.info(f"Going to commit {file} and {tsv_name}")
+            self.logger.info(f"Going to commit {file} and {tsv_name}")
             self.gc.commit_file(file, f"Validated FASTA file {file} for #PR{pr_number}")
             self.gc.commit_file(tsv_name, f"Results from FASTA file {file} for #PR{pr_number}")
 
             # Post a comment with the validation results for the file
-            logging.info(f"Posting comment for {file}")
+            self.logger.info(f"Posting comment for {file}")
             comment = f"# Validation Results for {file}\n\n"
             for r in results:
                 comment = self.generate_markdown(comment, config, file, r)
             self.gc.post_comment(pr_number, comment)
 
         # Push the TSV files
-        logging.info(f"Pushing commits for PR {pr_number}")
+        self.logger.info(f"Pushing commits for PR {pr_number}")
         self.gc.run_git_command(['git', 'push', 'origin', f"pr-{pr_number}"], f"Failed to push branch pr-{pr_number}")
 
     @classmethod
@@ -279,37 +281,37 @@ def main(config_file, verbosity):
     # Initialize the Config object, setup logging
     config = Config()
     config.load_config(config_file)
-    config.setup_logging(verbosity)
-    logging.info("*** Barcode Validator Daemon starting ***")
+    logger = get_formatted_logger(__name__, config)
+    logger.info("*** Barcode Validator Daemon starting ***")
     daemon = ValidationDaemon()
     daemon.initialize(config)
 
     # Start the main loop
-    logging.info("Starting main loop")
+    logger.info("Starting main loop")
     while True:
 
         try:
             # Get a list of open PRs and iterate over them
-            logging.info("Checking for open PRs...")
+            logger.info("Checking for open PRs...")
             prs = daemon.gc.get_open_prs()
-            logging.info(f"Found {len(prs)} open PRs")
+            logger.info(f"Found {len(prs)} open PRs")
             for pr in prs:
 
                 # Process PRs that contain FASTA files
                 pr_number = pr['number']
-                logging.info(f"Inspecting files from PR {pr['number']}...")
+                logger.info(f"Inspecting files from PR {pr['number']}...")
                 files = daemon.gc.get_pr_files(pr_number)
-                logging.info(f"Found {len(files)} files in PR {pr['number']}")
+                logger.info(f"Found {len(files)} files in PR {pr['number']}")
 
                 # Iterate over the files in the PR and process if any are FASTA files
                 if any(f['filename'].endswith(('.fasta', '.fa', '.fas')) for f in files):
-                    logging.info(f"Processing PR {pr['number']}")
+                    logger.info(f"Processing PR {pr['number']}")
                     daemon.process_pr(config, pr_number, pr['head']['ref'])
 
         except Exception as e:
-            logging.error(f"Error in main loop: {str(e)}")
-            logging.error(traceback.format_exc())
-            logging.info("Hopefully this was a transient error. Trying again in 5 minutes...")
+            logger.error(f"Error in main loop: {str(e)}")
+            logger.error(traceback.format_exc())
+            logger.info("Hopefully this was a transient error. Trying again in 5 minutes...")
 
         time.sleep(POLL_INTERVAL)
 

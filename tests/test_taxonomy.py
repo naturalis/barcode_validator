@@ -3,7 +3,7 @@ from unittest.mock import Mock, patch, mock_open
 from Bio.SeqRecord import SeqRecord
 from Bio.Seq import Seq
 from Bio.Phylo.BaseTree import Tree
-from barcode_validator.config import Config
+from nbitk.config import Config
 from barcode_validator.taxonomy import BlastRunner
 from nbitk.Taxon import Taxon
 
@@ -19,7 +19,8 @@ def mock_config():
         'max_target_seqs': 10,
         'word_size': 11,
         'BLASTDB_LMDB_MAP_SIZE': 1000000000,
-        'BLASTDB': '/path/to/blastdb'
+        'BLASTDB': '/path/to/blastdb',
+        'log_level': 'ERROR',
     }[key]
     return config
 

@@ -1,9 +1,25 @@
 import pytest
 import io
 from pathlib import Path
+from unittest.mock import Mock
+from nbitk.config import Config
 from nbitk.Phylo.BOLDXLSXIO import Parser
 from barcode_validator.core import BarcodeValidator
 
+
+@pytest.fixture
+def mock_config():
+    config = Mock(spec=Config)
+    config.get.side_effect = lambda key: {
+        'repo_owner': 'test_owner',
+        'repo_name': 'test_repo',
+        'repo_location': '/test/clone/path',
+        'translation_table': 1,
+        'ncbi_taxonomy': 'mock_ncbi.tar.gz',
+        'bold_sheet_file': 'mock_bold.xlsx',
+        'log_level': 'ERROR',
+    }[key]
+    return config
 
 @pytest.fixture
 def bold_xlsx_path():
@@ -20,8 +36,8 @@ def parsed_tree(bold_xlsx_path):
         return parser.parse()
 
 
-def test_barcode_validator(parsed_tree):
-    validator = BarcodeValidator()
+def test_barcode_validator(parsed_tree, mock_config):
+    validator = BarcodeValidator(mock_config)
     validator.bold_tree = parsed_tree
 
     # Test for the specific process ID
@@ -33,4 +49,4 @@ def test_barcode_validator(parsed_tree):
 
 
 if __name__ == '__main__':
-    pytest.main([__file__])
+    pytest.main()

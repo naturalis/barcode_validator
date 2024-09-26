@@ -4,7 +4,7 @@ from Bio.SeqRecord import SeqRecord
 from Bio.Seq import Seq
 from Bio.Phylo.BaseTree import Tree, Clade
 from nbitk.Taxon import Taxon
-from barcode_validator.config import Config
+from nbitk.config import Config
 from barcode_validator.result import DNAAnalysisResult
 from barcode_validator.core import BarcodeValidator
 
@@ -16,14 +16,17 @@ def mock_config():
         'level': 'family',
         'constrain': 'order',
         'hmm_file': 'mock_hmm.hmm',
-        'translation_table': 1
+        'translation_table': 1,
+        'ncbi_taxonomy': 'mock_ncbi.tar.gz',
+        'bold_sheet_file': 'mock_bold.xlsx',
+        'log_level': 'ERROR',
     }[key]
     return config
 
 
 @pytest.fixture
-def barcode_validator():
-    return BarcodeValidator()
+def barcode_validator(mock_config):
+    return BarcodeValidator(mock_config)
 
 
 @pytest.fixture
@@ -51,7 +54,7 @@ def test_initialize(barcode_validator):
         mock_ncbi_parser.return_value.parse.return_value = Mock(spec=Tree)
         mock_bold_parser.return_value.parse.return_value = Mock(spec=Tree)
 
-        barcode_validator.initialize('mock_ncbi.tar.gz', 'mock_bold.xlsx')
+        barcode_validator.initialize()
 
         assert isinstance(barcode_validator.ncbi_tree, Mock)
         assert isinstance(barcode_validator.bold_tree, Mock)
@@ -162,7 +165,8 @@ def test_validate_sequence_quality(mock_num_ambiguous, mock_marker_seqlength, mo
     mock_marker_seqlength.return_value = 4
     mock_num_ambiguous.side_effect = [0, 0]
 
-    BarcodeValidator.validate_sequence_quality(mock_config, record, result)
+    bv = BarcodeValidator(mock_config)
+    bv.validate_sequence_quality(mock_config, record, result)
 
     assert result.full_length == 4
     assert result.full_ambiguities == 0

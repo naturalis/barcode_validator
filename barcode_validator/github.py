@@ -1,18 +1,20 @@
-import logging
 import subprocess
 import requests
 import os
+from nbitk.config import Config
+from nbitk.logger import get_formatted_logger
 
 
 class GitHubClient:
-    def __init__(self, repo_owner, repo_name, github_token, clone_path):
-        self.repo_owner = repo_owner
-        self.repo_name = repo_name
-        self.github_token = github_token
-        self.clone_path = clone_path
-        self.base_url = f"https://api.github.com/repos/{repo_owner}/{repo_name}"
+    def __init__(self, config: Config):
+        self.logger = get_formatted_logger(__name__, config)
+        self.repo_owner = config.get('repo_owner')
+        self.repo_name = config.get('repo_name')
+        self.github_token = os.environ.get('GITHUB_TOKEN')
+        self.clone_path = config.get('repo_location')
+        self.base_url = f"https://api.github.com/repos/{self.repo_owner}/{self.repo_name}"
         self.headers = {
-            "Authorization": f"token {github_token}",
+            "Authorization": f"token {self.github_token}",
             "Accept": "application/vnd.github.v3+json"
         }
 
@@ -48,7 +50,7 @@ class GitHubClient:
         url = f"{self.base_url}/issues/{pr_number}/comments"
         data = {"body": comment}
         response = requests.post(url, headers=self.headers, json=data)
-        logging.info(response)
+        self.logger.info(response)
         response.raise_for_status()
         return response.json()
 
@@ -62,7 +64,7 @@ class GitHubClient:
         self.ensure_correct_directory()
         result = subprocess.run(command, capture_output=True, text=True)
         if result.returncode != 0:
-            logging.error(f"{error_message}: {result.stderr}")
+            self.logger.error(f"{error_message}: {result.stderr}")
             raise RuntimeError(f"Git command failed: {' '.join(command)}")
         return result.stdout
 
@@ -83,5 +85,5 @@ class GitHubClient:
         """
         current_dir = os.getcwd()
         if current_dir != self.clone_path:
-            logging.debug(f"Changing working directory from {current_dir} to {self.clone_path}")
+            self.logger.debug(f"Changing working directory from {current_dir} to {self.clone_path}")
             os.chdir(self.clone_path)
