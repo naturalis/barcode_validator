@@ -1,6 +1,5 @@
 from nbitk.Taxon import Taxon
 from typing import List, Optional, Tuple
-import logging
 
 
 class DNAAnalysisResult:
@@ -119,7 +118,6 @@ class DNAAnalysisResult:
         :return:
         """
         if not isinstance(taxa, list) or not all(isinstance(item, Taxon) for item in taxa):
-            logging.error(taxa)
             raise ValueError("obs_taxon must be a list of Taxon objects")
         self._obs_taxon = taxa
 
