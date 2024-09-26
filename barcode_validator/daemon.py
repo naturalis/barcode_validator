@@ -27,10 +27,9 @@ class ValidationDaemon:
 
     def initialize(self, config: Config):
         self.logger = get_formatted_logger(__name__, config)
-        self.bv = BarcodeValidator(self.logger)
-        self.bv.initialize(config.get('ncbi_taxonomy'), config.get('bold_sheet_file'))
-        self.gc = GitHubClient(config.get('repo_owner'), config.get('repo_name'), GITHUB_TOKEN,
-                               config.get('repo_location'))
+        self.bv = BarcodeValidator(config)
+        self.bv.initialize()
+        self.gc = GitHubClient(config)
         try:
             self.logger.info(f"Going to initialize PR database at {config.get('pr_db_file')}")
             self.conn = self.setup_database(config.get('pr_db_file'))
@@ -281,6 +280,7 @@ def main(config_file, verbosity):
     # Initialize the Config object, setup logging
     config = Config()
     config.load_config(config_file)
+    config.set('log_level', verbosity)
     logger = get_formatted_logger(__name__, config)
     logger.info("*** Barcode Validator Daemon starting ***")
     daemon = ValidationDaemon()
