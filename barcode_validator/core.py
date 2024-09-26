@@ -44,7 +44,8 @@ class BarcodeValidator:
         :return: A list of DNAAnalysisResult objects
         """
         results = []
-        for process_id, record, json_config in SequenceHandler.parse_fasta(fasta_file_path):
+        sh = SequenceHandler(config)
+        for process_id, record, json_config in sh.parse_fasta(fasta_file_path):
             scoped_config = config.local_clone(json_config)
             result = self.validate_record(process_id, record, scoped_config)
             results.append(result)
@@ -150,15 +151,16 @@ class BarcodeValidator:
 
         # Instantiate result object with process ID and calculate full sequence stats
         result.full_length = len(record.seq)
-        result.full_ambiguities = SequenceHandler.num_ambiguous(record)
+        sh = SequenceHandler(config)
+        result.full_ambiguities = sh.num_ambiguous(record)
 
         # Compute marker quality metrics
-        aligned_sequence = SequenceHandler.align_to_hmm(record, config.get('hmm_file'))
+        aligned_sequence = sh.align_to_hmm(record)
         if aligned_sequence is None:
             self.logger.warning(f"Alignment failed for {result.process_id}")
             result.error = f"Alignment failed for sequence '{record.seq}'"
         else:
-            amino_acid_sequence = SequenceHandler.translate_sequence(aligned_sequence, config.get('translation_table'))
-            result.stop_codons = SequenceHandler.get_stop_codons(amino_acid_sequence)
-            result.seq_length = SequenceHandler.marker_seqlength(aligned_sequence)
-            result.ambiguities = SequenceHandler.num_ambiguous(aligned_sequence)
+            amino_acid_sequence = sh.translate_sequence(aligned_sequence, config.get('translation_table'))
+            result.stop_codons = sh.get_stop_codons(amino_acid_sequence)
+            result.seq_length = sh.marker_seqlength(aligned_sequence)
+            result.ambiguities = sh.num_ambiguous(aligned_sequence)
