@@ -288,28 +288,28 @@ def main(config_file, verbosity):
     logging.info("Starting main loop")
     while True:
 
-        # Get a list of open PRs and iterate over them
-        logging.info("Checking for open PRs...")
-        prs = daemon.gc.get_open_prs()
-        logging.info(f"Found {len(prs)} open PRs")
-        for pr in prs:
+        try:
+            # Get a list of open PRs and iterate over them
+            logging.info("Checking for open PRs...")
+            prs = daemon.gc.get_open_prs()
+            logging.info(f"Found {len(prs)} open PRs")
+            for pr in prs:
 
-            # Process PRs that contain FASTA files
-            pr_number = pr['number']
-            logging.info(f"Inspecting files from PR {pr['number']}...")
-            files = daemon.gc.get_pr_files(pr_number)
-            logging.info(f"Found {len(files)} files in PR {pr['number']}")
+                # Process PRs that contain FASTA files
+                pr_number = pr['number']
+                logging.info(f"Inspecting files from PR {pr['number']}...")
+                files = daemon.gc.get_pr_files(pr_number)
+                logging.info(f"Found {len(files)} files in PR {pr['number']}")
 
-            # Iterate over the files in the PR and process if any are FASTA files
-            if any(f['filename'].endswith(('.fasta', '.fa', '.fas')) for f in files):
-                logging.info(f"Processing PR {pr['number']}")
-                daemon.process_pr(config, pr_number, pr['head']['ref'])
+                # Iterate over the files in the PR and process if any are FASTA files
+                if any(f['filename'].endswith(('.fasta', '.fa', '.fas')) for f in files):
+                    logging.info(f"Processing PR {pr['number']}")
+                    daemon.process_pr(config, pr_number, pr['head']['ref'])
 
-        # Clean up old completed PRs
-        #        c = conn.cursor()
-        #        c.execute("DELETE FROM prs WHERE status = 'completed' AND last_updated < ?",
-        #                  (datetime.now() - timedelta(days=7),))
-        #        conn.commit()
+        except Exception as e:
+            logging.error(f"Error in main loop: {str(e)}")
+            logging.error(traceback.format_exc())
+            logging.info("Hopefully this was a transient error. Trying again in 5 minutes...")
 
         time.sleep(POLL_INTERVAL)
 
