@@ -5,10 +5,10 @@ from barcode_validator.core import BarcodeValidator
 from barcode_validator.result import DNAAnalysisResult
 
 
-def main(fasta_file_path, logger):
+def main(fasta_file_path, logger, config):
     # Initialize BarcodeValidator
-    validator = BarcodeValidator(logger)
-    validator.initialize(config.get('ncbi_taxonomy'), config.get('bold_sheet_file'))
+    validator = BarcodeValidator(config)
+    validator.initialize()
 
     # Print header
     logger.info(f"Starting analysis for file: {fasta_file_path}")
@@ -38,13 +38,13 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Setup logging
-    config = Config()
+    main_config = Config()
     try:
-        config.load_config(args.config_file)
-        main_logger = get_formatted_logger(__name__, config)
+        main_config.load_config(args.config_file)
+        main_logger = get_formatted_logger(__name__, main_config)
     except ValueError as e:
         print(f"Error setting up logging: {e}")
         exit(1)
 
     # Run the main analysis
-    main(args.fasta_file, main_logger)
+    main(args.fasta_file, main_logger, main_config)
