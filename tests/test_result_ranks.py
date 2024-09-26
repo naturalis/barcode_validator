@@ -72,3 +72,7 @@ def test_edge_case_full(dna_result):
     assert barcode_rank == 1
     assert full_rank == 6
     assert "\u26D4 Unacceptable full sequence" in messages
+
+
+if __name__ == '__main__':
+    pytest.main()

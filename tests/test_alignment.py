@@ -193,3 +193,7 @@ def test_translate_sequence_empty_sequence(mock_config):
     dna_seq = SeqRecord(Seq(""), id="test", name="Test")
     result = SequenceHandler.translate_sequence(dna_seq, 5)
     assert str(result.seq) == ""
+
+
+if __name__ == "__main__":
+    pytest.main()
