@@ -1,27 +1,12 @@
 import tempfile
 import subprocess
-import threading
 import os
-import logging
 from Bio import SeqIO
 from Bio.Phylo.BaseTree import Tree
 from typing import Optional
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
-
-
-def _log_output(stream, log_level, processid, logger):
-    """
-    Log the output of a subprocess to the logger at the specified level.
-    :param stream: A stream object
-    :param log_level: A logging level
-    :param processid: A process ID
-    :return:
-    """
-    for msg in stream:
-        msg = msg.strip()
-        if msg:
-            logger.log(log_level, f"BLASTN output for {processid}: {msg}")
+from nbitk.Tools import Blastn
 
 
 class BlastRunner:
@@ -32,11 +17,18 @@ class BlastRunner:
         """
         self.logger = get_formatted_logger(__name__, config)
         self.ncbi_tree: Optional[Tree] = Optional[Tree]
-        self.blast_db: Optional[str] = config.get('blast_db')
-        self.num_threads: Optional[int] = config.get('num_threads')
-        self.evalue: Optional[float] = config.get('evalue')
-        self.max_target_seqs: Optional[int] = config.get('max_target_seqs')
-        self.word_size: Optional[int] = config.get('word_size')
+
+        # Initialize the BLASTN tool
+        self.blastn = Blastn(config)
+        self.blastn.set_db(config.get('blast_db'))
+        self.blastn.set_num_threads(config.get('num_threads'))
+        self.blastn.set_evalue(config.get('evalue'))
+        self.blastn.set_max_target_seqs(config.get('max_target_seqs'))
+        self.blastn.set_word_size(config.get('word_size'))
+        self.blastn.set_task('megablast')
+        self.blastn.set_outfmt("6 qseqid sseqid pident length qstart qend sstart send evalue bitscore staxids")
+
+        # Initialize environment variables
         self.BLASTDB_LMDB_MAP_SIZE: Optional[int] = config.get('BLASTDB_LMDB_MAP_SIZE')
         self.BLASTDB: Optional[str] = config.get('BLASTDB')
 
@@ -63,18 +55,10 @@ class BlastRunner:
         os.environ['BLASTDB_LMDB_MAP_SIZE'] = str(self.BLASTDB_LMDB_MAP_SIZE)
         os.environ['BLASTDB'] = str(self.BLASTDB)
         try:
-            outfmt = "6 qseqid sseqid pident length qstart qend sstart send evalue bitscore staxids"
-            process = subprocess.Popen(['blastn', '-db', self.blast_db, '-num_threads', str(self.num_threads),
-                                        '-evalue', str(self.evalue), '-max_target_seqs', str(self.max_target_seqs),
-                                        '-word_size', str(self.word_size), '-query', temp_input_name,
-                                        '-taxids', constraint, '-task', 'megablast', '-outfmt', outfmt,
-                                        '-out', f"{temp_input_name}.tsv"
-                                        ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
-
-            # Start threads to handle stdout and stderr and wait for the process to complete
-            threading.Thread(target=_log_output, args=(process.stdout, logging.INFO, sequence.id, self.logger)).start()
-            threading.Thread(target=_log_output, args=(process.stderr, logging.ERROR, sequence.id, self.logger)).start()
-            return_code = process.wait()
+            self.blastn.set_query(temp_input_name)
+            self.blastn.set_taxids(constraint)
+            self.blastn.set_out(f"{temp_input_name}.tsv")
+            return_code = self.blastn.run()
             if return_code != 0:
                 raise subprocess.CalledProcessError(return_code, 'blastn')
             return self.parse_blast_result(f"{temp_input_name}.tsv", level)
