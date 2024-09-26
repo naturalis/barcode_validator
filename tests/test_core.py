@@ -12,7 +12,7 @@ from barcode_validator.core import BarcodeValidator
 @pytest.fixture
 def mock_config():
     config = Mock(spec=Config)
-    config.get.side_effect = lambda key: {
+    config.get.side_effect = lambda key, default=None: {
         'level': 'family',
         'constrain': 'order',
         'hmm_file': 'mock_hmm.hmm',
@@ -20,7 +20,8 @@ def mock_config():
         'ncbi_taxonomy': 'mock_ncbi.tar.gz',
         'bold_sheet_file': 'mock_bold.xlsx',
         'log_level': 'ERROR',
-    }[key]
+        'tool_name': 'hmmalign',
+    }.get(key, default)
     return config
 
 
