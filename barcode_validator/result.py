@@ -1,20 +1,62 @@
 from nbitk.Taxon import Taxon
 from typing import List, Optional, Tuple
 
+columns = set()
+
+levels = [
+    'kingdom',
+    'phylum',
+    'class',
+    'order',
+    'family',
+    'subfamily',
+    'tribe',
+    'genus',
+    'species',
+    'subspecies'
+]
 
 class DNAAnalysisResult:
-    def __init__(self, process_id):
+
+    def __init__(self, process_id: str):
         self.process_id: str = process_id
-        self._seq_length: Optional[int] = None
-        self._full_length: Optional[int] = None
-        self._obs_taxon: List[Taxon] = []
-        self._exp_taxon: Optional[Taxon] = None
-        self._species: Optional[Taxon] = None
-        self._stop_codons: List[int] = []
-        self._ambiguities: Optional[int] = None
-        self._full_ambiguities: Optional[int] = None
-        self._level: Optional[str] = None
-        self._error: Optional[str] = None
+        self.data: dict = {
+            'process_id': process_id,
+            'nuc_basecount': None,
+            'nuc_full_basecount': None,
+            'obs_taxon': [],
+            'identification': None,
+            'species': None,
+            'stop_codons': [],
+            'ambig_basecount': None,
+            'ambig_full_basecount': None,
+            'identification_rank': None,
+            'error': None,
+            'identification_method': 'BLAST',
+        }
+        columns.update(self.data.keys())
+        columns.discard(None)
+        self.data['ancillary'] = {}
+
+    @property
+    def ancillary(self) -> dict:
+        """
+        Getter for the ancillary data.
+        :return: A dictionary representing the ancillary data
+        """
+        return self.data['ancillary']
+
+    @ancillary.setter
+    def ancillary(self, data: dict) -> None:
+        """
+        Setter for the ancillary data.
+        :param data: A dictionary representing the ancillary data
+        :return:
+        """
+        if not isinstance(data, dict):
+            raise ValueError("Ancillary data must be a dictionary")
+        columns.update(data.keys())
+        self.data['ancillary'].update(data)
 
     @property
     def error(self) -> Optional[str]:
@@ -22,7 +64,7 @@ class DNAAnalysisResult:
         Getter for the error message.
         :return: A string representing the error message
         """
-        return self._error
+        return self.data['error']
 
     @error.setter
     def error(self, error: str) -> None:
@@ -31,7 +73,7 @@ class DNAAnalysisResult:
         :param error: A string representing the error message
         :return:
         """
-        self._error = error
+        self.data['error'] = error
 
     @property
     def level(self) -> Optional[str]:
@@ -39,7 +81,7 @@ class DNAAnalysisResult:
         Getter for the taxonomic level.
         :return: A string representing the taxonomic level
         """
-        return self._level
+        return self.data['identification_rank']
 
     @level.setter
     def level(self, level: str) -> None:
@@ -48,21 +90,9 @@ class DNAAnalysisResult:
         :param level: A string representing the taxonomic level
         :return:
         """
-        levels = [
-            'kingdom',
-            'phylum',
-            'class',
-            'order',
-            'family',
-            'subfamily',
-            'tribe',
-            'genus',
-            'species',
-            'subspecies'
-        ]
         if not isinstance(level, str) or level.lower() not in levels:
             raise ValueError(f"level must be a string from {levels}")
-        self._level = level
+        self.data['identification_rank'] = level
 
     @property
     def seq_length(self) -> Optional[int]:
@@ -70,7 +100,7 @@ class DNAAnalysisResult:
         Getter for the sequence length within the marker region.
         :return: an integer representing the sequence length
         """
-        return self._seq_length
+        return self.data['nuc_basecount']
 
     @seq_length.setter
     def seq_length(self, value: int) -> None:
@@ -81,7 +111,7 @@ class DNAAnalysisResult:
         """
         if not isinstance(value, int) or value < 0:
             raise ValueError("seq_length must be a positive integer")
-        self._seq_length = value
+        self.data['nuc_basecount'] = value
 
     @property
     def full_length(self) -> Optional[int]:
@@ -89,7 +119,7 @@ class DNAAnalysisResult:
         Getter for the full sequence length.
         :return: an integer representing the sequence length
         """
-        return self._full_length
+        return self.data['nuc_full_basecount']
 
     @full_length.setter
     def full_length(self, value: int) -> None:
@@ -100,7 +130,7 @@ class DNAAnalysisResult:
         """
         if not isinstance(value, int) or value < 0:
             raise ValueError("full_length must be a positive integer")
-        self._full_length = value
+        self.data['nuc_full_basecount'] = value
 
     @property
     def obs_taxon(self) -> List[Taxon]:
@@ -108,7 +138,7 @@ class DNAAnalysisResult:
         Getter for the observed taxon.
         :return: A list of strings representing the observed taxon
         """
-        return self._obs_taxon
+        return self.data['obs_taxon']
 
     @obs_taxon.setter
     def obs_taxon(self, taxa: List[Taxon]) -> None:
@@ -119,7 +149,7 @@ class DNAAnalysisResult:
         """
         if not isinstance(taxa, list) or not all(isinstance(item, Taxon) for item in taxa):
             raise ValueError("obs_taxon must be a list of Taxon objects")
-        self._obs_taxon = taxa
+        self.data['obs_taxon'] = taxa
 
     def add_obs_taxon(self, taxon: Taxon) -> None:
         """
@@ -129,8 +159,8 @@ class DNAAnalysisResult:
         """
         if not isinstance(taxon, Taxon):
             raise ValueError("Taxon must be a Taxon object")
-        if taxon not in self._obs_taxon:
-            self._obs_taxon.append(taxon)
+        if taxon not in self.data['obs_taxon']:
+            self.data['obs_taxon'].append(taxon)
 
     @property
     def exp_taxon(self) -> Optional[Taxon]:
@@ -138,7 +168,7 @@ class DNAAnalysisResult:
         Getter for the expected taxon.
         :return: A Taxon object representing the expected taxon
         """
-        return self._exp_taxon
+        return self.data['identification']
 
     @exp_taxon.setter
     def exp_taxon(self, taxon: Taxon) -> None:
@@ -149,7 +179,7 @@ class DNAAnalysisResult:
         """
         if not isinstance(taxon, Taxon):
             raise ValueError("exp_taxon must be a Taxon object")
-        self._exp_taxon = taxon
+        self.data['identification'] = taxon
 
     @property
     def species(self) -> Optional[Taxon]:
@@ -157,7 +187,7 @@ class DNAAnalysisResult:
         Getter for the species name.
         :return: A Taxon object representing the species name
         """
-        return self._species
+        return self.data['species']
 
     @species.setter
     def species(self, species: Taxon) -> None:
@@ -168,7 +198,7 @@ class DNAAnalysisResult:
         """
         if not isinstance(species, Taxon):
             raise ValueError("species must be a Taxon object")
-        self._species = species
+        self.data['species'] = species
 
     @property
     def stop_codons(self) -> List[int]:
@@ -176,7 +206,7 @@ class DNAAnalysisResult:
         Getter for the stop codons.
         :return: A list of integers representing the stop codon positions
         """
-        return self._stop_codons
+        return self.data['stop_codons']
 
     @stop_codons.setter
     def stop_codons(self, codon_positions: List[int]) -> None:
@@ -187,7 +217,7 @@ class DNAAnalysisResult:
         """
         if not isinstance(codon_positions, list) or not all(isinstance(x, int) and x >= 0 for x in codon_positions):
             raise ValueError("stop_codons must be a list of non-negative integers")
-        self._stop_codons = codon_positions
+        self.data['stop_codons'] = codon_positions
 
     @property
     def ambiguities(self) -> Optional[int]:
@@ -195,7 +225,7 @@ class DNAAnalysisResult:
         Getter for the number of ambiguities within the marker region.
         :return: An integer representing the number of ambiguities
         """
-        return self._ambiguities
+        return self.data['ambig_basecount']
 
     @ambiguities.setter
     def ambiguities(self, n_ambiguities: int) -> None:
@@ -206,7 +236,7 @@ class DNAAnalysisResult:
         """
         if not isinstance(n_ambiguities, int) or n_ambiguities < 0:
             raise ValueError("ambiguities must be a non-negative integer")
-        self._ambiguities = n_ambiguities
+        self.data['ambig_basecount'] = n_ambiguities
 
     @property
     def full_ambiguities(self) -> Optional[int]:
@@ -214,7 +244,7 @@ class DNAAnalysisResult:
         Getter for the total number of ambiguities.
         :return: An integer representing the number of ambiguities
         """
-        return self._full_ambiguities
+        return self.data['ambig_full_basecount']
 
     @full_ambiguities.setter
     def full_ambiguities(self, n_ambiguities: int) -> None:
@@ -225,7 +255,7 @@ class DNAAnalysisResult:
         """
         if not isinstance(n_ambiguities, int) or n_ambiguities < 0:
             raise ValueError("ambiguities must be a non-negative integer")
-        self._full_ambiguities = n_ambiguities
+        self.data['ambig_full_basecount'] = n_ambiguities
 
     def add_stop_codon(self, position: int) -> None:
         """
@@ -235,7 +265,7 @@ class DNAAnalysisResult:
         """
         if not isinstance(position, int) or position < 0:
             raise ValueError("Stop codon position must be a non-negative integer")
-        self._stop_codons.append(position)
+        self.data['stop_codons'].append(position)
 
     def check_length(self) -> bool:
         """
@@ -374,22 +404,28 @@ class DNAAnalysisResult:
         String representation of the result object.
         :return: A list of values representing the result object
         """
-        exp_taxon_name = self.exp_taxon.name if self.exp_taxon else None
-        species_name = self.species.name if self.species else None
-        return [
-            self.process_id,
-            exp_taxon_name,
-            species_name,
-            exp_taxon_name if self.check_taxonomy() else None,
-            self.level,
-            'BLAST',
-            self.seq_length,
-            self.full_length,
-            self.ambiguities,
-            self.full_ambiguities,
-            len(self.stop_codons),
-            self.error
-        ]
+        values = []
+        for key in self.result_fields(self.level):
+            if key == 'identification':
+                exp_taxon_name = self.exp_taxon.name if self.exp_taxon else None
+                values.append(exp_taxon_name)
+            elif key == 'species':
+                species_name = self.species.name if self.species else None
+                values.append(species_name)
+            elif key == 'obs_taxon':
+                obs = [taxon.name for taxon in self.obs_taxon]
+                values.append(",".join(obs))
+            elif key == 'stop_codons':
+                values.append(len(self.stop_codons))
+            elif key in self.data['ancillary']:
+                anc = self.data.get('ancillary')[key]
+                values.append(anc)
+            elif key in levels:
+                exp_taxon_name = self.exp_taxon.name if self.exp_taxon else None
+                values.append(exp_taxon_name)
+            else:
+                values.append(self.data[key])
+        return values
 
     def __str__(self) -> str:
         """
@@ -404,27 +440,5 @@ class DNAAnalysisResult:
         Returns a tab-separated string containing the result fields.
         :return:
         """
-        return [
-            "processid",
-
-            # These are parts of the lineage submitted to BOLD
-            level,  # by default, this column header will say 'family', and its values will be exp_taxon
-            "species",
-
-            # These are the results of the BLAST check. Either
-            # they match the submitted lineage of identification is empty
-            "identification",  # this will be the same as exp_taxon if exp_taxon in obs_taxon, else None
-            "identification_rank",  # this will the value of level
-            "identification_method",   # BLAST
-
-            # Bases within the marker region
-            "nuc_basecount",
-
-            # Non-BCDM terms
-            # Bases within the full sequence
-            "nuc_full_basecount",
-            "ambig_basecount",
-            "ambig_full_basecount",
-            "stop_codons",
-            "error",
-        ]
+        columns.update([level])
+        return sorted(item for item in columns if item is not None and item != 'exp_taxon')
