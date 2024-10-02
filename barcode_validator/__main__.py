@@ -1,18 +1,17 @@
 import argparse
-import logging
-from barcode_validator.config import Config
+from nbitk.config import Config
+from nbitk.logger import get_formatted_logger
 from barcode_validator.core import BarcodeValidator
 from barcode_validator.result import DNAAnalysisResult
 
 
-def main(fasta_file_path):
-
+def main(fasta_file_path, logger, config):
     # Initialize BarcodeValidator
-    validator = BarcodeValidator()
-    validator.initialize(config.get('ncbi_taxonomy'), config.get('bold_sheet_file'))
+    validator = BarcodeValidator(config)
+    validator.initialize()
 
     # Print header
-    logging.info(f"Starting analysis for file: {fasta_file_path}")
+    logger.info(f"Starting analysis for file: {fasta_file_path}")
     header = DNAAnalysisResult.result_fields(config.get('level'))
     header.append('fasta_file')
     print('\t'.join(header))  # print TSV header
@@ -26,7 +25,7 @@ def main(fasta_file_path):
         values.append(fasta_file_path)
         print('\t'.join(map(str, values)))
 
-    logging.info("Analysis completed")
+    logger.info("Analysis completed")
 
 
 if __name__ == "__main__":
@@ -39,13 +38,13 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Setup logging
-    config = Config()
+    main_config = Config()
     try:
-        config.load_config(args.config_file)
-        config.setup_logging(args.verbosity)
+        main_config.load_config(args.config_file)
+        main_logger = get_formatted_logger(__name__, main_config)
     except ValueError as e:
         print(f"Error setting up logging: {e}")
         exit(1)
 
     # Run the main analysis
-    main(args.fasta_file)
+    main(args.fasta_file, main_logger, main_config)

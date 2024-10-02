@@ -1,6 +1,4 @@
-import logging
 import tempfile
-import subprocess
 import warnings
 import json
 from copy import deepcopy
@@ -9,6 +7,9 @@ from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from Bio.Data import CodonTable
 from Bio import BiopythonDeprecationWarning
+from nbitk.config import Config
+from nbitk.logger import get_formatted_logger
+from nbitk.Tools import Hmmalign
 warnings.filterwarnings("error", category=BiopythonDeprecationWarning)
 
 """
@@ -23,8 +24,19 @@ indication of off-target amplification of a pseudogene.
 
 class SequenceHandler:
 
-    @classmethod
-    def align_to_hmm(cls, sequence, hmm_file):
+    def __init__(self, config: Config):
+        """
+        Initialize the BarcodeValidator object.
+        """
+        self.logger = get_formatted_logger(__name__, config)
+        self.hmmalign = Hmmalign(config)
+        self.hmmalign.set_informat('FASTA')
+        self.hmmalign.set_outformat('Stockholm')
+        self.hmmalign.set_trim()
+        self.hmmalign.set_dna()
+        self.hmmalign.set_hmmfile(config.get('hmm_file'))
+
+    def align_to_hmm(self, sequence):
         """
         Align a sequence to an HMM using hmmalign. The location of the HMM file is specified in the
         configuration file as 'hmm_file'. hmmalign is run with the '--trim' option to remove any
@@ -32,58 +44,50 @@ class SequenceHandler:
         parsed as a Stockholm format file and returned as a SeqRecord object, i.e. it has the sequence
         annotations (which include per-residue posterior probabilities) preserved.
         :param sequence: A BioPython SeqRecord object
-        :param hmm_file: Location of an HMM file
         :return: A BioPython SeqRecord object containing the aligned sequence
         """
-        logging.info("Aligning sequence to HMM")
+        self.logger.info("Aligning sequence to HMM")
         if len(sequence.seq) == 0:
-            logging.warning("Empty sequence provided for alignment")
+            self.logger.warning("Empty sequence provided for alignment")
             return None
 
         # Create a temporary file for the input sequence
         with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.fasta') as temp_input:
             SeqIO.write(sequence, temp_input, "fasta")
             temp_input.close()
-            infile = temp_input.name
+            self.hmmalign.set_seqfile(temp_input.name)
 
-            # Run hmmalign with the input file
-            try:
+            # Create a temporary file for the output alignment
+            with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.sto') as temp_output:
+                self.hmmalign.set_output(temp_output.name)
 
-                # Create a temporary file for the output alignment
-                with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.sto') as temp_output:
-                    outfile = temp_output.name
-                    subprocess.run(['hmmalign', '--trim', '-o', outfile, '--outformat', 'Stockholm', hmm_file, infile])
-                    logging.debug(f"Going to parse outfile {outfile}")
-                    aligned_sequence = next(SeqIO.parse(outfile, 'stockholm'))
+                # Run hmmalign and parse the output
+                return_code = self.hmmalign.run()
+                self.logger.debug(f"Going to parse outfile {temp_output.name}")
+                aligned_sequence = next(SeqIO.parse(temp_output.name, 'stockholm'))
 
-            except subprocess.CalledProcessError as e:
-                logging.error(f"Error running hmmalign: {e}")
-                raise
-
-        logging.debug(f"Aligned sequence length: {len(aligned_sequence)}")
+        self.logger.debug(f"Aligned sequence length: {len(aligned_sequence)}")
 
         return aligned_sequence
 
-    @classmethod
-    def marker_seqlength(cls, sequence):
+    def marker_seqlength(self, sequence):
         """
         Calculate the length of the sequence within the marker region,
         excluding gaps, but including Ns and IUAPC ambiguity codes. Both '-' and '~' are considered gaps.
         :param sequence: A BioPython SeqRecord object
         :return: The length of the sequence within the marker region
         """
-        logging.info("Calculating non-missing bases within marker region")
+        self.logger.info("Calculating non-missing bases within marker region")
 
         # Operate on the cloned sequence string directly
         raw_seq = str(sequence.seq)
         raw_seq = raw_seq.replace('-', '')
         raw_seq = raw_seq.replace('~', '')
 
-        logging.debug(f"Within marker sequence length: {len(raw_seq)}")
+        self.logger.debug(f"Within marker sequence length: {len(raw_seq)}")
         return len(raw_seq)
 
-    @classmethod
-    def num_ambiguous(cls, sequence):
+    def num_ambiguous(self, sequence):
         """
         Calculate the number of ambiguous bases in a sequence. This is a count of all symbols that are not
         acgtACGT-~ or, in other words, all IUPAC single character ambiguity letters including n/N.
@@ -91,11 +95,10 @@ class SequenceHandler:
         :param sequence: A BioPython SeqRecord object
         :return: The number of ambiguous bases in the sequence
         """
-        logging.info("Calculating number of ambiguous bases in sequence")
+        self.logger.info("Calculating number of ambiguous bases in sequence")
         return len([base for base in sequence.seq if base not in 'acgtACGT-~'])
 
-    @classmethod
-    def unalign_sequence(cls, sequence):
+    def unalign_sequence(self, sequence):
         """
         Remove gaps, i.e. '-' symbols, from an aligned sequence.
         Returns a new instance of the sequence with gaps removed.
@@ -106,7 +109,7 @@ class SequenceHandler:
         :param sequence: A BioPython SeqRecord object
         :return: A new SeqRecord object with gaps removed
         """
-        logging.info("Removing gaps from aligned sequence")
+        self.logger.info("Removing gaps from aligned sequence")
         if isinstance(sequence, SeqRecord):
             # Convert Seq to string, remove gaps, then convert back to Seq
             unaligned_sequence = str(sequence.seq).replace('-', '').replace('~', '')
@@ -125,8 +128,7 @@ class SequenceHandler:
         else:
             raise TypeError(f"Unexpected type for sequence: {type(sequence)}")
 
-    @classmethod
-    def translate_sequence(cls, dna_sequence, table_idx):
+    def translate_sequence(self, dna_sequence, table_idx):
         """
         Translate a DNA sequence to amino acids using the translation table specified in the configuration file.
         The translation table is specified as an integer in the configuration file, which corresponds to the
@@ -137,12 +139,12 @@ class SequenceHandler:
         :param table_idx: Translation table index
         :return: A BioPython SeqRecord object containing the translated amino acid sequence
         """
-        logging.info("Translating DNA sequence to amino acids")
+        self.logger.info("Translating DNA sequence to amino acids")
 
         # Warn user
-        logging.warning("NOTE: we assume that the canonical 658bp COI-5P marker has an additional base at the start")
-        logging.warning("NOTE: this first base needs to be removed to arrive at a multiple of 3 for AA translation")
-        logging.warning("NOTE: here we remove this base so that the result is 657 bases")
+        self.logger.warning("NOTE: we assume that the 658bp COI-5P marker has an additional base at the start")
+        self.logger.warning("NOTE: this first base needs to be removed to arrive at a multiple of 3 for AA translation")
+        self.logger.warning("NOTE: here we remove this base so that the result is 657 bases")
 
         # Clone and phase sequence by starting from the second base (i.e. index 1 in 0-based indexing)
         cloned_seq = deepcopy(dna_sequence)
@@ -171,11 +173,10 @@ class SequenceHandler:
                                       name=cloned_seq.name,
                                       description="translated sequence")
 
-        logging.debug(f"Translated sequence: {amino_acid_record.seq}")
+        self.logger.debug(f"Translated sequence: {amino_acid_record.seq}")
         return amino_acid_record
 
-    @classmethod
-    def parse_fasta(cls, file_path):
+    def parse_fasta(self, file_path):
         """
         Parse a FASTA file and yield the process ID, sequence record, and optional JSON configuration for each entry.
         The process ID is the first part of the sequence ID, which is assumed to be separated by an underscore.
@@ -184,7 +185,7 @@ class SequenceHandler:
         :param file_path: Local path to the FASTA file
         :yield: A tuple containing the process ID, the sequence record, and the JSON configuration (or None) for each entry
         """
-        logging.info(f"Parsing FASTA file: {file_path}")
+        self.logger.info(f"Parsing FASTA file: {file_path}")
         with open(file_path, 'r') as file:
             for record in SeqIO.parse(file, 'fasta'):
                 process_id = record.id.split('_')[0]
@@ -199,21 +200,20 @@ class SequenceHandler:
                         # Remove the JSON part from the description
                         record.description = record.description[:json_start].strip()
                     except json.JSONDecodeError as e:
-                        logging.warning(f"Failed to parse JSON for {process_id}: {e}")
+                        self.logger.warning(f"Failed to parse JSON for {process_id}: {e}")
 
                 record.id = process_id
-                logging.debug(f"Parsed process ID: {process_id}")
-                logging.debug(f"Sequence length: {len(record.seq)}")
-                logging.debug(f"JSON config: {json_config}")
+                self.logger.debug(f"Parsed process ID: {process_id}")
+                self.logger.debug(f"Sequence length: {len(record.seq)}")
+                self.logger.debug(f"JSON config: {json_config}")
 
-                yield process_id, cls.unalign_sequence(record), json_config
+                yield process_id, self.unalign_sequence(record), json_config
 
-    @classmethod
-    def get_stop_codons(cls, amino_acid_sequence):
+    def get_stop_codons(self, amino_acid_sequence):
         """
         Get the positions of stop codons in an amino acid sequence, which are represented by the '*' character.
         :param amino_acid_sequence: A BioPython SeqRecord object containing an amino acid sequence
         :return: A list of integers representing the positions of stop codons in the sequence
         """
-        logging.info("Getting stop codon positions")
+        self.logger.info("Getting stop codon positions")
         return [i for i, char in enumerate(amino_acid_sequence.seq) if char == '*']

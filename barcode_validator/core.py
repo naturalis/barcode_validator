@@ -1,37 +1,40 @@
 import io
-import logging
 import tarfile
 from typing import List, Optional
-from barcode_validator.config import Config
 from barcode_validator.taxonomy import BlastRunner
 from barcode_validator.alignment import SequenceHandler
 from barcode_validator.result import DNAAnalysisResult
 from Bio.SeqRecord import SeqRecord
 from Bio.Phylo.BaseTree import Tree
+from nbitk.config import Config
+from nbitk.logger import get_formatted_logger
 from nbitk.Taxon import Taxon
 from nbitk.Phylo.NCBITaxdmp import Parser as NCBIParser
 from nbitk.Phylo.BOLDXLSXIO import Parser as BOLDParser
 
 
 class BarcodeValidator:
-    def __init__(self):
+    def __init__(self, config: Config):
         """
         Initialize the BarcodeValidator object.
         """
+        self.ncbi_taxonomy = config.get('ncbi_taxonomy')
         self.ncbi_tree: Optional[Tree] = None
+        self.bold_xlsx_file = config.get('bold_sheet_file')
         self.bold_tree: Optional[Tree] = None
+        self.logger = get_formatted_logger(__name__, config)
 
-    def initialize(self, ncbi_taxonomy_dump: str, bold_xlsx_file: str) -> None:
+    def initialize(self) -> None:
         """
         Initialize the taxonomy trees. This is separate from __init__ to allow for lazy loading.
         :return: None
         """
-        logging.info("Initializing taxonomy trees...")
-        self.ncbi_tree = NCBIParser(tarfile.open(ncbi_taxonomy_dump, "r:gz")).parse()
-        with open(bold_xlsx_file, 'rb') as file:
+        self.logger.info("Initializing taxonomy trees...")
+        self.ncbi_tree = NCBIParser(tarfile.open(self.ncbi_taxonomy, "r:gz")).parse()
+        with open(self.bold_xlsx_file, 'rb') as file:
             excel_data = io.BytesIO(file.read())
             self.bold_tree = BOLDParser(excel_data).parse()
-        logging.info("Initialization complete.")
+        self.logger.info("Initialization complete.")
 
     def validate_fasta(self, fasta_file_path: str, config: Config) -> List[DNAAnalysisResult]:
         """
@@ -41,7 +44,8 @@ class BarcodeValidator:
         :return: A list of DNAAnalysisResult objects
         """
         results = []
-        for process_id, record, json_config in SequenceHandler.parse_fasta(fasta_file_path):
+        sh = SequenceHandler(config)
+        for process_id, record, json_config in sh.parse_fasta(fasta_file_path):
             scoped_config = config.local_clone(json_config)
             result = self.validate_record(process_id, record, scoped_config)
             results.append(result)
@@ -73,13 +77,13 @@ class BarcodeValidator:
         # Lookup expected taxon in BOLD tree
         sp = self.get_node_by_processid(result.process_id)
         if sp is None:
-            logging.warning(f"Process ID {result.process_id} not found in BOLD tree.")
+            self.logger.warning(f"Process ID {result.process_id} not found in BOLD tree.")
             result.error = f"{result.process_id} not in BOLD"
         else:
 
             # Traverse BOLD tree to find the expected taxon at the specified rank
             result.species = sp
-            logging.info(f"Species: {result.species}")
+            self.logger.info(f"Species: {result.species}")
             for node in self.bold_tree.root.get_path(result.species):
                 if node.taxonomic_rank == config.get('level'):
                     result.exp_taxon = node
@@ -93,7 +97,7 @@ class BarcodeValidator:
 
             # Handle BLAST failure
             if obs_taxon is None:
-                logging.warning(f"Local BLAST failed for {result.process_id}")
+                self.logger.warning(f"Local BLAST failed for {result.process_id}")
                 result.error = f"Local BLAST failed for sequence '{record.seq}'"
             else:
                 result.obs_taxon = obs_taxon
@@ -104,7 +108,7 @@ class BarcodeValidator:
         :param process_id: A process ID
         :return: A Taxon object
         """
-        logging.info(f'Looking up tip by process ID: {process_id}')
+        self.logger.info(f'Looking up tip by process ID: {process_id}')
         for node in self.bold_tree.find_clades():
             if process_id in node.guids:
                 return node
@@ -121,9 +125,9 @@ class BarcodeValidator:
         """
 
         # Find the node at the specified taxonomic rank in the BOLD lineage that subtends the tip
-        logging.info(f"Going to traverse BOLD taxonomy for the {rank} to which {bold_tip} belongs")
+        self.logger.info(f"Going to traverse BOLD taxonomy for the {rank} to which {bold_tip} belongs")
         bold_anc = next(node for node in self.bold_tree.root.get_path(bold_tip) if node.taxonomic_rank == rank)
-        logging.info(f"BOLD {bold_tip.taxonomic_rank} {bold_tip.name} is member of {rank} {bold_anc.name}")
+        self.logger.info(f"BOLD {bold_tip.taxonomic_rank} {bold_tip.name} is member of {rank} {bold_anc.name}")
 
         # Find the corresponding node at the same rank in the NCBI tree
         ncbi_anc = next(node for node in self.ncbi_tree.get_nonterminals()
@@ -131,13 +135,12 @@ class BarcodeValidator:
 
         # Return or die
         if ncbi_anc:
-            logging.info(f"Corresponding ncbi node is taxon:{ncbi_anc.guids['taxon']}")
+            self.logger.info(f"Corresponding ncbi node is taxon:{ncbi_anc.guids['taxon']}")
             return ncbi_anc.guids['taxon']
         else:
             raise ValueError(f"Could not find NCBI node for BOLD node '{bold_anc}'")
 
-    @classmethod
-    def validate_sequence_quality(cls, config: Config, record: SeqRecord, result: DNAAnalysisResult) -> None:
+    def validate_sequence_quality(self, config: Config, record: SeqRecord, result: DNAAnalysisResult) -> None:
         """
         Validate the quality of a DNA sequence record.
         :param config: A Config object
@@ -148,15 +151,16 @@ class BarcodeValidator:
 
         # Instantiate result object with process ID and calculate full sequence stats
         result.full_length = len(record.seq)
-        result.full_ambiguities = SequenceHandler.num_ambiguous(record)
+        sh = SequenceHandler(config)
+        result.full_ambiguities = sh.num_ambiguous(record)
 
         # Compute marker quality metrics
-        aligned_sequence = SequenceHandler.align_to_hmm(record, config.get('hmm_file'))
+        aligned_sequence = sh.align_to_hmm(record)
         if aligned_sequence is None:
-            logging.warning(f"Alignment failed for {result.process_id}")
+            self.logger.warning(f"Alignment failed for {result.process_id}")
             result.error = f"Alignment failed for sequence '{record.seq}'"
         else:
-            amino_acid_sequence = SequenceHandler.translate_sequence(aligned_sequence, config.get('translation_table'))
-            result.stop_codons = SequenceHandler.get_stop_codons(amino_acid_sequence)
-            result.seq_length = SequenceHandler.marker_seqlength(aligned_sequence)
-            result.ambiguities = SequenceHandler.num_ambiguous(aligned_sequence)
+            amino_acid_sequence = sh.translate_sequence(aligned_sequence, config.get('translation_table'))
+            result.stop_codons = sh.get_stop_codons(amino_acid_sequence)
+            result.seq_length = sh.marker_seqlength(aligned_sequence)
+            result.ambiguities = sh.num_ambiguous(aligned_sequence)

@@ -1,13 +1,25 @@
 import pytest
 from unittest.mock import Mock, patch
-import os
-import subprocess
 from barcode_validator.github import GitHubClient
-
+from nbitk.config import Config
 
 @pytest.fixture
-def github_client():
-    return GitHubClient("test_owner", "test_repo", "test_token", "/test/clone/path")
+def mock_config():
+    config = Mock(spec=Config)
+    config.get.side_effect = lambda key: {
+        'repo_owner': 'test_owner',
+        'repo_name': 'test_repo',
+        'repo_location': '/test/clone/path',
+        'translation_table': 1,
+        'ncbi_taxonomy': 'mock_ncbi.tar.gz',
+        'bold_sheet_file': 'mock_bold.xlsx',
+        'log_level': 'ERROR',
+    }[key]
+    return config
+
+@pytest.fixture
+def github_client(mock_config):
+    return GitHubClient(mock_config)
 
 
 @patch('barcode_validator.github.requests.get')
