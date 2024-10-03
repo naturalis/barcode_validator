@@ -57,7 +57,7 @@ class BlastRunner:
         os.environ['BLASTDB'] = str(self.BLASTDB)
         try:
             self.blastn.set_query(temp_input_name)
-            self.blastn.set_taxids([constraint])
+            self.blastn.set_taxids([str(constraint)])
             self.blastn.set_out(f"{temp_input_name}.tsv")
             return_code = self.blastn.run()
             if return_code != 0:
