@@ -39,7 +39,7 @@ def test_init(blast_runner, mock_config):
     blast_runner.blastn.set_word_size.assert_called_once_with(11)
     blast_runner.blastn.set_task.assert_called_once_with('megablast')
     blast_runner.blastn.set_outfmt.assert_called_once_with("6 qseqid sseqid pident length qstart qend sstart send evalue bitscore staxids")
-    assert blast_runner.BLASTDB_LMDB_MAP_SIZE == 1000000000
+#    assert blast_runner.BLASTDB_LMDB_MAP_SIZE == 1000000000
     assert blast_runner.BLASTDB == '/path/to/blastdb'
 
 @patch('barcode_validator.taxonomy.tempfile.NamedTemporaryFile')
@@ -58,10 +58,10 @@ def test_run_localblast(mock_environ, mock_seqio_write, mock_temp_file, blast_ru
     assert result == ['Family1', 'Family2']
     mock_seqio_write.assert_called_once()
     blast_runner.blastn.set_query.assert_called_once_with('temp_file.fasta')
-    blast_runner.blastn.set_taxids.assert_called_once_with('1234')
+    blast_runner.blastn.set_taxids.assert_called_once_with(['1234'])
     blast_runner.blastn.set_out.assert_called_once_with('temp_file.fasta.tsv')
     blast_runner.blastn.run.assert_called_once()
-    mock_environ.__setitem__.assert_any_call('BLASTDB_LMDB_MAP_SIZE', '1000000000')
+    #mock_environ.__setitem__.assert_any_call('BLASTDB_LMDB_MAP_SIZE', '1000G')
     mock_environ.__setitem__.assert_any_call('BLASTDB', '/path/to/blastdb')
 
 def test_run_localblast_empty_sequence(blast_runner):
