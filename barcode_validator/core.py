@@ -22,7 +22,8 @@ class BarcodeValidator:
         self.ncbi_tree: Optional[Tree] = None
         self.bold_xlsx_file = config.get('bold_sheet_file')
         self.bold_tree: Optional[Tree] = None
-        self.logger = get_formatted_logger(__name__, config)
+        class_name = self.__class__.__name__
+        self.logger = get_formatted_logger(class_name, config)
 
     def initialize(self) -> None:
         """
