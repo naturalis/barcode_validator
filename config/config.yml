@@ -28,7 +28,7 @@ constrain: class
 blast_db: /home/rutger.vos/data/ncbi/nt/nt
 
 # MaaS 39 has 64 cores, so we can use 56 for BLAST and leave 8 for the rest of the system.
-num_threads: 56
+num_threads: 24
 evalue: 1e-5
 max_target_seqs: 10
 word_size: 28
