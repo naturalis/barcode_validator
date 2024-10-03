@@ -7,7 +7,8 @@ from nbitk.logger import get_formatted_logger
 
 class GitHubClient:
     def __init__(self, config: Config):
-        self.logger = get_formatted_logger(__name__, config)
+        class_name = self.__class__.__name__
+        self.logger = get_formatted_logger(class_name, config)
         self.repo_owner = config.get('repo_owner')
         self.repo_name = config.get('repo_name')
         self.github_token = os.environ.get('GITHUB_TOKEN')
