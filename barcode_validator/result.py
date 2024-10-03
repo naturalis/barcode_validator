@@ -419,7 +419,7 @@ class DNAAnalysisResult:
                 values.append(len(self.stop_codons))
             elif key in self.data['ancillary']:
                 anc = self.data.get('ancillary')[key]
-                values.append(anc)
+                values.append(str(anc))
             elif key in levels:
                 exp_taxon_name = self.exp_taxon.name if self.exp_taxon else None
                 values.append(exp_taxon_name)
