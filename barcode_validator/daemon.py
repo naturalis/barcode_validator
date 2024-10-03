@@ -28,7 +28,8 @@ class ValidationDaemon:
         self.logger = None
 
     def initialize(self, config: Config):
-        self.logger = get_formatted_logger(__name__, config)
+        class_name = self.__class__.__name__
+        self.logger = get_formatted_logger(class_name, config)
         self.bv = BarcodeValidator(config)
         self.bv.initialize()
         self.gc = GitHubClient(config)
@@ -199,6 +200,7 @@ class ValidationDaemon:
                     process_id = row['Process ID']
                     if process_id in process_id_to_result:
                         result = process_id_to_result[process_id]
+
                         # Add all fields from CSV to the ancillary dictionary
                         for key, value in row.items():
                             if key != 'Process ID':  # Avoid duplicating the process_id
