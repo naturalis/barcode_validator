@@ -140,7 +140,7 @@ class ValidationDaemon:
 
             # Validate file, store results
             self.logger.info(f"Validating {file}...")
-            results = self.bv.validate_fasta(file['filename'], config)
+            results = self.bv.validate_fasta(file, config)
             process_id_to_result = {result.process_id: result for result in results}
 
             # Join the CSV and YAML file(s) to the results
