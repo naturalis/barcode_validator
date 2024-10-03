@@ -15,7 +15,8 @@ class BlastRunner:
         """
         Initialize the BarcodeValidator object.
         """
-        self.logger = get_formatted_logger(__name__, config)
+        class_name = self.__class__.__name__
+        self.logger = get_formatted_logger(class_name, config)
         self.ncbi_tree: Optional[Tree] = Optional[Tree]
 
         # Initialize the BLASTN tool
