@@ -1,4 +1,6 @@
 import subprocess
+from fileinput import filename
+
 import requests
 import os
 from nbitk.config import Config
@@ -18,6 +20,7 @@ class GitHubClient:
             "Authorization": f"token {self.github_token}",
             "Accept": "application/vnd.github.v3+json"
         }
+        self.logger.info(f'GitHub client initialized for {self.repo_owner}/{self.repo_name}')
 
     def get_open_prs(self):
         """
