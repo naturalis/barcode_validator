@@ -62,7 +62,8 @@ class GitHubClient:
         # Request the JSON info about the files from the PR matching the extension
         self.logger.info(f"Getting files for PR {pr_number}")
         files = self.get_pr_files(pr_number)
-        matching_files = [f for f in files if f['filename'].endswith(extensions)]
+        extensions_tuple = tuple(extensions)
+        matching_files = [f for f in files if f['filename'].lower().endswith(extensions_tuple)]
         self.logger.info(f"Found {len(matching_files)} files with {extensions} in PR {pr_number}")
 
         # Download the files
