@@ -41,7 +41,7 @@ class BlastRunner:
         :param level: The taxonomic level at which to collect higher taxa, e.g. only return distinct families
         :return: A list of distinct higher taxa at the specified rank
         """
-        self.logger.info("Running local BLASTN...")
+        self.logger.info(f"Running local BLASTN with constraint {constraint} at level {level}")
 
         # Check if there is a sequence
         if len(sequence.seq) == 0:
