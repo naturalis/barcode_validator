@@ -28,7 +28,7 @@ constrain: class
 blast_db: /home/rutger.vos/data/ncbi/nt/nt
 
 # MaaS 39 has 64 cores, so we can use 56 for BLAST and leave 8 for the rest of the system.
-num_threads: 24
+num_threads: 56
 evalue: 1e-5
 max_target_seqs: 10
 word_size: 28
@@ -36,7 +36,7 @@ word_size: 28
 # The BLASTDB environment variable is used to specify the location of the BLAST database. The BLASTDB_LMDB_MAP_SIZE
 # environment variable is used to specify the amount of RAM allocated to the blastn job. For some reason, setting the
 # latter to any value causes the blastn job to fail with a segmentation fault. So let's not do that.
-# BLASTDB_LMDB_MAP_SIZE: 180000000000
+BLASTDB_LMDB_MAP_SIZE: 1000G
 BLASTDB: /home/rutger.vos/data/ncbi/nt
 
 # Location of the NCBI taxonomy dump. This must be the tar.gz file that contains the nodes.dmp and names.dmp files.
