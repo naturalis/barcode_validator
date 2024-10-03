@@ -2,6 +2,8 @@ import argparse
 import requests
 import time
 import os
+import csv
+import yaml
 import sqlite3
 import traceback
 from datetime import datetime
@@ -127,61 +129,80 @@ class ValidationDaemon:
         :return: A dict where keys are FASTA file names and values are lists of DNAAnalysisResult objects
         """
         self.logger.info(f"Starting validation for PR {pr_number}")
-        fasta_files = self.fetch_pr_fastas(branch, pr_number)
+        fasta_files = self.gc.fetch_pr_files(branch, pr_number, ['.fasta', '.fa', '.fas'])
+        csv_files = self.gc.fetch_pr_files(branch, pr_number, ['.csv'])
+        yaml_files = self.gc.fetch_pr_files(branch, pr_number, ['.yaml', '.yml'])
 
         # Run the validation process for each FASTA file
         all_results = {}
         for file in fasta_files:
-            self.logger.info(f"Processing file: {file['filename']}")
 
-            # Fetch file content
-            file_url = file['raw_url']
-            self.logger.info(f"Fetching file from {file_url}")
-            response = requests.get(file_url, headers=self.gc.headers)
-            if response.status_code == 200:
-                # Create directory if it doesn't exist
-                os.makedirs(os.path.dirname(file['filename']), exist_ok=True)
+            # Validate file, store results
+            self.logger.info(f"Validating {file}...")
+            results = self.bv.validate_fasta(file['filename'], config)
+            process_id_to_result = {result.process_id: result for result in results}
 
-                # Save file content
-                self.logger.info(f"Saving file content to {file['filename']}")
-                with open(file['filename'], 'wb') as f:
-                    f.write(response.content)
+            # Join the CSV and YAML file(s) to the results
+            self.join_csv_to_result(csv_files, file, process_id_to_result)
+            self.join_yaml_to_result(yaml_files, file, results)
 
-                # Validate file, store results
-                self.logger.info(f"Validating {file['filename']}...")
-                results = self.bv.validate_fasta(file['filename'], config)
-                all_results[file['filename']] = results
-                self.logger.info(f"Validation complete for {file['filename']}")
-            else:
-                self.logger.error(f"Failed to fetch file {file['filename']}: {response.status_code}")
+            all_results[file] = results
+            self.logger.info(f"Validation complete for {file}")
 
         self.logger.info(f"Validation complete for PR {pr_number}")
         return all_results
 
-    def fetch_pr_fastas(self, branch, pr_number):
+    def join_yaml_to_result(self, yaml_files, file, results):
         """
-        Fetch the FASTA files from a pull request.
-        :param branch: The branch name
-        :param pr_number: The pull request number
-        :return: A list of FASTA files
+        Join the YAML file to the results.
+        :param yaml_files: List of YAML files
+        :param file: Processed FASTA file
+        :param results: List of DNAAnalysisResult objects
+        :return:
         """
+        # See if there is a matching Y(A)ML file
+        base_name = os.path.splitext(file)[0]
+        if f'{base_name}.yaml' in yaml_files:
+            matching_file = f'{base_name}.yaml'
+        elif f'{base_name}.yml' in yaml_files:
+            matching_file = f'{base_name}.yml'
+        else:
+            matching_file = None
 
-        # Fetch the latest changes
-        self.logger.info(f"Fetching latest changes for PR {pr_number}")
-        self.gc.run_git_command(['git', 'fetch', 'origin'], "Failed to fetch from origin")
+        if matching_file is not None:
+            self.logger.info(f"Found YAML file for {file}")
 
-        # Create or reset the PR branch
-        pr_branch = f"pr-{pr_number}"
-        self.logger.info(f"Creating/resetting branch {pr_branch}")
-        self.gc.run_git_command(['git', 'checkout', '-B', pr_branch, f'origin/{branch}'],
-                                f"Failed to create/reset branch {pr_branch}")
+            # Read the YAML file and join it with the results
+            with open(matching_file, 'r') as yamlfile:
+                yaml_data = yaml.safe_load(yamlfile)
+                for result in results:
+                    for key, value in yaml_data.items():
+                        result.ancillary[key] = value
 
-        # Get the FASTA files from the PR
-        self.logger.info(f"Getting files for PR {pr_number}")
-        files = self.gc.get_pr_files(pr_number)
-        fasta_files = [f for f in files if f['filename'].endswith(('.fasta', '.fa', '.fas'))]
-        self.logger.info(f"Found {len(fasta_files)} FASTA files in PR {pr_number}")
-        return fasta_files
+    def join_csv_to_result(self, csv_files, file, process_id_to_result):
+        """
+        Join the CSV file to the results.
+        :param csv_files: List of CSV files
+        :param file: Processed FASTA file
+        :param process_id_to_result: Dictionary of process_id to DNAAnalysisResult objects
+        :return:
+        """
+        # See if there is a matching CSV file
+        base_name = os.path.splitext(file)[0]
+        if f'{base_name}.csv' in csv_files:
+            self.logger.info(f"Found CSV file for {file}")
+
+            # Read the CSV file and join it with the results
+            with open(f'{base_name}.csv', 'r', newline='') as csvfile:
+                reader = csv.DictReader(csvfile)
+                for row in reader:
+                    process_id = row['Process ID']
+                    if process_id in process_id_to_result:
+                        result = process_id_to_result[process_id]
+                        # Add all fields from CSV to the ancillary dictionary
+                        for key, value in row.items():
+                            if key != 'Process ID':  # Avoid duplicating the process_id
+                                result.ancillary[key] = value
 
     def post_pr_results(self, config, pr_number, resultset):
         """
