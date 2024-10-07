@@ -1,0 +1,5 @@
+title: BGE Genome Skimming Results
+author: Rutger Vos
+date: 2024-10-07
+output: html_document
+runtime: shiny
