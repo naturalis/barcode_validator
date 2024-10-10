@@ -202,18 +202,11 @@ class ValidationDaemon:
             tsv_name = f"{file}.tsv"
             tsv_fh = open(tsv_name, 'w', buffering=1)
 
-            # Configure the header for the TSV file by specifying the taxonomic rank at which we matched obs_taxon
-            # and by adding a column that specifies the FASTA file name
-            hlist = DNAAnalysisResult.result_fields(config.get('level'))
-            hlist.append('fasta_file')
-            tsv_fh.write('\t'.join(hlist) + '\n')
-
             # Write the result objects to the TSV file
             for r in resultset.results:
                 r.level = config.get('level')  # will be serialized to identification_rank
-                rlist = r.get_values()  # will include obs_taxon
-                rlist.append(file)  # add the FASTA file name under the 'fasta_file' column
-                tsv_fh.write('\t'.join(map(str, rlist)) + '\n')
+                r.add_ancillary('fasta_file', file) # add the FASTA file name to the result
+            tsv_fh.write(str(resultset))
 
             # Close the TSV file and commit the files
             tsv_fh.close()
