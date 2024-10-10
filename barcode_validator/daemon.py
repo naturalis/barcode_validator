@@ -12,7 +12,7 @@ from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 from barcode_validator.core import BarcodeValidator
 from barcode_validator.github import GitHubClient
-from barcode_validator.result import DNAAnalysisResult
+from barcode_validator.result import DNAAnalysisResult, DNAAnalysisResultSet
 
 
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
@@ -141,24 +141,24 @@ class ValidationDaemon:
             # Validate file, store results
             self.logger.info(f"Validating {file}...")
             results = self.bv.validate_fasta(file, config)
-            process_id_to_result = {result.process_id: result for result in results}
+            rs = DNAAnalysisResultSet(results)
 
             # Join the CSV and YAML file(s) to the results
-            self.join_csv_to_result(csv_files, file, process_id_to_result)
-            self.join_yaml_to_result(yaml_files, file, results)
+            self.join_csv_to_result(csv_files, file, rs)
+            self.join_yaml_to_result(yaml_files, file, rs)
 
-            all_results[file] = results
+            all_results[file] = rs
             self.logger.info(f"Validation complete for {file}")
 
         self.logger.info(f"Validation complete for PR {pr_number}")
         return all_results
 
-    def join_yaml_to_result(self, yaml_files, file, results):
+    def join_yaml_to_result(self, yaml_files, file, resultset):
         """
         Join the YAML file to the results.
         :param yaml_files: List of YAML files
         :param file: Processed FASTA file
-        :param results: List of DNAAnalysisResult objects
+        :param resultset: DNAAnalysisResultSet object
         :return:
         """
         # See if there is a matching Y(A)ML file
@@ -172,49 +172,31 @@ class ValidationDaemon:
 
         if matching_file is not None:
             self.logger.info(f"Found YAML file for {file}")
+            resultset.add_yaml_file(matching_file)
 
-            # Read the YAML file and join it with the results
-            with open(matching_file, 'r') as yamlfile:
-                yaml_data = yaml.safe_load(yamlfile)
-                for result in results:
-                    for key, value in yaml_data.items():
-                        result.ancillary[key] = value
-
-    def join_csv_to_result(self, csv_files, file, process_id_to_result):
+    def join_csv_to_result(self, csv_files, file, resultset):
         """
         Join the CSV file to the results.
         :param csv_files: List of CSV files
         :param file: Processed FASTA file
-        :param process_id_to_result: Dictionary of process_id to DNAAnalysisResult objects
+        :param resultset: DNAAnalysisResultSet object
         :return:
         """
         # See if there is a matching CSV file
         base_name = os.path.splitext(file)[0]
         if f'{base_name}.csv' in csv_files:
             self.logger.info(f"Found CSV file for {file}")
+            resultset.add_csv_file(f'{base_name}.csv')
 
-            # Read the CSV file and join it with the results
-            with open(f'{base_name}.csv', 'r', newline='') as csvfile:
-                reader = csv.DictReader(csvfile)
-                for row in reader:
-                    process_id = row['Process ID']
-                    if process_id in process_id_to_result:
-                        result = process_id_to_result[process_id]
-
-                        # Add all fields from CSV to the ancillary dictionary
-                        for key, value in row.items():
-                            if key != 'Process ID':  # Avoid duplicating the process_id
-                                result.ancillary[key] = value
-
-    def post_pr_results(self, config, pr_number, resultset):
+    def post_pr_results(self, config, pr_number, results):
         """
         Post a comment to a pull request with the validation results.
         :param config: The Config object
         :param pr_number: The pull request number
-        :param resultset: A dict where keys are FASTA file names and values are lists of DNAAnalysisResult objects
+        :param results: A dict where keys are FASTA file names and values are lists of DNAAnalysisResultSet objects
         :return: None
         """
-        for file, results in resultset.items():
+        for file, resultset in results.items():
 
             # Open a new TSV file for each file
             tsv_name = f"{file}.tsv"
@@ -227,7 +209,7 @@ class ValidationDaemon:
             tsv_fh.write('\t'.join(hlist) + '\n')
 
             # Write the result objects to the TSV file
-            for r in results:
+            for r in resultset.results:
                 r.level = config.get('level')  # will be serialized to identification_rank
                 rlist = r.get_values()  # will include obs_taxon
                 rlist.append(file)  # add the FASTA file name under the 'fasta_file' column
