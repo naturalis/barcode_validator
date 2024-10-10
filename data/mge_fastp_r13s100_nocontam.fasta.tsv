@@ -1,0 +1,6 @@
+ambig_basecount	ambig_full_basecount	error	family	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	process_id	species	stop_codons	fasta_file
+0	2	None	Acroceridae	Acroceridae	BLAST	family	651	1428	Syrphidae,Hippoboscidae	BGENL001-23	Astomella hispaniae	0	data/mge_fastp_r13s100_nocontam.fasta
+3	26	None	Acroceridae	Acroceridae	BLAST	family	627	1503	Drosophilidae,Muscidae,Anthomyiidae,Scathophagidae,Calliphoridae	BGENL002-23	Astomella hispaniae	0	data/mge_fastp_r13s100_nocontam.fasta
+0	0	None	Acroceridae	Acroceridae	BLAST	family	651	1467	Syrphidae,Hippoboscidae	BGENL003-23	Astomella hispaniae	0	data/mge_fastp_r13s100_nocontam.fasta
+0	0	None	Acroceridae	Acroceridae	BLAST	family	656	1530	Muscidae,Fanniidae,Oestridae,Tachinidae,Panorpidae	BGENL004-23	Cyrtus gibbus	0	data/mge_fastp_r13s100_nocontam.fasta
+21	33	None	Acroceridae	Acroceridae	BLAST	family	443	804	Reduviidae,Hydrophilidae,Staphylinidae,Culicidae,Syrphidae,Fergusoninidae,Tephritidae,Argidae,Nymphalidae	BGENL005-23	Cyrtus gibbus	0	data/mge_fastp_r13s100_nocontam.fasta
