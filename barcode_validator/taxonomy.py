@@ -30,7 +30,7 @@ class BlastRunner:
         self.blastn.set_outfmt("6 qseqid sseqid pident length qstart qend sstart send evalue bitscore staxids")
 
         # Initialize environment variables
-        #self.BLASTDB_LMDB_MAP_SIZE: Optional[int] = config.get('BLASTDB_LMDB_MAP_SIZE')
+        self.BLASTDB_LMDB_MAP_SIZE: Optional[int] = config.get('BLASTDB_LMDB_MAP_SIZE')
         self.BLASTDB: Optional[str] = config.get('BLASTDB')
 
     def run_localblast(self, sequence, constraint, level='family'):
@@ -53,7 +53,7 @@ class BlastRunner:
             temp_input_name = temp_input.name
 
         # Run local BLASTN
-        #os.environ['BLASTDB_LMDB_MAP_SIZE'] = str(self.BLASTDB_LMDB_MAP_SIZE)
+        os.environ['BLASTDB_LMDB_MAP_SIZE'] = str(self.BLASTDB_LMDB_MAP_SIZE)
         os.environ['BLASTDB'] = str(self.BLASTDB)
         try:
             self.blastn.set_query(temp_input_name)
