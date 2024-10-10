@@ -60,6 +60,16 @@ class DNAAnalysisResult:
         columns.update(data.keys())
         self.data['ancillary'].update(data)
 
+    def add_ancillary(self, key: str, value: str) -> None:
+        """
+        Add an ancillary data item.
+        :param key: A string representing the key
+        :param value: A string representing the value
+        :return:
+        """
+        columns.update([key])
+        self.data['ancillary'][key] = value
+
     @property
     def error(self) -> Optional[str]:
         """
@@ -473,7 +483,7 @@ class DNAAnalysisResultSet:
             yaml_data = yaml.safe_load(yamlfile)
             for result in self.results:
                 for key, value in yaml_data.items():
-                    result.ancillary[key] = value
+                    result.add_ancillary(key, value)
 
     def add_csv_file(self, file: str):
         """
@@ -494,4 +504,4 @@ class DNAAnalysisResultSet:
                     # Add all fields from CSV to the ancillary dictionary
                     for key, value in row.items():
                         if key != 'Process ID':  # Avoid duplicating the process_id
-                            result.ancillary[key] = value
+                            result.add_ancillary(key, value)
