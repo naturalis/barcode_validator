@@ -1,5 +1,7 @@
 from nbitk.Taxon import Taxon
 from typing import List, Optional, Tuple
+import yaml
+import csv
 
 columns = set()
 
@@ -442,3 +444,54 @@ class DNAAnalysisResult:
         """
         columns.update([level])
         return sorted(item for item in columns if item is not None and item != 'exp_taxon')
+
+
+class DNAAnalysisResultSet:
+
+    def __init__(self, results: List[DNAAnalysisResult], level: str = 'family'):
+        self.results = results
+        self.level = level
+
+    def __str__(self) -> str:
+        """
+        String representation of the result set.
+        :return: A tab-separated string representing the result set
+        """
+        header = '\t'.join(DNAAnalysisResult.result_fields(self.level))
+        contents = '\n'.join([str(result) for result in self.results])
+        return header + "\n" + contents
+
+    def add_yaml_file(self, file: str):
+        """
+        Join the YAML file to the results.
+        :param file: YAML file
+        :return:
+        """
+
+        # Read the YAML file and join it with the results
+        with open(file, 'r') as yamlfile:
+            yaml_data = yaml.safe_load(yamlfile)
+            for result in self.results:
+                for key, value in yaml_data.items():
+                    result.ancillary[key] = value
+
+    def add_csv_file(self, file: str):
+        """
+        Join the CSV file to the results.
+        :param file: CSV file
+        :return:
+        """
+
+        # Read the CSV file and join it with the results
+        process_id_to_result = {result.process_id: result for result in self.results}
+        with open(file, 'r', newline='') as csvfile:
+            reader = csv.DictReader(csvfile)
+            for row in reader:
+                process_id = row['Process ID']
+                if process_id in process_id_to_result:
+                    result = process_id_to_result[process_id]
+
+                    # Add all fields from CSV to the ancillary dictionary
+                    for key, value in row.items():
+                        if key != 'Process ID':  # Avoid duplicating the process_id
+                            result.ancillary[key] = value
