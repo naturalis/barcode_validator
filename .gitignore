@@ -167,3 +167,4 @@ cython_debug/
 .Rproj.user
 *.Rproj
 rsconnect/
+.Rhistory
