@@ -436,7 +436,10 @@ class DNAAnalysisResult:
                 exp_taxon_name = self.exp_taxon.name if self.exp_taxon else None
                 values.append(exp_taxon_name)
             else:
-                values.append(self.data[key])
+                if key in self.data:
+                    values.append(self.data[key])
+                else:
+                    values.append(None)
         return values
 
     def __str__(self) -> str:
