@@ -1,0 +1,97 @@
+ambig_basecount	ambig_full_basecount	error	family	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	process_id	species	stop_codons	fasta_file
+2	26	NC-BGE00426 not in BOLD	None	None	BLAST	family	35	459		NC-BGE00426	None	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1497	Buprestidae,Biphyllidae,Nitidulidae,Tenebrionidae,Meloidae,Dermestidae	UNIFI476-24	Acmaeodera crinita	0	data/BGE00426_MGE_cox1_insect_universal.fas
+6	10	None	Buprestidae	Buprestidae	BLAST	family	656	1485	Tettigoniidae,Acrididae,Reduviidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	UNIFI477-24	Acmaeodera flavolineata destructovittata	0	data/BGE00426_MGE_cox1_insect_universal.fas
+10	14	None	Buprestidae	Buprestidae	BLAST	family	656	1422	Tettigoniidae,Acrididae,Ninidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	UNIFI478-24	Acmaeodera nigellata	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	23	None	Buprestidae	Buprestidae	BLAST	family	371	663	Reduviidae	UNIFI479-24	Acmaeodera pilosellae	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1518	Buprestidae,Dermestidae,Bostrichidae	UNIFI480-24	Acmaeodera pilosellae	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1527	Buprestidae,Dermestidae	UNIFI481-24	Acmaeodera pilosellae	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1431	Scarabaeidae,Buprestidae,Limnichidae,Dermestidae	UNIFI482-24	Acmaeodera pulchra	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1530	Scarabaeidae,Buprestidae,Limnichidae,Dermestidae	UNIFI483-24	Acmaeodera pulchra	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1530	Buprestidae,Eulichadidae	UNIFI484-24	Acmaeodera saxicola minoa	0	data/BGE00426_MGE_cox1_insect_universal.fas
+31	36	None	Buprestidae	Buprestidae	BLAST	family	655	1416	Hydrophilidae,Scarabaeidae,Buprestidae	UNIFI485-24	Acmaeodera saxicola	0	data/BGE00426_MGE_cox1_insect_universal.fas
+2	13	None	Buprestidae	Buprestidae	BLAST	family	652	1374	Scarabaeidae,Buprestidae,Elateridae	UNIFI486-24	Acmaeodera saxicola	0	data/BGE00426_MGE_cox1_insect_universal.fas
+7	25	None	Buprestidae	Buprestidae	BLAST	family	411	1035	Coenagrionidae,Buprestidae,Curculionidae,Culicidae	UNIFI487-24	Acmaeodera circassica	0	data/BGE00426_MGE_cox1_insect_universal.fas
+None	0	Local BLAST failed for sequence ''	Buprestidae	Buprestidae	BLAST	family	None	0		UNIFI488-24	Acmaeodera coarctata seminata	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1527	Buprestidae	UNIFI489-24	Acmaeodera cyanipennis hispana	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1518	Buprestidae	UNIFI490-24	Acmaeodera cyanipennis hispana	0	data/BGE00426_MGE_cox1_insect_universal.fas
+11	44	None	Buprestidae	Buprestidae	BLAST	family	655	1374	Elateridae,Limnichidae,Elmidae,Tenebrionidae,Dermestidae	UNIFI491-24	Acmaeodera cyanipennis hispana	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	6	None	Buprestidae	Buprestidae	BLAST	family	655	1518	Buprestidae	UNIFI492-24	Acmaeoderella farinosa	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	655	1518	Buprestidae	UNIFI493-24	Acmaeoderella farinosa	0	data/BGE00426_MGE_cox1_insect_universal.fas
+53	130	None	Buprestidae	Buprestidae	BLAST	family	655	1416	Termitidae,Tenebrionidae,Zopheridae	UNIFI494-24	Acmaeoderella jonica	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	655	1518	Hydrophilidae,Buprestidae,Dermestidae	UNIFI495-24	Acmaeoderella mimonti mimonti	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	655	1518	Buprestidae,Dermestidae	UNIFI496-24	Acmaeoderella mimonti mimonti	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1530	Staphylinidae,Scarabaeidae,Buprestidae,Elateridae,Tenebrionidae,Ptinidae,Pallopteridae	UNIFI497-24	Acmaeoderella villosula	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1518	Staphylinidae,Scarabaeidae,Buprestidae,Elateridae,Tenebrionidae,Ptinidae,Pallopteridae	UNIFI498-24	Acmaeoderella villosula	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	7	None	Buprestidae	Buprestidae	BLAST	family	656	1518	Staphylinidae,Scarabaeidae,Buprestidae,Elateridae,Tenebrionidae,Ptinidae,Pallopteridae	UNIFI499-24	Acmaeoderella villosula	0	data/BGE00426_MGE_cox1_insect_universal.fas
+14	35	None	Buprestidae	Buprestidae	BLAST	family	631	1356	Staphylinidae,Buprestidae,Lampyridae,Heteroceridae,Eulichadidae,Dermestidae	UNIFI500-24	Acmaeoderella virgulata	0	data/BGE00426_MGE_cox1_insect_universal.fas
+13	16	None	Buprestidae	Buprestidae	BLAST	family	655	1518	Buprestidae,Dermestidae	UNIFI501-24	Acmaeodera adspersula	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	655	1518	Hydrophilidae,Buprestidae,Tenebrionidae	UNIFI502-24	Acmaeodera degener	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1527	Buprestidae	UNIFI503-24	Agrilus lineola	0	data/BGE00426_MGE_cox1_insect_universal.fas
+16	33	None	Buprestidae	Buprestidae	BLAST	family	592	1176	Buprestidae	UNIFI504-24	Agrilus lineola	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1527	Buprestidae	UNIFI505-24	Agrilus lineola	0	data/BGE00426_MGE_cox1_insect_universal.fas
+32	94	None	Buprestidae	Buprestidae	BLAST	family	439	1059	Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Psychodidae,Vespidae,Tetracampidae	UNIFI506-24	Agrilus marozzinii	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1530	Staphylinidae,Buprestidae	UNIFI507-24	Agrilus marozzinii	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	5	None	Buprestidae	Buprestidae	BLAST	family	656	1527	Staphylinidae,Buprestidae	UNIFI508-24	Agrilus pulvereus	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1530	Leiodidae,Buprestidae	UNIFI509-24	Agrilus relegatus aleevi	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1518	Buprestidae	UNIFI510-24	Agrilus moriscus	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1452	Tettigoniidae,Acrididae,Ninidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	UNIFI511-24	Agrilus marozzinii	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1491	Buprestidae,Syrphidae,Muscidae	UNIFI512-24	Anthaxia anatolica ferulae	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	22	None	Buprestidae	Buprestidae	BLAST	family	656	1518	Carabidae,Hydraenidae,Buprestidae,Dermestidae,Phoridae,Syrphidae	UNIFI513-24	Anthaxia anatolica ferulae	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1518	Buprestidae	UNIFI514-24	Anthaxia anatolica ferulae	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1530	Staphylinidae,Hydraenidae,Buprestidae,Tenebrionidae	UNIFI515-24	Anthaxia ariadna	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1518	Staphylinidae,Buprestidae	UNIFI516-24	Anthaxia bicolor bicolor	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1491	Staphylinidae,Buprestidae	UNIFI517-24	Anthaxia brevis	0	data/BGE00426_MGE_cox1_insect_universal.fas
+23	24	None	Buprestidae	Buprestidae	BLAST	family	557	1182	Carabidae,Staphylinidae,Culicidae,Tabanidae,Erebidae,Euteliidae,Papilionidae	UNIFI518-24	Anthaxia cichorii	0	data/BGE00426_MGE_cox1_insect_universal.fas
+30	105	None	Buprestidae	Buprestidae	BLAST	family	609	1329	Acrididae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	UNIFI519-24	Anthaxia cichorii	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1527	Staphylinidae,Scarabaeidae,Buprestidae	UNIFI520-24	Anthaxia cichorii	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1506	Scarabaeidae,Buprestidae	UNIFI521-24	Anthaxia cyanescens bedeli	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1527	Staphylinidae,Buprestidae	UNIFI522-24	Anthaxia deaurata	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1518	Staphylinidae,Buprestidae	UNIFI523-24	Anthaxia deaurata	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1530	Staphylinidae,Buprestidae	UNIFI524-24	Anthaxia deaurata	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1530	Staphylinidae,Buprestidae,Elateridae	UNIFI525-24	Anthaxia eugeniae	0	data/BGE00426_MGE_cox1_insect_universal.fas
+15	33	None	Buprestidae	Buprestidae	BLAST	family	657	1374	Staphylinidae,Hydraenidae,Buprestidae,Chrysomelidae,Muscidae	UNIFI526-24	Anthaxia funerula	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	642	1341	Dytiscidae,Carabidae,Buprestidae,Elmidae	UNIFI527-24	Anthaxia funerula	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1416	Georissidae,Buprestidae	UNIFI528-24	Anthaxia funerula	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1530	Staphylinidae,Hydraenidae,Buprestidae,Nosodendridae	UNIFI529-24	Anthaxia hypomelaena	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1530	Staphylinidae,Hydraenidae,Buprestidae,Nosodendridae	UNIFI530-24	Anthaxia hypomelaena	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1530	Staphylinidae,Hydraenidae,Buprestidae,Nosodendridae	UNIFI531-24	Anthaxia hypomelaena	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1530	Leiodidae,Buprestidae	UNIFI532-24	Anthaxia ignipennis	0	data/BGE00426_MGE_cox1_insect_universal.fas
+6	9	None	Buprestidae	Buprestidae	BLAST	family	603	1269	Saldidae,Buprestidae,Elateridae,Dermestidae	UNIFI533-24	Anthaxia kiesenwetteri	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	19	None	Buprestidae	Buprestidae	BLAST	family	285	798		UNIFI534-24	Anthaxia kochi	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1530	Staphylinidae,Buprestidae	UNIFI535-24	Anthaxia kubani	0	data/BGE00426_MGE_cox1_insect_universal.fas
+1	7	None	Buprestidae	Buprestidae	BLAST	family	657	1386	Staphylinidae,Hydraenidae,Buprestidae	UNIFI536-24	Anthaxia liae	0	data/BGE00426_MGE_cox1_insect_universal.fas
+29	53	None	Buprestidae	Buprestidae	BLAST	family	648	1491	Staphylinidae,Buprestidae	UNIFI537-24	Anthaxia liae	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1428	Staphylinidae,Buprestidae	UNIFI538-24	Anthaxia liae	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1530	Staphylinidae,Hydraenidae,Buprestidae	UNIFI539-24	Anthaxia lucens	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	19	None	Buprestidae	Buprestidae	BLAST	family	54	615	Noteridae,Carabidae,Scarabaeidae,Curculionidae	UNIFI540-24	Anthaxia lucens	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1530	Staphylinidae,Hydraenidae,Buprestidae	UNIFI541-24	Anthaxia lucens	0	data/BGE00426_MGE_cox1_insect_universal.fas
+None	0	Local BLAST failed for sequence ''	Buprestidae	Buprestidae	BLAST	family	None	0		UNIFI542-24	Anthaxia lusitanica	0	data/BGE00426_MGE_cox1_insect_universal.fas
+24	49	None	Buprestidae	Buprestidae	BLAST	family	657	1530	Staphylinidae,Buprestidae	UNIFI543-24	Anthaxia margotana	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1530	Staphylinidae,Buprestidae,Elateridae	UNIFI544-24	Anthaxia marmottani hispanica	0	data/BGE00426_MGE_cox1_insect_universal.fas
+8	48	None	Buprestidae	Buprestidae	BLAST	family	450	1074	Cerambycidae,Culicidae,Limacodidae,Bombycidae,Nymphalidae	UNIFI545-24	Anthaxia midas oberthuri	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1530	Staphylinidae,Buprestidae	UNIFI546-24	Anthaxia nigrojubata incognita	0	data/BGE00426_MGE_cox1_insect_universal.fas
+1	69	None	Buprestidae	Buprestidae	BLAST	family	543	1263	Tettigoniidae,Staphylinidae,Buprestidae,Aderidae,Vermileonidae,Vespidae,Euteliidae	UNIFI547-24	Anthaxia nigrojubata incognita	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1530	Staphylinidae,Buprestidae	UNIFI548-24	Anthaxia nigrojubata incognita	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1530	Staphylinidae,Hydraenidae,Buprestidae	UNIFI549-24	Anthaxia olympica	0	data/BGE00426_MGE_cox1_insect_universal.fas
+30	101	None	Buprestidae	Buprestidae	BLAST	family	652	1530	Buprestidae	UNIFI550-24	Anthaxia parallela	0	data/BGE00426_MGE_cox1_insect_universal.fas
+11	16	None	Buprestidae	Buprestidae	BLAST	family	655	1530	Staphylinidae,Hydraenidae,Buprestidae	UNIFI551-24	Anthaxia parallela	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1530	Staphylinidae,Buprestidae	UNIFI552-24	Anthaxia parallela	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1530	Staphylinidae,Hydraenidae,Buprestidae,Elmidae	UNIFI553-24	Anthaxia praeclara	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1530	Staphylinidae,Hydraenidae,Buprestidae,Elmidae	UNIFI554-24	Anthaxia praeclara	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1530	Staphylinidae,Hydraenidae,Buprestidae,Elmidae	UNIFI555-24	Anthaxia praeclara	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1530	Staphylinidae,Hydraenidae,Buprestidae	UNIFI556-24	Anthaxia rossica	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1530	Staphylinidae,Buprestidae	UNIFI557-24	Anthaxia rugicollis	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1473	Buprestidae,Elateridae,Tenebrionidae,Dermestidae	UNIFI558-24	Anthaxia salicis	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1461	Buprestidae,Elateridae,Tenebrionidae,Dermestidae	UNIFI559-24	Anthaxia salicis	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1530	Staphylinidae,Buprestidae,Elateridae,Elmidae,Dermestidae	UNIFI560-24	Anthaxia salicis	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	4	None	Buprestidae	Buprestidae	BLAST	family	656	1530	Staphylinidae,Buprestidae,Pyrochroidae	UNIFI561-24	Anthaxia schoenmanni	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1530	Staphylinidae,Buprestidae,Anthicidae	UNIFI562-24	Anthaxia schoenmanni	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	0	None	Buprestidae	Buprestidae	BLAST	family	155	600	Acrididae,Reduviidae,Culicidae	UNIFI563-24	Anthaxia semicuprea	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1530	Scarabaeidae,Buprestidae,Elateridae,Heteroceridae,Tenebrionidae,Dermestidae	UNIFI564-24	Anthaxia semicuprea	0	data/BGE00426_MGE_cox1_insect_universal.fas
+31	60	None	Buprestidae	Buprestidae	BLAST	family	522	1143	Tettigoniidae,Acrididae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Psychodidae,Vespidae,Tetracampidae	UNIFI565-24	Anthaxia semicuprea	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	657	1530	Staphylinidae,Buprestidae	UNIFI566-24	Anthaxia signaticollis	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1530	Staphylinidae,Buprestidae	UNIFI567-24	Anthaxia sponsa	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1530	Staphylinidae,Buprestidae,Elateridae,Dermestidae	UNIFI568-24	Anthaxia sponsa	0	data/BGE00426_MGE_cox1_insect_universal.fas
+0	3	None	Buprestidae	Buprestidae	BLAST	family	656	1530	Staphylinidae,Buprestidae,Elateridae,Dermestidae	UNIFI569-24	Anthaxia sponsa	0	data/BGE00426_MGE_cox1_insect_universal.fas
+1	1	None	Buprestidae	Buprestidae	BLAST	family	591	1197	Buprestidae,Tenebrionidae,Dermestidae	UNIFI570-24	Anthaxia suzannae	0	data/BGE00426_MGE_cox1_insect_universal.fas
