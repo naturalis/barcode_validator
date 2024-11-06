@@ -36,8 +36,8 @@ if __name__ == "__main__":
     # Process command line arguments
     parser = argparse.ArgumentParser(description="Analyze DNA sequences from a FASTA file.")
     parser.add_argument("-f", "--fasta_file", required=True, help="Path to the input FASTA file")
-    parser.add_argument("-y", "--yaml_file", required=True, help="Path to the assembly param YAML file")
-    parser.add_argument("-a", "--analytics_file", required=True, help="Path to the analytics CSV file")
+    parser.add_argument("-y", "--yaml_file", required=False, help="Path to the assembly param YAML file")
+    parser.add_argument("-a", "--analytics_file", required=False, help="Path to the analytics CSV file")
     parser.add_argument("-c", "--config_file", required=True, help="Path to the configuration YAML file")
     parser.add_argument("-v", "--verbosity", choices=['DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL'],
                         help="Set the logging verbosity (default: INFO)")
