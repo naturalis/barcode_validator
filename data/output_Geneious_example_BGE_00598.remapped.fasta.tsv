@@ -1,0 +1,89 @@
+processid	family	species	identification	identification_rank	identification_method	nuc_basecount	nuc_full_basecount	ambig_basecount	ambig_full_basecount	stop_codons	error	fasta_file
+BBIOP1028-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1028-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP967-24	None	None	None	family	BLAST	656	658	0	0	0	BBIOP967-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP972-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP972-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1021-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1021-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1018-24	Bombyliidae	Phthiria	Bombyliidae	family	BLAST	657	658	0	0	0	None	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1004-24	Bombyliidae	Villa	Bombyliidae	family	BLAST	656	658	0	0	0	None	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1039-24	Tachinidae	Cylindromyia	Tachinidae	family	BLAST	657	658	0	0	0	None	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1038-24	Tachinidae	Cylindromyia	Tachinidae	family	BLAST	657	658	0	0	0	None	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1044-24	Tachinidae	Besseria	Tachinidae	family	BLAST	657	658	0	0	0	None	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP994-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP994-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP988-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP988-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP996-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP996-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1011-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1011-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1045-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1045-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1035-24	Calliphoridae	Paykullia	Calliphoridae	family	BLAST	657	658	0	0	0	None	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1034-24	Calliphoridae	Phyto	Calliphoridae	family	BLAST	657	658	0	0	0	None	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1036-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1036-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP995-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP995-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP992-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP992-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1012-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1012-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1037-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1037-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1020-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1020-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1025-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1025-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP993-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP993-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP974-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP974-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP978-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP978-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP980-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP980-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP981-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP981-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP973-24	None	None	None	family	BLAST	655	658	0	0	0	BBIOP973-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP970-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP970-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP984-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP984-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP985-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP985-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP986-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP986-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1042-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1042-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP987-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP987-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP983-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP983-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP975-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP975-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP999-24	None	None	None	family	BLAST	656	658	0	0	0	BBIOP999-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP990-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP990-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP998-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP998-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1007-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1007-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1006-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1006-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1009-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1009-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1043-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1043-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1015-24	None	None	None	family	BLAST	656	658	0	0	0	BBIOP1015-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1014-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1014-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1001-24	Tachinidae	Catharosia	Tachinidae	family	BLAST	657	658	0	0	0	None	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1008-24	Tachinidae	Catharosia	Tachinidae	family	BLAST	657	658	0	0	0	None	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP991-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP991-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP997-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP997-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1040-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1040-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1010-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1010-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1002-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1002-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1013-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1013-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1003-24	Tachinidae	Linnaemya	Tachinidae	family	BLAST	657	658	0	0	0	None	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1005-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1005-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1026-24	Empididae	Empis	Empididae	family	BLAST	657	658	0	0	0	None	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1022-24	Keroplatidae	Platyura	Keroplatidae	family	BLAST	657	658	0	0	0	None	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1032-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1032-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP968-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP968-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1024-24	Empididae	Rhamphomyia	Empididae	family	BLAST	656	658	0	0	0	None	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1031-24	Tabanidae	Haematopota	Tabanidae	family	BLAST	657	658	0	0	0	None	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1033-24	None	None	None	family	BLAST	656	658	0	0	0	BBIOP1033-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP969-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP969-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP989-24	Tachinidae	Gymnosoma	Tachinidae	family	BLAST	657	658	0	0	0	None	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1000-24	Tachinidae	Gymnosoma	Tachinidae	family	BLAST	657	658	0	0	0	None	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1016-24	Bombyliidae	Phthiria	None	family	BLAST	657	658	0	0	0	None	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1017-24	Bombyliidae	Phthiria	None	family	BLAST	657	658	0	0	0	None	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP971-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP971-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1030-24	None	None	None	family	BLAST	656	658	0	0	0	BBIOP1030-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1029-24	None	None	None	family	BLAST	656	658	0	0	0	BBIOP1029-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1023-24	Bombyliidae	Phthiria	None	family	BLAST	655	658	0	0	0	None	data/output_Geneious_example_BGE_00598.remapped.fasta
+BGE	None	None	None	family	BLAST	657	658	0	0	0	BGE not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP1019-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP1019-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP982-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP982-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP960-24	None	None	None	family	BLAST	656	658	0	0	0	BBIOP960-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP952-24	None	None	None	family	BLAST	655	658	0	0	0	BBIOP952-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP953-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP953-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP954-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP954-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP955-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP955-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP958-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP958-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP962-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP962-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP964-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP964-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP961-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP961-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP959-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP959-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP963-24	None	None	None	family	BLAST	657	658	0	0	0	BBIOP963-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP956-24	None	None	None	family	BLAST	656	658	0	0	0	BBIOP956-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
+BBIOP951-24	None	None	None	family	BLAST	656	658	0	0	0	BBIOP951-24 not in BOLD	data/output_Geneious_example_BGE_00598.remapped.fasta
