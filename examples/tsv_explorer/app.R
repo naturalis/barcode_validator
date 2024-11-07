@@ -16,8 +16,8 @@ pretty_names <- c(
 )
 
 # Function to get TSV files from GitHub
-get_github_tsv_files <- function() {
-  url <- "https://api.github.com/repos/naturalis/barcode_validator/contents/data?ref=pr-43"
+get_github_tsv_files <- function(organization) {
+  url <- paste0("https://api.github.com/repos/naturalis/barcode_validator/contents/data?ref=", organization)
   response <- GET(url)
   content <- content(response, "text")
   files <- fromJSON(content)
@@ -31,6 +31,9 @@ ui <- fluidPage(
 
   sidebarLayout(
     sidebarPanel(
+      selectInput("organization", "Select Organization",
+                  choices = c("naturalis", "nhm", "unifi"),
+                  selected = "naturalis"),
       selectizeInput("files", "Select TSV File(s)",
                      choices = NULL,
                      multiple = TRUE),
@@ -51,9 +54,9 @@ ui <- fluidPage(
 # Server
 server <- function(input, output, session) {
 
-  # Populate file list on app start
+  # Update file list when organization changes
   observe({
-    tsv_files <- get_github_tsv_files()
+    tsv_files <- get_github_tsv_files(input$organization)
     updateSelectizeInput(session, "files", choices = tsv_files)
   })
 
@@ -61,7 +64,8 @@ server <- function(input, output, session) {
     req(input$files)
 
     all_data <- lapply(input$files, function(file) {
-      url <- paste0("https://raw.githubusercontent.com/naturalis/barcode_validator/pr-43/data/", file)
+      url <- paste0("https://raw.githubusercontent.com/naturalis/barcode_validator/",
+                   input$organization, "/data/", file)
       df <- read_tsv(url, na = c("", "NA", "None"))
 
       # Convert relevant columns to numeric, replacing 'None' with NA
