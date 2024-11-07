@@ -47,6 +47,10 @@ class SequenceHandler:
         :param sequence: A BioPython SeqRecord object
         :return: A BioPython SeqRecord object containing the aligned sequence
         """
+
+        # TODO: inside this method, the HMM file should be inferred from the `marker_code` attribute of the sequence.
+        # For example, if `marker_code` == 'COI-5P', the HMM file should be 'COI-5P.hmm', which should be set via
+        # self.hmmalign.set_hmmfile().
         self.logger.info("Aligning sequence to HMM")
         if len(sequence.seq) == 0:
             self.logger.warning("Empty sequence provided for alignment")
