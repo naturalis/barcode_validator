@@ -161,6 +161,11 @@ class BarcodeValidator:
             self.logger.warning(f"Alignment failed for {result.process_id}")
             result.error = f"Alignment failed for sequence '{record.seq}'"
         else:
+
+            # TODO: make it so that the translation table is inferred from the BCDM annotations of the sequence.
+            # This should be a combination of the taxonomy and the marker code, where the latter should tell us
+            # if the marker is nuclear or mitochondrial and the former should tell us the translation table.
+            # https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi
             amino_acid_sequence = sh.translate_sequence(aligned_sequence, config.get('translation_table'))
             result.stop_codons = sh.get_stop_codons(amino_acid_sequence)
             result.seq_length = sh.marker_seqlength(aligned_sequence)
