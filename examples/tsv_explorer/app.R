@@ -5,6 +5,7 @@ library(dplyr)
 library(readr)
 library(httr)
 library(jsonlite)
+library(utils)  # for URLencode
 
 # Define a mapping of column names to prettier terms
 pretty_names <- c(
@@ -64,8 +65,11 @@ server <- function(input, output, session) {
     req(input$files)
 
     all_data <- lapply(input$files, function(file) {
+      # URL encode the filename
+      encoded_file <- URLencode(file, reserved = TRUE)
       url <- paste0("https://raw.githubusercontent.com/naturalis/barcode_validator/",
-                   input$organization, "/data/", file)
+                   input$organization, "/data/", encoded_file)
+
       df <- read_tsv(url, na = c("", "NA", "None"))
 
       # Convert relevant columns to numeric, replacing 'None' with NA
