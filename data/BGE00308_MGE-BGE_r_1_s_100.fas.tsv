@@ -1,0 +1,97 @@
+ambig_basecount	ambig_full_basecount	error	family	fasta_file	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	process_id	species	stop_codons
+0	0	BGE00308-NC not in BOLD	None	data/BGE00308_MGE-BGE_r_1_s_100.fas	None	BLAST	None	655	1449		BGE00308-NC	None	0
+2	18	None	Pyralidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	625	1374		BGSNL1426-24	Synoria antiquella	0
+28	48	None	Pyralidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	654	1433	Achilidae,Andrenidae,Colletidae	BGSNL1427-24	Tsaraphycis mimeticella	0
+0	0	None	Pyralidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	655	1464	Andrenidae	BGSNL1428-24	Tsaraphycis mimeticella	0
+0	0	None	Pyralidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	655	1530	Andrenidae	BGSNL1429-24	Tsaraphycis mimeticella	0
+0	0	None	Pyralidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	655	1530	Andrenidae	BGSNL1430-24	Uncinus hispanella	0
+0	0	None	Pyralidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	657	1473	Andrenidae	BGSNL1431-24	Uncinus hispanella	0
+0	0	None	Pyralidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	657	1434	Andrenidae	BGSNL1432-24	Uncinus hispanella	0
+0	0	None	Pyralidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	657	1434	Andrenidae	BGSNL1433-24	Uncinus thymiella	0
+0	0	None	Pyralidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1491	Andrenidae	BGSNL1434-24	Valdovecaria bradyrrhoella	0
+0	8	None	Pyralidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1410	Andrenidae	BGSNL1435-24	Valdovecaria bradyrrhoella	0
+0	0	None	Pyralidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1389	Andrenidae	BGSNL1436-24	Valdovecaria bradyrrhoella	0
+None	0	Local BLAST failed for sequence ''	Pyralidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	None	0		BGSNL1437-24	Valdovecaria hispanicella	0
+0	24	None	Pyralidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1443	Andrenidae	BGSNL1438-24	Valdovecaria umbratella	0
+0	0	None	Pyralidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	655	1491	Andrenidae	BGSNL1439-24	Valdovecaria umbratella	0
+0	0	None	Pyralidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	657	1533	Andrenidae	BGSNL1440-24	Valdovecaria umbratella	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	657	1431	Andrenidae	BGSNL1441-24	Adscita capitalis	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	657	1509	Andrenidae	BGSNL1442-24	Adscita capitalis	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	657	1512	Andrenidae	BGSNL1443-24	Adscita capitalis	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	657	1509	Andrenidae	BGSNL1444-24	Artona martini	0
+11	101	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	653	1428	Andrenidae	BGSNL1445-24	Artona martini	0
+25	65	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1431	Andrenidae	BGSNL1446-24	Artona martini	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1461	Andrenidae	BGSNL1447-24	Jordanita vartianae	0
+0	1	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1443	Andrenidae	BGSNL1448-24	Jordanita vartianae	0
+0	5	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1428	Andrenidae	BGSNL1449-24	Jordanita vartianae	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1461	Andrenidae	BGSNL1450-24	Rhagades predotae	0
+4	38	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	636	1407	Miridae,Andrenidae	BGSNL1451-24	Rhagades predotae	0
+42	63	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1377	Andrenidae	BGSNL1452-24	Rhagades predotae	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1488	Andrenidae	BGSNL1453-24	Zygaena alpherakyi	0
+0	5	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1530	Andrenidae	BGSNL1454-24	Zygaena alpherakyi	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1401	Andrenidae	BGSNL1455-24	Zygaena alpherakyi	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1392	Andrenidae	BGSNL1456-24	Zygaena anthyllidis	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1422	Andrenidae	BGSNL1457-24	Zygaena anthyllidis	0
+0	21	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1416	Andrenidae	BGSNL1458-24	Zygaena anthyllidis	0
+36	77	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1422	Andrenidae	BGSNL1459-24	Zygaena armena	0
+52	102	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1431	Andrenidae	BGSNL1460-24	Zygaena armena	0
+2	40	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	657	1431	Andrenidae	BGSNL1461-24	Zygaena armena	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	657	1488	Andrenidae	BGSNL1462-24	Zygaena centaureae	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	657	1515	Andrenidae	BGSNL1463-24	Zygaena centaureae	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1416	Andrenidae	BGSNL1464-24	Zygaena centaureae	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1431	Andrenidae	BGSNL1465-24	Zygaena contaminei	0
+12	12	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1392	Andrenidae	BGSNL1466-24	Zygaena contaminei	0
+1	8	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1398	Andrenidae	BGSNL1467-24	Zygaena contaminei	0
+0	1	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1416	Andrenidae	BGSNL1468-24	Zygaena corsica	0
+1	1	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1422	Andrenidae	BGSNL1469-24	Zygaena corsica	0
+15	52	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1374	Andrenidae	BGSNL1470-24	Zygaena corsica	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1416	Andrenidae	BGSNL1471-24	Zygaena dorycnii	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1407	Andrenidae	BGSNL1472-24	Zygaena dorycnii	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1497	Andrenidae	BGSNL1473-24	Zygaena dorycnii	0
+None	0	Local BLAST failed for sequence ''	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	None	0		BGSNL1474-24	Zygaena fraxini	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1521	Andrenidae	BGSNL1475-24	Zygaena fraxini	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1416	Andrenidae	BGSNL1476-24	Zygaena fraxini	0
+0	3	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1533	Andrenidae	BGSNL1477-24	Zygaena haberhaueri	0
+0	3	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1524	Andrenidae	BGSNL1478-24	Zygaena haberhaueri	0
+1	1	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1470	Andrenidae	BGSNL1479-24	Zygaena haberhaueri	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1518	Andrenidae	BGSNL1480-24	Zygaena hilaris	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1398	Andrenidae	BGSNL1481-24	Zygaena hilaris	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1452	Andrenidae	BGSNL1482-24	Zygaena hilaris	0
+5	26	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	657	1377	Andrenidae	BGSNL1483-24	Zygaena ignifera	0
+0	9	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	657	1509	Andrenidae	BGSNL1484-24	Zygaena ignifera	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	657	1440	Andrenidae	BGSNL1485-24	Zygaena ignifera	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1479	Andrenidae	BGSNL1486-24	Zygaena lavandulae	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1461	Andrenidae	BGSNL1487-24	Zygaena lavandulae	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1461	Andrenidae	BGSNL1488-24	Zygaena lavandulae	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	657	1479	Andrenidae	BGSNL1489-24	Zygaena mana	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1479	Andrenidae	BGSNL1490-24	Zygaena mana	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	657	1416	Andrenidae	BGSNL1491-24	Zygaena mana	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1467	Apidae,Megachilidae	BGSNL1492-24	Zygaena occitanica	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1467	Apidae,Megachilidae	BGSNL1493-24	Zygaena occitanica	0
+0	3	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1431	Apidae,Megachilidae	BGSNL1494-24	Zygaena occitanica	0
+3	13	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1437	Apidae,Megachilidae	BGSNL1495-24	Zygaena orana	0
+0	17	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1440	Apidae,Megachilidae	BGSNL1496-24	Zygaena orana	0
+4	23	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1395	Apidae	BGSNL1497-24	Zygaena orana	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1461	Apidae,Megachilidae	BGSNL1498-24	Zygaena oxytropis	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1452	Apidae,Megachilidae	BGSNL1499-24	Zygaena oxytropis	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1440	Apidae,Megachilidae	BGSNL1500-24	Zygaena oxytropis	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	657	1506	Apidae,Megachilidae	BGSNL1501-24	Zygaena rhadamanthus	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	657	1467	Apidae,Megachilidae	BGSNL1502-24	Zygaena rhadamanthus	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	657	1395	Apidae,Megachilidae	BGSNL1503-24	Zygaena rhadamanthus	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1440	Apidae,Megachilidae	BGSNL1504-24	Zygaena sarpedon	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1419	Apidae,Megachilidae	BGSNL1505-24	Zygaena sarpedon	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1458	Apidae,Megachilidae	BGSNL1506-24	Zygaena sarpedon	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1494	Megachilidae	BGSNL1507-24	Zygaena alpherakyi	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1458	Apidae,Megachilidae	BGSNL1508-24	Zygaena centaureae ukrainica	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1494	Apidae,Megachilidae	BGSNL1509-24	Zygaena contaminei almanzonica	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	657	1515	Apidae,Megachilidae	BGSNL1510-24	Zygaena contaminei asturica	0
+24	89	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	656	1404	Apidae,Megachilidae	BGSNL1511-24	Zygaena corsica sardiniensis	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	657	1458	Apidae,Megachilidae	BGSNL1512-24	Zygaena fraxini slabyiana	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	657	1461	Apidae,Megachilidae	BGSNL1513-24	Zygaena fraxini perdita	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	657	1485	Apidae,Megachilidae	BGSNL1514-24	Zygaena fraxini margelanensis	0
+3	11	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	651	1404	Curculionidae,Stenopsychidae	BGSNL1515-24	Zygaena haberhaueri optima	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	657	1455	Apidae,Megachilidae	BGSNL1516-24	Zygaena haberhaueri kobachidzei	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	653	1455	Apidae	BGSNL1517-24	Zygaena haberhaueri elbursica	0
+18	20	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	638	1317	Apidae	BGSNL1518-24	Zygaena haberhaueri demangei	0
+2	3	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	605	1290	Apidae	BGSNL1519-24	Zygaena hilaris sevillana	0
+0	0	None	Zygaenidae	data/BGE00308_MGE-BGE_r_1_s_100.fas	Zygaenidae	BLAST	None	655	1515	Apidae	BGSNL1520-24	Zygaena hilaris lucifera	0

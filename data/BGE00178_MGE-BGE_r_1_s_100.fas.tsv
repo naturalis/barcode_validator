@@ -1,0 +1,97 @@
+ambig_basecount	ambig_full_basecount	error	family	fasta_file	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	process_id	species	stop_codons
+0	0	BGE00178-NC not in BOLD	None	data/BGE00178_MGE-BGE_r_1_s_100.fas	None	BLAST	None	146	663		BGE00178-NC	None	0
+8	20	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	556	1056	Epiophlebiidae,Tettigoniidae,Acrididae,Gerridae,Reduviidae,Cicadellidae,Hydrophilidae,Curculionidae	BGENL1141-24	Abraeus perpusillus	0
+0	5	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	212	792	Histeridae,Coccinellidae	BGENL1142-24	Abraeus perpusillus	0
+2	3	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	612	1284	Hydrophilidae,Histeridae,Scarabaeidae	BGENL1143-24	Abraeus perpusillus	0
+8	41	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	127	1032	Lycidae,Curculionidae,Apionidae,Dermestidae,Tephritidae	BGENL1144-24	Acritus italicus	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	461	909	Mycetophilidae	BGENL1145-24	Acritus italicus	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	460	918	Tettigoniidae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Ulidiidae,Vespidae,Tetracampidae	BGENL1146-24	Acritus italicus	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	657	1542	Staphylinidae,Histeridae,Calliphoridae,Sarcophagidae	BGENL1147-24	Atholus scutellaris	0
+6	12	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	551	1119	Culicidae,Chironomidae,Syrphidae	BGENL1148-24	Carcinops troglodytes	0
+3	22	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	296	1146	Acrididae,Carabidae,Chrysomelidae	BGENL1149-24	Carcinops troglodytes	0
+7	32	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	573	1188	Baetidae,Histeridae	BGENL1150-24	Carcinops troglodytes	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	367	795	Curculionidae,Culicidae	BGENL1151-24	Chaetabraeus globulus	0
+0	2	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	175	729	Curculionidae,Dermestidae,Bostrichidae,Psychodidae,Vespidae,Tetracampidae	BGENL1152-24	Chaetabraeus globulus	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	393	822	Delphacidae,Noctuidae,Nymphalidae,Geometridae	BGENL1153-24	Chaetabraeus globulus	0
+0	11	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	287	813	Tettigoniidae,Ninidae,Ulidiidae,Vespidae	BGENL1154-24	Chaetabraeus lucidus	0
+2	2	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	657	1500	Helophoridae,Staphylinidae,Scarabaeidae,Lucanidae,Lampyridae,Nitidulidae,Chrysomelidae	BGENL1155-24	Chaetabraeus lucidus	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	340	1056	Miridae,Curculionidae,Culicidae	BGENL1156-24	Chaetabraeus lucidus	1
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1530	Hydrophilidae,Staphylinidae,Histeridae,Scarabaeidae,Dermestidae	BGENL1157-24	Chalcionellus aemulus	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1530	Hydrophilidae,Staphylinidae,Histeridae,Scarabaeidae,Dermestidae	BGENL1158-24	Chalcionellus aemulus	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1530	Hydrophilidae,Staphylinidae,Histeridae,Scarabaeidae,Dermestidae	BGENL1159-24	Chalcionellus aemulus	0
+21	34	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	655	1491	Argiolestidae,Blaberidae,Micronectidae,Reduviidae,Hydrophilidae,Histeridae	BGENL1160-24	Chalcionellus amoenus	0
+11	12	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	614	1464	Tettigoniidae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Ulidiidae,Vespidae,Tetracampidae	BGENL1161-24	Chalcionellus amoenus	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1530	Staphylinidae,Hydraenidae,Histeridae,Lampyridae	BGENL1162-24	Chalcionellus amoenus	0
+2	29	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	657	1530	Staphylinidae,Histeridae,Scarabaeidae	BGENL1163-24	Chalcionellus blanchii	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	244	405		BGENL1164-24	Chalcionellus ibericus	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1530	Hydrophilidae,Staphylinidae,Scarabaeidae,Lucanidae,Elateridae,Cleridae	BGENL1165-24	Chalcionellus turcicus	0
+12	66	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1503	Scarabaeidae,Lucanidae,Tenebrionidae,Dermestidae	BGENL1166-24	Chalcionellus tyrius	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1530	Hydraenidae,Scarabaeidae,Cerambycidae,Dermestidae,Syrphidae,Lauxaniidae	BGENL1167-24	Chalcionellus tyrius	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1530	Hydraenidae,Scarabaeidae,Dermestidae,Syrphidae	BGENL1168-24	Chalcionellus tyrius	0
+20	34	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	257	822		BGENL1169-24	Diplostix mayeti	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	277	756		BGENL1170-24	Diplostix mayeti	0
+0	9	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	339	1200	Micronectidae,Tessaratomidae,Malcidae,Cerambycidae,Curculionidae,Machilidae	BGENL1171-24	Epierus comptus	0
+2	9	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	529	960	Tettigoniidae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Ulidiidae,Vespidae,Tetracampidae	BGENL1172-24	Epierus comptus	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	336	798	Tettigoniidae,Acrididae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Psychodidae,Vespidae,Tetracampidae	BGENL1173-24	Epierus comptus	0
+8	20	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	296	1062	Reduviidae	BGENL1174-24	Eubrachium hispidulum	0
+0	2	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	453	1206	Tettigoniidae,Acrididae,Dermestidae,Ulidiidae,Vespidae	BGENL1175-24	Eubrachium hispidulum	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	655	1533	Staphylinidae,Hydraenidae,Dermestidae,Muscidae	BGENL1176-24	Eubrachium pusillum	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	170	900		BGENL1177-24	Eubrachium punctatum	0
+2	25	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	618	1365	Scarabaeidae,Cerambycidae,Dermestidae	BGENL1178-24	Eudiplister planulus	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1542	Tenebrionidae,Dermestidae	BGENL1179-24	Eudiplister planulus	0
+0	3	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	142	1023	Kalotermitidae,Tettigoniidae,Acrididae,Staphylinidae,Silphidae,Myrmeleontidae	BGENL1180-24	Eutriptus putricola	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	219	822		BGENL1181-24	Eutriptus putricola	0
+10	36	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	654	1539	Elateridae,Tenebrionidae,Dermestidae,Calliphoridae,Sarcophagidae	BGENL1182-24	Eutriptus putricola	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1530	Hydrophilidae,Staphylinidae,Leiodidae,Hydraenidae,Histeridae,Muscidae	BGENL1183-24	Exaesiopus grossipes	0
+7	21	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	601	1227	Tettigoniidae,Reduviidae,Ulidiidae,Vespidae,Tetracampidae	BGENL1184-24	Gnathoncus communis	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	657	1530	Hydrophilidae,Staphylinidae,Histeridae	BGENL1185-24	Gnathoncus nannetensis	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	657	1530	Hydrophilidae,Staphylinidae,Histeridae	BGENL1186-24	Gnathoncus nannetensis	0
+0	5	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	245	1023		BGENL1187-24	Gnathoncus nannetensis	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	657	1530	Staphylinidae,Histeridae,Anthomyiidae	BGENL1188-24	Gnathoncus rotundatus	0
+1	1	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	657	1530	Staphylinidae,Histeridae,Anthomyiidae	BGENL1189-24	Gnathoncus rotundatus	0
+13	43	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	655	1542	Histeridae,Dermestidae	BGENL1190-24	Hister bipunctatus	0
+8	35	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	492	1341	Elmidae,Nitidulidae,Tenebrionidae,Tetratomidae,Chrysomelidae	BGENL1191-24	Hister bipunctatus	0
+0	7	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	655	1542	Histeridae,Tenebrionidae,Dermestidae	BGENL1192-24	Hister bipunctatus	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1542	Hydrophilidae,Staphylinidae,Silphidae,Histeridae,Dermestidae	BGENL1193-24	Hister grandicollis	0
+12	30	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1542	Hydrophilidae,Staphylinidae,Silphidae,Histeridae,Scarabaeidae,Elateridae,Elmidae	BGENL1194-24	Hister grandicollis	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1542	Hydrophilidae,Staphylinidae,Silphidae,Histeridae,Dermestidae	BGENL1195-24	Hister grandicollis	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	657	1536	Staphylinidae,Scarabaeidae,Buprestidae,Nitidulidae,Tenebrionidae,Fanniidae	BGENL1196-24	Hister haroldi	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	657	1542	Staphylinidae,Scarabaeidae,Fanniidae	BGENL1197-24	Hister haroldi	0
+27	82	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	655	1542	Staphylinidae,Elateridae,Scirtidae,Cucujidae,Kateretidae,Tenebrionidae	BGENL1198-24	Hister illigeri	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	655	1542	Histeridae,Tenebrionidae,Dermestidae	BGENL1199-24	Hister illigeri	0
+10	13	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	655	1542	Silphidae,Dermestidae	BGENL1200-24	Hister illigeri	0
+0	5	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	544	1167	Staphylinidae,Asilidae,Dolichopodidae,Agromyzidae,Muscidae,Sarcophagidae	BGENL1201-24	Hister lugubris	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	655	1542	Hydrophilidae,Histeridae,Lucanidae,Limnichidae,Tenebrionidae,Asilidae	BGENL1202-24	Hister mediterraneus	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	655	1542	Hydrophilidae,Histeridae,Dermestidae,Ptinidae,Asilidae	BGENL1203-24	Hister mediterraneus	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	655	1542	Hydrophilidae,Histeridae,Lucanidae,Limnichidae,Tenebrionidae,Asilidae	BGENL1204-24	Hister mediterraneus	0
+0	5	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1536	Staphylinidae,Histeridae,Tenebrionidae,Dermestidae	BGENL1205-24	Hister moerens	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1536	Staphylinidae,Histeridae,Tenebrionidae,Dermestidae	BGENL1206-24	Hister moerens	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1536	Staphylinidae,Histeridae,Tenebrionidae,Dermestidae	BGENL1207-24	Hister moerens	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	655	1542	Staphylinidae,Silphidae,Histeridae,Tenebrionidae	BGENL1208-24	Hister pustulosus	0
+13	24	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	559	1320	Staphylinidae,Tenebrionidae,Curculionidae	BGENL1209-24	Hister pustulosus	0
+2	25	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	653	1371	Rhaphidophoridae,Acrididae,Staphylinidae,Conopidae	BGENL1210-24	Hister sepulchralis	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	657	1536	Hydrophilidae,Lucanidae,Asilidae,Syrphidae,Muscidae,Sarcophagidae	BGENL1211-24	Hister sepulchralis	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	657	1542	Hydrophilidae,Asilidae,Syrphidae,Drosophilidae,Muscidae,Sarcophagidae	BGENL1212-24	Hister sepulchralis	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	655	1542	Hydrophilidae,Staphylinidae,Histeridae,Scarabaeidae,Elateridae,Dermestidae	BGENL1213-24	Hister teter	0
+35	68	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	655	1542	Staphylinidae,Histeridae,Drosophilidae,Tephritidae	BGENL1214-24	Hister teter	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1542	Hydrophilidae,Histeridae,Hybosoridae,Tenebrionidae,Dermestidae	BGENL1215-24	Hister thoracicus	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	655	1542	Staphylinidae,Histeridae,Scarabaeidae,Meloidae,Dermestidae	BGENL1216-24	Hister thoracicus	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	657	1530	Hydrophilidae,Staphylinidae,Histeridae,Scarabaeidae,Trogidae,Elateridae	BGENL1217-24	Hypocacculus elongatulus	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	657	1530	Hydrophilidae,Staphylinidae,Histeridae,Scarabaeidae,Trogidae,Elateridae	BGENL1218-24	Hypocacculus elongatulus	0
+0	16	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	551	1257	Tettigoniidae,Sciaridae,Vespidae	BGENL1219-24	Hypocacculus elongatulus	0
+27	43	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	204	1356	Staphylinidae,Histeridae	BGENL1220-24	Hypocacculus praecox	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	657	1530	Carabidae,Staphylinidae,Hydraenidae,Histeridae,Scarabaeidae	BGENL1221-24	Hypocacculus praecox	0
+39	84	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	635	1455	Histeridae,Passalidae	BGENL1222-24	Hypocacculus praecox	0
+5	6	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1530	Staphylinidae,Histeridae,Scarabaeidae,Dermestidae	BGENL1223-24	Hypocacculus metallescens	0
+0	1	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	124	615	Acrididae	BGENL1224-24	Hypocacculus metallescens	0
+5	29	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1530	Staphylinidae,Histeridae,Elateridae,Tenebrionidae,Dermestidae	BGENL1225-24	Hypocacculus metallescens	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	657	1530	Hydrophilidae,Histeridae,Scarabaeidae,Lampyridae,Elateridae,Dermestidae	BGENL1226-24	Hypocacculus spretulus	0
+14	15	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1530	Staphylinidae,Scarabaeidae,Buprestidae,Lampyridae,Elateridae,Calliphoridae	BGENL1227-24	Hypocacculus spretulus	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	657	1530	Hydrophilidae,Histeridae,Scarabaeidae,Lampyridae,Dermestidae	BGENL1228-24	Hypocacculus spretulus	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1530	Hydrophilidae,Staphylinidae,Calliphoridae	BGENL1229-24	Hypocaccus brasiliensis	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	657	1530	Dytiscidae,Staphylinidae,Lucanidae,Lampyridae,Helotidae	BGENL1230-24	Hypocaccus brasiliensis	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	657	1530	Dytiscidae,Staphylinidae,Lucanidae,Lampyridae,Helotidae,Calliphoridae	BGENL1231-24	Hypocaccus brasiliensis	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1527	Staphylinidae,Hydraenidae,Scarabaeidae	BGENL1232-24	Hypocaccus specularis	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1527	Staphylinidae,Hydraenidae,Scarabaeidae	BGENL1233-24	Hypocaccus specularis	0
+0	0	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	416	1047		BGENL1234-24	Kissister minimus	0
+0	7	None	Histeridae	data/BGE00178_MGE-BGE_r_1_s_100.fas	Histeridae	BLAST	None	656	1542	Carabidae,Staphylinidae,Hydraenidae,Geotrupidae,Lampyridae,Agromyzidae	BGENL1235-24	Kissister minimus	0
