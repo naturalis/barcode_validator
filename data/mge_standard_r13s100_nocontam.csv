@@ -1,4 +1,4 @@
-Process ID,n_reads,n_aligned,cov_min,cov_max,cov_avg,skipped_reads_low_rel_score,length
+Process ID,n_aligned,n_reads,cov_min,cov_max,cov_avg,skipped_reads_low_rel_score,length
 BGENL001-23,5734,23494514,0.0,802.0,410.64579256360076,1819,1533
 BGENL002-23,203,672618,0.0,26.0,11.986301369863014,24,1533
 BGENL003-23,4286,30824217,0.0,650.0,295.26614481409,1275,1533
