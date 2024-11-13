@@ -1,97 +1,97 @@
-processid	family	species	identification	identification_rank	identification_method	nuc_basecount	nuc_full_basecount	ambig_basecount	ambig_full_basecount	stop_codons	error	fasta_file
-BGENL761-24	Aphelinidae	Aphelinus chaonia	Aphelinidae	family	BLAST	651	1440	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL762-24	Aphelinidae	Aphelinus chaonia	Aphelinidae	family	BLAST	647	1335	9	51	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL763-24	Aphelinidae	Aphelinus humilis	Aphelinidae	family	BLAST	657	1416	3	3	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL764-24	Aphelinidae	Aphelinus humilis	Aphelinidae	family	BLAST	651	1479	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL765-24	Aphelinidae	Aphelinus humilis	Aphelinidae	family	BLAST	651	1482	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL766-24	Aphelinidae	Aphelinus tricolor	Aphelinidae	family	BLAST	651	1494	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL767-24	Aphelinidae	Aphelinus tricolor	Aphelinidae	family	BLAST	651	1422	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL768-24	Aphelinidae	Aphelinus tricolor	Aphelinidae	family	BLAST	651	1485	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL769-24	Halictidae	Lasioglossum laeve	Halictidae	family	BLAST	657	1437	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL770-24	Halictidae	Lasioglossum laeve	Halictidae	family	BLAST	657	1365	29	46	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL771-24	Halictidae	Lasioglossum laeve	Halictidae	family	BLAST	657	1368	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL772-24	Bethylidae	Cephalonomia gallicola	Bethylidae	family	BLAST	655	1314	74	74	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL773-24	Bethylidae	Cephalonomia gallicola	Bethylidae	family	BLAST	657	1440	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL774-24	Bethylidae	Epyris brevipennis	None	family	BLAST	656	1470	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL775-24	Bethylidae	Epyris brevipennis	None	family	BLAST	1	282	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL776-24	Bethylidae	Epyris brevipennis	None	family	BLAST	629	1401	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL777-24	Bethylidae	Pseudisobrachium subcyaneum	None	family	BLAST	656	1458	16	16	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL778-24	Braconidae	Aclitus obscuripennis	Braconidae	family	BLAST	621	1383	0	8	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL779-24	Braconidae	Agathis assimilis	Braconidae	family	BLAST	130	150	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL780-24	Braconidae	Dacnusa adducta	None	family	BLAST	71	606	2	41	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL781-24	Braconidae	Aleiodes pulchripes	Braconidae	family	BLAST	656	1512	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL782-24	Braconidae	Anisocyrta perdita	Braconidae	family	BLAST	652	1476	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL783-24	Braconidae	Aphaereta major	Braconidae	family	BLAST	656	1440	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL784-24	Braconidae	Aphidius phalangomyzi	Braconidae	family	BLAST	111	618	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL785-24	Braconidae	Apodesmia aemula	Braconidae	family	BLAST	655	1428	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL786-24	Braconidae	Apodesmia aemula	Braconidae	family	BLAST	655	1485	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL787-24	Braconidae	Apodesmia irregularis	Braconidae	family	BLAST	655	1518	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL788-24	Braconidae	Apodesmia irregularis	Braconidae	family	BLAST	655	1521	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL789-24	Braconidae	Apodesmia irregularis	Braconidae	family	BLAST	655	1524	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL790-24	Braconidae	Apodesmia posticatae	Braconidae	family	BLAST	655	1515	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL791-24	Braconidae	Apodesmia posticatae	Braconidae	family	BLAST	655	1512	0	1	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL792-24	Braconidae	Apodesmia posticatae	Braconidae	family	BLAST	655	1488	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL793-24	Braconidae	Apodesmia rufipes	Braconidae	family	BLAST	655	1515	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL794-24	Braconidae	Apodesmia rufipes	Braconidae	family	BLAST	655	1488	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL795-24	Braconidae	Apodesmia saeva	Braconidae	family	BLAST	655	1500	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL796-24	Braconidae	Apodesmia similis	Braconidae	family	BLAST	655	1512	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL797-24	Braconidae	Apodesmia similis	Braconidae	family	BLAST	655	1419	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL798-24	Braconidae	Apodesmia similis	Braconidae	family	BLAST	655	1476	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL799-24	Braconidae	Apodesmia similoides	Braconidae	family	BLAST	655	1440	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL800-24	Braconidae	Apodesmia similoides	Braconidae	family	BLAST	655	1440	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL801-24	Braconidae	Ascogaster bidentula	Braconidae	family	BLAST	566	732	14	14	4	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL802-24	Braconidae	Ascogaster rufidens	Braconidae	family	BLAST	656	1440	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL803-24	Braconidae	Ascogaster rufidens	Braconidae	family	BLAST	656	1374	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL804-24	Braconidae	Ascogaster rufidens	Braconidae	family	BLAST	656	1374	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL805-24	Braconidae	Ascogaster brevicornis	Braconidae	family	BLAST	656	1485	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL806-24	Braconidae	Ascogaster consobrina	Braconidae	family	BLAST	657	1431	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL807-24	Braconidae	Ascogaster consobrina	Braconidae	family	BLAST	657	1452	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL808-24	Braconidae	Ascogaster consobrina	Braconidae	family	BLAST	657	1521	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL809-24	Braconidae	Ascogaster grahami	Braconidae	family	BLAST	569	1251	0	11	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL810-24	Braconidae	Ascogaster grahami	Braconidae	family	BLAST	656	1446	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL811-24	Braconidae	Ascogaster grahami	Braconidae	family	BLAST	656	1383	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL812-24	Braconidae	Aspicolpus carinator	Braconidae	family	BLAST	657	1524	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL813-24	Braconidae	Aspigonus flavicornis	Braconidae	family	BLAST	656	1500	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL814-24	Braconidae	Aspigonus flavicornis	Braconidae	family	BLAST	656	1500	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL815-24	Braconidae	Atormus victus	Braconidae	family	BLAST	367	804	1	8	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL816-24	Braconidae	Atormus victus	Braconidae	family	BLAST	656	1308	35	35	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL817-24	Braconidae	Atormus victus	Braconidae	family	BLAST	655	1386	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL818-24	Braconidae	Austrozele longipalpis	Braconidae	family	BLAST	657	1452	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL819-24	Braconidae	Austrozele longipalpis	Braconidae	family	BLAST	657	1488	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL820-24	Braconidae	Austrozele longipalpis	Braconidae	family	BLAST	657	1509	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL821-24	Braconidae	Bassus cingulipes	Braconidae	family	BLAST	657	1425	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL822-24	Braconidae	Bassus clausthalianus	Braconidae	family	BLAST	657	1509	0	1	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL823-24	Braconidae	Bassus conspicuus	Braconidae	family	BLAST	657	1524	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL824-24	Braconidae	Bassus linguarius	Braconidae	family	BLAST	265	723	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL825-24	Braconidae	Bassus pumilus	Braconidae	family	BLAST	657	1359	9	9	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL826-24	Braconidae	Biosteres haemorrhoeus	Braconidae	family	BLAST	655	1470	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL827-24	Braconidae	Biosteres haemorrhoeus	Braconidae	family	BLAST	655	1485	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL828-24	Braconidae	Biosteres haemorrhoeus	Braconidae	family	BLAST	655	1449	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL829-24	Braconidae	Biosteres rusticus	None	family	BLAST	1	105	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL830-24	Braconidae	Biosteres rusticus	Braconidae	family	BLAST	655	1518	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL831-24	Braconidae	Biosteres rusticus	Braconidae	family	BLAST	655	1524	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL832-24	Braconidae	Biosteres sylvaticus	Braconidae	family	BLAST	655	1497	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL833-24	Braconidae	Biosteres wesmaelii	Braconidae	family	BLAST	634	1353	1	1	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL834-24	Braconidae	Biosteres wesmaelii	Braconidae	family	BLAST	511	1170	0	3	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL835-24	Braconidae	Biosteres wesmaelii	Braconidae	family	BLAST	655	1437	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL836-24	Braconidae	Blacus diversicornis	None	family	BLAST	None	0	None	0	0	Local BLAST failed for sequence ''	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL837-24	Braconidae	Blacus diversicornis	Braconidae	family	BLAST	657	1479	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL838-24	Braconidae	Blacus diversicornis	Braconidae	family	BLAST	639	1398	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL839-24	Braconidae	Blacus errans	Braconidae	family	BLAST	657	1512	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL840-24	Braconidae	Blacus errans	Braconidae	family	BLAST	655	1512	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL841-24	Braconidae	Blacus errans	Braconidae	family	BLAST	655	1476	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL842-24	Braconidae	Blacus hastatus	None	family	BLAST	92	339	0	15	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL843-24	Braconidae	Blacus hastatus	Braconidae	family	BLAST	657	1470	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL844-24	Braconidae	Blacus hastatus	Braconidae	family	BLAST	205	261	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL845-24	Braconidae	Blacus interstitialis	Braconidae	family	BLAST	524	1122	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL846-24	Braconidae	Blacus interstitialis	Braconidae	family	BLAST	656	1428	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL847-24	Braconidae	Blacus longipennis	Braconidae	family	BLAST	657	1470	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL848-24	Braconidae	Blacus longipennis	None	family	BLAST	82	270	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL849-24	Braconidae	Blacus longipennis	Braconidae	family	BLAST	657	1440	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL850-24	Braconidae	Blacus maculipes	Braconidae	family	BLAST	657	1512	0	3	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL851-24	Braconidae	Blacus maculipes	Braconidae	family	BLAST	657	1428	1	1	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL852-24	Braconidae	Blacus maculipes	Braconidae	family	BLAST	657	1419	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL853-24	Braconidae	Blacus nigricornis	Braconidae	family	BLAST	655	1476	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL854-24	Braconidae	Blacus nigricornis	Braconidae	family	BLAST	655	1428	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-BGENL855-24	Braconidae	Blacus nigricornis	Braconidae	family	BLAST	655	1515	0	0	0	None	data/BGE00175_MGE_cox1_insect_universal.fas
-NC-BGE00175	None	None	None	family	BLAST	None	0	None	0	0	NC-BGE00175 not in BOLD	data/BGE00175_MGE_cox1_insect_universal.fas
+ambig_basecount	ambig_full_basecount	error	family	fasta_file	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	process_id	species	stop_codons
+0	0	None	Aphelinidae	data/BGE00175_MGE_cox1_insect_universal.fas	Aphelinidae	BLAST	None	651	1440	Trichogrammatidae,Eulophidae,Aphelinidae	BGENL761-24	Aphelinus chaonia	0
+9	51	None	Aphelinidae	data/BGE00175_MGE_cox1_insect_universal.fas	Aphelinidae	BLAST	None	647	1335	Aphelinidae	BGENL762-24	Aphelinus chaonia	0
+3	3	None	Aphelinidae	data/BGE00175_MGE_cox1_insect_universal.fas	Aphelinidae	BLAST	None	657	1416	Eulophidae,Aphelinidae	BGENL763-24	Aphelinus humilis	0
+0	0	None	Aphelinidae	data/BGE00175_MGE_cox1_insect_universal.fas	Aphelinidae	BLAST	None	651	1479	Pteromalidae,Trichogrammatidae,Aphelinidae	BGENL764-24	Aphelinus humilis	0
+0	0	None	Aphelinidae	data/BGE00175_MGE_cox1_insect_universal.fas	Aphelinidae	BLAST	None	651	1482	Pteromalidae,Trichogrammatidae,Aphelinidae	BGENL765-24	Aphelinus humilis	0
+0	0	None	Aphelinidae	data/BGE00175_MGE_cox1_insect_universal.fas	Aphelinidae	BLAST	None	651	1494	Pteromalidae,Trichogrammatidae,Encyrtidae,Eulophidae,Aphelinidae	BGENL766-24	Aphelinus tricolor	0
+0	0	None	Aphelinidae	data/BGE00175_MGE_cox1_insect_universal.fas	Aphelinidae	BLAST	None	651	1422	Pteromalidae,Trichogrammatidae,Encyrtidae,Eulophidae,Aphelinidae	BGENL767-24	Aphelinus tricolor	0
+0	0	None	Aphelinidae	data/BGE00175_MGE_cox1_insect_universal.fas	Aphelinidae	BLAST	None	651	1485	Pteromalidae,Trichogrammatidae,Encyrtidae,Eulophidae,Aphelinidae	BGENL768-24	Aphelinus tricolor	0
+0	0	None	Halictidae	data/BGE00175_MGE_cox1_insect_universal.fas	Halictidae	BLAST	None	657	1437	Halictidae	BGENL769-24	Lasioglossum laeve	0
+29	46	None	Halictidae	data/BGE00175_MGE_cox1_insect_universal.fas	Halictidae	BLAST	None	657	1365	Halictidae	BGENL770-24	Lasioglossum laeve	0
+0	0	None	Halictidae	data/BGE00175_MGE_cox1_insect_universal.fas	Halictidae	BLAST	None	657	1368	Halictidae	BGENL771-24	Lasioglossum laeve	0
+74	74	None	Bethylidae	data/BGE00175_MGE_cox1_insect_universal.fas	Bethylidae	BLAST	None	655	1314	Aphididae,Cixiidae,Colletidae,Bethylidae,Formicidae	BGENL772-24	Cephalonomia gallicola	0
+0	0	None	Bethylidae	data/BGE00175_MGE_cox1_insect_universal.fas	Bethylidae	BLAST	None	657	1440	Aphididae,Ichneumonidae,Vespidae,Crabronidae,Bethylidae,Chrysididae,Formicidae	BGENL773-24	Cephalonomia gallicola	0
+0	0	None	Bethylidae	data/BGE00175_MGE_cox1_insect_universal.fas	Bethylidae	BLAST	None	656	1470	Vespidae,Chrysididae,Formicidae	BGENL774-24	Epyris brevipennis	0
+0	0	None	Bethylidae	data/BGE00175_MGE_cox1_insect_universal.fas	Bethylidae	BLAST	None	1	282	Lycaenidae,Geometridae	BGENL775-24	Epyris brevipennis	0
+0	0	None	Bethylidae	data/BGE00175_MGE_cox1_insect_universal.fas	Bethylidae	BLAST	None	629	1401	Ichneumonidae,Vespidae,Crabronidae,Chrysididae,Formicidae,Gasteruptiidae,Pteromalidae,Diapriidae	BGENL776-24	Epyris brevipennis	0
+16	16	None	Bethylidae	data/BGE00175_MGE_cox1_insect_universal.fas	Bethylidae	BLAST	None	656	1458	Cixiidae,Caliscelidae,Nycteribiidae	BGENL777-24	Pseudisobrachium subcyaneum	0
+0	8	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	621	1383	Braconidae	BGENL778-24	Aclitus obscuripennis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	130	150	Braconidae,Formicidae	BGENL779-24	Agathis assimilis	0
+2	41	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	71	606	Reduviidae	BGENL780-24	Dacnusa adducta	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	656	1512	Braconidae	BGENL781-24	Aleiodes pulchripes	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	652	1476	Braconidae	BGENL782-24	Anisocyrta perdita	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	656	1440	Braconidae	BGENL783-24	Aphaereta major	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	111	618	Braconidae	BGENL784-24	Aphidius phalangomyzi	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1428	Braconidae	BGENL785-24	Apodesmia aemula	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1485	Braconidae	BGENL786-24	Apodesmia aemula	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1518	Braconidae	BGENL787-24	Apodesmia irregularis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1521	Braconidae	BGENL788-24	Apodesmia irregularis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1524	Braconidae	BGENL789-24	Apodesmia irregularis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1515	Braconidae	BGENL790-24	Apodesmia posticatae	0
+0	1	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1512	Braconidae	BGENL791-24	Apodesmia posticatae	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1488	Braconidae	BGENL792-24	Apodesmia posticatae	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1515	Braconidae	BGENL793-24	Apodesmia rufipes	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1488	Braconidae	BGENL794-24	Apodesmia rufipes	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1500	Braconidae	BGENL795-24	Apodesmia saeva	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1512	Braconidae	BGENL796-24	Apodesmia similis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1419	Braconidae	BGENL797-24	Apodesmia similis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1476	Braconidae	BGENL798-24	Apodesmia similis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1440	Braconidae	BGENL799-24	Apodesmia similoides	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1440	Braconidae	BGENL800-24	Apodesmia similoides	0
+14	14	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	566	732	Braconidae	BGENL801-24	Ascogaster bidentula	4
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	656	1440	Braconidae	BGENL802-24	Ascogaster rufidens	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	656	1374	Braconidae	BGENL803-24	Ascogaster rufidens	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	656	1374	Braconidae	BGENL804-24	Ascogaster rufidens	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	656	1485	Braconidae	BGENL805-24	Ascogaster brevicornis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	657	1431	Braconidae	BGENL806-24	Ascogaster consobrina	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	657	1452	Braconidae	BGENL807-24	Ascogaster consobrina	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	657	1521	Braconidae	BGENL808-24	Ascogaster consobrina	0
+0	11	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	569	1251	Braconidae	BGENL809-24	Ascogaster grahami	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	656	1446	Braconidae	BGENL810-24	Ascogaster grahami	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	656	1383	Braconidae	BGENL811-24	Ascogaster grahami	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	657	1524	Braconidae	BGENL812-24	Aspicolpus carinator	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	656	1500	Braconidae	BGENL813-24	Aspigonus flavicornis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	656	1500	Braconidae	BGENL814-24	Aspigonus flavicornis	0
+1	8	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	367	804	Braconidae	BGENL815-24	Atormus victus	0
+35	35	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	656	1308	Braconidae	BGENL816-24	Atormus victus	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1386	Braconidae	BGENL817-24	Atormus victus	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	657	1452	Braconidae	BGENL818-24	Austrozele longipalpis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	657	1488	Braconidae	BGENL819-24	Austrozele longipalpis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	657	1509	Braconidae	BGENL820-24	Austrozele longipalpis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	657	1425	Braconidae	BGENL821-24	Bassus cingulipes	0
+0	1	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	657	1509	Braconidae	BGENL822-24	Bassus clausthalianus	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	657	1524	Braconidae	BGENL823-24	Bassus conspicuus	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	265	723	Braconidae	BGENL824-24	Bassus linguarius	0
+9	9	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	657	1359	Braconidae	BGENL825-24	Bassus pumilus	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1470	Braconidae	BGENL826-24	Biosteres haemorrhoeus	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1485	Braconidae	BGENL827-24	Biosteres haemorrhoeus	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1449	Braconidae	BGENL828-24	Biosteres haemorrhoeus	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	1	105		BGENL829-24	Biosteres rusticus	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1518	Braconidae	BGENL830-24	Biosteres rusticus	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1524	Braconidae	BGENL831-24	Biosteres rusticus	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1497	Braconidae	BGENL832-24	Biosteres sylvaticus	0
+1	1	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	634	1353	Braconidae	BGENL833-24	Biosteres wesmaelii	0
+0	3	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	511	1170	Braconidae	BGENL834-24	Biosteres wesmaelii	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1437	Braconidae	BGENL835-24	Biosteres wesmaelii	0
+None	0	Local BLAST failed for sequence ''	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	None	0		BGENL836-24	Blacus diversicornis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	657	1479	Braconidae	BGENL837-24	Blacus diversicornis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	639	1398	Braconidae	BGENL838-24	Blacus diversicornis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	657	1512	Braconidae	BGENL839-24	Blacus errans	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1512	Braconidae	BGENL840-24	Blacus errans	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1476	Braconidae	BGENL841-24	Blacus errans	0
+0	15	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	92	339		BGENL842-24	Blacus hastatus	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	657	1470	Braconidae	BGENL843-24	Blacus hastatus	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	205	261	Braconidae,Encyrtidae,Agaonidae,Eucharitidae	BGENL844-24	Blacus hastatus	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	524	1122	Braconidae	BGENL845-24	Blacus interstitialis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	656	1428	Braconidae	BGENL846-24	Blacus interstitialis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	657	1470	Braconidae	BGENL847-24	Blacus longipennis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	82	270	Rhinotermitidae,Tettigoniidae,Dascillidae,Dermestidae,Vespidae,Corydalidae	BGENL848-24	Blacus longipennis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	657	1440	Braconidae	BGENL849-24	Blacus longipennis	0
+0	3	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	657	1512	Braconidae	BGENL850-24	Blacus maculipes	0
+1	1	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	657	1428	Braconidae	BGENL851-24	Blacus maculipes	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	657	1419	Braconidae	BGENL852-24	Blacus maculipes	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1476	Braconidae	BGENL853-24	Blacus nigricornis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1428	Braconidae	BGENL854-24	Blacus nigricornis	0
+0	0	None	Braconidae	data/BGE00175_MGE_cox1_insect_universal.fas	Braconidae	BLAST	None	655	1515	Braconidae	BGENL855-24	Blacus nigricornis	0
+None	0	NC-BGE00175 not in BOLD	None	data/BGE00175_MGE_cox1_insect_universal.fas	None	BLAST	None	None	0		NC-BGE00175	None	0

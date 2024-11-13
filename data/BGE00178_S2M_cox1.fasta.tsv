@@ -1,58 +1,58 @@
-processid	family	species	identification	identification_rank	identification_method	nuc_basecount	nuc_full_basecount	ambig_basecount	ambig_full_basecount	stop_codons	error	fasta_file
-BGENL1147-24	Histeridae	Atholus scutellaris	Histeridae	family	BLAST	657	1545	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1155-24	Histeridae	Chaetabraeus lucidus	None	family	BLAST	212	252	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1186-24	Histeridae	Gnathoncus nannetensis	Histeridae	family	BLAST	657	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1195-24	Histeridae	Hister grandicollis	Histeridae	family	BLAST	656	1545	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1157-24	Histeridae	Chalcionellus aemulus	Histeridae	family	BLAST	656	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1216-24	Histeridae	Hister thoracicus	Histeridae	family	BLAST	655	1545	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1228-24	Histeridae	Hypocacculus spretulus	Histeridae	family	BLAST	657	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1189-24	Histeridae	Gnathoncus rotundatus	Histeridae	family	BLAST	657	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1182-24	Histeridae	Eutriptus putricola	None	family	BLAST	622	1440	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1205-24	Histeridae	Hister moerens	Histeridae	family	BLAST	656	1071	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1205-24	Histeridae	Hister moerens	Histeridae	family	BLAST	318	564	0	0	4	None	data/BGE00178_S2M_cox1.fasta
-BGENL1204-24	Histeridae	Hister mediterraneus	Histeridae	family	BLAST	655	1545	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1217-24	Histeridae	Hypocacculus elongatulus	Histeridae	family	BLAST	657	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1206-24	Histeridae	Hister moerens	Histeridae	family	BLAST	451	492	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1231-24	Histeridae	Hypocaccus brasiliensis	None	family	BLAST	657	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1230-24	Histeridae	Hypocaccus brasiliensis	None	family	BLAST	657	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1218-24	Histeridae	Hypocacculus elongatulus	Histeridae	family	BLAST	657	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1193-24	Histeridae	Hister grandicollis	Histeridae	family	BLAST	656	1545	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1198-24	Histeridae	Hister illigeri	None	family	BLAST	18	279	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1163-24	Histeridae	Chalcionellus blanchii	Histeridae	family	BLAST	229	231	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1159-24	Histeridae	Chalcionellus aemulus	Histeridae	family	BLAST	656	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1188-24	Histeridae	Gnathoncus rotundatus	Histeridae	family	BLAST	657	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1222-24	Histeridae	Hypocacculus praecox	Histeridae	family	BLAST	86	126	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1221-24	Histeridae	Hypocacculus praecox	Histeridae	family	BLAST	657	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1213-24	Histeridae	Hister teter	Histeridae	family	BLAST	655	1545	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1158-24	Histeridae	Chalcionellus aemulus	Histeridae	family	BLAST	656	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1199-24	Histeridae	Hister illigeri	Histeridae	family	BLAST	655	1545	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1212-24	Histeridae	Hister sepulchralis	None	family	BLAST	657	1545	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1225-24	Histeridae	Hypocacculus metallescens	None	family	BLAST	362	711	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1165-24	Histeridae	Chalcionellus turcicus	None	family	BLAST	656	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1208-24	Histeridae	Hister pustulosus	Histeridae	family	BLAST	655	1545	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1176-24	Histeridae	Eubrachium pusillum	None	family	BLAST	655	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1207-24	Histeridae	Hister moerens	Histeridae	family	BLAST	656	1539	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1183-24	Histeridae	Exaesiopus grossipes	Histeridae	family	BLAST	113	492	0	0	3	None	data/BGE00178_S2M_cox1.fasta
-BGENL1179-24	Histeridae	Eudiplister planulus	None	family	BLAST	656	1545	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1235-24	Histeridae	Kissister minimus	Histeridae	family	BLAST	508	705	0	0	7	None	data/BGE00178_S2M_cox1.fasta
-BGENL1194-24	Histeridae	Hister grandicollis	Histeridae	family	BLAST	656	1545	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1185-24	Histeridae	Gnathoncus nannetensis	Histeridae	family	BLAST	657	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1197-24	Histeridae	Hister haroldi	None	family	BLAST	657	1545	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1162-24	Histeridae	Chalcionellus amoenus	Histeridae	family	BLAST	656	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1203-24	Histeridae	Hister mediterraneus	Histeridae	family	BLAST	655	1545	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1196-24	Histeridae	Hister haroldi	None	family	BLAST	657	1545	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1227-24	Histeridae	Hypocacculus spretulus	Histeridae	family	BLAST	201	258	0	0	2	None	data/BGE00178_S2M_cox1.fasta
-BGENL1227-24	Histeridae	Hypocacculus spretulus	None	family	BLAST	26	42	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1227-24	Histeridae	Hypocacculus spretulus	None	family	BLAST	657	912	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1233-24	Histeridae	Hypocaccus specularis	None	family	BLAST	656	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1167-24	Histeridae	Chalcionellus tyrius	None	family	BLAST	656	1512	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1226-24	Histeridae	Hypocacculus spretulus	Histeridae	family	BLAST	657	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1168-24	Histeridae	Chalcionellus tyrius	None	family	BLAST	656	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1192-24	Histeridae	Hister bipunctatus	Histeridae	family	BLAST	256	297	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1229-24	Histeridae	Hypocaccus brasiliensis	None	family	BLAST	656	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1211-24	Histeridae	Hister sepulchralis	None	family	BLAST	362	1179	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1211-24	Histeridae	Hister sepulchralis	None	family	BLAST	218	258	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1223-24	Histeridae	Hypocacculus metallescens	Histeridae	family	BLAST	86	126	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1215-24	Histeridae	Hister thoracicus	Histeridae	family	BLAST	656	1545	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1202-24	Histeridae	Hister mediterraneus	Histeridae	family	BLAST	655	1545	0	0	0	None	data/BGE00178_S2M_cox1.fasta
-BGENL1232-24	Histeridae	Hypocaccus specularis	None	family	BLAST	656	1542	0	0	0	None	data/BGE00178_S2M_cox1.fasta
+ambig_basecount	ambig_full_basecount	error	family	fasta_file	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	process_id	species	stop_codons
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	657	1545	Staphylinidae,Histeridae,Calliphoridae,Sarcophagidae	BGENL1147-24	Atholus scutellaris	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	212	252	Kalotermitidae,Rhyparochromidae,Lucanidae,Lampyridae,Chrysomelidae	BGENL1155-24	Chaetabraeus lucidus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	657	1542	Hydrophilidae,Staphylinidae,Histeridae	BGENL1186-24	Gnathoncus nannetensis	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	656	1545	Hydrophilidae,Staphylinidae,Silphidae,Histeridae,Dermestidae	BGENL1195-24	Hister grandicollis	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	656	1542	Hydrophilidae,Staphylinidae,Histeridae,Scarabaeidae,Dermestidae	BGENL1157-24	Chalcionellus aemulus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	655	1545	Staphylinidae,Histeridae,Scarabaeidae,Meloidae,Dermestidae	BGENL1216-24	Hister thoracicus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	657	1542	Hydrophilidae,Histeridae,Scarabaeidae,Lampyridae,Dermestidae	BGENL1228-24	Hypocacculus spretulus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	657	1542	Staphylinidae,Histeridae,Anthomyiidae	BGENL1189-24	Gnathoncus rotundatus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	622	1440	Hydraenidae,Elateridae,Dascillidae,Dermestidae,Nemestrinidae,Calliphoridae	BGENL1182-24	Eutriptus putricola	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	656	1071	Histeridae,Tenebrionidae,Dermestidae	BGENL1205-24	Hister moerens	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	318	564	Staphylinidae,Histeridae,Elateridae	BGENL1205-24	Hister moerens	4
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	655	1545	Hydrophilidae,Histeridae,Lucanidae,Limnichidae,Tenebrionidae,Asilidae	BGENL1204-24	Hister mediterraneus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	657	1542	Hydrophilidae,Staphylinidae,Histeridae,Scarabaeidae,Trogidae,Elateridae	BGENL1217-24	Hypocacculus elongatulus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	451	492	Histeridae,Elateridae,Tenebrionidae,Dermestidae	BGENL1206-24	Hister moerens	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	657	1542	Dytiscidae,Staphylinidae,Lucanidae,Helotidae,Anthicidae	BGENL1231-24	Hypocaccus brasiliensis	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	657	1542	Dytiscidae,Staphylinidae,Lucanidae,Lampyridae,Helotidae	BGENL1230-24	Hypocaccus brasiliensis	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	657	1542	Hydrophilidae,Staphylinidae,Histeridae,Scarabaeidae,Trogidae,Elateridae	BGENL1218-24	Hypocacculus elongatulus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	656	1545	Hydrophilidae,Staphylinidae,Silphidae,Histeridae,Dermestidae	BGENL1193-24	Hister grandicollis	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	18	279	Silphidae,Scarabaeidae	BGENL1198-24	Hister illigeri	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	229	231	Staphylinidae,Histeridae,Scarabaeidae,Trogidae	BGENL1163-24	Chalcionellus blanchii	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	656	1542	Hydrophilidae,Staphylinidae,Histeridae,Scarabaeidae,Dermestidae	BGENL1159-24	Chalcionellus aemulus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	657	1542	Staphylinidae,Histeridae	BGENL1188-24	Gnathoncus rotundatus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	86	126	Histeridae,Ciidae,Simuliidae,Erebidae	BGENL1222-24	Hypocacculus praecox	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	657	1542	Carabidae,Staphylinidae,Hydraenidae,Histeridae,Scarabaeidae	BGENL1221-24	Hypocacculus praecox	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	655	1545	Hydrophilidae,Staphylinidae,Histeridae,Scarabaeidae,Elateridae,Dermestidae	BGENL1213-24	Hister teter	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	656	1542	Hydrophilidae,Staphylinidae,Histeridae,Scarabaeidae,Dermestidae	BGENL1158-24	Chalcionellus aemulus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	655	1545	Histeridae,Tenebrionidae,Dermestidae	BGENL1199-24	Hister illigeri	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	657	1545	Hydrophilidae,Asilidae,Syrphidae,Drosophilidae,Muscidae,Sarcophagidae	BGENL1212-24	Hister sepulchralis	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	362	711	Staphylinidae,Scarabaeidae,Geotrupidae,Tenebrionidae,Sarcophagidae	BGENL1225-24	Hypocacculus metallescens	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	656	1542	Hydrophilidae,Staphylinidae,Scarabaeidae,Lucanidae,Elateridae,Cleridae	BGENL1165-24	Chalcionellus turcicus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	655	1545	Staphylinidae,Silphidae,Histeridae,Tenebrionidae	BGENL1208-24	Hister pustulosus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	655	1542	Staphylinidae,Hydraenidae,Dermestidae,Muscidae	BGENL1176-24	Eubrachium pusillum	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	656	1539	Staphylinidae,Histeridae,Tenebrionidae,Dermestidae	BGENL1207-24	Hister moerens	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	113	492	Hydraenidae,Histeridae	BGENL1183-24	Exaesiopus grossipes	3
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	656	1545	Tenebrionidae,Dermestidae	BGENL1179-24	Eudiplister planulus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	508	705	Hydraenidae,Histeridae	BGENL1235-24	Kissister minimus	7
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	656	1545	Hydrophilidae,Staphylinidae,Histeridae,Elateridae,Dermestidae	BGENL1194-24	Hister grandicollis	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	657	1542	Hydrophilidae,Staphylinidae,Histeridae	BGENL1185-24	Gnathoncus nannetensis	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	657	1545	Staphylinidae,Scarabaeidae,Fanniidae	BGENL1197-24	Hister haroldi	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	656	1542	Staphylinidae,Hydraenidae,Histeridae,Lampyridae	BGENL1162-24	Chalcionellus amoenus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	655	1545	Hydrophilidae,Histeridae,Dermestidae,Ptinidae,Asilidae	BGENL1203-24	Hister mediterraneus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	657	1545	Staphylinidae,Scarabaeidae,Buprestidae,Nitidulidae,Tenebrionidae,Fanniidae	BGENL1196-24	Hister haroldi	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	201	258	Histeridae	BGENL1227-24	Hypocacculus spretulus	2
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	26	42	Hormaphididae,Carabidae,Curculionidae,Drosophilidae,Endromidae,Nymphalidae,Corydalidae	BGENL1227-24	Hypocacculus spretulus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	657	912	Scarabaeidae,Buprestidae,Cerambycidae,Dermestidae	BGENL1227-24	Hypocacculus spretulus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	656	1542	Staphylinidae,Hydraenidae,Scarabaeidae	BGENL1233-24	Hypocaccus specularis	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	656	1512	Hydraenidae,Scarabaeidae,Cerambycidae,Dermestidae,Syrphidae,Lauxaniidae	BGENL1167-24	Chalcionellus tyrius	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	657	1542	Hydrophilidae,Histeridae,Lampyridae,Elateridae,Dermestidae	BGENL1226-24	Hypocacculus spretulus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	656	1542	Staphylinidae,Hydraenidae,Scarabaeidae,Dermestidae,Syrphidae	BGENL1168-24	Chalcionellus tyrius	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	256	297	Histeridae,Elateridae,Dermestidae	BGENL1192-24	Hister bipunctatus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	656	1542	Hydrophilidae,Staphylinidae,Calliphoridae	BGENL1229-24	Hypocaccus brasiliensis	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	362	1179	Hydrophilidae,Hybotidae,Muscidae,Sarcophagidae	BGENL1211-24	Hister sepulchralis	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	218	258	Pamphagidae,Elateridae,Tenebrionidae,Dermestidae	BGENL1211-24	Hister sepulchralis	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	86	126	Histeridae,Elateridae,Simuliidae	BGENL1223-24	Hypocacculus metallescens	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	656	1545	Hydrophilidae,Histeridae,Hybosoridae,Tenebrionidae,Dermestidae	BGENL1215-24	Hister thoracicus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	655	1545	Hydrophilidae,Histeridae,Lucanidae,Limnichidae,Tenebrionidae,Asilidae	BGENL1202-24	Hister mediterraneus	0
+0	0	None	Histeridae	data/BGE00178_S2M_cox1.fasta	Histeridae	BLAST	None	656	1542	Staphylinidae,Scarabaeidae	BGENL1232-24	Hypocaccus specularis	0
