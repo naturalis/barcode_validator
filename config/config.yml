@@ -50,7 +50,7 @@ bold_sheet_file: ../examples/bold.xlsx
 
 # Configuration for logging. The verbosity level specified here is overridden by the value provided on the command
 # line with the -v/-verbosity argument. The log file is written to the current working directory.
-log_level: INFO
+log_level: WARNING
 log_file: ../log_file.log
 
 # Which translation table is used. This value is an integer that corresponds to the tables used by NCBI and parsed
