@@ -147,9 +147,9 @@ class SequenceHandler:
         self.logger.info("Translating DNA sequence to amino acids")
 
         # Warn user
-        self.logger.warning("NOTE: we assume that the 658bp COI-5P marker has an additional base at the start")
-        self.logger.warning("NOTE: this first base needs to be removed to arrive at a multiple of 3 for AA translation")
-        self.logger.warning("NOTE: here we remove this base so that the result is 657 bases")
+        self.logger.info("NOTE: we assume that the 658bp COI-5P marker has an additional base at the start")
+        self.logger.info("NOTE: this first base needs to be removed to arrive at a multiple of 3 for AA translation")
+        self.logger.info("NOTE: here we remove this base so that the result is 657 bases")
 
         # Clone and phase sequence by starting from the second base (i.e. index 1 in 0-based indexing)
         cloned_seq = deepcopy(dna_sequence)
