@@ -47,6 +47,10 @@ class SequenceHandler:
         :param sequence: A BioPython SeqRecord object
         :return: A BioPython SeqRecord object containing the aligned sequence
         """
+
+        # TODO: inside this method, the HMM file should be inferred from the `marker_code` attribute of the sequence.
+        # For example, if `marker_code` == 'COI-5P', the HMM file should be 'COI-5P.hmm', which should be set via
+        # self.hmmalign.set_hmmfile().
         self.logger.info("Aligning sequence to HMM")
         if len(sequence.seq) == 0:
             self.logger.warning("Empty sequence provided for alignment")
@@ -64,6 +68,9 @@ class SequenceHandler:
 
                 # Run hmmalign and parse the output
                 return_code = self.hmmalign.run()
+                if return_code != 0:
+                    self.logger.error(f"hmmalign failed with return code {return_code}")
+                    return None
                 self.logger.debug(f"Going to parse outfile {temp_output.name}")
                 aligned_sequence = next(SeqIO.parse(temp_output.name, 'stockholm'))
 
@@ -113,19 +120,15 @@ class SequenceHandler:
         self.logger.info("Removing gaps from aligned sequence")
         if isinstance(sequence, SeqRecord):
             # Convert Seq to string, remove gaps, then convert back to Seq
-            unaligned_sequence = str(sequence.seq).replace('-', '').replace('~', '')
-            return SeqRecord(
-                Seq(unaligned_sequence),
-                id=sequence.id,
-                name=sequence.name,
-                description=sequence.description
-            )
+            unaligned_sequence = str(sequence.seq).replace('-', '').replace('~', '').replace('_', '')
+            sequence.seq = Seq(unaligned_sequence)
+            return sequence
         elif isinstance(sequence, Seq):
             # If it's just a Seq object, convert to string, remove gaps, then back to Seq
-            return Seq(str(sequence).replace('-', '').replace('~', ''))
+            return Seq(str(sequence).replace('-', '').replace('~', '').replace('_', ''))
         elif isinstance(sequence, str):
             # If it's a string, just remove the gaps
-            return sequence.replace('-', '').replace('~', '')
+            return sequence.replace('-', '').replace('~', '').replace('_', '')
         else:
             raise TypeError(f"Unexpected type for sequence: {type(sequence)}")
 
@@ -179,17 +182,17 @@ class SequenceHandler:
 
     def parse_fasta(self, file_path):
         """
-        Parse a FASTA file and yield the process ID, sequence record, and optional JSON configuration for each entry.
-        The process ID is the first part of the sequence ID, which is assumed to be separated by an underscore.
+        Parse a FASTA file and yield the sequence record, and optional JSON configuration for each entry.
+        The process ID is the first part of the sequence ID, which is assumed to be separated by an underscore
+        and is attached under record.annotations['bcdm_fields']['processid'].
         Any JSON configuration data after the first '{' in the header is parsed and returned.
 
         :param file_path: Local path to the FASTA file
-        :yield: A tuple containing the process ID, the sequence record, and the JSON configuration (or None) for each entry
+        :yield: A tuple containing the sequence record, and the JSON configuration (or None) for each entry
         """
         self.logger.info(f"Parsing FASTA file: {file_path}")
         with open(file_path, 'r') as file:
             for record in SeqIO.parse(file, 'fasta'):
-                process_id = record.id.split('_')[0]
 
                 # Attempt to parse JSON from the description
                 json_config = None
@@ -201,14 +204,18 @@ class SequenceHandler:
                         # Remove the JSON part from the description
                         record.description = record.description[:json_start].strip()
                     except json.JSONDecodeError as e:
-                        self.logger.warning(f"Failed to parse JSON for {process_id}: {e}")
+                        self.logger.warning(f"Failed to parse JSON for {record.id}: {e}")
 
-                record.id = process_id
-                self.logger.debug(f"Parsed process ID: {process_id}")
+                # Log results
+                if 'bcdm_fields' not in record.annotations:
+                    record.annotations['bcdm_fields'] = {}
+                record.annotations['bcdm_fields']['processid'] = record.id.split('_')[0]
+                self.logger.debug(f"Process ID: {record.annotations['bcdm_fields']['processid']}")
+                self.logger.debug(f"Sequence ID: {record.id}")
                 self.logger.debug(f"Sequence length: {len(record.seq)}")
                 self.logger.debug(f"JSON config: {json_config}")
 
-                yield process_id, self.unalign_sequence(record), json_config
+                yield self.unalign_sequence(record), json_config
 
     def get_stop_codons(self, amino_acid_sequence):
         """

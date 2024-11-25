@@ -1,8 +1,13 @@
 import pytest
 from nbitk.Taxon import Taxon
+from barcode_validator.result import DNAAnalysisResult, reset_columns, initialize_columns
 
-from barcode_validator.result import DNAAnalysisResult
 
+@pytest.fixture(autouse=True)
+def setup_columns():
+    """Automatically reset columns before each test"""
+    initialize_columns()
+    yield
 
 @pytest.fixture
 def dna_result():

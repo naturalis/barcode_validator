@@ -73,7 +73,7 @@ def test_parse_fasta(sequence_handler):
 
     result = list(sequence_handler.parse_fasta(example_fasta))
     assert len(result) == 1
-    assert result[0][0] == "BGENL191-23"
+    assert result[0][0].annotations['bcdm_fields']['processid'] == "BGENL191-23"
 
 def test_parse_fasta_empty_file(sequence_handler):
     current_dir = Path(__file__).parent
@@ -81,13 +81,13 @@ def test_parse_fasta_empty_file(sequence_handler):
 
     result = list(sequence_handler.parse_fasta(example_fasta))
     assert len(result) == 1
-    assert len(result[0][1].seq) == 0
+    assert len(result[0][0].seq) == 0
 
 def test_align_fasta_empty_file(sequence_handler):
     current_dir = Path(__file__).parent
     example_fasta = current_dir.parent / 'examples' / 'empty_seq.fa'
     result = list(sequence_handler.parse_fasta(example_fasta))
-    seq = result[0][1]
+    seq = result[0][0]
     assert sequence_handler.align_to_hmm(seq) is None
 
 def test_parse_fasta_with_json(sequence_handler):
@@ -98,9 +98,9 @@ def test_parse_fasta_with_json(sequence_handler):
 
     assert len(result) == 1, "Expected one entry in the FASTA file"
 
-    process_id, sequence, json_config = result[0]
+    sequence, json_config = result[0]
 
-    assert process_id == "BGENL191-23", "Process ID mismatch"
+    assert sequence.annotations['bcdm_fields']['processid'] == "BGENL191-23", "Process ID mismatch"
     assert isinstance(sequence, SeqRecord), "Sequence should be a SeqRecord object"
     assert len(sequence.seq) > 0, "Sequence should not be empty"
     assert json_config is not None, "JSON configuration should be present"

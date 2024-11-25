@@ -46,26 +46,24 @@ class BarcodeValidator:
         """
         results = []
         sh = SequenceHandler(config)
-        for process_id, record, json_config in sh.parse_fasta(fasta_file_path):
+        for record, json_config in sh.parse_fasta(fasta_file_path):
             scoped_config = config.local_clone(json_config)
-            result = self.validate_record(process_id, record, scoped_config)
+            result = DNAAnalysisResult(record.id, fasta_file_path)
+            result.level = scoped_config.get('level')
+            self.validate_record(record, scoped_config, result)
             results.append(result)
         return results
 
-    def validate_record(self, process_id: str, record: SeqRecord, config: Config) -> DNAAnalysisResult:
+    def validate_record(self, record: SeqRecord, config: Config, result: DNAAnalysisResult) -> None:
         """
         Validate a single DNA sequence record.
-        :param process_id: A process ID
         :param record: A Bio.SeqRecord object
         :param config: A Config object
+        :param result: A DNAAnalysisResult object
         :return: A DNAAnalysisResult object
         """
-        result = DNAAnalysisResult(process_id)
         self.validate_sequence_quality(config, record, result)
         self.validate_taxonomy(config, record, result)
-
-        # Return the result object
-        return result
 
     def validate_taxonomy(self, config: Config, record: SeqRecord, result: DNAAnalysisResult) -> None:
         """
@@ -76,10 +74,10 @@ class BarcodeValidator:
         """
 
         # Lookup expected taxon in BOLD tree
-        sp = self.get_node_by_processid(result.process_id)
+        sp = self.get_node_by_processid(record.annotations['bcdm_fields']['processid'])
         if sp is None:
-            self.logger.warning(f"Process ID {result.process_id} not found in BOLD tree.")
-            result.error = f"{result.process_id} not in BOLD"
+            self.logger.warning(f"Process ID {record.annotations['bcdm_fields']['processid']} not found in BOLD tree.")
+            result.error = f"{record.annotations['bcdm_fields']['processid']} not in BOLD"
         else:
 
             # Traverse BOLD tree to find the expected taxon at the specified rank
@@ -98,7 +96,7 @@ class BarcodeValidator:
 
             # Handle BLAST failure
             if obs_taxon is None:
-                self.logger.warning(f"Local BLAST failed for {result.process_id}")
+                self.logger.warning(f"Local BLAST failed for {record.annotations['bcdm_fields']['processid']}")
                 result.error = f"Local BLAST failed for sequence '{record.seq}'"
             else:
                 result.obs_taxon = obs_taxon
@@ -158,9 +156,14 @@ class BarcodeValidator:
         # Compute marker quality metrics
         aligned_sequence = sh.align_to_hmm(record)
         if aligned_sequence is None:
-            self.logger.warning(f"Alignment failed for {result.process_id}")
+            self.logger.warning(f"Alignment failed for {result.sequence_id}")
             result.error = f"Alignment failed for sequence '{record.seq}'"
         else:
+
+            # TODO: make it so that the translation table is inferred from the BCDM annotations of the sequence.
+            # This should be a combination of the taxonomy and the marker code, where the latter should tell us
+            # if the marker is nuclear or mitochondrial and the former should tell us the translation table.
+            # https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi
             amino_acid_sequence = sh.translate_sequence(aligned_sequence, config.get('translation_table'))
             result.stop_codons = sh.get_stop_codons(amino_acid_sequence)
             result.seq_length = sh.marker_seqlength(aligned_sequence)
