@@ -49,6 +49,7 @@ class BarcodeValidator:
         for record, json_config in sh.parse_fasta(fasta_file_path):
             scoped_config = config.local_clone(json_config)
             result = DNAAnalysisResult(record.id, fasta_file_path)
+            result.level = scoped_config.get('level')
             self.validate_record(record, scoped_config, result)
             results.append(result)
         return results
