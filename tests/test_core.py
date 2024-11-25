@@ -64,8 +64,8 @@ def test_initialize(barcode_validator):
 @patch('barcode_validator.alignment.SequenceHandler.parse_fasta')
 def test_validate_fasta(mock_parse_fasta, barcode_validator, mock_config):
     mock_parse_fasta.return_value = [
-        ('process1', SeqRecord(Seq('ATCG'), id='seq1'), {}),
-        ('process2', SeqRecord(Seq('GCTA'), id='seq2'), {})
+        (SeqRecord(Seq('ATCG'), id='seq1'), {}),
+        (SeqRecord(Seq('GCTA'), id='seq2'), {})
     ]
 
     with patch.object(barcode_validator, 'validate_record', return_value=Mock(spec=DNAAnalysisResult)) as mock_validate:
@@ -77,10 +77,12 @@ def test_validate_fasta(mock_parse_fasta, barcode_validator, mock_config):
 
 def test_validate_record(mock_trees, mock_config):
     record = SeqRecord(Seq('ATCG'), id='seq1')
+    record.annotations['bcdm_fields'] = { 'processid': 'process1' }
 
     with patch.object(mock_trees, 'validate_sequence_quality') as mock_validate_quality, \
             patch.object(mock_trees, 'validate_taxonomy') as mock_validate_taxonomy:
-        result = mock_trees.validate_record('process1', record, mock_config)
+        result = DNAAnalysisResult('process1')
+        mock_trees.validate_record(record, mock_config, result)
 
         assert isinstance(result, DNAAnalysisResult)
         mock_validate_quality.assert_called_once()
@@ -89,6 +91,7 @@ def test_validate_record(mock_trees, mock_config):
 
 def test_validate_taxonomy(mock_trees, mock_config):
     record = SeqRecord(Seq('ATCG'), id='seq1')
+    record.annotations['bcdm_fields'] = { 'processid': 'process1' }
     result = DNAAnalysisResult('process1')
 
     mock_species = Mock(spec=Taxon)
