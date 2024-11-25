@@ -11,19 +11,21 @@ from barcode_validator.core import BarcodeValidator
 
 @pytest.fixture
 def mock_config():
-    config = Mock(spec=Config)
-    config.get.side_effect = lambda key, default=None: {
-        'level': 'family',
-        'constrain': 'order',
-        'hmm_file': 'mock_hmm.hmm',
-        'translation_table': 1,
-        'ncbi_taxonomy': 'mock_ncbi.tar.gz',
-        'bold_sheet_file': 'mock_bold.xlsx',
-        'log_level': 'ERROR',
-        'tool_name': 'hmmalign',
-    }.get(key, default)
-    return config
+    class ConfigMock(Mock):
+        def get(self, key, default=None):
+            values = {
+                'level': 'family',
+                'constrain': 'order',
+                'hmm_file': 'mock_hmm.hmm',
+                'translation_table': 1,
+                'ncbi_taxonomy': 'mock_ncbi.tar.gz',
+                'bold_sheet_file': 'mock_bold.xlsx',
+                'log_level': 'ERROR',
+                'tool_name': 'hmmalign',
+            }
+            return values.get(key, default)
 
+    return ConfigMock(spec=Config)
 
 @pytest.fixture
 def barcode_validator(mock_config):
