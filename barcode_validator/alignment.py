@@ -120,15 +120,15 @@ class SequenceHandler:
         self.logger.info("Removing gaps from aligned sequence")
         if isinstance(sequence, SeqRecord):
             # Convert Seq to string, remove gaps, then convert back to Seq
-            unaligned_sequence = str(sequence.seq).replace('-', '').replace('~', '')
+            unaligned_sequence = str(sequence.seq).replace('-', '').replace('~', '').replace('_', '')
             sequence.seq = Seq(unaligned_sequence)
             return sequence
         elif isinstance(sequence, Seq):
             # If it's just a Seq object, convert to string, remove gaps, then back to Seq
-            return Seq(str(sequence).replace('-', '').replace('~', ''))
+            return Seq(str(sequence).replace('-', '').replace('~', '').replace('_', ''))
         elif isinstance(sequence, str):
             # If it's a string, just remove the gaps
-            return sequence.replace('-', '').replace('~', '')
+            return sequence.replace('-', '').replace('~', '').replace('_', '')
         else:
             raise TypeError(f"Unexpected type for sequence: {type(sequence)}")
 
