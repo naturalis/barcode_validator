@@ -3,7 +3,64 @@ from typing import List, Optional, Tuple
 import yaml
 import csv
 
-columns = set()
+"""
+The DNAAnalysisResult and DNAAnalysisResultSet classes are used to store and manipulate the results of barcode 
+validation analyses. The DNAAnalysisResult class represents an analysis result for a single sequence, while the 
+DNAAnalysisResultSet class represents a set of results, typically for a multifasta file. The aim of this design
+is to be able to represent the results in various formats, with tabular data currently being the primary focus.
+(The implementation could be expanded to serialize the results in other formats, such as RO-crate or JSON-LD.)
+
+Under basic circumstances, the output has the following columns:
+- sequence_id: An identifier for the sequence that is unique within the dataset (first word of the FASTA header)
+- ambig_basecount: The number of ambiguous bases in the sequence within the barcode region
+- ambig_full_basecount: The number of ambiguous bases in the full sequence
+- dataset: The dataset name (e.g. the multifasta file name)
+- error: An error message, if any
+- identification: The expected taxon identification at level `identification_rank`
+- identification_method: The method used for taxon identification (e.g. BLAST)
+- identification_rank: The taxonomic level at which the identification was made (e.g. family)
+- nuc_basecount: The number of nucleotides in the sequence within the barcode region
+- nuc_full_basecount: The number of nucleotides in the full sequence
+- obs_taxon: The distinct taxa observed via `identification_method` at level `identification_rank` 
+- species: The expected species name, if provided
+- stop_codons: The number of stop codons in the sequence
+
+Furthermore, a validation procedure may be accompanied by ancillary data, which can be added to the result object.
+There are two distinct scenarios where ancillary data may be added:
+1. A CSV file is provided with additional analytics for each sequence, e.g. as produced by a skimming assembly pipeline.
+   In this case, the CSV is joined with the results (by way of the sequence_id), and any additional columns from the
+   CSV are added to the result object as ancillary data.
+2. A YAML file is provided with additional metadata at the level of the dataset, e.g. the settings that were used for
+   the skimming pipeline that produced the sequences. In this case, the YAML file is read and the data is added to the
+   result object as ancillary data (i.e. every result object in the set will have the same ancillary data).
+In order to ensure that the columns are consistent across all result objects in the set, the columns are tracked in a
+global set called `columns`. This set is updated whenever a new column is added to any result object.
+"""
+
+def reset_columns():
+    """Reset the global columns set to initial state"""
+    global columns
+    columns = set()
+
+# Initial columns that should always be present
+def initialize_columns():
+    reset_columns()
+    base_columns = {
+        'sequence_id',
+        'ambig_basecount',
+        'ambig_full_basecount',
+        'dataset',
+        'error',
+        'identification',
+        'identification_method',
+        'identification_rank',
+        'nuc_basecount',
+        'nuc_full_basecount',
+        'obs_taxon',
+        'species',
+        'stop_codons',
+    }
+    columns.update(base_columns)
 
 levels = [
     'kingdom',
@@ -20,24 +77,23 @@ levels = [
 
 class DNAAnalysisResult:
 
-    def __init__(self, process_id: str):
-        self.process_id: str = process_id
+    def __init__(self, sequence_id: str, dataset: str = None):
+        self.sequence_id: str = sequence_id
         self.data: dict = {
-            'process_id': process_id,
-            'nuc_basecount': None,
-            'nuc_full_basecount': None,
-            'obs_taxon': [],
-            'identification': None,
-            'species': None,
-            'stop_codons': [],
-            'ambig_basecount': None,
-            'ambig_full_basecount': None,
-            'identification_rank': None,
-            'error': None,
-            'identification_method': 'BLAST',
+            'sequence_id': sequence_id, # An identifier for the sequence that is at least unique within the dataset
+            'ambig_basecount': None,  # The number of ambiguous bases in the sequence within the barcode region
+            'ambig_full_basecount': None,  # The number of ambiguous bases in the full sequence
+            'dataset': dataset, # The dataset name (e.g. the multifasta file name)
+            'error': None,  # An error message, if any
+            'identification': None,  # The expected taxon identification
+            'identification_method': 'BLAST',  # The method used for taxon identification (e.g. BLAST)
+            'identification_rank': None,  # The taxonomic level at which the identification was made (e.g. family)
+            'nuc_basecount': None, # The number of nucleotides in the sequence within the barcode region
+            'nuc_full_basecount': None, # The number of nucleotides in the full sequence
+            'obs_taxon': [], # The distinct taxa observed via `identification_method` at level `identification_rank`
+            'species': None, # The expected species name, if provided
+            'stop_codons': [], # The number of stop codons in the sequence
         }
-        columns.update(self.data.keys())
-        columns.discard(None)
         self.data['ancillary'] = {}
 
     @property
@@ -86,6 +142,23 @@ class DNAAnalysisResult:
         :return:
         """
         self.data['error'] = error
+
+    @property
+    def dataset(self) -> Optional[str]:
+        """
+        Getter for the dataset.
+        :return: A string representing the dataset (e.g. FASTA file name)
+        """
+        return self.data['dataset']
+
+    @dataset.setter
+    def dataset(self, dataset: str) -> None:
+        """
+        Setter for the dataset.
+        :param dataset: A string representing the dataset (e.g. FASTA file name)
+        :return:
+        """
+        self.data['dataset'] = dataset
 
     @property
     def level(self) -> Optional[str]:
@@ -413,11 +486,11 @@ class DNAAnalysisResult:
 
     def get_values(self) -> list:
         """
-        String representation of the result object.
+        Get the values of the result object.
         :return: A list of values representing the result object
         """
         values = []
-        for key in self.result_fields(self.level):
+        for key in self.result_fields():
             if key == 'identification':
                 exp_taxon_name = self.exp_taxon.name if self.exp_taxon else None
                 values.append(exp_taxon_name)
@@ -432,9 +505,6 @@ class DNAAnalysisResult:
             elif key in self.data['ancillary']:
                 anc = self.data.get('ancillary')[key]
                 values.append(str(anc))
-            elif key in levels:
-                exp_taxon_name = self.exp_taxon.name if self.exp_taxon else None
-                values.append(exp_taxon_name)
             else:
                 if key in self.data:
                     values.append(self.data[key])
@@ -450,27 +520,34 @@ class DNAAnalysisResult:
         return '\t'.join(map(str, self.get_values()))
 
     @classmethod
-    def result_fields(cls, level: str = 'family') -> List[str]:
+    def result_fields(cls) -> List[str]:
         """
         Returns a tab-separated string containing the result fields.
         :return:
         """
-        columns.update([level])
-        return sorted(item for item in columns if item is not None and item != 'exp_taxon')
+        return sorted(item for item in columns if item is not None)
 
 
 class DNAAnalysisResultSet:
+    def __init__(self, results: List[DNAAnalysisResult]):
+        # Reset and initialize columns for this new result set
+        initialize_columns()
 
-    def __init__(self, results: List[DNAAnalysisResult], level: str = 'family'):
         self.results = results
-        self.level = level
+
+        # Update columns based on all results in the set
+        for result in results:
+            # Add any ancillary columns from existing results
+            if result.data['ancillary']:
+                columns.update(result.data['ancillary'].keys())
+
 
     def __str__(self) -> str:
         """
         String representation of the result set.
         :return: A tab-separated string representing the result set
         """
-        header = '\t'.join(DNAAnalysisResult.result_fields(self.level))
+        header = '\t'.join(DNAAnalysisResult.result_fields())
         contents = '\n'.join([str(result) for result in self.results])
         return header + "\n" + contents
 
@@ -480,10 +557,12 @@ class DNAAnalysisResultSet:
         :param file: YAML file
         :return:
         """
-
         # Read the YAML file and join it with the results
         with open(file, 'r') as yamlfile:
             yaml_data = yaml.safe_load(yamlfile)
+            # Update columns first with all possible keys from YAML
+            columns.update(yaml_data.keys())
+            # Then add data to each result
             for result in self.results:
                 for key, value in yaml_data.items():
                     result.add_ancillary(key, value)
@@ -494,17 +573,27 @@ class DNAAnalysisResultSet:
         :param file: CSV file
         :return:
         """
+        # The CSV file has process IDs, not sequence IDs, so we need to map them to the results
+        process_id_to_result = {}
+        for result in self.results:
+            seqid = result.sequence_id
+            process_id = seqid.split('_')[0]
+            process_id_to_result[process_id] = result
 
-        # Read the CSV file and join it with the results
-        process_id_to_result = {result.process_id: result for result in self.results}
         with open(file, 'r', newline='') as csvfile:
             reader = csv.DictReader(csvfile)
+            # Update columns first with all possible fields from CSV
+            columns.update(field for field in reader.fieldnames if field != 'Process ID')
+
+            # Reset file pointer to start
+            csvfile.seek(0)
+            reader = csv.DictReader(csvfile)
+
+            # Then add data to each result
             for row in reader:
                 process_id = row['Process ID']
                 if process_id in process_id_to_result:
                     result = process_id_to_result[process_id]
-
-                    # Add all fields from CSV to the ancillary dictionary
                     for key, value in row.items():
                         if key != 'Process ID':  # Avoid duplicating the process_id
                             result.add_ancillary(key, value)
