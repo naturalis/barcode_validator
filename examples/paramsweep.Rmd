@@ -1,0 +1,59 @@
+---
+title: "MGE Data Processing"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# Set working directory to the location of this Rmd file
+knitr::opts_knit$set(root.dir = normalizePath(dirname(rstudioapi::getActiveDocumentContext()$path)))
+
+# Load required libraries
+library(readr)
+library(dplyr)
+library(purrr)
+```
+
+```{r file_processing}
+# Get list of TSV files
+tsv_files <- list.files(path = "../data", 
+                        pattern = "^mge_.*\\.tsv$", 
+                        full.names = TRUE)
+
+# Function to clean bracketed values
+clean_bracketed_value <- function(x) {
+  # Remove brackets and quotes
+  gsub("\\[|\\]|'", "", x)
+}
+
+# Function to process each file
+process_tsv <- function(file_path) {
+  # Extract method from filename
+  method <- gsub("^mge_([^_]+)_.*\\.tsv$", "\\1", basename(file_path))
+  
+  # Read TSV with minimal specifications
+  df <- read_tsv(file_path, na = "None", show_col_types = FALSE) %>%
+    mutate(
+      # Clean bracketed columns
+      genes = clean_bracketed_value(genes),
+      r = as.integer(clean_bracketed_value(r)),
+      s = as.integer(clean_bracketed_value(s)),
+      # Add method
+      method = method,
+      # Convert numeric columns that should be integers
+      across(any_of(c("ambig_basecount", "ambig_full_basecount", "length", 
+                     "n_aligned", "n_reads", "nuc_basecount", 
+                     "nuc_full_basecount", "stop_codons")), as.integer)
+    )
+  
+  return(df)
+}
+
+# Process all files and combine into single data frame
+combined_data <- map_df(tsv_files, process_tsv)
+```
+
+```{r preview_results}
+# Preview the results
+glimpse(combined_data)
+```
