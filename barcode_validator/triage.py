@@ -72,7 +72,7 @@ def read_tsv_data(tsv_file):
         logging.debug(f"Reading TSV file: {tsv_file}")
         for row in reader:
             try:
-                data[row['process_id']] = row
+                data[row['sequence_id']] = row
             except KeyError:
                 print(f"Error: Missing process_id in file {tsv_file}")
                 sys.exit(1)
@@ -189,7 +189,7 @@ def process_sequences(args):
 
     logging.info(f"Starting sequence processing from {args.fasta}")
     for record in SeqIO.parse(args.fasta, 'fasta'):
-        seq_id = record.id.split('_')[0]
+        seq_id = record.id
         logging.debug(f"Processing sequence: {seq_id}")
 
         if seq_id not in metadata:
