@@ -1,97 +1,97 @@
-ambig_basecount	ambig_full_basecount	error	family	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	process_id	species	stop_codons	fasta_file
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	656	1431	Ichneumonidae	BGLIB191-23	Erigorgus melanobatus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	656	1452	Ichneumonidae	BGLIB192-23	Campodorus callidulus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	656	1515	Ichneumonidae	BGLIB193-23	Campodorus nigridens	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	4	None	Ichneumonidae	Ichneumonidae	BLAST	family	655	1455	Ichneumonidae	BGLIB194-23	Bathyplectes quinqueangularis	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	655	1479	Ichneumonidae	BGLIB195-23	Campoletis femoralis	0	data/BGE00402_MGE_cox1_insect_universal.fas
-6	12	None	Ichneumonidae	Ichneumonidae	BLAST	family	557	1263	Cucujidae,Chrysomelidae,Ichneumonidae,Erebidae,Nymphalidae	BGLIB196-23	Coelichneumon consimilis	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1470	Ichneumonidae	BGLIB197-23	Campoplex alticolellae	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1419	Ichneumonidae	BGLIB198-23	Campoplex cursitans	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	0	None	Ichneumonidae	Ichneumonidae	BLAST	family	208	312	Ichneumonidae	BGLIB199-23	Campoplex fusciplica	1	data/BGE00402_MGE_cox1_insect_universal.fas
-1	2	None	Ichneumonidae	Ichneumonidae	BLAST	family	223	594	Acrididae,Nitidulidae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Tetracampidae	BGLIB200-23	Campoplex molestus	8	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	656	1482	Ichneumonidae	BGLIB201-23	Barytarbes flavoscutellatus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	655	1455	Ichneumonidae	BGLIB202-23	Campodorus clypealis	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	4	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1389	Ichneumonidae	BGLIB203-23	Bathyplectes anurus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1431	Ichneumonidae	BGLIB204-23	Bathyplectes tibiator	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1473	Ichneumonidae	BGLIB205-23	Callajoppa exaltatoria	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1452	Ichneumonidae	BGLIB206-23	Callajoppa exaltatoria	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1386	Ichneumonidae	BGLIB207-23	Coelichneumon dorsosignatus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	6	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1401	Ichneumonidae	BGLIB208-23	Campoplex bilobus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1374	Ichneumonidae	BGLIB209-23	Campoplex excavatus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1431	Ichneumonidae	BGLIB210-23	Campoplex gastroides	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1443	Ichneumonidae	BGLIB211-23	Campoplex ovatus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1377	Ichneumonidae	BGLIB212-23	Barytarbes laeviusculus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	654	1455	Ichneumonidae	BGLIB213-23	Campodorus holmgreni	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1443	Ichneumonidae	BGLIB214-23	Bathyplectes cingulatus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	655	1419	Ichneumonidae	BGLIB215-23	Campoletis cognata	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	6	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1491	Ichneumonidae	BGLIB216-23	Campoletis cognata	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1377	Ichneumonidae	BGLIB217-23	Catadelphus arrogator	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1479	Ichneumonidae	BGLIB218-23	Catadelphus arrogator	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	4	None	Ichneumonidae	Ichneumonidae	BLAST	family	590	1308	Ichneumonidae	BGLIB219-23	Coelichneumon funebrator	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1455	Ichneumonidae	BGLIB220-23	Campoplex cingulatus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1518	Ichneumonidae	BGLIB221-23	Campoplex faunus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	656	1431	Ichneumonidae	BGLIB222-23	Campoplex lugubrinus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1443	Ichneumonidae	BGLIB223-23	Campoplex procerus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1422	Ichneumonidae	BGLIB224-23	Campodorus caligatus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	655	1422	Ichneumonidae	BGLIB225-23	Campodorus luctuosus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1518	Ichneumonidae	BGLIB226-23	Campodorus luctuosus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1431	Ichneumonidae	BGLIB227-23	Bathyplectes immolator	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	656	1440	Ichneumonidae	BGLIB228-23	Bathyplectes immolator	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	655	1443	Ichneumonidae	BGLIB229-23	Campoletis congesta	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	656	1365	Ichneumonidae	BGLIB230-23	Coelichneumon castaniventris	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	656	1416	Ichneumonidae	BGLIB231-23	Coelichneumon castaniventris	0	data/BGE00402_MGE_cox1_insect_universal.fas
-27	48	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1332	Ichneumonidae	BGLIB232-23	Coelichneumon orbitator	1	data/BGE00402_MGE_cox1_insect_universal.fas
-0	0	None	Ichneumonidae	Ichneumonidae	BLAST	family	122	423	Dytiscidae,Carabidae,Coccinellidae	BGLIB233-23	Coelichneumon orbitator	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1479	Ichneumonidae	BGLIB234-23	Campoplex coracinus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1479	Ichneumonidae	BGLIB235-23	Campoplex forticosta	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	630	1350	Ichneumonidae	BGLIB236-23	Campoplex lyratus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1443	Ichneumonidae	BGLIB237-23	Campoplex puengeleri	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Ichneumonidae	Ichneumonidae	BLAST	family	657	1443	Ichneumonidae	BGLIB238-23	Barycnemis claviventris	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	6	None	Mutillidae	Mutillidae	BLAST	family	652	1374	Coreidae,Curculionidae,Calliphoridae,Andrenidae,Halictidae,Formicidae,Diprionidae	BGLIB239-23	Ronisia barbara	0	data/BGE00402_MGE_cox1_insect_universal.fas
-23	45	None	Pamphiliidae	Pamphiliidae	BLAST	family	462	1083	Cecidomyiidae,Ceratopogonidae,Crabronidae,Pamphiliidae	BGLIB240-23	Pamphilius nemorum	5	data/BGE00402_MGE_cox1_insect_universal.fas
-0	9	None	Pompilidae	Pompilidae	BLAST	family	651	1431	Cicadidae,Pompilidae,Trichogrammatidae,Noctuidae,Lycaenidae	BGLIB241-23	Arachnospila asiatica	2	data/BGE00402_MGE_cox1_insect_universal.fas
-29	80	None	Pompilidae	Pompilidae	BLAST	family	570	1236	Syrphidae,Drosophilidae,Muscidae,Anthomyiidae,Tachinidae	BGLIB242-23	Cryptocheilus ichneumonoides	0	data/BGE00402_MGE_cox1_insect_universal.fas
-9	19	None	Pompilidae	Pompilidae	BLAST	family	624	1347	Pompilidae,Noctuidae,Nymphalidae,Geometridae	BGLIB243-23	Cryptocheilus ichneumonoides	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	4	None	Pompilidae	Pompilidae	BLAST	family	655	1422	Drosophilidae,Tachinidae,Pompilidae,Tortricidae,Noctuidae,Pyralidae,Crambidae	BGLIB244-23	Priocnemis fastigiata	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Pompilidae	Pompilidae	BLAST	family	619	1341	Braconidae,Pompilidae,Noctuidae,Nymphalidae,Geometridae	BGLIB245-23	Priocnemis fastigiata	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	0	None	Pompilidae	Pompilidae	BLAST	family	57	285	Cicadidae,Andrenidae,Chrysopidae,Mantispidae	BGLIB246-23	Pseudopompilus humboldti	0	data/BGE00402_MGE_cox1_insect_universal.fas
-2	5	None	Siricidae	Siricidae	BLAST	family	657	1407	Siricidae	BGLIB247-23	Urocerus augur	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Siricidae	Siricidae	BLAST	family	657	1419	Siricidae	BGLIB248-23	Urocerus augur	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Vespidae	Vespidae	BLAST	family	655	1377	Vespidae	BGLIB249-23	Euodynerus curictensis	0	data/BGE00402_MGE_cox1_insect_universal.fas
-8	40	None	Vespidae	Vespidae	BLAST	family	385	900	Cicadellidae,Drosophilidae,Xylophagaidae,Geometridae	BGLIB250-23	Leptochilus cruentatus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Vespidae	Vespidae	BLAST	family	656	1455	Vespidae	BGLIB251-23	Leptochilus cruentatus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-None	0	Local BLAST failed for sequence ''	Mutillidae	Mutillidae	BLAST	family	None	0		BGLIB252-23	Sigilla dorsata	0	data/BGE00402_MGE_cox1_insect_universal.fas
-38	88	None	Mutillidae	Mutillidae	BLAST	family	649	1371	Dolichopodidae,Nymphalidae	BGLIB253-23	Sigilla dorsata	0	data/BGE00402_MGE_cox1_insect_universal.fas
-1	6	None	Pamphiliidae	Pamphiliidae	BLAST	family	657	1506	Pamphiliidae	BGLIB254-23	Pamphilius sylvaticus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-55	58	None	Pompilidae	Pompilidae	BLAST	family	596	1287	Enicocephalidae,Syrphidae,Polleniidae,Erebidae,Lycaenidae,Geometridae,Beraeidae	BGLIB255-23	Arachnospila holomelas	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Pompilidae	Pompilidae	BLAST	family	651	1416	Tachinidae,Tortricidae,Sphingidae,Nymphalidae,Crambidae,Geometridae,Osmylidae	BGLIB256-23	Arachnospila holomelas	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	1	None	Pompilidae	Pompilidae	BLAST	family	387	699	Ceratopogonidae,Agromyzidae,Eupelmidae	BGLIB257-23	Arachnospila holomelas	13	data/BGE00402_MGE_cox1_insect_universal.fas
-0	2	None	Pompilidae	Pompilidae	BLAST	family	252	747	Libellulidae,Australembiidae,Scarabaeidae,Curculionidae,Culicidae	BGLIB258-23	Eoferreola distincta	0	data/BGE00402_MGE_cox1_insect_universal.fas
-4	5	None	Pompilidae	Pompilidae	BLAST	family	590	1302	Gyrinidae,Culicidae,Melittidae,Pompilidae,Lycaenidae	BGLIB259-23	Priocnemis hankoi	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Pompilidae	Pompilidae	BLAST	family	326	582	Megachilidae,Pompilidae,Lycaenidae	BGLIB260-23	Tachyagetes canariensis	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Sphecidae	Sphecidae	BLAST	family	657	1287	Sphecidae,Lycaenidae	BGLIB261-23	Chalybion flebile	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Sphecidae	Sphecidae	BLAST	family	657	1389	Ichneumonidae,Sphecidae,Lycaenidae	BGLIB262-23	Chalybion flebile	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Tiphiidae	Tiphiidae	BLAST	family	354	384	Aphididae,Staphylinidae,Syrphidae,Apidae,Halictidae,Megachilidae,Tiphiidae,Micropterigidae	BGLIB263-23	Tiphia lepeletieri	0	data/BGE00402_MGE_cox1_insect_universal.fas
-None	0	Local BLAST failed for sequence ''	Tiphiidae	Tiphiidae	BLAST	family	None	0		BGLIB264-23	Tiphia lepeletieri	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Vespidae	Vespidae	BLAST	family	655	1455	Vespidae	BGLIB265-23	Euodynerus fastidiosus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-1	1	None	Vespidae	Vespidae	BLAST	family	551	984	Vespidae	BGLIB266-23	Leptochilus duplicatus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-None	0	Local BLAST failed for sequence ''	Mutillidae	Mutillidae	BLAST	family	None	0		BGLIB267-23	Tropidotilla litoralis	0	data/BGE00402_MGE_cox1_insect_universal.fas
-3	9	None	Mutillidae	Mutillidae	BLAST	family	646	1371	Rhinotermitidae,Termitidae,Hodotermitidae,Miridae,Andrenidae	BGLIB268-23	Tropidotilla litoralis	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	1	None	Mutillidae	Mutillidae	BLAST	family	32	108	Perlidae,Laemophloeidae,Chrysomelidae,Curculionidae,Asilidae,Ichneumonidae,Vespidae,Nymphalidae	BGLIB269-23	Tropidotilla litoralis	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	0	None	Pompilidae	Pompilidae	BLAST	family	77	102	Nymphalidae,Crambidae	BGLIB270-23	Agenioideus rytiphorus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	0	None	Pompilidae	Pompilidae	BLAST	family	140	417	Braconidae,Colletidae,Diapriidae,Crambidae	BGLIB271-23	Arachnospila tyrrhena	0	data/BGE00402_MGE_cox1_insect_universal.fas
-None	0	Local BLAST failed for sequence ''	Pompilidae	Pompilidae	BLAST	family	None	0		BGLIB272-23	Ferreola diffinis	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Pompilidae	Pompilidae	BLAST	family	617	1335	Braconidae,Apidae,Megachilidae,Pompilidae	BGLIB273-23	Ferreola diffinis	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	9	None	Pompilidae	Pompilidae	BLAST	family	650	1440	Braconidae,Pompilidae	BGLIB274-23	Priocnemis susterai	0	data/BGE00402_MGE_cox1_insect_universal.fas
-2	2	None	Pompilidae	Pompilidae	BLAST	family	435	702	Pompilidae	BGLIB275-23	Priocnemis susterai	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	0	None	Pompilidae	Pompilidae	BLAST	family	427	930	Dermestidae,Muscidae,Vespidae,Pompilidae,Cynipidae,Lycaenidae	BGLIB276-23	Telostegus inermis	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	0	None	Sphecidae	Sphecidae	BLAST	family	540	1236	Aphididae,Tachinidae,Vespidae,Sphecidae,Megachilidae	BGLIB277-23	Chilosphex argyrius	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Vespidae	Vespidae	BLAST	family	654	1485	Vespidae	BGLIB278-23	Allodynerus floricola	0	data/BGE00402_MGE_cox1_insect_universal.fas
-12	17	None	Vespidae	Vespidae	BLAST	family	636	1353	Vespidae	BGLIB279-23	Allodynerus floricola	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Vespidae	Vespidae	BLAST	family	654	1443	Vespidae	BGLIB280-23	Allodynerus floricola	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Vespidae	Vespidae	BLAST	family	654	1422	Vespidae	BGLIB281-23	Allodynerus floricola	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Vespidae	Vespidae	BLAST	family	654	1455	Vespidae	BGLIB282-23	Allodynerus floricola	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	0	None	Vespidae	Vespidae	BLAST	family	158	252	Vespidae	BGLIB283-23	Euodynerus hellenicus	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Vespidae	Vespidae	BLAST	family	655	1425	Vespidae	BGLIB284-23	Leptochilus brussiloffi	0	data/BGE00402_MGE_cox1_insect_universal.fas
-0	3	None	Pamphiliidae	Pamphiliidae	BLAST	family	657	1521	Staphylinidae,Hydraenidae,Scarabaeidae,Tachinidae,Pamphiliidae	BGLIB285-23	Caenolyda reticulata	0	data/BGE00402_MGE_cox1_insect_universal.fas
-13	36	NC-BGE00402 not in BOLD	None	None	BLAST	family	336	768		NC-BGE00402	None	0	data/BGE00402_MGE_cox1_insect_universal.fas
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	656	1428	Ichneumonidae	BGLIB191-23_cns	Erigorgus melanobatus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	656	1449	Ichneumonidae	BGLIB192-23_cns	Campodorus callidulus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	656	1512	Ichneumonidae	BGLIB193-23_cns	Campodorus nigridens	0
+0	1	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	655	1452	Ichneumonidae	BGLIB194-23_cns	Bathyplectes quinqueangularis	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	655	1476	Ichneumonidae	BGLIB195-23_cns	Campoletis femoralis	0
+6	9	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	557	1260	Cucujidae,Chrysomelidae,Ichneumonidae,Erebidae,Nymphalidae	BGLIB196-23_cns	Coelichneumon consimilis	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1467	Ichneumonidae	BGLIB197-23_cns	Campoplex alticolellae	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1416	Ichneumonidae	BGLIB198-23_cns	Campoplex cursitans	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	208	312	Ichneumonidae	BGLIB199-23_cns	Campoplex fusciplica	1
+1	2	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	223	594	Acrididae,Nitidulidae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Tetracampidae	BGLIB200-23_cns	Campoplex molestus	8
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	656	1479	Ichneumonidae	BGLIB201-23_cns	Barytarbes flavoscutellatus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	655	1452	Ichneumonidae	BGLIB202-23_cns	Campodorus clypealis	0
+0	1	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1386	Ichneumonidae	BGLIB203-23_cns	Bathyplectes anurus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1428	Ichneumonidae	BGLIB204-23_cns	Bathyplectes tibiator	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1470	Ichneumonidae	BGLIB205-23_cns	Callajoppa exaltatoria	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1449	Ichneumonidae	BGLIB206-23_cns	Callajoppa exaltatoria	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1383	Ichneumonidae	BGLIB207-23_cns	Coelichneumon dorsosignatus	0
+0	6	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1401	Ichneumonidae	BGLIB208-23_cns	Campoplex bilobus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1371	Ichneumonidae	BGLIB209-23_cns	Campoplex excavatus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1428	Ichneumonidae	BGLIB210-23_cns	Campoplex gastroides	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1440	Ichneumonidae	BGLIB211-23_cns	Campoplex ovatus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1374	Ichneumonidae	BGLIB212-23_cns	Barytarbes laeviusculus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	654	1452	Ichneumonidae	BGLIB213-23_cns	Campodorus holmgreni	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1440	Ichneumonidae	BGLIB214-23_cns	Bathyplectes cingulatus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	655	1416	Ichneumonidae	BGLIB215-23_cns	Campoletis cognata	0
+0	3	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1488	Ichneumonidae	BGLIB216-23_cns	Campoletis cognata	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1374	Ichneumonidae	BGLIB217-23_cns	Catadelphus arrogator	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1476	Ichneumonidae	BGLIB218-23_cns	Catadelphus arrogator	0
+0	1	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	590	1305	Ichneumonidae	BGLIB219-23_cns	Coelichneumon funebrator	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1452	Ichneumonidae	BGLIB220-23_cns	Campoplex cingulatus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1515	Ichneumonidae	BGLIB221-23_cns	Campoplex faunus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	656	1428	Ichneumonidae	BGLIB222-23_cns	Campoplex lugubrinus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1440	Ichneumonidae	BGLIB223-23_cns	Campoplex procerus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1419	Ichneumonidae	BGLIB224-23_cns	Campodorus caligatus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	655	1419	Ichneumonidae	BGLIB225-23_cns	Campodorus luctuosus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1515	Ichneumonidae	BGLIB226-23_cns	Campodorus luctuosus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1428	Ichneumonidae	BGLIB227-23_cns	Bathyplectes immolator	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	656	1437	Ichneumonidae	BGLIB228-23_cns	Bathyplectes immolator	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	655	1440	Ichneumonidae	BGLIB229-23_cns	Campoletis congesta	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	656	1362	Ichneumonidae	BGLIB230-23_cns	Coelichneumon castaniventris	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	656	1413	Ichneumonidae	BGLIB231-23_cns	Coelichneumon castaniventris	0
+27	48	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1332	Ichneumonidae	BGLIB232-23_cns	Coelichneumon orbitator	1
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	122	423	Dytiscidae,Carabidae,Coccinellidae	BGLIB233-23_cns	Coelichneumon orbitator	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1476	Ichneumonidae	BGLIB234-23_cns	Campoplex coracinus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1476	Ichneumonidae	BGLIB235-23_cns	Campoplex forticosta	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	630	1347	Ichneumonidae	BGLIB236-23_cns	Campoplex lyratus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1440	Ichneumonidae	BGLIB237-23_cns	Campoplex puengeleri	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1440	Ichneumonidae	BGLIB238-23_cns	Barycnemis claviventris	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Mutillidae	BLAST	family	652	1368	Coreidae,Curculionidae,Calliphoridae,Andrenidae,Halictidae,Formicidae,Diprionidae	BGLIB239-23_cns	Ronisia barbara	0
+23	42	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pamphiliidae	BLAST	family	462	1080	Cecidomyiidae,Ceratopogonidae,Crabronidae,Pamphiliidae	BGLIB240-23_cns	Pamphilius nemorum	5
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pompilidae	BLAST	family	651	1422	Cicadidae,Pompilidae,Trichogrammatidae,Noctuidae,Lycaenidae	BGLIB241-23_cns	Arachnospila asiatica	0
+29	77	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pompilidae	BLAST	family	570	1233	Syrphidae,Drosophilidae,Muscidae,Anthomyiidae,Tachinidae	BGLIB242-23_cns	Cryptocheilus ichneumonoides	0
+9	16	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pompilidae	BLAST	family	624	1344	Pompilidae,Noctuidae,Nymphalidae,Geometridae	BGLIB243-23_cns	Cryptocheilus ichneumonoides	0
+0	1	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pompilidae	BLAST	family	655	1419	Drosophilidae,Tachinidae,Pompilidae,Tortricidae,Noctuidae,Pyralidae,Crambidae	BGLIB244-23_cns	Priocnemis fastigiata	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pompilidae	BLAST	family	619	1338	Braconidae,Pompilidae,Noctuidae,Nymphalidae,Geometridae	BGLIB245-23_cns	Priocnemis fastigiata	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pompilidae	BLAST	family	57	285	Cicadidae,Andrenidae,Chrysopidae,Mantispidae	BGLIB246-23_cns	Pseudopompilus humboldti	0
+2	2	data/BGE00402_MGE_cox1_insect_universal.fas	None	Siricidae	BLAST	family	657	1404	Siricidae	BGLIB247-23_cns	Urocerus augur	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Siricidae	BLAST	family	657	1416	Siricidae	BGLIB248-23_cns	Urocerus augur	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Vespidae	BLAST	family	655	1374	Vespidae	BGLIB249-23_cns	Euodynerus curictensis	0
+8	37	data/BGE00402_MGE_cox1_insect_universal.fas	None	Vespidae	BLAST	family	385	897	Cicadellidae,Drosophilidae,Xylophagaidae,Geometridae	BGLIB250-23_cns	Leptochilus cruentatus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Vespidae	BLAST	family	656	1452	Vespidae	BGLIB251-23_cns	Leptochilus cruentatus	0
+None	0	data/BGE00402_MGE_cox1_insect_universal.fas	Local BLAST failed for sequence ''	Mutillidae	BLAST	family	None	0		BGLIB252-23_cns	Sigilla dorsata	0
+38	85	data/BGE00402_MGE_cox1_insect_universal.fas	None	Mutillidae	BLAST	family	649	1368	Dolichopodidae,Nymphalidae	BGLIB253-23_cns	Sigilla dorsata	0
+1	3	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pamphiliidae	BLAST	family	657	1503	Pamphiliidae	BGLIB254-23_cns	Pamphilius sylvaticus	0
+55	58	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pompilidae	BLAST	family	596	1287	Enicocephalidae,Syrphidae,Polleniidae,Erebidae,Lycaenidae,Geometridae,Beraeidae	BGLIB255-23_cns	Arachnospila holomelas	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pompilidae	BLAST	family	651	1413	Tachinidae,Tortricidae,Sphingidae,Nymphalidae,Crambidae,Geometridae,Osmylidae	BGLIB256-23_cns	Arachnospila holomelas	0
+0	1	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pompilidae	BLAST	family	387	699	Ceratopogonidae,Agromyzidae,Eupelmidae	BGLIB257-23_cns	Arachnospila holomelas	13
+0	2	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pompilidae	BLAST	family	252	747	Libellulidae,Australembiidae,Scarabaeidae,Curculionidae,Culicidae	BGLIB258-23_cns	Eoferreola distincta	0
+4	5	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pompilidae	BLAST	family	590	1302	Gyrinidae,Culicidae,Melittidae,Pompilidae,Lycaenidae	BGLIB259-23_cns	Priocnemis hankoi	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pompilidae	BLAST	family	327	579	Megachilidae,Pompilidae,Lycaenidae	BGLIB260-23_cns	Tachyagetes canariensis	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Sphecidae	BLAST	family	657	1284	Sphecidae,Lycaenidae	BGLIB261-23_cns	Chalybion flebile	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Sphecidae	BLAST	family	657	1386	Ichneumonidae,Sphecidae,Lycaenidae	BGLIB262-23_cns	Chalybion flebile	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Tiphiidae	BLAST	family	355	381	Aphididae,Staphylinidae,Syrphidae,Apidae,Halictidae,Megachilidae,Tiphiidae,Micropterigidae	BGLIB263-23_cns	Tiphia lepeletieri	0
+None	0	data/BGE00402_MGE_cox1_insect_universal.fas	Local BLAST failed for sequence ''	Tiphiidae	BLAST	family	None	0		BGLIB264-23_cns	Tiphia lepeletieri	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Vespidae	BLAST	family	655	1452	Vespidae	BGLIB265-23_cns	Euodynerus fastidiosus	0
+1	1	data/BGE00402_MGE_cox1_insect_universal.fas	None	Vespidae	BLAST	family	551	984	Vespidae	BGLIB266-23_cns	Leptochilus duplicatus	0
+None	0	data/BGE00402_MGE_cox1_insect_universal.fas	Local BLAST failed for sequence ''	Mutillidae	BLAST	family	None	0		BGLIB267-23_cns	Tropidotilla litoralis	0
+3	3	data/BGE00402_MGE_cox1_insect_universal.fas	None	Mutillidae	BLAST	family	646	1365	Rhinotermitidae,Termitidae,Hodotermitidae,Miridae,Andrenidae	BGLIB268-23_cns	Tropidotilla litoralis	0
+0	1	data/BGE00402_MGE_cox1_insect_universal.fas	None	Mutillidae	BLAST	family	32	108	Perlidae,Laemophloeidae,Chrysomelidae,Curculionidae,Asilidae,Ichneumonidae,Vespidae,Nymphalidae	BGLIB269-23_cns	Tropidotilla litoralis	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pompilidae	BLAST	family	77	102	Nymphalidae,Crambidae	BGLIB270-23_cns	Agenioideus rytiphorus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pompilidae	BLAST	family	140	417	Braconidae,Colletidae,Diapriidae,Crambidae	BGLIB271-23_cns	Arachnospila tyrrhena	0
+None	0	data/BGE00402_MGE_cox1_insect_universal.fas	Local BLAST failed for sequence ''	Pompilidae	BLAST	family	None	0		BGLIB272-23_cns	Ferreola diffinis	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pompilidae	BLAST	family	617	1332	Braconidae,Apidae,Megachilidae,Pompilidae	BGLIB273-23_cns	Ferreola diffinis	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pompilidae	BLAST	family	650	1431	Braconidae,Pompilidae	BGLIB274-23_cns	Priocnemis susterai	0
+2	2	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pompilidae	BLAST	family	435	702	Pompilidae	BGLIB275-23_cns	Priocnemis susterai	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pompilidae	BLAST	family	427	930	Dermestidae,Muscidae,Vespidae,Pompilidae,Cynipidae,Lycaenidae	BGLIB276-23_cns	Telostegus inermis	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Sphecidae	BLAST	family	540	1236	Aphididae,Tachinidae,Vespidae,Sphecidae,Megachilidae	BGLIB277-23_cns	Chilosphex argyrius	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Vespidae	BLAST	family	654	1482	Vespidae	BGLIB278-23_cns	Allodynerus floricola	0
+12	14	data/BGE00402_MGE_cox1_insect_universal.fas	None	Vespidae	BLAST	family	636	1350	Vespidae	BGLIB279-23_cns	Allodynerus floricola	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Vespidae	BLAST	family	654	1440	Vespidae	BGLIB280-23_cns	Allodynerus floricola	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Vespidae	BLAST	family	654	1419	Vespidae	BGLIB281-23_cns	Allodynerus floricola	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Vespidae	BLAST	family	654	1452	Vespidae	BGLIB282-23_cns	Allodynerus floricola	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Vespidae	BLAST	family	158	252	Vespidae	BGLIB283-23_cns	Euodynerus hellenicus	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Vespidae	BLAST	family	655	1422	Vespidae	BGLIB284-23_cns	Leptochilus brussiloffi	0
+0	0	data/BGE00402_MGE_cox1_insect_universal.fas	None	Pamphiliidae	BLAST	family	657	1518	Staphylinidae,Hydraenidae,Scarabaeidae,Tachinidae,Pamphiliidae	BGLIB285-23_cns	Caenolyda reticulata	0
+13	36	data/BGE00402_MGE_cox1_insect_universal.fas	NC-BGE00402 not in BOLD	None	BLAST	family	336	768		NC-BGE00402_cns	None	0
