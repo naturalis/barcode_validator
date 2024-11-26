@@ -1,97 +1,97 @@
-ambig_basecount	ambig_full_basecount	error	family	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	process_id	species	stop_codons	fasta_file
-23	38	BGE00294-NC not in BOLD	None	None	BLAST	family	639	1467		BGE00294-NC	None	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL286-23	Eupithecia inconspicuata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL287-23	Eupithecia inconspicuata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-1	5	None	Geometridae	Geometridae	BLAST	family	657	1530	Geometridae	BGSNL288-23	Eupithecia inconspicuata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-2	15	None	Geometridae	Geometridae	BLAST	family	656	1509	Geometridae	BGSNL289-23	Eupithecia karadaghensis	0	data/BGE00294_MGE_cox1_insect_universal.fas
-11	28	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL290-23	Eupithecia karadaghensis	0	data/BGE00294_MGE_cox1_insect_universal.fas
-25	49	None	Geometridae	Geometridae	BLAST	family	633	1458	Geometridae	BGSNL291-23	Eupithecia karadaghensis	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL292-23	Eupithecia latipennata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL293-23	Eupithecia latipennata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-3	9	None	Geometridae	Geometridae	BLAST	family	657	1503	Geometridae	BGSNL294-23	Eupithecia latipennata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL295-23	Eupithecia maspalomae	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL296-23	Eupithecia maspalomae	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL297-23	Eupithecia maspalomae	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	0	None	Geometridae	Geometridae	BLAST	family	657	1497	Geometridae	BGSNL298-23	Eupithecia moecha	0	data/BGE00294_MGE_cox1_insect_universal.fas
-1	13	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL299-23	Eupithecia moecha	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1530	Geometridae	BGSNL300-23	Eupithecia mystica	0	data/BGE00294_MGE_cox1_insect_universal.fas
-8	25	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL301-23	Eupithecia mystica	0	data/BGE00294_MGE_cox1_insect_universal.fas
-59	72	None	Geometridae	Geometridae	BLAST	family	636	1497	Geometridae	BGSNL302-23	Eupithecia mystica	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	11	None	Geometridae	Geometridae	BLAST	family	615	1377	Geometridae	BGSNL303-23	Eupithecia pindosata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL304-23	Eupithecia pindosata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL305-23	Eupithecia pindosata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL306-23	Eupithecia poecilata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-8	20	None	Geometridae	Geometridae	BLAST	family	657	1521	Geometridae	BGSNL307-23	Eupithecia poecilata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL308-23	Eupithecia poecilata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	656	1530	Geometridae	BGSNL309-23	Eupithecia repentina	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	656	1530	Geometridae	BGSNL310-23	Eupithecia repentina	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	656	1494	Geometridae	BGSNL311-23	Eupithecia riparia	0	data/BGE00294_MGE_cox1_insect_universal.fas
-8	20	None	Geometridae	Geometridae	BLAST	family	556	1029	Geometridae	BGSNL312-23	Eupithecia riparia	2	data/BGE00294_MGE_cox1_insect_universal.fas
-0	7	None	Geometridae	Geometridae	BLAST	family	656	1518	Geometridae	BGSNL313-23	Eupithecia riparia	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL314-23	Eupithecia rosai	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL315-23	Eupithecia rosai	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL316-23	Eupithecia rosai	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL317-23	Eupithecia rosai	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1530	Geometridae	BGSNL318-23	Eupithecia rosmarinata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	7	None	Geometridae	Geometridae	BLAST	family	657	1530	Geometridae	BGSNL319-23	Eupithecia rosmarinata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL320-23	Eupithecia rosmarinata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL321-23	Eupithecia santolinata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	4	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL322-23	Eupithecia santolinata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL323-23	Eupithecia santolinata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	6	None	Geometridae	Geometridae	BLAST	family	657	1419	Geometridae	BGSNL324-23	Eupithecia scalptata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL325-23	Eupithecia scalptata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-28	44	None	Geometridae	Geometridae	BLAST	family	611	1353	Geometridae	BGSNL326-23	Eupithecia scalptata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	5	None	Geometridae	Geometridae	BLAST	family	657	1509	Geometridae	BGSNL327-23	Eupithecia schuetzeata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL328-23	Eupithecia schuetzeata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1530	Geometridae	BGSNL329-23	Eupithecia schuetzeata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL330-23	Eupithecia spadiceata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-15	28	None	Geometridae	Geometridae	BLAST	family	645	1398	Geometridae	BGSNL331-23	Eupithecia spadiceata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-11	14	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL332-23	Eupithecia spadiceata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	4	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL333-23	Eupithecia spadiceata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	7	None	Geometridae	Geometridae	BLAST	family	657	1530	Geometridae	BGSNL334-23	Eupithecia stertzi	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL335-23	Eupithecia stertzi	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1530	Geometridae	BGSNL336-23	Eupithecia stertzi	0	data/BGE00294_MGE_cox1_insect_universal.fas
-10	28	None	Geometridae	Geometridae	BLAST	family	537	1392	Geometridae	BGSNL337-23	Eupithecia sutiliata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1494	Geometridae	BGSNL338-23	Eupithecia sutiliata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-3	10	None	Geometridae	Geometridae	BLAST	family	311	777	Noctuidae,Geometridae	BGSNL339-23	Eupithecia sutiliata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL340-23	Eupithecia tenerifensis	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	5	None	Geometridae	Geometridae	BLAST	family	657	1530	Geometridae	BGSNL341-23	Eupithecia tenerifensis	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL342-23	Eupithecia tenerifensis	0	data/BGE00294_MGE_cox1_insect_universal.fas
-1	5	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL343-23	Eupithecia usbeca	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1530	Geometridae	BGSNL344-23	Eupithecia usbeca	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL345-23	Eupithecia usbeca	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL346-23	Eupithecia rosai	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL347-23	Eupithecia rosai	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL348-23	Eupithecia maspalomae	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL349-23	Eupithecia maspalomae	0	data/BGE00294_MGE_cox1_insect_universal.fas
-28	34	None	Geometridae	Geometridae	BLAST	family	645	1257	Geometridae	BGSNL350-23	Eupithecia semigraphata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	4	None	Geometridae	Geometridae	BLAST	family	211	600	Oecophoridae,Zygaenidae,Nymphalidae,Geometridae	BGSNL351-23	Eupithecia graphata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-5	13	None	Geometridae	Geometridae	BLAST	family	225	726	Geometridae	BGSNL352-23	Eupithecia impurata	6	data/BGE00294_MGE_cox1_insect_universal.fas
-19	59	None	Geometridae	Geometridae	BLAST	family	553	1071	Noctuidae,Notodontidae,Euteliidae,Crambidae,Geometridae	BGSNL353-23	Eupithecia impurata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-21	41	None	Geometridae	Geometridae	BLAST	family	468	795	Depressariidae,Geometridae	BGSNL354-23	Eupithecia impurata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-10	18	None	Geometridae	Geometridae	BLAST	family	605	1392	Geometridae	BGSNL355-23	Eupithecia impurata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	12	None	Geometridae	Geometridae	BLAST	family	655	1368	Timematidae,Curculionidae,Drosophilidae,Tephritidae,Formicidae,Geometridae	BGSNL356-23	Eupithecia druentiata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-8	23	None	Geometridae	Geometridae	BLAST	family	486	1209	Geometridae	BGSNL357-23	Eupithecia cyrneata	1	data/BGE00294_MGE_cox1_insect_universal.fas
-0	32	None	Geometridae	Geometridae	BLAST	family	582	1377	Nymphalidae,Geometridae	BGSNL358-23	Eupithecia denotata	1	data/BGE00294_MGE_cox1_insect_universal.fas
-7	10	None	Geometridae	Geometridae	BLAST	family	557	984	Geometridae	BGSNL359-23	Eupithecia thurnerata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-11	11	None	Geometridae	Geometridae	BLAST	family	438	591	Geometridae	BGSNL360-23	Eupithecia impurata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-4	12	None	Geometridae	Geometridae	BLAST	family	471	1116	Geometridae	BGSNL361-23	Eupithecia quercetica	2	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL362-23	Eupithecia addictata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-3	6	None	Geometridae	Geometridae	BLAST	family	528	1296	Geometridae	BGSNL363-23	Eupithecia pyreneata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-5	10	None	Geometridae	Geometridae	BLAST	family	657	1530	Geometridae	BGSNL364-23	Eupithecia pyreneata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-7	11	None	Geometridae	Geometridae	BLAST	family	657	1455	Geometridae	BGSNL365-23	Eupithecia schuetzeata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-8	13	None	Geometridae	Geometridae	BLAST	family	636	1479	Geometridae	BGSNL366-23	Eupithecia catharinae	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	0	None	Geometridae	Geometridae	BLAST	family	309	354	Culicidae,Depressariidae,Saturniidae,Nymphalidae,Geometridae	BGSNL367-23	Eupithecia catharinae	10	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	656	1518	Geometridae	BGSNL368-23	Eupithecia karadaghensis	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	4	None	Geometridae	Geometridae	BLAST	family	80	561	Oecophoridae,Crambidae,Geometridae	BGSNL369-23	Eupithecia fuscicostata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-1	4	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL370-23	Eupithecia pantellata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	8	None	Geometridae	Geometridae	BLAST	family	657	1530	Geometridae	BGSNL371-23	Minoa lutea	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL372-23	Minoa lutea	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1530	Geometridae	BGSNL373-23	Timandra rectistrigaria	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1530	Geometridae	BGSNL374-23	Timandra rectistrigaria	0	data/BGE00294_MGE_cox1_insect_universal.fas
-1	8	None	Geometridae	Geometridae	BLAST	family	657	1494	Geometridae	BGSNL375-23	Ramitia obliquelineata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL376-23	Ramitia obliquelineata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-1	10	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL377-23	Ramitia obliquelineata	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL378-23	Ramitia sinensis	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL379-23	Ramitia sinensis	0	data/BGE00294_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL380-23	Ramitia sinensis	0	data/BGE00294_MGE_cox1_insect_universal.fas
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+23	35	data/BGE00294_MGE_cox1_insect_universal.fas	BGE00294-NC not in BOLD	None	BLAST	family	639	1464		BGE00294-NC_cns	None	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL286-23_cns	Eupithecia inconspicuata	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL287-23_cns	Eupithecia inconspicuata	0
+1	2	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL288-23_cns	Eupithecia inconspicuata	0
+2	15	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	656	1509	Geometridae	BGSNL289-23_cns	Eupithecia karadaghensis	0
+11	25	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL290-23_cns	Eupithecia karadaghensis	0
+25	46	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	633	1455	Geometridae	BGSNL291-23_cns	Eupithecia karadaghensis	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL292-23_cns	Eupithecia latipennata	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL293-23_cns	Eupithecia latipennata	0
+3	6	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1500	Geometridae	BGSNL294-23_cns	Eupithecia latipennata	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL295-23_cns	Eupithecia maspalomae	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL296-23_cns	Eupithecia maspalomae	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL297-23_cns	Eupithecia maspalomae	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1497	Geometridae	BGSNL298-23_cns	Eupithecia moecha	0
+1	10	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL299-23_cns	Eupithecia moecha	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL300-23_cns	Eupithecia mystica	0
+8	22	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL301-23_cns	Eupithecia mystica	0
+59	69	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	636	1494	Geometridae	BGSNL302-23_cns	Eupithecia mystica	0
+0	8	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	615	1374	Geometridae	BGSNL303-23_cns	Eupithecia pindosata	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL304-23_cns	Eupithecia pindosata	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL305-23_cns	Eupithecia pindosata	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL306-23_cns	Eupithecia poecilata	0
+8	17	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL307-23_cns	Eupithecia poecilata	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL308-23_cns	Eupithecia poecilata	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	656	1527	Geometridae	BGSNL309-23_cns	Eupithecia repentina	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	656	1527	Geometridae	BGSNL310-23_cns	Eupithecia repentina	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	656	1491	Geometridae	BGSNL311-23_cns	Eupithecia riparia	0
+8	17	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	557	1026	Geometridae	BGSNL312-23_cns	Eupithecia riparia	2
+0	4	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	656	1515	Geometridae	BGSNL313-23_cns	Eupithecia riparia	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL314-23_cns	Eupithecia rosai	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL315-23_cns	Eupithecia rosai	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL316-23_cns	Eupithecia rosai	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL317-23_cns	Eupithecia rosai	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL318-23_cns	Eupithecia rosmarinata	0
+0	4	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL319-23_cns	Eupithecia rosmarinata	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL320-23_cns	Eupithecia rosmarinata	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL321-23_cns	Eupithecia santolinata	0
+0	1	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL322-23_cns	Eupithecia santolinata	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL323-23_cns	Eupithecia santolinata	0
+0	3	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1416	Geometridae	BGSNL324-23_cns	Eupithecia scalptata	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL325-23_cns	Eupithecia scalptata	0
+28	41	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	611	1350	Geometridae	BGSNL326-23_cns	Eupithecia scalptata	0
+0	2	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1506	Geometridae	BGSNL327-23_cns	Eupithecia schuetzeata	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL328-23_cns	Eupithecia schuetzeata	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL329-23_cns	Eupithecia schuetzeata	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL330-23_cns	Eupithecia spadiceata	0
+15	25	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	645	1395	Geometridae	BGSNL331-23_cns	Eupithecia spadiceata	0
+11	11	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL332-23_cns	Eupithecia spadiceata	0
+0	1	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL333-23_cns	Eupithecia spadiceata	0
+0	7	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1530	Geometridae	BGSNL334-23_cns	Eupithecia stertzi	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL335-23_cns	Eupithecia stertzi	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL336-23_cns	Eupithecia stertzi	0
+10	28	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	537	1392	Geometridae	BGSNL337-23_cns	Eupithecia sutiliata	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1491	Geometridae	BGSNL338-23_cns	Eupithecia sutiliata	0
+3	10	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	311	777	Noctuidae,Geometridae	BGSNL339-23_cns	Eupithecia sutiliata	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL340-23_cns	Eupithecia tenerifensis	0
+0	2	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL341-23_cns	Eupithecia tenerifensis	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL342-23_cns	Eupithecia tenerifensis	0
+1	2	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL343-23_cns	Eupithecia usbeca	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL344-23_cns	Eupithecia usbeca	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL345-23_cns	Eupithecia usbeca	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL346-23_cns	Eupithecia rosai	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL347-23_cns	Eupithecia rosai	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL348-23_cns	Eupithecia maspalomae	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL349-23_cns	Eupithecia maspalomae	0
+28	34	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	645	1257	Geometridae	BGSNL350-23_cns	Eupithecia semigraphata	0
+1	1	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	523	597	Oecophoridae,Zygaenidae,Nymphalidae,Geometridae	BGSNL351-23_cns	Eupithecia graphata	4
+5	13	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	225	726	Geometridae	BGSNL352-23_cns	Eupithecia impurata	6
+19	59	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	553	1071	Noctuidae,Notodontidae,Euteliidae,Crambidae,Geometridae	BGSNL353-23_cns	Eupithecia impurata	0
+21	41	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	468	795	Depressariidae,Geometridae	BGSNL354-23_cns	Eupithecia impurata	0
+10	15	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	605	1389	Geometridae	BGSNL355-23_cns	Eupithecia impurata	0
+0	9	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	655	1365	Timematidae,Curculionidae,Drosophilidae,Tephritidae,Formicidae,Geometridae	BGSNL356-23_cns	Eupithecia druentiata	0
+8	20	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	486	1206	Geometridae	BGSNL357-23_cns	Eupithecia cyrneata	1
+0	32	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	582	1377	Nymphalidae,Geometridae	BGSNL358-23_cns	Eupithecia denotata	1
+7	7	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	557	981	Geometridae	BGSNL359-23_cns	Eupithecia thurnerata	0
+11	11	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	438	591	Geometridae	BGSNL360-23_cns	Eupithecia impurata	0
+4	9	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	471	1113	Geometridae	BGSNL361-23_cns	Eupithecia quercetica	2
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL362-23_cns	Eupithecia addictata	0
+3	6	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	528	1296	Geometridae	BGSNL363-23_cns	Eupithecia pyreneata	0
+5	7	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL364-23_cns	Eupithecia pyreneata	0
+7	8	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1452	Geometridae	BGSNL365-23_cns	Eupithecia schuetzeata	0
+8	10	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	636	1476	Geometridae	BGSNL366-23_cns	Eupithecia catharinae	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	309	354	Culicidae,Depressariidae,Saturniidae,Nymphalidae,Geometridae	BGSNL367-23_cns	Eupithecia catharinae	10
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	656	1515	Geometridae	BGSNL368-23_cns	Eupithecia karadaghensis	0
+0	1	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	81	558	Oecophoridae,Crambidae,Geometridae	BGSNL369-23_cns	Eupithecia fuscicostata	0
+1	1	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL370-23_cns	Eupithecia pantellata	0
+0	5	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL371-23_cns	Minoa lutea	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL372-23_cns	Minoa lutea	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL373-23_cns	Timandra rectistrigaria	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL374-23_cns	Timandra rectistrigaria	0
+1	5	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1491	Geometridae	BGSNL375-23_cns	Ramitia obliquelineata	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL376-23_cns	Ramitia obliquelineata	0
+1	7	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL377-23_cns	Ramitia obliquelineata	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL378-23_cns	Ramitia sinensis	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL379-23_cns	Ramitia sinensis	0
+0	0	data/BGE00294_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL380-23_cns	Ramitia sinensis	0

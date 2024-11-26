@@ -1,97 +1,97 @@
-ambig_basecount	ambig_full_basecount	error	family	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	process_id	species	stop_codons	fasta_file
-11	16	None	Geometridae	Geometridae	BLAST	family	657	1524	Tortricidae,Limacodidae	BGSNL476-23	Psodos canaliculata	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1494	Geometridae	BGSNL477-23	Psodos canaliculata	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL478-23	Psodos canaliculata	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL479-23	Psodos canaliculata	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL480-23	Psodos canaliculata	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL481-23	Psodos spitzi	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1488	Noctuidae,Geometridae	BGSNL482-23	Psodos spitzi	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	537	1332	Geometridae	BGSNL483-23	Psodos spitzi	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL484-23	Rhoptria dolosaria	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL485-23	Rhoptria dolosaria	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL486-23	Rhoptria dolosaria	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1494	Geometridae	BGSNL487-23	Sciadia dolomitica	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	6	None	Geometridae	Geometridae	BLAST	family	657	1485	Geometridae	BGSNL488-23	Sciadia septaria	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL489-23	Sciadia septaria	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL490-23	Sciadia septaria	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Noctuidae,Geometridae	BGSNL491-23	Selidosema ambustaria	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1527	Noctuidae,Geometridae	BGSNL492-23	Selidosema ambustaria	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Noctuidae,Geometridae	BGSNL493-23	Selidosema ambustaria	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Noctuidae,Geometridae	BGSNL494-23	Selidosema tamsi	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Noctuidae,Geometridae	BGSNL495-23	Selidosema tamsi	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Noctuidae,Geometridae	BGSNL496-23	Selidosema tamsi	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	0	None	Geometridae	Geometridae	BLAST	family	1	156		BGSNL497-23	Phyllometra gracilaria	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1494	Noctuidae,Geometridae	BGSNL498-23	Phyllometra gracilaria	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Noctuidae,Geometridae	BGSNL499-23	Phyllometra gracilaria	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1530	Noctuidae,Geometridae	BGSNL500-23	Tephronia psyloritaria	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Noctuidae,Geometridae	BGSNL501-23	Tephronia theophilaria	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Noctuidae,Geometridae	BGSNL502-23	Tephronia theophilaria	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Noctuidae,Geometridae	BGSNL503-23	Tephronia theophilaria	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL504-23	Toulgoetia cauteriata	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	6	None	Geometridae	Geometridae	BLAST	family	657	1530	Geometridae	BGSNL505-23	Toulgoetia cauteriata	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Geometridae	BGSNL506-23	Toulgoetia cauteriata	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Noctuidae,Geometridae	BGSNL507-23	Zernyia granataria	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	657	1518	Noctuidae,Geometridae	BGSNL508-23	Zernyia granataria	0	data/BGE00296_MGE_cox1_insect_universal.fas
-14	17	None	Geometridae	Geometridae	BLAST	family	609	1263	Noctuidae,Geometridae	BGSNL509-23	Zernyia granataria	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Geometridae	Geometridae	BLAST	family	163	555	Nymphalidae,Geometridae	BGSNL510-23	Zernyia granataria	0	data/BGE00296_MGE_cox1_insect_universal.fas
-13	13	None	Alucitidae	Alucitidae	BLAST	family	533	1155	Nymphalidae,Alucitidae	BGSNL511-23	Alucita bidentata	0	data/BGE00296_MGE_cox1_insect_universal.fas
-14	14	None	Alucitidae	Alucitidae	BLAST	family	651	1461	Noctuidae,Crambidae,Geometridae,Alucitidae	BGSNL512-23	Alucita canariensis	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Alucitidae	Alucitidae	BLAST	family	657	1518	Noctuidae,Pyralidae,Crambidae,Alucitidae	BGSNL513-23	Alucita canariensis	0	data/BGE00296_MGE_cox1_insect_universal.fas
-3	62	None	Alucitidae	Alucitidae	BLAST	family	412	972	Crambidae,Geometridae,Alucitidae	BGSNL514-23	Alucita canariensis	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Alucitidae	Alucitidae	BLAST	family	657	1527	Erebidae,Crambidae,Alucitidae	BGSNL515-23	Alucita iberica	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Alucitidae	Alucitidae	BLAST	family	657	1527	Erebidae,Crambidae,Alucitidae	BGSNL516-23	Alucita iberica	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Alucitidae	Alucitidae	BLAST	family	657	1530	Erebidae,Crambidae,Alucitidae	BGSNL517-23	Alucita iberica	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Alucitidae	Alucitidae	BLAST	family	657	1518	Erebidae,Pyralidae,Crambidae,Alucitidae	BGSNL518-23	Alucita major	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Alucitidae	Alucitidae	BLAST	family	657	1530	Oecophoridae,Erebidae,Crambidae,Alucitidae	BGSNL519-23	Alucita major	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Alucitidae	Alucitidae	BLAST	family	657	1518	Oecophoridae,Erebidae,Crambidae,Alucitidae	BGSNL520-23	Alucita major	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Alucitidae	Alucitidae	BLAST	family	657	1530	Nymphalidae,Pyralidae,Crambidae,Alucitidae	BGSNL521-23	Alucita pectinata	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Momphidae	Momphidae	BLAST	family	61	294	Nymphalidae,Crambidae	BGSNL522-23	Mompha bradleyi	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	4	None	Momphidae	Momphidae	BLAST	family	192	549	Tettigoniidae,Acrididae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Psychodidae,Vespidae,Tetracampidae	BGSNL523-23	Mompha bradleyi	1	data/BGE00296_MGE_cox1_insect_universal.fas
-0	0	None	Momphidae	Momphidae	BLAST	family	110	501		BGSNL524-23	Mompha bradleyi	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Plutellidae	Plutellidae	BLAST	family	656	1443	Tettigoniidae,Acrididae,Ninidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BGSNL525-23	Eidophasia insulella	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	5	None	Plutellidae	Plutellidae	BLAST	family	657	1491	Depressariidae,Yponomeutidae,Crambidae	BGSNL526-23	Eidophasia zukowskyi	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Plutellidae	Plutellidae	BLAST	family	657	1518	Yponomeutidae,Plutellidae,Crambidae	BGSNL527-23	Eidophasia zukowskyi	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Plutellidae	Plutellidae	BLAST	family	657	1518	Yponomeutidae,Plutellidae,Crambidae	BGSNL528-23	Eidophasia zukowskyi	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Plutellidae	Plutellidae	BLAST	family	657	1518	Oecophoridae,Depressariidae,Yponomeutidae,Plutellidae,Crambidae	BGSNL529-23	Lunakia alyssella	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Plutellidae	Plutellidae	BLAST	family	657	1494	Oecophoridae,Depressariidae,Yponomeutidae,Plutellidae,Crambidae	BGSNL530-23	Lunakia alyssella	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Plutellidae	Plutellidae	BLAST	family	657	1518	Oecophoridae,Depressariidae,Yponomeutidae,Plutellidae,Crambidae	BGSNL531-23	Lunakia alyssella	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Plutellidae	Plutellidae	BLAST	family	657	1518	Yponomeutidae,Plutellidae,Erebidae,Crambidae	BGSNL532-23	Plutella geniatella	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Plutellidae	Plutellidae	BLAST	family	657	1494	Yponomeutidae,Plutellidae,Argyresthiidae,Crambidae	BGSNL533-23	Plutella geniatella	0	data/BGE00296_MGE_cox1_insect_universal.fas
-1	4	None	Plutellidae	Plutellidae	BLAST	family	657	1518	Yponomeutidae,Plutellidae,Argyresthiidae,Crambidae	BGSNL534-23	Plutella geniatella	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Plutellidae	Plutellidae	BLAST	family	657	1518	Plutellidae,Argyresthiidae,Crambidae	BGSNL535-23	Plutella haasi	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Plutellidae	Plutellidae	BLAST	family	657	1518	Plutellidae,Argyresthiidae,Crambidae	BGSNL536-23	Plutella haasi	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Plutellidae	Plutellidae	BLAST	family	657	1518	Plutellidae,Argyresthiidae,Crambidae	BGSNL537-23	Plutella hyperboreella	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Plutellidae	Plutellidae	BLAST	family	657	1518	Plutellidae,Argyresthiidae,Crambidae	BGSNL538-23	Plutella hyperboreella	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Plutellidae	Plutellidae	BLAST	family	657	1431	Plutellidae,Argyresthiidae,Crambidae	BGSNL539-23	Plutella hyperboreella	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Yponomeutidae	Yponomeutidae	BLAST	family	657	1518	Yponomeutidae	BGSNL540-23	Zelleria wolffi	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Yponomeutidae	Yponomeutidae	BLAST	family	657	1518	Yponomeutidae	BGSNL541-23	Zelleria wolffi	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Yponomeutidae	Yponomeutidae	BLAST	family	657	1518	Yponomeutidae	BGSNL542-23	Zelleria wolffi	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	657	1518	Crambidae	BGSNL543-23	Aeschremon conchylialis	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	657	1518	Crambidae	BGSNL544-23	Aeschremon conchylialis	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	657	1518	Crambidae	BGSNL545-23	Aeschremon conchylialis	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	657	1527	Noctuidae,Crambidae	BGSNL546-23	Aeschremon disparalis	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	657	1518	Noctuidae,Crambidae	BGSNL547-23	Aeschremon disparalis	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	657	1530	Crambidae	BGSNL548-23	Aeschremon disparalis	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	474	1107	Crambidae	BGSNL549-23	Agriphila alpina	0	data/BGE00296_MGE_cox1_insect_universal.fas
-20	20	None	Crambidae	Crambidae	BLAST	family	612	1305	Crambidae	BGSNL550-23	Agriphila alpina	0	data/BGE00296_MGE_cox1_insect_universal.fas
-14	34	None	Crambidae	Crambidae	BLAST	family	657	1530	Staphylinidae,Leiodidae,Syrphidae,Nymphalidae,Nevrorthidae	BGSNL551-23	Agriphila alpina	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	657	1518	Crambidae	BGSNL552-23	Agriphila argentistrigellus	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	657	1494	Crambidae	BGSNL553-23	Agriphila argentistrigellus	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	656	1518	Crambidae	BGSNL554-23	Agriphila atlanticus	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	4	None	Crambidae	Crambidae	BLAST	family	650	1479	Crambidae	BGSNL555-23	Agriphila atlanticus	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	656	1518	Crambidae	BGSNL556-23	Agriphila atlanticus	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	657	1374	Crambidae	BGSNL557-23	Agriphila beieri	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	657	1518	Crambidae	BGSNL558-23	Agriphila cyrenaicellus	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	657	1518	Crambidae	BGSNL559-23	Agriphila cyrenaicellus	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	657	1518	Crambidae	BGSNL560-23	Agriphila cyrenaicellus	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	657	1518	Crambidae	BGSNL561-23	Agriphila dalmatinellus	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	657	1461	Crambidae	BGSNL562-23	Agriphila dalmatinellus	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	12	None	Crambidae	Crambidae	BLAST	family	657	1482	Crambidae	BGSNL563-23	Agriphila dalmatinellus	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	657	1530	Crambidae	BGSNL564-23	Agriphila tersellus	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	657	1518	Crambidae	BGSNL565-23	Agriphila tersellus	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	657	1518	Crambidae	BGSNL566-23	Agriphila tersellus	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	657	1518	Crambidae	BGSNL567-23	Agriphila paleatellus	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	657	1494	Crambidae	BGSNL568-23	Agriphila paleatellus	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	656	1530	Crambidae	BGSNL569-23	Agriphila paleatellus	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	None	Crambidae	Crambidae	BLAST	family	657	1518	Crambidae	BGSNL570-23	Anania atlanticum	0	data/BGE00296_MGE_cox1_insect_universal.fas
-0	3	NC-BGE00296 not in BOLD	None	None	BLAST	family	1	282		NC-BGE00296	None	0	data/BGE00296_MGE_cox1_insect_universal.fas
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+11	13	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1521	Tortricidae,Limacodidae	BGSNL476-23_cns	Psodos canaliculata	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1491	Geometridae	BGSNL477-23_cns	Psodos canaliculata	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL478-23_cns	Psodos canaliculata	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL479-23_cns	Psodos canaliculata	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1512	Geometridae	BGSNL480-23_cns	Psodos canaliculata	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL481-23_cns	Psodos spitzi	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1485	Noctuidae,Geometridae	BGSNL482-23_cns	Psodos spitzi	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	537	1329	Geometridae	BGSNL483-23_cns	Psodos spitzi	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL484-23_cns	Rhoptria dolosaria	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL485-23_cns	Rhoptria dolosaria	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL486-23_cns	Rhoptria dolosaria	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1491	Geometridae	BGSNL487-23_cns	Sciadia dolomitica	0
+0	3	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1482	Geometridae	BGSNL488-23_cns	Sciadia septaria	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL489-23_cns	Sciadia septaria	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Geometridae	BGSNL490-23_cns	Sciadia septaria	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Noctuidae,Geometridae	BGSNL491-23_cns	Selidosema ambustaria	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1524	Noctuidae,Geometridae	BGSNL492-23_cns	Selidosema ambustaria	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Noctuidae,Geometridae	BGSNL493-23_cns	Selidosema ambustaria	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Noctuidae,Geometridae	BGSNL494-23_cns	Selidosema tamsi	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Noctuidae,Geometridae	BGSNL495-23_cns	Selidosema tamsi	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Noctuidae,Geometridae	BGSNL496-23_cns	Selidosema tamsi	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	1	156		BGSNL497-23_cns	Phyllometra gracilaria	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1491	Noctuidae,Geometridae	BGSNL498-23_cns	Phyllometra gracilaria	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Noctuidae,Geometridae	BGSNL499-23_cns	Phyllometra gracilaria	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1527	Noctuidae,Geometridae	BGSNL500-23_cns	Tephronia psyloritaria	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Noctuidae,Geometridae	BGSNL501-23_cns	Tephronia theophilaria	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Noctuidae,Geometridae	BGSNL502-23_cns	Tephronia theophilaria	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Noctuidae,Geometridae	BGSNL503-23_cns	Tephronia theophilaria	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL504-23_cns	Toulgoetia cauteriata	0
+0	3	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1527	Geometridae	BGSNL505-23_cns	Toulgoetia cauteriata	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Geometridae	BGSNL506-23_cns	Toulgoetia cauteriata	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Noctuidae,Geometridae	BGSNL507-23_cns	Zernyia granataria	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1515	Noctuidae,Geometridae	BGSNL508-23_cns	Zernyia granataria	0
+14	14	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	609	1260	Noctuidae,Geometridae	BGSNL509-23_cns	Zernyia granataria	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	163	552	Nymphalidae,Geometridae	BGSNL510-23_cns	Zernyia granataria	0
+13	13	data/BGE00296_MGE_cox1_insect_universal.fas	None	Alucitidae	BLAST	family	533	1155	Nymphalidae,Alucitidae	BGSNL511-23_cns	Alucita bidentata	0
+14	14	data/BGE00296_MGE_cox1_insect_universal.fas	None	Alucitidae	BLAST	family	651	1461	Noctuidae,Crambidae,Geometridae,Alucitidae	BGSNL512-23_cns	Alucita canariensis	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Alucitidae	BLAST	family	657	1515	Noctuidae,Pyralidae,Crambidae,Alucitidae	BGSNL513-23_cns	Alucita canariensis	0
+3	62	data/BGE00296_MGE_cox1_insect_universal.fas	None	Alucitidae	BLAST	family	412	972	Crambidae,Geometridae,Alucitidae	BGSNL514-23_cns	Alucita canariensis	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Alucitidae	BLAST	family	657	1524	Erebidae,Crambidae,Alucitidae	BGSNL515-23_cns	Alucita iberica	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Alucitidae	BLAST	family	657	1524	Erebidae,Crambidae,Alucitidae	BGSNL516-23_cns	Alucita iberica	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Alucitidae	BLAST	family	657	1527	Erebidae,Crambidae,Alucitidae	BGSNL517-23_cns	Alucita iberica	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Alucitidae	BLAST	family	657	1515	Erebidae,Pyralidae,Crambidae,Alucitidae	BGSNL518-23_cns	Alucita major	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Alucitidae	BLAST	family	657	1527	Oecophoridae,Erebidae,Crambidae,Alucitidae	BGSNL519-23_cns	Alucita major	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Alucitidae	BLAST	family	657	1515	Oecophoridae,Erebidae,Crambidae,Alucitidae	BGSNL520-23_cns	Alucita major	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Alucitidae	BLAST	family	657	1527	Nymphalidae,Pyralidae,Crambidae,Alucitidae	BGSNL521-23_cns	Alucita pectinata	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Momphidae	BLAST	family	62	291	Nymphalidae,Crambidae	BGSNL522-23_cns	Mompha bradleyi	0
+0	4	data/BGE00296_MGE_cox1_insect_universal.fas	None	Momphidae	BLAST	family	192	549	Tettigoniidae,Acrididae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Psychodidae,Vespidae,Tetracampidae	BGSNL523-23_cns	Mompha bradleyi	1
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Momphidae	BLAST	family	110	501		BGSNL524-23_cns	Mompha bradleyi	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Plutellidae	BLAST	family	656	1440	Tettigoniidae,Acrididae,Ninidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BGSNL525-23_cns	Eidophasia insulella	0
+0	2	data/BGE00296_MGE_cox1_insect_universal.fas	None	Plutellidae	BLAST	family	657	1488	Depressariidae,Yponomeutidae,Crambidae	BGSNL526-23_cns	Eidophasia zukowskyi	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Plutellidae	BLAST	family	657	1515	Yponomeutidae,Plutellidae,Crambidae	BGSNL527-23_cns	Eidophasia zukowskyi	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Plutellidae	BLAST	family	657	1515	Yponomeutidae,Plutellidae,Crambidae	BGSNL528-23_cns	Eidophasia zukowskyi	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Plutellidae	BLAST	family	657	1515	Oecophoridae,Depressariidae,Yponomeutidae,Plutellidae,Crambidae	BGSNL529-23_cns	Lunakia alyssella	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Plutellidae	BLAST	family	657	1491	Oecophoridae,Depressariidae,Yponomeutidae,Plutellidae,Crambidae	BGSNL530-23_cns	Lunakia alyssella	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Plutellidae	BLAST	family	657	1515	Oecophoridae,Depressariidae,Yponomeutidae,Plutellidae,Crambidae	BGSNL531-23_cns	Lunakia alyssella	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Plutellidae	BLAST	family	657	1515	Yponomeutidae,Plutellidae,Erebidae,Crambidae	BGSNL532-23_cns	Plutella geniatella	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Plutellidae	BLAST	family	657	1491	Yponomeutidae,Plutellidae,Argyresthiidae,Crambidae	BGSNL533-23_cns	Plutella geniatella	0
+1	1	data/BGE00296_MGE_cox1_insect_universal.fas	None	Plutellidae	BLAST	family	657	1515	Yponomeutidae,Plutellidae,Argyresthiidae,Crambidae	BGSNL534-23_cns	Plutella geniatella	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Plutellidae	BLAST	family	657	1515	Plutellidae,Argyresthiidae,Crambidae	BGSNL535-23_cns	Plutella haasi	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Plutellidae	BLAST	family	657	1515	Plutellidae,Argyresthiidae,Crambidae	BGSNL536-23_cns	Plutella haasi	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Plutellidae	BLAST	family	657	1515	Plutellidae,Argyresthiidae,Crambidae	BGSNL537-23_cns	Plutella hyperboreella	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Plutellidae	BLAST	family	657	1515	Plutellidae,Argyresthiidae,Crambidae	BGSNL538-23_cns	Plutella hyperboreella	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Plutellidae	BLAST	family	657	1428	Plutellidae,Argyresthiidae,Crambidae	BGSNL539-23_cns	Plutella hyperboreella	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Yponomeutidae	BLAST	family	657	1515	Yponomeutidae	BGSNL540-23_cns	Zelleria wolffi	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Yponomeutidae	BLAST	family	657	1515	Yponomeutidae	BGSNL541-23_cns	Zelleria wolffi	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Yponomeutidae	BLAST	family	657	1515	Yponomeutidae	BGSNL542-23_cns	Zelleria wolffi	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1515	Crambidae	BGSNL543-23_cns	Aeschremon conchylialis	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1515	Crambidae	BGSNL544-23_cns	Aeschremon conchylialis	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1515	Crambidae	BGSNL545-23_cns	Aeschremon conchylialis	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1524	Noctuidae,Crambidae	BGSNL546-23_cns	Aeschremon disparalis	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1515	Noctuidae,Crambidae	BGSNL547-23_cns	Aeschremon disparalis	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1527	Crambidae	BGSNL548-23_cns	Aeschremon disparalis	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	474	1104	Crambidae	BGSNL549-23_cns	Agriphila alpina	0
+20	20	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	612	1305	Crambidae	BGSNL550-23_cns	Agriphila alpina	0
+14	31	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1527	Staphylinidae,Leiodidae,Syrphidae,Nymphalidae,Nevrorthidae	BGSNL551-23_cns	Agriphila alpina	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1515	Crambidae	BGSNL552-23_cns	Agriphila argentistrigellus	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1491	Crambidae	BGSNL553-23_cns	Agriphila argentistrigellus	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	656	1515	Crambidae	BGSNL554-23_cns	Agriphila atlanticus	0
+0	1	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	650	1476	Crambidae	BGSNL555-23_cns	Agriphila atlanticus	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	656	1515	Crambidae	BGSNL556-23_cns	Agriphila atlanticus	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1371	Crambidae	BGSNL557-23_cns	Agriphila beieri	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1515	Crambidae	BGSNL558-23_cns	Agriphila cyrenaicellus	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1515	Crambidae	BGSNL559-23_cns	Agriphila cyrenaicellus	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1515	Crambidae	BGSNL560-23_cns	Agriphila cyrenaicellus	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1515	Crambidae	BGSNL561-23_cns	Agriphila dalmatinellus	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1458	Crambidae	BGSNL562-23_cns	Agriphila dalmatinellus	0
+0	9	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1479	Crambidae	BGSNL563-23_cns	Agriphila dalmatinellus	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1527	Crambidae	BGSNL564-23_cns	Agriphila tersellus	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1515	Crambidae	BGSNL565-23_cns	Agriphila tersellus	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1515	Crambidae	BGSNL566-23_cns	Agriphila tersellus	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1515	Crambidae	BGSNL567-23_cns	Agriphila paleatellus	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1491	Crambidae	BGSNL568-23_cns	Agriphila paleatellus	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	656	1527	Crambidae	BGSNL569-23_cns	Agriphila paleatellus	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1515	Crambidae	BGSNL570-23_cns	Anania atlanticum	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	NC-BGE00296 not in BOLD	None	BLAST	family	1	279		NC-BGE00296_cns	None	0
