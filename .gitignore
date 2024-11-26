@@ -1,3 +1,5 @@
+data/pass
+data/fail
 # env.sh contains GITHUB_TOKEN and PYTHONPATH
 env.sh
 .idea
