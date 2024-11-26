@@ -50,10 +50,12 @@ process_tsv <- function(file_path) {
       genes = clean_bracketed_value(genes),
       r = as.numeric(clean_bracketed_value(r)),
       s = as.integer(clean_bracketed_value(s)),
+      cov_avg = as.numeric(cov_avg),
       method = method,
       across(any_of(c("ambig_basecount", "ambig_full_basecount", "length", 
                      "n_aligned", "n_reads", "nuc_basecount", 
-                     "nuc_full_basecount", "stop_codons")), as.integer)
+                     "nuc_full_basecount", "stop_codons", "cov_max", 
+                     "cov_min")), as.integer)
     )
   
   return(df)
