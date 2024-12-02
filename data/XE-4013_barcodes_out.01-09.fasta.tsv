@@ -1288,3 +1288,71 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 0	0	data/XE-4013_barcodes_out.part-09.fasta	None	Miridae	BLAST	family	456	457	Miridae	BSUIO108-24_r_1_s_50_BSUIO108-24	Criocoris	0
 0	0	data/XE-4013_barcodes_out.part-09.fasta	None	Miridae	BLAST	family	655	661	Miridae	BSUIO109-24_r_1_s_50_BSUIO109-24	Trigonotylus	0
 0	0	data/XE-4013_barcodes_out.part-09.fasta	None	Miridae	BLAST	family	657	661	Miridae	BSUIO110-24_r_1.5_s_100_BSUIO110-24	Zygimus	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Dolichopodidae	BLAST	family	656	661	Dolichopodidae	BSUIO111-24_r_1_s_50_BSUIO111-24	Gymnopternus	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Dolichopodidae	BLAST	family	656	661	Dolichopodidae	BSUIO112-24_r_1_s_50_BSUIO112-24	Gymnopternus	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Dolichopodidae	BLAST	family	656	661	Dolichopodidae	BSUIO113-24_r_1_s_50_BSUIO113-24	Gymnopternus	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Dolichopodidae	BLAST	family	657	661	Dolichopodidae	BSUIO115-24_r_1_s_50_BSUIO115-24	Neurigona	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Dolichopodidae	BLAST	family	657	661	Dolichopodidae	BSUIO116-24_r_1.3_s_50_BSUIO116-24	Neurigona	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Dolichopodidae	BLAST	family	657	661	Dolichopodidae	BSUIO117-24_r_1_s_50_BSUIO117-24	Neurigona	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Empididae	BLAST	family	657	661	Empididae	BSUIO118-24_r_1_s_50_BSUIO118-24	Hilara	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Hybotidae	BLAST	family	656	661	Hybotidae	BSUIO126-24_r_1.3_s_50_BSUIO126-24	Bicellaria	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Hybotidae	BLAST	family	656	661	Hybotidae	BSUIO127-24_r_1.3_s_50_BSUIO127-24	Bicellaria	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Hybotidae	BLAST	family	652	661	Empididae,Dolichopodidae,Hybotidae,Drosophilidae,Sphaeroceridae	BSUIO129-24_r_1_s_50_BSUIO129-24	Platypalpus	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Hybotidae	BLAST	family	651	661	Empididae,Hybotidae,Drosophilidae	BSUIO130-24_r_1_s_50_BSUIO130-24	Platypalpus	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Hybotidae	BLAST	family	651	661	Empididae,Hybotidae,Drosophilidae	BSUIO131-24_r_1.5_s_50_BSUIO131-24	Platypalpus	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Hybotidae	BLAST	family	651	661	Empididae,Hybotidae,Drosophilidae	BSUIO132-24_r_1_s_50_BSUIO132-24	Platypalpus	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Pectinidae	BLAST	family	648	661	Pectinidae	BSUIO134-24_r_1_s_50_BSUIO134-24	Chlamys	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Nuculidae	BLAST	family	655	661	Nuculidae	BSUIO139-24_r_1_s_100_BSUIO139-24	Ennucula	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Nuculidae	BLAST	family	426	430	Nuculidae	BSUIO140-24_r_1_s_100_BSUIO140-24	Ennucula	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Nuculidae	BLAST	family	655	661	Nuculidae	BSUIO141-24_r_1_s_50_BSUIO141-24	Ennucula	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Thyasiridae	BLAST	family	629	661	Thyasiridae	BSUIO143-24_r_1_s_50_BSUIO143-24	Thyasira	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Thyasiridae	BLAST	family	629	661	Thyasiridae	BSUIO144-24_r_1_s_50_BSUIO144-24	Thyasira	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Thyasiridae	BLAST	family	624	661	Thyasiridae	BSUIO164-24_r_1_s_50_BSUIO164-24	Axinopsida	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Cuspidariidae	BLAST	family	359	372	Cuspidariidae	BSUIO171-24_r_1_s_100_BSUIO171-24_fastp	Cuspidaria	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Tenebrionidae	BLAST	family	652	661	Termitidae,Anthocoridae,Ceratopogonidae,Sarcophagidae	BSUIO179-24_r_1_s_50_BSUIO179-24_fastp	Eledona	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Flabelligeridae	BLAST	family	655	661	Terebellidae	BSUIO291-24_r_1.3_s_50_BSUIO291-24	Brada granulosa	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Chaetopteridae	BLAST	family	597	640	Spionidae	BSUIO303-24_r_1_s_100_BSUIO303-24	Spiochaetopterus typicus	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Chaetopteridae	BLAST	family	597	661	Spionidae,Eunicidae	BSUIO304-24_r_1.5_s_50_BSUIO304-24_fastp	Spiochaetopterus typicus	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Bonelliidae	BLAST	family	470	474	Orbiniidae,Spionidae,Aphroditidae,Eunicidae	BSUIO312-24_r_1_s_50_BSUIO312-24	Bonellia viridis	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Bonelliidae	BLAST	family	656	661	Orbiniidae,Terebellidae,Spionidae,Eunicidae,Onuphidae	BSUIO313-24_r_1_s_50_BSUIO313-24	Bonellia viridis	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Orbiniidae	BLAST	family	614	661	Orbiniidae	BSUIO322-24_r_1.3_s_50_BSUIO322-24	Phylo norvegica	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Orbiniidae	BLAST	family	614	661	Orbiniidae	BSUIO323-24_r_1_s_50_BSUIO323-24	Phylo norvegica	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Orbiniidae	BLAST	family	614	661	Orbiniidae	BSUIO324-24_r_1_s_50_BSUIO324-24	Phylo norvegica	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Sabellidae	BLAST	family	656	661	Ampharetidae,Protodrilidae	BSUIO335-24_r_1_s_100_BSUIO335-24	Branchiomma argus	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Lumbrineridae	BLAST	family	654	661	Spionidae,Nereididae,Syllidae,Archinomidae,Nerillidae	BSUIO372-24_r_1_s_50_BSUIO372-24	Scoletoma magnidentata	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Calliostomatidae	BLAST	family	637	661	Calliostomatidae	BSUIO385-24_r_1_s_50_BSUIO385-24	Calliostoma gualterianum	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Buccinidae	BLAST	family	617	622	Buccinidae	BSUIO386-24_r_1.5_s_50_BSUIO386-24	Buccinum micropoma	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Aporrhaidae	BLAST	family	656	661	Columbellidae,Aporrhaidae	BSUIO387-24_r_1_s_50_BSUIO387-24	Aporrhais serresianus	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Aporrhaidae	BLAST	family	656	661	Columbellidae,Aporrhaidae	BSUIO388-24_r_1_s_50_BSUIO388-24	Aporrhais serresianus	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Aporrhaidae	BLAST	family	325	327	Muricidae,Aporrhaidae	BSUIO389-24_r_1.3_s_50_BSUIO389-24	Aporrhais serresianus	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Buccinidae	BLAST	family	655	661	Buccinidae	BSUIO391-24_r_1_s_50_BSUIO391-24	Volutopsius norwegicus	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Buccinidae	BLAST	family	654	661	Buccinidae	BSUIO392-24_r_1_s_100_BSUIO392-24	Buccinum cyaneum	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Buccinidae	BLAST	family	653	661	Buccinidae	BSUIO393-24_r_1_s_50_BSUIO393-24	Buccinum maltzani	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Buccinidae	BLAST	family	653	661	Buccinidae	BSUIO394-24_r_1_s_100_BSUIO394-24	Buccinum maltzani	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Buccinidae	BLAST	family	653	661	Buccinidae	BSUIO395-24_r_1_s_50_BSUIO395-24	Buccinum maltzani	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Planorbidae	BLAST	family	519	520	Planorbidae	BSUIO397-24_r_1.5_s_50_BSUIO397-24	Gyraulus acronicus	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Euconulidae	BLAST	family	345	352	Euconulidae	BSUIO399-24_r_1_s_100_BSUIO399-24	Euconulus alderi	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Euconulidae	BLAST	family	653	661	Euconulidae	BSUIO400-24_r_1.3_s_50_BSUIO400-24	Euconulus alderi	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Euconulidae	BLAST	family	407	411	Euconulidae	BSUIO401-24_r_1.5_s_50_BSUIO401-24	Euconulus alderi	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Physidae	BLAST	family	652	661	Physidae	BSUIO403-24_r_1_s_50_BSUIO403-24	Physa fontinalis	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Valloniidae	BLAST	family	653	661	Volutidae,Partulidae,Strobilopsidae,Boettgerillidae,Ariophantidae,Euconulidae	BSUIO409-24_r_1_s_100_BSUIO409-24_fastp	Spermodea lamellata	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Margaritidae	BLAST	family	656	661	Unionidae	BSUIO412-24_r_1.3_s_50_BSUIO412-24	Margarites groenlandicus	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Margaritidae	BLAST	family	656	661	Unionidae	BSUIO413-24_r_1.3_s_50_BSUIO413-24	Margarites groenlandicus	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Clausiliidae	BLAST	family	652	661	Clausiliidae	BSUIO414-24_r_1_s_50_BSUIO414-24	Charpentieria septemplicata	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Succineidae	BLAST	family	653	661	Succineidae	BSUIO415-24_r_1.5_s_100_BSUIO415-24_fastp	Oxyloma sarsii	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Aphroditidae	BLAST	family	535	541	Aphroditidae,Polynoidae,Sigalionidae,Syllidae	BSUIO424-24_r_1.5_s_50_BSUIO424-24	Laetmonice hystrix	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Aphroditidae	BLAST	family	535	541	Spionidae,Aphroditidae,Protodrilidae	BSUIO425-24_r_1.5_s_50_BSUIO425-24	Laetmonice hystrix	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Nephtyidae	BLAST	family	653	661	Nephtyidae	BSUIO431-24_r_1_s_100_BSUIO431-24	Nephtys ciliata	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Nephtyidae	BLAST	family	654	661	Nephtyidae	BSUIO434-24_r_1_s_50_BSUIO434-24	Nephtys incisa	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Phyllodocidae	BLAST	family	344	349	Maldanidae,Flabelligeridae,Terebellidae	BSUIO438-24_r_1_s_100_BSUIO438-24_fastp	Naiades cantrainii	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Polynoidae	BLAST	family	656	661	Polynoidae	BSUIO441-24_r_1.3_s_50_BSUIO441-24	Austrolaenilla mollis	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Polynoidae	BLAST	family	303	310	Polynoidae	BSUIO443-24_r_1.5_s_50_BSUIO443-24_fastp	Bylgides elegans	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Polynoidae	BLAST	family	656	661	Polynoidae	BSUIO450-24_r_1.5_s_100_BSUIO450-24_fastp	Leucia nivea	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Serpulidae	BLAST	family	326	348		BSUIO460-24_r_1_s_50_BSUIO460-24_fastp	Protula intestinum	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Serpulidae	BLAST	family	585	622		BSUIO461-24_r_1_s_100_BSUIO461-24	Protula intestinum	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Serpulidae	BLAST	family	390	405		BSUIO462-24_r_1_s_100_BSUIO462-24_fastp	Apomatus similis	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Serpulidae	BLAST	family	587	661	Serpulidae,Spionidae	BSUIO463-24_r_1_s_50_BSUIO463-24	Apomatus similis	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Serpulidae	BLAST	family	587	640	Serpulidae,Spionidae	BSUIO464-24_r_1_s_100_BSUIO464-24_fastp	Apomatus similis	0
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Serpulidae	BLAST	family	585	613	Spionidae	BSUIO465-24_r_1_s_100_BSUIO465-24	Vermiliopsis monodiscus	10
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Serpulidae	BLAST	family	585	622	Spionidae	BSUIO466-24_r_1_s_100_BSUIO466-24	Vermiliopsis monodiscus	10
+0	0	data/XE-4013_barcodes_out.part-10.fasta	None	Serpulidae	BLAST	family	585	613	Spionidae	BSUIO467-24_r_1_s_100_BSUIO467-24	Vermiliopsis monodiscus	10
