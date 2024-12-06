@@ -1,0 +1,101 @@
+<tool id="barcode_validator" name="Barcode Validator" version="1.0.0">
+    <description>Structural validation of DNA barcode sequences</description>
+    <requirements>
+        <requirement type="package" version="1.81">biopython</requirement>
+    </requirements>
+
+    <command detect_errors="exit_code"><![CDATA[
+        python '$__tool_directory__/structural_validator.py'
+            --marker '$marker'
+            --kingdom '$kingdom'
+            --taxon '$taxon'
+            --fasta '$input'
+            > '$output'
+    ]]></command>
+
+    <inputs>
+        <param name="marker" type="select" label="DNA Barcode Marker">
+            <option value="COI-5P">COI-5P</option>
+            <option value="matK">matK</option>
+            <option value="rbcL">rbcL</option>
+            <option value="ITS1">ITS1</option>
+            <option value="ITS2">ITS2</option>
+            <option value="16S">16S</option>
+            <option value="18S">18S</option>
+        </param>
+
+        <param name="kingdom" type="select" label="Kingdom">
+            <option value="Animalia">Animalia</option>
+            <option value="Plantae">Plantae</option>
+            <option value="Fungi">Fungi</option>
+            <option value="Bacteria">Bacteria</option>
+            <option value="Archaea">Archaea</option>
+        </param>
+
+        <param name="taxon" type="text" label="Taxon Name" help="Taxon name assigned to the specimen">
+            <validator type="empty_field" />
+        </param>
+
+        <param name="input" type="data" format="fasta" label="Input FASTA" />
+    </inputs>
+
+    <outputs>
+        <data name="output" format="tabular" label="${tool.name} on ${on_string}" />
+    </outputs>
+
+    <tests>
+        <test>
+            <param name="marker" value="COI-5P" />
+            <param name="kingdom" value="Animalia" />
+            <param name="taxon" value="Homo sapiens" />
+            <param name="input" value="test.fa" />
+            <output name="output">
+                <assert_contents>
+                    <has_line_matching expression="^sequence_id\ttranslation_table\thas_stop_codons\tstop_codon_positions" />
+                </assert_contents>
+            </output>
+        </test>
+    </tests>
+
+    <help><![CDATA[
+**What it does**
+
+This tool validates DNA barcode sequences as follows:
+
+* If it's a coding marker (COI-5P, matK, rbcL): resolve the taxonomic name against NCBI taxonomy to obtain Phylum,
+  Class and Family; determine genetic code based on taxonomy and marker; align the sequence against the appropriate
+  HMM to determine phase; translate to amino acids to check for premature stop codons that might indicate pseudogenes.
+* In all cases: count the number of ambiguous bases (i.e. non ACGT- characters) within and outside the marker region;
+  count the sequence length within and outside the marker region.
+
+The tool outputs a TSV file with at least the following columns:
+
+* ambig_basecount: number of ambiguous bases
+* ambig_full_basecount: number of ambiguous bases including outside the marker region
+* error: error message if any
+* identification: taxonomic identification as provided
+* nuc_basecount: number of nucleotides
+* nuc_full_basecount: number of nucleotides including outside the marker region
+* sequence_id: ID from the FASTA file
+* stop_codons: number of stop codons found
+
+In addition, there may be other columns, emitted in any order (but with unique headings).
+
+**Input**
+
+* DNA Barcode Marker: Select the marker gene being analyzed
+* Kingdom: Select the kingdom the organism belongs to
+* Taxon Name: Enter the taxonomic name assigned to the specimen
+* Input FASTA: File containing sequence to validate
+
+**Output**
+
+A tabular (TSV) file containing validation results for the sequence.
+    ]]></help>
+
+    <citations>
+        <citation type="doi">10.1093/nar/gkf436</citation>  <!-- Biopython -->
+        <citation type="doi">10.1093/nar/gkx1000</citation>  <!-- NCBI Taxonomy -->
+    </citations>
+
+</tool>
