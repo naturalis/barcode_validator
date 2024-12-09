@@ -1,0 +1,97 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	BGE00176-NC not in BOLD	None	BLAST	family	120	705		BGE00176-NC_cns	None	0
+24	75	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	656	1530	Muscidae,Anthomyiidae,Calliphoridae	BGENL666-24_cns	Coenosia antennata	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	206	666	Argiolestidae,Acrididae,Aphididae,Cicadellidae,Andrenidae	BGENL667-24_cns	Coenosia antennata	0
+14	14	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Dolichopodidae	BLAST	family	215	654	Termitidae,Acrididae,Elateridae,Curculionidae,Dermestidae,Bostrichidae,Tortricidae	BGENL668-24_cns	Syntormon fuscipes	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Dolichopodidae	BLAST	family	164	600		BGENL669-24_cns	Syntormon fuscipes	0
+24	28	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Hybotidae	BLAST	family	556	1308	Tettigoniidae,Elateridae,Tenebrionidae,Hybotidae,Ulidiidae,Vespidae,Noctuidae	BGENL670-24_cns	Tachydromia connexa	0
+1	9	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Hybotidae	BLAST	family	539	1122	Chironomidae	BGENL671-24_cns	Tachydromia connexa	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Lauxaniidae	BLAST	family	657	1536	Drosophilidae,Lauxaniidae,Sepsidae,Sphaeroceridae	BGENL672-24_cns	Calliopum geniculatum	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Lauxaniidae	BLAST	family	657	1533	Drosophilidae,Lauxaniidae,Sepsidae,Sphaeroceridae	BGENL673-24_cns	Calliopum geniculatum	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Lauxaniidae	BLAST	family	657	1533	Drosophilidae,Lauxaniidae,Sepsidae,Sphaeroceridae	BGENL674-24_cns	Calliopum geniculatum	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Lauxaniidae	BLAST	family	657	1533	Drosophilidae,Lauxaniidae,Sphaeroceridae	BGENL675-24_cns	Minettia desmometopa	0
+0	16	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Lauxaniidae	BLAST	family	656	1530	Lauxaniidae	BGENL676-24_cns	Minettia desmometopa	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Lauxaniidae	BLAST	family	657	1533	Drosophilidae,Lauxaniidae,Heleomyzidae	BGENL677-24_cns	Minettia desmometopa	0
+20	33	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	656	1509	Syrphidae,Chloropidae,Tephritidae,Calliphoridae,Sarcophagidae	BGENL678-24_cns	Myopa variegata	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	656	1509	Conopidae,Psilidae,Drosophilidae,Muscidae	BGENL679-24_cns	Myopa variegata	0
+61	134	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Agromyzidae	BLAST	family	656	1521	Drosophilidae,Muscidae	BGENL680-24_cns	Agromyza demeijerei	0
+15	15	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Agromyzidae	BLAST	family	406	768	Aphididae	BGENL681-24_cns	Agromyza demeijerei	0
+22	46	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Agromyzidae	BLAST	family	653	1530	Drosophilidae,Muscidae	BGENL682-24_cns	Agromyza demeijerei	0
+4	4	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Agromyzidae	BLAST	family	429	717	Acrididae,Nitidulidae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Tetracampidae	BGENL683-24_cns	Agromyza ferruginosa	0
+0	6	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Agromyzidae	BLAST	family	657	1533	Syrphidae,Drosophilidae,Tephritidae,Fanniidae,Anthomyiidae,Calliphoridae,Sarcophagidae	BGENL684-24_cns	Agromyza ferruginosa	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Limoniidae	BLAST	family	657	1500	Limoniidae,Empididae,Drosophilidae,Muscidae,Tachinidae	BGENL685-24_cns	Dicranomyia lucida	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Limoniidae	BLAST	family	657	1500	Limoniidae,Empididae,Drosophilidae,Muscidae,Tachinidae	BGENL686-24_cns	Dicranomyia lucida	0
+11	34	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Limoniidae	BLAST	family	657	1533	Drosophilidae,Muscidae,Anthomyiidae,Rhiniidae	BGENL687-24_cns	Euphylidorea lineola	1
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Limoniidae	BLAST	family	657	1533	Limoniidae,Drosophilidae	BGENL688-24_cns	Euphylidorea lineola	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Limoniidae	BLAST	family	657	1533	Limoniidae,Drosophilidae	BGENL689-24_cns	Euphylidorea lineola	0
+20	24	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Anthomyiidae	BLAST	family	619	1425	Dermestidae,Muscidae,Tachinidae	BGENL690-24_cns	Chirosia crassiseta	1
+3	18	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Anthomyiidae	BLAST	family	656	1533	Anthomyiidae	BGENL691-24_cns	Chirosia crassiseta	0
+7	21	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Anthomyiidae	BLAST	family	656	1527	Anthomyiidae	BGENL692-24_cns	Chirosia crassiseta	0
+7	9	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Carnidae	BLAST	family	569	1407	Drosophilidae	BGENL693-24_cns	Meoneura obscurella	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Carnidae	BLAST	family	392	954	Tephritidae,Calliphoridae	BGENL694-24_cns	Meoneura obscurella	0
+5	5	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Carnidae	BLAST	family	280	762		BGENL695-24_cns	Meoneura obscurella	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Chironomidae	BLAST	family	657	1533	Chironomidae	BGENL696-24_cns	Glyptotendipes caulicola	0
+5	11	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Chironomidae	BLAST	family	252	753	Dytiscidae,Carabidae,Syrphidae,Tenthredinidae,Nymphalidae,Crambidae	BGENL697-24_cns	Glyptotendipes caulicola	6
+16	18	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Chironomidae	BLAST	family	477	1122	Carabidae,Hydraenidae,Scarabaeidae,Lucanidae	BGENL698-24_cns	Kloosia pusilla	0
+0	19	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Chironomidae	BLAST	family	405	1128	Carabidae,Chironomidae,Psychodidae,Vespidae	BGENL699-24_cns	Kloosia pusilla	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Limoniidae	BLAST	family	656	1500	Limoniidae,Drosophilidae,Muscidae,Tachinidae,Xylophagaidae	BGENL700-24_cns	Dicranomyia ornata	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Limoniidae	BLAST	family	656	1500	Limoniidae,Drosophilidae,Muscidae,Tachinidae,Xylophagaidae	BGENL701-24_cns	Dicranomyia ornata	0
+2	2	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Limoniidae	BLAST	family	657	1533	Limoniidae,Drosophilidae,Anthomyiidae	BGENL702-24_cns	Lipsothrix remota	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Limoniidae	BLAST	family	657	1533	Limoniidae,Syrphidae,Drosophilidae,Ephydridae,Muscidae	BGENL703-24_cns	Lipsothrix remota	0
+3	3	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Limoniidae	BLAST	family	657	1533	Limoniidae,Drosophilidae,Ephydridae	BGENL704-24_cns	Lipsothrix remota	0
+0	45	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Limoniidae	BLAST	family	410	1044	Curculionidae,Dermestidae,Bostrichidae,Psychodidae,Vespidae,Tetracampidae	BGENL705-24_cns	Thaumastoptera calceata	0
+2	4	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Limoniidae	BLAST	family	214	549	Anthocoridae,Cerambycidae,Curculionidae,Empididae,Noctuidae,Lycaenidae	BGENL706-24_cns	Thaumastoptera calceata	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Limoniidae	BLAST	family	197	687	Termitidae,Hodotermitidae,Asilidae	BGENL707-24_cns	Thaumastoptera calceata	2
+6	10	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Lonchaeidae	BLAST	family	656	1518	Syrphidae,Lauxaniidae,Tephritidae,Calliphoridae	BGENL708-24_cns	Lonchaea malochi	0
+0	3	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Lonchaeidae	BLAST	family	657	1503	Syrphidae,Drosophilidae,Heleomyzidae,Tephritidae,Lonchaeidae	BGENL709-24_cns	Lonchaea malochi	0
+8	18	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Lonchaeidae	BLAST	family	657	1533	Syrphidae,Psilidae,Drosophilidae,Lauxaniidae,Pallopteridae,Tabanidae	BGENL710-24_cns	Lonchaea malochi	0
+5	9	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	656	1440	Tettigoniidae,Acrididae,Ninidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BGENL711-24_cns	Coenosia ambulans	0
+3	8	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	656	1527	Tettigoniidae,Acrididae,Ninidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BGENL712-24_cns	Coenosia ambulans	0
+14	21	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	657	1506		BGENL713-24_cns	Coenosia ambulans	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	400	1044	Agromyzidae,Tachinidae,Polleniidae	BGENL714-24_cns	Coenosia femoralis	0
+3	3	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	657	1530	Muscidae	BGENL715-24_cns	Coenosia femoralis	0
+3	3	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	657	1530	Muscidae	BGENL716-24_cns	Coenosia femoralis	0
+4	5	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	422	984	Acrididae,Reduviidae,Sarcophagidae,Tortricidae	BGENL717-24_cns	Coenosia pygmaea	0
+5	22	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	654	1521	Muscidae,Sarcophagidae	BGENL718-24_cns	Coenosia pygmaea	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	657	1530	Muscidae	BGENL719-24_cns	Coenosia pygmaea	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	657	1530	Muscidae,Anthomyiidae	BGENL720-24_cns	Helina calceata	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	657	1530	Muscidae,Anthomyiidae	BGENL721-24_cns	Helina calceata	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	657	1530	Muscidae,Anthomyiidae	BGENL722-24_cns	Helina calceata	0
+3	3	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	656	1527	Muscidae,Tachinidae	BGENL723-24_cns	Lispe hydromyzina	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	656	1527	Muscidae,Tachinidae	BGENL724-24_cns	Lispe hydromyzina	0
+28	29	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	656	1527	Muscidae,Tachinidae	BGENL725-24_cns	Lispe hydromyzina	0
+0	4	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	657	1533	Ephydridae,Muscidae,Anthomyiidae	BGENL726-24_cns	Neolimnophora virgo	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	657	1533	Ephydridae,Muscidae,Anthomyiidae	BGENL727-24_cns	Neolimnophora virgo	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	657	1542	Ephydridae,Muscidae,Anthomyiidae,Tachinidae	BGENL728-24_cns	Neolimnophora virgo	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	657	1530	Muscidae	BGENL729-24_cns	Phaonia cincta	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	657	1530	Muscidae	BGENL730-24_cns	Phaonia cincta	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	139	780	Lycidae,Endomychidae,Nymphalidae	BGENL731-24_cns	Phaonia cincta	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	657	1533	Muscidae,Anthomyiidae	BGENL732-24_cns	Spilogona marina	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	657	1533	Muscidae,Anthomyiidae	BGENL733-24_cns	Spilogona marina	0
+0	3	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Muscidae	BLAST	family	657	1533	Muscidae	BGENL734-24_cns	Spilogona marina	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Odiniidae	BLAST	family	657	1530	Drosophilidae,Odiniidae,Muscidae	BGENL735-24_cns	Odinia maculata	0
+0	17	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Odiniidae	BLAST	family	453	1284	Drosophilidae,Odiniidae,Anthomyiidae	BGENL736-24_cns	Odinia maculata	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Odiniidae	BLAST	family	657	1530	Drosophilidae,Odiniidae,Muscidae	BGENL737-24_cns	Odinia maculata	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Opomyzidae	BLAST	family	657	1530	Psilidae,Drosophilidae,Sphaeroceridae,Piophilidae	BGENL738-24_cns	Geomyza nartshukae	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Opomyzidae	BLAST	family	657	1533	Psilidae,Drosophilidae,Sphaeroceridae,Piophilidae	BGENL739-24_cns	Geomyza nartshukae	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Opomyzidae	BLAST	family	657	1530	Psilidae,Drosophilidae,Sphaeroceridae,Piophilidae	BGENL740-24_cns	Geomyza nartshukae	0
+0	1	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Phoridae	BLAST	family	657	1542	Phoridae	BGENL741-24_cns	Beckerina umbrimargo	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Phoridae	BLAST	family	1	102		BGENL742-24_cns	Beckerina umbrimargo	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Phoridae	BLAST	family	45	339	Pentatomidae,Cicadellidae,Megastigmidae,Tenthredinidae	BGENL743-24_cns	Beckerina umbrimargo	0
+0	8	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Phoridae	BLAST	family	1	378	Anthocoridae	BGENL744-24_cns	Gymnoptera vitripennis	0
+1	43	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Phoridae	BLAST	family	645	1518	Dermestidae,Culicidae,Tipulidae,Empididae,Phoridae,Drosophilidae,Tabanidae	BGENL745-24_cns	Triphleba dudai	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Phoridae	BLAST	family	85	474	Chironomidae,Syrphidae	BGENL746-24_cns	Triphleba excisa	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Pipunculidae	BLAST	family	657	1533	Syrphidae,Pipunculidae,Psilidae,Drosophilidae,Muscidae	BGENL747-24_cns	Cephalops	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Pipunculidae	BLAST	family	657	1533	Syrphidae,Pipunculidae,Psilidae,Drosophilidae,Muscidae	BGENL748-24_cns	Cephalops	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Pipunculidae	BLAST	family	657	1533	Syrphidae,Pipunculidae,Psilidae,Drosophilidae,Muscidae	BGENL749-24_cns	Cephalops	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Pipunculidae	BLAST	family	657	1533	Syrphidae,Pipunculidae,Chloropidae	BGENL750-24_cns	Clistoabdominalis fusculus	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Pipunculidae	BLAST	family	657	1533	Syrphidae,Pipunculidae,Chloropidae	BGENL751-24_cns	Clistoabdominalis fusculus	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Pipunculidae	BLAST	family	657	1533	Syrphidae,Pipunculidae,Chloropidae	BGENL752-24_cns	Clistoabdominalis fusculus	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Pipunculidae	BLAST	family	657	1533	Syrphidae,Pipunculidae,Drosophilidae,Muscidae,Fanniidae,Sarcophagidae,Tachinidae	BGENL753-24_cns	Eudorylas kowarzi	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Pipunculidae	BLAST	family	657	1533	Syrphidae,Pipunculidae,Chloropidae,Muscidae,Fanniidae,Sarcophagidae,Tachinidae	BGENL754-24_cns	Eudorylas kowarzi	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Pipunculidae	BLAST	family	657	1533	Syrphidae,Pipunculidae,Chloropidae,Drosophilidae,Fanniidae,Tachinidae	BGENL755-24_cns	Eudorylas kowarzi	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Pipunculidae	BLAST	family	657	1533	Syrphidae,Pipunculidae,Chloropidae,Psilidae,Drosophilidae	BGENL756-24_cns	Tomosvaryella littoralis	0
+1	1	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Pipunculidae	BLAST	family	657	1533	Syrphidae,Pipunculidae,Chloropidae,Psilidae,Drosophilidae,Muscidae	BGENL757-24_cns	Tomosvaryella littoralis	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Pipunculidae	BLAST	family	657	1533	Syrphidae,Pipunculidae,Chloropidae,Psilidae,Drosophilidae,Sphaeroceridae	BGENL758-24_cns	Tomosvaryella littoralis	0
+0	0	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Platypezidae	BLAST	family	657	1536	Platypezidae,Drosophilidae	BGENL759-24_cns	Platypeza fasciata	0
+17	24	data/BGE00176_MGE-BGE_r_1_s_100.fas	None	Platypezidae	BLAST	family	657	1497	Platypezidae,Drosophilidae,Anthomyiidae	BGENL760-24_cns	Platypeza fasciata	0

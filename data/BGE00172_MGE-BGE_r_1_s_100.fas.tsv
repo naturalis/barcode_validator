@@ -1,0 +1,97 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	BGE00172-NC not in BOLD	None	BLAST	family	139	495		BGE00172-NC_cns	None	0
+0	1	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	656	1530	Staphylinidae,Silphidae,Scarabaeidae,Lucanidae,Cleridae	BGENL1000-24_cns	Chalcionellus decemstriatus	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	656	1530	Dytiscidae,Carabidae,Staphylinidae	BGENL1001-24_cns	Halacritus punctum	0
+0	3	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	656	1542	Staphylinidae,Scarabaeidae,Drosophilidae,Oestridae	BGENL1002-24_cns	Hister quadrinotatus	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	656	1542	Staphylinidae,Scarabaeidae,Drosophilidae,Oestridae	BGENL1003-24_cns	Hister quadrinotatus	0
+13	16	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	656	1473	Staphylinidae,Silphidae,Lucanidae,Buprestidae	BGENL1004-24_cns	Hister quadrinotatus	0
+58	127	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	655	1542	Histeridae,Tenebrionidae,Dermestidae	BGENL1005-24_cns	Margarinotus ignobilis	0
+20	52	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	650	1455	Tettigoniidae,Histeridae,Lycaenidae	BGENL1006-24_cns	Margarinotus ignobilis	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	655	1542	Scarabaeidae,Elateridae,Tenebrionidae,Cerambycidae,Dermestidae	BGENL1007-24_cns	Margarinotus punctiventer	0
+5	40	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	655	1539	Histeridae,Tenebrionidae	BGENL1008-24_cns	Margarinotus punctiventer	0
+4	113	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	109	945	Acrididae,Nitidulidae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Tetracampidae	BGENL1009-24_cns	Margarinotus punctiventer	0
+0	29	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	656	1539	Lucanidae,Elateridae,Dermestidae	BGENL1010-24_cns	Platysoma elongatum	0
+0	7	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	657	1539	Staphylinidae,Silphidae,Histeridae,Scarabaeidae,Muscidae	BGENL1011-24_cns	Platysoma elongatum	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	657	1539	Staphylinidae,Silphidae,Hydraenidae,Histeridae,Scarabaeidae,Muscidae	BGENL1012-24_cns	Platysoma elongatum	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	656	1530	Hydrophilidae,Staphylinidae,Histeridae,Dermestidae	BGENL1013-24_cns	Saprinus politus	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	656	1524	Histeridae	BGENL1014-24_cns	Saprinus politus	0
+22	43	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	656	1527	Staphylinidae,Scarabaeidae,Buprestidae,Dermestidae	BGENL1015-24_cns	Saprinus politus	0
+0	1	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	656	1527	Carabidae,Hydrophilidae,Staphylinidae,Hydraenidae,Cleridae,Tenebrionidae,Syrphidae	BGENL1016-24_cns	Saprinus rugifer	0
+0	1	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	656	1530	Carabidae,Hydrophilidae,Staphylinidae,Hydraenidae,Cleridae,Tenebrionidae	BGENL1017-24_cns	Saprinus rugifer	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	657	1527	Carabidae,Staphylinidae,Hydraenidae,Histeridae,Buprestidae	BGENL1018-24_cns	Saprinus virescens	0
+1	1	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	657	1527	Carabidae,Hydrophilidae,Staphylinidae,Scarabaeidae,Buprestidae,Tachinidae	BGENL1019-24_cns	Saprinus virescens	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	354	636	Ceratopogonidae,Drosophilidae,Gasteruptiidae	BGENL1020-24_cns	Atholus praetermissus	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	359	972	Hydrophilidae,Elateridae,Tenebrionidae,Dermestidae,Tephritidae	BGENL1021-24_cns	Atholus praetermissus	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL1022-24_cns	Amara fusca	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL1023-24_cns	Amara fusca	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL1024-24_cns	Amara montana	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	151	813	Staphylinidae,Nitidulidae,Protocucujidae,Silvanidae,Chrysomelidae,Ptychopteridae,Limacodidae	BGENL1025-24_cns	Amara montana	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL1026-24_cns	Amara montana	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	656	1530	Carabidae	BGENL1027-24_cns	Calosoma reticulatum	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	74	222		BGENL1028-24_cns	Calosoma reticulatum	0
+1	2	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	656	1527	Dytiscidae,Carabidae,Culicidae	BGENL1029-24_cns	Calosoma reticulatum	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1539	Carabidae	BGENL1030-24_cns	Limodromus krynickii	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1539	Carabidae	BGENL1031-24_cns	Limodromus krynickii	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL1032-24_cns	Plochionus pallens	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL1033-24_cns	Plochionus pallens	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL1034-24_cns	Plochionus pallens	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	445	999	Acrididae,Carabidae	BGENL1035-24_cns	Harpalus progrediens	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	276	777		BGENL1036-24_cns	Philorhizus quadrisignatus	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	71	477	Acrididae,Nitidulidae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Tetracampidae	BGENL1037-24_cns	Philorhizus quadrisignatus	0
+0	28	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Kateretidae	BLAST	family	458	990	Libellulidae,Staphylinidae,Scarabaeidae,Chrysomelidae,Cerambycidae	BGENL1038-24_cns	Brachypterolus anthirrhini	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Laemophloeidae	BLAST	family	656	1533	Hydraenidae,Cucujidae,Nitidulidae,Laemophloeidae,Phalacridae,Cryptophagidae,Cerambycidae	BGENL1039-24_cns	Leptophloeus clematidis	0
+41	53	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Laemophloeidae	BLAST	family	644	1368	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Vespidae	BGENL1040-24_cns	Leptophloeus clematidis	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Laemophloeidae	BLAST	family	656	1533	Hydraenidae,Cucujidae,Nitidulidae,Laemophloeidae,Phalacridae,Cryptophagidae,Cerambycidae	BGENL1041-24_cns	Leptophloeus clematidis	0
+10	34	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Kateretidae	BLAST	family	496	1206	Rhinotermitidae,Tettigoniidae,Dascillidae,Dermestidae	BGENL1042-24_cns	Brachypterolus anthirrhini	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	656	1533	Hydraenidae,Scarabaeidae,Geotrupidae	BGENL1043-24_cns	Amphimallon ochraceum	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	655	1533	Scarabaeidae	BGENL1044-24_cns	Amphimallon ochraceum	0
+2	8	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	655	1533	Scarabaeidae	BGENL1045-24_cns	Amphimallon ochraceum	0
+35	50	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	656	1536	Scarabaeidae	BGENL951-24_cns	Serica brunnea	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	656	1536	Scarabaeidae	BGENL952-24_cns	Serica brunnea	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1530	Scarabaeidae	BGENL953-24_cns	Protaetia cuprea metallica	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1530	Scarabaeidae	BGENL954-24_cns	Protaetia cuprea metallica	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1530	Scarabaeidae	BGENL955-24_cns	Protaetia cuprea metallica	0
+14	33	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Agyrtidae	BLAST	family	460	750	Nemouridae,Coleophoridae,Lasiocampidae,Erebidae	BGENL956-24_cns	Agyrtes castaneus	0
+0	9	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Agyrtidae	BLAST	family	261	900	Melittidae	BGENL957-24_cns	Agyrtes castaneus	0
+0	7	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Agyrtidae	BLAST	family	259	570	Carabidae,Psephenidae,Syrphidae,Drosophilidae,Tabanidae,Panorpodidae	BGENL958-24_cns	Agyrtes castaneus	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Gyrinidae	BLAST	family	657	1542	Carabidae,Gyrinidae	BGENL959-24_cns	Aulonogyrus concinnus	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Gyrinidae	BLAST	family	657	1542	Carabidae,Gyrinidae	BGENL960-24_cns	Aulonogyrus concinnus	0
+0	11	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Gyrinidae	BLAST	family	395	1146	Carabidae	BGENL961-24_cns	Aulonogyrus concinnus	0
+4	13	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Haliplidae	BLAST	family	656	1569	Dytiscidae,Carabidae,Haliplidae	BGENL962-24_cns	Haliplus varius	0
+6	9	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	415	828	Carabidae	BGENL963-24_cns	Bembidion humerale	0
+9	31	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	623	1488	Carabidae	BGENL964-24_cns	Bembidion humerale	0
+2	12	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	646	1542	Syrphidae,Drosophilidae,Muscidae,Calliphoridae	BGENL965-24_cns	Atholus bimaculatus	0
+3	4	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	656	1542	Tettigoniidae,Carabidae,Drosophilidae,Sphaeroceridae,Muscidae,Corydalidae	BGENL966-24_cns	Atholus bimaculatus	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	656	1542	Staphylinidae,Scarabaeidae,Drosophilidae	BGENL967-24_cns	Atholus bimaculatus	0
+0	1	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	656	1542	Hydrophilidae,Staphylinidae,Histeridae,Scarabaeidae,Elateridae,Dermestidae	BGENL968-24_cns	Atholus praetermissus	0
+4	14	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	460	1038	Culicidae,Apidae,Megachilidae	BGENL969-24_cns	Hister bissexstriatus	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	655	1539	Staphylinidae,Silphidae,Histeridae,Scarabaeidae,Tenebrionidae,Sarcophagidae	BGENL970-24_cns	Hister bissexstriatus	0
+12	25	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	656	1542	Tettigoniidae,Acrididae,Ninidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BGENL971-24_cns	Hister bissexstriatus	0
+9	52	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	634	1515	Tettigoniidae,Rhaphidophoridae,Carabidae,Dermestidae	BGENL972-24_cns	Hister helluo	0
+11	16	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	631	1374	Staphylinidae,Histeridae,Buprestidae,Dermestidae,Tephritidae	BGENL973-24_cns	Hister helluo	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	655	1542	Hydrophilidae,Staphylinidae,Histeridae,Scarabaeidae,Dermestidae,Asilidae,Dolichopodidae,Sarcophagidae	BGENL974-24_cns	Hister helluo	0
+0	9	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	35	582		BGENL975-24_cns	Hypocaccus crassipes	0
+1	1	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	657	1524	Hydrophilidae,Staphylinidae,Hydraenidae,Histeridae	BGENL976-24_cns	Hypocaccus crassipes	0
+0	10	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	392	993	Carabidae,Scarabaeidae,Lampyridae,Elateridae	BGENL977-24_cns	Hypocaccus crassipes	0
+1	49	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	545	1275	Libellulidae,Cleridae,Scraptiidae,Syrphidae,Drosophilidae,Anthomyiidae,Geometridae	BGENL978-24_cns	Hypocaccus dimidiatus	0
+3	33	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	626	1236	Carabidae,Hydrophilidae,Scarabaeidae,Brentidae	BGENL979-24_cns	Hypocaccus dimidiatus	0
+0	9	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	210	1221	Lampyridae,Cleridae,Chrysomelidae,Curculionidae,Ptinidae	BGENL980-24_cns	Hypocaccus dimidiatus	0
+5	5	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	655	1542	Rhaphidophoridae,Staphylinidae,Hydraenidae,Histeridae,Curculionidae,Syrphidae,Muscidae,Tachinidae	BGENL981-24_cns	Margarinotus bipustulatus	0
+8	26	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	583	1200	Ptinidae,Sciaridae,Dolichopodidae,Phoridae,Anthomyiidae,Oestridae,Tachinidae	BGENL982-24_cns	Margarinotus bipustulatus	0
+19	44	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	655	1488	Staphylinidae,Histeridae,Scarabaeidae,Lucanidae,Dermestidae	BGENL983-24_cns	Margarinotus bipustulatus	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	655	1542	Hydrophilidae,Staphylinidae,Histeridae,Scarabaeidae,Dermestidae	BGENL984-24_cns	Margarinotus neglectus	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	655	1542	Hydrophilidae,Staphylinidae,Histeridae,Scarabaeidae,Dermestidae	BGENL985-24_cns	Margarinotus neglectus	0
+2	23	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	655	1410	Reduviidae,Ptinidae,Lycaenidae	BGENL986-24_cns	Margarinotus neglectus	0
+10	10	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	374	927	Phasmatidae,Lonchodidae,Cicadellidae,Curculionidae,Xyelidae,Notodontidae,Crambidae,Geometridae	BGENL987-24_cns	Platysoma angustatum	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	399	759	Limoniidae,Brachystomatidae	BGENL988-24_cns	Platysoma angustatum	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	1	324		BGENL989-24_cns	Platysoma angustatum	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	656	1524	Staphylinidae,Hydraenidae,Histeridae,Sarcophagidae	BGENL990-24_cns	Plegaderus vulneratus	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	656	1533	Staphylinidae,Hydraenidae,Histeridae,Scarabaeidae,Sarcophagidae	BGENL991-24_cns	Plegaderus vulneratus	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	147	795	Reduviidae	BGENL992-24_cns	Plegaderus vulneratus	0
+0	5	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	302	1056	Histeridae,Nitidulidae,Calliphoridae	BGENL993-24_cns	Saprinus virescens	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	655	1530	Staphylinidae,Hydraenidae,Sphaeriusidae,Drosophilidae,Calliphoridae	BGENL994-24_cns	Acritus komai	0
+0	13	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	646	1530	Histeridae,Scarabaeidae,Elateridae,Tenebrionidae,Dermestidae	BGENL995-24_cns	Atholus corvinus	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	96	432	Termitidae,Tettigoniidae,Ninidae,Ulidiidae,Vespidae	BGENL996-24_cns	Atholus corvinus	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	655	1542	Staphylinidae,Histeridae,Scarabaeidae,Elateridae,Tenebrionidae,Dermestidae	BGENL997-24_cns	Atholus corvinus	0
+5	20	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	632	1476	Histeridae,Scarabaeidae	BGENL998-24_cns	Chalcionellus decemstriatus	0
+0	0	data/BGE00172_MGE-BGE_r_1_s_100.fas	None	Histeridae	BLAST	family	656	1530	Staphylinidae,Scarabaeidae,Lucanidae,Scirtidae	BGENL999-24_cns	Chalcionellus decemstriatus	0
