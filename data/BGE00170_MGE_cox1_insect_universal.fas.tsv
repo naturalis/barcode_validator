@@ -1,97 +1,97 @@
-ambig_basecount	ambig_full_basecount	error	family	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	process_id	species	stop_codons	fasta_file
-0	11	BGE00170-NC not in BOLD	None	None	BLAST	family	276	795		BGE00170-NC	None	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Chloropidae	Chloropidae	BLAST	family	657	1515	Syrphidae,Chloropidae,Drosophilidae,Ephydridae	BGENL571-23	Eurina lurida	0	data/BGE00170_MGE_cox1_insect_universal.fas
-1	13	None	Chloropidae	Chloropidae	BLAST	family	657	1515	Syrphidae,Chloropidae,Psilidae,Drosophilidae,Ephydridae	BGENL572-23	Eurina lurida	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Chloropidae	Chloropidae	BLAST	family	657	1527	Syrphidae,Chloropidae,Drosophilidae,Ephydridae	BGENL573-23	Eurina lurida	0	data/BGE00170_MGE_cox1_insect_universal.fas
-2	8	None	Chloropidae	Chloropidae	BLAST	family	656	1401	Syrphidae,Drosophilidae,Pallopteridae,Tachinidae	BGENL574-23	Lipara rufitarsis	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Chloropidae	Chloropidae	BLAST	family	656	1515	Chloropidae,Drosophilidae	BGENL575-23	Lipara rufitarsis	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	13	None	Chloropidae	Chloropidae	BLAST	family	500	1044	Simuliidae,Chloropidae,Tabanidae,Rhagionidae,Noctuidae,Hesperiidae	BGENL576-23	Lipara rufitarsis	0	data/BGE00170_MGE_cox1_insect_universal.fas
-3	6	None	Chloropidae	Chloropidae	BLAST	family	500	879	Sarcophagidae	BGENL577-23	Neohaplegis tarsata	0	data/BGE00170_MGE_cox1_insect_universal.fas
-9	10	None	Chloropidae	Chloropidae	BLAST	family	534	1068	Syrphidae,Chloropidae,Drosophilidae,Calliphoridae	BGENL578-23	Neohaplegis tarsata	0	data/BGE00170_MGE_cox1_insect_universal.fas
-7	31	None	Chloropidae	Chloropidae	BLAST	family	256	963	Chloropidae,Drosophilidae,Curtonotidae,Muscidae,Anthomyiidae,Tachinidae	BGENL579-23	Neohaplegis tarsata	0	data/BGE00170_MGE_cox1_insect_universal.fas
-2	2	None	Chloropidae	Chloropidae	BLAST	family	657	1470	Drosophilidae,Ephydridae,Muscidae,Fanniidae	BGENL580-23	Parectecephala longicornis	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Chloropidae	Chloropidae	BLAST	family	657	1515	Chloropidae,Psilidae,Drosophilidae,Fanniidae,Anthomyiidae	BGENL581-23	Parectecephala longicornis	0	data/BGE00170_MGE_cox1_insect_universal.fas
-14	14	None	Chloropidae	Chloropidae	BLAST	family	551	1047	Staphylinidae,Coccinellidae,Drosophilidae,Celyphidae,Agromyzidae	BGENL582-23	Parectecephala longicornis	0	data/BGE00170_MGE_cox1_insect_universal.fas
-9	42	None	Chloropidae	Chloropidae	BLAST	family	656	1395	Psilidae,Drosophilidae	BGENL583-23	Rhopalopterum anthracinum	0	data/BGE00170_MGE_cox1_insect_universal.fas
-10	46	None	Chloropidae	Chloropidae	BLAST	family	657	1515	Psilidae,Drosophilidae,Sphaeroceridae,Muscidae	BGENL584-23	Rhopalopterum anthracinum	0	data/BGE00170_MGE_cox1_insect_universal.fas
-1	7	None	Chloropidae	Chloropidae	BLAST	family	433	909	Conopidae,Drosophilidae	BGENL585-23	Rhopalopterum anthracinum	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Conopidae	Conopidae	BLAST	family	657	1527	Conopidae,Drosophilidae	BGENL586-23	Dalmannia punctata	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	3	None	Conopidae	Conopidae	BLAST	family	656	1518	Platypezidae,Drosophilidae,Muscidae	BGENL587-23	Dalmannia punctata	0	data/BGE00170_MGE_cox1_insect_universal.fas
-8	57	None	Conopidae	Conopidae	BLAST	family	655	1248	Carabidae,Pipunculidae,Conopidae,Sphaeroceridae	BGENL588-23	Dalmannia punctata	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Conopidae	Conopidae	BLAST	family	656	1524	Conopidae,Sphaeroceridae,Tephritidae,Pallopteridae	BGENL589-23	Leopoldius brevirostris	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Conopidae	Conopidae	BLAST	family	656	1524	Conopidae,Sphaeroceridae,Tephritidae,Pallopteridae	BGENL590-23	Leopoldius brevirostris	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Conopidae	Conopidae	BLAST	family	656	1515	Conopidae,Sphaeroceridae,Tephritidae,Pallopteridae	BGENL591-23	Leopoldius brevirostris	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Conopidae	Conopidae	BLAST	family	657	1524	Conopidae,Psilidae,Drosophilidae	BGENL592-23	Myopa dorsalis	0	data/BGE00170_MGE_cox1_insect_universal.fas
-44	69	None	Conopidae	Conopidae	BLAST	family	582	1275	Conopidae,Drosophilidae,Pallopteridae,Muscidae	BGENL593-23	Myopa dorsalis	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Conopidae	Conopidae	BLAST	family	657	1527	Conopidae,Psilidae,Drosophilidae	BGENL594-23	Myopa dorsalis	0	data/BGE00170_MGE_cox1_insect_universal.fas
-19	22	None	Conopidae	Conopidae	BLAST	family	657	1521	Conopidae,Drosophilidae,Lauxaniidae,Sphaeroceridae,Muscidae	BGENL595-23	Physocephala nigra	0	data/BGE00170_MGE_cox1_insect_universal.fas
-18	69	None	Conopidae	Conopidae	BLAST	family	639	1485	Drosophilidae,Tachinidae	BGENL596-23	Physocephala nigra	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Conopidae	Conopidae	BLAST	family	657	1527	Syrphidae,Conopidae,Drosophilidae,Lauxaniidae,Sphaeroceridae,Pallopteridae,Muscidae	BGENL597-23	Physocephala nigra	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Conopidae	Conopidae	BLAST	family	656	1524	Lonchopteridae,Conopidae,Xylophagaidae	BGENL598-23	Thecophora fulvipes	0	data/BGE00170_MGE_cox1_insect_universal.fas
-7	19	None	Conopidae	Conopidae	BLAST	family	656	1344	Lonchopteridae,Conopidae,Xylophagaidae	BGENL599-23	Thecophora fulvipes	0	data/BGE00170_MGE_cox1_insect_universal.fas
-6	8	None	Conopidae	Conopidae	BLAST	family	656	1500	Conopidae,Drosophilidae,Muscidae	BGENL600-23	Thecophora fulvipes	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	1	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Psilidae,Drosophilidae,Sphaeroceridae	BGENL601-23	Aphrosylus ferox	0	data/BGE00170_MGE_cox1_insect_universal.fas
-16	35	None	Dolichopodidae	Dolichopodidae	BLAST	family	461	1143	Carabidae,Dolichopodidae,Syrphidae	BGENL602-23	Aphrosylus ferox	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Syrphidae,Psilidae,Agromyzidae	BGENL603-23	Aphrosylus ferox	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	8	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Drosophilidae	BGENL604-23	Campsicnemus lumbatus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-1	28	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1497	Dolichopodidae,Drosophilidae	BGENL605-23	Campsicnemus lumbatus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-1	1	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1452	Dolichopodidae,Drosophilidae	BGENL606-23	Campsicnemus lumbatus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	21	None	Dolichopodidae	Dolichopodidae	BLAST	family	403	939	Dolichopodidae,Drosophilidae	BGENL607-23	Campsicnemus magius	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1515	Drosophilidae	BGENL608-23	Campsicnemus magius	0	data/BGE00170_MGE_cox1_insect_universal.fas
-1	1	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1491	Drosophilidae	BGENL609-23	Campsicnemus magius	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Drosophilidae	BGENL610-23	Chrysotus palustris	0	data/BGE00170_MGE_cox1_insect_universal.fas
-2	3	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Drosophilidae	BGENL611-23	Chrysotus palustris	0	data/BGE00170_MGE_cox1_insect_universal.fas
-2	23	None	Dolichopodidae	Dolichopodidae	BLAST	family	418	933	Formicidae,Tortricidae,Bombycidae,Geometridae	BGENL612-23	Chrysotus palustris	0	data/BGE00170_MGE_cox1_insect_universal.fas
-14	27	None	Dolichopodidae	Dolichopodidae	BLAST	family	495	918	Silphidae,Chironomidae,Chloropidae,Tephritidae,Ulidiidae,Muscidae,Sarcophagidae,Carposinidae	BGENL613-23	Dolichopus arbustorum	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae	BGENL614-23	Dolichopus arbustorum	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1491	Dolichopodidae	BGENL615-23	Dolichopus arbustorum	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Chloropidae,Drosophilidae	BGENL616-23	Hydrophorus balticus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-3	7	None	Dolichopodidae	Dolichopodidae	BLAST	family	656	1347	Anthocoridae,Dolichopodidae,Fergusoninidae	BGENL617-23	Hydrophorus balticus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	93	333	Hydrophilidae,Lycidae,Cerambycidae,Dolichopodidae,Micropezidae,Muscidae,Fanniidae	BGENL618-23	Hydrophorus balticus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Drosophilidae,Piophilidae	BGENL619-23	Hydrophorus oceanus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Drosophilidae,Sphaeroceridae,Piophilidae	BGENL620-23	Hydrophorus oceanus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1491	Dolichopodidae,Drosophilidae,Piophilidae	BGENL621-23	Hydrophorus oceanus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-5	7	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1506	Syrphidae,Drosophilidae,Sphaeroceridae	BGENL622-23	Hydrophorus signiferus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Syrphidae,Drosophilidae	BGENL623-23	Hydrophorus signiferus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Syrphidae,Drosophilidae,Tephritidae	BGENL624-23	Hydrophorus signiferus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	655	1515	Dolichopodidae,Drosophilidae,Sphaeroceridae,Ulidiidae	BGENL625-23	Medetera plumbella	0	data/BGE00170_MGE_cox1_insect_universal.fas
-1	1	None	Dolichopodidae	Dolichopodidae	BLAST	family	655	1515	Dolichopodidae,Drosophilidae,Sphaeroceridae,Ulidiidae	BGENL626-23	Medetera plumbella	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	655	1515	Dolichopodidae,Drosophilidae,Sphaeroceridae,Ulidiidae	BGENL627-23	Medetera plumbella	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1524	Dolichopodidae,Drosophilidae	BGENL628-23	Melanostolus melancholicus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-15	36	None	Dolichopodidae	Dolichopodidae	BLAST	family	656	1461	Syrphidae,Drosophilidae,Ephydridae	BGENL629-23	Melanostolus melancholicus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-3	40	None	Dolichopodidae	Dolichopodidae	BLAST	family	514	1272	Drosophilidae,Pallopteridae,Sarcophagidae	BGENL630-23	Melanostolus melancholicus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-33	37	None	Dolichopodidae	Dolichopodidae	BLAST	family	519	1014	Dytiscidae,Syrphidae,Chloropidae,Agromyzidae,Anthomyzidae,Hippoboscidae	BGENL631-23	Muscidideicus praetextatus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-12	14	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1491	Dolichopodidae,Syrphidae,Drosophilidae,Ephydridae	BGENL632-23	Muscidideicus praetextatus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-9	13	None	Dolichopodidae	Dolichopodidae	BLAST	family	612	1419	Empididae,Dolichopodidae,Drosophilidae	BGENL633-23	Muscidideicus praetextatus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-18	60	None	Dolichopodidae	Dolichopodidae	BLAST	family	531	1338	Conopidae,Fergusoninidae,Muscidae,Sarcophagidae	BGENL634-23	Orthoceratium sabulosum	0	data/BGE00170_MGE_cox1_insect_universal.fas
-8	8	None	Dolichopodidae	Dolichopodidae	BLAST	family	418	828	Tortricidae	BGENL635-23	Orthoceratium sabulosum	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	296	459	Tephritidae,Calliphoridae,Papilionidae	BGENL636-23	Orthoceratium sabulosum	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	656	1515	Empididae,Dolichopodidae,Drosophilidae	BGENL637-23	Rhaphium antennatum	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	15	None	Dolichopodidae	Dolichopodidae	BLAST	family	656	1374	Empididae,Dolichopodidae,Syrphidae,Drosophilidae,Muscidae	BGENL638-23	Rhaphium antennatum	0	data/BGE00170_MGE_cox1_insect_universal.fas
-2	8	None	Dolichopodidae	Dolichopodidae	BLAST	family	656	1374	Empididae,Dolichopodidae,Syrphidae,Drosophilidae,Muscidae	BGENL639-23	Rhaphium antennatum	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	10	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Drosophilidae	BGENL640-23	Rhaphium appendiculatum	0	data/BGE00170_MGE_cox1_insect_universal.fas
-1	4	None	Dolichopodidae	Dolichopodidae	BLAST	family	519	1155	Dolichopodidae	BGENL641-23	Rhaphium appendiculatum	0	data/BGE00170_MGE_cox1_insect_universal.fas
-2	2	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1293	Empididae,Dolichopodidae,Drosophilidae	BGENL642-23	Rhaphium appendiculatum	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Syrphidae,Drosophilidae,Sphaeroceridae	BGENL643-23	Scellus notatus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1527	Dolichopodidae,Syrphidae,Drosophilidae,Sphaeroceridae,Anthomyiidae	BGENL644-23	Scellus notatus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-38	57	None	Dolichopodidae	Dolichopodidae	BLAST	family	593	1284	Dolichopodidae,Drosophilidae,Muscidae,Calliphoridae	BGENL645-23	Scellus notatus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	656	1524	Empididae,Dolichopodidae,Drosophilidae	BGENL646-23	Thinophilus versutus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-15	27	None	Dolichopodidae	Dolichopodidae	BLAST	family	419	996	Syrphidae,Drosophilidae,Agromyzidae,Muscidae,Anthomyiidae	BGENL647-23	Thinophilus versutus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-17	32	None	Dolichopodidae	Dolichopodidae	BLAST	family	656	1422	Tettigoniidae,Reduviidae,Ninidae,Vespidae	BGENL648-23	Chrysotus monochaetus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-21	35	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1386	Drosophilidae,Pallopteridae	BGENL649-23	Diaphorus winthelmi	0	data/BGE00170_MGE_cox1_insect_universal.fas
-23	44	None	Dolichopodidae	Dolichopodidae	BLAST	family	585	1221	Culicidae,Dolichopodidae,Oecophoridae,Erebidae,Papilionidae,Pyralidae,Crambidae	BGENL650-23	Diaphorus winthelmi	0	data/BGE00170_MGE_cox1_insect_universal.fas
-2	2	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1491	Empididae,Dolichopodidae,Drosophilidae,Sphaeroceridae,Pallopteridae	BGENL651-23	Neurigona erichsoni	0	data/BGE00170_MGE_cox1_insect_universal.fas
-14	15	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1515	Empididae,Dolichopodidae,Syrphidae,Drosophilidae,Micropezidae	BGENL652-23	Neurigona erichsoni	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1515	Empididae,Dolichopodidae,Syrphidae,Drosophilidae,Anthomyiidae	BGENL653-23	Rhaphium fascipes	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	656	1515	Dolichopodidae,Drosophilidae	BGENL654-23	Rhaphium fascipes	0	data/BGE00170_MGE_cox1_insect_universal.fas
-49	63	None	Dolichopodidae	Dolichopodidae	BLAST	family	575	1233	Drosophilidae,Tephritidae,Muscidae,Fanniidae	BGENL655-23	Sciapus contristans	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	656	1515	Dolichopodidae,Drosophilidae,Ephydridae	BGENL656-23	Sciapus contristans	0	data/BGE00170_MGE_cox1_insect_universal.fas
-3	21	None	Dolichopodidae	Dolichopodidae	BLAST	family	96	390	Reduviidae	BGENL657-23	Sciapus contristans	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	3	None	Dolichopodidae	Dolichopodidae	BLAST	family	656	1515	Dolichopodidae	BGENL658-23	Sciapus laetus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-18	43	None	Dolichopodidae	Dolichopodidae	BLAST	family	260	948	Scythrididae,Tortricidae,Nymphalidae,Geometridae	BGENL659-23	Sciapus laetus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Dolichopodidae	Dolichopodidae	BLAST	family	656	1515	Dolichopodidae	BGENL660-23	Sciapus laetus	0	data/BGE00170_MGE_cox1_insect_universal.fas
-41	48	None	Dolichopodidae	Dolichopodidae	BLAST	family	479	1149	Tettigoniidae,Culicidae,Drosophilidae,Fergusoninidae,Pyrgotidae,Lonchaeidae,Tachinidae,Papilionidae	BGENL661-23	Sciapus lobipes	0	data/BGE00170_MGE_cox1_insect_universal.fas
-2	2	None	Dolichopodidae	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Drosophilidae	BGENL662-23	Sciapus lobipes	0	data/BGE00170_MGE_cox1_insect_universal.fas
-39	43	None	Dolichopodidae	Dolichopodidae	BLAST	family	465	924	Empididae,Dolichopodidae,Chloropidae,Noctuidae,Crambidae	BGENL663-23	Sciapus lobipes	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Conopidae	Conopidae	BLAST	family	656	1515	Conopidae,Psilidae,Drosophilidae,Sphaeroceridae,Muscidae	BGENL664-23	Myopa picta	0	data/BGE00170_MGE_cox1_insect_universal.fas
-0	0	None	Conopidae	Conopidae	BLAST	family	657	1515	Syrphidae,Conopidae,Psilidae,Muscidae	BGENL665-23	Myopa picta	0	data/BGE00170_MGE_cox1_insect_universal.fas
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	11	data/BGE00170_MGE_cox1_insect_universal.fas	BGE00170-NC not in BOLD	None	BLAST	family	276	795		BGE00170-NC_cns	None	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Chloropidae	BLAST	family	657	1515	Syrphidae,Chloropidae,Drosophilidae,Ephydridae	BGENL571-23_cns	Eurina lurida	0
+1	13	data/BGE00170_MGE_cox1_insect_universal.fas	None	Chloropidae	BLAST	family	657	1515	Syrphidae,Chloropidae,Psilidae,Drosophilidae,Ephydridae	BGENL572-23_cns	Eurina lurida	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Chloropidae	BLAST	family	657	1527	Syrphidae,Chloropidae,Drosophilidae,Ephydridae	BGENL573-23_cns	Eurina lurida	0
+2	8	data/BGE00170_MGE_cox1_insect_universal.fas	None	Chloropidae	BLAST	family	656	1401	Syrphidae,Drosophilidae,Pallopteridae,Tachinidae	BGENL574-23_cns	Lipara rufitarsis	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Chloropidae	BLAST	family	656	1515	Chloropidae,Drosophilidae	BGENL575-23_cns	Lipara rufitarsis	0
+0	13	data/BGE00170_MGE_cox1_insect_universal.fas	None	Chloropidae	BLAST	family	500	1044	Simuliidae,Chloropidae,Tabanidae,Rhagionidae,Noctuidae,Hesperiidae	BGENL576-23_cns	Lipara rufitarsis	0
+3	6	data/BGE00170_MGE_cox1_insect_universal.fas	None	Chloropidae	BLAST	family	500	879	Sarcophagidae	BGENL577-23_cns	Neohaplegis tarsata	0
+9	10	data/BGE00170_MGE_cox1_insect_universal.fas	None	Chloropidae	BLAST	family	534	1068	Syrphidae,Chloropidae,Drosophilidae,Calliphoridae	BGENL578-23_cns	Neohaplegis tarsata	0
+7	31	data/BGE00170_MGE_cox1_insect_universal.fas	None	Chloropidae	BLAST	family	256	963	Chloropidae,Drosophilidae,Curtonotidae,Muscidae,Anthomyiidae,Tachinidae	BGENL579-23_cns	Neohaplegis tarsata	0
+2	2	data/BGE00170_MGE_cox1_insect_universal.fas	None	Chloropidae	BLAST	family	657	1470	Drosophilidae,Ephydridae,Muscidae,Fanniidae	BGENL580-23_cns	Parectecephala longicornis	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Chloropidae	BLAST	family	657	1515	Chloropidae,Psilidae,Drosophilidae,Fanniidae,Anthomyiidae	BGENL581-23_cns	Parectecephala longicornis	0
+14	14	data/BGE00170_MGE_cox1_insect_universal.fas	None	Chloropidae	BLAST	family	551	1047	Staphylinidae,Coccinellidae,Drosophilidae,Celyphidae,Agromyzidae	BGENL582-23_cns	Parectecephala longicornis	0
+9	42	data/BGE00170_MGE_cox1_insect_universal.fas	None	Chloropidae	BLAST	family	656	1395	Psilidae,Drosophilidae	BGENL583-23_cns	Rhopalopterum anthracinum	0
+10	46	data/BGE00170_MGE_cox1_insect_universal.fas	None	Chloropidae	BLAST	family	657	1515	Psilidae,Drosophilidae,Sphaeroceridae,Muscidae	BGENL584-23_cns	Rhopalopterum anthracinum	0
+1	7	data/BGE00170_MGE_cox1_insect_universal.fas	None	Chloropidae	BLAST	family	433	909	Conopidae,Drosophilidae	BGENL585-23_cns	Rhopalopterum anthracinum	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Conopidae	BLAST	family	657	1527	Conopidae,Drosophilidae	BGENL586-23_cns	Dalmannia punctata	0
+0	3	data/BGE00170_MGE_cox1_insect_universal.fas	None	Conopidae	BLAST	family	656	1518	Platypezidae,Drosophilidae,Muscidae	BGENL587-23_cns	Dalmannia punctata	0
+8	57	data/BGE00170_MGE_cox1_insect_universal.fas	None	Conopidae	BLAST	family	655	1248	Carabidae,Pipunculidae,Conopidae,Sphaeroceridae	BGENL588-23_cns	Dalmannia punctata	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Conopidae	BLAST	family	656	1524	Conopidae,Sphaeroceridae,Tephritidae,Pallopteridae	BGENL589-23_cns	Leopoldius brevirostris	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Conopidae	BLAST	family	656	1524	Conopidae,Sphaeroceridae,Tephritidae,Pallopteridae	BGENL590-23_cns	Leopoldius brevirostris	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Conopidae	BLAST	family	656	1515	Conopidae,Sphaeroceridae,Tephritidae,Pallopteridae	BGENL591-23_cns	Leopoldius brevirostris	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Conopidae	BLAST	family	657	1524	Conopidae,Psilidae,Drosophilidae	BGENL592-23_cns	Myopa dorsalis	0
+44	69	data/BGE00170_MGE_cox1_insect_universal.fas	None	Conopidae	BLAST	family	582	1275	Conopidae,Drosophilidae,Pallopteridae,Muscidae	BGENL593-23_cns	Myopa dorsalis	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Conopidae	BLAST	family	657	1527	Conopidae,Psilidae,Drosophilidae	BGENL594-23_cns	Myopa dorsalis	0
+19	22	data/BGE00170_MGE_cox1_insect_universal.fas	None	Conopidae	BLAST	family	657	1521	Conopidae,Drosophilidae,Lauxaniidae,Sphaeroceridae,Muscidae	BGENL595-23_cns	Physocephala nigra	0
+18	69	data/BGE00170_MGE_cox1_insect_universal.fas	None	Conopidae	BLAST	family	639	1485	Drosophilidae,Tachinidae	BGENL596-23_cns	Physocephala nigra	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Conopidae	BLAST	family	657	1527	Syrphidae,Conopidae,Drosophilidae,Lauxaniidae,Sphaeroceridae,Pallopteridae,Muscidae	BGENL597-23_cns	Physocephala nigra	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Conopidae	BLAST	family	656	1524	Lonchopteridae,Conopidae,Xylophagaidae	BGENL598-23_cns	Thecophora fulvipes	0
+7	19	data/BGE00170_MGE_cox1_insect_universal.fas	None	Conopidae	BLAST	family	656	1344	Lonchopteridae,Conopidae,Xylophagaidae	BGENL599-23_cns	Thecophora fulvipes	0
+6	8	data/BGE00170_MGE_cox1_insect_universal.fas	None	Conopidae	BLAST	family	656	1500	Conopidae,Drosophilidae,Muscidae	BGENL600-23_cns	Thecophora fulvipes	0
+0	1	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Psilidae,Drosophilidae,Sphaeroceridae	BGENL601-23_cns	Aphrosylus ferox	0
+16	35	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	461	1143	Carabidae,Dolichopodidae,Syrphidae	BGENL602-23_cns	Aphrosylus ferox	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Syrphidae,Psilidae,Agromyzidae	BGENL603-23_cns	Aphrosylus ferox	0
+0	8	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Drosophilidae	BGENL604-23_cns	Campsicnemus lumbatus	0
+1	28	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1497	Dolichopodidae,Drosophilidae	BGENL605-23_cns	Campsicnemus lumbatus	0
+1	1	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1452	Dolichopodidae,Drosophilidae	BGENL606-23_cns	Campsicnemus lumbatus	0
+0	21	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	403	939	Dolichopodidae,Drosophilidae	BGENL607-23_cns	Campsicnemus magius	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1515	Drosophilidae	BGENL608-23_cns	Campsicnemus magius	0
+1	1	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1491	Drosophilidae	BGENL609-23_cns	Campsicnemus magius	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Drosophilidae	BGENL610-23_cns	Chrysotus palustris	0
+2	3	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Drosophilidae	BGENL611-23_cns	Chrysotus palustris	0
+2	23	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	418	933	Formicidae,Tortricidae,Bombycidae,Geometridae	BGENL612-23_cns	Chrysotus palustris	0
+14	27	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	495	918	Silphidae,Chironomidae,Chloropidae,Tephritidae,Ulidiidae,Muscidae,Sarcophagidae,Carposinidae	BGENL613-23_cns	Dolichopus arbustorum	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae	BGENL614-23_cns	Dolichopus arbustorum	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1491	Dolichopodidae	BGENL615-23_cns	Dolichopus arbustorum	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Chloropidae,Drosophilidae	BGENL616-23_cns	Hydrophorus balticus	0
+3	7	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	656	1347	Anthocoridae,Dolichopodidae,Fergusoninidae	BGENL617-23_cns	Hydrophorus balticus	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	93	333	Hydrophilidae,Lycidae,Cerambycidae,Dolichopodidae,Micropezidae,Muscidae,Fanniidae	BGENL618-23_cns	Hydrophorus balticus	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Drosophilidae,Piophilidae	BGENL619-23_cns	Hydrophorus oceanus	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Drosophilidae,Sphaeroceridae,Piophilidae	BGENL620-23_cns	Hydrophorus oceanus	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1491	Dolichopodidae,Drosophilidae,Piophilidae	BGENL621-23_cns	Hydrophorus oceanus	0
+5	7	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1506	Syrphidae,Drosophilidae,Sphaeroceridae	BGENL622-23_cns	Hydrophorus signiferus	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Syrphidae,Drosophilidae	BGENL623-23_cns	Hydrophorus signiferus	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Syrphidae,Drosophilidae,Tephritidae	BGENL624-23_cns	Hydrophorus signiferus	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	655	1515	Dolichopodidae,Drosophilidae,Sphaeroceridae,Ulidiidae	BGENL625-23_cns	Medetera plumbella	0
+1	1	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	655	1515	Dolichopodidae,Drosophilidae,Sphaeroceridae,Ulidiidae	BGENL626-23_cns	Medetera plumbella	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	655	1515	Dolichopodidae,Drosophilidae,Sphaeroceridae,Ulidiidae	BGENL627-23_cns	Medetera plumbella	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1524	Dolichopodidae,Drosophilidae	BGENL628-23_cns	Melanostolus melancholicus	0
+15	36	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	656	1461	Syrphidae,Drosophilidae,Ephydridae	BGENL629-23_cns	Melanostolus melancholicus	0
+3	40	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	514	1272	Drosophilidae,Pallopteridae,Sarcophagidae	BGENL630-23_cns	Melanostolus melancholicus	0
+33	37	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	519	1014	Dytiscidae,Syrphidae,Chloropidae,Agromyzidae,Anthomyzidae,Hippoboscidae	BGENL631-23_cns	Muscidideicus praetextatus	0
+12	14	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1491	Dolichopodidae,Syrphidae,Drosophilidae,Ephydridae	BGENL632-23_cns	Muscidideicus praetextatus	0
+9	13	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	612	1419	Empididae,Dolichopodidae,Drosophilidae	BGENL633-23_cns	Muscidideicus praetextatus	0
+18	60	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	531	1338	Conopidae,Fergusoninidae,Muscidae,Sarcophagidae	BGENL634-23_cns	Orthoceratium sabulosum	0
+8	8	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	418	828	Tortricidae	BGENL635-23_cns	Orthoceratium sabulosum	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	296	459	Tephritidae,Calliphoridae,Papilionidae	BGENL636-23_cns	Orthoceratium sabulosum	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	656	1515	Empididae,Dolichopodidae,Drosophilidae	BGENL637-23_cns	Rhaphium antennatum	0
+0	15	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	656	1374	Empididae,Dolichopodidae,Syrphidae,Drosophilidae,Muscidae	BGENL638-23_cns	Rhaphium antennatum	0
+2	8	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	656	1374	Empididae,Dolichopodidae,Syrphidae,Drosophilidae,Muscidae	BGENL639-23_cns	Rhaphium antennatum	0
+0	10	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Drosophilidae	BGENL640-23_cns	Rhaphium appendiculatum	0
+1	4	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	519	1155	Dolichopodidae	BGENL641-23_cns	Rhaphium appendiculatum	0
+2	2	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1293	Empididae,Dolichopodidae,Drosophilidae	BGENL642-23_cns	Rhaphium appendiculatum	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Syrphidae,Drosophilidae,Sphaeroceridae	BGENL643-23_cns	Scellus notatus	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1527	Dolichopodidae,Syrphidae,Drosophilidae,Sphaeroceridae,Anthomyiidae	BGENL644-23_cns	Scellus notatus	0
+38	57	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	593	1284	Dolichopodidae,Drosophilidae,Muscidae,Calliphoridae	BGENL645-23_cns	Scellus notatus	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	656	1524	Empididae,Dolichopodidae,Drosophilidae	BGENL646-23_cns	Thinophilus versutus	0
+15	27	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	419	996	Syrphidae,Drosophilidae,Agromyzidae,Muscidae,Anthomyiidae	BGENL647-23_cns	Thinophilus versutus	0
+17	32	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	656	1422	Tettigoniidae,Reduviidae,Ninidae,Vespidae	BGENL648-23_cns	Chrysotus monochaetus	0
+21	35	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1386	Drosophilidae,Pallopteridae	BGENL649-23_cns	Diaphorus winthelmi	0
+23	44	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	585	1221	Culicidae,Dolichopodidae,Oecophoridae,Erebidae,Papilionidae,Pyralidae,Crambidae	BGENL650-23_cns	Diaphorus winthelmi	0
+2	2	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1491	Empididae,Dolichopodidae,Drosophilidae,Sphaeroceridae,Pallopteridae	BGENL651-23_cns	Neurigona erichsoni	0
+14	15	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1515	Empididae,Dolichopodidae,Syrphidae,Drosophilidae,Micropezidae	BGENL652-23_cns	Neurigona erichsoni	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1515	Empididae,Dolichopodidae,Syrphidae,Drosophilidae,Anthomyiidae	BGENL653-23_cns	Rhaphium fascipes	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	656	1515	Dolichopodidae,Drosophilidae	BGENL654-23_cns	Rhaphium fascipes	0
+49	63	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	575	1233	Drosophilidae,Tephritidae,Muscidae,Fanniidae	BGENL655-23_cns	Sciapus contristans	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	656	1515	Dolichopodidae,Drosophilidae,Ephydridae	BGENL656-23_cns	Sciapus contristans	0
+3	21	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	96	390	Reduviidae	BGENL657-23_cns	Sciapus contristans	0
+0	3	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	656	1515	Dolichopodidae	BGENL658-23_cns	Sciapus laetus	0
+18	43	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	260	948	Scythrididae,Tortricidae,Nymphalidae,Geometridae	BGENL659-23_cns	Sciapus laetus	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	656	1515	Dolichopodidae	BGENL660-23_cns	Sciapus laetus	0
+41	48	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	479	1149	Tettigoniidae,Culicidae,Drosophilidae,Fergusoninidae,Pyrgotidae,Lonchaeidae,Tachinidae,Papilionidae	BGENL661-23_cns	Sciapus lobipes	0
+2	2	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	657	1515	Dolichopodidae,Drosophilidae	BGENL662-23_cns	Sciapus lobipes	0
+39	43	data/BGE00170_MGE_cox1_insect_universal.fas	None	Dolichopodidae	BLAST	family	465	924	Empididae,Dolichopodidae,Chloropidae,Noctuidae,Crambidae	BGENL663-23_cns	Sciapus lobipes	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Conopidae	BLAST	family	656	1515	Conopidae,Psilidae,Drosophilidae,Sphaeroceridae,Muscidae	BGENL664-23_cns	Myopa picta	0
+0	0	data/BGE00170_MGE_cox1_insect_universal.fas	None	Conopidae	BLAST	family	657	1515	Syrphidae,Conopidae,Psilidae,Muscidae	BGENL665-23_cns	Myopa picta	0

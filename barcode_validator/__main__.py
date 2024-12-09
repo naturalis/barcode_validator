@@ -23,10 +23,6 @@ def main(fasta_file_path, yaml_file_path, analytics_file_path, logger, config):
     if analytics_file_path is not None:
         rs.add_csv_file(analytics_file_path)
 
-    # Add fasta file path to each result
-    for result in rs.results:
-        result.add_ancillary('fasta_file', fasta_file_path)
-
     print(rs)  # print TSV results
 
     logger.info("Analysis completed")

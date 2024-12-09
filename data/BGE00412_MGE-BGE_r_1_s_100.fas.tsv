@@ -1,97 +1,97 @@
-ambig_basecount	ambig_full_basecount	error	family	fasta_file	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	process_id	species	stop_codons
-None	0	BGE00412-NC not in BOLD	None	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	BLAST	None	None	0		BGE00412-NC	None	0
-42	60	None	Anthocoridae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Anthocoridae	BLAST	None	624	1473	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BGLIB1141-24	Temnostethus dacicus	0
-0	0	None	Anthocoridae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Anthocoridae	BLAST	None	656	1539	Anthocoridae,Pentatomidae	BGLIB1142-24	Temnostethus longirostris	0
-0	2	None	Anthocoridae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Anthocoridae	BLAST	None	344	1017	Ephemerellidae,Tettigoniidae,Scarabaeidae,Vespidae	BGLIB1143-24	Dysepicritus rufescens	0
-4	27	None	Microphysidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Microphysidae	BLAST	None	654	1536	Miridae,Nabidae,Microphysidae,Reduviidae,Scutelleridae,Sarcophagidae	BGLIB1144-24	Loricula ruficeps	0
-0	9	None	Corixidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Corixidae	BLAST	None	548	1194	Tettigoniidae,Curculionidae,Dermestidae,Bostrichidae,Psychodidae,Vespidae,Tetracampidae	BGLIB1145-24	Parasigara transversa	0
-0	0	None	Corixidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Corixidae	BLAST	None	172	390	Dinidoridae,Cicadellidae	BGLIB1146-24	Sigara assimilis	0
-12	50	None	Corixidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Corixidae	BLAST	None	632	1371	Miridae,Dinidoridae,Cicadellidae	BGLIB1147-24	Sigara assimilis	0
-0	0	None	Corixidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Corixidae	BLAST	None	657	1533	Corixidae,Anthocoridae	BGLIB1148-24	Sigara mayri	0
-0	21	None	Gerridae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Gerridae	BLAST	None	545	1356	Gerridae	BGLIB1149-24	Aquarius cinereus	0
-0	0	None	Veliidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Veliidae	BLAST	None	657	1530	Gerridae,Veliidae	BGLIB1150-24	Velia pelagonensis	0
-0	0	None	Veliidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Veliidae	BLAST	None	657	1530	Gerridae,Veliidae	BGLIB1151-24	Velia rhadamantha	0
-3	17	None	Alydidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Alydidae	BLAST	None	605	1266	Reduviidae,Chrysomelidae,Calliphoridae,Braconidae,Corydalidae	BGLIB1152-24	Megalotomus junceus	0
-0	0	None	Alydidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Alydidae	BLAST	None	657	1533	Lygaeidae,Rhopalidae,Alydidae,Coreidae	BGLIB1153-24	Megalotomus ornaticeps	0
-9	24	None	Aradidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Aradidae	BLAST	None	635	1419		BGLIB1154-24	Aradus annulicornis	0
-0	0	None	Aradidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Aradidae	BLAST	None	294	1146	Phylliidae	BGLIB1155-24	Aradus reuterianus	0
-103	238	None	Aradidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Aradidae	BLAST	None	655	1527	Cydnidae,Coreidae	BGLIB1156-24	Quilnus parvicollis	0
-0	0	None	Berytidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Berytidae	BLAST	None	656	1533	Lygaeidae,Berytidae,Malcidae,Blissidae,Rhopalidae	BGLIB1157-24	Berytinus hirticornis	0
-1	18	None	Berytidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Berytidae	BLAST	None	513	1296	Thaumastocoridae,Lygaeidae,Rhopalidae	BGLIB1158-24	Berytinus hirticornis	0
-2	3	None	Piesmatidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Piesmatidae	BLAST	None	179	702		BGLIB1159-24	Parapiesma atriplicis	0
-12	26	None	Piesmatidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Piesmatidae	BLAST	None	639	1410	Gryllidae,Enicocephalidae,Rhopalidae,Staphylinidae,Tachinidae	BGLIB1160-24	Parapiesma variabile	0
-0	0	None	Piesmatidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Piesmatidae	BLAST	None	438	1062	Pentatomidae,Piesmatidae,Stenocephalidae,Hydraenidae,Phoridae,Sarcophagidae,Papilionidae	BGLIB1161-24	Parapiesma variabile	0
-0	0	None	Piesmatidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Piesmatidae	BLAST	None	100	579		BGLIB1162-24	Piesma quadratum	0
-0	0	None	Piesmatidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Piesmatidae	BLAST	None	657	1533	Berytidae,Piesmatidae,Ninidae,Oxycarenidae,Rhopalidae,Coreidae,Stenocephalidae,Largidae	BGLIB1163-24	Piesma quadratum	0
-0	0	None	Piesmatidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Piesmatidae	BLAST	None	657	1533	Berytidae,Piesmatidae,Rhopalidae,Alydidae,Coreidae,Stenocephalidae	BGLIB1164-24	Parapiesma silenes	0
-16	57	None	Tettigometridae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Tettigometridae	BLAST	None	657	1533	Flatidae,Issidae,Tettigometridae	BGLIB1165-24	Tettigometra baranii	0
-4	9	None	Tettigometridae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Tettigometridae	BLAST	None	522	1341	Leptophlebiidae,Eustheniidae,Caliscelidae,Meloidae	BGLIB1166-24	Tettigometra fasciata	1
-0	6	None	Tettigometridae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Tettigometridae	BLAST	None	590	1311	Cydnidae,Delphacidae,Fulgoridae,Tropiduchidae,Cicadellidae,Braconidae,Sphecidae,Limnephilidae	BGLIB1167-24	Tettigometra griseola	0
-17	48	None	Agromyzidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Agromyzidae	BLAST	None	656	1533	Simuliidae,Stratiomyidae	BGLIB1168-24	Phytomyza elegans	0
-4	10	None	Chloropidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Chloropidae	BLAST	None	655	1530	Chloropidae,Drosophilidae,Ephydridae,Tephritidae,Muscidae	BGLIB1169-24	Assuania thalhammeri	0
-6	25	None	Chloropidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Chloropidae	BLAST	None	643	1533	Chloropidae	BGLIB1170-24	Chlorops emiliae	0
-0	0	None	Chloropidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Chloropidae	BLAST	None	657	1533	Sphaeroceridae,Platystomatidae,Lonchaeidae,Anthomyiidae,Sarcophagidae,Tachinidae,Rhiniidae	BGLIB1171-24	Chlorops pannonicus	0
-0	0	None	Chloropidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Chloropidae	BLAST	None	657	1533	Chloropidae,Drosophilidae,Muscidae,Anthomyiidae	BGLIB1172-24	Chlorops strigulus	0
-0	19	None	Chloropidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Chloropidae	BLAST	None	141	315		BGLIB1173-24	Dicraeus raptus	0
-0	0	None	Chloropidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Chloropidae	BLAST	None	193	315		BGLIB1174-24	Dicraeus raptus	0
-0	8	None	Chloropidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Chloropidae	BLAST	None	602	1143	Chloropidae	BGLIB1175-24	Elachiptera brevipennis	1
-0	7	None	Chloropidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Chloropidae	BLAST	None	557	1323	Chloropidae,Drosophilidae,Tephritidae,Tachinidae	BGLIB1176-24	Elachiptera brevipennis	0
-5	5	None	Chloropidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Chloropidae	BLAST	None	556	1281	Chloropidae	BGLIB1177-24	Elachiptera brevipennis	0
-0	15	None	Chloropidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Chloropidae	BLAST	None	563	1188	Acrididae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Psychodidae,Vespidae,Tetracampidae	BGLIB1178-24	Oscinimorpha albisetosa	0
-2	4	None	Chloropidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Chloropidae	BLAST	None	657	1536	Syrphidae,Chloropidae,Drosophilidae,Anthomyiidae	BGLIB1179-24	Platycephala ducalis	1
-0	0	None	Chloropidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Chloropidae	BLAST	None	655	1533	Chloropidae,Drosophilidae,Ephydridae	BGLIB1180-24	Trichieurina pubescens	0
-0	0	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	656	1509	Conopidae,Drosophilidae,Anthomyiidae,Calliphoridae	BGLIB1181-24	Abrachyglossum capitatum	0
-0	0	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	656	1509	Dolichopodidae,Syrphidae,Drosophilidae,Tephritidae	BGLIB1182-24	Dalmannia aculeata	0
-0	0	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	657	1509	Tephritidae,Xylophagaidae	BGLIB1183-24	Dalmannia dorsalis	0
-0	0	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	653	1506	Culicidae,Hybotidae,Syrphidae,Psilidae,Tanypezidae,Lauxaniidae,Pallopteridae,Muscidae	BGLIB1184-24	Dalmannia marginata	0
-0	0	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	656	1509	Hybotidae,Syrphidae,Chloropidae,Psilidae,Pallopteridae,Muscidae,Tachinidae,Panorpidae	BGLIB1185-24	Dalmannia marginata	0
-3	11	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	315	831	Scarabaeidae,Buprestidae,Cerambycidae,Anthribidae	BGLIB1186-24	Dalmannia marginata	0
-1	2	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	655	1509	Syrphidae,Chloropidae,Conopidae,Drosophilidae,Sphaeroceridae,Pallopteridae,Sarcophagidae	BGLIB1187-24	Leopoldius calceatus	0
-0	0	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	655	1509	Dolichopodidae,Syrphidae,Conopidae,Psilidae,Sphaeroceridae,Tephritidae,Muscidae	BGLIB1188-24	Melanosoma bicolor	0
-0	0	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	655	1509	Syrphidae,Conopidae,Psilidae	BGLIB1189-24	Melanosoma bicolor	0
-0	0	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	450	1101	Anthocoridae	BGLIB1190-24	Melanosoma bicolor	0
-0	0	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	657	1509	Conopidae,Psilidae,Drosophilidae	BGLIB1191-24	Myopa dorsalis	0
-1	5	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	657	1509	Conopidae,Psilidae,Drosophilidae,Muscidae,Rhiniidae	BGLIB1192-24	Myopa morio	0
-4	7	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	657	1509	Conopidae,Tephritidae,Muscidae	BGLIB1193-24	Myopa picta	0
-0	0	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	656	1509	Conopidae,Drosophilidae,Sphaeroceridae	BGLIB1194-24	Myopa picta	0
-0	0	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	657	1509	Conopidae,Drosophilidae	BGLIB1195-24	Myopa polystigma	0
-0	0	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	657	1509	Conopidae,Drosophilidae	BGLIB1196-24	Myopa polystigma	0
-0	0	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	656	1509	Conopidae,Psilidae,Drosophilidae,Sepsidae	BGLIB1197-24	Myopa variegata	0
-0	0	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	656	1509	Conopidae,Psilidae,Drosophilidae,Sphaeroceridae	BGLIB1198-24	Myopa variegata	0
-12	34	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	644	1497	Lonchopteridae,Conopidae,Psilidae,Drosophilidae	BGLIB1199-24	Myopotta rubripes	0
-7	8	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	656	1488	Conopidae,Drosophilidae,Muscidae	BGLIB1200-24	Physocephala biguttata	0
-34	93	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	656	1506	Culicidae,Conopidae	BGLIB1201-24	Physocephala chrysorrhoea	0
-5	17	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	645	1497	Conopidae,Drosophilidae,Lauxaniidae,Sarcophagidae	BGLIB1202-24	Physocephala nigra	0
-0	0	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	656	1509	Carabidae,Chloropidae,Conopidae,Muscidae,Tachinidae	BGLIB1203-24	Physocephala pusilla	0
-6	23	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	656	1509	Syrphidae,Drosophilidae,Muscidae,Tachinidae	BGLIB1204-24	Physocephala pusilla	0
-1	10	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	192	990	Dytiscidae,Carabidae	BGLIB1205-24	Physocephala pusilla	0
-0	0	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	656	1509	Carabidae,Chloropidae,Conopidae,Ephydridae,Sphaeroceridae,Muscidae	BGLIB1206-24	Physocephala pusilla	0
-3	15	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	656	1509	Syrphidae,Conopidae,Xylophagaidae	BGLIB1207-24	Thecophora bimaculata	0
-1	1	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	656	1509	Dolichopodidae,Conopidae,Drosophilidae,Tachinidae	BGLIB1208-24	Thecophora bimaculata	0
-0	0	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	656	1509	Conopidae,Drosophilidae,Xylophagaidae	BGLIB1209-24	Thecophora fulvipes	0
-9	19	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	644	1482	Lonchopteridae,Conopidae,Xylophagaidae	BGLIB1210-24	Thecophora fulvipes	0
-0	7	None	Conopidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Conopidae	BLAST	None	404	1005	Conopidae,Muscidae	BGLIB1211-24	Thecophora fulvipes	0
-2	8	None	Drosophilidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Drosophilidae	BLAST	None	656	1488	Drosophilidae	BGLIB1212-24	Gitona distigma	0
-9	33	None	Drosophilidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Drosophilidae	BLAST	None	657	1527	Drosophilidae	BGLIB1213-24	Gitona distigma	0
-1	1	None	Dryomyzidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Dryomyzidae	BLAST	None	656	1530	Drosophilidae,Sepsidae,Sphaeroceridae,Tephritidae	BGLIB1214-24	Dryope flaveola	0
-0	6	None	Dryomyzidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Dryomyzidae	BLAST	None	425	996	Baetidae,Chrysomelidae,Curculionidae,Ichneumonidae,Crambidae	BGLIB1215-24	Dryope flaveola	0
-0	0	None	Dryomyzidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Dryomyzidae	BLAST	None	656	1530	Drosophilidae,Sepsidae,Sphaeroceridae,Heleomyzidae,Tephritidae	BGLIB1216-24	Dryope flaveola	0
-10	18	None	Ephydridae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Ephydridae	BLAST	None	494	1044	Hybotidae,Tachinidae	BGLIB1217-24	Diclasiopa lacteipennis	0
-0	0	None	Ephydridae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Ephydridae	BLAST	None	141	282		BGLIB1218-24	Hydrellia ranunculi	0
-0	17	None	Ephydridae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Ephydridae	BLAST	None	551	1356	Carabidae,Culicidae,Syrphidae,Drosophilidae,Muscidae,Anthomyiidae,Tachinidae	BGLIB1219-24	Mosillus subsultans	0
-0	19	None	Ephydridae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Ephydridae	BLAST	None	225	558	Scarabaeidae,Tortricidae,Limacodidae,Nolidae	BGLIB1220-24	Mosillus subsultans	0
-0	0	None	Ephydridae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Ephydridae	BLAST	None	504	1227	Trogiidae	BGLIB1221-24	Mosillus subsultans	0
-2	6	None	Ephydridae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Ephydridae	BLAST	None	635	1326	Drosophilidae,Ephydridae,Sphaeroceridae	BGLIB1222-24	Philygria nubeculosa	0
-10	11	None	Ephydridae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Ephydridae	BLAST	None	644	1506	Calliphoridae	BGLIB1223-24	Philygria nubeculosa	0
-0	0	None	Heleomyzidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Heleomyzidae	BLAST	None	657	1533	Drosophilidae,Sepsidae,Sphaeroceridae	BGLIB1224-24	Acantholeria cineraria	0
-6	9	None	Heleomyzidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Heleomyzidae	BLAST	None	491	1320	Tettigoniidae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Ulidiidae,Vespidae,Tetracampidae	BGLIB1225-24	Eccoptomera microps	0
-0	0	None	Heleomyzidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Heleomyzidae	BLAST	None	657	1533	Psilidae,Drosophilidae,Sphaeroceridae,Heleomyzidae,Muscidae	BGLIB1226-24	Eccoptomera microps	0
-0	0	None	Heleomyzidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Heleomyzidae	BLAST	None	655	1533	Drosophilidae,Sepsidae,Heleomyzidae	BGLIB1227-24	Suillia bistrigata	0
-0	0	None	Heleomyzidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Heleomyzidae	BLAST	None	656	1533	Drosophilidae,Sphaeroceridae,Heleomyzidae	BGLIB1228-24	Suillia gigantea	0
-2	2	None	Heleomyzidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Heleomyzidae	BLAST	None	656	1533	Syrphidae,Clusiidae,Muscidae,Fanniidae,Sarcophagidae	BGLIB1229-24	Suillia pilimana	0
-13	21	None	Heleomyzidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Heleomyzidae	BLAST	None	656	1533	Drosophilidae,Heleomyzidae	BGLIB1230-24	Suillia pilimana	0
-0	4	None	Heleomyzidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Heleomyzidae	BLAST	None	614	1491	Drosophilidae,Sphaeroceridae	BGLIB1231-24	Suillia pilimana	0
-0	0	None	Heleomyzidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Heleomyzidae	BLAST	None	657	1533	Drosophilidae,Sphaeroceridae,Heleomyzidae,Pallopteridae	BGLIB1232-24	Suillia umbratica	0
-1	1	None	Heleomyzidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Heleomyzidae	BLAST	None	657	1533	Drosophilidae,Sphaeroceridae,Heleomyzidae,Pallopteridae	BGLIB1233-24	Suillia umbratica	0
-4	4	None	Lauxaniidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Lauxaniidae	BLAST	None	207	657	Staphylinidae,Dermestidae,Limnephilidae,Lepidostomatidae	BGLIB1234-24	Eusapromyza multipunctata	0
-0	0	None	Lauxaniidae	data/BGE00412_MGE-BGE_r_1_s_100.fas	Lauxaniidae	BLAST	None	657	1533	Psilidae,Drosophilidae,Lauxaniidae	BGLIB1235-24	Eusapromyza multipunctata	0
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+None	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	BGE00412-NC not in BOLD	None	BLAST	family	None	0		BGE00412-NC_cns	None	0
+42	60	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Anthocoridae	BLAST	family	624	1473	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BGLIB1141-24_cns	Temnostethus dacicus	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Anthocoridae	BLAST	family	656	1539	Anthocoridae,Pentatomidae	BGLIB1142-24_cns	Temnostethus longirostris	0
+0	2	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Anthocoridae	BLAST	family	344	1017	Ephemerellidae,Tettigoniidae,Scarabaeidae,Vespidae	BGLIB1143-24_cns	Dysepicritus rufescens	0
+4	27	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Microphysidae	BLAST	family	654	1536	Miridae,Nabidae,Microphysidae,Reduviidae,Scutelleridae,Sarcophagidae	BGLIB1144-24_cns	Loricula ruficeps	0
+0	9	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Corixidae	BLAST	family	548	1194	Tettigoniidae,Curculionidae,Dermestidae,Bostrichidae,Psychodidae,Vespidae,Tetracampidae	BGLIB1145-24_cns	Parasigara transversa	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Corixidae	BLAST	family	172	390	Dinidoridae,Cicadellidae	BGLIB1146-24_cns	Sigara assimilis	0
+12	50	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Corixidae	BLAST	family	632	1371	Miridae,Dinidoridae,Cicadellidae	BGLIB1147-24_cns	Sigara assimilis	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Corixidae	BLAST	family	657	1533	Corixidae,Anthocoridae	BGLIB1148-24_cns	Sigara mayri	0
+0	21	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Gerridae	BLAST	family	545	1356	Gerridae	BGLIB1149-24_cns	Aquarius cinereus	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Veliidae	BLAST	family	657	1530	Gerridae,Veliidae	BGLIB1150-24_cns	Velia pelagonensis	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Veliidae	BLAST	family	657	1530	Gerridae,Veliidae	BGLIB1151-24_cns	Velia rhadamantha	0
+3	17	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Alydidae	BLAST	family	605	1266	Reduviidae,Chrysomelidae,Calliphoridae,Braconidae,Corydalidae	BGLIB1152-24_cns	Megalotomus junceus	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Alydidae	BLAST	family	657	1533	Lygaeidae,Rhopalidae,Alydidae,Coreidae	BGLIB1153-24_cns	Megalotomus ornaticeps	0
+9	24	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Aradidae	BLAST	family	635	1419		BGLIB1154-24_cns	Aradus annulicornis	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Aradidae	BLAST	family	294	1146	Phylliidae	BGLIB1155-24_cns	Aradus reuterianus	0
+103	238	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Aradidae	BLAST	family	655	1527	Cydnidae,Coreidae	BGLIB1156-24_cns	Quilnus parvicollis	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Berytidae	BLAST	family	656	1533	Lygaeidae,Berytidae,Malcidae,Blissidae,Rhopalidae	BGLIB1157-24_cns	Berytinus hirticornis	0
+1	18	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Berytidae	BLAST	family	513	1296	Thaumastocoridae,Lygaeidae,Rhopalidae	BGLIB1158-24_cns	Berytinus hirticornis	0
+2	3	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Piesmatidae	BLAST	family	179	702		BGLIB1159-24_cns	Parapiesma atriplicis	0
+12	26	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Piesmatidae	BLAST	family	639	1410	Gryllidae,Enicocephalidae,Rhopalidae,Staphylinidae,Tachinidae	BGLIB1160-24_cns	Parapiesma variabile	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Piesmatidae	BLAST	family	438	1062	Pentatomidae,Piesmatidae,Stenocephalidae,Hydraenidae,Phoridae,Sarcophagidae,Papilionidae	BGLIB1161-24_cns	Parapiesma variabile	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Piesmatidae	BLAST	family	100	579		BGLIB1162-24_cns	Piesma quadratum	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Piesmatidae	BLAST	family	657	1533	Berytidae,Piesmatidae,Ninidae,Oxycarenidae,Rhopalidae,Coreidae,Stenocephalidae,Largidae	BGLIB1163-24_cns	Piesma quadratum	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Piesmatidae	BLAST	family	657	1533	Berytidae,Piesmatidae,Rhopalidae,Alydidae,Coreidae,Stenocephalidae	BGLIB1164-24_cns	Parapiesma silenes	0
+16	57	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Tettigometridae	BLAST	family	657	1533	Flatidae,Issidae,Tettigometridae	BGLIB1165-24_cns	Tettigometra baranii	0
+4	9	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Tettigometridae	BLAST	family	522	1341	Leptophlebiidae,Eustheniidae,Caliscelidae,Meloidae	BGLIB1166-24_cns	Tettigometra fasciata	1
+0	6	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Tettigometridae	BLAST	family	590	1311	Cydnidae,Delphacidae,Fulgoridae,Tropiduchidae,Cicadellidae,Braconidae,Sphecidae,Limnephilidae	BGLIB1167-24_cns	Tettigometra griseola	0
+17	48	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Agromyzidae	BLAST	family	656	1533	Simuliidae,Stratiomyidae	BGLIB1168-24_cns	Phytomyza elegans	0
+4	10	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Chloropidae	BLAST	family	655	1530	Chloropidae,Drosophilidae,Ephydridae,Tephritidae,Muscidae	BGLIB1169-24_cns	Assuania thalhammeri	0
+6	25	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Chloropidae	BLAST	family	643	1533	Chloropidae	BGLIB1170-24_cns	Chlorops emiliae	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Chloropidae	BLAST	family	657	1533	Sphaeroceridae,Platystomatidae,Lonchaeidae,Anthomyiidae,Sarcophagidae,Tachinidae,Rhiniidae	BGLIB1171-24_cns	Chlorops pannonicus	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Chloropidae	BLAST	family	657	1533	Chloropidae,Drosophilidae,Muscidae,Anthomyiidae	BGLIB1172-24_cns	Chlorops strigulus	0
+0	19	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Chloropidae	BLAST	family	141	315		BGLIB1173-24_cns	Dicraeus raptus	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Chloropidae	BLAST	family	193	315		BGLIB1174-24_cns	Dicraeus raptus	0
+0	8	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Chloropidae	BLAST	family	602	1143	Chloropidae	BGLIB1175-24_cns	Elachiptera brevipennis	1
+0	7	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Chloropidae	BLAST	family	557	1323	Chloropidae,Drosophilidae,Tephritidae,Tachinidae	BGLIB1176-24_cns	Elachiptera brevipennis	0
+5	5	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Chloropidae	BLAST	family	556	1281	Chloropidae	BGLIB1177-24_cns	Elachiptera brevipennis	0
+0	15	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Chloropidae	BLAST	family	563	1188	Acrididae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Psychodidae,Vespidae,Tetracampidae	BGLIB1178-24_cns	Oscinimorpha albisetosa	0
+2	4	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Chloropidae	BLAST	family	657	1536	Syrphidae,Chloropidae,Drosophilidae,Anthomyiidae	BGLIB1179-24_cns	Platycephala ducalis	1
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Chloropidae	BLAST	family	655	1533	Chloropidae,Drosophilidae,Ephydridae	BGLIB1180-24_cns	Trichieurina pubescens	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	656	1509	Conopidae,Drosophilidae,Anthomyiidae,Calliphoridae	BGLIB1181-24_cns	Abrachyglossum capitatum	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	656	1509	Dolichopodidae,Syrphidae,Drosophilidae,Tephritidae	BGLIB1182-24_cns	Dalmannia aculeata	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	657	1509	Tephritidae,Xylophagaidae	BGLIB1183-24_cns	Dalmannia dorsalis	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	653	1506	Culicidae,Hybotidae,Syrphidae,Psilidae,Tanypezidae,Lauxaniidae,Pallopteridae,Muscidae	BGLIB1184-24_cns	Dalmannia marginata	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	656	1509	Hybotidae,Syrphidae,Chloropidae,Psilidae,Pallopteridae,Muscidae,Tachinidae,Panorpidae	BGLIB1185-24_cns	Dalmannia marginata	0
+3	11	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	315	831	Scarabaeidae,Buprestidae,Cerambycidae,Anthribidae	BGLIB1186-24_cns	Dalmannia marginata	0
+1	2	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	655	1509	Syrphidae,Chloropidae,Conopidae,Drosophilidae,Sphaeroceridae,Pallopteridae,Sarcophagidae	BGLIB1187-24_cns	Leopoldius calceatus	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	655	1509	Dolichopodidae,Syrphidae,Conopidae,Psilidae,Sphaeroceridae,Tephritidae,Muscidae	BGLIB1188-24_cns	Melanosoma bicolor	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	655	1509	Syrphidae,Conopidae,Psilidae	BGLIB1189-24_cns	Melanosoma bicolor	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	450	1101	Anthocoridae	BGLIB1190-24_cns	Melanosoma bicolor	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	657	1509	Conopidae,Psilidae,Drosophilidae	BGLIB1191-24_cns	Myopa dorsalis	0
+1	5	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	657	1509	Conopidae,Psilidae,Drosophilidae,Muscidae,Rhiniidae	BGLIB1192-24_cns	Myopa morio	0
+4	7	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	657	1509	Conopidae,Tephritidae,Muscidae	BGLIB1193-24_cns	Myopa picta	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	656	1509	Conopidae,Drosophilidae,Sphaeroceridae	BGLIB1194-24_cns	Myopa picta	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	657	1509	Conopidae,Drosophilidae	BGLIB1195-24_cns	Myopa polystigma	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	657	1509	Conopidae,Drosophilidae	BGLIB1196-24_cns	Myopa polystigma	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	656	1509	Conopidae,Psilidae,Drosophilidae,Sepsidae	BGLIB1197-24_cns	Myopa variegata	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	656	1509	Conopidae,Psilidae,Drosophilidae,Sphaeroceridae	BGLIB1198-24_cns	Myopa variegata	0
+12	34	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	644	1497	Lonchopteridae,Conopidae,Psilidae,Drosophilidae	BGLIB1199-24_cns	Myopotta rubripes	0
+7	8	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	656	1488	Conopidae,Drosophilidae,Muscidae	BGLIB1200-24_cns	Physocephala biguttata	0
+34	93	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	656	1506	Culicidae,Conopidae	BGLIB1201-24_cns	Physocephala chrysorrhoea	0
+5	17	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	645	1497	Conopidae,Drosophilidae,Lauxaniidae,Sarcophagidae	BGLIB1202-24_cns	Physocephala nigra	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	656	1509	Carabidae,Chloropidae,Conopidae,Muscidae,Tachinidae	BGLIB1203-24_cns	Physocephala pusilla	0
+6	23	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	656	1509	Syrphidae,Drosophilidae,Muscidae,Tachinidae	BGLIB1204-24_cns	Physocephala pusilla	0
+1	10	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	192	990	Dytiscidae,Carabidae	BGLIB1205-24_cns	Physocephala pusilla	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	656	1509	Carabidae,Chloropidae,Conopidae,Ephydridae,Sphaeroceridae,Muscidae	BGLIB1206-24_cns	Physocephala pusilla	0
+3	15	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	656	1509	Syrphidae,Conopidae,Xylophagaidae	BGLIB1207-24_cns	Thecophora bimaculata	0
+1	1	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	656	1509	Dolichopodidae,Conopidae,Drosophilidae,Tachinidae	BGLIB1208-24_cns	Thecophora bimaculata	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	656	1509	Conopidae,Drosophilidae,Xylophagaidae	BGLIB1209-24_cns	Thecophora fulvipes	0
+9	19	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	644	1482	Lonchopteridae,Conopidae,Xylophagaidae	BGLIB1210-24_cns	Thecophora fulvipes	0
+0	7	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Conopidae	BLAST	family	404	1005	Conopidae,Muscidae	BGLIB1211-24_cns	Thecophora fulvipes	0
+2	8	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Drosophilidae	BLAST	family	656	1488	Drosophilidae	BGLIB1212-24_cns	Gitona distigma	0
+9	33	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Drosophilidae	BLAST	family	657	1527	Drosophilidae	BGLIB1213-24_cns	Gitona distigma	0
+1	1	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Dryomyzidae	BLAST	family	656	1530	Drosophilidae,Sepsidae,Sphaeroceridae,Tephritidae	BGLIB1214-24_cns	Dryope flaveola	0
+0	6	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Dryomyzidae	BLAST	family	425	996	Baetidae,Chrysomelidae,Curculionidae,Ichneumonidae,Crambidae	BGLIB1215-24_cns	Dryope flaveola	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Dryomyzidae	BLAST	family	656	1530	Drosophilidae,Sepsidae,Sphaeroceridae,Heleomyzidae,Tephritidae	BGLIB1216-24_cns	Dryope flaveola	0
+10	18	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Ephydridae	BLAST	family	494	1044	Hybotidae,Tachinidae	BGLIB1217-24_cns	Diclasiopa lacteipennis	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Ephydridae	BLAST	family	141	282		BGLIB1218-24_cns	Hydrellia ranunculi	0
+0	17	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Ephydridae	BLAST	family	551	1356	Carabidae,Culicidae,Syrphidae,Drosophilidae,Muscidae,Anthomyiidae,Tachinidae	BGLIB1219-24_cns	Mosillus subsultans	0
+0	19	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Ephydridae	BLAST	family	225	558	Scarabaeidae,Tortricidae,Limacodidae,Nolidae	BGLIB1220-24_cns	Mosillus subsultans	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Ephydridae	BLAST	family	504	1227	Trogiidae	BGLIB1221-24_cns	Mosillus subsultans	0
+2	6	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Ephydridae	BLAST	family	635	1326	Drosophilidae,Ephydridae,Sphaeroceridae	BGLIB1222-24_cns	Philygria nubeculosa	0
+10	11	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Ephydridae	BLAST	family	644	1506	Calliphoridae	BGLIB1223-24_cns	Philygria nubeculosa	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Heleomyzidae	BLAST	family	657	1533	Drosophilidae,Sepsidae,Sphaeroceridae	BGLIB1224-24_cns	Acantholeria cineraria	0
+6	9	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Heleomyzidae	BLAST	family	491	1320	Tettigoniidae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Ulidiidae,Vespidae,Tetracampidae	BGLIB1225-24_cns	Eccoptomera microps	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Heleomyzidae	BLAST	family	657	1533	Psilidae,Drosophilidae,Sphaeroceridae,Heleomyzidae,Muscidae	BGLIB1226-24_cns	Eccoptomera microps	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Heleomyzidae	BLAST	family	655	1533	Drosophilidae,Sepsidae,Heleomyzidae	BGLIB1227-24_cns	Suillia bistrigata	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Heleomyzidae	BLAST	family	656	1533	Drosophilidae,Sphaeroceridae,Heleomyzidae	BGLIB1228-24_cns	Suillia gigantea	0
+2	2	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Heleomyzidae	BLAST	family	656	1533	Syrphidae,Clusiidae,Muscidae,Fanniidae,Sarcophagidae	BGLIB1229-24_cns	Suillia pilimana	0
+13	21	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Heleomyzidae	BLAST	family	656	1533	Drosophilidae,Heleomyzidae	BGLIB1230-24_cns	Suillia pilimana	0
+0	4	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Heleomyzidae	BLAST	family	614	1491	Drosophilidae,Sphaeroceridae	BGLIB1231-24_cns	Suillia pilimana	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Heleomyzidae	BLAST	family	657	1533	Drosophilidae,Sphaeroceridae,Heleomyzidae,Pallopteridae	BGLIB1232-24_cns	Suillia umbratica	0
+1	1	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Heleomyzidae	BLAST	family	657	1533	Drosophilidae,Sphaeroceridae,Heleomyzidae,Pallopteridae	BGLIB1233-24_cns	Suillia umbratica	0
+4	4	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Lauxaniidae	BLAST	family	207	657	Staphylinidae,Dermestidae,Limnephilidae,Lepidostomatidae	BGLIB1234-24_cns	Eusapromyza multipunctata	0
+0	0	data/BGE00412_MGE-BGE_r_1_s_100.fas	None	Lauxaniidae	BLAST	family	657	1533	Psilidae,Drosophilidae,Lauxaniidae	BGLIB1235-24_cns	Eusapromyza multipunctata	0

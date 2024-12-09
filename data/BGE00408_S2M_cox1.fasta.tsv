@@ -1,91 +1,91 @@
-ambig_basecount	ambig_full_basecount	error	family	fasta_file	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	process_id	species	stop_codons
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	90	267	Braconidae	BGLIB666-24	Bracon abbreviator	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	294	507	Braconidae,Ichneumonidae	BGLIB667-24	Bracon conjugellae	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	30	69		BGLIB668-24	Bracon crassiceps	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	655	1317	Braconidae	BGLIB668-24	Bracon crassiceps	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	656	1537	Tettigoniidae,Acrididae,Ninidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BGLIB669-24	Bracon curticaudis	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	656	1536	Braconidae	BGLIB670-24	Bracon delibator	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	225	1041	Braconidae	BGLIB671-24	Bracon erraticus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	655	1065	Braconidae	BGLIB676-24	Bracon laetus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	272	330	Braconidae	BGLIB677-24	Bracon longicollis	1
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	656	1536	Braconidae	BGLIB678-24	Bracon luteator	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	656	1536	Braconidae	BGLIB679-24	Bracon minutator	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	655	1356	Braconidae	BGLIB680-24	Bracon nigricollis	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	655	1551	Braconidae	BGLIB681-24	Bracon praecox	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	71	72	Braconidae	BGLIB682-24	Bracon pulcher	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	657	1534	Braconidae	BGLIB682-24	Bracon pulcher	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	657	1515	Braconidae	BGLIB683-24	Bracon speerschneideri	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	657	1539	Braconidae	BGLIB684-24	Bracon stabilis	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	656	1536	Braconidae	BGLIB685-24	Bracon subrugosus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	655	1536	Braconidae	BGLIB686-24	Bracon subsinuatus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	198	1032	Braconidae	BGLIB687-24	Bracon terebella	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	107	252	Braconidae,Agaonidae	BGLIB690-24	Chelonus annulatus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	255	582	Braconidae,Formicidae	BGLIB691-24	Chelonus bonellii	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	657	1416	Braconidae	BGLIB692-24	Chelonus carbonator	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	656	1536	Nolidae,Lycaenidae,Nymphalidae	BGLIB694-24	Chelonus contractus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	529	1068	Braconidae	BGLIB695-24	Chelonus corvulus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	161	750	Braconidae	BGLIB696-24	Chelonus humilis	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	657	1515	Braconidae	BGLIB697-24	Chelonus microphtalmus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	654	1536	Braconidae	BGLIB698-24	Chelonus obscuratus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	170	987	Braconidae	BGLIB699-24	Chelonus oculator	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	462	561	Braconidae	BGLIB700-24	Chelonus retusus	3
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	161	342	Braconidae	BGLIB700-24	Chelonus retusus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	433	738	Braconidae,Aphelinidae	BGLIB701-24	Chelonus scabrator	12
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	170	528	Braconidae	BGLIB702-24	Chelonus submuticus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	348	408	Braconidae,Apidae,Ibaliidae,Nolidae	BGLIB703-24	Blacus instabilis	8
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	572	1335	Braconidae	BGLIB705-24	Blacus exilis	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	657	1536	Braconidae	BGLIB706-24	Atanycolus initiator	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	657	1536	Braconidae	BGLIB708-24	Atanycolus sculpturatus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	654	1545	Braconidae	BGLIB709-24	Baryproctus barypus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	657	1539	Braconidae	BGLIB710-24	Doryctes undulatus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	652	1539	Braconidae	BGLIB711-24	Hecabolus sulcatus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	655	1536	Braconidae	BGLIB712-24	Rhoptocentrus piceus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	655	1509	Braconidae	BGLIB713-24	Spathius pedestris	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	137	270	Braconidae,Agaonidae,Eucharitidae,Diapriidae	BGLIB714-24	Ascogaster klugii	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	657	1539	Braconidae	BGLIB715-24	Ascogaster rufipes	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	657	1536	Braconidae	BGLIB716-24	Phaenocarpa planifrons	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	23	69	Apidae,Cynipidae	BGLIB717-24	Coeloides abdominalis	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	525	576	Cynipidae	BGLIB717-24	Coeloides abdominalis	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	657	1539	Braconidae	BGLIB719-24	Iphiaulax impostor	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	486	525	Braconidae	BGLIB720-24	Pseudovipio gracilis	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	453	825	Braconidae	BGLIB721-24	Vipio intermedius	13
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	432	546	Braconidae	BGLIB724-24	Pauesia infulata	5
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	655	699	Braconidae	BGLIB725-24	Epimicta marginalis	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	221	1050	Braconidae	BGLIB726-24	Orthostigma pumilum	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	402	1236	Braconidae	BGLIB727-24	Phaenocarpa ruficeps	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	338	342	Braconidae	BGLIB729-24	Agathis griseifrons	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	125	147	Braconidae	BGLIB729-24	Agathis griseifrons	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	336	687	Braconidae	BGLIB730-24	Agathis malvacearum	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	390	486	Braconidae	BGLIB730-24	Agathis malvacearum	4
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	77	81		BGLIB732-24	Agathis tibialis	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	221	1056	Braconidae	BGLIB732-24	Agathis tibialis	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	271	603	Braconidae	BGLIB733-24	Agathis umbellatarum	3
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	90	297	Braconidae	BGLIB733-24	Agathis umbellatarum	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	657	1539	Braconidae	BGLIB735-24	Bassus cingulipes	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	525	1353	Braconidae	BGLIB736-24	Bassus clausthalianus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	657	1503	Braconidae	BGLIB737-24	Bassus conspicuus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	70	72	Braconidae	BGLIB739-24	Bassus mediator	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	529	1350	Braconidae	BGLIB739-24	Bassus mediator	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	193	198	Braconidae	BGLIB740-24	Bassus nugax	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	41	63	Braconidae,Pteromalidae,Aphelinidae,Nymphalidae	BGLIB740-24	Bassus nugax	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	657	1077	Braconidae	BGLIB741-24	Therophilus tumidulus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	125	168	Braconidae	BGLIB742-24	Cremnops desertor	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	245	288	Braconidae	BGLIB744-24	Apanteles adjuntus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	445	678	Braconidae	BGLIB745-24	Apanteles bicolor	2
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	657	771	Braconidae	BGLIB746-24	Apanteles breviventris	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	656	1350	Braconidae	BGLIB747-24	Apanteles corvinus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	407	1224	Braconidae	BGLIB748-24	Apanteles coleophorae	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	657	1536	Braconidae	BGLIB749-24	Apanteles breviventris	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	657	1539	Braconidae	BGLIB750-24	Apanteles impurus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	656	1437	Braconidae	BGLIB751-24	Aleiodes pallidator	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	656	1536	Braconidae	BGLIB752-24	Apanteles infimus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	656	921	Braconidae	BGLIB753-24	Apanteles infimus	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	657	1539	Braconidae	BGLIB754-24	Dolichogenidea gagates	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	38	81	Braconidae,Chrysididae,Diapriidae	BGLIB755-24	Apanteles sicarius	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	657	1413	Braconidae	BGLIB755-24	Apanteles sicarius	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	147	237	Braconidae,Agaonidae	BGLIB756-24	Helcon tardator	1
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	71	90		BGLIB756-24	Helcon tardator	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	655	1536	Braconidae	BGLIB757-24	Alysia manducator	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	655	1521	Braconidae	BGLIB758-24	Aspilota hirticornis	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	318	363	Braconidae	BGLIB759-24	Dapsilarthra florimela	0
-0	0	None	Braconidae	data/BGE00408_S2M_cox1.fasta	Braconidae	BLAST	None	624	1449	Braconidae	BGLIB760-24	Orgilus puctulator	0
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	90	267	Braconidae	BGLIB666-24_contig0;37-303;+;cox1	Bracon abbreviator	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	294	507	Braconidae,Ichneumonidae	BGLIB667-24_contig0;1-507;+;cox1	Bracon conjugellae	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	30	69		BGLIB668-24_contig6;1587-1655;-;cox1_1	Bracon crassiceps	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	655	1317	Braconidae	BGLIB668-24_contig6;292-1608;+;cox1_0	Bracon crassiceps	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	656	1537	Tettigoniidae,Acrididae,Ninidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BGLIB669-24_contig1;9718-11254;+;cox1	Bracon curticaudis	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	656	1536	Braconidae	BGLIB670-24_contig5;862-2397;-;cox1	Bracon delibator	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	225	1041	Braconidae	BGLIB671-24_contig3;2-1042;+;cox1	Bracon erraticus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	655	1065	Braconidae	BGLIB676-24_contig7;3-1067;-;cox1	Bracon laetus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	272	330	Braconidae	BGLIB677-24_contig8;3-332;+;cox1	Bracon longicollis	1
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	656	1536	Braconidae	BGLIB678-24_contig7;273-1808;+;cox1	Bracon luteator	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	656	1536	Braconidae	BGLIB679-24_contig3;1233-2768;+;cox1	Bracon minutator	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	655	1356	Braconidae	BGLIB680-24_contig2;3-1358;-;cox1	Bracon nigricollis	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	655	1551	Braconidae	BGLIB681-24_contig4;354-1904;+;cox1	Bracon praecox	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	71	72	Braconidae	BGLIB682-24_contig7;1534-1605;+;cox1_1	Bracon pulcher	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	657	1534	Braconidae	BGLIB682-24_contig7;46-1579;-;cox1_0	Bracon pulcher	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	657	1515	Braconidae	BGLIB683-24_contig7;96-1610;-;cox1	Bracon speerschneideri	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	657	1539	Braconidae	BGLIB684-24_contig8;33-1571;-;cox1	Bracon stabilis	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	656	1536	Braconidae	BGLIB685-24_contig1;3417-4952;-;cox1	Bracon subrugosus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	655	1536	Braconidae	BGLIB686-24_contig1;3672-5207;-;cox1	Bracon subsinuatus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	198	1032	Braconidae	BGLIB687-24_contig2;879-1910;-;cox1	Bracon terebella	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	107	252	Braconidae,Agaonidae	BGLIB690-24_contig1;38-289;-;cox1	Chelonus annulatus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	255	582	Braconidae,Formicidae	BGLIB691-24_contig1;3-584;+;cox1	Chelonus bonellii	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	657	1416	Braconidae	BGLIB692-24_contig0;131-1546;+;cox1	Chelonus carbonator	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	656	1536	Nolidae,Lycaenidae,Nymphalidae	BGLIB694-24_contig0;9979-11514;-;cox1	Chelonus contractus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	529	1068	Braconidae	BGLIB695-24_contig0;3-1070;+;cox1	Chelonus corvulus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	161	750	Braconidae	BGLIB696-24_contig6;5-754;+;cox1	Chelonus humilis	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	657	1515	Braconidae	BGLIB697-24_contig6;565-2079;+;cox1	Chelonus microphtalmus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	654	1536	Braconidae	BGLIB698-24_contig4;161-1696;-;cox1	Chelonus obscuratus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	170	987	Braconidae	BGLIB699-24_contig4;19-1005;+;cox1	Chelonus oculator	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	462	561	Braconidae	BGLIB700-24_contig8;18-578;-;cox1-b	Chelonus retusus	3
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	161	342	Braconidae	BGLIB700-24_contig8;581-922;-;cox1-a	Chelonus retusus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	433	738	Braconidae,Aphelinidae	BGLIB701-24_contig5;81-818;-;cox1	Chelonus scabrator	12
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	170	528	Braconidae	BGLIB702-24_contig4;3-530;-;cox1	Chelonus submuticus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	348	408	Braconidae,Apidae,Ibaliidae,Nolidae	BGLIB703-24_contig1;1-408;-;cox1	Blacus instabilis	8
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	572	1335	Braconidae	BGLIB705-24_contig1;6-1340;+;cox1	Blacus exilis	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	657	1536	Braconidae	BGLIB706-24_contig5;1139-2674;-;cox1	Atanycolus initiator	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	657	1536	Braconidae	BGLIB708-24_contig5;325-1860;+;cox1	Atanycolus sculpturatus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	654	1545	Braconidae	BGLIB709-24_contig1;34-1578;+;cox1	Baryproctus barypus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	657	1539	Braconidae	BGLIB710-24_contig3;2912-4450;-;cox1	Doryctes undulatus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	652	1539	Braconidae	BGLIB711-24_contig1;310-1848;-;cox1	Hecabolus sulcatus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	655	1536	Braconidae	BGLIB712-24_contig5;329-1864;+;cox1	Rhoptocentrus piceus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	655	1509	Braconidae	BGLIB713-24_contig6;871-2379;-;cox1	Spathius pedestris	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	137	270	Braconidae,Agaonidae,Eucharitidae,Diapriidae	BGLIB714-24_contig2;2-271;-;cox1	Ascogaster klugii	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	657	1539	Braconidae	BGLIB715-24_contig1;3506-5044;-;cox1	Ascogaster rufipes	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	657	1536	Braconidae	BGLIB716-24_contig0;6642-8177;-;cox1	Phaenocarpa planifrons	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	23	69	Apidae,Cynipidae	BGLIB717-24_contig7;11-79;+;cox1	Coeloides abdominalis	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	525	576	Cynipidae	BGLIB717-24_contig9;2-577;-;cox1	Coeloides abdominalis	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	657	1539	Braconidae	BGLIB719-24_contig1;1363-2901;-;cox1	Iphiaulax impostor	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	486	525	Braconidae	BGLIB720-24_contig5;8-532;-;cox1	Pseudovipio gracilis	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	453	825	Braconidae	BGLIB721-24_contig7;2-826;+;cox1	Vipio intermedius	13
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	432	546	Braconidae	BGLIB724-24_contig2;43-588;+;cox1	Pauesia infulata	5
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	655	699	Braconidae	BGLIB725-24_contig7;1-699;-;cox1	Epimicta marginalis	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	221	1050	Braconidae	BGLIB726-24_contig2;1-1050;+;cox1	Orthostigma pumilum	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	402	1236	Braconidae	BGLIB727-24_contig8;1-1236;+;cox1	Phaenocarpa ruficeps	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	338	342	Braconidae	BGLIB729-24_contig3;171-512;+;cox1_0	Agathis griseifrons	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	125	147	Braconidae	BGLIB729-24_contig3;28-174;+;cox1_1	Agathis griseifrons	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	336	687	Braconidae	BGLIB730-24_contig6;41-727;+;cox1_0	Agathis malvacearum	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	390	486	Braconidae	BGLIB730-24_contig6;703-1188;+;cox1_1	Agathis malvacearum	4
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	77	81		BGLIB732-24_contig2;1067-1147;+;cox1_1	Agathis tibialis	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	221	1056	Braconidae	BGLIB732-24_contig2;18-1073;-;cox1_0	Agathis tibialis	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	271	603	Braconidae	BGLIB733-24_contig3;144-746;-;cox1-b	Agathis umbellatarum	3
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	90	297	Braconidae	BGLIB733-24_contig3;749-1045;-;cox1-a	Agathis umbellatarum	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	657	1539	Braconidae	BGLIB735-24_contig2;918-2456;-;cox1	Bassus cingulipes	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	525	1353	Braconidae	BGLIB736-24_contig2;135-1487;-;cox1	Bassus clausthalianus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	657	1503	Braconidae	BGLIB737-24_contig2;18-1520;+;cox1	Bassus conspicuus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	70	72	Braconidae	BGLIB739-24_contig5;3-74;+;cox1_1	Bassus mediator	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	529	1350	Braconidae	BGLIB739-24_contig5;71-1420;+;cox1_0	Bassus mediator	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	193	198	Braconidae	BGLIB740-24_contig1;4129-4326;-;cox1_1	Bassus nugax	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	41	63	Braconidae,Pteromalidae,Aphelinidae,Nymphalidae	BGLIB740-24_contig1;4572-4634;+;cox1_2	Bassus nugax	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	657	1077	Braconidae	BGLIB741-24_contig6;30-1106;+;cox1	Therophilus tumidulus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	125	168	Braconidae	BGLIB742-24_contig2;217-384;+;cox1_1	Cremnops desertor	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	245	288	Braconidae	BGLIB744-24_contig5;3-290;-;cox1	Apanteles adjuntus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	445	678	Braconidae	BGLIB745-24_contig3;2-679;-;cox1	Apanteles bicolor	2
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	657	771	Braconidae	BGLIB746-24_contig3;1-771;+;cox1	Apanteles breviventris	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	656	1350	Braconidae	BGLIB747-24_contig7;124-1473;+;cox1	Apanteles corvinus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	407	1224	Braconidae	BGLIB748-24_contig7;3-1226;+;cox1	Apanteles coleophorae	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	657	1536	Braconidae	BGLIB749-24_contig12;115-1650;-;cox1	Apanteles breviventris	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	657	1539	Braconidae	BGLIB750-24_contig6;2295-3833;-;cox1	Apanteles impurus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	656	1437	Braconidae	BGLIB751-24_contig8;399-1835;+;cox1	Aleiodes pallidator	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	656	1536	Braconidae	BGLIB752-24_contig1;1962-3497;-;cox1	Apanteles infimus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	656	921	Braconidae	BGLIB753-24_contig5;1-921;+;cox1	Apanteles infimus	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	657	1539	Braconidae	BGLIB754-24_contig2;289-1827;+;cox1	Dolichogenidea gagates	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	38	81	Braconidae,Chrysididae,Diapriidae	BGLIB755-24_contig4;1-81;-;cox1_1	Apanteles sicarius	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	657	1413	Braconidae	BGLIB755-24_contig4;150-1562;+;cox1_0	Apanteles sicarius	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	147	237	Braconidae,Agaonidae	BGLIB756-24_contig2;1-237;+;cox1_0	Helcon tardator	1
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	71	90		BGLIB756-24_contig2;203-292;-;cox1_1	Helcon tardator	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	655	1536	Braconidae	BGLIB757-24_contig1;52-1587;+;cox1	Alysia manducator	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	655	1521	Braconidae	BGLIB758-24_contig7;136-1656;+;cox1	Aspilota hirticornis	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	318	363	Braconidae	BGLIB759-24_contig7;2-364;-;cox1	Dapsilarthra florimela	0
+0	0	data/BGE00408_S2M_cox1.fasta	None	Braconidae	BLAST	family	624	1449	Braconidae	BGLIB760-24_contig8;146-1594;-;cox1	Orgilus puctulator	0

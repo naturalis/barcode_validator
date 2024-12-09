@@ -1,97 +1,97 @@
-ambig_basecount	ambig_full_basecount	error	family	fasta_file	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	process_id	species	stop_codons
-0	0	BGE00168-NC not in BOLD	None	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	BLAST	None	656	1524		BGE00168-NC	None	0
-0	0	None	Haliplidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Haliplidae	BLAST	None	657	1569	Dytiscidae,Carabidae,Haliplidae	BGENL286-23	Haliplus varius	0
-0	0	None	Dytiscidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Dytiscidae	BLAST	None	656	1572	Dytiscidae	BGENL287-23	Hygrotus parallelogrammus	0
-0	0	None	Dytiscidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Dytiscidae	BLAST	None	656	1572	Dytiscidae	BGENL288-23	Hygrotus parallelogrammus	0
-7	60	None	Dytiscidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Dytiscidae	BLAST	None	351	1056	Dytiscidae	BGENL289-23	Hygrotus parallelogrammus	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	484	522	Carabidae	BGENL290-23	Carabus clatratus multipunctatus	2
-1	1	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1530	Carabidae	BGENL291-23	Carabus clatratus multipunctatus	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1539	Carabidae	BGENL292-23	Carabus arvensis	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1539	Carabidae	BGENL293-23	Carabus arvensis	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1539	Carabidae,Haliplidae	BGENL294-23	Dyschirius impunctipennis	0
-7	24	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	491	789	Carabidae,Scarabaeidae	BGENL295-23	Dyschirius impunctipennis	0
-26	85	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	572	1281	Dytiscidae,Carabidae,Hydraenidae	BGENL296-23	Dyschirius impunctipennis	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1539	Carabidae	BGENL297-23	Carabidae	0
-None	0	Local BLAST failed for sequence ''	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	None	0		BGENL298-23	Carabidae	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1539	Carabidae,Haliplidae	BGENL299-23	Trechoblemus micros	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	567	1332	Carabidae	BGENL300-23	Bembidion	0
-0	1	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1542	Carabidae	BGENL301-23	Bembidion	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1542	Carabidae	BGENL302-23	Bembidion ephippium	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1542	Carabidae	BGENL303-23	Bembidion ephippium	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1542	Carabidae	BGENL304-23	Bembidion lunatum	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1542	Carabidae	BGENL305-23	Bembidion lunatum	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1542	Carabidae	BGENL306-23	Bembidion quadripustulatum	0
-6	18	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	633	1404	Dytiscidae,Carabidae	BGENL307-23	Bembidion quadripustulatum	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1542	Carabidae	BGENL308-23	Bembidion mannerheimii	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1542	Carabidae	BGENL309-23	Bembidion mannerheimii	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1542	Carabidae	BGENL310-23	Bembidion mannerheimii	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1542	Carabidae	BGENL311-23	Asaphidion stierlini	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1542	Carabidae	BGENL312-23	Asaphidion stierlini	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1542	Carabidae	BGENL313-23	Pogonus littoralis	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1545	Carabidae	BGENL314-23	Poecilus kugelanni	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1539	Carabidae	BGENL315-23	Agonum nigrum	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1542	Carabidae	BGENL316-23	Amara lucida	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1542	Carabidae	BGENL317-23	Amara lucida	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1539	Carabidae	BGENL318-23	Harpalus flavescens	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1539	Carabidae	BGENL319-23	Harpalus flavescens	0
-1	2	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	621	1467	Carabidae	BGENL320-23	Ophonus ardosiacus	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	645	1527	Carabidae	BGENL321-23	Ophonus ardosiacus	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1539	Carabidae	BGENL322-23	Bradycellus sharpi	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1539	Carabidae	BGENL323-23	Bradycellus sharpi	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1539	Carabidae	BGENL324-23	Callistus lunatus	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1539	Carabidae	BGENL325-23	Callistus lunatus	0
-9	10	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1536	Carabidae	BGENL326-23	Cymindis humeralis	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1539	Carabidae	BGENL327-23	Cymindis humeralis	0
-1	6	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1539	Carabidae	BGENL328-23	Cymindis axillaris	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1539	Carabidae	BGENL329-23	Cymindis axillaris	0
-3	20	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	525	1440	Carabidae	BGENL330-23	Philorhizus crucifer	0
-0	0	None	Carabidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Carabidae	BLAST	None	657	1539	Carabidae	BGENL331-23	Philorhizus crucifer	0
-0	0	None	Helophoridae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Helophoridae	BLAST	None	657	1536	Carabidae,Helophoridae,Hydrochidae,Staphylinidae,Hydraenidae,Scarabaeidae	BGENL332-23	Helophorus rufipes	0
-46	129	None	Helophoridae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Helophoridae	BLAST	None	550	1428	Carabidae,Helophoridae,Hydraenidae,Anthomyiidae	BGENL333-23	Helophorus rufipes	0
-None	0	Local BLAST failed for sequence ''	Helophoridae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Helophoridae	BLAST	None	None	0		BGENL334-23	Helophorus porculus	0
-0	0	None	Helophoridae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Helophoridae	BLAST	None	657	1539	Carabidae,Hydrophilidae,Helophoridae,Hydraenidae,Scarabaeidae	BGENL335-23	Helophorus porculus	0
-0	0	None	Helophoridae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Helophoridae	BLAST	None	657	1539	Hydrophilidae,Helophoridae,Hydrochidae,Hydraenidae,Cleridae	BGENL336-23	Helophorus tuberculatus	0
-19	44	None	Helophoridae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Helophoridae	BLAST	None	204	786	Carabidae,Hydrophilidae,Staphylinidae,Cerambycidae	BGENL337-23	Helophorus tuberculatus	0
-0	0	None	Helophoridae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Helophoridae	BLAST	None	657	1539	Helophoridae,Staphylinidae,Hydraenidae,Ephydridae	BGENL338-23	Helophorus pumilio	0
-0	0	None	Hydrophilidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Hydrophilidae	BLAST	None	657	1539	Hydrophilidae,Hydraenidae	BGENL339-23	Cercyon granarius	0
-6	16	None	Hydrophilidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Hydrophilidae	BLAST	None	653	1530	Staphylinidae,Ptiliidae,Scarabaeidae	BGENL340-23	Cercyon granarius	0
-38	75	None	Hydrophilidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Hydrophilidae	BLAST	None	657	1542	Hydrophilidae,Staphylinidae,Hydraenidae,Scarabaeidae,Tephritidae,Tachinidae	BGENL341-23	Cryptopleurum crenatum	0
-32	32	None	Hydrophilidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Hydrophilidae	BLAST	None	600	1173	Hydrophilidae	BGENL342-23	Cryptopleurum crenatum	0
-1	21	None	Sphaeritidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Sphaeritidae	BLAST	None	657	1509	Staphylinidae,Leiodidae,Hydraenidae,Sphaeritidae,Scarabaeidae,Erotylidae,Nosodendridae	BGENL343-23	Sphaerites glabratus	0
-0	0	None	Sphaeritidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Sphaeritidae	BLAST	None	657	1542	Staphylinidae,Hydraenidae,Sphaeritidae,Scarabaeidae,Nosodendridae	BGENL344-23	Sphaerites glabratus	0
-0	0	None	Geotrupidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Geotrupidae	BLAST	None	657	1533	Geotrupidae	BGENL345-23	Geotrupes mutator	0
-0	10	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	93	276	Rhaphidophoridae,Endomychidae,Formicidae,Leptopsyllidae,Gelechiidae,Riodinidae	BGENL346-23	Colobopterus erraticus	0
-14	44	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	555	1236	Scarabaeidae,Syrphidae,Drosophilidae,Muscidae,Fanniidae,Tachinidae	BGENL347-23	Colobopterus erraticus	0
-6	26	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	270	816	Silphidae,Trogidae,Curculionidae,Dermestidae,Drosophilidae,Sarcophagidae	BGENL348-23	Colobopterus erraticus	0
-4	4	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	657	1533	Lonchopteridae,Syrphidae,Tabanidae,Sphingidae,Rapismatidae	BGENL349-23	Acrossus rufipes	0
-0	0	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	657	1533	Scarabaeidae	BGENL350-23	Acrossus rufipes	0
-0	0	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	657	1533	Scarabaeidae	BGENL351-23	Acrossus rufipes	0
-0	0	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	657	1533	Scarabaeidae	BGENL352-23	Acrossus depressus	0
-14	18	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	657	1473	Scarabaeidae	BGENL353-23	Acrossus depressus	0
-0	52	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	217	429	Carabidae,Corydalidae	BGENL354-23	Acrossus depressus	1
-1	1	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	657	1497	Staphylinidae,Hydraenidae,Scarabaeidae	BGENL355-23	Limarus zenkeri	0
-0	0	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	657	1536	Scarabaeidae	BGENL356-23	Limarus zenkeri	0
-7	7	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	398	411	Scarabaeidae,Cerambycidae,Hepialidae	BGENL357-23	Chilothorax paykulli	2
-0	0	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	519	1398	Scarabaeidae	BGENL358-23	Chilothorax paykulli	0
-0	0	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	657	1536	Scarabaeidae	BGENL359-23	Chilothorax paykulli	0
-9	27	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	404	1155	Scarabaeidae	BGENL360-23	Nimbus obliteratus	0
-13	21	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	549	1431	Scarabaeidae	BGENL361-23	Nimbus obliteratus	0
-6	23	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	656	1500	Hydrophilidae,Scarabaeidae	BGENL362-23	Nimbus obliteratus	0
-0	20	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	110	747	Scarabaeidae	BGENL363-23	Trichonotulus scrofa	0
-0	0	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	657	1536	Scarabaeidae	BGENL364-23	Esymus merdarius	0
-0	0	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	657	1536	Scarabaeidae	BGENL365-23	Esymus merdarius	0
-8	22	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	657	1380	Scarabaeidae	BGENL366-23	Esymus merdarius	0
-0	0	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	656	1539	Scarabaeidae	BGENL367-23	Rhodaphodius foetens	0
-0	0	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	656	1536	Scarabaeidae	BGENL368-23	Rhodaphodius foetens	0
-6	6	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	656	1416	Scarabaeidae,Geotrupidae	BGENL369-23	Rhodaphodius foetens	0
-3	25	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	455	960	Staphylinidae,Scarabaeidae	BGENL370-23	Planolinoides borealis	12
-1	14	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	657	1533	Scarabaeidae	BGENL371-23	Bodilopsis sordida	0
-0	0	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	318	774	Dytiscidae,Carabidae,Noctuidae,Hemerobiidae	BGENL372-23	Bodilopsis sordida	0
-5	7	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	434	948	Staphylinidae,Hydraenidae,Drosophilidae	BGENL373-23	Bodiloides ictericus	6
-17	28	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	192	756	Hydraenidae,Histeridae,Lucanidae,Phoridae,Drosophilidae	BGENL374-23	Bodiloides ictericus	0
-21	53	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	489	1269	Carabidae,Scarabaeidae	BGENL375-23	Bodiloides ictericus	0
-0	0	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	657	1539	Scarabaeidae	BGENL376-23	Euheptaulacus sus	0
-0	0	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	657	1533	Scarabaeidae	BGENL377-23	Euheptaulacus sus	0
-0	0	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	657	1533	Scarabaeidae	BGENL378-23	Amphimallon ruficorne	0
-0	0	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	657	1533	Scarabaeidae	BGENL379-23	Amphimallon ruficorne	0
-0	0	None	Scarabaeidae	data/BGE00168_MGE-BGE_r_1_s_100.fas	Scarabaeidae	BLAST	None	656	1536	Scarabaeidae	BGENL380-23	Serica	0
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	BGE00168-NC not in BOLD	None	BLAST	family	656	1524		BGE00168-NC_cns	None	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Haliplidae	BLAST	family	657	1569	Dytiscidae,Carabidae,Haliplidae	BGENL286-23_cns	Haliplus varius	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Dytiscidae	BLAST	family	656	1572	Dytiscidae	BGENL287-23_cns	Hygrotus parallelogrammus	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Dytiscidae	BLAST	family	656	1572	Dytiscidae	BGENL288-23_cns	Hygrotus parallelogrammus	0
+7	60	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Dytiscidae	BLAST	family	351	1056	Dytiscidae	BGENL289-23_cns	Hygrotus parallelogrammus	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	484	522	Carabidae	BGENL290-23_cns	Carabus clatratus multipunctatus	2
+1	1	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1530	Carabidae	BGENL291-23_cns	Carabus clatratus multipunctatus	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1539	Carabidae	BGENL292-23_cns	Carabus arvensis	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1539	Carabidae	BGENL293-23_cns	Carabus arvensis	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1539	Carabidae,Haliplidae	BGENL294-23_cns	Dyschirius impunctipennis	0
+7	24	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	491	789	Carabidae,Scarabaeidae	BGENL295-23_cns	Dyschirius impunctipennis	0
+26	85	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	572	1281	Dytiscidae,Carabidae,Hydraenidae	BGENL296-23_cns	Dyschirius impunctipennis	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1539	Carabidae	BGENL297-23_cns	Carabidae	0
+None	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	Local BLAST failed for sequence ''	Carabidae	BLAST	family	None	0		BGENL298-23_cns	Carabidae	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1539	Carabidae,Haliplidae	BGENL299-23_cns	Trechoblemus micros	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	567	1332	Carabidae	BGENL300-23_cns	Bembidion	0
+0	1	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL301-23_cns	Bembidion	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL302-23_cns	Bembidion ephippium	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL303-23_cns	Bembidion ephippium	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL304-23_cns	Bembidion lunatum	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL305-23_cns	Bembidion lunatum	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL306-23_cns	Bembidion quadripustulatum	0
+6	18	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	633	1404	Dytiscidae,Carabidae	BGENL307-23_cns	Bembidion quadripustulatum	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL308-23_cns	Bembidion mannerheimii	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL309-23_cns	Bembidion mannerheimii	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL310-23_cns	Bembidion mannerheimii	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL311-23_cns	Asaphidion stierlini	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL312-23_cns	Asaphidion stierlini	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL313-23_cns	Pogonus littoralis	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1545	Carabidae	BGENL314-23_cns	Poecilus kugelanni	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1539	Carabidae	BGENL315-23_cns	Agonum nigrum	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL316-23_cns	Amara lucida	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1542	Carabidae	BGENL317-23_cns	Amara lucida	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1539	Carabidae	BGENL318-23_cns	Harpalus flavescens	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1539	Carabidae	BGENL319-23_cns	Harpalus flavescens	0
+1	2	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	621	1467	Carabidae	BGENL320-23_cns	Ophonus ardosiacus	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	645	1527	Carabidae	BGENL321-23_cns	Ophonus ardosiacus	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1539	Carabidae	BGENL322-23_cns	Bradycellus sharpi	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1539	Carabidae	BGENL323-23_cns	Bradycellus sharpi	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1539	Carabidae	BGENL324-23_cns	Callistus lunatus	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1539	Carabidae	BGENL325-23_cns	Callistus lunatus	0
+9	10	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1536	Carabidae	BGENL326-23_cns	Cymindis humeralis	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1539	Carabidae	BGENL327-23_cns	Cymindis humeralis	0
+1	6	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1539	Carabidae	BGENL328-23_cns	Cymindis axillaris	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1539	Carabidae	BGENL329-23_cns	Cymindis axillaris	0
+3	20	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	525	1440	Carabidae	BGENL330-23_cns	Philorhizus crucifer	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1539	Carabidae	BGENL331-23_cns	Philorhizus crucifer	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Helophoridae	BLAST	family	657	1536	Carabidae,Helophoridae,Hydrochidae,Staphylinidae,Hydraenidae,Scarabaeidae	BGENL332-23_cns	Helophorus rufipes	0
+46	129	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Helophoridae	BLAST	family	550	1428	Carabidae,Helophoridae,Hydraenidae,Anthomyiidae	BGENL333-23_cns	Helophorus rufipes	0
+None	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	Local BLAST failed for sequence ''	Helophoridae	BLAST	family	None	0		BGENL334-23_cns	Helophorus porculus	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Helophoridae	BLAST	family	657	1539	Carabidae,Hydrophilidae,Helophoridae,Hydraenidae,Scarabaeidae	BGENL335-23_cns	Helophorus porculus	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Helophoridae	BLAST	family	657	1539	Hydrophilidae,Helophoridae,Hydrochidae,Hydraenidae,Cleridae	BGENL336-23_cns	Helophorus tuberculatus	0
+19	44	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Helophoridae	BLAST	family	204	786	Carabidae,Hydrophilidae,Staphylinidae,Cerambycidae	BGENL337-23_cns	Helophorus tuberculatus	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Helophoridae	BLAST	family	657	1539	Helophoridae,Staphylinidae,Hydraenidae,Ephydridae	BGENL338-23_cns	Helophorus pumilio	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Hydrophilidae	BLAST	family	657	1539	Hydrophilidae,Hydraenidae	BGENL339-23_cns	Cercyon granarius	0
+6	16	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Hydrophilidae	BLAST	family	653	1530	Staphylinidae,Ptiliidae,Scarabaeidae	BGENL340-23_cns	Cercyon granarius	0
+38	75	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Hydrophilidae	BLAST	family	657	1542	Hydrophilidae,Staphylinidae,Hydraenidae,Scarabaeidae,Tephritidae,Tachinidae	BGENL341-23_cns	Cryptopleurum crenatum	0
+32	32	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Hydrophilidae	BLAST	family	600	1173	Hydrophilidae	BGENL342-23_cns	Cryptopleurum crenatum	0
+1	21	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Sphaeritidae	BLAST	family	657	1509	Staphylinidae,Leiodidae,Hydraenidae,Sphaeritidae,Scarabaeidae,Erotylidae,Nosodendridae	BGENL343-23_cns	Sphaerites glabratus	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Sphaeritidae	BLAST	family	657	1542	Staphylinidae,Hydraenidae,Sphaeritidae,Scarabaeidae,Nosodendridae	BGENL344-23_cns	Sphaerites glabratus	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Geotrupidae	BLAST	family	657	1533	Geotrupidae	BGENL345-23_cns	Geotrupes mutator	0
+0	10	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	93	276	Rhaphidophoridae,Endomychidae,Formicidae,Leptopsyllidae,Gelechiidae,Riodinidae	BGENL346-23_cns	Colobopterus erraticus	0
+14	44	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	555	1236	Scarabaeidae,Syrphidae,Drosophilidae,Muscidae,Fanniidae,Tachinidae	BGENL347-23_cns	Colobopterus erraticus	0
+6	26	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	270	816	Silphidae,Trogidae,Curculionidae,Dermestidae,Drosophilidae,Sarcophagidae	BGENL348-23_cns	Colobopterus erraticus	0
+4	4	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1533	Lonchopteridae,Syrphidae,Tabanidae,Sphingidae,Rapismatidae	BGENL349-23_cns	Acrossus rufipes	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1533	Scarabaeidae	BGENL350-23_cns	Acrossus rufipes	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1533	Scarabaeidae	BGENL351-23_cns	Acrossus rufipes	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1533	Scarabaeidae	BGENL352-23_cns	Acrossus depressus	0
+14	18	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1473	Scarabaeidae	BGENL353-23_cns	Acrossus depressus	0
+0	52	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	217	429	Carabidae,Corydalidae	BGENL354-23_cns	Acrossus depressus	1
+1	1	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1497	Staphylinidae,Hydraenidae,Scarabaeidae	BGENL355-23_cns	Limarus zenkeri	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1536	Scarabaeidae	BGENL356-23_cns	Limarus zenkeri	0
+7	7	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	398	411	Scarabaeidae,Cerambycidae,Hepialidae	BGENL357-23_cns	Chilothorax paykulli	2
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	519	1398	Scarabaeidae	BGENL358-23_cns	Chilothorax paykulli	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1536	Scarabaeidae	BGENL359-23_cns	Chilothorax paykulli	0
+9	27	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	404	1155	Scarabaeidae	BGENL360-23_cns	Nimbus obliteratus	0
+13	21	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	549	1431	Scarabaeidae	BGENL361-23_cns	Nimbus obliteratus	0
+6	23	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	656	1500	Hydrophilidae,Scarabaeidae	BGENL362-23_cns	Nimbus obliteratus	0
+0	20	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	110	747	Scarabaeidae	BGENL363-23_cns	Trichonotulus scrofa	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1536	Scarabaeidae	BGENL364-23_cns	Esymus merdarius	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1536	Scarabaeidae	BGENL365-23_cns	Esymus merdarius	0
+8	22	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1380	Scarabaeidae	BGENL366-23_cns	Esymus merdarius	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	656	1539	Scarabaeidae	BGENL367-23_cns	Rhodaphodius foetens	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	656	1536	Scarabaeidae	BGENL368-23_cns	Rhodaphodius foetens	0
+6	6	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	656	1416	Scarabaeidae,Geotrupidae	BGENL369-23_cns	Rhodaphodius foetens	0
+3	25	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	455	960	Staphylinidae,Scarabaeidae	BGENL370-23_cns	Planolinoides borealis	12
+1	14	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1533	Scarabaeidae	BGENL371-23_cns	Bodilopsis sordida	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	318	774	Dytiscidae,Carabidae,Noctuidae,Hemerobiidae	BGENL372-23_cns	Bodilopsis sordida	0
+5	7	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	434	948	Staphylinidae,Hydraenidae,Drosophilidae	BGENL373-23_cns	Bodiloides ictericus	6
+17	28	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	192	756	Hydraenidae,Histeridae,Lucanidae,Phoridae,Drosophilidae	BGENL374-23_cns	Bodiloides ictericus	0
+21	53	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	489	1269	Carabidae,Scarabaeidae	BGENL375-23_cns	Bodiloides ictericus	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1539	Scarabaeidae	BGENL376-23_cns	Euheptaulacus sus	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1533	Scarabaeidae	BGENL377-23_cns	Euheptaulacus sus	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1533	Scarabaeidae	BGENL378-23_cns	Amphimallon ruficorne	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1533	Scarabaeidae	BGENL379-23_cns	Amphimallon ruficorne	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	656	1536	Scarabaeidae	BGENL380-23_cns	Serica	0

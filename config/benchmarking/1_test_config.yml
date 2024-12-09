@@ -1,0 +1,59 @@
+# Detauls of the repository. This is where the daemon will find local files in pull requests and how it will compose
+# the URLs to the various pull request service endpoints. For the endpoints we are quite intimately tied to GitHub
+# and the GitHub API (e.g. in the structure of the JSON that is returned), so this is not very flexible.
+repo_location: ./
+repo_owner: naturalis
+repo_name: barcode_validator
+pr_db_file: ../examples/pr_status.db
+
+# Alignment configuration. This needs the location of an HMM file for the focal marker. This is used in conjunction with
+# `hmmalign` from the HMMER package to align the sequences to the HMM. The assumption is that the executable is in the
+# PATH because it is installed in the conda environment as a dependency of the barcode_validator package.
+hmm_file: ../examples/COI-5P.hmm
+
+# Which taxonomic level to use for the ID check. The idea is that the expected taxon (in BOLD) and the observed taxa
+# (in NCBI) are at this level in the taxonomy and match exactly. So far this has worked well for the family level, and
+# this should hold for higher taxa as well.
+level: family
+
+# Where to constrain the BLAST search. This indicates the higher taxon level within the NCBI taxonomy to which the
+# observed taxa and the expected taxon belong and to which the search should be constrained. This is used to speed up
+# the search and to avoid false positives.
+constrain: class
+
+# Configuration for local blast. The lower case values are used as arguments to the blastn command. The upper case
+# values are used to set environment variables that are used by the blastn command. The BLASTDB environment variable
+# is used to specify the location of the BLAST database. The BLASTDB_LMDB_MAP_SIZE environment variable is used to
+# specify the amount of RAM allocated to the blastn job.
+blast_db: /home/rutger.vos/data/ncbi/nt/nt
+
+# MaaS 39 has 64 cores, so we can use 56 for BLAST and leave 8 for the rest of the system.
+num_threads: 1
+evalue: 1e-5
+max_target_seqs: 10
+word_size: 28
+
+# The BLASTDB environment variable is used to specify the location of the BLAST database. The BLASTDB_LMDB_MAP_SIZE
+# environment variable is used to specify the amount of RAM allocated to the blastn job. For some reason, setting the
+# latter to any value causes the blastn job to fail with a segmentation fault. So let's not do that.
+BLASTDB_LMDB_MAP_SIZE: 128G
+BLASTDB: /home/rutger.vos/data/ncbi/nt
+
+# Location of the NCBI taxonomy dump. This must be the tar.gz file that contains the nodes.dmp and names.dmp files.
+# This corresponds with the dump made available at http://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz
+ncbi_taxonomy: /home/rutger.vos/data/ncbi/taxdump/taxdump.tar.gz
+
+# Location of the BOLD Excel file. This file is used to match the process IDs (first word in the FASTA file headers)
+# to the species names and higher taxon lineages. Instructions on how this file is generated can be found in the
+# README.md file in this folder.
+bold_sheet_file: ../examples/bold.xlsx
+
+# Configuration for logging. The verbosity level specified here is overridden by the value provided on the command
+# line with the -v/-verbosity argument. The log file is written to the current working directory.
+log_level: WARNING
+log_file: ../log_file.log
+
+# Which translation table is used. This value is an integer that corresponds to the tables used by NCBI and parsed
+# by biopython. The default is 5, which is the table for invertebrate mitochondrial DNA.
+# See https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi#SG5
+translation_table: 5

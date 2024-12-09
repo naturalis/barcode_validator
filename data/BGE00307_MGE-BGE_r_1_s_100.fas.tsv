@@ -1,97 +1,97 @@
-ambig_basecount	ambig_full_basecount	error	family	fasta_file	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	process_id	species	stop_codons
-22	51	BGE00307-NC not in BOLD	None	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	BLAST	None	322	927		BGE00307-NC	None	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	657	1479	Andrenidae	BGSNL1331-24	Hypsopygia incarnatalis	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	657	1452	Andrenidae	BGSNL1332-24	Keradere argyrophanes	0
-4	10	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	657	1389	Andrenidae	BGSNL1333-24	Keradere tengstroemiella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1455	Andrenidae	BGSNL1334-24	Keradere tengstroemiella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1455	Andrenidae	BGSNL1335-24	Keradere tengstroemiella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1455	Andrenidae	BGSNL1336-24	Melathrix coenulentella	0
-0	1	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1455	Andrenidae	BGSNL1337-24	Melathrix coenulentella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1440	Andrenidae	BGSNL1338-24	Melathrix coenulentella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1434	Andrenidae	BGSNL1339-24	Merulempista amoenella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1443	Andrenidae	BGSNL1340-24	Merulempista amoenella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1506	Andrenidae	BGSNL1341-24	Merulempista amoenella	0
-11	13	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1434	Andrenidae	BGSNL1342-24	Merulempista ragonoti	0
-0	1	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1443	Andrenidae	BGSNL1343-24	Merulempista ragonoti	0
-1	1	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1419	Andrenidae	BGSNL1344-24	Merulempista ragonoti	0
-2	3	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	657	1383	Andrenidae	BGSNL1345-24	Metallosticha argyrogrammos	0
-0	1	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1467	Andrenidae	BGSNL1346-24	Metallosticha argyrogrammos	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1527	Andrenidae	BGSNL1347-24	Metallosticha argyrogrammos	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1515	Andrenidae	BGSNL1348-24	Myelois multiforella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1434	Andrenidae	BGSNL1349-24	Myelois multiforella	0
-8	72	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	606	1314	Andrenidae	BGSNL1350-24	Myelois multiforella	0
-26	125	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	654	1395	Andrenidae,Colletidae	BGSNL1351-24	Myelois ossicolor	0
-41	82	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	591	1257	Hybotidae,Syrphidae,Chloropidae,Micropezidae	BGSNL1352-24	Myelois ossicolor	0
-0	2	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	654	1449	Apidae,Andrenidae,Megachilidae,Colletidae,Melittidae	BGSNL1353-24	Myelois ossicolor	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	655	1437	Andrenidae	BGSNL1354-24	Myelois pluripunctella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	655	1485	Andrenidae	BGSNL1355-24	Myelois pluripunctella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	655	1512	Andrenidae	BGSNL1356-24	Myelois pluripunctella	0
-17	48	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	295	951	Apidae	BGSNL1357-24	Myrlaea albistrigata	0
-4	12	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	654	1455	Apidae	BGSNL1358-24	Myrlaea albistrigata	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	653	1440	Apidae	BGSNL1359-24	Myrlaea albistrigata	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	653	1428	Apidae	BGSNL1360-24	Ancylosis ustella	0
-6	20	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	653	1440	Apidae	BGSNL1361-24	Ancylosis ustella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	653	1452	Apidae	BGSNL1362-24	Ancylosis ustella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	657	1536	Apidae,Andrenidae,Halictidae,Colletidae,Melittidae	BGSNL1363-24	Paramaxillaria amatrix	0
-32	69	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	657	1455	Apidae,Andrenidae,Halictidae,Megachilidae,Colletidae	BGSNL1364-24	Pararotruda nesiotica	0
-13	30	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	657	1389	Andrenidae,Colletidae	BGSNL1365-24	Pararotruda nesiotica	0
-6	23	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	651	1401	Apidae,Andrenidae,Megachilidae,Formicidae	BGSNL1366-24	Pempelia brephiella	0
-0	4	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	625	1386		BGSNL1367-24	Pempelia brephiella	0
-23	103	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	654	1433	Andrenidae	BGSNL1368-24	Pempelia brephiella	0
-1	2	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	657	1356	Apidae,Andrenidae,Halictidae,Colletidae,Melittidae	BGSNL1369-24	Pempeliella ardosiella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	657	1458	Apidae,Andrenidae,Colletidae,Melittidae	BGSNL1370-24	Pempeliella ardosiella	0
-32	48	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	654	1431	Andrenidae	BGSNL1371-24	Pempeliella ardosiella	0
-0	10	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	655	1455	Andrenidae,Halictidae,Colletidae,Melittidae	BGSNL1372-24	Pempeliopteryx cirtensis	0
-4	6	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	655	1455	Apidae,Andrenidae,Halictidae,Colletidae,Melittidae	BGSNL1373-24	Pempeliopteryx cirtensis	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	655	1500	Apidae,Andrenidae,Halictidae,Colletidae,Melittidae	BGSNL1374-24	Pempeliopteryx cleopatrella	0
-11	49	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	633	1398	Apidae,Andrenidae,Halictidae,Colletidae	BGSNL1375-24	Pempeliopteryx cleopatrella	0
-32	77	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	655	1413	Cecidomyiidae,Andrenidae,Colletidae	BGSNL1376-24	Pempeliopteryx cleopatrella	0
-23	28	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1413	Apidae,Andrenidae,Halictidae,Colletidae	BGSNL1377-24	Phycita meliella	0
-17	40	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	614	1293	Cecidomyiidae,Halictidae,Formicidae	BGSNL1378-24	Phycita meliella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	657	1404	Apidae,Andrenidae,Halictidae,Colletidae	BGSNL1379-24	Phycita meliella	0
-1	83	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	470	1005		BGSNL1380-24	Phycita pedisignella	0
-8	127	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	440	1083	Crabronidae,Andrenidae,Halictidae,Megachilidae,Colletidae,Aphelinidae,Diapriidae	BGSNL1381-24	Phycita pedisignella	0
-24	28	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	315	879	Chrysomelidae,Andrenidae,Halictidae,Torymidae	BGSNL1382-24	Phycita pedisignella	0
-5	15	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1434	Andrenidae,Halictidae,Colletidae	BGSNL1383-24	Phycitodes bentinckella	0
-1	1	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1407	Andrenidae,Halictidae,Colletidae	BGSNL1384-24	Phycitodes bentinckella	0
-0	20	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	106	546		BGSNL1385-24	Phycitodes bentinckella	0
-61	99	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1353	Apidae,Andrenidae,Halictidae	BGSNL1386-24	Polyocha venosa	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	654	1470	Apidae,Andrenidae,Halictidae,Colletidae	BGSNL1387-24	Polyocha venosa	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	654	1467	Apidae,Andrenidae,Halictidae,Colletidae	BGSNL1388-24	Polyocha venosa	0
-2	2	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	654	1428	Apidae,Andrenidae,Halictidae,Colletidae	BGSNL1389-24	Psorosa mediterranella	0
-1	1	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	624	1350	Colletidae	BGSNL1390-24	Psorosa mediterranella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	657	1452	Apidae,Halictidae,Megachilidae,Colletidae,Melittidae	BGSNL1391-24	Psorosa mediterranella	0
-1	15	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	625	1296		BGSNL1392-24	Pterothrixidia caucasiella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1515	Apidae,Halictidae,Colletidae	BGSNL1393-24	Pterothrixidia caucasiella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1452	Apidae,Halictidae,Colletidae	BGSNL1394-24	Pterothrixidia caucasiella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1479	Apidae,Halictidae,Colletidae	BGSNL1395-24	Pterothrixidia contectella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	657	1446	Apidae,Andrenidae,Halictidae	BGSNL1396-24	Pterothrixidia contectella	0
-5	5	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1458	Apidae,Andrenidae,Halictidae	BGSNL1397-24	Pterothrixidia contectella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1482	Andrenidae	BGSNL1398-24	Pterothrixidia impurella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	655	1443	Apidae	BGSNL1399-24	Pterothrixidia impurella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	655	1533	Apidae	BGSNL1400-24	Pterothrixidia impurella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	655	1473	Apidae	BGSNL1401-24	Pyralis transcaspica	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	526	1263		BGSNL1402-24	Saluria maculivittella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1491	Apidae	BGSNL1403-24	Seleucia pectinella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1503	Apidae	BGSNL1404-24	Seleucia pectinella	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	657	1434	Apidae	BGSNL1405-24	Seleucia pectinella	0
-37	81	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	655	1386	Cicadellidae,Chamaemyiidae,Ichneumonidae,Andrenidae,Gelechiidae,Cossidae,Geometridae	BGSNL1406-24	Stemmatophora gredalis	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	657	1455	Apidae	BGSNL1407-24	Stemmatophora syriacalis	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1464	Apidae	BGSNL1408-24	Stemmatophora syriacalis	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1512	Apidae	BGSNL1409-24	Stemmatophora syriacalis	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1452	Apidae	BGSNL1410-24	Synaphe diffidalis	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1455	Apidae	BGSNL1411-24	Synaphe diffidalis	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1512	Apidae	BGSNL1412-24	Synaphe diffidalis	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1524	Apidae	BGSNL1413-24	Synaphe interjunctalis	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1518	Apidae	BGSNL1414-24	Synaphe interjunctalis	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1518	Apidae	BGSNL1415-24	Synaphe interjunctalis	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1512	Apidae	BGSNL1416-24	Synaphe morbidalis	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	655	1440	Andrenidae	BGSNL1417-24	Synaphe morbidalis	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	655	1485	Andrenidae	BGSNL1418-24	Synaphe morbidalis	0
-10	42	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	655	1350	Andrenidae	BGSNL1419-24	Synaphe oculatalis	0
-29	48	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	655	1512	Notodontidae,Nymphalidae,Pyralidae,Crambidae	BGSNL1420-24	Synaphe oculatalis	0
-0	1	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1431	Andrenidae	BGSNL1421-24	Synaphe oculatalis	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1491	Andrenidae	BGSNL1422-24	Synaphe predotalis	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1464	Andrenidae	BGSNL1423-24	Synaphe predotalis	0
-0	0	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1509	Andrenidae	BGSNL1424-24	Synaphe predotalis	0
-0	1	None	Pyralidae	data/BGE00307_MGE-BGE_r_1_s_100.fas	Pyralidae	BLAST	None	656	1428	Andrenidae	BGSNL1425-24	Synoria antiquella	0
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+22	51	data/BGE00307_MGE-BGE_r_1_s_100.fas	BGE00307-NC not in BOLD	None	BLAST	family	322	927		BGE00307-NC_cns	None	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	657	1479	Andrenidae	BGSNL1331-24_cns	Hypsopygia incarnatalis	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	657	1452	Andrenidae	BGSNL1332-24_cns	Keradere argyrophanes	0
+4	10	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	657	1389	Andrenidae	BGSNL1333-24_cns	Keradere tengstroemiella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1455	Andrenidae	BGSNL1334-24_cns	Keradere tengstroemiella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1455	Andrenidae	BGSNL1335-24_cns	Keradere tengstroemiella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1455	Andrenidae	BGSNL1336-24_cns	Melathrix coenulentella	0
+0	1	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1455	Andrenidae	BGSNL1337-24_cns	Melathrix coenulentella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1440	Andrenidae	BGSNL1338-24_cns	Melathrix coenulentella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1434	Andrenidae	BGSNL1339-24_cns	Merulempista amoenella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1443	Andrenidae	BGSNL1340-24_cns	Merulempista amoenella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1506	Andrenidae	BGSNL1341-24_cns	Merulempista amoenella	0
+11	13	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1434	Andrenidae	BGSNL1342-24_cns	Merulempista ragonoti	0
+0	1	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1443	Andrenidae	BGSNL1343-24_cns	Merulempista ragonoti	0
+1	1	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1419	Andrenidae	BGSNL1344-24_cns	Merulempista ragonoti	0
+2	3	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	657	1383	Andrenidae	BGSNL1345-24_cns	Metallosticha argyrogrammos	0
+0	1	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1467	Andrenidae	BGSNL1346-24_cns	Metallosticha argyrogrammos	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1527	Andrenidae	BGSNL1347-24_cns	Metallosticha argyrogrammos	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1515	Andrenidae	BGSNL1348-24_cns	Myelois multiforella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1434	Andrenidae	BGSNL1349-24_cns	Myelois multiforella	0
+8	72	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	606	1314	Andrenidae	BGSNL1350-24_cns	Myelois multiforella	0
+26	125	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	654	1395	Andrenidae,Colletidae	BGSNL1351-24_cns	Myelois ossicolor	0
+41	82	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	591	1257	Hybotidae,Syrphidae,Chloropidae,Micropezidae	BGSNL1352-24_cns	Myelois ossicolor	0
+0	2	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	654	1449	Apidae,Andrenidae,Megachilidae,Colletidae,Melittidae	BGSNL1353-24_cns	Myelois ossicolor	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	655	1437	Andrenidae	BGSNL1354-24_cns	Myelois pluripunctella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	655	1485	Andrenidae	BGSNL1355-24_cns	Myelois pluripunctella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	655	1512	Andrenidae	BGSNL1356-24_cns	Myelois pluripunctella	0
+17	48	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	295	951	Apidae	BGSNL1357-24_cns	Myrlaea albistrigata	0
+4	12	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	654	1455	Apidae	BGSNL1358-24_cns	Myrlaea albistrigata	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	653	1440	Apidae	BGSNL1359-24_cns	Myrlaea albistrigata	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	653	1428	Apidae	BGSNL1360-24_cns	Ancylosis ustella	0
+6	20	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	653	1440	Apidae	BGSNL1361-24_cns	Ancylosis ustella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	653	1452	Apidae	BGSNL1362-24_cns	Ancylosis ustella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	657	1536	Apidae,Andrenidae,Halictidae,Colletidae,Melittidae	BGSNL1363-24_cns	Paramaxillaria amatrix	0
+32	69	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	657	1455	Apidae,Andrenidae,Halictidae,Megachilidae,Colletidae	BGSNL1364-24_cns	Pararotruda nesiotica	0
+13	30	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	657	1389	Andrenidae,Colletidae	BGSNL1365-24_cns	Pararotruda nesiotica	0
+6	23	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	651	1401	Apidae,Andrenidae,Megachilidae,Formicidae	BGSNL1366-24_cns	Pempelia brephiella	0
+0	4	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	625	1386		BGSNL1367-24_cns	Pempelia brephiella	0
+23	103	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	654	1433	Andrenidae	BGSNL1368-24_cns	Pempelia brephiella	0
+1	2	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	657	1356	Apidae,Andrenidae,Halictidae,Colletidae,Melittidae	BGSNL1369-24_cns	Pempeliella ardosiella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	657	1458	Apidae,Andrenidae,Colletidae,Melittidae	BGSNL1370-24_cns	Pempeliella ardosiella	0
+32	48	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	654	1431	Andrenidae	BGSNL1371-24_cns	Pempeliella ardosiella	0
+0	10	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	655	1455	Andrenidae,Halictidae,Colletidae,Melittidae	BGSNL1372-24_cns	Pempeliopteryx cirtensis	0
+4	6	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	655	1455	Apidae,Andrenidae,Halictidae,Colletidae,Melittidae	BGSNL1373-24_cns	Pempeliopteryx cirtensis	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	655	1500	Apidae,Andrenidae,Halictidae,Colletidae,Melittidae	BGSNL1374-24_cns	Pempeliopteryx cleopatrella	0
+11	49	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	633	1398	Apidae,Andrenidae,Halictidae,Colletidae	BGSNL1375-24_cns	Pempeliopteryx cleopatrella	0
+32	77	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	655	1413	Cecidomyiidae,Andrenidae,Colletidae	BGSNL1376-24_cns	Pempeliopteryx cleopatrella	0
+23	28	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1413	Apidae,Andrenidae,Halictidae,Colletidae	BGSNL1377-24_cns	Phycita meliella	0
+17	40	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	614	1293	Cecidomyiidae,Halictidae,Formicidae	BGSNL1378-24_cns	Phycita meliella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	657	1404	Apidae,Andrenidae,Halictidae,Colletidae	BGSNL1379-24_cns	Phycita meliella	0
+1	83	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	470	1005		BGSNL1380-24_cns	Phycita pedisignella	0
+8	127	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	440	1083	Crabronidae,Andrenidae,Halictidae,Megachilidae,Colletidae,Aphelinidae,Diapriidae	BGSNL1381-24_cns	Phycita pedisignella	0
+24	28	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	315	879	Chrysomelidae,Andrenidae,Halictidae,Torymidae	BGSNL1382-24_cns	Phycita pedisignella	0
+5	15	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1434	Andrenidae,Halictidae,Colletidae	BGSNL1383-24_cns	Phycitodes bentinckella	0
+1	1	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1407	Andrenidae,Halictidae,Colletidae	BGSNL1384-24_cns	Phycitodes bentinckella	0
+0	20	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	106	546		BGSNL1385-24_cns	Phycitodes bentinckella	0
+61	99	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1353	Apidae,Andrenidae,Halictidae	BGSNL1386-24_cns	Polyocha venosa	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	654	1470	Apidae,Andrenidae,Halictidae,Colletidae	BGSNL1387-24_cns	Polyocha venosa	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	654	1467	Apidae,Andrenidae,Halictidae,Colletidae	BGSNL1388-24_cns	Polyocha venosa	0
+2	2	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	654	1428	Apidae,Andrenidae,Halictidae,Colletidae	BGSNL1389-24_cns	Psorosa mediterranella	0
+1	1	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	624	1350	Colletidae	BGSNL1390-24_cns	Psorosa mediterranella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	657	1452	Apidae,Halictidae,Megachilidae,Colletidae,Melittidae	BGSNL1391-24_cns	Psorosa mediterranella	0
+1	15	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	625	1296		BGSNL1392-24_cns	Pterothrixidia caucasiella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1515	Apidae,Halictidae,Colletidae	BGSNL1393-24_cns	Pterothrixidia caucasiella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1452	Apidae,Halictidae,Colletidae	BGSNL1394-24_cns	Pterothrixidia caucasiella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1479	Apidae,Halictidae,Colletidae	BGSNL1395-24_cns	Pterothrixidia contectella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	657	1446	Apidae,Andrenidae,Halictidae	BGSNL1396-24_cns	Pterothrixidia contectella	0
+5	5	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1458	Apidae,Andrenidae,Halictidae	BGSNL1397-24_cns	Pterothrixidia contectella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1482	Andrenidae	BGSNL1398-24_cns	Pterothrixidia impurella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	655	1443	Apidae	BGSNL1399-24_cns	Pterothrixidia impurella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	655	1533	Apidae	BGSNL1400-24_cns	Pterothrixidia impurella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	655	1473	Apidae	BGSNL1401-24_cns	Pyralis transcaspica	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	526	1263		BGSNL1402-24_cns	Saluria maculivittella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1491	Apidae	BGSNL1403-24_cns	Seleucia pectinella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1503	Apidae	BGSNL1404-24_cns	Seleucia pectinella	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	657	1434	Apidae	BGSNL1405-24_cns	Seleucia pectinella	0
+37	81	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	655	1386	Cicadellidae,Chamaemyiidae,Ichneumonidae,Andrenidae,Gelechiidae,Cossidae,Geometridae	BGSNL1406-24_cns	Stemmatophora gredalis	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	657	1455	Apidae	BGSNL1407-24_cns	Stemmatophora syriacalis	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1464	Apidae	BGSNL1408-24_cns	Stemmatophora syriacalis	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1512	Apidae	BGSNL1409-24_cns	Stemmatophora syriacalis	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1452	Apidae	BGSNL1410-24_cns	Synaphe diffidalis	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1455	Apidae	BGSNL1411-24_cns	Synaphe diffidalis	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1512	Apidae	BGSNL1412-24_cns	Synaphe diffidalis	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1524	Apidae	BGSNL1413-24_cns	Synaphe interjunctalis	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1518	Apidae	BGSNL1414-24_cns	Synaphe interjunctalis	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1518	Apidae	BGSNL1415-24_cns	Synaphe interjunctalis	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1512	Apidae	BGSNL1416-24_cns	Synaphe morbidalis	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	655	1440	Andrenidae	BGSNL1417-24_cns	Synaphe morbidalis	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	655	1485	Andrenidae	BGSNL1418-24_cns	Synaphe morbidalis	0
+10	42	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	655	1350	Andrenidae	BGSNL1419-24_cns	Synaphe oculatalis	0
+29	48	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	655	1512	Notodontidae,Nymphalidae,Pyralidae,Crambidae	BGSNL1420-24_cns	Synaphe oculatalis	0
+0	1	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1431	Andrenidae	BGSNL1421-24_cns	Synaphe oculatalis	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1491	Andrenidae	BGSNL1422-24_cns	Synaphe predotalis	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1464	Andrenidae	BGSNL1423-24_cns	Synaphe predotalis	0
+0	0	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1509	Andrenidae	BGSNL1424-24_cns	Synaphe predotalis	0
+0	1	data/BGE00307_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1428	Andrenidae	BGSNL1425-24_cns	Synoria antiquella	0

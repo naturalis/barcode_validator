@@ -12,9 +12,9 @@ def main(fasta_file_path, logger, config):
     validator = BarcodeValidator(config)
     results = []
     logger.info(f"Starting analysis for file: {fasta_file_path}")
-    for process_id, record, json_config in sh.parse_fasta(fasta_file_path):
+    for record, json_config in sh.parse_fasta(fasta_file_path):
         scoped_config = config.local_clone(json_config)
-        result = DNAAnalysisResult(process_id)
+        result = DNAAnalysisResult(record.id, fasta_file_path)
         validator.validate_sequence_quality(scoped_config, record, result)
         results.append(result)
 
