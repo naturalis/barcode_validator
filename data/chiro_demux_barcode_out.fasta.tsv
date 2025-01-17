@@ -1,0 +1,107 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	359	387	Anthicidae	BSNHM1208-24_r_1_s_50_BSNHM1208-24_merge	Cyclodinus bicarinula	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Elateridae,Tenebrionidae,Anthicidae,Cerambycidae	BSNHM1387-24_r_1_s_50_BSNHM1387-24	Microhoria curticollis	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Anthicidae,Cerambycidae	BSNHM1194-24_r_1_s_50_BSNHM1194-24_merge	Anthicus quadrioculatus	0
+3	3	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	657	661	Chironomidae	BSNHM1235-24_r_1_s_50_BSNHM1235-24	Cricotopus laricomalis	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Oedemeridae	BLAST	family	651	661	Oedemeridae,Anthicidae	BSNHM632-24_r_1_s_50_BSNHM632-24	Stenostoma melitense	0
+6	6	data/chiro_demux_barcode_out.fasta	None	Endromidae	BLAST	family	655	661	Endromidae,Erebidae	BSNHM576-24_r_1_s_50_BSNHM576-24	Endromis versicolora	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Geometridae	BLAST	family	656	661	Geometridae	BSNHM607-24_r_1.3_s_50_BSNHM607-24_merge	Eupithecia absinthiata	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	657	661	Chironomidae	BSNHM1329-24_r_1_s_50_BSNHM1329-24_merge	Potthastia campestris	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Pieridae	BLAST	family	656	661	Pieridae	BSNHM583-24_r_1.5_s_50_BSNHM583-24_merge	Colias croceus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Endromidae	BLAST	family	445	451	Endromidae,Erebidae	BSNHM580-24_r_1_s_50_BSNHM580-24	Endromis versicolora	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Xyloryctidae	BLAST	family	483	487	Xyloryctidae,Crambidae	BSNHM655-24_r_1.3_s_50_BSNHM655-24	Linoclostis longijuxta	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Anthicidae	BSNHM1215-24_r_1_s_50_BSNHM1215-24_merge	Cyclodinus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	305	306	Tenebrionidae,Anthicidae,Cerambycidae	BSNHM1388-24_r_1_s_50_BSNHM1388-24_merge	Microhoria	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Anthicidae	BSNHM1185-24_r_1_s_50_BSNHM1185-24_merge	Anthicus fuscicornis	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Xyloryctidae	BLAST	family	656	661	Xyloryctidae,Depressariidae	BSNHM652-24_r_1_s_50_BSNHM652-24_merge	Xyloryctidae	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Anthicidae	BSNHM1193-24_r_1.3_s_50_BSNHM1193-24	Anthicus quadridecoratus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Anthicidae	BSNHM1177-24_r_1_s_50_BSNHM1177-24_merge	Anthicus axillaris	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Scarabaeidae,Anthicidae	BSNHM1206-24_r_1_s_50_BSNHM1206-24	Cordicomus gracilis	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chrysomelidae	BLAST	family	631	661	Chrysomelidae	BSNHM630-24_r_1_s_50_BSNHM630-24_merge	Agelastica alni	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	657	661	Chironomidae	BSNHM1160-24_r_1_s_50_BSNHM1160-24_merge	Metriocnemus paganicus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Anthicidae	BSNHM1195-24_r_1_s_50_BSNHM1195-24_merge	Anthicus rufivestis	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Tenebrionidae,Anthicidae,Cerambycidae	BSNHM1401-24_r_1_s_50_BSNHM1401-24_merge	Microhoria	0
+3	3	data/chiro_demux_barcode_out.fasta	None	Lycaenidae	BLAST	family	550	552		BSNHM596-24_r_1.3_s_50_BSNHM596-24_merge	Lysandra bellargus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	633	661	Anthicidae	BSNHM1175-24_r_1_s_50_BSNHM1175-24_merge	Anthelephila ionica	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Anthicidae	BSNHM1404-24_r_1_s_50_BSNHM1404-24	Notoxus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	357	358	Scraptiidae,Anthicidae	BSNHM1395-24_r_1.3_s_50_BSNHM1395-24	Microhoria oberthuri	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	617	645	Carabidae,Lampyridae,Cleridae,Anthicidae,Cerambycidae	BSNHM1399-24_r_1_s_50_BSNHM1399-24	Microhoria pinicola	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	657	661	Chironomidae	BSNHM1334-24_r_1.3_s_50_BSNHM1334-24_merge	Pseudokiefferiella parva	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chrysomelidae	BLAST	family	462	463	Silphidae,Chrysomelidae	BSNHM625-24_r_1.3_s_50_BSNHM625-24	Agelastica alni	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Dermestidae	BLAST	family	620	630	Carabidae,Silphidae,Cerambycidae,Dermestidae	BSNHM1413-24_r_1_s_50_BSNHM1413-24	Attagenus fallax	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Anthicidae	BSNHM1178-24_r_1_s_50_BSNHM1178-24_merge	Anthicus armatus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Orsodacnidae	BLAST	family	651	661	Zopheridae,Orsodacnidae	BSNHM634-24_r_1_s_50_BSNHM634-24	Orsodacne humeralis	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	633	661	Oedemeridae,Anthicidae,Cerambycidae	BSNHM1378-24_r_1_s_50_BSNHM1378-24_merge	Mecynotarsus truquii	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Endromidae	BLAST	family	325	327	Endromidae,Erebidae	BSNHM578-24_r_1_s_50_BSNHM578-24	Endromis versicolora	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chrysomelidae	BLAST	family	631	661	Chrysomelidae	BSNHM620-24_r_1_s_50_BSNHM620-24_merge	Agelastica alni	0
+6	6	data/chiro_demux_barcode_out.fasta	None	Orsodacnidae	BLAST	family	652	661	Phalacridae	BSNHM637-24_r_1_s_50_BSNHM637-24_merge	Orsodacne humeralis	0
+3	3	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Cleridae,Anthicidae	BSNHM1205-24_r_1.5_s_50_BSNHM1205-24_merge	Cordicomus gracilis	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Anthicidae	BSNHM1390-24_r_1_s_50_BSNHM1390-24_merge	Microhoria gorgus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Anthicidae	BSNHM1181-24_r_1_s_50_BSNHM1181-24_merge	Anthicus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	633	661	Anthicidae	BSNHM1192-24_r_1_s_50_BSNHM1192-24_merge	Anthicus niger	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Lycaenidae	BLAST	family	656	661	Lycaenidae	BSNHM602-24_r_1.5_s_50_BSNHM602-24_merge	Lysandra bellargus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	657	661	Chironomidae	BSNHM1161-24_r_1_s_50_BSNHM1161-24	Metriocnemus fertus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Anthicidae	BSNHM1187-24_r_1_s_50_BSNHM1187-24	Anthicus gratiosus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	657	661	Chironomidae	BSNHM1320-24_r_1_s_50_BSNHM1320-24_merge	Rheopelopia eximia	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chrysomelidae	BLAST	family	367	399	Silphidae,Chrysomelidae	BSNHM628-24_r_1.3_s_50_BSNHM628-24	Agelastica alni	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Endromidae	BLAST	family	655	661	Endromidae,Noctuidae	BSNHM573-24_r_1_s_50_BSNHM573-24_merge	Endromis versicolora	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chrysomelidae	BLAST	family	305	333	Chrysomelidae	BSNHM623-24_r_1.3_s_100_BSNHM623-24	Agelastica alni	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chrysomelidae	BLAST	family	631	661	Chrysomelidae	BSNHM621-24_r_1_s_50_BSNHM621-24_merge	Agelastica alni	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	346	375	Anthicidae	BSNHM1171-24_r_1_s_50_BSNHM1171-24_merge	Anthelephila caeruleipennis	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Anthicidae	BSNHM1394-24_r_1_s_50_BSNHM1394-24_merge	Microhoria mylabrina	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chrysomelidae	BLAST	family	631	661	Chrysomelidae	BSNHM624-24_r_1_s_100_BSNHM624-24_merge	Agelastica alni	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Phalacridae	BLAST	family	648	661	Phalacridae	BSNHM647-24_r_1_s_50_BSNHM647-24_merge	Olibrus stierlini	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	655	661	Chironomidae	BSNHM1364-24_r_1_s_50_BSNHM1364-24_merge	Paratanytarsus inopertus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Anthicidae	BSNHM1218-24_r_1_s_50_BSNHM1218-24_merge	Cyclodinus longipilis	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Tenebrionidae,Anthicidae	BSNHM1374-24_r_1_s_50_BSNHM1374-24_merge	Liparoderus venator	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Lampyridae,Tenebrionidae,Anthicidae,Cerambycidae	BSNHM1392-24_r_1_s_50_BSNHM1392-24_merge	Microhoria lafertei	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	654	661	Chironomidae	BSNHM1367-24_r_1_s_50_BSNHM1367-24	Paratanytarsus penicillatus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	633	661	Anthicidae	BSNHM1174-24_r_1_s_50_BSNHM1174-24_merge	Anthelephila ionica	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Staphylinidae,Tenebrionidae,Zopheridae,Cerambycidae	BSNHM1379-24_r_1_s_50_BSNHM1379-24_merge	Microhoria andalusiaca	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	656	661	Chironomidae	BSNHM1333-24_r_1_s_50_BSNHM1333-24_merge	Potthastia pastoris	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	654	661	Chironomidae	BSNHM1355-24_r_1_s_50_BSNHM1355-24_merge	Micropsectra apposita	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Tenebrionidae,Zopheridae,Anthicidae	BSNHM1381-24_r_1_s_100_BSNHM1381-24_merge	Microhoria aubei	0
+3	3	data/chiro_demux_barcode_out.fasta	None	Phalacridae	BLAST	family	594	606	Phalacridae,Endomychidae	BSNHM644-24_r_1.3_s_50_BSNHM644-24	Olibrus reitteri	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Anthicidae	BSNHM1184-24_r_1_s_50_BSNHM1184-24_merge	Anthicus fumosus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Anthicidae	BSNHM1199-24_r_1_s_50_BSNHM1199-24_merge	Anthicus ater	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Oedemeridae	BLAST	family	651	661	Orsodacnidae	BSNHM633-24_r_1_s_50_BSNHM633-24_merge	Xanthochroina auberti	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	633	661	Anthicidae	BSNHM1188-24_r_1_s_50_BSNHM1188-24_merge	Anthicus guttifer	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chrysomelidae	BLAST	family	631	661	Chrysomelidae	BSNHM619-24_r_1_s_50_BSNHM619-24_merge	Agelastica alni	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	521	525	Chironomidae	BSNHM1346-24_r_1_s_50_BSNHM1346-24_merge	Glyptotendipes foliicola	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Geometridae	BLAST	family	656	661	Geometridae	BSNHM609-24_r_1_s_50_BSNHM609-24_merge	Scotopteryx mucronata scotica	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	654	661	Chironomidae	BSNHM1357-24_r_1_s_50_BSNHM1357-24_merge	Micropsectra intrudens	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	633	661	Anthicidae,Cerambycidae	BSNHM1176-24_r_1_s_50_BSNHM1176-24	Anthelephila ninus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chrysomelidae	BLAST	family	631	661	Chrysomelidae	BSNHM631-24_r_1_s_50_BSNHM631-24_merge	Agelastica alni	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	353	355	Chironomidae	BSNHM1157-24_r_1_s_50_BSNHM1157-24_merge	Orthocladius grampianus	0
+3	3	data/chiro_demux_barcode_out.fasta	None	Endromidae	BLAST	family	655	661	Endromidae,Noctuidae	BSNHM577-24_r_1_s_50_BSNHM577-24_merge	Endromis versicolora	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Anthicidae	BSNHM1191-24_r_1_s_50_BSNHM1191-24_merge	Anthicus luteicornis	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	633	661	Hydraenidae,Melyridae,Melandryidae,Anthicidae,Salpingidae,Ptinidae,Muscidae	BSNHM1406-24_r_1_s_50_BSNHM1406-24_merge	Notoxus excisus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Lycaenidae	BLAST	family	656	661	Nymphalidae	BSNHM593-24_r_1_s_50_BSNHM593-24_merge	Lysandra bellargus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	411	412	Chironomidae	BSNHM1138-24_r_1_s_50_BSNHM1138-24	Rheocricotopus effusus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chrysomelidae	BLAST	family	631	661	Chrysomelidae	BSNHM629-24_r_1_s_50_BSNHM629-24_merge	Agelastica alni	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Anthicidae	BSNHM1225-24_r_1_s_50_BSNHM1225-24_merge	Leptaleus glabellus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	633	661	Dytiscidae,Monotomidae,Oedemeridae,Anthicidae	BSNHM1383-24_r_1_s_50_BSNHM1383-24	Microhoria balearica	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	657	661	Chironomidae	BSNHM1340-24_r_1.5_s_50_BSNHM1340-24	Diamesa gregsoni	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	458	462	Chironomidae	BSNHM1348-24_r_1_s_50_BSNHM1348-24_merge	Graceus ambiguus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Geometridae	BLAST	family	656	661	Geometridae	BSNHM604-24_r_1_s_50_BSNHM604-24_merge	Dysstroma truncata truncata	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Endromidae	BLAST	family	655	661	Endromidae,Noctuidae	BSNHM579-24_r_1_s_50_BSNHM579-24_merge	Endromis versicolora	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Geometridae	BLAST	family	656	661	Geometridae	BSNHM616-24_r_1.5_s_50_BSNHM616-24	Dysstroma truncata truncata	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	657	661	Chironomidae,Sphaeroceridae	BSNHM1331-24_r_1_s_50_BSNHM1331-24_merge	Potthastia montium	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	409	409	Anthicidae	BSNHM1220-24_r_1.5_s_50_BSNHM1220-24_merge	Cyclodinus semiopacus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chrysomelidae	BLAST	family	272	303	Silphidae,Chrysomelidae	BSNHM627-24_r_1.5_s_50_BSNHM627-24_merge	Agelastica alni	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	657	661	Chironomidae	BSNHM1301-24_r_1_s_50_BSNHM1301-24	Omisus caledonicus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Xyloryctidae	BLAST	family	656	661	Xyloryctidae,Stathmopodidae	BSNHM649-24_r_1_s_50_BSNHM649-24_merge	Metathrinca argentea	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Xyloryctidae	BLAST	family	656	661	Xyloryctidae,Stathmopodidae	BSNHM654-24_r_1_s_50_BSNHM654-24_merge	Linoclostis filamentella	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Lycaenidae	BLAST	family	656	661	Lycaenidae	BSNHM595-24_r_1_s_50_BSNHM595-24_merge	Lysandra bellargus	0
+6	6	data/chiro_demux_barcode_out.fasta	None	Lycaenidae	BLAST	family	656	661	Lycaenidae	BSNHM585-24_r_1_s_50_BSNHM585-24_merge	Lysandra bellargus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	657	661	Chironomidae	BSNHM1289-24_r_1.3_s_50_BSNHM1289-24	Glyptotendipes mancunianus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Tenebrionidae,Anthicidae	BSNHM1391-24_r_1_s_50_BSNHM1391-24_merge	Microhoria iscariotes	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	656	661	Chironomidae	BSNHM1141-24_r_1_s_50_BSNHM1141-24_merge	Pseudosmittia recta	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chrysomelidae	BLAST	family	631	661	Silphidae,Chrysomelidae	BSNHM626-24_r_1_s_50_BSNHM626-24	Agelastica alni	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	485	492	Chironomidae	BSNHM1276-24_r_1.5_s_50_BSNHM1276-24_merge	Chironomus moerens	0
+9	9	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Anthicidae	BSNHM1189-24_r_1.5_s_100_BSNHM1189-24	Anthicus hamicornis	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	654	661	Chironomidae	BSNHM1370-24_r_1_s_50_BSNHM1370-24_merge	Micropsectra monticola	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Anthicidae	BSNHM1210-24_r_1_s_50_BSNHM1210-24_merge	Cyclodinus cerastes	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Lycaenidae	BLAST	family	656	661	Lycaenidae	BSNHM603-24_r_1_s_50_BSNHM603-24_merge	Lysandra bellargus	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Chironomidae	BLAST	family	657	661	Chironomidae	BSNHM1162-24_r_1_s_50_BSNHM1162-24_merge	Metriocnemus deproperans	0
+0	0	data/chiro_demux_barcode_out.fasta	None	Anthicidae	BLAST	family	634	661	Anthicidae,Pythidae,Cerambycidae	BSNHM1385-24_r_1.5_s_50_BSNHM1385-24_merge	Microhoria caliginosa	0
