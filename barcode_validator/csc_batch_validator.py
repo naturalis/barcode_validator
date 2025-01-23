@@ -37,16 +37,6 @@ def main(table_file_path, logger, config):
             seq_obj = SeqRecord(Seq(seq_str), id=seq_id)
             res = DNAAnalysisResult(seq_id)
 
-            # Handle the rank variation: CSC has identifications at various ranks, including above the
-            # family level. If so, this needs to be indicated in the result object so that the expected
-            # and observed taxa are at the same level.
-            taxon_rank = r['verbatim_rank']
-            if taxon_rank not in ['family', 'genus', 'species']:
-                config['level'] = str(taxon_rank).lower() # Probably 'order'
-            else:
-                config['level'] = 'family'
-            res.level = config['level'] # Will be identification_rank in the result object
-
             # Try to instantiate the Marker enum from the marker code. If it fails, log the error and skip.
             try:
                 marker = Marker(r['marker_code'])
@@ -55,9 +45,8 @@ def main(table_file_path, logger, config):
                 res.error = f"Invalid marker code: {r['marker_code']} ({e})"
                 continue
 
-            # Try to resolve the taxonomic lineage at the specified ranks. If it fails, log the error and skip.
-            ranks = ['phylum', 'class', 'order', 'family']
-            specific_taxonomy = tr.get_lineage_at_ranks(r['verbatim_identification'], ranks, r['verbatim_kingdom'])
+            # Attempt to resolve the taxonomic lineage at the specified ranks. If it fails, log the error and skip.
+            specific_taxonomy = preprocess_taxa(config, r, res, tr)
             if specific_taxonomy is None:
                 logger.error(f"Taxon not found: {r['verbatim_identification']}")
                 res.error = f"Taxon not found: {r['verbatim_identification']}"
@@ -77,6 +66,7 @@ def main(table_file_path, logger, config):
 
             # Do the validation
             validator.validate_record(seq_obj, config, res)
+            res.add_ancillary('is_valid', str(res.passes_all_checks()))
             results.append(res)
 
     # Validate the FASTA file
@@ -85,6 +75,25 @@ def main(table_file_path, logger, config):
     print(rs)  # print TSV results
 
     logger.info("Analysis completed")
+
+
+def preprocess_taxa(config, r, result, tr):
+
+    # Handle the rank variation: CSC has identifications at various ranks, including above the
+    # family level. If so, this needs to be indicated in the result object so that the expected
+    # and observed taxa are at the same level.
+    taxon_rank = r['verbatim_rank']
+    if taxon_rank not in ['family', 'genus', 'species']:
+        config['level'] = str(taxon_rank).lower()  # Probably 'order'
+    else:
+        config['level'] = 'family'
+    result.level = config['level']  # Will be identification_rank in the result object
+
+    # Try to resolve the taxonomic lineage at the specified ranks. If it fails, log the error and skip.
+    ranks = ['phylum', 'class', 'order', 'family']
+    specific_taxonomy = tr.get_lineage_at_ranks(r['verbatim_identification'], ranks, r['verbatim_kingdom'])
+
+    return specific_taxonomy
 
 
 if __name__ == "__main__":
