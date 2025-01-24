@@ -35,7 +35,7 @@ def main(table_file_path, logger, config):
             seq_str = r['nuc']
             seq_id = r['local_id']
             seq_obj = SeqRecord(Seq(seq_str), id=seq_id)
-            res = DNAAnalysisResult(seq_id)
+            res = DNAAnalysisResult(seq_id, table_file_path)
 
             # Try to instantiate the Marker enum from the marker code. If it fails, log the error and skip.
             try:
