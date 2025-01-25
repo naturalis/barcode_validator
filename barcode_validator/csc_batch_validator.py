@@ -40,6 +40,7 @@ def main(table_file_path, logger, global_config):
             seq_str = r['nuc']
             seq_id = r['local_id']
             seq_obj = SeqRecord(Seq(seq_str), id=seq_id)
+            seq_obj.annotations['bcdm_fields'] = {'processid': seq_id}
             res = DNAAnalysisResult(seq_id, table_file_path)
 
             # Try to instantiate the Marker enum from the marker code. If it fails, log the error and skip.
@@ -49,7 +50,7 @@ def main(table_file_path, logger, global_config):
                 # If the marker is anything other than COI-5P, this will throw exceptions later on. That's
                 # fine, because the marker is not supported by the current implementation - but we do want
                 # to log this so that the user knows that the marker is not supported.
-                hmm_file = '../examples/' + marker.value + '.hmm'
+                hmm_file = 'examples/' + marker.value + '.hmm'
                 config.set('hmm_file', hmm_file)
             except ValueError as e:
                 logger.error(f"Invalid marker code: {r['marker_code']} ({e})")
