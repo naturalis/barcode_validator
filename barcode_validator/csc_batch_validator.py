@@ -61,7 +61,7 @@ def main(table_file_path, logger, global_config):
                 logger.error(f"Taxon not found: {r['verbatim_identification']}")
                 res.error = f"Taxon not found: {r['verbatim_identification']}"
                 continue
-            res.species = taxon.name
+            res.species = taxon
 
             # Update the translation table using the specific taxonomy and marker.
             config.set('translation_table', tr.get_translation_table(marker, taxon))
