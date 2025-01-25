@@ -66,9 +66,12 @@ class TaxonomyResolver:
             # Get the first (most relevant) taxonomy ID and the associated taxon from the resident tree
             taxid = record['IdList'][0]
             self.logger.info(f"Found taxid: {taxid}")
-            taxon = self.ncbi_tree.find_elements(guids={'taxon': taxid})[0]
-            self.logger.debug(f"Found taxon: {taxon}")
-            return taxon
+            for node in self.ncbi_tree.find_clades():
+                if taxid in node.guids:
+                    self.logger.debug(f"Found taxon: {node}")
+                    return node
+            self.logger.warning(f"Taxon not found: {taxon_name}")
+            return None
 
         except Exception as e:
             print(f"Error resolving taxonomy: {str(e)}")
