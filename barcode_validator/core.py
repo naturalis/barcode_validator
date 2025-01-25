@@ -73,33 +73,42 @@ class BarcodeValidator:
         :param result: A DNAAnalysisResult object
         """
 
-        # Lookup expected taxon in BOLD tree
-        sp = self.get_node_by_processid(record.annotations['bcdm_fields']['processid'])
-        if sp is None:
-            self.logger.warning(f"Process ID {record.annotations['bcdm_fields']['processid']} not found in BOLD tree.")
-            result.error = f"{record.annotations['bcdm_fields']['processid']} not in BOLD"
-        else:
-
-            # Traverse BOLD tree to find the expected taxon at the specified rank
-            result.species = sp
-            self.logger.info(f"Species: {result.species}")
-            for node in self.bold_tree.root.get_path(result.species):
-                if node.taxonomic_rank == config.get('level'):
-                    result.exp_taxon = node
-                    break
-
-            # Run local BLAST to find observed taxon at the specified rank
-            constraint = self.build_constraint(sp, config.get('constrain'))
-            br = BlastRunner(config)
-            br.ncbi_tree = self.ncbi_tree
-            obs_taxon = br.run_localblast(record, constraint, config.get('level'))
-
-            # Handle BLAST failure
-            if obs_taxon is None:
-                self.logger.warning(f"Local BLAST failed for {record.annotations['bcdm_fields']['processid']}")
-                result.error = f"Local BLAST failed for sequence '{record.seq}'"
+        # Lookup expected taxon in BOLD tree. The default behaviour for BGE is that this is not yet
+        # defined and is retrieved from the BOLD tree. For CSC validation this is defined using the
+        # NCBI taxonomy.
+        if result.exp_taxon is None:
+            sp = self.get_node_by_processid(record.annotations['bcdm_fields']['processid'])
+            if sp is None:
+                self.logger.warning(f"Process ID {record.annotations['bcdm_fields']['processid']} not found in BOLD tree.")
+                result.error = f"{record.annotations['bcdm_fields']['processid']} not in BOLD"
             else:
-                result.obs_taxon = obs_taxon
+
+                # Traverse BOLD tree to find the expected taxon at the specified rank
+                result.species = sp
+                self.logger.info(f"Species: {result.species}")
+                for node in self.bold_tree.root.get_path(result.species):
+                    if node.taxonomic_rank == config.get('level'):
+                        result.exp_taxon = node
+                        break
+
+        # Run local BLAST to find observed taxon at the specified rank with a taxonomically constrained
+        # search. If the constraint is not defined, it is recovered by fetching the taxon at the specified
+        # rank in the BOLD tree and finding the corresponding node in the NCBI tree. This is the default
+        # behaviour for BGE. For CSC validation, the constraint is defined using the NCBI taxonomy.
+        if config.get('constraint_taxid') is None:
+            constraint = self.build_constraint(result.species, config.get('constrain'))
+        else:
+            constraint = config.get('constraint_taxid')
+        br = BlastRunner(config)
+        br.ncbi_tree = self.ncbi_tree
+        obs_taxon = br.run_localblast(record, constraint, config.get('level'))
+
+        # Handle BLAST failure
+        if obs_taxon is None:
+            self.logger.warning(f"Local BLAST failed for {record.annotations['bcdm_fields']['processid']}")
+            result.error = f"Local BLAST failed for sequence '{record.seq}'"
+        else:
+            result.obs_taxon = obs_taxon
 
     def get_node_by_processid(self, process_id):
         """
@@ -113,7 +122,7 @@ class BarcodeValidator:
                 return node
         return None
 
-    def build_constraint(self, bold_tip: Taxon, rank: str) -> str:
+    def build_constraint(self, bold_tip: Taxon, rank: str) -> int:
         """
         Given a tip from the BOLD tree, looks up its path to the root, fetching the interior node at the specified
         taxonomic rank. Then, traverses the NCBI tree to find the identically-named node at the same rank and returns
