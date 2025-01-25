@@ -91,8 +91,13 @@ def main(table_file_path, logger, global_config):
                 config.set('constraint_taxid', 2759)
 
             # Do the validation
-            validator.validate_record(seq_obj, config, res)
-            res.add_ancillary('is_valid', str(res.passes_all_checks()))
+            try:
+                validator.validate_record(seq_obj, config, res)
+                res.add_ancillary('is_valid', str(res.passes_all_checks()))
+            except Exception as e:
+                logger.error(f"Error validating record: {e}")
+                res.error = f"Error validating record: {e}"
+                res.add_ancillary('is_valid', 'False')
             res.add_ancillary('timestamp', str(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
             results.append(res)
 
