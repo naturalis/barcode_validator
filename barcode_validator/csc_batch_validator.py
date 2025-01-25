@@ -1,5 +1,6 @@
 import argparse
 import csv
+import logging
 import re
 
 from Bio import Entrez
@@ -10,15 +11,16 @@ from nbitk.logger import get_formatted_logger
 from nbitk.Taxon import Taxon
 from barcode_validator.core import BarcodeValidator
 from barcode_validator.result import DNAAnalysisResult, DNAAnalysisResultSet
-from barcode_validator.translation_tables import TaxonomyResolver, get_translation_table, Marker
+from barcode_validator.translation_tables import TaxonomyResolver, Marker
 
 # Always tell NCBI who you are
 Entrez.email = "bioinformatics@naturalis.nl"
 
 def main(table_file_path, logger, global_config):
-    # Initialize BarcodeValidator
+    # Initialize BarcodeValidator and TaxonomyResolver objects
     validator = BarcodeValidator(global_config)
     validator.initialize()
+    tr = TaxonomyResolver(Entrez.email, logger, validator.ncbi_tree)
 
     # Print header
     logger.info(f"Starting analysis for file: {table_file_path}")
@@ -55,24 +57,33 @@ def main(table_file_path, logger, global_config):
                 continue
 
             # Attempt to resolve the taxonomic lineage at the specified ranks. If it fails, log the error and skip.
-            specific_taxonomy = preprocess_taxa(config, r, res, logger)
-            if specific_taxonomy is None:
+            taxon = preprocess_taxa(config, r, res, logger, tr)
+            if taxon is None:
                 logger.error(f"Taxon not found: {r['verbatim_identification']}")
                 res.error = f"Taxon not found: {r['verbatim_identification']}"
                 continue
+            res.species = taxon.name
 
             # Update the translation table using the specific taxonomy and marker.
-            config.set('translation_table', get_translation_table(marker, specific_taxonomy))
+            config.set('translation_table', tr.get_translation_table(marker, taxon))
             logger.info(f"Updated translation table: {config['translation_table']}")
 
             # Indicate in the result object what the expected taxon is at the specified level, which is, by
             # default, the family level but otherwise possibly the order level.
-            if config['level'] in specific_taxonomy:
-                res.exp_taxon = Taxon(specific_taxonomy[config['level']])
-            else:
-                logger.error(f"Expected taxon not found: {config['level']} in {specific_taxonomy}")
-                res.error = f"Expected taxon not found: {config['level']} in {specific_taxonomy}"
+            for node in validator.ncbi_tree.root.get_path(taxon):
+                if str(node.taxonomic_rank).lower() == str(config['level']).lower():
+                    res.exp_taxon = node
+                    break
+            if res.exp_taxon is None:
+                logger.error(f"Expected taxon not found: {config['level']} for {taxon}")
+                res.error = f"Expected taxon not found: {config['level']} in {taxon}"
                 continue
+
+            # Fetch the taxon ID for the ancestor of the expected taxon at the specified level
+            for node in validator.ncbi_tree.root.get_path(taxon):
+                if str(node.taxonomic_rank).lower() == str(config['constrain']).lower():
+                    config.set('constraint_taxid', node.guids['taxon'])
+                    break
 
             # Do the validation
             validator.validate_record(seq_obj, config, res)
@@ -85,36 +96,33 @@ def main(table_file_path, logger, global_config):
     logger.info("Analysis completed")
 
 
-def preprocess_taxa(config, r, result, logger):
+def preprocess_taxa(config: Config, record: dict, result: DNAAnalysisResult, logger: logging.Logger, tr: TaxonomyResolver):
 
     # Handle the rank variation: CSC has identifications at various ranks, including above the
     # family level. If so, this needs to be indicated in the result object so that the expected
     # and observed taxa are at the same level.
-    taxon_rank = r['verbatim_rank']
+    taxon_rank = record['verbatim_rank']
 
     # Attempt to identify possible species binomials in records that have no rank information.
     pattern = r'^[A-Z][a-z]+ [a-z]+$'
-    if taxon_rank == 'null' and re.match(pattern, r['verbatim_identification']):
+    if taxon_rank == 'null' and re.match(pattern, record['verbatim_identification']):
         taxon_rank = 'species'
-        logger.warning(f"Assuming {r['verbatim_identification']} is a species")
+        logger.warning(f"Assuming {record['verbatim_identification']} is a species")
 
     # If the rank is in none of these, it is probably an order, so far as we've been able to see.
     # We can then only validate at that higher level instead of the default family level. For
     # this, both the config object needs to be updated and the result object needs to be updated.
     if taxon_rank not in ['Family', 'Genus', 'Species', 'species', 'null']:
         config.set('level', str(taxon_rank).lower())  # Probably 'order'
-        logger.warning(f"Taxon {r['verbatim_identification']} can only be validated at the config['level'] level")
+        logger.warning(f"Taxon {record['verbatim_identification']} can only be validated at the config['level'] level")
     else:
         config.set('level', 'family')
     result.level = config.get('level')  # Will be identification_rank in the result object
 
-    # Try to resolve the taxonomic lineage at the specified ranks. This may return None, in which
-    # case the record will be skipped.
-    tr = TaxonomyResolver(Entrez.email, logger)
-    ranks = ['phylum', 'class', 'order', 'family']
-    specific_taxonomy = tr.get_lineage_at_ranks(r['verbatim_identification'], ranks)
-
-    return specific_taxonomy
+    # Try to resolve the verbatim_identification wrt the NCBI taxonomy via the Entrez service. This
+    # may return None, in which case the record will be skipped.
+    taxon = tr.get_taxon(record['verbatim_identification'])
+    return taxon
 
 
 if __name__ == "__main__":
