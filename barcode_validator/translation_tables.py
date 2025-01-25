@@ -67,7 +67,7 @@ class TaxonomyResolver:
             taxid = record['IdList'][0]
             self.logger.info(f"Found taxid: {taxid}")
             for node in self.ncbi_tree.find_clades():
-                if taxid in node.guids:
+                if node.guids['taxon'] == taxid:
                     self.logger.debug(f"Found taxon: {node}")
                     return node
             self.logger.warning(f"Taxon not found: {taxon_name}")
