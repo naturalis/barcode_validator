@@ -8,6 +8,7 @@ from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
+from datetime import datetime
 from barcode_validator.core import BarcodeValidator
 from barcode_validator.result import DNAAnalysisResult, DNAAnalysisResultSet, initialize_columns
 from barcode_validator.translation_tables import TaxonomyResolver, Marker
@@ -92,6 +93,7 @@ def main(table_file_path, logger, global_config):
             # Do the validation
             validator.validate_record(seq_obj, config, res)
             res.add_ancillary('is_valid', str(res.passes_all_checks()))
+            res.add_ancillary('timestamp', str(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
             results.append(res)
 
     # Create a DNAAnalysisResultSet object from the list of DNAAnalysisResult objects and print it
