@@ -120,7 +120,7 @@ def preprocess_taxa(config: Config, record: dict, result: DNAAnalysisResult, log
     # this, both the config object needs to be updated and the result object needs to be updated.
     if taxon_rank not in ['Family', 'Genus', 'Species', 'species', 'null']:
         config.set('level', str(taxon_rank).lower())  # Probably 'order'
-        logger.warning(f"Taxon {record['verbatim_identification']} can only be validated at the config['level'] level")
+        logger.warning(f"Taxon {record['verbatim_identification']} can only be validated at the {config['level']} level")
     else:
         config.set('level', 'family')
     result.level = config.get('level')  # Will be identification_rank in the result object
