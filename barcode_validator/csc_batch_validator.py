@@ -9,7 +9,7 @@ from Bio.SeqRecord import SeqRecord
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 from barcode_validator.core import BarcodeValidator
-from barcode_validator.result import DNAAnalysisResult, DNAAnalysisResultSet
+from barcode_validator.result import DNAAnalysisResult, DNAAnalysisResultSet, initialize_columns
 from barcode_validator.translation_tables import TaxonomyResolver, Marker
 
 # Always tell NCBI who you are
@@ -20,6 +20,7 @@ def main(table_file_path, logger, global_config):
     validator = BarcodeValidator(global_config)
     validator.initialize()
     tr = TaxonomyResolver(Entrez.email, logger, validator.ncbi_tree)
+    initialize_columns()
 
     # Print header
     logger.info(f"Starting analysis for file: {table_file_path}")
