@@ -136,6 +136,7 @@ if __name__ == "__main__":
     main_config = Config()
     try:
         main_config.load_config(args.config_file)
+        main_config.set('log_level', args.verbosity or 'INFO')
         main_logger = get_formatted_logger(__name__, main_config)
     except ValueError as e:
         print(f"Error setting up logging: {e}")
