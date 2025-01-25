@@ -1,3 +1,4 @@
+import logging
 from enum import Enum
 from Bio import Entrez
 from typing import Optional, Dict, List
@@ -86,14 +87,14 @@ class TaxonomyResolver:
     >>> print("Genus taxonomy:", genus_taxonomy)
     """
 
-    def __init__(self, email: str):
+    def __init__(self, email: str, logger: logging.Logger):
         """
         Initialize the taxonomy resolver.
+        :param email: Email address for NCBI Entrez queries (required by NCBI)
 
-        Args:
-            email: Email address for NCBI Entrez queries (required by NCBI)
         """
         Entrez.email = email
+        self.logger = logger
         self.tax_ranks = ['kingdom', 'phylum', 'class', 'order', 'family', 'genus', 'species']
 
     def get_taxonomy_dict(self, taxon_name: str, kingdom: Optional[str] = None) -> Optional[Dict[str, str]]:
@@ -112,11 +113,13 @@ class TaxonomyResolver:
             search_term = f"{taxon_name}[Scientific Name]"
             if kingdom:
                 search_term = f"{search_term} AND {kingdom}[Kingdom]"
+            self.logger.info(f"Searching for '{search_term}' at Entrez")
 
             # Search in taxonomy database
             handle = Entrez.esearch(db="taxonomy", term=search_term)
             record = Entrez.read(handle)
             handle.close()
+            self.logger.debug(f"Search results: {record}")
 
             if not record['IdList']:
                 return None
@@ -125,6 +128,7 @@ class TaxonomyResolver:
             taxid = record['IdList'][0]
 
             # Fetch the full taxonomy record
+            # TODO: Use the memory-resident version of the taxonomy database
             handle = Entrez.efetch(db="taxonomy", id=taxid, retmode="xml")
             records = Entrez.read(handle)
             handle.close()
