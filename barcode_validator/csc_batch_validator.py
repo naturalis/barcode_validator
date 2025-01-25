@@ -109,15 +109,9 @@ def preprocess_taxa(config, r, result, logger):
     result.level = config.get('level')  # Will be identification_rank in the result object
 
     # Try to resolve the taxonomic lineage at the specified ranks. This may return None, in which
-    # case the record will be skipped. The webservice optionally takes a kingdom name to avoid
-    # homonyms. If the kingdom is not specified, it will be set to None.
-    if r['verbatim_kingdom'] == 'null':
-        r['verbatim_kingdom'] = None
-        logger.warning(f"{r['verbatim_identification']} has no kingdom, this may lead to homonyms")
-    ranks = ['phylum', 'class', 'order', 'family']
-
-    # Initialize TaxonResolver and invoke get_lineage_at_ranks
+    # case the record will be skipped.
     tr = TaxonomyResolver(Entrez.email, logger)
+    ranks = ['phylum', 'class', 'order', 'family']
     specific_taxonomy = tr.get_lineage_at_ranks(r['verbatim_identification'], ranks)
 
     return specific_taxonomy
