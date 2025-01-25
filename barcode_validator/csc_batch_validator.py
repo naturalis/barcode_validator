@@ -114,11 +114,11 @@ def preprocess_taxa(config, r, result, logger):
     if r['verbatim_kingdom'] == 'null':
         r['verbatim_kingdom'] = None
         logger.warning(f"{r['verbatim_identification']} has no kingdom, this may lead to homonyms")
-    ranks = ['kingdom', 'phylum', 'class', 'order', 'family']
+    ranks = ['phylum', 'class', 'order', 'family']
 
     # Initialize TaxonResolver and invoke get_lineage_at_ranks
     tr = TaxonomyResolver(Entrez.email, logger)
-    specific_taxonomy = tr.get_lineage_at_ranks(r['verbatim_identification'], ranks, r['verbatim_kingdom'])
+    specific_taxonomy = tr.get_lineage_at_ranks(r['verbatim_identification'], ranks)
 
     return specific_taxonomy
 
