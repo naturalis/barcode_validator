@@ -8,7 +8,6 @@ from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
-from nbitk.Taxon import Taxon
 from barcode_validator.core import BarcodeValidator
 from barcode_validator.result import DNAAnalysisResult, DNAAnalysisResultSet
 from barcode_validator.translation_tables import TaxonomyResolver, Marker
@@ -84,6 +83,10 @@ def main(table_file_path, logger, global_config):
                 if str(node.taxonomic_rank).lower() == str(config['constrain']).lower():
                     config.set('constraint_taxid', node.guids['taxon'])
                     break
+            if config.get('constraint_taxid') is None:
+                logger.warning(f"Constraint taxon not found: {config['constrain']} for {taxon}")
+                logger.warning(f"Using Eukaryota (taxon:2759) instead. This will be a lot slower.")
+                config.set('constraint_taxid', 2759)
 
             # Do the validation
             validator.validate_record(seq_obj, config, res)
