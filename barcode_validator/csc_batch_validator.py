@@ -48,7 +48,8 @@ def main(table_file_path, logger, global_config):
                 # If the marker is anything other than COI-5P, this will throw exceptions later on. That's
                 # fine, because the marker is not supported by the current implementation - but we do want
                 # to log this so that the user knows that the marker is not supported.
-                config['hmm_file'] = '../examples' + marker.value + '.hmm'
+                hmm_file = '../examples/' + marker.value + '.hmm'
+                config.set('hmm_file', hmm_file)
             except ValueError as e:
                 logger.error(f"Invalid marker code: {r['marker_code']} ({e})")
                 res.error = f"Invalid marker code: {r['marker_code']} ({e})"
@@ -62,7 +63,7 @@ def main(table_file_path, logger, global_config):
                 continue
 
             # Update the translation table using the specific taxonomy and marker.
-            config['translation_table'].update(get_translation_table(marker, specific_taxonomy))
+            config.set('translation_table', get_translation_table(marker, specific_taxonomy))
             logger.info(f"Updated translation table: {config['translation_table']}")
 
             # Indicate in the result object what the expected taxon is at the specified level, which is, by
@@ -102,11 +103,11 @@ def preprocess_taxa(config, r, result, tr, logger):
     # We can then only validate at that higher level instead of the default family level. For
     # this, both the config object needs to be updated and the result object needs to be updated.
     if taxon_rank not in ['Family', 'Genus', 'Species', 'species', 'null']:
-        config['level'] = str(taxon_rank).lower()  # Probably 'order'
+        config.set('level', str(taxon_rank).lower())  # Probably 'order'
         logger.warn(f"Taxon {r['verbatim_identification']} can only be validated at the config['level'] level")
     else:
-        config['level'] = 'family'
-    result.level = config['level']  # Will be identification_rank in the result object
+        config.set('level', 'family')
+    result.level = config.get('level')  # Will be identification_rank in the result object
 
     # Try to resolve the taxonomic lineage at the specified ranks. This may return None, in which
     # case the record will be skipped. The webservice optionally takes a kingdom name to avoid
