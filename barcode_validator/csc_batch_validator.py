@@ -37,7 +37,7 @@ def main(table_file_path, logger, global_config):
             # and in the result object so that the output can be joined with the input
             seq_str = r['nuc']
             seq_id = r['local_id']
-            seq_obj = SeqRecord(Seq(seq_str), id=seq_id)
+            seq_obj = SeqRecord(Seq(seq_str), id=seq_id, description='')
             seq_obj.annotations['bcdm_fields'] = {'processid': seq_id}
             res = DNAAnalysisResult(seq_id, table_file_path)
 
