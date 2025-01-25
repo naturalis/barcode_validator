@@ -33,7 +33,7 @@ class BlastRunner:
         self.BLASTDB_LMDB_MAP_SIZE: Optional[int] = config.get('BLASTDB_LMDB_MAP_SIZE')
         self.BLASTDB: Optional[str] = config.get('BLASTDB')
 
-    def run_localblast(self, sequence, constraint, level='family'):
+    def run_localblast(self, sequence, constraint: int, level='family'):
         """
         Run a local BLASTN search against a local database and return the taxonomic lineages of the hits.
         :param sequence: A Bio.SeqRecord object
