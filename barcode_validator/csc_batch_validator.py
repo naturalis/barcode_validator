@@ -1,5 +1,6 @@
 import argparse
 import csv
+import re
 
 from Bio import Entrez
 from Bio.Seq import Seq
@@ -13,9 +14,9 @@ from barcode_validator.translation_tables import TaxonomyResolver, get_translati
 # Always tell NCBI who you are
 Entrez.email = "bioinformatics@naturalis.nl"
 
-def main(table_file_path, logger, config):
+def main(table_file_path, logger, global_config):
     # Initialize BarcodeValidator
-    validator = BarcodeValidator(config)
+    validator = BarcodeValidator(global_config)
     validator.initialize()
 
     # Initialize TaxonResolver
@@ -30,6 +31,9 @@ def main(table_file_path, logger, config):
         reader = csv.DictReader(f, delimiter='\t')
         for r in reader:
 
+            # Clone the global config for each record because it may be modified
+            config = global_config.local_clone()
+
             # Raw sequence and locally unique ID, which will go into the SeqRecord for v.validate_record()
             # and in the result object so that the output can be joined with the input
             seq_str = r['nuc']
@@ -40,13 +44,18 @@ def main(table_file_path, logger, config):
             # Try to instantiate the Marker enum from the marker code. If it fails, log the error and skip.
             try:
                 marker = Marker(r['marker_code'])
+
+                # If the marker is anything other than COI-5P, this will throw exceptions later on. That's
+                # fine, because the marker is not supported by the current implementation - but we do want
+                # to log this so that the user knows that the marker is not supported.
+                config['hmm_file'] = '../examples' + marker.value + '.hmm'
             except ValueError as e:
                 logger.error(f"Invalid marker code: {r['marker_code']} ({e})")
                 res.error = f"Invalid marker code: {r['marker_code']} ({e})"
                 continue
 
             # Attempt to resolve the taxonomic lineage at the specified ranks. If it fails, log the error and skip.
-            specific_taxonomy = preprocess_taxa(config, r, res, tr)
+            specific_taxonomy = preprocess_taxa(config, r, res, tr, logger)
             if specific_taxonomy is None:
                 logger.error(f"Taxon not found: {r['verbatim_identification']}")
                 res.error = f"Taxon not found: {r['verbatim_identification']}"
@@ -54,6 +63,7 @@ def main(table_file_path, logger, config):
 
             # Update the translation table using the specific taxonomy and marker.
             config['translation_table'].update(get_translation_table(marker, specific_taxonomy))
+            logger.info(f"Updated translation table: {config['translation_table']}")
 
             # Indicate in the result object what the expected taxon is at the specified level, which is, by
             # default, the family level but otherwise possibly the order level.
@@ -69,28 +79,42 @@ def main(table_file_path, logger, config):
             res.add_ancillary('is_valid', str(res.passes_all_checks()))
             results.append(res)
 
-    # Validate the FASTA file
+    # Create a DNAAnalysisResultSet object from the list of DNAAnalysisResult objects and print it
     rs = DNAAnalysisResultSet(results)
-
-    print(rs)  # print TSV results
-
+    print(rs)  # prints TSV
     logger.info("Analysis completed")
 
 
-def preprocess_taxa(config, r, result, tr):
+def preprocess_taxa(config, r, result, tr, logger):
 
     # Handle the rank variation: CSC has identifications at various ranks, including above the
     # family level. If so, this needs to be indicated in the result object so that the expected
     # and observed taxa are at the same level.
     taxon_rank = r['verbatim_rank']
-    if taxon_rank not in ['family', 'genus', 'species']:
+
+    # Attempt to identify possible species binomials in records that have no rank information.
+    pattern = r'^[A-Z][a-z]+ [a-z]+$'
+    if taxon_rank == 'null' and re.match(pattern, r['verbatim_identification']):
+        taxon_rank = 'species'
+        logger.warn(f"Assuming {r['verbatim_identification']} is a species")
+
+    # If the rank is in none of these, it is probably an order, so far as we've been able to see.
+    # We can then only validate at that higher level instead of the default family level. For
+    # this, both the config object needs to be updated and the result object needs to be updated.
+    if taxon_rank not in ['Family', 'Genus', 'Species', 'species', 'null']:
         config['level'] = str(taxon_rank).lower()  # Probably 'order'
+        logger.warn(f"Taxon {r['verbatim_identification']} can only be validated at the config['level'] level")
     else:
         config['level'] = 'family'
     result.level = config['level']  # Will be identification_rank in the result object
 
-    # Try to resolve the taxonomic lineage at the specified ranks. If it fails, log the error and skip.
-    ranks = ['phylum', 'class', 'order', 'family']
+    # Try to resolve the taxonomic lineage at the specified ranks. This may return None, in which
+    # case the record will be skipped. The webservice optionally takes a kingdom name to avoid
+    # homonyms. If the kingdom is not specified, it will be set to None.
+    if r['verbatim_kingdom'] == 'null':
+        r['verbatim_kingdom'] = None
+        logger.warn(f"{r['verbatim_identification']} has no kingdom, this may lead to homonyms")
+    ranks = ['kingdom', 'phylum', 'class', 'order', 'family']
     specific_taxonomy = tr.get_lineage_at_ranks(r['verbatim_identification'], ranks, r['verbatim_kingdom'])
 
     return specific_taxonomy
