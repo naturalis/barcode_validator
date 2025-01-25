@@ -7,6 +7,7 @@ from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
+from nbitk.Taxon import Taxon
 from barcode_validator.core import BarcodeValidator
 from barcode_validator.result import DNAAnalysisResult, DNAAnalysisResultSet
 from barcode_validator.translation_tables import TaxonomyResolver, get_translation_table, Marker
@@ -69,7 +70,7 @@ def main(table_file_path, logger, global_config):
             # Indicate in the result object what the expected taxon is at the specified level, which is, by
             # default, the family level but otherwise possibly the order level.
             if config['level'] in specific_taxonomy:
-                res.exp_taxon = specific_taxonomy[config['level']]
+                res.exp_taxon = Taxon(specific_taxonomy[config['level']])
             else:
                 logger.error(f"Expected taxon not found: {config['level']} in {specific_taxonomy}")
                 res.error = f"Expected taxon not found: {config['level']} in {specific_taxonomy}"
