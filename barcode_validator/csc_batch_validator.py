@@ -98,14 +98,14 @@ def preprocess_taxa(config, r, result, tr, logger):
     pattern = r'^[A-Z][a-z]+ [a-z]+$'
     if taxon_rank == 'null' and re.match(pattern, r['verbatim_identification']):
         taxon_rank = 'species'
-        logger.warn(f"Assuming {r['verbatim_identification']} is a species")
+        logger.warning(f"Assuming {r['verbatim_identification']} is a species")
 
     # If the rank is in none of these, it is probably an order, so far as we've been able to see.
     # We can then only validate at that higher level instead of the default family level. For
     # this, both the config object needs to be updated and the result object needs to be updated.
     if taxon_rank not in ['Family', 'Genus', 'Species', 'species', 'null']:
         config.set('level', str(taxon_rank).lower())  # Probably 'order'
-        logger.warn(f"Taxon {r['verbatim_identification']} can only be validated at the config['level'] level")
+        logger.warning(f"Taxon {r['verbatim_identification']} can only be validated at the config['level'] level")
     else:
         config.set('level', 'family')
     result.level = config.get('level')  # Will be identification_rank in the result object
@@ -115,7 +115,7 @@ def preprocess_taxa(config, r, result, tr, logger):
     # homonyms. If the kingdom is not specified, it will be set to None.
     if r['verbatim_kingdom'] == 'null':
         r['verbatim_kingdom'] = None
-        logger.warn(f"{r['verbatim_identification']} has no kingdom, this may lead to homonyms")
+        logger.warning(f"{r['verbatim_identification']} has no kingdom, this may lead to homonyms")
     ranks = ['kingdom', 'phylum', 'class', 'order', 'family']
     specific_taxonomy = tr.get_lineage_at_ranks(r['verbatim_identification'], ranks, r['verbatim_kingdom'])
 
