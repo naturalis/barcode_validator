@@ -1,8 +1,9 @@
 import logging
 from enum import Enum
 from Bio import Entrez
-from typing import Optional, Dict, List
-import time
+from nbitk.Taxon import Taxon
+from Bio.Phylo.BaseTree import Tree
+from typing import Optional
 
 """
 SYNOPSIS
@@ -19,100 +20,38 @@ class Marker(Enum):
     MATK = "matK"
     RBCL = "rbcL"
 
-
-def get_translation_table(marker: Marker, taxonomy_dict: dict) -> int:
-    """
-    Determine the appropriate translation table based on marker and taxonomy.
-
-    Args:
-        marker: The genetic marker being analyzed
-        taxonomy_dict: Dictionary containing taxonomic classification with keys:
-            'phylum', 'class', 'family'
-
-    Returns:
-        int: Translation table index for use with Biopython
-    """
-
-    if marker in [Marker.MATK, Marker.RBCL]:
-        if taxonomy_dict.get('family') == 'Balanophoraceae':
-            return 32
-        return 11
-
-    elif marker == Marker.COI_5P:
-        phylum = taxonomy_dict.get('phylum')
-        tax_class = taxonomy_dict.get('class')
-        family = taxonomy_dict.get('family')
-
-        if phylum == 'Chordata':
-            if tax_class == 'Ascidiacea':
-                return 13
-            elif tax_class in ['Actinopteri', 'Amphibia', 'Mammalia', 'Aves', 'Reptilia']:
-                return 2
-
-        elif phylum == 'Hemichordata':
-            if family == 'Cephalodiscidae':
-                return 33
-            elif family == 'Rhabdopleuridae':
-                return 24
-
-        elif phylum in ['Echinodermata', 'Platyhelminthes']:
-            return 9
-
-        # Default invertebrate mitochondrial code for other invertebrates
-        if phylum != 'Chordata':
-            return 5
-
-        # Fall back to standard code if no specific rules match
-        return 1
-
-
 class TaxonomyResolver:
 
     """
+    A class for resolving taxonomic names to full taxonomic classifications using NCBI taxonomy database.
+    The class uses the Entrez module from Biopython to query the NCBI taxonomy database to obtain a taxon ID.
+    The web service is aware of synonyms and alternate spellings, so it is somewhat robus. From that initial
+    taxon ID, a nbitk.Taxon object is retrieved from the resident NCBI taxonomy tree.
     SYNOPSIS
     # Example usage:
     >>> resolver = TaxonomyResolver("your.email@example.com")
-    >>>
-    >>> # Example 1: Get full taxonomy for a species
-    >>> taxonomy = resolver.get_taxonomy_dict("Homo sapiens", kingdom="Metazoa")
-    >>> print("Full taxonomy:", taxonomy)
-    >>>
-    >>> # Example 2: Get only specific ranks needed for genetic code determination
-    >>> required_ranks = ['phylum', 'class', 'family']
-    >>> specific_taxonomy = resolver.get_lineage_at_ranks("Homo sapiens", required_ranks)
-    >>>print("Specific ranks:", specific_taxonomy)
-    >>>
-    >>> # Example 3: Resolve a genus name
-    >>> genus_taxonomy = resolver.get_taxonomy_dict("Drosophila", kingdom="Metazoa")
-    >>> print("Genus taxonomy:", genus_taxonomy)
+    >>> taxon = resolver.get_taxon("Homo sapiens")
     """
 
-    def __init__(self, email: str, logger: logging.Logger):
+    def __init__(self, email: str, logger: logging.Logger, ncbi_tree: Tree):
         """
         Initialize the taxonomy resolver.
         :param email: Email address for NCBI Entrez queries (required by NCBI)
-
         """
         Entrez.email = email
         self.logger = logger
+        self.ncbi_tree = ncbi_tree
         self.tax_ranks = ['kingdom', 'phylum', 'class', 'order', 'family', 'genus', 'species']
 
-    def get_taxonomy_dict(self, taxon_name: str, kingdom: Optional[str] = None) -> Optional[Dict[str, str]]:
+    def get_taxon(self, taxon_name: str) -> Optional[Taxon]:
         """
         Resolve a taxon name to its full taxonomy using NCBI taxonomy database.
-
-        Args:
-            taxon_name: The taxonomic name to resolve
-            kingdom: Optional kingdom name to filter results
-
-        Returns:
-            Dictionary containing taxonomic classification or None if not found
+        :param taxon_name: The scientific taxonomic name to resolve
+        :return: A nbitk.Taxon object or None if not found
         """
         try:
             # First, search for the taxon ID
             search_term = f"{taxon_name}[Scientific Name]"
-            if kingdom:
-                search_term = f"{search_term} AND {kingdom}[Kingdom]"
             self.logger.info(f"Searching for '{search_term}' at Entrez")
 
             # Search in taxonomy database
@@ -120,62 +59,64 @@ class TaxonomyResolver:
             record = Entrez.read(handle)
             handle.close()
             self.logger.debug(f"Search results: {record}")
-
             if not record['IdList']:
+                self.logger.warning(f"Taxon not found: {taxon_name}")
                 return None
 
-            # Get the first (most relevant) taxonomy ID
+            # Get the first (most relevant) taxonomy ID and the associated taxon from the resident tree
             taxid = record['IdList'][0]
-
-            # Fetch the full taxonomy record
-            # TODO: Use the memory-resident version of the taxonomy database
-            handle = Entrez.efetch(db="taxonomy", id=taxid, retmode="xml")
-            records = Entrez.read(handle)
-            handle.close()
-
-            if not records:
-                return None
-
-            record = records[0]
-
-            # Extract lineage information
-            lineage_ex = record.get('LineageEx', [])
-            taxonomy_dict = {}
-
-            # Build dictionary of rank -> name
-            for entry in lineage_ex:
-                rank = entry.get('Rank', '').lower()
-                if rank in self.tax_ranks:
-                    taxonomy_dict[rank] = entry.get('ScientificName', '')
-
-            # Add the query taxon's rank and name
-            query_rank = record.get('Rank', '').lower()
-            if query_rank in self.tax_ranks:
-                taxonomy_dict[query_rank] = record.get('ScientificName', '')
-
-            return taxonomy_dict
+            self.logger.info(f"Found taxid: {taxid}")
+            taxon = self.ncbi_tree.find_elements(guids={'taxon': taxid})[0]
+            self.logger.debug(f"Found taxon: {taxon}")
+            return taxon
 
         except Exception as e:
             print(f"Error resolving taxonomy: {str(e)}")
             return None
 
-    def get_lineage_at_ranks(self, taxon_name: str, required_ranks: List[str],
-                             kingdom: Optional[str] = None) -> Optional[Dict[str, str]]:
+    def get_translation_table(self, marker: Marker, taxon: Taxon) -> int:
         """
-        Get taxonomy information for specific required ranks.
+        Determine the appropriate translation table based on marker and taxonomy.
 
-        Args:
-            taxon_name: The taxonomic name to resolve
-            required_ranks: List of taxonomic ranks required
-            kingdom: Optional kingdom name to filter results
-
-        Returns:
-            Dictionary containing only the required ranks or None if not found
+        :param marker: The genetic Marker (enum) being analyzed
+        :param taxon: The Taxon object representing the tip of the classification
+        :return: Translation table index (int) for use with Biopython
         """
-        full_taxonomy = self.get_taxonomy_dict(taxon_name, kingdom)
-        if not full_taxonomy:
-            return None
 
-        return {rank: full_taxonomy.get(rank, '') for rank in required_ranks}
+        taxonomy_dict = {}
+        for node in self.ncbi_tree.root.get_path(taxon):
+            if node.taxonomic_rank in self.tax_ranks:
+                taxonomy_dict[node.taxonomic_rank] = node.name
 
+        if marker in [Marker.MATK, Marker.RBCL]:
+            if taxonomy_dict.get('family') == 'Balanophoraceae':
+                return 32
+            return 11
+
+        elif marker == Marker.COI_5P:
+            phylum = taxonomy_dict.get('phylum')
+            tax_class = taxonomy_dict.get('class')
+            family = taxonomy_dict.get('family')
+
+            if phylum == 'Chordata':
+                if tax_class == 'Ascidiacea':
+                    return 13
+                elif tax_class in ['Actinopteri', 'Amphibia', 'Mammalia', 'Aves', 'Reptilia']:
+                    return 2
+
+            elif phylum == 'Hemichordata':
+                if family == 'Cephalodiscidae':
+                    return 33
+                elif family == 'Rhabdopleuridae':
+                    return 24
+
+            elif phylum in ['Echinodermata', 'Platyhelminthes']:
+                return 9
+
+            # Default invertebrate mitochondrial code for other invertebrates
+            if phylum != 'Chordata':
+                return 5
+
+            # Fall back to standard code if no specific rules match
+            return 1
 
