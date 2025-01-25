@@ -20,9 +20,6 @@ def main(table_file_path, logger, global_config):
     validator = BarcodeValidator(global_config)
     validator.initialize()
 
-    # Initialize TaxonResolver
-    tr = TaxonomyResolver(Entrez.email)
-
     # Print header
     logger.info(f"Starting analysis for file: {table_file_path}")
 
@@ -58,7 +55,7 @@ def main(table_file_path, logger, global_config):
                 continue
 
             # Attempt to resolve the taxonomic lineage at the specified ranks. If it fails, log the error and skip.
-            specific_taxonomy = preprocess_taxa(config, r, res, tr, logger)
+            specific_taxonomy = preprocess_taxa(config, r, res, logger)
             if specific_taxonomy is None:
                 logger.error(f"Taxon not found: {r['verbatim_identification']}")
                 res.error = f"Taxon not found: {r['verbatim_identification']}"
@@ -88,7 +85,7 @@ def main(table_file_path, logger, global_config):
     logger.info("Analysis completed")
 
 
-def preprocess_taxa(config, r, result, tr, logger):
+def preprocess_taxa(config, r, result, logger):
 
     # Handle the rank variation: CSC has identifications at various ranks, including above the
     # family level. If so, this needs to be indicated in the result object so that the expected
@@ -118,6 +115,9 @@ def preprocess_taxa(config, r, result, tr, logger):
         r['verbatim_kingdom'] = None
         logger.warning(f"{r['verbatim_identification']} has no kingdom, this may lead to homonyms")
     ranks = ['kingdom', 'phylum', 'class', 'order', 'family']
+
+    # Initialize TaxonResolver and invoke get_lineage_at_ranks
+    tr = TaxonomyResolver(Entrez.email, logger)
     specific_taxonomy = tr.get_lineage_at_ranks(r['verbatim_identification'], ranks, r['verbatim_kingdom'])
 
     return specific_taxonomy
