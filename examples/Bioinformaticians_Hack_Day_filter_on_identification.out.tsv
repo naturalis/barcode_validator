@@ -1,0 +1,1068 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	is_valid	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons	timestamp
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geophilidae	BLAST	family	True	655	657	Scolopendridae,Geophilidae,Schendylidae,Chilenophilidae	25281	Geophilus carpophagus	0	2025-01-25 17:05:00
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halymeniaceae	BLAST	family	False	656	658		50206	Grateloupia turuturu	0	2025-01-25 17:05:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	656	658	Ixodidae,Halolaelapidae	507	Oedothorax fuscus	0	2025-01-25 17:06:48
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	661	664		25443	Blidingia marginata	0	2025-01-25 17:07:37
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ephydridae	BLAST	family	True	657	658	Ephydridae	46650	Paracoenia fumosa	0	2025-01-25 17:08:48
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	True	657	658	Dolichopodidae	46669	Hercostomus nigriplantis	0	2025-01-25 17:10:01
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Noctuidae	BLAST	family	True	657	658	Noctuidae	25512	Conistra erythrocephala	0	2025-01-25 17:11:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Carabidae	BLAST	family	True	657	658	Carabidae	50294	Parophonus maculicornis	0	2025-01-25 17:12:29
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Truncatellinidae	BLAST	family	False	653	655	Ariophantidae,Helicarionidae,Milacidae	25544	Truncatellina cylindrica	0	2025-01-25 17:13:36
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hahniidae	BLAST	family	True	657	658	Hahniidae	36117	Antistea elegans	0	2025-01-25 17:14:31
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	False	622	652		25572	Euglesa casertana	0	2025-01-25 17:15:30
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halichondriidae	BLAST	family	False	662	664	Cladorhizidae,Tethyidae	46688	Halichondria panicea	0	2025-01-25 17:16:29
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	657	658	Linyphiidae	36163	Porrhomma pygmaeum	0	2025-01-25 17:17:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Raphidiidae	BLAST	family	True	656	658	Raphidiidae,Inocelliidae	46701	Xanthostigma xanthostigma	0	2025-01-25 17:18:42
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Carabidae	BLAST	family	True	656	658	Carabidae	25637	Harpalus xanthopus	0	2025-01-25 17:19:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	True	657	658	Dolichopodidae	25639	Achalcus	0	2025-01-25 17:21:04
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tephritidae	BLAST	family	True	657	658	Chloropidae,Sphaeroceridae,Tephritidae,Muscidae,Tachinidae	2540	Tephritidae	0	2025-01-25 17:22:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Coccinellidae	BLAST	family	True	657	658	Coccinellidae	36774	Adalia bipunctata	0	2025-01-25 17:23:31
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lycosidae	BLAST	family	False	648	652		3168	Arctosa leopardus	8	2025-01-25 17:24:33
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Pterocladiaceae	BLAST	family	False	661	664	Gelidiaceae	26105	Pterocladiella capillacea	0	2025-01-25 17:25:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lauxaniidae	BLAST	family	True	656	658	Drosophilidae,Lauxaniidae,Sphaeroceridae,Pallopteridae	46879	Meiosimyza decipiens	0	2025-01-25 17:26:38
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	True	655	658	Dolichopodidae	46885	Argyra perplexa	0	2025-01-25 17:27:59
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Elateridae	BLAST	family	True	655	658	Elateridae,Cantharidae	3540	Elateridae	0	2025-01-25 17:29:15
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Champiaceae	BLAST	family	True	661	664	Champiaceae	26323	Chylocladia verticillata	0	2025-01-25 17:30:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geometridae	BLAST	family	True	656	658	Geometridae	26337	Earophila badiata	0	2025-01-25 17:31:20
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Varunidae	BLAST	family	True	645	646	Sesarmidae,Varunidae	26350	Hemigrapsus sanguineus	0	2025-01-25 17:32:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Orthoptera	BLAST	order	True	656	658	Orthoptera,Diptera	3679	Orthoptera	0	2025-01-25 17:33:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Varunidae	BLAST	family	True	657	658	Varunidae	26399	Hemigrapsus sanguineus	0	2025-01-25 17:34:29
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hymenoptera	BLAST	order	False	657	658	Diptera	50581	Hymenoptera	0	2025-01-25 17:35:45
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	True	657	658	Chrysomelidae	46972	Psylliodes affinis	0	2025-01-25 17:36:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geomitridae	BLAST	family	False	660	674	Glaucidae,Helicidae,Camaenidae	47036	Xeroplexa intersecta	0	2025-01-25 17:38:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Champiaceae	BLAST	family	False	672	676		26782	Chylocladia verticillata	0	2025-01-25 17:38:53
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Araneidae	BLAST	family	True	657	658	Araneidae	4912	Zilla diodia	0	2025-01-25 17:39:48
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Elateridae	BLAST	family	True	656	658	Elateridae	26896	Cidnopus aeruginosus	0	2025-01-25 17:41:12
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gelidiaceae	BLAST	family	True	663	664	Gelidiaceae	26942	Gelidium pusillum	0	2025-01-25 17:42:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	663	664		26943	Rhizoclonium riparium	0	2025-01-25 17:42:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	False	662	664	Mytilidae	26960	Euglesa milium	0	2025-01-25 17:43:55
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halichondriidae	BLAST	family	True	656	658	Halichondriidae	47088	Halichondria panicea	0	2025-01-25 17:44:51
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Varunidae	BLAST	family	False	642	644	Varunidae,Ocypodidae	27029	Hemigrapsus sanguineus	6	2025-01-25 17:45:53
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Titanoecidae	BLAST	family	False	657	658	Philodromidae	27088	Titanoeca quadriguttata	0	2025-01-25 17:46:49
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halymeniaceae	BLAST	family	False	662	664	Gracilariaceae	47119	Grateloupia turuturu	0	2025-01-25 17:47:41
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	True	656	658	Aphididae	27173	Lipaphis pseudobrassicae	0	2025-01-25 17:48:49
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	False	672	673	Aphididae	38740	Macrosiphum cholodkovskyi	15	2025-01-25 17:50:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Zonitidae	BLAST	family	True	654	655	Zonitidae,Ariophantidae,Helicarionidae	27710	Vitrea crystallina	0	2025-01-25 17:51:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Limacidae	BLAST	family	True	653	655	Limacidae	47214	Malacolimax tenellus	0	2025-01-25 17:52:19
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lycosidae	BLAST	family	True	657	658	Lycosidae	6812	Pardosa prativaga	0	2025-01-25 17:53:31
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lycosidae	BLAST	family	True	657	658	Lycosidae	38824	Pardosa pullata	0	2025-01-25 17:54:26
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Salticidae	BLAST	family	True	655	657	Salticidae	38832	Marpissa radiata	0	2025-01-25 17:55:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	657	658	Tetragnathidae,Pachylaelapidae,Zerconidae,Rhodacaridae	6852	Gnathonarium dentatum	0	2025-01-25 17:56:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Wrangeliaceae	BLAST	family	False	662	664	Gracilariaceae	27758	Halurus flosculosus	0	2025-01-25 17:57:16
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hebridae	BLAST	family	False	656	658	Gerridae,Veliidae	7056	Hebrus sp.	0	2025-01-25 17:58:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chloropidae	BLAST	family	True	657	658	Chloropidae	27839	Thaumatomyia notata	0	2025-01-25 17:59:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Limoniidae	BLAST	family	True	657	658	Limoniidae,Pediciidae,Drosophilidae,Sepsidae	27901	Ilisia maculata	0	2025-01-25 18:01:05
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geometridae	BLAST	family	True	657	658	Geometridae	39269	Gandaritis pyraliata	0	2025-01-25 18:02:17
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Coreidae	BLAST	family	False	657	658	Rhopalidae	8851	Coreidae	0	2025-01-25 18:03:33
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	657	658	Linyphiidae	9099	Lepthyphantes minutus	0	2025-01-25 18:04:29
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geometridae	BLAST	family	True	656	658	Geometridae	47709	Thera britannica	0	2025-01-25 18:05:43
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Bethylidae	BLAST	family	False	656	658	Cantharidae	51100	Bethylus fuscicornis	0	2025-01-25 18:06:55
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Curculionidae	BLAST	family	True	657	658	Curculionidae	47729	Polydrusus formosus	0	2025-01-25 18:08:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lauxaniidae	BLAST	family	True	656	657	Carnidae,Drosophilidae,Lauxaniidae,Sepsidae	47737	Homoneura interstincta	0	2025-01-25 18:09:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Araneidae	BLAST	family	True	656	658	Araneidae	10147	Zygiella x-notata	0	2025-01-25 18:10:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	653	657	Linyphiidae	40819	Prinerigone vagans	0	2025-01-25 18:11:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	False	661	664	Cecidomyiidae,Keroplatidae,Braconidae,Pyralidae	47936	Donacia clavipes	0	2025-01-25 18:12:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Valloniidae	BLAST	family	False	660	664	Ampullariidae,Littorinidae,Annulariidae,Pomatiidae,Bursidae,Hydrobiidae	29812	Vallonia pulchella	0	2025-01-25 18:14:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	False	647	652		40907	Dysaphis radicola	7	2025-01-25 18:15:13
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	656	658	Linyphiidae	40931	Hypomma fulvum	0	2025-01-25 18:16:10
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halictidae	BLAST	family	True	656	658	Halictidae	10627	Halictus sp.	0	2025-01-25 18:17:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	True	657	658	Ichneumonidae	41261	Deuteroxorides elevator	0	2025-01-25 18:18:38
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	False	657	658	Braconidae	30045	Uroleucon sonchi	0	2025-01-25 18:19:49
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	False	657	658	Braconidae	30052	Lipaphis pseudobrassicae	0	2025-01-25 18:20:57
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	True	657	658	Ichneumonidae	12256	Meloboris collector	0	2025-01-25 18:22:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	612	652		30073	Cladophora albida	1	2025-01-25 18:23:08
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Prasiolaceae	BLAST	family	False	631	652		30098	Prasiola stipitata	6	2025-01-25 18:24:14
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	631	652		30100	Antithamnionella spirographidis	6	2025-01-25 18:25:04
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Champiaceae	BLAST	family	False	649	652		30111	Gastroclonium ovatum	0	2025-01-25 18:25:55
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gigartinaceae	BLAST	family	False	649	652		30117	Chondracanthus acicularis	0	2025-01-25 18:26:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	True	656	658	Empididae,Dolichopodidae	12439	Dolichopodidae	0	2025-01-25 18:28:01
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	619	653		30120	Agardhiella subulata	0	2025-01-25 18:28:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	618	652		30121	Phymatolithon lenormandii	0	2025-01-25 18:29:43
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Corallinaceae	BLAST	family	False	596	652		30186	Pneophyllum confervicola	0	2025-01-25 18:30:38
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	647	652		30199	Codium tomentosum	0	2025-01-25 18:31:29
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geomitridae	BLAST	family	False	670	673	Camaenidae	48246	Xeroplexa intersecta	0	2025-01-25 18:32:29
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	602	661		48247	Codium fragile	0	2025-01-25 18:33:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tellinidae	BLAST	family	False	617	652		51556	Macoma balthica	0	2025-01-25 18:34:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeromatidae	BLAST	family	False	602	652		30234	Lekanesphaera rugicauda	0	2025-01-25 18:35:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	613	649		48300	Melanothamnus harveyi	0	2025-01-25 18:36:14
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halichondriidae	BLAST	family	False	640	652		48313	Halichondria panicea	4	2025-01-25 18:37:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	617	652		30376	Codium tomentosum	0	2025-01-25 18:38:00
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	677	681		48318	Ceramium virgatum	1	2025-01-25 18:38:51
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geomitridae	BLAST	family	False	657	661		51629	Xeroplexa intersecta	0	2025-01-25 18:39:53
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	645	649		48326	Codium fragile	0	2025-01-25 18:40:43
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	616	652		30415	Phymatolithon lenormandii	0	2025-01-25 18:41:34
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tellinidae	BLAST	family	False	616	652		51661	Macoma balthica	0	2025-01-25 18:42:34
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	670	673		48346	Agardhiella subulata	0	2025-01-25 18:43:41
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	True	656	658	Chrysomelidae	51671	Clytra quadripunctata	0	2025-01-25 18:44:48
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Bithyniidae	BLAST	family	False	657	658	Muricidae,Fasciolariidae,Cochliopidae,Trochidae,Turbinidae,Solariellidae	48369	Bithynia leachii	0	2025-01-25 18:45:55
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Wrangeliaceae	BLAST	family	False	663	664	Rhodomelaceae,Dasyaceae,Kallymeniaceae,Acrothesauraceae	30457	Halurus flosculosus	0	2025-01-25 18:46:48
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Prasiolaceae	BLAST	family	False	648	652		30475	Prasiola stipitata	9	2025-01-25 18:47:38
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	647	652		30477	Ceramium gaditanum	9	2025-01-25 18:48:28
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	649	652		48406	Chaetomorpha ligustica	12	2025-01-25 18:49:19
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Erythrotrichiaceae	BLAST	family	False	649	652		48407	Erythrocladia sp.	13	2025-01-25 18:50:34
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Palmariaceae	BLAST	family	False	649	652		30504	Palmaria palmata	13	2025-01-25 18:51:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gigartinaceae	BLAST	family	False	648	651		30508	Chondracanthus acicularis	13	2025-01-25 18:52:15
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	648	651		48413	Melanothamnus harveyi	13	2025-01-25 18:53:05
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	649	652		48417	Ceramium virgatum	13	2025-01-25 18:53:56
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	649	652		30513	Codium tomentosum	13	2025-01-25 18:54:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	661	664	Ctenizidae,Linyphiidae	46123	Gnathonarium dentatum	0	2025-01-25 18:55:41
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	False	133	659		30581	Euglesa milium	1	2025-01-25 18:56:41
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	654	685		30587	Pterothamnion plumula	0	2025-01-25 18:57:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Curculionidae	BLAST	family	False	398	399	Curculionidae	48446	Otiorhynchus sulcatus	0	2025-01-25 18:58:40
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Acinetosporaceae	BLAST	family	False	595	649		48452	Pylaiella littoralis	0	2025-01-25 18:59:42
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	636	652		30639	Phymatolithon lenormandii	0	2025-01-25 19:00:33
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Semelidae	BLAST	family	False	657	661		30643	Abra tenuis	0	2025-01-25 19:01:33
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	593	648		48458	Melanothamnus harveyi	0	2025-01-25 19:02:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	643	652		48463	Vertebrata fucoides	8	2025-01-25 19:03:14
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	False	395	396	Chrysomelidae	48465	Cassida rubiginosa	0	2025-01-25 19:04:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Elateridae	BLAST	family	False	649	652	Silphidae	51783	Cidnopus aeruginosus	8	2025-01-25 19:05:35
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	False	649	652		31214	Euglesa personata	9	2025-01-25 19:06:35
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Amaurobiidae	BLAST	family	True	657	658	Amaurobiidae	14673	Amaurobius similis	0	2025-01-25 19:07:33
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hymenoptera	BLAST	order	False	627	629	Coleoptera,Diptera,Lepidoptera	51788	Hymenoptera	0	2025-01-25 19:08:49
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	False	627	629	Dermestidae,Dolichopodidae,Hesperiidae	51802	Cassida rubiginosa	0	2025-01-25 19:10:04
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	649	652		14978	Pelecopsis parallela	10	2025-01-25 19:11:01
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	674	679		31303	Blidingia marginata	0	2025-01-25 19:11:51
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	True	663	664	Unionidae,Sphaeriidae	31330	Euglesa milium	0	2025-01-25 19:12:57
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Staphylinidae	BLAST	family	False	648	652		51908	Othius punctulatus	0	2025-01-25 19:14:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Theridiidae	BLAST	family	True	657	658	Theridiidae	15452	Paidiscura pallens	0	2025-01-25 19:15:06
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Theridiosomatidae	BLAST	family	True	656	658	Tetragnathidae,Theridiosomatidae	43049	Theridiosoma gemmosum	0	2025-01-25 19:16:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dictynidae	BLAST	family	True	657	658	Dictynidae	15540	Lathys humilis	0	2025-01-25 19:16:58
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeromatidae	BLAST	family	True	657	658	Ligiidae,Trachelipodidae,Sphaeromatidae	31400	Lekanesphaera rugicauda	0	2025-01-25 19:18:00
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	655	658	Linyphiidae	15649	Ceratinella scabrosa	0	2025-01-25 19:18:56
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	654	657	Linyphiidae	15651	Collinsia inerrans	0	2025-01-25 19:19:53
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	655	658	Linyphiidae	15670	Pelecopsis parallela	0	2025-01-25 19:20:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	655	658	Linyphiidae	43203	Oedothorax retusus	0	2025-01-25 19:21:45
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halymeniaceae	BLAST	family	False	646	652		48704	Grateloupia turuturu	3	2025-01-25 19:22:36
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sargassaceae	BLAST	family	False	673	676	Desmarestiaceae,Pseudoralfsiaceae	48732	Sargassum muticum	0	2025-01-25 19:23:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	670	673		48733	Codium fragile	0	2025-01-25 19:24:37
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	673	676		48737	Melanothamnus harveyi	0	2025-01-25 19:25:27
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphacelariaceae	BLAST	family	False	658	661		48739	Sphacelaria fusca	0	2025-01-25 19:26:29
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Caulacanthaceae	BLAST	family	False	658	661		48740	Caulacanthus okamurae	0	2025-01-25 19:27:20
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	616	652		31516	Cladophora albida	0	2025-01-25 19:28:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Derbesiaceae	BLAST	family	False	617	652		31520	Derbesia marina	0	2025-01-25 19:29:01
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Caulacanthaceae	BLAST	family	True	663	664	Solieriaceae,Caulacanthaceae,Etheliaceae,Peyssonneliaceae	48757	Caulacanthus okamurae	0	2025-01-25 19:29:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Callithamniaceae	BLAST	family	True	663	664	Rhodomelaceae,Callithamniaceae,Cystocloniaceae,Mychodeaceae,Dicranemataceae	31582	Callithamnion corymbosum	0	2025-01-25 19:30:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Erythrotrichiaceae	BLAST	family	False	646	652		48768	Erythrocladia sp.	8	2025-01-25 19:32:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sargassaceae	BLAST	family	False	647	653		48769	Sargassum muticum	1	2025-01-25 19:33:10
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	663	664	Hapalidiaceae,Rhodomelaceae,Mychodeaceae	48772	Agardhiella subulata	0	2025-01-25 19:34:02
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	657	658	Linyphiidae	16027	Stemonyphantes lineatus	0	2025-01-25 19:35:00
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	620	649		48787	Chaetomorpha ligustica	0	2025-01-25 19:35:51
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tipulidae	BLAST	family	True	657	658	Tipulidae	43618	Tipula lunata	0	2025-01-25 19:37:05
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	657	658	Salticidae,Lamponidae,Macronyssidae,Sperchontidae,Eupodidae,Phalangiidae	16518	Gnathonarium dentatum	0	2025-01-25 19:38:06
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Staphylinidae	BLAST	family	False	662	664	Cicadellidae,Culicidae,Pyralidae	52049	Othius punctulatus	0	2025-01-25 19:39:16
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Mactridae	BLAST	family	False	662	664		23418	Spisula solida	0	2025-01-25 19:40:17
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Alariaceae	BLAST	family	False	674	676		31730	Undaria pinnatifida	0	2025-01-25 19:41:19
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	False	606	652		31732	Euglesa casertana	0	2025-01-25 19:42:19
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	616	652		31957	Agardhiella subulata	0	2025-01-25 19:43:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hygromiidae	BLAST	family	True	654	655	Helicidae,Hygromiidae	43916	Hygromia cinctella	0	2025-01-25 19:44:19
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	618	652		31985	Agardhiella subulata	0	2025-01-25 19:45:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	618	652		31987	Codium tomentosum	0	2025-01-25 19:46:00
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	618	652		31988	Phymatolithon lenormandii	0	2025-01-25 19:46:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	618	652		31989	Blidingia marginata	0	2025-01-25 19:47:41
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gigartinaceae	BLAST	family	False	641	648		32117	Chondracanthus acicularis	4	2025-01-25 19:48:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Caulacanthaceae	BLAST	family	True	661	664	Phyllophoraceae,Dumontiaceae,Sphaerococcaceae,Caulacanthaceae,Mychodeophyllaceae	32119	Catenella caespitosa	0	2025-01-25 19:49:31
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	616	652		49005	Codium fragile	0	2025-01-25 19:50:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Semelidae	BLAST	family	False	598	652		32127	Abra tenuis	0	2025-01-25 19:51:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Phyllophoraceae	BLAST	family	False	669	673		49018	Phyllophora pseudoceranoides	0	2025-01-25 19:52:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphacelariaceae	BLAST	family	False	656	661		49141	Sphacelaria fusca	0	2025-01-25 19:53:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gelidiaceae	BLAST	family	False	672	676		32216	Gelidium spinosum	0	2025-01-25 19:54:12
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cystocloniaceae	BLAST	family	False	672	675		49164	Cystoclonium purpureum	2	2025-01-25 19:55:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cystocloniaceae	BLAST	family	False	610	649		49169	Cystoclonium purpureum	0	2025-01-25 19:55:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	615	652		49176	Codium fragile	0	2025-01-25 19:56:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Palaemonidae	BLAST	family	False	644	652		32247	Palaemon elegans	8	2025-01-25 19:57:44
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geomitridae	BLAST	family	False	657	663	Viviparidae,Annulariidae,Platyhedylidae,Helicarionidae,Planorbidae	52388	Xeroplexa intersecta	0	2025-01-25 19:58:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	673	676		32252	Cladophora albida	0	2025-01-25 19:59:43
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cystocloniaceae	BLAST	family	False	679	682		49178	Cystoclonium purpureum	0	2025-01-25 20:00:33
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Caulacanthaceae	BLAST	family	False	658	661		49180	Caulacanthus okamurae	0	2025-01-25 20:01:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Mesophyllumaceae	BLAST	family	False	644	652		32271	Mesophyllum sp.	6	2025-01-25 20:02:13
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Caulacanthaceae	BLAST	family	False	661	664	Delesseriaceae,Dasyaceae	32273	Catenella caespitosa	0	2025-01-25 20:03:08
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Phyllophoraceae	BLAST	family	False	614	652		49189	Phyllophora pseudoceranoides	0	2025-01-25 20:03:58
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	614	652		49193	Melanothamnus harveyi	0	2025-01-25 20:04:49
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	613	649		32300	Phymatolithon lenormandii	0	2025-01-25 20:05:45
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphacelariaceae	BLAST	family	True	660	661	Sphacelariaceae,Cladostephaceae	49201	Sphacelaria fusca	0	2025-01-25 20:06:56
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Salticidae	BLAST	family	True	655	657	Salticidae	44396	Synageles venator	0	2025-01-25 20:07:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Callithamniaceae	BLAST	family	False	661	664	Gigartinaceae	49232	Callithamnion tetragonum	0	2025-01-25 20:08:49
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	True	662	664	Ceramiaceae,Cruoriaceae,Halymeniaceae	32338	Pterothamnion plumula	0	2025-01-25 20:09:43
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tipulidae	BLAST	family	False	662	664	Blattidae,Cicadellidae,Platypezidae,Syrphidae,Muscidae,Chrysididae	49238	Tipula lateralis	0	2025-01-25 20:10:57
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Valloniidae	BLAST	family	True	653	655	Valloniidae	32405	Vallonia excentrica	0	2025-01-25 20:12:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Noctuidae	BLAST	family	True	657	658	Noctuidae	25512	Conistra erythrocephala	0	2025-01-25 20:13:26
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	True	655	658	Dolichopodidae	46885	Argyra perplexa	0	2025-01-25 20:14:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Elateridae	BLAST	family	True	655	658	Elateridae,Cantharidae	3540	Elateridae	0	2025-01-25 20:16:01
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hymenoptera	BLAST	order	False	657	658	Diptera	50581	Hymenoptera	0	2025-01-25 20:17:16
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geomitridae	BLAST	family	False	660	674	Glaucidae,Helicidae,Camaenidae	47036	Xeroplexa intersecta	0	2025-01-25 20:18:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Elateridae	BLAST	family	True	656	658	Elateridae	26896	Cidnopus aeruginosus	0	2025-01-25 20:19:35
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	657	658	Tetragnathidae,Pachylaelapidae,Zerconidae,Rhodacaridae	6852	Gnathonarium dentatum	0	2025-01-25 20:20:35
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chloropidae	BLAST	family	True	657	658	Chloropidae	27839	Thaumatomyia notata	0	2025-01-25 20:21:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Bethylidae	BLAST	family	False	656	658	Cantharidae	51100	Bethylus fuscicornis	0	2025-01-25 20:23:01
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Araneidae	BLAST	family	True	656	658	Araneidae	10147	Zygiella x-notata	0	2025-01-25 20:23:59
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halictidae	BLAST	family	True	656	658	Halictidae	10627	Halictus sp.	0	2025-01-25 20:25:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	True	656	658	Empididae,Dolichopodidae	12439	Dolichopodidae	0	2025-01-25 20:26:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	619	653		30120	Agardhiella subulata	0	2025-01-25 20:27:16
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geomitridae	BLAST	family	False	670	673	Camaenidae	48246	Xeroplexa intersecta	0	2025-01-25 20:28:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeromatidae	BLAST	family	False	602	652		30234	Lekanesphaera rugicauda	0	2025-01-25 20:29:19
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geomitridae	BLAST	family	False	657	661		51629	Xeroplexa intersecta	0	2025-01-25 20:30:19
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	649	652		48406	Chaetomorpha ligustica	12	2025-01-25 20:31:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	661	664	Ctenizidae,Linyphiidae	46123	Gnathonarium dentatum	0	2025-01-25 20:32:05
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Semelidae	BLAST	family	False	657	661		30643	Abra tenuis	0	2025-01-25 20:33:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Elateridae	BLAST	family	False	649	652	Silphidae	51783	Cidnopus aeruginosus	8	2025-01-25 20:34:16
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hymenoptera	BLAST	order	False	627	629	Coleoptera,Diptera,Lepidoptera	51788	Hymenoptera	0	2025-01-25 20:35:33
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeromatidae	BLAST	family	True	657	658	Ligiidae,Trachelipodidae,Sphaeromatidae	31400	Lekanesphaera rugicauda	0	2025-01-25 20:36:36
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	655	658	Linyphiidae	15649	Ceratinella scabrosa	0	2025-01-25 20:37:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphacelariaceae	BLAST	family	False	658	661		48739	Sphacelaria fusca	0	2025-01-25 20:38:40
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	620	649		48787	Chaetomorpha ligustica	0	2025-01-25 20:39:31
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	657	658	Salticidae,Lamponidae,Macronyssidae,Sperchontidae,Eupodidae,Phalangiidae	16518	Gnathonarium dentatum	0	2025-01-25 20:40:30
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	616	652		31957	Agardhiella subulata	0	2025-01-25 20:41:20
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	618	652		31985	Agardhiella subulata	0	2025-01-25 20:42:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Semelidae	BLAST	family	False	598	652		32127	Abra tenuis	0	2025-01-25 20:43:17
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphacelariaceae	BLAST	family	False	656	661		49141	Sphacelaria fusca	0	2025-01-25 20:44:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geomitridae	BLAST	family	False	657	663	Viviparidae,Annulariidae,Platyhedylidae,Helicarionidae,Planorbidae	52388	Xeroplexa intersecta	0	2025-01-25 20:45:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphacelariaceae	BLAST	family	True	660	661	Sphacelariaceae,Cladostephaceae	49201	Sphacelaria fusca	0	2025-01-25 20:46:41
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Salticidae	BLAST	family	True	655	657	Salticidae	44396	Synageles venator	0	2025-01-25 20:47:37
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gigartinaceae	BLAST	family	False	663	664	Cystocloniaceae	32450	Chondracanthus acicularis	0	2025-01-25 20:48:34
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	True	662	664	Solieriaceae,Gracilariaceae	49608	Agardhiella subulata	0	2025-01-25 20:49:26
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	True	663	664	Rhodomelaceae	32458	Osmundea pinnatifida	0	2025-01-25 20:50:19
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hymenoptera	BLAST	order	True	659	661	Hemiptera,Hymenoptera	52544	Hymenoptera	0	2025-01-25 20:51:36
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Limoniidae	BLAST	family	True	657	658	Limoniidae	49667	Limonia phragmitidis	0	2025-01-25 20:52:45
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tipulidae	BLAST	family	True	657	658	Tipulidae	49694	Nephrotoma guestfalica	0	2025-01-25 20:53:55
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Semelidae	BLAST	family	False	658	664	Pinnidae	32738	Abra tenuis	0	2025-01-25 20:55:01
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	661	664		49754	Codium fragile	0	2025-01-25 20:55:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Bethylidae	BLAST	family	False	644	646	Phlaeothripidae	52645	Bethylus fuscicornis	0	2025-01-25 20:57:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	True	656	658	Ichneumonidae	45355	Exephanes ischioxanthus	0	2025-01-25 20:58:29
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	False	655	658	Braconidae	32884	Lipaphis pseudobrassicae	0	2025-01-25 20:59:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Callithamniaceae	BLAST	family	False	612	652		32937	Callithamnion corymbosum	0	2025-01-25 21:00:36
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Semelidae	BLAST	family	False	617	652	Arcidae	32938	Abra tenuis	0	2025-01-25 21:01:36
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lycosidae	BLAST	family	False	596	652		21113	Arctosa leopardus	0	2025-01-25 21:02:29
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Silphidae	BLAST	family	False	653	655	Cicadellidae,Hydrophilidae	49822	Nicrophorus vespillo	0	2025-01-25 21:03:40
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	656	658	Linyphiidae	21149	Drapetisca socialis	0	2025-01-25 21:04:37
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	656	658	Argasidae,Ixodidae,Neopilionidae	49	Micrargus subaequalis	0	2025-01-25 21:05:34
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Salticidae	BLAST	family	False	656	658	Lamponidae,Ixodidae,Eremobatidae	35669	Salticus zebraneus	0	2025-01-25 21:06:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lycosidae	BLAST	family	False	635	652		35685	Pardosa pullata	3	2025-01-25 21:07:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	612	652		46628	Ceramium virgatum	0	2025-01-25 21:08:15
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Actiniidae	BLAST	family	False	657	658	Hormathiidae,Alcyoniidae,Nephtheidae,Xeniidae	25486	Actinia equina	0	2025-01-25 21:09:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	False	657	658	Curculionidae	50295	Mantura chrysanthemi	0	2025-01-25 21:10:38
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Haminoeidae	BLAST	family	True	657	658	Haminoeidae	50321	Haloa japonica	0	2025-01-25 21:11:40
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ellobiidae	BLAST	family	True	654	655	Ellobiidae	25548	Carychium tridentatum	0	2025-01-25 21:12:42
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Carabidae	BLAST	family	True	657	658	Carabidae	25634	Harpalus servus	0	2025-01-25 21:13:56
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Noctuidae	BLAST	family	True	657	658	Noctuidae	36289	Mythimna straminea	0	2025-01-25 21:15:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Elachistidae	BLAST	family	True	657	658	Elachistidae	25643	Elachista maculicerusella	0	2025-01-25 21:16:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Oecophoridae	BLAST	family	True	657	658	Oecophoridae,Notodontidae	46728	Esperia sulphurella	0	2025-01-25 21:17:30
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cystocloniaceae	BLAST	family	False	608	649		26104	Cystoclonium purpureum	0	2025-01-25 21:18:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	True	656	658	Dolichopodidae	46870	Rhaphium fasciatum	0	2025-01-25 21:19:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gelidiaceae	BLAST	family	True	662	664	Gelidiaceae	46927	Gelidium vagum	0	2025-01-25 21:20:30
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	657	658	Linyphiidae	37253	Lepthyphantes leprosus	0	2025-01-25 21:21:26
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Mimetidae	BLAST	family	False	640	652		4879	Ero aphana	8	2025-01-25 21:22:20
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Palaemonidae	BLAST	family	False	673	676	Asellidae	26784	Palaemon elegans	0	2025-01-25 21:23:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	False	661	664	Baetidae,Chrysomelidae	26787	Brachycaudus lateralis	0	2025-01-25 21:24:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Psychidae	BLAST	family	False	657	658	Tineidae	47105	Psychidae	0	2025-01-25 21:25:36
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Orculidae	BLAST	family	True	653	655	Orculidae	27033	Sphyradium doliolum	0	2025-01-25 21:26:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lauxaniidae	BLAST	family	True	657	658	Drosophilidae,Lauxaniidae	47180	Homoneura interstincta	0	2025-01-25 21:27:55
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Limacidae	BLAST	family	True	654	655	Limacidae	47210	Lehmannia marginata	0	2025-01-25 21:28:58
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Delesseriaceae	BLAST	family	True	656	658	Rhodomelaceae,Delesseriaceae,Kallymeniaceae	27738	Cryptopleura ramosa	0	2025-01-25 21:29:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tubulariidae	BLAST	family	True	657	658	Agalmatidae,Hydridae,Tubulariidae,Campanulariidae,Mitrocomidae,Aequoreidae,Clytiidae	27740	Tubularia indivisa	0	2025-01-25 21:30:51
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Bithyniidae	BLAST	family	True	656	658	Bithyniidae,Hydrobiidae	47218	Bithynia leachii	0	2025-01-25 21:31:55
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Theridiidae	BLAST	family	True	657	658	Theridiidae	27754	Cryptachaea blattea	0	2025-01-25 21:32:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	657	658	Linyphiidae	6857	Diplostyla concolor	0	2025-01-25 21:33:47
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	663	664		27761	Blidingia marginata	0	2025-01-25 21:34:43
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chamaemyiidae	BLAST	family	False	657	658	Hybotidae	27844	Chamaemyia geniculata	0	2025-01-25 21:35:53
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ephydridae	BLAST	family	True	657	658	Drosophilidae,Ephydridae	8029	Hecamede albicans	0	2025-01-25 21:37:10
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	True	656	658	Dolichopodidae	47484	Dolichopus acuticornis	0	2025-01-25 21:38:30
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tenthredinidae	BLAST	family	True	657	658	Tenthredinidae	47686	Dolerus sp.	0	2025-01-25 21:39:41
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	655	657	Linyphiidae	40918	Walckenaeria nudipalpis	0	2025-01-25 21:40:42
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	656	658	Linyphiidae	10470	Microneta viaria	0	2025-01-25 21:41:38
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	655	658	Linyphiidae	10476	Hypomma bituberculatum	0	2025-01-25 21:42:34
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	True	655	658	Ichneumonidae	41040	Coelichneumon haemorrhoidalis	0	2025-01-25 21:43:57
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	True	656	658	Ichneumonidae	48110	Ophion minutus	0	2025-01-25 21:45:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	643	649		30119	Phymatolithon lenormandii	0	2025-01-25 21:46:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halichondriidae	BLAST	family	False	626	652		48183	Halichondria panicea	9	2025-01-25 21:47:01
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Theridiidae	BLAST	family	True	656	658	Theridiidae	41549	Steatoda grossa	0	2025-01-25 21:47:57
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	617	652		30148	Cladophora albida	0	2025-01-25 21:48:48
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Acinetosporaceae	BLAST	family	False	613	649		48199	Pylaiella littoralis	0	2025-01-25 21:49:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	644	652		48298	Ceramium virgatum	6	2025-01-25 21:50:45
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	594	649		30367	Ulva australis	0	2025-01-25 21:51:36
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Callithamniaceae	BLAST	family	False	617	652		30374	Callithamnion corymbosum	0	2025-01-25 21:52:26
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	617	652		30375	Ceramium gaditanum	0	2025-01-25 21:53:17
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Palaemonidae	BLAST	family	False	673	677		30379	Palaemon elegans	0	2025-01-25 21:54:13
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	616	652		30416	Agardhiella subulata	0	2025-01-25 21:55:04
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Erythrotrichiaceae	BLAST	family	False	648	652		48400	Erythrocladia sp.	9	2025-01-25 21:56:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	646	652		30491	Osmundea pinnatifida	6	2025-01-25 21:57:15
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Mactridae	BLAST	family	False	626	658		51702	Spisula solida	0	2025-01-25 21:58:15
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	646	652		30498	Osmundea osmunda	5	2025-01-25 21:59:06
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Champiaceae	BLAST	family	False	646	652		30501	Gastroclonium ovatum	5	2025-01-25 21:59:56
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	649	652		48408	Vertebrata fucoides	13	2025-01-25 22:00:47
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	649	652		48415	Ceramium diaphanum	13	2025-01-25 22:01:37
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gnaphosidae	BLAST	family	False	661	664	Diplocentridae,Theraphosidae,Ctenizidae,Idiopidae,Filistatidae	13801	Trachyzelotes pedestris	0	2025-01-25 22:02:37
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Callithamniaceae	BLAST	family	False	654	685		30586	Callithamnion corymbosum	0	2025-01-25 22:03:27
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Derbesiaceae	BLAST	family	False	654	685		30588	Derbesia marina	0	2025-01-25 22:04:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hybotidae	BLAST	family	False	661	664	Calopterygidae,Tenebrionidae,Mymaridae,Eucharitidae	30610	Platypalpus cursitans	0	2025-01-25 22:06:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Corallinaceae	BLAST	family	False	631	652		30634	Pneophyllum confervicola	14	2025-01-25 22:07:08
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	617	652		48455	Codium fragile	0	2025-01-25 22:07:59
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	619	652		30656	Blidingia marginata	0	2025-01-25 22:08:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Diptera	BLAST	order	True	627	629	Orthoptera,Coleoptera,Diptera,Lepidoptera	51786	Diptera	0	2025-01-25 22:10:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	False	626	628	Dermestidae,Dolichopodidae	42578	Pimpla rufipes	0	2025-01-25 22:11:26
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Caulacanthaceae	BLAST	family	False	658	661	Gigartinaceae	31299	Catenella caespitosa	0	2025-01-25 22:12:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Prasiolaceae	BLAST	family	False	675	679		31305	Prasiola stipitata	0	2025-01-25 22:13:13
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halymeniaceae	BLAST	family	False	712	715		48608	Grateloupia turuturu	5	2025-01-25 22:14:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	657	661		48610	Chaetomorpha ligustica	0	2025-01-25 22:14:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Varunidae	BLAST	family	False	657	661	Penaeidae	31321	Hemigrapsus sanguineus	0	2025-01-25 22:15:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Salticidae	BLAST	family	False	657	658	Theridiidae	43132	Synageles venator	0	2025-01-25 22:16:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Prasiolaceae	BLAST	family	False	660	664		31447	Prasiola stipitata	0	2025-01-25 22:17:37
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Phalangiidae	BLAST	family	True	656	658	Phalangiidae	15818	Rilaena triangularis	0	2025-01-25 22:18:33
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	673	676		48722	Agardhiella subulata	0	2025-01-25 22:19:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Actiniidae	BLAST	family	False	657	658	Edwardsiidae,Merulinidae,Caryophylliidae,Tubiporidae,Xeniidae	31469	Actinia equina	0	2025-01-25 22:20:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Fucaceae	BLAST	family	False	663	664		48724	Ascophyllum nodosum	0	2025-01-25 22:21:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	670	673		31497	Phymatolithon lenormandii	0	2025-01-25 22:22:13
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Mactridae	BLAST	family	False	596	652		51958	Spisula solida	2	2025-01-25 22:23:19
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	658	661		48744	Ceramium virgatum	0	2025-01-25 22:24:10
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Callithamniaceae	BLAST	family	False	615	651		31514	Callithamnion corymbosum	0	2025-01-25 22:25:00
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	615	651		31518	Agardhiella subulata	2	2025-01-25 22:25:51
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphacelariaceae	BLAST	family	False	647	652		48767	Sphacelaria fusca	5	2025-01-25 22:26:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	False	659	661	Baetidae,Reduviidae,Culicidae,Fanniidae,Gracillariidae	43499	Macrosiphum cholodkovskyi	0	2025-01-25 22:28:05
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Thomisidae	BLAST	family	True	657	658	Thomisidae	16078	Xysticus ulmi	0	2025-01-25 22:29:02
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tipulidae	BLAST	family	True	657	658	Tipulidae	43619	Tipula vernalis	0	2025-01-25 22:30:10
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	657	658	Theridiidae,Salticidae,Lamponidae,Macronyssidae,Sperchontidae,Eupodidae,Phalangiidae	16569	Dicymbium nigrum	0	2025-01-25 22:31:13
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Callithamniaceae	BLAST	family	False	663	664	Corallinaceae,Spongitidaceae,Galaxauraceae,Batrachospermaceae	31717	Callithamnion corymbosum	0	2025-01-25 22:32:06
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Alariaceae	BLAST	family	False	661	664	Chordariaceae,Desmarestiaceae	31719	Undaria pinnatifida	0	2025-01-25 22:33:15
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Pipunculidae	BLAST	family	False	657	658	Cicadidae,Curculionidae	31721	Clistoabdominalis ruralis	0	2025-01-25 22:34:27
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sargassaceae	BLAST	family	False	674	676		48820	Sargassum muticum	0	2025-01-25 22:35:30
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Phyllophoraceae	BLAST	family	False	672	676		49016	Phyllophora pseudoceranoides	0	2025-01-25 22:36:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cystocloniaceae	BLAST	family	False	615	649		49019	Cystoclonium purpureum	0	2025-01-25 22:37:15
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	672	676		32210	Ulva australis	0	2025-01-25 22:38:05
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphacelariaceae	BLAST	family	False	625	649		32212	Sphacelaria fusca	2	2025-01-25 22:39:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	658	661		32214	Blidingia marginata	0	2025-01-25 22:39:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	655	661		49147	Chaetomorpha ligustica	0	2025-01-25 22:40:38
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halymeniaceae	BLAST	family	False	672	676		32222	Grateloupia turuturu	0	2025-01-25 22:41:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	671	674		32223	Phymatolithon lenormandii	2	2025-01-25 22:42:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sargassaceae	BLAST	family	False	610	649		49170	Sargassum muticum	0	2025-01-25 22:43:08
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Wrangeliaceae	BLAST	family	False	610	649		32237	Halurus flosculosus	0	2025-01-25 22:43:53
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sargassaceae	BLAST	family	False	669	673		49175	Sargassum muticum	0	2025-01-25 22:44:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tubulariidae	BLAST	family	False	643	652		32248	Tubularia indivisa	8	2025-01-25 22:45:40
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Prasiolaceae	BLAST	family	False	673	676		32256	Prasiola stipitata	0	2025-01-25 22:46:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	673	676		32257	Blidingia marginata	0	2025-01-25 22:47:13
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	595	649		49183	Vertebrata fucoides	0	2025-01-25 22:48:01
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Fucaceae	BLAST	family	True	663	664	Fucaceae	32268	Fucus serratus	0	2025-01-25 22:48:58
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Phyllophoraceae	BLAST	family	True	661	664	Phyllophoraceae	49214	Mastocarpus stellatus	0	2025-01-25 22:49:45
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	662	664		32325	Codium tomentosum	0	2025-01-25 22:50:31
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	661	664	Gigartinaceae	32327	Vertebrata fucoides	0	2025-01-25 22:51:17
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Helicidae	BLAST	family	True	654	655	Helicidae	49237	Eobania vermiculata	0	2025-01-25 22:52:13
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	663	664		32357	Cladophora albida	0	2025-01-25 22:52:59
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	663	664		32362	Rhizoclonium riparium	0	2025-01-25 22:53:44
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Valloniidae	BLAST	family	False	653	655	Endodontidae,Helicarionidae	32391	Acanthinula aculeata	0	2025-01-25 22:54:44
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Elateridae	BLAST	family	False	663	664	Tingidae,Mycetophilidae,Culicidae,Pediciidae,Drosophilidae	32447	Cidnopus aeruginosus	0	2025-01-25 22:55:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Acrididae	BLAST	family	True	657	658	Acrididae	20005	Acrididae	0	2025-01-25 22:56:59
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	611	649		32694	Phymatolithon lenormandii	0	2025-01-25 22:57:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halichondriidae	BLAST	family	False	616	649		49717	Halichondria panicea	0	2025-01-25 22:58:36
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	True	656	658	Sphaeriidae	32722	Euglesa casertana	0	2025-01-25 22:59:38
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Prasiolaceae	BLAST	family	False	616	652		32747	Prasiola stipitata	0	2025-01-25 23:00:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	648	652		32763	Antithamnionella spirographidis	11	2025-01-25 23:01:10
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lycosidae	BLAST	family	False	648	651	Eupodidae	20099	Arctosa leopardus	0	2025-01-25 23:02:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	654	658	Linyphiidae	20120	Troxochrus scabriculus	0	2025-01-25 23:02:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	True	655	658	Ichneumonidae	45102	Pion fortipes	0	2025-01-25 23:04:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Diptera	BLAST	order	True	658	661	Hemiptera,Coleoptera,Diptera,Hymenoptera	52710	Diptera	0	2025-01-25 23:05:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cystocloniaceae	BLAST	family	False	646	676		49794	Cystoclonium purpureum	0	2025-01-25 23:06:05
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Callithamniaceae	BLAST	family	False	617	652		32911	Callithamnion corymbosum	0	2025-01-25 23:06:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	598	652		32922	Phymatolithon lenormandii	0	2025-01-25 23:07:36
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	598	652		32930	Codium tomentosum	0	2025-01-25 23:08:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Callithamniaceae	BLAST	family	False	598	652		32931	Callithamnion corymbosum	0	2025-01-25 23:09:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Limacidae	BLAST	family	False	614	652		49814	Lehmannia marginata	0	2025-01-25 23:10:02
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dictynidae	BLAST	family	True	655	658	Dictynidae	21139	Dictyna uncinata	0	2025-01-25 23:10:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Punctidae	BLAST	family	True	652	655	Punctidae	32953	Punctum pygmaeum	0	2025-01-25 23:11:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Theridiidae	BLAST	family	True	655	658	Theridiidae	45532	Steatoda triangulosa	0	2025-01-25 23:12:48
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geomitridae	BLAST	family	True	654	655	Geomitridae	46607	Cernuella neglecta	0	2025-01-25 23:13:47
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ephydridae	BLAST	family	True	657	658	Ephydridae	46634	Parydra coarctata	0	2025-01-25 23:14:58
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lucanidae	BLAST	family	True	656	658	Lucanidae	50277	Dorcus parallelipipedus	0	2025-01-25 23:16:02
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Wrangeliaceae	BLAST	family	False	663	664	Delesseriaceae,Phyllophoraceae,Solieriaceae,Pterocladiaceae	25447	Halurus flosculosus	0	2025-01-25 23:16:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Agriolimacidae	BLAST	family	True	653	655	Agriolimacidae	25552	Deroceras reticulatum	0	2025-01-25 23:17:53
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Littorinidae	BLAST	family	True	657	658	Littorinidae	25568	Littorina fabalis	0	2025-01-25 23:18:51
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ephydridae	BLAST	family	True	657	658	Drosophilidae,Ephydridae	25698	Atissa pygmaea	0	2025-01-25 23:20:00
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Notodontidae	BLAST	family	True	656	658	Notodontidae	25795	Drymonia ruficornis	0	2025-01-25 23:21:06
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Noctuidae	BLAST	family	True	657	658	Noctuidae	36608	Oligia strigilis	0	2025-01-25 23:22:13
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Pentatomidae	BLAST	family	True	656	658	Pentatomidae	36712	Graphosoma italicum	0	2025-01-25 23:23:17
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	658	659	Linyphiidae,Ixodidae,Sperchontidae,Eupodidae,Oribatulidae,Phalangiidae	2759	Pelecopsis parallela	4	2025-01-25 23:24:15
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Isotomidae	BLAST	family	True	657	658	Dicyrtomidae,Entomobryidae,Isotomidae,Onychiuridae	26083	Isotomurus antennalis	0	2025-01-25 23:25:14
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	657	658	Ochyroceratidae,Theridiidae,Lamponidae,Macronyssidae,Sperchontidae,Eupodidae,Oribatulidae,Nemastomatidae	3057	Tapinocyba praecox	0	2025-01-25 23:26:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	True	655	658	Dolichopodidae	46901	Argyra leucocephala	0	2025-01-25 23:27:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	657	658	Ixodidae	3674	Micrargus subaequalis	0	2025-01-25 23:28:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Varunidae	BLAST	family	True	657	658	Varunidae	26398	Hemigrapsus sanguineus	0	2025-01-25 23:29:12
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Curculionidae	BLAST	family	True	657	658	Curculionidae	26579	Parethelcus pollinarius	0	2025-01-25 23:30:16
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halichondriidae	BLAST	family	False	613	649		46984	Halichondria panicea	0	2025-01-25 23:31:06
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Mactridae	BLAST	family	False	657	661		50593	Spisula solida	0	2025-01-25 23:32:02
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Champiaceae	BLAST	family	False	673	676		26783	Chylocladia verticillata	0	2025-01-25 23:32:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Delesseriaceae	BLAST	family	False	679	682		47041	Delesseriaceae	0	2025-01-25 23:33:35
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Callithamniaceae	BLAST	family	True	663	664	Callithamniaceae	26889	Callithamnion corymbosum	0	2025-01-25 23:34:22
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	True	657	658	Aphididae	47147	Stomaphis longirostris	0	2025-01-25 23:35:26
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Carabidae	BLAST	family	True	657	658	Carabidae	27195	Amara communis	0	2025-01-25 23:36:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Noctuidae	BLAST	family	False	657	658	Erebidae	6388	Noctuidae	0	2025-01-25 23:37:41
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	True	657	658	Aphididae	27699	Uroleucon sonchi	0	2025-01-25 23:38:44
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Veneridae	BLAST	family	False	654	655	Unionidae	50913	Chamelea striatula	0	2025-01-25 23:39:45
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	True	663	664	Rhodomelaceae	47230	Melanothamnus harveyi	0	2025-01-25 23:40:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Salticidae	BLAST	family	True	655	656	Salticidae	6819	Heliophanus flavipes	0	2025-01-25 23:41:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	False	663	664	Culicidae,Eriocraniidae	38862	Buathra laborator	0	2025-01-25 23:42:31
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Pipunculidae	BLAST	family	False	657	658	Dolichopodidae	7171	Clistoabdominalis ruralis	0	2025-01-25 23:43:51
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hybotidae	BLAST	family	True	657	658	Hybotidae	47417	Platypalpus candicans	0	2025-01-25 23:45:08
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ixodidae	BLAST	family	True	657	658	Ixodidae,Hydryphantidae,Lebertiidae,Penthaleidae,Phalangiidae	51066	Ixodes hexagonus	0	2025-01-25 23:46:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Pipunculidae	BLAST	family	True	657	658	Pipunculidae	47840	Nephrocerus flavicornis	0	2025-01-25 23:47:12
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	True	657	658	Aphididae	29752	Neotoxoptera formosana	0	2025-01-25 23:48:26
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lycosidae	BLAST	family	True	657	658	Lycosidae	10142	Arctosa perita	0	2025-01-25 23:49:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dermestidae	BLAST	family	False	660	661	Braconidae,Aphelinidae	51130	Megatoma undata	0	2025-01-25 23:50:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	653	657	Linyphiidae	40903	Tiso vagans	0	2025-01-25 23:51:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	656	658	Linyphiidae	10471	Centromerus prudens	0	2025-01-25 23:52:08
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	True	657	658	Ichneumonidae	41327	Stenarella domator	0	2025-01-25 23:53:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Delesseriaceae	BLAST	family	False	649	652		30113	Cryptopleura ramosa	0	2025-01-25 23:54:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	647	652		30144	Phymatolithon lenormandii	0	2025-01-25 23:54:55
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Semelidae	BLAST	family	False	618	652		30184	Abra tenuis	0	2025-01-25 23:55:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Acinetosporaceae	BLAST	family	False	646	652	Sargassaceae	48206	Pylaiella littoralis	0	2025-01-25 23:56:48
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	620	652		12673	Dicymbium nigrum	0	2025-01-25 23:57:42
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	610	652		30223	Phymatolithon lenormandii	0	2025-01-25 23:58:27
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Acinetosporaceae	BLAST	family	False	613	649		48301	Pylaiella littoralis	0	2025-01-25 23:59:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Alariaceae	BLAST	family	False	617	652		30372	Undaria pinnatifida	0	2025-01-26 00:00:22
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	True	656	658	Dolichopodidae	48322	Hercostomus nigripennis	0	2025-01-26 00:01:33
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Staphylinidae	BLAST	family	True	656	658	Staphylinidae	48366	Metopsia clypeata	0	2025-01-26 00:02:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	635	643	Boodleaceae	30474	Cladophora albida	0	2025-01-26 00:03:26
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	658	664		48386	Codium fragile	4	2025-01-26 00:04:13
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	648	652		48402	Agardhiella subulata	9	2025-01-26 00:04:59
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gigartinaceae	BLAST	family	False	646	652		30496	Chondracanthus acicularis	5	2025-01-26 00:05:45
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halymeniaceae	BLAST	family	False	649	652		48409	Grateloupia turuturu	13	2025-01-26 00:06:31
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Champiaceae	BLAST	family	False	649	652		30511	Gastroclonium ovatum	13	2025-01-26 00:07:16
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	661	664	Theraphosidae,Ctenizidae,Linyphiidae	48435	Prinerigone vagans	0	2025-01-26 00:08:08
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	618	653		30631	Agardhiella subulata	6	2025-01-26 00:08:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	644	652		48454	Vertebrata fucoides	0	2025-01-26 00:09:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Caulacanthaceae	BLAST	family	False	643	652		48462	Caulacanthus okamurae	9	2025-01-26 00:10:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	643	652		23037	Ceramium diaphanum	9	2025-01-26 00:11:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hydrophilidae	BLAST	family	False	626	628	Megapodagrionidae,Curculionidae,Dermestidae,Anthomyzidae,Notodontidae	14746	Hydrophilidae	0	2025-01-26 00:12:19
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Derbesiaceae	BLAST	family	False	656	658		31318	Derbesia marina	0	2025-01-26 00:13:14
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	654	658	Linyphiidae	15678	Gnathonarium dentatum	0	2025-01-26 00:14:05
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	False	662	664	Unionidae	31459	Euglesa milium	0	2025-01-26 00:15:01
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	603	649		48728	Chaetomorpha ligustica	0	2025-01-26 00:15:51
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	603	649		48729	Melanothamnus harveyi	0	2025-01-26 00:16:36
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Isotomidae	BLAST	family	False	596	652		31502	Hemisotoma thermophila	0	2025-01-26 00:17:28
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halichondriidae	BLAST	family	False	646	652		48735	Halichondria panicea	2	2025-01-26 00:18:17
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	657	661		48736	Melanothamnus harveyi	0	2025-01-26 00:19:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Planorbidae	BLAST	family	True	654	655	Planorbidae	31553	Anisus vortex	0	2025-01-26 00:20:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	620	649		48788	Codium fragile	0	2025-01-26 00:20:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	656	658	Linyphiidae	16423	Palliduphantes pallidus	0	2025-01-26 00:21:47
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Actiniidae	BLAST	family	False	656	658	Merulinidae,Nephtheidae	31710	Actinia equina	0	2025-01-26 00:22:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	False	629	664		31926	Euglesa milium	0	2025-01-26 00:23:35
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Champiaceae	BLAST	family	False	661	664	Lithophyllaceae,Rhodomelaceae,Ceramiaceae,Pterocladiaceae,Gracilariaceae,Schizymeniaceae,Peyssonneliaceae	31943	Gastroclonium ovatum	0	2025-01-26 00:24:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Curculionidae	BLAST	family	False	655	668	Tettigoniidae,Acrididae,Scutelleridae,Scarabaeidae,Asilidae,Ulidiidae,Vespidae	48951	Tychius parallelus	0	2025-01-26 00:25:35
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	660	661	Hapalidiaceae,Liagoraceae,Scinaiaceae,Rhodomelaceae,Kallymeniaceae	31964	Phymatolithon lenormandii	15	2025-01-26 00:26:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halichondriidae	BLAST	family	False	619	649		49009	Halichondria panicea	0	2025-01-26 00:27:14
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Wrangeliaceae	BLAST	family	False	672	676		32208	Halurus flosculosus	0	2025-01-26 00:28:00
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Phyllophoraceae	BLAST	family	False	616	652		49144	Phyllophora pseudoceranoides	0	2025-01-26 00:28:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	672	676		32217	Rhizoclonium riparium	2	2025-01-26 00:29:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Varunidae	BLAST	family	False	670	673		32225	Hemigrapsus sanguineus	2	2025-01-26 00:30:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Palaemonidae	BLAST	family	False	673	676		32231	Palaemon elegans	0	2025-01-26 00:31:12
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Phyllophoraceae	BLAST	family	False	610	649		49172	Phyllophora pseudoceranoides	0	2025-01-26 00:31:57
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	610	649		49173	Chaetomorpha ligustica	0	2025-01-26 00:32:43
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Derbesiaceae	BLAST	family	False	631	652		32245	Derbesia marina	11	2025-01-26 00:33:30
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Palaemonidae	BLAST	family	False	657	660		32258	Palaemon elegans	0	2025-01-26 00:34:19
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hymenoptera	BLAST	order	False	648	652		52392	Hymenoptera	6	2025-01-26 00:35:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Caulacanthaceae	BLAST	family	False	662	664	Rhodomelaceae,Cystocloniaceae,Rhodymeniaceae,Gelidiaceae	32270	Catenella caespitosa	0	2025-01-26 00:36:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Fucaceae	BLAST	family	False	614	649		32306	Fucus serratus	0	2025-01-26 00:37:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Bangiaceae	BLAST	family	True	662	664	Bangiaceae	49205	Porphyra umbilicalis	0	2025-01-26 00:37:56
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	643	649		32359	Phymatolithon lenormandii	3	2025-01-26 00:38:42
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	True	663	664	Ceramiaceae	49243	Ceramium virgatum	0	2025-01-26 00:39:29
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	False	663	664	Cicadellidae,Scarabaeidae,Mycetophilidae,Syrphidae,Drosophilidae,Tabanidae	49592	Donacia clavipes	0	2025-01-26 00:40:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Endodontidae	BLAST	family	True	654	655	Endodontidae,Helicarionidae,Discidae	52491	Discus rotundatus	0	2025-01-26 00:41:43
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gryllidae	BLAST	family	False	662	664	Tettigoniidae,Sciaridae,Limoniidae,Tephritidae,Tachinidae	32415	Gryllidae	0	2025-01-26 00:42:49
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tellinidae	BLAST	family	False	657	658	Unionidae,Montacutidae	52494	Macoma balthica	0	2025-01-26 00:43:49
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	661	662	Solieriaceae,Gracilariaceae	32456	Agardhiella subulata	5	2025-01-26 00:44:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	True	663	664	Rhodomelaceae	32457	Osmundea osmunda	0	2025-01-26 00:45:26
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ephydridae	BLAST	family	True	657	658	Ephydridae	32504	Psilopa nitidula	0	2025-01-26 00:46:33
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Panorpidae	BLAST	family	True	657	658	Panorpidae	49691	Panorpa vulgaris	0	2025-01-26 00:47:43
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Champiaceae	BLAST	family	False	648	652		32755	Gastroclonium ovatum	12	2025-01-26 00:48:30
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	False	662	664	Cicadellidae,Carabidae,Ptiliidae,Geometridae,Odontoceridae	52711	Mantura chrysanthemi	0	2025-01-26 00:49:42
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	True	656	658	Ichneumonidae	52713	Orthocentrus sp.	0	2025-01-26 00:50:53
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	618	652		32906	Ulva australis	0	2025-01-26 00:51:40
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Isotomidae	BLAST	family	False	655	658	Paronellidae,Neanuridae,Brachystomellidae	32945	Hemisotoma thermophila	0	2025-01-26 00:52:41
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	614	652		49817	Agardhiella subulata	0	2025-01-26 00:53:27
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gracilariaceae	BLAST	family	False	667	673		32968	Gracilaria gracilis	0	2025-01-26 00:54:12
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Curculionidae	BLAST	family	False	652	654	Dolichopodidae	530	Scolytus pygmaeus	5	2025-01-26 00:55:28
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Callithamniaceae	BLAST	family	False	612	652		46627	Callithamnion tetragonum	0	2025-01-26 00:56:16
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Littorinidae	BLAST	family	True	657	658	Littorinidae	25569	Littorina littorea	0	2025-01-26 00:57:13
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Diptera	BLAST	order	True	663	664	Coleoptera,Diptera	50346	Diptera	0	2025-01-26 00:58:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Incurvariidae	BLAST	family	True	656	658	Incurvariidae	46731	Incurvaria masculella	0	2025-01-26 00:59:27
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Noctuidae	BLAST	family	True	657	658	Noctuidae	36437	Noctua fimbriata	0	2025-01-26 01:00:33
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Noctuidae	BLAST	family	True	657	658	Noctuidae	36610	Apamea monoglypha	0	2025-01-26 01:01:40
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hybotidae	BLAST	family	True	657	658	Empididae,Dolichopodidae,Hybotidae,Phoridae,Tabanidae	26066	Tachypeza nubila	0	2025-01-26 01:02:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ephydridae	BLAST	family	True	656	658	Ephydridae	36884	Hydrellia griseola	0	2025-01-26 01:03:58
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	False	661	664	Buprestidae	36943	Buathra laborator	0	2025-01-26 01:05:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tachinidae	BLAST	family	True	657	658	Anthomyiidae,Tachinidae,Rhinophoridae	46932	Estheria cristata	0	2025-01-26 01:06:16
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Limoniidae	BLAST	family	True	656	658	Limoniidae	46967	Limonia hercegovinae	0	2025-01-26 01:07:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cystocloniaceae	BLAST	family	False	679	682		47040	Cystoclonium purpureum	0	2025-01-26 01:08:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ephydridae	BLAST	family	True	657	658	Ephydridae	37474	Hydrellia albilabris	0	2025-01-26 01:09:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lycosidae	BLAST	family	False	656	658	Hydryphantidae,Lebertiidae,Torrenticolidae,Eremobatidae	37766	Alopecosa cuneata	0	2025-01-26 01:10:05
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sciomyzidae	BLAST	family	True	657	658	Sciomyzidae	47179	Pherbellia griseola	0	2025-01-26 01:11:13
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Limacidae	BLAST	family	True	653	655	Limacidae	47213	Limax cinereoniger	0	2025-01-26 01:12:26
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	663	664		27737	Cladophora albida	0	2025-01-26 01:13:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lycosidae	BLAST	family	True	657	658	Lycosidae	38775	Pardosa proxima	0	2025-01-26 01:14:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gnaphosidae	BLAST	family	True	657	658	Gnaphosidae,Anyphaenidae,Desidae	47258	Scotophaeus scutulatus	0	2025-01-26 01:14:56
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Apionidae	BLAST	family	True	657	658	Apionidae	51060	Exapion fuscirostre	0	2025-01-26 01:15:59
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	True	656	658	Chrysomelidae	7981	Chaetocnema sp.	0	2025-01-26 01:17:06
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lepidoptera	BLAST	order	True	657	658	Lepidoptera	8294	Lepidoptera	0	2025-01-26 01:18:15
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geometridae	BLAST	family	True	657	658	Geometridae	47582	Selenia tetralunaria	0	2025-01-26 01:19:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dytiscidae	BLAST	family	True	657	658	Dytiscidae,Carabidae	8421	Dytiscidae	0	2025-01-26 01:20:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Salticidae	BLAST	family	False	656	657	Eriophyidae	40486	Marpissa radiata	0	2025-01-26 01:21:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Agelenidae	BLAST	family	True	657	658	Agelenidae	40776	Coelotes terrestris	0	2025-01-26 01:22:17
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	656	658	Linyphiidae	10450	Centromerita bicolor	0	2025-01-26 01:23:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	656	658	Linyphiidae	10465	Micrargus subaequalis	0	2025-01-26 01:24:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	656	658	Linyphiidae	10469	Diplocephalus picinus	0	2025-01-26 01:24:53
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	655	658	Linyphiidae	40929	Mermessus trilobatus	0	2025-01-26 01:25:45
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	True	656	658	Ichneumonidae	41231	Thaumatogelis sylvicola	0	2025-01-26 01:26:59
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	False	657	658	Braconidae	30048	Uroleucon sonchi	0	2025-01-26 01:28:06
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	True	657	658	Ichneumonidae	41411	Spilothyrateles illuminatorius	0	2025-01-26 01:29:16
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	True	657	658	Ichneumonidae	41414	Hemichneumon subdolus	0	2025-01-26 01:30:33
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Delesseriaceae	BLAST	family	False	613	652		48163	Cryptopleura ramosa	0	2025-01-26 01:31:20
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Staphylinidae	BLAST	family	False	661	664	Carabidae,Silphidae	48165	Othius punctulatus	0	2025-01-26 01:32:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	649	652		30114	Codium tomentosum	0	2025-01-26 01:33:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	False	594	649		30191	Euglesa milium	0	2025-01-26 01:34:05
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Mactridae	BLAST	family	False	640	649		51539	Spisula solida	0	2025-01-26 01:35:01
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	648	653		30201	Osmundea pinnatifida	0	2025-01-26 01:35:47
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Champiaceae	BLAST	family	False	647	652		30202	Gastroclonium ovatum	0	2025-01-26 01:36:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Palmariaceae	BLAST	family	False	647	652		30204	Palmaria palmata	0	2025-01-26 01:37:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	612	652		30239	Phymatolithon lenormandii	0	2025-01-26 01:38:06
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	644	652		48297	Chaetomorpha ligustica	6	2025-01-26 01:38:53
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	620	652		30368	Phymatolithon lenormandii	0	2025-01-26 01:39:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	593	649		30369	Phymatolithon lenormandii	0	2025-01-26 01:40:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	602	649		48316	Antithamnion hubbsii	0	2025-01-26 01:41:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Caulacanthaceae	BLAST	family	False	672	676		30378	Catenella caespitosa	0	2025-01-26 01:41:57
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cystocloniaceae	BLAST	family	False	677	681		48317	Cystoclonium purpureum	1	2025-01-26 01:42:42
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	641	652		30473	Ceramium gaditanum	3	2025-01-26 01:43:29
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	648	652		30476	Antithamnionella spirographidis	9	2025-01-26 01:44:15
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	649	652		30506	Blidingia marginata	13	2025-01-26 01:45:00
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Phyllophoraceae	BLAST	family	False	649	652		48412	Phyllophora pseudoceranoides	13	2025-01-26 01:45:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sargassaceae	BLAST	family	False	649	652		48416	Sargassum muticum	13	2025-01-26 01:46:42
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Derbesiaceae	BLAST	family	False	649	652		30514	Derbesia marina	13	2025-01-26 01:47:28
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	True	660	664	Scarabaeidae,Chrysomelidae,Psychodidae,Geometridae,Hydropsychidae	48442	Donacia clavipes	0	2025-01-26 01:48:38
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Stratiomyidae	BLAST	family	False	39	653		30629	Stratiomys singularior	0	2025-01-26 01:49:42
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	630	635	Palmariaceae,Rhodomelaceae	30635	Phymatolithon lenormandii	1	2025-01-26 01:50:30
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphacelariaceae	BLAST	family	False	634	652		30636	Sphacelaria fusca	0	2025-01-26 01:51:28
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	617	652		30637	Ceramium gaditanum	0	2025-01-26 01:52:14
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	618	652		30641	Blidingia marginata	0	2025-01-26 01:53:00
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Stratiomyidae	BLAST	family	False	656	658	Timematidae,Curculionidae,Drosophilidae,Formicidae,Geometridae	31146	Stratiomys singularior	0	2025-01-26 01:54:10
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Camaenidae	BLAST	family	True	654	655	Camaenidae	48625	Fruticicola fruticum	0	2025-01-26 01:55:08
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	656	658	Linyphiidae	15527	Floronia bucculenta	0	2025-01-26 01:55:59
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	655	658	Linyphiidae	15658	Dicymbium nigrum	0	2025-01-26 01:56:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ibaliidae	BLAST	family	True	650	652	Ibaliidae,Figitidae	43207	Ibalia leucospoides	0	2025-01-26 01:58:02
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	658	664		31428	Blidingia marginata	0	2025-01-26 01:58:48
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	660	664		31448	Blidingia marginata	0	2025-01-26 01:59:35
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Delesseriaceae	BLAST	family	True	662	664	Rhodomelaceae,Delesseriaceae,Dasyaceae	48723	Delesseriaceae	0	2025-01-26 02:00:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Semelidae	BLAST	family	False	673	676		31506	Abra tenuis	0	2025-01-26 02:01:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Phyllophoraceae	BLAST	family	False	658	661		48741	Phyllophora pseudoceranoides	0	2025-01-26 02:02:04
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	658	661		48743	Vertebrata fucoides	0	2025-01-26 02:02:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	616	652		31515	Blidingia marginata	0	2025-01-26 02:03:36
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Phyllophoraceae	BLAST	family	False	615	652		48749	Phyllophora pseudoceranoides	0	2025-01-26 02:04:22
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	617	652		31529	Osmundea pinnatifida	1	2025-01-26 02:05:08
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Vitrinidae	BLAST	family	True	653	655	Vitrinidae	48760	Eucobresia diaphana	0	2025-01-26 02:06:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Alariaceae	BLAST	family	True	663	664	Alariaceae	31596	Undaria pinnatifida	0	2025-01-26 02:07:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Alariaceae	BLAST	family	False	646	652		31598	Undaria pinnatifida	10	2025-01-26 02:08:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	True	657	658	Dolichopodidae	48809	Scellus notatus	0	2025-01-26 02:09:08
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Curculionidae	BLAST	family	True	657	658	Curculionidae	48813	Tychius parallelus	0	2025-01-26 02:10:13
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphacelariaceae	BLAST	family	False	673	676	Dictyotaceae	48923	Sphacelaria fusca	0	2025-01-26 02:11:14
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	661	664		31942	Codium tomentosum	0	2025-01-26 02:12:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Caulacanthaceae	BLAST	family	False	646	649		31983	Catenella caespitosa	0	2025-01-26 02:12:51
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	619	649		32123	Phymatolithon lenormandii	0	2025-01-26 02:13:38
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Varunidae	BLAST	family	False	670	673	Eoniphargidae	32213	Hemigrapsus sanguineus	0	2025-01-26 02:14:30
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Callithamniaceae	BLAST	family	False	615	652		49146	Callithamnion tetragonum	0	2025-01-26 02:15:15
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	672	676		32221	Blidingia marginata	0	2025-01-26 02:16:01
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halichondriidae	BLAST	family	False	670	673	Cladorhizidae	49154	Halichondria panicea	0	2025-01-26 02:16:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	670	673		32224	Blidingia marginata	2	2025-01-26 02:17:38
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halymeniaceae	BLAST	family	False	673	676		49163	Grateloupia turuturu	0	2025-01-26 02:18:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	631	652		32246	Blidingia marginata	11	2025-01-26 02:19:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	595	649		32259	Phymatolithon lenormandii	0	2025-01-26 02:19:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dermestidae	BLAST	family	False	661	664	Heptageniidae,Chironomidae,Xyelidae,Geometridae	52395	Megatoma undata	0	2025-01-26 02:21:06
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Bangiaceae	BLAST	family	True	662	664	Bangiaceae	32309	Porphyra linearis	0	2025-01-26 02:21:59
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ellobiidae	BLAST	family	False	653	655	Valloniidae	32403	Carychium minimum	0	2025-01-26 02:22:59
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Clubionidae	BLAST	family	True	657	658	Clubionidae	18592	Clubiona comta	0	2025-01-26 02:23:49
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gnaphosidae	BLAST	family	True	657	658	Gnaphosidae	18621	Haplodrassus dalmatensis	0	2025-01-26 02:24:40
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Clausiliidae	BLAST	family	True	653	655	Clausiliidae,Ariophantidae,Helicarionidae	32693	Balea heydeni	0	2025-01-26 02:25:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	True	656	658	Sphaeriidae	32716	Odhneripisidium moitessierianum	0	2025-01-26 02:26:53
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	648	652		49724	Codium fragile	14	2025-01-26 02:27:41
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Apidae	BLAST	family	True	655	658	Apidae	32765	Anthophora plumipes	0	2025-01-26 02:28:48
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tipulidae	BLAST	family	False	633	636	Hydrophilidae,Staphylinidae,Trogidae,Noctuidae,Crambidae,Geometridae	49766	Tipula lateralis	16	2025-01-26 02:29:58
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Planorbidae	BLAST	family	False	134	649		45399	Gyraulus parvus	3	2025-01-26 02:30:55
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tateidae	BLAST	family	False	394	396	Tateidae	32910	Potamopyrgus antipodarum	0	2025-01-26 02:31:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	618	652		49800	Codium fragile	0	2025-01-26 02:32:38
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	614	652		49801	Codium fragile	0	2025-01-26 02:33:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Pompilidae	BLAST	family	True	650	652	Pompilidae	45465	Agenioideus cinctellus	0	2025-01-26 02:34:30
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Derbesiaceae	BLAST	family	False	610	652		32921	Derbesia marina	0	2025-01-26 02:35:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	653	655		21142	Centromerita bicolor	0	2025-01-26 02:36:08
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Staphylinidae	BLAST	family	True	657	658	Staphylinidae	508	Emus hirtus	0	2025-01-26 02:37:10
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gracilariaceae	BLAST	family	False	663	664	Liagoraceae,Ceramiaceae,Delesseriaceae,Gelidiaceae,Gelidiellaceae,Peyssonneliaceae	25372	Gracilaria gracilis	0	2025-01-26 02:37:59
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cystocloniaceae	BLAST	family	False	612	652		46626	Cystoclonium purpureum	0	2025-01-26 02:38:45
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Anisopodidae	BLAST	family	True	656	658	Anisopodidae	35931	Sylvicola punctatus	0	2025-01-26 02:39:57
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geometridae	BLAST	family	True	657	658	Geometridae	25509	Pachycnemia hippocastanaria	0	2025-01-26 02:41:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Curculionidae	BLAST	family	True	657	658	Curculionidae	46676	Cionus scrophulariae	0	2025-01-26 02:42:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Carabidae	BLAST	family	True	657	658	Carabidae	25633	Harpalus pumilus	0	2025-01-26 02:43:14
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tipulidae	BLAST	family	True	657	658	Tipulidae	46822	Tipula luna	0	2025-01-26 02:44:19
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	True	657	658	Chrysomelidae	36605	Cassida vibex	0	2025-01-26 02:45:22
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geometridae	BLAST	family	True	657	658	Geometridae	2640	Bupalus piniaria	0	2025-01-26 02:46:29
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hybotidae	BLAST	family	False	657	658	Dolichopodidae	26064	Platypalpus cursitans	0	2025-01-26 02:47:36
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	True	657	658	Aphididae	26082	Thecabius affinis	0	2025-01-26 02:48:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	655	656	Salticidae,Lamponidae,Diplogyniidae,Macronyssidae,Sperchontidae,Eupodidae	3146	Araeoncus humilis	0	2025-01-26 02:49:44
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Siricidae	BLAST	family	False	658	659	Siricidae	36776	Tremex fuscicornis	1	2025-01-26 02:50:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Nabidae	BLAST	family	True	655	658	Nabidae	50568	Nabis ferus	0	2025-01-26 02:51:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Alpheidae	BLAST	family	True	655	658	Alvinocarididae,Alpheidae	46986	Athanas nitescens	0	2025-01-26 02:52:49
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	Error validating record: Command 'blastn' died with <Signals.SIGSEGV: 11>.	Scutigerellidae	BLAST	family	False	655	657		50793	Scutigerella immaculata	0	2025-01-26 02:53:28
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Limnephilidae	BLAST	family	True	656	658	Limnephilidae	47055	Stenophylax permistus	0	2025-01-26 02:54:38
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	False	656	658		26871	Euglesa milium	0	2025-01-26 02:55:35
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Palaemonidae	BLAST	family	False	656	658	Palaemonidae	26885	Palaemon elegans	1	2025-01-26 02:56:27
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Oedemeridae	BLAST	family	True	657	658	Oedemeridae	47087	Ischnomera cyanea	0	2025-01-26 02:57:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Silphidae	BLAST	family	True	657	658	Silphidae	47111	Nicrophorus vespillo	0	2025-01-26 02:58:35
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Valvatidae	BLAST	family	True	657	658	Valvatidae	27034	Valvata piscinalis	0	2025-01-26 02:59:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Araneidae	BLAST	family	True	657	658	Araneidae	6121	Nuctenea umbratica	0	2025-01-26 03:00:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tettigoniidae	BLAST	family	True	656	658	Tettigoniidae	6139	Tettigoniidae	0	2025-01-26 03:01:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lycosidae	BLAST	family	True	657	658	Lycosidae	6687	Alopecosa pulverulenta	0	2025-01-26 03:02:41
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lycosidae	BLAST	family	True	657	658	Lycosidae	6690	Pardosa amentata	0	2025-01-26 03:03:34
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	False	662	664	Cecidomyiidae,Drosophilidae,Gelechiidae,Oecophoridae,Douglasiidae,Noctuidae,Mantispidae	47254	Donacia clavipes	0	2025-01-26 03:04:45
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Keroplatidae	BLAST	family	True	657	658	Mycetophilidae,Keroplatidae	47493	Macrocera phalerata	0	2025-01-26 03:05:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Notodontidae	BLAST	family	True	657	658	Notodontidae	39251	Gluphisia crenata	0	2025-01-26 03:07:02
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lepidoptera	BLAST	order	True	657	658	Lepidoptera	8319	Lepidoptera	0	2025-01-26 03:08:12
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Adelidae	BLAST	family	True	657	658	Adelidae	47583	Adela reaumurella	0	2025-01-26 03:09:22
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	True	656	658	Dolichopodidae	47699	Dolichopus excisus	0	2025-01-26 03:10:33
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geometridae	BLAST	family	True	657	658	Geometridae	47710	Chloroclysta siterata	0	2025-01-26 03:11:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	True	657	658	Aphididae	47713	Tuberolachnus salignus	0	2025-01-26 03:12:42
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	663	664	Euscorpiidae,Laelapidae,Ascidae,Anystidae	40783	Entelecara congenera	0	2025-01-26 03:13:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	655	657	Linyphiidae	10466	Tapinocyba praecox	0	2025-01-26 03:14:31
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	655	658	Linyphiidae	40937	Erigone dentipalpis	0	2025-01-26 03:15:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	True	656	658	Ichneumonidae	29928	Diphyus quadripunctorius	0	2025-01-26 03:16:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Silphidae	BLAST	family	False	663	664	Sciaridae,Mycetophilidae,Cecidomyiidae	48109	Nicrophorus vespillo	0	2025-01-26 03:17:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	True	657	658	Ichneumonidae	41330	Collyria coxator	0	2025-01-26 03:19:04
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	True	657	658	Ichneumonidae	41332	Barylypa propugnator	0	2025-01-26 03:20:12
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	True	655	658	Ichneumonidae	41429	Buathra laborator	0	2025-01-26 03:21:20
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Corallinaceae	BLAST	family	False	613	652		30095	Pneophyllum confervicola	0	2025-01-26 03:22:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Corallinaceae	BLAST	family	False	631	652		30099	Pneophyllum confervicola	6	2025-01-26 03:22:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ellobiidae	BLAST	family	True	651	654	Onchidiidae,Ellobiidae	30126	Myosotella myosotis	0	2025-01-26 03:23:49
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sargassaceae	BLAST	family	False	614	649		48191	Sargassum muticum	0	2025-01-26 03:24:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Champiaceae	BLAST	family	False	647	652		30197	Gastroclonium ovatum	0	2025-01-26 03:25:31
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Pterocladiaceae	BLAST	family	False	647	652		30205	Pterocladiella capillacea	0	2025-01-26 03:26:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	643	649		30207	Phymatolithon lenormandii	6	2025-01-26 03:27:06
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gigartinaceae	BLAST	family	False	646	652		30208	Chondracanthus acicularis	0	2025-01-26 03:27:51
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	617	652		30371	Agardhiella subulata	0	2025-01-26 03:28:36
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Caulacanthaceae	BLAST	family	False	672	676		30380	Catenella caespitosa	0	2025-01-26 03:29:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	672	676		30381	Ceramium gaditanum	0	2025-01-26 03:30:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Planorbidae	BLAST	family	False	643	649		30406	Anisus vortex	0	2025-01-26 03:31:05
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Phyllophoraceae	BLAST	family	False	621	652		48365	Phyllophora pseudoceranoides	0	2025-01-26 03:31:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Corallinaceae	BLAST	family	False	656	658	Lithophyllaceae,Batrachospermaceae,Kallymeniaceae,Schimmelmanniaceae	30436	Pneophyllum confervicola	0	2025-01-26 03:32:38
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	647	652		30480	Codium tomentosum	9	2025-01-26 03:33:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Delesseriaceae	BLAST	family	False	646	652		30499	Cryptopleura ramosa	5	2025-01-26 03:34:10
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Callithamniaceae	BLAST	family	False	649	652		30507	Callithamnion corymbosum	13	2025-01-26 03:34:56
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	649	652		30510	Osmundea osmunda	13	2025-01-26 03:35:41
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphacelariaceae	BLAST	family	False	649	652		48410	Sphacelaria fusca	13	2025-01-26 03:36:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	649	652		48411	Agardhiella subulata	13	2025-01-26 03:37:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	False	661	664	Calopterygidae,Tenebrionidae,Mymaridae,Eucharitidae	30567	Achalcus	0	2025-01-26 03:39:20
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	661	664	Theraphosidae,Ctenizidae,Linyphiidae	13937	Microneta viaria	0	2025-01-26 03:40:13
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	660	664	Diplocentridae,Ctenizidae,Idiopidae,Filistatidae	14146	Styloctetor romanus	0	2025-01-26 03:41:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	False	554	666	Aphididae	48457	Stomaphis longirostris	2	2025-01-26 03:42:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Coccinellidae	BLAST	family	True	657	658	Coccinellidae	42647	Halyzia sedecimguttata	0	2025-01-26 03:43:14
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tetragnathidae	BLAST	family	True	656	657	Tetragnathidae	42649	Metellina merianae	0	2025-01-26 03:44:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cyrenidae	BLAST	family	True	656	658	Cyrenidae	31317	Corbicula fluminea	0	2025-01-26 03:45:05
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	False	661	664	Libellulidae,Mycetophilidae,Ischnopsyllidae,Elachistidae	48622	Donacia clavipes	0	2025-01-26 03:46:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hahniidae	BLAST	family	True	657	658	Hahniidae	15455	Hahnia nava	0	2025-01-26 03:47:04
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lycosidae	BLAST	family	True	657	658	Lycosidae	15537	Xerolycosa miniata	0	2025-01-26 03:47:55
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tetragnathidae	BLAST	family	True	655	658	Tetragnathidae	15554	Pachygnatha clercki	0	2025-01-26 03:48:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	655	658	Linyphiidae	15627	Araeoncus humilis	0	2025-01-26 03:49:42
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tellinidae	BLAST	family	False	650	655		51926	Macoma balthica	0	2025-01-26 03:50:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Pompilidae	BLAST	family	True	649	652	Pompilidae	51927	Pompilidae	0	2025-01-26 03:51:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	659	664		48673	Codium fragile	0	2025-01-26 03:52:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	False	653	655	Syrphidae	31440	Thecabius affinis	0	2025-01-26 03:53:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Membracidae	BLAST	family	True	656	658	Membracidae	15832	Membracidae	0	2025-01-26 03:54:56
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halichondriidae	BLAST	family	False	609	652		48730	Halichondria panicea	0	2025-01-26 03:55:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cystocloniaceae	BLAST	family	False	658	661		48742	Cystoclonium purpureum	0	2025-01-26 03:56:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Palaemonidae	BLAST	family	False	616	652	Oregoniidae	31517	Palaemon elegans	2	2025-01-26 03:57:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Palaemonidae	BLAST	family	False	673	676	Eusiridae	31523	Palaemon elegans	2	2025-01-26 03:58:16
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Vitrinidae	BLAST	family	True	653	655	Vitrinidae	48758	Vitrinobrachium breve	0	2025-01-26 03:59:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Noctuidae	BLAST	family	True	657	658	Noctuidae	43531	Mythimna impura	0	2025-01-26 04:00:30
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	Error validating record: Command 'blastn' died with <Signals.SIGSEGV: 11>.	Erythrotrichiaceae	BLAST	family	False	620	649		48786	Erythrocladia sp.	0	2025-01-26 04:01:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tipulidae	BLAST	family	True	657	658	Tipulidae	48810	Tipula lateralis	0	2025-01-26 04:02:15
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tipulidae	BLAST	family	True	657	658	Tipulidae	48812	Nephrotoma pratensis	0	2025-01-26 04:03:28
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gnaphosidae	BLAST	family	False	656	657	Theridiidae,Salticidae,Lamponidae,Macronyssidae,Sperchontidae,Eupodidae,Phalangiidae,Chthoniidae	16524	Zelotes longipes	0	2025-01-26 04:04:28
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	False	601	652		31994	Euglesa casertana	0	2025-01-26 04:05:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Incurvariidae	BLAST	family	False	631	664		49006	Incurvaria masculella	0	2025-01-26 04:06:30
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	False	614	649		32122	Euglesa milium	0	2025-01-26 04:07:26
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cystocloniaceae	BLAST	family	False	669	673		49017	Cystoclonium purpureum	0	2025-01-26 04:08:12
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	673	676		32211	Phymatolithon lenormandii	0	2025-01-26 04:08:58
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	661	664		32219	Blidingia marginata	0	2025-01-26 04:09:44
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Callithamniaceae	BLAST	family	False	679	682		49156	Callithamnion tetragonum	0	2025-01-26 04:10:29
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Palaemonidae	BLAST	family	False	672	675		32232	Palaemon elegans	0	2025-01-26 04:11:19
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Caulacanthaceae	BLAST	family	False	673	676		32238	Catenella caespitosa	1	2025-01-26 04:12:05
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Staphylinidae	BLAST	family	False	663	664	Mycetophilidae,Cecidomyiidae,Culicidae	44277	Othius punctulatus	0	2025-01-26 04:13:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Apidae	BLAST	family	False	658	661		32318	Anthophora plumipes	0	2025-01-26 04:14:14
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Plocamiaceae	BLAST	family	True	662	664	Plocamiaceae	32339	Plocamium cartilagineum	0	2025-01-26 04:15:01
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	True	662	664	Rhodomelaceae,Ceramiaceae,Dasyaceae	49607	Antithamnion hubbsii	0	2025-01-26 04:15:51
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Scarabaeidae	BLAST	family	True	657	658	Scarabaeidae	32509	Phyllopertha horticola	0	2025-01-26 04:16:53
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gnaphosidae	BLAST	family	True	656	658	Gnaphosidae	20066	Trachyzelotes pedestris	0	2025-01-26 04:17:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	625	649		32710	Phymatolithon lenormandii	10	2025-01-26 04:18:31
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Delesseriaceae	BLAST	family	False	647	652		49725	Cryptopleura ramosa	11	2025-01-26 04:19:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Delesseriaceae	BLAST	family	False	650	653		32757	Cryptopleura ramosa	11	2025-01-26 04:20:04
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	649	652		32758	Osmundea pinnatifida	13	2025-01-26 04:20:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Corallinaceae	BLAST	family	False	648	652		32760	Pneophyllum confervicola	10	2025-01-26 04:21:37
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	648	652		32762	Blidingia marginata	10	2025-01-26 04:22:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Staphylinidae	BLAST	family	False	658	661	Mycetophilidae,Tachinidae,Braconidae,Lycaenidae,Helicophidae	52722	Othius punctulatus	0	2025-01-26 04:23:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	617	652		49799	Chaetomorpha ligustica	0	2025-01-26 04:24:20
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halymeniaceae	BLAST	family	False	617	652		49802	Grateloupia turuturu	0	2025-01-26 04:25:05
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halymeniaceae	BLAST	family	False	619	652		32912	Grateloupia turuturu	0	2025-01-26 04:25:51
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	602	652		32933	Agardhiella subulata	0	2025-01-26 04:26:37
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	618	652		32936	Agardhiella subulata	0	2025-01-26 04:27:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hymenoptera	BLAST	order	True	659	661	Hemiptera,Hymenoptera	52544	Hymenoptera	0	2025-01-26 04:28:34
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Semelidae	BLAST	family	False	658	664	Pinnidae	32738	Abra tenuis	0	2025-01-26 04:29:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Bethylidae	BLAST	family	False	644	646	Phlaeothripidae	52645	Bethylus fuscicornis	0	2025-01-26 04:30:48
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Semelidae	BLAST	family	False	617	652	Arcidae	32938	Abra tenuis	0	2025-01-26 04:31:44
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Silphidae	BLAST	family	False	653	655	Cicadellidae,Hydrophilidae	49822	Nicrophorus vespillo	0	2025-01-26 04:32:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Salticidae	BLAST	family	False	656	658	Lamponidae,Ixodidae,Eremobatidae	35669	Salticus zebraneus	0	2025-01-26 04:33:43
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	False	657	658	Curculionidae	50295	Mantura chrysanthemi	0	2025-01-26 04:34:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Carabidae	BLAST	family	True	657	658	Carabidae	25634	Harpalus servus	0	2025-01-26 04:35:51
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Mimetidae	BLAST	family	False	640	652		4879	Ero aphana	8	2025-01-26 04:36:41
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Orculidae	BLAST	family	True	653	655	Orculidae	27033	Sphyradium doliolum	0	2025-01-26 04:37:40
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Delesseriaceae	BLAST	family	True	656	658	Rhodomelaceae,Delesseriaceae,Kallymeniaceae	27738	Cryptopleura ramosa	0	2025-01-26 04:38:28
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ephydridae	BLAST	family	True	657	658	Drosophilidae,Ephydridae	8029	Hecamede albicans	0	2025-01-26 04:39:40
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tenthredinidae	BLAST	family	True	657	658	Tenthredinidae	47686	Dolerus sp.	0	2025-01-26 04:40:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Theridiidae	BLAST	family	True	656	658	Theridiidae	41549	Steatoda grossa	0	2025-01-26 04:41:38
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	616	652		30416	Agardhiella subulata	0	2025-01-26 04:42:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gnaphosidae	BLAST	family	False	661	664	Diplocentridae,Theraphosidae,Ctenizidae,Idiopidae,Filistatidae	13801	Trachyzelotes pedestris	0	2025-01-26 04:43:19
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	657	661		48610	Chaetomorpha ligustica	0	2025-01-26 04:44:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Salticidae	BLAST	family	False	657	658	Theridiidae	43132	Synageles venator	0	2025-01-26 04:44:58
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Phalangiidae	BLAST	family	True	656	658	Phalangiidae	15818	Rilaena triangularis	0	2025-01-26 04:45:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	670	673		31497	Phymatolithon lenormandii	0	2025-01-26 04:46:37
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	615	651		31518	Agardhiella subulata	2	2025-01-26 04:47:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphacelariaceae	BLAST	family	False	647	652		48767	Sphacelaria fusca	5	2025-01-26 04:48:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Thomisidae	BLAST	family	True	657	658	Thomisidae	16078	Xysticus ulmi	0	2025-01-26 04:49:14
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	655	661		49147	Chaetomorpha ligustica	0	2025-01-26 04:50:01
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halymeniaceae	BLAST	family	False	672	676		32222	Grateloupia turuturu	0	2025-01-26 04:50:47
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Elateridae	BLAST	family	False	663	664	Tingidae,Mycetophilidae,Culicidae,Pediciidae,Drosophilidae	32447	Cidnopus aeruginosus	0	2025-01-26 04:51:55
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Acrididae	BLAST	family	True	657	658	Acrididae	20005	Acrididae	0	2025-01-26 04:53:02
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Theridiidae	BLAST	family	True	655	658	Theridiidae	45532	Steatoda triangulosa	0	2025-01-26 04:53:53
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Agriolimacidae	BLAST	family	True	653	655	Agriolimacidae	25552	Deroceras reticulatum	0	2025-01-26 04:54:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Notodontidae	BLAST	family	True	656	658	Notodontidae	25795	Drymonia ruficornis	0	2025-01-26 04:56:00
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	True	655	658	Dolichopodidae	46901	Argyra leucocephala	0	2025-01-26 04:57:14
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Carabidae	BLAST	family	True	657	658	Carabidae	27195	Amara communis	0	2025-01-26 04:58:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Noctuidae	BLAST	family	False	657	658	Erebidae	6388	Noctuidae	0	2025-01-26 04:59:31
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Veneridae	BLAST	family	False	654	655	Unionidae	50913	Chamelea striatula	0	2025-01-26 05:00:31
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lycosidae	BLAST	family	True	657	658	Lycosidae	10142	Arctosa perita	0	2025-01-26 05:01:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Semelidae	BLAST	family	False	618	652		30184	Abra tenuis	0	2025-01-26 05:02:19
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Staphylinidae	BLAST	family	True	656	658	Staphylinidae	48366	Metopsia clypeata	0	2025-01-26 05:03:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	618	653		30631	Agardhiella subulata	6	2025-01-26 05:04:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hydrophilidae	BLAST	family	False	626	628	Megapodagrionidae,Curculionidae,Dermestidae,Anthomyzidae,Notodontidae	14746	Hydrophilidae	0	2025-01-26 05:05:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	654	658	Linyphiidae	15678	Gnathonarium dentatum	0	2025-01-26 05:06:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	603	649		48728	Chaetomorpha ligustica	0	2025-01-26 05:07:08
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	610	649		49173	Chaetomorpha ligustica	0	2025-01-26 05:07:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hymenoptera	BLAST	order	False	648	652		52392	Hymenoptera	6	2025-01-26 05:08:57
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Endodontidae	BLAST	family	True	654	655	Endodontidae,Helicarionidae,Discidae	52491	Discus rotundatus	0	2025-01-26 05:10:01
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gryllidae	BLAST	family	False	662	664	Tettigoniidae,Sciaridae,Limoniidae,Tephritidae,Tachinidae	32415	Gryllidae	0	2025-01-26 05:11:08
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	661	662	Solieriaceae,Gracilariaceae	32456	Agardhiella subulata	5	2025-01-26 05:11:58
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	False	662	664	Cicadellidae,Carabidae,Ptiliidae,Geometridae,Odontoceridae	52711	Mantura chrysanthemi	0	2025-01-26 05:13:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	True	656	658	Ichneumonidae	52713	Orthocentrus sp.	0	2025-01-26 05:14:22
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gracilariaceae	BLAST	family	False	667	673		32968	Gracilaria gracilis	0	2025-01-26 05:15:08
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lycosidae	BLAST	family	False	656	658	Hydryphantidae,Lebertiidae,Torrenticolidae,Eremobatidae	37766	Alopecosa cuneata	0	2025-01-26 05:16:02
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gnaphosidae	BLAST	family	True	657	658	Gnaphosidae,Anyphaenidae,Desidae	47258	Scotophaeus scutulatus	0	2025-01-26 05:16:55
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	656	658	Linyphiidae	10450	Centromerita bicolor	0	2025-01-26 05:17:47
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	655	658	Linyphiidae	40929	Mermessus trilobatus	0	2025-01-26 05:18:40
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Delesseriaceae	BLAST	family	False	613	652		48163	Cryptopleura ramosa	0	2025-01-26 05:19:26
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	644	652		48297	Chaetomorpha ligustica	6	2025-01-26 05:20:13
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	630	635	Palmariaceae,Rhodomelaceae	30635	Phymatolithon lenormandii	1	2025-01-26 05:21:01
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Semelidae	BLAST	family	False	673	676		31506	Abra tenuis	0	2025-01-26 05:21:56
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphacelariaceae	BLAST	family	False	673	676	Dictyotaceae	48923	Sphacelaria fusca	0	2025-01-26 05:22:57
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	653	655		21142	Centromerita bicolor	0	2025-01-26 05:23:47
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Anisopodidae	BLAST	family	True	656	658	Anisopodidae	35931	Sylvicola punctatus	0	2025-01-26 05:24:58
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geometridae	BLAST	family	True	657	658	Geometridae	25509	Pachycnemia hippocastanaria	0	2025-01-26 05:26:04
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Curculionidae	BLAST	family	True	657	658	Curculionidae	46676	Cionus scrophulariae	0	2025-01-26 05:27:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Carabidae	BLAST	family	True	657	658	Carabidae	25633	Harpalus pumilus	0	2025-01-26 05:28:15
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Alpheidae	BLAST	family	True	655	658	Alvinocarididae,Alpheidae	46986	Athanas nitescens	0	2025-01-26 05:29:10
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Silphidae	BLAST	family	True	657	658	Silphidae	47111	Nicrophorus vespillo	0	2025-01-26 05:30:12
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Araneidae	BLAST	family	True	657	658	Araneidae	6121	Nuctenea umbratica	0	2025-01-26 05:31:05
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tettigoniidae	BLAST	family	True	656	658	Tettigoniidae	6139	Tettigoniidae	0	2025-01-26 05:32:10
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	True	656	658	Ichneumonidae	29928	Diphyus quadripunctorius	0	2025-01-26 05:33:26
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Silphidae	BLAST	family	False	663	664	Sciaridae,Mycetophilidae,Cecidomyiidae	48109	Nicrophorus vespillo	0	2025-01-26 05:34:36
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	617	652		30371	Agardhiella subulata	0	2025-01-26 05:35:22
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphacelariaceae	BLAST	family	False	649	652		48410	Sphacelaria fusca	13	2025-01-26 05:36:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Coccinellidae	BLAST	family	True	657	658	Coccinellidae	42647	Halyzia sedecimguttata	0	2025-01-26 05:37:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tetragnathidae	BLAST	family	True	656	657	Tetragnathidae	42649	Metellina merianae	0	2025-01-26 05:38:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cyrenidae	BLAST	family	True	656	658	Cyrenidae	31317	Corbicula fluminea	0	2025-01-26 05:39:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tetragnathidae	BLAST	family	True	655	658	Tetragnathidae	15554	Pachygnatha clercki	0	2025-01-26 05:40:00
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gnaphosidae	BLAST	family	True	656	658	Gnaphosidae	20066	Trachyzelotes pedestris	0	2025-01-26 05:40:53
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Delesseriaceae	BLAST	family	False	647	652		49725	Cryptopleura ramosa	11	2025-01-26 05:41:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	617	652		49799	Chaetomorpha ligustica	0	2025-01-26 05:42:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halymeniaceae	BLAST	family	False	619	652		32912	Grateloupia turuturu	0	2025-01-26 05:43:10
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	602	652		32933	Agardhiella subulata	0	2025-01-26 05:43:56
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	618	652		32936	Agardhiella subulata	0	2025-01-26 05:44:42
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Endodontidae	BLAST	family	True	654	655	Endodontidae,Helicarionidae,Discidae	52491	Discus rotundatus	0	2025-01-26 05:45:47
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Alpheidae	BLAST	family	True	655	658	Alvinocarididae,Alpheidae	46986	Athanas nitescens	0	2025-01-26 05:46:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	False	655	657	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	46381	Cassida rubiginosa	0	2025-01-26 05:47:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dermestidae	BLAST	family	True	656	658	Dermestidae	50272	Megatoma undata	0	2025-01-26 05:48:59
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	True	657	658	Dolichopodidae	46618	Gymnopternus cupreus	0	2025-01-26 05:50:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Curculionidae	BLAST	family	True	657	658	Curculionidae	698	Scolytus pygmaeus	0	2025-01-26 05:51:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dermestidae	BLAST	family	True	656	658	Dermestidae	50275	Anthrenus pimpinellae	0	2025-01-26 05:52:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tenebrionidae	BLAST	family	True	657	658	Tenebrionidae	25431	Isomira murina	0	2025-01-26 05:53:28
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gastrodontidae	BLAST	family	True	653	655	Gastrodontidae	46636	Zonitoides nitidus	0	2025-01-26 05:54:26
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ptinidae	BLAST	family	True	657	658	Dytiscidae,Dermestidae,Ptinidae	25456	Ochina ptinoides	0	2025-01-26 05:55:31
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Elateridae	BLAST	family	True	657	658	Elateridae	46651	Denticollis linearis	0	2025-01-26 05:56:34
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Philodromidae	BLAST	family	True	657	658	Philodromidae	1066	Philodromus buxi	0	2025-01-26 05:57:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geometridae	BLAST	family	True	657	658	Geometridae	25619	Alsophila aescularia	0	2025-01-26 05:58:53
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Coccinellidae	BLAST	family	True	657	658	Coccinellidae,Latridiidae	1443	Coccinellidae	0	2025-01-26 06:00:00
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tenthredinidae	BLAST	family	True	657	658	Tenthredinidae	36347	Nematus lucidus	0	2025-01-26 06:01:06
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geometridae	BLAST	family	True	657	658	Geometridae	36396	Horisme radicaria	0	2025-01-26 06:02:13
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	True	657	658	Chrysomelidae	46729	Gastrophysa viridula	0	2025-01-26 06:03:17
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	649	652		3174	Tapinocyba praecox	8	2025-01-26 06:04:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ephydridae	BLAST	family	True	657	658	Ephydridae	26096	Scatophila caviceps	0	2025-01-26 06:05:16
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Mactridae	BLAST	family	False	622	649		50558	Spisula solida	0	2025-01-26 06:06:12
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gelidiaceae	BLAST	family	True	661	664	Gelidiaceae	26305	Gelidium spinosum	0	2025-01-26 06:07:00
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hebridae	BLAST	family	False	655	658	Blaberidae,Bombycidae	3530	Hebrus sp.	0	2025-01-26 06:08:06
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sciomyzidae	BLAST	family	False	653	656	Sciomyzidae	46904	Coremacera marginata	3	2025-01-26 06:09:19
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Helicodontidae	BLAST	family	True	654	655	Hygromiidae,Helicodontidae,Camaenidae	46926	Helicodonta obvoluta	0	2025-01-26 06:10:20
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Terebellidae	BLAST	family	True	656	658	Terebellidae	26939	Loimia ramzega	0	2025-01-26 06:11:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Asilidae	BLAST	family	True	656	658	Asilidae	5671	Asilidae	0	2025-01-26 06:12:38
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Histeridae	BLAST	family	True	656	658	Histeridae	50860	Dendrophilus pygmaeus	0	2025-01-26 06:13:42
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hymenoptera	BLAST	order	False	656	658	Coleoptera	50864	Hymenoptera	0	2025-01-26 06:14:48
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sarcophagidae	BLAST	family	True	657	658	Anthomyiidae,Scathophagidae,Sarcophagidae	6324	Sarcophagidae	0	2025-01-26 06:15:59
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	True	657	658	Chrysomelidae	50889	Chrysomela collaris	0	2025-01-26 06:17:04
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Staphylinidae	BLAST	family	True	656	658	Staphylinidae	27287	Philonthus sp.	0	2025-01-26 06:18:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	True	657	658	Aphididae	38691	Geoica utricularia	0	2025-01-26 06:19:12
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	True	657	658	Aphididae	38731	Uroleucon achilleae	0	2025-01-26 06:20:30
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Vertiginidae	BLAST	family	True	653	655	Vertiginidae	27705	Vertigo moulinsiana	0	2025-01-26 06:21:33
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	657	658	Linyphiidae	6858	Diplostyla concolor	0	2025-01-26 06:22:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Planorbidae	BLAST	family	True	669	670	Planorbidae	38837	Gyraulus parvus	0	2025-01-26 06:23:22
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Murchisonellidae	BLAST	family	False	656	658	Marginellidae,Columbellidae,Annulariidae,Hydrobiidae	38854	Murchisonella	0	2025-01-26 06:24:29
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Oedemeridae	BLAST	family	False	657	658	Tipulidae	47397	Ischnomera cyanea	0	2025-01-26 06:25:33
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	True	656	658	Dolichopodidae	47409	Dolichopus festivus	0	2025-01-26 06:26:45
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulidiidae	BLAST	family	True	657	658	Sepsidae,Ulidiidae	47438	Myennis octopunctata	0	2025-01-26 06:27:53
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	False	657	658	Chironomidae	29278	Chrysotimus molliculus	0	2025-01-26 06:29:05
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	True	656	658	Dolichopodidae	47703	Dolichopus latilimbatus	0	2025-01-26 06:30:14
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	655	658	Linyphiidae	10468	Walckenaeria acuminata	0	2025-01-26 06:31:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	552	676		48022	Melanothamnus harveyi	0	2025-01-26 06:31:55
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	False	657	659	Ichneumonidae	51436	Sphecophaga vesparum	4	2025-01-26 06:33:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	False	621	623		41217	Ophion obscuratus	0	2025-01-26 06:34:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Braconidae	BLAST	family	True	655	658	Braconidae	30077	Peristenus sp.	0	2025-01-26 06:35:19
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Plocamiaceae	BLAST	family	False	613	652		30093	Plocamium cartilagineum	0	2025-01-26 06:36:06
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Champiaceae	BLAST	family	False	613	652		30094	Gastroclonium ovatum	0	2025-01-26 06:36:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	649	652		30112	Osmundea osmunda	0	2025-01-26 06:37:37
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Phyllophoraceae	BLAST	family	False	613	652		48169	Phyllophora pseudoceranoides	0	2025-01-26 06:38:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	643	649		48170	Codium fragile	0	2025-01-26 06:39:14
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	617	652		30145	Agardhiella subulata	0	2025-01-26 06:39:59
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	645	651		30149	Phymatolithon lenormandii	0	2025-01-26 06:40:45
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	648	652		30198	Cladophora albida	0	2025-01-26 06:41:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	647	652		30200	Osmundea osmunda	0	2025-01-26 06:42:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Delesseriaceae	BLAST	family	False	647	652		30203	Cryptopleura ramosa	0	2025-01-26 06:43:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gigartinaceae	BLAST	family	False	641	650		30211	Chondracanthus acicularis	0	2025-01-26 06:43:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Palaemonidae	BLAST	family	False	613	652	Solenoceridae	30225	Palaemon elegans	0	2025-01-26 06:44:43
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	611	652		30238	Agardhiella subulata	0	2025-01-26 06:45:29
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cystocloniaceae	BLAST	family	False	644	652		48296	Cystoclonium purpureum	6	2025-01-26 06:46:15
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	False	640	652		30245	Euglesa henslowana	4	2025-01-26 06:47:10
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Derbesiaceae	BLAST	family	False	621	652		30414	Derbesia marina	0	2025-01-26 06:47:57
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halichondriidae	BLAST	family	False	671	673		48370	Halichondria panicea	0	2025-01-26 06:48:49
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Derbesiaceae	BLAST	family	False	671	673		30437	Derbesia marina	0	2025-01-26 06:49:36
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cystocloniaceae	BLAST	family	False	648	652		48399	Cystoclonium purpureum	9	2025-01-26 06:50:22
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Derbesiaceae	BLAST	family	False	659	664		30490	Derbesia marina	0	2025-01-26 06:51:08
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	646	652		30500	Osmundea pinnatifida	5	2025-01-26 06:51:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tellinidae	BLAST	family	False	649	652		51703	Macoma balthica	13	2025-01-26 06:52:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Caulacanthaceae	BLAST	family	False	649	652		30505	Catenella caespitosa	13	2025-01-26 06:53:37
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Derbesiaceae	BLAST	family	False	654	685		30628	Derbesia marina	0	2025-01-26 06:54:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	643	652		48461	Codium fragile	10	2025-01-26 06:55:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Delesseriaceae	BLAST	family	False	643	652		23036	Cryptopleura ramosa	9	2025-01-26 06:55:55
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	644	652		30655	Antithamnionella spirographidis	13	2025-01-26 06:56:41
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Palaemonidae	BLAST	family	False	610	649		30657	Palaemon elegans	0	2025-01-26 06:57:30
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Staphylinidae	BLAST	family	False	626	628	Dermestidae,Dolichopodidae,Hesperiidae	51804	Micropeplus fulvus	0	2025-01-26 06:58:40
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gnaphosidae	BLAST	family	True	657	658	Gnaphosidae	42595	Micaria sp.	0	2025-01-26 06:59:34
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Araneidae	BLAST	family	False	603	652		42682	Araniella opisthographa	9	2025-01-26 07:00:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Callithamniaceae	BLAST	family	False	672	676		48607	Callithamnion tetragonum	0	2025-01-26 07:01:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	657	661		31306	Rhizoclonium riparium	0	2025-01-26 07:01:55
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	True	663	664	Ceramiaceae	48641	Ceramium diaphanum	0	2025-01-26 07:02:44
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	654	658	Linyphiidae	15677	Gnathonarium dentatum	0	2025-01-26 07:03:35
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	655	658	Linyphiidae	43205	Oedothorax apicatus	0	2025-01-26 07:04:26
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	False	656	658	Figitidae	31411	Myzus varians	0	2025-01-26 07:05:30
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Varunidae	BLAST	family	False	673	676	Palinuridae,Paguridae,Munnopsidae	31501	Hemigrapsus sanguineus	0	2025-01-26 07:06:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Champiaceae	BLAST	family	False	646	652		31530	Gastroclonium ovatum	4	2025-01-26 07:07:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	644	652		48766	Ceramium virgatum	4	2025-01-26 07:07:55
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lycosidae	BLAST	family	True	654	655	Dysderidae,Lycosidae,Digamasellidae	16029	Arctosa leopardus	0	2025-01-26 07:08:55
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	620	649		31629	Ulva australis	0	2025-01-26 07:09:42
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tetragnathidae	BLAST	family	True	656	658	Tetragnathidae	16437	Metellina mengei	0	2025-01-26 07:10:34
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	657	658	Salticidae,Lamponidae,Macronyssidae,Sperchontidae,Eupodidae,Oribatulidae,Phalangiidae	16499	Erigone atra	0	2025-01-26 07:11:31
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	656	658	Rhodymeniaceae	31731	Antithamnion densum	0	2025-01-26 07:12:17
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Nitidulidae	BLAST	family	True	655	657	Nitidulidae	31939	Epuraea sp.	0	2025-01-26 07:13:20
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Derbesiaceae	BLAST	family	False	615	649		31960	Derbesia marina	3	2025-01-26 07:14:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	628	652		32206	Blidingia marginata	0	2025-01-26 07:14:55
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Varunidae	BLAST	family	False	669	673		32207	Hemigrapsus sanguineus	0	2025-01-26 07:15:45
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	681	685		49155	Vertebrata fucoides	0	2025-01-26 07:16:31
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Caulacanthaceae	BLAST	family	False	665	668		49157	Caulacanthus okamurae	3	2025-01-26 07:17:16
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	656	661		49158	Antithamnion hubbsii	0	2025-01-26 07:18:01
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	673	676		32228	Rhizoclonium riparium	0	2025-01-26 07:18:47
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Caulacanthaceae	BLAST	family	False	670	673		32230	Catenella caespitosa	0	2025-01-26 07:19:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	610	649		49167	Ceramium virgatum	0	2025-01-26 07:20:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	610	649		49171	Vertebrata fucoides	0	2025-01-26 07:21:04
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Apidae	BLAST	family	False	662	664	Cicadellidae	32251	Anthophora plumipes	0	2025-01-26 07:22:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cladophoraceae	BLAST	family	False	611	649		32260	Cladophora albida	0	2025-01-26 07:22:58
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Idoteidae	BLAST	family	True	656	658	Idoteidae	32269	Idotea chelipes	0	2025-01-26 07:23:49
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	661	664		49198	Vertebrata fucoides	0	2025-01-26 07:24:35
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Mactridae	BLAST	family	False	617	652		52456	Spisula solida	0	2025-01-26 07:25:30
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Succineidae	BLAST	family	True	654	655	Succineidae	49596	Oxyloma elegans	0	2025-01-26 07:26:37
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Truncatellinidae	BLAST	family	True	654	655	Truncatellinidae	32410	Columella edentula	0	2025-01-26 07:27:38
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Prasiolaceae	BLAST	family	False	663	664	Chlorellaceae	32416	Prasiola stipitata	0	2025-01-26 07:28:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	True	663	664	Ceramiaceae,Dasyaceae	32451	Antithamnion densum	0	2025-01-26 07:29:13
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Araneidae	BLAST	family	True	657	658	Araneidae	18591	Argiope argentata	0	2025-01-26 07:30:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halichondriidae	BLAST	family	False	662	663	Chalinidae,Raspailiidae	49655	Halichondria panicea	0	2025-01-26 07:30:56
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tipulidae	BLAST	family	True	657	658	Tipulidae	49669	Tipula vittata	0	2025-01-26 07:31:59
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tipulidae	BLAST	family	False	657	658		49692	Nephrotoma appendiculata	0	2025-01-26 07:33:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tipulidae	BLAST	family	True	657	658	Tipulidae	49693	Nephrotoma quadrifaria	0	2025-01-26 07:34:06
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	662	664	Rhodomelaceae	32700	Phymatolithon lenormandii	0	2025-01-26 07:34:53
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tateidae	BLAST	family	False	657	659	Tateidae	32701	Potamopyrgus antipodarum	3	2025-01-26 07:35:49
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gnaphosidae	BLAST	family	True	656	658	Gnaphosidae	20067	Trachyzelotes pedestris	0	2025-01-26 07:36:41
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	True	656	658	Sphaeriidae	32713	Euglesa henslowana	0	2025-01-26 07:37:41
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	True	656	658	Sphaeriidae	32715	Euglesa personata	0	2025-01-26 07:38:42
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	True	656	658	Sphaeriidae	32724	Euglesa milium	0	2025-01-26 07:39:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	618	652		32746	Osmundea pinnatifida	0	2025-01-26 07:40:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Prasiolaceae	BLAST	family	False	648	652		32761	Prasiola stipitata	11	2025-01-26 07:41:15
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	654	658	Linyphiidae	45030	Entelecara congenera	0	2025-01-26 07:42:05
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	True	661	664	Cicadidae,Chrysomelidae	52650	Mantura chrysanthemi	0	2025-01-26 07:43:14
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	True	656	658	Ichneumonidae	45357	Cryptus armator	0	2025-01-26 07:44:22
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halichondriidae	BLAST	family	False	614	652		49795	Halichondria panicea	0	2025-01-26 07:45:13
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Palaemonidae	BLAST	family	False	646	652		32934	Palaemon elegans	6	2025-01-26 07:46:05
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lycosidae	BLAST	family	False	656	658	Ixodidae,Halolaelapidae	506	Arctosa leopardus	0	2025-01-26 07:46:57
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Araneidae	BLAST	family	True	657	658	Araneidae	1073	Agalenatea redii	0	2025-01-26 07:47:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Katiannidae	BLAST	family	False	660	664	Entomobryidae	3980	Sminthurinus elegans	0	2025-01-26 07:48:44
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	656	658	Linyphiidae	5349	Tapinocyba praecox	0	2025-01-26 07:49:37
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Araneidae	BLAST	family	True	657	658	Araneidae	6120	Nuctenea umbratica	0	2025-01-26 07:50:28
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gnaphosidae	BLAST	family	False	661	664	Diplocentridae,Theraphosidae,Ctenizidae,Idiopidae,Filistatidae	13799	Trachyzelotes pedestris	0	2025-01-26 07:51:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	661	664	Ctenizidae,Linyphiidae	13807	Gnathonarium dentatum	0	2025-01-26 07:52:16
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	655	658	Linyphiidae	15653	Styloctetor romanus	0	2025-01-26 07:53:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lycosidae	BLAST	family	False	657	658	Salticidae,Lamponidae,Macronyssidae,Sperchontidae,Eupodidae,Phalangiidae	16510	Arctosa leopardus	0	2025-01-26 07:54:06
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	644	652		16993	Erigone dentipalpis	0	2025-01-26 07:54:59
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hydrophilidae	BLAST	family	False	656	657	Tettigoniidae,Notonemouridae,Ninidae,Psychodidae,Ulidiidae,Vespidae,Hydropsychidae	603	Hydrophilidae	1	2025-01-26 07:56:08
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	True	656	658	Aphididae	38713	Periphyllus obscurus	0	2025-01-26 07:57:12
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	False	657	658	Braconidae	41348	Metopeurum fuscoviride	0	2025-01-26 07:58:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	False	672	673	Aphididae	38739	Macrosiphum cholodkovskyi	15	2025-01-26 07:59:33
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	False	647	652		40906	Dysaphis radicola	7	2025-01-26 08:00:34
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Valloniidae	BLAST	family	False	654	655	Ellobiidae	25553	Vallonia pulchella	0	2025-01-26 08:01:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Pipunculidae	BLAST	family	False	657	658	Dolichopodidae	25638	Tomosvaryella sylvatica	0	2025-01-26 08:02:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	True	656	658	Aphididae	27170	Lipaphis pseudobrassicae	0	2025-01-26 08:03:43
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	662	664	Gracilariaceae	27755	Antithamnionella spirographidis	0	2025-01-26 08:04:30
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	649	652		30115	Osmundea pinnatifida	0	2025-01-26 08:05:16
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Pterocladiaceae	BLAST	family	False	649	652		30512	Pterocladiella capillacea	13	2025-01-26 08:06:02
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	618	652		31986	Codium tomentosum	0	2025-01-26 08:06:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gigartinaceae	BLAST	family	False	662	664	Hapalidiaceae,Dasyaceae,Plocamiaceae	32324	Chondracanthus acicularis	0	2025-01-26 08:07:37
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sertulariidae	BLAST	family	False	657	661	Zancleidae,Cladocorynidae,Halopterididae,Clytiidae,Halammohydridae	32329	Dynamena pumila	0	2025-01-26 08:08:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	True	663	664	Ceramiaceae,Dasyaceae,Spyridiaceae,Kallymeniaceae,Champiaceae	32361	Ceramium gaditanum	0	2025-01-26 08:09:20
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Valloniidae	BLAST	family	True	653	655	Valloniidae	32404	Vallonia excentrica	0	2025-01-26 08:10:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	True	656	658	Sphaeriidae	32717	Euglesa compressa	0	2025-01-26 08:11:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	True	656	658	Sphaeriidae	32721	Euglesa casertana	0	2025-01-26 08:12:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	598	652		32923	Codium tomentosum	0	2025-01-26 08:13:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	True	657	658	Dolichopodidae	46618	Gymnopternus cupreus	0	2025-01-26 08:14:20
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Coccinellidae	BLAST	family	True	657	658	Coccinellidae,Latridiidae	1443	Coccinellidae	0	2025-01-26 08:15:26
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geometridae	BLAST	family	True	657	658	Geometridae	36396	Horisme radicaria	0	2025-01-26 08:16:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	True	657	658	Chrysomelidae	46729	Gastrophysa viridula	0	2025-01-26 08:17:36
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Terebellidae	BLAST	family	True	656	658	Terebellidae	26939	Loimia ramzega	0	2025-01-26 08:18:38
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Asilidae	BLAST	family	True	656	658	Asilidae	5671	Asilidae	0	2025-01-26 08:19:51
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Histeridae	BLAST	family	True	656	658	Histeridae	50860	Dendrophilus pygmaeus	0	2025-01-26 08:20:55
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hymenoptera	BLAST	order	False	656	658	Coleoptera	50864	Hymenoptera	0	2025-01-26 08:22:00
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sarcophagidae	BLAST	family	True	657	658	Anthomyiidae,Scathophagidae,Sarcophagidae	6324	Sarcophagidae	0	2025-01-26 08:23:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	657	658	Linyphiidae	6858	Diplostyla concolor	0	2025-01-26 08:24:04
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Murchisonellidae	BLAST	family	False	656	658	Marginellidae,Columbellidae,Annulariidae,Hydrobiidae	38854	Murchisonella	0	2025-01-26 08:25:12
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	True	656	658	Dolichopodidae	47409	Dolichopus festivus	0	2025-01-26 08:26:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	True	656	658	Dolichopodidae	47703	Dolichopus latilimbatus	0	2025-01-26 08:27:32
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ichneumonidae	BLAST	family	False	657	659	Ichneumonidae	51436	Sphecophaga vesparum	4	2025-01-26 08:28:40
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	617	652		30145	Agardhiella subulata	0	2025-01-26 08:29:26
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	611	652		30238	Agardhiella subulata	0	2025-01-26 08:30:12
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	False	640	652		30245	Euglesa henslowana	4	2025-01-26 08:31:08
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Delesseriaceae	BLAST	family	False	643	652		23036	Cryptopleura ramosa	9	2025-01-26 08:31:55
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	657	658	Salticidae,Lamponidae,Macronyssidae,Sperchontidae,Eupodidae,Oribatulidae,Phalangiidae	16499	Erigone atra	0	2025-01-26 08:32:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Nitidulidae	BLAST	family	True	655	657	Nitidulidae	31939	Epuraea sp.	0	2025-01-26 08:33:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	True	656	658	Sphaeriidae	32713	Euglesa henslowana	0	2025-01-26 08:34:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	True	661	664	Cicadidae,Chrysomelidae	52650	Mantura chrysanthemi	0	2025-01-26 08:35:58
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Araneidae	BLAST	family	True	657	658	Araneidae	6120	Nuctenea umbratica	0	2025-01-26 08:36:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gnaphosidae	BLAST	family	False	661	664	Diplocentridae,Theraphosidae,Ctenizidae,Idiopidae,Filistatidae	13799	Trachyzelotes pedestris	0	2025-01-26 08:37:46
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	644	652		16993	Erigone dentipalpis	0	2025-01-26 08:38:38
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hydrophilidae	BLAST	family	False	656	657	Tettigoniidae,Notonemouridae,Ninidae,Psychodidae,Ulidiidae,Vespidae,Hydropsychidae	603	Hydrophilidae	1	2025-01-26 08:39:47
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Fucaceae	BLAST	family	True	663	664	Fucaceae	32267	Fucus vesiculosus	0	2025-01-26 08:40:48
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Gnaphosidae	BLAST	family	True	656	658	Gnaphosidae	15488	Zelotes subterraneus	0	2025-01-26 08:41:40
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Delesseriaceae	BLAST	family	True	662	664	Galaxauraceae,Rhodomelaceae,Delesseriaceae,Gigartinaceae	31916	Cryptopleura ramosa	0	2025-01-26 08:42:28
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sertulariidae	BLAST	family	False	657	661	Zancleidae,Cladocorynidae,Halopterididae,Clytiidae,Halammohydridae	32331	Dynamena pumila	0	2025-01-26 08:43:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	True	657	658	Aphididae	38687	Tetraneura ulmi	0	2025-01-26 08:44:27
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	True	657	658	Aphididae	38730	Uroleucon achilleae	0	2025-01-26 08:45:49
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Salticidae	BLAST	family	True	656	658	Salticidae	38994	Salticus zebraneus	0	2025-01-26 08:46:43
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Theridiidae	BLAST	family	True	657	658	Theridiidae	43131	Theridion varians	0	2025-01-26 08:47:34
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	False	660	663	Cicadellidae,Chrysomelidae,Phoridae,Xyloryctidae,Argyresthiidae	44296	Dysaphis radicola	0	2025-01-26 08:48:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ephydridae	BLAST	family	True	657	658	Ephydridae	25460	Scatella paludum	0	2025-01-26 08:49:47
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Callithamniaceae	BLAST	family	True	663	664	Callithamniaceae	26888	Callithamnion corymbosum	0	2025-01-26 08:50:35
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	True	657	658	Aphididae	27367	Uroleucon taraxaci	0	2025-01-26 08:51:38
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	True	657	658	Aphididae	27697	Uroleucon sonchi	0	2025-01-26 08:52:41
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hapalidiaceae	BLAST	family	False	617	652		30146	Phymatolithon lenormandii	0	2025-01-26 08:53:28
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	False	594	649		30190	Euglesa milium	0	2025-01-26 08:54:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	646	652		30494	Codium tomentosum	5	2025-01-26 08:55:10
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halymeniaceae	BLAST	family	False	656	661	Kallymeniaceae	31198	Grateloupia turuturu	4	2025-01-26 08:55:57
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	667	673		32967	Antithamnionella spirographidis	0	2025-01-26 08:56:42
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Salticidae	BLAST	family	True	656	658	Salticidae	38994	Salticus zebraneus	0	2025-01-26 08:57:34
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Halymeniaceae	BLAST	family	False	656	661	Kallymeniaceae	31198	Grateloupia turuturu	4	2025-01-26 08:58:21
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geometridae	BLAST	family	True	657	658	Geometridae	25617	Alsophila aescularia	0	2025-01-26 08:59:49
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Vertiginidae	BLAST	family	True	653	655	Vertiginidae	27703	Vertigo moulinsiana	0	2025-01-26 09:00:51
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Tubulariidae	BLAST	family	True	657	658	Agalmatidae,Hydridae,Tubulariidae,Campanulariidae,Mitrocomidae,Aequoreidae,Clytiidae	27739	Tubularia indivisa	0	2025-01-26 09:01:48
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Caulacanthaceae	BLAST	family	False	663	664	Dasyaceae,Callithamniaceae,Kallymeniaceae,Acrotylaceae	27760	Catenella caespitosa	0	2025-01-26 09:02:36
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	611	652		30237	Agardhiella subulata	0	2025-01-26 09:03:22
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Pterocladiaceae	BLAST	family	False	646	652		30497	Pterocladiella capillacea	5	2025-01-26 09:04:08
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hybotidae	BLAST	family	False	661	664	Calopterygidae,Tenebrionidae,Mymaridae,Eucharitidae	30609	Platypalpus cursitans	0	2025-01-26 09:06:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ulvaceae	BLAST	family	False	675	679		31304	Blidingia marginata	0	2025-01-26 09:06:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Valloniidae	BLAST	family	False	653	655	Endodontidae,Helicarionidae	32389	Acanthinula aculeata	0	2025-01-26 09:07:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	True	656	658	Sphaeriidae	32712	Euglesa henslowana	0	2025-01-26 09:08:51
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	True	656	658	Sphaeriidae	32714	Euglesa personata	0	2025-01-26 09:09:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Palmariaceae	BLAST	family	False	618	652		32739	Palmaria palmata	0	2025-01-26 09:10:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Punctidae	BLAST	family	True	652	655	Punctidae	32950	Punctum pygmaeum	0	2025-01-26 09:11:40
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	True	656	658	Aphididae	38732	Metopeurum fuscoviride	0	2025-01-26 09:12:47
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	655	658	Linyphiidae	40928	Mermessus trilobatus	0	2025-01-26 09:13:40
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	True	657	658	Aphididae	26081	Thecabius affinis	0	2025-01-26 09:14:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	False	656	658		26870	Euglesa milium	0	2025-01-26 09:15:47
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Plocamiaceae	BLAST	family	False	613	652		30092	Plocamium cartilagineum	0	2025-01-26 09:16:33
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Pipunculidae	BLAST	family	False	661	664	Calopterygidae,Tenebrionidae,Mymaridae,Eucharitidae	30566	Tomosvaryella sylvatica	0	2025-01-26 09:18:28
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cyrenidae	BLAST	family	True	656	658	Cyrenidae	31316	Corbicula fluminea	0	2025-01-26 09:19:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	617	652		31528	Osmundea pinnatifida	1	2025-01-26 09:20:10
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Alariaceae	BLAST	family	False	646	652		31597	Undaria pinnatifida	10	2025-01-26 09:21:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	False	647	649		31917	Euglesa milium	5	2025-01-26 09:22:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	False	601	652		31993	Euglesa casertana	0	2025-01-26 09:22:59
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Fucaceae	BLAST	family	True	663	664	Fucaceae	32266	Fucus vesiculosus	0	2025-01-26 09:24:01
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	661	664	Diplocentridae,Theraphosidae,Ctenizidae,Idiopidae,Filistatidae	13797	Collinsia inerrans	0	2025-01-26 09:24:57
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Geometridae	BLAST	family	True	656	658	Timematidae,Curculionidae,Drosophilidae,Formicidae,Geometridae	31143	Earophila badiata	0	2025-01-26 09:26:10
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Solieriaceae	BLAST	family	False	611	652		30237	Agardhiella subulata	0	2025-01-26 09:26:57
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	True	656	658	Sphaeriidae	32712	Euglesa henslowana	0	2025-01-26 09:27:57
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	655	658	Linyphiidae	40928	Mermessus trilobatus	0	2025-01-26 09:28:49
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cyrenidae	BLAST	family	True	656	658	Cyrenidae	31316	Corbicula fluminea	0	2025-01-26 09:29:47
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Elateridae	BLAST	family	False	649	652	Silphidae	31213	Cidnopus aeruginosus	8	2025-01-26 09:30:51
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Codiaceae	BLAST	family	False	663	664		48771	Codium fragile	0	2025-01-26 09:31:37
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cystocloniaceae	BLAST	family	False	610	649		49168	Cystoclonium purpureum	0	2025-01-26 09:32:23
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	658	661		49179	Vertebrata fucoides	0	2025-01-26 09:33:08
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	614	652		49190	Ceramium diaphanum	0	2025-01-26 09:33:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	660	664	Diplocentridae,Ctenizidae,Idiopidae,Filistatidae	14126	Erigone atra	0	2025-01-26 09:34:50
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Mactridae	BLAST	family	False	656	658	Solemyidae,Nuculidae,Yoldiidae,Trapezidae	47121	Spisula subtruncata	0	2025-01-26 09:36:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Curculionidae	BLAST	family	False	657	658	Staphylinidae,Leiodidae	46739	Tychius parallelus	0	2025-01-26 09:37:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Staphylinidae	BLAST	family	False	648	652		48624	Othius punctulatus	0	2025-01-26 09:38:09
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lycosidae	BLAST	family	True	657	658	Lycosidae	38769	Alopecosa cuneata	0	2025-01-26 09:39:01
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	True	657	658	Chrysomelidae	47670	Galerucella nymphaeae	0	2025-01-26 09:40:06
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sciomyzidae	BLAST	family	False	648	652		48401	Coremacera marginata	9	2025-01-26 09:41:10
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Salticidae	BLAST	family	False	626	628	Torrenticolidae,Pionidae,Melanoblossiidae,Nemastomatidae	42636	Synageles venator	0	2025-01-26 09:42:03
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Notodontidae	BLAST	family	True	657	658	Notodontidae	47044	Notodonta tritophus	0	2025-01-26 09:43:10
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Rhodomelaceae	BLAST	family	False	643	652		48460	Melanothamnus harveyi	10	2025-01-26 09:43:56
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Callithamniaceae	BLAST	family	False	610	649		49165	Callithamnion tetragonum	0	2025-01-26 09:44:42
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	598	652		32932	Ceramium gaditanum	0	2025-01-26 09:45:28
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Elateridae	BLAST	family	False	649	652	Silphidae	31213	Cidnopus aeruginosus	8	2025-01-26 09:46:31
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	660	664	Diplocentridae,Ctenizidae,Idiopidae,Filistatidae	14126	Erigone atra	0	2025-01-26 09:47:26
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lycosidae	BLAST	family	True	657	658	Lycosidae	38769	Alopecosa cuneata	0	2025-01-26 09:48:17
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Chrysomelidae	BLAST	family	True	657	658	Chrysomelidae	47670	Galerucella nymphaeae	0	2025-01-26 09:49:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Salticidae	BLAST	family	False	626	628	Torrenticolidae,Pionidae,Melanoblossiidae,Nemastomatidae	42636	Synageles venator	0	2025-01-26 09:50:18
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Notodontidae	BLAST	family	True	657	658	Notodontidae	47044	Notodonta tritophus	0	2025-01-26 09:51:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Wrangeliaceae	BLAST	family	False	595	649		32264	Halurus flosculosus	0	2025-01-26 09:52:12
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cordylophoridae	BLAST	family	True	656	658	Cordylophoridae,Obeliidae	46663	Cordylophora caspia	0	2025-01-26 09:53:10
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lauxaniidae	BLAST	family	True	657	658	Drosophilidae,Lauxaniidae	46924	Minettia longipennis	0	2025-01-26 09:54:24
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lonchopteridae	BLAST	family	True	657	658	Lonchopteridae	47591	Lonchoptera lutea	0	2025-01-26 09:55:29
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Ceramiaceae	BLAST	family	False	649	652		48414	Ceramium diaphanum	13	2025-01-26 09:56:16
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Dolichopodidae	BLAST	family	False	656	658	Cicadellidae	30673	Chrysotimus molliculus	0	2025-01-26 09:57:30
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Curculionidae	BLAST	family	True	657	658	Curculionidae	46675	Cionus scrophulariae	0	2025-01-26 09:58:35
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Aphididae	BLAST	family	True	657	658	Aphididae	47712	Tuberolachnus salignus	0	2025-01-26 09:59:39
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Pompilidae	BLAST	family	True	649	652	Pompilidae	48666	Pompilidae	0	2025-01-26 10:00:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Sphaeriidae	BLAST	family	False	630	649		17777	Euglesa milium	0	2025-01-26 10:01:49
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	655	658	Anystidae	12290	Gnathonarium dentatum	0	2025-01-26 10:02:41
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hymenoptera	BLAST	order	False	657	658	Blattodea,Hemiptera,Diptera	49833	Hymenoptera	0	2025-01-26 10:03:53
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Veneridae	BLAST	family	False	654	655	Unionidae	47212	Chamelea striatula	0	2025-01-26 10:04:54
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Haminoeidae	BLAST	family	True	657	658	Haminoeidae	50320	Haloa japonica	0	2025-01-26 10:05:52
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Histeridae	BLAST	family	True	656	658	Histeridae	47120	Dendrophilus pygmaeus	0	2025-01-26 10:06:57
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Cordylophoridae	BLAST	family	True	656	658	Cordylophoridae,Obeliidae	46663	Cordylophora caspia	0	2025-01-26 10:07:56
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Lauxaniidae	BLAST	family	True	657	658	Drosophilidae,Lauxaniidae	46924	Minettia longipennis	0	2025-01-26 10:09:11
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Curculionidae	BLAST	family	True	657	658	Curculionidae	46675	Cionus scrophulariae	0	2025-01-26 10:10:16
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	False	655	658	Anystidae	12290	Gnathonarium dentatum	0	2025-01-26 10:11:07
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Hymenoptera	BLAST	order	False	657	658	Blattodea,Hemiptera,Diptera	49833	Hymenoptera	0	2025-01-26 10:12:20
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Veneridae	BLAST	family	False	654	655	Unionidae	47212	Chamelea striatula	0	2025-01-26 10:13:22
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Histeridae	BLAST	family	True	656	658	Histeridae	47120	Dendrophilus pygmaeus	0	2025-01-26 10:14:25
+0	0	examples/Bioinformaticians_Hack_Day_filter_on_identification.tsv	None	Linyphiidae	BLAST	family	True	661	664	Ctenizidae,Linyphiidae	13808	Gnathonarium dentatum	0	2025-01-26 10:15:18

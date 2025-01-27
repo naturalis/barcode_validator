@@ -1,0 +1,855 @@
+nohup: ignoring input
+2025-01-25 17:05:05 - __main__ - WARNING - Taxon not found: Melanimon tibialis
+2025-01-25 17:05:05 - __main__ - ERROR - Taxon not found: Melanimon tibialis
+2025-01-25 17:05:54 - __main__ - WARNING - Assuming Oedothorax fuscus is a species
+2025-01-25 17:06:48 - __main__ - WARNING - Assuming Blidingia marginata is a species
+2025-01-25 17:10:01 - __main__ - WARNING - Assuming Conistra erythrocephala is a species
+2025-01-25 17:12:29 - __main__ - WARNING - Assuming Truncatellina cylindrica is a species
+2025-01-25 17:14:31 - __main__ - WARNING - Assuming Euglesa casertana is a species
+2025-01-25 17:22:18 - __main__ - WARNING - Assuming Biston strataria is a species
+2025-01-25 17:22:23 - __main__ - WARNING - Taxon not found: Biston strataria
+2025-01-25 17:22:23 - __main__ - ERROR - Taxon not found: Biston strataria
+2025-01-25 17:22:23 - __main__ - WARNING - Assuming Adalia bipunctata is a species
+2025-01-25 17:23:36 - __main__ - WARNING - Taxon not found: Klokdiertje indet.
+2025-01-25 17:23:36 - __main__ - ERROR - Taxon not found: Klokdiertje indet.
+2025-01-25 17:23:36 - __main__ - WARNING - Assuming Arctosa leopardus is a species
+2025-01-25 17:29:15 - __main__ - WARNING - Assuming Chylocladia verticillata is a species
+2025-01-25 17:30:09 - __main__ - WARNING - Assuming Earophila badiata is a species
+2025-01-25 17:31:20 - __main__ - WARNING - Assuming Hemigrapsus sanguineus is a species
+2025-01-25 17:32:18 - __main__ - WARNING - Taxon Orthoptera can only be validated at the order level
+2025-01-25 17:33:32 - __main__ - WARNING - Assuming Hemigrapsus sanguineus is a species
+2025-01-25 17:34:29 - __main__ - WARNING - Taxon Hymenoptera can only be validated at the order level
+2025-01-25 17:35:45 - __main__ - WARNING - Assuming Psylliodes affinis is a species
+2025-01-25 17:36:52 - __main__ - WARNING - Assuming Agroeca cuprea is a species
+2025-01-25 17:36:58 - __main__ - WARNING - Taxon not found: Agroeca cuprea
+2025-01-25 17:36:58 - __main__ - ERROR - Taxon not found: Agroeca cuprea
+2025-01-25 17:36:58 - __main__ - WARNING - Assuming Xeroplexa intersecta is a species
+2025-01-25 17:38:03 - __main__ - WARNING - Assuming Chylocladia verticillata is a species
+2025-01-25 17:39:48 - __main__ - WARNING - Assuming Agrochola ruticilla is a species
+2025-01-25 17:39:53 - __main__ - WARNING - Taxon not found: Agrochola ruticilla
+2025-01-25 17:39:53 - __main__ - ERROR - Taxon not found: Agrochola ruticilla
+2025-01-25 17:39:59 - __main__ - WARNING - Taxon not found: Lochmaea caprea
+2025-01-25 17:39:59 - __main__ - ERROR - Taxon not found: Lochmaea caprea
+2025-01-25 17:41:12 - __main__ - WARNING - Assuming Gelidium pusillum is a species
+2025-01-25 17:42:54 - __main__ - WARNING - Assuming Euglesa milium is a species
+2025-01-25 17:44:51 - __main__ - WARNING - Assuming Subcoccinella vigintiquatuorpunctata is a species
+2025-01-25 17:44:56 - __main__ - WARNING - Taxon not found: Subcoccinella vigintiquatuorpunctata
+2025-01-25 17:44:56 - __main__ - ERROR - Taxon not found: Subcoccinella vigintiquatuorpunctata
+2025-01-25 17:44:56 - __main__ - WARNING - Assuming Hemigrapsus sanguineus is a species
+2025-01-25 17:47:41 - __main__ - WARNING - Assuming Lipaphis pseudobrassicae is a species
+2025-01-25 17:48:49 - __main__ - WARNING - Assuming Macrosiphum cholodkovskyi is a species
+2025-01-25 17:50:09 - __main__ - WARNING - Taxon not found: Lehmannia valentiana
+2025-01-25 17:50:09 - __main__ - ERROR - Taxon not found: Lehmannia valentiana
+2025-01-25 17:50:09 - __main__ - WARNING - Assuming Vitrea crystallina is a species
+2025-01-25 17:51:18 - __main__ - WARNING - Assuming Malacolimax tenellus is a species
+2025-01-25 17:52:19 - __main__ - WARNING - Assuming Oxyloma sarsii is a species
+2025-01-25 17:52:35 - __main__ - WARNING - Taxon not found: Oxyloma sarsii
+2025-01-25 17:52:35 - __main__ - ERROR - Taxon not found: Oxyloma sarsii
+2025-01-25 17:58:30 - __main__ - WARNING - Taxon not found: Haloscatella dichaeta
+2025-01-25 17:58:30 - __main__ - ERROR - Taxon not found: Haloscatella dichaeta
+2025-01-25 17:58:35 - __main__ - WARNING - Taxon not found: Microvelia pygmaea
+2025-01-25 17:58:35 - __main__ - ERROR - Taxon not found: Microvelia pygmaea
+2025-01-25 18:01:05 - __main__ - WARNING - Assuming Gandaritis pyraliata is a species
+2025-01-25 18:02:22 - __main__ - WARNING - Taxon not found: Hilara curtisi
+2025-01-25 18:02:22 - __main__ - ERROR - Taxon not found: Hilara curtisi
+2025-01-25 18:04:29 - __main__ - WARNING - Assuming Thera britannica is a species
+2025-01-25 18:06:55 - __main__ - WARNING - Assuming Polydrusus formosus is a species
+2025-01-25 18:09:21 - __main__ - WARNING - Assuming Agroeca cuprea is a species
+2025-01-25 18:09:26 - __main__ - WARNING - Taxon not found: Agroeca cuprea
+2025-01-25 18:09:26 - __main__ - ERROR - Taxon not found: Agroeca cuprea
+2025-01-25 18:11:21 - __main__ - WARNING - Assuming Donacia clavipes is a species
+2025-01-25 18:12:54 - __main__ - WARNING - Assuming Vallonia pulchella is a species
+2025-01-25 18:14:07 - __main__ - WARNING - Assuming Dysaphis radicola is a species
+2025-01-25 18:17:21 - __main__ - WARNING - Assuming Deuteroxorides elevator is a species
+2025-01-25 18:18:38 - __main__ - WARNING - Assuming Uroleucon sonchi is a species
+2025-01-25 18:19:49 - __main__ - WARNING - Assuming Lipaphis pseudobrassicae is a species
+2025-01-25 18:20:57 - __main__ - WARNING - Assuming Meloboris collector is a species
+2025-01-25 18:22:11 - __main__ - WARNING - Assuming Euglesa subtruncata is a species
+2025-01-25 18:22:16 - __main__ - WARNING - Taxon not found: Euglesa subtruncata
+2025-01-25 18:22:16 - __main__ - ERROR - Taxon not found: Euglesa subtruncata
+2025-01-25 18:22:16 - __main__ - WARNING - Assuming Cladophora albida is a species
+2025-01-25 18:23:08 - __main__ - WARNING - Assuming Wroughtonia spinator is a species
+2025-01-25 18:23:13 - __main__ - WARNING - Taxon not found: Wroughtonia spinator
+2025-01-25 18:23:13 - __main__ - ERROR - Taxon not found: Wroughtonia spinator
+2025-01-25 18:23:13 - __main__ - WARNING - Assuming Ibalia jakowlewi is a species
+2025-01-25 18:23:18 - __main__ - WARNING - Taxon not found: Ibalia jakowlewi
+2025-01-25 18:23:18 - __main__ - ERROR - Taxon not found: Ibalia jakowlewi
+2025-01-25 18:23:23 - __main__ - WARNING - Taxon not found: Ceramium sungminbooi
+2025-01-25 18:23:23 - __main__ - ERROR - Taxon not found: Ceramium sungminbooi
+2025-01-25 18:24:14 - __main__ - WARNING - Assuming Antithamnionella spirographidis is a species
+2025-01-25 18:25:04 - __main__ - WARNING - Assuming Gastroclonium ovatum is a species
+2025-01-25 18:25:55 - __main__ - WARNING - Assuming Chondracanthus acicularis is a species
+2025-01-25 18:29:48 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-25 18:29:48 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-25 18:31:29 - __main__ - WARNING - Assuming Xeroplexa intersecta is a species
+2025-01-25 18:32:29 - __main__ - WARNING - Assuming Codium fragile is a species
+2025-01-25 18:33:21 - __main__ - WARNING - Assuming Macoma balthica is a species
+2025-01-25 18:34:21 - __main__ - WARNING - Assuming Lekanesphaera rugicauda is a species
+2025-01-25 18:35:18 - __main__ - WARNING - Assuming Hislopia prolixa is a species
+2025-01-25 18:35:24 - __main__ - WARNING - Taxon not found: Hislopia prolixa
+2025-01-25 18:35:24 - __main__ - ERROR - Taxon not found: Hislopia prolixa
+2025-01-25 18:38:00 - __main__ - WARNING - Assuming Ceramium virgatum is a species
+2025-01-25 18:38:51 - __main__ - WARNING - Assuming Xeroplexa intersecta is a species
+2025-01-25 18:39:53 - __main__ - WARNING - Assuming Codium fragile is a species
+2025-01-25 18:41:34 - __main__ - WARNING - Assuming Macoma balthica is a species
+2025-01-25 18:44:48 - __main__ - WARNING - Assuming Bithynia leachii is a species
+2025-01-25 18:51:24 - __main__ - WARNING - Assuming Chondracanthus acicularis is a species
+2025-01-25 18:53:05 - __main__ - WARNING - Assuming Ceramium virgatum is a species
+2025-01-25 18:55:41 - __main__ - WARNING - Assuming Euglesa milium is a species
+2025-01-25 18:56:41 - __main__ - WARNING - Assuming Pterothamnion plumula is a species
+2025-01-25 18:57:32 - __main__ - WARNING - Assuming Otiorhynchus sulcatus is a species
+2025-01-25 18:58:40 - __main__ - WARNING - Assuming Pylaiella littoralis is a species
+2025-01-25 19:00:33 - __main__ - WARNING - Assuming Abra tenuis is a species
+2025-01-25 19:02:23 - __main__ - WARNING - Assuming Vertebrata fucoides is a species
+2025-01-25 19:04:21 - __main__ - WARNING - Assuming Decoceras invadens is a species
+2025-01-25 19:04:26 - __main__ - WARNING - Taxon not found: Decoceras invadens
+2025-01-25 19:04:26 - __main__ - ERROR - Taxon not found: Decoceras invadens
+2025-01-25 19:05:35 - __main__ - WARNING - Assuming Euglesa personata is a species
+2025-01-25 19:06:35 - __main__ - WARNING - Assuming Amaurobius similis is a species
+2025-01-25 19:07:33 - __main__ - WARNING - Taxon Hymenoptera can only be validated at the order level
+2025-01-25 19:10:04 - __main__ - WARNING - Assuming Pelecopsis parallela is a species
+2025-01-25 19:11:01 - __main__ - WARNING - Assuming Blidingia marginata is a species
+2025-01-25 19:11:51 - __main__ - WARNING - Assuming Euglesa milium is a species
+2025-01-25 19:14:03 - __main__ - WARNING - Assuming Arion rufus is a species
+2025-01-25 19:14:09 - __main__ - WARNING - Taxon not found: Arion rufus
+2025-01-25 19:14:09 - __main__ - ERROR - Taxon not found: Arion rufus
+2025-01-25 19:14:09 - __main__ - WARNING - Assuming Paidiscura pallens is a species
+2025-01-25 19:16:58 - __main__ - WARNING - Assuming Lekanesphaera rugicauda is a species
+2025-01-25 19:18:56 - __main__ - WARNING - Assuming Collinsia inerrans is a species
+2025-01-25 19:19:53 - __main__ - WARNING - Assuming Pelecopsis parallela is a species
+2025-01-25 19:22:41 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-25 19:22:41 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-25 19:23:46 - __main__ - WARNING - Assuming Codium fragile is a species
+2025-01-25 19:26:29 - __main__ - WARNING - Assuming Caulacanthus okamurae is a species
+2025-01-25 19:27:20 - __main__ - WARNING - Assuming Cladophora albida is a species
+2025-01-25 19:28:11 - __main__ - WARNING - Assuming Derbesia marina is a species
+2025-01-25 19:29:01 - __main__ - WARNING - Assuming Caulacanthus okamurae is a species
+2025-01-25 19:29:54 - __main__ - WARNING - Assuming Nesovitrea hammonis is a species
+2025-01-25 19:30:00 - __main__ - WARNING - Taxon not found: Nesovitrea hammonis
+2025-01-25 19:30:00 - __main__ - ERROR - Taxon not found: Nesovitrea hammonis
+2025-01-25 19:30:00 - __main__ - WARNING - Assuming Callithamnion corymbosum is a species
+2025-01-25 19:35:51 - __main__ - WARNING - Assuming Polyplaca ridens is a species
+2025-01-25 19:35:56 - __main__ - WARNING - Taxon not found: Polyplaca ridens
+2025-01-25 19:35:56 - __main__ - ERROR - Taxon not found: Polyplaca ridens
+2025-01-25 19:39:16 - __main__ - WARNING - Assuming Spisula solida is a species
+2025-01-25 19:41:19 - __main__ - WARNING - Assuming Euglesa casertana is a species
+2025-01-25 19:46:50 - __main__ - WARNING - Assuming Blidingia marginata is a species
+2025-01-25 19:47:41 - __main__ - WARNING - Assuming Chondracanthus acicularis is a species
+2025-01-25 19:48:38 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-25 19:48:38 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-25 19:49:31 - __main__ - WARNING - Assuming Codium fragile is a species
+2025-01-25 19:50:21 - __main__ - WARNING - Assuming Abra tenuis is a species
+2025-01-25 19:51:30 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-25 19:51:30 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-25 19:51:30 - __main__ - WARNING - Assuming Phyllophora pseudoceranoides is a species
+2025-01-25 19:55:54 - __main__ - WARNING - Assuming Hislopia prolixa is a species
+2025-01-25 19:55:59 - __main__ - WARNING - Taxon not found: Hislopia prolixa
+2025-01-25 19:55:59 - __main__ - ERROR - Taxon not found: Hislopia prolixa
+2025-01-25 19:55:59 - __main__ - WARNING - Assuming Codium fragile is a species
+2025-01-25 19:56:50 - __main__ - WARNING - Assuming Palaemon elegans is a species
+2025-01-25 19:57:44 - __main__ - WARNING - Assuming Xeroplexa intersecta is a species
+2025-01-25 19:58:52 - __main__ - WARNING - Assuming Cladophora albida is a species
+2025-01-25 20:00:33 - __main__ - WARNING - Assuming Caulacanthus okamurae is a species
+2025-01-25 20:03:08 - __main__ - WARNING - Assuming Phyllophora pseudoceranoides is a species
+2025-01-25 20:04:49 - __main__ - WARNING - Assuming Hislopia prolixa is a species
+2025-01-25 20:04:54 - __main__ - WARNING - Taxon not found: Hislopia prolixa
+2025-01-25 20:04:54 - __main__ - ERROR - Taxon not found: Hislopia prolixa
+2025-01-25 20:07:58 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-25 20:07:58 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-25 20:07:58 - __main__ - WARNING - Assuming Callithamnion tetragonum is a species
+2025-01-25 20:08:49 - __main__ - WARNING - Assuming Pterothamnion plumula is a species
+2025-01-25 20:10:57 - __main__ - WARNING - Assuming Vitrea contracta is a species
+2025-01-25 20:11:03 - __main__ - WARNING - Taxon not found: Vitrea contracta
+2025-01-25 20:11:03 - __main__ - ERROR - Taxon not found: Vitrea contracta
+2025-01-25 20:11:03 - __main__ - WARNING - Assuming Vallonia excentrica is a species
+2025-01-25 20:12:09 - __main__ - WARNING - Assuming Conistra erythrocephala is a species
+2025-01-25 20:16:01 - __main__ - WARNING - Taxon Hymenoptera can only be validated at the order level
+2025-01-25 20:17:16 - __main__ - WARNING - Assuming Xeroplexa intersecta is a species
+2025-01-25 20:27:22 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-25 20:27:22 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-25 20:27:22 - __main__ - WARNING - Assuming Xeroplexa intersecta is a species
+2025-01-25 20:28:23 - __main__ - WARNING - Assuming Lekanesphaera rugicauda is a species
+2025-01-25 20:29:19 - __main__ - WARNING - Assuming Xeroplexa intersecta is a species
+2025-01-25 20:32:05 - __main__ - WARNING - Assuming Abra tenuis is a species
+2025-01-25 20:33:03 - __main__ - WARNING - Assuming Decoceras invadens is a species
+2025-01-25 20:33:09 - __main__ - WARNING - Taxon not found: Decoceras invadens
+2025-01-25 20:33:09 - __main__ - ERROR - Taxon not found: Decoceras invadens
+2025-01-25 20:34:16 - __main__ - WARNING - Taxon Hymenoptera can only be validated at the order level
+2025-01-25 20:35:33 - __main__ - WARNING - Assuming Lekanesphaera rugicauda is a species
+2025-01-25 20:37:38 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-25 20:37:38 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-25 20:42:16 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-25 20:42:16 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-25 20:42:16 - __main__ - WARNING - Assuming Abra tenuis is a species
+2025-01-25 20:43:22 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-25 20:43:22 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-25 20:44:23 - __main__ - WARNING - Assuming Xeroplexa intersecta is a species
+2025-01-25 20:47:42 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-25 20:47:42 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-25 20:47:42 - __main__ - WARNING - Assuming Chondracanthus acicularis is a species
+2025-01-25 20:49:26 - __main__ - WARNING - Assuming Osmundea pinnatifida is a species
+2025-01-25 20:50:19 - __main__ - WARNING - Taxon Hymenoptera can only be validated at the order level
+2025-01-25 20:52:45 - __main__ - WARNING - Assuming Nephrotoma guestfalica is a species
+2025-01-25 20:54:00 - __main__ - WARNING - Taxon not found: Myrionema grateloupiae
+2025-01-25 20:54:00 - __main__ - ERROR - Taxon not found: Myrionema grateloupiae
+2025-01-25 20:54:00 - __main__ - WARNING - Assuming Abra tenuis is a species
+2025-01-25 20:55:01 - __main__ - WARNING - Assuming Codium fragile is a species
+2025-01-25 20:57:09 - __main__ - WARNING - Assuming Exephanes ischioxanthus is a species
+2025-01-25 20:58:29 - __main__ - WARNING - Assuming Lipaphis pseudobrassicae is a species
+2025-01-25 20:59:46 - __main__ - WARNING - Assuming Callithamnion corymbosum is a species
+2025-01-25 21:00:36 - __main__ - WARNING - Assuming Abra tenuis is a species
+2025-01-25 21:01:36 - __main__ - WARNING - Assuming Arctosa leopardus is a species
+2025-01-25 21:03:40 - __main__ - WARNING - Assuming Drapetisca socialis is a species
+2025-01-25 21:07:25 - __main__ - WARNING - Assuming Ceramium virgatum is a species
+2025-01-25 21:08:21 - __main__ - WARNING - Taxon not found: Klokdiertje indet.
+2025-01-25 21:08:21 - __main__ - ERROR - Taxon not found: Klokdiertje indet.
+2025-01-25 21:08:21 - __main__ - WARNING - Assuming Actinia equina is a species
+2025-01-25 21:10:38 - __main__ - WARNING - Assuming Haloa japonica is a species
+2025-01-25 21:11:40 - __main__ - WARNING - Assuming Carychium tridentatum is a species
+2025-01-25 21:12:42 - __main__ - WARNING - Assuming Psemmechinus miliaris is a species
+2025-01-25 21:12:47 - __main__ - WARNING - Taxon not found: Psemmechinus miliaris
+2025-01-25 21:12:47 - __main__ - ERROR - Taxon not found: Psemmechinus miliaris
+2025-01-25 21:13:56 - __main__ - WARNING - Assuming Mythimna straminea is a species
+2025-01-25 21:16:18 - __main__ - WARNING - Assuming Esperia sulphurella is a species
+2025-01-25 21:22:20 - __main__ - WARNING - Assuming Palaemon elegans is a species
+2025-01-25 21:23:18 - __main__ - WARNING - Assuming Brachycaudus lateralis is a species
+2025-01-25 21:25:36 - __main__ - WARNING - Assuming Sphyradium doliolum is a species
+2025-01-25 21:27:55 - __main__ - WARNING - Assuming Lehmannia marginata is a species
+2025-01-25 21:29:50 - __main__ - WARNING - Assuming Tubularia indivisa is a species
+2025-01-25 21:30:51 - __main__ - WARNING - Assuming Bithynia leachii is a species
+2025-01-25 21:33:52 - __main__ - WARNING - Taxon not found: Larinioides sericatus
+2025-01-25 21:33:52 - __main__ - ERROR - Taxon not found: Larinioides sericatus
+2025-01-25 21:33:52 - __main__ - WARNING - Assuming Blidingia marginata is a species
+2025-01-25 21:39:41 - __main__ - WARNING - Assuming Acicula fusca is a species
+2025-01-25 21:39:46 - __main__ - WARNING - Taxon not found: Acicula fusca
+2025-01-25 21:39:46 - __main__ - ERROR - Taxon not found: Acicula fusca
+2025-01-25 21:40:42 - __main__ - WARNING - Assuming Microneta viaria is a species
+2025-01-25 21:41:38 - __main__ - WARNING - Assuming Hypomma bituberculatum is a species
+2025-01-25 21:42:34 - __main__ - WARNING - Assuming Brachygaster minuta is a species
+2025-01-25 21:42:39 - __main__ - WARNING - Taxon not found: Brachygaster minuta
+2025-01-25 21:42:39 - __main__ - ERROR - Taxon not found: Brachygaster minuta
+2025-01-25 21:42:39 - __main__ - WARNING - Assuming Coelichneumon haemorrhoidalis is a species
+2025-01-25 21:45:11 - __main__ - WARNING - Assuming Eutanyacra picta is a species
+2025-01-25 21:45:16 - __main__ - WARNING - Taxon not found: Eutanyacra picta
+2025-01-25 21:45:16 - __main__ - ERROR - Taxon not found: Eutanyacra picta
+2025-01-25 21:47:57 - __main__ - WARNING - Assuming Cladophora albida is a species
+2025-01-25 21:48:48 - __main__ - WARNING - Assuming Pylaiella littoralis is a species
+2025-01-25 21:49:50 - __main__ - WARNING - Assuming Hislopia prolixa is a species
+2025-01-25 21:49:55 - __main__ - WARNING - Taxon not found: Hislopia prolixa
+2025-01-25 21:49:55 - __main__ - ERROR - Taxon not found: Hislopia prolixa
+2025-01-25 21:49:55 - __main__ - WARNING - Assuming Ceramium virgatum is a species
+2025-01-25 21:50:45 - __main__ - WARNING - Assuming Ulva australis is a species
+2025-01-25 21:51:36 - __main__ - WARNING - Assuming Callithamnion corymbosum is a species
+2025-01-25 21:53:17 - __main__ - WARNING - Assuming Palaemon elegans is a species
+2025-01-25 21:55:04 - __main__ - WARNING - Assuming Psemmechinus miliaris is a species
+2025-01-25 21:55:09 - __main__ - WARNING - Taxon not found: Psemmechinus miliaris
+2025-01-25 21:55:09 - __main__ - ERROR - Taxon not found: Psemmechinus miliaris
+2025-01-25 21:56:25 - __main__ - WARNING - Assuming Osmundea pinnatifida is a species
+2025-01-25 21:57:15 - __main__ - WARNING - Assuming Spisula solida is a species
+2025-01-25 21:59:06 - __main__ - WARNING - Assuming Gastroclonium ovatum is a species
+2025-01-25 21:59:56 - __main__ - WARNING - Assuming Vertebrata fucoides is a species
+2025-01-25 22:02:37 - __main__ - WARNING - Assuming Callithamnion corymbosum is a species
+2025-01-25 22:03:27 - __main__ - WARNING - Assuming Derbesia marina is a species
+2025-01-25 22:07:08 - __main__ - WARNING - Assuming Codium fragile is a species
+2025-01-25 22:07:59 - __main__ - WARNING - Assuming Blidingia marginata is a species
+2025-01-25 22:08:54 - __main__ - WARNING - Taxon Diptera can only be validated at the order level
+2025-01-25 22:10:09 - __main__ - WARNING - Assuming Pimpla rufipes is a species
+2025-01-25 22:11:26 - __main__ - WARNING - Assuming Avenionia roberti is a species
+2025-01-25 22:11:31 - __main__ - WARNING - Taxon not found: Avenionia roberti
+2025-01-25 22:11:31 - __main__ - ERROR - Taxon not found: Avenionia roberti
+2025-01-25 22:14:54 - __main__ - WARNING - Assuming Hemigrapsus sanguineus is a species
+2025-01-25 22:19:24 - __main__ - WARNING - Assuming Actinia equina is a species
+2025-01-25 22:22:19 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-25 22:22:19 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-25 22:22:19 - __main__ - WARNING - Assuming Spisula solida is a species
+2025-01-25 22:23:19 - __main__ - WARNING - Assuming Ceramium virgatum is a species
+2025-01-25 22:24:10 - __main__ - WARNING - Assuming Callithamnion corymbosum is a species
+2025-01-25 22:26:52 - __main__ - WARNING - Assuming Macrosiphum cholodkovskyi is a species
+2025-01-25 22:30:10 - __main__ - WARNING - Assuming Dicymbium nigrum is a species
+2025-01-25 22:31:13 - __main__ - WARNING - Assuming Callithamnion corymbosum is a species
+2025-01-25 22:35:35 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-25 22:35:35 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-25 22:35:35 - __main__ - WARNING - Assuming Phyllophora pseudoceranoides is a species
+2025-01-25 22:37:15 - __main__ - WARNING - Assuming Ulva australis is a species
+2025-01-25 22:39:07 - __main__ - WARNING - Assuming Blidingia marginata is a species
+2025-01-25 22:42:11 - __main__ - WARNING - Taxon not found: Gaillona hookeri
+2025-01-25 22:42:11 - __main__ - ERROR - Taxon not found: Gaillona hookeri
+2025-01-25 22:44:50 - __main__ - WARNING - Assuming Tubularia indivisa is a species
+2025-01-25 22:46:25 - __main__ - WARNING - Assuming Blidingia marginata is a species
+2025-01-25 22:47:13 - __main__ - WARNING - Assuming Vertebrata fucoides is a species
+2025-01-25 22:48:01 - __main__ - WARNING - Assuming Fucus serratus is a species
+2025-01-25 22:50:31 - __main__ - WARNING - Assuming Vertebrata fucoides is a species
+2025-01-25 22:51:17 - __main__ - WARNING - Assuming Eobania vermiculata is a species
+2025-01-25 22:52:13 - __main__ - WARNING - Assuming Cladophora albida is a species
+2025-01-25 22:53:44 - __main__ - WARNING - Assuming Acanthinula aculeata is a species
+2025-01-25 22:55:53 - __main__ - WARNING - Taxon not found: Nitophyllum stellato-corticatum
+2025-01-25 22:55:53 - __main__ - ERROR - Taxon not found: Nitophyllum stellato-corticatum
+2025-01-25 22:55:53 - __main__ - WARNING - Assuming Hislopia prolixa is a species
+2025-01-25 22:55:53 - __main__ - WARNING - Taxon not found: Hislopia prolixa
+2025-01-25 22:55:53 - __main__ - ERROR - Taxon not found: Hislopia prolixa
+2025-01-25 22:56:59 - __main__ - WARNING - Taxon not found: Klokdiertje indet.
+2025-01-25 22:56:59 - __main__ - ERROR - Taxon not found: Klokdiertje indet.
+2025-01-25 22:58:36 - __main__ - WARNING - Assuming Euglesa casertana is a species
+2025-01-25 22:59:38 - __main__ - WARNING - Assuming Psemmechinus miliaris is a species
+2025-01-25 22:59:38 - __main__ - WARNING - Taxon not found: Psemmechinus miliaris
+2025-01-25 22:59:38 - __main__ - ERROR - Taxon not found: Psemmechinus miliaris
+2025-01-25 23:00:24 - __main__ - WARNING - Assuming Antithamnionella spirographidis is a species
+2025-01-25 23:01:10 - __main__ - WARNING - Assuming Arctosa leopardus is a species
+2025-01-25 23:02:54 - __main__ - WARNING - Assuming Pion fortipes is a species
+2025-01-25 23:04:07 - __main__ - WARNING - Taxon Diptera can only be validated at the order level
+2025-01-25 23:05:19 - __main__ - WARNING - Taxon not found: Uroleucon cichorii grossum
+2025-01-25 23:05:19 - __main__ - ERROR - Taxon not found: Uroleucon cichorii grossum
+2025-01-25 23:06:05 - __main__ - WARNING - Assuming Callithamnion corymbosum is a species
+2025-01-25 23:08:21 - __main__ - WARNING - Assuming Callithamnion corymbosum is a species
+2025-01-25 23:09:07 - __main__ - WARNING - Assuming Lehmannia marginata is a species
+2025-01-25 23:10:02 - __main__ - WARNING - Assuming Dictyna uncinata is a species
+2025-01-25 23:10:52 - __main__ - WARNING - Assuming Punctum pygmaeum is a species
+2025-01-25 23:12:48 - __main__ - WARNING - Taxon not found: Meligethes sp.
+2025-01-25 23:12:48 - __main__ - ERROR - Taxon not found: Meligethes sp.
+2025-01-25 23:12:48 - __main__ - WARNING - Assuming Cernuella neglecta is a species
+2025-01-25 23:16:50 - __main__ - WARNING - Taxon not found: Borkhausenia nefrax
+2025-01-25 23:16:50 - __main__ - ERROR - Taxon not found: Borkhausenia nefrax
+2025-01-25 23:16:51 - __main__ - WARNING - Taxon not found: Empis sericans
+2025-01-25 23:16:51 - __main__ - ERROR - Taxon not found: Empis sericans
+2025-01-25 23:17:53 - __main__ - WARNING - Assuming Littorina fabalis is a species
+2025-01-25 23:20:00 - __main__ - WARNING - Assuming Drymonia ruficornis is a species
+2025-01-25 23:21:06 - __main__ - WARNING - Assuming Oligia strigilis is a species
+2025-01-25 23:23:17 - __main__ - WARNING - Assuming Pelecopsis parallela is a species
+2025-01-25 23:24:15 - __main__ - WARNING - Assuming Isotomurus antennalis is a species
+2025-01-25 23:25:14 - __main__ - WARNING - Assuming Tapinocyba praecox is a species
+2025-01-25 23:27:23 - __main__ - WARNING - Taxon not found: Scatella lutosa
+2025-01-25 23:27:23 - __main__ - ERROR - Taxon not found: Scatella lutosa
+2025-01-25 23:28:18 - __main__ - WARNING - Assuming Hemigrapsus sanguineus is a species
+2025-01-25 23:31:06 - __main__ - WARNING - Assuming Spisula solida is a species
+2025-01-25 23:32:02 - __main__ - WARNING - Assuming Chylocladia verticillata is a species
+2025-01-25 23:33:35 - __main__ - WARNING - Assuming Callithamnion corymbosum is a species
+2025-01-25 23:34:22 - __main__ - WARNING - Taxon not found: Methia trium
+2025-01-25 23:34:22 - __main__ - ERROR - Taxon not found: Methia trium
+2025-01-25 23:34:22 - __main__ - WARNING - Assuming Stomaphis longirostris is a species
+2025-01-25 23:37:41 - __main__ - WARNING - Assuming Uroleucon sonchi is a species
+2025-01-25 23:38:44 - __main__ - WARNING - Assuming Chamelea striatula is a species
+2025-01-25 23:41:23 - __main__ - WARNING - Assuming Buathra laborator is a species
+2025-01-25 23:47:12 - __main__ - WARNING - Assuming Neotoxoptera formosana is a species
+2025-01-25 23:51:18 - __main__ - WARNING - Assuming Centromerus prudens is a species
+2025-01-25 23:52:08 - __main__ - WARNING - Assuming Stenarella domator is a species
+2025-01-25 23:54:55 - __main__ - WARNING - Taxon not found: Myrionema grateloupiae
+2025-01-25 23:54:55 - __main__ - ERROR - Taxon not found: Myrionema grateloupiae
+2025-01-25 23:54:55 - __main__ - WARNING - Assuming Abra tenuis is a species
+2025-01-25 23:55:50 - __main__ - WARNING - Assuming Pylaiella littoralis is a species
+2025-01-25 23:56:48 - __main__ - WARNING - Assuming Dicymbium nigrum is a species
+2025-01-25 23:58:27 - __main__ - WARNING - Assuming Hislopia prolixa is a species
+2025-01-25 23:58:28 - __main__ - WARNING - Taxon not found: Hislopia prolixa
+2025-01-25 23:58:28 - __main__ - ERROR - Taxon not found: Hislopia prolixa
+2025-01-25 23:58:28 - __main__ - WARNING - Assuming Pylaiella littoralis is a species
+2025-01-26 00:02:39 - __main__ - WARNING - Assuming Cladophora albida is a species
+2025-01-26 00:03:26 - __main__ - WARNING - Assuming Codium fragile is a species
+2025-01-26 00:04:59 - __main__ - WARNING - Assuming Chondracanthus acicularis is a species
+2025-01-26 00:06:31 - __main__ - WARNING - Assuming Gastroclonium ovatum is a species
+2025-01-26 00:08:08 - __main__ - WARNING - Assuming Erythroglossum laciniatum is a species
+2025-01-26 00:08:08 - __main__ - WARNING - Taxon not found: Erythroglossum laciniatum
+2025-01-26 00:08:08 - __main__ - ERROR - Taxon not found: Erythroglossum laciniatum
+2025-01-26 00:08:54 - __main__ - WARNING - Assuming Vertebrata fucoides is a species
+2025-01-26 00:09:39 - __main__ - WARNING - Assuming Caulacanthus okamurae is a species
+2025-01-26 00:12:19 - __main__ - WARNING - Taxon Collembola can only be validated at the order level
+2025-01-26 00:12:27 - __main__ - ERROR - Expected taxon not found: order for Collembola (class)
+2025-01-26 00:12:27 - __main__ - WARNING - Assuming Nesovitrea hammonis is a species
+2025-01-26 00:12:27 - __main__ - WARNING - Taxon not found: Nesovitrea hammonis
+2025-01-26 00:12:27 - __main__ - ERROR - Taxon not found: Nesovitrea hammonis
+2025-01-26 00:12:28 - __main__ - WARNING - Taxon not found: Klokdiertje indet.
+2025-01-26 00:12:28 - __main__ - ERROR - Taxon not found: Klokdiertje indet.
+2025-01-26 00:12:28 - __main__ - WARNING - Assuming Derbesia marina is a species
+2025-01-26 00:14:05 - __main__ - WARNING - Assuming Euglesa milium is a species
+2025-01-26 00:16:36 - __main__ - WARNING - Assuming Hemisotoma thermophila is a species
+2025-01-26 00:17:28 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 00:17:28 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 00:19:03 - __main__ - WARNING - Assuming Anisus vortex is a species
+2025-01-26 00:20:07 - __main__ - WARNING - Assuming Codium fragile is a species
+2025-01-26 00:20:54 - __main__ - WARNING - Assuming Palliduphantes pallidus is a species
+2025-01-26 00:21:47 - __main__ - WARNING - Assuming Actinia equina is a species
+2025-01-26 00:22:39 - __main__ - WARNING - Assuming Psemmechinus miliaris is a species
+2025-01-26 00:22:39 - __main__ - WARNING - Taxon not found: Psemmechinus miliaris
+2025-01-26 00:22:39 - __main__ - ERROR - Taxon not found: Psemmechinus miliaris
+2025-01-26 00:22:39 - __main__ - WARNING - Assuming Euglesa milium is a species
+2025-01-26 00:23:35 - __main__ - WARNING - Assuming Gastroclonium ovatum is a species
+2025-01-26 00:28:00 - __main__ - WARNING - Assuming Phyllophora pseudoceranoides is a species
+2025-01-26 00:29:32 - __main__ - WARNING - Assuming Hemigrapsus sanguineus is a species
+2025-01-26 00:30:21 - __main__ - WARNING - Taxon not found: Gaillona hookeri
+2025-01-26 00:30:21 - __main__ - ERROR - Taxon not found: Gaillona hookeri
+2025-01-26 00:30:21 - __main__ - WARNING - Assuming Palaemon elegans is a species
+2025-01-26 00:31:12 - __main__ - WARNING - Assuming Phyllophora pseudoceranoides is a species
+2025-01-26 00:32:43 - __main__ - WARNING - Assuming Erythroglossum laciniatum is a species
+2025-01-26 00:32:44 - __main__ - WARNING - Taxon not found: Erythroglossum laciniatum
+2025-01-26 00:32:44 - __main__ - ERROR - Taxon not found: Erythroglossum laciniatum
+2025-01-26 00:32:44 - __main__ - WARNING - Assuming Derbesia marina is a species
+2025-01-26 00:33:30 - __main__ - WARNING - Assuming Palaemon elegans is a species
+2025-01-26 00:34:19 - __main__ - WARNING - Taxon Hymenoptera can only be validated at the order level
+2025-01-26 00:36:11 - __main__ - WARNING - Assuming Fucus serratus is a species
+2025-01-26 00:37:07 - __main__ - WARNING - Assuming Porphyra umbilicalis is a species
+2025-01-26 00:38:42 - __main__ - WARNING - Assuming Ceramium virgatum is a species
+2025-01-26 00:39:29 - __main__ - WARNING - Assuming Donacia clavipes is a species
+2025-01-26 00:40:39 - __main__ - WARNING - Assuming Discus rotundatus is a species
+2025-01-26 00:42:49 - __main__ - WARNING - Assuming Macoma balthica is a species
+2025-01-26 00:47:44 - __main__ - WARNING - Taxon not found: Gaillona hookeri
+2025-01-26 00:47:44 - __main__ - ERROR - Taxon not found: Gaillona hookeri
+2025-01-26 00:47:44 - __main__ - WARNING - Assuming Gastroclonium ovatum is a species
+2025-01-26 00:48:30 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 00:48:30 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 00:49:42 - __main__ - WARNING - Assuming Glypta trochanterata is a species
+2025-01-26 00:49:42 - __main__ - WARNING - Taxon not found: Glypta trochanterata
+2025-01-26 00:49:42 - __main__ - ERROR - Taxon not found: Glypta trochanterata
+2025-01-26 00:50:53 - __main__ - WARNING - Assuming Ulva australis is a species
+2025-01-26 00:51:40 - __main__ - WARNING - Assuming Hemisotoma thermophila is a species
+2025-01-26 00:55:28 - __main__ - WARNING - Assuming Callithamnion tetragonum is a species
+2025-01-26 00:56:16 - __main__ - WARNING - Assuming Erythroglossum laciniatum is a species
+2025-01-26 00:56:16 - __main__ - WARNING - Taxon not found: Erythroglossum laciniatum
+2025-01-26 00:56:16 - __main__ - ERROR - Taxon not found: Erythroglossum laciniatum
+2025-01-26 00:56:16 - __main__ - WARNING - Taxon not found: Meligethes sp.
+2025-01-26 00:56:16 - __main__ - ERROR - Taxon not found: Meligethes sp.
+2025-01-26 00:56:17 - __main__ - WARNING - Taxon not found: Scatella lacustris
+2025-01-26 00:56:17 - __main__ - ERROR - Taxon not found: Scatella lacustris
+2025-01-26 00:56:17 - __main__ - WARNING - Assuming Littorina littorea is a species
+2025-01-26 00:57:13 - __main__ - WARNING - Taxon Diptera can only be validated at the order level
+2025-01-26 00:59:27 - __main__ - WARNING - Assuming Noctua fimbriata is a species
+2025-01-26 01:00:33 - __main__ - WARNING - Assuming Apamea monoglypha is a species
+2025-01-26 01:02:54 - __main__ - WARNING - Assuming Hislopia prolixa is a species
+2025-01-26 01:02:54 - __main__ - WARNING - Taxon not found: Hislopia prolixa
+2025-01-26 01:02:54 - __main__ - ERROR - Taxon not found: Hislopia prolixa
+2025-01-26 01:03:58 - __main__ - WARNING - Assuming Buathra laborator is a species
+2025-01-26 01:05:03 - __main__ - WARNING - Taxon not found: Philygria interstincta
+2025-01-26 01:05:03 - __main__ - ERROR - Taxon not found: Philygria interstincta
+2025-01-26 01:11:13 - __main__ - WARNING - Assuming Lahmannia marginata is a species
+2025-01-26 01:11:13 - __main__ - WARNING - Taxon not found: Lahmannia marginata
+2025-01-26 01:11:13 - __main__ - ERROR - Taxon not found: Lahmannia marginata
+2025-01-26 01:11:13 - __main__ - WARNING - Assuming Limax cinereoniger is a species
+2025-01-26 01:12:26 - __main__ - WARNING - Assuming Cladophora albida is a species
+2025-01-26 01:17:06 - __main__ - WARNING - Taxon Lepidoptera can only be validated at the order level
+2025-01-26 01:18:15 - __main__ - WARNING - Assuming Selenia tetralunaria is a species
+2025-01-26 01:24:03 - __main__ - WARNING - Assuming Diplocephalus picinus is a species
+2025-01-26 01:25:45 - __main__ - WARNING - Assuming Thaumatogelis sylvicola is a species
+2025-01-26 01:26:59 - __main__ - WARNING - Assuming Barylypa uniguttata is a species
+2025-01-26 01:27:00 - __main__ - WARNING - Taxon not found: Barylypa uniguttata
+2025-01-26 01:27:00 - __main__ - ERROR - Taxon not found: Barylypa uniguttata
+2025-01-26 01:27:00 - __main__ - WARNING - Assuming Lissonota pleuralis is a species
+2025-01-26 01:27:00 - __main__ - WARNING - Taxon not found: Lissonota pleuralis
+2025-01-26 01:27:00 - __main__ - ERROR - Taxon not found: Lissonota pleuralis
+2025-01-26 01:27:00 - __main__ - WARNING - Assuming Uroleucon sonchi is a species
+2025-01-26 01:28:06 - __main__ - WARNING - Assuming Spilothyrateles illuminatorius is a species
+2025-01-26 01:29:16 - __main__ - WARNING - Assuming Hemichneumon subdolus is a species
+2025-01-26 01:33:10 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 01:33:10 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 01:33:10 - __main__ - WARNING - Assuming Euglesa milium is a species
+2025-01-26 01:34:06 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 01:34:06 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 01:34:06 - __main__ - WARNING - Assuming Spisula solida is a species
+2025-01-26 01:35:01 - __main__ - WARNING - Assuming Osmundea pinnatifida is a species
+2025-01-26 01:35:47 - __main__ - WARNING - Assuming Gastroclonium ovatum is a species
+2025-01-26 01:37:18 - __main__ - WARNING - Assuming Entomobrya schoetti is a species
+2025-01-26 01:37:19 - __main__ - WARNING - Taxon not found: Entomobrya schoetti
+2025-01-26 01:37:19 - __main__ - ERROR - Taxon not found: Entomobrya schoetti
+2025-01-26 01:38:06 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 01:38:06 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 01:42:42 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 01:42:42 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 01:43:29 - __main__ - WARNING - Assuming Antithamnionella spirographidis is a species
+2025-01-26 01:44:15 - __main__ - WARNING - Assuming Blidingia marginata is a species
+2025-01-26 01:45:00 - __main__ - WARNING - Assuming Phyllophora pseudoceranoides is a species
+2025-01-26 01:46:42 - __main__ - WARNING - Assuming Derbesia marina is a species
+2025-01-26 01:47:28 - __main__ - WARNING - Assuming Donacia clavipes is a species
+2025-01-26 01:52:14 - __main__ - WARNING - Assuming Blidingia marginata is a species
+2025-01-26 01:54:11 - __main__ - WARNING - Taxon not found: Myrionema grateloupiae
+2025-01-26 01:54:11 - __main__ - ERROR - Taxon not found: Myrionema grateloupiae
+2025-01-26 01:54:11 - __main__ - WARNING - Assuming Hislopia prolixa is a species
+2025-01-26 01:54:11 - __main__ - WARNING - Taxon not found: Hislopia prolixa
+2025-01-26 01:54:11 - __main__ - ERROR - Taxon not found: Hislopia prolixa
+2025-01-26 01:54:11 - __main__ - WARNING - Assuming Fruticicola fruticum is a species
+2025-01-26 01:55:59 - __main__ - WARNING - Assuming Dicymbium nigrum is a species
+2025-01-26 01:56:50 - __main__ - WARNING - Assuming Ibalia leucospoides is a species
+2025-01-26 01:58:02 - __main__ - WARNING - Assuming Psemmechinus miliaris is a species
+2025-01-26 01:58:02 - __main__ - WARNING - Taxon not found: Psemmechinus miliaris
+2025-01-26 01:58:02 - __main__ - ERROR - Taxon not found: Psemmechinus miliaris
+2025-01-26 01:58:02 - __main__ - WARNING - Assuming Blidingia marginata is a species
+2025-01-26 01:58:48 - __main__ - WARNING - Assuming Blidingia marginata is a species
+2025-01-26 02:00:23 - __main__ - WARNING - Assuming Abra tenuis is a species
+2025-01-26 02:01:18 - __main__ - WARNING - Assuming Phyllophora pseudoceranoides is a species
+2025-01-26 02:02:04 - __main__ - WARNING - Assuming Vertebrata fucoides is a species
+2025-01-26 02:02:50 - __main__ - WARNING - Assuming Blidingia marginata is a species
+2025-01-26 02:03:36 - __main__ - WARNING - Assuming Phyllophora pseudoceranoides is a species
+2025-01-26 02:04:22 - __main__ - WARNING - Assuming Osmundea pinnatifida is a species
+2025-01-26 02:05:08 - __main__ - WARNING - Assuming Eucobresia diaphana is a species
+2025-01-26 02:13:38 - __main__ - WARNING - Assuming Hemigrapsus sanguineus is a species
+2025-01-26 02:14:30 - __main__ - WARNING - Assuming Callithamnion tetragonum is a species
+2025-01-26 02:15:15 - __main__ - WARNING - Assuming Blidingia marginata is a species
+2025-01-26 02:16:52 - __main__ - WARNING - Assuming Blidingia marginata is a species
+2025-01-26 02:18:23 - __main__ - WARNING - Assuming Blidingia marginata is a species
+2025-01-26 02:19:55 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 02:19:55 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 02:21:06 - __main__ - WARNING - Assuming Hislopia prolixa is a species
+2025-01-26 02:21:06 - __main__ - WARNING - Taxon not found: Hislopia prolixa
+2025-01-26 02:21:06 - __main__ - ERROR - Taxon not found: Hislopia prolixa
+2025-01-26 02:21:59 - __main__ - WARNING - Assuming Carychium minimum is a species
+2025-01-26 02:22:59 - __main__ - WARNING - Assuming Clubiona comta is a species
+2025-01-26 02:23:49 - __main__ - WARNING - Assuming Haplodrassus dalmatensis is a species
+2025-01-26 02:24:40 - __main__ - WARNING - Taxon not found: Klokdiertje indet.
+2025-01-26 02:24:40 - __main__ - ERROR - Taxon not found: Klokdiertje indet.
+2025-01-26 02:24:40 - __main__ - WARNING - Assuming Hislopia prolixa is a species
+2025-01-26 02:24:41 - __main__ - WARNING - Taxon not found: Hislopia prolixa
+2025-01-26 02:24:41 - __main__ - ERROR - Taxon not found: Hislopia prolixa
+2025-01-26 02:25:54 - __main__ - WARNING - Assuming Odhneripisidium moitessierianum is a species
+2025-01-26 02:26:53 - __main__ - WARNING - Assuming Euglesa subtruncata is a species
+2025-01-26 02:26:54 - __main__ - WARNING - Taxon not found: Euglesa subtruncata
+2025-01-26 02:26:54 - __main__ - ERROR - Taxon not found: Euglesa subtruncata
+2025-01-26 02:26:54 - __main__ - WARNING - Assuming Codium fragile is a species
+2025-01-26 02:29:58 - __main__ - WARNING - Taxon not found: Meligethes sp.
+2025-01-26 02:29:58 - __main__ - ERROR - Taxon not found: Meligethes sp.
+2025-01-26 02:29:58 - __main__ - WARNING - Assuming Gyraulus parvus is a species
+2025-01-26 02:30:55 - __main__ - WARNING - Assuming Potamopyrgus antipodarum is a species
+2025-01-26 02:31:52 - __main__ - WARNING - Assuming Codium fragile is a species
+2025-01-26 02:32:38 - __main__ - WARNING - Assuming Codium fragile is a species
+2025-01-26 02:33:25 - __main__ - WARNING - Assuming Agenioideus cinctellus is a species
+2025-01-26 02:34:30 - __main__ - WARNING - Assuming Derbesia marina is a species
+2025-01-26 02:39:57 - __main__ - WARNING - Assuming Pachycnemia hippocastanaria is a species
+2025-01-26 02:41:03 - __main__ - WARNING - Assuming Cionus scrophulariae is a species
+2025-01-26 02:42:09 - __main__ - WARNING - Taxon not found: Radix (Ampullanacea) balthica
+2025-01-26 02:42:09 - __main__ - ERROR - Taxon not found: Radix (Ampullanacea) balthica
+2025-01-26 02:42:09 - __main__ - WARNING - Assuming Physa acuta is a species
+2025-01-26 02:42:09 - __main__ - WARNING - Taxon not found: Physa acuta
+2025-01-26 02:42:09 - __main__ - ERROR - Taxon not found: Physa acuta
+2025-01-26 02:45:22 - __main__ - WARNING - Assuming Bupalus piniaria is a species
+2025-01-26 02:47:36 - __main__ - WARNING - Assuming Thecabius affinis is a species
+2025-01-26 02:49:44 - __main__ - WARNING - Assuming Tremex fuscicornis is a species
+2025-01-26 02:53:28 - Blastn - ERROR - Command failed with return code -11
+2025-01-26 02:53:28 - BlastRunner - ERROR - Error running local BLASTN: Command 'blastn' died with <Signals.SIGSEGV: 11>.
+2025-01-26 02:53:28 - __main__ - ERROR - Error validating record: Command 'blastn' died with <Signals.SIGSEGV: 11>.
+2025-01-26 02:53:28 - __main__ - WARNING - Assuming Stenophylax permistus is a species
+2025-01-26 02:54:38 - __main__ - WARNING - Assuming Euglesa milium is a species
+2025-01-26 02:55:35 - __main__ - WARNING - Assuming Palaemon elegans is a species
+2025-01-26 02:57:32 - __main__ - WARNING - Assuming Subcoccinella vigintiquatuorpunctata is a species
+2025-01-26 02:57:32 - __main__ - WARNING - Taxon not found: Subcoccinella vigintiquatuorpunctata
+2025-01-26 02:57:32 - __main__ - ERROR - Taxon not found: Subcoccinella vigintiquatuorpunctata
+2025-01-26 02:58:35 - __main__ - WARNING - Assuming Valvata piscinalis is a species
+2025-01-26 03:01:46 - __main__ - WARNING - Taxon not found: Uroleucon cichorii grossum
+2025-01-26 03:01:46 - __main__ - ERROR - Taxon not found: Uroleucon cichorii grossum
+2025-01-26 03:01:46 - __main__ - WARNING - Assuming Alopecosa pulverulenta is a species
+2025-01-26 03:03:34 - __main__ - WARNING - Assuming Donacia clavipes is a species
+2025-01-26 03:04:45 - __main__ - WARNING - Taxon not found: Copestylum chalybescens
+2025-01-26 03:04:45 - __main__ - ERROR - Taxon not found: Copestylum chalybescens
+2025-01-26 03:05:54 - __main__ - WARNING - Assuming Gluphisia crenata is a species
+2025-01-26 03:07:02 - __main__ - WARNING - Taxon Lepidoptera can only be validated at the order level
+2025-01-26 03:10:33 - __main__ - WARNING - Taxon not found: Phyllobius pilicornis
+2025-01-26 03:10:33 - __main__ - ERROR - Taxon not found: Phyllobius pilicornis
+2025-01-26 03:10:33 - __main__ - WARNING - Assuming Chloroclysta siterata is a species
+2025-01-26 03:11:39 - __main__ - WARNING - Assuming Tuberolachnus salignus is a species
+2025-01-26 03:13:39 - __main__ - WARNING - Assuming Tapinocyba praecox is a species
+2025-01-26 03:17:46 - __main__ - WARNING - Assuming Ctenichneumon panzeri is a species
+2025-01-26 03:17:47 - __main__ - WARNING - Taxon not found: Ctenichneumon panzeri
+2025-01-26 03:17:47 - __main__ - ERROR - Taxon not found: Ctenichneumon panzeri
+2025-01-26 03:17:47 - __main__ - WARNING - Assuming Collyria coxator is a species
+2025-01-26 03:19:04 - __main__ - WARNING - Assuming Barylypa propugnator is a species
+2025-01-26 03:20:12 - __main__ - WARNING - Assuming Buathra laborator is a species
+2025-01-26 03:22:52 - __main__ - WARNING - Assuming Myosotella myosotis is a species
+2025-01-26 03:24:46 - __main__ - WARNING - Assuming Gastroclonium ovatum is a species
+2025-01-26 03:27:06 - __main__ - WARNING - Assuming Chondracanthus acicularis is a species
+2025-01-26 03:27:51 - __main__ - WARNING - Assuming Avenionia roberti is a species
+2025-01-26 03:27:51 - __main__ - WARNING - Taxon not found: Avenionia roberti
+2025-01-26 03:27:51 - __main__ - ERROR - Taxon not found: Avenionia roberti
+2025-01-26 03:30:09 - __main__ - WARNING - Assuming Anisus vortex is a species
+2025-01-26 03:31:05 - __main__ - WARNING - Assuming Phyllophora pseudoceranoides is a species
+2025-01-26 03:34:10 - __main__ - WARNING - Assuming Callithamnion corymbosum is a species
+2025-01-26 03:39:20 - __main__ - WARNING - Assuming Microneta viaria is a species
+2025-01-26 03:41:07 - __main__ - WARNING - Taxon not found: Gaillona hookeri
+2025-01-26 03:41:07 - __main__ - ERROR - Taxon not found: Gaillona hookeri
+2025-01-26 03:41:07 - __main__ - WARNING - Assuming Stomaphis longirostris is a species
+2025-01-26 03:42:12 - __main__ - WARNING - Taxon not found: Melanimon tibialis
+2025-01-26 03:42:12 - __main__ - ERROR - Taxon not found: Melanimon tibialis
+2025-01-26 03:44:07 - __main__ - WARNING - Taxon not found: Megamelodes quadrimaculatus
+2025-01-26 03:44:07 - __main__ - ERROR - Taxon not found: Megamelodes quadrimaculatus
+2025-01-26 03:44:07 - __main__ - WARNING - Taxon not found: Gaillona hookeri
+2025-01-26 03:44:07 - __main__ - ERROR - Taxon not found: Gaillona hookeri
+2025-01-26 03:44:07 - __main__ - WARNING - Assuming Corbicula fluminea is a species
+2025-01-26 03:45:05 - __main__ - WARNING - Assuming Donacia clavipes is a species
+2025-01-26 03:49:42 - __main__ - WARNING - Assuming Macoma balthica is a species
+2025-01-26 03:51:52 - __main__ - WARNING - Assuming Codium fragile is a species
+2025-01-26 03:52:39 - __main__ - WARNING - Assuming Thecabius affinis is a species
+2025-01-26 03:56:32 - __main__ - WARNING - Assuming Palaemon elegans is a species
+2025-01-26 03:57:24 - __main__ - WARNING - Assuming Palaemon elegans is a species
+2025-01-26 03:58:16 - __main__ - WARNING - Assuming Psemmechinus miliaris is a species
+2025-01-26 03:58:17 - __main__ - WARNING - Taxon not found: Psemmechinus miliaris
+2025-01-26 03:58:17 - __main__ - ERROR - Taxon not found: Psemmechinus miliaris
+2025-01-26 03:58:17 - __main__ - WARNING - Assuming Vitrinobrachium breve is a species
+2025-01-26 03:59:23 - __main__ - WARNING - Assuming Mythimna impura is a species
+2025-01-26 04:01:09 - Blastn - ERROR - Command failed with return code -11
+2025-01-26 04:01:09 - BlastRunner - ERROR - Error running local BLASTN: Command 'blastn' died with <Signals.SIGSEGV: 11>.
+2025-01-26 04:01:09 - __main__ - ERROR - Error validating record: Command 'blastn' died with <Signals.SIGSEGV: 11>.
+2025-01-26 04:04:28 - __main__ - WARNING - Taxon not found: Hahnia montana
+2025-01-26 04:04:28 - __main__ - ERROR - Taxon not found: Hahnia montana
+2025-01-26 04:04:29 - __main__ - WARNING - Taxon not found: Klokdiertje indet.
+2025-01-26 04:04:29 - __main__ - ERROR - Taxon not found: Klokdiertje indet.
+2025-01-26 04:04:29 - __main__ - WARNING - Assuming Euglesa casertana is a species
+2025-01-26 04:06:30 - __main__ - WARNING - Assuming Euglesa milium is a species
+2025-01-26 04:07:27 - __main__ - WARNING - Taxon not found: Klokdiertje indet.
+2025-01-26 04:07:27 - __main__ - ERROR - Taxon not found: Klokdiertje indet.
+2025-01-26 04:08:58 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 04:08:58 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 04:08:58 - __main__ - WARNING - Assuming Blidingia marginata is a species
+2025-01-26 04:09:44 - __main__ - WARNING - Assuming Callithamnion tetragonum is a species
+2025-01-26 04:10:29 - __main__ - WARNING - Assuming Palaemon elegans is a species
+2025-01-26 04:18:31 - __main__ - WARNING - Assuming Euglesa subtruncata is a species
+2025-01-26 04:18:32 - __main__ - WARNING - Taxon not found: Euglesa subtruncata
+2025-01-26 04:18:32 - __main__ - ERROR - Taxon not found: Euglesa subtruncata
+2025-01-26 04:20:04 - __main__ - WARNING - Assuming Osmundea pinnatifida is a species
+2025-01-26 04:21:37 - __main__ - WARNING - Assuming Blidingia marginata is a species
+2025-01-26 04:27:23 - __main__ - WARNING - Taxon Hymenoptera can only be validated at the order level
+2025-01-26 04:28:34 - __main__ - WARNING - Assuming Abra tenuis is a species
+2025-01-26 04:30:48 - __main__ - WARNING - Assuming Abra tenuis is a species
+2025-01-26 04:36:41 - __main__ - WARNING - Assuming Sphyradium doliolum is a species
+2025-01-26 04:40:46 - __main__ - WARNING - Assuming Acicula fusca is a species
+2025-01-26 04:40:46 - __main__ - WARNING - Taxon not found: Acicula fusca
+2025-01-26 04:40:46 - __main__ - ERROR - Taxon not found: Acicula fusca
+2025-01-26 04:46:37 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 04:46:37 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 04:49:15 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 04:49:15 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 04:54:54 - __main__ - WARNING - Assuming Drymonia ruficornis is a species
+2025-01-26 04:59:31 - __main__ - WARNING - Assuming Chamelea striatula is a species
+2025-01-26 05:01:24 - __main__ - WARNING - Assuming Abra tenuis is a species
+2025-01-26 05:05:21 - __main__ - WARNING - Taxon Collembola can only be validated at the order level
+2025-01-26 05:05:28 - __main__ - ERROR - Expected taxon not found: order for Collembola (class)
+2025-01-26 05:07:08 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 05:07:08 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 05:07:54 - __main__ - WARNING - Taxon Hymenoptera can only be validated at the order level
+2025-01-26 05:08:57 - __main__ - WARNING - Assuming Discus rotundatus is a species
+2025-01-26 05:11:58 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 05:11:58 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 05:19:26 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 05:19:26 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 05:19:27 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 05:19:27 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 05:19:27 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 05:19:27 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 05:20:13 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 05:20:13 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 05:21:01 - __main__ - WARNING - Assuming Abra tenuis is a species
+2025-01-26 05:22:57 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 05:22:57 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 05:24:58 - __main__ - WARNING - Assuming Pachycnemia hippocastanaria is a species
+2025-01-26 05:26:04 - __main__ - WARNING - Assuming Cionus scrophulariae is a species
+2025-01-26 05:27:09 - __main__ - WARNING - Assuming Physa acuta is a species
+2025-01-26 05:27:09 - __main__ - WARNING - Taxon not found: Physa acuta
+2025-01-26 05:27:09 - __main__ - ERROR - Taxon not found: Physa acuta
+2025-01-26 05:32:10 - __main__ - WARNING - Taxon not found: Copestylum chalybescens
+2025-01-26 05:32:10 - __main__ - ERROR - Taxon not found: Copestylum chalybescens
+2025-01-26 05:38:11 - __main__ - WARNING - Assuming Corbicula fluminea is a species
+2025-01-26 05:40:00 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 05:40:00 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 05:44:42 - __main__ - WARNING - Assuming Discus rotundatus is a species
+2025-01-26 05:53:28 - __main__ - WARNING - Assuming Zonitoides nitidus is a species
+2025-01-26 05:57:25 - __main__ - WARNING - Assuming Alsophila aescularia is a species
+2025-01-26 06:00:00 - __main__ - WARNING - Assuming Nematus lucidus is a species
+2025-01-26 06:01:06 - __main__ - WARNING - Assuming Horisme radicaria is a species
+2025-01-26 06:03:17 - __main__ - WARNING - Taxon not found: Parapelecopsis nemoralioides
+2025-01-26 06:03:17 - __main__ - ERROR - Taxon not found: Parapelecopsis nemoralioides
+2025-01-26 06:03:17 - __main__ - WARNING - Assuming Tapinocyba praecox is a species
+2025-01-26 06:05:16 - __main__ - WARNING - Assuming Spisula solida is a species
+2025-01-26 06:09:19 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 06:09:19 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 06:09:19 - __main__ - WARNING - Assuming Helicodonta obvoluta is a species
+2025-01-26 06:10:20 - __main__ - WARNING - Taxon not found: Gaillona hookeri
+2025-01-26 06:10:20 - __main__ - ERROR - Taxon not found: Gaillona hookeri
+2025-01-26 06:10:20 - __main__ - WARNING - Assuming Loimia ramzega is a species
+2025-01-26 06:13:42 - __main__ - WARNING - Taxon Hymenoptera can only be validated at the order level
+2025-01-26 06:18:07 - __main__ - WARNING - Assuming Geoica utricularia is a species
+2025-01-26 06:19:12 - __main__ - WARNING - Assuming Uroleucon achilleae is a species
+2025-01-26 06:20:30 - __main__ - WARNING - Assuming Vertigo moulinsiana is a species
+2025-01-26 06:22:24 - __main__ - WARNING - Assuming Gyraulus parvus is a species
+2025-01-26 06:27:53 - __main__ - WARNING - Taxon not found: Klokdiertje indet.
+2025-01-26 06:27:53 - __main__ - ERROR - Taxon not found: Klokdiertje indet.
+2025-01-26 06:30:14 - __main__ - WARNING - Assuming Aceria lycopersici is a species
+2025-01-26 06:30:14 - __main__ - WARNING - Taxon not found: Aceria lycopersici
+2025-01-26 06:30:14 - __main__ - ERROR - Taxon not found: Aceria lycopersici
+2025-01-26 06:30:15 - __main__ - WARNING - Taxon not found: Meligethes sp.
+2025-01-26 06:30:15 - __main__ - ERROR - Taxon not found: Meligethes sp.
+2025-01-26 06:30:15 - __main__ - WARNING - Assuming Walckenaeria acuminata is a species
+2025-01-26 06:36:06 - __main__ - WARNING - Assuming Gastroclonium ovatum is a species
+2025-01-26 06:37:37 - __main__ - WARNING - Assuming Phyllophora pseudoceranoides is a species
+2025-01-26 06:38:23 - __main__ - WARNING - Assuming Codium fragile is a species
+2025-01-26 06:40:45 - __main__ - WARNING - Assuming Cladophora albida is a species
+2025-01-26 06:43:03 - __main__ - WARNING - Assuming Chondracanthus acicularis is a species
+2025-01-26 06:43:50 - __main__ - WARNING - Taxon not found: Microvelia pygmaea
+2025-01-26 06:43:50 - __main__ - ERROR - Taxon not found: Microvelia pygmaea
+2025-01-26 06:43:50 - __main__ - WARNING - Assuming Palaemon elegans is a species
+2025-01-26 06:46:15 - __main__ - WARNING - Assuming Euglesa henslowana is a species
+2025-01-26 06:47:10 - __main__ - WARNING - Assuming Derbesia marina is a species
+2025-01-26 06:48:49 - __main__ - WARNING - Assuming Derbesia marina is a species
+2025-01-26 06:50:22 - __main__ - WARNING - Assuming Derbesia marina is a species
+2025-01-26 06:51:08 - __main__ - WARNING - Assuming Osmundea pinnatifida is a species
+2025-01-26 06:51:54 - __main__ - WARNING - Assuming Macoma balthica is a species
+2025-01-26 06:53:37 - __main__ - WARNING - Assuming Derbesia marina is a species
+2025-01-26 06:54:23 - __main__ - WARNING - Assuming Codium fragile is a species
+2025-01-26 06:55:55 - __main__ - WARNING - Assuming Antithamnionella spirographidis is a species
+2025-01-26 06:56:41 - __main__ - WARNING - Assuming Palaemon elegans is a species
+2025-01-26 07:00:24 - __main__ - WARNING - Assuming Callithamnion tetragonum is a species
+2025-01-26 07:04:26 - __main__ - WARNING - Assuming Myzus varians is a species
+2025-01-26 07:05:30 - __main__ - WARNING - Taxon not found: Ditrichophora calceata
+2025-01-26 07:05:30 - __main__ - ERROR - Taxon not found: Ditrichophora calceata
+2025-01-26 07:05:30 - __main__ - WARNING - Assuming Hemigrapsus sanguineus is a species
+2025-01-26 07:06:23 - __main__ - WARNING - Assuming Gastroclonium ovatum is a species
+2025-01-26 07:07:09 - __main__ - WARNING - Assuming Ceramium virgatum is a species
+2025-01-26 07:07:55 - __main__ - WARNING - Assuming Arctosa leopardus is a species
+2025-01-26 07:08:55 - __main__ - WARNING - Taxon not found: Empis scutellata
+2025-01-26 07:08:55 - __main__ - ERROR - Taxon not found: Empis scutellata
+2025-01-26 07:08:55 - __main__ - WARNING - Assuming Ulva australis is a species
+2025-01-26 07:09:42 - __main__ - WARNING - Assuming Metellina mengei is a species
+2025-01-26 07:11:31 - __main__ - WARNING - Assuming Antithamnion densum is a species
+2025-01-26 07:12:18 - __main__ - WARNING - Taxon not found: Zygina lunaris
+2025-01-26 07:12:18 - __main__ - ERROR - Taxon not found: Zygina lunaris
+2025-01-26 07:13:20 - __main__ - WARNING - Assuming Derbesia marina is a species
+2025-01-26 07:14:07 - __main__ - WARNING - Assuming Hislopia prolixa is a species
+2025-01-26 07:14:07 - __main__ - WARNING - Taxon not found: Hislopia prolixa
+2025-01-26 07:14:07 - __main__ - ERROR - Taxon not found: Hislopia prolixa
+2025-01-26 07:14:07 - __main__ - WARNING - Assuming Psemmechinus miliaris is a species
+2025-01-26 07:14:08 - __main__ - WARNING - Taxon not found: Psemmechinus miliaris
+2025-01-26 07:14:08 - __main__ - ERROR - Taxon not found: Psemmechinus miliaris
+2025-01-26 07:14:08 - __main__ - WARNING - Assuming Psemmechinus miliaris is a species
+2025-01-26 07:14:08 - __main__ - WARNING - Taxon not found: Psemmechinus miliaris
+2025-01-26 07:14:08 - __main__ - ERROR - Taxon not found: Psemmechinus miliaris
+2025-01-26 07:14:08 - __main__ - WARNING - Assuming Blidingia marginata is a species
+2025-01-26 07:14:55 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 07:14:55 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 07:14:55 - __main__ - WARNING - Assuming Hemigrapsus sanguineus is a species
+2025-01-26 07:15:45 - __main__ - WARNING - Assuming Vertebrata fucoides is a species
+2025-01-26 07:16:31 - __main__ - WARNING - Assuming Caulacanthus okamurae is a species
+2025-01-26 07:19:32 - __main__ - WARNING - Assuming Ceramium virgatum is a species
+2025-01-26 07:20:18 - __main__ - WARNING - Assuming Vertebrata fucoides is a species
+2025-01-26 07:22:11 - __main__ - WARNING - Assuming Cladophora albida is a species
+2025-01-26 07:22:58 - __main__ - WARNING - Assuming Idotea chelipes is a species
+2025-01-26 07:23:49 - __main__ - WARNING - Assuming Vertebrata fucoides is a species
+2025-01-26 07:24:35 - __main__ - WARNING - Assuming Spisula solida is a species
+2025-01-26 07:25:30 - __main__ - WARNING - Assuming Oxyloma elegans is a species
+2025-01-26 07:26:37 - __main__ - WARNING - Assuming Columella edentula is a species
+2025-01-26 07:28:24 - __main__ - WARNING - Assuming Antithamnion densum is a species
+2025-01-26 07:34:53 - __main__ - WARNING - Assuming Potamopyrgus antipodarum is a species
+2025-01-26 07:36:42 - __main__ - WARNING - Taxon not found: Aporinellus sp.
+2025-01-26 07:36:42 - __main__ - ERROR - Taxon not found: Aporinellus sp.
+2025-01-26 07:36:42 - __main__ - WARNING - Assuming Euglesa henslowana is a species
+2025-01-26 07:37:41 - __main__ - WARNING - Assuming Euglesa personata is a species
+2025-01-26 07:38:42 - __main__ - WARNING - Assuming Euglesa milium is a species
+2025-01-26 07:39:39 - __main__ - WARNING - Assuming Osmundea pinnatifida is a species
+2025-01-26 07:43:14 - __main__ - WARNING - Assuming Cryptus armator is a species
+2025-01-26 07:44:22 - __main__ - WARNING - Assuming Liotryphon ascaniae is a species
+2025-01-26 07:44:22 - __main__ - WARNING - Taxon not found: Liotryphon ascaniae
+2025-01-26 07:44:22 - __main__ - ERROR - Taxon not found: Liotryphon ascaniae
+2025-01-26 07:45:13 - __main__ - WARNING - Assuming Palaemon elegans is a species
+2025-01-26 07:46:05 - __main__ - WARNING - Assuming Arctosa leopardus is a species
+2025-01-26 07:46:57 - __main__ - WARNING - Assuming Agalenatea redii is a species
+2025-01-26 07:47:50 - __main__ - WARNING - Taxon not found: Hahnia montana
+2025-01-26 07:47:50 - __main__ - ERROR - Taxon not found: Hahnia montana
+2025-01-26 07:47:50 - __main__ - WARNING - Assuming Sminthurinus elegans is a species
+2025-01-26 07:48:44 - __main__ - WARNING - Assuming Tapinocyba praecox is a species
+2025-01-26 07:52:16 - __main__ - WARNING - Assuming Agroeca lusatica is a species
+2025-01-26 07:52:16 - __main__ - WARNING - Taxon not found: Agroeca lusatica
+2025-01-26 07:52:16 - __main__ - ERROR - Taxon not found: Agroeca lusatica
+2025-01-26 07:53:09 - __main__ - WARNING - Assuming Arctosa leopardus is a species
+2025-01-26 07:56:08 - __main__ - WARNING - Assuming Hislopia prolixa is a species
+2025-01-26 07:56:09 - __main__ - WARNING - Taxon not found: Hislopia prolixa
+2025-01-26 07:56:09 - __main__ - ERROR - Taxon not found: Hislopia prolixa
+2025-01-26 07:56:09 - __main__ - WARNING - Assuming Periphyllus obscurus is a species
+2025-01-26 07:57:12 - __main__ - WARNING - Assuming Metopeurum fuscoviride is a species
+2025-01-26 07:58:23 - __main__ - WARNING - Assuming Macrosiphum cholodkovskyi is a species
+2025-01-26 07:59:33 - __main__ - WARNING - Assuming Dysaphis radicola is a species
+2025-01-26 08:00:34 - __main__ - WARNING - Assuming Vallonia pulchella is a species
+2025-01-26 08:02:39 - __main__ - WARNING - Assuming Agrochola ruticilla is a species
+2025-01-26 08:02:40 - __main__ - WARNING - Taxon not found: Agrochola ruticilla
+2025-01-26 08:02:40 - __main__ - ERROR - Taxon not found: Agrochola ruticilla
+2025-01-26 08:02:40 - __main__ - WARNING - Assuming Lipaphis pseudobrassicae is a species
+2025-01-26 08:03:43 - __main__ - WARNING - Assuming Antithamnionella spirographidis is a species
+2025-01-26 08:04:30 - __main__ - WARNING - Assuming Osmundea pinnatifida is a species
+2025-01-26 08:06:02 - __main__ - WARNING - Assuming Nesovitrea hammonis is a species
+2025-01-26 08:06:02 - __main__ - WARNING - Taxon not found: Nesovitrea hammonis
+2025-01-26 08:06:02 - __main__ - ERROR - Taxon not found: Nesovitrea hammonis
+2025-01-26 08:06:02 - __main__ - WARNING - Assuming Polyplaca ridens is a species
+2025-01-26 08:06:03 - __main__ - WARNING - Taxon not found: Polyplaca ridens
+2025-01-26 08:06:03 - __main__ - ERROR - Taxon not found: Polyplaca ridens
+2025-01-26 08:06:50 - __main__ - WARNING - Assuming Chondracanthus acicularis is a species
+2025-01-26 08:07:37 - __main__ - WARNING - Assuming Dynamena pumila is a species
+2025-01-26 08:09:20 - __main__ - WARNING - Assuming Vallonia excentrica is a species
+2025-01-26 08:10:21 - __main__ - WARNING - Assuming Euglesa compressa is a species
+2025-01-26 08:11:23 - __main__ - WARNING - Assuming Euglesa casertana is a species
+2025-01-26 08:15:26 - __main__ - WARNING - Assuming Horisme radicaria is a species
+2025-01-26 08:17:36 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 08:17:36 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 08:17:36 - __main__ - WARNING - Assuming Loimia ramzega is a species
+2025-01-26 08:20:55 - __main__ - WARNING - Taxon Hymenoptera can only be validated at the order level
+2025-01-26 08:30:12 - __main__ - WARNING - Assuming Euglesa henslowana is a species
+2025-01-26 08:31:55 - __main__ - WARNING - Assuming Erigone atra is a species
+2025-01-26 08:33:54 - __main__ - WARNING - Taxon not found: Oscarella sp.
+2025-01-26 08:33:54 - __main__ - ERROR - Taxon not found: Oscarella sp.
+2025-01-26 08:33:55 - __main__ - WARNING - Taxon not found: Aporinellus sp.
+2025-01-26 08:33:55 - __main__ - ERROR - Taxon not found: Aporinellus sp.
+2025-01-26 08:33:55 - __main__ - WARNING - Assuming Euglesa henslowana is a species
+2025-01-26 08:42:28 - __main__ - WARNING - Assuming Dynamena pumila is a species
+2025-01-26 08:43:23 - __main__ - WARNING - Assuming Tetraneura ulmi is a species
+2025-01-26 08:44:27 - __main__ - WARNING - Assuming Uroleucon achilleae is a species
+2025-01-26 08:47:34 - __main__ - WARNING - Assuming Dysaphis radicola is a species
+2025-01-26 08:48:39 - __main__ - WARNING - Assuming Hislopia prolixa is a species
+2025-01-26 08:48:40 - __main__ - WARNING - Taxon not found: Hislopia prolixa
+2025-01-26 08:48:40 - __main__ - ERROR - Taxon not found: Hislopia prolixa
+2025-01-26 08:49:48 - __main__ - WARNING - Taxon not found: Scatella lutosa
+2025-01-26 08:49:48 - __main__ - ERROR - Taxon not found: Scatella lutosa
+2025-01-26 08:49:48 - __main__ - WARNING - Assuming Callithamnion corymbosum is a species
+2025-01-26 08:50:35 - __main__ - WARNING - Assuming Uroleucon taraxaci is a species
+2025-01-26 08:51:38 - __main__ - WARNING - Assuming Uroleucon sonchi is a species
+2025-01-26 08:53:28 - __main__ - WARNING - Assuming Euglesa milium is a species
+2025-01-26 08:55:57 - __main__ - WARNING - Assuming Antithamnionella spirographidis is a species
+2025-01-26 08:58:21 - __main__ - WARNING - Assuming Alsophila aescularia is a species
+2025-01-26 08:59:49 - __main__ - WARNING - Assuming Vertigo moulinsiana is a species
+2025-01-26 09:00:51 - __main__ - WARNING - Assuming Tubularia indivisa is a species
+2025-01-26 09:03:22 - __main__ - WARNING - Taxon not found: Myrionema grateloupiae
+2025-01-26 09:03:22 - __main__ - ERROR - Taxon not found: Myrionema grateloupiae
+2025-01-26 09:06:03 - __main__ - WARNING - Assuming Blidingia marginata is a species
+2025-01-26 09:06:50 - __main__ - WARNING - Assuming Acanthinula aculeata is a species
+2025-01-26 09:07:50 - __main__ - WARNING - Assuming Euglesa henslowana is a species
+2025-01-26 09:08:51 - __main__ - WARNING - Assuming Euglesa personata is a species
+2025-01-26 09:10:39 - __main__ - WARNING - Assuming Punctum pygmaeum is a species
+2025-01-26 09:11:40 - __main__ - WARNING - Assuming Metopeurum fuscoviride is a species
+2025-01-26 09:13:40 - __main__ - WARNING - Assuming Physa acuta is a species
+2025-01-26 09:13:40 - __main__ - WARNING - Taxon not found: Physa acuta
+2025-01-26 09:13:40 - __main__ - ERROR - Taxon not found: Physa acuta
+2025-01-26 09:13:40 - __main__ - WARNING - Assuming Thecabius affinis is a species
+2025-01-26 09:14:50 - __main__ - WARNING - Assuming Euglesa milium is a species
+2025-01-26 09:18:28 - __main__ - WARNING - Assuming Corbicula fluminea is a species
+2025-01-26 09:19:25 - __main__ - WARNING - Assuming Osmundea pinnatifida is a species
+2025-01-26 09:21:07 - __main__ - WARNING - Assuming Euglesa milium is a species
+2025-01-26 09:22:03 - __main__ - WARNING - Assuming Euglesa casertana is a species
+2025-01-26 09:24:01 - __main__ - WARNING - Assuming Collinsia inerrans is a species
+2025-01-26 09:24:57 - __main__ - WARNING - Assuming Earophila badiata is a species
+2025-01-26 09:26:57 - __main__ - WARNING - Assuming Euglesa henslowana is a species
+2025-01-26 09:28:49 - __main__ - WARNING - Assuming Physa acuta is a species
+2025-01-26 09:28:49 - __main__ - WARNING - Taxon not found: Physa acuta
+2025-01-26 09:28:49 - __main__ - ERROR - Taxon not found: Physa acuta
+2025-01-26 09:28:49 - __main__ - WARNING - Assuming Corbicula fluminea is a species
+2025-01-26 09:30:51 - __main__ - WARNING - Assuming Codium fragile is a species
+2025-01-26 09:32:23 - __main__ - WARNING - Assuming Vertebrata fucoides is a species
+2025-01-26 09:34:50 - __main__ - WARNING - Assuming Spisula subtruncata is a species
+2025-01-26 09:39:01 - __main__ - WARNING - Assuming Galerucella nymphaeae is a species
+2025-01-26 09:42:03 - __main__ - WARNING - Assuming Notodonta tritophus is a species
+2025-01-26 09:43:56 - __main__ - WARNING - Assuming Callithamnion tetragonum is a species
+2025-01-26 09:46:31 - __main__ - WARNING - Assuming Erigone atra is a species
+2025-01-26 09:48:17 - __main__ - WARNING - Assuming Galerucella nymphaeae is a species
+2025-01-26 09:50:18 - __main__ - WARNING - Assuming Notodonta tritophus is a species
+2025-01-26 09:56:16 - __main__ - WARNING - Taxon not found: Tachytrechus insignis
+2025-01-26 09:56:16 - __main__ - ERROR - Taxon not found: Tachytrechus insignis
+2025-01-26 09:57:30 - __main__ - WARNING - Assuming Cionus scrophulariae is a species
+2025-01-26 09:58:35 - __main__ - WARNING - Assuming Tuberolachnus salignus is a species
+2025-01-26 10:00:52 - __main__ - WARNING - Assuming Euglesa milium is a species
+2025-01-26 10:02:41 - __main__ - WARNING - Taxon Hymenoptera can only be validated at the order level
+2025-01-26 10:03:53 - __main__ - WARNING - Assuming Psemmechinus miliaris is a species
+2025-01-26 10:03:53 - __main__ - WARNING - Taxon not found: Psemmechinus miliaris
+2025-01-26 10:03:53 - __main__ - ERROR - Taxon not found: Psemmechinus miliaris
+2025-01-26 10:03:53 - __main__ - WARNING - Assuming Chamelea striatula is a species
+2025-01-26 10:04:54 - __main__ - WARNING - Assuming Haloa japonica is a species
+2025-01-26 10:09:11 - __main__ - WARNING - Assuming Cionus scrophulariae is a species
+2025-01-26 10:11:07 - __main__ - WARNING - Taxon Hymenoptera can only be validated at the order level
+2025-01-26 10:12:20 - __main__ - WARNING - Assuming Chamelea striatula is a species
+2025-01-26 10:14:25 - __main__ - WARNING - Assuming Subcoccinella vigintiquatuorpunctata is a species
+2025-01-26 10:14:26 - __main__ - WARNING - Taxon not found: Subcoccinella vigintiquatuorpunctata
+2025-01-26 10:14:26 - __main__ - ERROR - Taxon not found: Subcoccinella vigintiquatuorpunctata
