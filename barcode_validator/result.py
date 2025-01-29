@@ -78,6 +78,11 @@ levels = [
 class DNAAnalysisResult:
 
     def __init__(self, sequence_id: str, dataset: str = None):
+        """
+        Initialize a DNAAnalysisResult object.
+        :param sequence_id: The sequence identifier
+        :param dataset: The dataset name (e.g. the multifasta file name)
+        """
         self.sequence_id: str = sequence_id
         self.data: dict = {
             'sequence_id': sequence_id, # An identifier for the sequence that is at least unique within the dataset
