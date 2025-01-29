@@ -81,6 +81,7 @@ class BarcodeValidator:
             if sp is None:
                 self.logger.warning(f"Process ID {record.annotations['bcdm_fields']['processid']} not found in BOLD tree.")
                 result.error = f"{record.annotations['bcdm_fields']['processid']} not in BOLD"
+                return # Skip BLAST if the expected taxon is not found in the BOLD tree
             else:
 
                 # Traverse BOLD tree to find the expected taxon at the specified rank
