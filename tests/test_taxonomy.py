@@ -5,7 +5,7 @@ from Bio.Seq import Seq
 from Bio.Phylo.BaseTree import Tree
 from nbitk.config import Config
 from nbitk.Tools import Blastn
-from barcode_validator.taxonomy import BlastRunner
+from barcode_validator.blast_runner import BlastRunner
 from nbitk.Taxon import Taxon
 
 @pytest.fixture

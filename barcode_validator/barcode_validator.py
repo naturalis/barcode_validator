@@ -1,7 +1,7 @@
 import io
 import tarfile
 from typing import List, Optional
-from barcode_validator.taxonomy import BlastRunner
+from barcode_validator.blast_runner import BlastRunner
 from barcode_validator.sequence_handler import SequenceHandler
 from barcode_validator.dna_analysis_result import DNAAnalysisResult
 from Bio.SeqRecord import SeqRecord
