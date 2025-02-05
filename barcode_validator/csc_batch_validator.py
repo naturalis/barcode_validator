@@ -11,7 +11,7 @@ from nbitk.logger import get_formatted_logger
 from datetime import datetime
 from barcode_validator.barcode_validator import BarcodeValidator
 from barcode_validator.dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet, initialize_columns
-from barcode_validator.translation_tables import TaxonomyResolver, Marker
+from barcode_validator.taxonomy_resolver import TaxonomyResolver, Marker
 
 # Always tell NCBI who you are
 Entrez.email = "bioinformatics@naturalis.nl"
