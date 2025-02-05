@@ -9,7 +9,7 @@ from Bio.SeqRecord import SeqRecord
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 from datetime import datetime
-from barcode_validator.core import BarcodeValidator
+from barcode_validator.barcode_validator import BarcodeValidator
 from barcode_validator.result import DNAAnalysisResult, DNAAnalysisResultSet, initialize_columns
 from barcode_validator.translation_tables import TaxonomyResolver, Marker
 

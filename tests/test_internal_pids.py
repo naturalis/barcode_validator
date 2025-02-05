@@ -4,7 +4,7 @@ from pathlib import Path
 from unittest.mock import Mock
 from nbitk.config import Config
 from nbitk.Phylo.BOLDXLSXIO import Parser
-from barcode_validator.core import BarcodeValidator
+from barcode_validator.barcode_validator import BarcodeValidator
 
 
 @pytest.fixture

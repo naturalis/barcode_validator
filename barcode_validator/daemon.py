@@ -10,7 +10,7 @@ from datetime import datetime
 from typing import Optional
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
-from barcode_validator.core import BarcodeValidator
+from barcode_validator.barcode_validator import BarcodeValidator
 from barcode_validator.github import GitHubClient
 from barcode_validator.result import DNAAnalysisResult, DNAAnalysisResultSet
 

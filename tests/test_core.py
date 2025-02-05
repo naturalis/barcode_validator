@@ -6,7 +6,7 @@ from Bio.Phylo.BaseTree import Tree, Clade
 from nbitk.Taxon import Taxon
 from nbitk.config import Config
 from barcode_validator.result import DNAAnalysisResult
-from barcode_validator.core import BarcodeValidator
+from barcode_validator.barcode_validator import BarcodeValidator
 
 
 @pytest.fixture
