@@ -13,7 +13,7 @@ class BlastRunner:
 
     def __init__(self, config: Config):
         """
-        Initialize the BarcodeValidator object.
+        Initialize the BlastRunner object.
         """
         class_name = self.__class__.__name__
         self.logger = get_formatted_logger(class_name, config)
