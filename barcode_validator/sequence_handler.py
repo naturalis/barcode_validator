@@ -13,7 +13,7 @@ from nbitk.Tools import Hmmalign
 warnings.filterwarnings("error", category=BiopythonDeprecationWarning)
 
 """
-alignment.py
+sequence_handler.py
 
 This module contains the functions for technical QA on sequence results, including operations
 to align/unalign the sequence against an HMM, calculate the length of the sequence inside the

@@ -4,7 +4,7 @@ from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from unittest.mock import patch, Mock, MagicMock
 from nbitk.config import Config
-from barcode_validator.alignment import SequenceHandler
+from barcode_validator.sequence_handler import SequenceHandler
 
 @pytest.fixture
 def mock_config():

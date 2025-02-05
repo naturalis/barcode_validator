@@ -3,7 +3,7 @@ from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 from barcode_validator.core import BarcodeValidator
 from barcode_validator.result import DNAAnalysisResult, DNAAnalysisResultSet
-from barcode_validator.alignment import SequenceHandler
+from barcode_validator.sequence_handler import SequenceHandler
 
 def main(fasta_file_path, logger, config):
 

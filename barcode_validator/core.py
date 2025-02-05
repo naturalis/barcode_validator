@@ -2,7 +2,7 @@ import io
 import tarfile
 from typing import List, Optional
 from barcode_validator.taxonomy import BlastRunner
-from barcode_validator.alignment import SequenceHandler
+from barcode_validator.sequence_handler import SequenceHandler
 from barcode_validator.result import DNAAnalysisResult
 from Bio.SeqRecord import SeqRecord
 from Bio.Phylo.BaseTree import Tree
