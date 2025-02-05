@@ -5,7 +5,7 @@ import os
 # Add the parent directory to sys.path to import the module
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from barcode_validator.result import DNAAnalysisResult, DNAAnalysisResultSet
+from barcode_validator.dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet
 
 @pytest.fixture
 def result_set():

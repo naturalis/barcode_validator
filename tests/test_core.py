@@ -5,7 +5,7 @@ from Bio.Seq import Seq
 from Bio.Phylo.BaseTree import Tree, Clade
 from nbitk.Taxon import Taxon
 from nbitk.config import Config
-from barcode_validator.result import DNAAnalysisResult
+from barcode_validator.dna_analysis_result import DNAAnalysisResult
 from barcode_validator.barcode_validator import BarcodeValidator
 
 

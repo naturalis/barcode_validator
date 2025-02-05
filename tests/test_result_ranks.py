@@ -1,6 +1,6 @@
 import pytest
 from nbitk.Taxon import Taxon
-from barcode_validator.result import DNAAnalysisResult, reset_columns, initialize_columns
+from barcode_validator.dna_analysis_result import DNAAnalysisResult, reset_columns, initialize_columns
 
 
 @pytest.fixture(autouse=True)

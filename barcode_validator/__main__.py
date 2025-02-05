@@ -2,7 +2,7 @@ import argparse
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 from barcode_validator.barcode_validator import BarcodeValidator
-from barcode_validator.result import DNAAnalysisResult, DNAAnalysisResultSet
+from barcode_validator.dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet
 
 
 def main(fasta_file_path, yaml_file_path, analytics_file_path, logger, config):
