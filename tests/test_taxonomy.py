@@ -26,7 +26,7 @@ def mock_config():
 
 @pytest.fixture
 def blast_runner(mock_config):
-    with patch('barcode_validator.taxonomy.Blastn') as MockBlastn:
+    with patch('barcode_validator.blast_runner.Blastn') as MockBlastn:
         MockBlastn.return_value = Mock(spec=Blastn)
         return BlastRunner(mock_config)
 
@@ -42,8 +42,8 @@ def test_init(blast_runner, mock_config):
 #    assert blast_runner.BLASTDB_LMDB_MAP_SIZE == 1000000000
     assert blast_runner.BLASTDB == '/path/to/blastdb'
 
-@patch('barcode_validator.taxonomy.tempfile.NamedTemporaryFile')
-@patch('barcode_validator.taxonomy.SeqIO.write')
+@patch('barcode_validator.blast_runner.tempfile.NamedTemporaryFile')
+@patch('barcode_validator.blast_runner.SeqIO.write')
 @patch('os.environ')
 def test_run_localblast(mock_environ, mock_seqio_write, mock_temp_file, blast_runner):
     mock_temp_file.return_value.__enter__.return_value.name = 'temp_file.fasta'
