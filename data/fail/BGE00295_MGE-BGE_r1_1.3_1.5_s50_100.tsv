@@ -1,0 +1,67 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons	process_id
+54	107	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1542	Noctuidae,Erebidae,Geometridae	BGSNL382-23_r_1_s_50	Afriberina salemae	0	BGSNL382-23
+41	77	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	656	1542	Nolidae,Erebidae,Crambidae,Geometridae	BGSNL382-23_r_1_s_100	Afriberina salemae	0	BGSNL382-23
+30	50	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1542	Noctuidae,Geometridae	BGSNL382-23_r_1.3_s_50	Afriberina salemae	0	BGSNL382-23
+29	54	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	656	1542	Noctuidae,Erebidae,Euteliidae,Geometridae	BGSNL382-23_r_1.3_s_100	Afriberina salemae	0	BGSNL382-23
+16	24	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1542	Noctuidae,Geometridae	BGSNL382-23_r_1.5_s_50	Afriberina salemae	0	BGSNL382-23
+17	23	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1542	Noctuidae,Geometridae	BGSNL382-23_r_1.5_s_100	Afriberina salemae	0	BGSNL382-23
+6	9	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1542	Geometridae	BGSNL383-23_r_1_s_50	Afriberina salemae	0	BGSNL383-23
+4	6	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1542	Geometridae	BGSNL383-23_r_1_s_100	Afriberina salemae	0	BGSNL383-23
+3	3	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1542	Geometridae	BGSNL383-23_r_1.3_s_50	Afriberina salemae	0	BGSNL383-23
+4	4	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1542	Geometridae	BGSNL383-23_r_1.3_s_100	Afriberina salemae	0	BGSNL383-23
+2	2	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1542	Noctuidae,Geometridae	BGSNL383-23_r_1.5_s_50	Afriberina salemae	0	BGSNL383-23
+4	4	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1542	Geometridae	BGSNL383-23_r_1.5_s_100	Afriberina salemae	0	BGSNL383-23
+15	29	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1539	Noctuidae,Geometridae	BGSNL396-23_r_1_s_50	Athroolopha chrysitaria	0	BGSNL396-23
+16	38	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1500	Noctuidae,Geometridae	BGSNL396-23_r_1_s_100	Athroolopha chrysitaria	0	BGSNL396-23
+16	30	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1539	Noctuidae,Geometridae	BGSNL396-23_r_1.3_s_50	Athroolopha chrysitaria	0	BGSNL396-23
+16	38	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1500	Noctuidae,Geometridae	BGSNL396-23_r_1.3_s_100	Athroolopha chrysitaria	0	BGSNL396-23
+16	30	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1539	Noctuidae,Geometridae	BGSNL396-23_r_1.5_s_50	Athroolopha chrysitaria	0	BGSNL396-23
+17	39	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1500	Noctuidae,Geometridae	BGSNL396-23_r_1.5_s_100	Athroolopha chrysitaria	0	BGSNL396-23
+4	22	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	654	1536	Noctuidae,Geometridae	BGSNL398-23_r_1_s_50	Athroolopha chrysitaria	0	BGSNL398-23
+15	28	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	618	1491	Noctuidae,Geometridae	BGSNL398-23_r_1_s_100	Athroolopha chrysitaria	0	BGSNL398-23
+4	22	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	654	1536	Noctuidae,Geometridae	BGSNL398-23_r_1.3_s_50	Athroolopha chrysitaria	0	BGSNL398-23
+15	28	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	618	1491	Noctuidae,Geometridae	BGSNL398-23_r_1.3_s_100	Athroolopha chrysitaria	0	BGSNL398-23
+4	18	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	654	1536	Noctuidae,Geometridae	BGSNL398-23_r_1.5_s_50	Athroolopha chrysitaria	0	BGSNL398-23
+15	28	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	618	1491	Noctuidae,Geometridae	BGSNL398-23_r_1.5_s_100	Athroolopha chrysitaria	0	BGSNL398-23
+19	32	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BGSNL405-23_r_1_s_50	Charissa pentheri	0	BGSNL405-23
+12	28	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	656	1530	Geometridae	BGSNL405-23_r_1_s_100	Charissa pentheri	0	BGSNL405-23
+14	22	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BGSNL405-23_r_1.3_s_50	Charissa pentheri	0	BGSNL405-23
+10	22	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	656	1530	Geometridae	BGSNL405-23_r_1.3_s_100	Charissa pentheri	0	BGSNL405-23
+5	13	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BGSNL405-23_r_1.5_s_50	Charissa pentheri	0	BGSNL405-23
+6	14	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1530	Geometridae	BGSNL405-23_r_1.5_s_100	Charissa pentheri	0	BGSNL405-23
+10	25	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1539	Noctuidae,Geometridae	BGSNL430-23_r_1_s_50	Enanthyperythra legataria	0	BGSNL430-23
+9	27	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1536	Noctuidae,Geometridae	BGSNL430-23_r_1_s_100	Enanthyperythra legataria	0	BGSNL430-23
+10	25	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1539	Noctuidae,Geometridae	BGSNL430-23_r_1.3_s_50	Enanthyperythra legataria	0	BGSNL430-23
+9	27	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1536	Noctuidae,Geometridae	BGSNL430-23_r_1.3_s_100	Enanthyperythra legataria	0	BGSNL430-23
+11	24	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1539	Noctuidae,Geometridae	BGSNL430-23_r_1.5_s_50	Enanthyperythra legataria	0	BGSNL430-23
+9	23	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1536	Noctuidae,Geometridae	BGSNL430-23_r_1.5_s_100	Enanthyperythra legataria	0	BGSNL430-23
+19	48	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	611	1398	Geometridae	BGSNL435-23_r_1_s_50	Eumannia arenbergeri	0	BGSNL435-23
+13	44	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	611	1398	Geometridae	BGSNL435-23_r_1_s_100	Eumannia arenbergeri	0	BGSNL435-23
+10	29	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	611	1365	Geometridae	BGSNL435-23_r_1.3_s_50	Eumannia arenbergeri	0	BGSNL435-23
+10	30	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	611	1365	Geometridae	BGSNL435-23_r_1.3_s_100	Eumannia arenbergeri	0	BGSNL435-23
+8	17	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	611	1365	Geometridae	BGSNL435-23_r_1.5_s_50	Eumannia arenbergeri	0	BGSNL435-23
+8	17	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	611	1365	Geometridae	BGSNL435-23_r_1.5_s_100	Eumannia arenbergeri	0	BGSNL435-23
+8	14	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1536	Noctuidae,Geometridae	BGSNL446-23_r_1_s_50	Lycia isabellae	0	BGSNL446-23
+11	29	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1506	Geometridae	BGSNL446-23_r_1_s_100	Lycia isabellae	0	BGSNL446-23
+8	12	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1536	Noctuidae,Geometridae	BGSNL446-23_r_1.3_s_50	Lycia isabellae	0	BGSNL446-23
+11	17	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1506	Noctuidae,Geometridae	BGSNL446-23_r_1.3_s_100	Lycia isabellae	0	BGSNL446-23
+5	9	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1536	Noctuidae,Geometridae	BGSNL446-23_r_1.5_s_50	Lycia isabellae	0	BGSNL446-23
+20	26	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1506	Noctuidae,Geometridae	BGSNL446-23_r_1.5_s_100	Lycia isabellae	0	BGSNL446-23
+12	19	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1485	Geometridae	BGSNL453-23_r_1_s_50	Narraga nelvae	0	BGSNL453-23
+12	24	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1386	Geometridae	BGSNL453-23_r_1_s_100	Narraga nelvae	0	BGSNL453-23
+10	18	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1485	Geometridae	BGSNL453-23_r_1.3_s_50	Narraga nelvae	0	BGSNL453-23
+11	23	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1359	Geometridae	BGSNL453-23_r_1.3_s_100	Narraga nelvae	0	BGSNL453-23
+9	17	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1485	Noctuidae,Geometridae	BGSNL453-23_r_1.5_s_50	Narraga nelvae	0	BGSNL453-23
+11	23	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1359	Geometridae	BGSNL453-23_r_1.5_s_100	Narraga nelvae	0	BGSNL453-23
+22	38	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1539	Geometridae	BGSNL468-23_r_1_s_50	Perconia baeticaria	0	BGSNL468-23
+23	32	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1539	Geometridae	BGSNL468-23_r_1_s_100	Perconia baeticaria	0	BGSNL468-23
+21	35	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1539	Geometridae	BGSNL468-23_r_1.3_s_50	Perconia baeticaria	0	BGSNL468-23
+23	32	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1539	Geometridae	BGSNL468-23_r_1.3_s_100	Perconia baeticaria	0	BGSNL468-23
+20	34	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1539	Geometridae	BGSNL468-23_r_1.5_s_50	Perconia baeticaria	0	BGSNL468-23
+23	35	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1539	Geometridae	BGSNL468-23_r_1.5_s_100	Perconia baeticaria	0	BGSNL468-23
+19	33	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00295-NC not in BOLD	None	BLAST	family	657	1491		BGE00295-NC_r_1_s_50	None	0	BGE00295-NC
+16	45	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00295-NC not in BOLD	None	BLAST	family	657	1491		BGE00295-NC_r_1_s_100	None	0	BGE00295-NC
+6	14	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00295-NC not in BOLD	None	BLAST	family	657	1422		BGE00295-NC_r_1.3_s_50	None	0	BGE00295-NC
+5	21	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00295-NC not in BOLD	None	BLAST	family	657	1374		BGE00295-NC_r_1.3_s_100	None	0	BGE00295-NC
+8	16	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00295-NC not in BOLD	None	BLAST	family	540	1251		BGE00295-NC_r_1.5_s_50	None	0	BGE00295-NC
+9	21	data/BGE00295_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00295-NC not in BOLD	None	BLAST	family	522	1185		BGE00295-NC_r_1.5_s_100	None	0	BGE00295-NC

@@ -1,0 +1,79 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1331-24_contig8;203-1744;-;cox1	Andrena gamskrucki	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1518	Andrenidae	BGENL1332-24_contig4;832-2349;-;cox1	Andrena gamskrucki	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1497	Andrenidae	BGENL1333-24_contig3;465-1961;+;cox1_0	Andrena garrula	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1518	Andrenidae	BGENL1334-24_contig1;1312-2829;-;cox1	Andrena garrula	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1335-24_contig0;1321-2862;+;cox1	Andrena garrula	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1446	Andrenidae	BGENL1336-24_contig2;558-2003;+;cox1	Andrena hungarica	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1337-24_contig0;7017-8558;-;cox1	Andrena hungarica	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	657	1545	Andrenidae	BGENL1338-24_contig0;13204-14748;-;cox1	Andrena hyacinthina	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	657	1545	Andrenidae	BGENL1339-24_contig0;13206-14750;-;cox1	Andrena hyacinthina	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	657	1545	Andrenidae	BGENL1340-24_contig0;1601-3145;+;cox1	Andrena hyacinthina	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1341-24_circular;11665-13206;-;cox1	Andrena hyemala repressa	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1342-24_contig0;1703-3244;+;cox1	Andrena hyemala repressa	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1518	Andrenidae	BGENL1343-24_contig1;1632-3149;+;cox1	Andrena hyemala repressa	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1344-24_contig1;2685-4226;-;cox1	Andrena glidia	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1345-24_contig0;1590-3131;+;cox1	Andrena glidia	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1346-24_contig0;1642-3183;+;cox1	Andrena glidia	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1347-24_contig0;1318-2859;+;cox1	Andrena elmaria	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1348-24_contig0;1318-2859;+;cox1	Andrena elmaria	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1349-24_contig0;11835-13376;-;cox1	Andrena elmaria	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1518	Andrenidae	BGENL1350-24_contig1;1598-3115;+;cox1	Andrena helenica	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1352-24_contig0;1604-3145;+;cox1	Andrena helenica	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1353-24_contig2;2724-4265;-;cox1	Andrena hillana	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1354-24_contig0;1628-3169;+;cox1	Andrena hillana	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1518	Andrenidae	BGENL1356-24_contig2;3301-4818;-;cox1	Andrena grossella	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1518	Andrenidae	BGENL1357-24_contig3;2519-4036;-;cox1	Andrena grossella	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1358-24_contig0;1565-3106;+;cox1	Andrena grossella	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1360-24_contig0;1648-3189;+;cox1	Andrena magunta	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1361-24_contig0;1566-3107;+;cox1	Andrena magunta	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1362-24_contig1;211-1752;-;cox1	Andrena magna	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1363-24_contig0;11820-13361;-;cox1	Andrena magna	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	654	1545	Andrenidae	BGENL1364-24_contig1;1779-3323;+;cox1	Andrena macroptera	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	654	1545	Andrenidae	BGENL1365-24_contig0;1302-2846;+;cox1	Andrena macroptera	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1545	Andrenidae	BGENL1367-24_contig0;11815-13359;-;cox1	Andrena lonicera	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1545	Andrenidae	BGENL1368-24_contig3;659-2203;+;cox1	Andrena lonicera	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	654	1542	Andrenidae	BGENL1369-24_contig0;173-1714;-;cox1	Andrena limassolica	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1372-24_contig0;1611-3152;+;cox1	Andrena leucopsis	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1373-24_contig0;1581-3122;+;cox1	Andrena leucopsis	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1374-24_contig1;1581-3122;+;cox1	Andrena leucopsis	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1375-24_contig1;11746-13287;-;cox1	Andrena leucophaea	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1548	Andrenidae	BGENL1376-24_contig1;1592-3139;+;cox1	Andrena leucophaea	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1545	Andrenidae	BGENL1377-24_contig1;10871-12415;-;cox1	Andrena leucophaea	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1545	Andrenidae	BGENL1378-24_contig0;11809-13353;-;cox1	Andrena polemediana	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1381-24_contig0;1625-3166;+;cox1	Andrena pelopa	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1382-24_contig1;1625-3166;+;cox1	Andrena pelopa	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1383-24_contig0;11798-13339;-;cox1	Andrena pelopa	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1518	Andrenidae	BGENL1387-24_contig4;1860-3377;+;cox1	Andrena merula	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1388-24_contig0;2012-3553;+;cox1	Andrena merula	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1389-24_contig0;2033-3574;+;cox1	Andrena merula	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	654	1545	Andrenidae	BGENL1390-24_contig0;1589-3133;+;cox1	Andrena mediovittata arvensis	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	654	1545	Andrenidae	BGENL1391-24_contig0;11886-13430;-;cox1	Andrena mediovittata arvensis	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	654	1545	Andrenidae	BGENL1392-24_contig0;1589-3133;+;cox1	Andrena mediovittata arvensis	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1545	Andrenidae	BGENL1393-24_contig0;12145-13689;-;cox1	Andrena crassana	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1545	Andrenidae	BGENL1394-24_contig0;2580-4124;-;cox1	Andrena crassana	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1545	Andrenidae	BGENL1395-24_contig0;1653-3197;+;cox1	Andrena crassana	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1396-24_contig3;811-2352;-;cox1	Andrena cordialis	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1397-24_contig0;1308-2849;+;cox1	Andrena cordialis	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1398-24_contig2;1177-2718;+;cox1	Andrena cordialis	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1399-24_contig0;1639-3180;+;cox1	Andrena concinna	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1400-24_contig2;1635-3176;+;cox1	Andrena concinna	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1403-24_contig0;1886-3427;+;cox1	Andrena compta	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1404-24_contig1;1275-2816;-;cox1	Andrena compta	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1405-24_contig0;1574-3115;+;cox1	Andrena tuberculifera	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1406-24_contig0;1574-3115;+;cox1	Andrena tuberculifera	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1407-24_contig0;11733-13274;-;cox1	Andrena tuberculifera	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1545	Andrenidae	BGENL1408-24_contig0;1559-3103;+;cox1	Andrena tunetana	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1545	Andrenidae	BGENL1409-24_contig0;1632-3176;+;cox1	Andrena tunetana	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1545	Andrenidae	BGENL1410-24_contig0;1558-3102;+;cox1	Andrena tunetana	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	657	1542	Andrenidae	BGENL1412-24_contig0;1605-3146;+;cox1	Andrena cyanomicans	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	657	1518	Andrenidae	BGENL1413-24_contig0;1318-2835;-;cox1	Andrena cyanomicans	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1518	Andrenidae	BGENL1416-24_contig4;849-2366;+;cox1	Andrena cypria	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1417-24_contig8;263-1804;+;cox1	Andrena tibialis cypricola	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1418-24_contig0;317-1858;+;cox1	Andrena tibialis cypricola	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	559	1377	Andrenidae	BGENL1419-24_contig6;1302-2678;-;cox1	Andrena tibialis cypricola	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1545	Andrenidae	BGENL1420-24_contig0;1070-2614;+;cox1	Andrena minutula dargia	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1545	Andrenidae	BGENL1421-24_contig0;854-2398;+;cox1	Andrena minutula dargia	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	656	1545	Andrenidae	BGENL1422-24_contig0;1755-3299;+;cox1	Andrena minutula dargia	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1424-24_contig2;2589-4130;-;cox1	Andrena decipiens	0
+0	0	data/BGE00183_S2M_cox1.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1425-24_contig0;1321-2862;+;cox1	Andrena decipiens	0

@@ -1,0 +1,24 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00410_MGE-BGE_r_1_s_100.fas	BGE00410-NC not in BOLD	None	BLAST	family	139	711		BGE00410-NC_cns	None	0
+13	24	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Ichneumonidae	BLAST	family	638	1359	Ichneumonidae	BGLIB870-24_cns	Virgichneumon maculicauda	0
+0	3	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Ichneumonidae	BLAST	family	464	1038	Braconidae,Ichneumonidae	BGLIB873-24_cns	Stenomacrus caudatus	0
+0	0	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Ichneumonidae	BLAST	family	158	780	Ichneumonidae	BGLIB875-24_cns	Stenomacrus holmgreni	0
+0	0	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Ichneumonidae	BLAST	family	656	1479	Tettigoniidae,Acrididae,Ninidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BGLIB879-24_cns	Clistopyga rufator	0
+9	13	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Pamphiliidae	BLAST	family	657	1527	Pamphiliidae	BGLIB882-24_cns	Pamphilius betulae	0
+0	12	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Tenthredinidae	BLAST	family	420	1107	Tipulidae,Syrphidae,Pipunculidae,Drosophilidae,Tachinidae,Stratiomyidae	BGLIB884-24_cns	Caliroa varipes	1
+17	20	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Tenthredinidae	BLAST	family	545	1308	Tenthredinidae	BGLIB885-24_cns	Euura histrio	0
+3	3	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Tenthredinidae	BLAST	family	334	807	Anostostomatidae,Acrididae,Pteronarcyidae,Nemestrinidae	BGLIB886-24_cns	Euura longiserra	0
+20	29	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Tenthredinidae	BLAST	family	657	1524	Tenthredinidae	BGLIB889-24_cns	Nematus septentrionalis	0
+0	31	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Tenthredinidae	BLAST	family	313	951	Cicadellidae,Tenthredinidae,Raphidiidae	BGLIB902-24_cns	Euura collactanea	0
+0	0	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Tenthredinidae	BLAST	family	1	132		BGLIB905-24_cns	Euura viminalis	0
+24	30	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Tenthredinidae	BLAST	family	373	936		BGLIB910-24_cns	Euura flavescens	0
+0	0	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Tenthredinidae	BLAST	family	185	927	Tenthredinidae	BGLIB911-24_cns	Euura leucotrocha	0
+0	18	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Tenthredinidae	BLAST	family	102	705	Tenthredinidae	BGLIB913-24_cns	Euura nigricornis	0
+22	38	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Tenthredinidae	BLAST	family	656	1479	Tenthredinidae	BGLIB914-24_cns	Euura oligospila	0
+10	11	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Tenthredinidae	BLAST	family	657	1521	Tenthredinidae	BGLIB915-24_cns	Euura poecilonota	0
+0	16	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Cephidae	BLAST	family	189	1140	Culicidae,Cephidae,Noctuidae,Papilionidae	BGLIB919-24_cns	Janus compressus	0
+0	0	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Cephidae	BLAST	family	217	459		BGLIB920-24_cns	Janus femoratus	0
+0	4	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Gasteruptiidae	BLAST	family	472	1113	Braconidae,Gasteruptiidae,Agaonidae,Aphelinidae,Chrysopidae	BGLIB921-24_cns	Gasteruption pedemontanum	0
+2	6	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Philanthidae	BLAST	family	251	906	Crabronidae	BGLIB925-24_cns	Cerceris fimbriata	0
+0	0	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Philanthidae	BLAST	family	656	1506	Ichneumonidae,Crabronidae	BGLIB926-24_cns	Cerceris tenuivittata	0
+0	2	data/BGE00410_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	376	867	Braconidae,Ichneumonidae	BGLIB941-24_cns	Diospilus oleraceus	0

@@ -1,0 +1,22 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00428_S2M_cox1.fasta	None	Buprestidae	BLAST	family	28	156	Dytiscidae,Scarabaeidae,Buprestidae	UNIFI668-24_contig4;1-156;+;cox1	Sphenoptera pilosula	0
+0	0	data/BGE00428_S2M_cox1.fasta	None	Byrrhidae	BLAST	family	656	1545	Staphylinidae,Helotidae,Dermestidae	UNIFI680-24_contig0;4041-5585;+;cox1	Byrrhus pilosellus pilosellus	0
+0	0	data/BGE00428_S2M_cox1.fasta	None	Byrrhidae	BLAST	family	656	1545	Staphylinidae,Helotidae,Dermestidae	UNIFI682-24_contig1;1947-3491;-;cox1	Byrrhus pilosellus similis	0
+0	0	data/BGE00428_S2M_cox1.fasta	None	Byrrhidae	BLAST	family	93	909	Byrrhidae	UNIFI683-24_contig1;553-1461;-;cox1	Byrrhus pyrenaeus	0
+0	0	data/BGE00428_S2M_cox1.fasta	None	Byrrhidae	BLAST	family	657	1545	Staphylinidae,Hydraenidae	UNIFI685-24_contig0;18902-20446;-;cox1	Curimopsis franzi	0
+0	0	data/BGE00428_S2M_cox1.fasta	None	Byrrhidae	BLAST	family	93	888	Staphylinidae,Byrrhidae,Dermestidae	UNIFI690-24_contig0;48-935;+;cox1	Curimus lariensis	0
+0	0	data/BGE00428_S2M_cox1.fasta	None	Byrrhidae	BLAST	family	1	78		UNIFI690-24_contig3;362-439;-;cox1	Curimus lariensis	0
+0	0	data/BGE00428_S2M_cox1.fasta	None	Cantharidae	BLAST	family	188	696	Cantharidae	UNIFI715-24_contig0;1-696;+;cox1	Cantharis falzonii	3
+0	0	data/BGE00428_S2M_cox1.fasta	None	Cantharidae	BLAST	family	255	393	Cantharidae	UNIFI716-24_contig8;1-393;+;cox1	Cantharis fuscipennis	6
+0	0	data/BGE00428_S2M_cox1.fasta	None	Cantharidae	BLAST	family	180	711	Cantharidae	UNIFI717-24_contig4;169-879;-;cox1	Cantharis fuscipennis	0
+0	0	data/BGE00428_S2M_cox1.fasta	None	Cantharidae	BLAST	family	95	189	Cantharidae	UNIFI718-24_contig1;4-192;+;cox1	Cantharis fuscipennis	0
+0	0	data/BGE00428_S2M_cox1.fasta	None	Cantharidae	BLAST	family	203	363	Cantharidae	UNIFI725-24_contig6;39-401;+;cox1	Cantharis italica	4
+0	0	data/BGE00428_S2M_cox1.fasta	None	Cantharidae	BLAST	family	75	117	Cantharidae	UNIFI726-24_contig2;287-403;+;cox1	Cantharis italica	0
+0	0	data/BGE00428_S2M_cox1.fasta	None	Cantharidae	BLAST	family	127	237	Cantharidae	UNIFI738-24_contig4;560-796;-;cox1	Cantharis paganettii	4
+0	0	data/BGE00428_S2M_cox1.fasta	None	Cantharidae	BLAST	family	93	924	Cantharidae	UNIFI739-24_contig8;50-973;+;cox1	Cantharis paganettii	0
+0	0	data/BGE00428_S2M_cox1.fasta	None	Cantharidae	BLAST	family	203	246	Cantharidae	UNIFI740-24_contig4;3-248;-;cox1	Cantharis paganettii	0
+0	0	data/BGE00428_S2M_cox1.fasta	None	Cantharidae	BLAST	family	186	228	Cantharidae	UNIFI749-24_contig7;12-239;-;cox1	Cantharis versicolor	0
+0	0	data/BGE00428_S2M_cox1.fasta	None	Cantharidae	BLAST	family	656	1341	Dytiscidae,Limoniidae,Syrphidae,Apidae	UNIFI750-24_contig2;228-1568;+;cox1	Cantharis versicolor	0
+0	0	data/BGE00428_S2M_cox1.fasta	None	Cantharidae	BLAST	family	338	381	Cantharidae	UNIFI751-24_contig5;2-382;-;cox1	Cantharis versicolor	0
+0	0	data/BGE00428_S2M_cox1.fasta	None	Cantharidae	BLAST	family	32	75	Cantharidae	UNIFI753-24_contig6;1-75;-;cox1	Cordicantharis longicollis	0
+0	0	data/BGE00428_S2M_cox1.fasta	None	Cantharidae	BLAST	family	35	273	Carabidae,Cantharidae,Tortricidae,Noctuidae,Erebidae,Nymphalidae,Inocelliidae	UNIFI756-24_contig2;7-279;+;cox1	Cratosilis laeta	0

@@ -1,0 +1,79 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons	process_id
+29	47	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	654	1470	Dermestidae,Bostrichidae,Psychodidae,Vespidae,Apidae,Andrenidae,Tetracampidae	BGENL1806-24_r_1_s_50	Panurginus brullei	0	BGENL1806-24
+17	26	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	622	1404	Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Vespidae,Andrenidae,Tetracampidae	BGENL1806-24_r_1_s_100	Panurginus brullei	0	BGENL1806-24
+10	18	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	567	1158	Andrenidae	BGENL1806-24_r_1.3_s_50	Panurginus brullei	0	BGENL1806-24
+16	35	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	347	945	Andrenidae	BGENL1806-24_r_1.3_s_100	Panurginus brullei	0	BGENL1806-24
+15	15	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	799	876	Andrenidae	BGENL1806-24_r_1.5_s_50	Panurginus brullei	2	BGENL1806-24
+8	8	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	664	738	Andrenidae	BGENL1806-24_r_1.5_s_100	Panurginus brullei	2	BGENL1806-24
+31	71	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1807-24_r_1_s_50	Panurginus brullei	0	BGENL1807-24
+31	64	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1485	Andrenidae	BGENL1807-24_r_1_s_100	Panurginus brullei	0	BGENL1807-24
+6	18	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1419	Apidae,Andrenidae,Halictidae,Megachilidae	BGENL1807-24_r_1.3_s_50	Panurginus brullei	0	BGENL1807-24
+6	14	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1404	Andrenidae	BGENL1807-24_r_1.3_s_100	Panurginus brullei	0	BGENL1807-24
+6	8	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1368	Apidae,Andrenidae	BGENL1807-24_r_1.5_s_50	Panurginus brullei	0	BGENL1807-24
+7	9	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1368	Apidae,Andrenidae	BGENL1807-24_r_1.5_s_100	Panurginus brullei	0	BGENL1807-24
+12	41	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	537	1341	Apidae,Halictidae	BGENL1808-24_r_1_s_50	Panurginus brullei	0	BGENL1808-24
+41	66	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	543	1221	Andrenidae,Halictidae,Megachilidae	BGENL1808-24_r_1_s_100	Panurginus brullei	0	BGENL1808-24
+2	4	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	533	1095	Andrenidae	BGENL1808-24_r_1.3_s_50	Panurginus brullei	0	BGENL1808-24
+1	1	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	431	975	Blaberidae,Chrysomelidae,Curculionidae,Andrenidae,Halictidae,Megachilidae,Colletidae	BGENL1808-24_r_1.3_s_100	Panurginus brullei	0	BGENL1808-24
+0	3	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	338	759	Ichneumonidae,Andrenidae,Halictidae,Megachilidae	BGENL1808-24_r_1.5_s_50	Panurginus brullei	0	BGENL1808-24
+0	0	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	368	630	Andrenidae,Halictidae	BGENL1808-24_r_1.5_s_100	Panurginus brullei	0	BGENL1808-24
+1	33	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	491	1176		BGENL1809-24_r_1_s_50	Panurginus lactipennis	0	BGENL1809-24
+0	35	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	309	1071		BGENL1809-24_r_1_s_100	Panurginus lactipennis	0	BGENL1809-24
+0	26	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	329	888	Lampyridae,Crabronidae,Colletidae,Chalcididae	BGENL1809-24_r_1.3_s_50	Panurginus lactipennis	0	BGENL1809-24
+0	33	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	157	801	Crabronidae,Megachilidae,Colletidae,Chalcididae	BGENL1809-24_r_1.3_s_100	Panurginus lactipennis	0	BGENL1809-24
+0	0	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	76	579	Andrenidae	BGENL1809-24_r_1.5_s_50	Panurginus lactipennis	0	BGENL1809-24
+0	0	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	76	543	Vespidae,Andrenidae	BGENL1809-24_r_1.5_s_100	Panurginus lactipennis	0	BGENL1809-24
+7	10	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1386	Formicidae	BGENL1810-24_r_1_s_50	Panurginus lactipennis	0	BGENL1810-24
+4	8	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	654	1278		BGENL1810-24_r_1_s_100	Panurginus lactipennis	0	BGENL1810-24
+4	6	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	637	1173	Andrenidae,Halictidae,Colletidae	BGENL1810-24_r_1.3_s_50	Panurginus lactipennis	0	BGENL1810-24
+4	4	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	627	1104	Andrenidae,Colletidae	BGENL1810-24_r_1.3_s_100	Panurginus lactipennis	0	BGENL1810-24
+0	7	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	356	777	Andrenidae,Colletidae	BGENL1810-24_r_1.5_s_50	Panurginus lactipennis	0	BGENL1810-24
+0	5	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	383	705	Andrenidae,Colletidae	BGENL1810-24_r_1.5_s_100	Panurginus lactipennis	0	BGENL1810-24
+33	53	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	609	1294		BGENL1811-24_r_1_s_50	Panurginus lactipennis	0	BGENL1811-24
+31	49	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	595	1170	Lycidae,Ciidae,Apidae,Andrenidae,Halictidae	BGENL1811-24_r_1_s_100	Panurginus lactipennis	0	BGENL1811-24
+10	15	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	514	1080	Andrenidae,Megachilidae,Colletidae	BGENL1811-24_r_1.3_s_50	Panurginus lactipennis	0	BGENL1811-24
+7	7	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	451	1014	Andrenidae,Colletidae	BGENL1811-24_r_1.3_s_100	Panurginus lactipennis	0	BGENL1811-24
+2	4	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	367	849	Staphylinidae,Laemophloeidae,Culicidae,Apidae,Nymphalidae	BGENL1811-24_r_1.5_s_50	Panurginus lactipennis	0	BGENL1811-24
+2	2	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	304	696	Laemophloeidae,Culicidae,Apidae,Colletidae,Nymphalidae	BGENL1811-24_r_1.5_s_100	Panurginus lactipennis	0	BGENL1811-24
+16	23	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Halictidae	BLAST	family	447	1092	Tettigoniidae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Ulidiidae,Vespidae,Tetracampidae	BGENL1816-24_r_1_s_50	Nomiapis femoralis	0	BGENL1816-24
+12	25	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Halictidae	BLAST	family	443	1026	Tettigoniidae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Ulidiidae,Vespidae,Tetracampidae	BGENL1816-24_r_1_s_100	Nomiapis femoralis	0	BGENL1816-24
+0	1	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Halictidae	BLAST	family	208	732	Tettigoniidae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Ulidiidae,Vespidae,Tetracampidae	BGENL1816-24_r_1.3_s_50	Nomiapis femoralis	0	BGENL1816-24
+0	0	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Halictidae	BLAST	family	207	585	Tettigoniidae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Ulidiidae,Vespidae,Tetracampidae	BGENL1816-24_r_1.3_s_100	Nomiapis femoralis	0	BGENL1816-24
+0	0	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Halictidae	BLAST	family	98	315	Acrididae,Timematidae,Reduviidae,Curculionidae,Drosophilidae,Formicidae	BGENL1816-24_r_1.5_s_50	Nomiapis femoralis	0	BGENL1816-24
+0	0	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Halictidae	BLAST	family	98	213		BGENL1816-24_r_1.5_s_100	Nomiapis femoralis	0	BGENL1816-24
+42	102	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	655	1527	Apidae,Megachilidae	BGENL1826-24_r_1_s_50	Melecta grandis	0	BGENL1826-24
+26	53	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	655	1521	Apidae	BGENL1826-24_r_1_s_100	Melecta grandis	0	BGENL1826-24
+15	43	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	655	1527	Apidae,Megachilidae,Geometridae	BGENL1826-24_r_1.3_s_50	Melecta grandis	0	BGENL1826-24
+15	26	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	655	1518	Apidae	BGENL1826-24_r_1.3_s_100	Melecta grandis	0	BGENL1826-24
+4	5	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	628	1422	Apidae	BGENL1826-24_r_1.5_s_50	Melecta grandis	0	BGENL1826-24
+2	2	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	629	1413	Apidae	BGENL1826-24_r_1.5_s_100	Melecta grandis	0	BGENL1826-24
+5	12	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	657	1560	Megachilidae	BGENL1865-24_r_1_s_50	Megachile foersteri	0	BGENL1865-24
+6	11	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	657	1542	Megachilidae	BGENL1865-24_r_1_s_100	Megachile foersteri	0	BGENL1865-24
+4	17	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1563	Apidae,Megachilidae	BGENL1865-24_r_1.3_s_50	Megachile foersteri	0	BGENL1865-24
+4	9	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	657	1530	Apidae,Megachilidae	BGENL1865-24_r_1.3_s_100	Megachile foersteri	0	BGENL1865-24
+3	7	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1509	Megachilidae	BGENL1865-24_r_1.5_s_50	Megachile foersteri	0	BGENL1865-24
+3	8	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1476	Megachilidae	BGENL1865-24_r_1.5_s_100	Megachile foersteri	0	BGENL1865-24
+4	8	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1554	Megachilidae	BGENL1866-24_r_1_s_50	Megachile foersteri	0	BGENL1866-24
+8	13	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1554	Megachilidae	BGENL1866-24_r_1_s_100	Megachile foersteri	0	BGENL1866-24
+2	11	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1536	Apidae,Megachilidae	BGENL1866-24_r_1.3_s_50	Megachile foersteri	0	BGENL1866-24
+6	25	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1512	Apidae,Megachilidae	BGENL1866-24_r_1.3_s_100	Megachile foersteri	0	BGENL1866-24
+4	7	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1476	Apidae,Megachilidae	BGENL1866-24_r_1.5_s_50	Megachile foersteri	0	BGENL1866-24
+4	8	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1476	Apidae,Megachilidae	BGENL1866-24_r_1.5_s_100	Megachile foersteri	0	BGENL1866-24
+6	12	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1560	Megachilidae	BGENL1867-24_r_1_s_50	Megachile foersteri	0	BGENL1867-24
+8	13	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1542	Megachilidae	BGENL1867-24_r_1_s_100	Megachile foersteri	0	BGENL1867-24
+5	8	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1551	Apidae,Megachilidae	BGENL1867-24_r_1.3_s_50	Megachile foersteri	0	BGENL1867-24
+3	7	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1476	Apidae,Megachilidae	BGENL1867-24_r_1.3_s_100	Megachile foersteri	0	BGENL1867-24
+6	10	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1515	Megachilidae	BGENL1867-24_r_1.5_s_50	Megachile foersteri	0	BGENL1867-24
+7	10	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1476	Megachilidae	BGENL1867-24_r_1.5_s_100	Megachile foersteri	0	BGENL1867-24
+32	58	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1425	Megachilidae	BGENL1871-24_r_1_s_50	Megachile melanogaster	0	BGENL1871-24
+4	19	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1383	Tettigoniidae,Vespidae,Megachilidae	BGENL1871-24_r_1_s_100	Megachile melanogaster	0	BGENL1871-24
+7	30	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	615	1335	Megachilidae	BGENL1871-24_r_1.3_s_50	Megachile melanogaster	0	BGENL1871-24
+1	26	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	515	1167	Megachilidae	BGENL1871-24_r_1.3_s_100	Megachile melanogaster	0	BGENL1871-24
+1	1	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	576	1260	Apidae,Megachilidae	BGENL1871-24_r_1.5_s_50	Megachile melanogaster	0	BGENL1871-24
+0	0	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	488	1035	Megachilidae	BGENL1871-24_r_1.5_s_100	Megachile melanogaster	0	BGENL1871-24
+7	11	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00182-NC not in BOLD	None	BLAST	family	537	1233		BGE00182-NC_r_1_s_50	None	0	BGE00182-NC
+0	14	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00182-NC not in BOLD	None	BLAST	family	398	1041		BGE00182-NC_r_1_s_100	None	0	BGE00182-NC
+1	5	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00182-NC not in BOLD	None	BLAST	family	142	582		BGE00182-NC_r_1.3_s_50	None	0	BGE00182-NC
+0	0	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00182-NC not in BOLD	None	BLAST	family	136	297		BGE00182-NC_r_1.3_s_100	None	0	BGE00182-NC
+0	0	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00182-NC not in BOLD	None	BLAST	family	100	366		BGE00182-NC_r_1.5_s_50	None	0	BGE00182-NC
+0	0	data/BGE00182_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00182-NC not in BOLD	None	BLAST	family	95	165		BGE00182-NC_r_1.5_s_100	None	0	BGE00182-NC

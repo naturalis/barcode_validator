@@ -1,0 +1,33 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	656	1524	Culicidae,Panorpidae	BGENL396-23_cns	Chelidura aptera	0
+0	5	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	446	1062	Carabidae,Erotylidae,Noctuidae,Nevrorthidae	BGENL397-23_cns	Chelidura aptera	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	495	1203	Calopterygidae,Anisolabididae,Notonemouridae,Chrysomelidae,Chironomidae,Simuliidae,Tortricidae,Endromidae,Geometridae	BGENL401-23_cns	Apterygida albipennis	0
+23	42	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	489	1149	Saldidae,Leiodidae,Elateridae,Chrysomelidae,Anthribidae,Simuliidae,Tephritidae	BGENL402-23_cns	Apterygida albipennis	0
+0	5	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Corydiidae	BLAST	family	650	1500	Blattellidae,Blattidae,Cryptocercidae,Kalotermitidae	BGENL408-23_cns	Polyphaga aegyptiaca	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	657	1524	Haplodiplatyidae,Culicidae	BGENL411-23_cns	Pseudochelidura sinuata	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	657	1524	Culicidae,Chironomidae,Syrphidae,Drosophilidae	BGENL412-23_cns	Pseudochelidura sinuata	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	657	1524	Haplodiplatyidae,Culicidae	BGENL413-23_cns	Pseudochelidura sinuata	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	657	1524	Haplodiplatyidae,Culicidae	BGENL414-23_cns	Pseudochelidura sinuata	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	656	1521	Culicidae,Simuliidae	BGENL415-23_cns	Forficula lurida	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	656	1521	Culicidae,Simuliidae	BGENL416-23_cns	Forficula lurida	0
+2	2	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	656	1521	Gelechiidae,Xyloryctidae,Nymphalidae,Pyralidae	BGENL418-23_cns	Forficula lurida	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	354	741	Baetidae,Isonychiidae,Forficulidae,Hydrophilidae,Tenebrionidae,Anthribidae,Scathophagidae	BGENL422-23_cns	Forficula lesnei	0
+14	45	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	635	1407	Forficulidae	BGENL425-23_cns	Forficula decipiens	0
+1	33	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	469	825	Phoridae,Formicidae,Sphingidae,Geometridae	BGENL426-23_cns	Forficula decipiens	1
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	657	1500	Anisolabididae,Dytiscidae,Culicidae,Crambidae,Geometridae	BGENL427-23_cns	Eulithinus analis	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	656	1524	Culicidae,Panorpidae,Sialidae	BGENL431-23_cns	Chelidura pyrenaica	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	656	1524	Culicidae,Panorpidae	BGENL432-23_cns	Chelidura pyrenaica	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	656	1524	Culicidae,Panorpidae,Sialidae	BGENL433-23_cns	Chelidura pyrenaica	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	656	1524	Culicidae,Drosophilidae,Nevrorthidae	BGENL434-23_cns	Chelidura pyrenaica	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	381	684	Gryllidae,Carabidae,Silphidae,Cleridae,Culicidae	BGENL435-23_cns	Chelidura mutica	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	657	1497	Culicidae	BGENL436-23_cns	Chelidura mutica	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	657	1452	Culicidae	BGENL437-23_cns	Chelidura mutica	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Forficulidae	BLAST	family	113	225	Forficulidae	BGENL438-23_cns	Chelidura mutica	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Psyllidae	BLAST	family	223	822	Psyllidae	BGENL441-23_cns	Cacopsylla zetterstedti	0
+None	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	Local BLAST failed for sequence ''	Cicadellidae	BLAST	family	None	0		BGENL444-23_cns	Acericerus vittifrons	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Cicadellidae	BLAST	family	657	1524	Forficulidae,Dytiscidae,Carabidae,Cleridae,Culicidae,Syrphidae,Inocelliidae	BGENL452-23_cns	Diplocolenus orientalis	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Cicadellidae	BLAST	family	1	192		BGENL463-23_cns	Adarrus multinotatus	0
+4	4	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Cicadellidae	BLAST	family	393	1161	Cicadellidae	BGENL467-23_cns	Adarrus multinotatus	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Cicadellidae	BLAST	family	91	168	Cicadellidae	BGENL469-23_cns	Diplocolenus orientalis	0
+19	19	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	None	Cicadellidae	BLAST	family	656	1458	Membracidae,Cicadellidae	BGENL474-23_cns	Macropsis impura	0
+0	0	data/BGE00173_MGE_cox1_insect_universal_swapped.fas	NC-BGE00171 not in BOLD	None	BLAST	family	149	222		NC-BGE00171_cns	None	0

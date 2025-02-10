@@ -1,0 +1,21 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+None	0	data/BGE00148_MGE-BGE_r_1_s_100.fas	BGE00148-NC not in BOLD	None	BLAST	family	None	0		BGE00148-NC_cns	None	0
+8	40	data/BGE00148_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	326	939	Noctuidae,Erebidae	BHNHM191-24_cns	Brachygalea albolineata	0
+0	5	data/BGE00148_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	654	1491	Choreutidae,Carposinidae,Lasiocampidae,Nymphalidae	BHNHM194-24_cns	Bryophila amoenissima	0
+10	10	data/BGE00148_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	656	1527	Noctuidae	BHNHM203-24_cns	Calophasia opalina	0
+8	8	data/BGE00148_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	564	1323	Noctuidae	BHNHM206-24_cns	Caradrina abruzzensis	0
+11	11	data/BGE00148_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	647	1521	Noctuidae	BHNHM207-24_cns	Caradrina minoica	0
+16	19	data/BGE00148_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	657	1485	Noctuidae,Lycaenidae,Geometridae	BHNHM208-24_cns	Caradrina minoica	0
+5	7	data/BGE00148_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	353	957	Noctuidae,Nymphalidae	BHNHM212-24_cns	Caradrina fergana	0
+10	12	data/BGE00148_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	516	807	Noctuidae	BHNHM224-24_cns	Caradrina wullschlegeli	0
+6	44	data/BGE00148_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	284	999	Noctuidae,Geometridae	BHNHM242-24_cns	Cryphia amygdalina	0
+None	0	data/BGE00148_MGE-BGE_r_1_s_100.fas	Local BLAST failed for sequence ''	Noctuidae	BLAST	family	None	0		BHNHM244-24_cns	Cryphia receptricula	0
+8	13	data/BGE00148_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	657	1431	Noctuidae	BHNHM257-24_cns	Cucullia mixta	0
+14	30	data/BGE00148_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	657	1521	Noctuidae,Erebidae,Geometridae	BHNHM268-24_cns	Cucullia santolinae	0
+8	8	data/BGE00148_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	500	1290	Noctuidae,Nolidae,Erebidae	BHNHM269-24_cns	Cucullia santolinae	0
+25	41	data/BGE00148_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	543	1302	Noctuidae,Papilionidae,Geometridae	BHNHM270-24_cns	Cucullia magnifica	0
+27	40	data/BGE00148_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	593	1275	Noctuidae	BHNHM276-24_cns	Cucullia propinqua	0
+7	8	data/BGE00148_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	657	1533	Noctuidae,Erebidae	BHNHM277-24_cns	Cucullia propinqua	0
+20	25	data/BGE00148_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	602	1392	Noctuidae	BHNHM282-24_cns	Diachrysia generosa	0
+36	36	data/BGE00148_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	657	1530	Noctuidae	BHNHM283-24_cns	Diachrysia generosa	0
+None	0	data/BGE00148_MGE-BGE_r_1_s_100.fas	Local BLAST failed for sequence ''	Noctuidae	BLAST	family	None	0		BHNHM285-24_cns	Dichagyris fidelis	0

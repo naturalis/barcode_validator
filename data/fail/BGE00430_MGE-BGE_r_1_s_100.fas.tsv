@@ -1,0 +1,17 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00430_MGE-BGE_r_1_s_100.fas	BGE00430-NC not in BOLD	None	BLAST	family	1	216		BGE00430-NC_cns	None	0
+20	21	data/BGE00430_MGE-BGE_r_1_s_100.fas	None	Cantharidae	BLAST	family	627	1500	Cantharidae	UNIFI861-24_cns	Rhagonycha nigrosuta	0
+7	26	data/BGE00430_MGE-BGE_r_1_s_100.fas	None	Cantharidae	BLAST	family	657	1539	Cantharidae	UNIFI863-24_cns	Rhagonycha nigrosuta	0
+12	16	data/BGE00430_MGE-BGE_r_1_s_100.fas	None	Cantharidae	BLAST	family	461	1137	Cantharidae	UNIFI864-24_cns	Rhagonycha pedemontana	0
+23	23	data/BGE00430_MGE-BGE_r_1_s_100.fas	None	Cantharidae	BLAST	family	560	1044	Cantharidae	UNIFI865-24_cns	Rhagonycha pedemontana	0
+5	6	data/BGE00430_MGE-BGE_r_1_s_100.fas	None	Cerambycidae	BLAST	family	656	1542	Anisolabididae,Aphrophoridae,Dytiscidae,Culicidae,Sesiidae,Nymphalidae,Riodinidae,Geometridae	UNIFI886-24_cns	Arhopalus ferus	3
+14	38	data/BGE00430_MGE-BGE_r_1_s_100.fas	None	Cerambycidae	BLAST	family	656	1509	Trigonidiidae,Cerambycidae,Chironomidae,Muscidae,Tabanidae,Geometridae	UNIFI887-24_cns	Blabinotus spinicollis	1
+None	0	data/BGE00430_MGE-BGE_r_1_s_100.fas	Local BLAST failed for sequence ''	Cerambycidae	BLAST	family	None	0		UNIFI893-24_cns	Callidiellum rufipenne	0
+32	76	data/BGE00430_MGE-BGE_r_1_s_100.fas	None	Cerambycidae	BLAST	family	656	1527	Hepialidae,Notodontidae,Papilionidae	UNIFI894-24_cns	Callidiellum rufipenne	0
+7	8	data/BGE00430_MGE-BGE_r_1_s_100.fas	None	Cerambycidae	BLAST	family	649	1500	Cerambycidae,Dermestidae	UNIFI900-24_cns	Callimus abdominalis	0
+12	12	data/BGE00430_MGE-BGE_r_1_s_100.fas	None	Cerambycidae	BLAST	family	656	1497	Silphidae,Tenebrionidae,Chrysomelidae,Cerambycidae,Anthribidae,Dermestidae	UNIFI904-24_cns	Certallum ebulinum	0
+5	25	data/BGE00430_MGE-BGE_r_1_s_100.fas	None	Cerambycidae	BLAST	family	461	1290	Hydrophilidae,Staphylinidae,Silphidae,Trogidae,Elateridae,Nitidulidae,Latridiidae,Culicidae	UNIFI908-24_cns	Chlorophorus aegyptiacus	0
+1	7	data/BGE00430_MGE-BGE_r_1_s_100.fas	None	Cerambycidae	BLAST	family	656	1536	Hydraenidae,Scarabaeidae,Cerambycidae,Muscidae,Sarcophagidae	UNIFI909-24_cns	Chlorophorus hungaricus	1
+20	43	data/BGE00430_MGE-BGE_r_1_s_100.fas	None	Cerambycidae	BLAST	family	629	1368	Cerambycidae,Sarcophagidae	UNIFI910-24_cns	Chlorophorus hungaricus	0
+13	13	data/BGE00430_MGE-BGE_r_1_s_100.fas	None	Cerambycidae	BLAST	family	656	1533	Cerambycidae	UNIFI915-24_cns	Clytus triangulimacula	0
+14	17	data/BGE00430_MGE-BGE_r_1_s_100.fas	None	Cerambycidae	BLAST	family	655	1530	Culicidae	UNIFI916-24_cns	Clytus triangulimacula	0

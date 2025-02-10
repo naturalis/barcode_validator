@@ -1,0 +1,22 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00177_S2M_cox1.fasta	None	Cicadellidae	BLAST	family	113	198	Coreidae,Cicadellidae,Staphylinidae,Buprestidae,Cimbicidae	BGENL1694-24_contig0;1264-1461;-;cox1_0	Opsius scutellaris	0
+0	0	data/BGE00177_S2M_cox1.fasta	None	Cicadellidae	BLAST	family	64	123	Cicadellidae,Staphylinidae,Buprestidae,Chironomidae	BGENL1694-24_contig0;1413-1535;+;cox1_1	Opsius scutellaris	2
+0	0	data/BGE00177_S2M_cox1.fasta	None	Cixiidae	BLAST	family	97	174		BGENL1621-24_contig1;288-461;-;cox1	Cixius simplex	2
+0	0	data/BGE00177_S2M_cox1.fasta	None	Miridae	BLAST	family	97	201	Mesoveliidae,Corixidae,Miridae,Anthocoridae,Aradidae,Staphylinidae	BGENL1649-24_contig3;228-428;-;cox1	Brachycoleus pilicornis	1
+0	0	data/BGE00177_S2M_cox1.fasta	None	Cicadellidae	BLAST	family	107	267	Veliidae,Reduviidae,Cicadellidae,Curculionidae	BGENL1684-24_contig5;3-269;+;cox1	Paraglena paludosa	0
+0	0	data/BGE00177_S2M_cox1.fasta	None	Cicadellidae	BLAST	family	203	1020	Cicadellidae	BGENL1705-24_contig1;11580-12599;-;cox1	Laburrus quadratus	0
+0	0	data/BGE00177_S2M_cox1.fasta	None	Cicadellidae	BLAST	family	313	360	Cicadellidae	BGENL1705-24_contig0;47-406;-;cox1	Laburrus quadratus	0
+0	0	data/BGE00177_S2M_cox1.fasta	None	Delphacidae	BLAST	family	127	471	Delphacidae	BGENL1656-24_contig1;2-472;-;cox1	Calligypona reyi	0
+0	0	data/BGE00177_S2M_cox1.fasta	None	Psyllidae	BLAST	family	131	165	Psyllidae	BGENL1630-24_contig3;3-167;-;cox1	Cacopsylla visci	0
+0	0	data/BGE00177_S2M_cox1.fasta	None	Cicadellidae	BLAST	family	167	984	Cicadellidae	BGENL1698-24_contig1;10292-11275;-;cox1	Amblytelinus insularis	0
+0	0	data/BGE00177_S2M_cox1.fasta	None	Cicadellidae	BLAST	family	657	705	Culicidae,Limoniidae,Lonchopteridae,Drosophilidae	BGENL1698-24_contig0;37-741;-;cox1	Amblytelinus insularis	0
+0	0	data/BGE00177_S2M_cox1.fasta	None	Aphalaridae	BLAST	family	280	1092	Triozidae,Phacopteronidae,Carsidaridae,Aphalaridae,Liviidae	BGENL1640-24_contig4;4-1095;+;cox1	Craspedolepta artemisiae	0
+0	0	data/BGE00177_S2M_cox1.fasta	None	Saldidae	BLAST	family	211	255	Saldidae	BGENL1655-24_contig0;2-256;-;cox1	Salda morio	0
+0	0	data/BGE00177_S2M_cox1.fasta	None	Cicadellidae	BLAST	family	1	87		BGENL1682-24_contig4;6-92;+;cox1	Brachypterona viridissima	0
+0	0	data/BGE00177_S2M_cox1.fasta	None	Cicadellidae	BLAST	family	136	285	Veliidae,Mesoveliidae,Tingidae,Cymidae,Cicadellidae	BGENL1682-24_contig7;3-287;-;cox1_0	Brachypterona viridissima	0
+0	0	data/BGE00177_S2M_cox1.fasta	None	Cicadellidae	BLAST	family	1	51	Veliidae,Nabidae,Delphacidae,Culicidae	BGENL1682-24_contig7;281-331;+;cox1_1	Brachypterona viridissima	0
+0	0	data/BGE00177_S2M_cox1.fasta	None	Delphacidae	BLAST	family	80	330	Delphacidae	BGENL1637-24_contig2;1-330;+;cox1	Ribautodelphax imitans	0
+0	0	data/BGE00177_S2M_cox1.fasta	None	Cixiidae	BLAST	family	70	150		BGENL1623-24_contig5;3-152;+;cox1	Cixius stigmatus	0
+0	0	data/BGE00177_S2M_cox1.fasta	None	Cicadellidae	BLAST	family	253	621	Cicadellidae	BGENL1688-24_contig6;205-825;-;cox1	Goldeus harpago	1
+0	0	data/BGE00177_S2M_cox1.fasta	None	Anthocoridae	BLAST	family	509	828	Anthocoridae	BGENL1647-24_contig2;254-1081;-;cox1	Anthocoris visci	11
+0	0	data/BGE00177_S2M_cox1.fasta	None	Cicadellidae	BLAST	family	143	579	Pentatomidae,Cicadellidae	BGENL1672-24_contig1;1-579;+;cox1	Euscelis ormaderensis	0

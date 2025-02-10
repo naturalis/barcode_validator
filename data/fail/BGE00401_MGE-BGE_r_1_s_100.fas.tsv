@@ -1,0 +1,23 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+None	0	data/BGE00401_MGE-BGE_r_1_s_100.fas	BGE00401-NC not in BOLD	None	BLAST	family	None	0		BGE00401-NC_cns	None	0
+4	23	data/BGE00401_MGE-BGE_r_1_s_100.fas	None	Gomphidae	BLAST	family	140	441	Noctuidae,Erebidae	BGLIB004-23_cns	Stylurus flavipes	0
+6	24	data/BGE00401_MGE-BGE_r_1_s_100.fas	None	Nemouridae	BLAST	family	189	870	Culicidae,Tabanidae	BGLIB007-23_cns	Protonemura mattheyi	0
+0	0	data/BGE00401_MGE-BGE_r_1_s_100.fas	None	Taeniopterygidae	BLAST	family	142	210	Lestidae	BGLIB009-23_cns	Brachyptera helenica	0
+15	31	data/BGE00401_MGE-BGE_r_1_s_100.fas	None	Perlidae	BLAST	family	492	1188	Culicidae,Notodontidae,Crambidae	BGLIB010-23_cns	Marthamea selysii	0
+0	0	data/BGE00401_MGE-BGE_r_1_s_100.fas	None	Cossidae	BLAST	family	657	1530	Erebidae,Papilionidae,Pyralidae,Crambidae,Geometridae	BGLIB012-23_cns	Dyspessa emilia	0
+3	4	data/BGE00401_MGE-BGE_r_1_s_100.fas	None	Erebidae	BLAST	family	413	873	Noctuidae	BGLIB015-23_cns	Ocneria lapidicola	0
+0	0	data/BGE00401_MGE-BGE_r_1_s_100.fas	None	Erebidae	BLAST	family	657	1530	Noctuidae	BGLIB018-23_cns	Orgyia corsica	0
+0	0	data/BGE00401_MGE-BGE_r_1_s_100.fas	None	Tortricidae	BLAST	family	657	1533	Hepialidae	BGLIB021-23_cns	Pharmacis pyrenaicus	0
+7	8	data/BGE00401_MGE-BGE_r_1_s_100.fas	None	Psychidae	BLAST	family	350	966	Limacodidae,Nymphalidae,Hesperiidae	BGLIB046-23_cns	Apterona nylanderi	0
+6	28	data/BGE00401_MGE-BGE_r_1_s_100.fas	None	Psychidae	BLAST	family	648	1416	Tortricidae,Limacodidae,Notodontidae,Nymphalidae,Geometridae	BGLIB047-23_cns	Pseudobankesia macedoniella	0
+3	9	data/BGE00401_MGE-BGE_r_1_s_100.fas	None	Psychidae	BLAST	family	534	726	Noctuidae	BGLIB048-23_cns	Whittleia undulella	0
+14	18	data/BGE00401_MGE-BGE_r_1_s_100.fas	None	Psychidae	BLAST	family	431	954	Cosmopterigidae,Limacodidae,Noctuidae,Nymphalidae	BGLIB049-23_cns	Whittleia undulella	0
+0	1	data/BGE00401_MGE-BGE_r_1_s_100.fas	None	Psychidae	BLAST	family	524	1104	Tortricidae,Erebidae,Nymphalidae,Crambidae	BGLIB080-23_cns	Apterona crenulella	0
+0	0	data/BGE00401_MGE-BGE_r_1_s_100.fas	None	Psychidae	BLAST	family	229	240	Nymphalidae	BGLIB081-23_cns	Epichnopterix plumella	1
+19	25	data/BGE00401_MGE-BGE_r_1_s_100.fas	None	Psychidae	BLAST	family	70	285		BGLIB085-23_cns	Dahlica siederi	0
+None	0	data/BGE00401_MGE-BGE_r_1_s_100.fas	Local BLAST failed for sequence ''	Nepticulidae	BLAST	family	None	0		BGLIB089-23_cns	Ectoedemia arcuatella	0
+0	0	data/BGE00401_MGE-BGE_r_1_s_100.fas	None	Nepticulidae	BLAST	family	104	105	Gelechiidae,Scythrididae,Erebidae	BGLIB090-23_cns	Ectoedemia atricollis	0
+0	0	data/BGE00401_MGE-BGE_r_1_s_100.fas	None	Nepticulidae	BLAST	family	220	414	Acrididae,Nitidulidae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Tetracampidae	BGLIB091-23_cns	Ectoedemia angulifasciella	0
+0	0	data/BGE00401_MGE-BGE_r_1_s_100.fas	None	Nepticulidae	BLAST	family	1	90		BGLIB092-23_cns	Ectoedemia albifasciella	0
+None	0	data/BGE00401_MGE-BGE_r_1_s_100.fas	Local BLAST failed for sequence ''	Nepticulidae	BLAST	family	None	0		BGLIB093-23_cns	Ectoedemia argyropeza	0
+15	15	data/BGE00401_MGE-BGE_r_1_s_100.fas	None	Nepticulidae	BLAST	family	143	144		BGLIB095-23_cns	Ectoedemia atricollis	0

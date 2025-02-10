@@ -1,0 +1,133 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons	process_id
+15	21	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	657	1545	Ichneumonidae	BGLIB292-23_r_1_s_50	Acolobus sericeus	0	BGLIB292-23
+50	72	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	657	1539	Ichneumonidae	BGLIB292-23_r_1_s_100	Acolobus sericeus	0	BGLIB292-23
+11	12	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	639	1494	Ichneumonidae	BGLIB292-23_r_1.3_s_50	Acolobus sericeus	0	BGLIB292-23
+23	26	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	639	1479	Ichneumonidae	BGLIB292-23_r_1.3_s_100	Acolobus sericeus	0	BGLIB292-23
+5	5	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	573	1347	Ichneumonidae	BGLIB292-23_r_1.5_s_50	Acolobus sericeus	0	BGLIB292-23
+2	3	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	564	1281	Ichneumonidae	BGLIB292-23_r_1.5_s_100	Acolobus sericeus	0	BGLIB292-23
+21	60	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	597	1404	Hormaphididae,Staphylinidae,Apionidae,Geometridae	BGLIB295-23_r_1_s_50	Anisobas cingulatellus	1	BGLIB295-23
+14	39	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	465	1239	Hormaphididae,Hydraenidae,Chrysomelidae,Coccinellidae,Ichneumonidae	BGLIB295-23_r_1_s_100	Anisobas cingulatellus	0	BGLIB295-23
+6	31	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	518	1095	Ichneumonidae	BGLIB295-23_r_1.3_s_50	Anisobas cingulatellus	0	BGLIB295-23
+32	32	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	649	903	Ichneumonidae	BGLIB295-23_r_1.3_s_100	Anisobas cingulatellus	2	BGLIB295-23
+5	5	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	658	972	Ichneumonidae	BGLIB295-23_r_1.5_s_50	Anisobas cingulatellus	1	BGLIB295-23
+0	0	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	546	777	Ichneumonidae	BGLIB295-23_r_1.5_s_100	Anisobas cingulatellus	3	BGLIB295-23
+6	19	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Vespidae	BLAST	family	508	897	Vespidae	BGLIB317-23_r_1_s_50	Odynerus albopictus	0	BGLIB317-23
+39	53	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Vespidae	BLAST	family	367	615	Andrenidae	BGLIB317-23_r_1_s_100	Odynerus albopictus	1	BGLIB317-23
+6	20	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Vespidae	BLAST	family	383	744	Vespidae	BGLIB317-23_r_1.3_s_50	Odynerus albopictus	0	BGLIB317-23
+0	31	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Vespidae	BLAST	family	167	576	Braconidae,Andrenidae,Noctuidae	BGLIB317-23_r_1.3_s_100	Odynerus albopictus	0	BGLIB317-23
+0	11	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Vespidae	BLAST	family	188	552	Braconidae,Andrenidae,Noctuidae	BGLIB317-23_r_1.5_s_50	Odynerus albopictus	0	BGLIB317-23
+0	0	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Vespidae	BLAST	family	277	417	Andrenidae	BGLIB317-23_r_1.5_s_100	Odynerus albopictus	0	BGLIB317-23
+3	3	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Vespidae	BLAST	family	265	612	Noctuidae,Tischeriidae	BGLIB330-23_r_1_s_50	Pseudepipona lativentris	3	BGLIB330-23
+0	0	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Vespidae	BLAST	family	79	312	Elateridae,Vespidae,Noctuidae,Erebidae,Crambidae,Rhyacophilidae	BGLIB330-23_r_1_s_100	Pseudepipona lativentris	0	BGLIB330-23
+5	5	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Vespidae	BLAST	family	216	459	Noctuidae,Pterophoridae	BGLIB330-23_r_1.3_s_50	Pseudepipona lativentris	0	BGLIB330-23
+0	0	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Vespidae	BLAST	family	78	231	Gyrinidae,Elateridae,Curculionidae,Vespidae,Noctuidae,Rhyacophilidae,Corydalidae	BGLIB330-23_r_1.3_s_100	Pseudepipona lativentris	0	BGLIB330-23
+5	5	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Vespidae	BLAST	family	149	276	Cecidomyiidae,Braconidae,Ichneumonidae,Halictidae,Dryinidae,Geometridae	BGLIB330-23_r_1.5_s_50	Pseudepipona lativentris	0	BGLIB330-23
+0	0	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Vespidae	BLAST	family	77	78	Gyrinidae,Elateridae,Curculionidae,Vespidae,Noctuidae,Rhyacophilidae,Corydalidae	BGLIB330-23_r_1.5_s_100	Pseudepipona lativentris	0	BGLIB330-23
+1	1	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	657	1563	Ichneumonidae	BGLIB331-23_r_1_s_50	Acaenitus dubitator	0	BGLIB331-23
+5	5	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	657	1554	Ichneumonidae	BGLIB331-23_r_1_s_100	Acaenitus dubitator	0	BGLIB331-23
+1	1	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	657	1545	Ichneumonidae	BGLIB331-23_r_1.3_s_50	Acaenitus dubitator	0	BGLIB331-23
+2	2	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	645	1449	Ichneumonidae,Pteromalidae	BGLIB331-23_r_1.3_s_100	Acaenitus dubitator	0	BGLIB331-23
+2	2	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	573	1410	Ichneumonidae,Megachilidae,Formicidae	BGLIB331-23_r_1.5_s_50	Acaenitus dubitator	0	BGLIB331-23
+3	3	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	441	1119	Ichneumonidae,Halictidae,Formicidae,Platygastridae	BGLIB331-23_r_1.5_s_100	Acaenitus dubitator	0	BGLIB331-23
+20	68	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	600	1212	Culicidae,Calliphoridae,Erebidae,Lycaenidae,Nymphalidae	BGLIB337-23_r_1_s_50	Apophua genalis	0	BGLIB337-23
+14	17	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	600	1008	Tettigoniidae,Acrididae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BGLIB337-23_r_1_s_100	Apophua genalis	0	BGLIB337-23
+24	45	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	344	870	Tettigoniidae,Perlidae,Miridae,Asilidae,Ulidiidae,Vespidae,Erebidae,Lycaenidae	BGLIB337-23_r_1.3_s_50	Apophua genalis	0	BGLIB337-23
+5	21	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	178	597	Kalotermitidae,Tettigoniidae,Perlidae,Miridae,Anthocoridae,Asilidae,Ulidiidae,Vespidae	BGLIB337-23_r_1.3_s_100	Apophua genalis	0	BGLIB337-23
+5	10	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	424	648	Tettigoniidae,Ulidiidae,Ichneumonidae,Vespidae	BGLIB337-23_r_1.5_s_50	Apophua genalis	3	BGLIB337-23
+0	5	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	134	462	Tettigoniidae,Perlidae,Miridae,Asilidae,Ulidiidae,Vespidae	BGLIB337-23_r_1.5_s_100	Apophua genalis	0	BGLIB337-23
+47	101	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1503	Acrididae,Lygaeidae,Syrphidae,Ephydridae,Tephritidae,Tachinidae	BGLIB342-23_r_1_s_50	Andrena carbonaria	0	BGLIB342-23
+42	82	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1455	Acrididae,Lygaeidae,Carabidae,Lycaenidae	BGLIB342-23_r_1_s_100	Andrena carbonaria	0	BGLIB342-23
+37	75	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	598	1386	Acrididae	BGLIB342-23_r_1.3_s_50	Andrena carbonaria	0	BGLIB342-23
+16	46	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	529	1263	Acrididae,Pyrgomorphidae,Lycaenidae,Chrysopidae	BGLIB342-23_r_1.3_s_100	Andrena carbonaria	0	BGLIB342-23
+9	33	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	439	1173	Acrididae	BGLIB342-23_r_1.5_s_50	Andrena carbonaria	0	BGLIB342-23
+7	19	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	422	1113	Acrididae,Staphylinidae,Hydraenidae,Polleniidae	BGLIB342-23_r_1.5_s_100	Andrena carbonaria	0	BGLIB342-23
+79	206	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1419	Euphaeidae,Cleridae	BGLIB344-23_r_1_s_50	Andrena carbonaria	0	BGLIB344-23
+33	147	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1419	Polleniidae	BGLIB344-23_r_1_s_100	Andrena carbonaria	0	BGLIB344-23
+25	76	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	544	1239	Reduviidae	BGLIB344-23_r_1.3_s_50	Andrena carbonaria	0	BGLIB344-23
+9	61	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	488	1167	Reduviidae	BGLIB344-23_r_1.3_s_100	Andrena carbonaria	0	BGLIB344-23
+8	47	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	251	837	Acrididae,Nitidulidae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Vespidae	BGLIB344-23_r_1.5_s_50	Andrena carbonaria	0	BGLIB344-23
+0	15	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	157	600	Acrididae,Nitidulidae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Vespidae	BGLIB344-23_r_1.5_s_100	Andrena carbonaria	0	BGLIB344-23
+23	92	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	638	1497	Andrenidae	BGLIB345-23_r_1_s_50	Andrena carbonaria	0	BGLIB345-23
+15	49	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	601	1239	Andrenidae	BGLIB345-23_r_1_s_100	Andrena carbonaria	0	BGLIB345-23
+7	20	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	608	1431	Andrenidae	BGLIB345-23_r_1.3_s_50	Andrena carbonaria	0	BGLIB345-23
+4	9	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	487	960	Andrenidae	BGLIB345-23_r_1.3_s_100	Andrena carbonaria	0	BGLIB345-23
+2	4	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	590	1380	Andrenidae	BGLIB345-23_r_1.5_s_50	Andrena carbonaria	0	BGLIB345-23
+0	1	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	469	816	Andrenidae	BGLIB345-23_r_1.5_s_100	Andrena carbonaria	0	BGLIB345-23
+4	6	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cephidae	BLAST	family	655	1527	Cephidae	BGLIB346-23_r_1_s_50	Cephus cultratus	0	BGLIB346-23
+4	6	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cephidae	BLAST	family	655	1527	Cephidae	BGLIB346-23_r_1_s_100	Cephus cultratus	0	BGLIB346-23
+1	2	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cephidae	BLAST	family	655	1530	Cephidae	BGLIB346-23_r_1.3_s_50	Cephus cultratus	0	BGLIB346-23
+1	2	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cephidae	BLAST	family	655	1527	Cephidae	BGLIB346-23_r_1.3_s_100	Cephus cultratus	0	BGLIB346-23
+1	2	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cephidae	BLAST	family	655	1530	Cephidae	BGLIB346-23_r_1.5_s_50	Cephus cultratus	0	BGLIB346-23
+4	6	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cephidae	BLAST	family	655	1530	Cephidae	BGLIB346-23_r_1.5_s_100	Cephus cultratus	0	BGLIB346-23
+13	45	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1542	Ceratopogonidae,Andrenidae,Lycaenidae,Nymphalidae	BGLIB350-23_r_1_s_50	Andrena nigriceps	0	BGLIB350-23
+30	49	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1494	Andrenidae	BGLIB350-23_r_1_s_100	Andrena nigriceps	0	BGLIB350-23
+15	25	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1545	Andrenidae	BGLIB350-23_r_1.3_s_50	Andrena nigriceps	0	BGLIB350-23
+8	18	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1497	Andrenidae	BGLIB350-23_r_1.3_s_100	Andrena nigriceps	0	BGLIB350-23
+3	5	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1545	Andrenidae	BGLIB350-23_r_1.5_s_50	Andrena nigriceps	0	BGLIB350-23
+3	3	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1497	Andrenidae	BGLIB350-23_r_1.5_s_100	Andrena nigriceps	0	BGLIB350-23
+3	15	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1548	Halictidae,Megachilidae,Colletidae,Melittidae	BGLIB352-23_r_1_s_50	Colletes maidii	0	BGLIB352-23
+8	19	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1548	Halictidae,Megachilidae,Colletidae	BGLIB352-23_r_1_s_100	Colletes maidii	0	BGLIB352-23
+3	6	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1548	Halictidae,Megachilidae,Colletidae,Melittidae	BGLIB352-23_r_1.3_s_50	Colletes maidii	0	BGLIB352-23
+5	9	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1548	Halictidae,Megachilidae,Colletidae,Melittidae	BGLIB352-23_r_1.3_s_100	Colletes maidii	0	BGLIB352-23
+2	4	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1548	Halictidae,Megachilidae,Colletidae,Melittidae	BGLIB352-23_r_1.5_s_50	Colletes maidii	0	BGLIB352-23
+1	3	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1548	Halictidae,Megachilidae,Colletidae,Melittidae	BGLIB352-23_r_1.5_s_100	Colletes maidii	0	BGLIB352-23
+13	28	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	489	1221	Colletidae	BGLIB356-23_r_1_s_50	Hylaeus angustatus	0	BGLIB356-23
+1	6	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	416	519	Acrididae,Colletidae	BGLIB356-23_r_1_s_100	Hylaeus angustatus	6	BGLIB356-23
+3	22	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	537	882	Colletidae	BGLIB356-23_r_1.3_s_50	Hylaeus angustatus	0	BGLIB356-23
+2	2	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	493	519	Acrididae,Colletidae	BGLIB356-23_r_1.3_s_100	Hylaeus angustatus	4	BGLIB356-23
+1	1	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	531	780	Colletidae	BGLIB356-23_r_1.5_s_50	Hylaeus angustatus	4	BGLIB356-23
+0	6	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	162	432	Acrididae,Colletidae	BGLIB356-23_r_1.5_s_100	Hylaeus angustatus	0	BGLIB356-23
+26	72	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	597	1242	Elmidae,Chrysomelidae,Psychodidae,Lasiocampidae,Sphingidae,Geometridae	BGLIB357-23_r_1_s_50	Hylaeus angustatus	0	BGLIB357-23
+42	89	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	573	1170	Carabidae,Oecophoridae,Riodinidae	BGLIB357-23_r_1_s_100	Hylaeus angustatus	11	BGLIB357-23
+22	32	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	391	768	Chrysomelidae,Ichneumonidae	BGLIB357-23_r_1.3_s_50	Hylaeus angustatus	0	BGLIB357-23
+18	18	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	370	624	Colletidae	BGLIB357-23_r_1.3_s_100	Hylaeus angustatus	0	BGLIB357-23
+14	24	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	310	633	Colletidae	BGLIB357-23_r_1.5_s_50	Hylaeus angustatus	0	BGLIB357-23
+1	1	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	307	561	Colletidae	BGLIB357-23_r_1.5_s_100	Hylaeus angustatus	0	BGLIB357-23
+16	33	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Bembicidae	BLAST	family	634	1455	Crabronidae,Apidae,Colletidae,Megastigmidae	BGLIB358-23_r_1_s_50	Nysson quadriguttatus	0	BGLIB358-23
+17	37	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Bembicidae	BLAST	family	520	1194	Crabronidae,Colletidae,Eulophidae	BGLIB358-23_r_1_s_100	Nysson quadriguttatus	0	BGLIB358-23
+16	22	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Bembicidae	BLAST	family	571	1296	Crabronidae	BGLIB358-23_r_1.3_s_50	Nysson quadriguttatus	0	BGLIB358-23
+17	20	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Bembicidae	BLAST	family	403	912	Crabronidae,Colletidae,Nymphalidae,Crambidae	BGLIB358-23_r_1.3_s_100	Nysson quadriguttatus	0	BGLIB358-23
+3	5	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Bembicidae	BLAST	family	433	957	Crabronidae,Apidae,Colletidae,Formicidae	BGLIB358-23_r_1.5_s_50	Nysson quadriguttatus	0	BGLIB358-23
+3	4	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Bembicidae	BLAST	family	509	675	Crabronidae,Limacodidae	BGLIB358-23_r_1.5_s_100	Nysson quadriguttatus	1	BGLIB358-23
+23	57	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crabronidae	BLAST	family	454	1062	Crabronidae	BGLIB366-23_r_1_s_50	Crabro loewi	0	BGLIB366-23
+0	0	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crabronidae	BLAST	family	55	423		BGLIB366-23_r_1_s_100	Crabro loewi	0	BGLIB366-23
+0	0	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crabronidae	BLAST	family	224	483	Culicidae	BGLIB366-23_r_1.3_s_50	Crabro loewi	0	BGLIB366-23
+0	0	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crabronidae	BLAST	family	55	84		BGLIB366-23_r_1.3_s_100	Crabro loewi	0	BGLIB366-23
+0	0	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crabronidae	BLAST	family	62	243	Cicadidae,Trogidae,Apidae	BGLIB366-23_r_1.5_s_50	Crabro loewi	0	BGLIB366-23
+0	0	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crabronidae	BLAST	family	55	84		BGLIB366-23_r_1.5_s_100	Crabro loewi	0	BGLIB366-23
+39	107	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	643	1467	Apidae	BGLIB369-23_r_1_s_50	Nomada braunsiana	0	BGLIB369-23
+55	79	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	451	1155	Tettigoniidae,Acrididae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Psychodidae,Vespidae	BGLIB369-23_r_1_s_100	Nomada braunsiana	0	BGLIB369-23
+17	32	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	438	1143	Apidae	BGLIB369-23_r_1.3_s_50	Nomada braunsiana	0	BGLIB369-23
+0	3	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	235	681	Apidae	BGLIB369-23_r_1.3_s_100	Nomada braunsiana	0	BGLIB369-23
+7	8	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	434	900	Apidae	BGLIB369-23_r_1.5_s_50	Nomada braunsiana	0	BGLIB369-23
+0	0	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	353	537	Apidae	BGLIB369-23_r_1.5_s_100	Nomada braunsiana	0	BGLIB369-23
+13	26	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crabronidae	BLAST	family	613	1530	Crabronidae,Apidae,Andrenidae,Colletidae	BGLIB371-23_r_1_s_50	Crabro pugillator	0	BGLIB371-23
+28	33	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crabronidae	BLAST	family	401	1197	Crabronidae,Halictidae,Chrysididae	BGLIB371-23_r_1_s_100	Crabro pugillator	0	BGLIB371-23
+6	17	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crabronidae	BLAST	family	500	1392	Vespidae,Crabronidae,Apidae,Halictidae	BGLIB371-23_r_1.3_s_50	Crabro pugillator	0	BGLIB371-23
+25	30	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crabronidae	BLAST	family	495	1101	Crabronidae,Halictidae,Chrysididae	BGLIB371-23_r_1.3_s_100	Crabro pugillator	6	BGLIB371-23
+6	22	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crabronidae	BLAST	family	524	1068	Crabronidae,Apidae,Megachilidae	BGLIB371-23_r_1.5_s_50	Crabro pugillator	0	BGLIB371-23
+1	20	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crabronidae	BLAST	family	492	900	Apidae,Megachilidae	BGLIB371-23_r_1.5_s_100	Crabro pugillator	0	BGLIB371-23
+2	3	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Mutillidae	BLAST	family	171	750		BGLIB372-23_r_1_s_50	Cystomutilla ruficeps	0	BGLIB372-23
+0	0	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Mutillidae	BLAST	family	168	705		BGLIB372-23_r_1_s_100	Cystomutilla ruficeps	0	BGLIB372-23
+3	5	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Mutillidae	BLAST	family	52	165		BGLIB372-23_r_1.3_s_50	Cystomutilla ruficeps	0	BGLIB372-23
+0	0	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Mutillidae	BLAST	family	10	81		BGLIB372-23_r_1.3_s_100	Cystomutilla ruficeps	0	BGLIB372-23
+0	2	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Mutillidae	BLAST	family	36	138		BGLIB372-23_r_1.5_s_50	Cystomutilla ruficeps	0	BGLIB372-23
+0	0	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Mutillidae	BLAST	family	10	81		BGLIB372-23_r_1.5_s_100	Cystomutilla ruficeps	0	BGLIB372-23
+39	62	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	324	1035	Apidae	BGLIB373-23_r_1_s_50	Nomada errans	0	BGLIB373-23
+22	49	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	302	963	Tachinidae	BGLIB373-23_r_1_s_100	Nomada errans	0	BGLIB373-23
+10	17	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	379	750	Apidae	BGLIB373-23_r_1.3_s_50	Nomada errans	0	BGLIB373-23
+0	3	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	262	525	Apidae	BGLIB373-23_r_1.3_s_100	Nomada errans	0	BGLIB373-23
+0	0	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	258	483	Apidae	BGLIB373-23_r_1.5_s_50	Nomada errans	0	BGLIB373-23
+0	0	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	95	282	Apidae	BGLIB373-23_r_1.5_s_100	Nomada errans	0	BGLIB373-23
+23	32	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Halictidae	BLAST	family	656	1542	Culicidae,Muscidae,Colletidae,Nymphalidae,Riodinidae	BGLIB376-23_r_1_s_50	Halictus simplex	0	BGLIB376-23
+22	49	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Halictidae	BLAST	family	632	1443	Gryllacrididae,Hydraenidae,Scarabaeidae,Salpingidae,Culicidae,Colletidae,Nymphalidae,Corydalidae	BGLIB376-23_r_1_s_100	Halictus simplex	0	BGLIB376-23
+11	23	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Halictidae	BLAST	family	601	1419	Halictidae	BGLIB376-23_r_1.3_s_50	Halictus simplex	0	BGLIB376-23
+3	12	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Halictidae	BLAST	family	436	1158	Coccinellidae,Apidae,Halictidae,Corydalidae	BGLIB376-23_r_1.3_s_100	Halictus simplex	0	BGLIB376-23
+19	29	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Halictidae	BLAST	family	505	1290	Culicidae,Apidae,Halictidae,Erebidae,Geometridae	BGLIB376-23_r_1.5_s_50	Halictus simplex	0	BGLIB376-23
+6	6	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Halictidae	BLAST	family	512	999	Apidae,Halictidae,Lycaenidae	BGLIB376-23_r_1.5_s_100	Halictus simplex	0	BGLIB376-23
+2	2	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00403-NC not in BOLD	None	BLAST	family	535	789		BGE00403-NC_r_1_s_50	None	0	BGE00403-NC
+0	0	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00403-NC not in BOLD	None	BLAST	family	536	693		BGE00403-NC_r_1_s_100	None	0	BGE00403-NC
+0	2	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00403-NC not in BOLD	None	BLAST	family	128	372		BGE00403-NC_r_1.3_s_50	None	0	BGE00403-NC
+0	0	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00403-NC not in BOLD	None	BLAST	family	129	252		BGE00403-NC_r_1.3_s_100	None	0	BGE00403-NC
+0	0	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00403-NC not in BOLD	None	BLAST	family	128	201		BGE00403-NC_r_1.5_s_50	None	0	BGE00403-NC
+0	0	data/BGE00403_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00403-NC not in BOLD	None	BLAST	family	124	147		BGE00403-NC_r_1.5_s_100	None	0	BGE00403-NC

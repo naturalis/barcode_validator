@@ -1,0 +1,31 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons	process_id
+28	89	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	656	1542	Gelechiidae,Pyralidae,Geometridae,Drepanidae	BGSNL1359-24_r_1_s_50	Myrlaea albistrigata	0	BGSNL1359-24
+43	93	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	656	1539	Yponomeutidae,Papilionidae,Pyralidae,Crambidae,Thyrididae	BGSNL1359-24_r_1_s_100	Myrlaea albistrigata	0	BGSNL1359-24
+7	17	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	656	1542	Pyralidae,Crambidae	BGSNL1359-24_r_1.3_s_50	Myrlaea albistrigata	0	BGSNL1359-24
+15	26	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	656	1539	Pyralidae,Crambidae	BGSNL1359-24_r_1.3_s_100	Myrlaea albistrigata	0	BGSNL1359-24
+10	10	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1419	Nymphalidae,Crambidae,Geometridae	BGSNL1359-24_r_1.5_s_50	Myrlaea albistrigata	0	BGSNL1359-24
+2	2	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1404	Pyralidae,Crambidae	BGSNL1359-24_r_1.5_s_100	Myrlaea albistrigata	0	BGSNL1359-24
+9	44	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	656	1542	Pyralidae	BGSNL1372-24_r_1_s_50	Pempeliopteryx cirtensis	0	BGSNL1372-24
+62	96	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	650	1536	Pyralidae	BGSNL1372-24_r_1_s_100	Pempeliopteryx cirtensis	0	BGSNL1372-24
+1	4	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	654	1539	Pyralidae	BGSNL1372-24_r_1.3_s_50	Pempeliopteryx cirtensis	0	BGSNL1372-24
+12	23	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	651	1536	Pyralidae	BGSNL1372-24_r_1.3_s_100	Pempeliopteryx cirtensis	0	BGSNL1372-24
+1	1	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	654	1503	Pyralidae	BGSNL1372-24_r_1.5_s_50	Pempeliopteryx cirtensis	0	BGSNL1372-24
+6	6	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	651	1497	Pyralidae	BGSNL1372-24_r_1.5_s_100	Pempeliopteryx cirtensis	0	BGSNL1372-24
+9	13	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Cossidae,Limacodidae,Nymphalidae,Tischeriidae	BGSNL1373-24_r_1_s_50	Pempeliopteryx cirtensis	0	BGSNL1373-24
+31	39	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	654	1512	Cosmopterigidae,Pyralidae	BGSNL1373-24_r_1_s_100	Pempeliopteryx cirtensis	0	BGSNL1373-24
+5	5	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BGSNL1373-24_r_1.3_s_50	Pempeliopteryx cirtensis	0	BGSNL1373-24
+18	18	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1506	Pyralidae	BGSNL1373-24_r_1.3_s_100	Pempeliopteryx cirtensis	0	BGSNL1373-24
+5	5	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1503	Pyralidae	BGSNL1373-24_r_1.5_s_50	Pempeliopteryx cirtensis	0	BGSNL1373-24
+10	10	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1476	Pyralidae	BGSNL1373-24_r_1.5_s_100	Pempeliopteryx cirtensis	0	BGSNL1373-24
+2	20	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1375-24_r_1_s_50	Pempeliopteryx cleopatrella	0	BGSNL1375-24
+24	34	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1521	Saturniidae,Noctuidae,Erebidae,Pyralidae,Crambidae	BGSNL1375-24_r_1_s_100	Pempeliopteryx cleopatrella	0	BGSNL1375-24
+2	4	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1530	Pyralidae	BGSNL1375-24_r_1.3_s_50	Pempeliopteryx cleopatrella	0	BGSNL1375-24
+2	2	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1458	Pyralidae	BGSNL1375-24_r_1.3_s_100	Pempeliopteryx cleopatrella	0	BGSNL1375-24
+2	6	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1485	Pyralidae	BGSNL1375-24_r_1.5_s_50	Pempeliopteryx cleopatrella	0	BGSNL1375-24
+1	1	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1389	Pyralidae	BGSNL1375-24_r_1.5_s_100	Pempeliopteryx cleopatrella	0	BGSNL1375-24
+10	44	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00307-NC not in BOLD	None	BLAST	family	648	1302		BGE00307-NC_r_1_s_50	None	0	BGE00307-NC
+2	28	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00307-NC not in BOLD	None	BLAST	family	625	1281		BGE00307-NC_r_1_s_100	None	0	BGE00307-NC
+4	4	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00307-NC not in BOLD	None	BLAST	family	161	591		BGE00307-NC_r_1.3_s_50	None	0	BGE00307-NC
+0	0	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00307-NC not in BOLD	None	BLAST	family	164	468		BGE00307-NC_r_1.3_s_100	None	0	BGE00307-NC
+4	4	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00307-NC not in BOLD	None	BLAST	family	161	366		BGE00307-NC_r_1.5_s_50	None	0	BGE00307-NC
+0	0	data/BGE00307_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00307-NC not in BOLD	None	BLAST	family	156	294		BGE00307-NC_r_1.5_s_100	None	0	BGE00307-NC

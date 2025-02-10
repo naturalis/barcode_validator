@@ -1,0 +1,32 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00297_MGE-BGE_r_1_s_100.fas	BGE00297-NC not in BOLD	None	BLAST	family	197	624		BGE00297-NC_cns	None	0
+4	81	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	552	1368	Limacodidae,Erebidae,Nymphalidae,Geometridae	BGSNL574-24_cns	Acanthophila alacella	0
+0	0	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	657	1533	Noctuidae,Crambidae,Geometridae	BGSNL575-24_cns	Acanthophila alacella	0
+0	0	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	657	1533	Noctuidae,Crambidae,Geometridae	BGSNL576-24_cns	Acanthophila alacella	0
+0	0	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	657	1530	Noctuidae,Crambidae	BGSNL577-24_cns	Acompsia minorella	0
+20	45	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	314	879	Gelechiidae	BGSNL578-24_cns	Acompsia minorella	0
+0	0	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	657	1530	Nolidae,Crambidae	BGSNL579-24_cns	Acompsia minorella	0
+0	0	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	657	1530	Noctuidae,Pyralidae,Crambidae,Geometridae	BGSNL582-24_cns	Anacampsis hirsutella	0
+0	7	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	657	1524	Yponomeutidae,Noctuidae,Crambidae	BGSNL583-24_cns	Aristotelia brizelloidea	0
+0	0	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	223	792	Zygaenidae	BGSNL586-24_cns	Athrips patochkai	0
+7	53	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	526	1431	Gelechiidae,Noctuidae	BGSNL590-24_cns	Caryocolum alsinella	0
+1	4	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	601	1215	Lycaenidae,Pyralidae,Geometridae	BGSNL596-24_cns	Caryocolum inflativorella	0
+0	9	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	657	1533	Nolidae,Erebidae,Nymphalidae,Crambidae,Hesperiidae,Geometridae	BGSNL598-24_cns	Caulastrocecis furfurella	0
+18	27	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	642	1506	Riodinidae,Pyralidae,Crambidae,Geometridae	BGSNL628-24_cns	Istrianis brucinella	0
+26	55	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	583	1419	Gelechiidae,Tortricidae,Limacodidae,Noctuidae,Erebidae,Crambidae,Thyrididae,Geometridae	BGSNL629-24_cns	Istrianis brucinella	0
+18	60	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	569	1416	Cosmopterigidae,Tortricidae,Limacodidae,Hesperiidae	BGSNL630-24_cns	Megacraspedus dolosellus	0
+0	0	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	657	1530	Notodontidae,Papilionidae,Crambidae	BGSNL631-24_cns	Megacraspedus separatellus	0
+0	0	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	657	1530	Notodontidae,Crambidae	BGSNL632-24_cns	Megacraspedus separatellus	0
+0	0	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	657	1530	Noctuidae	BGSNL637-24_cns	Pragmatodes fruticosella	0
+0	0	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	657	1530	Noctuidae	BGSNL638-24_cns	Pragmatodes fruticosella	0
+0	0	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	657	1530	Noctuidae	BGSNL639-24_cns	Pragmatodes fruticosella	0
+2	11	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	548	1278	Oecophoridae,Lasiocampidae,Noctuidae,Erebidae,Crambidae	BGSNL646-24_cns	Scrobipalpa hungariae	0
+8	10	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Gelechiidae	BLAST	family	657	1530	Noctuidae,Crambidae	BGSNL650-24_cns	Sophronia finitimella	0
+0	0	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Pterophoridae	BLAST	family	657	1530	Depressariidae,Noctuidae,Nolidae,Papilionidae,Geometridae	BGSNL658-24_cns	Agdistis manicata	0
+0	0	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Pterophoridae	BLAST	family	657	1530	Depressariidae,Noctuidae,Nolidae,Papilionidae,Geometridae	BGSNL659-24_cns	Agdistis manicata	0
+0	0	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Pterophoridae	BLAST	family	657	1527	Noctuidae,Nolidae,Papilionidae,Nymphalidae,Hesperiidae,Geometridae	BGSNL660-24_cns	Agdistis manicata	0
+0	0	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Pterophoridae	BLAST	family	656	1530	Oecophoridae,Depressariidae,Tortricidae,Geometridae	BGSNL661-24_cns	Agdistis paralia	0
+0	0	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Pterophoridae	BLAST	family	657	1527	Noctuidae,Geometridae	BGSNL662-24_cns	Agdistis salsolae	0
+0	0	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Pterophoridae	BLAST	family	657	1527	Noctuidae,Geometridae	BGSNL663-24_cns	Agdistis salsolae	0
+0	0	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Pterophoridae	BLAST	family	657	1527	Noctuidae,Geometridae	BGSNL664-24_cns	Agdistis salsolae	0
+15	78	data/BGE00297_MGE-BGE_r_1_s_100.fas	None	Pterophoridae	BLAST	family	548	1371	Erebidae,Nymphalidae,Geometridae	BGSNL665-24_cns	Capperia hellenica	0

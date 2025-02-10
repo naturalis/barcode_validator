@@ -1,0 +1,43 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons	process_id
+21	26	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	657	1533	Apidae,Megachilidae	BGENL2100-24_r_1_s_50	Protosmia paradoxa	0	BGENL2100-24
+20	32	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	657	1422	Apidae,Megachilidae	BGENL2100-24_r_1_s_100	Protosmia paradoxa	0	BGENL2100-24
+6	8	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	657	1491	Apidae,Megachilidae	BGENL2100-24_r_1.3_s_50	Protosmia paradoxa	0	BGENL2100-24
+12	16	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	657	1422	Apidae,Megachilidae	BGENL2100-24_r_1.3_s_100	Protosmia paradoxa	0	BGENL2100-24
+2	3	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	633	1380	Megachilidae	BGENL2100-24_r_1.5_s_50	Protosmia paradoxa	0	BGENL2100-24
+4	4	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	615	1353	Megachilidae	BGENL2100-24_r_1.5_s_100	Protosmia paradoxa	0	BGENL2100-24
+19	44	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	623	1476	Cecidomyiidae,Braconidae,Megachilidae,Diapriidae	BGENL2102-24_r_1_s_50	Protosmia paradoxa	0	BGENL2102-24
+9	19	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	569	1311	Cecidomyiidae,Apidae,Megachilidae	BGENL2102-24_r_1_s_100	Protosmia paradoxa	0	BGENL2102-24
+2	5	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	524	1302	Apidae,Megachilidae	BGENL2102-24_r_1.3_s_50	Protosmia paradoxa	0	BGENL2102-24
+0	3	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	315	846	Apidae	BGENL2102-24_r_1.3_s_100	Protosmia paradoxa	0	BGENL2102-24
+3	3	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	456	954	Apidae,Megachilidae	BGENL2102-24_r_1.5_s_50	Protosmia paradoxa	0	BGENL2102-24
+0	0	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	478	621	Apidae,Aphelinidae	BGENL2102-24_r_1.5_s_100	Protosmia paradoxa	0	BGENL2102-24
+9	13	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Melittidae	BLAST	family	655	1539	Crabronidae,Colletidae	BGENL2109-24_r_1_s_50	Dasypoda argentata	0	BGENL2109-24
+2	2	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Melittidae	BLAST	family	655	1518	Crabronidae,Apidae,Halictidae,Colletidae	BGENL2109-24_r_1_s_100	Dasypoda argentata	0	BGENL2109-24
+3	4	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Melittidae	BLAST	family	643	1527	Crabronidae,Apidae,Colletidae	BGENL2109-24_r_1.3_s_50	Dasypoda argentata	0	BGENL2109-24
+4	4	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Melittidae	BLAST	family	644	1506	Crabronidae,Apidae,Colletidae	BGENL2109-24_r_1.3_s_100	Dasypoda argentata	0	BGENL2109-24
+4	8	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Melittidae	BLAST	family	444	1248	Crabronidae,Apidae,Halictidae,Melittidae	BGENL2109-24_r_1.5_s_50	Dasypoda argentata	0	BGENL2109-24
+4	4	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Melittidae	BLAST	family	443	1182	Crabronidae,Apidae,Halictidae,Melittidae	BGENL2109-24_r_1.5_s_100	Dasypoda argentata	0	BGENL2109-24
+10	16	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Halictidae	BLAST	family	655	1551	Andrenidae,Halictidae,Colletidae	BGENL2128-24_r_1_s_50	Rophites quinquespinosus	0	BGENL2128-24
+8	8	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Halictidae	BLAST	family	655	1542	Andrenidae,Halictidae,Colletidae	BGENL2128-24_r_1_s_100	Rophites quinquespinosus	0	BGENL2128-24
+4	5	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Halictidae	BLAST	family	637	1530	Halictidae	BGENL2128-24_r_1.3_s_50	Rophites quinquespinosus	0	BGENL2128-24
+5	5	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Halictidae	BLAST	family	637	1524	Halictidae	BGENL2128-24_r_1.3_s_100	Rophites quinquespinosus	0	BGENL2128-24
+7	10	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Halictidae	BLAST	family	586	1383	Halictidae	BGENL2128-24_r_1.5_s_50	Rophites quinquespinosus	0	BGENL2128-24
+7	7	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Halictidae	BLAST	family	529	1236	Halictidae	BGENL2128-24_r_1.5_s_100	Rophites quinquespinosus	0	BGENL2128-24
+33	67	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	601	1446	Apidae	BGENL2136-24_r_1_s_50	Ceratina albosticta	0	BGENL2136-24
+3	43	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	493	1233	Apidae	BGENL2136-24_r_1_s_100	Ceratina albosticta	0	BGENL2136-24
+4	20	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	407	1110	Apidae	BGENL2136-24_r_1.3_s_50	Ceratina albosticta	10	BGENL2136-24
+10	18	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	223	819	Apidae	BGENL2136-24_r_1.3_s_100	Ceratina albosticta	0	BGENL2136-24
+0	4	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	368	777	Apidae	BGENL2136-24_r_1.5_s_50	Ceratina albosticta	10	BGENL2136-24
+0	4	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	223	624	Apidae	BGENL2136-24_r_1.5_s_100	Ceratina albosticta	0	BGENL2136-24
+11	32	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	628	1533	Apidae	BGENL2152-24_r_1_s_50	Ceratina mandibularis	0	BGENL2152-24
+9	22	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	591	1479	Apidae	BGENL2152-24_r_1_s_100	Ceratina mandibularis	7	BGENL2152-24
+9	14	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	628	1533	Apidae	BGENL2152-24_r_1.3_s_50	Ceratina mandibularis	0	BGENL2152-24
+0	1	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	591	1434	Apidae	BGENL2152-24_r_1.3_s_100	Ceratina mandibularis	7	BGENL2152-24
+4	7	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	596	1488	Apidae	BGENL2152-24_r_1.5_s_50	Ceratina mandibularis	19	BGENL2152-24
+0	0	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	591	1434	Apidae	BGENL2152-24_r_1.5_s_100	Ceratina mandibularis	7	BGENL2152-24
+24	40	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00186-NC not in BOLD	None	BLAST	family	578	1251		BGE00186-NC_r_1_s_50	None	0	BGE00186-NC
+21	31	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00186-NC not in BOLD	None	BLAST	family	503	1125		BGE00186-NC_r_1_s_100	None	0	BGE00186-NC
+5	6	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00186-NC not in BOLD	None	BLAST	family	48	360		BGE00186-NC_r_1.3_s_50	None	0	BGE00186-NC
+5	6	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00186-NC not in BOLD	None	BLAST	family	47	159		BGE00186-NC_r_1.3_s_100	None	0	BGE00186-NC
+0	0	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00186-NC not in BOLD	None	BLAST	family	38	183		BGE00186-NC_r_1.5_s_50	None	0	BGE00186-NC
+0	0	data/BGE00186_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00186-NC not in BOLD	None	BLAST	family	33	63		BGE00186-NC_r_1.5_s_100	None	0	BGE00186-NC

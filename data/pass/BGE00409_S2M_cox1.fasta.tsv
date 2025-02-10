@@ -1,0 +1,13 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00409_S2M_cox1.fasta	None	Chrysididae	BLAST	family	520	564	Chrysididae	BGLIB761-24_contig1;39-602;-;cox1	Chrysis chrysoprasina	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Pompilidae	BLAST	family	516	1362	Braconidae,Vespidae,Pompilidae	BGLIB776-24_contig2;1766-3127;+;cox1_0	Priocnemis cordivalvata	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Pompilidae	BLAST	family	648	1557	Braconidae,Pompilidae	BGLIB780-24_contig1;1012-2568;-;cox1	Cryptocheilus discolor	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	643	1536	Ichneumonidae	BGLIB798-24_contig7;254-1789;+;cox1	Therion giganteum	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	644	1461	Ichneumonidae	BGLIB811-24_contig1;4-1464;+;cox1	Lissonota antennalis	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	657	1539	Ichneumonidae	BGLIB821-24_contig6;301-1839;+;cox1	Cymodusa leucocera	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	657	1392	Ichneumonidae	BGLIB822-24_contig1;110-1501;-;cox1_0	Dusona anceps	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	656	1548	Ichneumonidae	BGLIB824-24_contig2;349-1896;+;cox1	Dusona infesta	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	657	1536	Ichneumonidae	BGLIB833-24_contig3;1274-2809;-;cox1	Sinophorus fuscicarpus	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	656	1392	Ichneumonidae	BGLIB836-24_contig3;3-1394;+;cox1	Sinophorus nitidus	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	602	1419	Ichneumonidae	BGLIB839-24_contig8;3-1421;+;cox1	Endasys alutaceus	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	657	1536	Ichneumonidae	BGLIB848-24_contig8;285-1820;-;cox1	Scopesis obscura	0

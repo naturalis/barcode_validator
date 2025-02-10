@@ -1,0 +1,21 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00151_S2M_cox1.fasta	None	Noctuidae	BLAST	family	177	456	Noctuidae	BHNHM482-24_contig8;292-747;-;cox1	Syngrapha rilaecacuminum	0
+0	0	data/BGE00151_S2M_cox1.fasta	None	Noctuidae	BLAST	family	245	312	Noctuidae	BHNHM485-24_contig3;3-314;+;cox1	Rhyacia arenacea	4
+0	0	data/BGE00151_S2M_cox1.fasta	None	Noctuidae	BLAST	family	142	171	Noctuidae	BHNHM486-24_contig3;37-207;+;cox1	Rhyacia nyctymerides	3
+0	0	data/BGE00151_S2M_cox1.fasta	None	Noctuidae	BLAST	family	491	528	Noctuidae	BHNHM488-24_contig3;1617-2144;+;cox1	Rhyacia junonia	0
+0	0	data/BGE00151_S2M_cox1.fasta	None	Noctuidae	BLAST	family	217	381	Noctuidae	BHNHM489-24_contig3;1-381;+;cox1	Standfussiana insulicola	0
+0	0	data/BGE00151_S2M_cox1.fasta	None	Noctuidae	BLAST	family	98	150	Noctuidae	BHNHM493-24_contig11;237-386;-;cox1	Standfussiana nictymera	0
+0	0	data/BGE00151_S2M_cox1.fasta	None	Noctuidae	BLAST	family	270	273	Noctuidae	BHNHM493-24_contig7;1-273;-;cox1	Standfussiana nictymera	0
+0	0	data/BGE00151_S2M_cox1.fasta	None	Noctuidae	BLAST	family	159	465	Noctuidae	BHNHM497-24_contig2;98-562;-;cox1	Thysanoplusia circumscripta	4
+0	0	data/BGE00151_S2M_cox1.fasta	None	Noctuidae	BLAST	family	114	249	Noctuidae	BHNHM505-24_contig0;9434-9682;-;cox1_1	Trigonophora crassicornis	0
+0	0	data/BGE00151_S2M_cox1.fasta	None	Noctuidae	BLAST	family	276	876	Noctuidae	BHNHM507-24_contig4;3-878;-;cox1	Xestia cohaesa	0
+0	0	data/BGE00151_S2M_cox1.fasta	None	Noctuidae	BLAST	family	113	216	Noctuidae	BHNHM507-24_contig6;3-218;+;cox1	Xestia cohaesa	1
+0	0	data/BGE00151_S2M_cox1.fasta	None	Noctuidae	BLAST	family	429	639	Noctuidae	BHNHM511-24_contig1;2-640;-;cox1	Xestia trifida	0
+0	0	data/BGE00151_S2M_cox1.fasta	None	Noctuidae	BLAST	family	386	423	Noctuidae	BHNHM514-24_contig1;3-425;-;cox1	Xylena lunifera	0
+0	0	data/BGE00151_S2M_cox1.fasta	None	Pentatomidae	BLAST	family	152	195	Saldidae,Pentatomidae	BHNHM534-24_contig0;2-196;-;cox1	Ventocoris achivus	0
+0	0	data/BGE00151_S2M_cox1.fasta	None	Pentatomidae	BLAST	family	1	126	Scutelleridae,Blissidae	BHNHM555-24_contig3;646-771;-;cox1	Sciocoris deltocephalus	0
+0	0	data/BGE00151_S2M_cox1.fasta	None	Pentatomidae	BLAST	family	445	759	Pentatomidae	BHNHM555-24_contig5;1386-2144;+;cox1_0	Sciocoris deltocephalus	9
+0	0	data/BGE00151_S2M_cox1.fasta	None	Gerridae	BLAST	family	491	1308	Gerridae	BHNHM560-24_contig0;1-1308;+;cox1_0	Gerris asper	0
+0	0	data/BGE00151_S2M_cox1.fasta	None	Gerridae	BLAST	family	261	303	Gerridae	BHNHM560-24_contig0;15159-15461;+;cox1_1	Gerris asper	0
+0	0	data/BGE00151_S2M_cox1.fasta	None	Reduviidae	BLAST	family	124	168	Reduviidae	BHNHM566-24_contig1;2-169;-;cox1	Coranus contrarius	0
+0	0	data/BGE00151_S2M_cox1.fasta	None	Miridae	BLAST	family	656	1542	Pentatomidae	BHNHM567-24_contig2;12773-14314;-;cox1	Adelphocoris vandalicus	0

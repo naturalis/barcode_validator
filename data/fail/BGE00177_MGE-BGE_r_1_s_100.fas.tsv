@@ -1,0 +1,18 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	1	data/BGE00177_MGE-BGE_r_1_s_100.fas	None	Cixiidae	BLAST	family	266	789	Pyrrhocoridae,Cixiidae,Carabidae,Drosophilidae,Sepsidae,Muscidae,Sarcophagidae,Tachinidae	BGENL1620-24_cns	Myndus musivus	0
+12	40	data/BGE00177_MGE-BGE_r_1_s_100.fas	None	Cixiidae	BLAST	family	654	1533	Acrididae,Rhyparochromidae,Cixiidae	BGENL1621-24_cns	Cixius simplex	0
+0	0	data/BGE00177_MGE-BGE_r_1_s_100.fas	None	Delphacidae	BLAST	family	104	612	Philopteridae	BGENL1625-24_cns	Kelisia punctulum	0
+14	22	data/BGE00177_MGE-BGE_r_1_s_100.fas	None	Delphacidae	BLAST	family	657	1464	Delphacidae	BGENL1637-24_cns	Ribautodelphax imitans	0
+24	64	data/BGE00177_MGE-BGE_r_1_s_100.fas	None	Aphalaridae	BLAST	family	655	1518	Carsidaridae,Aphalaridae,Liviidae,Notodontidae,Lycaenidae,Nymphalidae	BGENL1641-24_cns	Aphalara exilis	0
+13	29	data/BGE00177_MGE-BGE_r_1_s_100.fas	None	Triozidae	BLAST	family	532	1293	Liviidae	BGENL1644-24_cns	Bactericera striola	0
+7	29	data/BGE00177_MGE-BGE_r_1_s_100.fas	None	Cimicidae	BLAST	family	468	1299	Cimicidae	BGENL1648-24_cns	Cimex columbarius	2
+15	27	data/BGE00177_MGE-BGE_r_1_s_100.fas	None	Miridae	BLAST	family	649	1452	Miridae,Tingidae,Histeridae,Dermestidae,Tephritidae	BGENL1650-24_cns	Halticus saltator	0
+7	40	data/BGE00177_MGE-BGE_r_1_s_100.fas	None	Saldidae	BLAST	family	601	1380	Saldidae	BGENL1655-24_cns	Salda morio	0
+1	38	data/BGE00177_MGE-BGE_r_1_s_100.fas	None	Aphrophoridae	BLAST	family	281	1233	Aphrophoridae	BGENL1659-24_cns	Neophilaenus infumatus	0
+7	12	data/BGE00177_MGE-BGE_r_1_s_100.fas	None	Cicadellidae	BLAST	family	634	1464	Cicadellidae	BGENL1672-24_cns	Euscelis ormaderensis	0
+8	23	data/BGE00177_MGE-BGE_r_1_s_100.fas	None	Cicadellidae	BLAST	family	656	1521	Cicadellidae	BGENL1688-24_cns	Goldeus harpago	0
+0	0	data/BGE00177_MGE-BGE_r_1_s_100.fas	None	Cicadellidae	BLAST	family	95	963	Rhinotermitidae,Termitidae,Elateridae,Tenebrionidae,Hybotidae	BGENL1689-24_cns	Psammotettix angulatus	0
+None	0	data/BGE00177_MGE-BGE_r_1_s_100.fas	Local BLAST failed for sequence ''	Cicadellidae	BLAST	family	None	0		BGENL1695-24_cns	Sonronius anderi	0
+16	34	data/BGE00177_MGE-BGE_r_1_s_100.fas	None	Cicadellidae	BLAST	family	656	1548	Lycaenidae,Geometridae	BGENL1698-24_cns	Amblytelinus insularis	0
+5	7	data/BGE00177_MGE-BGE_r_1_s_100.fas	None	Cicadellidae	BLAST	family	654	1293	Phoridae,Syrphidae	BGENL1701-24_cns	Thamnotettix creticus	0
+None	0	data/BGE00177_MGE-BGE_r_1_s_100.fas	Local BLAST failed for sequence ''	Cicadellidae	BLAST	family	None	0		BGENL1709-24_cns	Jassargus latinus	0

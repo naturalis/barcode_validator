@@ -1,0 +1,30 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+2	19	data/BGE00405_MGE_cox1_insect_universal.fas	BGE00405-NC not in BOLD	None	BLAST	family	300	750		BGE00405-NC_cns	None	0
+9	11	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	655	1353	Ichneumonidae	BGLIB100-23_cns	Ctenopelma tomentosum	0
+18	43	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	386	846	Cimbicidae,Noctuidae,Crambidae	BGLIB102-23_cns	Diadromus intermedius	16
+7	7	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1374	Ichneumonidae	BGLIB104-23_cns	Diphyus septemguttatus	0
+16	53	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	627	1251	Ichneumonidae	BGLIB113-23_cns	Diadromus tenax	0
+7	7	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	656	1359	Ichneumonidae	BGLIB114-23_cns	Dichrogaster genalis	0
+0	1	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	483	1188	Ichneumonidae	BGLIB115-23_cns	Dicaelotus pusillus	0
+20	31	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	635	1350	Ichneumonidae	BGLIB125-23_cns	Hyposoter barrettii	0
+43	61	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	594	1284	Ichneumonidae	BGLIB128-23_cns	Endasys erythrogaster	24
+14	18	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	657	1416	Ichneumonidae	BGLIB131-23_cns	Gelis brevis	0
+17	20	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	635	1392	Ichneumonidae	BGLIB132-23_cns	Gelis meigenii	0
+14	25	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	653	1332	Cecidomyiidae,Ichneumonidae	BGLIB134-23_cns	Heterischnus ridibundus	0
+10	11	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	551	939	Ichneumonidae	BGLIB135-23_cns	Eriborus braccatus	0
+19	19	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	655	1383	Ichneumonidae	BGLIB140-23_cns	Gambrus ornatus	0
+13	33	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	463	1056	Ichneumonidae,Formicidae	BGLIB141-23_cns	Gelis forticornis	0
+11	22	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	572	771	Drosophilidae,Ichneumonidae	BGLIB143-23_cns	Diaschisaspis campoplegoides	0
+22	33	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	585	1230	Ichneumonidae	BGLIB144-23_cns	Homotherus berthoumieui	0
+19	61	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	623	1275	Hydraenidae,Ichneumonidae,Cephidae	BGLIB150-23_cns	Endasys rusticus	0
+15	15	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	554	732	Ichneumonidae	BGLIB151-23_cns	Eridolius pachysoma	2
+0	0	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	395	561	Ichneumonidae	BGLIB163-23_cns	Eudelus pallicarpus	3
+39	75	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	644	1413	Ichneumonidae	BGLIB164-23_cns	Gelis balteatus	0
+4	10	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	247	606	Acrididae,Nitidulidae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Tetracampidae	BGLIB166-23_cns	Gelis kiesenwetteri	0
+0	2	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	223	375	Ichneumonidae	BGLIB167-23_cns	Eurylabus tristis	0
+15	26	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	656	1377	Curculionidae,Braconidae,Ichneumonidae,Formicidae	BGLIB168-23_cns	Eurylabus tristis	0
+1	30	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	370	1083	Ichneumonidae	BGLIB171-23_cns	Exochus separandus	0
+12	25	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	656	1383	Ichneumonidae	BGLIB174-23_cns	Gnotus plectisciformis	0
+10	16	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	656	1374	Pentatomidae,Aphididae,Chrysomelidae,Culicidae,Drosophilidae,Ichneumonidae,Pamphiliidae,Noctuidae	BGLIB181-23_cns	Isadelphus armatus	0
+8	8	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	279	426	Ichneumonidae	BGLIB187-23_cns	Glypta longicauda	2
+10	29	data/BGE00405_MGE_cox1_insect_universal.fas	None	Ichneumonidae	BLAST	family	525	1221	Culicidae,Ichneumonidae,Megachilidae,Noctuidae	BGLIB189-23_cns	Homaspis varicolor	0

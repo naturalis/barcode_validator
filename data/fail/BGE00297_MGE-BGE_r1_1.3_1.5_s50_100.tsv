@@ -1,0 +1,61 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons	process_id
+18	63	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1533	Cosmopterigidae,Crambidae	BGSNL574-24_r_1_s_50	Acanthophila alacella	0	BGSNL574-24
+30	90	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	614	1431	Cosmopterigidae,Nymphalidae,Crambidae	BGSNL574-24_r_1_s_100	Acanthophila alacella	0	BGSNL574-24
+12	16	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	614	1413	Papilionidae,Crambidae,Geometridae	BGSNL574-24_r_1.3_s_50	Acanthophila alacella	0	BGSNL574-24
+46	46	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	615	1239	Cosmopterigidae,Papilionidae,Crambidae	BGSNL574-24_r_1.3_s_100	Acanthophila alacella	0	BGSNL574-24
+6	10	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	605	1374	Crambidae,Geometridae	BGSNL574-24_r_1.5_s_50	Acanthophila alacella	0	BGSNL574-24
+12	12	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	558	1182	Cosmopterigidae,Nymphalidae,Crambidae,Geometridae	BGSNL574-24_r_1.5_s_100	Acanthophila alacella	0	BGSNL574-24
+16	36	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	574	1332	Gelechiidae	BGSNL578-24_r_1_s_50	Acompsia minorella	0	BGSNL578-24
+31	36	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	458	1092	Nymphalidae,Hesperiidae	BGSNL578-24_r_1_s_100	Acompsia minorella	0	BGSNL578-24
+10	11	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	448	1077	Gelechiidae,Hesperiidae,Geometridae	BGSNL578-24_r_1.3_s_50	Acompsia minorella	0	BGSNL578-24
+18	18	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	350	639	Nymphalidae,Hesperiidae	BGSNL578-24_r_1.3_s_100	Acompsia minorella	0	BGSNL578-24
+1	3	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	410	951	Gelechiidae	BGSNL578-24_r_1.5_s_50	Acompsia minorella	0	BGSNL578-24
+0	2	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	270	492	Gelechiidae	BGSNL578-24_r_1.5_s_100	Acompsia minorella	0	BGSNL578-24
+11	11	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	404	1062	Dytiscidae,Staphylinidae,Latridiidae,Zygaenidae,Saturniidae,Noctuidae,Erebidae	BGSNL586-24_r_1_s_50	Athrips patochkai	0	BGSNL586-24
+9	9	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	404	993	Dytiscidae,Staphylinidae,Latridiidae,Chironomidae,Zygaenidae,Saturniidae,Noctuidae,Erebidae	BGSNL586-24_r_1_s_100	Athrips patochkai	0	BGSNL586-24
+4	4	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	337	513	Dytiscidae,Carabidae,Staphylinidae,Latridiidae,Zygaenidae,Saturniidae,Noctuidae,Erebidae	BGSNL586-24_r_1.3_s_50	Athrips patochkai	0	BGSNL586-24
+3	3	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	336	390	Dytiscidae,Carabidae,Staphylinidae,Latridiidae,Zygaenidae,Saturniidae,Noctuidae,Erebidae	BGSNL586-24_r_1.3_s_100	Athrips patochkai	0	BGSNL586-24
+1	1	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	165	330	Phlaeothripidae,Melyridae,Phoridae,Tephritidae,Nepticulidae,Chrysopidae	BGSNL586-24_r_1.5_s_50	Athrips patochkai	0	BGSNL586-24
+1	1	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	163	243	Phlaeothripidae,Melyridae,Phoridae,Tephritidae,Nepticulidae,Chrysopidae	BGSNL586-24_r_1.5_s_100	Athrips patochkai	0	BGSNL586-24
+18	78	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1527	Crambidae	BGSNL590-24_r_1_s_50	Caryocolum alsinella	0	BGSNL590-24
+15	50	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	557	1473	Gelechiidae	BGSNL590-24_r_1_s_100	Caryocolum alsinella	0	BGSNL590-24
+2	5	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1524	Gelechiidae,Depressariidae,Pyralidae,Crambidae	BGSNL590-24_r_1.3_s_50	Caryocolum alsinella	0	BGSNL590-24
+14	35	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	576	1236	Gelechiidae	BGSNL590-24_r_1.3_s_100	Caryocolum alsinella	0	BGSNL590-24
+1	4	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	654	1503	Gelechiidae,Noctuidae,Pyralidae	BGSNL590-24_r_1.5_s_50	Caryocolum alsinella	0	BGSNL590-24
+6	19	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	552	1113	Gelechiidae	BGSNL590-24_r_1.5_s_100	Caryocolum alsinella	0	BGSNL590-24
+10	14	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1533	Gelechiidae,Noctuidae,Pyralidae,Crambidae	BGSNL623-24_r_1_s_50	Isophrictis invisella	0	BGSNL623-24
+17	20	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	654	1530	Gelechiidae,Noctuidae,Pyralidae,Crambidae	BGSNL623-24_r_1_s_100	Isophrictis invisella	0	BGSNL623-24
+3	4	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1533	Gelechiidae,Noctuidae,Pyralidae,Crambidae	BGSNL623-24_r_1.3_s_50	Isophrictis invisella	0	BGSNL623-24
+5	6	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	654	1530	Gelechiidae,Noctuidae,Pyralidae,Crambidae	BGSNL623-24_r_1.3_s_100	Isophrictis invisella	0	BGSNL623-24
+1	1	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1533	Gelechiidae,Noctuidae,Pyralidae,Crambidae	BGSNL623-24_r_1.5_s_50	Isophrictis invisella	0	BGSNL623-24
+2	3	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	653	1530	Gelechiidae,Noctuidae,Pyralidae,Crambidae	BGSNL623-24_r_1.5_s_100	Isophrictis invisella	0	BGSNL623-24
+25	69	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1530	Gelechiidae,Crambidae	BGSNL628-24_r_1_s_50	Istrianis brucinella	0	BGSNL628-24
+33	54	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1521	Gelechiidae,Pyralidae,Crambidae	BGSNL628-24_r_1_s_100	Istrianis brucinella	0	BGSNL628-24
+9	14	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1530	Gelechiidae,Pyralidae,Crambidae	BGSNL628-24_r_1.3_s_50	Istrianis brucinella	0	BGSNL628-24
+16	23	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	642	1503	Gelechiidae,Pyralidae,Crambidae	BGSNL628-24_r_1.3_s_100	Istrianis brucinella	0	BGSNL628-24
+1	3	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	633	1506	Noctuidae,Pyralidae,Crambidae,Geometridae	BGSNL628-24_r_1.5_s_50	Istrianis brucinella	0	BGSNL628-24
+2	3	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	627	1488	Gelechiidae,Pyralidae,Crambidae	BGSNL628-24_r_1.5_s_100	Istrianis brucinella	0	BGSNL628-24
+22	76	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	655	1530	Gelechiidae,Papilionidae,Pyralidae,Crambidae	BGSNL629-24_r_1_s_50	Istrianis brucinella	0	BGSNL629-24
+25	82	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	627	1500	Nymphalidae,Crambidae,Geometridae	BGSNL629-24_r_1_s_100	Istrianis brucinella	0	BGSNL629-24
+6	14	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	655	1530	Gelechiidae,Pyralidae,Crambidae	BGSNL629-24_r_1.3_s_50	Istrianis brucinella	0	BGSNL629-24
+16	27	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	583	1392	Gelechiidae,Nymphalidae,Pyralidae,Crambidae,Geometridae	BGSNL629-24_r_1.3_s_100	Istrianis brucinella	0	BGSNL629-24
+1	2	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	646	1515	Batrachedridae,Limacodidae,Papilionidae,Crambidae,Hesperiidae,Geometridae	BGSNL629-24_r_1.5_s_50	Istrianis brucinella	0	BGSNL629-24
+2	3	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	584	1386	Pyralidae	BGSNL629-24_r_1.5_s_100	Istrianis brucinella	0	BGSNL629-24
+23	50	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1527	Nymphalidae	BGSNL630-24_r_1_s_50	Megacraspedus dolosellus	0	BGSNL630-24
+37	77	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	623	1470	Gelechiidae,Erebidae	BGSNL630-24_r_1_s_100	Megacraspedus dolosellus	0	BGSNL630-24
+6	7	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1527	Papilionidae,Pyralidae,Crambidae	BGSNL630-24_r_1.3_s_50	Megacraspedus dolosellus	0	BGSNL630-24
+19	19	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	612	1413	Noctuidae,Papilionidae	BGSNL630-24_r_1.3_s_100	Megacraspedus dolosellus	0	BGSNL630-24
+3	4	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1497	Saturniidae,Papilionidae,Pyralidae,Crambidae	BGSNL630-24_r_1.5_s_50	Megacraspedus dolosellus	0	BGSNL630-24
+39	39	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	612	1203	Noctuidae,Pyralidae	BGSNL630-24_r_1.5_s_100	Megacraspedus dolosellus	0	BGSNL630-24
+16	82	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	641	1521	Geometridae,Pterophoridae	BGSNL665-24_r_1_s_50	Capperia hellenica	0	BGSNL665-24
+7	66	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	548	1371	Geometridae,Pterophoridae	BGSNL665-24_r_1_s_100	Capperia hellenica	0	BGSNL665-24
+23	39	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	635	1479	Noctuidae,Erebidae,Geometridae	BGSNL665-24_r_1.3_s_50	Capperia hellenica	0	BGSNL665-24
+7	12	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	549	1350	Endromidae,Nymphalidae,Geometridae	BGSNL665-24_r_1.3_s_100	Capperia hellenica	0	BGSNL665-24
+8	25	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	570	1344	Nymphalidae,Geometridae	BGSNL665-24_r_1.5_s_50	Capperia hellenica	0	BGSNL665-24
+22	33	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	525	1218	Geometridae	BGSNL665-24_r_1.5_s_100	Capperia hellenica	0	BGSNL665-24
+16	28	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00297-NC not in BOLD	None	BLAST	family	458	1146		BGE00297-NC_r_1_s_50	None	0	BGE00297-NC
+1	13	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00297-NC not in BOLD	None	BLAST	family	458	1041		BGE00297-NC_r_1_s_100	None	0	BGE00297-NC
+1	1	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00297-NC not in BOLD	None	BLAST	family	293	417		BGE00297-NC_r_1.3_s_50	None	0	BGE00297-NC
+1	1	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00297-NC not in BOLD	None	BLAST	family	272	324		BGE00297-NC_r_1.3_s_100	None	0	BGE00297-NC
+1	1	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00297-NC not in BOLD	None	BLAST	family	122	216		BGE00297-NC_r_1.5_s_50	None	0	BGE00297-NC
+1	1	data/BGE00297_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00297-NC not in BOLD	None	BLAST	family	121	147		BGE00297-NC_r_1.5_s_100	None	0	BGE00297-NC

@@ -1,0 +1,17 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+11	13	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	657	1521	Tortricidae,Limacodidae	BGSNL476-23_cns	Psodos canaliculata	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	1	156		BGSNL497-23_cns	Phyllometra gracilaria	0
+14	14	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	609	1260	Noctuidae,Geometridae	BGSNL509-23_cns	Zernyia granataria	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Geometridae	BLAST	family	163	552	Nymphalidae,Geometridae	BGSNL510-23_cns	Zernyia granataria	0
+13	13	data/BGE00296_MGE_cox1_insect_universal.fas	None	Alucitidae	BLAST	family	533	1155	Nymphalidae,Alucitidae	BGSNL511-23_cns	Alucita bidentata	0
+14	14	data/BGE00296_MGE_cox1_insect_universal.fas	None	Alucitidae	BLAST	family	651	1461	Noctuidae,Crambidae,Geometridae,Alucitidae	BGSNL512-23_cns	Alucita canariensis	0
+3	62	data/BGE00296_MGE_cox1_insect_universal.fas	None	Alucitidae	BLAST	family	412	972	Crambidae,Geometridae,Alucitidae	BGSNL514-23_cns	Alucita canariensis	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Momphidae	BLAST	family	62	291	Nymphalidae,Crambidae	BGSNL522-23_cns	Mompha bradleyi	0
+0	4	data/BGE00296_MGE_cox1_insect_universal.fas	None	Momphidae	BLAST	family	192	549	Tettigoniidae,Acrididae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Psychodidae,Vespidae,Tetracampidae	BGSNL523-23_cns	Mompha bradleyi	1
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Momphidae	BLAST	family	110	501		BGSNL524-23_cns	Mompha bradleyi	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Plutellidae	BLAST	family	656	1440	Tettigoniidae,Acrididae,Ninidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BGSNL525-23_cns	Eidophasia insulella	0
+0	2	data/BGE00296_MGE_cox1_insect_universal.fas	None	Plutellidae	BLAST	family	657	1488	Depressariidae,Yponomeutidae,Crambidae	BGSNL526-23_cns	Eidophasia zukowskyi	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	474	1104	Crambidae	BGSNL549-23_cns	Agriphila alpina	0
+20	20	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	612	1305	Crambidae	BGSNL550-23_cns	Agriphila alpina	0
+14	31	data/BGE00296_MGE_cox1_insect_universal.fas	None	Crambidae	BLAST	family	657	1527	Staphylinidae,Leiodidae,Syrphidae,Nymphalidae,Nevrorthidae	BGSNL551-23_cns	Agriphila alpina	0
+0	0	data/BGE00296_MGE_cox1_insect_universal.fas	NC-BGE00296 not in BOLD	None	BLAST	family	1	279		NC-BGE00296_cns	None	0

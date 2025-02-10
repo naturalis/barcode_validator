@@ -1,0 +1,18 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00167_MGE-BGE_r_1_s_100.fas	BGE00167-NC not in BOLD	None	BLAST	family	109	357		BGE00167-NC_cns	None	0
+10	40	data/BGE00167_MGE-BGE_r_1_s_100.fas	None	Cicadellidae	BLAST	family	656	1425	Cicadellidae,Staphylinidae,Syrphidae,Tephritidae,Tachinidae	BGENL100-23_cns	Macropsis ocellata	0
+56	99	data/BGE00167_MGE-BGE_r_1_s_100.fas	None	Cicadellidae	BLAST	family	588	1230	Cicadellidae,Culicidae	BGENL103-23_cns	Macropsis prasina	0
+36	61	data/BGE00167_MGE-BGE_r_1_s_100.fas	None	Cicadellidae	BLAST	family	656	1533	Scutelleridae,Cicadellidae,Sarcophagidae	BGENL111-23_cns	Macropsis impura	0
+10	10	data/BGE00167_MGE-BGE_r_1_s_100.fas	None	Cicadellidae	BLAST	family	657	1533	Cicadellidae	BGENL119-23_cns	Rhytidodus decimusquartus	0
+17	39	data/BGE00167_MGE-BGE_r_1_s_100.fas	None	Cicadellidae	BLAST	family	657	1533	Cicadellidae	BGENL120-23_cns	Rhytidodus decimusquartus	0
+19	34	data/BGE00167_MGE-BGE_r_1_s_100.fas	None	Cicadellidae	BLAST	family	429	723	Cercopidae,Machaerotidae,Membracidae,Cicadellidae	BGENL131-23_cns	Anoscopus histrionicus	0
+36	87	data/BGE00167_MGE-BGE_r_1_s_100.fas	None	Cicadellidae	BLAST	family	656	1536	Cicadellidae,Syrphidae,Agromyzidae,Papilionidae,Nymphidae,Osmylidae	BGENL136-23_cns	Kybos betulicola	0
+32	61	data/BGE00167_MGE-BGE_r_1_s_100.fas	None	Cicadellidae	BLAST	family	630	1443	Cicadellidae	BGENL154-23_cns	Jassargus sursumflexus	0
+0	11	data/BGE00167_MGE-BGE_r_1_s_100.fas	None	Cicadellidae	BLAST	family	252	483	Cicadellidae	BGENL164-23_cns	Mocydiopsis attenuata	0
+44	73	data/BGE00167_MGE-BGE_r_1_s_100.fas	None	Cicadellidae	BLAST	family	572	1440	Cicadellidae	BGENL173-23_cns	Psammotettix maritimus	0
+20	51	data/BGE00167_MGE-BGE_r_1_s_100.fas	None	Cicadellidae	BLAST	family	543	1263	Cicadellidae,Syrphidae,Fergusoninidae	BGENL176-23_cns	Psammotettix albomarginatus	0
+17	38	data/BGE00167_MGE-BGE_r_1_s_100.fas	None	Cicadellidae	BLAST	family	656	1452	Tettigoniidae,Acrididae,Ninidae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BGENL182-23_cns	Jassargus allobrogicus	0
+0	0	data/BGE00167_MGE-BGE_r_1_s_100.fas	None	Delphacidae	BLAST	family	656	1476	Cicadellidae	BGENL183-23_cns	Delphax pulchellus	0
+4	16	data/BGE00167_MGE-BGE_r_1_s_100.fas	None	Delphacidae	BLAST	family	656	1536	Alydidae,Delphacidae	BGENL186-23_cns	Hyledelphax elegantulus	1
+7	23	data/BGE00167_MGE-BGE_r_1_s_100.fas	None	Delphacidae	BLAST	family	620	1497	Delphacidae	BGENL188-23_cns	Hyledelphax elegantulus	0
+5	29	data/BGE00167_MGE-BGE_r_1_s_100.fas	None	Delphacidae	BLAST	family	562	1104	Cicadellidae	BGENL190-23_cns	Muellerianella fairmairei	0

@@ -1,0 +1,25 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00180_MGE-BGE_r_1_s_100.fas	BGE00180-NC not in BOLD	None	BLAST	family	157	159		BGE00180-NC_cns	None	0
+0	22	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Sarcophagidae	BLAST	family	427	981	Nitidulidae,Curculionidae,Dermestidae,Bostrichidae,Psychodidae,Vespidae,Tetracampidae	BGENL1260-24_cns	Agria mamillata	0
+0	0	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Scatopsidae	BLAST	family	657	1527	Drosophilidae	BGENL1275-24_cns	Anapausis soluta	0
+0	0	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Scatopsidae	BLAST	family	657	1527	Drosophilidae	BGENL1277-24_cns	Anapausis soluta	0
+0	1	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Scatopsidae	BLAST	family	656	1527	Drosophilidae	BGENL1278-24_cns	Aspistes berolinensis	0
+0	33	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Scatopsidae	BLAST	family	240	822	Tettigoniidae,Staphylinidae,Hydraenidae,Buprestidae,Mycetophilidae,Ulidiidae,Tachinidae,Vespidae	BGENL1279-24_cns	Aspistes berolinensis	0
+0	0	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Scatopsidae	BLAST	family	656	1527	Drosophilidae	BGENL1280-24_cns	Aspistes berolinensis	0
+18	35	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Scatopsidae	BLAST	family	480	984	Tettigoniidae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Ulidiidae,Vespidae,Tetracampidae	BGENL1281-24_cns	Colobostema nigripenne	0
+0	27	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Scatopsidae	BLAST	family	203	579		BGENL1282-24_cns	Holoplagia transversalis	0
+16	19	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Scatopsidae	BLAST	family	656	1506	Culicidae,Drosophilidae	BGENL1283-24_cns	Rhexoza subnitensis	0
+6	39	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Scatopsidae	BLAST	family	657	1533	Drosophilidae,Anthomyiidae,Scathophagidae	BGENL1284-24_cns	Swammerdamella brevicornis	0
+2	2	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Scatopsidae	BLAST	family	505	858	Euphaeidae,Aeshnidae,Termitidae,Cicadellidae,Cerambycidae,Milichiidae,Nepticulidae	BGENL1285-24_cns	Swammerdamella brevicornis	0
+0	0	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Sciaridae	BLAST	family	100	675	Syrphidae,Calliphoridae	BGENL1291-24_cns	Sciara modesta	0
+2	10	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Sphaeroceridae	BLAST	family	629	1473	Drosophilidae,Muscidae,Xylophagaidae	BGENL1292-24_cns	Copromyza nigrina	0
+10	55	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Sphaeroceridae	BLAST	family	311	1263	Scarabaeidae,Drosophilidae,Agromyzidae,Sphaeroceridae,Piophilidae	BGENL1293-24_cns	Copromyza nigrina	0
+0	19	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Sphaeroceridae	BLAST	family	657	1509	Carabidae,Culicidae,Drosophilidae,Muscidae	BGENL1294-24_cns	Ischiolepta denticulata	0
+7	22	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Sphaeroceridae	BLAST	family	608	1413	Psilidae,Drosophilidae,Sepsidae,Rhiniidae	BGENL1295-24_cns	Thoracochaeta brachystoma	0
+3	27	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Sphaeroceridae	BLAST	family	414	1128	Curculionidae,Dermestidae,Bostrichidae,Psychodidae,Vespidae,Tetracampidae	BGENL1296-24_cns	Thoracochaeta brachystoma	0
+9	17	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Sphaeroceridae	BLAST	family	617	1323	Drosophilidae,Sepsidae,Sphaeroceridae	BGENL1297-24_cns	Thoracochaeta brachystoma	0
+17	62	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Stratiomyidae	BLAST	family	476	1230	Derodontidae,Culicidae,Tipulidae,Dolichopodidae,Hybotidae,Syrphidae,Drosophilidae,Micropezidae,Agromyzidae,Calliphoridae	BGENL1303-24_cns	Microchrysa cyaneiventris	0
+12	36	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Stratiomyidae	BLAST	family	656	1407	Tipulidae,Dolichopodidae,Stratiomyidae	BGENL1304-24_cns	Microchrysa cyaneiventris	0
+23	39	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Stratiomyidae	BLAST	family	653	1479	Bombyliidae,Drosophilidae,Tephritidae,Pallopteridae	BGENL1305-24_cns	Microchrysa cyaneiventris	0
+None	0	data/BGE00180_MGE-BGE_r_1_s_100.fas	Local BLAST failed for sequence ''	Syrphidae	BLAST	family	None	0		BGENL1327-24_cns	Callicera fagesii	0
+17	29	data/BGE00180_MGE-BGE_r_1_s_100.fas	None	Syrphidae	BLAST	family	605	1476	Scatopsidae,Agromyzidae	BGENL1329-24_cns	Cheilosia griseiventris	0

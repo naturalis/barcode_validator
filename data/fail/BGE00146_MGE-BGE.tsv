@@ -1,0 +1,67 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons	process_id
+4	9	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Noctuidae	BLAST	family	657	1530	Noctuidae	BHNHM007-24_r_1_s_50	Agrochola rupicapra	0	BHNHM007-24
+1	1	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Noctuidae	BLAST	family	657	1530	Noctuidae	BHNHM007-24_r_1_s_100	Agrochola rupicapra	0	BHNHM007-24
+1	1	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Noctuidae	BLAST	family	657	1530	Noctuidae	BHNHM007-24_r_1.3_s_50	Agrochola rupicapra	0	BHNHM007-24
+1	1	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Noctuidae	BLAST	family	657	1530	Noctuidae	BHNHM007-24_r_1.3_s_100	Agrochola rupicapra	0	BHNHM007-24
+1	1	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Noctuidae	BLAST	family	657	1530	Noctuidae	BHNHM007-24_r_1.5_s_50	Agrochola rupicapra	0	BHNHM007-24
+1	1	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Noctuidae	BLAST	family	657	1530	Noctuidae	BHNHM007-24_r_1.5_s_100	Agrochola rupicapra	0	BHNHM007-24
+9	53	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Noctuidae	BLAST	family	642	1530	Sphingidae,Endromidae,Geometridae	BHNHM012-24_r_1_s_50	Oncocnemis nigricula	0	BHNHM012-24
+8	39	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Noctuidae	BLAST	family	642	1530	Noctuidae	BHNHM012-24_r_1_s_100	Oncocnemis nigricula	0	BHNHM012-24
+4	23	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Noctuidae	BLAST	family	642	1530	Noctuidae	BHNHM012-24_r_1.3_s_50	Oncocnemis nigricula	0	BHNHM012-24
+3	13	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Noctuidae	BLAST	family	642	1530	Noctuidae	BHNHM012-24_r_1.3_s_100	Oncocnemis nigricula	0	BHNHM012-24
+1	15	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Noctuidae	BLAST	family	642	1530	Noctuidae	BHNHM012-24_r_1.5_s_50	Oncocnemis nigricula	0	BHNHM012-24
+1	10	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Noctuidae	BLAST	family	642	1530	Noctuidae	BHNHM012-24_r_1.5_s_100	Oncocnemis nigricula	0	BHNHM012-24
+1	1	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Psychidae	BLAST	family	81	369	Gerridae,Lycidae,Geometridae	BHNHM023-24_r_1_s_50	Whittleia undulella	0	BHNHM023-24
+0	0	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Psychidae	BLAST	family	58	237	Gerridae,Lycidae,Geometridae	BHNHM023-24_r_1_s_100	Whittleia undulella	0	BHNHM023-24
+0	0	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Psychidae	BLAST	family	76	327	Gerridae,Lycidae,Geometridae	BHNHM023-24_r_1.3_s_50	Whittleia undulella	0	BHNHM023-24
+0	0	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Psychidae	BLAST	family	58	237	Gerridae,Lycidae,Geometridae	BHNHM023-24_r_1.3_s_100	Whittleia undulella	0	BHNHM023-24
+0	0	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Psychidae	BLAST	family	202	216	Cosmopterigidae,Noctuidae,Crambidae,Geometridae	BHNHM023-24_r_1.5_s_50	Whittleia undulella	0	BHNHM023-24
+0	0	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Psychidae	BLAST	family	100	126	Cosmopterigidae,Noctuidae,Crambidae,Geometridae	BHNHM023-24_r_1.5_s_100	Whittleia undulella	0	BHNHM023-24
+9	14	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Noctuidae	BLAST	family	657	1530	Noctuidae	BHNHM035-24_r_1_s_50	Polymixis manisadjiani	0	BHNHM035-24
+1	1	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Noctuidae	BLAST	family	657	1530	Noctuidae	BHNHM035-24_r_1_s_100	Polymixis manisadjiani	0	BHNHM035-24
+2	3	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Noctuidae	BLAST	family	657	1530	Noctuidae	BHNHM035-24_r_1.3_s_50	Polymixis manisadjiani	0	BHNHM035-24
+1	1	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Noctuidae	BLAST	family	657	1530	Noctuidae	BHNHM035-24_r_1.3_s_100	Polymixis manisadjiani	0	BHNHM035-24
+1	1	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Noctuidae	BLAST	family	657	1530	Noctuidae	BHNHM035-24_r_1.5_s_50	Polymixis manisadjiani	0	BHNHM035-24
+1	1	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Noctuidae	BLAST	family	657	1530	Noctuidae	BHNHM035-24_r_1.5_s_100	Polymixis manisadjiani	0	BHNHM035-24
+16	102	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	391	1014	Noctuidae,Erebidae	BHNHM045-24_r_1_s_50	Anumeta cestis	0	BHNHM045-24
+1	46	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	343	753	Noctuidae,Erebidae	BHNHM045-24_r_1_s_100	Anumeta cestis	0	BHNHM045-24
+3	16	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	392	873	Erebidae,Nymphalidae	BHNHM045-24_r_1.3_s_50	Anumeta cestis	0	BHNHM045-24
+2	2	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	323	546	Noctuidae,Erebidae	BHNHM045-24_r_1.3_s_100	Anumeta cestis	0	BHNHM045-24
+6	6	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	406	711	Noctuidae,Erebidae	BHNHM045-24_r_1.5_s_50	Anumeta cestis	0	BHNHM045-24
+3	3	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	479	489	Noctuidae,Erebidae	BHNHM045-24_r_1.5_s_100	Anumeta cestis	6	BHNHM045-24
+31	62	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	565	1437	Noctuidae,Nolidae,Erebidae,Euteliidae,Drepanidae	BHNHM059-24_r_1_s_50	Autophila asiatica	0	BHNHM059-24
+0	2	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	423	918	Argyresthiidae,Noctuidae,Erebidae	BHNHM059-24_r_1_s_100	Autophila asiatica	0	BHNHM059-24
+5	24	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	505	1266	Noctuidae,Erebidae	BHNHM059-24_r_1.3_s_50	Autophila asiatica	0	BHNHM059-24
+0	2	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	467	858	Argyresthiidae,Erebidae	BHNHM059-24_r_1.3_s_100	Autophila asiatica	2	BHNHM059-24
+3	8	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	436	1011	Argyresthiidae,Noctuidae,Erebidae	BHNHM059-24_r_1.5_s_50	Autophila asiatica	0	BHNHM059-24
+0	2	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	467	858	Argyresthiidae,Erebidae	BHNHM059-24_r_1.5_s_100	Autophila asiatica	2	BHNHM059-24
+14	31	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	656	1530	Noctuidae,Erebidae	BHNHM061-24_r_1_s_50	Autophila asiatica	4	BHNHM061-24
+2	6	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	612	1467	Noctuidae,Erebidae	BHNHM061-24_r_1_s_100	Autophila asiatica	0	BHNHM061-24
+2	3	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	617	1491	Noctuidae,Erebidae	BHNHM061-24_r_1.3_s_50	Autophila asiatica	0	BHNHM061-24
+2	6	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	612	1467	Noctuidae,Erebidae	BHNHM061-24_r_1.3_s_100	Autophila asiatica	0	BHNHM061-24
+2	2	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	618	1491	Noctuidae,Erebidae	BHNHM061-24_r_1.5_s_50	Autophila asiatica	0	BHNHM061-24
+1	5	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	612	1467	Noctuidae,Erebidae	BHNHM061-24_r_1.5_s_100	Autophila asiatica	0	BHNHM061-24
+21	55	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	631	1506	Noctuidae,Erebidae,Geometridae	BHNHM066-24_r_1_s_50	Autophila libanotica	0	BHNHM066-24
+6	19	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	625	1497	Noctuidae,Erebidae,Nymphalidae	BHNHM066-24_r_1_s_100	Autophila libanotica	0	BHNHM066-24
+2	12	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	585	1458	Noctuidae,Erebidae	BHNHM066-24_r_1.3_s_50	Autophila libanotica	0	BHNHM066-24
+0	9	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	460	1293	Noctuidae,Erebidae	BHNHM066-24_r_1.3_s_100	Autophila libanotica	0	BHNHM066-24
+2	5	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	569	1440	Noctuidae,Erebidae	BHNHM066-24_r_1.5_s_50	Autophila libanotica	0	BHNHM066-24
+0	3	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	443	1278	Noctuidae	BHNHM066-24_r_1.5_s_100	Autophila libanotica	0	BHNHM066-24
+2	24	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	468	1044	Noctuidae,Erebidae	BHNHM084-24_r_1_s_50	Eublemma pannonica	0	BHNHM084-24
+3	16	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	476	837	Noctuidae,Erebidae	BHNHM084-24_r_1_s_100	Eublemma pannonica	3	BHNHM084-24
+1	19	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	417	873	Noctuidae,Erebidae	BHNHM084-24_r_1.3_s_50	Eublemma pannonica	0	BHNHM084-24
+3	26	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	479	663	Noctuidae,Erebidae	BHNHM084-24_r_1.3_s_100	Eublemma pannonica	4	BHNHM084-24
+3	5	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	409	735	Noctuidae,Erebidae	BHNHM084-24_r_1.5_s_50	Eublemma pannonica	0	BHNHM084-24
+3	4	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	492	594	Noctuidae,Erebidae	BHNHM084-24_r_1.5_s_100	Eublemma pannonica	4	BHNHM084-24
+57	101	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	656	1533	Muscidae,Calliphoridae,Limacodidae,Pieridae,Nymphalidae	BHNHM091-24_r_1_s_50	Eublemma pusilla	0	BHNHM091-24
+47	73	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	656	1356	Choreutidae,Noctuidae,Nolidae,Erebidae,Lycaenidae	BHNHM091-24_r_1_s_100	Eublemma pusilla	0	BHNHM091-24
+20	38	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	656	1440	Noctuidae,Geometridae	BHNHM091-24_r_1.3_s_50	Eublemma pusilla	0	BHNHM091-24
+21	37	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	656	1293	Noctuidae,Erebidae	BHNHM091-24_r_1.3_s_100	Eublemma pusilla	0	BHNHM091-24
+5	12	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	614	1365	Noctuidae,Erebidae,Euteliidae	BHNHM091-24_r_1.5_s_50	Eublemma pusilla	0	BHNHM091-24
+4	32	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Erebidae	BLAST	family	536	1173	Noctuidae,Geometridae	BHNHM091-24_r_1.5_s_100	Eublemma pusilla	0	BHNHM091-24
+7	25	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00146-NC not in BOLD	None	BLAST	family	533	759		BGE00146-NC_r_1_s_50	None	0	BGE00146-NC
+0	18	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00146-NC not in BOLD	None	BLAST	family	533	759		BGE00146-NC_r_1_s_100	None	0	BGE00146-NC
+4	4	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00146-NC not in BOLD	None	BLAST	family	311	576		BGE00146-NC_r_1.3_s_50	None	0	BGE00146-NC
+0	0	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00146-NC not in BOLD	None	BLAST	family	311	576		BGE00146-NC_r_1.3_s_100	None	0	BGE00146-NC
+0	1	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00146-NC not in BOLD	None	BLAST	family	170	465		BGE00146-NC_r_1.5_s_50	None	0	BGE00146-NC
+0	1	data/BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00146-NC not in BOLD	None	BLAST	family	174	438		BGE00146-NC_r_1.5_s_100	None	0	BGE00146-NC

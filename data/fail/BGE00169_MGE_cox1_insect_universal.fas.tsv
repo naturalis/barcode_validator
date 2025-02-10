@@ -1,0 +1,36 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+5	8	data/BGE00169_MGE_cox1_insect_universal.fas	BGE00169-NC not in BOLD	None	BLAST	family	453	792		BGE00169-NC_cns	None	0
+16	67	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	566	1356	Oecophoridae,Noctuidae,Pyralidae,Geometridae	BGENL191-23_cns	Abrepagoge treitschkeana	0
+7	28	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	366	969	Libellulidae,Lauxaniidae,Tortricidae,Nymphalidae,Geometridae	BGENL197-23_cns	Cochylimorpha jucundana	17
+8	21	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	648	1347	Drosophilidae,Nymphalidae	BGENL198-23_cns	Pelochrista fusculana	0
+14	56	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	584	1251	Tortricidae	BGENL201-23_cns	Eucosma mirificana	0
+21	42	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	657	1482	Tortricidae	BGENL204-23_cns	Clepsis rolandriana	0
+32	84	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	569	1418	Tortricidae	BGENL209-23_cns	Cochylimorpha obliquana	0
+31	53	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	633	1191	Tortricidae,Bombycidae,Erebidae,Lycaenidae,Nymphalidae	BGENL212-23_cns	Epiblema sarmatana	0
+35	35	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	445	948	Tortricidae	BGENL214-23_cns	Lobesia quaggana	0
+7	30	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	657	1434	Tortricidae	BGENL215-23_cns	Aphelia albociliana	0
+12	12	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	657	1515	Oecophoridae,Cosmopterigidae,Tortricidae,Limacodidae,Noctuidae,Pyralidae,Crambidae,Drepanidae	BGENL216-23_cns	Clepsis unicolorana	0
+3	5	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	646	1437	Endromidae,Noctuidae,Erebidae,Geometridae	BGENL220-23_cns	Bactra legitima	0
+8	33	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	381	1065	Gelechiidae,Oecophoridae,Coleophoridae,Depressariidae,Nymphalidae	BGENL221-23_cns	Prochlidonia amiantana	0
+19	32	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	615	1389	Tortricidae	BGENL222-23_cns	Cydia funebrana	0
+3	3	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	648	1506	Oecophoridae,Limacodidae,Papilionidae	BGENL223-23_cns	Diceratura infantana	0
+3	3	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	212	795	Noctuidae,Nolidae,Erebidae,Euteliidae,Crambidae,Geometridae	BGENL225-23_cns	Eupoecilia cebrana	0
+26	30	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	656	1527	Tortricidae	BGENL228-23_cns	Clepsis coriacanus	0
+0	0	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	170	441	Notodontidae,Erebidae,Geometridae	BGENL229-23_cns	Eana joannisi	0
+37	48	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	529	756	Dolichopodidae,Phoridae	BGENL237-23_cns	Grapholita internana	0
+8	33	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	540	1095	Depressariidae,Papilionidae,Crambidae,Hesperiidae,Geometridae	BGENL242-23_cns	Aethes deaurana	0
+4	4	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	521	1131	Lecithoceridae,Limacodidae,Saturniidae,Geometridae	BGENL243-23_cns	Agapeta largana	0
+8	20	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	587	1386	Tortricidae	BGENL247-23_cns	Dichrorampha distinctana	0
+10	11	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	657	1329	Tortricidae,Noctuidae	BGENL250-23_cns	Pammene christophana	0
+25	32	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	442	1050	Tortricidae,Limacodidae,Geometridae	BGENL256-23_cns	Philedonides rhombicana	0
+11	43	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	606	1452	Staphylinidae,Hydraenidae,Culicidae,Phoridae,Syrphidae,Drosophilidae	BGENL258-23_cns	Cydia milleniana	0
+9	19	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	654	1425	Tortricidae	BGENL259-23_cns	Dichrorampha gemellana	0
+9	12	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	648	1443	Tortricidae	BGENL260-23_cns	Eucosma cumulana	0
+0	22	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	454	1191	Tortricidae	BGENL261-23_cns	Lobesia andereggiana	3
+8	37	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	505	1221	Tortricidae,Crambidae,Geometridae	BGENL265-23_cns	Oxypteron impar	0
+29	63	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	548	1155	Tortricidae,Papilionidae	BGENL266-23_cns	Aethes tornella	0
+18	63	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	657	1515	Tortricidae,Drepanidae	BGENL271-23_cns	Dichrorampha harpeana	0
+4	7	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	512	1080	Endromidae,Nymphalidae,Pyralidae,Geometridae	BGENL274-23_cns	Pelochrista decolorana	0
+17	26	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	657	1515	Tortricidae	BGENL281-23_cns	Cydia adenocarpi	0
+20	71	data/BGE00169_MGE_cox1_insect_universal.fas	None	Tortricidae	BLAST	family	307	897	Oecophoridae,Noctuidae,Nymphalidae,Pyralidae	BGENL283-23_cns	Ditula joannisiana	0
+8	13	data/BGE00169_MGE_cox1_insect_universal.fas	None	Noctuidae	BLAST	family	570	1395	Cosmopterigidae,Gracillariidae,Noctuidae,Nymphalidae,Crambidae	BGENL285-23_cns	Acontiola	0

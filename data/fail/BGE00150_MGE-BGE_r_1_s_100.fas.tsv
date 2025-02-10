@@ -1,0 +1,9 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+None	0	data/BGE00150_MGE-BGE_r_1_s_100.fas	BGE00150-NC not in BOLD	None	BLAST	family	None	0		BGE00150-NC_cns	None	0
+17	26	data/BGE00150_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	518	963	Noctuidae,Nolidae,Erebidae	BHNHM417-24_cns	Oncocnemis senica	0
+11	13	data/BGE00150_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	657	1539	Noctuidae	BHNHM420-24_cns	Orthosia dalmatica	0
+13	20	data/BGE00150_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	557	1338	Halimococcidae,Tortricidae,Limacodidae,Riodinidae,Crambidae,Hesperiidae,Geometridae	BHNHM429-24_cns	Panchrysia ornata	0
+14	43	data/BGE00150_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	655	1533	Timematidae,Curculionidae,Drosophilidae,Formicidae,Noctuidae,Geometridae	BHNHM430-24_cns	Panchrysia ornata	0
+0	1	data/BGE00150_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	657	1533	Gelechiidae,Nolidae,Erebidae,Geometridae	BHNHM436-24_cns	Perigrapha sellingi	0
+5	5	data/BGE00150_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	486	1092	Endromidae,Noctuidae,Erebidae	BHNHM439-24_cns	Phoebophilus veternosa	0
+11	14	data/BGE00150_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	563	1335	Noctuidae	BHNHM459-24_cns	Pseudohadena armata	1

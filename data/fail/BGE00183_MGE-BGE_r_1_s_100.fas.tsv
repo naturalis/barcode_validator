@@ -1,0 +1,7 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+4	4	data/BGE00183_MGE-BGE_r_1_s_100.fas	BGE00183-NC not in BOLD	None	BLAST	family	164	309		BGE00183-NC_cns	None	0
+38	39	data/BGE00183_MGE-BGE_r_1_s_100.fas	None	Andrenidae	BLAST	family	616	1359	Andrenidae	BGENL1355-24_cns	Andrena hillana	0
+17	20	data/BGE00183_MGE-BGE_r_1_s_100.fas	None	Andrenidae	BLAST	family	654	1542	Andrenidae	BGENL1366-24_cns	Andrena macroptera	0
+0	18	data/BGE00183_MGE-BGE_r_1_s_100.fas	None	Andrenidae	BLAST	family	139	759	Andrenidae	BGENL1385-24_cns	Andrena miegiella	0
+29	87	data/BGE00183_MGE-BGE_r_1_s_100.fas	None	Andrenidae	BLAST	family	655	1545	Andrenidae	BGENL1397-24_cns	Andrena cordialis	0
+0	0	data/BGE00183_MGE-BGE_r_1_s_100.fas	None	Andrenidae	BLAST	family	89	90	Elateridae,Elmidae	BGENL1401-24_cns	Andrena concinna	0

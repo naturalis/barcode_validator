@@ -1,0 +1,28 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	2	data/BGE00408_MGE-BGE_r_1_s_100.fas	BGE00408-NC not in BOLD	None	BLAST	family	89	627		BGE00408-NC_cns	None	0
+12	39	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	645	1452	Braconidae	BGLIB666-24_cns	Bracon abbreviator	0
+12	68	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	625	1461	Ichneumonidae	BGLIB667-24_cns	Bracon conjugellae	0
+9	25	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	656	1467	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BGLIB669-24_cns	Bracon curticaudis	0
+3	7	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	295	963	Corylophidae,Braconidae	BGLIB672-24_cns	Bracon exarator	0
+1	6	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	229	774		BGLIB673-24_cns	Bracon exhilarator	0
+1	43	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	402	1170	Braconidae	BGLIB674-24_cns	Bracon flavipes	0
+1	1	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	504	1206	Tettigoniidae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Ulidiidae,Vespidae,Tetracampidae	BGLIB675-24_cns	Bracon immutator	1
+10	42	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	654	1506	Braconidae	BGLIB677-24_cns	Bracon longicollis	0
+7	19	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	657	1476	Braconidae	BGLIB682-24_cns	Bracon pulcher	0
+0	0	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	87	540	Curculionidae,Dermestidae,Bostrichidae,Psychodidae,Vespidae,Tetracampidae	BGLIB688-24_cns	Bracon urinator	0
+8	27	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	454	1179	Tettigoniidae,Ninidae,Staphylinidae,Ceratopogonidae,Ulidiidae,Vespidae	BGLIB689-24_cns	Bracon variator	0
+0	0	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	656	1536	Nolidae,Lycaenidae,Nymphalidae	BGLIB694-24_cns	Chelonus contractus	0
+12	23	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	656	1479	Braconidae	BGLIB703-24_cns	Blacus instabilis	0
+0	0	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	141	549		BGLIB704-24_cns	Blacus pallipes	0
+25	53	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	656	1326	Braconidae	BGLIB707-24_cns	Atanycolus neesii	0
+15	15	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	656	1491	Braconidae	BGLIB714-24_cns	Ascogaster klugii	0
+3	28	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	655	1485	Ibaliidae,Figitidae,Cynipidae	BGLIB717-24_cns	Coeloides abdominalis	0
+14	47	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	647	1416	Braconidae	BGLIB718-24_cns	Coeloides scolyticida	0
+37	55	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	655	1419	Braconidae	BGLIB721-24_cns	Vipio intermedius	0
+0	9	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	222	984	Curculionidae,Dermestidae,Bostrichidae,Psychodidae,Vespidae,Tetracampidae	BGLIB722-24_cns	Vipio sareptanus	0
+3	40	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	445	1083	Tettigoniidae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Ulidiidae,Vespidae,Tetracampidae	BGLIB723-24_cns	Vipio terrefactor	0
+4	10	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	430	1083	Scarabaeidae,Ichneumonidae,Vespidae,Apidae,Halictidae,Colletidae,Formicidae	BGLIB728-24_cns	Trachionus hians	0
+5	10	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	171	894	Chrysomelidae,Torymidae,Tortricidae,Noctuidae,Erebidae,Nymphalidae,Pseudobistonidae	BGLIB738-24_cns	Bassus linguarius	0
+0	7	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	460	1287	Braconidae	BGLIB743-24_cns	Troticus ovalis	0
+7	10	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	656	1527	Braconidae	BGLIB744-24_cns	Apanteles adjuntus	1
+9	21	data/BGE00408_MGE-BGE_r_1_s_100.fas	None	Braconidae	BLAST	family	655	1527	Braconidae	BGLIB745-24_cns	Apanteles bicolor	0

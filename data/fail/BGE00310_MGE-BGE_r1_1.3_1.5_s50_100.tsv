@@ -1,0 +1,13 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons	process_id
+0	1	data/BGE00310_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	1	60	Miridae,Culicidae	BGSNL1685-24_r_1_s_50	Symmoca petrogenes	0	BGSNL1685-24
+0	0	data/BGE00310_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	1	60	Acrididae,Miridae,Coccinellidae,Culicidae	BGSNL1685-24_r_1_s_100	Symmoca petrogenes	0	BGSNL1685-24
+0	1	data/BGE00310_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	1	60	Miridae,Culicidae	BGSNL1685-24_r_1.3_s_50	Symmoca petrogenes	0	BGSNL1685-24
+0	0	data/BGE00310_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	1	60	Acrididae,Miridae,Coccinellidae,Culicidae	BGSNL1685-24_r_1.3_s_100	Symmoca petrogenes	0	BGSNL1685-24
+0	1	data/BGE00310_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	1	60	Miridae,Culicidae	BGSNL1685-24_r_1.5_s_50	Symmoca petrogenes	0	BGSNL1685-24
+0	0	data/BGE00310_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	1	60	Acrididae,Miridae,Coccinellidae,Culicidae	BGSNL1685-24_r_1.5_s_100	Symmoca petrogenes	0	BGSNL1685-24
+21	36	data/BGE00310_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00310-NC not in BOLD	None	BLAST	family	649	1356		BGE00310-NC_r_1_s_50	None	0	BGE00310-NC
+16	30	data/BGE00310_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00310-NC not in BOLD	None	BLAST	family	628	1335		BGE00310-NC_r_1_s_100	None	0	BGE00310-NC
+12	14	data/BGE00310_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00310-NC not in BOLD	None	BLAST	family	386	912		BGE00310-NC_r_1.3_s_50	None	0	BGE00310-NC
+0	2	data/BGE00310_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00310-NC not in BOLD	None	BLAST	family	164	798		BGE00310-NC_r_1.3_s_100	None	0	BGE00310-NC
+0	16	data/BGE00310_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00310-NC not in BOLD	None	BLAST	family	362	681		BGE00310-NC_r_1.5_s_50	None	0	BGE00310-NC
+0	16	data/BGE00310_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00310-NC not in BOLD	None	BLAST	family	155	561		BGE00310-NC_r_1.5_s_100	None	0	BGE00310-NC

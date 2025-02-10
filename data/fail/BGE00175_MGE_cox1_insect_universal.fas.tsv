@@ -1,0 +1,22 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+9	51	data/BGE00175_MGE_cox1_insect_universal.fas	None	Aphelinidae	BLAST	family	647	1335	Aphelinidae	BGENL762-24_cns	Aphelinus chaonia	0
+29	46	data/BGE00175_MGE_cox1_insect_universal.fas	None	Halictidae	BLAST	family	657	1365	Halictidae	BGENL770-24_cns	Lasioglossum laeve	0
+74	74	data/BGE00175_MGE_cox1_insect_universal.fas	None	Bethylidae	BLAST	family	655	1314	Aphididae,Cixiidae,Colletidae,Bethylidae,Formicidae	BGENL772-24_cns	Cephalonomia gallicola	0
+0	0	data/BGE00175_MGE_cox1_insect_universal.fas	None	Bethylidae	BLAST	family	656	1470	Vespidae,Chrysididae,Formicidae	BGENL774-24_cns	Epyris brevipennis	0
+0	0	data/BGE00175_MGE_cox1_insect_universal.fas	None	Bethylidae	BLAST	family	1	282	Lycaenidae,Geometridae	BGENL775-24_cns	Epyris brevipennis	0
+0	0	data/BGE00175_MGE_cox1_insect_universal.fas	None	Bethylidae	BLAST	family	629	1401	Ichneumonidae,Vespidae,Crabronidae,Chrysididae,Formicidae,Gasteruptiidae,Pteromalidae,Diapriidae	BGENL776-24_cns	Epyris brevipennis	0
+16	16	data/BGE00175_MGE_cox1_insect_universal.fas	None	Bethylidae	BLAST	family	656	1458	Cixiidae,Caliscelidae,Nycteribiidae	BGENL777-24_cns	Pseudisobrachium subcyaneum	0
+0	0	data/BGE00175_MGE_cox1_insect_universal.fas	None	Braconidae	BLAST	family	130	150	Braconidae,Formicidae	BGENL779-24_cns	Agathis assimilis	0
+2	41	data/BGE00175_MGE_cox1_insect_universal.fas	None	Braconidae	BLAST	family	71	606	Reduviidae	BGENL780-24_cns	Dacnusa adducta	0
+0	0	data/BGE00175_MGE_cox1_insect_universal.fas	None	Braconidae	BLAST	family	111	618	Braconidae	BGENL784-24_cns	Aphidius phalangomyzi	0
+14	14	data/BGE00175_MGE_cox1_insect_universal.fas	None	Braconidae	BLAST	family	566	732	Braconidae	BGENL801-24_cns	Ascogaster bidentula	4
+1	8	data/BGE00175_MGE_cox1_insect_universal.fas	None	Braconidae	BLAST	family	367	804	Braconidae	BGENL815-24_cns	Atormus victus	0
+35	35	data/BGE00175_MGE_cox1_insect_universal.fas	None	Braconidae	BLAST	family	656	1308	Braconidae	BGENL816-24_cns	Atormus victus	0
+0	0	data/BGE00175_MGE_cox1_insect_universal.fas	None	Braconidae	BLAST	family	265	723	Braconidae	BGENL824-24_cns	Bassus linguarius	0
+9	9	data/BGE00175_MGE_cox1_insect_universal.fas	None	Braconidae	BLAST	family	657	1359	Braconidae	BGENL825-24_cns	Bassus pumilus	0
+0	0	data/BGE00175_MGE_cox1_insect_universal.fas	None	Braconidae	BLAST	family	1	105		BGENL829-24_cns	Biosteres rusticus	0
+None	0	data/BGE00175_MGE_cox1_insect_universal.fas	Local BLAST failed for sequence ''	Braconidae	BLAST	family	None	0		BGENL836-24_cns	Blacus diversicornis	0
+0	15	data/BGE00175_MGE_cox1_insect_universal.fas	None	Braconidae	BLAST	family	92	339		BGENL842-24_cns	Blacus hastatus	0
+0	0	data/BGE00175_MGE_cox1_insect_universal.fas	None	Braconidae	BLAST	family	205	261	Braconidae,Encyrtidae,Agaonidae,Eucharitidae	BGENL844-24_cns	Blacus hastatus	0
+0	0	data/BGE00175_MGE_cox1_insect_universal.fas	None	Braconidae	BLAST	family	82	270	Rhinotermitidae,Tettigoniidae,Dascillidae,Dermestidae,Vespidae,Corydalidae	BGENL848-24_cns	Blacus longipennis	0
+None	0	data/BGE00175_MGE_cox1_insect_universal.fas	NC-BGE00175 not in BOLD	None	BLAST	family	None	0		NC-BGE00175_cns	None	0

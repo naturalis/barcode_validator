@@ -1,0 +1,28 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+2	26	data/BGE00426_MGE_cox1_insect_universal.fas	NC-BGE00426 not in BOLD	None	BLAST	family	35	459		NC-BGE00426_cns	None	0
+6	7	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	656	1482	Tettigoniidae,Acrididae,Reduviidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	UNIFI477-24_cns	Acmaeodera flavolineata destructovittata	0
+10	11	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	656	1419	Tettigoniidae,Acrididae,Ninidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	UNIFI478-24_cns	Acmaeodera nigellata	0
+0	17	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	371	657	Reduviidae	UNIFI479-24_cns	Acmaeodera pilosellae	0
+31	33	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	655	1413	Hydrophilidae,Scarabaeidae,Buprestidae	UNIFI485-24_cns	Acmaeodera saxicola	0
+7	22	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	411	1032	Coenagrionidae,Buprestidae,Curculionidae,Culicidae	UNIFI487-24_cns	Acmaeodera circassica	0
+None	0	data/BGE00426_MGE_cox1_insect_universal.fas	Local BLAST failed for sequence ''	Buprestidae	BLAST	family	None	0		UNIFI488-24_cns	Acmaeodera coarctata seminata	0
+11	41	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	655	1371	Elateridae,Limnichidae,Elmidae,Tenebrionidae,Dermestidae	UNIFI491-24_cns	Acmaeodera cyanipennis hispana	0
+53	127	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	655	1413	Termitidae,Tenebrionidae,Zopheridae	UNIFI494-24_cns	Acmaeoderella jonica	0
+14	32	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	631	1353	Staphylinidae,Buprestidae,Lampyridae,Heteroceridae,Eulichadidae,Dermestidae	UNIFI500-24_cns	Acmaeoderella virgulata	0
+13	13	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	655	1515	Buprestidae,Dermestidae	UNIFI501-24_cns	Acmaeodera adspersula	0
+16	30	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	592	1173	Buprestidae	UNIFI504-24_cns	Agrilus lineola	0
+32	91	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	446	1056	Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Psychodidae,Vespidae,Tetracampidae	UNIFI506-24_cns	Agrilus marozzinii	0
+0	0	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	656	1449	Tettigoniidae,Acrididae,Ninidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	UNIFI511-24_cns	Agrilus marozzinii	0
+23	24	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	557	1182	Carabidae,Staphylinidae,Culicidae,Tabanidae,Erebidae,Euteliidae,Papilionidae	UNIFI518-24_cns	Anthaxia cichorii	0
+30	101	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	609	1325	Acrididae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	UNIFI519-24_cns	Anthaxia cichorii	0
+15	30	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	657	1371	Staphylinidae,Hydraenidae,Buprestidae,Chrysomelidae,Muscidae	UNIFI526-24_cns	Anthaxia funerula	0
+0	8	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	285	787		UNIFI534-24_cns	Anthaxia kochi	0
+29	50	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	648	1488	Staphylinidae,Buprestidae	UNIFI537-24_cns	Anthaxia liae	0
+0	19	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	54	615	Noteridae,Carabidae,Scarabaeidae,Curculionidae	UNIFI540-24_cns	Anthaxia lucens	0
+None	0	data/BGE00426_MGE_cox1_insect_universal.fas	Local BLAST failed for sequence ''	Buprestidae	BLAST	family	None	0		UNIFI542-24_cns	Anthaxia lusitanica	0
+24	46	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	657	1527	Staphylinidae,Buprestidae	UNIFI543-24_cns	Anthaxia margotana	0
+8	48	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	450	1074	Cerambycidae,Culicidae,Limacodidae,Bombycidae,Nymphalidae	UNIFI545-24_cns	Anthaxia midas oberthuri	0
+30	95	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	652	1524	Buprestidae	UNIFI550-24_cns	Anthaxia parallela	0
+11	13	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	655	1527	Staphylinidae,Hydraenidae,Buprestidae	UNIFI551-24_cns	Anthaxia parallela	0
+0	0	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	155	600	Acrididae,Reduviidae,Culicidae	UNIFI563-24_cns	Anthaxia semicuprea	0
+31	57	data/BGE00426_MGE_cox1_insect_universal.fas	None	Buprestidae	BLAST	family	522	1140	Tettigoniidae,Acrididae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Psychodidae,Vespidae,Tetracampidae	UNIFI565-24_cns	Anthaxia semicuprea	0

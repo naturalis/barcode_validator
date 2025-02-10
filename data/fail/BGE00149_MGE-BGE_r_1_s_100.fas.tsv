@@ -1,0 +1,15 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00149_MGE-BGE_r_1_s_100.fas	BGE00149-NC not in BOLD	None	BLAST	family	149	366		BGE00149-NC_cns	None	0
+10	48	data/BGE00149_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	656	1530	Noctuidae	BHNHM289-24_cns	Dichagyris lutescens	0
+9	33	data/BGE00149_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	638	1335	Noctuidae	BHNHM327-24_cns	Episema tersa	0
+27	46	data/BGE00149_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	621	1488	Noctuidae	BHNHM328-24_cns	Episema tersa	0
+10	12	data/BGE00149_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	594	1410	Noctuidae	BHNHM338-24_cns	Eugnorisma pontica	0
+15	24	data/BGE00149_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	657	1503	Limacodidae,Noctuidae,Erebidae,Pyralidae,Crambidae,Geometridae	BHNHM346-24_cns	Euxoa derrae	0
+25	60	data/BGE00149_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	656	1530	Noctuidae,Erebidae	BHNHM351-24_cns	Euxoa tristis	0
+25	40	data/BGE00149_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	624	1233	Noctuidae,Crambidae,Geometridae	BHNHM362-24_cns	Euxoa sabuletorum	0
+38	57	data/BGE00149_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	656	1530	Noctuidae	BHNHM363-24_cns	Euxoa zernyi	0
+28	54	data/BGE00149_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	656	1518	Gelechiidae,Tortricidae,Notodontidae,Crambidae	BHNHM364-24_cns	Euxoa wagneri	0
+7	7	data/BGE00149_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	657	1530	Noctuidae	BHNHM365-24_cns	Feralia sauberi	0
+47	65	data/BGE00149_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	650	1467	Noctuidae	BHNHM370-24_cns	Hadena drenowskii	0
+5	13	data/BGE00149_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	657	1530	Noctuidae	BHNHM373-24_cns	Hadena vulcanica	1
+17	18	data/BGE00149_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	657	1512	Noctuidae	BHNHM379-24_cns	Hampsonicola deccerti	0

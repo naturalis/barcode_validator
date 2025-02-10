@@ -1,0 +1,17 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	14	data/BGE00146_MGE-BGE_r_1_s_100.fas	BGE00146-NC not in BOLD	None	BLAST	family	512	690		BGE00146-NC_cns	None	0
+0	0	data/BGE00146_MGE-BGE_r_1_s_100.fas	None	Tineidae	BLAST	family	654	1527	Depressariidae,Noctuidae,Nolidae,Erebidae,Geometridae	BHNHM003-24_cns	Matratinea rufulicaput	0
+0	2	data/BGE00146_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	407	1305	Noctuidae,Euteliidae	BHNHM005-24_cns	Agrochola rupicapra	0
+10	46	data/BGE00146_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	642	1530	Noctuidae	BHNHM012-24_cns	Oncocnemis nigricula	0
+1	3	data/BGE00146_MGE-BGE_r_1_s_100.fas	None	Glyphipterigidae	BLAST	family	657	1530	Plutellidae,Ypsolophidae,Noctuidae,Crambidae,Geometridae	BHNHM018-24_cns	Digitivalva valeriella	0
+0	0	data/BGE00146_MGE-BGE_r_1_s_100.fas	None	Pterolonchidae	BLAST	family	657	1530	Oecophoridae,Erebidae,Crambidae,Geometridae,Drepanidae	BHNHM022-24_cns	Pterolonche inspersa	0
+0	0	data/BGE00146_MGE-BGE_r_1_s_100.fas	None	Psychidae	BLAST	family	1	294	Gerridae,Staphylinidae,Lycidae	BHNHM023-24_cns	Whittleia undulella	0
+3	25	data/BGE00146_MGE-BGE_r_1_s_100.fas	None	Erebidae	BLAST	family	290	570	Noctuidae,Erebidae	BHNHM045-24_cns	Anumeta cestis	1
+4	10	data/BGE00146_MGE-BGE_r_1_s_100.fas	None	Erebidae	BLAST	family	423	918	Argyresthiidae,Noctuidae,Erebidae	BHNHM059-24_cns	Autophila asiatica	0
+8	14	data/BGE00146_MGE-BGE_r_1_s_100.fas	None	Erebidae	BLAST	family	657	1530	Notodontidae,Erebidae,Geometridae	BHNHM065-24_cns	Autophila libanotica	0
+17	41	data/BGE00146_MGE-BGE_r_1_s_100.fas	None	Erebidae	BLAST	family	490	1320	Timematidae,Noctuidae,Geometridae	BHNHM066-24_cns	Autophila libanotica	0
+29	41	data/BGE00146_MGE-BGE_r_1_s_100.fas	None	Erebidae	BLAST	family	647	1368	Noctuidae,Erebidae	BHNHM075-24_cns	Drasteria sesquistria	0
+0	28	data/BGE00146_MGE-BGE_r_1_s_100.fas	None	Erebidae	BLAST	family	474	819	Noctuidae,Erebidae	BHNHM084-24_cns	Eublemma pannonica	3
+0	0	data/BGE00146_MGE-BGE_r_1_s_100.fas	None	Erebidae	BLAST	family	657	1533	Noctuidae	BHNHM085-24_cns	Eublemma gratiosa	0
+0	0	data/BGE00146_MGE-BGE_r_1_s_100.fas	None	Erebidae	BLAST	family	657	1515	Noctuidae	BHNHM086-24_cns	Eublemma gratiosa	0
+60	84	data/BGE00146_MGE-BGE_r_1_s_100.fas	None	Erebidae	BLAST	family	656	1293	Noctuidae	BHNHM091-24_cns	Eublemma pusilla	0

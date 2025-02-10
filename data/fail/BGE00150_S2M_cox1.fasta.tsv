@@ -1,0 +1,23 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	423	573	Noctuidae	BHNHM391-24_contig3;2-574;-;cox1	Leucochlaena seposita	0
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	115	237	Noctuidae	BHNHM393-24_contig1;31-267;+;cox1	Lithophane lapidea	0
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	162	198	Noctuidae	BHNHM408-24_contig4;3-200;-;cox1	Netrocerocora quadrangula	0
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	97	171	Noctuidae	BHNHM409-24_contig7;453-623;-;cox1_0	Olivenebula subsericata	0
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	68	87		BHNHM409-24_contig7;621-707;+;cox1_1	Olivenebula subsericata	0
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	14	45	Cicadidae,Staphylinidae,Bothrideridae,Dermestidae,Chironomidae,Inocelliidae	BHNHM410-24_contig5;35-79;-;cox1_1	Olivenebula subsericata	0
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	309	309	Noctuidae	BHNHM411-24_contig2;2-310;-;cox1	Mycteroplus puniceago	0
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	246	1062	Noctuidae	BHNHM412-24_contig0;984-2045;-;cox1	Mycteroplus puniceago	0
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	468	954	Noctuidae,Erebidae	BHNHM418-24_contig1;1-954;-;cox1	Oncocnemis senica	0
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	197	312	Noctuidae	BHNHM419-24_contig1;4-315;+;cox1	Orthosia dalmatica	0
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	197	312	Noctuidae	BHNHM420-24_contig2;6-317;+;cox1	Orthosia dalmatica	0
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	302	303	Noctuidae	BHNHM429-24_contig2;3-305;-;cox1	Panchrysia ornata	0
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	655	1551	Timematidae,Curculionidae,Drosophilidae,Tephritidae,Formicidae,Geometridae	BHNHM430-24_contig10;4574-6124;-;cox1	Panchrysia ornata	0
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	245	441	Noctuidae	BHNHM430-24_contig4;3-443;+;cox1	Panchrysia ornata	0
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	165	201	Noctuidae	BHNHM432-24_contig7;3-203;-;cox1	Perigrapha cilissa	0
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	232	279	Noctuidae	BHNHM436-24_contig1;1-279;+;cox1	Perigrapha sellingi	2
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	366	402	Noctuidae	BHNHM436-24_contig4;3-404;-;cox1	Perigrapha sellingi	0
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	261	297	Noctuidae,Erebidae,Geometridae	BHNHM440-24_contig0;1697-1993;+;cox1	Phoebophilus veternosa	0
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	492	1308	Noctuidae	BHNHM440-24_contig2;874-2181;-;cox1	Phoebophilus veternosa	0
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	228	756	Noctuidae	BHNHM445-24_contig1;2-757;-;cox1	Polymixis sublutea	0
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	444	1260	Noctuidae	BHNHM447-24_contig2;80-1339;+;cox1	Polymixis atossa	0
+0	0	data/BGE00150_S2M_cox1.fasta	None	Noctuidae	BLAST	family	74	150	Noctuidae	BHNHM472-24_contig3;861-1010;-;cox1	Rhiza stenoptera	0

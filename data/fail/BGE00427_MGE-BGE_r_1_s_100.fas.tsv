@@ -1,0 +1,23 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00427_MGE-BGE_r_1_s_100.fas	BGE00427-NC not in BOLD	None	BLAST	family	56	102		BGE00427-NC_cns	None	0
+0	0	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	84	564	Elateridae,Tenebrionidae	UNIFI571-24_cns	Anthaxia tenella	0
+0	0	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	216	261	Scarabaeidae,Buprestidae,Cerambycidae,Curculionidae	UNIFI572-24_cns	Anthaxia tenella	1
+0	0	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	1	165		UNIFI573-24_cns	Anthaxia tenella	0
+9	9	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	648	1449	Staphylinidae,Buprestidae,Dermestidae,Erebidae	UNIFI584-24_cns	Anthaxia nigritula	0
+2	2	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	618	1293	Dytiscidae,Staphylinidae,Silphidae,Scirtidae,Tenebrionidae,Dryomyzidae	UNIFI585-24_cns	Anthaxia nigritula	0
+2	81	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	410	1122	Tettigoniidae,Carabidae,Buprestidae,Dryopidae,Chrysomelidae,Cerambycidae,Asilidae,Ulidiidae,Vespidae	UNIFI588-24_cns	Anthaxia sepulchralis	0
+16	52	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	646	1350	Staphylinidae,Buprestidae,Schizopodidae,Dermestidae	UNIFI600-24_cns	Capnodis cariosa	0
+0	0	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	27	57	Calopterygidae,Carabidae,Scarabaeidae,Buprestidae,Chironomidae,Asilidae	UNIFI602-24_cns	Capnodis cariosa	0
+2	10	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	145	792	Tettigoniidae,Scarabaeidae,Buprestidae,Curculionidae,Cylindrotomidae,Corydalidae	UNIFI605-24_cns	Capnodis miliaris	0
+0	0	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	124	198	Carabidae,Chironomidae	UNIFI607-24_cns	Capnodis tenebrionis	0
+9	17	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	613	1338	Staphylinidae,Buprestidae,Elateridae,Scirtidae,Endecatomidae,Culicidae,Agromyzidae,Lonchaeidae,Muscidae,Calliphoridae	UNIFI608-24_cns	Capnodis tenebrionis	0
+7	17	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	570	1305	Staphylinidae,Scarabaeidae,Buprestidae,Oedemeridae,Agromyzidae,Sepsidae	UNIFI621-24_cns	Eurythyrea micans	0
+0	0	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	1	165		UNIFI629-24_cns	Lamprodila rutilans	0
+0	27	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	486	885	Carabidae,Buprestidae,Coccinellidae,Psychodidae,Oecophoridae	UNIFI633-24_cns	Meliboeus amethystinus	0
+31	42	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	656	1524	Staphylinidae,Hydraenidae,Buprestidae	UNIFI646-24_cns	Perotis lugubris	0
+19	36	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	657	1524	Buprestidae	UNIFI647-24_cns	Perotis lugubris	0
+0	6	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	587	1290	Staphylinidae,Culicidae,Tabanidae,Corydalidae	UNIFI659-24_cns	Sphenoptera barbarica	0
+0	4	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	530	1281	Carabidae	UNIFI660-24_cns	Sphenoptera barbarica	0
+0	0	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	602	1203	Reduviidae,Cerambycidae,Curculionidae,Hybotidae,Lycaenidae	UNIFI661-24_cns	Sphenoptera barbarica	0
+8	9	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	655	1524	Erotylidae,Phoridae,Syrphidae,Drosophilidae,Muscidae	UNIFI662-24_cns	Sphenoptera barbarica	0
+29	83	data/BGE00427_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	656	1521	Reduviidae,Hydrophilidae,Scarabaeidae,Trogossitidae,Hybotidae,Choreutidae,Lycaenidae	UNIFI663-24_cns	Sphenoptera bedeli	0

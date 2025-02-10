@@ -1,0 +1,11 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00151_MGE-BGE_r_1_s_100.fas	BGE00151-NC not in BOLD	None	BLAST	family	145	462		BGE00151-NC_cns	None	0
+18	30	data/BGE00151_MGE-BGE_r_1_s_100.fas	None	Noctuidae	BLAST	family	656	1533	Gelechiidae,Tortricidae,Sphingidae,Noctuidae,Crambidae	BHNHM509-24_cns	Xestia subgrisea	0
+0	9	data/BGE00151_MGE-BGE_r_1_s_100.fas	None	Pentatomidae	BLAST	family	146	468	Acrididae,Reduviidae,Pentatomidae,Tenebrionidae,Formicidae	BHNHM531-24_cns	Eysarcoris venustissimus	0
+None	0	data/BGE00151_MGE-BGE_r_1_s_100.fas	Local BLAST failed for sequence ''	Pentatomidae	BLAST	family	None	0		BHNHM533-24_cns	Ventocoris achivus	0
+16	23	data/BGE00151_MGE-BGE_r_1_s_100.fas	None	Pentatomidae	BLAST	family	480	1191	Pentatomidae,Aphididae,Carabidae	BHNHM534-24_cns	Ventocoris achivus	0
+58	156	data/BGE00151_MGE-BGE_r_1_s_100.fas	None	Scutelleridae	BLAST	family	656	1533	Pentatomidae,Scutelleridae	BHNHM551-24_cns	Psacasta neglecta	0
+19	25	data/BGE00151_MGE-BGE_r_1_s_100.fas	None	Reduviidae	BLAST	family	655	1263	Miridae,Syrphidae,Piophilidae	BHNHM566-24_cns	Coranus contrarius	0
+7	8	data/BGE00151_MGE-BGE_r_1_s_100.fas	None	Miridae	BLAST	family	656	1533	Pentatomidae	BHNHM567-24_cns	Adelphocoris vandalicus	0
+14	14	data/BGE00151_MGE-BGE_r_1_s_100.fas	None	Miridae	BLAST	family	632	1233	Pentatomidae	BHNHM568-24_cns	Adelphocoris vandalicus	0
+32	106	data/BGE00151_MGE-BGE_r_1_s_100.fas	None	Miridae	BLAST	family	596	1251	Reduviidae,Pentatomidae,Lygaeidae	BHNHM570-24_cns	Adelphocoris ticinensis	0

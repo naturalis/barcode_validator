@@ -1,0 +1,67 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons	process_id
+55	83	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	538	1251	Syrphidae	BGENL2188-24_r_1_s_50	Eumerus tarsalis	0	BGENL2188-24
+48	88	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	514	1098	Syrphidae	BGENL2188-24_r_1_s_100	Eumerus tarsalis	0	BGENL2188-24
+3	26	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	485	1167	Syrphidae	BGENL2188-24_r_1.3_s_50	Eumerus tarsalis	0	BGENL2188-24
+0	22	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	392	906	Syrphidae	BGENL2188-24_r_1.3_s_100	Eumerus tarsalis	0	BGENL2188-24
+0	0	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	436	1038	Syrphidae,Muscidae,Anthomyiidae	BGENL2188-24_r_1.5_s_50	Eumerus tarsalis	0	BGENL2188-24
+0	0	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	354	738	Syrphidae	BGENL2188-24_r_1.5_s_100	Eumerus tarsalis	0	BGENL2188-24
+20	26	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	340	1224	Syrphidae,Anthomyiidae	BGENL2192-24_r_1_s_50	Orthonevra elegans	0	BGENL2192-24
+20	21	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	312	990	Syrphidae,Anthomyiidae,Tachinidae	BGENL2192-24_r_1_s_100	Orthonevra elegans	0	BGENL2192-24
+21	25	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	306	948	Syrphidae,Muscidae,Anthomyiidae	BGENL2192-24_r_1.3_s_50	Orthonevra elegans	0	BGENL2192-24
+20	21	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	273	648	Syrphidae,Anthomyiidae	BGENL2192-24_r_1.3_s_100	Orthonevra elegans	0	BGENL2192-24
+0	4	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	272	903	Syrphidae,Muscidae,Anthomyiidae	BGENL2192-24_r_1.5_s_50	Orthonevra elegans	0	BGENL2192-24
+0	1	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	244	618	Syrphidae,Anthomyiidae	BGENL2192-24_r_1.5_s_100	Orthonevra elegans	0	BGENL2192-24
+12	22	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	656	1521	Syrphidae	BGENL2193-24_r_1_s_50	Orthonevra elegans	0	BGENL2193-24
+4	10	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	554	1293	Syrphidae	BGENL2193-24_r_1_s_100	Orthonevra elegans	0	BGENL2193-24
+5	12	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	657	1506	Syrphidae	BGENL2193-24_r_1.3_s_50	Orthonevra elegans	0	BGENL2193-24
+8	9	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	555	1221	Syrphidae	BGENL2193-24_r_1.3_s_100	Orthonevra elegans	0	BGENL2193-24
+2	9	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	612	1461	Syrphidae	BGENL2193-24_r_1.5_s_50	Orthonevra elegans	0	BGENL2193-24
+2	3	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	477	1143	Syrphidae	BGENL2193-24_r_1.5_s_100	Orthonevra elegans	0	BGENL2193-24
+1	26	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	293	1086	Syrphidae,Drosophilidae,Odiniidae	BGENL2194-24_r_1_s_50	Orthonevra elegans	3	BGENL2194-24
+0	17	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	116	864	Syrphidae,Drosophilidae	BGENL2194-24_r_1_s_100	Orthonevra elegans	0	BGENL2194-24
+1	1	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	463	897	Syrphidae,Drosophilidae	BGENL2194-24_r_1.3_s_50	Orthonevra elegans	14	BGENL2194-24
+0	0	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	504	630	Syrphidae,Drosophilidae,Calliphoridae	BGENL2194-24_r_1.3_s_100	Orthonevra elegans	3	BGENL2194-24
+1	1	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	251	837	Syrphidae,Drosophilidae	BGENL2194-24_r_1.5_s_50	Orthonevra elegans	3	BGENL2194-24
+0	0	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	504	630	Syrphidae,Drosophilidae,Calliphoridae	BGENL2194-24_r_1.5_s_100	Orthonevra elegans	3	BGENL2194-24
+2	8	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	657	1533	Anthomyiidae,Tachinidae	BGENL2206-24_r_1_s_50	Panzeria truncata	0	BGENL2206-24
+3	3	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	657	1497	Anthomyiidae,Tachinidae	BGENL2206-24_r_1_s_100	Panzeria truncata	0	BGENL2206-24
+3	5	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	657	1533	Anthomyiidae,Tachinidae	BGENL2206-24_r_1.3_s_50	Panzeria truncata	0	BGENL2206-24
+3	3	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	657	1497	Anthomyiidae,Tachinidae	BGENL2206-24_r_1.3_s_100	Panzeria truncata	0	BGENL2206-24
+4	6	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	657	1533	Anthomyiidae,Tachinidae	BGENL2206-24_r_1.5_s_50	Panzeria truncata	0	BGENL2206-24
+3	3	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	657	1497	Anthomyiidae,Tachinidae	BGENL2206-24_r_1.5_s_100	Panzeria truncata	0	BGENL2206-24
+1	25	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	525	1194	Muscidae,Tachinidae	BGENL2225-24_r_1_s_50	Estheria cristata	0	BGENL2225-24
+0	12	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	215	690	Tachinidae	BGENL2225-24_r_1_s_100	Estheria cristata	0	BGENL2225-24
+1	10	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	468	975	Syrphidae,Drosophilidae,Muscidae,Tachinidae	BGENL2225-24_r_1.3_s_50	Estheria cristata	0	BGENL2225-24
+0	1	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	192	507	Syrphidae,Muscidae,Sarcophagidae,Tachinidae	BGENL2225-24_r_1.3_s_100	Estheria cristata	0	BGENL2225-24
+3	11	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	331	792	Syrphidae,Sarcophagidae	BGENL2225-24_r_1.5_s_50	Estheria cristata	8	BGENL2225-24
+0	0	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	70	342	Syrphidae,Sarcophagidae	BGENL2225-24_r_1.5_s_100	Estheria cristata	0	BGENL2225-24
+0	9	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	248	1107	Reduviidae	BGENL2227-24_r_1_s_50	Estheria cristata	0	BGENL2227-24
+0	25	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	237	861	Reduviidae	BGENL2227-24_r_1_s_100	Estheria cristata	0	BGENL2227-24
+0	6	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	107	633	Reduviidae	BGENL2227-24_r_1.3_s_50	Estheria cristata	0	BGENL2227-24
+0	0	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	109	540	Reduviidae	BGENL2227-24_r_1.3_s_100	Estheria cristata	0	BGENL2227-24
+0	1	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	107	321	Acrididae,Tachinidae,Tortricidae	BGENL2227-24_r_1.5_s_50	Estheria cristata	0	BGENL2227-24
+0	0	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	109	285	Acrididae,Tachinidae	BGENL2227-24_r_1.5_s_100	Estheria cristata	0	BGENL2227-24
+7	8	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	657	1533	Psilidae,Muscidae,Anthomyiidae,Calliphoridae,Tachinidae	BGENL2237-24_r_1_s_50	Graphogaster brunnescens	0	BGENL2237-24
+1	1	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	657	1533	Psilidae,Muscidae,Anthomyiidae,Tachinidae	BGENL2237-24_r_1_s_100	Graphogaster brunnescens	0	BGENL2237-24
+1	2	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	657	1533	Psilidae,Muscidae,Anthomyiidae,Calliphoridae,Tachinidae	BGENL2237-24_r_1.3_s_50	Graphogaster brunnescens	0	BGENL2237-24
+1	1	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	657	1533	Psilidae,Muscidae,Anthomyiidae,Tachinidae	BGENL2237-24_r_1.3_s_100	Graphogaster brunnescens	0	BGENL2237-24
+3	5	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	657	1533	Psilidae,Muscidae,Anthomyiidae,Calliphoridae,Tachinidae	BGENL2237-24_r_1.5_s_50	Graphogaster brunnescens	0	BGENL2237-24
+3	5	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	657	1533	Psilidae,Muscidae,Anthomyiidae,Calliphoridae,Tachinidae	BGENL2237-24_r_1.5_s_100	Graphogaster brunnescens	0	BGENL2237-24
+4	13	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	583	1275	Acrididae,Nitidulidae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Tetracampidae	BGENL2242-24_r_1_s_50	Loewia phaeoptera	0	BGENL2242-24
+3	5	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	494	1182	Acrididae,Nitidulidae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Tetracampidae	BGENL2242-24_r_1_s_100	Loewia phaeoptera	0	BGENL2242-24
+2	9	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	198	639	Acrididae,Nitidulidae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Tetracampidae	BGENL2242-24_r_1.3_s_50	Loewia phaeoptera	0	BGENL2242-24
+2	2	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	170	501	Acrididae,Nitidulidae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Tetracampidae	BGENL2242-24_r_1.3_s_100	Loewia phaeoptera	0	BGENL2242-24
+0	7	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	89	432	Acrididae,Nitidulidae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Tetracampidae	BGENL2242-24_r_1.5_s_50	Loewia phaeoptera	0	BGENL2242-24
+0	0	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	115	387	Acrididae,Nitidulidae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Tetracampidae	BGENL2242-24_r_1.5_s_100	Loewia phaeoptera	0	BGENL2242-24
+17	45	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	657	1527	Muscidae,Sarcophagidae,Tachinidae	BGENL2261-24_r_1_s_50	Phryxe heraclei	0	BGENL2261-24
+4	8	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	657	1527	Sarcophagidae,Tachinidae	BGENL2261-24_r_1_s_100	Phryxe heraclei	0	BGENL2261-24
+2	11	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	657	1527	Sarcophagidae,Tachinidae	BGENL2261-24_r_1.3_s_50	Phryxe heraclei	0	BGENL2261-24
+3	3	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	657	1527	Sarcophagidae,Tachinidae	BGENL2261-24_r_1.3_s_100	Phryxe heraclei	0	BGENL2261-24
+3	9	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	633	1479	Sarcophagidae,Tachinidae	BGENL2261-24_r_1.5_s_50	Phryxe heraclei	0	BGENL2261-24
+3	3	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tachinidae	BLAST	family	633	1401	Sarcophagidae,Tachinidae	BGENL2261-24_r_1.5_s_100	Phryxe heraclei	0	BGENL2261-24
+18	47	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00184-NC not in BOLD	None	BLAST	family	577	1194		BGE00184-NC_r_1_s_50	None	0	BGE00184-NC
+0	36	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00184-NC not in BOLD	None	BLAST	family	442	1023		BGE00184-NC_r_1_s_100	None	0	BGE00184-NC
+0	16	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00184-NC not in BOLD	None	BLAST	family	49	429		BGE00184-NC_r_1.3_s_50	None	0	BGE00184-NC
+0	16	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00184-NC not in BOLD	None	BLAST	family	86	333		BGE00184-NC_r_1.3_s_100	None	0	BGE00184-NC
+0	0	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00184-NC not in BOLD	None	BLAST	family	48	168		BGE00184-NC_r_1.5_s_50	None	0	BGE00184-NC
+0	0	data/BGE00184_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00184-NC not in BOLD	None	BLAST	family	1	66		BGE00184-NC_r_1.5_s_100	None	0	BGE00184-NC

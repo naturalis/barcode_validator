@@ -1,0 +1,23 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00428_MGE-BGE_r_1_s_100.fas	BGE00428-NC not in BOLD	None	BLAST	family	1	234		BGE00428-NC_cns	None	0
+0	0	data/BGE00428_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	449	876	Dytiscidae,Carabidae,Staphylinidae,Buprestidae,Scirtidae,Elmidae,Culicidae	UNIFI666-24_cns	Sphenoptera laportei	0
+0	1	data/BGE00428_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	460	1173	Staphylinidae,Lucanidae,Buprestidae,Elmidae,Dermestidae,Dolichopodidae	UNIFI670-24_cns	Sphenoptera rauca	0
+0	0	data/BGE00428_MGE-BGE_r_1_s_100.fas	None	Buprestidae	BLAST	family	1	273	Reduviidae	UNIFI672-24_cns	Sphenoptera substriata	0
+0	0	data/BGE00428_MGE-BGE_r_1_s_100.fas	None	Byrrhidae	BLAST	family	656	1530	Staphylinidae,Helotidae,Dermestidae	UNIFI680-24_cns	Byrrhus pilosellus pilosellus	0
+0	0	data/BGE00428_MGE-BGE_r_1_s_100.fas	None	Byrrhidae	BLAST	family	656	1530	Staphylinidae,Helotidae,Dermestidae	UNIFI682-24_cns	Byrrhus pilosellus similis	0
+0	0	data/BGE00428_MGE-BGE_r_1_s_100.fas	None	Byrrhidae	BLAST	family	657	1533	Staphylinidae,Hydraenidae	UNIFI685-24_cns	Curimopsis franzi	0
+10	10	data/BGE00428_MGE-BGE_r_1_s_100.fas	None	Byrrhidae	BLAST	family	413	1128	Nymphalidae	UNIFI687-24_cns	Curimopsis maritima	0
+9	45	data/BGE00428_MGE-BGE_r_1_s_100.fas	None	Cantharidae	BLAST	family	614	1419	Cantharidae	UNIFI694-24_cns	Ancistronycha violacea	0
+17	45	data/BGE00428_MGE-BGE_r_1_s_100.fas	None	Cantharidae	BLAST	family	608	1449	Cantharidae	UNIFI695-24_cns	Ancistronycha violacea	0
+3	52	data/BGE00428_MGE-BGE_r_1_s_100.fas	None	Cantharidae	BLAST	family	496	1071	Reduviidae,Choreutidae,Geometridae	UNIFI703-24_cns	Armidia unicolor	0
+0	0	data/BGE00428_MGE-BGE_r_1_s_100.fas	None	Cantharidae	BLAST	family	230	384	Tachinidae,Gracillariidae	UNIFI707-24_cns	Cantharis corvina	0
+0	22	data/BGE00428_MGE-BGE_r_1_s_100.fas	None	Cantharidae	BLAST	family	397	885	Cantharidae	UNIFI723-24_cns	Cantharis inculta	0
+None	0	data/BGE00428_MGE-BGE_r_1_s_100.fas	Local BLAST failed for sequence ''	Cantharidae	BLAST	family	None	0		UNIFI730-24_cns	Cantharis liburnica	0
+1	3	data/BGE00428_MGE-BGE_r_1_s_100.fas	None	Cantharidae	BLAST	family	455	1179	Cantharidae	UNIFI731-24_cns	Cantharis merula	0
+0	0	data/BGE00428_MGE-BGE_r_1_s_100.fas	None	Cantharidae	BLAST	family	160	585	Bovicoliidae	UNIFI732-24_cns	Cantharis merula	0
+None	0	data/BGE00428_MGE-BGE_r_1_s_100.fas	Local BLAST failed for sequence ''	Cantharidae	BLAST	family	None	0		UNIFI733-24_cns	Cantharis merula	0
+1	15	data/BGE00428_MGE-BGE_r_1_s_100.fas	None	Cantharidae	BLAST	family	344	1137	Cantharidae	UNIFI735-24_cns	Cantharis monacha	0
+0	11	data/BGE00428_MGE-BGE_r_1_s_100.fas	None	Cantharidae	BLAST	family	657	1554	Culicidae,Muscidae	UNIFI750-24_cns	Cantharis versicolor	0
+19	25	data/BGE00428_MGE-BGE_r_1_s_100.fas	None	Cantharidae	BLAST	family	657	1551	Cantharidae	UNIFI753-24_cns	Cordicantharis longicollis	0
+13	27	data/BGE00428_MGE-BGE_r_1_s_100.fas	None	Cantharidae	BLAST	family	656	1446	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	UNIFI755-24_cns	Cratosilis laeta	0
+9	12	data/BGE00428_MGE-BGE_r_1_s_100.fas	None	Cantharidae	BLAST	family	433	1146	Cantharidae,Chrysomelidae,Nymphalidae	UNIFI760-24_cns	Cratosilis sicula	0

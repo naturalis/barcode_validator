@@ -1,0 +1,8 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+None	0	data/BGE00306_MGE-BGE_r_1_s_100.fas	BGE00306-NC not in BOLD	None	BLAST	family	None	0		BGE00306-NC_cns	None	0
+12	36	data/BGE00306_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	512	1188	Papilionidae	BGSNL1242-24_cns	Assara terebella	0
+8	16	data/BGE00306_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	271	723	Plutellidae,Tortricidae,Papilionidae,Geometridae	BGSNL1265-24_cns	Epicrocis neftaella	0
+9	16	data/BGE00306_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	608	1446	Pyralidae,Geometridae	BGSNL1266-24_cns	Epicrocis neftaella	0
+0	14	data/BGE00306_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	217	894	Oecophoridae,Depressariidae,Limacodidae,Pyralidae,Geometridae	BGSNL1267-24_cns	Epicrocis neftaella	0
+2	12	data/BGE00306_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	656	1509	Nymphalidae,Riodinidae	BGSNL1275-24_cns	Epischnia sareptella	0
+52	77	data/BGE00306_MGE-BGE_r_1_s_100.fas	None	Pyralidae	BLAST	family	602	1290	Gelechiidae,Saturniidae,Pyralidae,Crambidae	BGSNL1289-24_cns	Euzophera umbrosella	0

@@ -1,0 +1,22 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00409_S2M_cox1.fasta	None	Chrysididae	BLAST	family	198	702	Discolomatidae,Crabronidae,Formicidae	BGLIB766-24_contig0;4-705;-;cox1	Cleptes pallipes	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Bembicidae	BLAST	family	522	1338	Sphecidae,Crabronidae,Apidae,Formicidae	BGLIB769-24_contig2;185-1522;-;cox1	Bembix zonata	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Pompilidae	BLAST	family	156	204	Pompilidae	BGLIB776-24_contig2;1590-1793;+;cox1_1	Priocnemis cordivalvata	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	206	1044	Ichneumonidae	BGLIB794-24_contig1;192-1235;-;cox1	Arotes albicinctus	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	167	468	Ichneumonidae	BGLIB805-24_contig0;1-468;-;cox1	Glypta heterocera	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	206	207	Ichneumonidae	BGLIB807-24_contig0;59-265;-;cox1	Glypta parvicaudata	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	57	321	Aphididae,Ichneumonidae	BGLIB807-24_contig1;2-322;+;cox1	Glypta parvicaudata	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	198	1029	Ichneumonidae	BGLIB815-24_contig2;95-1123;-;cox1	Syzeuctus inaequalis	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	53	96	Braconidae,Ichneumonidae,Halictidae,Formicidae,Figitidae,Cynipidae	BGLIB822-24_contig1;1464-1559;+;cox1_1	Dusona anceps	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	150	285	Ichneumonidae	BGLIB825-24_contig2;38-322;-;cox1	Dusona polita	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	497	1215	Ichneumonidae	BGLIB826-24_contig3;1-1215;+;cox1	Hellwigia obscura	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	465	510	Ichneumonidae	BGLIB830-24_contig2;22-531;+;cox1	Phobocampe alticollis	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	89	159	Scarabaeidae,Ichneumonidae	BGLIB830-24_contig6;228-386;-;cox1	Phobocampe alticollis	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	492	1317	Ichneumonidae	BGLIB831-24_contig4;3-1319;+;cox1	Sinophorus albidus	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	119	153	Ichneumonidae	BGLIB838-24_contig0;1-153;+;cox1_0	Sinophorus tricoloripes	2
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	22	51		BGLIB838-24_contig0;225-275;-;cox1_1	Sinophorus tricoloripes	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	492	1212	Ichneumonidae	BGLIB838-24_contig1;1-1212;-;cox1_0	Sinophorus tricoloripes	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	47	48	Braconidae,Ichneumonidae	BGLIB838-24_contig1;1199-1246;+;cox1_1	Sinophorus tricoloripes	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	362	432	Ichneumonidae	BGLIB845-24_contig2;9-440;+;cox1	Syrphoctonus strigator	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	166	486	Ichneumonidae	BGLIB847-24_contig1;2-487;-;cox1	Scopesis fraterna	0
+0	0	data/BGE00409_S2M_cox1.fasta	None	Ichneumonidae	BLAST	family	418	420	Ichneumonidae	BGLIB850-24_contig5;7-426;-;cox1	Syndipnus discolor	0

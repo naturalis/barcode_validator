@@ -1,0 +1,30 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+24	49	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Dolichopodidae	BLAST	family	652	1368	Tettigoniidae,Dolichopodidae,Ulidiidae,Vespidae	BGENL476-23_cns	Sciapus nervosus	0
+34	35	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Dolichopodidae	BLAST	family	584	1221	Acrididae,Anthocoridae,Ninidae,Curculionidae,Dermestidae,Bostrichidae,Ptinidae,Psychodidae,Vespidae	BGENL477-23_cns	Sciapus nervosus	0
+27	82	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Dolichopodidae	BLAST	family	656	1365	Tettigoniidae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Ulidiidae,Vespidae,Tetracampidae	BGENL478-23_cns	Sciapus nervosus	0
+4	4	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Dolichopodidae	BLAST	family	491	1140	Culicidae,Dolichopodidae,Hybotidae,Syrphidae,Tortricidae	BGENL480-23_cns	Tachytrechus insignis	0
+0	11	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Dolichopodidae	BLAST	family	656	1509	Gryllidae,Dermestidae,Tephritidae	BGENL483-23_cns	Thinophilus flavipalpis	0
+0	0	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Empididae	BLAST	family	330	411	Empididae,Dolichopodidae,Syrphidae,Drosophilidae	BGENL485-23_cns	Hemerodromia unilineata	0
+0	0	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Empididae	BLAST	family	41	78	Simuliidae,Empididae,Drosophilidae,Anthomyiidae	BGENL486-23_cns	Hemerodromia unilineata	0
+1	2	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Empididae	BLAST	family	348	420	Miridae,Ceratopogonidae	BGENL487-23_cns	Hemerodromia unilineata	0
+0	0	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Empididae	BLAST	family	445	681	Dytiscidae,Simuliidae,Empididae,Dolichopodidae,Muscidae,Hemerobiidae	BGENL492-23_cns	Hilara albitarsis	0
+23	37	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Empididae	BLAST	family	635	1350	Empididae	BGENL493-23_cns	Hilara albitarsis	0
+0	0	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Empididae	BLAST	family	204	924	Delphacidae,Scarabaeidae,Mycetophilidae,Limoniidae,Asilidae	BGENL499-23_cns	Hilara apta	0
+3	21	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Empididae	BLAST	family	321	816	Acrididae,Reduviidae,Agromyzidae	BGENL503-23_cns	Hilara clypeata	0
+0	31	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Empididae	BLAST	family	60	273	Drosophilidae	BGENL507-23_cns	Hilara discalis	0
+2	20	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Empididae	BLAST	family	657	1482	Hybotidae,Syrphidae,Psilidae,Drosophilidae,Muscidae	BGENL518-23_cns	Hilara lasochira	0
+1	24	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Ephydridae	BLAST	family	233	990	Syrphidae,Ephydridae,Tephritidae,Calliphoridae	BGENL537-23_cns	Hydrellia ranunculii	0
+6	6	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Ephydridae	BLAST	family	657	1509	Empididae,Syrphidae,Psilidae,Drosophilidae,Muscidae	BGENL538-23_cns	Hydrellia ranunculii	0
+40	51	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Heleomyzidae	BLAST	family	503	990	Sciaridae,Mycetophilidae,Culicidae,Syrphidae	BGENL540-23_cns	Eccoptomera microps	0
+14	29	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Heleomyzidae	BLAST	family	626	1344	Syrphidae,Psilidae,Drosophilidae,Agromyzidae,Tephritidae,Calliphoridae	BGENL541-23_cns	Eccoptomera microps	0
+14	14	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Ephydridae	BLAST	family	422	846	Staphylinidae,Phoridae,Syrphidae,Drosophilidae,Muscidae	BGENL547-23_cns	Hydrellia mutata	0
+0	0	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Ephydridae	BLAST	family	426	432	Chironomidae,Simuliidae,Drosophilidae,Ephydridae,Lonchaeidae,Pallopteridae,Cosmopterigidae	BGENL550-23_cns	Philotelma defecta	0
+0	0	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Hybotidae	BLAST	family	657	1527	Drosophilidae	BGENL551-23_cns	Crossopalpus flexuosus	0
+0	13	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Hybotidae	BLAST	family	167	765	Mycetophilidae,Phoridae,Lonchopteridae,Agromyzidae,Hippoboscidae,Muscidae,Tachinidae	BGENL552-23_cns	Euthyneura inermis	0
+2	11	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Hybotidae	BLAST	family	645	1350	Culicidae,Ptychopteridae,Dolichopodidae,Syrphidae,Tephritidae,Anthomyiidae,Rhiniidae	BGENL553-23_cns	Platypalpus collini	0
+5	7	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Hybotidae	BLAST	family	513	885	Psychodidae,Muscidae	BGENL558-23_cns	Platypalpus praecinctus	0
+0	28	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Hybotidae	BLAST	family	87	300	Hydrophilidae,Scarabaeidae,Lymexylidae,Tenebrionidae,Tephritidae	BGENL559-23_cns	Platypalpus praecinctus	0
+0	0	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Hybotidae	BLAST	family	657	1524	Empididae,Dolichopodidae,Syrphidae,Drosophilidae	BGENL561-23_cns	Syneches muscarius	0
+0	0	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Hybotidae	BLAST	family	92	303		BGENL569-23_cns	Platypalpus melancholicus	0
+12	17	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	None	Hybotidae	BLAST	family	645	1218	Hybotidae,Anthomyiidae,Calliphoridae	BGENL570-23_cns	Platypalpus rapidus	0
+0	0	data/BGE00174_MGE_cox1_insect_universal_swapped.fas	NC-BGE00172 not in BOLD	None	BLAST	family	181	285		NC-BGE00172_cns	None	0

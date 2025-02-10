@@ -1,0 +1,24 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00180_S2M_cox1.fasta	None	Psilidae	BLAST	family	93	585	Psilidae,Drosophilidae,Agromyzidae,Muscidae,Anthomyiidae,Calliphoridae,Tachinidae,Rhiniidae	BGENL1241-24_contig5;1-585;-;cox1	Chamaepsila pallida	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Psilidae	BLAST	family	79	204	Psilidae,Tephritidae	BGENL1242-24_contig6;2-205;+;cox1	Chamaepsila persimilis	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Psilidae	BLAST	family	340	483	Lonchopteridae,Psilidae,Drosophilidae,Tachinidae,Rhinophoridae	BGENL1244-24_contig0;58-540;+;cox1	Chamaepsila persimilis	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Rhagionidae	BLAST	family	414	534	Dolichopodidae,Drosophilidae,Rhagionidae	BGENL1250-24_contig2;2-535;-;cox1	Chrysopilus cristatus	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Rhagionidae	BLAST	family	97	243	Dolichopodidae,Drosophilidae,Muscidae,Anthomyiidae,Tabanidae	BGENL1253-24_contig0;1-243;+;cox1	Chrysopilus splendidus	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Rhagionidae	BLAST	family	38	60	Buprestidae,Chironomidae,Syrphidae	BGENL1253-24_contig2;9-68;+;cox1_1	Chrysopilus splendidus	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Rhagionidae	BLAST	family	34	69	Chironomidae	BGENL1259-24_contig4;4-72;+;cox1_1	Chrysopilus laetus	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Rhagionidae	BLAST	family	93	270	Mydidae,Dolichopodidae,Drosophilidae,Sarcophagidae,Stratiomyidae,Tabanidae	BGENL1259-24_contig5;1-270;+;cox1	Chrysopilus laetus	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Sarcophagidae	BLAST	family	276	342	Culicidae,Sarcophagidae	BGENL1268-24_contig2;3-344;-;cox1	Phrosinella nasuta	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Scatopsidae	BLAST	family	657	1539	Drosophilidae	BGENL1275-24_contig5;430-1968;+;cox1	Anapausis soluta	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Scatopsidae	BLAST	family	311	471	Culicidae,Scatopsidae,Hybotidae,Syrphidae,Drosophilidae	BGENL1276-24_contig4;1-471;+;cox1	Anapausis soluta	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Scatopsidae	BLAST	family	657	1539	Drosophilidae	BGENL1277-24_contig6;144-1682;-;cox1	Anapausis soluta	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Scatopsidae	BLAST	family	656	1545	Drosophilidae,Sphaeroceridae	BGENL1278-24_contig4;469-2013;-;cox1	Aspistes berolinensis	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Scatopsidae	BLAST	family	656	1545	Psychodidae,Drosophilidae,Sphaeroceridae	BGENL1280-24_contig0;10397-11941;-;cox1	Aspistes berolinensis	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Scatopsidae	BLAST	family	118	201	Chironomidae,Simuliidae,Ceratopogonidae,Scatopsidae,Drosophilidae,Stratiomyidae	BGENL1283-24_contig0;2-202;+;cox1	Rhexoza subnitensis	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Scatopsidae	BLAST	family	657	1173	Culicidae,Lonchopteridae,Drosophilidae,Sepsidae,Sphaeroceridae,Muscidae	BGENL1283-24_contig1;1587-2759;+;cox1	Rhexoza subnitensis	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Scatopsidae	BLAST	family	315	693	Scathophagidae	BGENL1284-24_contig1;1-693;+;cox1	Swammerdamella brevicornis	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Sphaeroceridae	BLAST	family	152	264	Scarabaeidae,Ephydridae,Lauxaniidae,Sciomyzidae,Sphaeroceridae	BGENL1292-24_contig6;1-264;+;cox1	Copromyza nigrina	1
+0	0	data/BGE00180_S2M_cox1.fasta	None	Sphaeroceridae	BLAST	family	261	297	Chloropidae,Sepsidae,Sphaeroceridae,Muscidae	BGENL1293-24_contig0;56-352;-;cox1	Copromyza nigrina	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Sphaeroceridae	BLAST	family	261	300	Chironomidae,Empididae,Hybotidae,Sphaeroceridae,Heleomyzidae	BGENL1295-24_contig3;134-433;+;cox1	Thoracochaeta brachystoma	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Stratiomyidae	BLAST	family	3	102		BGENL1321-24_contig6;1-102;+;cox1	Stratiomys equestris	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Stratiomyidae	BLAST	family	175	309	Syrphidae,Drosophilidae,Tabanidae	BGENL1323-24_contig1;3-311;+;cox1	Zabrachia tenella	0
+0	0	data/BGE00180_S2M_cox1.fasta	None	Stratiomyidae	BLAST	family	176	327	Tephritidae,Muscidae	BGENL1325-24_contig0;2-328;-;cox1	Zabrachia tenella	9

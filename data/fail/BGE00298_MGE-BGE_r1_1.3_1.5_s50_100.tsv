@@ -1,0 +1,61 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons	process_id
+18	63	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	653	1527	Pterophoridae	BGSNL689-24_r_1_s_50	Oxyptilus laetus	0	BGSNL689-24
+32	95	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	596	1416	Pterophoridae	BGSNL689-24_r_1_s_100	Oxyptilus laetus	0	BGSNL689-24
+6	10	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	656	1524	Noctuidae,Notodontidae,Erebidae,Papilionidae,Geometridae	BGSNL689-24_r_1.3_s_50	Oxyptilus laetus	0	BGSNL689-24
+14	19	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	556	1194	Erebidae,Geometridae	BGSNL689-24_r_1.3_s_100	Oxyptilus laetus	0	BGSNL689-24
+4	8	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	641	1377	Erebidae,Papilionidae,Crambidae,Geometridae	BGSNL689-24_r_1.5_s_50	Oxyptilus laetus	0	BGSNL689-24
+19	24	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	553	1041	Nymphalidae,Hesperiidae,Geometridae,Pterophoridae	BGSNL689-24_r_1.5_s_100	Oxyptilus laetus	0	BGSNL689-24
+0	27	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	169	987	Lycaenidae	BGSNL690-24_r_1_s_50	Oxyptilus laetus	0	BGSNL690-24
+0	49	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	47	699	Nymphalidae,Hesperiidae,Pterophoridae	BGSNL690-24_r_1_s_100	Oxyptilus laetus	0	BGSNL690-24
+4	17	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	133	747	Noctuidae,Geometridae	BGSNL690-24_r_1.3_s_50	Oxyptilus laetus	2	BGSNL690-24
+0	0	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	59	444	Limacodidae,Noctuidae,Erebidae	BGSNL690-24_r_1.3_s_100	Oxyptilus laetus	0	BGSNL690-24
+10	10	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	446	552	Noctuidae,Geometridae	BGSNL690-24_r_1.5_s_50	Oxyptilus laetus	0	BGSNL690-24
+0	0	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	35	249	Limacodidae,Noctuidae,Erebidae	BGSNL690-24_r_1.5_s_100	Oxyptilus laetus	0	BGSNL690-24
+16	30	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	634	1338	Tortricidae,Sphingidae,Noctuidae,Erebidae,Crambidae,Geometridae,Drepanidae,Pterophoridae	BGSNL693-24_r_1_s_50	Platyptilia isodactylus	0	BGSNL693-24
+0	4	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	429	1062	Pterophoridae	BGSNL693-24_r_1_s_100	Platyptilia isodactylus	1	BGSNL693-24
+10	16	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	515	1182	Tortricidae,Sphingidae,Noctuidae,Erebidae,Papilionidae,Crambidae,Drepanidae,Pterophoridae	BGSNL693-24_r_1.3_s_50	Platyptilia isodactylus	0	BGSNL693-24
+4	6	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	256	732	Pterophoridae	BGSNL693-24_r_1.3_s_100	Platyptilia isodactylus	1	BGSNL693-24
+1	2	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	486	1098	Tortricidae,Erebidae,Crambidae,Geometridae,Pterophoridae	BGSNL693-24_r_1.5_s_50	Platyptilia isodactylus	1	BGSNL693-24
+0	0	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	244	606	Erebidae,Lycaenidae,Riodinidae,Crambidae,Geometridae,Pterophoridae	BGSNL693-24_r_1.5_s_100	Platyptilia isodactylus	1	BGSNL693-24
+8	48	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	656	1530	Pterophoridae	BGSNL700-24_r_1_s_50	Stenoptilia reisseri	0	BGSNL700-24
+12	32	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	632	1470	Pterophoridae	BGSNL700-24_r_1_s_100	Stenoptilia reisseri	0	BGSNL700-24
+4	19	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	656	1530	Oecophoridae,Nolidae,Papilionidae,Geometridae,Pterophoridae	BGSNL700-24_r_1.3_s_50	Stenoptilia reisseri	0	BGSNL700-24
+12	28	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	632	1467	Erebidae,Nymphalidae,Crambidae,Pterophoridae	BGSNL700-24_r_1.3_s_100	Stenoptilia reisseri	0	BGSNL700-24
+2	14	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	656	1524	Papilionidae,Hesperiidae,Geometridae,Pterophoridae	BGSNL700-24_r_1.5_s_50	Stenoptilia reisseri	0	BGSNL700-24
+13	31	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	578	1314	Cosmopterigidae,Papilionidae,Nymphalidae,Pterophoridae	BGSNL700-24_r_1.5_s_100	Stenoptilia reisseri	0	BGSNL700-24
+26	28	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1533	Depressariidae,Attevidae,Noctuidae,Crambidae,Thyrididae	BGSNL703-24_r_1_s_50	Tabulaephorus punctinervis	0	BGSNL703-24
+36	36	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1530	Attevidae,Crambidae,Thyrididae,Drepanidae	BGSNL703-24_r_1_s_100	Tabulaephorus punctinervis	0	BGSNL703-24
+9	9	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1527	Attevidae,Sphingidae,Noctuidae,Geometridae	BGSNL703-24_r_1.3_s_50	Tabulaephorus punctinervis	0	BGSNL703-24
+14	14	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1527	Attevidae,Noctuidae,Geometridae	BGSNL703-24_r_1.3_s_100	Tabulaephorus punctinervis	0	BGSNL703-24
+2	2	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1518	Attevidae,Noctuidae,Erebidae,Geometridae	BGSNL703-24_r_1.5_s_50	Tabulaephorus punctinervis	0	BGSNL703-24
+2	2	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1509	Attevidae,Sphingidae,Noctuidae,Erebidae,Geometridae	BGSNL703-24_r_1.5_s_100	Tabulaephorus punctinervis	0	BGSNL703-24
+15	42	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	540	1251	Tettigoniidae,Ulidiidae,Vespidae	BGSNL728-24_r_1_s_50	Aethes perfidana	0	BGSNL728-24
+10	37	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	438	1104	Tettigoniidae,Ninidae,Ulidiidae,Vespidae	BGSNL728-24_r_1_s_100	Aethes perfidana	0	BGSNL728-24
+12	13	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	409	612	Tettigoniidae,Ulidiidae,Vespidae,Nymphalidae,Geometridae	BGSNL728-24_r_1.3_s_50	Aethes perfidana	0	BGSNL728-24
+7	23	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	214	480	Tettigoniidae,Ninidae,Ulidiidae,Vespidae	BGSNL728-24_r_1.3_s_100	Aethes perfidana	0	BGSNL728-24
+7	16	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	288	531	Tettigoniidae,Ulidiidae,Vespidae,Nymphalidae,Geometridae	BGSNL728-24_r_1.5_s_50	Aethes perfidana	0	BGSNL728-24
+7	18	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	204	372	Tettigoniidae,Ninidae,Ulidiidae,Vespidae	BGSNL728-24_r_1.5_s_100	Aethes perfidana	0	BGSNL728-24
+5	42	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	506	1287	Tortricidae	BGSNL729-24_r_1_s_50	Aethes perfidana	0	BGSNL729-24
+17	58	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	444	1173	Tortricidae	BGSNL729-24_r_1_s_100	Aethes perfidana	0	BGSNL729-24
+13	30	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	346	846	Coleophoridae,Tortricidae,Papilionidae	BGSNL729-24_r_1.3_s_50	Aethes perfidana	0	BGSNL729-24
+26	26	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	251	432	Tortricidae	BGSNL729-24_r_1.3_s_100	Aethes perfidana	0	BGSNL729-24
+0	6	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	319	759	Tortricidae	BGSNL729-24_r_1.5_s_50	Aethes perfidana	0	BGSNL729-24
+0	0	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	245	429	Tortricidae	BGSNL729-24_r_1.5_s_100	Aethes perfidana	0	BGSNL729-24
+9	36	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	174	1026	Cicadidae,Dytiscidae,Scarabaeidae,Pteromalidae,Tortricidae	BGSNL732-24_r_1_s_50	Aethes piercei	0	BGSNL732-24
+0	13	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	172	858	Cicadidae,Dytiscidae,Scarabaeidae,Pteromalidae,Tortricidae	BGSNL732-24_r_1_s_100	Aethes piercei	0	BGSNL732-24
+2	6	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	145	510	Tortricidae,Erebidae,Geometridae	BGSNL732-24_r_1.3_s_50	Aethes piercei	0	BGSNL732-24
+0	0	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	103	225	Tortricidae,Erebidae,Geometridae	BGSNL732-24_r_1.3_s_100	Aethes piercei	0	BGSNL732-24
+0	0	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	43	369	Tortricidae,Erebidae,Geometridae	BGSNL732-24_r_1.5_s_50	Aethes piercei	0	BGSNL732-24
+0	0	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	72	114	Tortricidae,Erebidae,Geometridae	BGSNL732-24_r_1.5_s_100	Aethes piercei	0	BGSNL732-24
+4	30	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	495	1413	Tortricidae	BGSNL735-24_r_1_s_50	Aethes rubiginana	0	BGSNL735-24
+0	46	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	226	1146	Tortricidae	BGSNL735-24_r_1_s_100	Aethes rubiginana	0	BGSNL735-24
+16	20	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	430	1155	Tortricidae	BGSNL735-24_r_1.3_s_50	Aethes rubiginana	13	BGSNL735-24
+0	16	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	85	675	Tortricidae	BGSNL735-24_r_1.3_s_100	Aethes rubiginana	0	BGSNL735-24
+0	0	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	376	1101	Tortricidae	BGSNL735-24_r_1.5_s_50	Aethes rubiginana	14	BGSNL735-24
+0	0	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	75	582	Tortricidae,Pieridae,Nymphalidae,Geometridae	BGSNL735-24_r_1.5_s_100	Aethes rubiginana	0	BGSNL735-24
+4	5	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00298-NC not in BOLD	None	BLAST	family	241	1092		BGE00298-NC_r_1_s_50	None	0	BGE00298-NC
+0	0	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00298-NC not in BOLD	None	BLAST	family	136	681		BGE00298-NC_r_1_s_100	None	0	BGE00298-NC
+0	0	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00298-NC not in BOLD	None	BLAST	family	147	594		BGE00298-NC_r_1.3_s_50	None	0	BGE00298-NC
+0	0	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00298-NC not in BOLD	None	BLAST	family	136	402		BGE00298-NC_r_1.3_s_100	None	0	BGE00298-NC
+0	0	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00298-NC not in BOLD	None	BLAST	family	50	84		BGE00298-NC_r_1.5_s_100	None	0	BGE00298-NC
+0	0	data/BGE00298_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00298-NC not in BOLD	None	BLAST	family	62	147		BGE00298-NC_r_1.5_s_50	None	0	BGE00298-NC

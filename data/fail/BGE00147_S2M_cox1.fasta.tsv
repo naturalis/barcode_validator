@@ -1,0 +1,27 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00147_S2M_cox1.fasta	None	Erebidae	BLAST	family	325	327	Erebidae	BHNHM098-24_contig0;1-327;+;cox1	Euclidia munita	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Erebidae	BLAST	family	174	294	Noctuidae,Nolidae,Erebidae	BHNHM111-24_contig1;3-296;-;cox1	Ocneria terebinthi	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Erebidae	BLAST	family	258	447	Noctuidae,Nolidae,Euteliidae	BHNHM112-24_contig11;816-1262;-;cox1	Ocneria terebinthi	2
+0	0	data/BGE00147_S2M_cox1.fasta	None	Erebidae	BLAST	family	438	738	Noctuidae,Erebidae,Euteliidae,Crambidae	BHNHM112-24_contig4;3-740;-;cox1	Ocneria terebinthi	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Erebidae	BLAST	family	249	951	Noctuidae,Nolidae,Erebidae	BHNHM113-24_contig1;5-955;-;cox1	Paidia cinerascens	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Erebidae	BLAST	family	71	150	Erebidae	BHNHM113-24_contig5;342-491;-;cox1	Paidia cinerascens	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Erebidae	BLAST	family	209	510	Erebidae	BHNHM117-24_contig2;3-512;+;cox1	Phragmatobia placida	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Erebidae	BLAST	family	156	291	Noctuidae,Nolidae,Erebidae	BHNHM122-24_contig1;14-304;+;cox1	Zekelita ravalis	2
+0	0	data/BGE00147_S2M_cox1.fasta	None	Noctuidae	BLAST	family	58	120	Noctuidae,Nolidae	BHNHM131-24_contig3;82-201;+;cox1	Aegle kaekeritziana	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Noctuidae	BLAST	family	365	1182	Noctuidae,Erebidae	BHNHM137-24_contig8;18-1199;+;cox1	Aegle semicana	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Noctuidae	BLAST	family	50	123	Noctuidae	BHNHM140-24_contig1;1-123;+;cox1	Agrochola lactiflora	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Noctuidae	BLAST	family	385	549	Noctuidae	BHNHM140-24_contig4;3-551;-;cox1	Agrochola lactiflora	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Noctuidae	BLAST	family	96	165	Noctuidae	BHNHM143-24_contig6;5-169;+;cox1	Agrochola mansueta	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Noctuidae	BLAST	family	640	816	Noctuidae	BHNHM144-24_contig1;10069-10884;-;cox1	Agrochola mansueta	2
+0	0	data/BGE00147_S2M_cox1.fasta	None	Noctuidae	BLAST	family	191	612	Noctuidae	BHNHM145-24_contig1;5-616;+;cox1	Agrochola thurneri	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Noctuidae	BLAST	family	444	1260	Noctuidae	BHNHM147-24_contig8;883-2142;-;cox1	Agrotis endogaea	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Noctuidae	BLAST	family	325	327	Noctuidae	BHNHM153-24_contig9;21-347;+;cox1	Agrotis trifurca	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Noctuidae	BLAST	family	468	1263	Noctuidae	BHNHM154-24_contig3;8-1270;-;cox1	Agrotis psammocharis	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Noctuidae	BLAST	family	321	822	Noctuidae	BHNHM168-24_contig0;5-826;-;cox1	Saragossa siccanorum	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Noctuidae	BLAST	family	146	282	Noctuidae	BHNHM170-24_contig3;975-1256;-;cox1	Apamea alpigena	1
+0	0	data/BGE00147_S2M_cox1.fasta	None	Noctuidae	BLAST	family	458	945	Noctuidae	BHNHM172-24_contig4;1-945;+;cox1	Apamea ferrago	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Noctuidae	BLAST	family	465	738	Noctuidae	BHNHM173-24_contig10;3-740;+;cox1	Apamea ferrago	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Noctuidae	BLAST	family	49	108	Noctuidae,Nolidae	BHNHM177-24_contig0;3-110;+;cox1	Apaustis rupicola	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Noctuidae	BLAST	family	67	87	Noctuidae,Nolidae	BHNHM177-24_contig4;3-89;+;cox1_1	Apaustis rupicola	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Noctuidae	BLAST	family	191	498	Noctuidae	BHNHM182-24_contig8;2-499;-;cox1	Aporophyla argyrospila	0
+0	0	data/BGE00147_S2M_cox1.fasta	None	Noctuidae	BLAST	family	272	1089	Noctuidae	BHNHM184-24_contig3;89-1177;-;cox1	Armada panaceorum	0

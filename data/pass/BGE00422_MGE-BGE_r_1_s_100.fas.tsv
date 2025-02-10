@@ -1,0 +1,27 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	7	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Anthicidae	BLAST	family	636	1518	Staphylinidae,Hydraenidae,Pyrochroidae,Scraptiidae,Anthicidae	UNIFI005-23_cns	Microhoria terminata	0
+0	0	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Anthicidae	BLAST	family	657	1542	Staphylinidae,Silphidae,Pyrochroidae,Anthicidae	UNIFI006-23_cns	Microhoria terminata	0
+0	0	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Anthicidae	BLAST	family	656	1545	Staphylinidae,Hydraenidae,Pyrochroidae,Anthicidae	UNIFI008-23_cns	Microhoria unicolor	0
+0	4	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Anthicidae	BLAST	family	656	1554	Staphylinidae,Hydraenidae,Pyrochroidae,Anthicidae	UNIFI009-23_cns	Microhoria unicolor	0
+0	0	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Anthicidae	BLAST	family	656	1545	Staphylinidae,Hydraenidae,Pyrochroidae,Anthicidae,Boridae	UNIFI010-23_cns	Microhoria unicolor	0
+0	0	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Anthicidae	BLAST	family	656	1545	Staphylinidae,Hydraenidae,Pyrochroidae,Anthicidae	UNIFI011-23_cns	Microhoria venusta	0
+1	4	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Anthicidae	BLAST	family	657	1548	Staphylinidae,Hydraenidae,Cleridae,Nitidulidae,Pyrochroidae,Anthicidae	UNIFI015-23_cns	Omonadus bifasciatus	0
+0	0	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Anthicidae	BLAST	family	657	1548	Staphylinidae,Cleridae,Nitidulidae,Pyrochroidae,Anthicidae	UNIFI016-23_cns	Omonadus bifasciatus	0
+0	0	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Anthicidae	BLAST	family	656	1533	Scarabaeidae,Tenebrionidae,Meloidae,Oedemeridae,Anthicidae	UNIFI023-23_cns	Tomoderus italicus	0
+0	4	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Anthribidae	BLAST	family	657	1545	Staphylinidae,Hydraenidae,Cleridae,Chrysomelidae,Cerambycidae,Anthribidae,Nosodendridae	UNIFI026-23_cns	Anthribus fasciatus	0
+4	5	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Anthribidae	BLAST	family	657	1542	Hydraenidae,Scarabaeidae,Chrysomelidae,Anthribidae,Tortricidae	UNIFI031-23_cns	Phaenotherion fasciculatum	0
+1	1	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Anthribidae	BLAST	family	657	1536	Scarabaeidae,Oedemeridae,Anthribidae,Tortricidae	UNIFI032-23_cns	Phaenotherion fasciculatum	0
+0	0	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	656	1533	Scarabaeidae	UNIFI035-23_cns	Ahermodontus ambrosi	0
+0	4	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	656	1533	Scarabaeidae	UNIFI036-23_cns	Ahermodontus ambrosi	0
+0	0	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	656	1533	Scarabaeidae,Geotrupidae	UNIFI042-23_cns	Brindalus porcicollis	0
+0	0	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	656	1533	Staphylinidae,Hydraenidae,Scarabaeidae	UNIFI045-23_cns	Brindalus rotundipennis	0
+0	0	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1533	Staphylinidae,Scarabaeidae	UNIFI055-23_cns	Platytomus tibialis	0
+0	0	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1533	Hydraenidae,Scarabaeidae	UNIFI056-23_cns	Psammodius basalis	0
+0	0	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1527	Scarabaeidae,Geotrupidae,Cleridae	UNIFI058-23_cns	Psammodius noctornus	0
+6	25	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	633	1509	Staphylinidae,Hydraenidae,Scarabaeidae	UNIFI059-23_cns	Psammodius plicicollis	0
+1	13	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	614	1428	Staphylinidae,Hydraenidae,Scarabaeidae	UNIFI060-23_cns	Rhyssemus algiricus	0
+0	0	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1533	Hydraenidae,Scarabaeidae	UNIFI061-23_cns	Rhyssemus algiricus	0
+4	5	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1533	Leiodidae,Hydraenidae,Scarabaeidae	UNIFI062-23_cns	Rhyssemus algiricus	0
+0	0	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1533	Leiodidae,Hydraenidae,Scarabaeidae	UNIFI064-23_cns	Rhyssemus plicatus	0
+0	0	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1533	Hydraenidae,Scarabaeidae	UNIFI065-23_cns	Rhyssemus sardous	0
+0	0	data/BGE00422_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	656	1533	Staphylinidae,Hydraenidae,Scarabaeidae,Geotrupidae	UNIFI066-23_cns	Rhyssemus sulcatus	0

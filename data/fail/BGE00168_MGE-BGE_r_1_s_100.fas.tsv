@@ -1,0 +1,30 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	BGE00168-NC not in BOLD	None	BLAST	family	656	1524		BGE00168-NC_cns	None	0
+7	60	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Dytiscidae	BLAST	family	351	1056	Dytiscidae	BGENL289-23_cns	Hygrotus parallelogrammus	0
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	484	522	Carabidae	BGENL290-23_cns	Carabus clatratus multipunctatus	2
+7	24	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	491	789	Carabidae,Scarabaeidae	BGENL295-23_cns	Dyschirius impunctipennis	0
+26	85	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	572	1281	Dytiscidae,Carabidae,Hydraenidae	BGENL296-23_cns	Dyschirius impunctipennis	0
+None	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	Local BLAST failed for sequence ''	Carabidae	BLAST	family	None	0		BGENL298-23_cns	Carabidae	0
+9	10	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Carabidae	BLAST	family	657	1536	Carabidae	BGENL326-23_cns	Cymindis humeralis	0
+46	129	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Helophoridae	BLAST	family	550	1428	Carabidae,Helophoridae,Hydraenidae,Anthomyiidae	BGENL333-23_cns	Helophorus rufipes	0
+None	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	Local BLAST failed for sequence ''	Helophoridae	BLAST	family	None	0		BGENL334-23_cns	Helophorus porculus	0
+19	44	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Helophoridae	BLAST	family	204	786	Carabidae,Hydrophilidae,Staphylinidae,Cerambycidae	BGENL337-23_cns	Helophorus tuberculatus	0
+6	16	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Hydrophilidae	BLAST	family	653	1530	Staphylinidae,Ptiliidae,Scarabaeidae	BGENL340-23_cns	Cercyon granarius	0
+38	75	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Hydrophilidae	BLAST	family	657	1542	Hydrophilidae,Staphylinidae,Hydraenidae,Scarabaeidae,Tephritidae,Tachinidae	BGENL341-23_cns	Cryptopleurum crenatum	0
+32	32	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Hydrophilidae	BLAST	family	600	1173	Hydrophilidae	BGENL342-23_cns	Cryptopleurum crenatum	0
+0	10	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	93	276	Rhaphidophoridae,Endomychidae,Formicidae,Leptopsyllidae,Gelechiidae,Riodinidae	BGENL346-23_cns	Colobopterus erraticus	0
+14	44	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	555	1236	Scarabaeidae,Syrphidae,Drosophilidae,Muscidae,Fanniidae,Tachinidae	BGENL347-23_cns	Colobopterus erraticus	0
+6	26	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	270	816	Silphidae,Trogidae,Curculionidae,Dermestidae,Drosophilidae,Sarcophagidae	BGENL348-23_cns	Colobopterus erraticus	0
+4	4	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1533	Lonchopteridae,Syrphidae,Tabanidae,Sphingidae,Rapismatidae	BGENL349-23_cns	Acrossus rufipes	0
+14	18	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1473	Scarabaeidae	BGENL353-23_cns	Acrossus depressus	0
+0	52	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	217	429	Carabidae,Corydalidae	BGENL354-23_cns	Acrossus depressus	1
+7	7	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	398	411	Scarabaeidae,Cerambycidae,Hepialidae	BGENL357-23_cns	Chilothorax paykulli	2
+9	27	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	404	1155	Scarabaeidae	BGENL360-23_cns	Nimbus obliteratus	0
+13	21	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	549	1431	Scarabaeidae	BGENL361-23_cns	Nimbus obliteratus	0
+0	20	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	110	747	Scarabaeidae	BGENL363-23_cns	Trichonotulus scrofa	0
+8	22	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	657	1380	Scarabaeidae	BGENL366-23_cns	Esymus merdarius	0
+3	25	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	455	960	Staphylinidae,Scarabaeidae	BGENL370-23_cns	Planolinoides borealis	12
+0	0	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	318	774	Dytiscidae,Carabidae,Noctuidae,Hemerobiidae	BGENL372-23_cns	Bodilopsis sordida	0
+5	7	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	434	948	Staphylinidae,Hydraenidae,Drosophilidae	BGENL373-23_cns	Bodiloides ictericus	6
+17	28	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	192	756	Hydraenidae,Histeridae,Lucanidae,Phoridae,Drosophilidae	BGENL374-23_cns	Bodiloides ictericus	0
+21	53	data/BGE00168_MGE-BGE_r_1_s_100.fas	None	Scarabaeidae	BLAST	family	489	1269	Carabidae,Scarabaeidae	BGENL375-23_cns	Bodiloides ictericus	0
