@@ -105,21 +105,15 @@ def write_fasta(sequences: Dict[str, str], best_df: pd.DataFrame, output_path: P
 
 
 def write_fails(validation_df: pd.DataFrame, best_df: pd.DataFrame, output_path: Path):
-    """Write failed sequences to TSV format.
+    """Write failed sequences to TSV format."""
+    # Create a copy and add process_id column
+    failed_df = validation_df.copy()
+    failed_df.loc[:, 'process_id'] = failed_df['sequence_id'].apply(extract_process_id)
 
-    :param validation_df: Original validation DataFrame
-    :param best_df: DataFrame with selected best sequences
-    :param output_path: Path to output TSV file
-    """
-    # Get process IDs that made it to best sequences
-    successful_ids = set(best_df['process_id'])
+    if not best_df.empty:
+        successful_ids = set(best_df['process_id'])
+        failed_df = failed_df[~failed_df['process_id'].isin(successful_ids)]
 
-    # Add process_id column if not already present
-    if 'process_id' not in validation_df.columns:
-        validation_df['process_id'] = validation_df['sequence_id'].apply(extract_process_id)
-
-    # Filter for failed sequences
-    failed_df = validation_df[~validation_df['process_id'].isin(successful_ids)]
     failed_df.to_csv(output_path, sep='\t', index=False)
 
 
