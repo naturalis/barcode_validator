@@ -66,11 +66,11 @@ def select_best_sequences(validation_df: pd.DataFrame) -> pd.DataFrame:
     :param validation_df: DataFrame with validation results
     :return: DataFrame with only the best sequences
     """
-    # Remove negative controls
-    df = validation_df[~validation_df['sequence_id'].str.contains('-NC')]
+    # Remove negative controls and create a copy
+    df = validation_df[~validation_df['sequence_id'].str.contains('-NC')].copy()
 
     # Add process_id column
-    df['process_id'] = df['sequence_id'].apply(extract_process_id)
+    df.loc[:, 'process_id'] = df['sequence_id'].apply(extract_process_id)
 
     # Filter sequences that meet basic criteria
     valid_df = df[df.apply(meets_basic_criteria, axis=1)]
@@ -82,7 +82,7 @@ def select_best_sequences(validation_df: pd.DataFrame) -> pd.DataFrame:
     # Sort by criteria (first by process_id to group them, then by quality metrics)
     sorted_df = valid_df.sort_values(
         by=['process_id', 'ambig_full_basecount', 'nuc_full_basecount'],
-        ascending=[True, True, False]  # True for ambig (lower better), False for nuc (higher better)
+        ascending=[True, True, False]
     )
 
     # Select first (best) sequence for each process_id
