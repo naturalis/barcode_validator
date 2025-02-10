@@ -1,0 +1,577 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1539	Andrenidae	UNIFI191-23_r_1_s_50	Andrena nigroaenea	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1539	Andrenidae	UNIFI191-23_r_1_s_100	Andrena nigroaenea	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1539	Andrenidae	UNIFI191-23_r_1.3_s_50	Andrena nigroaenea	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1539	Andrenidae	UNIFI191-23_r_1.3_s_100	Andrena nigroaenea	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1539	Andrenidae	UNIFI191-23_r_1.5_s_50	Andrena nigroaenea	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1539	Andrenidae	UNIFI191-23_r_1.5_s_100	Andrena nigroaenea	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1539	Andrenidae	UNIFI192-23_r_1_s_50	Andrena nigroaenea	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1539	Andrenidae	UNIFI192-23_r_1_s_100	Andrena nigroaenea	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1539	Andrenidae	UNIFI192-23_r_1.3_s_50	Andrena nigroaenea	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1539	Andrenidae	UNIFI192-23_r_1.3_s_100	Andrena nigroaenea	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1539	Andrenidae	UNIFI192-23_r_1.5_s_50	Andrena nigroaenea	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1539	Andrenidae	UNIFI192-23_r_1.5_s_100	Andrena nigroaenea	0
+0	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1539	Andrenidae	UNIFI193-23_r_1_s_50	Andrena nigroaenea	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1539	Andrenidae	UNIFI193-23_r_1_s_100	Andrena nigroaenea	0
+0	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1539	Andrenidae	UNIFI193-23_r_1.3_s_50	Andrena nigroaenea	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1539	Andrenidae	UNIFI193-23_r_1.3_s_100	Andrena nigroaenea	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1539	Andrenidae	UNIFI193-23_r_1.5_s_50	Andrena nigroaenea	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1539	Andrenidae	UNIFI193-23_r_1.5_s_100	Andrena nigroaenea	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1545	Andrenidae	UNIFI194-23_r_1_s_50	Andrena pellucens	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1545	Andrenidae	UNIFI194-23_r_1_s_100	Andrena pellucens	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1545	Andrenidae	UNIFI194-23_r_1.3_s_50	Andrena pellucens	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1545	Andrenidae	UNIFI194-23_r_1.3_s_100	Andrena pellucens	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1545	Andrenidae	UNIFI194-23_r_1.5_s_50	Andrena pellucens	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1545	Andrenidae	UNIFI194-23_r_1.5_s_100	Andrena pellucens	0
+15	27	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1560	Apidae,Megachilidae	UNIFI195-23_r_1_s_50	Megachile parietina	0
+9	20	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	655	1548	Apidae,Megachilidae	UNIFI195-23_r_1_s_100	Megachile parietina	0
+5	6	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	655	1512	Apidae,Megachilidae	UNIFI195-23_r_1.3_s_50	Megachile parietina	0
+4	6	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	655	1476	Apidae,Megachilidae	UNIFI195-23_r_1.3_s_100	Megachile parietina	0
+0	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	655	1476	Apidae,Megachilidae	UNIFI195-23_r_1.5_s_50	Megachile parietina	0
+0	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	655	1464	Apidae,Megachilidae	UNIFI195-23_r_1.5_s_100	Megachile parietina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	655	1560	Apidae,Megachilidae	UNIFI196-23_r_1_s_50	Megachile parietina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	655	1548	Apidae,Megachilidae	UNIFI196-23_r_1_s_100	Megachile parietina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	655	1545	Apidae,Megachilidae	UNIFI196-23_r_1.3_s_50	Megachile parietina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	655	1509	Apidae,Megachilidae	UNIFI196-23_r_1.3_s_100	Megachile parietina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	655	1476	Apidae,Megachilidae	UNIFI196-23_r_1.5_s_50	Megachile parietina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	655	1476	Apidae,Megachilidae	UNIFI196-23_r_1.5_s_100	Megachile parietina	0
+0	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	655	1560	Apidae,Megachilidae	UNIFI197-23_r_1_s_50	Megachile parietina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	655	1536	Apidae,Megachilidae	UNIFI197-23_r_1_s_100	Megachile parietina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	655	1557	Apidae,Megachilidae	UNIFI197-23_r_1.3_s_50	Megachile parietina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	655	1521	Apidae,Megachilidae	UNIFI197-23_r_1.3_s_100	Megachile parietina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	655	1476	Apidae,Megachilidae	UNIFI197-23_r_1.5_s_50	Megachile parietina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	655	1476	Apidae,Megachilidae	UNIFI197-23_r_1.5_s_100	Megachile parietina	0
+0	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1548	Halictidae,Megachilidae,Colletidae	UNIFI198-23_r_1_s_50	Colletes wolfi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1530	Halictidae,Megachilidae,Colletidae	UNIFI198-23_r_1_s_100	Colletes wolfi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1539	Halictidae,Megachilidae,Colletidae	UNIFI198-23_r_1.3_s_50	Colletes wolfi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1530	Halictidae,Megachilidae,Colletidae	UNIFI198-23_r_1.3_s_100	Colletes wolfi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1530	Halictidae,Megachilidae,Colletidae	UNIFI198-23_r_1.5_s_50	Colletes wolfi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1530	Halictidae,Megachilidae,Colletidae	UNIFI198-23_r_1.5_s_100	Colletes wolfi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1548	Megachilidae,Colletidae	UNIFI199-23_r_1_s_50	Colletes wolfi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1530	Halictidae,Megachilidae,Colletidae	UNIFI199-23_r_1_s_100	Colletes wolfi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1530	Halictidae,Megachilidae,Colletidae	UNIFI199-23_r_1.3_s_50	Colletes wolfi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1530	Halictidae,Megachilidae,Colletidae	UNIFI199-23_r_1.3_s_100	Colletes wolfi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1530	Halictidae,Megachilidae,Colletidae	UNIFI199-23_r_1.5_s_50	Colletes wolfi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1530	Halictidae,Megachilidae,Colletidae	UNIFI199-23_r_1.5_s_100	Colletes wolfi	0
+0	9	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1548	Halictidae,Megachilidae,Colletidae	UNIFI200-23_r_1_s_50	Colletes wolfi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1548	Halictidae,Megachilidae,Colletidae	UNIFI200-23_r_1_s_100	Colletes wolfi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1548	Halictidae,Megachilidae,Colletidae	UNIFI200-23_r_1.3_s_50	Colletes wolfi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1548	Halictidae,Megachilidae,Colletidae	UNIFI200-23_r_1.3_s_100	Colletes wolfi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1530	Halictidae,Megachilidae,Colletidae	UNIFI200-23_r_1.5_s_50	Colletes wolfi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Colletidae	BLAST	family	656	1530	Halictidae,Megachilidae,Colletidae	UNIFI200-23_r_1.5_s_100	Colletes wolfi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1551	Apidae	UNIFI201-23_r_1_s_50	Eucera hungarica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1551	Apidae	UNIFI201-23_r_1_s_100	Eucera hungarica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1551	Apidae	UNIFI201-23_r_1.3_s_50	Eucera hungarica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1551	Apidae	UNIFI201-23_r_1.3_s_100	Eucera hungarica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1542	Apidae	UNIFI201-23_r_1.5_s_50	Eucera hungarica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1542	Apidae	UNIFI201-23_r_1.5_s_100	Eucera hungarica	0
+0	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1551	Apidae	UNIFI202-23_r_1_s_50	Eucera hungarica	0
+0	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1551	Apidae	UNIFI202-23_r_1_s_100	Eucera hungarica	0
+0	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1551	Apidae	UNIFI202-23_r_1.3_s_50	Eucera hungarica	0
+0	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1551	Apidae	UNIFI202-23_r_1.3_s_100	Eucera hungarica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1551	Apidae	UNIFI202-23_r_1.5_s_50	Eucera hungarica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1551	Apidae	UNIFI202-23_r_1.5_s_100	Eucera hungarica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1545	Apidae	UNIFI203-23_r_1_s_50	Eucera vulpes	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1542	Apidae	UNIFI203-23_r_1_s_100	Eucera vulpes	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1542	Apidae	UNIFI203-23_r_1.3_s_50	Eucera vulpes	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1542	Apidae	UNIFI203-23_r_1.3_s_100	Eucera vulpes	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1539	Apidae	UNIFI203-23_r_1.5_s_50	Eucera vulpes	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1539	Apidae	UNIFI203-23_r_1.5_s_100	Eucera vulpes	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1551	Apidae	UNIFI204-23_r_1_s_50	Eucera vulpes	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1539	Apidae	UNIFI204-23_r_1_s_100	Eucera vulpes	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1539	Apidae	UNIFI204-23_r_1.3_s_50	Eucera vulpes	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1539	Apidae	UNIFI204-23_r_1.3_s_100	Eucera vulpes	0
+0	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1539	Apidae	UNIFI204-23_r_1.5_s_50	Eucera vulpes	0
+0	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1539	Apidae	UNIFI204-23_r_1.5_s_100	Eucera vulpes	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1551	Apidae	UNIFI205-23_r_1_s_50	Eucera vulpes	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1539	Apidae	UNIFI205-23_r_1_s_100	Eucera vulpes	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1539	Apidae	UNIFI205-23_r_1.3_s_50	Eucera vulpes	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1539	Apidae	UNIFI205-23_r_1.3_s_100	Eucera vulpes	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1539	Apidae	UNIFI205-23_r_1.5_s_50	Eucera vulpes	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1539	Apidae	UNIFI205-23_r_1.5_s_100	Eucera vulpes	0
+3	4	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1560	Apidae,Megachilidae	UNIFI206-23_r_1_s_50	Megachile apennina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1548	Apidae,Megachilidae	UNIFI206-23_r_1_s_100	Megachile apennina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1524	Apidae,Megachilidae	UNIFI206-23_r_1.3_s_50	Megachile apennina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1524	Apidae,Megachilidae	UNIFI206-23_r_1.3_s_100	Megachile apennina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1476	Apidae,Megachilidae	UNIFI206-23_r_1.5_s_50	Megachile apennina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1476	Apidae,Megachilidae	UNIFI206-23_r_1.5_s_100	Megachile apennina	0
+5	9	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1560	Apidae,Megachilidae	UNIFI207-23_r_1_s_50	Megachile apennina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1539	Apidae,Megachilidae	UNIFI207-23_r_1_s_100	Megachile apennina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1503	Apidae,Megachilidae	UNIFI207-23_r_1.3_s_50	Megachile apennina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1503	Apidae,Megachilidae	UNIFI207-23_r_1.3_s_100	Megachile apennina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1476	Apidae,Megachilidae	UNIFI207-23_r_1.5_s_50	Megachile apennina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Megachilidae	BLAST	family	656	1476	Apidae,Megachilidae	UNIFI207-23_r_1.5_s_100	Megachile apennina	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1545	Apidae	UNIFI208-23_r_1_s_50	Nomada hungarica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1542	Apidae	UNIFI208-23_r_1_s_100	Nomada hungarica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1542	Apidae	UNIFI208-23_r_1.3_s_50	Nomada hungarica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1542	Apidae	UNIFI208-23_r_1.3_s_100	Nomada hungarica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1542	Apidae	UNIFI208-23_r_1.5_s_50	Nomada hungarica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	657	1542	Apidae	UNIFI208-23_r_1.5_s_100	Nomada hungarica	0
+0	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1551	Apidae	UNIFI209-23_r_1_s_50	Eucera scabiosae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1551	Apidae	UNIFI209-23_r_1_s_100	Eucera scabiosae	0
+0	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1551	Apidae	UNIFI209-23_r_1.3_s_50	Eucera scabiosae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1551	Apidae	UNIFI209-23_r_1.3_s_100	Eucera scabiosae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1536	Apidae	UNIFI209-23_r_1.5_s_50	Eucera scabiosae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1527	Apidae	UNIFI209-23_r_1.5_s_100	Eucera scabiosae	0
+0	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1545	Apidae	UNIFI210-23_r_1_s_50	Eucera scabiosae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1542	Apidae	UNIFI210-23_r_1_s_100	Eucera scabiosae	0
+0	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1545	Apidae	UNIFI210-23_r_1.3_s_50	Eucera scabiosae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1536	Apidae	UNIFI210-23_r_1.3_s_100	Eucera scabiosae	0
+0	4	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1545	Apidae	UNIFI210-23_r_1.5_s_50	Eucera scabiosae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1527	Apidae	UNIFI210-23_r_1.5_s_100	Eucera scabiosae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Lycaenidae	BLAST	family	657	1530	Lycaenidae	UNIFI211-23_r_1_s_50	Polyommatus dolus virgilia	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Lycaenidae	BLAST	family	657	1530	Lycaenidae	UNIFI211-23_r_1_s_100	Polyommatus dolus virgilia	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Lycaenidae	BLAST	family	657	1530	Lycaenidae	UNIFI211-23_r_1.3_s_50	Polyommatus dolus virgilia	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Lycaenidae	BLAST	family	657	1530	Lycaenidae	UNIFI211-23_r_1.3_s_100	Polyommatus dolus virgilia	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Lycaenidae	BLAST	family	657	1530	Lycaenidae	UNIFI211-23_r_1.5_s_50	Polyommatus dolus virgilia	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Lycaenidae	BLAST	family	657	1530	Lycaenidae	UNIFI211-23_r_1.5_s_100	Polyommatus dolus virgilia	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Lycaenidae	BLAST	family	657	1530	Lycaenidae	UNIFI212-23_r_1_s_50	Polyommatus dolus virgilia	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Lycaenidae	BLAST	family	657	1530	Lycaenidae	UNIFI212-23_r_1_s_100	Polyommatus dolus virgilia	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Lycaenidae	BLAST	family	657	1530	Lycaenidae	UNIFI212-23_r_1.3_s_50	Polyommatus dolus virgilia	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Lycaenidae	BLAST	family	657	1530	Lycaenidae	UNIFI212-23_r_1.3_s_100	Polyommatus dolus virgilia	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Lycaenidae	BLAST	family	657	1530	Lycaenidae	UNIFI212-23_r_1.5_s_50	Polyommatus dolus virgilia	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Lycaenidae	BLAST	family	657	1530	Lycaenidae	UNIFI212-23_r_1.5_s_100	Polyommatus dolus virgilia	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Lycaenidae	BLAST	family	657	1530	Lycaenidae	UNIFI213-23_r_1_s_50	Polyommatus dolus virgilia	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Lycaenidae	BLAST	family	657	1530	Lycaenidae	UNIFI213-23_r_1_s_100	Polyommatus dolus virgilia	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Lycaenidae	BLAST	family	657	1530	Lycaenidae	UNIFI213-23_r_1.3_s_50	Polyommatus dolus virgilia	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Lycaenidae	BLAST	family	657	1530	Lycaenidae	UNIFI213-23_r_1.3_s_100	Polyommatus dolus virgilia	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Lycaenidae	BLAST	family	657	1530	Lycaenidae	UNIFI213-23_r_1.5_s_50	Polyommatus dolus virgilia	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Lycaenidae	BLAST	family	657	1530	Lycaenidae	UNIFI213-23_r_1.5_s_100	Polyommatus dolus virgilia	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	657	1530	Nymphalidae	UNIFI214-23_r_1_s_50	Coenonympha macromma	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	657	1530	Nymphalidae	UNIFI214-23_r_1_s_100	Coenonympha macromma	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	657	1530	Nymphalidae	UNIFI214-23_r_1.3_s_50	Coenonympha macromma	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	657	1530	Nymphalidae	UNIFI214-23_r_1.3_s_100	Coenonympha macromma	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	657	1530	Nymphalidae	UNIFI214-23_r_1.5_s_50	Coenonympha macromma	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	657	1530	Nymphalidae	UNIFI214-23_r_1.5_s_100	Coenonympha macromma	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	657	1530	Nymphalidae	UNIFI215-23_r_1_s_50	Coenonympha macromma	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	657	1530	Nymphalidae	UNIFI215-23_r_1_s_100	Coenonympha macromma	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	657	1530	Nymphalidae	UNIFI215-23_r_1.3_s_50	Coenonympha macromma	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	657	1530	Nymphalidae	UNIFI215-23_r_1.3_s_100	Coenonympha macromma	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	657	1530	Nymphalidae	UNIFI215-23_r_1.5_s_50	Coenonympha macromma	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	657	1530	Nymphalidae	UNIFI215-23_r_1.5_s_100	Coenonympha macromma	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	657	1530	Nymphalidae	UNIFI216-23_r_1_s_50	Coenonympha macromma	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	657	1530	Nymphalidae	UNIFI216-23_r_1_s_100	Coenonympha macromma	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	657	1530	Nymphalidae	UNIFI216-23_r_1.3_s_50	Coenonympha macromma	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	657	1530	Nymphalidae	UNIFI216-23_r_1.3_s_100	Coenonympha macromma	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	657	1530	Nymphalidae	UNIFI216-23_r_1.5_s_50	Coenonympha macromma	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	657	1530	Nymphalidae	UNIFI216-23_r_1.5_s_100	Coenonympha macromma	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	656	1530	Nymphalidae	UNIFI217-23_r_1_s_50	Hipparchia blachieri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	656	1530	Nymphalidae	UNIFI217-23_r_1_s_100	Hipparchia blachieri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	656	1530	Nymphalidae	UNIFI217-23_r_1.3_s_50	Hipparchia blachieri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	656	1530	Nymphalidae	UNIFI217-23_r_1.3_s_100	Hipparchia blachieri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	656	1530	Nymphalidae	UNIFI217-23_r_1.5_s_50	Hipparchia blachieri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	656	1530	Nymphalidae	UNIFI217-23_r_1.5_s_100	Hipparchia blachieri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	656	1530	Nymphalidae	UNIFI218-23_r_1_s_50	Hipparchia blachieri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	656	1530	Nymphalidae	UNIFI218-23_r_1_s_100	Hipparchia blachieri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	656	1530	Nymphalidae	UNIFI218-23_r_1.3_s_50	Hipparchia blachieri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	656	1530	Nymphalidae	UNIFI218-23_r_1.3_s_100	Hipparchia blachieri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	656	1530	Nymphalidae	UNIFI218-23_r_1.5_s_50	Hipparchia blachieri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	656	1530	Nymphalidae	UNIFI218-23_r_1.5_s_100	Hipparchia blachieri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	656	1530	Nymphalidae	UNIFI219-23_r_1_s_50	Hipparchia blachieri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	656	1530	Nymphalidae	UNIFI219-23_r_1_s_100	Hipparchia blachieri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	656	1530	Nymphalidae	UNIFI219-23_r_1.3_s_50	Hipparchia blachieri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	656	1530	Nymphalidae	UNIFI219-23_r_1.3_s_100	Hipparchia blachieri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	656	1530	Nymphalidae	UNIFI219-23_r_1.5_s_50	Hipparchia blachieri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nymphalidae	BLAST	family	656	1530	Nymphalidae	UNIFI219-23_r_1.5_s_100	Hipparchia blachieri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Limacodidae,Zygaenidae,Noctuidae,Crambidae	UNIFI220-23_r_1_s_50	Zygaena lavandulae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Limacodidae,Zygaenidae,Noctuidae,Crambidae	UNIFI220-23_r_1_s_100	Zygaena lavandulae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Limacodidae,Zygaenidae,Noctuidae,Crambidae	UNIFI220-23_r_1.3_s_50	Zygaena lavandulae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Limacodidae,Zygaenidae,Noctuidae,Crambidae	UNIFI220-23_r_1.3_s_100	Zygaena lavandulae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Limacodidae,Zygaenidae,Noctuidae,Crambidae	UNIFI220-23_r_1.5_s_50	Zygaena lavandulae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Limacodidae,Zygaenidae,Noctuidae,Crambidae	UNIFI220-23_r_1.5_s_100	Zygaena lavandulae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	UNIFI221-23_r_1_s_50	Zygaena lavandulae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	UNIFI221-23_r_1_s_100	Zygaena lavandulae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	UNIFI221-23_r_1.3_s_50	Zygaena lavandulae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	UNIFI221-23_r_1.3_s_100	Zygaena lavandulae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	UNIFI221-23_r_1.5_s_50	Zygaena lavandulae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	UNIFI221-23_r_1.5_s_100	Zygaena lavandulae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Limacodidae,Zygaenidae,Noctuidae,Crambidae	UNIFI222-23_r_1_s_50	Zygaena lavandulae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Limacodidae,Zygaenidae,Noctuidae,Crambidae	UNIFI222-23_r_1_s_100	Zygaena lavandulae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Limacodidae,Zygaenidae,Noctuidae,Crambidae	UNIFI222-23_r_1.3_s_50	Zygaena lavandulae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Limacodidae,Zygaenidae,Noctuidae,Crambidae	UNIFI222-23_r_1.3_s_100	Zygaena lavandulae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Limacodidae,Zygaenidae,Noctuidae,Crambidae	UNIFI222-23_r_1.5_s_50	Zygaena lavandulae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Limacodidae,Zygaenidae,Noctuidae,Crambidae	UNIFI222-23_r_1.5_s_100	Zygaena lavandulae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Geometridae	UNIFI223-23_r_1_s_50	Zygaena occitanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Geometridae	UNIFI223-23_r_1_s_100	Zygaena occitanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Geometridae	UNIFI223-23_r_1.3_s_50	Zygaena occitanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Geometridae	UNIFI223-23_r_1.3_s_100	Zygaena occitanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Geometridae	UNIFI223-23_r_1.5_s_50	Zygaena occitanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Geometridae	UNIFI223-23_r_1.5_s_100	Zygaena occitanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Geometridae	UNIFI224-23_r_1_s_50	Zygaena occitanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Geometridae	UNIFI224-23_r_1_s_100	Zygaena occitanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Geometridae	UNIFI224-23_r_1.3_s_50	Zygaena occitanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Geometridae	UNIFI224-23_r_1.3_s_100	Zygaena occitanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Geometridae	UNIFI224-23_r_1.5_s_50	Zygaena occitanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Geometridae	UNIFI224-23_r_1.5_s_100	Zygaena occitanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Geometridae,Hyblaeidae	UNIFI225-23_r_1_s_50	Zygaena occitanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Geometridae,Hyblaeidae	UNIFI225-23_r_1_s_100	Zygaena occitanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Geometridae,Hyblaeidae	UNIFI225-23_r_1.3_s_50	Zygaena occitanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Geometridae,Hyblaeidae	UNIFI225-23_r_1.3_s_100	Zygaena occitanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Geometridae,Hyblaeidae	UNIFI225-23_r_1.5_s_50	Zygaena occitanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Geometridae,Hyblaeidae	UNIFI225-23_r_1.5_s_100	Zygaena occitanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	UNIFI226-23_r_1_s_50	Zygaena oxytropis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	UNIFI226-23_r_1_s_100	Zygaena oxytropis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	UNIFI226-23_r_1.3_s_50	Zygaena oxytropis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	UNIFI226-23_r_1.3_s_100	Zygaena oxytropis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	UNIFI226-23_r_1.5_s_50	Zygaena oxytropis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	UNIFI226-23_r_1.5_s_100	Zygaena oxytropis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	UNIFI227-23_r_1_s_50	Zygaena oxytropis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	UNIFI227-23_r_1_s_100	Zygaena oxytropis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	UNIFI227-23_r_1.3_s_50	Zygaena oxytropis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	UNIFI227-23_r_1.3_s_100	Zygaena oxytropis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	UNIFI227-23_r_1.5_s_50	Zygaena oxytropis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	UNIFI227-23_r_1.5_s_100	Zygaena oxytropis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	UNIFI228-23_r_1_s_50	Zygaena oxytropis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	UNIFI228-23_r_1_s_100	Zygaena oxytropis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	UNIFI228-23_r_1.3_s_50	Zygaena oxytropis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	UNIFI228-23_r_1.3_s_100	Zygaena oxytropis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	UNIFI228-23_r_1.5_s_50	Zygaena oxytropis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	UNIFI228-23_r_1.5_s_100	Zygaena oxytropis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	UNIFI229-23_r_1_s_50	Zygaena sarpedon	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	UNIFI229-23_r_1_s_100	Zygaena sarpedon	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	UNIFI229-23_r_1.3_s_50	Zygaena sarpedon	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	UNIFI229-23_r_1.3_s_100	Zygaena sarpedon	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	UNIFI229-23_r_1.5_s_50	Zygaena sarpedon	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	UNIFI229-23_r_1.5_s_100	Zygaena sarpedon	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	UNIFI230-23_r_1_s_50	Zygaena sarpedon	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	UNIFI230-23_r_1_s_100	Zygaena sarpedon	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	UNIFI230-23_r_1.3_s_50	Zygaena sarpedon	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	UNIFI230-23_r_1.3_s_100	Zygaena sarpedon	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	UNIFI230-23_r_1.5_s_50	Zygaena sarpedon	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	UNIFI230-23_r_1.5_s_100	Zygaena sarpedon	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	UNIFI231-23_r_1_s_50	Zygaena sarpedon	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	UNIFI231-23_r_1_s_100	Zygaena sarpedon	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	UNIFI231-23_r_1.3_s_50	Zygaena sarpedon	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	UNIFI231-23_r_1.3_s_100	Zygaena sarpedon	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	UNIFI231-23_r_1.5_s_50	Zygaena sarpedon	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	UNIFI231-23_r_1.5_s_100	Zygaena sarpedon	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI232-23_r_1_s_50	Chortopodisma cobellii	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae,Dericorythidae	UNIFI232-23_r_1_s_100	Chortopodisma cobellii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae,Dericorythidae	UNIFI232-23_r_1.3_s_50	Chortopodisma cobellii	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae,Dericorythidae	UNIFI232-23_r_1.3_s_100	Chortopodisma cobellii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae,Dericorythidae	UNIFI232-23_r_1.5_s_50	Chortopodisma cobellii	0
+0	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae,Dericorythidae	UNIFI232-23_r_1.5_s_100	Chortopodisma cobellii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae,Dericorythidae	UNIFI233-23_r_1_s_50	Chortopodisma cobellii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae,Dericorythidae	UNIFI233-23_r_1_s_100	Chortopodisma cobellii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae,Dericorythidae	UNIFI233-23_r_1.3_s_50	Chortopodisma cobellii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae,Dericorythidae	UNIFI233-23_r_1.3_s_100	Chortopodisma cobellii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae,Dericorythidae	UNIFI233-23_r_1.5_s_50	Chortopodisma cobellii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae,Dericorythidae	UNIFI233-23_r_1.5_s_100	Chortopodisma cobellii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI234-23_r_1_s_50	Italopodisma acuminata marsicana	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI234-23_r_1_s_100	Italopodisma acuminata marsicana	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI234-23_r_1.3_s_50	Italopodisma acuminata marsicana	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI234-23_r_1.3_s_100	Italopodisma acuminata marsicana	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI234-23_r_1.5_s_50	Italopodisma acuminata marsicana	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI234-23_r_1.5_s_100	Italopodisma acuminata marsicana	0
+2	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI235-23_r_1_s_50	Italopodisma acuminata marsicana	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI235-23_r_1_s_100	Italopodisma acuminata marsicana	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI235-23_r_1.3_s_50	Italopodisma acuminata marsicana	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI235-23_r_1.3_s_100	Italopodisma acuminata marsicana	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI235-23_r_1.5_s_50	Italopodisma acuminata marsicana	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI235-23_r_1.5_s_100	Italopodisma acuminata marsicana	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI236-23_r_1_s_50	Italopodisma acuminata acuminata	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI236-23_r_1_s_100	Italopodisma acuminata acuminata	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI236-23_r_1.3_s_50	Italopodisma acuminata acuminata	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI236-23_r_1.3_s_100	Italopodisma acuminata acuminata	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI236-23_r_1.5_s_50	Italopodisma acuminata acuminata	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI236-23_r_1.5_s_100	Italopodisma acuminata acuminata	0
+2	4	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI237-23_r_1_s_50	Italopodisma fiscellana	0
+2	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI237-23_r_1_s_100	Italopodisma fiscellana	0
+2	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI237-23_r_1.3_s_50	Italopodisma fiscellana	0
+2	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI237-23_r_1.3_s_100	Italopodisma fiscellana	0
+2	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI237-23_r_1.5_s_50	Italopodisma fiscellana	0
+2	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI237-23_r_1.5_s_100	Italopodisma fiscellana	0
+1	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI238-23_r_1_s_50	Italopodisma fiscellana	0
+1	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI238-23_r_1_s_100	Italopodisma fiscellana	0
+1	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI238-23_r_1.3_s_50	Italopodisma fiscellana	0
+1	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI238-23_r_1.3_s_100	Italopodisma fiscellana	0
+1	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI238-23_r_1.5_s_50	Italopodisma fiscellana	0
+1	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI238-23_r_1.5_s_100	Italopodisma fiscellana	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI239-23_r_1_s_50	Italopodisma fiscellana	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI239-23_r_1_s_100	Italopodisma fiscellana	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI239-23_r_1.3_s_50	Italopodisma fiscellana	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI239-23_r_1.3_s_100	Italopodisma fiscellana	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI239-23_r_1.5_s_50	Italopodisma fiscellana	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI239-23_r_1.5_s_100	Italopodisma fiscellana	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI240-23_r_1_s_50	Italopodisma samnitica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI240-23_r_1_s_100	Italopodisma samnitica	0
+0	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI240-23_r_1.3_s_50	Italopodisma samnitica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI240-23_r_1.3_s_100	Italopodisma samnitica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI240-23_r_1.5_s_50	Italopodisma samnitica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI240-23_r_1.5_s_100	Italopodisma samnitica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI241-23_r_1_s_50	Italopodisma samnitica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI241-23_r_1_s_100	Italopodisma samnitica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI241-23_r_1.3_s_50	Italopodisma samnitica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI241-23_r_1.3_s_100	Italopodisma samnitica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI241-23_r_1.5_s_50	Italopodisma samnitica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI241-23_r_1.5_s_100	Italopodisma samnitica	0
+1	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI242-23_r_1_s_50	Italopodisma samnitica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI242-23_r_1_s_100	Italopodisma samnitica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI242-23_r_1.3_s_50	Italopodisma samnitica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI242-23_r_1.3_s_100	Italopodisma samnitica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI242-23_r_1.5_s_50	Italopodisma samnitica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI242-23_r_1.5_s_100	Italopodisma samnitica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI243-23_r_1_s_50	Italopodisma costae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI243-23_r_1_s_100	Italopodisma costae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI243-23_r_1.3_s_50	Italopodisma costae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI243-23_r_1.3_s_100	Italopodisma costae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI243-23_r_1.5_s_50	Italopodisma costae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI243-23_r_1.5_s_100	Italopodisma costae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI244-23_r_1_s_50	Italopodisma costae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI244-23_r_1_s_100	Italopodisma costae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI244-23_r_1.3_s_50	Italopodisma costae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI244-23_r_1.3_s_100	Italopodisma costae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI244-23_r_1.5_s_50	Italopodisma costae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI244-23_r_1.5_s_100	Italopodisma costae	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI245-23_r_1_s_50	Italopodisma costae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI245-23_r_1_s_100	Italopodisma costae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI245-23_r_1.3_s_50	Italopodisma costae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI245-23_r_1.3_s_100	Italopodisma costae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI245-23_r_1.5_s_50	Italopodisma costae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI245-23_r_1.5_s_100	Italopodisma costae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI246-23_r_1_s_50	Italopodisma ebneri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI246-23_r_1_s_100	Italopodisma ebneri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI246-23_r_1.3_s_50	Italopodisma ebneri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI246-23_r_1.3_s_100	Italopodisma ebneri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI246-23_r_1.5_s_50	Italopodisma ebneri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI246-23_r_1.5_s_100	Italopodisma ebneri	0
+0	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI247-23_r_1_s_50	Italopodisma ebneri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI247-23_r_1_s_100	Italopodisma ebneri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI247-23_r_1.3_s_50	Italopodisma ebneri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI247-23_r_1.3_s_100	Italopodisma ebneri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI247-23_r_1.5_s_50	Italopodisma ebneri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI247-23_r_1.5_s_100	Italopodisma ebneri	0
+3	4	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI248-23_r_1_s_50	Italopodisma lagrecai	0
+2	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI248-23_r_1_s_100	Italopodisma lagrecai	0
+2	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI248-23_r_1.3_s_50	Italopodisma lagrecai	0
+2	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI248-23_r_1.3_s_100	Italopodisma lagrecai	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI248-23_r_1.5_s_50	Italopodisma lagrecai	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI248-23_r_1.5_s_100	Italopodisma lagrecai	0
+2	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI249-23_r_1_s_50	Italopodisma lagrecai	0
+2	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI249-23_r_1_s_100	Italopodisma lagrecai	0
+2	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI249-23_r_1.3_s_50	Italopodisma lagrecai	0
+2	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI249-23_r_1.3_s_100	Italopodisma lagrecai	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI249-23_r_1.5_s_50	Italopodisma lagrecai	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI249-23_r_1.5_s_100	Italopodisma lagrecai	0
+2	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI250-23_r_1_s_50	Italopodisma lagrecai	0
+2	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI250-23_r_1_s_100	Italopodisma lagrecai	0
+2	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI250-23_r_1.3_s_50	Italopodisma lagrecai	0
+2	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI250-23_r_1.3_s_100	Italopodisma lagrecai	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI250-23_r_1.5_s_50	Italopodisma lagrecai	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI250-23_r_1.5_s_100	Italopodisma lagrecai	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI251-23_r_1_s_50	Italopodisma trapezoidalis curvula	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI251-23_r_1_s_100	Italopodisma trapezoidalis curvula	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI251-23_r_1.3_s_50	Italopodisma trapezoidalis curvula	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI251-23_r_1.3_s_100	Italopodisma trapezoidalis curvula	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI251-23_r_1.5_s_50	Italopodisma trapezoidalis curvula	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI251-23_r_1.5_s_100	Italopodisma trapezoidalis curvula	0
+3	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI252-23_r_1_s_50	Italopodisma trapezoidalis trapezoidalis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI252-23_r_1_s_100	Italopodisma trapezoidalis trapezoidalis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI252-23_r_1.3_s_50	Italopodisma trapezoidalis trapezoidalis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI252-23_r_1.3_s_100	Italopodisma trapezoidalis trapezoidalis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI252-23_r_1.5_s_50	Italopodisma trapezoidalis trapezoidalis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI252-23_r_1.5_s_100	Italopodisma trapezoidalis trapezoidalis	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI253-23_r_1_s_50	Italopodisma trapezoidalis aprutiana	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI253-23_r_1_s_100	Italopodisma trapezoidalis aprutiana	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI253-23_r_1.3_s_50	Italopodisma trapezoidalis aprutiana	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI253-23_r_1.3_s_100	Italopodisma trapezoidalis aprutiana	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI253-23_r_1.5_s_50	Italopodisma trapezoidalis aprutiana	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI253-23_r_1.5_s_100	Italopodisma trapezoidalis aprutiana	0
+4	4	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI254-23_r_1_s_50	Miramella formosanta	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI254-23_r_1_s_100	Miramella formosanta	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI254-23_r_1.3_s_50	Miramella formosanta	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI254-23_r_1.3_s_100	Miramella formosanta	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI254-23_r_1.5_s_50	Miramella formosanta	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI254-23_r_1.5_s_100	Miramella formosanta	0
+2	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI255-23_r_1_s_50	Miramella formosanta	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI255-23_r_1_s_100	Miramella formosanta	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI255-23_r_1.3_s_50	Miramella formosanta	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI255-23_r_1.3_s_100	Miramella formosanta	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI255-23_r_1.5_s_50	Miramella formosanta	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI255-23_r_1.5_s_100	Miramella formosanta	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI256-23_r_1_s_50	Odontopodisma decipiens	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI256-23_r_1_s_100	Odontopodisma decipiens	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI256-23_r_1.3_s_50	Odontopodisma decipiens	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI256-23_r_1.3_s_100	Odontopodisma decipiens	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI256-23_r_1.5_s_50	Odontopodisma decipiens	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI256-23_r_1.5_s_100	Odontopodisma decipiens	0
+3	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI257-23_r_1_s_50	Odontopodisma decipiens	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI257-23_r_1_s_100	Odontopodisma decipiens	0
+1	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI257-23_r_1.3_s_50	Odontopodisma decipiens	0
+0	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI257-23_r_1.3_s_100	Odontopodisma decipiens	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI257-23_r_1.5_s_50	Odontopodisma decipiens	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1539	Acrididae	UNIFI257-23_r_1.5_s_100	Odontopodisma decipiens	0
+0	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1533	Acrididae	UNIFI258-23_r_1_s_50	Oedipoda germanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1533	Acrididae	UNIFI258-23_r_1_s_100	Oedipoda germanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1533	Acrididae	UNIFI258-23_r_1.3_s_50	Oedipoda germanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1533	Acrididae	UNIFI258-23_r_1.3_s_100	Oedipoda germanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1533	Acrididae	UNIFI258-23_r_1.5_s_50	Oedipoda germanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1533	Acrididae	UNIFI258-23_r_1.5_s_100	Oedipoda germanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1533	Acrididae	UNIFI259-23_r_1_s_50	Oedipoda germanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1530	Acrididae	UNIFI259-23_r_1_s_100	Oedipoda germanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1533	Acrididae	UNIFI259-23_r_1.3_s_50	Oedipoda germanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1530	Acrididae	UNIFI259-23_r_1.3_s_100	Oedipoda germanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1533	Acrididae	UNIFI259-23_r_1.5_s_50	Oedipoda germanica	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1530	Acrididae	UNIFI259-23_r_1.5_s_100	Oedipoda germanica	0
+4	7	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI260-23_r_1_s_50	Podisma dechambrei	0
+1	4	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI260-23_r_1_s_100	Podisma dechambrei	0
+2	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI260-23_r_1.3_s_50	Podisma dechambrei	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI260-23_r_1.3_s_100	Podisma dechambrei	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI260-23_r_1.5_s_50	Podisma dechambrei	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI260-23_r_1.5_s_100	Podisma dechambrei	0
+2	5	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI261-23_r_1_s_50	Podisma dechambrei	0
+1	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI261-23_r_1_s_100	Podisma dechambrei	0
+1	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI261-23_r_1.3_s_50	Podisma dechambrei	0
+1	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI261-23_r_1.3_s_100	Podisma dechambrei	0
+1	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI261-23_r_1.5_s_50	Podisma dechambrei	0
+1	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI261-23_r_1.5_s_100	Podisma dechambrei	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI262-23_r_1_s_50	Podisma emiliae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI262-23_r_1_s_100	Podisma emiliae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI262-23_r_1.3_s_50	Podisma emiliae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI262-23_r_1.3_s_100	Podisma emiliae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI262-23_r_1.5_s_50	Podisma emiliae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI262-23_r_1.5_s_100	Podisma emiliae	0
+4	6	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI263-23_r_1_s_50	Podisma emiliae	0
+1	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI263-23_r_1_s_100	Podisma emiliae	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI263-23_r_1.3_s_50	Podisma emiliae	0
+1	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI263-23_r_1.3_s_100	Podisma emiliae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI263-23_r_1.5_s_50	Podisma emiliae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI263-23_r_1.5_s_100	Podisma emiliae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI264-23_r_1_s_50	Podisma goidanichi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI264-23_r_1_s_100	Podisma goidanichi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI264-23_r_1.3_s_50	Podisma goidanichi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI264-23_r_1.3_s_100	Podisma goidanichi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI264-23_r_1.5_s_50	Podisma goidanichi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI264-23_r_1.5_s_100	Podisma goidanichi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI265-23_r_1_s_50	Podisma goidanichi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI265-23_r_1_s_100	Podisma goidanichi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI265-23_r_1.3_s_50	Podisma goidanichi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI265-23_r_1.3_s_100	Podisma goidanichi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI265-23_r_1.5_s_50	Podisma goidanichi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI265-23_r_1.5_s_100	Podisma goidanichi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI266-23_r_1_s_50	Podisma silvestrii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI266-23_r_1_s_100	Podisma silvestrii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI266-23_r_1.3_s_50	Podisma silvestrii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI266-23_r_1.3_s_100	Podisma silvestrii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI266-23_r_1.5_s_50	Podisma silvestrii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI266-23_r_1.5_s_100	Podisma silvestrii	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI267-23_r_1_s_50	Podisma silvestrii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI267-23_r_1_s_100	Podisma silvestrii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI267-23_r_1.3_s_50	Podisma silvestrii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI267-23_r_1.3_s_100	Podisma silvestrii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI267-23_r_1.5_s_50	Podisma silvestrii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI267-23_r_1.5_s_100	Podisma silvestrii	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI268-23_r_1_s_50	Podisma silvestrii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI268-23_r_1_s_100	Podisma silvestrii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI268-23_r_1.3_s_50	Podisma silvestrii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI268-23_r_1.3_s_100	Podisma silvestrii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI268-23_r_1.5_s_50	Podisma silvestrii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	657	1539	Acrididae	UNIFI268-23_r_1.5_s_100	Podisma silvestrii	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	657	1530	Syrphidae	UNIFI269-23_r_1_s_50	Callicera aurata	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	657	1530	Syrphidae	UNIFI269-23_r_1_s_100	Callicera aurata	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	657	1530	Syrphidae	UNIFI269-23_r_1.3_s_50	Callicera aurata	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	657	1530	Syrphidae	UNIFI269-23_r_1.3_s_100	Callicera aurata	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	657	1530	Syrphidae	UNIFI269-23_r_1.5_s_50	Callicera aurata	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	657	1530	Syrphidae	UNIFI269-23_r_1.5_s_100	Callicera aurata	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	657	1530	Syrphidae	UNIFI270-23_r_1_s_50	Callicera aurata	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	657	1530	Syrphidae	UNIFI270-23_r_1_s_100	Callicera aurata	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	657	1530	Syrphidae	UNIFI270-23_r_1.3_s_50	Callicera aurata	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	657	1530	Syrphidae	UNIFI270-23_r_1.3_s_100	Callicera aurata	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	657	1530	Syrphidae	UNIFI270-23_r_1.5_s_50	Callicera aurata	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Syrphidae	BLAST	family	657	1530	Syrphidae	UNIFI270-23_r_1.5_s_100	Callicera aurata	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI271-23_r_1_s_50	Stenobothrus apenninus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI271-23_r_1_s_100	Stenobothrus apenninus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI271-23_r_1.3_s_50	Stenobothrus apenninus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI271-23_r_1.3_s_100	Stenobothrus apenninus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI271-23_r_1.5_s_50	Stenobothrus apenninus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI271-23_r_1.5_s_100	Stenobothrus apenninus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI272-23_r_1_s_50	Stenobothrus apenninus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI272-23_r_1_s_100	Stenobothrus apenninus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI272-23_r_1.3_s_50	Stenobothrus apenninus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI272-23_r_1.3_s_100	Stenobothrus apenninus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI272-23_r_1.5_s_50	Stenobothrus apenninus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI272-23_r_1.5_s_100	Stenobothrus apenninus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI273-23_r_1_s_50	Stenobothrus cotticus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI273-23_r_1_s_100	Stenobothrus cotticus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI273-23_r_1.3_s_50	Stenobothrus cotticus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI273-23_r_1.3_s_100	Stenobothrus cotticus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI273-23_r_1.5_s_50	Stenobothrus cotticus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI273-23_r_1.5_s_100	Stenobothrus cotticus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI274-23_r_1_s_50	Stenobothrus cotticus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI274-23_r_1_s_100	Stenobothrus cotticus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI274-23_r_1.3_s_50	Stenobothrus cotticus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI274-23_r_1.3_s_100	Stenobothrus cotticus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI274-23_r_1.5_s_50	Stenobothrus cotticus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI274-23_r_1.5_s_100	Stenobothrus cotticus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI275-23_r_1_s_50	Stenobothrus fischeri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI275-23_r_1_s_100	Stenobothrus fischeri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI275-23_r_1.3_s_50	Stenobothrus fischeri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI275-23_r_1.3_s_100	Stenobothrus fischeri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI275-23_r_1.5_s_50	Stenobothrus fischeri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI275-23_r_1.5_s_100	Stenobothrus fischeri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI276-23_r_1_s_50	Stenobothrus fischeri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI276-23_r_1_s_100	Stenobothrus fischeri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI276-23_r_1.3_s_50	Stenobothrus fischeri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI276-23_r_1.3_s_100	Stenobothrus fischeri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI276-23_r_1.5_s_50	Stenobothrus fischeri	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Acrididae	BLAST	family	656	1542	Acrididae	UNIFI276-23_r_1.5_s_100	Stenobothrus fischeri	0
+5	14	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae	UNIFI277-23_r_1_s_50	Ephippiger terrestris	0
+3	8	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae	UNIFI277-23_r_1_s_100	Ephippiger terrestris	0
+3	10	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae	UNIFI277-23_r_1.3_s_50	Ephippiger terrestris	0
+1	6	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae	UNIFI277-23_r_1.3_s_100	Ephippiger terrestris	0
+2	9	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae	UNIFI277-23_r_1.5_s_50	Ephippiger terrestris	0
+1	4	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae	UNIFI277-23_r_1.5_s_100	Ephippiger terrestris	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae	UNIFI278-23_r_1_s_50	Ephippiger terrestris	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae	UNIFI278-23_r_1_s_100	Ephippiger terrestris	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae	UNIFI278-23_r_1.3_s_50	Ephippiger terrestris	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae	UNIFI278-23_r_1.3_s_100	Ephippiger terrestris	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae	UNIFI278-23_r_1.5_s_50	Ephippiger terrestris	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae	UNIFI278-23_r_1.5_s_100	Ephippiger terrestris	0
+1	5	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae	UNIFI279-23_r_1_s_50	Ephippiger carlottae	0
+1	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae	UNIFI279-23_r_1_s_100	Ephippiger carlottae	0
+0	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae	UNIFI279-23_r_1.3_s_50	Ephippiger carlottae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae	UNIFI279-23_r_1.3_s_100	Ephippiger carlottae	0
+0	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae	UNIFI279-23_r_1.5_s_50	Ephippiger carlottae	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae	UNIFI279-23_r_1.5_s_100	Ephippiger carlottae	0
+1	5	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae,Lonchodidae	UNIFI280-23_r_1_s_50	Ephippiger ruffoi	0
+1	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae,Lonchodidae	UNIFI280-23_r_1_s_100	Ephippiger ruffoi	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae,Lonchodidae	UNIFI280-23_r_1.3_s_50	Ephippiger ruffoi	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae,Lonchodidae	UNIFI280-23_r_1.3_s_100	Ephippiger ruffoi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae,Lonchodidae	UNIFI280-23_r_1.5_s_50	Ephippiger ruffoi	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae,Lonchodidae	UNIFI280-23_r_1.5_s_100	Ephippiger ruffoi	0
+2	3	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae,Lonchodidae	UNIFI281-23_r_1_s_50	Ephippiger ruffoi	0
+1	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae,Lonchodidae	UNIFI281-23_r_1_s_100	Ephippiger ruffoi	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae,Lonchodidae	UNIFI281-23_r_1.3_s_50	Ephippiger ruffoi	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae,Lonchodidae	UNIFI281-23_r_1.3_s_100	Ephippiger ruffoi	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae,Lonchodidae	UNIFI281-23_r_1.5_s_50	Ephippiger ruffoi	0
+1	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1539	Tettigoniidae,Anostostomatidae,Lonchodidae	UNIFI281-23_r_1.5_s_100	Ephippiger ruffoi	0
+1	2	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1533	Tettigoniidae,Anostostomatidae	UNIFI282-23_r_1_s_50	Barbitistes obtusus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1533	Tettigoniidae,Anostostomatidae	UNIFI282-23_r_1_s_100	Barbitistes obtusus	0
+0	1	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1533	Tettigoniidae,Anostostomatidae	UNIFI282-23_r_1.3_s_50	Barbitistes obtusus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1533	Tettigoniidae,Anostostomatidae	UNIFI282-23_r_1.3_s_100	Barbitistes obtusus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1533	Tettigoniidae,Rhaphidophoridae	UNIFI282-23_r_1.5_s_50	Barbitistes obtusus	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1533	Tettigoniidae,Rhaphidophoridae	UNIFI282-23_r_1.5_s_100	Barbitistes obtusus	0
+21	30	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1533	Tettigoniidae,Rhaphidophoridae,Anostostomatidae	UNIFI283-23_r_1_s_50	Barbitistes obtusus	0
+12	18	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1533	Tettigoniidae,Rhaphidophoridae	UNIFI283-23_r_1_s_100	Barbitistes obtusus	0
+7	15	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1533	Tettigoniidae,Rhaphidophoridae	UNIFI283-23_r_1.3_s_50	Barbitistes obtusus	0
+9	17	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1533	Tettigoniidae,Rhaphidophoridae	UNIFI283-23_r_1.3_s_100	Barbitistes obtusus	0
+10	21	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1524	Tettigoniidae,Rhaphidophoridae	UNIFI283-23_r_1.5_s_50	Barbitistes obtusus	0
+10	14	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tettigoniidae	BLAST	family	657	1437	Tettigoniidae,Rhaphidophoridae	UNIFI283-23_r_1.5_s_100	Barbitistes obtusus	0
+7	7	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tetrigidae	BLAST	family	655	1536	Tetrigidae	UNIFI284-23_r_1_s_50	Tetrix depressa	0
+7	7	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tetrigidae	BLAST	family	655	1536	Tetrigidae	UNIFI284-23_r_1_s_100	Tetrix depressa	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tetrigidae	BLAST	family	655	1536	Tetrigidae	UNIFI284-23_r_1.3_s_50	Tetrix depressa	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tetrigidae	BLAST	family	655	1536	Tetrigidae	UNIFI284-23_r_1.3_s_100	Tetrix depressa	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tetrigidae	BLAST	family	655	1536	Tetrigidae	UNIFI284-23_r_1.5_s_50	Tetrix depressa	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tetrigidae	BLAST	family	655	1536	Tetrigidae	UNIFI284-23_r_1.5_s_100	Tetrix depressa	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tetrigidae	BLAST	family	655	1536	Tetrigidae	UNIFI285-23_r_1_s_50	Tetrix depressa	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tetrigidae	BLAST	family	655	1536	Tetrigidae	UNIFI285-23_r_1_s_100	Tetrix depressa	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tetrigidae	BLAST	family	655	1536	Tetrigidae	UNIFI285-23_r_1.3_s_50	Tetrix depressa	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tetrigidae	BLAST	family	655	1536	Tetrigidae	UNIFI285-23_r_1.3_s_100	Tetrix depressa	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tetrigidae	BLAST	family	655	1536	Tetrigidae	UNIFI285-23_r_1.5_s_50	Tetrix depressa	0
+0	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tetrigidae	BLAST	family	655	1536	Tetrigidae	UNIFI285-23_r_1.5_s_100	Tetrix depressa	0
+None	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00423-NC not in BOLD	None	BLAST	family	None	0		BGE00423-NC_r_1_s_50	None	0
+None	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00423-NC not in BOLD	None	BLAST	family	None	0		BGE00423-NC_r_1_s_100	None	0
+None	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00423-NC not in BOLD	None	BLAST	family	None	0		BGE00423-NC_r_1.3_s_50	None	0
+None	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00423-NC not in BOLD	None	BLAST	family	None	0		BGE00423-NC_r_1.3_s_100	None	0
+None	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00423-NC not in BOLD	None	BLAST	family	None	0		BGE00423-NC_r_1.5_s_50	None	0
+None	0	data/BGE00423_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00423-NC not in BOLD	None	BLAST	family	None	0		BGE00423-NC_r_1.5_s_100	None	0

@@ -1,0 +1,577 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+33	140	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	655	1536	Bombycidae,Pyralidae,Geometridae	BGSNL1426-24_r_1_s_50	Synoria antiquella	0
+26	115	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	653	1524	Pyralidae,Crambidae	BGSNL1426-24_r_1_s_100	Synoria antiquella	0
+8	30	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1530	Pyralidae	BGSNL1426-24_r_1.3_s_50	Synoria antiquella	0
+8	46	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1518	Pyralidae,Crambidae,Geometridae	BGSNL1426-24_r_1.3_s_100	Synoria antiquella	0
+18	18	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	642	1455	Pyralidae	BGSNL1426-24_r_1.5_s_50	Synoria antiquella	0
+18	18	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	612	1353	Pyralidae	BGSNL1426-24_r_1.5_s_100	Synoria antiquella	0
+0	1	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1427-24_r_1_s_50	Tsaraphycis mimeticella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1530	Pyralidae	BGSNL1427-24_r_1_s_100	Tsaraphycis mimeticella	0
+0	1	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1427-24_r_1.3_s_50	Tsaraphycis mimeticella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1530	Pyralidae	BGSNL1427-24_r_1.3_s_100	Tsaraphycis mimeticella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1539	Pyralidae	BGSNL1427-24_r_1.5_s_50	Tsaraphycis mimeticella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1530	Pyralidae	BGSNL1427-24_r_1.5_s_100	Tsaraphycis mimeticella	0
+7	12	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	656	1542	Pyralidae	BGSNL1428-24_r_1_s_50	Tsaraphycis mimeticella	0
+7	20	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1428-24_r_1_s_100	Tsaraphycis mimeticella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1428-24_r_1.3_s_50	Tsaraphycis mimeticella	0
+3	3	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1428-24_r_1.3_s_100	Tsaraphycis mimeticella	0
+0	1	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1539	Pyralidae	BGSNL1428-24_r_1.5_s_50	Tsaraphycis mimeticella	0
+3	4	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1539	Pyralidae	BGSNL1428-24_r_1.5_s_100	Tsaraphycis mimeticella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1429-24_r_1_s_50	Tsaraphycis mimeticella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1429-24_r_1_s_100	Tsaraphycis mimeticella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1429-24_r_1.3_s_50	Tsaraphycis mimeticella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1429-24_r_1.3_s_100	Tsaraphycis mimeticella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1429-24_r_1.5_s_50	Tsaraphycis mimeticella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1429-24_r_1.5_s_100	Tsaraphycis mimeticella	0
+0	13	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1530	Pyralidae	BGSNL1430-24_r_1_s_50	Uncinus hispanella	0
+0	10	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1527	Pyralidae	BGSNL1430-24_r_1_s_100	Uncinus hispanella	0
+0	2	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1530	Pyralidae	BGSNL1430-24_r_1.3_s_50	Uncinus hispanella	0
+0	2	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1527	Pyralidae	BGSNL1430-24_r_1.3_s_100	Uncinus hispanella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1530	Pyralidae	BGSNL1430-24_r_1.5_s_50	Uncinus hispanella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1527	Pyralidae	BGSNL1430-24_r_1.5_s_100	Uncinus hispanella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1530	Pyralidae	BGSNL1431-24_r_1_s_50	Uncinus hispanella	0
+0	2	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1527	Pyralidae	BGSNL1431-24_r_1_s_100	Uncinus hispanella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1530	Pyralidae	BGSNL1431-24_r_1.3_s_50	Uncinus hispanella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1527	Pyralidae	BGSNL1431-24_r_1.3_s_100	Uncinus hispanella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1530	Pyralidae	BGSNL1431-24_r_1.5_s_50	Uncinus hispanella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1527	Pyralidae	BGSNL1431-24_r_1.5_s_100	Uncinus hispanella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1527	Pyralidae	BGSNL1432-24_r_1_s_50	Uncinus hispanella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1527	Pyralidae	BGSNL1432-24_r_1_s_100	Uncinus hispanella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1527	Pyralidae	BGSNL1432-24_r_1.3_s_50	Uncinus hispanella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1527	Pyralidae	BGSNL1432-24_r_1.3_s_100	Uncinus hispanella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1527	Pyralidae	BGSNL1432-24_r_1.5_s_50	Uncinus hispanella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1527	Pyralidae	BGSNL1432-24_r_1.5_s_100	Uncinus hispanella	0
+18	75	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	655	1524	Oecophoridae,Nymphalidae	BGSNL1433-24_r_1_s_50	Uncinus thymiella	0
+2	42	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	656	1410	Pyralidae,Geometridae,Alucitidae	BGSNL1433-24_r_1_s_100	Uncinus thymiella	0
+2	16	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1524	Noctuidae,Nolidae,Pyralidae	BGSNL1433-24_r_1.3_s_50	Uncinus thymiella	0
+4	38	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	656	1410	Gelechiidae,Pyralidae,Geometridae	BGSNL1433-24_r_1.3_s_100	Uncinus thymiella	0
+0	2	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1524	Pyralidae	BGSNL1433-24_r_1.5_s_50	Uncinus thymiella	0
+2	2	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1410	Pyralidae	BGSNL1433-24_r_1.5_s_100	Uncinus thymiella	0
+0	8	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1539	Pyralidae	BGSNL1434-24_r_1_s_50	Valdovecaria bradyrrhoella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1527	Gelechiidae,Pyralidae	BGSNL1434-24_r_1_s_100	Valdovecaria bradyrrhoella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1539	Gelechiidae,Pyralidae	BGSNL1434-24_r_1.3_s_50	Valdovecaria bradyrrhoella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1527	Gelechiidae,Pyralidae	BGSNL1434-24_r_1.3_s_100	Valdovecaria bradyrrhoella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1539	Gelechiidae,Pyralidae	BGSNL1434-24_r_1.5_s_50	Valdovecaria bradyrrhoella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1527	Gelechiidae,Pyralidae	BGSNL1434-24_r_1.5_s_100	Valdovecaria bradyrrhoella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1539	Gelechiidae,Pyralidae,Crambidae	BGSNL1435-24_r_1_s_50	Valdovecaria bradyrrhoella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1539	Gelechiidae,Pyralidae	BGSNL1435-24_r_1_s_100	Valdovecaria bradyrrhoella	0
+0	1	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1539	Gelechiidae,Pyralidae	BGSNL1435-24_r_1.3_s_50	Valdovecaria bradyrrhoella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1539	Gelechiidae,Pyralidae	BGSNL1435-24_r_1.3_s_100	Valdovecaria bradyrrhoella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1539	Gelechiidae,Pyralidae	BGSNL1435-24_r_1.5_s_50	Valdovecaria bradyrrhoella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1539	Gelechiidae,Pyralidae	BGSNL1435-24_r_1.5_s_100	Valdovecaria bradyrrhoella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1536	Pyralidae	BGSNL1436-24_r_1_s_50	Valdovecaria bradyrrhoella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1536	Gelechiidae,Pyralidae	BGSNL1436-24_r_1_s_100	Valdovecaria bradyrrhoella	1
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1536	Gelechiidae,Pyralidae	BGSNL1436-24_r_1.3_s_50	Valdovecaria bradyrrhoella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1536	Gelechiidae,Pyralidae	BGSNL1436-24_r_1.3_s_100	Valdovecaria bradyrrhoella	1
+0	1	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1536	Gelechiidae,Pyralidae	BGSNL1436-24_r_1.5_s_50	Valdovecaria bradyrrhoella	1
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1536	Gelechiidae,Pyralidae	BGSNL1436-24_r_1.5_s_100	Valdovecaria bradyrrhoella	1
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1437-24_r_1_s_50	Valdovecaria hispanicella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1437-24_r_1_s_100	Valdovecaria hispanicella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1437-24_r_1.3_s_50	Valdovecaria hispanicella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1437-24_r_1.3_s_100	Valdovecaria hispanicella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1437-24_r_1.5_s_50	Valdovecaria hispanicella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1437-24_r_1.5_s_100	Valdovecaria hispanicella	0
+22	44	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	564	1377	Depressariidae,Noctuidae,Nolidae,Erebidae,Pyralidae	BGSNL1438-24_r_1_s_50	Valdovecaria umbratella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	493	1236	Noctuidae,Nolidae,Pyralidae,Crambidae,Hesperiidae	BGSNL1438-24_r_1_s_100	Valdovecaria umbratella	0
+0	1	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	561	1374	Noctuidae,Nolidae,Pyralidae,Crambidae,Hesperiidae	BGSNL1438-24_r_1.3_s_50	Valdovecaria umbratella	0
+0	1	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	493	1236	Noctuidae,Nolidae,Pyralidae,Crambidae,Hesperiidae	BGSNL1438-24_r_1.3_s_100	Valdovecaria umbratella	0
+0	1	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	520	1260	Depressariidae,Nymphalidae,Pyralidae	BGSNL1438-24_r_1.5_s_50	Valdovecaria umbratella	0
+0	1	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	493	1179	Depressariidae,Nymphalidae,Pyralidae	BGSNL1438-24_r_1.5_s_100	Valdovecaria umbratella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1439-24_r_1_s_50	Valdovecaria umbratella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1439-24_r_1_s_100	Valdovecaria umbratella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1439-24_r_1.3_s_50	Valdovecaria umbratella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1439-24_r_1.3_s_100	Valdovecaria umbratella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1439-24_r_1.5_s_50	Valdovecaria umbratella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1439-24_r_1.5_s_100	Valdovecaria umbratella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1440-24_r_1_s_50	Valdovecaria umbratella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1440-24_r_1_s_100	Valdovecaria umbratella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1440-24_r_1.3_s_50	Valdovecaria umbratella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1440-24_r_1.3_s_100	Valdovecaria umbratella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1440-24_r_1.5_s_50	Valdovecaria umbratella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1542	Pyralidae	BGSNL1440-24_r_1.5_s_100	Valdovecaria umbratella	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1441-24_r_1_s_50	Adscita capitalis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1441-24_r_1_s_100	Adscita capitalis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1441-24_r_1.3_s_50	Adscita capitalis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1441-24_r_1.3_s_100	Adscita capitalis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1527	Zygaenidae	BGSNL1441-24_r_1.5_s_50	Adscita capitalis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1527	Zygaenidae	BGSNL1441-24_r_1.5_s_100	Adscita capitalis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1442-24_r_1_s_50	Adscita capitalis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1442-24_r_1_s_100	Adscita capitalis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1442-24_r_1.3_s_50	Adscita capitalis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1442-24_r_1.3_s_100	Adscita capitalis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1527	Zygaenidae	BGSNL1442-24_r_1.5_s_50	Adscita capitalis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1527	Zygaenidae	BGSNL1442-24_r_1.5_s_100	Adscita capitalis	0
+3	24	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1530	Zygaenidae	BGSNL1443-24_r_1_s_50	Adscita capitalis	0
+13	40	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1443-24_r_1_s_100	Adscita capitalis	0
+0	1	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1443-24_r_1.3_s_50	Adscita capitalis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1512	Zygaenidae	BGSNL1443-24_r_1.3_s_100	Adscita capitalis	0
+0	4	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1482	Zygaenidae	BGSNL1443-24_r_1.5_s_50	Adscita capitalis	0
+1	1	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1464	Zygaenidae	BGSNL1443-24_r_1.5_s_100	Adscita capitalis	0
+1	3	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Gelechiidae,Tortricidae,Nolidae,Crambidae	BGSNL1444-24_r_1_s_50	Artona martini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Gelechiidae,Tortricidae,Nolidae,Crambidae	BGSNL1444-24_r_1_s_100	Artona martini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Gelechiidae,Tortricidae,Nolidae,Crambidae	BGSNL1444-24_r_1.3_s_50	Artona martini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Gelechiidae,Tortricidae,Nolidae,Crambidae	BGSNL1444-24_r_1.3_s_100	Artona martini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Gelechiidae,Tortricidae,Nolidae,Crambidae	BGSNL1444-24_r_1.5_s_50	Artona martini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Gelechiidae,Tortricidae,Nolidae,Crambidae	BGSNL1444-24_r_1.5_s_100	Artona martini	0
+23	47	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1530	Crambidae,Geometridae	BGSNL1445-24_r_1_s_50	Artona martini	0
+30	50	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	655	1530	Depressariidae,Zygaenidae,Nymphalidae,Crambidae,Geometridae	BGSNL1445-24_r_1_s_100	Artona martini	0
+11	15	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Noctuidae	BGSNL1445-24_r_1.3_s_50	Artona martini	0
+7	11	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1530	Noctuidae,Notodontidae,Crambidae,Geometridae	BGSNL1445-24_r_1.3_s_100	Artona martini	0
+5	5	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1509	Gelechiidae,Tortricidae,Noctuidae,Crambidae	BGSNL1445-24_r_1.5_s_50	Artona martini	0
+2	3	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1494	Limacodidae,Noctuidae,Erebidae,Crambidae	BGSNL1445-24_r_1.5_s_100	Artona martini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Gelechiidae,Noctuidae,Nolidae,Euteliidae,Crambidae	BGSNL1446-24_r_1_s_50	Artona martini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Gelechiidae,Noctuidae,Nolidae,Euteliidae,Crambidae	BGSNL1446-24_r_1_s_100	Artona martini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Gelechiidae,Noctuidae,Nolidae,Euteliidae,Crambidae	BGSNL1446-24_r_1.3_s_50	Artona martini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Gelechiidae,Noctuidae,Nolidae,Euteliidae,Crambidae	BGSNL1446-24_r_1.3_s_100	Artona martini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Gelechiidae,Noctuidae,Nolidae,Euteliidae,Crambidae	BGSNL1446-24_r_1.5_s_50	Artona martini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Gelechiidae,Noctuidae,Nolidae,Euteliidae,Crambidae	BGSNL1446-24_r_1.5_s_100	Artona martini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1447-24_r_1_s_50	Jordanita vartianae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1447-24_r_1_s_100	Jordanita vartianae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1447-24_r_1.3_s_50	Jordanita vartianae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1447-24_r_1.3_s_100	Jordanita vartianae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1447-24_r_1.5_s_50	Jordanita vartianae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1447-24_r_1.5_s_100	Jordanita vartianae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1448-24_r_1_s_50	Jordanita vartianae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1448-24_r_1_s_100	Jordanita vartianae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1448-24_r_1.3_s_50	Jordanita vartianae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1448-24_r_1.3_s_100	Jordanita vartianae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1448-24_r_1.5_s_50	Jordanita vartianae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1448-24_r_1.5_s_100	Jordanita vartianae	0
+1	3	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1449-24_r_1_s_50	Jordanita vartianae	0
+8	21	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1518	Oecophoridae,Zygaenidae,Nymphalidae,Crambidae	BGSNL1449-24_r_1_s_100	Jordanita vartianae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae	BGSNL1449-24_r_1.3_s_50	Jordanita vartianae	0
+2	6	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1518	Zygaenidae	BGSNL1449-24_r_1.3_s_100	Jordanita vartianae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	639	1488	Zygaenidae	BGSNL1449-24_r_1.5_s_50	Jordanita vartianae	0
+1	4	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	630	1428	Zygaenidae	BGSNL1449-24_r_1.5_s_100	Jordanita vartianae	0
+8	31	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1530	Yponomeutidae,Plutellidae,Pyralidae,Crambidae,Geometridae	BGSNL1450-24_r_1_s_50	Rhagades predotae	0
+12	38	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1530	Zygaenidae,Nymphalidae,Crambidae	BGSNL1450-24_r_1_s_100	Rhagades predotae	0
+0	1	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Depressariidae,Limacodidae,Zygaenidae,Erebidae,Crambidae	BGSNL1450-24_r_1.3_s_50	Rhagades predotae	0
+7	9	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae,Notodontidae,Erebidae	BGSNL1450-24_r_1.3_s_100	Rhagades predotae	0
+3	3	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Gelechiidae,Zygaenidae,Euteliidae	BGSNL1450-24_r_1.5_s_50	Rhagades predotae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Gelechiidae,Zygaenidae,Euteliidae	BGSNL1450-24_r_1.5_s_100	Rhagades predotae	0
+6	22	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1524	Reduviidae,Zygaenidae,Sphingidae	BGSNL1451-24_r_1_s_50	Rhagades predotae	0
+11	46	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1482	Reduviidae,Tachinidae,Zygaenidae,Sphingidae,Nymphalidae	BGSNL1451-24_r_1_s_100	Rhagades predotae	0
+5	9	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	610	1425	Limacodidae,Lycaenidae,Pyralidae,Crambidae,Geometridae,Mantispidae,Corydalidae	BGSNL1451-24_r_1.3_s_50	Rhagades predotae	0
+5	6	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	538	1227	Limacodidae,Nymphalidae,Geometridae,Corydalidae	BGSNL1451-24_r_1.3_s_100	Rhagades predotae	0
+6	6	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	463	1227	Nymphalidae,Pyralidae,Geometridae	BGSNL1451-24_r_1.5_s_50	Rhagades predotae	0
+2	2	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	515	813	Nymphalidae	BGSNL1451-24_r_1.5_s_100	Rhagades predotae	4
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae,Notodontidae,Euteliidae	BGSNL1452-24_r_1_s_50	Rhagades predotae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae,Notodontidae,Euteliidae	BGSNL1452-24_r_1_s_100	Rhagades predotae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae,Notodontidae,Euteliidae	BGSNL1452-24_r_1.3_s_50	Rhagades predotae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae,Notodontidae,Euteliidae	BGSNL1452-24_r_1.3_s_100	Rhagades predotae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae,Notodontidae,Euteliidae	BGSNL1452-24_r_1.5_s_50	Rhagades predotae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1530	Zygaenidae,Notodontidae,Euteliidae	BGSNL1452-24_r_1.5_s_100	Rhagades predotae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1453-24_r_1_s_50	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1453-24_r_1_s_100	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1453-24_r_1.3_s_50	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1453-24_r_1.3_s_100	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1453-24_r_1.5_s_50	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1453-24_r_1.5_s_100	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1454-24_r_1_s_50	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1454-24_r_1_s_100	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1454-24_r_1.3_s_50	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1454-24_r_1.3_s_100	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1454-24_r_1.5_s_50	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1454-24_r_1.5_s_100	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1455-24_r_1_s_50	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1455-24_r_1_s_100	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1455-24_r_1.3_s_50	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1455-24_r_1.3_s_100	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1455-24_r_1.5_s_50	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1455-24_r_1.5_s_100	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Euteliidae	BGSNL1456-24_r_1_s_50	Zygaena anthyllidis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Euteliidae	BGSNL1456-24_r_1_s_100	Zygaena anthyllidis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Euteliidae	BGSNL1456-24_r_1.3_s_50	Zygaena anthyllidis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Euteliidae	BGSNL1456-24_r_1.3_s_100	Zygaena anthyllidis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1518	Zygaenidae,Noctuidae,Euteliidae	BGSNL1456-24_r_1.5_s_50	Zygaena anthyllidis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1518	Zygaenidae,Noctuidae,Euteliidae	BGSNL1456-24_r_1.5_s_100	Zygaena anthyllidis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Euteliidae	BGSNL1457-24_r_1_s_50	Zygaena anthyllidis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Euteliidae	BGSNL1457-24_r_1_s_100	Zygaena anthyllidis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Euteliidae	BGSNL1457-24_r_1.3_s_50	Zygaena anthyllidis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Euteliidae	BGSNL1457-24_r_1.3_s_100	Zygaena anthyllidis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1527	Zygaenidae,Noctuidae,Euteliidae	BGSNL1457-24_r_1.5_s_50	Zygaena anthyllidis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1527	Zygaenidae,Noctuidae,Euteliidae	BGSNL1457-24_r_1.5_s_100	Zygaena anthyllidis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Euteliidae	BGSNL1458-24_r_1_s_50	Zygaena anthyllidis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Euteliidae	BGSNL1458-24_r_1_s_100	Zygaena anthyllidis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Euteliidae	BGSNL1458-24_r_1.3_s_50	Zygaena anthyllidis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Euteliidae	BGSNL1458-24_r_1.3_s_100	Zygaena anthyllidis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1527	Zygaenidae,Noctuidae,Euteliidae	BGSNL1458-24_r_1.5_s_50	Zygaena anthyllidis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1527	Zygaenidae,Noctuidae,Euteliidae	BGSNL1458-24_r_1.5_s_100	Zygaena anthyllidis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1459-24_r_1_s_50	Zygaena armena	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1459-24_r_1_s_100	Zygaena armena	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1459-24_r_1.3_s_50	Zygaena armena	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1459-24_r_1.3_s_100	Zygaena armena	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1459-24_r_1.5_s_50	Zygaena armena	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1459-24_r_1.5_s_100	Zygaena armena	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1460-24_r_1_s_50	Zygaena armena	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1460-24_r_1_s_100	Zygaena armena	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1460-24_r_1.3_s_50	Zygaena armena	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1460-24_r_1.3_s_100	Zygaena armena	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1460-24_r_1.5_s_50	Zygaena armena	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1460-24_r_1.5_s_100	Zygaena armena	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1461-24_r_1_s_50	Zygaena armena	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1461-24_r_1_s_100	Zygaena armena	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1461-24_r_1.3_s_50	Zygaena armena	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1461-24_r_1.3_s_100	Zygaena armena	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1461-24_r_1.5_s_50	Zygaena armena	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1461-24_r_1.5_s_100	Zygaena armena	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1462-24_r_1_s_50	Zygaena centaureae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1462-24_r_1_s_100	Zygaena centaureae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1462-24_r_1.3_s_50	Zygaena centaureae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1462-24_r_1.3_s_100	Zygaena centaureae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1462-24_r_1.5_s_50	Zygaena centaureae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1462-24_r_1.5_s_100	Zygaena centaureae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1463-24_r_1_s_50	Zygaena centaureae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1463-24_r_1_s_100	Zygaena centaureae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1463-24_r_1.3_s_50	Zygaena centaureae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1463-24_r_1.3_s_100	Zygaena centaureae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1463-24_r_1.5_s_50	Zygaena centaureae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1463-24_r_1.5_s_100	Zygaena centaureae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1464-24_r_1_s_50	Zygaena centaureae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1464-24_r_1_s_100	Zygaena centaureae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1464-24_r_1.3_s_50	Zygaena centaureae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1464-24_r_1.3_s_100	Zygaena centaureae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1464-24_r_1.5_s_50	Zygaena centaureae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1464-24_r_1.5_s_100	Zygaena centaureae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1465-24_r_1_s_50	Zygaena contaminei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1465-24_r_1_s_100	Zygaena contaminei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1465-24_r_1.3_s_50	Zygaena contaminei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1465-24_r_1.3_s_100	Zygaena contaminei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1465-24_r_1.5_s_50	Zygaena contaminei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1465-24_r_1.5_s_100	Zygaena contaminei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1466-24_r_1_s_50	Zygaena contaminei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1466-24_r_1_s_100	Zygaena contaminei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1466-24_r_1.3_s_50	Zygaena contaminei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1466-24_r_1.3_s_100	Zygaena contaminei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1466-24_r_1.5_s_100	Zygaena contaminei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1466-24_r_1.5_s_50	Zygaena contaminei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1467-24_r_1_s_50	Zygaena contaminei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1467-24_r_1_s_100	Zygaena contaminei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1467-24_r_1.3_s_50	Zygaena contaminei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1467-24_r_1.3_s_100	Zygaena contaminei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1467-24_r_1.5_s_50	Zygaena contaminei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1467-24_r_1.5_s_100	Zygaena contaminei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1468-24_r_1_s_50	Zygaena corsica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1468-24_r_1_s_100	Zygaena corsica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1468-24_r_1.3_s_50	Zygaena corsica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1468-24_r_1.3_s_100	Zygaena corsica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1468-24_r_1.5_s_50	Zygaena corsica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1468-24_r_1.5_s_100	Zygaena corsica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1469-24_r_1_s_50	Zygaena corsica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1469-24_r_1_s_100	Zygaena corsica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1469-24_r_1.3_s_50	Zygaena corsica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1469-24_r_1.3_s_100	Zygaena corsica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1469-24_r_1.5_s_50	Zygaena corsica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1469-24_r_1.5_s_100	Zygaena corsica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1470-24_r_1_s_50	Zygaena corsica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1470-24_r_1_s_100	Zygaena corsica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1470-24_r_1.3_s_50	Zygaena corsica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1470-24_r_1.3_s_100	Zygaena corsica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1470-24_r_1.5_s_50	Zygaena corsica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1470-24_r_1.5_s_100	Zygaena corsica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1471-24_r_1_s_50	Zygaena dorycnii	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1471-24_r_1_s_100	Zygaena dorycnii	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1471-24_r_1.3_s_50	Zygaena dorycnii	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1471-24_r_1.3_s_100	Zygaena dorycnii	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1471-24_r_1.5_s_50	Zygaena dorycnii	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1471-24_r_1.5_s_100	Zygaena dorycnii	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Drepanidae	BGSNL1472-24_r_1_s_50	Zygaena dorycnii	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Drepanidae	BGSNL1472-24_r_1_s_100	Zygaena dorycnii	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Drepanidae	BGSNL1472-24_r_1.3_s_50	Zygaena dorycnii	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Drepanidae	BGSNL1472-24_r_1.3_s_100	Zygaena dorycnii	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Drepanidae	BGSNL1472-24_r_1.5_s_50	Zygaena dorycnii	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Drepanidae	BGSNL1472-24_r_1.5_s_100	Zygaena dorycnii	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Geometridae,Drepanidae	BGSNL1473-24_r_1_s_50	Zygaena dorycnii	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Geometridae,Drepanidae	BGSNL1473-24_r_1_s_100	Zygaena dorycnii	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Geometridae,Drepanidae	BGSNL1473-24_r_1.3_s_50	Zygaena dorycnii	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Geometridae,Drepanidae	BGSNL1473-24_r_1.3_s_100	Zygaena dorycnii	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Geometridae,Drepanidae	BGSNL1473-24_r_1.5_s_50	Zygaena dorycnii	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Geometridae,Drepanidae	BGSNL1473-24_r_1.5_s_100	Zygaena dorycnii	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1474-24_r_1_s_50	Zygaena fraxini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1474-24_r_1_s_100	Zygaena fraxini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1474-24_r_1.3_s_50	Zygaena fraxini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1474-24_r_1.3_s_100	Zygaena fraxini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1474-24_r_1.5_s_50	Zygaena fraxini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1474-24_r_1.5_s_100	Zygaena fraxini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1475-24_r_1_s_50	Zygaena fraxini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1475-24_r_1_s_100	Zygaena fraxini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1475-24_r_1.3_s_50	Zygaena fraxini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1475-24_r_1.3_s_100	Zygaena fraxini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1475-24_r_1.5_s_50	Zygaena fraxini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1475-24_r_1.5_s_100	Zygaena fraxini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1476-24_r_1_s_50	Zygaena fraxini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1476-24_r_1_s_100	Zygaena fraxini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1476-24_r_1.3_s_50	Zygaena fraxini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1476-24_r_1.3_s_100	Zygaena fraxini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1476-24_r_1.5_s_50	Zygaena fraxini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1476-24_r_1.5_s_100	Zygaena fraxini	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1477-24_r_1_s_50	Zygaena haberhaueri	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1477-24_r_1_s_100	Zygaena haberhaueri	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1477-24_r_1.3_s_50	Zygaena haberhaueri	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1477-24_r_1.3_s_100	Zygaena haberhaueri	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1477-24_r_1.5_s_50	Zygaena haberhaueri	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1477-24_r_1.5_s_100	Zygaena haberhaueri	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1478-24_r_1_s_50	Zygaena haberhaueri	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1478-24_r_1_s_100	Zygaena haberhaueri	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1478-24_r_1.3_s_50	Zygaena haberhaueri	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1478-24_r_1.3_s_100	Zygaena haberhaueri	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1478-24_r_1.5_s_50	Zygaena haberhaueri	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1478-24_r_1.5_s_100	Zygaena haberhaueri	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1479-24_r_1_s_50	Zygaena haberhaueri	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1479-24_r_1_s_100	Zygaena haberhaueri	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1479-24_r_1.3_s_50	Zygaena haberhaueri	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1479-24_r_1.3_s_100	Zygaena haberhaueri	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1479-24_r_1.5_s_50	Zygaena haberhaueri	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1479-24_r_1.5_s_100	Zygaena haberhaueri	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Geometridae	BGSNL1480-24_r_1_s_50	Zygaena hilaris	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Geometridae	BGSNL1480-24_r_1_s_100	Zygaena hilaris	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Geometridae	BGSNL1480-24_r_1.3_s_50	Zygaena hilaris	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Geometridae	BGSNL1480-24_r_1.3_s_100	Zygaena hilaris	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Geometridae	BGSNL1480-24_r_1.5_s_50	Zygaena hilaris	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Geometridae	BGSNL1480-24_r_1.5_s_100	Zygaena hilaris	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Geometridae	BGSNL1481-24_r_1_s_50	Zygaena hilaris	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Geometridae	BGSNL1481-24_r_1_s_100	Zygaena hilaris	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Geometridae	BGSNL1481-24_r_1.3_s_50	Zygaena hilaris	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Geometridae	BGSNL1481-24_r_1.3_s_100	Zygaena hilaris	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Geometridae	BGSNL1481-24_r_1.5_s_50	Zygaena hilaris	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Geometridae	BGSNL1481-24_r_1.5_s_100	Zygaena hilaris	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Geometridae	BGSNL1482-24_r_1_s_50	Zygaena hilaris	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Geometridae	BGSNL1482-24_r_1_s_100	Zygaena hilaris	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Geometridae	BGSNL1482-24_r_1.3_s_50	Zygaena hilaris	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Geometridae	BGSNL1482-24_r_1.3_s_100	Zygaena hilaris	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Geometridae	BGSNL1482-24_r_1.5_s_50	Zygaena hilaris	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Geometridae	BGSNL1482-24_r_1.5_s_100	Zygaena hilaris	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Geometridae	BGSNL1483-24_r_1_s_50	Zygaena ignifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Geometridae	BGSNL1483-24_r_1_s_100	Zygaena ignifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Geometridae	BGSNL1483-24_r_1.3_s_50	Zygaena ignifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Geometridae	BGSNL1483-24_r_1.3_s_100	Zygaena ignifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Geometridae	BGSNL1483-24_r_1.5_s_50	Zygaena ignifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Geometridae	BGSNL1483-24_r_1.5_s_100	Zygaena ignifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Geometridae	BGSNL1484-24_r_1_s_50	Zygaena ignifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Geometridae	BGSNL1484-24_r_1_s_100	Zygaena ignifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Geometridae	BGSNL1484-24_r_1.3_s_50	Zygaena ignifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Geometridae	BGSNL1484-24_r_1.3_s_100	Zygaena ignifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Geometridae	BGSNL1484-24_r_1.5_s_50	Zygaena ignifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Geometridae	BGSNL1484-24_r_1.5_s_100	Zygaena ignifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1485-24_r_1_s_50	Zygaena ignifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1485-24_r_1_s_100	Zygaena ignifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1485-24_r_1.3_s_50	Zygaena ignifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1485-24_r_1.3_s_100	Zygaena ignifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1485-24_r_1.5_s_50	Zygaena ignifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1485-24_r_1.5_s_100	Zygaena ignifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1486-24_r_1_s_50	Zygaena lavandulae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1486-24_r_1_s_100	Zygaena lavandulae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1486-24_r_1.3_s_50	Zygaena lavandulae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1486-24_r_1.3_s_100	Zygaena lavandulae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1486-24_r_1.5_s_50	Zygaena lavandulae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1486-24_r_1.5_s_100	Zygaena lavandulae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1487-24_r_1_s_50	Zygaena lavandulae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1487-24_r_1_s_100	Zygaena lavandulae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1487-24_r_1.3_s_50	Zygaena lavandulae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1487-24_r_1.3_s_100	Zygaena lavandulae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1487-24_r_1.5_s_50	Zygaena lavandulae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1487-24_r_1.5_s_100	Zygaena lavandulae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Limacodidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1488-24_r_1_s_50	Zygaena lavandulae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Limacodidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1488-24_r_1_s_100	Zygaena lavandulae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Limacodidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1488-24_r_1.3_s_50	Zygaena lavandulae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Limacodidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1488-24_r_1.3_s_100	Zygaena lavandulae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Limacodidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1488-24_r_1.5_s_50	Zygaena lavandulae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Limacodidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1488-24_r_1.5_s_100	Zygaena lavandulae	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1489-24_r_1_s_50	Zygaena mana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1489-24_r_1_s_100	Zygaena mana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1489-24_r_1.3_s_50	Zygaena mana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1489-24_r_1.3_s_100	Zygaena mana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1489-24_r_1.5_s_50	Zygaena mana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1489-24_r_1.5_s_100	Zygaena mana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Geometridae	BGSNL1490-24_r_1_s_50	Zygaena mana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Geometridae	BGSNL1490-24_r_1_s_100	Zygaena mana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Geometridae	BGSNL1490-24_r_1.3_s_50	Zygaena mana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Geometridae	BGSNL1490-24_r_1.3_s_100	Zygaena mana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Geometridae	BGSNL1490-24_r_1.5_s_50	Zygaena mana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Geometridae	BGSNL1490-24_r_1.5_s_100	Zygaena mana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Limacodidae,Zygaenidae,Crambidae	BGSNL1491-24_r_1_s_50	Zygaena mana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Limacodidae,Zygaenidae,Crambidae	BGSNL1491-24_r_1_s_100	Zygaena mana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Limacodidae,Zygaenidae,Crambidae	BGSNL1491-24_r_1.3_s_50	Zygaena mana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Limacodidae,Zygaenidae,Crambidae	BGSNL1491-24_r_1.3_s_100	Zygaena mana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Limacodidae,Zygaenidae,Crambidae	BGSNL1491-24_r_1.5_s_50	Zygaena mana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Limacodidae,Zygaenidae,Crambidae	BGSNL1491-24_r_1.5_s_100	Zygaena mana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Geometridae	BGSNL1492-24_r_1_s_50	Zygaena occitanica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Geometridae	BGSNL1492-24_r_1_s_100	Zygaena occitanica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Geometridae	BGSNL1492-24_r_1.3_s_50	Zygaena occitanica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Geometridae	BGSNL1492-24_r_1.3_s_100	Zygaena occitanica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Geometridae	BGSNL1492-24_r_1.5_s_50	Zygaena occitanica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae,Geometridae	BGSNL1492-24_r_1.5_s_100	Zygaena occitanica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1493-24_r_1_s_50	Zygaena occitanica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1493-24_r_1_s_100	Zygaena occitanica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1493-24_r_1.3_s_50	Zygaena occitanica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1493-24_r_1.3_s_100	Zygaena occitanica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1493-24_r_1.5_s_50	Zygaena occitanica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1493-24_r_1.5_s_100	Zygaena occitanica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1494-24_r_1_s_50	Zygaena occitanica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1494-24_r_1_s_100	Zygaena occitanica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1494-24_r_1.3_s_50	Zygaena occitanica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1494-24_r_1.3_s_100	Zygaena occitanica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1494-24_r_1.5_s_50	Zygaena occitanica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1494-24_r_1.5_s_100	Zygaena occitanica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Gelechiidae,Tortricidae,Zygaenidae,Crambidae	BGSNL1495-24_r_1_s_50	Zygaena orana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Gelechiidae,Tortricidae,Zygaenidae,Crambidae	BGSNL1495-24_r_1_s_100	Zygaena orana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Gelechiidae,Tortricidae,Zygaenidae,Crambidae	BGSNL1495-24_r_1.3_s_50	Zygaena orana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Gelechiidae,Tortricidae,Zygaenidae,Crambidae	BGSNL1495-24_r_1.3_s_100	Zygaena orana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Gelechiidae,Tortricidae,Zygaenidae,Crambidae	BGSNL1495-24_r_1.5_s_50	Zygaena orana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Gelechiidae,Tortricidae,Zygaenidae,Crambidae	BGSNL1495-24_r_1.5_s_100	Zygaena orana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Gelechiidae,Tortricidae,Zygaenidae,Crambidae,Geometridae	BGSNL1496-24_r_1_s_50	Zygaena orana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Gelechiidae,Tortricidae,Zygaenidae,Crambidae,Geometridae	BGSNL1496-24_r_1_s_100	Zygaena orana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Gelechiidae,Tortricidae,Zygaenidae,Crambidae,Geometridae	BGSNL1496-24_r_1.3_s_50	Zygaena orana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Gelechiidae,Tortricidae,Zygaenidae,Crambidae,Geometridae	BGSNL1496-24_r_1.3_s_100	Zygaena orana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Gelechiidae,Tortricidae,Zygaenidae,Crambidae,Geometridae	BGSNL1496-24_r_1.5_s_50	Zygaena orana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Gelechiidae,Tortricidae,Zygaenidae,Crambidae,Geometridae	BGSNL1496-24_r_1.5_s_100	Zygaena orana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Gelechiidae,Zygaenidae,Crambidae	BGSNL1497-24_r_1_s_50	Zygaena orana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Gelechiidae,Zygaenidae,Crambidae	BGSNL1497-24_r_1_s_100	Zygaena orana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Gelechiidae,Zygaenidae,Crambidae	BGSNL1497-24_r_1.3_s_50	Zygaena orana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Gelechiidae,Zygaenidae,Crambidae	BGSNL1497-24_r_1.3_s_100	Zygaena orana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Gelechiidae,Zygaenidae,Crambidae	BGSNL1497-24_r_1.5_s_50	Zygaena orana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Gelechiidae,Zygaenidae,Crambidae	BGSNL1497-24_r_1.5_s_100	Zygaena orana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1498-24_r_1_s_50	Zygaena oxytropis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1498-24_r_1_s_100	Zygaena oxytropis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1498-24_r_1.3_s_50	Zygaena oxytropis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1498-24_r_1.3_s_100	Zygaena oxytropis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1498-24_r_1.5_s_50	Zygaena oxytropis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1498-24_r_1.5_s_100	Zygaena oxytropis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	BGSNL1499-24_r_1_s_50	Zygaena oxytropis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	BGSNL1499-24_r_1_s_100	Zygaena oxytropis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	BGSNL1499-24_r_1.3_s_50	Zygaena oxytropis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	BGSNL1499-24_r_1.3_s_100	Zygaena oxytropis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	BGSNL1499-24_r_1.5_s_50	Zygaena oxytropis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	BGSNL1499-24_r_1.5_s_100	Zygaena oxytropis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	BGSNL1500-24_r_1_s_50	Zygaena oxytropis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	BGSNL1500-24_r_1_s_100	Zygaena oxytropis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	BGSNL1500-24_r_1.3_s_50	Zygaena oxytropis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	BGSNL1500-24_r_1.3_s_100	Zygaena oxytropis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	BGSNL1500-24_r_1.5_s_50	Zygaena oxytropis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae	BGSNL1500-24_r_1.5_s_100	Zygaena oxytropis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae	BGSNL1501-24_r_1_s_50	Zygaena rhadamanthus	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae	BGSNL1501-24_r_1_s_100	Zygaena rhadamanthus	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae	BGSNL1501-24_r_1.3_s_50	Zygaena rhadamanthus	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae	BGSNL1501-24_r_1.3_s_100	Zygaena rhadamanthus	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae	BGSNL1501-24_r_1.5_s_50	Zygaena rhadamanthus	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae	BGSNL1501-24_r_1.5_s_100	Zygaena rhadamanthus	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae	BGSNL1502-24_r_1_s_50	Zygaena rhadamanthus	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae	BGSNL1502-24_r_1_s_100	Zygaena rhadamanthus	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae	BGSNL1502-24_r_1.3_s_50	Zygaena rhadamanthus	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae	BGSNL1502-24_r_1.3_s_100	Zygaena rhadamanthus	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae	BGSNL1502-24_r_1.5_s_50	Zygaena rhadamanthus	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae	BGSNL1502-24_r_1.5_s_100	Zygaena rhadamanthus	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae	BGSNL1503-24_r_1_s_50	Zygaena rhadamanthus	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae	BGSNL1503-24_r_1_s_100	Zygaena rhadamanthus	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae	BGSNL1503-24_r_1.3_s_50	Zygaena rhadamanthus	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae	BGSNL1503-24_r_1.3_s_100	Zygaena rhadamanthus	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae	BGSNL1503-24_r_1.5_s_50	Zygaena rhadamanthus	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae	BGSNL1503-24_r_1.5_s_100	Zygaena rhadamanthus	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1504-24_r_1_s_50	Zygaena sarpedon	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1504-24_r_1_s_100	Zygaena sarpedon	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1504-24_r_1.3_s_50	Zygaena sarpedon	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1504-24_r_1.3_s_100	Zygaena sarpedon	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1504-24_r_1.5_s_50	Zygaena sarpedon	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1504-24_r_1.5_s_100	Zygaena sarpedon	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1505-24_r_1_s_50	Zygaena sarpedon	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1505-24_r_1_s_100	Zygaena sarpedon	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1505-24_r_1.3_s_50	Zygaena sarpedon	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1505-24_r_1.3_s_100	Zygaena sarpedon	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1505-24_r_1.5_s_50	Zygaena sarpedon	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1505-24_r_1.5_s_100	Zygaena sarpedon	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1506-24_r_1_s_50	Zygaena sarpedon	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1506-24_r_1_s_100	Zygaena sarpedon	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1506-24_r_1.3_s_50	Zygaena sarpedon	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1506-24_r_1.3_s_100	Zygaena sarpedon	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1506-24_r_1.5_s_50	Zygaena sarpedon	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1506-24_r_1.5_s_100	Zygaena sarpedon	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1507-24_r_1_s_50	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1507-24_r_1_s_100	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1507-24_r_1.3_s_50	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1507-24_r_1.3_s_100	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1507-24_r_1.5_s_50	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Crambidae	BGSNL1507-24_r_1.5_s_100	Zygaena alpherakyi	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1508-24_r_1_s_50	Zygaena centaureae ukrainica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1508-24_r_1_s_100	Zygaena centaureae ukrainica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1508-24_r_1.3_s_50	Zygaena centaureae ukrainica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Depressariidae,Zygaenidae,Crambidae	BGSNL1508-24_r_1.3_s_100	Zygaena centaureae ukrainica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1470	Tortricidae,Zygaenidae,Crambidae	BGSNL1508-24_r_1.5_s_50	Zygaena centaureae ukrainica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1470	Tortricidae,Zygaenidae,Crambidae	BGSNL1508-24_r_1.5_s_100	Zygaena centaureae ukrainica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae,Crambidae	BGSNL1509-24_r_1_s_50	Zygaena contaminei almanzonica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae,Crambidae	BGSNL1509-24_r_1_s_100	Zygaena contaminei almanzonica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae,Crambidae	BGSNL1509-24_r_1.3_s_50	Zygaena contaminei almanzonica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae,Crambidae	BGSNL1509-24_r_1.3_s_100	Zygaena contaminei almanzonica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae,Crambidae	BGSNL1509-24_r_1.5_s_50	Zygaena contaminei almanzonica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae,Crambidae	BGSNL1509-24_r_1.5_s_100	Zygaena contaminei almanzonica	0
+2	3	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1510-24_r_1_s_50	Zygaena contaminei asturica	0
+3	3	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1510-24_r_1_s_100	Zygaena contaminei asturica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1510-24_r_1.3_s_50	Zygaena contaminei asturica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Depressariidae,Tortricidae,Zygaenidae,Crambidae,Hyblaeidae	BGSNL1510-24_r_1.3_s_100	Zygaena contaminei asturica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1524	Limacodidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1510-24_r_1.5_s_50	Zygaena contaminei asturica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1524	Limacodidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1510-24_r_1.5_s_100	Zygaena contaminei asturica	0
+29	58	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	576	1437	Zygaenidae	BGSNL1511-24_r_1_s_50	Zygaena corsica sardiniensis	0
+35	49	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	463	1212	Endromidae,Erebidae,Papilionidae,Crambidae	BGSNL1511-24_r_1_s_100	Zygaena corsica sardiniensis	0
+0	13	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	567	1275	Erebidae,Geometridae	BGSNL1511-24_r_1.3_s_50	Zygaena corsica sardiniensis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	373	891	Mauroniscidae,Tortricidae,Erebidae,Euteliidae,Nymphalidae	BGSNL1511-24_r_1.3_s_100	Zygaena corsica sardiniensis	0
+0	6	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	388	900	Zygaenidae	BGSNL1511-24_r_1.5_s_50	Zygaena corsica sardiniensis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	108	426	Zygaenidae	BGSNL1511-24_r_1.5_s_100	Zygaena corsica sardiniensis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1512-24_r_1_s_50	Zygaena fraxini slabyiana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1512-24_r_1_s_100	Zygaena fraxini slabyiana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1512-24_r_1.3_s_50	Zygaena fraxini slabyiana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1512-24_r_1.3_s_100	Zygaena fraxini slabyiana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1512-24_r_1.5_s_50	Zygaena fraxini slabyiana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1512-24_r_1.5_s_100	Zygaena fraxini slabyiana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1513-24_r_1_s_50	Zygaena fraxini perdita	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1513-24_r_1_s_100	Zygaena fraxini perdita	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1513-24_r_1.3_s_50	Zygaena fraxini perdita	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1513-24_r_1.3_s_100	Zygaena fraxini perdita	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1521	Gelechiidae,Zygaenidae,Noctuidae,Nymphalidae,Crambidae	BGSNL1513-24_r_1.5_s_50	Zygaena fraxini perdita	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1485	Tortricidae,Limacodidae,Zygaenidae,Crambidae	BGSNL1513-24_r_1.5_s_100	Zygaena fraxini perdita	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1514-24_r_1_s_50	Zygaena fraxini margelanensis	0
+0	5	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1514-24_r_1_s_100	Zygaena fraxini margelanensis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1514-24_r_1.3_s_50	Zygaena fraxini margelanensis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1514-24_r_1.3_s_100	Zygaena fraxini margelanensis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Tortricidae,Zygaenidae,Noctuidae,Crambidae	BGSNL1514-24_r_1.5_s_50	Zygaena fraxini margelanensis	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1488	Tortricidae,Limacodidae,Crambidae	BGSNL1514-24_r_1.5_s_100	Zygaena fraxini margelanensis	0
+0	1	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Zygaenidae,Noctuidae	BGSNL1515-24_r_1_s_50	Zygaena haberhaueri optima	0
+0	14	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Noctuidae	BGSNL1515-24_r_1_s_100	Zygaena haberhaueri optima	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Zygaenidae,Noctuidae	BGSNL1515-24_r_1.3_s_50	Zygaena haberhaueri optima	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Zygaenidae,Noctuidae	BGSNL1515-24_r_1.3_s_100	Zygaena haberhaueri optima	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1515	Tortricidae,Zygaenidae,Noctuidae	BGSNL1515-24_r_1.5_s_50	Zygaena haberhaueri optima	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1503	Tortricidae,Zygaenidae,Noctuidae	BGSNL1515-24_r_1.5_s_100	Zygaena haberhaueri optima	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1516-24_r_1_s_50	Zygaena haberhaueri kobachidzei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1516-24_r_1_s_100	Zygaena haberhaueri kobachidzei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1516-24_r_1.3_s_50	Zygaena haberhaueri kobachidzei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1516-24_r_1.3_s_100	Zygaena haberhaueri kobachidzei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1516-24_r_1.5_s_50	Zygaena haberhaueri kobachidzei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1516-24_r_1.5_s_100	Zygaena haberhaueri kobachidzei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1517-24_r_1_s_50	Zygaena haberhaueri elbursica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1517-24_r_1_s_100	Zygaena haberhaueri elbursica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1517-24_r_1.3_s_50	Zygaena haberhaueri elbursica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1517-24_r_1.3_s_100	Zygaena haberhaueri elbursica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1517-24_r_1.5_s_50	Zygaena haberhaueri elbursica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae	BGSNL1517-24_r_1.5_s_100	Zygaena haberhaueri elbursica	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1518-24_r_1_s_50	Zygaena haberhaueri demangei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1518-24_r_1_s_100	Zygaena haberhaueri demangei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1518-24_r_1.3_s_50	Zygaena haberhaueri demangei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1518-24_r_1.3_s_100	Zygaena haberhaueri demangei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1518-24_r_1.5_s_50	Zygaena haberhaueri demangei	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Noctuidae,Crambidae	BGSNL1518-24_r_1.5_s_100	Zygaena haberhaueri demangei	0
+27	78	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1533	Limacodidae,Nymphalidae,Crambidae	BGSNL1519-24_r_1_s_50	Zygaena hilaris sevillana	0
+30	82	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1449		BGSNL1519-24_r_1_s_100	Zygaena hilaris sevillana	0
+15	17	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1524	Tortricidae,Zygaenidae	BGSNL1519-24_r_1.3_s_50	Zygaena hilaris sevillana	0
+5	14	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	656	1314	Crambidae	BGSNL1519-24_r_1.3_s_100	Zygaena hilaris sevillana	0
+4	4	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1461	Zygaenidae,Crambidae,Geometridae	BGSNL1519-24_r_1.5_s_50	Zygaena hilaris sevillana	0
+6	6	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	644	1266	Zygaenidae,Crambidae	BGSNL1519-24_r_1.5_s_100	Zygaena hilaris sevillana	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Geometridae	BGSNL1520-24_r_1_s_50	Zygaena hilaris lucifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Geometridae	BGSNL1520-24_r_1_s_100	Zygaena hilaris lucifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Geometridae	BGSNL1520-24_r_1.3_s_50	Zygaena hilaris lucifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Geometridae	BGSNL1520-24_r_1.3_s_100	Zygaena hilaris lucifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Geometridae	BGSNL1520-24_r_1.5_s_50	Zygaena hilaris lucifera	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zygaenidae	BLAST	family	657	1533	Zygaenidae,Geometridae	BGSNL1520-24_r_1.5_s_100	Zygaena hilaris lucifera	0
+8	12	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00308-NC not in BOLD	None	BLAST	family	589	1209		BGE00308-NC_r_1_s_50	None	0
+9	13	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00308-NC not in BOLD	None	BLAST	family	404	1074		BGE00308-NC_r_1_s_100	None	0
+3	3	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00308-NC not in BOLD	None	BLAST	family	156	678		BGE00308-NC_r_1.3_s_50	None	0
+3	3	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00308-NC not in BOLD	None	BLAST	family	157	621		BGE00308-NC_r_1.3_s_100	None	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00308-NC not in BOLD	None	BLAST	family	117	213		BGE00308-NC_r_1.5_s_50	None	0
+0	0	data/BGE00308_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00308-NC not in BOLD	None	BLAST	family	109	183		BGE00308-NC_r_1.5_s_100	None	0
