@@ -1,22 +1,6 @@
-2025-02-11 16:45:13,114 - INFO - Reading validation data from data/BGE00406_MGE-BGE_r1_1.3_1.5_s50_100.fasta.tsv
-Traceback (most recent call last):
-  File "/Users/rutger/Documents/local-projects/barcode_validator/barcode_validator/triage_sweep.py", line 156, in <module>
-    main()
-  File "/Users/rutger/Documents/local-projects/barcode_validator/barcode_validator/triage_sweep.py", line 134, in main
-    validation_df = pd.read_csv(args.validation, sep='\t')
-  File "/Users/rutger/miniforge3/envs/barcode_validator/lib/python3.9/site-packages/pandas/util/_decorators.py", line 211, in wrapper
-    return func(*args, **kwargs)
-  File "/Users/rutger/miniforge3/envs/barcode_validator/lib/python3.9/site-packages/pandas/util/_decorators.py", line 331, in wrapper
-    return func(*args, **kwargs)
-  File "/Users/rutger/miniforge3/envs/barcode_validator/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
-    return _read(filepath_or_buffer, kwds)
-  File "/Users/rutger/miniforge3/envs/barcode_validator/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 605, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-  File "/Users/rutger/miniforge3/envs/barcode_validator/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
-    self._engine = self._make_engine(f, self.engine)
-  File "/Users/rutger/miniforge3/envs/barcode_validator/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1753, in _make_engine
-    return mapping[engine](f, **self.options)
-  File "/Users/rutger/miniforge3/envs/barcode_validator/lib/python3.9/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 79, in __init__
-    self._reader = parsers.TextReader(src, **kwds)
-  File "pandas/_libs/parsers.pyx", line 554, in pandas._libs.parsers.TextReader.__cinit__
-pandas.errors.EmptyDataError: No columns to parse from file
+2025-02-11 22:57:26,296 - INFO - Reading validation data from data/BGE00406_MGE-BGE_r1_1.3_1.5_s50_100.fasta.tsv
+2025-02-11 22:57:26,313 - INFO - Reading sequences from data/BGE00406_MGE-BGE_r1_1.3_1.5_s50_100.fasta
+2025-02-11 22:57:26,364 - INFO - Selecting best sequences
+2025-02-11 22:57:26,396 - INFO - Writing best sequences to data/pass/BGE00406_MGE-BGE_r1_1.3_1.5_s50_100.fasta
+2025-02-11 22:57:26,401 - INFO - Writing failed sequences to data/fail/BGE00406_MGE-BGE_r1_1.3_1.5_s50_100.fasta.tsv
+2025-02-11 22:57:26,409 - INFO - Done
