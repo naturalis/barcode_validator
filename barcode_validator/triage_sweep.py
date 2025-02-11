@@ -52,11 +52,13 @@ def meets_basic_criteria(row: pd.Series) -> bool:
     :return: True if sequence meets all basic criteria, False otherwise
     """
     return (
-            row['ambig_basecount'] == 0 and
-            row['error'] == 'None' and
+        row['error'] == 'None' and (
+            row['ambig_full_basecount'] <= 6 and
+            row['ambig_basecount'] <= 6 and
             row['stop_codons'] == 0 and
             row['nuc_basecount'] >= 500 and
-            row['nuc_full_basecount'] >= 500
+            row['identification'] in str(row['obs_taxon']).split(',')
+        )
     )
 
 
@@ -68,6 +70,11 @@ def select_best_sequences(validation_df: pd.DataFrame) -> pd.DataFrame:
     """
     # Remove negative controls and create a copy
     df = validation_df[~validation_df['sequence_id'].str.contains('-NC')].copy()
+
+    # Convert numeric columns
+    numeric_cols = ['ambig_basecount', 'ambig_full_basecount', 'nuc_basecount', 'nuc_full_basecount', 'stop_codons']
+    for col in numeric_cols:
+        df[col] = pd.to_numeric(df[col], errors='coerce')
 
     # Add process_id column
     df.loc[:, 'process_id'] = df['sequence_id'].apply(extract_process_id)
