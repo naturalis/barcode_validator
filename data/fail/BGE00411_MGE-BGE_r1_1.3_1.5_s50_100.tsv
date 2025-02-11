@@ -17,12 +17,6 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 25	28	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	493	1089	Rhaphidophoridae,Miridae,Urostylididae,Pentatomidae,Scutelleridae,Scarabaeidae	BGLIB1004-24_r_1.3_s_100	Odontoscelis dorsalis	0	BGLIB1004-24
 14	22	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	535	1329	Urostylididae,Plataspidae,Scutelleridae,Pyrrhocoridae	BGLIB1004-24_r_1.5_s_50	Odontoscelis dorsalis	0	BGLIB1004-24
 11	13	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	176	705	Scutelleridae	BGLIB1004-24_r_1.5_s_100	Odontoscelis dorsalis	3	BGLIB1004-24
-41	53	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	656	1533	Scutelleridae	BGLIB1005-24_r_1_s_50	Odontoscelis dorsalis	0	BGLIB1005-24
-54	65	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	656	1533	Pentatomidae,Scutelleridae,Rhopalidae	BGLIB1005-24_r_1_s_100	Odontoscelis dorsalis	0	BGLIB1005-24
-11	14	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	656	1530	Scutelleridae	BGLIB1005-24_r_1.3_s_50	Odontoscelis dorsalis	0	BGLIB1005-24
-16	20	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	656	1470	Pentatomidae,Cydnidae,Scutelleridae,Heterogastridae	BGLIB1005-24_r_1.3_s_100	Odontoscelis dorsalis	0	BGLIB1005-24
-5	5	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	650	1476	Plataspidae,Scutelleridae,Stenocephalidae	BGLIB1005-24_r_1.5_s_50	Odontoscelis dorsalis	0	BGLIB1005-24
-7	7	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	629	1395	Cydnidae,Scutelleridae	BGLIB1005-24_r_1.5_s_100	Odontoscelis dorsalis	0	BGLIB1005-24
 26	44	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	655	1533	Pentatomidae,Scutelleridae	BGLIB1006-24_r_1_s_50	Odontoscelis dorsalis	0	BGLIB1006-24
 28	35	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	621	1440	Anthocoridae,Pentatomidae,Tessaratomidae,Scutelleridae,Largidae	BGLIB1006-24_r_1_s_100	Odontoscelis dorsalis	0	BGLIB1006-24
 26	33	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	643	1512	Veliidae,Belostomatidae,Miridae,Nabidae,Pentatomidae,Cydnidae,Scutelleridae	BGLIB1006-24_r_1.3_s_50	Odontoscelis dorsalis	0	BGLIB1006-24
@@ -35,12 +29,6 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 22	22	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	449	519	Carabidae	BGLIB1007-24_r_1.3_s_100	Odontoscelis dorsalis	0	BGLIB1007-24
 10	10	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	241	513	Coccinellidae,Ceratopogonidae,Braconidae	BGLIB1007-24_r_1.5_s_50	Odontoscelis dorsalis	0	BGLIB1007-24
 4	4	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	236	306	Coccinellidae,Ceratopogonidae,Braconidae	BGLIB1007-24_r_1.5_s_100	Odontoscelis dorsalis	0	BGLIB1007-24
-24	42	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	656	1533	Scutelleridae,Alydidae	BGLIB1008-24_r_1_s_50	Odontotarsus grammicus	0	BGLIB1008-24
-26	46	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	656	1521	Pentatomidae,Tessaratomidae,Scutelleridae	BGLIB1008-24_r_1_s_100	Odontotarsus grammicus	0	BGLIB1008-24
-9	11	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	656	1533	Scutelleridae	BGLIB1008-24_r_1.3_s_50	Odontotarsus grammicus	0	BGLIB1008-24
-15	21	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	629	1494	Scutelleridae	BGLIB1008-24_r_1.3_s_100	Odontotarsus grammicus	0	BGLIB1008-24
-4	6	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	656	1482	Scutelleridae	BGLIB1008-24_r_1.5_s_50	Odontotarsus grammicus	0	BGLIB1008-24
-6	12	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	629	1443	Pentatomidae,Scutelleridae	BGLIB1008-24_r_1.5_s_100	Odontotarsus grammicus	0	BGLIB1008-24
 36	59	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	655	1521	Cydnidae,Scutelleridae	BGLIB1009-24_r_1_s_50	Odontoscelis dorsalis	0	BGLIB1009-24
 32	49	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	653	1467	Cydnidae,Dinidoridae,Scutelleridae	BGLIB1009-24_r_1_s_100	Odontoscelis dorsalis	0	BGLIB1009-24
 18	27	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	656	1506	Scutelleridae	BGLIB1009-24_r_1.3_s_50	Odontoscelis dorsalis	0	BGLIB1009-24
@@ -65,12 +53,6 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 26	28	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pentatomidae	BLAST	family	545	1113	Pentatomidae,Aphididae,Carabidae,Curculionidae,Anthribidae,Chironomidae,Corydalidae	BGLIB1013-24_r_1.3_s_100	Brachynema cinctum	0	BGLIB1013-24
 14	23	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pentatomidae	BLAST	family	629	1464	Pentatomidae	BGLIB1013-24_r_1.5_s_50	Brachynema cinctum	0	BGLIB1013-24
 13	14	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pentatomidae	BLAST	family	419	987	Pentatomidae,Carabidae,Chironomidae,Heleomyzidae,Tephritidae	BGLIB1013-24_r_1.5_s_100	Brachynema cinctum	0	BGLIB1013-24
-17	27	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pentatomidae	BLAST	family	657	1539	Pentatomidae	BGLIB1015-24_r_1_s_50	Holcostethus vernalis	0	BGLIB1015-24
-42	85	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pentatomidae	BLAST	family	657	1533	Pentatomidae	BGLIB1015-24_r_1_s_100	Holcostethus vernalis	0	BGLIB1015-24
-9	10	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pentatomidae	BLAST	family	657	1539	Pentatomidae	BGLIB1015-24_r_1.3_s_50	Holcostethus vernalis	0	BGLIB1015-24
-22	31	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pentatomidae	BLAST	family	657	1533	Pentatomidae	BGLIB1015-24_r_1.3_s_100	Holcostethus vernalis	0	BGLIB1015-24
-2	2	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pentatomidae	BLAST	family	657	1530	Pentatomidae	BGLIB1015-24_r_1.5_s_50	Holcostethus vernalis	0	BGLIB1015-24
-9	9	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pentatomidae	BLAST	family	657	1530	Pentatomidae	BGLIB1015-24_r_1.5_s_100	Holcostethus vernalis	0	BGLIB1015-24
 60	88	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pentatomidae	BLAST	family	634	1428	Reduviidae,Pentatomidae	BGLIB1018-24_r_1_s_50	Tarisa flavescens	0	BGLIB1018-24
 29	48	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pentatomidae	BLAST	family	629	1371		BGLIB1018-24_r_1_s_100	Tarisa flavescens	0	BGLIB1018-24
 22	23	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pentatomidae	BLAST	family	480	1122	Mantidae,Cicadidae,Phoridae,Pteromalidae	BGLIB1018-24_r_1.3_s_50	Tarisa flavescens	0	BGLIB1018-24
@@ -95,12 +77,6 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 15	16	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	579	1017	Rhyparochromidae	BGLIB1025-24_r_1.3_s_100	Megalonotus dilatatus	0	BGLIB1025-24
 5	7	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	642	1341	Miridae,Pentatomidae,Plataspidae,Rhyparochromidae,Braconidae	BGLIB1025-24_r_1.5_s_50	Megalonotus dilatatus	0	BGLIB1025-24
 4	5	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	414	852	Gerridae,Miridae,Rhyparochromidae,Tachinidae	BGLIB1025-24_r_1.5_s_100	Megalonotus dilatatus	0	BGLIB1025-24
-37	90	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	656	1533	Rhyparochromidae	BGLIB1026-24_r_1_s_50	Megalonotus dilatatus	0	BGLIB1026-24
-39	74	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	656	1533	Rhyparochromidae	BGLIB1026-24_r_1_s_100	Megalonotus dilatatus	0	BGLIB1026-24
-11	11	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	656	1533	Pentatomidae,Berytidae,Malcidae,Rhyparochromidae,Rhopalidae	BGLIB1026-24_r_1.3_s_50	Megalonotus dilatatus	0	BGLIB1026-24
-15	15	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	656	1533	Pentatomidae,Lygaeidae,Malcidae,Rhyparochromidae,Heterogastridae,Coreidae,Largidae	BGLIB1026-24_r_1.3_s_100	Megalonotus dilatatus	0	BGLIB1026-24
-1	1	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	656	1518	Pentatomidae,Lygaeidae,Berytidae,Piesmatidae,Rhyparochromidae,Ninidae,Coreidae	BGLIB1026-24_r_1.5_s_50	Megalonotus dilatatus	0	BGLIB1026-24
-3	3	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	650	1506	Lygaeidae,Rhyparochromidae,Heterogastridae,Ninidae,Meschiidae,Coreidae,Stenocephalidae,Pyrrhocoridae	BGLIB1026-24_r_1.5_s_100	Megalonotus dilatatus	0	BGLIB1026-24
 22	40	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	545	1266		BGLIB1028-24_r_1_s_50	Notochilus damryi	0	BGLIB1028-24
 28	55	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	495	1182		BGLIB1028-24_r_1_s_100	Notochilus damryi	0	BGLIB1028-24
 0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	332	591	Termitidae,Carabidae,Erotylidae,Cecidomyiidae,Chironomidae	BGLIB1028-24_r_1.3_s_50	Notochilus damryi	0	BGLIB1028-24
@@ -113,12 +89,6 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 35	36	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	281	498	Reduviidae,Staphylinidae,Erotylidae,Pteromalidae,Tenthredinidae,Psychidae,Apatelodidae,Calamoceratidae	BGLIB1029-24_r_1.3_s_100	Notochilus ferrugineus	0	BGLIB1029-24
 9	20	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	160	573	Aphrophoridae,Cicadidae,Staphylinidae,Agromyzidae	BGLIB1029-24_r_1.5_s_50	Notochilus ferrugineus	0	BGLIB1029-24
 13	15	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	122	156		BGLIB1029-24_r_1.5_s_100	Notochilus ferrugineus	0	BGLIB1029-24
-42	57	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	656	1533	Miridae,Urostylididae,Rhyparochromidae,Ninidae,Alydidae,Stenocephalidae,Tachinidae	BGLIB1030-24_r_1_s_50	Notochilus limbatus	0	BGLIB1030-24
-40	55	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	656	1446	Lygaeidae,Malcidae,Rhyparochromidae,Rhopalidae,Stenocephalidae	BGLIB1030-24_r_1_s_100	Notochilus limbatus	0	BGLIB1030-24
-15	20	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	657	1506	Lygaeidae,Piesmatidae,Rhyparochromidae,Cymidae,Rhopalidae,Alydidae,Coreidae,Largidae	BGLIB1030-24_r_1.3_s_50	Notochilus limbatus	0	BGLIB1030-24
-18	25	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	638	1395	Rhyparochromidae	BGLIB1030-24_r_1.3_s_100	Notochilus limbatus	0	BGLIB1030-24
-2	4	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	657	1404	Malcidae,Rhyparochromidae,Ninidae,Cymidae,Alydidae,Coreidae	BGLIB1030-24_r_1.5_s_50	Notochilus limbatus	0	BGLIB1030-24
-2	4	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	609	1323	Berytidae,Rhyparochromidae,Blissidae	BGLIB1030-24_r_1.5_s_100	Notochilus limbatus	0	BGLIB1030-24
 69	126	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	656	1530	Miridae,Blissidae,Limoniidae	BGLIB1033-24_r_1_s_50	Taphropeltus nervosus	0	BGLIB1033-24
 55	100	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	653	1455	Thaumastocoridae,Berytidae,Rhopalidae	BGLIB1033-24_r_1_s_100	Taphropeltus nervosus	0	BGLIB1033-24
 24	41	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhyparochromidae	BLAST	family	656	1518	Lygaeidae,Berytidae,Rhyparochromidae,Heterogastridae,Alydidae,Stenocephalidae	BGLIB1033-24_r_1.3_s_50	Taphropeltus nervosus	0	BGLIB1033-24
@@ -137,6 +107,12 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 28	30	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heterogastridae	BLAST	family	599	1242	Tettigoniidae,Gerridae,Veliidae,Heterogastridae,Psychodidae,Lonchopteridae,Syrphidae,Streblidae	BGLIB1037-24_r_1.3_s_100	Heterogaster cathariae	0	BGLIB1037-24
 15	19	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heterogastridae	BLAST	family	653	1482	Pentatomidae,Malcidae,Rhyparochromidae,Heterogastridae,Coreidae,Stenocephalidae	BGLIB1037-24_r_1.5_s_50	Heterogaster cathariae	0	BGLIB1037-24
 13	14	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heterogastridae	BLAST	family	599	1047	Gerridae,Veliidae,Anthocoridae,Heterogastridae,Coreidae,Carabidae,Syrphidae,Drosophilidae,Muscidae	BGLIB1037-24_r_1.5_s_100	Heterogaster cathariae	0	BGLIB1037-24
+0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heterogastridae	BLAST	family	657	1533	Lygaeidae,Berytidae,Piesmatidae,Blissidae,Cymidae	BGLIB1039-24_r_1_s_50	Heterogaster cathariae	0	BGLIB1039-24
+0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heterogastridae	BLAST	family	657	1533	Lygaeidae,Berytidae,Piesmatidae,Blissidae,Cymidae	BGLIB1039-24_r_1_s_100	Heterogaster cathariae	0	BGLIB1039-24
+0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heterogastridae	BLAST	family	657	1533	Lygaeidae,Berytidae,Piesmatidae,Blissidae,Cymidae	BGLIB1039-24_r_1.3_s_50	Heterogaster cathariae	0	BGLIB1039-24
+0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heterogastridae	BLAST	family	657	1533	Lygaeidae,Berytidae,Piesmatidae,Blissidae,Cymidae	BGLIB1039-24_r_1.3_s_100	Heterogaster cathariae	0	BGLIB1039-24
+0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heterogastridae	BLAST	family	657	1515	Lygaeidae,Berytidae,Piesmatidae,Blissidae,Cymidae	BGLIB1039-24_r_1.5_s_50	Heterogaster cathariae	0	BGLIB1039-24
+0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heterogastridae	BLAST	family	657	1515	Lygaeidae,Berytidae,Piesmatidae,Blissidae,Cymidae	BGLIB1039-24_r_1.5_s_100	Heterogaster cathariae	0	BGLIB1039-24
 40	48	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Oxycarenidae	BLAST	family	645	1401	Pentatomidae	BGLIB1040-24_r_1_s_50	Metopoplax fuscinervis	0	BGLIB1040-24
 24	34	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Oxycarenidae	BLAST	family	628	1299	Pentatomidae	BGLIB1040-24_r_1_s_100	Metopoplax fuscinervis	0	BGLIB1040-24
 24	24	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Oxycarenidae	BLAST	family	471	813	Pentatomidae	BGLIB1040-24_r_1.3_s_50	Metopoplax fuscinervis	0	BGLIB1040-24
@@ -233,30 +209,12 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 16	21	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Miridae	BLAST	family	344	672	Dytiscidae,Haliplidae,Lauxaniidae,Myrmeleontidae	BGLIB965-24_r_1.3_s_100	Halticus pusillus	0	BGLIB965-24
 3	12	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Miridae	BLAST	family	291	729	Braconidae,Lycaenidae,Hesperiidae	BGLIB965-24_r_1.5_s_50	Halticus pusillus	0	BGLIB965-24
 1	1	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Miridae	BLAST	family	127	261	Buprestidae,Braconidae,Apidae,Papilionidae,Lycaenidae,Pyralidae,Hesperiidae	BGLIB965-24_r_1.5_s_100	Halticus pusillus	0	BGLIB965-24
-15	31	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Miridae	BLAST	family	656	1530	Miridae	BGLIB968-24_r_1_s_50	Heterotoma merioptera	0	BGLIB968-24
-28	46	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Miridae	BLAST	family	656	1524	Miridae	BGLIB968-24_r_1_s_100	Heterotoma merioptera	0	BGLIB968-24
-2	2	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Miridae	BLAST	family	651	1524	Miridae	BGLIB968-24_r_1.3_s_50	Heterotoma merioptera	0	BGLIB968-24
-6	6	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Miridae	BLAST	family	594	1461	Miridae	BGLIB968-24_r_1.3_s_100	Heterotoma merioptera	0	BGLIB968-24
-1	1	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Miridae	BLAST	family	630	1425	Miridae	BGLIB968-24_r_1.5_s_50	Heterotoma merioptera	0	BGLIB968-24
-7	7	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Miridae	BLAST	family	489	1278	Miridae,Anthocoridae	BGLIB968-24_r_1.5_s_100	Heterotoma merioptera	0	BGLIB968-24
 32	55	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Miridae	BLAST	family	656	1530	Miridae	BGLIB969-24_r_1_s_50	Hypsitylus prasinus	0	BGLIB969-24
 44	89	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Miridae	BLAST	family	551	1299	Miridae	BGLIB969-24_r_1_s_100	Hypsitylus prasinus	0	BGLIB969-24
 15	21	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Miridae	BLAST	family	654	1506	Miridae	BGLIB969-24_r_1.3_s_50	Hypsitylus prasinus	0	BGLIB969-24
 22	24	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Miridae	BLAST	family	492	1137	Miridae,Lygaeidae,Curculionidae,Dermestidae,Tephritidae	BGLIB969-24_r_1.3_s_100	Hypsitylus prasinus	0	BGLIB969-24
 10	12	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Miridae	BLAST	family	594	1377	Miridae	BGLIB969-24_r_1.5_s_50	Hypsitylus prasinus	0	BGLIB969-24
 0	12	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Miridae	BLAST	family	176	900	Miridae,Curculionidae,Dolichopodidae	BGLIB969-24_r_1.5_s_100	Hypsitylus prasinus	0	BGLIB969-24
-42	77	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tingidae	BLAST	family	653	1524	Gerridae,Tingidae,Blissidae	BGLIB970-24_r_1_s_50	Acalypta nigrinervis	0	BGLIB970-24
-23	43	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tingidae	BLAST	family	639	1374	Gerridae,Rhopalidae	BGLIB970-24_r_1_s_100	Acalypta nigrinervis	0	BGLIB970-24
-11	11	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tingidae	BLAST	family	657	1482	Veliidae,Anthocoridae,Tingidae	BGLIB970-24_r_1.3_s_50	Acalypta nigrinervis	0	BGLIB970-24
-8	9	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tingidae	BLAST	family	642	1251	Corixidae,Anthocoridae,Tingidae,Cicadellidae,Chironomidae,Muscidae	BGLIB970-24_r_1.3_s_100	Acalypta nigrinervis	0	BGLIB970-24
-4	4	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tingidae	BLAST	family	654	1383	Tingidae,Pentatomidae,Lygaeidae,Coreidae,Pyrrhocoridae	BGLIB970-24_r_1.5_s_50	Acalypta nigrinervis	0	BGLIB970-24
-1	1	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tingidae	BLAST	family	642	1221	Tingidae,Cicadellidae,Syrphidae	BGLIB970-24_r_1.5_s_100	Acalypta nigrinervis	0	BGLIB970-24
-25	47	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tingidae	BLAST	family	656	1530	Tingidae	BGLIB972-24_r_1_s_50	Monosteira unicostata	0	BGLIB972-24
-47	76	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tingidae	BLAST	family	656	1521	Tingidae,Culicidae,Tephritidae	BGLIB972-24_r_1_s_100	Monosteira unicostata	0	BGLIB972-24
-5	6	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tingidae	BLAST	family	656	1530	Tingidae	BGLIB972-24_r_1.3_s_50	Monosteira unicostata	0	BGLIB972-24
-13	31	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tingidae	BLAST	family	656	1521	Miridae,Tingidae,Pentatomidae,Rhyparochromidae,Cleridae	BGLIB972-24_r_1.3_s_100	Monosteira unicostata	0	BGLIB972-24
-1	1	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tingidae	BLAST	family	656	1530	Tingidae	BGLIB972-24_r_1.5_s_50	Monosteira unicostata	0	BGLIB972-24
-9	9	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tingidae	BLAST	family	656	1464	Tingidae	BGLIB972-24_r_1.5_s_100	Monosteira unicostata	0	BGLIB972-24
 84	129	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Reduviidae	BLAST	family	654	1476	Tettigoniidae,Reduviidae,Ulidiidae,Vespidae	BGLIB975-24_r_1_s_50	Peirates hybridus	0	BGLIB975-24
 66	93	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Reduviidae	BLAST	family	611	1434	Dermestidae	BGLIB975-24_r_1_s_100	Peirates hybridus	0	BGLIB975-24
 66	88	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Reduviidae	BLAST	family	554	1266	Kalotermitidae,Termitidae,Hybosoridae	BGLIB975-24_r_1.3_s_50	Peirates hybridus	0	BGLIB975-24
@@ -269,12 +227,6 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 22	57	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Reduviidae	BLAST	family	566	1344	Reduviidae,Culicidae,Syrphidae,Drosophilidae	BGLIB976-24_r_1.3_s_100	Peirates hybridus	0	BGLIB976-24
 15	27	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Reduviidae	BLAST	family	557	1374	Reduviidae	BGLIB976-24_r_1.5_s_50	Peirates hybridus	0	BGLIB976-24
 12	21	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Reduviidae	BLAST	family	410	1179	Reduviidae	BGLIB976-24_r_1.5_s_100	Peirates hybridus	0	BGLIB976-24
-16	33	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Reduviidae	BLAST	family	656	1533	Anthocoridae,Reduviidae	BGLIB977-24_r_1_s_50	Oncocephalus squalidus	0	BGLIB977-24
-33	78	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Reduviidae	BLAST	family	656	1533	Notonectidae,Reduviidae	BGLIB977-24_r_1_s_100	Oncocephalus squalidus	0	BGLIB977-24
-4	5	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Reduviidae	BLAST	family	656	1533	Reduviidae	BGLIB977-24_r_1.3_s_50	Oncocephalus squalidus	0	BGLIB977-24
-18	19	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Reduviidae	BLAST	family	656	1533	Reduviidae	BGLIB977-24_r_1.3_s_100	Oncocephalus squalidus	0	BGLIB977-24
-2	2	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Reduviidae	BLAST	family	656	1533	Reduviidae	BGLIB977-24_r_1.5_s_50	Oncocephalus squalidus	0	BGLIB977-24
-6	7	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Reduviidae	BLAST	family	629	1506	Reduviidae	BGLIB977-24_r_1.5_s_100	Oncocephalus squalidus	0	BGLIB977-24
 46	106	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Reduviidae	BLAST	family	656	1533	Reduviidae	BGLIB978-24_r_1_s_50	Pygolampis bidentata	0	BGLIB978-24
 46	93	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Reduviidae	BLAST	family	610	1260	Pamphagidae	BGLIB978-24_r_1_s_100	Pygolampis bidentata	0	BGLIB978-24
 21	32	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Reduviidae	BLAST	family	620	1497	Miridae,Reduviidae,Pallopteridae	BGLIB978-24_r_1.3_s_50	Pygolampis bidentata	0	BGLIB978-24
@@ -287,24 +239,12 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 28	31	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptopodidae	BLAST	family	613	1206	Veliidae,Notonectidae,Micronectidae,Saldidae,Miridae,Plataspidae,Rhopalidae	BGLIB979-24_r_1.3_s_100	Erianotus lanosus	1	BGLIB979-24
 3	4	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptopodidae	BLAST	family	637	1449	Miridae,Plataspidae	BGLIB979-24_r_1.5_s_50	Erianotus lanosus	1	BGLIB979-24
 15	15	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptopodidae	BLAST	family	559	1020	Veliidae,Notonectidae,Micronectidae,Saldidae,Miridae,Plataspidae,Rhopalidae	BGLIB979-24_r_1.5_s_100	Erianotus lanosus	1	BGLIB979-24
-30	55	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptopodidae	BLAST	family	656	1527	Notonectidae,Leptopodidae,Anthocoridae,Pentatomidae,Plataspidae,Scutelleridae,Lygaeidae	BGLIB980-24_r_1_s_50	Leptopus marmoratus	0	BGLIB980-24
-25	54	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptopodidae	BLAST	family	638	1479	Phasmatidae,Lonchodidae,Gerridae,Notonectidae,Scutelleridae,Largidae,Tipulidae	BGLIB980-24_r_1_s_100	Leptopus marmoratus	0	BGLIB980-24
-3	6	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptopodidae	BLAST	family	657	1527	Saldidae,Leptopodidae,Miridae,Anthocoridae,Pentatomidae,Plataspidae,Scutelleridae	BGLIB980-24_r_1.3_s_50	Leptopus marmoratus	0	BGLIB980-24
-11	18	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptopodidae	BLAST	family	638	1470	Hermatobatidae,Notonectidae,Saldidae,Tingidae,Pentatomidae,Dinidoridae,Tessaratomidae,Scutelleridae	BGLIB980-24_r_1.3_s_100	Leptopus marmoratus	0	BGLIB980-24
-1	1	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptopodidae	BLAST	family	657	1458	Notonectidae,Saldidae,Leptopodidae,Anthocoridae,Plataspidae,Scutelleridae	BGLIB980-24_r_1.5_s_50	Leptopus marmoratus	0	BGLIB980-24
-4	9	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptopodidae	BLAST	family	638	1416	Notonectidae,Aphelocheiridae,Micronectidae,Saldidae,Leptopodidae,Anthocoridae,Scutelleridae	BGLIB980-24_r_1.5_s_100	Leptopus marmoratus	0	BGLIB980-24
 10	26	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptopodidae	BLAST	family	444	1032	Gerridae,Rhopalidae,Tenebrionidae,Cerambycidae,Ptinidae	BGLIB982-24_r_1_s_50	Leptopus marmoratus	0	BGLIB982-24
 0	9	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptopodidae	BLAST	family	105	726		BGLIB982-24_r_1_s_100	Leptopus marmoratus	0	BGLIB982-24
 7	22	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptopodidae	BLAST	family	220	615	Scarabaeidae,Cerambycidae,Dermestidae,Sarcophagidae	BGLIB982-24_r_1.3_s_50	Leptopus marmoratus	1	BGLIB982-24
 0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptopodidae	BLAST	family	102	246		BGLIB982-24_r_1.3_s_100	Leptopus marmoratus	0	BGLIB982-24
 0	8	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptopodidae	BLAST	family	120	504	Termitidae,Acrididae,Perlidae,Capniidae,Veliidae,Miridae,Laemophloeidae,Curculionidae	BGLIB982-24_r_1.5_s_50	Leptopus marmoratus	0	BGLIB982-24
 0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptopodidae	BLAST	family	100	153	Termitidae,Capniidae,Reduviidae,Ulidiidae,Calliphoridae	BGLIB982-24_r_1.5_s_100	Leptopus marmoratus	0	BGLIB982-24
-6	30	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Saldidae	BLAST	family	657	1533	Notonectidae,Saldidae	BGLIB984-24_r_1_s_50	Chiloxanthus pilosus	0	BGLIB984-24
-12	25	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Saldidae	BLAST	family	657	1416	Notonectidae,Aphelocheiridae,Pleidae,Saldidae	BGLIB984-24_r_1_s_100	Chiloxanthus pilosus	0	BGLIB984-24
-5	5	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Saldidae	BLAST	family	657	1488	Notonectidae,Aphelocheiridae,Saldidae,Nabidae,Anthocoridae,Pentatomidae	BGLIB984-24_r_1.3_s_50	Chiloxanthus pilosus	0	BGLIB984-24
-9	9	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Saldidae	BLAST	family	657	1389	Notonectidae,Aphelocheiridae,Saldidae,Nabidae,Anthocoridae,Pentatomidae	BGLIB984-24_r_1.3_s_100	Chiloxanthus pilosus	0	BGLIB984-24
-5	5	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Saldidae	BLAST	family	645	1383	Notonectidae,Aphelocheiridae,Saldidae,Miridae,Anthocoridae,Pentatomidae,Tessaratomidae,Heterogastridae	BGLIB984-24_r_1.5_s_50	Chiloxanthus pilosus	0	BGLIB984-24
-7	7	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Saldidae	BLAST	family	597	1329	Saldidae,Miridae,Anthocoridae,Tessaratomidae,Heterogastridae	BGLIB984-24_r_1.5_s_100	Chiloxanthus pilosus	0	BGLIB984-24
 38	86	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Saldidae	BLAST	family	584	1323	Belostomatidae,Saldidae,Alydidae,Delphacidae	BGLIB985-24_r_1_s_50	Salda morio	0	BGLIB985-24
 28	38	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Saldidae	BLAST	family	484	1173	Limoniidae	BGLIB985-24_r_1_s_100	Salda morio	0	BGLIB985-24
 16	21	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Saldidae	BLAST	family	485	990	Chironomidae,Drosophilidae,Lauxaniidae,Myrmeleontidae	BGLIB985-24_r_1.3_s_50	Salda morio	0	BGLIB985-24
@@ -317,12 +257,6 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 31	68	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	635	1434	Cerambycidae,Rhagionidae,Hepialidae,Geometridae,Chrysopidae	BGLIB987-24_r_1.3_s_100	Geotomus elongatus	0	BGLIB987-24
 11	26	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	509	1236	Baetidae,Carabidae	BGLIB987-24_r_1.5_s_50	Geotomus elongatus	0	BGLIB987-24
 8	17	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	479	1125	Baetidae,Carabidae,Syrphidae	BGLIB987-24_r_1.5_s_100	Geotomus elongatus	0	BGLIB987-24
-14	24	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	656	1530	Pentatomidae,Cydnidae,Plataspidae,Scutelleridae,Heterogastridae	BGLIB988-24_r_1_s_50	Geotomus elongatus	0	BGLIB988-24
-32	47	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	656	1527	Pentatomidae,Plataspidae,Scutelleridae,Coreidae	BGLIB988-24_r_1_s_100	Geotomus elongatus	0	BGLIB988-24
-5	5	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	656	1530	Pentatomidae,Cydnidae,Plataspidae,Scutelleridae	BGLIB988-24_r_1.3_s_50	Geotomus elongatus	0	BGLIB988-24
-18	19	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	656	1527	Pentatomidae,Cydnidae,Plataspidae,Scutelleridae,Heterogastridae	BGLIB988-24_r_1.3_s_100	Geotomus elongatus	0	BGLIB988-24
-3	3	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	656	1494	Pentatomidae,Cydnidae,Plataspidae,Scutelleridae,Heterogastridae,Coreidae	BGLIB988-24_r_1.5_s_50	Geotomus elongatus	0	BGLIB988-24
-5	5	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	656	1476	Pentatomidae,Cydnidae,Dinidoridae,Plataspidae,Scutelleridae,Coreidae	BGLIB988-24_r_1.5_s_100	Geotomus elongatus	0	BGLIB988-24
 41	73	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	656	1527	Pentatomidae,Cydnidae,Plataspidae,Scutelleridae	BGLIB989-24_r_1_s_50	Geotomus punctulatus	0	BGLIB989-24
 47	91	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	656	1506	Cydnidae,Scutelleridae	BGLIB989-24_r_1_s_100	Geotomus punctulatus	0	BGLIB989-24
 24	32	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	656	1527	Cydnidae,Dinidoridae,Plataspidae,Tessaratomidae,Scutelleridae	BGLIB989-24_r_1.3_s_50	Geotomus punctulatus	0	BGLIB989-24
@@ -341,6 +275,18 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 43	55	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	647	1254	Nabidae,Scutelleridae,Blissidae,Rhopalidae	BGLIB991-24_r_1.3_s_100	Ochetostethus opacus	0	BGLIB991-24
 22	34	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	583	1272	Saldidae,Pentatomidae,Cydnidae,Scutelleridae,Blissidae	BGLIB991-24_r_1.5_s_50	Ochetostethus opacus	0	BGLIB991-24
 21	34	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	575	1113	Corixidae,Pentatomidae,Cydnidae,Scutelleridae,Blissidae,Rhopalidae,Coreidae	BGLIB991-24_r_1.5_s_100	Ochetostethus opacus	0	BGLIB991-24
+0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	657	1530	Pentatomidae,Tessaratomidae,Scutelleridae,Coreidae,Stenocephalidae,Pyrrhocoridae	BGLIB992-24_r_1_s_50	Canthophorus dubius	0	BGLIB992-24
+0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	657	1527	Pentatomidae,Tessaratomidae,Scutelleridae,Coreidae,Stenocephalidae,Pyrrhocoridae	BGLIB992-24_r_1_s_100	Canthophorus dubius	0	BGLIB992-24
+0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	657	1530	Pentatomidae,Tessaratomidae,Scutelleridae,Coreidae,Stenocephalidae,Pyrrhocoridae	BGLIB992-24_r_1.3_s_50	Canthophorus dubius	0	BGLIB992-24
+0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	657	1527	Pentatomidae,Tessaratomidae,Scutelleridae,Coreidae,Stenocephalidae,Pyrrhocoridae	BGLIB992-24_r_1.3_s_100	Canthophorus dubius	0	BGLIB992-24
+0	1	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	657	1503	Pentatomidae,Tessaratomidae,Scutelleridae,Coreidae,Stenocephalidae,Pyrrhocoridae	BGLIB992-24_r_1.5_s_50	Canthophorus dubius	0	BGLIB992-24
+0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	657	1500	Pentatomidae,Tessaratomidae,Scutelleridae,Coreidae,Stenocephalidae,Pyrrhocoridae	BGLIB992-24_r_1.5_s_100	Canthophorus dubius	0	BGLIB992-24
+0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	657	1533	Pentatomidae,Tessaratomidae,Scutelleridae,Coreidae,Stenocephalidae,Pyrrhocoridae	BGLIB993-24_r_1_s_50	Canthophorus dubius	0	BGLIB993-24
+0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	657	1533	Pentatomidae,Tessaratomidae,Scutelleridae,Coreidae,Stenocephalidae,Pyrrhocoridae	BGLIB993-24_r_1_s_100	Canthophorus dubius	0	BGLIB993-24
+0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	657	1527	Pentatomidae,Tessaratomidae,Scutelleridae,Coreidae,Stenocephalidae,Pyrrhocoridae	BGLIB993-24_r_1.3_s_50	Canthophorus dubius	0	BGLIB993-24
+0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	657	1527	Pentatomidae,Tessaratomidae,Scutelleridae,Coreidae,Stenocephalidae,Pyrrhocoridae	BGLIB993-24_r_1.3_s_100	Canthophorus dubius	0	BGLIB993-24
+0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	657	1497	Pentatomidae,Tessaratomidae,Stenocephalidae,Pyrrhocoridae	BGLIB993-24_r_1.5_s_50	Canthophorus dubius	0	BGLIB993-24
+0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	657	1497	Pentatomidae,Tessaratomidae,Stenocephalidae,Pyrrhocoridae	BGLIB993-24_r_1.5_s_100	Canthophorus dubius	0	BGLIB993-24
 56	64	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	520	1233	Haaniidae,Cicadidae,Lycidae,Zopheridae,Drosophilidae,Crambidae,Geometridae	BGLIB994-24_r_1_s_50	Canthophorus dubius	0	BGLIB994-24
 31	35	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	479	1092	Chironomidae	BGLIB994-24_r_1_s_100	Canthophorus dubius	0	BGLIB994-24
 19	21	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cydnidae	BLAST	family	460	810	Alydidae,Culicidae,Pamphiliidae	BGLIB994-24_r_1.3_s_50	Canthophorus dubius	0	BGLIB994-24
@@ -359,18 +305,6 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 21	28	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhopalidae	BLAST	family	403	945	Rhopalidae,Coreidae	BGLIB996-24_r_1.3_s_100	Maccevethus errans	0	BGLIB996-24
 7	11	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhopalidae	BLAST	family	564	1392	Rhopalidae,Alydidae,Coreidae	BGLIB996-24_r_1.5_s_50	Maccevethus errans	0	BGLIB996-24
 6	8	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhopalidae	BLAST	family	121	441	Gerridae,Belostomatidae,Scutelleridae,Phoridae	BGLIB996-24_r_1.5_s_100	Maccevethus errans	0	BGLIB996-24
-44	103	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhopalidae	BLAST	family	656	1536	Tessaratomidae,Berytidae,Culicidae,Phoridae,Tachinidae,Osmylidae	BGLIB997-24_r_1_s_50	Maccevethus errans	0	BGLIB997-24
-53	104	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhopalidae	BLAST	family	656	1536	Ninidae,Rhopalidae,Alydidae	BGLIB997-24_r_1_s_100	Maccevethus errans	0	BGLIB997-24
-16	24	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhopalidae	BLAST	family	657	1536	Rhopalidae,Alydidae,Coreidae	BGLIB997-24_r_1.3_s_50	Maccevethus errans	0	BGLIB997-24
-23	47	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhopalidae	BLAST	family	657	1533	Rhopalidae,Alydidae,Coreidae	BGLIB997-24_r_1.3_s_100	Maccevethus errans	0	BGLIB997-24
-2	5	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhopalidae	BLAST	family	567	1437	Rhopalidae,Alydidae,Coreidae	BGLIB997-24_r_1.5_s_50	Maccevethus errans	0	BGLIB997-24
-0	0	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Rhopalidae	BLAST	family	444	1113	Rhopalidae,Alydidae,Coreidae	BGLIB997-24_r_1.5_s_100	Maccevethus errans	0	BGLIB997-24
-38	82	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	656	1530	Scutelleridae	BGLIB999-24_r_1_s_50	Eurygaster austriaca	0	BGLIB999-24
-41	80	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	629	1383	Pentatomidae,Scutelleridae,Elateridae,Erotylidae,Meloidae	BGLIB999-24_r_1_s_100	Eurygaster austriaca	0	BGLIB999-24
-12	14	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	656	1518	Scutelleridae	BGLIB999-24_r_1.3_s_50	Eurygaster austriaca	0	BGLIB999-24
-30	37	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	623	1371	Miridae,Pentatomidae,Scutelleridae,Coreidae	BGLIB999-24_r_1.3_s_100	Eurygaster austriaca	0	BGLIB999-24
-6	6	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	629	1434	Scutelleridae	BGLIB999-24_r_1.5_s_50	Eurygaster austriaca	0	BGLIB999-24
-8	10	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Scutelleridae	BLAST	family	404	1107	Pentatomidae,Scutelleridae	BGLIB999-24_r_1.5_s_100	Eurygaster austriaca	0	BGLIB999-24
 27	41	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00411-NC not in BOLD	None	BLAST	family	634	1293		BGE00411-NC_r_1_s_50	None	0	BGE00411-NC
 23	34	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00411-NC not in BOLD	None	BLAST	family	476	1089		BGE00411-NC_r_1_s_100	None	0	BGE00411-NC
 14	16	data/BGE00411_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00411-NC not in BOLD	None	BLAST	family	349	876		BGE00411-NC_r_1.3_s_50	None	0	BGE00411-NC

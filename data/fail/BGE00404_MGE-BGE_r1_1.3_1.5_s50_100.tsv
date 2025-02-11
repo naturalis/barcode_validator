@@ -23,12 +23,6 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 16	36	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Mutillidae	BLAST	family	652	1506	Aphididae,Mutillidae,Formicidae	BGLIB385-23_r_1.3_s_100	Mutilla quinquemaculata	0	BGLIB385-23
 6	22	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Mutillidae	BLAST	family	616	1470	Aphididae,Tipulidae,Drosophilidae,Tachinidae,Mutillidae	BGLIB385-23_r_1.5_s_50	Mutilla quinquemaculata	0	BGLIB385-23
 4	13	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Mutillidae	BLAST	family	595	1449	Drosophilidae,Agromyzidae,Muscidae,Tachinidae,Mutillidae	BGLIB385-23_r_1.5_s_100	Mutilla quinquemaculata	0	BGLIB385-23
-30	31	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pompilidae	BLAST	family	651	948	Pompilidae,Papilionidae,Riodinidae	BGLIB386-23_r_1_s_50	Arachnospila nuda	0	BGLIB386-23
-45	45	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pompilidae	BLAST	family	627	792	Ichneumonidae	BGLIB386-23_r_1_s_100	Arachnospila nuda	0	BGLIB386-23
-9	9	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pompilidae	BLAST	family	630	855	Pompilidae	BGLIB386-23_r_1.3_s_50	Arachnospila nuda	0	BGLIB386-23
-19	19	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pompilidae	BLAST	family	498	663	Leiodidae,Anthomyzidae,Ichneumonidae	BGLIB386-23_r_1.3_s_100	Arachnospila nuda	0	BGLIB386-23
-1	1	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pompilidae	BLAST	family	536	642	Pompilidae	BGLIB386-23_r_1.5_s_50	Arachnospila nuda	0	BGLIB386-23
-15	15	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pompilidae	BLAST	family	381	438	Leiodidae,Anthomyzidae,Ichneumonidae	BGLIB386-23_r_1.5_s_100	Arachnospila nuda	0	BGLIB386-23
 49	66	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pompilidae	BLAST	family	651	954	Vespidae,Gelechiidae	BGLIB387-23_r_1_s_50	Arachnospila nuda	0	BGLIB387-23
 22	45	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pompilidae	BLAST	family	591	753	Tettigoniidae,Curculionidae,Dermestidae,Bostrichidae,Ulidiidae,Vespidae,Tetracampidae	BGLIB387-23_r_1_s_100	Arachnospila nuda	0	BGLIB387-23
 20	26	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pompilidae	BLAST	family	612	882	Mycetophilidae,Cecidomyiidae,Pompilidae	BGLIB387-23_r_1.3_s_50	Arachnospila nuda	0	BGLIB387-23
@@ -53,12 +47,6 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 12	40	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pompilidae	BLAST	family	250	846	Aphididae,Tachinidae,Tenthredinidae	BGLIB392-23_r_1.3_s_100	Nanoclavelia leucoptera	6	BGLIB392-23
 4	13	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pompilidae	BLAST	family	432	906	Braconidae,Ichneumonidae,Cimbicidae,Pamphiliidae,Lycaenidae,Geometridae	BGLIB392-23_r_1.5_s_50	Nanoclavelia leucoptera	2	BGLIB392-23
 7	15	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pompilidae	BLAST	family	461	732	Tephritidae,Cimbicidae	BGLIB392-23_r_1.5_s_100	Nanoclavelia leucoptera	0	BGLIB392-23
-32	51	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	656	1536	Ichneumonidae	BGLIB404-23_r_1_s_50	Campoplex punctipleuris	0	BGLIB404-23
-22	26	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	657	1515	Ichneumonidae	BGLIB404-23_r_1_s_100	Campoplex punctipleuris	0	BGLIB404-23
-7	15	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	657	1536	Ichneumonidae	BGLIB404-23_r_1.3_s_50	Campoplex punctipleuris	0	BGLIB404-23
-6	7	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	657	1515	Ichneumonidae	BGLIB404-23_r_1.3_s_100	Campoplex punctipleuris	0	BGLIB404-23
-1	4	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	636	1515	Ichneumonidae	BGLIB404-23_r_1.5_s_50	Campoplex punctipleuris	0	BGLIB404-23
-1	3	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	630	1488	Ichneumonidae	BGLIB404-23_r_1.5_s_100	Campoplex punctipleuris	0	BGLIB404-23
 13	47	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	655	1458	Ichneumonidae	BGLIB431-23_r_1_s_50	Campoplex rufipes	0	BGLIB431-23
 14	35	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	641	1326	Ichneumonidae,Lycaenidae	BGLIB431-23_r_1_s_100	Campoplex rufipes	0	BGLIB431-23
 8	20	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	643	1392	Ichneumonidae	BGLIB431-23_r_1.3_s_50	Campoplex rufipes	0	BGLIB431-23
@@ -71,12 +59,6 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 17	17	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	588	666	Agaonidae	BGLIB436-23_r_1.3_s_100	Cryptus subspinosus	0	BGLIB436-23
 22	25	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	441	540	Ichneumonidae,Apidae,Agaonidae	BGLIB436-23_r_1.5_s_50	Cryptus subspinosus	2	BGLIB436-23
 12	18	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	378	498	Agaonidae	BGLIB436-23_r_1.5_s_100	Cryptus subspinosus	0	BGLIB436-23
-27	69	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	657	1563	Ichneumonidae	BGLIB442-23_r_1_s_50	Exetastes rufifemur	0	BGLIB442-23
-5	23	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	633	1494	Ichneumonidae	BGLIB442-23_r_1_s_100	Exetastes rufifemur	0	BGLIB442-23
-12	31	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	633	1539	Ichneumonidae	BGLIB442-23_r_1.3_s_50	Exetastes rufifemur	0	BGLIB442-23
-7	16	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	600	1446	Ichneumonidae	BGLIB442-23_r_1.3_s_100	Exetastes rufifemur	0	BGLIB442-23
-4	5	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	569	1419	Ichneumonidae	BGLIB442-23_r_1.5_s_50	Exetastes rufifemur	0	BGLIB442-23
-4	10	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	516	1212	Ichneumonidae	BGLIB442-23_r_1.5_s_100	Exetastes rufifemur	0	BGLIB442-23
 12	18	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	539	1275	Ichneumonidae,Papilionidae	BGLIB452-23_r_1_s_50	Exetastes femorator	0	BGLIB452-23
 10	13	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	436	1023	Syrphidae,Ichneumonidae,Vespidae	BGLIB452-23_r_1_s_100	Exetastes femorator	0	BGLIB452-23
 6	14	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	374	897	Syrphidae,Ichneumonidae,Papilionidae	BGLIB452-23_r_1.3_s_50	Exetastes femorator	0	BGLIB452-23
@@ -101,6 +83,12 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 6	42	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	629	1389	Ichneumonidae,Erebidae,Geometridae	BGLIB469-23_r_1.3_s_100	Glyptorhaestus punctulatus	0	BGLIB469-23
 6	13	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	586	1395	Ichneumonidae,Gracillariidae,Erebidae,Geometridae	BGLIB469-23_r_1.5_s_50	Glyptorhaestus punctulatus	0	BGLIB469-23
 3	8	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	491	1137	Ichneumonidae,Colletidae	BGLIB469-23_r_1.5_s_100	Glyptorhaestus punctulatus	0	BGLIB469-23
+19	36	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	541	1377	Staphylinidae,Ephydridae,Sarcophagidae,Ichneumonidae	BGLIB472-23_r_1_s_50	Diphyus pedatus	0	BGLIB472-23
+0	13	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	531	1269	Rhaphidophoridae,Culicidae,Syrphidae	BGLIB472-23_r_1_s_100	Diphyus pedatus	0	BGLIB472-23
+20	34	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	526	1362	Ichneumonidae	BGLIB472-23_r_1.3_s_50	Diphyus pedatus	0	BGLIB472-23
+0	13	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	402	1140	Ichneumonidae	BGLIB472-23_r_1.3_s_100	Diphyus pedatus	0	BGLIB472-23
+11	17	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	448	1146	Reduviidae,Ichneumonidae	BGLIB472-23_r_1.5_s_50	Diphyus pedatus	0	BGLIB472-23
+0	10	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Ichneumonidae	BLAST	family	249	912	Reduviidae	BGLIB472-23_r_1.5_s_100	Diphyus pedatus	0	BGLIB472-23
 3	15	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00404-NC not in BOLD	None	BLAST	family	413	978		BGE00404-NC_r_1_s_50	None	0	BGE00404-NC
 0	0	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00404-NC not in BOLD	None	BLAST	family	457	678		BGE00404-NC_r_1_s_100	None	0	BGE00404-NC
 2	9	data/BGE00404_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00404-NC not in BOLD	None	BLAST	family	356	804		BGE00404-NC_r_1.3_s_50	None	15	BGE00404-NC

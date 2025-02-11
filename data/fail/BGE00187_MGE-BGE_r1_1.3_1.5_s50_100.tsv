@@ -1,16 +1,4 @@
 ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons	process_id
-1	1	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1545	Andrenidae	BGENL1439-24_r_1_s_50	Andrena illyrica	0	BGENL1439-24
-1	1	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1545	Andrenidae	BGENL1439-24_r_1_s_100	Andrena illyrica	0	BGENL1439-24
-1	1	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1545	Andrenidae	BGENL1439-24_r_1.3_s_50	Andrena illyrica	0	BGENL1439-24
-1	1	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1545	Andrenidae	BGENL1439-24_r_1.3_s_100	Andrena illyrica	0	BGENL1439-24
-1	1	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1545	Andrenidae	BGENL1439-24_r_1.5_s_50	Andrena illyrica	0	BGENL1439-24
-1	1	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1545	Andrenidae	BGENL1439-24_r_1.5_s_100	Andrena illyrica	0	BGENL1439-24
-14	75	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1545	Andrenidae	BGENL1445-24_r_1_s_50	Andrena curvana	0	BGENL1445-24
-14	73	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1539	Andrenidae	BGENL1445-24_r_1_s_100	Andrena curvana	0	BGENL1445-24
-8	12	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1542	Andrenidae	BGENL1445-24_r_1.3_s_50	Andrena curvana	0	BGENL1445-24
-6	9	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1485	Andrenidae	BGENL1445-24_r_1.3_s_100	Andrena curvana	0	BGENL1445-24
-1	4	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1497	Andrenidae	BGENL1445-24_r_1.5_s_50	Andrena curvana	0	BGENL1445-24
-1	5	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1452	Andrenidae	BGENL1445-24_r_1.5_s_100	Andrena curvana	0	BGENL1445-24
 21	77	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	653	1521	Andrenidae,Halictidae,Colletidae	BGENL1446-24_r_1_s_50	Cubiandrena cubiceps	0	BGENL1446-24
 38	81	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	653	1521	Andrenidae,Halictidae	BGENL1446-24_r_1_s_100	Cubiandrena cubiceps	0	BGENL1446-24
 12	21	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	653	1506	Apidae,Andrenidae,Halictidae,Megachilidae,Colletidae	BGENL1446-24_r_1.3_s_50	Cubiandrena cubiceps	0	BGENL1446-24
@@ -29,12 +17,6 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 0	21	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	295	1080	Apidae	BGENL1452-24_r_1.3_s_100	Amegilla fasciata	0	BGENL1452-24
 0	20	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	267	1125	Apidae	BGENL1452-24_r_1.5_s_50	Amegilla fasciata	0	BGENL1452-24
 0	14	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	261	948	Apidae	BGENL1452-24_r_1.5_s_100	Amegilla fasciata	0	BGENL1452-24
-19	60	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	654	1539	Andrenidae	BGENL1461-24_r_1_s_50	Panurgus canescens	0	BGENL1461-24
-17	50	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	654	1539	Andrenidae	BGENL1461-24_r_1_s_100	Panurgus canescens	0	BGENL1461-24
-5	6	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1539	Andrenidae,Halictidae,Colletidae	BGENL1461-24_r_1.3_s_50	Panurgus canescens	0	BGENL1461-24
-2	5	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1539	Andrenidae,Halictidae,Colletidae	BGENL1461-24_r_1.3_s_100	Panurgus canescens	0	BGENL1461-24
-2	2	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1446	Apidae,Halictidae,Colletidae	BGENL1461-24_r_1.5_s_50	Panurgus canescens	0	BGENL1461-24
-1	1	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1380	Apidae,Halictidae,Colletidae	BGENL1461-24_r_1.5_s_100	Panurgus canescens	0	BGENL1461-24
 11	12	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	545	1314		BGENL1462-24_r_1_s_50	Panurgus canescens	0	BGENL1462-24
 7	8	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	542	1251		BGENL1462-24_r_1_s_100	Panurgus canescens	0	BGENL1462-24
 7	7	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	473	1065		BGENL1462-24_r_1.3_s_50	Panurgus canescens	0	BGENL1462-24
@@ -47,18 +29,6 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 9	14	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	654	1512	Apidae,Andrenidae,Colletidae,Melittidae	BGENL1463-24_r_1.3_s_100	Panurgus canescens	0	BGENL1463-24
 7	14	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	657	1326	Apidae,Andrenidae,Colletidae	BGENL1463-24_r_1.5_s_50	Panurgus canescens	0	BGENL1463-24
 6	7	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	657	1239	Apidae,Andrenidae,Megachilidae,Colletidae,Melittidae	BGENL1463-24_r_1.5_s_100	Panurgus canescens	0	BGENL1463-24
-1	7	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	657	1542	Apidae,Andrenidae,Halictidae,Colletidae,Melittidae	BGENL1464-24_r_1_s_50	Flavipanurgus flavus	0	BGENL1464-24
-1	5	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	657	1539	Apidae,Andrenidae,Halictidae,Colletidae,Melittidae	BGENL1464-24_r_1_s_100	Flavipanurgus flavus	0	BGENL1464-24
-1	4	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	657	1515	Apidae,Andrenidae,Halictidae,Colletidae,Melittidae	BGENL1464-24_r_1.3_s_50	Flavipanurgus flavus	0	BGENL1464-24
-1	1	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	657	1473	Apidae,Andrenidae,Halictidae,Colletidae,Melittidae	BGENL1464-24_r_1.3_s_100	Flavipanurgus flavus	0	BGENL1464-24
-1	4	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	657	1413	Apidae,Andrenidae,Megachilidae,Colletidae,Melittidae	BGENL1464-24_r_1.5_s_50	Flavipanurgus flavus	0	BGENL1464-24
-1	1	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	657	1398	Apidae,Andrenidae,Megachilidae,Colletidae,Melittidae	BGENL1464-24_r_1.5_s_100	Flavipanurgus flavus	0	BGENL1464-24
-6	25	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1500	Apidae,Andrenidae,Halictidae,Colletidae,Melittidae	BGENL1470-24_r_1_s_50	Flavipanurgus ibericus	0	BGENL1470-24
-9	38	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1494	Apidae,Andrenidae,Halictidae,Colletidae,Melittidae	BGENL1470-24_r_1_s_100	Flavipanurgus ibericus	0	BGENL1470-24
-7	9	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1440	Apidae,Andrenidae,Halictidae,Colletidae	BGENL1470-24_r_1.3_s_50	Flavipanurgus ibericus	0	BGENL1470-24
-7	14	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1407	Apidae,Andrenidae,Halictidae,Colletidae	BGENL1470-24_r_1.3_s_100	Flavipanurgus ibericus	0	BGENL1470-24
-5	5	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	631	1323	Apidae,Andrenidae,Halictidae,Colletidae	BGENL1470-24_r_1.5_s_50	Flavipanurgus ibericus	0	BGENL1470-24
-15	15	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	548	1116	Apidae,Andrenidae,Colletidae	BGENL1470-24_r_1.5_s_100	Flavipanurgus ibericus	0	BGENL1470-24
 15	30	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1542	Apidae,Andrenidae,Halictidae,Colletidae	BGENL1471-24_r_1_s_50	Flavipanurgus ibericus	0	BGENL1471-24
 10	19	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1530	Apidae,Andrenidae,Halictidae,Colletidae	BGENL1471-24_r_1_s_100	Flavipanurgus ibericus	0	BGENL1471-24
 3	11	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1497	Andrenidae,Colletidae,Melittidae	BGENL1471-24_r_1.3_s_50	Flavipanurgus ibericus	0	BGENL1471-24
@@ -107,24 +77,24 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 0	22	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	156	780	Mantidae,Leiodidae,Scarabaeidae,Elateridae,Drosophilidae	BGENL1487-24_r_1.3_s_100	Melitturga syriaca	0	BGENL1487-24
 0	12	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	156	528	Mesoveliidae,Philopteridae,Carabidae,Prionoceridae,Chironomidae,Agromyzidae	BGENL1487-24_r_1.5_s_50	Melitturga syriaca	0	BGENL1487-24
 0	1	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	156	429	Mesoveliidae,Philopteridae,Carabidae,Prionoceridae,Chironomidae,Agromyzidae	BGENL1487-24_r_1.5_s_100	Melitturga syriaca	0	BGENL1487-24
+0	0	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1524	Apidae,Halictidae,Colletidae	BGENL1488-24_r_1_s_50	Melitturga praestans	0	BGENL1488-24
+0	0	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1521	Apidae,Halictidae,Colletidae	BGENL1488-24_r_1_s_100	Melitturga praestans	0	BGENL1488-24
+0	0	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1521	Apidae,Halictidae,Colletidae	BGENL1488-24_r_1.3_s_50	Melitturga praestans	0	BGENL1488-24
+0	0	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1521	Apidae,Halictidae,Colletidae	BGENL1488-24_r_1.3_s_100	Melitturga praestans	0	BGENL1488-24
+0	0	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1422	Apidae,Halictidae,Colletidae	BGENL1488-24_r_1.5_s_50	Melitturga praestans	0	BGENL1488-24
+0	0	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1422	Apidae,Halictidae,Colletidae	BGENL1488-24_r_1.5_s_100	Melitturga praestans	0	BGENL1488-24
+0	0	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1530	Apidae,Halictidae,Colletidae	BGENL1489-24_r_1_s_50	Melitturga praestans	0	BGENL1489-24
+0	0	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1521	Apidae,Halictidae,Colletidae	BGENL1489-24_r_1_s_100	Melitturga praestans	0	BGENL1489-24
+0	0	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1521	Apidae,Halictidae,Colletidae	BGENL1489-24_r_1.3_s_50	Melitturga praestans	0	BGENL1489-24
+0	0	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1521	Apidae,Halictidae,Colletidae	BGENL1489-24_r_1.3_s_100	Melitturga praestans	0	BGENL1489-24
+0	0	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	647	1392	Apidae,Halictidae,Colletidae	BGENL1489-24_r_1.5_s_50	Melitturga praestans	0	BGENL1489-24
+0	0	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	638	1383	Apidae,Halictidae,Colletidae	BGENL1489-24_r_1.5_s_100	Melitturga praestans	0	BGENL1489-24
 11	35	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	265	1155		BGENL1497-24_r_1_s_50	Ammobatoides abdominalis	0	BGENL1497-24
 0	36	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	248	1110		BGENL1497-24_r_1_s_100	Ammobatoides abdominalis	0	BGENL1497-24
 3	13	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	211	774		BGENL1497-24_r_1.3_s_50	Ammobatoides abdominalis	0	BGENL1497-24
 0	5	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	164	678		BGENL1497-24_r_1.3_s_100	Ammobatoides abdominalis	0	BGENL1497-24
 0	10	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	121	426	Vespidae,Apidae,Halictidae,Colletidae,Melittidae,Formicidae,Chrysopidae	BGENL1497-24_r_1.5_s_50	Ammobatoides abdominalis	0	BGENL1497-24
 0	1	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	119	339	Vespidae,Apidae,Halictidae,Colletidae,Melittidae,Formicidae,Chrysopidae	BGENL1497-24_r_1.5_s_100	Ammobatoides abdominalis	0	BGENL1497-24
-42	94	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	654	1473	Apidae	BGENL1501-24_r_1_s_50	Ammobates vinctus	0	BGENL1501-24
-24	76	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	655	1383	Apidae	BGENL1501-24_r_1_s_100	Ammobates vinctus	0	BGENL1501-24
-3	10	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	656	1467	Apidae	BGENL1501-24_r_1.3_s_50	Ammobates vinctus	0	BGENL1501-24
-1	5	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	629	1344	Apidae,Megachilidae	BGENL1501-24_r_1.3_s_100	Ammobates vinctus	0	BGENL1501-24
-2	8	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	653	1332	Apidae	BGENL1501-24_r_1.5_s_50	Ammobates vinctus	0	BGENL1501-24
-7	10	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Apidae	BLAST	family	608	1233	Apidae	BGENL1501-24_r_1.5_s_100	Ammobates vinctus	0	BGENL1501-24
-14	30	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1545	Andrenidae	BGENL1514-24_r_1_s_50	Andrena simillima	0	BGENL1514-24
-6	16	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1545	Andrenidae	BGENL1514-24_r_1_s_100	Andrena simillima	0	BGENL1514-24
-5	8	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1545	Andrenidae	BGENL1514-24_r_1.3_s_50	Andrena simillima	0	BGENL1514-24
-4	4	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1545	Andrenidae	BGENL1514-24_r_1.3_s_100	Andrena simillima	0	BGENL1514-24
-1	4	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1545	Andrenidae	BGENL1514-24_r_1.5_s_50	Andrena simillima	0	BGENL1514-24
-1	1	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	656	1545	Andrenidae	BGENL1514-24_r_1.5_s_100	Andrena simillima	0	BGENL1514-24
 27	87	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	652	1542	Andrenidae	BGENL1515-24_r_1_s_50	Andrena illyrica	0	BGENL1515-24
 22	74	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	652	1491	Andrenidae	BGENL1515-24_r_1_s_100	Andrena illyrica	0	BGENL1515-24
 13	31	data/BGE00187_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Andrenidae	BLAST	family	655	1542	Andrenidae	BGENL1515-24_r_1.3_s_50	Andrena illyrica	0	BGENL1515-24

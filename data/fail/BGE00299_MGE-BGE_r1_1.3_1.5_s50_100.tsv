@@ -11,18 +11,6 @@ ambig_basecount	ambig_full_basecount	dataset	error	identification	identification
 0	16	data/BGE00299_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	260	873	Argyresthiidae,Tortricidae	BGSNL832-24_r_1.3_s_100	Dichrorampha gemellana	0	BGSNL832-24
 0	3	data/BGE00299_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	381	1176	Yponomeutidae,Tortricidae,Pyralidae,Crambidae	BGSNL832-24_r_1.5_s_50	Dichrorampha gemellana	0	BGSNL832-24
 3	3	data/BGE00299_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	362	651	Reduviidae	BGSNL832-24_r_1.5_s_100	Dichrorampha gemellana	0	BGSNL832-24
-13	47	data/BGE00299_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	656	1485	Tortricidae,Bombycidae,Noctuidae	BGSNL844-24_r_1_s_50	Eana cottiana	0	BGSNL844-24
-11	32	data/BGE00299_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	599	1398	Tortricidae	BGSNL844-24_r_1_s_100	Eana cottiana	0	BGSNL844-24
-4	5	data/BGE00299_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	608	1425	Tortricidae	BGSNL844-24_r_1.3_s_50	Eana cottiana	0	BGSNL844-24
-16	16	data/BGE00299_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	523	1179	Argyresthiidae,Tortricidae,Papilionidae	BGSNL844-24_r_1.3_s_100	Eana cottiana	0	BGSNL844-24
-4	4	data/BGE00299_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	572	1389	Tortricidae	BGSNL844-24_r_1.5_s_50	Eana cottiana	0	BGSNL844-24
-14	14	data/BGE00299_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	524	1179	Argyresthiidae,Tortricidae,Papilionidae	BGSNL844-24_r_1.5_s_100	Eana cottiana	1	BGSNL844-24
-4	26	data/BGE00299_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	644	1419	Tortricidae,Sesiidae,Erebidae	BGSNL854-24_r_1_s_50	Epiblema chretieni	0	BGSNL854-24
-7	84	data/BGE00299_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	163	1023	Tortricidae,Nymphalidae,Hesperiidae	BGSNL854-24_r_1_s_100	Epiblema chretieni	0	BGSNL854-24
-3	21	data/BGE00299_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	579	1320	Tortricidae	BGSNL854-24_r_1.3_s_50	Epiblema chretieni	0	BGSNL854-24
-7	8	data/BGE00299_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	588	744	Tortricidae,Sphingidae,Nymphalidae,Hesperiidae	BGSNL854-24_r_1.3_s_100	Epiblema chretieni	8	BGSNL854-24
-3	3	data/BGE00299_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	540	1230	Tortricidae,Notodontidae,Geometridae	BGSNL854-24_r_1.5_s_50	Epiblema chretieni	0	BGSNL854-24
-1	1	data/BGE00299_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	405	459	Syrphidae,Tortricidae,Nymphalidae	BGSNL854-24_r_1.5_s_100	Epiblema chretieni	0	BGSNL854-24
 3	10	data/BGE00299_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00299-NC not in BOLD	None	BLAST	family	235	945		BGE00299-NC_r_1_s_50	None	0	BGE00299-NC
 0	0	data/BGE00299_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00299-NC not in BOLD	None	BLAST	family	165	693		BGE00299-NC_r_1_s_100	None	0	BGE00299-NC
 0	12	data/BGE00299_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00299-NC not in BOLD	None	BLAST	family	69	228		BGE00299-NC_r_1.3_s_50	None	0	BGE00299-NC
