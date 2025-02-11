@@ -1,0 +1,6 @@
+2025-02-11 16:44:47,351 - INFO - Reading validation data from data/BGE00147_MGE-BGE_r1_1.3_1.5_s50_100.fasta.tsv
+2025-02-11 16:44:47,356 - INFO - Reading sequences from data/BGE00147_MGE-BGE_r1_1.3_1.5_s50_100.fasta
+2025-02-11 16:44:47,374 - INFO - Selecting best sequences
+2025-02-11 16:44:47,393 - INFO - Writing best sequences to data/pass/BGE00147_MGE-BGE_r1_1.3_1.5_s50_100.fasta
+2025-02-11 16:44:47,398 - INFO - Writing failed sequences to data/fail/BGE00147_MGE-BGE_r1_1.3_1.5_s50_100.tsv
+2025-02-11 16:44:47,402 - INFO - Done
