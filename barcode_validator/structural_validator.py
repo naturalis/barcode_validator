@@ -1,44 +1,105 @@
-import argparse
+from Bio.SeqRecord import SeqRecord
+from typing import Dict, Tuple
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
-from barcode_validator.barcode_validator import BarcodeValidator
-from barcode_validator.dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet
-from barcode_validator.sequence_handler import SequenceHandler
-
-def main(fasta_file_path, logger, config):
-
-    # Process the FASTA file
-    sh = SequenceHandler(config)
-    validator = BarcodeValidator(config)
-    results = []
-    logger.info(f"Starting analysis for file: {fasta_file_path}")
-    for record, json_config in sh.parse_fasta(fasta_file_path):
-        scoped_config = config.local_clone(json_config)
-        result = DNAAnalysisResult(record.id, fasta_file_path)
-        validator.validate_sequence_quality(scoped_config, record, result)
-        results.append(result)
-
-    # Print results
-    print(DNAAnalysisResultSet(results))
 
 
-if __name__ == "__main__":
-    # Process command line arguments
-    parser = argparse.ArgumentParser(description="Analyze DNA sequences from a FASTA file.")
-    parser.add_argument("-f", "--fasta_file", required=True, help="Path to the input FASTA file")
-    parser.add_argument("-c", "--config_file", required=True, help="Path to the configuration YAML file")
-    parser.add_argument("-v", "--verbosity", choices=['DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL'],
-                        help="Set the logging verbosity (default: WARNING)")
-    args = parser.parse_args()
+class StructuralValidator:
+    """
+    Base class for structural validation of DNA sequences.
+    
+    This class defines the interface and common functionality for validating
+    the structural properties of DNA sequences, such as length and ambiguous
+    bases. Specific marker types (protein-coding vs non-coding) should
+    implement their own subclasses.
 
-    # Setup logging
-    main_config = Config()
-    try:
-        main_config.load_config(args.config_file)
-        main_logger = get_formatted_logger(__name__, main_config)
-    except ValueError as e:
-        print(f"Error setting up logging: {e}")
-        exit(1)
+    Examples:
+        >>> from nbitk.config import Config
+        >>> config = Config()
+        >>> config.load_config('/path/to/config.yaml')
+        >>> validator = StructuralValidator(config)
+        >>> record = SeqRecord(...)
+        >>> is_valid, details = validator.validate_sequence(record)
 
-    # Run the main analysis
-    main(args.fasta_file, main_logger, main_config)
+    :param config: Configuration object containing validation parameters
+    """
+
+    def __init__(self, config: Config):
+        """Initialize the structural validator."""
+        self.config = config
+        self.logger = get_formatted_logger(self.__class__.__name__, config)
+        
+    def validate_sequence(self, record: SeqRecord) -> Tuple[bool, Dict]:
+        """
+        Validate a DNA sequence record structurally.
+        
+        :param record: The DNA sequence record to validate            
+        :return: Tuple of (validation_success, validation_details)
+        """
+        results = {}
+        
+        # Validate sequence length
+        length_valid, length_details = self.validate_length(record)
+        results.update(length_details)
+        
+        # Validate ambiguous bases
+        ambig_valid, ambig_details = self.validate_ambiguities(record)
+        results.update(ambig_details)
+        
+        # Perform marker-specific validation
+        marker_valid, marker_details = self.validate_marker_specific(record)
+        results.update(marker_details)
+        
+        # Overall validation success requires all checks to pass
+        success = all([length_valid, ambig_valid, marker_valid])
+        
+        return success, results
+
+    def validate_length(self, record: SeqRecord) -> Tuple[bool, Dict]:
+        """
+        Validate the sequence length against minimum requirements.
+        
+        :param record: The DNA sequence record to validate            
+        :return: Tuple of (length_valid, length_details)
+        """
+        min_length = self.config.get('min_sequence_length', 500)
+        seq_length = len(record.seq)
+        
+        is_valid = seq_length >= min_length
+        details = {
+            'sequence_length': seq_length,
+            'min_length_required': min_length
+        }
+        
+        return is_valid, details
+
+    def validate_ambiguities(self, record: SeqRecord) -> Tuple[bool, Dict]:
+        """
+        Count and validate ambiguous bases in the sequence.
+        
+        :param record: The DNA sequence record to validate            
+        :return: Tuple of (ambiguities_valid, ambiguity_details)
+        """
+        max_ambiguities = self.config.get('max_ambiguities', 6)
+        ambig_count = sum(1 for base in record.seq if base not in 'ATCGatcg')
+        
+        is_valid = ambig_count <= max_ambiguities
+        details = {
+            'ambiguous_bases': ambig_count,
+            'max_ambiguities_allowed': max_ambiguities
+        }
+        
+        return is_valid, details
+
+    def validate_marker_specific(self, record: SeqRecord) -> Tuple[bool, Dict]:
+        """
+        Perform marker-specific validation steps.
+        
+        This method should be overridden by subclasses to handle validation
+        specific to their marker type (e.g., codon validation for protein-coding).
+        Base implementation always returns valid.
+        
+        :param record: The DNA sequence record to validate            
+        :return: Tuple of (marker_valid, marker_details)
+        """
+        return True, {}
