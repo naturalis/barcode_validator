@@ -1,11 +1,11 @@
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, Optional, Tuple
 from Bio.SeqRecord import SeqRecord
 from Bio.Phylo.BaseTree import Tree
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 from nbitk.Taxon import Taxon
 from barcode_validator.blast_runner import BlastRunner
-from barcode_validator.taxonomy_resolver import TaxonomyResolver, Marker
+from barcode_validator.taxonomy_resolver import TaxonomyResolver
 from enum import Enum
 
 
