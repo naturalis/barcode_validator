@@ -1,180 +1,154 @@
-import io
 import tarfile
-from typing import List, Optional
-from barcode_validator.blast_runner import BlastRunner
-from barcode_validator.sequence_handler import SequenceHandler
-from barcode_validator.dna_analysis_result import DNAAnalysisResult
+from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
-from Bio.Phylo.BaseTree import Tree
+from pathlib import Path
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
-from nbitk.Taxon import Taxon
 from nbitk.Phylo.NCBITaxdmp import Parser as NCBIParser
 from nbitk.Phylo.BOLDXLSXIO import Parser as BOLDParser
+from nbitk.Phylo.DwCATaxonomyIO import Parser as DwCParser
+from barcode_validator.dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet
+from barcode_validator.protein_coding_validator import ProteinCodingValidator
+from barcode_validator.non_coding_validator import NonCodingValidator
+from barcode_validator.taxonomic_validator import TaxonomicValidator, TaxonomicBackbone
+from barcode_validator.taxonomy_resolver import Marker
 
 
 class BarcodeValidator:
+    """
+    Main validator class for DNA barcodes.
+
+    This class orchestrates the validation of DNA barcodes by combining structural
+    and taxonomic validation. It can handle both FASTA and tabular input formats,
+    supports different taxonomic backbones, and can be configured to perform
+    structural validation, taxonomic validation, or both.
+
+    Examples:
+        >>> from nbitk.config import Config
+        >>> config = Config()
+        >>> config.load_config('/path/to/config.yaml')
+        >>> validator = BarcodeValidator(config)
+        >>> validator.initialize()
+        >>> results = validator.validate_fasta('sequences.fasta')
+
+    :param config: Configuration object containing validation parameters
+    """
+
     def __init__(self, config: Config):
-        """
-        Initialize the BarcodeValidator object.
-        """
-        self.ncbi_taxonomy = config.get('ncbi_taxonomy')
-        self.ncbi_tree: Optional[Tree] = None
-        self.bold_xlsx_file = config.get('bold_sheet_file')
-        self.bold_tree: Optional[Tree] = None
-        class_name = self.__class__.__name__
-        self.logger = get_formatted_logger(class_name, config)
+        """Initialize the barcode validator."""
+        self.config = config
+        self.logger = get_formatted_logger(self.__class__.__name__, config)
+        self.structural_validator = None
+        self.taxonomic_validator = None
+        self.ncbi_tree = None
+        self.backbone_tree = None
 
     def initialize(self) -> None:
         """
-        Initialize the taxonomy trees. This is separate from __init__ to allow for lazy loading.
-        :return: None
-        """
-        self.logger.info("Initializing taxonomy trees...")
-        self.ncbi_tree = NCBIParser(tarfile.open(self.ncbi_taxonomy, "r:gz")).parse()
-        with open(self.bold_xlsx_file, 'rb') as file:
-            excel_data = io.BytesIO(file.read())
-            self.bold_tree = BOLDParser(excel_data).parse()
-        self.logger.info("Initialization complete.")
+        Initialize validator components.
 
-    def validate_fasta(self, fasta_file_path: str, config: Config) -> List[DNAAnalysisResult]:
+        Creates appropriate validator instances based on configuration.
+        Must be called before validation can be performed.
         """
-        Validate a FASTA file of DNA sequences.
-        :param fasta_file_path: A path to a FASTA file
-        :param config: A Config object
-        :return: A list of DNAAnalysisResult objects
+        # Load taxonomy trees
+        self._load_taxonomy_trees()
+
+        # Create structural validator based on marker type
+        marker = Marker(self.config.get('marker', 'COI-5P'))
+        hmm_dir = Path(self.config.get('hmm_profile_dir'))
+
+        if marker in [Marker.COI_5P, Marker.MATK, Marker.RBCL]:
+            self.structural_validator = ProteinCodingValidator(self.config, hmm_dir)
+        else:
+            self.structural_validator = NonCodingValidator(self.config)
+
+        # Create taxonomic validator if needed
+        if self.config.get('validate_taxonomy', True):
+            self.taxonomic_validator = TaxonomicValidator(
+                self.config,
+                self.ncbi_tree,
+                self.backbone_tree
+            )
+
+    def validate_fasta(self, fasta_file: str) -> DNAAnalysisResultSet:
+        """
+        Validate sequences from a FASTA file.
+
+        :param fasta_file: Path to FASTA file
+        :return: Set of validation results
         """
         results = []
-        sh = SequenceHandler(config)
-        for record, json_config in sh.parse_fasta(fasta_file_path):
-            scoped_config = config.local_clone(json_config)
-            result = DNAAnalysisResult(record.id, fasta_file_path)
-            result.level = scoped_config.get('level')
-            self.validate_record(record, scoped_config, result)
+        for record in SeqIO.parse(fasta_file, 'fasta'):
+            result = DNAAnalysisResult(record.id, fasta_file)
+            self.validate_record(record, result)
             results.append(result)
-        return results
+        return DNAAnalysisResultSet(results)
 
-    def validate_record(self, record: SeqRecord, config: Config, result: DNAAnalysisResult) -> None:
+    def validate_table(self, table_file: str) -> DNAAnalysisResultSet:
         """
-        Validate a single DNA sequence record.
-        :param record: A Bio.SeqRecord object
-        :param config: A Config object
-        :param result: A DNAAnalysisResult object
-        :return: A DNAAnalysisResult object
+        Validate sequences from a tabular file.
+
+        :param table_file: Path to tabular file
+        :return: Set of validation results
         """
-        self.validate_sequence_quality(config, record, result)
-        self.validate_taxonomy(config, record, result)
+        results = []
+        for record in SeqIO.parse(table_file, 'bcdm-tsv'):
+            result = DNAAnalysisResult(record.id, table_file)
+            self.validate_record(record, result)
+            results.append(result)
+        return DNAAnalysisResultSet(results)
 
-    def validate_taxonomy(self, config: Config, record: SeqRecord, result: DNAAnalysisResult) -> None:
+    def validate_record(self, record: SeqRecord, result: DNAAnalysisResult) -> None:
         """
-        Validate the taxonomy of a DNA sequence record.
-        :param config: A Config object
-        :param record: A Bio.SeqRecord object
-        :param result: A DNAAnalysisResult object
+        Validate a single sequence record.
+
+        :param record: The sequence record to validate
+        :param result: Result object to store validation outcomes
         """
+        # Structural validation
+        if self.structural_validator:
+            structural_valid, details = self.structural_validator.validate_sequence(record)
+            result.add_ancillary('structural_valid', str(structural_valid))
+            for key, value in details.items():
+                result.add_ancillary(f'structural_{key}', str(value))
 
-        # Lookup expected taxon in BOLD tree. The default behaviour for BGE is that this is not yet
-        # defined and is retrieved from the BOLD tree. For CSC validation this is defined using the
-        # NCBI taxonomy.
-        if result.exp_taxon is None:
-            sp = self.get_node_by_processid(record.annotations['bcdm_fields']['processid'])
-            if sp is None:
-                self.logger.warning(f"Process ID {record.annotations['bcdm_fields']['processid']} not found in BOLD tree.")
-                result.error = f"{record.annotations['bcdm_fields']['processid']} not in BOLD"
-                return # Skip BLAST if the expected taxon is not found in the BOLD tree
-            else:
+        # Taxonomic validation
+        if self.taxonomic_validator:
+            taxonomic_valid, details = self.taxonomic_validator.validate_taxonomy(record)
+            result.add_ancillary('taxonomic_valid', str(taxonomic_valid))
+            for key, value in details.items():
+                result.add_ancillary(f'taxonomic_{key}', str(value))
 
-                # Traverse BOLD tree to find the expected taxon at the specified rank
-                result.species = sp
-                self.logger.info(f"Species: {result.species}")
-                for node in self.bold_tree.root.get_path(result.species):
-                    if node.taxonomic_rank == config.get('level'):
-                        result.exp_taxon = node
-                        break
+            # Store expected taxon for the validation rank
+            if details.get('rank_taxon'):
+                result.exp_taxon = details['rank_taxon']
 
-        # Run local BLAST to find observed taxon at the specified rank with a taxonomically constrained
-        # search. If the constraint is not defined, it is recovered by fetching the taxon at the specified
-        # rank in the BOLD tree and finding the corresponding node in the NCBI tree. This is the default
-        # behaviour for BGE. For CSC validation, the constraint is defined using the NCBI taxonomy.
-        if config.get('constraint_taxid') is None:
-            constraint = self.build_constraint(result.species, config.get('constrain'))
-        else:
-            constraint = config.get('constraint_taxid')
-        br = BlastRunner(config)
-        br.ncbi_tree = self.ncbi_tree
-        obs_taxon = br.run_localblast(record, constraint, config.get('level'))
+        # Overall validation requires both checks to pass if both are enabled
+        is_valid = True
+        if self.structural_validator:
+            is_valid = is_valid and structural_valid
+        if self.taxonomic_validator:
+            is_valid = is_valid and taxonomic_valid
+        result.add_ancillary('is_valid', str(is_valid))
 
-        # Handle BLAST failure
-        if obs_taxon is None:
-            self.logger.warning(f"Local BLAST failed for {record.annotations['bcdm_fields']['processid']}")
-            result.error = f"Local BLAST failed for sequence '{record.seq}'"
-        else:
-            result.obs_taxon = obs_taxon
+    def _load_taxonomy_trees(self) -> None:
+        """Load NCBI and backbone taxonomy trees."""
+        # Load NCBI taxonomy
+        ncbi_tax_file = self.config.get('ncbi_taxonomy')
+        if ncbi_tax_file:
+            self.logger.info(f"Loading NCBI taxonomy from {ncbi_tax_file}")
+            self.ncbi_tree = NCBIParser(tarfile.open(ncbi_tax_file, "r:gz")).parse()
 
-    def get_node_by_processid(self, process_id):
-        """
-        Get a node from the BOLD tree by its 'processid' attribute.
-        :param process_id: A process ID
-        :return: A Taxon object
-        """
-        self.logger.info(f'Looking up tip by process ID: {process_id}')
-        for node in self.bold_tree.find_clades():
-            if process_id in node.guids:
-                return node
-        return None
-
-    def build_constraint(self, bold_tip: Taxon, rank: str) -> int:
-        """
-        Given a tip from the BOLD tree, looks up its path to the root, fetching the interior node at the specified
-        taxonomic rank. Then, traverses the NCBI tree to find the identically-named node at the same rank and returns
-        its taxon ID.
-        :param bold_tip: A Taxon object from the BOLD tree
-        :param rank: A taxonomic rank to constrain the search to
-        :return: An NCBI taxon ID
-        """
-
-        # Find the node at the specified taxonomic rank in the BOLD lineage that subtends the tip
-        self.logger.info(f"Going to traverse BOLD taxonomy for the {rank} to which {bold_tip} belongs")
-        bold_anc = next(node for node in self.bold_tree.root.get_path(bold_tip) if node.taxonomic_rank == rank)
-        self.logger.info(f"BOLD {bold_tip.taxonomic_rank} {bold_tip.name} is member of {rank} {bold_anc.name}")
-
-        # Find the corresponding node at the same rank in the NCBI tree
-        ncbi_anc = next(node for node in self.ncbi_tree.get_nonterminals()
-                        if node.name == bold_anc.name and node.taxonomic_rank == rank)
-
-        # Return or die
-        if ncbi_anc:
-            self.logger.info(f"Corresponding ncbi node is taxon:{ncbi_anc.guids['taxon']}")
-            return ncbi_anc.guids['taxon']
-        else:
-            raise ValueError(f"Could not find NCBI node for BOLD node '{bold_anc}'")
-
-    def validate_sequence_quality(self, config: Config, record: SeqRecord, result: DNAAnalysisResult) -> None:
-        """
-        Validate the quality of a DNA sequence record.
-        :param config: A Config object
-        :param record: A Bio.SeqRecord object
-        :param result: A DNAAnalysisResult object
-        :return: None
-        """
-
-        # Instantiate result object with process ID and calculate full sequence stats
-        result.full_length = len(record.seq)
-        sh = SequenceHandler(config)
-        result.full_ambiguities = sh.num_ambiguous(record)
-
-        # Compute marker quality metrics
-        aligned_sequence = sh.align_to_hmm(record)
-        if aligned_sequence is None:
-            self.logger.warning(f"Alignment failed for {result.sequence_id}")
-            result.error = f"Alignment failed for sequence '{record.seq}'"
-        else:
-
-            # TODO: make it so that the translation table is inferred from the BCDM annotations of the sequence.
-            # This should be a combination of the taxonomy and the marker code, where the latter should tell us
-            # if the marker is nuclear or mitochondrial and the former should tell us the translation table.
-            # https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi
-            amino_acid_sequence = sh.translate_sequence(aligned_sequence, config.get('translation_table'))
-            result.stop_codons = sh.get_stop_codons(amino_acid_sequence)
-            result.seq_length = sh.marker_seqlength(aligned_sequence)
-            result.ambiguities = sh.num_ambiguous(aligned_sequence)
+        # Load appropriate backbone taxonomy
+        backbone_type = TaxonomicBackbone(self.config.get('taxonomic_backbone', 'bold'))
+        if backbone_type == TaxonomicBackbone.BOLD:
+            bold_file = self.config.get('bold_sheet_file')
+            if bold_file:
+                self.logger.info(f"Loading BOLD taxonomy from {bold_file}")
+                with open(bold_file, 'rb') as f:
+                    self.backbone_tree = BOLDParser(f).parse()
+        else:  # DarwinCore
+            dwc_file = self.config.get('dwc_archive')
+            if dwc_file:
+                self.logger.info(f"Loading DarwinCore taxonomy from {dwc_file}")
+                self.backbone_tree = DwCParser(dwc_file).parse()
