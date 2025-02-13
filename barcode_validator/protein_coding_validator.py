@@ -1,10 +1,10 @@
 from Bio.SeqRecord import SeqRecord
 from Bio.Seq import Seq
 from typing import Optional, List, Dict, Tuple
-import subprocess
 import tempfile
 from pathlib import Path
 from nbitk.config import Config
+from nbitk.Tools import Hmmalign
 from barcode_validator.structural_validator import StructuralValidator
 from barcode_validator.taxonomy_resolver import Marker
 
@@ -33,6 +33,7 @@ class ProteinCodingValidator(StructuralValidator):
         super().__init__(config)
         self.hmm_profile_dir = Path(hmm_profile_dir)
         self.marker = Marker(config.get('marker', 'COI-5P'))
+        self.hmmalign = Hmmalign(config)
 
     def validate_marker_specific(self, record: SeqRecord) -> Tuple[bool, Dict]:
         """
@@ -44,20 +45,20 @@ class ProteinCodingValidator(StructuralValidator):
         validation_results = {}
 
         # Step 1: Align to marker-specific HMM
-        aligned_seq = self.align_to_hmm(record)
+        aligned_seq = self._align_sequence(record)
         if aligned_seq is None:
             return False, {'error': 'HMM alignment failed'}
 
         # Step 2: Determine reading frame
-        reading_frame = self.determine_reading_frame(aligned_seq)
+        reading_frame = self._determine_reading_frame(aligned_seq)
         validation_results['reading_frame'] = reading_frame
 
         # Step 3: Get translation table
-        trans_table = self.determine_translation_table(record)
+        trans_table = self._determine_translation_table(record)
         validation_results['translation_table'] = trans_table
 
         # Step 4: Translate and check for stop codons
-        stop_codons = self.find_stop_codons(aligned_seq, trans_table, reading_frame)
+        stop_codons = self._find_stop_codons(aligned_seq, trans_table, reading_frame)
         validation_results['stop_codons'] = stop_codons
 
         # A valid protein-coding sequence should have no internal stop codons
@@ -66,12 +67,12 @@ class ProteinCodingValidator(StructuralValidator):
 
         return is_valid, validation_results
 
-    def align_to_hmm(self, record: SeqRecord) -> Optional[SeqRecord]:
+    def _align_sequence(self, record: SeqRecord) -> Optional[SeqRecord]:
         """
-        Align sequence to marker-specific HMM profile.
+        Align sequence to marker-specific HMM profile using nbitk's Hmmalign wrapper.
 
-        :param record: The DNA sequence record
-        :return: Aligned sequence or None if alignment fails
+        :param record: The DNA sequence record to align
+        :return: Aligned sequence record or None if alignment fails
         """
         hmm_file = self.hmm_profile_dir / f"{self.marker.value}.hmm"
         if not hmm_file.exists():
@@ -86,20 +87,20 @@ class ProteinCodingValidator(StructuralValidator):
                 temp_input.write(f">{record.id}\n{str(record.seq)}\n")
                 temp_input.flush()
 
-                # Run hmmalign
-                cmd = [
-                    'hmmalign',
-                    '--outformat', 'Stockholm',
-                    str(hmm_file),
-                    temp_input.name
-                ]
+                # Configure hmmalign
+                self.hmmalign.set_hmmfile(str(hmm_file))
+                self.hmmalign.set_seqfile(temp_input.name)
+                self.hmmalign.set_output(temp_output.name)
+                self.hmmalign.set_outformat('Stockholm')
+                self.hmmalign.set_dna()
 
-                result = subprocess.run(cmd, capture_output=True, text=True)
-                if result.returncode != 0:
-                    self.logger.error(f"hmmalign failed: {result.stderr}")
+                # Run hmmalign
+                return_code = self.hmmalign.run()
+                if return_code != 0:
+                    self.logger.error("hmmalign failed")
                     return None
 
-                # Parse Stockholm output and convert to SeqRecord
+                # Parse Stockholm output
                 aligned_seq = self._parse_stockholm_alignment(temp_output.name, record.id)
                 return aligned_seq
 
@@ -107,9 +108,9 @@ class ProteinCodingValidator(StructuralValidator):
             self.logger.error(f"Error in HMM alignment: {str(e)}")
             return None
 
-    def determine_translation_table(self, record: SeqRecord) -> int:
+    def _determine_translation_table(self, record: SeqRecord) -> int:
         """
-        Determine the appropriate translation table for the sequence.
+        Determine the appropriate translation table for the sequence based on marker and taxonomy.
 
         :param record: The DNA sequence record
         :return: Translation table number
@@ -135,7 +136,7 @@ class ProteinCodingValidator(StructuralValidator):
         # Default to standard code
         return 1
 
-    def determine_reading_frame(self, aligned_seq: SeqRecord) -> int:
+    def _determine_reading_frame(self, aligned_seq: SeqRecord) -> int:
         """
         Determine the reading frame from HMM-aligned sequence.
 
@@ -161,7 +162,7 @@ class ProteinCodingValidator(StructuralValidator):
 
         return best_frame
 
-    def find_stop_codons(self, record: SeqRecord, trans_table: int, reading_frame: int) -> List[int]:
+    def _find_stop_codons(self, record: SeqRecord, trans_table: int, reading_frame: int) -> List[int]:
         """
         Find positions of premature stop codons in the sequence.
 
