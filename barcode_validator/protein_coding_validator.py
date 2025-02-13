@@ -1,12 +1,14 @@
 from Bio.SeqRecord import SeqRecord
 from Bio.Seq import Seq
-from typing import Optional, List, Dict, Tuple
+from Bio import AlignIO
+from typing import Optional, List, Tuple
 import tempfile
 from pathlib import Path
 from nbitk.config import Config
 from nbitk.Tools import Hmmalign
 from barcode_validator.structural_validator import StructuralValidator
 from barcode_validator.taxonomy_resolver import Marker
+from barcode_validator.dna_analysis_result import DNAAnalysisResult
 
 
 class ProteinCodingValidator(StructuralValidator):
@@ -35,37 +37,38 @@ class ProteinCodingValidator(StructuralValidator):
         self.marker = Marker(config.get('marker', 'COI-5P'))
         self.hmmalign = Hmmalign(config)
 
-    def validate_marker_specific(self, record: SeqRecord) -> Tuple[bool, Dict]:
+    def validate_marker_specific(self, record: SeqRecord) -> Tuple[bool, DNAAnalysisResult]:
         """
         Validate protein-coding specific features including reading frame and stop codons.
 
         :param record: The DNA sequence record to validate
-        :return: Tuple of (validation_success, validation_details)
+        :return: Tuple of (validation_success, result_object)
         """
-        validation_results = {}
+        result = DNAAnalysisResult(record.id)
 
         # Step 1: Align to marker-specific HMM
         aligned_seq = self._align_sequence(record)
         if aligned_seq is None:
-            return False, {'error': 'HMM alignment failed'}
+            result.error = 'HMM alignment failed'
+            return False, result
 
         # Step 2: Determine reading frame
         reading_frame = self._determine_reading_frame(aligned_seq)
-        validation_results['reading_frame'] = reading_frame
+        result.add_ancillary('reading_frame', str(reading_frame))
 
         # Step 3: Get translation table
         trans_table = self._determine_translation_table(record)
-        validation_results['translation_table'] = trans_table
+        result.add_ancillary('translation_table', str(trans_table))
 
         # Step 4: Translate and check for stop codons
         stop_codons = self._find_stop_codons(aligned_seq, trans_table, reading_frame)
-        validation_results['stop_codons'] = stop_codons
+        result.stop_codons = stop_codons
 
         # A valid protein-coding sequence should have no internal stop codons
         is_valid = len(stop_codons) == 0
-        validation_results['is_valid'] = is_valid
+        result.add_ancillary('is_valid', str(is_valid))
 
-        return is_valid, validation_results
+        return is_valid, result
 
     def _align_sequence(self, record: SeqRecord) -> Optional[SeqRecord]:
         """
@@ -81,7 +84,7 @@ class ProteinCodingValidator(StructuralValidator):
 
         try:
             with tempfile.NamedTemporaryFile(mode='w+', suffix='.fasta', delete=False) as temp_input, \
-                 tempfile.NamedTemporaryFile(mode='w+', suffix='.sto', delete=False) as temp_output:
+                    tempfile.NamedTemporaryFile(mode='w+', suffix='.sto', delete=False) as temp_output:
 
                 # Write sequence to temporary FASTA
                 temp_input.write(f">{record.id}\n{str(record.seq)}\n")
@@ -106,6 +109,30 @@ class ProteinCodingValidator(StructuralValidator):
 
         except Exception as e:
             self.logger.error(f"Error in HMM alignment: {str(e)}")
+            return None
+
+    def _parse_stockholm_alignment(self, stockholm_file: str, seq_id: str) -> Optional[SeqRecord]:
+        """
+        Parse Stockholm format alignment output from HMMER using BioPython's AlignIO.
+
+        :param stockholm_file: Path to Stockholm format alignment file
+        :param seq_id: ID of the sequence to extract
+        :return: Aligned sequence record or None if parsing fails
+        """
+        try:
+            # Parse the alignment using AlignIO
+            alignment = AlignIO.read(stockholm_file, "stockholm")
+
+            # Find the record with matching ID
+            for record in alignment:
+                if record.id == seq_id:
+                    return record
+
+            self.logger.error(f"Sequence {seq_id} not found in alignment")
+            return None
+
+        except Exception as e:
+            self.logger.error(f"Error parsing Stockholm alignment: {str(e)}")
             return None
 
     def _determine_translation_table(self, record: SeqRecord) -> int:
@@ -185,29 +212,3 @@ class ProteinCodingValidator(StructuralValidator):
                 stop_positions.append(nuc_pos)
 
         return stop_positions
-
-    def _parse_stockholm_alignment(self, stockholm_file: str, seq_id: str) -> Optional[SeqRecord]:
-        """
-        Parse Stockholm format alignment output from HMMER.
-
-        :param stockholm_file: Path to Stockholm format alignment file
-        :param seq_id: ID of the sequence to extract
-        :return: Aligned sequence record or None if parsing fails
-        """
-        try:
-            aligned_seq = None
-            with open(stockholm_file) as f:
-                for line in f:
-                    if line.startswith(seq_id):
-                        fields = line.strip().split()
-                        if len(fields) >= 2:
-                            aligned_seq = fields[1]
-                            break
-
-            if aligned_seq:
-                return SeqRecord(Seq(aligned_seq), id=seq_id)
-            return None
-
-        except Exception as e:
-            self.logger.error(f"Error parsing Stockholm alignment: {str(e)}")
-            return None
