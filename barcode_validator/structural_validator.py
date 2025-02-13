@@ -103,3 +103,18 @@ class StructuralValidator:
         :return: Tuple of (marker_valid, marker_details)
         """
         return True, {}
+
+    def validate_length(self, record: SeqRecord) -> Tuple[bool, Dict]:
+        """
+        Using length calculation from sequence_handler.py
+        """
+        seq_str = str(record.seq).replace('-', '').replace('~', '')
+        length = len(seq_str)
+        return length >= self.config.get('min_length', 500), {'length': length}
+
+    def validate_ambiguities(self, record: SeqRecord) -> Tuple[bool, Dict]:
+        """
+        Using ambiguity counting from sequence_handler.py
+        """
+        ambig_count = len([base for base in record.seq if base not in 'acgtACGT-~'])
+        return ambig_count <= self.config.get('max_ambiguities', 6), {'ambiguities': ambig_count}
