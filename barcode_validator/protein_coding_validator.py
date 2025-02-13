@@ -212,3 +212,12 @@ class ProteinCodingValidator(StructuralValidator):
                 stop_positions.append(nuc_pos)
 
         return stop_positions
+
+    def _translate_sequence(self, record: SeqRecord, trans_table: int) -> SeqRecord:
+        """
+        For COI-5P, remove first base to ensure proper phasing
+        """
+        # Take phasing logic from sequence_handler.py
+        if self.marker == Marker.COI_5P:
+            record = record[1:]  # Remove first base for proper phasing
+        return record.translate(table=trans_table)
