@@ -11,7 +11,7 @@ from barcode_validator.dna_analysis_result import DNAAnalysisResult, DNAAnalysis
 from barcode_validator.protein_coding_validator import ProteinCodingValidator
 from barcode_validator.non_coding_validator import NonCodingValidator
 from barcode_validator.taxonomic_validator import TaxonomicValidator, TaxonomicBackbone
-from barcode_validator.taxonomy_resolver import Marker
+from barcode_validator.taxonomy_resolver import Marker, TaxonomyResolver
 
 
 class BarcodeValidator:
@@ -34,14 +34,18 @@ class BarcodeValidator:
     :param config: Configuration object containing validation parameters
     """
 
-    def __init__(self, config: Config):
-        """Initialize the barcode validator."""
+    def __init__(self, config: Config, taxonomy_resolver: TaxonomyResolver):
+        """
+        Initialize the barcode validator.
+
+        :param config: Configuration object containing validation parameters
+        :param taxonomy_resolver: TaxonomyResolver instance for handling taxonomic operations
+        """
         self.config = config
         self.logger = get_formatted_logger(self.__class__.__name__, config)
+        self.taxonomy_resolver = taxonomy_resolver
         self.structural_validator = None
         self.taxonomic_validator = None
-        self.ncbi_tree = None
-        self.backbone_tree = None
 
     def initialize(self) -> None:
         """
@@ -50,9 +54,6 @@ class BarcodeValidator:
         Creates appropriate validator instances based on configuration.
         Must be called before validation can be performed.
         """
-        # Load taxonomy trees
-        self._load_taxonomy_trees()
-
         # Create structural validator based on marker type
         marker = Marker(self.config.get('marker', 'COI-5P'))
         hmm_dir = Path(self.config.get('hmm_profile_dir'))
@@ -66,8 +67,7 @@ class BarcodeValidator:
         if self.config.get('validate_taxonomy', True):
             self.taxonomic_validator = TaxonomicValidator(
                 self.config,
-                self.ncbi_tree,
-                self.backbone_tree
+                self.taxonomy_resolver
             )
 
     def validate_fasta(self, fasta_file: str) -> DNAAnalysisResultSet:
@@ -105,25 +105,70 @@ class BarcodeValidator:
         :param record: The sequence record to validate
         :param result: Result object to store validation outcomes
         """
-        # Structural validation
+        # Get identification and rank from bcdm_fields
+        bcdm_fields = record.annotations.get('bcdm_fields', {})
+        identification = bcdm_fields.get('identification')
+        rank = bcdm_fields.get('rank', 'null')
+
+        if not identification:
+            result.error = "No taxonomic identification provided"
+            return
+
+        # First resolve against backbone taxonomy
+        backbone_taxon = self.taxonomy_resolver.resolve_backbone(identification, rank)
+        if not backbone_taxon:
+            result.error = f"Could not resolve taxon in backbone: {identification}"
+            return
+
+        # Get validation taxa
+        validation_level = self.config.get('level', 'family')
+        backbone_validation, ncbi_validation = self.taxonomy_resolver.get_validation_taxon(
+            backbone_taxon, validation_level
+        )
+
+        if not backbone_validation:
+            result.error = f"Could not find {validation_level} rank in backbone for {identification}"
+            return
+
+        if not ncbi_validation:
+            result.error = f"Could not map {validation_level} {backbone_validation.name} to NCBI taxonomy"
+            return
+
+        # Store expected taxon (from backbone) and continue with validation
+        result.level = validation_level
+        result.exp_taxon = backbone_validation
+
+        # Configure validation
+        if self.structural_validator:
+            marker = bcdm_fields.get('marker_code', 'COI-5P')
+            try:
+                marker_enum = Marker(marker)
+            except ValueError:
+                self.logger.warning(f"Unknown marker {marker}, using COI-5P")
+                marker_enum = Marker.COI_5P
+
+            # Use NCBI taxon for translation table and constraint
+            trans_table = self.taxonomy_resolver.get_translation_table(marker_enum, ncbi_validation)
+            self.config.set('translation_table', trans_table)
+
+            constraint_level = self.config.get('constrain', 'class')
+            constraint_id = self.taxonomy_resolver.get_constraint_taxon(ncbi_validation, constraint_level)
+            self.config.set('constraint_taxid', constraint_id)
+
+        # Perform validations
         if self.structural_validator:
             structural_valid, details = self.structural_validator.validate_sequence(record)
             result.add_ancillary('structural_valid', str(structural_valid))
             for key, value in details.items():
                 result.add_ancillary(f'structural_{key}', str(value))
 
-        # Taxonomic validation
         if self.taxonomic_validator:
             taxonomic_valid, details = self.taxonomic_validator.validate_taxonomy(record)
             result.add_ancillary('taxonomic_valid', str(taxonomic_valid))
             for key, value in details.items():
                 result.add_ancillary(f'taxonomic_{key}', str(value))
 
-            # Store expected taxon for the validation rank
-            if details.get('rank_taxon'):
-                result.exp_taxon = details['rank_taxon']
-
-        # Overall validation requires both checks to pass if both are enabled
+        # Overall validation
         is_valid = True
         if self.structural_validator:
             is_valid = is_valid and structural_valid
