@@ -29,16 +29,16 @@ class BarcodeIO:
         self.config = config
         self.logger = get_formatted_logger(self.__class__.__name__, config)
 
-    def parse_input(self, file_path: Path) -> Iterator[Tuple[SeqRecord, Optional[Dict]]]:
+    def parse_input(self, file_path: Path) -> Iterator[SeqRecord]:
         """
         Parse input file in either FASTA or tabular format.
-        
+
         :param file_path: Path to input file
-        :return: Iterator of (sequence_record, metadata) tuples
+        :return: Iterator of SeqRecord objects
         """
         suffix = Path(file_path).suffix.lower()
         if suffix in ['.fa', '.fasta', '.fna']:
-            yield from self._parse_fasta(file_path)
+            yield from SeqIO.parse(file_path, 'fasta')
         elif suffix in ['.tsv', '.txt']:
             yield from self._parse_tsv(file_path)
         else:
@@ -71,33 +71,51 @@ class BarcodeIO:
             
             yield record, config
 
-    def _parse_tsv(self, file_path: Path) -> Iterator[Tuple[SeqRecord, Dict]]:
+    def _parse_tsv(self, file_path: Path) -> Iterator[SeqRecord]:
         """
-        Parse tabular format with sequence data and metadata.
-        
+        Parse CSC-style tabular format with sequence data and metadata.
+
+        Expected columns include:
+        - local_id: Primary key for tracking records
+        - nuc: The sequence data
+        - marker_code: Barcode marker name (e.g. COI-5P)
+        - verbatim_identification: Taxonomic identification
+        - verbatim_kingdom: Kingdom classification
+        - verbatim_rank: Taxonomic rank of identification
+
         :param file_path: Path to TSV file
-        :return: Iterator of (sequence_record, metadata) tuples
+        :return: Iterator of SeqRecord objects
         """
         self.logger.info(f"Parsing TSV file: {file_path}")
         with open(file_path) as f:
             reader = csv.DictReader(f, delimiter='\t')
             for row in reader:
-                if 'sequence_id' not in row or 'nuc' not in row:
-                    raise ValueError("TSV must contain 'sequence_id' and 'nuc' columns")
-                
+                # Extract required fields
+                local_id = row.get('local_id')
+                sequence = row.get('nuc')
+
+                if not all([local_id, sequence]):
+                    self.logger.warning(f"Skipping row with missing required fields")
+                    continue
+
                 # Create sequence record
                 record = SeqRecord(
-                    seq=row['nuc'],
-                    id=row['sequence_id'],
-                    name=row['sequence_id'],
-                    description=row.get('identification', '')
+                    seq=Seq(sequence),
+                    id=local_id,
+                    name=local_id,
+                    description=row.get('verbatim_identification', '')
                 )
-                
-                # Create metadata dict from remaining columns
-                metadata = {k: v for k, v in row.items() 
-                          if k not in ['sequence_id', 'nuc']}
-                
-                yield record, metadata
+
+                # Add fields to bcdm_fields
+                record.annotations['bcdm_fields'] = {
+                    'marker_code': row.get('marker_code'),
+                    'identification': row.get('verbatim_identification'),
+                    'kingdom': row.get('verbatim_kingdom'),
+                    'rank': row.get('verbatim_rank'),
+                    'source': row.get('originial_source', 'unknown')
+                }
+
+                yield record
 
     def write_results(self, results: DNAAnalysisResultSet, output_path: Path) -> None:
         """
