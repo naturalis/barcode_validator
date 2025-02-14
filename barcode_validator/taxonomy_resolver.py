@@ -1,9 +1,10 @@
 import logging
+import re
 from enum import Enum
 from Bio import Entrez
 from nbitk.Taxon import Taxon
 from Bio.Phylo.BaseTree import Tree
-from typing import Optional
+from typing import Optional, Tuple
 
 """
 SYNOPSIS
@@ -21,71 +22,142 @@ class Marker(Enum):
     RBCL = "rbcL"
 
 class TaxonomyResolver:
-
     """
-    A class for resolving taxonomic names to full taxonomic classifications using NCBI taxonomy database.
-    The class uses the Entrez module from Biopython to query the NCBI taxonomy database to obtain a taxon ID.
-    The web service is aware of synonyms and alternate spellings, so it is somewhat robus. From that initial
-    taxon ID, a nbitk.Taxon object is retrieved from the resident NCBI taxonomy tree.
-    SYNOPSIS
-    # Example usage:
-    >>> resolver = TaxonomyResolver("your.email@example.com")
-    >>> taxon = resolver.get_taxon("Homo sapiens")
+    A class for resolving taxonomic names against a backbone taxonomy (NSR/BOLD/DwC)
+    and mapping to NCBI taxonomy for validation.
+
+    For each identification, first resolve against the configured backbone taxonomy,
+    then map to NCBI for validation purposes. This ensures maximum coverage of local
+    names while enabling validation against GenBank's reference data.
+
+    Example usage:
+        >>> resolver = TaxonomyResolver(email, logger, ncbi_tree, nsr_tree)
+        >>> backbone_taxon = resolver.resolve_backbone("Homo sapiens")
+        >>> ncbi_taxon = resolver.get_ncbi_taxon(backbone_taxon)
     """
 
-    def __init__(self, email: str, logger: logging.Logger, ncbi_tree: Tree):
+    def __init__(self, email: str, logger: logging.Logger, ncbi_tree: Tree, backbone_tree: Tree):
         """
         Initialize the taxonomy resolver.
-        :param email: Email address for NCBI Entrez queries (required by NCBI)
+        :param email: Email address for NCBI Entrez queries
+        :param logger: Logger instance
+        :param ncbi_tree: NCBI taxonomy tree
+        :param backbone_tree: Configured backbone taxonomy (NSR/BOLD/DwC)
         """
         Entrez.email = email
         self.logger = logger
         self.ncbi_tree = ncbi_tree
+        self.backbone_tree = backbone_tree
         self.tax_ranks = ['kingdom', 'phylum', 'class', 'order', 'family', 'genus', 'species']
 
-    def get_taxon(self, taxon_name: str) -> Optional[Taxon]:
+    def resolve_backbone(self, identification: str, rank: str = 'null') -> Optional[Taxon]:
         """
-        Resolve a taxon name to its full taxonomy using NCBI taxonomy database.
-        :param taxon_name: The scientific taxonomic name to resolve
-        :return: A nbitk.Taxon object or None if not found
+        Resolve a verbatim identification against the backbone taxonomy.
+
+        :param identification: Verbatim taxonomic name
+        :param rank: Provided rank of the identification
+        :return: Resolved taxon in backbone taxonomy or None if not found
+        """
+        if not identification:
+            return None
+
+        # If no rank but looks like species, infer that
+        rank = rank.lower()
+        if rank == 'null':
+            pattern = r'^[A-Z][a-z]+ [a-z]+$'
+            if re.match(pattern, identification):
+                self.logger.warning(f"Assuming {identification} is a species")
+
+        # Search in backbone tree
+        for node in self.backbone_tree.find_clades():
+            if node.name.lower() == identification.lower():
+                return node
+
+        self.logger.warning(f"Taxon not found in backbone: {identification}")
+        return None
+
+    def get_ncbi_taxon(self, backbone_taxon: Taxon) -> Optional[Taxon]:
+        """
+        Map a backbone taxon to NCBI taxonomy.
+
+        :param backbone_taxon: Taxon from backbone taxonomy
+        :return: Corresponding NCBI taxon or None if not found
         """
         try:
-            # First, search for the taxon ID
-            search_term = f"{taxon_name}[Scientific Name]"
+            search_term = f"{backbone_taxon.name}[Scientific Name]"
             self.logger.info(f"Searching for '{search_term}' at Entrez")
 
-            # Search in taxonomy database
             handle = Entrez.esearch(db="taxonomy", term=search_term)
             record = Entrez.read(handle)
             handle.close()
-            self.logger.debug(f"Search results: {record}")
+
             if not record['IdList']:
-                self.logger.warning(f"Taxon not found: {taxon_name}")
+                self.logger.warning(f"Taxon not found in NCBI: {backbone_taxon.name}")
                 return None
 
-            # Get the first (most relevant) taxonomy ID and the associated taxon from the resident tree
             taxid = record['IdList'][0]
-            self.logger.info(f"Found taxid: {taxid}")
             for node in self.ncbi_tree.find_clades():
-                if node.guids['taxon'] == taxid:
-                    self.logger.debug(f"Found taxon: {node}")
+                if node.guids.get('taxon') == taxid:
                     return node
-            self.logger.warning(f"Taxon not found: {taxon_name}")
+
             return None
 
         except Exception as e:
-            print(f"Error resolving taxonomy: {str(e)}")
+            self.logger.error(f"Error resolving NCBI taxonomy: {str(e)}")
             return None
+
+    def get_validation_taxon(self, backbone_taxon: Taxon, level: str) -> Tuple[Optional[Taxon], Optional[Taxon]]:
+        """
+        Get taxa at validation level in both backbone and NCBI taxonomies.
+
+        :param backbone_taxon: Initially resolved taxon in backbone taxonomy
+        :param level: Desired validation level
+        :return: Tuple of (backbone_validation_taxon, ncbi_validation_taxon)
+        """
+        if not backbone_taxon:
+            return None, None
+
+        # First get the validation level taxon in the backbone
+        backbone_validation = None
+        for node in self.backbone_tree.root.get_path(backbone_taxon):
+            if str(node.taxonomic_rank).lower() == level:
+                backbone_validation = node
+                break
+
+        if not backbone_validation:
+            return None, None
+
+        # Then map to NCBI
+        ncbi_validation = self.get_ncbi_taxon(backbone_validation)
+        return backbone_validation, ncbi_validation
+
+    def get_constraint_taxon(self, taxon: Taxon, constraint_level: str = 'class') -> str:
+        """
+        Get the NCBI taxon ID for BLAST constraint.
+
+        :param taxon: The NCBI taxon to get constraint for
+        :param constraint_level: Level at which to constrain (default: class)
+        :return: NCBI taxon ID as string, defaults to Eukaryota (2759)
+        """
+        if not taxon:
+            return '2759'
+
+        for node in self.ncbi_tree.root.get_path(taxon):
+            if str(node.taxonomic_rank).lower() == constraint_level:
+                if 'taxon' in node.guids:
+                    return node.guids['taxon']
+
+        self.logger.warning("Using Eukaryota (taxon:2759) as BLAST constraint")
+        return '2759'
 
     def get_translation_table(self, marker: Marker, taxon: Taxon) -> int:
         """
         Determine the appropriate translation table based on marker and taxonomy.
 
         :param marker: The genetic Marker (enum) being analyzed
-        :param taxon: The Taxon object representing the tip of the classification
+        :param taxon: The NCBI taxon object representing the tip of the classification
         :return: Translation table index (int) for use with Biopython
         """
-
         taxonomy_dict = {}
         for node in self.ncbi_tree.root.get_path(taxon):
             if node.taxonomic_rank in self.tax_ranks:
@@ -122,4 +194,3 @@ class TaxonomyResolver:
 
             # Fall back to standard code if no specific rules match
             return 1
-
