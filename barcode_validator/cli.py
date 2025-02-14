@@ -10,7 +10,7 @@ from nbitk.logger import get_formatted_logger
 
 from barcode_validator.barcode_io import BarcodeIO
 from barcode_validator.barcode_validator import BarcodeValidator
-from barcode_validator.dna_analysis_result import DNAAnalysisResultSet
+from barcode_validator.dna_analysis_result import DNAAnalysisResultSet, DNAAnalysisResult
 
 
 class BarcodeValidatorCLI:
@@ -166,23 +166,25 @@ performs validations, and outputs results as TSV. Optionally emits valid sequenc
 
     def perform_validation(self) -> DNAAnalysisResultSet:
         """
-        Perform validation on the input file.
+        Perform validation on input sequences.
 
-        :return: DNAAnalysisResultSet object.
+        :return: Set of validation results
         """
+        # Initialize validator
         validator = BarcodeValidator(self.config)
         validator.initialize()
-        input_file = self.args.input_file
-        file_ext = os.path.splitext(input_file)[1].lower()
-        if file_ext in [".fa", ".fasta", ".fna"]:
-            self.logger.info(f"Validating FASTA file: {input_file}")
-            results = validator.validate_fasta(input_file)
-        elif file_ext in [".tsv", ".txt"]:
-            self.logger.info(f"Validating TSV file: {input_file}")
-            results = validator.validate_table(input_file)
-        else:
-            sys.exit(f"Unsupported input file format: {file_ext}")
-        return results
+
+        # Setup I/O handler
+        io_handler = BarcodeIO(self.config)
+        results = []
+
+        # Process each record
+        for record in io_handler.parse_input(self.args.input_file):
+            result = DNAAnalysisResult(record.id, self.args.input_file)
+            validator.validate_record(record, result)
+            results.append(result)
+
+        return DNAAnalysisResultSet(results)
 
     def merge_ancillary_data(self, result_set: DNAAnalysisResultSet) -> DNAAnalysisResultSet:
         """
