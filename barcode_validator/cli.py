@@ -1,18 +1,9 @@
-"""
-barcode_validator
-
-A command line tool for DNA Barcode Validation.
-
-This tool ingests FASTA/TSV sequence data, optionally merges CSV analytics and YAML configuration
-into each result, performs structural and/or taxonomic validation, and outputs results as TSV.
-Optionally, it can emit only valid sequences as FASTA.
-"""
-
 import argparse
 import os
 import sys
 import logging
 import tempfile
+import requests
 
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
@@ -34,29 +25,63 @@ class BarcodeValidatorCLI:
         self.logger.info("Starting DNA Barcode Validation CLI")
         self.setup_taxonomy()
 
-    @staticmethod
-    def download_ncbi_dump(destination: str) -> str:
+    def download_ncbi_dump(self, destination: str) -> str:
         """
         Download NCBI taxdump.
 
         :param destination: Location to store the downloaded file.
         :return: Location of the downloaded file.
         """
-        logging.info("Downloading NCBI taxdump...")
-        # Insert actual download logic here.
-        return destination
+        url = self.config.get("ncbi_taxonomy_url")
+        if not url:
+            self.logger.error("NCBI taxonomy URL is not set in the configuration.")
+            sys.exit(1)
 
-    @staticmethod
-    def download_nsr_dump(destination: str) -> str:
+        self.logger.info(f"Downloading NCBI taxdump from {url}...")
+
+        try:
+            response = requests.get(url, stream=True)
+            response.raise_for_status()  # Raise an error for bad HTTP responses (4xx or 5xx)
+
+            with open(destination, "wb") as file:
+                for chunk in response.iter_content(chunk_size=8192):
+                    file.write(chunk)
+
+            self.logger.info(f"Download completed: {destination}")
+            return destination
+
+        except requests.exceptions.RequestException as e:
+            self.logger.error(f"Failed to download NCBI taxdump: {e}")
+            sys.exit(1)
+
+    def download_nsr_dump(self, destination: str) -> str:
         """
         Download NSR dump.
 
         :param destination: Location to store the downloaded file.
         :return: Location of the downloaded file.
         """
-        logging.info("Downloading NSR dump...")
-        # Insert actual download logic here.
-        return destination
+        url = self.config.get("dwc_archive_url")
+        if not url:
+            self.logger.error("NSR taxonomy URL is not set in the configuration.")
+            sys.exit(1)
+
+        self.logger.info(f"Downloading NSR dump from {url}...")
+
+        try:
+            response = requests.get(url, stream=True)
+            response.raise_for_status()  # Raise an error for bad HTTP responses (4xx or 5xx)
+
+            with open(destination, "wb") as file:
+                for chunk in response.iter_content(chunk_size=8192):
+                    file.write(chunk)
+
+            self.logger.info(f"Download completed: {destination}")
+            return destination
+
+        except requests.exceptions.RequestException as e:
+            self.logger.error(f"Failed to download NSR dump: {e}")
+            sys.exit(1)
 
     @staticmethod
     def parse_args() -> argparse.Namespace:
