@@ -2,28 +2,53 @@ import argparse
 import os
 import sys
 import logging
+import tarfile
 import tempfile
 import requests
 
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
+from nbitk.Phylo.NCBITaxdmp import Parser as NCBIParser
+from nbitk.Phylo.BOLDXLSXIO import Parser as BOLDParser
+from nbitk.Phylo.DwCATaxonomyIO import Parser as DwCParser
 
 from barcode_validator.barcode_io import BarcodeIO
 from barcode_validator.barcode_validator import BarcodeValidator
 from barcode_validator.dna_analysis_result import DNAAnalysisResultSet, DNAAnalysisResult
+from barcode_validator.taxonomy_resolver import TaxonomyResolver
 
 
 class BarcodeValidatorCLI:
     def __init__(self) -> None:
         """
         Initialize the BarcodeValidatorCLI.
-        Stores command line arguments, configuration, and logger for later use.
         """
         self.args: argparse.Namespace = self.parse_args()
         self.config: Config = self.load_and_override_config()
         self.logger: logging.Logger = get_formatted_logger(__name__, self.config)
         self.logger.info("Starting DNA Barcode Validation CLI")
+
+        # Load taxonomy trees
         self.setup_taxonomy()
+
+        # Initialize trees
+        if self.config.get('taxonomic_backbone', 'nsr') == 'nsr':
+            nsr_file = self.config.get('dwc_archive')
+            if not nsr_file:
+                sys.exit("No NSR dump configured. Set dwc_archive in config.")
+            self.backbone_tree = DwCParser(nsr_file).parse()
+        else:  # BOLD
+            bold_file = self.config.get('bold_sheet_file')
+            if not bold_file:
+                sys.exit("No BOLD dump configured. Set bold_sheet_file in config.")
+            with open(bold_file, 'rb') as f:
+                self.backbone_tree = BOLDParser(f).parse()
+
+        # Load NCBI taxonomy
+        ncbi_dump = self.config.get('ncbi_taxonomy')
+        if not ncbi_dump:
+            sys.exit("No NCBI taxonomy dump configured. Set ncbi_taxonomy in config.")
+        self.ncbi_tree = NCBIParser(tarfile.open(ncbi_dump, "r:gz")).parse()
 
     def download_ncbi_dump(self, destination: str) -> str:
         """
@@ -170,8 +195,16 @@ performs validations, and outputs results as TSV. Optionally emits valid sequenc
 
         :return: Set of validation results
         """
+        # Initialize taxonomy resolver
+        taxonomy_resolver = TaxonomyResolver(
+            self.config.get('entrez_email', 'anonymous@example.org'),
+            self.logger,
+            self.ncbi_tree,
+            self.backbone_tree
+        )
+
         # Initialize validator
-        validator = BarcodeValidator(self.config)
+        validator = BarcodeValidator(self.config, taxonomy_resolver)
         validator.initialize()
 
         # Setup I/O handler
