@@ -17,6 +17,14 @@ class ProteinCodingValidator(StructuralValidator):
 
     This class extends StructuralValidator to collect protein-coding specific data,
     including sequence alignment, reading frame determination, and stop codon positions.
+    These calculations form part of the structural validation process. While other
+    calculations can be performed directly on the DNA sequence record, this class
+    delegates most of the work to the external tool `hmmalign`, which is wrapped by the
+    Naturalis bioinformatics toolkit (NBITK).
+
+    In turn, this class exposes a single method for validation (`validate_marker_specific`).
+    This method is invoked by the overall orchestrator as part of its composed validation
+    process.
 
     Examples:
         >>> from nbitk.config import Config
@@ -45,7 +53,9 @@ class ProteinCodingValidator(StructuralValidator):
         :param record: The DNA sequence record to validate
         :param result: Result object to populate with validation data
         """
+
         # Get translation table from result object
+        # TODO: ensure that this value is set by the orchestrator
         trans_table = result.ancillary.get('translation_table')
         if trans_table is None:
             result.error = 'Translation table not available'

@@ -18,6 +18,8 @@ class BarcodeValidator:
     supports different taxonomic backbones, and can be configured to perform
     structural validation, taxonomic validation, or both.
 
+    TODO: determine if this is a good name choice for file and class
+
     Examples:
         >>> from nbitk.config import Config
         >>> config = Config()
@@ -88,6 +90,9 @@ class BarcodeValidator:
         results = []
         for record in SeqIO.parse(table_file, 'bcdm-tsv'):
             result = DNAAnalysisResult(record.id, table_file)
+
+            # TODO: FASTA for BOLD (BGE output) has no identification at this point
+            # TODO: lookup BOLD Taxon from process ID
             self.validate_record(record, result)
             results.append(result)
         return DNAAnalysisResultSet(results)
@@ -107,6 +112,7 @@ class BarcodeValidator:
         identification = bcdm_fields.get('identification')
         rank = bcdm_fields.get('rank', 'null')
 
+        # TODO: this may not be an error at this time, e.g. when parsing FASTA for BOLD
         if not identification:
             result.error = "No taxonomic identification provided"
             return

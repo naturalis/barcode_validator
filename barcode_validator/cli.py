@@ -13,6 +13,19 @@ from barcode_validator.dna_analysis_result import DNAAnalysisResultSet, DNAAnaly
 
 
 class BarcodeValidatorCLI:
+    """
+    Command Line Interface for DNA Barcode Validator.
+
+    This class exposes the functionality of the barcode_validator package to the command line.
+    The overall program flow is as follows:
+    1. Parse command line arguments
+    2. Load configuration from YAML and override with command line arguments
+    3. Instantiate the orchestrator and initialize it with the loaded configuration
+    4. Run the orchestrator and obtain a result set object
+    5. Merge ancillary data from CSV and YAML files into the result set
+    6. Output the result set as TSV to stdout
+    7. Optionally emit only valid sequences as FASTA to stdout
+    """
     def __init__(self) -> None:
         """
         Initialize the BarcodeValidatorCLI.
@@ -35,6 +48,8 @@ Ingests FASTA/TSV sequence data, merges CSV analytics and YAML config,
 performs validations, and outputs results as TSV. Optionally emits valid sequences as FASTA.""",
             formatter_class=argparse.RawTextHelpFormatter
         )
+
+        # TODO: ensure that these are valid flags as object properties (probably need snake_case)
         # Input file options.
         parser.add_argument("--input-file", required=True,
                             help="Path to the input sequence file (FASTA or BCDM/TSV).")

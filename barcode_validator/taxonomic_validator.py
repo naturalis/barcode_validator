@@ -15,9 +15,18 @@ class TaxonomicBackbone(Enum):
 
 class TaxonomicValidator:
     """
-    Validates taxonomic assignments by comparing expected taxa against BLAST results.
-    Uses a backbone-first approach where identifications are first resolved against
-    a configured backbone taxonomy before mapping to NCBI for validation.
+    Validator of DNA barcodes via BLAST-based reverse taxonomy.
+
+    Validates taxonomic assignments by comparing expected taxa against those observed in
+    BLAST results. Uses a backbone-first approach where identifications are first resolved
+    against a configured backbone taxonomy before mapping to NCBI for validation.
+
+    The class exposes a single method for validation (`validate_taxonomy`). This method
+    is invoked by the overall orchestrator as part of its composed validation steps.
+    In turn, this class delegates some of its work to the BLAST runner and TaxonomyResolver.
+    The idea behind this is that the BLAST runner may change underlying implementation
+    details (e.g. by switching databases, using a different search algorithm), and so may
+    the TaxonomyResolver (e.g. by invoking web services).
 
     Examples:
         >>> from nbitk.config import Config
@@ -43,6 +52,7 @@ class TaxonomicValidator:
         self.blast_runner = BlastRunner(config)
         self.blast_runner.ncbi_tree = taxonomy_resolver.ncbi_tree
 
+    # TODO: why is expected_taxon an optional(!) string(!)
     def validate_taxonomy(self, record: SeqRecord, result: DNAAnalysisResult,
                           expected_taxon: Optional[str] = None) -> None:
         """

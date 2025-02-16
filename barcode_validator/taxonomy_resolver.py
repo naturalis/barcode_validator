@@ -34,9 +34,28 @@ class TaxonomyResolver:
     """
     Central resolver for taxonomic names against different backbone taxonomies.
 
-    Resolves identifications first against a configured backbone taxonomy (NSR/BOLD/DwC),
-    then maps to NCBI taxonomy for validation purposes. This ensures maximum coverage
-    of local names while enabling validation against GenBank's reference data.
+    The resolver contributes to the overall validation process in the steps where
+    the provided identifications of DNA barcodes are mapped onto a configured taxonomy
+    (currently either the NSR taxonomy or the BOLD taxonomy).
+
+    The overall procedure then advances from those initial names (often species) up to
+    a configured higher level (e.g., family). The taxon at this level is then reconciled
+    with the equivalent taxon in reference database against which the DNA barcodes are
+    validated (i.e. GenBank, which uses the NCBI taxonomy).
+
+    The resolver is the only place where taxonomic names are mapped to taxon IDs. Hence,
+    it is the only place where various taxonomy data types are processed, such as
+    NCBI taxdump format, DarwinCore archive format, and BOLD submissio spreadsheets. It
+    is also the only place where taxonomic topologies are traversed and where taxonomic
+    reconciliation is performed.
+
+    Note that the resolver does not perform any taxonomic validation itself: it merely
+    provides the necessary tooling for accessing taxonomic data. The taxonomic validation
+    is otherwise orchestrated by the TaxonomicValidator class.
+
+    Note also that the indexes of translation tables as used in bioinformatics (in this
+    case to do amino acid translation) are decorations attached to the NCBI taxonomy. Hence,
+    thes table indexes are also provided by the resolver.
 
     Examples:
         >>> resolver = TaxonomyResolver(config)

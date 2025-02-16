@@ -12,11 +12,19 @@ class BlastRunner:
     """
     Runs BLAST searches and parses results for taxonomic validation.
 
-    :param config: Configuration object
+    This class wraps around the NCBI BLAST+ wrapper `nbitk.Tools.Blastn`, enhancing
+    its functionality by some additional parsing and aggregation logic in dealing
+    with tabular BLAST results. Specifically, it aggregates the taxon results returned
+    across hits at a higher taxonomic level (usually family) to obtain a set of distinct
+    Taxon objects. In the overall logic of barcode validation via reverse taxonomy,
+    this set is checked to see if it contains the expected taxon (i.e. that which was
+    provided by the collector).
     """
 
     def __init__(self, config: Config):
         self.logger = get_formatted_logger(self.__class__.__name__, config)
+
+        # TODO: it is probably better if this is a reference to a TaxonomyResolver instance
         self.ncbi_tree: Optional[Tree] = None
 
         # Initialize BLASTN using nbitk wrapper

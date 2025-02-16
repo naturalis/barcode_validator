@@ -10,7 +10,12 @@ class NonCodingValidator(StructuralValidator):
     Validator for non-coding markers like ITS.
 
     This class extends StructuralValidator to collect non-coding specific
-    measurements such as sequence composition data.
+    measurements such as sequence composition data. At present, this class
+    is not needed in production just yet because so far we have only COI-5P
+    sequences, but this is likely to change in the future. The only concrete
+    method that is therefore currently here specifically for non-coding genes
+    is GC content calculation. Further implementation of this class is
+    currently on hold until ITS data starts to arrive.
 
     Examples:
         >>> from nbitk.config import Config
@@ -41,6 +46,7 @@ class NonCodingValidator(StructuralValidator):
         result.add_ancillary('gc_content', str(gc_content))
         self.logger.debug(f"GC content: {gc_content}%")
 
+    # TODO determine validation criteria for non-coding genes
     def calculate_gc_content(self, record: SeqRecord) -> float:
         """
         Calculate GC content of the sequence.

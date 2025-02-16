@@ -1,5 +1,4 @@
 from Bio.SeqRecord import SeqRecord
-from typing import Dict, Tuple
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 from barcode_validator.dna_analysis_result import DNAAnalysisResult
@@ -14,8 +13,16 @@ class StructuralValidator:
     bases. Specific marker types (protein-coding vs non-coding) implement
     their own validators inheriting from this class.
 
+    Subclasses should implement the `validate_marker_specific` method to perform
+    marker-specific steps for their marker type. As a whole, this class hierarchy
+    participates in the overall validation process through the appropriate instance
+    from the hierarchy that has the required functionality for the marker type.
+    This instance is invoked by the overall orchestrator as part of its composed
+    validation steps.
+
     Examples:
         >>> from nbitk.config import Config
+        >>> from Bio.SeqRecord import SeqRecord
         >>> config = Config()
         >>> config.load_config('/path/to/config.yaml')
         >>> validator = StructuralValidator(config)
@@ -83,7 +90,8 @@ class StructuralValidator:
         Perform marker-specific validation steps.
 
         This method should be overridden by subclasses to handle validation
-        specific to their marker type (e.g., codon validation for protein-coding).
+        specific to their marker type (e.g., codon validation for protein-coding
+        or gc-content calculation for non-coding).
         Base implementation does nothing.
 
         :param record: The DNA sequence record to validate

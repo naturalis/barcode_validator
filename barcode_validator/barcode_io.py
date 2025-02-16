@@ -15,7 +15,11 @@ class BarcodeIO:
     
     This class centralizes all file operations for the barcode validator,
     including parsing different input formats and writing results.
-    
+    TODO: at present, this class's role is inconsistent:
+    - although there is also a BCDM parser (in nbitk), it is not used here (overkill and tsv dialect)
+    - it provides a writer for result sets, though they have a __str__ method
+    - write_filtered_fasta is an incomplete implementation meant to replace the triage scripts
+
     Examples:
         >>> from nbitk.config import Config
         >>> config = Config()
