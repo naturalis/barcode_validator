@@ -2,12 +2,11 @@ from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
-from barcode_validator.dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet
-from barcode_validator.protein_coding_validator import ProteinCodingValidator
-from barcode_validator.non_coding_validator import NonCodingValidator
-from barcode_validator.taxonomic_validator import TaxonomicValidator, TaxonomicBackbone
-from barcode_validator.taxonomy_resolver import Marker, TaxonomyResolver
-
+from .dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet
+from .taxonomy_resolver import Marker, TaxonomyResolver
+from .validators.non_coding import NonCodingValidator
+from .validators.taxonomic import TaxonomicValidator, TaxonomicBackbone
+from .validators.protein_coding import ProteinCodingValidator
 
 class BarcodeValidator:
     """

@@ -6,7 +6,7 @@ from Bio.SeqRecord import SeqRecord
 import csv
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
-from barcode_validator.dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet
+from .dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet
 
 
 class BarcodeIO:
