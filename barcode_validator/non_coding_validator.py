@@ -1,24 +1,24 @@
 from Bio.SeqRecord import SeqRecord
-from typing import Dict, Tuple
 from nbitk.config import Config
 from barcode_validator.structural_validator import StructuralValidator
 from barcode_validator.taxonomy_resolver import Marker
+from barcode_validator.dna_analysis_result import DNAAnalysisResult
 
 
 class NonCodingValidator(StructuralValidator):
     """
     Validator for non-coding markers like ITS.
 
-    This class extends StructuralValidator to add non-coding specific validation
-    such as sequence composition checks.
+    This class extends StructuralValidator to collect non-coding specific
+    measurements such as sequence composition data.
 
     Examples:
         >>> from nbitk.config import Config
         >>> config = Config()
         >>> config.load_config('/path/to/config.yaml')
         >>> validator = NonCodingValidator(config)
-        >>> record = SeqRecord(...)
-        >>> is_valid, details = validator.validate_marker_specific(record)
+        >>> result = DNAAnalysisResult("sequence_id")
+        >>> validator.validate_marker_specific(record, result)
 
     :param config: Configuration object containing validation parameters
     """
@@ -28,25 +28,18 @@ class NonCodingValidator(StructuralValidator):
         super().__init__(config)
         self.marker = Marker(config.get('marker', 'ITS'))
 
-    def validate_marker_specific(self, record: SeqRecord) -> Tuple[bool, Dict]:
+    def validate_marker_specific(self, record: SeqRecord, result: DNAAnalysisResult) -> None:
         """
-        Validate non-coding specific features including sequence composition.
+        Collect non-coding specific measurements.
+        Populates the result object with collected data.
 
         :param record: The DNA sequence record to validate
-        :return: Tuple of (validation_success, validation_details)
+        :param result: Result object to populate with validation data
         """
-        validation_results = {}
-
-        # Verify sequence composition
+        # Calculate and store composition metrics
         gc_content = self.calculate_gc_content(record)
-        validation_results['gc_content'] = gc_content
-
-        # For now, just check basic composition
-        is_valid = True
-
-        validation_results['is_valid'] = is_valid
-
-        return is_valid, validation_results
+        result.add_ancillary('gc_content', str(gc_content))
+        self.logger.debug(f"GC content: {gc_content}%")
 
     def calculate_gc_content(self, record: SeqRecord) -> float:
         """
@@ -58,4 +51,8 @@ class NonCodingValidator(StructuralValidator):
         seq = str(record.seq).upper()
         gc_count = seq.count('G') + seq.count('C')
         total = len(seq)
-        return (gc_count / total * 100) if total > 0 else 0
+        gc_perc = (gc_count / total * 100) if total > 0 else 0
+        self.logger.debug(f"GC percentage: {gc_perc}%")
+        return gc_perc
+
+
