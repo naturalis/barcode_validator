@@ -1,11 +1,19 @@
-import logging
-import re
+import sys
+import tarfile
 from enum import Enum
+from pathlib import Path
+
+import requests
 from Bio import Entrez
 from Bio.SeqRecord import SeqRecord
 from nbitk.Taxon import Taxon
-from Bio.Phylo.BaseTree import Tree
-from typing import Optional, Tuple, List
+from nbitk.Phylo.NCBITaxdmp import Parser as NCBIParser
+from nbitk.Phylo.DwCATaxonomyIO import Parser as DwCParser
+from nbitk.Phylo.BOLDXLSXIO import Parser as BOLDParser
+from typing import Optional, Tuple
+
+from nbitk.config import Config
+from nbitk.logger import get_formatted_logger
 
 """
 SYNOPSIS
@@ -31,25 +39,112 @@ class TaxonomyResolver:
     of local names while enabling validation against GenBank's reference data.
 
     Examples:
-        >>> resolver = TaxonomyResolver(email, logger, ncbi_tree, backbone_tree)
+        >>> resolver = TaxonomyResolver(config)
         >>> backbone_taxon = resolver.resolve_backbone("Homo sapiens", "bold")
         >>> backbone_valid, ncbi_valid = resolver.get_validation_taxon(backbone_taxon, "family")
     """
 
 
-    def __init__(self, email: str, logger: logging.Logger, ncbi_tree: Tree, backbone_tree: Tree):
+    def __init__(self, config: Config):
         """
         Initialize the taxonomy resolver.
-        :param email: Email address for NCBI Entrez queries
-        :param logger: Logger instance
-        :param ncbi_tree: NCBI taxonomy tree
-        :param backbone_tree: Configured backbone taxonomy (NSR/BOLD/DwC)
+        :param config: NBITK configuration object
         """
-        Entrez.email = email
-        self.logger = logger
-        self.ncbi_tree = ncbi_tree
-        self.backbone_tree = backbone_tree
+        Entrez.email = config.get('entrez_email', 'anonymous@example.org')
+        self.config = config
+        self.logger = get_formatted_logger(self.__class__.__name__, config)
+        self.ncbi_tree = None
+        self.backbone_tree = None
         self.tax_ranks = ['kingdom', 'phylum', 'class', 'order', 'family', 'genus', 'species']
+
+    def download_ncbi_dump(self, destination: str) -> str:
+        """
+        Download NCBI taxdump.
+
+        :param destination: Location to store the downloaded file.
+        :return: Location of the downloaded file.
+        """
+        url = self.config.get("ncbi_taxonomy_url")
+        if not url:
+            self.logger.error("NCBI taxonomy URL is not set in the configuration.")
+            sys.exit(1)
+
+        self.logger.info(f"Downloading NCBI taxdump from {url}...")
+
+        try:
+            response = requests.get(url, stream=True)
+            response.raise_for_status()  # Raise an error for bad HTTP responses (4xx or 5xx)
+
+            with open(destination, "wb") as file:
+                for chunk in response.iter_content(chunk_size=8192):
+                    file.write(chunk)
+
+            self.logger.info(f"Download completed: {destination}")
+            return destination
+
+        except requests.exceptions.RequestException as e:
+            self.logger.error(f"Failed to download NCBI taxdump: {e}")
+            sys.exit(1)
+
+    def download_nsr_dump(self, destination: str) -> str:
+        """
+        Download NSR dump.
+
+        :param destination: Location to store the downloaded file.
+        :return: Location of the downloaded file.
+        """
+        url = self.config.get("dwc_archive_url")
+        if not url:
+            self.logger.error("NSR taxonomy URL is not set in the configuration.")
+            sys.exit(1)
+
+        self.logger.info(f"Downloading NSR dump from {url}...")
+
+        try:
+            response = requests.get(url, stream=True)
+            response.raise_for_status()  # Raise an error for bad HTTP responses (4xx or 5xx)
+
+            with open(destination, "wb") as file:
+                for chunk in response.iter_content(chunk_size=8192):
+                    file.write(chunk)
+
+            self.logger.info(f"Download completed: {destination}")
+            return destination
+
+        except requests.exceptions.RequestException as e:
+            self.logger.error(f"Failed to download NSR dump: {e}")
+            sys.exit(1)
+
+    def setup_taxonomy(self) -> None:
+        """
+        Setup taxonomy dumps using the command line arguments and update configuration.
+        """
+        # Check if the NCBI taxonomy is there. If not, download it. Then parse it.
+        ncbi_path = self.config.get("ncbi_taxonomy")
+        if ncbi_path is not None:
+            path_obj = Path(ncbi_path)
+            if not path_obj.exists():
+                downloaded_path = self.download_ncbi_dump(ncbi_path)
+                self.config.set("ncbi_taxonomy", downloaded_path)
+            self.ncbi_tree = NCBIParser(tarfile.open(self.config.get("ncbi_taxonomy"), "r:gz")).parse()
+        else:
+            self.logger.error("NCBI taxonomy is not configured. Skipping setup.")
+            sys.exit(1)
+
+        # Check if the NSR taxonomy is there. If not, download it. Then parse it.
+        nsr_path = self.config.get("dwc_archive")
+        if nsr_path is not None:
+            path_obj = Path(nsr_path)
+            if not path_obj.exists():
+                downloaded_path = self.download_nsr_dump(nsr_path)
+                self.config.set("dwc_archive", downloaded_path)
+            self.backbone_tree = self.backbone_tree = DwCParser(self.config.get("dwc_archive")).parse()
+
+        # No NSR tree configured, assuming BOLD
+        else:
+            bold_file = self.config.get('bold_sheet_file')
+            with open(bold_file, 'rb') as f:
+                self.backbone_tree = BOLDParser(f).parse()
 
     def resolve_backbone(self, identification: str, backbone_type: str = "bold") -> Optional[Taxon]:
         """
