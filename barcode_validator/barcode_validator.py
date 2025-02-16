@@ -1,12 +1,7 @@
-import tarfile
 from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
-from pathlib import Path
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
-from nbitk.Phylo.NCBITaxdmp import Parser as NCBIParser
-from nbitk.Phylo.BOLDXLSXIO import Parser as BOLDParser
-from nbitk.Phylo.DwCATaxonomyIO import Parser as DwCParser
 from barcode_validator.dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet
 from barcode_validator.protein_coding_validator import ProteinCodingValidator
 from barcode_validator.non_coding_validator import NonCodingValidator
@@ -34,16 +29,15 @@ class BarcodeValidator:
     :param config: Configuration object containing validation parameters
     """
 
-    def __init__(self, config: Config, taxonomy_resolver: TaxonomyResolver):
+    def __init__(self, config: Config):
         """
         Initialize the barcode validator.
 
         :param config: Configuration object containing validation parameters
-        :param taxonomy_resolver: TaxonomyResolver instance for handling taxonomic operations
         """
         self.config = config
         self.logger = get_formatted_logger(self.__class__.__name__, config)
-        self.taxonomy_resolver = taxonomy_resolver
+        self.taxonomy_resolver = TaxonomyResolver(config)
         self.structural_validator = None
         self.taxonomic_validator = None
 
@@ -56,9 +50,9 @@ class BarcodeValidator:
         """
         # Create structural validator based on marker type
         marker = Marker(self.config.get('marker', 'COI-5P'))
-        hmm_dir = Path(self.config.get('hmm_profile_dir'))
 
         if marker in [Marker.COI_5P, Marker.MATK, Marker.RBCL]:
+            hmm_dir = self.config.get('hmm_profile_dir')
             self.structural_validator = ProteinCodingValidator(self.config, hmm_dir)
         else:
             self.structural_validator = NonCodingValidator(self.config)
@@ -158,25 +152,3 @@ class BarcodeValidator:
             self.structural_validator.validate_sequence(record, result)
         if self.taxonomic_validator:
             self.taxonomic_validator.validate_taxonomy(record, result)
-
-    def _load_taxonomy_trees(self) -> None:
-        """Load NCBI and backbone taxonomy trees."""
-        # Load NCBI taxonomy
-        ncbi_tax_file = self.config.get('ncbi_taxonomy')
-        if ncbi_tax_file:
-            self.logger.info(f"Loading NCBI taxonomy from {ncbi_tax_file}")
-            self.ncbi_tree = NCBIParser(tarfile.open(ncbi_tax_file, "r:gz")).parse()
-
-        # Load appropriate backbone taxonomy
-        backbone_type = TaxonomicBackbone(self.config.get('taxonomic_backbone', 'bold'))
-        if backbone_type == TaxonomicBackbone.BOLD:
-            bold_file = self.config.get('bold_sheet_file')
-            if bold_file:
-                self.logger.info(f"Loading BOLD taxonomy from {bold_file}")
-                with open(bold_file, 'rb') as f:
-                    self.backbone_tree = BOLDParser(f).parse()
-        else:  # DarwinCore
-            dwc_file = self.config.get('dwc_archive')
-            if dwc_file:
-                self.logger.info(f"Loading DarwinCore taxonomy from {dwc_file}")
-                self.backbone_tree = DwCParser(dwc_file).parse()
