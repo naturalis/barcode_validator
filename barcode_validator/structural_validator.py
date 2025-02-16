@@ -2,24 +2,25 @@ from Bio.SeqRecord import SeqRecord
 from typing import Dict, Tuple
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
+from barcode_validator.dna_analysis_result import DNAAnalysisResult
 
 
 class StructuralValidator:
     """
     Base class for structural validation of DNA sequences.
-    
+
     This class defines the interface and common functionality for validating
     the structural properties of DNA sequences, such as length and ambiguous
-    bases. Specific marker types (protein-coding vs non-coding) should
-    implement their own subclasses.
+    bases. Specific marker types (protein-coding vs non-coding) implement
+    their own validators inheriting from this class.
 
     Examples:
         >>> from nbitk.config import Config
         >>> config = Config()
         >>> config.load_config('/path/to/config.yaml')
         >>> validator = StructuralValidator(config)
-        >>> record = SeqRecord(...)
-        >>> is_valid, details = validator.validate_sequence(record)
+        >>> result = DNAAnalysisResult("sequence_id")
+        >>> validator.validate_sequence(record, result)
 
     :param config: Configuration object containing validation parameters
     """
@@ -28,93 +29,64 @@ class StructuralValidator:
         """Initialize the structural validator."""
         self.config = config
         self.logger = get_formatted_logger(self.__class__.__name__, config)
-        
-    def validate_sequence(self, record: SeqRecord) -> Tuple[bool, Dict]:
+
+    def validate_sequence(self, record: SeqRecord, result: DNAAnalysisResult) -> None:
         """
-        Validate a DNA sequence record structurally.
-        
-        :param record: The DNA sequence record to validate            
-        :return: Tuple of (validation_success, validation_details)
+        Validate a DNA sequence record structurally. Populates the provided
+        result object with validation outcomes.
+
+        :param record: The DNA sequence record to validate
+        :param result: DNAAnalysisResult object to populate with validation results
         """
-        results = {}
-        
         # Validate sequence length
-        length_valid, length_details = self.validate_length(record)
-        results.update(length_details)
-        
+        self.validate_length(record, result)
+
         # Validate ambiguous bases
-        ambig_valid, ambig_details = self.validate_ambiguities(record)
-        results.update(ambig_details)
-        
+        self.validate_ambiguities(record, result)
+
         # Perform marker-specific validation
-        marker_valid, marker_details = self.validate_marker_specific(record)
-        results.update(marker_details)
-        
-        # Overall validation success requires all checks to pass
-        success = all([length_valid, ambig_valid, marker_valid])
-        
-        return success, results
+        self.validate_marker_specific(record, result)
 
-    def validate_length(self, record: SeqRecord) -> Tuple[bool, Dict]:
+    def validate_length(self, record: SeqRecord, result: DNAAnalysisResult) -> None:
         """
-        Validate the sequence length against minimum requirements.
-        
-        :param record: The DNA sequence record to validate            
-        :return: Tuple of (length_valid, length_details)
-        """
-        min_length = self.config.get('min_sequence_length', 500)
-        seq_length = len(record.seq)
-        
-        is_valid = seq_length >= min_length
-        details = {
-            'sequence_length': seq_length,
-            'min_length_required': min_length
-        }
-        
-        return is_valid, details
+        Validate the sequence length against minimum requirements. Stores the
+        sequence length in the result object.
 
-    def validate_ambiguities(self, record: SeqRecord) -> Tuple[bool, Dict]:
-        """
-        Count and validate ambiguous bases in the sequence.
-        
-        :param record: The DNA sequence record to validate            
-        :return: Tuple of (ambiguities_valid, ambiguity_details)
-        """
-        max_ambiguities = self.config.get('max_ambiguities', 6)
-        ambig_count = sum(1 for base in record.seq if base not in 'ATCGatcg')
-        
-        is_valid = ambig_count <= max_ambiguities
-        details = {
-            'ambiguous_bases': ambig_count,
-            'max_ambiguities_allowed': max_ambiguities
-        }
-        
-        return is_valid, details
-
-    def validate_marker_specific(self, record: SeqRecord) -> Tuple[bool, Dict]:
-        """
-        Perform marker-specific validation steps.
-        
-        This method should be overridden by subclasses to handle validation
-        specific to their marker type (e.g., codon validation for protein-coding).
-        Base implementation always returns valid.
-        
-        :param record: The DNA sequence record to validate            
-        :return: Tuple of (marker_valid, marker_details)
-        """
-        return True, {}
-
-    def validate_length(self, record: SeqRecord) -> Tuple[bool, Dict]:
-        """
-        Using length calculation from sequence_handler.py
+        :param record: The DNA sequence record to validate
+        :param result: Result object to populate with length data
         """
         seq_str = str(record.seq).replace('-', '').replace('~', '')
         length = len(seq_str)
-        return length >= self.config.get('min_length', 500), {'length': length}
 
-    def validate_ambiguities(self, record: SeqRecord) -> Tuple[bool, Dict]:
+        # Store lengths in result object
+        result.nuc_basecount = length
+        result.nuc_full_basecount = length  # For now these are the same
+        self.logger.debug(f"Length: {length}")
+
+    def validate_ambiguities(self, record: SeqRecord, result: DNAAnalysisResult) -> None:
         """
-        Using ambiguity counting from sequence_handler.py
+        Count and store ambiguous bases in the result object.
+
+        :param record: The DNA sequence record to validate
+        :param result: Result object to populate with ambiguity data
         """
+        # Count ambiguous bases (anything not ACGT)
         ambig_count = len([base for base in record.seq if base not in 'acgtACGT-~'])
-        return ambig_count <= self.config.get('max_ambiguities', 6), {'ambiguities': ambig_count}
+
+        # Store counts in result object
+        result.ambig_basecount = ambig_count
+        result.ambig_full_basecount = ambig_count
+        self.logger.debug(f"Ambiguities: {ambig_count}")
+
+    def validate_marker_specific(self, record: SeqRecord, result: DNAAnalysisResult) -> None:
+        """
+        Perform marker-specific validation steps.
+
+        This method should be overridden by subclasses to handle validation
+        specific to their marker type (e.g., codon validation for protein-coding).
+        Base implementation does nothing.
+
+        :param record: The DNA sequence record to validate
+        :param result: Result object to populate with marker-specific data
+        """
+        pass
