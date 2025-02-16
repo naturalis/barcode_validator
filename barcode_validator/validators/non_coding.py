@@ -1,6 +1,6 @@
 from Bio.SeqRecord import SeqRecord
 from nbitk.config import Config
-from barcode_validator.structural_validator import StructuralValidator
+from .structural import StructuralValidator
 from barcode_validator.taxonomy_resolver import Marker
 from barcode_validator.dna_analysis_result import DNAAnalysisResult
 
