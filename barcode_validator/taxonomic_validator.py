@@ -1,6 +1,5 @@
 from typing import Optional
 from Bio.SeqRecord import SeqRecord
-from Bio.Phylo.BaseTree import Tree
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 from barcode_validator.blast_runner import BlastRunner
@@ -29,30 +28,20 @@ class TaxonomicValidator:
         >>> validator.validate_taxonomy(record, result)
 
     :param config: Configuration object containing validation parameters
-    :param ncbi_tree: NCBI taxonomy tree for reference lookups
-    :param backbone_tree: Taxonomy tree from chosen backbone source
-    :param taxonomy_resolver: Optional TaxonomyResolver instance (created if not provided)
+    :param taxonomy_resolver: TaxonomyResolver instance
     """
 
-    def __init__(self, config: Config, ncbi_tree: Tree, backbone_tree: Tree,
-                 taxonomy_resolver: Optional[TaxonomyResolver] = None):
+    def __init__(self, config: Config, taxonomy_resolver: TaxonomyResolver):
         self.config = config
         self.logger = get_formatted_logger(self.__class__.__name__, config)
         self.backbone_type = TaxonomicBackbone(config.get('taxonomic_backbone', 'bold'))
         self.validation_rank = config.get('validation_rank', 'family')
         self.constraint_rank = config.get('constraint_rank', 'class')
-
-        # Initialize taxonomy resolver if not provided
-        self.taxonomy_resolver = taxonomy_resolver or TaxonomyResolver(
-            config.get('entrez_email', 'bioinformatics@naturalis.nl'),
-            self.logger,
-            ncbi_tree,
-            backbone_tree
-        )
+        self.taxonomy_resolver = taxonomy_resolver
 
         # Initialize BLAST runner
         self.blast_runner = BlastRunner(config)
-        self.blast_runner.ncbi_tree = ncbi_tree
+        self.blast_runner.ncbi_tree = taxonomy_resolver.ncbi_tree
 
     def validate_taxonomy(self, record: SeqRecord, result: DNAAnalysisResult,
                           expected_taxon: Optional[str] = None) -> None:
