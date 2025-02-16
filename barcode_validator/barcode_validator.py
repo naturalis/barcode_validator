@@ -100,12 +100,15 @@ class BarcodeValidator:
 
     def validate_record(self, record: SeqRecord, result: DNAAnalysisResult) -> None:
         """
-        Validate a single sequence record.
+        Validate a single sequence record by orchestrating taxonomic resolution
+        and delegating structural and taxonomic validation to their respective validators.
 
-        :param record: The sequence record to validate
-        :param result: Result object to store validation outcomes
+        The validators update the result object directly; no overall validity is determined here.
+
+        :param record: The sequence record to validate.
+        :param result: Result object to store validation outcomes.
         """
-        # Get identification and rank from bcdm_fields
+        # Extract identification and rank from bcdm_fields
         bcdm_fields = record.annotations.get('bcdm_fields', {})
         identification = bcdm_fields.get('identification')
         rank = bcdm_fields.get('rank', 'null')
@@ -114,31 +117,28 @@ class BarcodeValidator:
             result.error = "No taxonomic identification provided"
             return
 
-        # First resolve against backbone taxonomy
+        # Resolve backbone taxonomy and get validation taxa
         backbone_taxon = self.taxonomy_resolver.resolve_backbone(identification, rank)
         if not backbone_taxon:
             result.error = f"Could not resolve taxon in backbone: {identification}"
             return
 
-        # Get validation taxa
         validation_level = self.config.get('level', 'family')
         backbone_validation, ncbi_validation = self.taxonomy_resolver.get_validation_taxon(
             backbone_taxon, validation_level
         )
-
         if not backbone_validation:
             result.error = f"Could not find {validation_level} rank in backbone for {identification}"
             return
-
         if not ncbi_validation:
             result.error = f"Could not map {validation_level} {backbone_validation.name} to NCBI taxonomy"
             return
 
-        # Store expected taxon (from backbone) and continue with validation
+        # Store expected taxon and level in the result
         result.level = validation_level
         result.exp_taxon = backbone_validation
 
-        # Configure validation
+        # Configure structural validation (translation table and constraint)
         if self.structural_validator:
             marker = bcdm_fields.get('marker_code', 'COI-5P')
             try:
@@ -147,34 +147,17 @@ class BarcodeValidator:
                 self.logger.warning(f"Unknown marker {marker}, using COI-5P")
                 marker_enum = Marker.COI_5P
 
-            # Use NCBI taxon for translation table and constraint
             trans_table = self.taxonomy_resolver.get_translation_table(marker_enum, ncbi_validation)
             self.config.set('translation_table', trans_table)
-
             constraint_level = self.config.get('constrain', 'class')
             constraint_id = self.taxonomy_resolver.get_constraint_taxon(ncbi_validation, constraint_level)
             self.config.set('constraint_taxid', constraint_id)
 
-        # Perform validations
+        # Delegate validations to the respective validators.
         if self.structural_validator:
-            structural_valid, details = self.structural_validator.validate_sequence(record)
-            result.add_ancillary('structural_valid', str(structural_valid))
-            for key, value in details.items():
-                result.add_ancillary(f'structural_{key}', str(value))
-
+            self.structural_validator.validate_sequence(record, result)
         if self.taxonomic_validator:
-            taxonomic_valid, details = self.taxonomic_validator.validate_taxonomy(record)
-            result.add_ancillary('taxonomic_valid', str(taxonomic_valid))
-            for key, value in details.items():
-                result.add_ancillary(f'taxonomic_{key}', str(value))
-
-        # Overall validation
-        is_valid = True
-        if self.structural_validator:
-            is_valid = is_valid and structural_valid
-        if self.taxonomic_validator:
-            is_valid = is_valid and taxonomic_valid
-        result.add_ancillary('is_valid', str(is_valid))
+            self.taxonomic_validator.validate_taxonomy(record, result)
 
     def _load_taxonomy_trees(self) -> None:
         """Load NCBI and backbone taxonomy trees."""
