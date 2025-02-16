@@ -2,20 +2,14 @@ import argparse
 import os
 import sys
 import logging
-import tarfile
 import tempfile
-import requests
 
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
-from nbitk.Phylo.NCBITaxdmp import Parser as NCBIParser
-from nbitk.Phylo.BOLDXLSXIO import Parser as BOLDParser
-from nbitk.Phylo.DwCATaxonomyIO import Parser as DwCParser
 
 from barcode_validator.barcode_io import BarcodeIO
 from barcode_validator.barcode_validator import BarcodeValidator
 from barcode_validator.dna_analysis_result import DNAAnalysisResultSet, DNAAnalysisResult
-from barcode_validator.taxonomy_resolver import TaxonomyResolver
 
 
 class BarcodeValidatorCLI:
@@ -27,86 +21,6 @@ class BarcodeValidatorCLI:
         self.config: Config = self.load_and_override_config()
         self.logger: logging.Logger = get_formatted_logger(__name__, self.config)
         self.logger.info("Starting DNA Barcode Validation CLI")
-
-        # Load taxonomy trees
-        self.setup_taxonomy()
-
-        # Initialize trees
-        if self.config.get('taxonomic_backbone', 'nsr') == 'nsr':
-            nsr_file = self.config.get('dwc_archive')
-            if not nsr_file:
-                sys.exit("No NSR dump configured. Set dwc_archive in config.")
-            self.backbone_tree = DwCParser(nsr_file).parse()
-        else:  # BOLD
-            bold_file = self.config.get('bold_sheet_file')
-            if not bold_file:
-                sys.exit("No BOLD dump configured. Set bold_sheet_file in config.")
-            with open(bold_file, 'rb') as f:
-                self.backbone_tree = BOLDParser(f).parse()
-
-        # Load NCBI taxonomy
-        ncbi_dump = self.config.get('ncbi_taxonomy')
-        if not ncbi_dump:
-            sys.exit("No NCBI taxonomy dump configured. Set ncbi_taxonomy in config.")
-        self.ncbi_tree = NCBIParser(tarfile.open(ncbi_dump, "r:gz")).parse()
-
-    def download_ncbi_dump(self, destination: str) -> str:
-        """
-        Download NCBI taxdump.
-
-        :param destination: Location to store the downloaded file.
-        :return: Location of the downloaded file.
-        """
-        url = self.config.get("ncbi_taxonomy_url")
-        if not url:
-            self.logger.error("NCBI taxonomy URL is not set in the configuration.")
-            sys.exit(1)
-
-        self.logger.info(f"Downloading NCBI taxdump from {url}...")
-
-        try:
-            response = requests.get(url, stream=True)
-            response.raise_for_status()  # Raise an error for bad HTTP responses (4xx or 5xx)
-
-            with open(destination, "wb") as file:
-                for chunk in response.iter_content(chunk_size=8192):
-                    file.write(chunk)
-
-            self.logger.info(f"Download completed: {destination}")
-            return destination
-
-        except requests.exceptions.RequestException as e:
-            self.logger.error(f"Failed to download NCBI taxdump: {e}")
-            sys.exit(1)
-
-    def download_nsr_dump(self, destination: str) -> str:
-        """
-        Download NSR dump.
-
-        :param destination: Location to store the downloaded file.
-        :return: Location of the downloaded file.
-        """
-        url = self.config.get("dwc_archive_url")
-        if not url:
-            self.logger.error("NSR taxonomy URL is not set in the configuration.")
-            sys.exit(1)
-
-        self.logger.info(f"Downloading NSR dump from {url}...")
-
-        try:
-            response = requests.get(url, stream=True)
-            response.raise_for_status()  # Raise an error for bad HTTP responses (4xx or 5xx)
-
-            with open(destination, "wb") as file:
-                for chunk in response.iter_content(chunk_size=8192):
-                    file.write(chunk)
-
-            self.logger.info(f"Download completed: {destination}")
-            return destination
-
-        except requests.exceptions.RequestException as e:
-            self.logger.error(f"Failed to download NSR dump: {e}")
-            sys.exit(1)
 
     @staticmethod
     def parse_args() -> argparse.Namespace:
@@ -121,26 +35,22 @@ Ingests FASTA/TSV sequence data, merges CSV analytics and YAML config,
 performs validations, and outputs results as TSV. Optionally emits valid sequences as FASTA.""",
             formatter_class=argparse.RawTextHelpFormatter
         )
-        # Input options
+        # Input file options.
         parser.add_argument("--input-file", required=True,
-                            help="Path to the input sequence file (FASTA or TSV).")
-        parser.add_argument("--tsv-file",
-                            help="Optional TSV file with additional metadata (if using FASTA input).")
+                            help="Path to the input sequence file (FASTA or BCDM/TSV).")
         parser.add_argument("--csv-file",
                             help="Optional CSV file with record-level analytics to merge as ancillary data.")
         parser.add_argument("--yaml-file",
                             help="Optional YAML file with analysis-level configuration to merge into every result.")
-        # Taxonomy dump options
-        parser.add_argument("--ncbi-dump",
-                            help="Path to the NCBI taxdump (tar.gz).")
-        parser.add_argument("--nsr-dump",
-                            help="Path to the NSR dump (DarwinCore .zip).")
-        parser.add_argument("--bold-dump",
-                            help="Path to the BOLD dump (XLSX).")
-        parser.add_argument("--download-ncbi", action="store_true",
-                            help="Download the NCBI taxdump if not available locally.")
-        parser.add_argument("--download-nsr", action="store_true",
-                            help="Download the NSR dump if not available locally.")
+
+        # Taxonomy dump options. The locations are updated the config, which is passed into the system.
+        parser.add_argument("--reflib_taxonomy",
+                            help="Path to the taxonomy of the reference library, i.e. NCBI taxdump (tar.gz).")
+        parser.add_argument("--exp_taxonomy",
+                            help="Path to the NSR dump (DarwinCore .zip) or the the BOLD dump (XLSX).")
+        parser.add_argument("--exp_taxonomy_type", choices=["nsr", "bold"], default="nsr",
+                            help="Type of the expected taxonomy dump (nsr or bold).")
+
         # Validation and output options
         parser.add_argument("--mode", choices=["structural", "taxonomic", "both"], default="both",
                             help="Validation mode: structural, taxonomic, or both (default: both).")
@@ -148,7 +58,8 @@ performs validations, and outputs results as TSV. Optionally emits valid sequenc
                             help="If set, emit only valid sequences as FASTA (in addition to TSV output).")
         parser.add_argument("--output-fasta",
                             help="Path to output FASTA file for valid sequences (if not specified, valid FASTA is printed to stdout).")
-        # Logging and configuration
+
+        # Logging and configuration. The log level is updated in the config, and the config is passed into the system.
         parser.add_argument("--log-level", choices=["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"],
                             help="Set logging verbosity (overrides config log_level).")
         parser.add_argument("--config-file", required=True,
@@ -166,28 +77,15 @@ performs validations, and outputs results as TSV. Optionally emits valid sequenc
             config.load_config(self.args.config_file)
         except Exception as e:
             sys.exit(f"Error loading config file: {e}")
-        if self.args.ncbi_dump:
+        if self.args.reflib_taxonomy:
             config.set("ncbi_taxonomy", self.args.ncbi_dump)
-        if self.args.nsr_dump:
-            config.set("dwc_archive", self.args.nsr_dump)
-        if self.args.bold_dump:
-            config.set("bold_sheet_file", self.args.bold_dump)
+        if self.args.exp_taxonomy_type == 'nsr':
+            config.set("dwc_archive", self.args.exp_taxonomy)
+        elif self.args.exp_taxonomy_type == 'bold':
+            config.set("bold_sheet_file", self.args.exp_taxonomy)
         if self.args.log_level:
             config.set("log_level", self.args.log_level)
         return config
-
-    def setup_taxonomy(self) -> None:
-        """
-        Setup taxonomy dumps using the command line arguments and update configuration.
-        """
-        if self.args.download_ncbi:
-            ncbi_path = self.config.get("ncbi_taxonomy")
-            downloaded_path = self.download_ncbi_dump(ncbi_path)
-            self.config.set("ncbi_taxonomy", downloaded_path)
-        if self.args.download_nsr:
-            nsr_path = self.config.get("dwc_archive")
-            downloaded_path = self.download_nsr_dump(nsr_path)
-            self.config.set("dwc_archive", downloaded_path)
 
     def perform_validation(self) -> DNAAnalysisResultSet:
         """
@@ -195,16 +93,9 @@ performs validations, and outputs results as TSV. Optionally emits valid sequenc
 
         :return: Set of validation results
         """
-        # Initialize taxonomy resolver
-        taxonomy_resolver = TaxonomyResolver(
-            self.config.get('entrez_email', 'anonymous@example.org'),
-            self.logger,
-            self.ncbi_tree,
-            self.backbone_tree
-        )
 
         # Initialize validator
-        validator = BarcodeValidator(self.config, taxonomy_resolver)
+        validator = BarcodeValidator(self.config)
         validator.initialize()
 
         # Setup I/O handler
