@@ -1,59 +1,125 @@
-Introduction
-============
+# DNA Barcode Validator
 
-Sequences of the DNA barcode marker COI are produced in a variety of ways, including 
-by genome skimming of old collection specimens, by nanopore sequencing on ONT platforms,
-and by smrt sequencing on the PacBio Sequel platform. In all cases, the resulting 
-sequence ought to be validated before publishing. This project aims to provide a 
-universal solution for this, in order to meet the needs of the [BGE](https://biodiversitygenomics.eu/)
-project and the [ARISE](https://www.arise-biodiversity.nl/) project. Broadly speaking,
-what is provided here is a service that does the following:
+A Python-based toolkit for validating DNA barcode sequences through structural and taxonomic validation. This tool 
+helps ensure sequence quality and taxonomic accuracy for submissions to the Barcode of Life Data System (BOLD)
+and to Naturalis's Core Sequence Cloud.
 
-1. Check to see if the expected taxon and that observed by checking the sequence against
-   a reference database (GenBank or BOLD) match. The match can be performed at a higher
-   taxonomic level, e.g. the family. Mismatches may indicate contaminations.
-2. Check to see if there are no early stop codons in the amino acid translation. Early
-   stop codons may indicate the erroneous amplification of a pseudogene copy, such as
-   a NUMT sequence.
-3. Persist the validation results somewhere. At present nothing is effectively done with
-   this, but the hooks are there to persist to some data store, like a google sheet, a
-   database, or a file. Now the output is simply printed to the console as TSV.
+## Features
 
-Usage
------
+- Structural validation of DNA barcodes:
+  - Sequence length requirements
+  - Ambiguous base detection
+  - Stop codon analysis for protein-coding markers
+  - HMM-based alignment for codon phase detection
 
-## Web usage
+- Taxonomic validation:
+  - BLAST-based validation against reference databases
+  - Flexible taxonomy mapping (NSR or BOLD)
+  - Integration with NCBI taxonomy
+  - Support for multiple taxonomic ranks
 
-The easiest way to use this functionality is by submitting a file to validate as per the
-instructions given in the [data](data) section. This will trigger a bot to run the
-validation and post the results as tabular output and summary reporting connected to 
-the upload. This will only work if your upload is connected to the BGE project.
+- Input/Output:
+  - Support for FASTA and tabular input formats
+  - Detailed validation reports
+  - Filtered FASTA output for valid sequences
+  - Integration with Galaxy workflow platform
 
-## Command line usage
+## Installation
 
-The tooling can also be deployed locally. Dependency management is done via conda and
-so installation is fairly painless. However, the local deployment will also require a
-BLAST database that is indexed with taxon IDs from the NCBI taxonomy. This is the standard
-`nr` database that can be downloaded using tools that come with the NCBI BLAST+ release
-(which is part of the conda environment). Once that is downloaded and the 
-[config file](config/config.yml) is updated as needed, the tool can be used as follows:
+### Using Conda
 
-To get help:
+```bash
+# Create and activate conda environment
+conda env create -f environment.yml
+conda activate barcode-validator
 
-```
-python barcode_validator -h
+# Installation of Python dependencies invoked by conda
+# pip install -r requirements.txt
 ```
 
-To validate a FASTA file:
+### Manual Installation
 
+```bash
+# Install required command line tools
+sudo apt-get install hmmer ncbi-blast+
+
+# Install Python package
+pip install .
 ```
-python barcode_validator -f examples/mge.fa -c config/config.yml
+
+## Usage
+
+### Command Line Interface
+
+```bash
+# Using NSR taxonomy, we do this when we validate CSC dumps
+python barcode_validator \
+  --input_file sequences.tsv \
+  --exp_taxonomy nsr.zip \
+  --exp_taxonomy_type nsr \
+  --config config.yml \
+  --output_file results.tsv
+
+# Using BOLD taxonomy, this is the typical process for BGE where we prepare BOLD uploads
+barcode-validator \
+  --input_file sequences.fasta \
+  --exp_taxonomy bold.xlsx \
+  --exp_taxonomy_type bold \
+  --config config.yml \
+  --output_file results.tsv \
+  --emit_valid_fasta --output_fasta valid.fasta
 ```
 
-## Programmatic usage
+### Galaxy Integration
 
-The components of the toolset are programmed as object-oriented Python classes. The
-classes have a reasonable separation of concerns such that other applications can
-be composed out of them. To get started with this, peruse the Python files in the
-[barcode_validator](barcode_validator) folder and the unit tests in the [tests](tests)
-folder.
+The tool is available as a Galaxy tool wrapper, enabling web-based usage through the Galaxy platform. Users can:
+1. Upload sequence files to their Galaxy history
+2. Configure validation parameters through the GUI
+3. Run validations and view results within Galaxy
+4. Download validation reports and filtered sequences
+
+## Configuration
+
+The tool uses YAML configuration files for flexible setup:
+
+```yaml
+# Example config.yml
+marker: COI-5P
+validation_rank: family
+taxonomic_backbone: bold
+blast_db: /path/to/blast/db
+hmm_profile_dir: /path/to/hmm/profiles
+log_level: INFO
+```
+
+See `config/config.yml` for a complete configuration template with documentation.
+
+## Contributing
+
+We welcome contributions! Please see:
+- [Contributing Guidelines](CONTRIBUTING.md)
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+
+## Testing
+
+```bash
+# Run test suite
+pytest
+
+# Run with coverage
+pytest --cov=barcode_validator
+```
+
+## License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Citation
+
+If you use this software in your research, please cite:
+
+[Citation information to be added]
+
+## Contact
+
+[Contact information to be added]
