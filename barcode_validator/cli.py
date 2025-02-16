@@ -1,15 +1,10 @@
 import argparse
-import os
 import sys
 import logging
-import tempfile
 from pathlib import Path
-
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
-
 from .orchestrator import ValidationOrchestrator
-from .dna_analysis_result import DNAAnalysisResultSet, DNAAnalysisResult
 
 
 class BarcodeValidatorCLI:
