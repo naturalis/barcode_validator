@@ -1,7 +1,7 @@
 from pathlib import Path
-import json
-from typing import Iterator, Tuple, Optional, Dict
+from typing import Iterator
 from Bio import SeqIO
+from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 import csv
 from nbitk.config import Config
@@ -44,33 +44,6 @@ class BarcodeIO:
         else:
             raise ValueError(f"Unsupported file format: {suffix}")
 
-    def _parse_fasta(self, file_path: Path) -> Iterator[Tuple[SeqRecord, Optional[Dict]]]:
-        """
-        Parse FASTA file with optional JSON configuration in descriptions.
-        
-        :param file_path: Path to FASTA file
-        :return: Iterator of (sequence_record, config) tuples
-        """
-        self.logger.info(f"Parsing FASTA file: {file_path}")
-        for record in SeqIO.parse(file_path, 'fasta'):
-            config = None
-            json_start = record.description.find('{')
-            if json_start != -1:
-                try:
-                    json_str = record.description[json_start:]
-                    config = json.loads(json_str)
-                    # Remove JSON from description
-                    record.description = record.description[:json_start].strip()
-                except json.JSONDecodeError as e:
-                    self.logger.warning(f"Failed to parse JSON for {record.id}: {e}")
-            
-            # Add process ID to record annotations
-            if 'bcdm_fields' not in record.annotations:
-                record.annotations['bcdm_fields'] = {}
-            record.annotations['bcdm_fields']['processid'] = record.id.split('_')[0]
-            
-            yield record, config
-
     def _parse_tsv(self, file_path: Path) -> Iterator[SeqRecord]:
         """
         Parse CSC-style tabular format with sequence data and metadata.
@@ -82,6 +55,7 @@ class BarcodeIO:
         - verbatim_identification: Taxonomic identification
         - verbatim_kingdom: Kingdom classification
         - verbatim_rank: Taxonomic rank of identification
+        - originial_source: Source of the metadata (i.e. ada or sheets)
 
         :param file_path: Path to TSV file
         :return: Iterator of SeqRecord objects
