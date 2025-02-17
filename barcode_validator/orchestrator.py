@@ -170,8 +170,8 @@ class ValidationOrchestrator:
             if result.error:
                 return result
 
-        # Setup translation if needed
-        if self.structural_validator:
+        # Setup translation if needed for protein-coding validation
+        if isinstance(self.structural_validator, ProteinCodingValidator):
             self._setup_translation(record, result)
 
         # Perform validations
