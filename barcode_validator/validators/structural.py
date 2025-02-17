@@ -66,8 +66,8 @@ class StructuralValidator:
         length = len(seq_str)
 
         # Store lengths in result object
-        result.nuc_basecount = length
-        result.nuc_full_basecount = length  # For now these are the same
+        result.seq_length = length
+        result.full_length = length  # For now these are the same
         self.logger.debug(f"Length: {length}")
 
     def validate_ambiguities(self, record: SeqRecord, result: DNAAnalysisResult) -> None:
@@ -77,12 +77,21 @@ class StructuralValidator:
         :param record: The DNA sequence record to validate
         :param result: Result object to populate with ambiguity data
         """
-        # Count ambiguous bases (anything not ACGT)
-        ambig_count = len([base for base in record.seq if base not in 'acgtACGT-~'])
+        # Valid IUPAC codes (both cases)
+        valid_bases = set('ACGTUacgtu-~')
+        ambig_codes = set('RYKMSWBDHVNrykmswbdhvn')
+        valid_chars = valid_bases | ambig_codes
 
-        # Store counts in result object
-        result.ambig_basecount = ambig_count
-        result.ambig_full_basecount = ambig_count
+        # Check for invalid characters
+        seq_str = str(record.seq)
+        invalid_chars = set(seq_str) - valid_chars
+        if invalid_chars:
+            self.logger.warning(f"Sequence {record.id} contains invalid characters: {', '.join(sorted(invalid_chars))}")
+
+        # Count only valid IUPAC ambiguity codes
+        ambig_count = sum(1 for base in seq_str if base in ambig_codes)
+        result.ambiguities = ambig_count
+        result.full_ambiguities = ambig_count
         self.logger.debug(f"Ambiguities: {ambig_count}")
 
     def validate_marker_specific(self, record: SeqRecord, result: DNAAnalysisResult) -> None:
