@@ -8,9 +8,10 @@ from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 from nbitk.SeqIO.BCDM import BCDMIterator
 from .dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet
+from .taxonomic_enrichment import NSRTaxonomyParser, BOLDTaxonomyParser
 from .taxonomy_resolver import Marker, TaxonomyResolver
 from .validators.non_coding import NonCodingValidator
-from .validators.taxonomic import TaxonomicValidator
+from .validators.taxonomic import TaxonomicValidator, TaxonomicBackbone
 from .validators.protein_coding import ProteinCodingValidator
 
 class ValidationOrchestrator:
@@ -45,6 +46,7 @@ class ValidationOrchestrator:
         self.config = config
         self.logger = get_formatted_logger(self.__class__.__name__, config)
         self.taxonomy_resolver = TaxonomyResolver(config)
+        self.taxonomy_parser = None
         self.structural_validator = None
         self.taxonomic_validator = None
 
@@ -113,6 +115,13 @@ class ValidationOrchestrator:
                     self.taxonomy_resolver
                 )
 
+            # Create taxonomy parser
+            backbone_type = self.config.get('taxonomic_backbone')
+            if backbone_type == TaxonomicBackbone.DWC.value:
+                self.taxonomy_parser = NSRTaxonomyParser(self.config, self.taxonomy_resolver)
+            elif backbone_type == TaxonomicBackbone.BOLD.value:
+                self.taxonomy_parser = BOLDTaxonomyParser(self.config, self.taxonomy_resolver)
+
         # Create structural validator if needed
         if do_structural:
             marker = Marker(self.config.get('marker', 'COI-5P'))
@@ -152,23 +161,11 @@ class ValidationOrchestrator:
         :param dataset: Dataset identifier (e.g., source file name)
         :return: Validation result
         """
+        # Instantiate result object and attempt to enrich the taxonomy
         result = DNAAnalysisResult(record.id, dataset)
-
-        # Extract identification and rank
-        bcdm_fields = record.annotations.get('bcdm_fields', {})
-        identification = bcdm_fields.get('identification')
-        rank = bcdm_fields.get('rank', 'null')
-
-        # Early return if no identification for taxonomic validation
-        if self.taxonomic_validator and not identification:
-            result.error = "No taxonomic identification provided"
+        self.taxonomy_parser.parse_record(record, result)
+        if result.error:
             return result
-
-        # Resolve taxonomy if needed
-        if self.taxonomic_validator:
-            self._resolve_taxonomy(record, result, identification, rank)
-            if result.error:
-                return result
 
         # Setup translation if needed for protein-coding validation
         if isinstance(self.structural_validator, ProteinCodingValidator):
