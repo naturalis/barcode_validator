@@ -6,7 +6,7 @@ from nbitk.config import Config
 
 # Test data path handling
 TEST_DATA_DIR = Path(__file__).parent / "data"
-CSC_SAMPLE = TEST_DATA_DIR / "csc_sample.txt"
+CSC_SAMPLE = TEST_DATA_DIR / "csc_sample.tsv"
 
 
 @pytest.fixture
@@ -52,8 +52,7 @@ def test_complete_record_parsing(orchestrator):
     assert bcdm_fields['marker_code'] == "COI-5P"
     assert bcdm_fields['identification'] == "Geophilus carpophagus"
     assert bcdm_fields['kingdom'] == "Animalia"
-    assert bcdm_fields['rank'] == "Species"
-    assert bcdm_fields['source'] == "ada"
+    assert bcdm_fields['identification_rank'].lower() == "species"
 
 
 def test_null_value_handling(orchestrator):
@@ -63,7 +62,7 @@ def test_null_value_handling(orchestrator):
 
     bcdm_fields = null_record.annotations.get('bcdm_fields', {})
     assert bcdm_fields['kingdom'] == "null"
-    assert bcdm_fields['rank'] == "null"
+    assert bcdm_fields['identification_rank'] == "null"
 
 
 def test_sequence_verification(orchestrator):
@@ -81,7 +80,7 @@ def test_consistent_field_presence(orchestrator):
     """Test that all records have consistent field presence"""
     records = list(orchestrator._parse_input(CSC_SAMPLE))
 
-    required_fields = {'marker_code', 'identification', 'kingdom', 'rank', 'source'}
+    required_fields = {'marker_code', 'identification', 'kingdom', 'identification_rank', 'taxonomy_notes'}
 
     for record in records:
         bcdm_fields = record.annotations.get('bcdm_fields', {})
@@ -97,16 +96,6 @@ def test_marker_code_consistency(orchestrator):
     for record in records:
         assert record.annotations['bcdm_fields']['marker_code'] == "COI-5P", \
             f"Incorrect marker code in record {record.id}"
-
-
-def test_source_values(orchestrator):
-    """Test the valid source values"""
-    records = list(orchestrator._parse_input(CSC_SAMPLE))
-
-    valid_sources = {'ada', 'sheet'}
-    for record in records:
-        source = record.annotations['bcdm_fields']['source']
-        assert source in valid_sources, f"Invalid source value '{source}' in record {record.id}"
 
 
 def test_invalid_file_handling(orchestrator):

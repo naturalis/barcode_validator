@@ -6,6 +6,7 @@ from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
+from nbitk.SeqIO.BCDM import BCDMIterator
 from .dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet
 from .taxonomy_resolver import Marker, TaxonomyResolver
 from .validators.non_coding import NonCodingValidator
@@ -46,35 +47,6 @@ class ValidationOrchestrator:
         self.taxonomy_resolver = TaxonomyResolver(config)
         self.structural_validator = None
         self.taxonomic_validator = None
-        self._initialized = False
-
-    def initialize(self) -> None:
-        """
-        Initialize validator components.
-
-        Creates appropriate validator instances based on configuration.
-        Must be called before validation can be performed.
-        """
-        # Setup taxonomy resolution
-        self.taxonomy_resolver.setup_taxonomy()
-
-        # Create structural validator based on marker type
-        marker = Marker(self.config.get('marker', 'COI-5P'))
-
-        if marker in [Marker.COI_5P, Marker.MATK, Marker.RBCL]:
-            hmm_dir = self.config.get('hmm_profile_dir')
-            self.structural_validator = ProteinCodingValidator(self.config, hmm_dir)
-        else:
-            self.structural_validator = NonCodingValidator(self.config)
-
-        # Create taxonomic validator if needed
-        if self.config.get('validate_taxonomy', True):
-            self.taxonomic_validator = TaxonomicValidator(
-                self.config,
-                self.taxonomy_resolver
-            )
-
-        self._initialized = True
 
     def validate_file(self, input_path: Path,
                      csv_path: Optional[Path] = None,
@@ -89,29 +61,61 @@ class ValidationOrchestrator:
         :raises RuntimeError: If orchestrator not initialized
         :raises ValueError: If input file format not supported
         """
-        if not self._initialized:
-            raise RuntimeError("Orchestrator not initialized. Call initialize() first.")
+        # We defer initialization until we definitely need it, because some of the validators
+        # need assets and setup time that are quite costly.
+        self._initialize()
 
-        # Parse input file
-        records = list(self._parse_input(input_path))
-        self.logger.info(f"Parsed {len(records)} records from {input_path}")
-
-        # Validate records
+        # Validate records and create result set
         results = []
-        for record in records:
+        for record in self._parse_input(input_path):
             result = self._validate_record(record, str(input_path))
             results.append(result)
-
-        # Create result set
         result_set = DNAAnalysisResultSet(results)
 
         # Add additional data if provided
         if csv_path:
-            self._add_record_analytics(result_set, csv_path)
+            result_set.add_csv_file(str(csv_path))
         if yaml_path:
-            self._add_analysis_config(result_set, yaml_path)
+            result_set.add_yaml_file(str(yaml_path))
 
         return result_set
+
+    def _initialize(self) -> None:
+        """
+        Initialize validators and other resources.
+        """
+        # Determine if we need taxonomy. We defer initialization of the TR because it's costly.
+        needs_taxonomy = False
+        # Check taxonomic validation
+        if self.config.get('validate_taxonomy', True):
+            needs_taxonomy = True
+            self.logger.info("Will need taxonomy for taxonomic validation")
+        # Check structural validation for protein-coding markers
+        do_structural = self.config.get('validate_structure', True)
+        if do_structural:
+            marker = Marker(self.config.get('marker', 'COI-5P'))
+            if marker in [Marker.COI_5P, Marker.MATK, Marker.RBCL]:
+                needs_taxonomy = True
+                self.logger.info("Will need taxonomy for protein-coding marker translation")
+        if needs_taxonomy:
+            self.logger.info("Initializing taxonomy. This may take a while...")
+            self.taxonomy_resolver.setup_taxonomy()
+            self.logger.debug("Taxonomy initialization complete")
+
+            # Create taxonomic validator
+            if self.config.get('validate_taxonomy', True):
+                self.taxonomic_validator = TaxonomicValidator(
+                    self.config,
+                    self.taxonomy_resolver
+                )
+        # Create structural validator if needed
+        if do_structural:
+            marker = Marker(self.config.get('marker', 'COI-5P'))
+            if marker in [Marker.COI_5P, Marker.MATK, Marker.RBCL]:
+                hmm_dir = self.config.get('hmm_profile_dir')
+                self.structural_validator = ProteinCodingValidator(self.config, hmm_dir)
+            else:
+                self.structural_validator = NonCodingValidator(self.config)
 
     def _parse_input(self, file_path: Path) -> Iterator[SeqRecord]:
         """
@@ -129,7 +133,8 @@ class ValidationOrchestrator:
 
         elif suffix in ['.tsv', '.txt']:
             self.logger.info(f"Parsing TSV file: {file_path}")
-            yield from SeqIO.parse(file_path, 'bcdm-tsv')
+            with open(file_path) as handle:
+                yield from SeqIO.parse(handle, 'bcdm-tsv')
 
         else:
             raise ValueError(f"Unsupported file format: {suffix}")
@@ -245,28 +250,6 @@ class ValidationOrchestrator:
         )
         result.add_ancillary('translation_table', str(trans_table))
         result.add_ancillary('marker', marker)
-
-    def _add_record_analytics(self, result_set: DNAAnalysisResultSet,
-                            csv_path: Path) -> None:
-        """
-        Add record-level analytics from CSV.
-
-        :param result_set: Set of validation results
-        :param csv_path: Path to CSV file with analytics
-        """
-        self.logger.info(f"Adding analytics from {csv_path}")
-        result_set.add_csv_file(str(csv_path))
-
-    def _add_analysis_config(self, result_set: DNAAnalysisResultSet,
-                           yaml_path: Path) -> None:
-        """
-        Add analysis-level configuration from YAML.
-
-        :param result_set: Set of validation results
-        :param yaml_path: Path to YAML file with configuration
-        """
-        self.logger.info(f"Adding configuration from {yaml_path}")
-        result_set.add_yaml_file(str(yaml_path))
 
     def write_results(self, results: DNAAnalysisResultSet,
                      output_path: Path,
