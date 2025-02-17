@@ -86,10 +86,12 @@ class ValidationOrchestrator:
         """
         # Determine if we need taxonomy. We defer initialization of the TR because it's costly.
         needs_taxonomy = False
+
         # Check taxonomic validation
         if self.config.get('validate_taxonomy', True):
             needs_taxonomy = True
             self.logger.info("Will need taxonomy for taxonomic validation")
+
         # Check structural validation for protein-coding markers
         do_structural = self.config.get('validate_structure', True)
         if do_structural:
@@ -97,6 +99,8 @@ class ValidationOrchestrator:
             if marker in [Marker.COI_5P, Marker.MATK, Marker.RBCL]:
                 needs_taxonomy = True
                 self.logger.info("Will need taxonomy for protein-coding marker translation")
+
+        # Setup taxonomy resolver and possibly taxonomic validator
         if needs_taxonomy:
             self.logger.info("Initializing taxonomy. This may take a while...")
             self.taxonomy_resolver.setup_taxonomy()
@@ -108,6 +112,7 @@ class ValidationOrchestrator:
                     self.config,
                     self.taxonomy_resolver
                 )
+
         # Create structural validator if needed
         if do_structural:
             marker = Marker(self.config.get('marker', 'COI-5P'))
