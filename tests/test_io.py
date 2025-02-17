@@ -7,6 +7,7 @@ from nbitk.config import Config
 # Test data path handling
 TEST_DATA_DIR = Path(__file__).parent / "data"
 CSC_SAMPLE = TEST_DATA_DIR / "csc_sample.tsv"
+BOLD_SAMPLE = TEST_DATA_DIR / "BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta"
 
 
 @pytest.fixture
@@ -20,6 +21,7 @@ def config():
     }
     conf.initialized = True
     return conf
+
 
 @pytest.fixture
 def orchestrator(config):
@@ -103,8 +105,37 @@ def test_invalid_file_handling(orchestrator):
     with pytest.raises(ValueError):
         list(orchestrator._parse_input(TEST_DATA_DIR / "nonexistent.xyz"))
 
+
 def test_parsing_no_taxonomy_init(orchestrator):
     """Verify that parsing alone doesn't initialize taxonomy"""
     records = list(orchestrator._parse_input(CSC_SAMPLE))
     assert orchestrator.taxonomy_resolver.ncbi_tree is None
     assert orchestrator.taxonomy_resolver.backbone_tree is None
+
+
+def test_bold_fasta_parsing(orchestrator):
+    """Test parsing of BOLD format FASTA records"""
+    records = list(orchestrator._parse_input(BOLD_SAMPLE))
+
+    # Should have two samples with six variants each
+    assert len(records) == 10, "Should parse 10 records from sample data"
+    assert all(isinstance(r, SeqRecord) for r in records), "All records should be SeqRecord objects"
+
+    # Verify record identifiers follow BOLD pattern
+    assert any(r.id.startswith("BHNHM001-24") for r in records), "Should find BHNHM001-24 records"
+    assert any(r.id.startswith("BHNHM002-24") for r in records), "Should find BHNHM002-24 records"
+
+
+def test_bold_sequence_content(orchestrator):
+    """Test sequence content from BOLD FASTA records"""
+    records = list(orchestrator._parse_input(BOLD_SAMPLE))
+    record = next(r for r in records if r.id == "BHNHM001-24_r_1_s_50")
+
+    # Test sequence basics
+    seq_str = str(record.seq)
+    assert len(seq_str) > 0, "Sequence should not be empty"
+    assert seq_str.startswith("CGAAAATGAATATACTCAACAA"), "Sequence start mismatch"
+
+    # Verify sequence characters
+    valid_chars = set('ACGTN-')
+    assert all(c.upper() in valid_chars for c in seq_str), "Invalid characters in sequence"
