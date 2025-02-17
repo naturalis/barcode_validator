@@ -29,6 +29,8 @@ class Marker(Enum):
     COI_5P = "COI-5P"
     MATK = "matK"
     RBCL = "rbcL"
+    ITS = "ITS"
+    ITS2 = "ITS2"
 
 class TaxonomyResolver:
     """
