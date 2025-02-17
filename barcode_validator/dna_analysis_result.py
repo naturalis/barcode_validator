@@ -37,30 +37,39 @@ In order to ensure that the columns are consistent across all result objects in 
 global set called `columns`. This set is updated whenever a new column is added to any result object.
 """
 
+# Module-level columns set
+columns = set()
+
+# Initial columns that should always be present
+base_columns = {
+    'sequence_id',
+    'ambig_basecount',
+    'ambig_full_basecount',
+    'dataset',
+    'error',
+    'identification',
+    'identification_method',
+    'identification_rank',
+    'nuc_basecount',
+    'nuc_full_basecount',
+    'obs_taxon',
+    'species',
+    'stop_codons',
+}
+
 def reset_columns():
     """Reset the global columns set to initial state"""
     global columns
     columns = set()
 
-# Initial columns that should always be present
 def initialize_columns():
+    """Initialize the columns set with base columns"""
+    global columns
     reset_columns()
-    base_columns = {
-        'sequence_id',
-        'ambig_basecount',
-        'ambig_full_basecount',
-        'dataset',
-        'error',
-        'identification',
-        'identification_method',
-        'identification_rank',
-        'nuc_basecount',
-        'nuc_full_basecount',
-        'obs_taxon',
-        'species',
-        'stop_codons',
-    }
     columns.update(base_columns)
+
+# Initialize columns at module import
+initialize_columns()
 
 levels = [
     'kingdom',
