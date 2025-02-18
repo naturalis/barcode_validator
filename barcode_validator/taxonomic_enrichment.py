@@ -1,13 +1,12 @@
+from enum import Enum
 from typing import Optional
 
 from Bio import SeqRecord
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 
-from .taxonomy_resolver import TaxonomyResolver
+from .taxonomy_resolver import TaxonomyResolver, Marker, TaxonomicBackbone
 from .dna_analysis_result import DNAAnalysisResult
-from .validators.taxonomic import TaxonomicBackbone
-
 
 class TaxonomyEnrichmentParser:
     """
@@ -28,9 +27,9 @@ class TaxonomyEnrichmentParser:
         """
         raise NotImplementedError
 
-    def enrich_record(self, record: SeqRecord, result: DNAAnalysisResult, backbone: TaxonomicBackbone):
+    def enrich_result(self, record: SeqRecord, result: DNAAnalysisResult, backbone: TaxonomicBackbone):
         """
-        Enriches the result object with taxonomic data from the BOLD-style FASTA record.
+        Enriches the result object with taxonomic data
         :param record: A SeqRecord object with process ID in the ID field.
         :param result: A DNAAnalysisResult object to populate with taxonomic data.
         :param backbone: The backbone taxonomy to use for the enrichment.
@@ -39,33 +38,40 @@ class TaxonomyEnrichmentParser:
         query = self.get_query(record)
 
         # Use resolver to get backbone taxon
-        result.species = self.taxonomy_resolver.resolve_backbone(
-            query,
-            backbone.value
-        )
-        if not result.species:
+        species = self.taxonomy_resolver.resolve_backbone(query,backbone)
+        if species is None:
             msg = f"No entry found for {query} in BOLD backbone taxonomy."
             self.logger.error(msg)
             result.error = msg
             return
+        result.species = species
 
         # Get lineage from resolver's backbone tree
-        result.level = self.config.get('level', 'family')
         for node in self.taxonomy_resolver.backbone_tree.root.get_path(result.species):
             if node.taxonomic_rank.lower() == result.level.lower():
                 result.exp_taxon = node
+                break
 
         # Check if there was a traversal problem
-        if not result.exp_taxon:
+        if result.exp_taxon is None:
             msg = f"No {result.level} taxon found for {query} in BOLD backbone taxonomy."
             self.logger.error(msg)
             result.error = msg
             return
 
-        _, ncbi_valid = self.taxonomy_resolver.get_validation_taxon(
+        # Infer the translation table
+        ncbi_taxon = self.taxonomy_resolver.find_taxon_at_level(
             result.exp_taxon,
             result.level
         )
+        if not ncbi_taxon:
+            msg = f"No {result.level} taxon found for {query} in NCBI taxonomy."
+            self.logger.error(msg)
+            result.error = msg
+            return
+        marker_enum = Marker(result.ancillary.get('marker_code'))
+        translation_table = self.taxonomy_resolver.get_translation_table(marker_enum, ncbi_taxon)
+        result.add_ancillary('translation_table',str(translation_table))
 
 class BOLDTaxonomyParser(TaxonomyEnrichmentParser):
     """Parser for BOLD-style FASTA records with process IDs."""

@@ -1,17 +1,14 @@
 import sys
 import tarfile
+import requests
 from enum import Enum
 from pathlib import Path
-
-import requests
+from typing import Optional
 from Bio import Entrez
-from Bio.SeqRecord import SeqRecord
 from nbitk.Taxon import Taxon
 from nbitk.Phylo.NCBITaxdmp import Parser as NCBIParser
 from nbitk.Phylo.DwCATaxonomyIO import Parser as DwCParser
 from nbitk.Phylo.BOLDXLSXIO import Parser as BOLDParser
-from typing import Optional, Tuple
-
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 
@@ -24,6 +21,10 @@ SYNOPSIS
     >>> }
     >>> translation_table = get_translation_table(Marker.COI_5P, taxonomy)
 """
+
+class TaxonomicBackbone(Enum):
+    DWC = "dwc"  # DarwinCore Archive format (including NSR)
+    BOLD = "bold"  # BOLD taxonomy from Excel
 
 class Marker(Enum):
     COI_5P = "COI-5P"
@@ -62,7 +63,7 @@ class TaxonomyResolver:
     Examples:
         >>> resolver = TaxonomyResolver(config)
         >>> backbone_taxon = resolver.resolve_backbone("Homo sapiens", "bold")
-        >>> backbone_valid, ncbi_valid = resolver.get_validation_taxon(backbone_taxon, "family")
+        >>> backbone_valid, ncbi_valid = resolver.find_taxon_at_level(backbone_taxon, "family")
     """
 
 
@@ -76,6 +77,7 @@ class TaxonomyResolver:
         self.logger = get_formatted_logger(self.__class__.__name__, config)
         self.ncbi_tree = None
         self.backbone_tree = None
+        self.backbone_type = Optional[TaxonomicBackbone]
         self.tax_ranks = ['kingdom', 'phylum', 'class', 'order', 'family', 'genus', 'species']
 
     def download_ncbi_dump(self, destination: str) -> str:
@@ -136,7 +138,7 @@ class TaxonomyResolver:
             self.logger.error(f"Failed to download NSR dump: {e}")
             sys.exit(1)
 
-    def setup_taxonomy(self) -> None:
+    def setup_taxonomy(self, backbone_type: TaxonomicBackbone) -> None:
         """
         Setup taxonomy dumps using the command line arguments and update configuration.
         """
@@ -152,40 +154,46 @@ class TaxonomyResolver:
             self.logger.error("NCBI taxonomy is not configured. Skipping setup.")
             sys.exit(1)
 
-        # Check if the NSR taxonomy is there. If not, download it. Then parse it.
-        nsr_path = self.config.get("dwc_archive")
-        if nsr_path is not None:
-            path_obj = Path(nsr_path)
-            if not path_obj.exists():
-                downloaded_path = self.download_nsr_dump(nsr_path)
-                self.config.set("dwc_archive", downloaded_path)
-            self.backbone_tree = self.backbone_tree = DwCParser(self.config.get("dwc_archive")).parse()
-
-        # No NSR tree configured, assuming BOLD
-        else:
+        # This is the earliest point where the orchestrator has determined what backbone we're using
+        self.backbone_type = backbone_type
+        if backbone_type == TaxonomicBackbone.DWC:
+            nsr_path = self.config.get("dwc_archive")
+            if nsr_path is not None:
+                path_obj = Path(nsr_path)
+                if not path_obj.exists():
+                    downloaded_path = self.download_nsr_dump(nsr_path)
+                    self.config.set("dwc_archive", downloaded_path)
+                self.backbone_tree = DwCParser(self.config.get("dwc_archive")).parse()
+        elif backbone_type == TaxonomicBackbone.BOLD:
             bold_file = self.config.get('bold_sheet_file')
             with open(bold_file, 'rb') as f:
                 self.backbone_tree = BOLDParser(f).parse()
+        else:
+            self.logger.error(f"No taxonomy available for {backbone_type}. Skipping setup.")
+            sys.exit(1)
 
-    def resolve_backbone(self, identification: str, backbone_type: str = "bold") -> Optional[Taxon]:
+    def resolve_backbone(self, identification: str, backbone: TaxonomicBackbone) -> Optional[Taxon]:
         """
         Resolve an identification against the backbone taxonomy.
 
         :param identification: Taxonomic name or record to resolve
-        :param backbone_type: Type of backbone taxonomy ("bold" or "dwc")
+        :param backbone: Type of backbone taxonomy ("bold" or "dwc")
         :return: Resolved taxon in backbone taxonomy or None if not found
         """
-        if isinstance(identification, SeqRecord):
-            if backbone_type == "bold":
-                return self._resolve_from_bold(identification)
-            else:  # dwc
-                return self._resolve_from_dwc(identification)
+        if backbone != self.backbone_type:
+            self.logger.error(f"Backbone taxonomy type mismatch: {backbone} != {self.backbone_type}")
+            sys.exit(1)
+
+        if backbone == TaxonomicBackbone.BOLD:
+            return self._resolve_from_bold(identification)
+        elif backbone == TaxonomicBackbone.DWC:
+            return self._resolve_from_dwc(identification)
         else:
             return self._resolve_from_name(identification)
 
     def _resolve_from_name(self, taxon_name: str) -> Optional[Taxon]:
         """
-        Resolve a taxon name from the backbone taxonomy.
+        Resolve a taxon name from the backbone taxonomy. Literal string matches only.
 
         :param taxon_name: Name of the taxon to resolve
         :return: Resolved taxon object or None if not found
@@ -213,53 +221,28 @@ class TaxonomyResolver:
         self.logger.warning(f"No matches found for {taxon_name}")
         return None
 
-    def _resolve_from_bold(self, record: SeqRecord) -> Optional[Taxon]:
+    def _resolve_from_bold(self, process_id: str) -> Optional[Taxon]:
         """
         Resolve taxon from BOLD process ID in record.
 
-        :param record: The DNA sequence record
+        :param process_id: The DNA sequence record's process_id
         :return: Resolved taxon object or None if not found
         """
-        process_id = record.annotations.get('bcdm_fields', {}).get('processid')
-        if not process_id:
-            self.logger.error(f"No process ID found in record {record.id}")
-            return None
-
         # Find tip in backbone tree by process ID
         for node in self.backbone_tree.get_terminals():
             if process_id in node.guids:
                 return node
-
-        # If no match by process ID, try identification field
-        if 'identification' in record.annotations.get('bcdm_fields', {}):
-            return self._resolve_from_name(record.annotations['bcdm_fields']['identification'])
-
         return None
 
-    def _resolve_from_dwc(self, record: SeqRecord) -> Optional[Taxon]:
+    # TODO query NSR (NBA?) to resolve name. Worked well in DataBricks...
+    def _resolve_from_dwc(self, name: str) -> Optional[Taxon]:
         """
         Resolve taxon from DarwinCore fields in record.
 
-        :param record: The DNA sequence record
+        :param name: The DNA sequence record
         :return: Resolved taxon object or None if not found
         """
-        # Try full taxonomy first
-        taxonomy = record.annotations.get('taxonomy', [])
-        if taxonomy:
-            # Start from most specific (last) to least specific
-            for name in reversed(taxonomy):
-                if not name:
-                    continue
-                taxon = self._resolve_from_name(name)
-                if taxon:
-                    return taxon
-
-        # Try description field if taxonomy failed
-        if record.description:
-            return self._resolve_from_name(record.description)
-
-        self.logger.error(f"No taxonomy found in record {record.id}")
-        return None
+        return self._resolve_from_name(name)
 
     def get_ncbi_taxon(self, backbone_taxon: Taxon) -> Optional[Taxon]:
         """
@@ -291,30 +274,31 @@ class TaxonomyResolver:
             self.logger.error(f"Error resolving NCBI taxonomy: {str(e)}")
             return None
 
-    def get_validation_taxon(self, backbone_taxon: Taxon, level: str) -> Tuple[Optional[Taxon], Optional[Taxon]]:
+    def find_taxon_at_level(self, source_taxon: Taxon, level: str) -> Optional[Taxon]:
         """
         Get taxa at validation level in both backbone and NCBI taxonomies.
 
-        :param backbone_taxon: Initially resolved taxon in backbone taxonomy
+        :param source_taxon: Taxon in backbone taxonomy, may be interior node
         :param level: Desired validation level (e.g., "family")
-        :return: Tuple of (backbone_validation_taxon, ncbi_validation_taxon)
+        :return: NCBI taxon object at desired level, or None if not found
         """
-        if not backbone_taxon:
-            return None, None
+        if not source_taxon:
+            return None
 
-        # Get validation level taxon in backbone
-        backbone_valid = None
-        for node in self.backbone_tree.root.get_path(backbone_taxon):
+        # Get the ancester at `level` in the source taxonomy
+        anc_at_level = None
+        for node in self.backbone_tree.root.get_path(source_taxon):
             if str(node.taxonomic_rank).lower() == level.lower():
-                backbone_valid = node
+                anc_at_level = node
                 break
 
-        if not backbone_valid:
-            return None, None
+        if not anc_at_level:
+            return None
 
-        # Map to NCBI
-        ncbi_valid = self.get_ncbi_taxon(backbone_valid)
-        return backbone_valid, ncbi_valid
+        # Map to NCBI via Entrez search with predicate `[Scientific Name]`,
+        # query the in-memory copy of the NCBI taxonomy for the taxId and instantiate Taxon
+        ncbi_valid = self.get_ncbi_taxon(anc_at_level)
+        return ncbi_valid
 
     def get_constraint_taxon(self, taxon: Taxon, constraint_level: str = 'class') -> str:
         """
@@ -340,7 +324,7 @@ class TaxonomyResolver:
         Determine the appropriate translation table based on marker and taxonomy.
 
         :param marker: The genetic Marker (enum) being analyzed
-        :param taxon: The NCBI taxon object representing the tip of the classification
+        :param taxon: The NCBI taxon object representing at the highest a family in the taxonomy.
         :return: Translation table index (int) for use with Biopython
         """
         taxonomy_dict = {}
