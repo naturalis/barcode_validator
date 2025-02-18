@@ -203,20 +203,8 @@ class TaxonomyResolver:
 
         # Look for exact match first
         for node in self.backbone_tree.find_clades():
-            if node.name and node.name.lower() == taxon_name.lower():
+            if node.name and node.name == taxon_name:
                 return node
-
-        # If no exact match, try case-insensitive partial match
-        matches = []
-        for node in self.backbone_tree.find_clades():
-            if node.name and taxon_name.lower() in node.name.lower():
-                matches.append(node)
-
-        if len(matches) == 1:
-            return matches[0]
-        elif len(matches) > 1:
-            self.logger.warning(f"Multiple matches found for {taxon_name}")
-            return None
 
         self.logger.warning(f"No matches found for {taxon_name}")
         return None
