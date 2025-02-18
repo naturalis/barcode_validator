@@ -9,9 +9,9 @@ from nbitk.logger import get_formatted_logger
 from nbitk.SeqIO.BCDM import BCDMIterator
 from .dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet
 from .taxonomic_enrichment import NSRTaxonomyParser, BOLDTaxonomyParser
-from .taxonomy_resolver import Marker, TaxonomyResolver
+from .taxonomy_resolver import Marker, TaxonomyResolver, TaxonomicBackbone
 from .validators.non_coding import NonCodingValidator
-from .validators.taxonomic import TaxonomicValidator, TaxonomicBackbone
+from .validators.taxonomic import TaxonomicValidator
 from .validators.protein_coding import ProteinCodingValidator
 
 class ValidationOrchestrator:
@@ -65,12 +65,14 @@ class ValidationOrchestrator:
         """
         # We defer initialization until we definitely need it, because some of the validators
         # need assets and setup time that are quite costly.
-        self._initialize()
+        backbone_type = TaxonomicBackbone(self.config.get('taxonomic_backbone'))
+        marker_type = Marker(self.config.get('marker'))
+        self._initialize(backbone_type, marker_type)
 
         # Validate records and create result set
         results = []
         for record in self._parse_input(input_path):
-            result = self._validate_record(record, str(input_path))
+            result = self._validate_record(record, str(input_path), backbone_type, marker_type)
             results.append(result)
         result_set = DNAAnalysisResultSet(results)
 
@@ -82,31 +84,36 @@ class ValidationOrchestrator:
 
         return result_set
 
-    def _initialize(self) -> None:
+    def _initialize(self, backbone_type: TaxonomicBackbone, marker_type: Marker) -> None:
         """
         Initialize validators and other resources.
         """
         # Determine if we need taxonomy. We defer initialization of the TR because it's costly.
         needs_taxonomy = False
 
-        # Check taxonomic validation
+        # Taxonomic validation needs taxonomy for observed/expected resolution & reconciliation
         if self.config.get('validate_taxonomy', True):
             needs_taxonomy = True
             self.logger.info("Will need taxonomy for taxonomic validation")
 
-        # Check structural validation for protein-coding markers
+        # Structural validation of protein-coding markers needs taxonomy to infer translation table
         do_structural = self.config.get('validate_structure', True)
         if do_structural:
-            marker = Marker(self.config.get('marker', 'COI-5P'))
-            if marker in [Marker.COI_5P, Marker.MATK, Marker.RBCL]:
+            if marker_type in [Marker.COI_5P, Marker.MATK, Marker.RBCL]:
                 needs_taxonomy = True
                 self.logger.info("Will need taxonomy for protein-coding marker translation")
 
-        # Setup taxonomy resolver and possibly taxonomic validator
+        # Setup taxonomy resolver, parser, and possibly taxonomic validator
         if needs_taxonomy:
             self.logger.info("Initializing taxonomy. This may take a while...")
-            self.taxonomy_resolver.setup_taxonomy()
+            self.taxonomy_resolver.setup_taxonomy(backbone_type)
             self.logger.debug("Taxonomy initialization complete")
+
+            # Create taxonomy parser
+            if backbone_type == TaxonomicBackbone.DWC:
+                self.taxonomy_parser = NSRTaxonomyParser(self.config, self.taxonomy_resolver)
+            elif backbone_type == TaxonomicBackbone.BOLD:
+                self.taxonomy_parser = BOLDTaxonomyParser(self.config, self.taxonomy_resolver)
 
             # Create taxonomic validator
             if self.config.get('validate_taxonomy', True):
@@ -115,17 +122,9 @@ class ValidationOrchestrator:
                     self.taxonomy_resolver
                 )
 
-            # Create taxonomy parser
-            backbone_type = self.config.get('taxonomic_backbone')
-            if backbone_type == TaxonomicBackbone.DWC.value:
-                self.taxonomy_parser = NSRTaxonomyParser(self.config, self.taxonomy_resolver)
-            elif backbone_type == TaxonomicBackbone.BOLD.value:
-                self.taxonomy_parser = BOLDTaxonomyParser(self.config, self.taxonomy_resolver)
-
         # Create structural validator if needed
         if do_structural:
-            marker = Marker(self.config.get('marker', 'COI-5P'))
-            if marker in [Marker.COI_5P, Marker.MATK, Marker.RBCL]:
+            if marker_type in [Marker.COI_5P, Marker.MATK, Marker.RBCL]:
                 hmm_dir = self.config.get('hmm_profile_dir')
                 self.structural_validator = ProteinCodingValidator(self.config, hmm_dir)
             else:
@@ -153,23 +152,28 @@ class ValidationOrchestrator:
         else:
             raise ValueError(f"Unsupported file format: {suffix}")
 
-    def _validate_record(self, record: SeqRecord, dataset: str) -> DNAAnalysisResult:
+    def _validate_record(self, record: SeqRecord, dataset: str, backbone_type: TaxonomicBackbone, marker_type: Marker) -> DNAAnalysisResult:
         """
         Validate a single sequence record.
 
         :param record: The sequence record to validate
         :param dataset: Dataset identifier (e.g., source file name)
-        :return: Validation result
+        :param backbone_type: Taxonomic backbone to use for validation
+        :param marker_type: Marker type to use for validation
+        :return: DNAAnalysisResult object containing validation results
         """
-        # Instantiate result object and attempt to enrich the taxonomy
+        # Instantiate result object, annotate target marker at sequence level (CSC) or config level, set validation level
         result = DNAAnalysisResult(record.id, dataset)
-        self.taxonomy_parser.parse_record(record, result)
+        marker_code = record.annotations.get('bcdm_fields', {}).get('marker_code') # may be in CSC/BCDM
+        if marker_code is not None:
+            marker_type = Marker(marker_code)
+        result.add_ancillary('marker_code', marker_type.value)
+        result.level = self.config.get('validation_rank')
+
+        # Enrich taxonomic data and translation table
+        self.taxonomy_parser.enrich_result(record, result, backbone_type)
         if result.error:
             return result
-
-        # Setup translation if needed for protein-coding validation
-        if isinstance(self.structural_validator, ProteinCodingValidator):
-            self._setup_translation(record, result)
 
         # Perform validations
         if self.structural_validator:
@@ -178,80 +182,6 @@ class ValidationOrchestrator:
             self.taxonomic_validator.validate_taxonomy(record, result)
 
         return result
-
-    def _resolve_taxonomy(self, record: SeqRecord, result: DNAAnalysisResult,
-                         identification: str, rank: str) -> None:
-        """
-        Resolve taxonomy for validation.
-
-        :param record: Sequence record
-        :param result: Result object to update
-        :param identification: Taxonomic identification
-        :param rank: Rank of identification
-        """
-        # Resolve backbone taxonomy
-        backbone_taxon = self.taxonomy_resolver.resolve_backbone(
-            identification,
-            self.config.get('taxonomic_backbone', 'bold')
-        )
-        if not backbone_taxon:
-            result.error = f"Could not resolve taxon in backbone: {identification}"
-            return
-
-        # Get validation taxa
-        validation_level = self.config.get('level', 'family')
-        backbone_validation, ncbi_validation = self.taxonomy_resolver.get_validation_taxon(
-            backbone_taxon, validation_level
-        )
-
-        # Store validation information in result
-        if not backbone_validation:
-            result.error = f"Could not find {validation_level} rank in backbone for {identification}"
-            return
-        if not ncbi_validation:
-            result.error = f"Could not map {validation_level} {backbone_validation.name} to NCBI taxonomy"
-            return
-
-        result.level = validation_level
-        result.exp_taxon = backbone_validation
-
-        # Store NCBI taxon in result for later use
-        result.add_ancillary('ncbi_taxon', ncbi_validation.name)
-        result.add_ancillary('ncbi_taxid', ncbi_validation.guids.get('taxon'))
-
-    def _setup_translation(self, record: SeqRecord, result: DNAAnalysisResult) -> None:
-        """
-        Setup translation parameters for structural validation.
-
-        :param record: Sequence record
-        :param result: Result object to update
-        """
-        # Get marker and NCBI taxon
-        bcdm_fields = record.annotations.get('bcdm_fields', {})
-        marker = bcdm_fields.get('marker_code', 'COI-5P')
-        ncbi_taxid = result.ancillary.get('ncbi_taxid')
-
-        try:
-            marker_enum = Marker(marker)
-        except ValueError:
-            self.logger.warning(f"Unknown marker {marker}, using COI-5P")
-            marker_enum = Marker.COI_5P
-
-        # Find NCBI taxon in tree
-        ncbi_taxon = None
-        if ncbi_taxid:
-            for node in self.taxonomy_resolver.ncbi_tree.find_clades():
-                if node.guids.get('taxon') == ncbi_taxid:
-                    ncbi_taxon = node
-                    break
-
-        # Determine translation table
-        trans_table = self.taxonomy_resolver.get_translation_table(
-            marker_enum,
-            ncbi_taxon
-        )
-        result.add_ancillary('translation_table', str(trans_table))
-        result.add_ancillary('marker', marker)
 
     def write_results(self, results: DNAAnalysisResultSet,
                      output_path: Path,
