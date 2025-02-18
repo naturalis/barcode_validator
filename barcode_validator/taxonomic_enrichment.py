@@ -35,12 +35,19 @@ class TaxonomyEnrichmentParser:
         :param backbone: The backbone taxonomy to use for the enrichment.
         :return:
         """
+
+        # Attempt to get whatever it is we're going to be looking for
         query = self.get_query(record)
+        if query is None:
+            msg = "No identification provided."
+            self.logger.error(msg)
+            result.error = msg
+            return
 
         # Use resolver to get backbone taxon
         species = self.taxonomy_resolver.resolve_backbone(query,backbone)
         if species is None:
-            msg = f"No entry found for {query} in BOLD backbone taxonomy."
+            msg = f"No entry found for {query} in backbone taxonomy."
             self.logger.error(msg)
             result.error = msg
             return
@@ -54,7 +61,7 @@ class TaxonomyEnrichmentParser:
 
         # Check if there was a traversal problem
         if result.exp_taxon is None:
-            msg = f"No {result.level} taxon found for {query} in BOLD backbone taxonomy."
+            msg = f"No {result.level} taxon found for {query} in backbone taxonomy."
             self.logger.error(msg)
             result.error = msg
             return
@@ -101,4 +108,4 @@ class NSRTaxonomyParser(TaxonomyEnrichmentParser):
         :param record: A SeqRecord object the verbatim identification is stored in.
         :return: A verbatim identification string.
         """
-        return record.annotations['bcdm_fields']['identification']
+        return record.annotations.get('bcdm_fields', {}).get('identification', None)
