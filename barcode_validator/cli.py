@@ -104,7 +104,6 @@ performs validations, and outputs results as TSV. Optionally emits valid sequenc
         try:
             # Initialize orchestrator
             orchestrator = ValidationOrchestrator(self.config)
-            orchestrator.initialize()
 
             # Validate sequences
             results = orchestrator.validate_file(
