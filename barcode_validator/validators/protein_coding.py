@@ -69,7 +69,7 @@ class ProteinCodingValidator(StructuralValidator):
             return
 
         # Determine and store reading frame
-        reading_frame = self._determine_reading_frame(aligned_seq)
+        reading_frame = self._determine_reading_frame(aligned_seq, trans_table)
         result.add_ancillary('reading_frame', str(reading_frame))
         self.logger.debug(f"Reading frame: {reading_frame}")
 
@@ -102,6 +102,7 @@ class ProteinCodingValidator(StructuralValidator):
                 self.hmmalign.set_output(temp_output.name)
                 self.hmmalign.set_outformat('Stockholm')
                 self.hmmalign.set_dna()
+                self.hmmalign.set_trim()
 
                 return_code = self.hmmalign.run()
                 if return_code != 0:
@@ -133,7 +134,7 @@ class ProteinCodingValidator(StructuralValidator):
             self.logger.error(f"Error parsing Stockholm alignment: {str(e)}")
             return None
 
-    def _determine_reading_frame(self, aligned_seq: SeqRecord) -> int:
+    def _determine_reading_frame(self, aligned_seq: SeqRecord, trans_table: int) -> int:
         """
         Determine the reading frame from HMM-aligned sequence.
 
@@ -146,7 +147,7 @@ class ProteinCodingValidator(StructuralValidator):
 
         for frame in range(3):
             coding_seq = Seq(seq_nogaps[frame:])
-            protein = coding_seq.translate(table=1)
+            protein = coding_seq.translate(table=trans_table)
             stops = protein.count('*')
 
             if stops < min_stops:
