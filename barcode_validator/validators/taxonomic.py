@@ -3,14 +3,8 @@ from Bio.SeqRecord import SeqRecord
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 from barcode_validator.blast_runner import BlastRunner
-from barcode_validator.taxonomy_resolver import TaxonomyResolver
+from barcode_validator.taxonomy_resolver import TaxonomyResolver, TaxonomicBackbone
 from barcode_validator.dna_analysis_result import DNAAnalysisResult
-from enum import Enum
-
-
-class TaxonomicBackbone(Enum):
-    DWC = "dwc"  # DarwinCore Archive format (including NSR)
-    BOLD = "bold"  # BOLD taxonomy from Excel
 
 
 class TaxonomicValidator:
@@ -76,7 +70,7 @@ class TaxonomicValidator:
             return
 
         # Get taxa at validation rank in both taxonomies
-        backbone_valid, ncbi_valid = self.taxonomy_resolver.get_validation_taxon(
+        backbone_valid, ncbi_valid = self.taxonomy_resolver.find_taxon_at_level(
             backbone_taxon,
             self.validation_rank
         )
