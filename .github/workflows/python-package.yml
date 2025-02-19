@@ -33,7 +33,7 @@ jobs:
       shell: bash -l {0}
       run: |
         conda activate barcode_validator
-        pip install pytest pytest-cov
+        pip install pytest pytest-cov flake8
         pip install -e .
 
     - name: Test environment
