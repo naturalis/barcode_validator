@@ -35,7 +35,6 @@ class TaxonomyEnrichmentParser:
         :param backbone: The backbone taxonomy to use for the enrichment.
         :return:
         """
-
         # Attempt to get whatever it is we're going to be looking for
         query = self.get_query(record)
         if query is None:

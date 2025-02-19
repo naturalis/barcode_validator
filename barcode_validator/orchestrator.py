@@ -65,14 +65,18 @@ class ValidationOrchestrator:
         """
         # We defer initialization until we definitely need it, because some of the validators
         # need assets and setup time that are quite costly.
-        backbone_type = TaxonomicBackbone(self.config.get('taxonomic_backbone'))
+        bb = self.config.get('taxonomic_backbone', None)
+        if bb is None:
+            backbone_type = None
+        else:
+            backbone_type = TaxonomicBackbone(bb)
         marker_type = Marker(self.config.get('marker'))
-        self._initialize(backbone_type, marker_type)
+        self._initialize(marker_type, backbone_type)
 
         # Validate records and create result set
         results = []
         for record in self._parse_input(input_path):
-            result = self._validate_record(record, str(input_path), backbone_type, marker_type)
+            result = self._validate_record(record, str(input_path), marker_type, backbone_type)
             results.append(result)
         result_set = DNAAnalysisResultSet(results)
 
@@ -84,7 +88,7 @@ class ValidationOrchestrator:
 
         return result_set
 
-    def _initialize(self, backbone_type: TaxonomicBackbone, marker_type: Marker) -> None:
+    def _initialize(self, marker_type: Marker, backbone_type: TaxonomicBackbone = None) -> None:
         """
         Initialize validators and other resources.
         """
@@ -103,6 +107,26 @@ class ValidationOrchestrator:
                 needs_taxonomy = True
                 self.logger.info("Will need taxonomy for protein-coding marker translation")
 
+        # This will only do something if needs_taxonomy=True, either because we do explicit
+        # taxonomic validation or because we need taxonomy for translation tables of
+        # protein-coding markers
+        self._initialize_taxonomy(backbone_type, needs_taxonomy)
+
+        # Create structural validator if needed
+        if do_structural:
+            if marker_type in [Marker.COI_5P, Marker.MATK, Marker.RBCL]:
+                hmm_dir = self.config.get('hmm_profile_dir')
+                self.structural_validator = ProteinCodingValidator(self.config, hmm_dir)
+            else:
+                self.structural_validator = NonCodingValidator(self.config)
+
+    def _initialize_taxonomy(self, backbone_type: TaxonomicBackbone, needs_taxonomy: bool) -> None:
+        """
+        Conditionally initialize taxonomy-related resources.
+        :param backbone_type: TaxonomicBackbone object
+        :param needs_taxonomy: Boolean indicating whether taxonomy is needed
+        :return:
+        """
         # Setup taxonomy resolver, parser, and possibly taxonomic validator
         if needs_taxonomy:
             self.logger.info("Initializing taxonomy. This may take a while...")
@@ -121,14 +145,6 @@ class ValidationOrchestrator:
                     self.config,
                     self.taxonomy_resolver
                 )
-
-        # Create structural validator if needed
-        if do_structural:
-            if marker_type in [Marker.COI_5P, Marker.MATK, Marker.RBCL]:
-                hmm_dir = self.config.get('hmm_profile_dir')
-                self.structural_validator = ProteinCodingValidator(self.config, hmm_dir)
-            else:
-                self.structural_validator = NonCodingValidator(self.config)
 
     def _parse_input(self, file_path: Path) -> Iterator[SeqRecord]:
         """
@@ -152,7 +168,7 @@ class ValidationOrchestrator:
         else:
             raise ValueError(f"Unsupported file format: {suffix}")
 
-    def _validate_record(self, record: SeqRecord, dataset: str, backbone_type: TaxonomicBackbone, marker_type: Marker) -> DNAAnalysisResult:
+    def _validate_record(self, record: SeqRecord, dataset: str, marker_type: Marker, backbone_type: TaxonomicBackbone = None) -> DNAAnalysisResult:
         """
         Validate a single sequence record.
 
@@ -168,12 +184,13 @@ class ValidationOrchestrator:
         if marker_code is not None:
             marker_type = Marker(marker_code)
         result.add_ancillary('marker_code', marker_type.value)
-        result.level = self.config.get('validation_rank')
 
-        # Enrich taxonomic data and translation table
-        self.taxonomy_parser.enrich_result(record, result, backbone_type)
-        if result.error:
-            return result
+        # Only possible if backbone_type is not None (it might be None if we only do non-coding structural validation)
+        if backbone_type is not None:
+            result.level = self.config.get('validation_rank')
+            self.taxonomy_parser.enrich_result(record, result, backbone_type)
+            if result.error:
+                return result
 
         # Perform validations
         if self.structural_validator:
