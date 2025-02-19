@@ -72,7 +72,7 @@ class TaxonomyResolver:
         Initialize the taxonomy resolver.
         :param config: NBITK configuration object
         """
-        Entrez.email = config.get('entrez_email', 'anonymous@example.org')
+        Entrez.email = config.get('entrez_email')
         self.config = config
         self.logger = get_formatted_logger(self.__class__.__name__, config)
         self.ncbi_tree = None

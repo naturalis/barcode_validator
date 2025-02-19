@@ -17,6 +17,7 @@ ncbi_taxonomy_url: https://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz
 bold_sheet_file: ../examples/bold.xlsx  # Required if taxonomic_backbone: bold
 dwc_archive: ../examples/  # Required if taxonomic_backbone: dwc
 dwc_archive_url: http://api.biodiversitydata.nl/v2/taxon/dwca/getDataSet/nsr
+entrez_email: bioinformatics@naturalis.nl
 
 # BLAST configuration
 blast_db: /home/rutger.vos/data/ncbi/nt/nt
