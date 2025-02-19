@@ -22,6 +22,9 @@ entrez_email: bioinformatics@naturalis.nl
 # BLAST configuration
 blast_db: /home/rutger.vos/data/ncbi/nt/nt
 num_threads: 56
+
+# TODO: check the effect of evalue=0.05, max_target_seqs=100, i.e. web BLAST defaults, which
+# yield more hits with greater tolerance
 evalue: 1e-5
 max_target_seqs: 10
 word_size: 28
