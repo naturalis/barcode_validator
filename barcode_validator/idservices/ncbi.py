@@ -148,7 +148,7 @@ class NCBI(IDService):
             constraint = 33208  # Metazoa
         
         # Run BLAST
-        blast_report = self.run_localblast(record, extent.guids.get('taxon', 33208), level)
+        blast_report = self.run_localblast(record, constraint, level)
         distinct_taxids = self.parse_blast_result(f"{blast_report}.tsv", level)
         higher_taxa = self.collect_higher_taxa(distinct_taxids, level)
 
