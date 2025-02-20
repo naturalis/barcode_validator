@@ -2,8 +2,9 @@ from typing import Optional
 from Bio.SeqRecord import SeqRecord
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
-from barcode_validator.blast_runner import BlastRunner
-from barcode_validator.taxonomy_resolver import TaxonomyResolver, TaxonomicBackbone
+from barcode_validator.idservices.idservice import IDService
+from barcode_validator.idservices.ncbi import NCBI
+from barcode_validator.taxonomy_resolver import TaxonomicRank, TaxonomyResolver
 from barcode_validator.dna_analysis_result import DNAAnalysisResult
 
 
@@ -34,69 +35,48 @@ class TaxonomicValidator:
     :param taxonomy_resolver: TaxonomyResolver instance
     """
 
-    def __init__(self, config: Config, taxonomy_resolver: TaxonomyResolver):
+    def __init__(self, config: Config, taxonomy_resolver: TaxonomyResolver, idservice: IDService):
         self.config = config
         self.logger = get_formatted_logger(self.__class__.__name__, config)
-        self.backbone_type = TaxonomicBackbone(config.get('taxonomic_backbone', 'bold'))
-        self.validation_rank = config.get('validation_rank', 'family')
-        self.constraint_rank = config.get('constraint_rank', 'class')
         self.taxonomy_resolver = taxonomy_resolver
+        self.idservice = idservice
 
-        # Initialize BLAST runner
-        self.blast_runner = BlastRunner(config)
-        self.blast_runner.ncbi_tree = taxonomy_resolver.ncbi_tree
-
-    # TODO: why is expected_taxon an optional(!) string(!)
-    def validate_taxonomy(self, record: SeqRecord, result: DNAAnalysisResult,
-                          expected_taxon: Optional[str] = None) -> None:
+    def validate_taxonomy(self, record: SeqRecord, result: DNAAnalysisResult, constraint_rank: TaxonomicRank = TaxonomicRank.CLASS) -> None:
         """
         Validate the taxonomic assignment of a sequence using backbone-first approach.
-        Populates the provided result object with validation outcomes.
+        Populates the provided result object with validation outcomes. When this method
+        is called, the result object should already have a result.exp_taxon field,
+        which is the taxon at the validation rank that is expected for the record,
+        and a result.level field, which is the taxonomic level at which the validation
+        is being made.
 
         :param record: The DNA sequence record to validate
         :param result: DNAAnalysisResult object to populate with validation results
-        :param expected_taxon: Optional explicit taxon name (for tabular input)
         """
-        # Set the identification rank in result
-        result.level = self.validation_rank
 
-        # Get backbone taxon from TaxonomyResolver
-        backbone_taxon = self.taxonomy_resolver.resolve_backbone(
-            expected_taxon or record,
-            self.backbone_type.value
+        # Get taxon at validation rank in reflib taxonomy
+        reflib_valid = self.taxonomy_resolver.find_taxon_at_level(
+            result.exp_taxon,
+            result.level
         )
-        if not backbone_taxon:
-            result.error = 'Could not resolve expected taxon'
+        if reflib_valid is None:
+            result.error = f'Could not reconcile expected taxon {result.exp_taxon} at rank {result.level} with reflib taxonomy'
             return
-
-        # Get taxa at validation rank in both taxonomies
-        backbone_valid, ncbi_valid = self.taxonomy_resolver.find_taxon_at_level(
-            backbone_taxon,
-            self.validation_rank
-        )
-        if not backbone_valid or not ncbi_valid:
-            result.error = f'Could not find {self.validation_rank} rank taxon'
-            return
-
-        # Store expected taxon in result
-        result.exp_taxon = backbone_valid
 
         # Get constraint taxon ID for BLAST
-        constraint_id = self.taxonomy_resolver.get_constraint_taxon(
-            ncbi_valid,
-            self.constraint_rank
+        reflib_constraint = self.taxonomy_resolver.get_constraint_taxon(
+            reflib_valid,
+            constraint_rank
         )
-        try:
-            constraint_id_int = int(constraint_id)
-        except ValueError:
-            self.logger.warning(f"Invalid constraint taxon ID: {constraint_id}, using 2759")
-            constraint_id_int = 2759
+        if reflib_constraint is None:
+            result.error = f'Could not get constraint taxon ID for {reflib_valid} at rank {self.constraint_rank}'
+            return
 
         # Run BLAST search
-        observed_taxa = self.blast_runner.run_localblast(
+        observed_taxa = self.idservice.identify_record(
             record,
-            constraint_id_int,
-            self.validation_rank
+            result.level,
+            reflib_constraint
         )
         if not observed_taxa:
             result.error = 'BLAST search failed'
@@ -106,4 +86,4 @@ class TaxonomicValidator:
         result.obs_taxon = observed_taxa
 
         # Add backbone source as ancillary data
-        result.add_ancillary('backbone_source', self.backbone_type.value)
+        result.add_ancillary('backbone_source', self.taxonomy_resolver.backbone_type.value)
