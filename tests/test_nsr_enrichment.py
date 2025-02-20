@@ -27,7 +27,8 @@ def config():
         'dwc_archive': str(NSR_ARCHIVE),
         'taxonomic_backbone': 'dwc',
         'ncbi_taxonomy': str(NCBI_TAXDUMP),
-        'ncbi_taxonomy_url': 'https://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz'
+        'ncbi_taxonomy_url': 'https://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz',
+        'entrez_email': 'bioinformatics@naturalis.nl'
     }
     conf.initialized = True
     return conf
