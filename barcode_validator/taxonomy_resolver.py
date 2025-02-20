@@ -12,15 +12,13 @@ from nbitk.Phylo.BOLDXLSXIO import Parser as BOLDParser
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 
-"""
-SYNOPSIS
-    >>> taxonomy = {
-    >>>    'phylum': 'Chordata',
-    >>>    'class': 'Mammalia',
-    >>>    'family': 'Hominidae'
-    >>> }
-    >>> translation_table = get_translation_table(Marker.COI_5P, taxonomy)
-"""
+class TaxonomicRank(Enum):
+    KINGDOM = "kingdom"
+    PHYLUM = "phylum"
+    CLASS = "class"
+    ORDER = "order"
+    FAMILY = "family"
+    GENUS = "genus"
 
 class TaxonomicBackbone(Enum):
     DWC = "dwc"  # DarwinCore Archive format (including NSR)
@@ -262,6 +260,18 @@ class TaxonomyResolver:
             self.logger.error(f"Error resolving NCBI taxonomy: {str(e)}")
             return None
 
+    def get_taxon_by_id(self, taxon_id: str) -> Optional[Taxon]:
+        """
+        Get a taxon by its NCBI taxon ID.
+
+        :param taxon_id: The NCBI taxon ID
+        :return: Taxon object or None if not found
+        """
+        for node in self.ncbi_tree.find_clades():
+            if node.guids.get('taxon') == taxon_id:
+                return node
+        return None
+
     def find_taxon_at_level(self, source_taxon: Taxon, level: str) -> Optional[Taxon]:
         """
         Get taxa at validation level in both backbone and NCBI taxonomies.
@@ -288,24 +298,18 @@ class TaxonomyResolver:
         ncbi_valid = self.get_ncbi_taxon(anc_at_level)
         return ncbi_valid
 
-    def get_constraint_taxon(self, taxon: Taxon, constraint_level: str = 'class') -> str:
+    def get_constraint_taxon(self, taxon: Taxon, level: TaxonomicRank = TaxonomicRank.CLASS) -> Optional[Taxon]:
         """
         Get the NCBI taxon ID for BLAST constraint.
 
         :param taxon: The NCBI taxon to get constraint for
-        :param constraint_level: Level at which to constrain (default: class)
-        :return: NCBI taxon ID as string, defaults to Eukaryota (2759)
+        :param level: Level at which to constrain (default: class)
+        :return: Taxon object at level, or None if not found
         """
-        if not taxon:
-            return '2759'
-
         for node in self.ncbi_tree.root.get_path(taxon):
-            if str(node.taxonomic_rank).lower() == constraint_level.lower():
-                if 'taxon' in node.guids:
-                    return node.guids['taxon']
-
-        self.logger.warning("Using Eukaryota (taxon:2759) as BLAST constraint")
-        return '2759'
+            if str(node.taxonomic_rank).lower() == level.value.lower():
+                return node
+        return None
 
     def get_translation_table(self, marker: Marker, taxon: Taxon) -> int:
         """
