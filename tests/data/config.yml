@@ -6,7 +6,8 @@ validate_taxonomy: true
 validate_structural: true
 
 # Validation parameters
-validation_rank: family  # Taxonomic level at which to validate identifications
+validation_rank: family   # Taxonomic level at which to validate identifications
+constraint_rank: class    # Higher taxon level to limit the extent of the IDService to
 taxonomic_backbone: bold  # Options: bold, dwc
 min_sequence_length: 500
 max_ambiguities: 6
@@ -25,7 +26,6 @@ num_threads: 56
 evalue: 1e-5
 max_target_seqs: 10
 word_size: 28
-constrain: class        # Higher taxon level to constrain BLAST searches within
 
 # BLAST environment
 BLASTDB: /home/rutger.vos/data/ncbi/nt
