@@ -1,4 +1,5 @@
 import csv
+import os
 from pathlib import Path
 from typing import Optional, Iterator
 
@@ -7,9 +8,12 @@ from Bio.SeqRecord import SeqRecord
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 from nbitk.SeqIO.BCDM import BCDMIterator
+from nbitk.Tools import Blastn
+
+from .idservices.ncbi import NCBI
 from .dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet
 from .taxonomic_enrichment import NSRTaxonomyParser, BOLDTaxonomyParser
-from .taxonomy_resolver import Marker, TaxonomyResolver, TaxonomicBackbone
+from .taxonomy_resolver import Marker, TaxonomicRank, TaxonomyResolver, TaxonomicBackbone
 from .validators.non_coding import NonCodingValidator
 from .validators.taxonomic import TaxonomicValidator
 from .validators.protein_coding import ProteinCodingValidator
@@ -141,9 +145,25 @@ class ValidationOrchestrator:
 
             # Create taxonomic validator
             if self.config.get('validate_taxonomy', True):
+
+                # Instantiate BLASTN with config variables
+                blastn = Blastn(self.config)
+                blastn.set_db(self.config.get('blast_db'))
+                blastn.set_num_threads(self.config.get('num_threads'))
+                blastn.set_evalue(self.config.get('evalue'))
+                blastn.set_outfmt(self.config.get('outfmt'))
+                blastn.set_max_target_seqs(self.config.get('max_target_seqs'))
+                blastn.set_word_size(self.config.get('word_size'))
+                idservice = NCBI(self.config, blastn, self.taxonomy_resolver)
+
+                # Set the environment variable BLASTDB to the value of the config variable blast_db
+                os.environ['BLASTDB'] = self.config.get('BLASTDB')
+                os.environ['BLASTDB_LMDB_MAP_SIZE'] = self.config.get('BLASTDB_LMDB_MAP_SIZE')
+
                 self.taxonomic_validator = TaxonomicValidator(
                     self.config,
-                    self.taxonomy_resolver
+                    self.taxonomy_resolver,
+                    idservice
                 )
 
     def _parse_input(self, file_path: Path) -> Iterator[SeqRecord]:
@@ -196,7 +216,8 @@ class ValidationOrchestrator:
         if self.structural_validator:
             self.structural_validator.validate_sequence(record, result)
         if self.taxonomic_validator and not result.error:
-            self.taxonomic_validator.validate_taxonomy(record, result)
+            constraint_rank = TaxonomicRank(self.config.get('constraint_rank', 'class'))
+            self.taxonomic_validator.validate_taxonomy(record, result, constraint_rank)
 
         return result
 
