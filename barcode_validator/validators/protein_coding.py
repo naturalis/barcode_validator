@@ -3,12 +3,12 @@ from Bio.Seq import Seq
 from Bio import AlignIO
 from typing import Optional, List
 import tempfile
-from pathlib import Path
+
+from nbitk.Taxon import Taxon
 from nbitk.config import Config
-from nbitk.Tools import Hmmalign
 from .structural import StructuralValidator
-from barcode_validator.taxonomy_resolver import Marker
 from barcode_validator.dna_analysis_result import DNAAnalysisResult
+from barcode_validator.constants import Marker
 
 
 class ProteinCodingValidator(StructuralValidator):
@@ -31,19 +31,15 @@ class ProteinCodingValidator(StructuralValidator):
         >>> config = Config()
         >>> config.load_config('/path/to/config.yaml')
         >>> validator = ProteinCodingValidator(config, '/path/to/hmm_profiles')
-        >>> result = DNAAnalysisResult("sequence_id")
-        >>> validator.validate_marker_specific(record, result, trans_table=5)
+        >>> result = DNAAnalysisResult("foo")
+        >>> validator.validate_marker_specific(SeqRecord(Seq('acgatgctacgag'),id="foo"), result, trans_table=5)
 
     :param config: Configuration object containing validation parameters
-    :param hmm_profile_dir: Directory containing HMM profiles for markers
     """
 
-    def __init__(self, config: Config, hmm_profile_dir: str):
+    def __init__(self, config: Config):
         """Initialize the protein coding validator."""
         super().__init__(config)
-        self.hmm_profile_dir = Path(hmm_profile_dir)
-        self.marker = Marker(config.get('marker', 'COI-5P'))
-        self.hmmalign = Hmmalign(config)
 
     def validate_marker_specific(self, record: SeqRecord, result: DNAAnalysisResult) -> None:
         """
@@ -53,20 +49,20 @@ class ProteinCodingValidator(StructuralValidator):
         :param record: The DNA sequence record to validate
         :param result: Result object to populate with validation data
         """
-
-        # Get translation table from result object
-        # TODO: ensure that this value is set by the orchestrator
-        trans_table = result.ancillary.get('translation_table')
-        if trans_table is None:
-            result.error = 'Translation table not available'
-            return
-        trans_table = int(trans_table)  # Convert from string since stored as ancillary data
+        trans_table = int(self.get_translation_table(self.marker, result.exp_taxon))
 
         # Align sequence to HMM
         aligned_seq = self._align_sequence(record)
         if not aligned_seq:
             result.error = 'HMM alignment failed'
             return
+
+        # In the base class, both the marker length and the full length are calculated
+        # in the same way and result in the same value. Here we recalculate the
+        # marker length after alignment to the HMM (and trimming). Same for ambiguity
+        # calculation, btw.
+        result.ambiguity = self._calc_ambiguities(aligned_seq.seq)
+        result.seq_length = self._calc_length(aligned_seq.seq)
 
         # Determine and store reading frame
         reading_frame = self._determine_reading_frame(aligned_seq, trans_table)
@@ -145,10 +141,13 @@ class ProteinCodingValidator(StructuralValidator):
         best_frame = 0
         min_stops = float('inf')
 
+        # Brute force the 3 possible phases by counting
+        # stop codons for each offset
         for frame in range(3):
             coding_seq = Seq(seq_nogaps[frame:])
             protein = coding_seq.translate(table=trans_table)
             stops = protein.count('*')
+            self.logger.debug(f"Frame {frame}: {stops} stop codons")
 
             if stops < min_stops:
                 min_stops = stops
@@ -178,3 +177,57 @@ class ProteinCodingValidator(StructuralValidator):
 
         self.logger.debug(f"Stop codon positions: {stop_positions}")
         return stop_positions
+
+    def get_translation_table(self, marker: Marker, taxon: Taxon) -> int:
+        """
+        Determine the appropriate translation table based on marker and taxonomy.
+
+        :param marker: The genetic Marker (enum) being analyzed
+        :param taxon: The NCBI taxon object representing at the highest a family in the taxonomy.
+        :return: Translation table index (int) for use with Biopython
+        """
+        taxonomy_dict = self.taxonomy_resolver.get_lineage_dict(taxon)
+
+        if marker in [Marker.MATK, Marker.RBCL]:
+            if taxonomy_dict.get('family') == 'Balanophoraceae':
+                return 32
+            return 11
+
+        elif marker == Marker.COI_5P:
+            phylum = taxonomy_dict.get('phylum')
+            tax_class = taxonomy_dict.get('class')
+            family = taxonomy_dict.get('family')
+
+            if phylum == 'Chordata':
+                if tax_class == 'Ascidiacea':
+                    return 13
+                elif tax_class in ['Actinopteri', 'Amphibia', 'Mammalia', 'Aves', 'Reptilia']:
+                    return 2
+
+            elif phylum == 'Hemichordata':
+                if family == 'Cephalodiscidae':
+                    return 33
+                elif family == 'Rhabdopleuridae':
+                    return 24
+
+            elif phylum in ['Echinodermata', 'Platyhelminthes']:
+                return 9
+
+            # Default invertebrate mitochondrial code for other invertebrates
+            if phylum != 'Chordata':
+                return 5
+
+        # Fall back to standard code if no specific rules match
+        return 1
+
+    @staticmethod
+    def requires_resolver() -> bool:
+        return True
+
+    @staticmethod
+    def requires_marker() -> bool:
+        return True
+
+    @staticmethod
+    def requires_hmmalign() -> bool:
+        return True

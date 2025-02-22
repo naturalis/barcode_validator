@@ -1,14 +1,11 @@
-from typing import Optional
 from Bio.SeqRecord import SeqRecord
 from nbitk.config import Config
-from nbitk.logger import get_formatted_logger
-from barcode_validator.idservices.idservice import IDService
-from barcode_validator.idservices.ncbi import NCBI
-from barcode_validator.taxonomy_resolver import TaxonomicRank, TaxonomyResolver
 from barcode_validator.dna_analysis_result import DNAAnalysisResult
+from barcode_validator.validators.validator import AbstractValidator
+from barcode_validator.constants import TaxonomicRank
 
 
-class TaxonomicValidator:
+class TaxonomicValidator(AbstractValidator):
     """
     Validator of DNA barcodes via BLAST-based reverse taxonomy.
 
@@ -27,19 +24,15 @@ class TaxonomicValidator:
         >>> from nbitk.config import Config
         >>> config = Config()
         >>> config.load_config('/path/to/config.yaml')
-        >>> validator = TaxonomicValidator(config, ncbi_tree, backbone_tree)
+        >>> validator = TaxonomicValidator(config)
         >>> result = DNAAnalysisResult("sequence_id")
-        >>> validator.validate_taxonomy(record, result)
+        >>> validator.validate_taxonomy(SeqRecord(), DNAAnalysisResult())
 
     :param config: Configuration object containing validation parameters
-    :param taxonomy_resolver: TaxonomyResolver instance
     """
 
-    def __init__(self, config: Config, taxonomy_resolver: TaxonomyResolver, idservice: IDService):
-        self.config = config
-        self.logger = get_formatted_logger(self.__class__.__name__, config)
-        self.taxonomy_resolver = taxonomy_resolver
-        self.idservice = idservice
+    def __init__(self, config: Config):
+        super().__init__(config)
 
     def validate_taxonomy(self, record: SeqRecord, result: DNAAnalysisResult, constraint_rank: TaxonomicRank = TaxonomicRank.CLASS) -> None:
         """
@@ -52,30 +45,31 @@ class TaxonomicValidator:
 
         :param record: The DNA sequence record to validate
         :param result: DNAAnalysisResult object to populate with validation results
+        :param constraint_rank: Taxonomic rank to use as constraint for BLAST search
         """
 
         # Get taxon at validation rank in reflib taxonomy
-        reflib_valid = self.taxonomy_resolver.find_taxon_at_level(
-            result.exp_taxon,
-            result.level
-        )
-        if reflib_valid is None:
+        reflib_matches = self.taxonomy_resolver.match_nodes(result.exp_taxon, {"name", "taxonomic_rank"})
+        if len(reflib_matches) == 0:
             result.error = f'Could not reconcile expected taxon {result.exp_taxon} at rank {result.level} with reflib taxonomy'
             return
+        elif len(reflib_matches) > 1:
+            result.error = f'Multiple taxa found in reflib taxonomy for expected taxon {result.exp_taxon} at rank {result.level}: {reflib_matches}'
+            return
+        reflib_valid = reflib_matches[0]
 
         # Get constraint taxon ID for BLAST
-        reflib_constraint = self.taxonomy_resolver.get_constraint_taxon(
+        reflib_constraint = self.taxonomy_resolver.find_ancestor_at_rank(
             reflib_valid,
-            constraint_rank
-        )
+            constraint_rank)
         if reflib_constraint is None:
-            result.error = f'Could not get constraint taxon ID for {reflib_valid} at rank {self.constraint_rank}'
+            result.error = f'Could not get constraint taxon ID for {reflib_valid} at rank {constraint_rank}'
             return
 
         # Run BLAST search
         observed_taxa = self.idservice.identify_record(
             record,
-            result.level,
+            TaxonomicRank(result.level.lower()),
             reflib_constraint
         )
         if not observed_taxa:
@@ -86,4 +80,14 @@ class TaxonomicValidator:
         result.obs_taxon = observed_taxa
 
         # Add backbone source as ancillary data
-        result.add_ancillary('backbone_source', self.taxonomy_resolver.backbone_type.value)
+        result.add_ancillary('backbone_source', self.taxonomy_resolver.get_type().value)
+
+    @staticmethod
+    def requires_resolver() -> bool:
+        """Override to declare if validator needs a taxonomy resolver."""
+        return True
+
+    @staticmethod
+    def requires_idservice() -> bool:
+        """Override to declare if validator needs an idservice."""
+        return True
