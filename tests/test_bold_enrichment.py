@@ -3,13 +3,9 @@ from pathlib import Path
 from Bio.SeqRecord import SeqRecord
 from Bio.Seq import Seq
 from nbitk.config import Config
-from barcode_validator.taxonomy_resolver import TaxonomyResolver
-from barcode_validator.taxonomic_enrichment import (
-    BOLDTaxonomyParser,
-    NSRTaxonomyParser,
-    TaxonomicBackbone
-)
+from barcode_validator.resolvers.factory import ResolverFactory
 from barcode_validator.dna_analysis_result import DNAAnalysisResult
+from barcode_validator.resolvers.taxonomy import TaxonomicBackbone, TaxonomicRank
 
 # Test data path handling
 TEST_DATA_DIR = Path(__file__).parent / "data"
@@ -36,86 +32,66 @@ def config():
 @pytest.fixture
 def taxonomy_resolver(config):
     """Provides initialized TaxonomyResolver"""
-    resolver = TaxonomyResolver(config)
-    resolver.setup_taxonomy(TaxonomicBackbone.BOLD)
+    resolver = ResolverFactory.create_resolver(config, TaxonomicBackbone.BOLD)
+    resolver.load_tree(BOLD_SHEET)
     return resolver
 
-@pytest.fixture
-def bold_parser(config, taxonomy_resolver):
-    """Provides BOLD taxonomy parser"""
-    return BOLDTaxonomyParser(config, taxonomy_resolver)
-
-def test_bold_query_extraction(bold_parser):
+def test_bold_query_extraction(taxonomy_resolver):
     """Test extraction of process IDs from BOLD-style records"""
     # Test normal case
     record = SeqRecord(Seq(""), id="BHNHM001-24_r_1_s_50")
-    assert bold_parser.get_query(record) == "BHNHM001-24"
+    assert taxonomy_resolver.parse_id(record) == "BHNHM001-24"
 
     # Test record without suffixes
     record = SeqRecord(Seq(""), id="BHNHM001-24")
-    assert bold_parser.get_query(record) == "BHNHM001-24"
+    assert taxonomy_resolver.parse_id(record) == "BHNHM001-24"
 
-def test_bold_enrichment(bold_parser):
+def test_bold_enrichment(taxonomy_resolver):
     """Test complete BOLD taxonomy enrichment process"""
     # Create test record
     record = SeqRecord(Seq(""), id="BHNHM001-24_r_1_s_50")
     result = DNAAnalysisResult(record.id)
-    result.add_ancillary('marker_code', 'COI-5P')
-    result.level = "family"
 
     # Perform enrichment
-    bold_parser.enrich_result(record, result, TaxonomicBackbone.BOLD)
+    taxonomy_resolver.enrich_result(record, result, TaxonomicRank.FAMILY)
 
     # Verify result population
     assert result.error is None, "Enrichment should succeed"
     assert result.species is not None, "Species should be populated"
     assert result.exp_taxon is not None, "Expected taxon should be populated"
-    assert int(result.ancillary.get('translation_table')) == 5, "Should have inferred insect mitochondrial"
+    assert result.level == TaxonomicRank.FAMILY.value, "Expected to have family level"
 
-def test_bold_enrichment_errors(bold_parser):
+def test_bold_enrichment_errors(taxonomy_resolver):
     """Test error handling in BOLD enrichment"""
     # Test invalid process ID format
     record = SeqRecord(Seq(""), id="invalid_id")
     result = DNAAnalysisResult(record.id)
-    bold_parser.enrich_result(record, result, TaxonomicBackbone.BOLD)
+    taxonomy_resolver.enrich_result(record, result, TaxonomicRank.FAMILY)
     assert result.error is not None
-    assert "No entry found" in result.error
+    assert "Could not find nodes" in result.error
 
     # Test missing process ID in taxonomy
     record = SeqRecord(Seq(""), id="XXXXX999-99_r_1")
     result = DNAAnalysisResult(record.id)
-    bold_parser.enrich_result(record, result, TaxonomicBackbone.BOLD)
+    taxonomy_resolver.enrich_result(record, result, TaxonomicRank.FAMILY)
     assert result.error is not None
-    assert "No entry found" in result.error
+    assert "Could not find nodes" in result.error
 
-def test_taxonomy_initialization():
+def test_taxonomy_initialization(taxonomy_resolver):
     """Test parser taxonomy backbone initialization"""
-    config = Config()
-    config.config_data = {'log_level': 'DEBUG'}
-    config.initialized = True
-    resolver = TaxonomyResolver(config)
+    assert taxonomy_resolver.get_type() == TaxonomicBackbone.BOLD
 
-    # Test BOLD parser
-    bold = BOLDTaxonomyParser(config, resolver)
-    assert bold.taxonomy == TaxonomicBackbone.BOLD
-
-    # Test NSR parser
-    nsr = NSRTaxonomyParser(config, resolver)
-    assert nsr.taxonomy == TaxonomicBackbone.DWC
-
-def test_different_validation_levels(config, taxonomy_resolver):
+def test_different_validation_levels(taxonomy_resolver):
     """Test enrichment with different validation levels"""
-    # Modify config for order-level validation
-    config.config_data['validation_rank'] = 'order'
-    parser = BOLDTaxonomyParser(config, taxonomy_resolver)
 
     # Test enrichment
     record = SeqRecord(Seq(""), id="BHNHM001-24_r_1_s_50")
     result = DNAAnalysisResult(record.id)
-    result.add_ancillary('marker_code', 'COI-5P')
-    result.level = "order"
-    parser.enrich_result(record, result, TaxonomicBackbone.BOLD)
+    taxonomy_resolver.enrich_result(record, result, TaxonomicRank.ORDER)
 
     assert result.error is None, "Enrichment should succeed"
-    assert result.level == "order", "Validation level should be order"
+    assert result.level.lower() == "order", "Validation level should be order"
     assert result.exp_taxon.taxonomic_rank.lower() == "order"
+
+if __name__ == "__main__":
+    pytest.main()
