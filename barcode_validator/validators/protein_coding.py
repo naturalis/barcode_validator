@@ -1,7 +1,7 @@
 from Bio.SeqRecord import SeqRecord
 from Bio.Seq import Seq
 from Bio import AlignIO
-from typing import Optional, List
+from typing import Optional, List, Tuple
 import tempfile
 
 from nbitk.Taxon import Taxon
@@ -56,6 +56,7 @@ class ProteinCodingValidator(StructuralValidator):
         if not aligned_seq:
             result.error = 'HMM alignment failed'
             return
+        result.add_ancillary('nuc', str(aligned_seq.seq))
 
         # In the base class, both the marker length and the full length are calculated
         # in the same way and result in the same value. Here we recalculate the
@@ -65,12 +66,12 @@ class ProteinCodingValidator(StructuralValidator):
         result.seq_length = self._calc_length(aligned_seq.seq)
 
         # Determine and store reading frame
-        reading_frame = self._determine_reading_frame(aligned_seq, trans_table)
+        reading_frame, best_prot = self._determine_reading_frame(aligned_seq, trans_table)
         result.add_ancillary('reading_frame', str(reading_frame))
         self.logger.debug(f"Reading frame: {reading_frame}")
 
         # Find and store stop codon positions
-        stop_positions = self._find_stop_codons(aligned_seq, trans_table, reading_frame)
+        stop_positions = self._find_stop_codons(reading_frame, best_prot)
         result.stop_codons = stop_positions
         self.logger.debug(f"Stop codon positions: {stop_positions}")
 
@@ -130,21 +131,33 @@ class ProteinCodingValidator(StructuralValidator):
             self.logger.error(f"Error parsing Stockholm alignment: {str(e)}")
             return None
 
-    def _determine_reading_frame(self, aligned_seq: SeqRecord, trans_table: int) -> int:
+    @staticmethod
+    def _get_complete_codons(seq, offset):
+        complete_codons = ""
+        # Loop over the sequence in steps of 3, starting from the given offset.
+        for i in range(offset, len(seq) - 2, 3):
+            codon = seq[i:i + 3]
+            # Only add the codon if it is complete and contains no gap characters.
+            if '-' not in codon:
+                complete_codons += codon
+        return complete_codons
+
+    def _determine_reading_frame(self, aligned_seq: SeqRecord, trans_table: int) -> Tuple[int, SeqRecord]:
         """
         Determine the reading frame from HMM-aligned sequence.
 
         :param aligned_seq: HMM-aligned sequence
         :return: Reading frame (0, 1, or 2)
         """
-        seq_nogaps = str(aligned_seq.seq).replace('-', '')
+        raw_seq = aligned_seq.seq
         best_frame = 0
+        best_prot = ""
         min_stops = float('inf')
 
         # Brute force the 3 possible phases by counting
         # stop codons for each offset
         for frame in range(3):
-            coding_seq = Seq(seq_nogaps[frame:])
+            coding_seq = Seq("".join(self._get_complete_codons(raw_seq, frame)))
             protein = coding_seq.translate(table=trans_table)
             stops = protein.count('*')
             self.logger.debug(f"Frame {frame}: {stops} stop codons")
@@ -152,23 +165,19 @@ class ProteinCodingValidator(StructuralValidator):
             if stops < min_stops:
                 min_stops = stops
                 best_frame = frame
+                best_prot = protein
 
         self.logger.debug(f"Best reading frame: {best_frame}")
-        return best_frame
+        return best_frame, best_prot
 
-    def _find_stop_codons(self, record: SeqRecord, trans_table: int, reading_frame: int) -> List[int]:
+    def _find_stop_codons(self, reading_frame, protein) -> List[int]:
         """
         Find positions of stop codons in the sequence.
 
-        :param record: The DNA sequence record
-        :param trans_table: Translation table number
-        :param reading_frame: Reading frame (0, 1, or 2)
+        :param reading_frame: The reading frame of the protein sequence (0, 1, or 2)
+        :param protein: The protein sequence record
         :return: List of stop codon positions
         """
-        seq = str(record.seq).replace('-', '')
-        coding_seq = Seq(seq[reading_frame:])
-        protein = coding_seq.translate(table=trans_table)
-
         stop_positions = []
         for i, aa in enumerate(protein[:-1]):
             if aa == '*':
