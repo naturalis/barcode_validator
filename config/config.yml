@@ -7,16 +7,15 @@ validate_structural: true
 
 # Validation parameters
 validation_rank: family  # Taxonomic level at which to validate identifications
-taxonomic_backbone: bold  # Options: bold, dwc
+input_taxonomy: bold  # Options: bold, ncbi, nsr
+reference_taxonomy: ncbi
 min_sequence_length: 500
 max_ambiguities: 6
 
 # Taxonomy sources
-ncbi_taxonomy: ../examples/taxdump.tar.gz
-ncbi_taxonomy_url: https://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz
-bold_sheet_file: ../examples/bold.xlsx  # Required if taxonomic_backbone: bold
-dwc_archive: ../examples/  # Required if taxonomic_backbone: dwc
-dwc_archive_url: http://api.biodiversitydata.nl/v2/taxon/dwca/getDataSet/nsr
+ncbi_file: ../examples/taxdump.tar.gz
+bold_file: ../examples/bold.xlsx  # Required if taxonomic_backbone: bold
+nsr_file: ../examples/nsr-20250207.dwca.zip  # Required if taxonomic_backbone: dwc
 entrez_email: bioinformatics@naturalis.nl
 
 # BLAST configuration
