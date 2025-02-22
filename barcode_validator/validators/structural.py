@@ -134,4 +134,4 @@ class StructuralValidator(AbstractValidator):
     @staticmethod
     def requires_marker() -> bool:
         """Override to declare if validator needs a marker."""
-        return False
+        return True

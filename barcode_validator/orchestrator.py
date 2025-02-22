@@ -195,7 +195,7 @@ class ValidationOrchestrator:
 
         # Perform validations
         if self.structural_validator:
-            if self.structural_validator.requires_marker() and self.structural_validator.marker_type != marker_type:
+            if self.structural_validator.marker != marker_type:
                 result.error = f"Marker type mismatch: expected {self.structural_validator.marker_type.value}, got {marker_type.value}"
                 return None
             else:
