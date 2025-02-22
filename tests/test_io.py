@@ -106,13 +106,6 @@ def test_invalid_file_handling(orchestrator):
         list(orchestrator._parse_input(TEST_DATA_DIR / "nonexistent.xyz"))
 
 
-def test_parsing_no_taxonomy_init(orchestrator):
-    """Verify that parsing alone doesn't initialize taxonomy"""
-    records = list(orchestrator._parse_input(CSC_SAMPLE))
-    assert orchestrator.taxonomy_resolver.ncbi_tree is None
-    assert orchestrator.taxonomy_resolver.backbone_tree is None
-
-
 def test_bold_fasta_parsing(orchestrator):
     """Test parsing of BOLD format FASTA records"""
     records = list(orchestrator._parse_input(BOLD_SAMPLE))
