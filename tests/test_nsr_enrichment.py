@@ -103,10 +103,6 @@ def test_nsr_enrichment_errors(taxonomy_resolver):
 
 def test_different_validation_levels(config, taxonomy_resolver):
     """Test enrichment with different validation levels"""
-    # Modify config for order-level validation
-    config.config_data['validation_rank'] = 'order'
-    parser = NSRTaxonomyParser(config, taxonomy_resolver)
-
     # Test enrichment with order-level validation
     record = SeqRecord(
         Seq(""),
@@ -117,33 +113,13 @@ def test_different_validation_levels(config, taxonomy_resolver):
         }}
     )
     result = DNAAnalysisResult(record.id)
-    result.add_ancillary('marker_code', 'COI-5P')
-    result.level = "order"
-    parser.enrich_result(record, result, TaxonomicBackbone.DWC)
+    taxonomy_resolver.enrich_result(record, result, TaxonomicRank.ORDER)
 
     assert result.error is None, "Enrichment should succeed"
     assert result.level == "order", "Validation level should be order"
     assert result.exp_taxon.taxonomic_rank.lower() == "order"
 
-
-def test_backbone_mismatches(nsr_parser):
-    """Test handling of backbone type mismatches"""
-    record = SeqRecord(
-        Seq(""),
-        id="test_id",
-        annotations={'bcdm_fields': {
-            'identification': 'Geophilus carpophagus',
-            'marker_code': 'COI-5P'
-        }}
-    )
-    result = DNAAnalysisResult(record.id)
-
-    # Test with wrong backbone type
-    with pytest.raises(SystemExit):
-        nsr_parser.enrich_result(record, result, TaxonomicBackbone.BOLD)
-
-
-def test_nsr_taxonomy_traversal(nsr_parser):
+def test_nsr_taxonomy_traversal(taxonomy_resolver):
     """Test taxonomy traversal in NSR backbone"""
     record = SeqRecord(
         Seq(""),
@@ -154,18 +130,14 @@ def test_nsr_taxonomy_traversal(nsr_parser):
         }}
     )
     result = DNAAnalysisResult(record.id)
-    result.add_ancillary('marker_code', 'COI-5P')
-    result.level = "family"
-
-    nsr_parser.enrich_result(record, result, TaxonomicBackbone.DWC)
+    taxonomy_resolver.enrich_result(record, result, TaxonomicRank.FAMILY)
 
     # Test that we can traverse up to family
     assert result.exp_taxon is not None
     assert result.exp_taxon.taxonomic_rank.lower() == "family"
 
     # Verify the complete path exists
-    path = nsr_parser.taxonomy_resolver.backbone_tree.root.get_path(result.species)
-    ranks = [node.taxonomic_rank.lower() for node in path]
+    ranks = taxonomy_resolver.get_lineage_dict(result.species)
     assert "kingdom" in ranks
     assert "phylum" in ranks
     assert "class" in ranks
@@ -173,3 +145,6 @@ def test_nsr_taxonomy_traversal(nsr_parser):
     assert "family" in ranks
     assert "genus" in ranks
     assert "species" in ranks
+
+if __name__ == '__main__':
+    pytest.main()
