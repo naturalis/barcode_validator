@@ -1,22 +1,18 @@
 import csv
-import os
 from pathlib import Path
 from typing import Optional, Iterator
-
 from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 from nbitk.SeqIO.BCDM import BCDMIterator
-from nbitk.Tools import Blastn
-
-from .idservices.ncbi import NCBI
+from nbitk.Tools import Blastn, Hmmalign
 from .dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet
-from .taxonomic_enrichment import NSRTaxonomyParser, BOLDTaxonomyParser
-from .taxonomy_resolver import Marker, TaxonomicRank, TaxonomyResolver, TaxonomicBackbone
-from .validators.non_coding import NonCodingValidator
+from .resolvers.factory import ResolverFactory
+from .idservices.factory import IDServiceFactory
+from .validators.factory import StructureValidatorFactory
 from .validators.taxonomic import TaxonomicValidator
-from .validators.protein_coding import ProteinCodingValidator
+from .constants import Marker, TaxonomicRank, TaxonomicBackbone
 
 class ValidationOrchestrator:
     """
@@ -37,8 +33,8 @@ class ValidationOrchestrator:
         >>> config = Config()
         >>> config.load_config('/path/to/config.yaml')
         >>> orchestrator = ValidationOrchestrator(config)
-        >>> results = orchestrator.validate_file('sequences.fasta')
-        >>> orchestrator.write_results(results, 'output.tsv')
+        >>> results = orchestrator.validate_file(Path('sequences.fasta'))
+        >>> orchestrator.write_results(results, Path('output.tsv'))
     """
 
     def __init__(self, config: Config):
@@ -49,8 +45,6 @@ class ValidationOrchestrator:
         """
         self.config = config
         self.logger = get_formatted_logger(self.__class__.__name__, config)
-        self.taxonomy_resolver = TaxonomyResolver(config)
-        self.taxonomy_parser = None
         self.structural_validator = None
         self.taxonomic_validator = None
 
@@ -69,18 +63,13 @@ class ValidationOrchestrator:
         """
         # We defer initialization until we definitely need it, because some of the validators
         # need assets and setup time that are quite costly.
-        bb = self.config.get('taxonomic_backbone', None)
-        if bb is None:
-            backbone_type = None
-        else:
-            backbone_type = TaxonomicBackbone(bb)
         marker_type = Marker(self.config.get('marker'))
-        self._initialize(marker_type, backbone_type)
+        self._initialize(marker_type)
 
         # Validate records and create result set
         results = []
         for record in self._parse_input(input_path):
-            result = self._validate_record(record, str(input_path), marker_type, backbone_type)
+            result = self._validate_record(record, str(input_path), marker_type)
             results.append(result)
         result_set = DNAAnalysisResultSet(results)
 
@@ -92,79 +81,79 @@ class ValidationOrchestrator:
 
         return result_set
 
-    def _initialize(self, marker_type: Marker, backbone_type: TaxonomicBackbone = None) -> None:
+    def _initialize(self, marker_type: Marker) -> None:
         """
         Initialize validators and other resources.
         """
-        # Determine if we need taxonomy. We defer initialization of the TR because it's costly.
-        needs_taxonomy = False
 
-        # Taxonomic validation needs taxonomy for observed/expected resolution & reconciliation
+        # Instantiate taxonomic validator if reverse taxonomy is required
         if self.config.get('validate_taxonomy', True):
-            needs_taxonomy = True
-            self.logger.info("Will need taxonomy for taxonomic validation")
+            self._initialize_tv()
 
-        # Structural validation of protein-coding markers needs taxonomy to infer translation table
-        do_structural = self.config.get('validate_structure', True)
-        if do_structural:
-            if marker_type in [Marker.COI_5P, Marker.MATK, Marker.RBCL]:
-                needs_taxonomy = True
-                self.logger.info("Will need taxonomy for protein-coding marker translation")
+        # Instantiate structural validator subclass if structural validation is required
+        if self.config.get('validate_structure', True):
+            self._initialize_sv(marker_type)
 
-        # This will only do something if needs_taxonomy=True, either because we do explicit
-        # taxonomic validation or because we need taxonomy for translation tables of
-        # protein-coding markers
-        self._initialize_taxonomy(backbone_type, needs_taxonomy)
-
-        # Create structural validator if needed
-        if do_structural:
-            if marker_type in [Marker.COI_5P, Marker.MATK, Marker.RBCL]:
-                hmm_dir = self.config.get('hmm_profile_dir')
-                self.structural_validator = ProteinCodingValidator(self.config, hmm_dir)
-            else:
-                self.structural_validator = NonCodingValidator(self.config)
-
-    def _initialize_taxonomy(self, backbone_type: TaxonomicBackbone, needs_taxonomy: bool) -> None:
+    def _initialize_sv(self, marker_type) -> None:
         """
-        Conditionally initialize taxonomy-related resources.
-        :param backbone_type: TaxonomicBackbone object
-        :param needs_taxonomy: Boolean indicating whether taxonomy is needed
-        :return:
+        Initialize structural validator.
+        :param marker_type: Marker type to use for validation
         """
-        # Setup taxonomy resolver, parser, and possibly taxonomic validator
-        if needs_taxonomy:
-            self.logger.info("Initializing taxonomy. This may take a while...")
-            self.taxonomy_resolver.setup_taxonomy(backbone_type)
-            self.logger.debug("Taxonomy initialization complete")
+        sv = StructureValidatorFactory.create_validator(self.config, marker_type)
+        self.structural_validator = sv
 
-            # Create taxonomy parser
-            if backbone_type == TaxonomicBackbone.DWC:
-                self.taxonomy_parser = NSRTaxonomyParser(self.config, self.taxonomy_resolver)
-            elif backbone_type == TaxonomicBackbone.BOLD:
-                self.taxonomy_parser = BOLDTaxonomyParser(self.config, self.taxonomy_resolver)
+        # Set up hmmalign if needed
+        if sv.requires_hmmalign():
+            sv.set_hmm_profile_dir(self.config.get('hmm_profile_dir'))
+            sv.set_hmmalign(Hmmalign(self.config))
 
-            # Create taxonomic validator
-            if self.config.get('validate_taxonomy', True):
+        # Set up resolver if needed
+        if sv.requires_resolver():
+            svbb = TaxonomicBackbone(self.config.get('input_taxonomy'))
+            svpath = self.config.get(svbb.value + '_file')
+            sr = ResolverFactory.create_resolver(self.config, svbb)
+            self.logger.info(f"Loading input taxonomy from {svpath}")
+            sr.load_tree(Path(svpath))
+            sv.set_taxonomy_resolver(sr)
 
-                # Instantiate BLASTN with config variables
-                blastn = Blastn(self.config)
-                blastn.set_db(self.config.get('blast_db'))
-                blastn.set_num_threads(self.config.get('num_threads'))
-                blastn.set_evalue(self.config.get('evalue'))
-                blastn.set_outfmt(self.config.get('outfmt'))
-                blastn.set_max_target_seqs(self.config.get('max_target_seqs'))
-                blastn.set_word_size(self.config.get('word_size'))
-                idservice = NCBI(self.config, blastn, self.taxonomy_resolver)
+    def _initialize_tv(self) -> None:
+        """
+        Initialize taxonomic validator.
+        """
+        self.taxonomic_validator = TaxonomicValidator(self.config)
 
-                # Set the environment variable BLASTDB to the value of the config variable blast_db
-                os.environ['BLASTDB'] = self.config.get('BLASTDB')
-                os.environ['BLASTDB_LMDB_MAP_SIZE'] = self.config.get('BLASTDB_LMDB_MAP_SIZE')
+        # Set up the resolver for taxonomic validation
+        if self.taxonomic_validator.requires_resolver():
 
-                self.taxonomic_validator = TaxonomicValidator(
-                    self.config,
-                    self.taxonomy_resolver,
-                    idservice
-                )
+            # Initialize the TaxonResolver for taxonomic validation
+            tvbb = TaxonomicBackbone(self.config.get('reference_taxonomy'))
+            tvpath = self.config.get(tvbb.value + '_file')
+            tr = ResolverFactory.create_resolver(self.config, tvbb)
+            self.logger.info(f"Loading reference taxonomy from {tvpath}")
+            tr.load_tree(Path(tvpath))
+            self.taxonomic_validator.set_taxonomy_resolver(tr)
+
+            # Initialize an IDService if needed
+            if self.taxonomic_validator.requires_idservice():
+                ids = IDServiceFactory.create_idservice(self.config, self.config.get('reference_taxonomy'))
+
+                # There is no way right now that the IDService could have a different
+                # TaxonResolver than the TaxonomicValidator
+                if ids.requires_resolver():
+                    ids.set_taxonomy_resolver(tr)
+
+                # If the IDService needs BLASTN, all externally configurable settings
+                # are injected here
+                if ids.requires_blastn():
+                    blastn = Blastn(self.config)
+                    blastn.set_db(self.config.get('blast_db'))
+                    blastn.set_num_threads(self.config.get('num_threads'))
+                    blastn.set_evalue(self.config.get('evalue'))
+                    blastn.set_outfmt(self.config.get('outfmt'))
+                    blastn.set_max_target_seqs(self.config.get('max_target_seqs'))
+                    blastn.set_word_size(self.config.get('word_size'))
+                    ids.set_blastn(blastn)
+                self.taxonomic_validator.set_idservice(ids)
 
     def _parse_input(self, file_path: Path) -> Iterator[SeqRecord]:
         """
@@ -188,13 +177,12 @@ class ValidationOrchestrator:
         else:
             raise ValueError(f"Unsupported file format: {suffix}")
 
-    def _validate_record(self, record: SeqRecord, dataset: str, marker_type: Marker, backbone_type: TaxonomicBackbone = None) -> DNAAnalysisResult:
+    def _validate_record(self, record: SeqRecord, dataset: str, marker_type: Marker) -> Optional[DNAAnalysisResult]:
         """
         Validate a single sequence record.
 
         :param record: The sequence record to validate
         :param dataset: Dataset identifier (e.g., source file name)
-        :param backbone_type: Taxonomic backbone to use for validation
         :param marker_type: Marker type to use for validation
         :return: DNAAnalysisResult object containing validation results
         """
@@ -205,19 +193,16 @@ class ValidationOrchestrator:
             marker_type = Marker(marker_code)
         result.add_ancillary('marker_code', marker_type.value)
 
-        # Only possible if backbone_type is not None (it might be None if we only do non-coding structural validation)
-        if backbone_type is not None:
-            result.level = self.config.get('validation_rank')
-            self.taxonomy_parser.enrich_result(record, result, backbone_type)
-            if result.error:
-                return result
-
         # Perform validations
         if self.structural_validator:
-            self.structural_validator.validate_sequence(record, result)
+            if self.structural_validator.requires_marker() and self.structural_validator.marker_type != marker_type:
+                result.error = f"Marker type mismatch: expected {self.structural_validator.marker_type.value}, got {marker_type.value}"
+                return None
+            else:
+                self.structural_validator.validate(record, result)
         if self.taxonomic_validator and not result.error:
             constraint_rank = TaxonomicRank(self.config.get('constraint_rank', 'class'))
-            self.taxonomic_validator.validate_taxonomy(record, result, constraint_rank)
+            self.taxonomic_validator.validate(record, result, constraint_rank)
 
         return result
 
