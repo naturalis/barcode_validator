@@ -5,7 +5,8 @@ from Bio.SeqIO import parse
 from nbitk.config import Config
 from nbitk.Tools import Blastn
 from barcode_validator.idservices.ncbi import NCBI
-from barcode_validator.taxonomy_resolver import TaxonomicRank, TaxonomyResolver, TaxonomicBackbone
+from barcode_validator.resolvers.factory import ResolverFactory
+from barcode_validator.resolvers.taxonomy import TaxonomicRank, TaxonResolver, TaxonomicBackbone
 
 # Test data path handling
 TEST_DATA_DIR = Path(__file__).parent / "data"
@@ -16,8 +17,6 @@ NCBI_TAXDUMP = TEST_DATA_DIR / "taxdump.tar.gz"
 GENBANK = '/home/rutger.vos/data/ncbi/nt/nt'
 BLASTDB = '/home/rutger.vos/data/ncbi/nt'
 BLAST_REPORT = TEST_DATA_DIR / "tmp_o8h137e.fasta.tsv"
-BOLD_SHEET = TEST_DATA_DIR / "bold.xlsx"
-NCBI_TAXDUMP = TEST_DATA_DIR / "taxdump.tar.gz"
 
 @pytest.fixture
 def config():
@@ -28,8 +27,7 @@ def config():
         'validate_taxonomy': True,  # Test BLASTing just yet
         'validate_structure': False,  # Disable structural validation
         'marker': 'COI-5P',  # Using COI-5P marker
-        'ncbi_taxonomy': str(NCBI_TAXDUMP),
-        'ncbi_taxonomy_url': 'https://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz',
+        'ncbi_file': str(NCBI_TAXDUMP),
         'db': GENBANK,
         'num_threads': 56,
         'evalue': 1e-5,
@@ -38,10 +36,9 @@ def config():
         'constraint_rank': 'class',
         'BLASTDB': BLASTDB,
         'BLASTDB_LMDB_MAP_SIZE': '1000G',
-        'bold_sheet_file': str(BOLD_SHEET),
-        'taxonomic_backbone': 'bold',
-        'ncbi_taxonomy': str(NCBI_TAXDUMP),
-        'ncbi_taxonomy_url': 'https://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz'
+        'bold_file': str(BOLD_SHEET),
+        'input_taxonomy': 'bold',
+        'reference_taxonomy': 'ncbi'
     }
     conf.initialized = True
     os.environ['BLASTDB'] = conf.get('BLASTDB')
@@ -64,14 +61,16 @@ def blastn(config):
 @pytest.fixture
 def taxonomy_resolver(config):
     """Provides initialized TaxonomyResolver"""
-    resolver = TaxonomyResolver(config)
-    resolver.setup_taxonomy(TaxonomicBackbone.BOLD)
+    resolver = ResolverFactory.create_resolver(config, TaxonomicBackbone.NCBI)
+    resolver.load_tree(NCBI_TAXDUMP)
     return resolver
 
 @pytest.fixture
 def ncbi(config, blastn, taxonomy_resolver):
     """Fixture providing NCBI instance"""
-    ncbi = NCBI(config, blastn, taxonomy_resolver)
+    ncbi = NCBI(config)
+    ncbi.set_blastn(blastn)
+    ncbi.set_taxonomy_resolver(taxonomy_resolver)
     return ncbi
 
 @pytest.fixture
@@ -106,7 +105,7 @@ def test_ncbi_initialization(ncbi, config):
 def test_run_localblast(ncbi, test_data):
     """Test identify_record method of NCBI instance"""
     assert ncbi is not None
-    blast_report = ncbi.run_localblast(test_data[0], 51653, TaxonomicRank.FAMILY)
+    blast_report = ncbi.run_localblast(test_data[0], 51653)
     assert blast_report is not None
     assert Path(blast_report).exists()
     assert Path(f"{blast_report}.tsv").exists()
@@ -118,14 +117,14 @@ def test_run_localblast(ncbi, test_data):
 def test_parse_blast_result(ncbi):
     """Test parse_blast_result method of NCBI instance"""
     assert ncbi is not None
-    taxids = ncbi.parse_blast_result(BLAST_REPORT, TaxonomicRank.FAMILY)
+    taxids = ncbi.parse_blast_result(BLAST_REPORT.as_posix())
     assert taxids is not None
     assert len(taxids) > 0
 
 def test_collect_higher_taxa(ncbi):
     """Test collect_higher_taxa method of NCBI instance"""
     assert ncbi is not None
-    taxids = ncbi.parse_blast_result(BLAST_REPORT, TaxonomicRank.FAMILY)
+    taxids = ncbi.parse_blast_result(BLAST_REPORT.as_posix())
     taxa = ncbi.collect_higher_taxa(taxids, TaxonomicRank.FAMILY)
     assert taxa is not None
     assert len(taxa) > 0
