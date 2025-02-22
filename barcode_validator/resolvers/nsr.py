@@ -29,4 +29,6 @@ class NSRResolver(TaxonResolver):
         :param record: A Bio.SeqRecord object.
         :return: The identification field, i.e. a literal taxon name
         """
-        return record.annotations['bcdm_fields']['identification']
+        return record.annotations.get(
+            'bcdm_fields',
+            {}).get('identification', None)
