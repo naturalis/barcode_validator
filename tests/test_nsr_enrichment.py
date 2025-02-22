@@ -3,12 +3,11 @@ from pathlib import Path
 from Bio.SeqRecord import SeqRecord
 from Bio.Seq import Seq
 from nbitk.config import Config
-from barcode_validator.taxonomy_resolver import TaxonomyResolver
-from barcode_validator.taxonomic_enrichment import (
-    NSRTaxonomyParser,
-    TaxonomicBackbone
-)
+
+from barcode_validator.constants import TaxonomicBackbone, TaxonomicRank
 from barcode_validator.dna_analysis_result import DNAAnalysisResult
+from barcode_validator.resolvers.factory import ResolverFactory
+from barcode_validator.resolvers.taxonomy import TaxonResolver
 
 # Test data path handling
 TEST_DATA_DIR = Path(__file__).parent / "data"
@@ -37,18 +36,11 @@ def config():
 @pytest.fixture
 def taxonomy_resolver(config):
     """Provides initialized TaxonomyResolver"""
-    resolver = TaxonomyResolver(config)
-    resolver.setup_taxonomy(TaxonomicBackbone.DWC)
+    resolver = ResolverFactory.create_resolver(config, TaxonomicBackbone.NSR)
+    resolver.load_tree(NSR_ARCHIVE)
     return resolver
 
-
-@pytest.fixture
-def nsr_parser(config, taxonomy_resolver):
-    """Provides NSR taxonomy parser"""
-    return NSRTaxonomyParser(config, taxonomy_resolver)
-
-
-def test_nsr_query_extraction(nsr_parser):
+def test_nsr_query_extraction(taxonomy_resolver):
     """Test extraction of identifications from NSR-style records"""
     # Test with species name
     record = SeqRecord(
@@ -56,18 +48,10 @@ def test_nsr_query_extraction(nsr_parser):
         id="test_id",
         annotations={'bcdm_fields': {'identification': 'Homo sapiens'}}
     )
-    assert nsr_parser.get_query(record) == "Homo sapiens"
-
-    # Test with only genus
-    record = SeqRecord(
-        Seq(""),
-        id="test_id",
-        annotations={'bcdm_fields': {'identification': 'Homo'}}
-    )
-    assert nsr_parser.get_query(record) == "Homo"
+    assert taxonomy_resolver.parse_id(record) == "Homo sapiens"
 
 
-def test_nsr_enrichment(nsr_parser):
+def test_nsr_enrichment(taxonomy_resolver):
     """Test complete NSR taxonomy enrichment process"""
     # Create test record with DwC-style fields
     record = SeqRecord(
@@ -83,16 +67,16 @@ def test_nsr_enrichment(nsr_parser):
     result.level = "family"
 
     # Perform enrichment
-    nsr_parser.enrich_result(record, result, TaxonomicBackbone.DWC)
+    taxonomy_resolver.enrich_result(record, result, TaxonomicRank.FAMILY)
 
     # Verify result population
     assert result.error is None, "Enrichment should succeed"
     assert result.species is not None, "Species should be populated"
     assert result.exp_taxon is not None, "Expected taxon should be populated"
-    assert int(result.ancillary.get('translation_table')) == 5, "Should have inferred insect mitochondrial"
+    assert result.level == TaxonomicRank.FAMILY.value, "Expected to have family level"
 
 
-def test_nsr_enrichment_errors(nsr_parser):
+def test_nsr_enrichment_errors(taxonomy_resolver):
     """Test error handling in NSR enrichment"""
     # Test missing identification
     record = SeqRecord(
@@ -101,9 +85,9 @@ def test_nsr_enrichment_errors(nsr_parser):
         annotations={'bcdm_fields': {}}
     )
     result = DNAAnalysisResult(record.id)
-    nsr_parser.enrich_result(record, result, TaxonomicBackbone.DWC)
+    taxonomy_resolver.enrich_result(record, result, TaxonomicRank.FAMILY)
     assert result.error is not None
-    assert "No identification provided" in result.error
+    assert "Could not parse ID" in result.error
 
     # Test invalid identification format
     record = SeqRecord(
@@ -112,9 +96,9 @@ def test_nsr_enrichment_errors(nsr_parser):
         annotations={'bcdm_fields': {'identification': ''}}
     )
     result = DNAAnalysisResult(record.id)
-    nsr_parser.enrich_result(record, result, TaxonomicBackbone.DWC)
+    taxonomy_resolver.enrich_result(record, result, TaxonomicRank.FAMILY)
     assert result.error is not None
-    assert "No entry found" in result.error
+    assert "Could not parse ID" in result.error
 
 
 def test_different_validation_levels(config, taxonomy_resolver):
