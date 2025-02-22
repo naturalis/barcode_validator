@@ -95,6 +95,7 @@ def test_blastn_initialization(blastn, config):
     assert blastn.get_parameter('task') == 'megablast'
     assert blastn.get_parameter('outfmt') == "6 qseqid sseqid pident length qstart qend sstart send evalue bitscore staxids"
 
+@pytest.mark.skipif(not Path(NCBI_TAXDUMP).exists(), reason="NCBI taxonomy does not exist")
 def test_ncbi_initialization(ncbi, config):
     """Test initialization of NCBI instance"""
     assert ncbi is not None
@@ -114,6 +115,7 @@ def test_run_localblast(ncbi, test_data):
     os.unlink(blast_report)
     os.unlink(f"{blast_report}.tsv")
 
+@pytest.mark.skipif(not Path(NCBI_TAXDUMP).exists(), reason="NCBI taxonomy does not exist")
 def test_parse_blast_result(ncbi):
     """Test parse_blast_result method of NCBI instance"""
     assert ncbi is not None
@@ -121,6 +123,7 @@ def test_parse_blast_result(ncbi):
     assert taxids is not None
     assert len(taxids) > 0
 
+@pytest.mark.skipif(not Path(NCBI_TAXDUMP).exists(), reason="NCBI taxonomy does not exist")
 def test_collect_higher_taxa(ncbi):
     """Test collect_higher_taxa method of NCBI instance"""
     assert ncbi is not None

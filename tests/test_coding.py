@@ -84,7 +84,7 @@ def test_validator_initialization(validator):
     assert validator.logger is not None
     assert validator.hmm_profile_dir == HMM_DIR
 
-
+@pytest.mark.skipif(not Path(NCBI_TAXDUMP).exists(), reason="NCBI taxonomy does not exist")
 def test_translation_table_determination(validator, bold_resolver, ncbi_resolver, fasta_records):
     """Test translation table determination for COI-5P sequences"""
     record = fasta_records[0]  # Use first record
@@ -132,7 +132,7 @@ def test_hmm_alignment(validator, fasta_records, hmmalign: Hmmalign):
     assert isinstance(aligned_seq, SeqRecord), "Alignment output should be SeqRecord"
     assert str(aligned_seq.seq).count('-') >= 0, "Alignment may contain gaps"
 
-
+@pytest.mark.skipif(not Path(NCBI_TAXDUMP).exists(), reason="NCBI taxonomy does not exist")
 def test_reading_frame_detection(validator, fasta_records, hmmalign: Hmmalign, config: Config):
     """Test reading frame detection in aligned sequences"""
     record = fasta_records[0]
