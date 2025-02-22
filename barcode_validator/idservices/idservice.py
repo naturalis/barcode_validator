@@ -1,11 +1,11 @@
 from typing import Set
 from Bio.SeqRecord import SeqRecord
-from Bio.Phylo.BaseTree import Tree
 from nbitk.Taxon import Taxon
-from barcode_validator.taxonomy_resolver import TaxonomicRank
+from nbitk.config import Config
+from nbitk.logger import get_formatted_logger
+from barcode_validator.constants import TaxonomicRank
 
-
-class IDService():
+class IDService:
     """
     Abstract base class for identification services.
     
@@ -13,7 +13,11 @@ class IDService():
     Identification services are used to identify taxonomic information from sequence
     records, typically by comparing them against reference databases.
     """
-    
+    def __init__(self, config: Config):
+        self.logger = get_formatted_logger(self.__class__.__name__, config)
+        self.blastn = None
+        self.taxonomy_resolver = None
+
     def identify_record(self, record: SeqRecord, level: TaxonomicRank = TaxonomicRank.FAMILY, extent: Taxon = None) -> Set[Taxon]:
         """
         Identify the taxonomic classification of a sequence record. This method returns the set of
@@ -36,3 +40,18 @@ class IDService():
         :return: A list of Taxon objects representing the possible taxonomic classifications
         """
         pass
+
+    @staticmethod
+    def requires_resolver():
+        return False
+
+    def set_taxonomy_resolver(self, resolver):
+        self.taxonomy_resolver = resolver
+
+    @staticmethod
+    def requires_blastn():
+        return False
+
+    def set_blastn(self, blastn):
+        self.blastn = blastn
+
