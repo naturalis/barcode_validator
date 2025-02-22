@@ -1,7 +1,7 @@
+from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from nbitk.config import Config
 from .structural import StructuralValidator
-from barcode_validator.taxonomy_resolver import Marker
 from barcode_validator.dna_analysis_result import DNAAnalysisResult
 
 
@@ -22,8 +22,8 @@ class NonCodingValidator(StructuralValidator):
         >>> config = Config()
         >>> config.load_config('/path/to/config.yaml')
         >>> validator = NonCodingValidator(config)
-        >>> result = DNAAnalysisResult("sequence_id")
-        >>> validator.validate_marker_specific(record, result)
+        >>> result = DNAAnalysisResult("foo")
+        >>> validator.validate_marker_specific(SeqRecord(Seq('acgtacgatgcatct'),id="foo"), result)
 
     :param config: Configuration object containing validation parameters
     """
@@ -31,7 +31,6 @@ class NonCodingValidator(StructuralValidator):
     def __init__(self, config: Config):
         """Initialize the non-coding validator."""
         super().__init__(config)
-        self.marker = Marker(config.get('marker', 'ITS'))
 
     def validate_marker_specific(self, record: SeqRecord, result: DNAAnalysisResult) -> None:
         """
@@ -60,5 +59,4 @@ class NonCodingValidator(StructuralValidator):
         gc_perc = (gc_count / total * 100) if total > 0 else 0
         self.logger.debug(f"GC percentage: {gc_perc}%")
         return gc_perc
-
 
