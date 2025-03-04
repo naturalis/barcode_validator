@@ -25,7 +25,7 @@ def test_taxonomy():
     res.exp_taxon = Taxon('Hominidae', taxonomic_rank= TaxonomicRank.FAMILY.value)
 
     # set the observed taxon list, i.e. whatever came out of the ID service
-    assert len(res.obs_taxon) is 0
+    assert len(res.obs_taxon) == 0
     res.obs_taxon = [Taxon('Hominidae', taxonomic_rank= TaxonomicRank.FAMILY.value)]
 
     # check if valid
@@ -74,7 +74,7 @@ def test_stop_codons():
     res = DNAAnalysisResult('seq1', 'set1', config)
 
     # test stop codons
-    assert len(res.stop_codons) is 0
+    assert len(res.stop_codons) == 0
     res.stop_codons = [ 323 ]
     assert res.stop_codons == [ 323 ]
     assert res.config.get('stop_codons') == []
