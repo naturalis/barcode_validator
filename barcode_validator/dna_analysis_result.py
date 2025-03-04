@@ -1,4 +1,6 @@
 from nbitk.Taxon import Taxon
+from nbitk.config import Config
+from barcode_validator.constants import TaxonomicRank, Marker
 from typing import List, Optional, Tuple
 import yaml
 import csv
@@ -55,6 +57,7 @@ base_columns = {
     'obs_taxon',
     'species',
     'stop_codons',
+    'sequence'
 }
 
 def reset_columns():
@@ -71,44 +74,33 @@ def initialize_columns():
 # Initialize columns at module import
 initialize_columns()
 
-levels = [
-    'kingdom',
-    'phylum',
-    'class',
-    'order',
-    'family',
-    'subfamily',
-    'tribe',
-    'genus',
-    'species',
-    'subspecies'
-]
-
 class DNAAnalysisResult:
 
-    def __init__(self, sequence_id: str, dataset: str = None):
+    def __init__(self, sequence_id: str, dataset: str = None, config: Config = None):
         """
         Initialize a DNAAnalysisResult object.
         :param sequence_id: The sequence identifier
         :param dataset: The dataset name (e.g. the multifasta file name)
         """
+
+        # Make a default config object for COI-5P
+        if config is None:
+            config = Config()
+            config.config_data = {
+                'seq_length': 500,
+                'stop_codons': [],
+                'ambiguities': 0
+            }
+            config.initialized = True
+        self.config = config
         self.sequence_id: str = sequence_id
-        self.data: dict = {
-            'sequence_id': sequence_id, # An identifier for the sequence that is at least unique within the dataset
-            'ambig_basecount': None,  # The number of ambiguous bases in the sequence within the barcode region
-            'ambig_full_basecount': None,  # The number of ambiguous bases in the full sequence
-            'dataset': dataset, # The dataset name (e.g. the multifasta file name)
-            'error': None,  # An error message, if any
-            'identification': None,  # The expected taxon identification
-            'identification_method': 'BLAST',  # The method used for taxon identification (e.g. BLAST)
-            'identification_rank': None,  # The taxonomic level at which the identification was made (e.g. family)
-            'nuc_basecount': None, # The number of nucleotides in the sequence within the barcode region
-            'nuc_full_basecount': None, # The number of nucleotides in the full sequence
-            'obs_taxon': [], # The distinct taxa observed via `identification_method` at level `identification_rank`
-            'species': None, # The expected species name, if provided
-            'stop_codons': [], # The number of stop codons in the sequence
-        }
-        self.data['ancillary'] = {}
+        self.data: dict = {'sequence_id': sequence_id, 'ambig_basecount': None,
+                           'ambig_full_basecount': None, 'dataset': dataset, 'error': None,
+                           'identification': None, 'identification_method': 'BLAST',
+                           'identification_rank': None, 'nuc_basecount': None,
+                           'nuc_full_basecount': None, 'obs_taxon': [],
+                           'species': None, 'stop_codons': [], 'sequence': None,
+                           'ancillary': {}}
 
     @property
     def ancillary(self) -> dict:
@@ -175,7 +167,7 @@ class DNAAnalysisResult:
         self.data['dataset'] = dataset
 
     @property
-    def level(self) -> Optional[str]:
+    def level(self) -> Optional[TaxonomicRank]:
         """
         Getter for the taxonomic level.
         :return: A string representing the taxonomic level
@@ -183,14 +175,12 @@ class DNAAnalysisResult:
         return self.data['identification_rank']
 
     @level.setter
-    def level(self, level: str) -> None:
+    def level(self, level: TaxonomicRank) -> None:
         """
         Setter for the taxonomic level.
-        :param level: A string representing the taxonomic level
+        :param level: A TaxanomicRank enum
         :return:
         """
-        if not isinstance(level, str) or level.lower() not in levels:
-            raise ValueError(f"level must be a string from {levels}")
         self.data['identification_rank'] = level
 
     @property
@@ -371,7 +361,7 @@ class DNAAnalysisResult:
         Check if the sequence length meets the minimum requirement.
         :return: A boolean indicating whether the sequence length is valid
         """
-        return self.seq_length >= 500 if self.seq_length is not None else False
+        return self.seq_length >= int(self.config.get('seq_length')) if self.seq_length is not None else False
 
     def check_taxonomy(self) -> bool:
         """
@@ -385,14 +375,14 @@ class DNAAnalysisResult:
         Check if the sequence contains stop codons, i.e. if the list of stop codon locations is empty.
         :return: A boolean indicating whether the sequence is a pseudogene
         """
-        return len(self.stop_codons) == 0
+        return len(self.stop_codons) <= len(self.config.get('stop_codons'))
 
     def check_ambiguities(self) -> bool:
         """
         Check if the sequence contains ambiguities, i.e. if the number of ambiguities is zero.
         :return: A boolean indicating whether the sequence contains ambiguities
         """
-        return self.ambiguities == 0
+        return self.ambiguities <= int(self.config.get('ambiguities'))
 
     def check_seq_quality(self) -> bool:
         """
@@ -407,96 +397,6 @@ class DNAAnalysisResult:
         :return: A boolean indicating whether the sequence passes all checks
         """
         return self.check_length() and self.check_taxonomy() and self.check_seq_quality()
-
-    def calculate_ranks(self, verbosity: int = 2) -> Tuple[int, int, str]:
-        """
-        Calculate barcode_rank and full_rank, and generate messages based on verbosity.
-
-        :param verbosity: 1=errors only, 2=errors+warnings, 3=errors+warnings+info
-        :return: Tuple of (barcode_rank, full_rank, messages)
-        """
-        barcode_rank = 8
-        full_rank = 6
-        messages = []
-
-        # Calculate barcode_rank
-        if self.seq_length is not None and self.ambiguities is not None:
-            if self.seq_length >= 650 and self.ambiguities == 0:
-                barcode_rank = 1
-                if verbosity >= 3:
-                    messages.append("\U0001F947\U0001F31F BIN compliant, perfect")
-            elif self.seq_length >= 500 and self.ambiguities == 0:
-                barcode_rank = 2
-                if verbosity >= 3:
-                    messages.append("\U0001F947 BIN compliant")
-            elif self.seq_length >= 650 and 1 <= self.ambiguities <= 6:
-                barcode_rank = 3
-                if verbosity >= 3:
-                    messages.append("\U0001F948 BIN compliant")
-                if verbosity >= 2:
-                    messages.append("\u2753 Marker may be chimeric")
-            elif self.seq_length >= 500 and 1 <= self.ambiguities <= 6:
-                barcode_rank = 4
-                if verbosity >= 3:
-                    messages.append("\U0001F949 BIN compliant")
-                if verbosity >= 2:
-                    messages.append("\u2753 Marker may be chimeric")
-            elif 400 <= self.seq_length < 500 and self.ambiguities == 0:
-                barcode_rank = 5
-                if verbosity >= 3:
-                    messages.append("\u26A0 Useful marker sequence")
-                if verbosity >= 2:
-                    messages.append("\u2757 Not BIN compliant")
-            elif 300 <= self.seq_length < 400 and self.ambiguities == 0:
-                barcode_rank = 6
-                if verbosity >= 3:
-                    messages.append("\u26A0 Useful marker sequence")
-                if verbosity >= 2:
-                    messages.append("\u203C Not BIN compliant")
-            elif (self.seq_length < 300 and self.ambiguities == 0) or (
-                    self.seq_length < 500 and 1 <= self.ambiguities <= 6):
-                barcode_rank = 7
-                if verbosity >= 3:
-                    messages.append("\u26A0 Useful marker sequence")
-                if verbosity >= 2:
-                    messages.append("\u203C Not BIN compliant")
-
-        if barcode_rank == 8 and verbosity >= 1:
-            messages.append("\u26D4 Unacceptable marker sequence")
-
-        # Calculate full_rank
-        if self.full_length is not None and self.full_ambiguities is not None:
-            if self.full_length >= 1500 and self.full_ambiguities == 0:
-                full_rank = 1
-                if verbosity >= 3:
-                    messages.append("\U0001F947 Excellent full length, no ambiguities")
-            elif self.full_length >= 1000 and self.full_ambiguities == 0:
-                full_rank = 2
-                if verbosity >= 3:
-                    messages.append("\U0001F948 Good full length, no ambiguities")
-            elif self.full_length >= 1500 and 1 <= self.full_ambiguities < 15:
-                full_rank = 3
-                if verbosity >= 3:
-                    messages.append("\U0001F947 Excellent full length")
-                if verbosity >= 2:
-                    messages.append("\u2757 Some ambiguities in full sequence")
-            elif self.full_length >= 1000 and 1 <= self.full_ambiguities < 15:
-                full_rank = 4
-                if verbosity >= 3:
-                    messages.append("\U0001F948 Good full length")
-                if verbosity >= 2:
-                    messages.append("\u2757 Some ambiguities in full sequence")
-            elif self.full_length < 1000 and 0 <= self.full_ambiguities < 15:
-                full_rank = 5
-                if verbosity >= 3:
-                    messages.append("\U0001F949 Acceptable full length")
-                if self.full_ambiguities > 0 and verbosity >= 2:
-                    messages.append("\u2757 Some ambiguities in full sequence")
-
-        if full_rank == 6 and verbosity >= 1:
-            messages.append("\u26D4 Unacceptable full sequence")
-
-        return barcode_rank, full_rank, "\n".join(messages)
 
     def get_values(self) -> list:
         """
