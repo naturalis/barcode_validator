@@ -10,6 +10,11 @@ from barcode_validator.constants import TaxonomicRank, TaxonomicBackbone
 from barcode_validator.dna_analysis_result import DNAAnalysisResult
 
 class TaxonResolver:
+    """
+    Base class for taxonomic name resolution and reconciliation. This can
+    be done in a variety of ways, e.g. by using local taxonomy trees, or
+    by web services.
+    """
 
     def __init__(self, config: Config):
         self.logger = get_formatted_logger(self.__class__.__name__, config)
