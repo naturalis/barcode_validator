@@ -57,7 +57,8 @@ base_columns = {
     'obs_taxon',
     'species',
     'stop_codons',
-    'sequence'
+    'sequence',
+    'group_id'
 }
 
 def reset_columns():
@@ -76,7 +77,7 @@ initialize_columns()
 
 class DNAAnalysisResult:
 
-    def __init__(self, sequence_id: str, dataset: str = None, config: Config = None):
+    def __init__(self, sequence_id: str, dataset: str = None, config: Config = None, group_id: str = None):
         """
         Initialize a DNAAnalysisResult object.
         :param sequence_id: The sequence identifier
@@ -100,7 +101,24 @@ class DNAAnalysisResult:
                            'identification_rank': None, 'nuc_basecount': None,
                            'nuc_full_basecount': None, 'obs_taxon': [],
                            'species': None, 'stop_codons': [], 'sequence': None,
-                           'ancillary': {}}
+                            'group_id': group_id, 'ancillary': {}}
+
+    @property
+    def group_id(self) -> Optional[str]:
+        """
+        Getter for the group identifier.
+        :return: A string representing the group identifier
+        """
+        return self.data['group_id']
+
+    @group_id.setter
+    def group_id(self, group_id: str) -> None:
+        """
+        Setter for the group identifier.
+        :param group_id: A string representing the group identifier
+        :return:
+        """
+        self.data['group_id'] = group_id
 
     @property
     def ancillary(self) -> dict:
@@ -443,9 +461,16 @@ class DNAAnalysisResult:
 
 
 class DNAAnalysisResultSet:
-    def __init__(self, results: List[DNAAnalysisResult]):
+    def __init__(self, results: List[DNAAnalysisResult], config: Config = None):
         # Reset and initialize columns for this new result set
         initialize_columns()
+
+        # Set the configuration object
+        if config is None:
+            config = Config()
+            config.config_data = { 'group_id_separator': '_' }
+            config.initialized = True
+        self.config = config
 
         self.results = results
 
@@ -464,6 +489,19 @@ class DNAAnalysisResultSet:
         header = '\t'.join(DNAAnalysisResult.result_fields())
         contents = '\n'.join([str(result) for result in self.results])
         return header + "\n" + contents
+
+    def to_string(self, output_format: str = 'tsv') -> str:
+        """
+        Convert the result set to a string.
+        :param output_format: The output format, tsv or fasta (default: tsv)
+        :return: A string representing the result set
+        """
+        if output_format.lower() == 'tsv':
+            return str(self)
+        elif output_format.lower() == 'fasta':
+            return "\n".join([f">{result.sequence_id}\n{result.data['sequence']}" for result in self.results])
+        else:
+            raise ValueError(f"Output format '{output_format}' not supported")
 
     def add_yaml_file(self, file: str):
         """
@@ -491,7 +529,7 @@ class DNAAnalysisResultSet:
         process_id_to_result = {}
         for result in self.results:
             seqid = result.sequence_id
-            process_id = seqid.split('_')[0]
+            process_id = seqid.split(self.config.get('group_id_separator'))[0]
             process_id_to_result[process_id] = result
 
         with open(file, 'r', newline='') as csvfile:
@@ -511,3 +549,11 @@ class DNAAnalysisResultSet:
                     for key, value in row.items():
                         if key != 'Process ID':  # Avoid duplicating the process_id
                             result.add_ancillary(key, value)
+
+    def triage(self) -> 'DNAAnalysisResultSet':
+        """
+        Perform triage on the result set.
+        :return: A new DNAAnalysisResultSet object containing the triaged results
+        """
+        triaged_results = [result for result in self.results if result.passes_all_checks()]
+        return DNAAnalysisResultSet(triaged_results, self.config)
