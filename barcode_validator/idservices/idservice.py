@@ -11,7 +11,9 @@ class IDService:
     
     This class defines the interface that all identification services must implement.
     Identification services are used to identify taxonomic information from sequence
-    records, typically by comparing them against reference databases.
+    records. This can be done in a variety of ways, such as local BLAST searches
+    against a reference database, remote BLAST services such as via NCBI, by using
+    BOLD's ID service, by using an AI classifier, and so on.
     """
     def __init__(self, config: Config):
         self.logger = get_formatted_logger(self.__class__.__name__, config)
