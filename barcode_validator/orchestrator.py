@@ -186,8 +186,13 @@ class ValidationOrchestrator:
         :param marker_type: Marker type to use for validation
         :return: DNAAnalysisResult object containing validation results
         """
+        # Extract group ID if present
+        group_id = None
+        if self.config.get('group_id_separator'):
+            group_id = record.id.split(self.config.get('group_id_separator'))[0]
+
         # Instantiate result object, annotate target marker at sequence level (CSC) or config level, set validation level
-        result = DNAAnalysisResult(record.id, dataset)
+        result = DNAAnalysisResult(record.id, dataset, group_id=group_id)
         marker_code = record.annotations.get('bcdm_fields', {}).get('marker_code') # may be in CSC/BCDM
         if marker_code is not None:
             marker_type = Marker(marker_code)
@@ -207,46 +212,22 @@ class ValidationOrchestrator:
         return result
 
     def write_results(self, results: DNAAnalysisResultSet,
-                     output_path: Path,
-                     write_valid_fasta: bool = False,
-                     fasta_path: Optional[Path] = None) -> None:
+                     output_format: str = 'tsv', triage: bool = False) -> None:
         """
         Write validation results.
 
         :param results: Validation result set
-        :param output_path: Path for TSV output
-        :param write_valid_fasta: Whether to output valid sequences as FASTA
-        :param fasta_path: Optional path for FASTA output
+        :param output_format: Output format (tsv or fasta, default: tsv)
+        :param triage: Perform triage on the result set (default: false)
         """
         # Write TSV results
-        self.logger.info(f"Writing results to {output_path}")
-        with open(output_path, 'w', newline='') as f:
-            writer = csv.writer(f, delimiter='\t')
-            writer.writerow(DNAAnalysisResult.result_fields())
-            for result in results.results:
-                writer.writerow(result.get_values())
+        self.logger.info(f"Writing results")
 
-        # Write valid sequences if requested
-        if write_valid_fasta:
-            self._write_valid_sequences(results, fasta_path)
+        # Triage the results
+        if triage:
+            results = results.triage()
 
-    def _write_valid_sequences(self, results: DNAAnalysisResultSet,
-                             fasta_path: Optional[Path]) -> None:
-        """
-        Write valid sequences to FASTA.
+        # Write the results
+        print(results.to_string(output_format))
 
-        :param results: Set of validation results
-        :param fasta_path: Optional path for FASTA output
-        """
-        valid_sequences = []
-        for result in results.results:
-            if result.passes_all_checks():
-                if hasattr(result, 'sequence'):
-                    valid_sequences.append(result.sequence)
-                else:
-                    self.logger.warning(f"No sequence for {result.sequence_id}")
 
-        if valid_sequences:
-            output_path = fasta_path or Path('valid_sequences.fasta')
-            self.logger.info(f"Writing {len(valid_sequences)} valid sequences to {output_path}")
-            SeqIO.write(valid_sequences, output_path, "fasta")
