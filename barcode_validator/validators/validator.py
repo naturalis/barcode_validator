@@ -14,7 +14,7 @@ from barcode_validator.constants import Marker
 
 class AbstractValidator:
     """
-    Base class for all validators. Each validator can optionally declare whether it needs a
+    Abstract base class for all validators. Each validator can optionally declare whether it needs a
     taxonomy resolver and/or a marker by implementing requires_resolver() and requires_marker().
     """
     def __init__(self, config: Config):
