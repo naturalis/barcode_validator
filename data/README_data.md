@@ -1,3 +1,6 @@
+- For each FASTA file containing barcode consensus seqeunces, a corresponding barcode validator log and TSV file output by barcode validator exist.
+- For each 'mge_fastp|standard_*' FASTA file, a corresponding MGE run YAML file and CSV file output by MGE snakemake workflow containing summary stats also exist.
+  
 | File list | Description |
 | --- | --- |
 XE-4013_barcodes_out.fasta |	1,431 barcode consensus sequences (hitpicked by fasta_compare) from 1,804 sample XE-4013 datasetc snakemake workflow, run with no contaminant sequences, 6 r and s MGE parameter combinations, using both 'fastp' and 'standard' MGE snakemake workflow |
@@ -21,5 +24,6 @@ concat_tsv.py | Creates 'concatenated_untriaged.tsv' |
 concatenated_untriaged.fasta | Contains 6,840 barcode consensus sequences, I think compiled from 'mge_fastp|standard_*' benchmarking dataset MGE runs? |
 concatenated_untriaged.tsv | Combined TSV summary statistics file for 'mge_fastp|standard_*' benchmarking dataset MGE runs |
 
-- For each FASTA file containing barcode consensus seqeunces, a corresponding barcode validator log and TSV file output by barcode validator exist.
-- For each 'mge_fastp|standard_*' FASTA file, a corresponding MGE run YAML file and CSV file output by MGE snakemake workflow containing summary stats also exist.
+
+- 'pass/' - Barcode consensus sequencesare corresponding stats in TSV format, presumably for samples that passed barcode validator. Looks like it only contains passed samples from 'XE-4013_barcodes_out.submitted.fasta'
+- 'fail/' - Barcode consensus sequencesare corresponding stats in TSV format, presumably for samples that failed barcode validator. Looks like it only contains failed samples from 'XE-4013_barcodes_out.submitted.fasta'
