@@ -21,4 +21,5 @@ concat_tsv.py | Creates 'concatenated_untriaged.tsv' |
 concatenated_untriaged.fasta | Contains 6,840 barcode consensus sequences, I think compiled from 'mge_fastp|standard_*' benchmarking dataset MGE runs? |
 concatenated_untriaged.tsv | Combined TSV summary statistics file for 'mge_fastp|standard_*' benchmarking dataset MGE runs |
 
-- For each 'mge_fastp|standard_*' benchmarking dataset FASTA file containing barcode consensus seqeunces, a corresponding MGE run YAML file, CSV file output by MGE snakemake workflow containing summary stats, barcode validator log, and TSV file output by barcode validator exists |
+- For each FASTA file containing barcode consensus seqeunces, a corresponding barcode validator log and TSV file output by barcode validator exist.
+- For each 'mge_fastp|standard_*' FASTA file, a corresponding MGE run YAML file and CSV file output by MGE snakemake workflow containing summary stats also exist.
