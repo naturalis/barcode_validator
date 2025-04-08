@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from Bio.SeqRecord import SeqRecord
 from Bio.Seq import Seq
 from Bio import AlignIO
@@ -49,6 +51,11 @@ class ProteinCodingValidator(StructuralValidator):
         :param record: The DNA sequence record to validate
         :param result: Result object to populate with validation data
         """
+
+        # Make sure that result.exp_taxon is assigned through tr.enrich_result() because this may not have been done
+        # if we aren't doing taxonomic validation
+        if result.exp_taxon is None:
+            self.taxonomy_resolver.enrich_result(record, result)
         trans_table = int(self.get_translation_table(self.marker, result.exp_taxon))
 
         # Align sequence to HMM
@@ -62,7 +69,7 @@ class ProteinCodingValidator(StructuralValidator):
         # in the same way and result in the same value. Here we recalculate the
         # marker length after alignment to the HMM (and trimming). Same for ambiguity
         # calculation, btw.
-        result.ambiguity = self._calc_ambiguities(aligned_seq.seq)
+        result.ambiguities = self._calc_ambiguities(aligned_seq.seq)
         result.seq_length = self._calc_length(aligned_seq.seq)
 
         # Determine and store reading frame
@@ -82,7 +89,7 @@ class ProteinCodingValidator(StructuralValidator):
         :param record: The DNA sequence record to align
         :return: Aligned sequence record or None if alignment fails
         """
-        hmm_file = self.hmm_profile_dir / f"{self.marker.value}.hmm"
+        hmm_file = Path(self.hmm_profile_dir) / Path(f"{self.marker.value}.hmm")
         if not hmm_file.exists():
             self.logger.error(f"HMM profile not found: {hmm_file}")
             return None
@@ -91,7 +98,11 @@ class ProteinCodingValidator(StructuralValidator):
             with tempfile.NamedTemporaryFile(mode='w+', suffix='.fasta', delete=False) as temp_input, \
                     tempfile.NamedTemporaryFile(mode='w+', suffix='.sto', delete=False) as temp_output:
 
-                temp_input.write(f">{record.id}\n{str(record.seq)}\n")
+                # Remove any gaps from the sequence
+                seq = record.seq
+                seq = seq.replace('-', '')
+
+                temp_input.write(f">{record.id}\n{str(seq)}\n")
                 temp_input.flush()
 
                 self.hmmalign.set_hmmfile(str(hmm_file))
