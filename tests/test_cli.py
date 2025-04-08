@@ -99,7 +99,7 @@ validate_structure: true
     ]):
         cli = BarcodeValidatorCLI()
         assert cli.config.get("log_level") == "DEBUG"  # Overridden
-        assert cli.config.get("ncbi_taxonomy") == "new_ncbi.tar.gz"  # Added
+        assert cli.config.get("reflib_taxonomy") == "new_ncbi.tar.gz"  # Added
 
 
 def test_validation_mode_options():
