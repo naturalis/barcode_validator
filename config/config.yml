@@ -10,7 +10,7 @@ validate_structural: true
 
 # Validation parameters
 validation_rank: family  # Taxonomic level at which to validate identifications
-input_taxonomy: bold  # Options: bold, ncbi, nsr
+exp_taxonomy_type: bold  # Options: bold, ncbi, nsr
 reference_taxonomy: ncbi
 min_sequence_length: 500
 max_ambiguities: 6
