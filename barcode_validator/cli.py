@@ -5,6 +5,7 @@ from pathlib import Path
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 from .orchestrator import ValidationOrchestrator
+from .dna_analysis_result import DNAAnalysisResultSet
 
 
 class BarcodeValidatorCLI:
@@ -100,16 +101,18 @@ output TSV.
         except Exception as e:
             sys.exit(f"Error loading config file: {e}")
         if self.args.reflib_taxonomy:
-            config.set("ncbi_taxonomy", self.args.reflib_taxonomy)
+            config.set("reflib_taxonomy", self.args.reflib_taxonomy)
         if self.args.exp_taxonomy_type == 'nsr':
-            config.set("dwc_archive", self.args.exp_taxonomy)
+            config.set("exp_taxonomy", self.args.exp_taxonomy)
+            config.set("exp_taxonomy_type", self.args.exp_taxonomy_type)
         elif self.args.exp_taxonomy_type == 'bold':
-            config.set("bold_sheet_file", self.args.exp_taxonomy)
+            config.set("exp_taxonomy", self.args.exp_taxonomy)
+            config.set("exp_taxonomy_type", self.args.exp_taxonomy_type)
         if self.args.log_level:
             config.set("log_level", self.args.log_level)
         return config
 
-    def run(self):
+    def run(self) -> DNAAnalysisResultSet:
         """Run the validation process."""
         try:
             # Initialize orchestrator
@@ -128,6 +131,7 @@ output TSV.
                 self.args.output_format,
                 self.args.triage
             )
+            return results
 
         except Exception as e:
             self.logger.error(f"Validation failed: {e}")
