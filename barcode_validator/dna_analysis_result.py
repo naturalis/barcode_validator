@@ -64,12 +64,12 @@ base_columns = {
 def reset_columns():
     """Reset the global columns set to initial state"""
     global columns
-    columns = set()
+    columns.clear()  # Using clear() instead of reassignment
 
 def initialize_columns():
     """Initialize the columns set with base columns"""
-    global columns
     reset_columns()
+    global columns
     columns.update(base_columns)
 
 # Initialize columns at module import
