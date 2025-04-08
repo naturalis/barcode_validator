@@ -37,7 +37,7 @@ def config():
         'BLASTDB': BLASTDB,
         'BLASTDB_LMDB_MAP_SIZE': '1000G',
         'bold_file': str(BOLD_SHEET),
-        'input_taxonomy': 'bold',
+        'exp_taxonomy_type': 'bold',
         'reference_taxonomy': 'ncbi'
     }
     conf.initialized = True
