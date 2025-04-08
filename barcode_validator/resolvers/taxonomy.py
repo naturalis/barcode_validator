@@ -57,7 +57,7 @@ class TaxonResolver:
         """
         raise NotImplementedError
 
-    def enrich_result(self, record: SeqRecord, result: DNAAnalysisResult, rank: TaxonomicRank) -> None:
+    def enrich_result(self, record: SeqRecord, result: DNAAnalysisResult, rank: TaxonomicRank = TaxonomicRank.FAMILY) -> None:
         """
         Enriches the DNAAnalysisResult object with information from the taxonomy.
         This adds the following properties to the DNAAnalysisResult object:
