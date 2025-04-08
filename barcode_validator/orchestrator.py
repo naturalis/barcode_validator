@@ -109,8 +109,8 @@ class ValidationOrchestrator:
 
         # Set up resolver if needed
         if sv.requires_resolver():
-            svbb = TaxonomicBackbone(self.config.get('input_taxonomy'))
-            svpath = self.config.get(svbb.value + '_file')
+            svbb = TaxonomicBackbone(self.config.get('exp_taxonomy_type'))
+            svpath = self.config.get('exp_taxonomy')
             sr = ResolverFactory.create_resolver(self.config, svbb)
             self.logger.info(f"Loading input taxonomy from {svpath}")
             sr.load_tree(Path(svpath))
