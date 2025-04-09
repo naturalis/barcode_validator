@@ -63,13 +63,13 @@ base_columns = {
 
 def reset_columns():
     """Reset the global columns set to initial state"""
-    global columns
+    global columns # noqa: F824
     columns.clear()  # Using clear() instead of reassignment
 
 def initialize_columns():
     """Initialize the columns set with base columns"""
     reset_columns()
-    global columns
+    global columns # noqa: F824
     columns.update(base_columns)
 
 # Initialize columns at module import
