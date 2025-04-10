@@ -95,11 +95,18 @@ output TSV.
 
         :return: Config object.
         """
+        # Instantiate and loaf config or initialize an empty one
         config = Config()
-        try:
-            config.load_config(self.args.config)
-        except Exception as e:
-            sys.exit(f"Error loading config file: {e}")
+        if self.args.config:
+            try:
+                config.load_config(self.args.config)
+            except Exception as e:
+                sys.exit(f"Error loading config file: {e}")
+        else:
+            config.config_data = {}
+            config.initialized = True
+
+        # Handle reference library taxonomy and expected taxonomy
         if self.args.reflib_taxonomy:
             config.set("reflib_taxonomy", self.args.reflib_taxonomy)
         if self.args.exp_taxonomy_type == 'nsr':
@@ -110,6 +117,8 @@ output TSV.
             config.set("exp_taxonomy_type", self.args.exp_taxonomy_type)
         if self.args.log_level:
             config.set("log_level", self.args.log_level)
+
+        # Set the mode for validation
         if self.args.mode == 'structural':
             config.set("validate_structure", True)
             config.set("validate_taxonomy", False)
