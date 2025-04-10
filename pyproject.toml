@@ -24,3 +24,6 @@ write_to = "barcode_validator/_version.py"
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["barcode_validator*"]
+
+[tool.setuptools.package-data]
+"barcode_validator" = ["hmm_files/*.hmm"]
