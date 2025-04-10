@@ -8,7 +8,7 @@ dynamic = ["version"]
 authors = [
     {name = "Rutger Vos", email = "rutger.vos@naturalis.nl"},
 ]
-description = "A python package for validating DNA barcodes as produced by the BGE consortium."
+description = "A python package for structural and taxonomic validation of DNA barcode data."
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
