@@ -67,6 +67,10 @@ output TSV.
         parser.add_argument("--yaml_file",
                             help="Optional YAML file with analysis-level configuration to merge into every result.")
 
+        # Marker type options.
+        parser.add_argument("--marker", choices=["COI-5P"], default="COI-5P",
+                            help="Marker type (default: COI-5P).")
+
         # Taxonomy dump options. The locations are updated the config, which is passed into the system.
         parser.add_argument("--reflib_taxonomy",
                             help="Path to the taxonomy of the reference library, i.e. NCBI taxdump (tar.gz).")
@@ -85,8 +89,7 @@ output TSV.
         # Logging and configuration. The log level is updated in the config, and the config is passed into the system.
         parser.add_argument("--log_level", choices=["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"],
                             help="Set logging verbosity (overrides config log_level).")
-        parser.add_argument("--config", required=True,
-                            help="Path to the configuration YAML file (e.g., config.yml).")
+        parser.add_argument("--config", help="Path to the configuration YAML file (e.g., config.yml).")
         return parser.parse_args()
 
     def load_and_override_config(self) -> Config:
@@ -105,6 +108,9 @@ output TSV.
         else:
             config.config_data = {}
             config.initialized = True
+
+        # Set the marker type
+        config.set("marker", self.args.marker)
 
         # Handle reference library taxonomy and expected taxonomy
         if self.args.reflib_taxonomy:

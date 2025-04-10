@@ -18,13 +18,6 @@ def data_dir():
 
 
 @pytest.fixture
-def config_file(data_dir):
-    """Fixture to provide a test configuration file."""
-    config_path = data_dir / "config_structural.yml"
-    return config_path
-
-
-@pytest.fixture
 def input_fasta(data_dir):
     """Fixture to create a test FASTA file with sequences."""
     fasta_path = data_dir / "structval_early_stop.fasta"
@@ -39,7 +32,7 @@ def bold_excel(data_dir):
 
 
 @pytest.fixture
-def test_cli(config_file, input_fasta, bold_excel):
+def test_cli(input_fasta, bold_excel):
     """Fixture to run the CLI command."""
 
     # Save the original environment
@@ -56,8 +49,8 @@ def test_cli(config_file, input_fasta, bold_excel):
         sys.argv = [
             "barcode_validator",  # Program name
             "--input_file", str(input_fasta),
-            "--config", str(config_file),
             "--mode", "structural",
+            "--marker", "COI-5P",
             "--exp_taxonomy_type", "bold",
             "--exp_taxonomy", str(bold_excel),
             "--output_format", "tsv",
