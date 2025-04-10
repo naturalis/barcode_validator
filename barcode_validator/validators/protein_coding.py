@@ -1,3 +1,4 @@
+import importlib.resources
 from pathlib import Path
 
 from Bio.SeqRecord import SeqRecord
@@ -89,7 +90,11 @@ class ProteinCodingValidator(StructuralValidator):
         :param record: The DNA sequence record to align
         :return: Aligned sequence record or None if alignment fails
         """
-        hmm_file = Path(self.hmm_profile_dir) / Path(f"{self.marker.value}.hmm")
+        if self.hmm_profile_dir:
+            hmm_file = Path(self.hmm_profile_dir) / Path(f"{self.marker.value}.hmm")
+        else:
+            with importlib.resources.path("barcode_validator.hmm_files", f"{self.marker.value}.hmm") as path:
+                hmm_file = path
         if not hmm_file.exists():
             self.logger.error(f"HMM profile not found: {hmm_file}")
             return None
