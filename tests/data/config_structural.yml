@@ -1,10 +1,6 @@
 marker: COI-5P  # Options: COI-5P, matK, rbcL
 hmm_profile_dir: examples/
 
-# Validation modes
-validate_taxonomy: false
-validate_structural: true
-
 # Validation parameters
 min_sequence_length: 500
 max_ambiguities: 6

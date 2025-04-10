@@ -110,6 +110,15 @@ output TSV.
             config.set("exp_taxonomy_type", self.args.exp_taxonomy_type)
         if self.args.log_level:
             config.set("log_level", self.args.log_level)
+        if self.args.mode == 'structural':
+            config.set("validate_structure", True)
+            config.set("validate_taxonomy", False)
+        elif self.args.mode == 'taxonomic':
+            config.set("validate_structure", False)
+            config.set("validate_taxonomy", True)
+        elif self.args.mode == 'both':
+            config.set("validate_structure", True)
+            config.set("validate_taxonomy", True)
         return config
 
     def run(self) -> DNAAnalysisResultSet:
