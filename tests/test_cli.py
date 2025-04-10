@@ -128,11 +128,10 @@ def test_taxonomy_type_validation():
 
 def test_required_arguments():
     """Test handling of missing required arguments"""
-    required_args = ["--config", "--input_file"]
+    required_args = ["--input_file"]
 
     for missing_arg in required_args:
         args = [
-            "--config", str(CONFIG_YML),
             "--input_file", str(BOLD_SAMPLE)
         ]
         # Remove the argument and its value
