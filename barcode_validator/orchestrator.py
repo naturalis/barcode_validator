@@ -13,6 +13,7 @@ from .idservices.factory import IDServiceFactory
 from .validators.factory import StructureValidatorFactory
 from .validators.taxonomic import TaxonomicValidator
 from .constants import Marker, TaxonomicRank, TaxonomicBackbone
+from .criteria import MarkerCriteriaFactory
 
 class ValidationOrchestrator:
     """
@@ -197,6 +198,7 @@ class ValidationOrchestrator:
         if marker_code is not None:
             marker_type = Marker(marker_code)
         result.add_ancillary('marker_code', marker_type.value)
+        result.marker_criteria = MarkerCriteriaFactory.get_criteria(marker_type, self.config)
 
         # Perform validations
         if self.structural_validator:

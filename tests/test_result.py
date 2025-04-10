@@ -2,7 +2,8 @@ import pytest
 from nbitk.Taxon import Taxon
 from nbitk.config import Config
 
-from barcode_validator.constants import TaxonomicRank
+from barcode_validator.constants import TaxonomicRank, Marker
+from barcode_validator.criteria import MarkerCriteriaFactory
 from barcode_validator.dna_analysis_result import DNAAnalysisResult
 
 def test_init():
@@ -36,6 +37,7 @@ def test_length():
     config.config_data = { 'seq_length': 500 }
     config.initialized = True
     res = DNAAnalysisResult('seq1', 'set1', config)
+    res.marker_criteria = MarkerCriteriaFactory.get_criteria(Marker.COI_5P, config)
 
     # test sequence length
     assert res.seq_length is None
@@ -54,6 +56,7 @@ def test_ambiguities():
     config.config_data = { 'ambiguities': 6 }
     config.initialized = True
     res = DNAAnalysisResult('seq1', 'set1', config)
+    res.marker_criteria = MarkerCriteriaFactory.get_criteria(Marker.COI_5P, config)
 
     # test ambiguities
     assert res.ambiguities is None
@@ -72,6 +75,7 @@ def test_stop_codons():
     config.config_data = { 'stop_codons': [] }
     config.initialized = True
     res = DNAAnalysisResult('seq1', 'set1', config)
+    res.marker_criteria = MarkerCriteriaFactory.get_criteria(Marker.COI_5P, config)
 
     # test stop codons
     assert len(res.stop_codons) == 0
@@ -91,6 +95,7 @@ def test_all():
     }
     config.initialized = True
     res = DNAAnalysisResult('seq1', 'set1', config)
+    res.marker_criteria = MarkerCriteriaFactory.get_criteria(Marker.COI_5P, config)
     res.seq_length = 501
     res.ambiguities = 5
     res.stop_codons = []

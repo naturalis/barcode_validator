@@ -1,6 +1,7 @@
 from nbitk.Taxon import Taxon
 from nbitk.config import Config
 from barcode_validator.constants import TaxonomicRank, Marker
+from barcode_validator.criteria import MarkerCriteria
 from typing import List, Optional, Tuple
 import yaml
 import csv
@@ -77,7 +78,7 @@ initialize_columns()
 
 class DNAAnalysisResult:
 
-    def __init__(self, sequence_id: str, dataset: str = None, config: Config = None, group_id: str = None):
+    def __init__(self, sequence_id: str, dataset: str = None, config: Config = None, group_id: str = None, criteria: MarkerCriteria = None):
         """
         Initialize a DNAAnalysisResult object.
         :param sequence_id: The sequence identifier
@@ -95,6 +96,7 @@ class DNAAnalysisResult:
             config.initialized = True
         self.config = config
         self.sequence_id: str = sequence_id
+        self.criteria: MarkerCriteria = criteria
         self.data: dict = {'sequence_id': sequence_id, 'ambig_basecount': None,
                            'ambig_full_basecount': None, 'dataset': dataset, 'error': None,
                            'identification': None, 'identification_method': 'BLAST',
@@ -102,6 +104,25 @@ class DNAAnalysisResult:
                            'nuc_full_basecount': None, 'obs_taxon': [],
                            'species': None, 'stop_codons': [], 'sequence': None,
                             'group_id': group_id, 'ancillary': {}}
+
+    @property
+    def marker_criteria(self) -> Optional[MarkerCriteria]:
+        """
+        Getter for the marker criteria.
+        :return: A MarkerCriteria object
+        """
+        return self.criteria
+
+    @marker_criteria.setter
+    def marker_criteria(self, criteria: MarkerCriteria) -> None:
+        """
+        Setter for the marker criteria.
+        :param criteria: A MarkerCriteria object
+        :return:
+        """
+        if not isinstance(criteria, MarkerCriteria):
+            raise ValueError("criteria must be a MarkerCriteria object")
+        self.criteria = criteria
 
     @property
     def group_id(self) -> Optional[str]:
@@ -379,7 +400,9 @@ class DNAAnalysisResult:
         Check if the sequence length meets the minimum requirement.
         :return: A boolean indicating whether the sequence length is valid
         """
-        return self.seq_length >= int(self.config.get('seq_length')) if self.seq_length is not None else False
+        if self.marker_criteria is None:
+            raise ValueError("Marker criteria is not set")
+        return self.seq_length >= int(self.marker_criteria.min_length) if self.seq_length is not None else False
 
     def check_taxonomy(self) -> bool:
         """
@@ -393,14 +416,18 @@ class DNAAnalysisResult:
         Check if the sequence contains stop codons, i.e. if the list of stop codon locations is empty.
         :return: A boolean indicating whether the sequence is a pseudogene
         """
-        return len(self.stop_codons) <= len(self.config.get('stop_codons'))
+        if self.marker_criteria is None:
+            raise ValueError("Marker criteria is not set")
+        return len(self.stop_codons) <= self.marker_criteria.max_stop_codons
 
     def check_ambiguities(self) -> bool:
         """
         Check if the sequence contains ambiguities, i.e. if the number of ambiguities is zero.
         :return: A boolean indicating whether the sequence contains ambiguities
         """
-        return self.ambiguities <= int(self.config.get('ambiguities'))
+        if self.marker_criteria is None:
+            raise ValueError("Marker criteria is not set")
+        return self.ambiguities <= self.marker_criteria.max_ambiguities
 
     def check_seq_quality(self) -> bool:
         """
