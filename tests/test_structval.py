@@ -18,10 +18,17 @@ def data_dir():
 
 
 @pytest.fixture
-def input_fasta(data_dir):
+def input_fasta_bold(data_dir):
     """Fixture to create a test FASTA file with sequences."""
     fasta_path = data_dir / "structval_early_stop.fasta"
     return fasta_path
+
+
+@pytest.fixture
+def input_tsv_nsr(data_dir):
+    """Fixture to create a test TSV file with sequences."""
+    tsv_path = data_dir / "structval_nsr.tsv"
+    return tsv_path
 
 
 @pytest.fixture
@@ -32,7 +39,14 @@ def bold_excel(data_dir):
 
 
 @pytest.fixture
-def test_cli(input_fasta, bold_excel):
+def nsr_dwca(data_dir):
+    """Fixture to provide a test NSR archive."""
+    nsr_path = data_dir / "nsr-20250207.dwca.zip"
+    return nsr_path
+
+
+@pytest.fixture
+def test_cli_bold(input_fasta_bold, bold_excel):
     """Fixture to run the CLI command."""
 
     # Save the original environment
@@ -48,7 +62,7 @@ def test_cli(input_fasta, bold_excel):
         # Replace sys.argv with our test arguments
         sys.argv = [
             "barcode_validator",  # Program name
-            "--input_file", str(input_fasta),
+            "--input_file", str(input_fasta_bold),
             "--mode", "structural",
             "--marker", "COI-5P",
             "--exp_taxonomy_type", "bold",
@@ -64,8 +78,50 @@ def test_cli(input_fasta, bold_excel):
         sys.argv = original_argv
         os.chdir(original_dir)
 
-def test_structural_validation_cli(test_cli):
-    dars = test_cli.run()
+
+@pytest.fixture
+def test_cli_nsr(input_tsv_nsr, nsr_dwca):
+    """Fixture to run the CLI command with NSR data."""
+
+    # Save the original environment
+    original_argv = sys.argv.copy()
+    original_dir = os.getcwd()
+
+    try:
+
+        # Change to root of the repo
+        script_dir = pathlib.Path(__file__).parent.parent
+        os.chdir(script_dir)
+
+        # Replace sys.argv with our test arguments
+        sys.argv = [
+            "barcode_validator",  # Program name
+            "--input_file", str(input_tsv_nsr),
+            "--mode", "structural",
+            "--marker", "COI-5P",
+            "--exp_taxonomy_type", "nsr",
+            "--exp_taxonomy", str(nsr_dwca),
+            "--output_format", "tsv",
+            "--log_level", "INFO"
+        ]
+        cli = BarcodeValidatorCLI()
+        yield cli
+
+    finally:
+        # Restore the original environment
+        sys.argv = original_argv
+        os.chdir(original_dir)
+
+def test_structural_validation_cli_bold(test_cli_bold):
+    dars = test_cli_bold.run()
+    assert dars is not None, "Validation results should not be None"
+    assert len(dars.results) == 4, "Validation results should have 4 records"
+    assert len(dars.results[0].stop_codons) == 1, "Second record should have 1 early stop"
+    assert dars.results[1].seq_length == 76, "First record should have 1 stop codon"
+    assert dars.results[2].full_ambiguities == 7, "Third record should have 7 ambiguities"
+
+def test_structural_validation_cli_nsr(test_cli_nsr):
+    dars = test_cli_nsr.run()
     assert dars is not None, "Validation results should not be None"
     assert len(dars.results) == 4, "Validation results should have 4 records"
     assert len(dars.results[0].stop_codons) == 1, "Second record should have 1 early stop"
