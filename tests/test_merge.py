@@ -2,7 +2,7 @@ import pytest
 import sys
 import os
 
-from barcode_validator.result import DNAAnalysisResult, DNAAnalysisResultSet
+from barcode_validator.dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet
 
 @pytest.fixture
 def result_set():

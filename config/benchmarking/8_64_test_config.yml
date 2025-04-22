@@ -1,11 +1,3 @@
-# Detauls of the repository. This is where the daemon will find local files in pull requests and how it will compose
-# the URLs to the various pull request service endpoints. For the endpoints we are quite intimately tied to GitHub
-# and the GitHub API (e.g. in the structure of the JSON that is returned), so this is not very flexible.
-repo_location: ./
-repo_owner: naturalis
-repo_name: barcode_validator
-pr_db_file: ../examples/pr_status.db
-
 # Alignment configuration. This needs the location of an HMM file for the focal marker. This is used in conjunction with
 # `hmmalign` from the HMMER package to align the sequences to the HMM. The assumption is that the executable is in the
 # PATH because it is installed in the conda environment as a dependency of the barcode_validator package.
