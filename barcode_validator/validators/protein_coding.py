@@ -57,6 +57,8 @@ class ProteinCodingValidator(StructuralValidator):
         # if we aren't doing taxonomic validation
         if result.exp_taxon is None:
             self.taxonomy_resolver.enrich_result(record, result)
+            if result.error:
+                return
         trans_table = int(self.get_translation_table(self.marker, result.exp_taxon))
 
         # Align sequence to HMM
