@@ -227,7 +227,7 @@ class ValidationOrchestrator:
 
         # Triage the results
         if triage:
-            results = results.triage()
+            results = results.triage(mode = self.config.get('mode'))
 
         # Write the results
         print(results.to_string(output_format))
