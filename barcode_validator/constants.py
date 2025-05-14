@@ -23,3 +23,8 @@ class Marker(Enum):
     RBCL = "rbcL"
     ITS = "ITS"
     ITS2 = "ITS2"
+
+class ValidationMode(Enum):
+    STRUCTURAL = "structural"
+    TAXONOMIC = "taxonomic"
+    BOTH = "both"
