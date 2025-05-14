@@ -1,6 +1,6 @@
 from nbitk.Taxon import Taxon
 from nbitk.config import Config
-from barcode_validator.constants import TaxonomicRank, Marker
+from barcode_validator.constants import TaxonomicRank, Marker, ValidationMode
 from barcode_validator.criteria import MarkerCriteria
 from typing import List, Optional, Tuple
 import yaml
@@ -434,14 +434,14 @@ class DNAAnalysisResult:
         Check if the sequence passes the quality checks for ambiguities and early stop codons
         :return: A boolean indicating whether the sequence passes all checks
         """
-        return self.check_pseudogene() and self.check_ambiguities()
+        return self.check_pseudogene() and self.check_ambiguities() and self.check_length()
 
     def passes_all_checks(self) -> bool:
         """
         Check if the sequence passes all quality checks.
         :return: A boolean indicating whether the sequence passes all checks
         """
-        return self.check_length() and self.check_taxonomy() and self.check_seq_quality()
+        return self.check_taxonomy() and self.check_seq_quality()
 
     def get_values(self) -> list:
         """
@@ -577,10 +577,16 @@ class DNAAnalysisResultSet:
                         if key != 'Process ID':  # Avoid duplicating the process_id
                             result.add_ancillary(key, value)
 
-    def triage(self) -> 'DNAAnalysisResultSet':
+    def triage(self, mode = ValidationMode) -> 'DNAAnalysisResultSet':
         """
         Perform triage on the result set.
         :return: A new DNAAnalysisResultSet object containing the triaged results
         """
-        triaged_results = [result for result in self.results if result.passes_all_checks()]
+        if mode == ValidationMode.STRUCTURAL:
+            triaged_results = [result for result in self.results if result.check_seq_quality()]
+        elif mode == ValidationMode.TAXONOMIC:
+            triaged_results = [result for result in self.results if result.check_taxonomy()]
+        else:
+            triaged_results = [result for result in self.results if result.passes_all_checks()]
+
         return DNAAnalysisResultSet(triaged_results, self.config)
