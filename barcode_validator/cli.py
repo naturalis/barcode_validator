@@ -6,6 +6,7 @@ from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 from .orchestrator import ValidationOrchestrator
 from .dna_analysis_result import DNAAnalysisResultSet
+from .constants import ValidationMode
 
 
 class BarcodeValidatorCLI:
@@ -134,6 +135,7 @@ output TSV.
         elif self.args.mode == 'both':
             config.set("validate_structure", True)
             config.set("validate_taxonomy", True)
+        config.set("mode", ValidationMode(self.args.mode))
         return config
 
     def run(self) -> DNAAnalysisResultSet:
