@@ -1,0 +1,577 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+7	35	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Brachodidae	BLAST	family	642	1455	Endromidae,Erebidae,Nymphalidae,Pyralidae,Crambidae	BBIOP3326-24_r_1_s_50	Brachodes laeta	0
+4	9	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Brachodidae	BLAST	family	642	1371	Erebidae,Pyralidae,Crambidae,Geometridae	BBIOP3326-24_r_1_s_100	Brachodes laeta	0
+6	7	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Brachodidae	BLAST	family	642	1419	Limacodidae,Erebidae,Pyralidae,Crambidae	BBIOP3326-24_r_1.3_s_50	Brachodes laeta	0
+6	10	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Brachodidae	BLAST	family	642	1371	Erebidae,Pyralidae,Crambidae,Geometridae	BBIOP3326-24_r_1.3_s_100	Brachodes laeta	0
+2	8	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Brachodidae	BLAST	family	600	1347	Limacodidae,Erebidae,Pyralidae,Crambidae	BBIOP3326-24_r_1.5_s_50	Brachodes laeta	0
+2	2	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Brachodidae	BLAST	family	600	1299	Erebidae,Nymphalidae,Pyralidae,Crambidae	BBIOP3326-24_r_1.5_s_100	Brachodes laeta	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3327-24_r_1_s_50	Neocochylis millierana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3327-24_r_1_s_100	Neocochylis millierana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3327-24_r_1.3_s_50	Neocochylis millierana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3327-24_r_1.3_s_100	Neocochylis millierana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3327-24_r_1.5_s_50	Neocochylis millierana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3327-24_r_1.5_s_100	Neocochylis millierana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3328-24_r_1_s_50	Pediasia hispanica	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3328-24_r_1_s_100	Pediasia hispanica	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3328-24_r_1.3_s_50	Pediasia hispanica	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3328-24_r_1.3_s_100	Pediasia hispanica	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3328-24_r_1.5_s_50	Pediasia hispanica	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3328-24_r_1.5_s_100	Pediasia hispanica	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Oecophoridae	BLAST	family	657	1530	Depressariidae,Noctuidae,Erebidae,Pyralidae,Crambidae,Geometridae,Hyblaeidae	BBIOP3329-24_r_1_s_50	Aplota palpella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Oecophoridae	BLAST	family	657	1530	Depressariidae,Noctuidae,Erebidae,Pyralidae,Crambidae,Geometridae,Hyblaeidae	BBIOP3329-24_r_1_s_100	Aplota palpella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Oecophoridae	BLAST	family	657	1530	Depressariidae,Noctuidae,Erebidae,Pyralidae,Crambidae,Geometridae,Hyblaeidae	BBIOP3329-24_r_1.3_s_50	Aplota palpella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Oecophoridae	BLAST	family	657	1530	Depressariidae,Noctuidae,Erebidae,Pyralidae,Crambidae,Geometridae,Hyblaeidae	BBIOP3329-24_r_1.3_s_100	Aplota palpella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Oecophoridae	BLAST	family	657	1530	Depressariidae,Noctuidae,Erebidae,Pyralidae,Crambidae,Geometridae,Hyblaeidae	BBIOP3329-24_r_1.5_s_50	Aplota palpella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Oecophoridae	BLAST	family	657	1530	Depressariidae,Noctuidae,Erebidae,Pyralidae,Crambidae,Geometridae,Hyblaeidae	BBIOP3329-24_r_1.5_s_100	Aplota palpella	0
+0	6	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1527	Tortricidae,Noctuidae,Nolidae,Geometridae	BBIOP3330-24_r_1_s_50	Agdistis manicata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1527	Depressariidae,Noctuidae,Nolidae,Papilionidae,Geometridae	BBIOP3330-24_r_1_s_100	Agdistis manicata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1527	Depressariidae,Noctuidae,Nolidae,Papilionidae,Geometridae	BBIOP3330-24_r_1.3_s_50	Agdistis manicata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1527	Depressariidae,Noctuidae,Nolidae,Papilionidae,Geometridae	BBIOP3330-24_r_1.3_s_100	Agdistis manicata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1527	Depressariidae,Noctuidae,Nolidae,Papilionidae,Geometridae	BBIOP3330-24_r_1.5_s_50	Agdistis manicata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1527	Depressariidae,Noctuidae,Nolidae,Papilionidae,Geometridae	BBIOP3330-24_r_1.5_s_100	Agdistis manicata	0
+50	78	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	656	1530	Riodinidae	BBIOP3331-24_r_1_s_50	Agdistis manicata	0
+34	46	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	635	1506	Riodinidae	BBIOP3331-24_r_1_s_100	Agdistis manicata	0
+23	24	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1530	Noctuidae,Erebidae,Papilionidae	BBIOP3331-24_r_1.3_s_50	Agdistis manicata	0
+23	23	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	636	1506	Noctuidae,Erebidae,Papilionidae,Nymphalidae,Geometridae	BBIOP3331-24_r_1.3_s_100	Agdistis manicata	0
+1	1	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	627	1437	Papilionidae,Lycaenidae,Nymphalidae,Riodinidae,Geometridae	BBIOP3331-24_r_1.5_s_50	Agdistis manicata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	624	1407	Papilionidae,Nymphalidae,Riodinidae	BBIOP3331-24_r_1.5_s_100	Agdistis manicata	0
+2	32	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	656	1527	Tettigoniidae,Acrididae,Ninidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BBIOP3332-24_r_1_s_50	Agdistis manicata	0
+2	16	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	656	1527	Tettigoniidae,Acrididae,Ninidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BBIOP3332-24_r_1_s_100	Agdistis manicata	0
+4	13	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	656	1527	Tettigoniidae,Acrididae,Reduviidae,Vespidae	BBIOP3332-24_r_1.3_s_50	Agdistis manicata	0
+1	5	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	656	1527	Tettigoniidae,Acrididae,Reduviidae,Ulidiidae,Vespidae	BBIOP3332-24_r_1.3_s_100	Agdistis manicata	0
+8	12	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	656	1527	Reduviidae,Staphylinidae,Chrysomelidae,Nymphalidae	BBIOP3332-24_r_1.5_s_50	Agdistis manicata	0
+7	11	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	656	1527	Reduviidae,Staphylinidae,Chrysomelidae,Nymphalidae	BBIOP3332-24_r_1.5_s_100	Agdistis manicata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1533	Attevidae,Sphingidae,Noctuidae,Erebidae,Lycaenidae,Geometridae	BBIOP3333-24_r_1_s_50	Tabulaephorus punctinervis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1527	Attevidae,Sphingidae,Noctuidae,Erebidae,Lycaenidae,Geometridae	BBIOP3333-24_r_1_s_100	Tabulaephorus punctinervis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1527	Attevidae,Sphingidae,Noctuidae,Erebidae,Lycaenidae,Geometridae	BBIOP3333-24_r_1.3_s_50	Tabulaephorus punctinervis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1527	Attevidae,Sphingidae,Noctuidae,Erebidae,Lycaenidae,Geometridae	BBIOP3333-24_r_1.3_s_100	Tabulaephorus punctinervis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1512	Attevidae,Noctuidae,Erebidae,Geometridae	BBIOP3333-24_r_1.5_s_50	Tabulaephorus punctinervis	0
+0	3	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1512	Attevidae,Noctuidae,Geometridae	BBIOP3333-24_r_1.5_s_100	Tabulaephorus punctinervis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1533	Attevidae,Sphingidae,Noctuidae,Erebidae,Geometridae	BBIOP3334-24_r_1_s_50	Tabulaephorus punctinervis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1527	Attevidae,Sphingidae,Noctuidae,Erebidae,Lycaenidae,Geometridae	BBIOP3334-24_r_1_s_100	Tabulaephorus punctinervis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1527	Attevidae,Sphingidae,Noctuidae,Erebidae,Lycaenidae,Geometridae	BBIOP3334-24_r_1.3_s_50	Tabulaephorus punctinervis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1527	Attevidae,Sphingidae,Noctuidae,Erebidae,Lycaenidae,Geometridae	BBIOP3334-24_r_1.3_s_100	Tabulaephorus punctinervis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1527	Attevidae,Sphingidae,Noctuidae,Erebidae,Lycaenidae,Geometridae	BBIOP3334-24_r_1.5_s_50	Tabulaephorus punctinervis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1527	Attevidae,Sphingidae,Noctuidae,Erebidae,Lycaenidae,Geometridae	BBIOP3334-24_r_1.5_s_100	Tabulaephorus punctinervis	0
+4	34	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1527	Tortricidae,Limacodidae,Erebidae,Pyralidae,Crambidae,Geometridae	BBIOP3335-24_r_1_s_50	Tabulaephorus punctinervis	0
+2	12	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1467	Tortricidae,Limacodidae,Erebidae,Pyralidae,Crambidae,Geometridae	BBIOP3335-24_r_1_s_100	Tabulaephorus punctinervis	0
+0	2	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1503	Limacodidae,Noctuidae,Erebidae,Pyralidae,Crambidae,Geometridae	BBIOP3335-24_r_1.3_s_50	Tabulaephorus punctinervis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1467	Limacodidae,Noctuidae,Erebidae,Pyralidae,Crambidae,Geometridae	BBIOP3335-24_r_1.3_s_100	Tabulaephorus punctinervis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1380	Limacodidae,Sphingidae,Noctuidae,Erebidae,Geometridae	BBIOP3335-24_r_1.5_s_50	Tabulaephorus punctinervis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1377	Depressariidae,Limacodidae,Sphingidae,Noctuidae,Erebidae,Geometridae	BBIOP3335-24_r_1.5_s_100	Tabulaephorus punctinervis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1536	Nolidae,Papilionidae,Hesperiidae,Geometridae,Pterophoridae	BBIOP3336-24_r_1_s_50	Stenoptilia gallobritannidactyla	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1530	Nolidae,Papilionidae,Hesperiidae,Geometridae,Pterophoridae	BBIOP3336-24_r_1_s_100	Stenoptilia gallobritannidactyla	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1536	Nolidae,Papilionidae,Hesperiidae,Geometridae,Pterophoridae	BBIOP3336-24_r_1.3_s_50	Stenoptilia gallobritannidactyla	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1530	Nolidae,Papilionidae,Hesperiidae,Geometridae,Pterophoridae	BBIOP3336-24_r_1.3_s_100	Stenoptilia gallobritannidactyla	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1530	Nolidae,Papilionidae,Hesperiidae,Geometridae,Pterophoridae	BBIOP3336-24_r_1.5_s_50	Stenoptilia gallobritannidactyla	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1530	Nolidae,Papilionidae,Hesperiidae,Geometridae,Pterophoridae	BBIOP3336-24_r_1.5_s_100	Stenoptilia gallobritannidactyla	0
+21	24	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	656	1530	Erebidae,Geometridae,Pterophoridae	BBIOP3337-24_r_1_s_50	Stenoptilia gallobritannidactyla	0
+17	18	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1530	Nolidae,Geometridae,Pterophoridae	BBIOP3337-24_r_1_s_100	Stenoptilia gallobritannidactyla	0
+0	1	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1530	Nolidae,Papilionidae,Hesperiidae,Geometridae,Pterophoridae	BBIOP3337-24_r_1.3_s_50	Stenoptilia gallobritannidactyla	0
+0	1	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1527	Nolidae,Papilionidae,Hesperiidae,Geometridae,Pterophoridae	BBIOP3337-24_r_1.3_s_100	Stenoptilia gallobritannidactyla	0
+0	1	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1527	Nolidae,Papilionidae,Hesperiidae,Geometridae,Pterophoridae	BBIOP3337-24_r_1.5_s_50	Stenoptilia gallobritannidactyla	0
+0	1	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1527	Nolidae,Papilionidae,Hesperiidae,Geometridae,Pterophoridae	BBIOP3337-24_r_1.5_s_100	Stenoptilia gallobritannidactyla	0
+1	1	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1530	Papilionidae,Hesperiidae,Pterophoridae	BBIOP3338-24_r_1_s_50	Stenoptilia eborinodactyla	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1530	Papilionidae,Hesperiidae,Pterophoridae	BBIOP3338-24_r_1_s_100	Stenoptilia eborinodactyla	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1530	Papilionidae,Hesperiidae,Pterophoridae	BBIOP3338-24_r_1.3_s_50	Stenoptilia eborinodactyla	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1530	Papilionidae,Hesperiidae,Pterophoridae	BBIOP3338-24_r_1.3_s_100	Stenoptilia eborinodactyla	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1530	Papilionidae,Hesperiidae,Pterophoridae	BBIOP3338-24_r_1.5_s_50	Stenoptilia eborinodactyla	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1530	Papilionidae,Hesperiidae,Pterophoridae	BBIOP3338-24_r_1.5_s_100	Stenoptilia eborinodactyla	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1536	Papilionidae,Nymphalidae,Pyralidae,Hesperiidae,Pterophoridae	BBIOP3339-24_r_1_s_50	Stenoptilia eborinodactyla	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1530	Papilionidae,Nymphalidae,Pyralidae,Hesperiidae,Pterophoridae	BBIOP3339-24_r_1_s_100	Stenoptilia eborinodactyla	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1536	Papilionidae,Nymphalidae,Pyralidae,Hesperiidae,Pterophoridae	BBIOP3339-24_r_1.3_s_50	Stenoptilia eborinodactyla	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1530	Papilionidae,Nymphalidae,Pyralidae,Hesperiidae,Pterophoridae	BBIOP3339-24_r_1.3_s_100	Stenoptilia eborinodactyla	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1536	Papilionidae,Nymphalidae,Pyralidae,Hesperiidae,Pterophoridae	BBIOP3339-24_r_1.5_s_50	Stenoptilia eborinodactyla	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pterophoridae	BLAST	family	657	1530	Papilionidae,Nymphalidae,Pyralidae,Hesperiidae,Pterophoridae	BBIOP3339-24_r_1.5_s_100	Stenoptilia eborinodactyla	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3340-24_r_1_s_50	Patania crocealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3340-24_r_1_s_100	Patania crocealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3340-24_r_1.3_s_50	Patania crocealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3340-24_r_1.3_s_100	Patania crocealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3340-24_r_1.5_s_50	Patania crocealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3340-24_r_1.5_s_100	Patania crocealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3341-24_r_1_s_50	Patania crocealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3341-24_r_1_s_100	Patania crocealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3341-24_r_1.3_s_50	Patania crocealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3341-24_r_1.3_s_100	Patania crocealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3341-24_r_1.5_s_50	Patania crocealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3341-24_r_1.5_s_100	Patania crocealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3342-24_r_1_s_50	Dolicharthria aetnaealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3342-24_r_1_s_100	Dolicharthria aetnaealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3342-24_r_1.3_s_50	Dolicharthria aetnaealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3342-24_r_1.3_s_100	Dolicharthria aetnaealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3342-24_r_1.5_s_50	Dolicharthria aetnaealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3342-24_r_1.5_s_100	Dolicharthria aetnaealis	0
+12	40	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3343-24_r_1_s_50	Dolicharthria aetnaealis	0
+14	42	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3343-24_r_1_s_100	Dolicharthria aetnaealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3343-24_r_1.3_s_50	Dolicharthria aetnaealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3343-24_r_1.3_s_100	Dolicharthria aetnaealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3343-24_r_1.5_s_50	Dolicharthria aetnaealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3343-24_r_1.5_s_100	Dolicharthria aetnaealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3344-24_r_1_s_50	Dolicharthria aetnaealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3344-24_r_1_s_100	Dolicharthria aetnaealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3344-24_r_1.3_s_50	Dolicharthria aetnaealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3344-24_r_1.3_s_100	Dolicharthria aetnaealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3344-24_r_1.5_s_50	Dolicharthria aetnaealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3344-24_r_1.5_s_100	Dolicharthria aetnaealis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	656	1530	Crambidae	BBIOP3345-24_r_1_s_50	Evergestis marocana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	656	1530	Crambidae	BBIOP3345-24_r_1_s_100	Evergestis marocana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	656	1530	Crambidae	BBIOP3345-24_r_1.3_s_50	Evergestis marocana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	656	1530	Crambidae	BBIOP3345-24_r_1.3_s_100	Evergestis marocana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	656	1530	Crambidae	BBIOP3345-24_r_1.5_s_50	Evergestis marocana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	656	1530	Crambidae	BBIOP3345-24_r_1.5_s_100	Evergestis marocana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3346-24_r_1_s_50	Evergestis marocana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3346-24_r_1_s_100	Evergestis marocana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3346-24_r_1.3_s_50	Evergestis marocana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3346-24_r_1.3_s_100	Evergestis marocana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3346-24_r_1.5_s_50	Evergestis marocana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3346-24_r_1.5_s_100	Evergestis marocana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3347-24_r_1_s_50	Evergestis marocana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3347-24_r_1_s_100	Evergestis marocana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3347-24_r_1.3_s_50	Evergestis marocana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3347-24_r_1.3_s_100	Evergestis marocana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3347-24_r_1.5_s_50	Evergestis marocana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3347-24_r_1.5_s_100	Evergestis marocana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3348-24_r_1_s_50	Metasia cuencalis bourgoniae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3348-24_r_1_s_100	Metasia cuencalis bourgoniae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3348-24_r_1.3_s_50	Metasia cuencalis bourgoniae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3348-24_r_1.3_s_100	Metasia cuencalis bourgoniae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3348-24_r_1.5_s_50	Metasia cuencalis bourgoniae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3348-24_r_1.5_s_100	Metasia cuencalis bourgoniae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3349-24_r_1_s_50	Metasia cuencalis cuencalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3349-24_r_1_s_100	Metasia cuencalis cuencalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3349-24_r_1.3_s_50	Metasia cuencalis cuencalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3349-24_r_1.3_s_100	Metasia cuencalis cuencalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3349-24_r_1.5_s_50	Metasia cuencalis cuencalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3349-24_r_1.5_s_100	Metasia cuencalis cuencalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3350-24_r_1_s_50	Metasia cuencalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3350-24_r_1_s_100	Metasia cuencalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3350-24_r_1.3_s_50	Metasia cuencalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3350-24_r_1.3_s_100	Metasia cuencalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3350-24_r_1.5_s_50	Metasia cuencalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3350-24_r_1.5_s_100	Metasia cuencalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3351-24_r_1_s_50	Metasia cuencalis goundafalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3351-24_r_1_s_100	Metasia cuencalis goundafalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3351-24_r_1.3_s_50	Metasia cuencalis goundafalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3351-24_r_1.3_s_100	Metasia cuencalis goundafalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3351-24_r_1.5_s_50	Metasia cuencalis goundafalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1533	Crambidae	BBIOP3351-24_r_1.5_s_100	Metasia cuencalis goundafalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3352-24_r_1_s_50	Pyrausta neglectalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3352-24_r_1_s_100	Pyrausta neglectalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3352-24_r_1.3_s_50	Pyrausta neglectalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3352-24_r_1.3_s_100	Pyrausta neglectalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3352-24_r_1.5_s_50	Pyrausta neglectalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3352-24_r_1.5_s_100	Pyrausta neglectalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3353-24_r_1_s_50	Pyrausta neglectalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3353-24_r_1_s_100	Pyrausta neglectalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3353-24_r_1.3_s_50	Pyrausta neglectalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3353-24_r_1.3_s_100	Pyrausta neglectalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3353-24_r_1.5_s_50	Pyrausta neglectalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3353-24_r_1.5_s_100	Pyrausta neglectalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3354-24_r_1_s_50	Pyrausta neglectalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3354-24_r_1_s_100	Pyrausta neglectalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3354-24_r_1.3_s_50	Pyrausta neglectalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3354-24_r_1.3_s_100	Pyrausta neglectalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3354-24_r_1.5_s_50	Pyrausta neglectalis	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1530	Crambidae	BBIOP3354-24_r_1.5_s_100	Pyrausta neglectalis	0
+3	3	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	543	1413		BBIOP3355-24_r_1_s_50	Ortaliella perspersata	0
+2	2	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	543	1353		BBIOP3355-24_r_1_s_100	Ortaliella perspersata	0
+2	2	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	563	1152	Brahmaeidae,Noctuidae,Erebidae,Geometridae	BBIOP3355-24_r_1.3_s_50	Ortaliella perspersata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	518	1020	Brahmaeidae,Noctuidae,Erebidae,Geometridae	BBIOP3355-24_r_1.3_s_100	Ortaliella perspersata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	174	576	Brahmaeidae,Noctuidae,Erebidae,Geometridae	BBIOP3355-24_r_1.5_s_50	Ortaliella perspersata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	175	411	Brahmaeidae,Noctuidae,Erebidae,Geometridae	BBIOP3355-24_r_1.5_s_100	Ortaliella perspersata	0
+11	20	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	642	1425		BBIOP3356-24_r_1_s_50	Ortaliella perspersata	0
+5	14	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	589	1293		BBIOP3356-24_r_1_s_100	Ortaliella perspersata	0
+6	12	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	611	1140	Cleridae,Chrysomelidae,Geometridae	BBIOP3356-24_r_1.3_s_50	Ortaliella perspersata	0
+1	5	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	455	921	Cleridae,Chrysomelidae,Noctuidae,Nolidae,Geometridae	BBIOP3356-24_r_1.3_s_100	Ortaliella perspersata	0
+0	2	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	538	1026	Phiditiidae,Papilionidae,Crambidae,Geometridae	BBIOP3356-24_r_1.5_s_50	Ortaliella perspersata	0
+0	2	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	214	684	Notodontidae,Crambidae,Hesperiidae,Geometridae	BBIOP3356-24_r_1.5_s_100	Ortaliella perspersata	0
+9	35	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	654	1503	Geometridae	BBIOP3357-24_r_1_s_50	Ortaliella perspersata	0
+3	17	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	654	1503	Geometridae	BBIOP3357-24_r_1_s_100	Ortaliella perspersata	0
+1	7	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	656	1503	Geometridae	BBIOP3357-24_r_1.3_s_50	Ortaliella perspersata	0
+0	5	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	656	1503	Geometridae	BBIOP3357-24_r_1.3_s_100	Ortaliella perspersata	0
+2	5	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	656	1485	Geometridae	BBIOP3357-24_r_1.5_s_50	Ortaliella perspersata	0
+2	6	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	656	1422	Nolidae,Geometridae	BBIOP3357-24_r_1.5_s_100	Ortaliella perspersata	0
+10	32	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	654	1530	Geometridae	BBIOP3358-24_r_1_s_50	Eumannia oranaria	0
+10	31	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	654	1482	Geometridae	BBIOP3358-24_r_1_s_100	Eumannia oranaria	0
+11	30	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	654	1515	Geometridae	BBIOP3358-24_r_1.3_s_50	Eumannia oranaria	0
+9	30	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	656	1431	Pieridae,Geometridae	BBIOP3358-24_r_1.3_s_100	Eumannia oranaria	0
+0	1	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	483	1179	Geometridae	BBIOP3358-24_r_1.5_s_50	Eumannia oranaria	0
+0	1	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	485	1086	Geometridae	BBIOP3358-24_r_1.5_s_100	Eumannia oranaria	0
+59	98	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1473	Scarabaeidae,Psychodidae,Calliphoridae,Tachinidae	BBIOP3359-24_r_1_s_50	Eumannia oranaria	0
+59	95	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1425	Scarabaeidae,Psychodidae,Calliphoridae,Tachinidae	BBIOP3359-24_r_1_s_100	Eumannia oranaria	0
+41	44	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1215	Chrysomelidae,Muscidae,Calliphoridae,Tachinidae,Corydalidae	BBIOP3359-24_r_1.3_s_50	Eumannia oranaria	0
+40	43	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1167	Scarabaeidae,Chrysomelidae,Psychodidae,Muscidae,Calliphoridae,Tachinidae,Corydalidae	BBIOP3359-24_r_1.3_s_100	Eumannia oranaria	0
+31	34	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1068	Drosophilidae,Muscidae,Anthomyiidae,Calliphoridae	BBIOP3359-24_r_1.5_s_50	Eumannia oranaria	0
+30	33	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	987	Drosophilidae,Muscidae,Anthomyiidae,Calliphoridae	BBIOP3359-24_r_1.5_s_100	Eumannia oranaria	0
+0	13	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	288	1039	Geometridae	BBIOP3360-24_r_1_s_50	Eumannia oranaria	0
+0	13	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	285	946	Geometridae	BBIOP3360-24_r_1_s_100	Eumannia oranaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	280	603	Geometridae	BBIOP3360-24_r_1.3_s_50	Eumannia oranaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	280	534	Geometridae	BBIOP3360-24_r_1.3_s_100	Eumannia oranaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	114	372	Geometridae	BBIOP3360-24_r_1.5_s_50	Eumannia oranaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	114	342	Geometridae	BBIOP3360-24_r_1.5_s_100	Eumannia oranaria	0
+4	24	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	656	1533	Depressariidae,Nymphalidae,Geometridae	BBIOP3361-24_r_1_s_50	Brachyglossina exilaria	0
+2	16	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Limacodidae,Geometridae	BBIOP3361-24_r_1_s_100	Brachyglossina exilaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3361-24_r_1.3_s_50	Brachyglossina exilaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3361-24_r_1.3_s_100	Brachyglossina exilaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3361-24_r_1.5_s_50	Brachyglossina exilaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3361-24_r_1.5_s_100	Brachyglossina exilaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3362-24_r_1_s_50	Brachyglossina exilaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3362-24_r_1_s_100	Brachyglossina exilaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3362-24_r_1.3_s_50	Brachyglossina exilaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3362-24_r_1.3_s_100	Brachyglossina exilaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3362-24_r_1.5_s_50	Brachyglossina exilaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3362-24_r_1.5_s_100	Brachyglossina exilaria	0
+2	12	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3363-24_r_1_s_50	Brachyglossina exilaria	0
+2	12	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3363-24_r_1_s_100	Brachyglossina exilaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3363-24_r_1.3_s_50	Brachyglossina exilaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3363-24_r_1.3_s_100	Brachyglossina exilaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3363-24_r_1.5_s_50	Brachyglossina exilaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3363-24_r_1.5_s_100	Brachyglossina exilaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	44	93	Geometridae	BBIOP3364-24_r_1_s_50	Brachyglossina manicaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	44	93	Geometridae	BBIOP3364-24_r_1_s_100	Brachyglossina manicaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	44	93	Geometridae	BBIOP3364-24_r_1.3_s_50	Brachyglossina manicaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	44	93	Geometridae	BBIOP3364-24_r_1.3_s_100	Brachyglossina manicaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	44	93	Geometridae	BBIOP3364-24_r_1.5_s_50	Brachyglossina manicaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	44	93	Geometridae	BBIOP3364-24_r_1.5_s_100	Brachyglossina manicaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1536	Geometridae	BBIOP3365-24_r_1_s_50	Brachyglossina manicaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3365-24_r_1_s_100	Brachyglossina manicaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3365-24_r_1.3_s_50	Brachyglossina manicaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3365-24_r_1.3_s_100	Brachyglossina manicaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3365-24_r_1.5_s_50	Brachyglossina manicaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3365-24_r_1.5_s_100	Brachyglossina manicaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3366-24_r_1_s_50	Idaea lusohispanica	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3366-24_r_1_s_100	Idaea lusohispanica	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3366-24_r_1.3_s_50	Idaea lusohispanica	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3366-24_r_1.3_s_100	Idaea lusohispanica	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3366-24_r_1.5_s_50	Idaea lusohispanica	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3366-24_r_1.5_s_100	Idaea lusohispanica	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3367-24_r_1_s_50	Idaea lusohispanica	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3367-24_r_1_s_100	Idaea lusohispanica	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3367-24_r_1.3_s_50	Idaea lusohispanica	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3367-24_r_1.3_s_100	Idaea lusohispanica	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3367-24_r_1.5_s_50	Idaea lusohispanica	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3367-24_r_1.5_s_100	Idaea lusohispanica	0
+22	41	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	654	1497	Tortricidae,Geometridae	BBIOP3368-24_r_1_s_50	Perconia baeticaria	0
+28	41	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	654	1404	Oecophoridae,Geometridae	BBIOP3368-24_r_1_s_100	Perconia baeticaria	0
+6	19	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	651	1275	Sphingidae,Noctuidae,Geometridae	BBIOP3368-24_r_1.3_s_50	Perconia baeticaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	617	1140	Sphingidae,Noctuidae,Geometridae	BBIOP3368-24_r_1.3_s_100	Perconia baeticaria	0
+6	6	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	581	909	Noctuidae,Geometridae	BBIOP3368-24_r_1.5_s_50	Perconia baeticaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	494	759	Geometridae	BBIOP3368-24_r_1.5_s_100	Perconia baeticaria	0
+25	75	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	655	1503	Geometridae	BBIOP3369-24_r_1_s_50	Perconia baeticaria	0
+12	55	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	654	1479	Geometridae	BBIOP3369-24_r_1_s_100	Perconia baeticaria	0
+6	15	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1503	Geometridae	BBIOP3369-24_r_1.3_s_50	Perconia baeticaria	0
+7	15	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1479	Geometridae	BBIOP3369-24_r_1.3_s_100	Perconia baeticaria	0
+3	3	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1503	Geometridae	BBIOP3369-24_r_1.5_s_50	Perconia baeticaria	0
+4	4	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1473	Geometridae	BBIOP3369-24_r_1.5_s_100	Perconia baeticaria	0
+23	81	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	656	1503	Geometridae	BBIOP3370-24_r_1_s_50	Perconia baeticaria	0
+16	73	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	656	1503	Geometridae	BBIOP3370-24_r_1_s_100	Perconia baeticaria	0
+5	5	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1503	Geometridae	BBIOP3370-24_r_1.3_s_50	Perconia baeticaria	0
+11	11	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1503	Geometridae	BBIOP3370-24_r_1.3_s_100	Perconia baeticaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1503	Geometridae	BBIOP3370-24_r_1.5_s_50	Perconia baeticaria	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1503	Geometridae	BBIOP3370-24_r_1.5_s_100	Perconia baeticaria	0
+0	3	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Noctuidae,Geometridae	BBIOP3371-24_r_1_s_50	Afriberina salemae	0
+0	5	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Sphingidae,Noctuidae,Erebidae,Geometridae	BBIOP3371-24_r_1_s_100	Afriberina salemae	0
+0	4	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Noctuidae,Geometridae	BBIOP3371-24_r_1.3_s_50	Afriberina salemae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Sphingidae,Noctuidae,Erebidae,Geometridae	BBIOP3371-24_r_1.3_s_100	Afriberina salemae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3371-24_r_1.5_s_50	Afriberina salemae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3371-24_r_1.5_s_100	Afriberina salemae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3372-24_r_1_s_50	Afriberina salemae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3372-24_r_1_s_100	Afriberina salemae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3372-24_r_1.3_s_50	Afriberina salemae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3372-24_r_1.3_s_100	Afriberina salemae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3372-24_r_1.5_s_50	Afriberina salemae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3372-24_r_1.5_s_100	Afriberina salemae	0
+31	62	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	653	1530	Geometridae	BBIOP3373-24_r_1_s_50	Afriberina salemae	0
+23	51	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	653	1530	Geometridae	BBIOP3373-24_r_1_s_100	Afriberina salemae	0
+12	14	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	656	1533	Geometridae	BBIOP3373-24_r_1.3_s_50	Afriberina salemae	0
+11	17	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	656	1533	Geometridae	BBIOP3373-24_r_1.3_s_100	Afriberina salemae	0
+1	1	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Noctuidae,Geometridae	BBIOP3373-24_r_1.5_s_50	Afriberina salemae	0
+1	1	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Noctuidae,Geometridae	BBIOP3373-24_r_1.5_s_100	Afriberina salemae	0
+9	12	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Eriocottidae	BLAST	family	657	1536	Syrphidae,Tortricidae,Limacodidae,Lycaenidae,Nymphalidae	BBIOP3374-24_r_1_s_50	Eriocottis paradoxella	0
+16	17	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Eriocottidae	BLAST	family	657	1536	Gelechiidae,Nymphalidae,Crambidae	BBIOP3374-24_r_1_s_100	Eriocottis paradoxella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Eriocottidae	BLAST	family	657	1536	Oecophoridae,Sphingidae,Noctuidae,Papilionidae,Pyralidae,Crambidae,Geometridae	BBIOP3374-24_r_1.3_s_50	Eriocottis paradoxella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Eriocottidae	BLAST	family	657	1536	Oecophoridae,Noctuidae,Papilionidae,Pyralidae,Crambidae,Geometridae	BBIOP3374-24_r_1.3_s_100	Eriocottis paradoxella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Eriocottidae	BLAST	family	657	1533	Oecophoridae,Noctuidae,Papilionidae,Pyralidae,Crambidae	BBIOP3374-24_r_1.5_s_50	Eriocottis paradoxella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Eriocottidae	BLAST	family	657	1533	Oecophoridae,Noctuidae,Papilionidae,Pyralidae,Crambidae	BBIOP3374-24_r_1.5_s_100	Eriocottis paradoxella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Eriocottidae	BLAST	family	657	1533	Sphingidae,Noctuidae,Papilionidae,Crambidae,Geometridae	BBIOP3375-24_r_1_s_50	Eriocottis paradoxella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Eriocottidae	BLAST	family	657	1533	Sphingidae,Noctuidae,Papilionidae,Crambidae,Geometridae	BBIOP3375-24_r_1_s_100	Eriocottis paradoxella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Eriocottidae	BLAST	family	657	1533	Sphingidae,Noctuidae,Papilionidae,Crambidae,Geometridae	BBIOP3375-24_r_1.3_s_50	Eriocottis paradoxella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Eriocottidae	BLAST	family	657	1533	Sphingidae,Noctuidae,Papilionidae,Crambidae,Geometridae	BBIOP3375-24_r_1.3_s_100	Eriocottis paradoxella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Eriocottidae	BLAST	family	657	1533	Sphingidae,Noctuidae,Papilionidae,Crambidae,Geometridae	BBIOP3375-24_r_1.5_s_50	Eriocottis paradoxella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Eriocottidae	BLAST	family	657	1533	Sphingidae,Noctuidae,Papilionidae,Crambidae,Geometridae	BBIOP3375-24_r_1.5_s_100	Eriocottis paradoxella	0
+8	23	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	656	1527	Tortricidae,Sphingidae,Erebidae,Geometridae	BBIOP3376-24_r_1_s_50	Eucosma urbana	0
+8	11	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	653	1527	Hepialidae,Tortricidae,Noctuidae,Geometridae	BBIOP3376-24_r_1_s_100	Eucosma urbana	0
+0	7	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	632	1470	Tortricidae	BBIOP3376-24_r_1.3_s_50	Eucosma urbana	0
+0	2	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	623	1320	Tortricidae	BBIOP3376-24_r_1.3_s_100	Eucosma urbana	0
+6	9	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	520	1065	Tortricidae	BBIOP3376-24_r_1.5_s_50	Eucosma urbana	5
+2	3	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	646	933	Tortricidae	BBIOP3376-24_r_1.5_s_100	Eucosma urbana	6
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Coleophoridae	BLAST	family	657	1530	Coleophoridae,Depressariidae,Crambidae,Geometridae	BBIOP3377-24_r_1_s_50	Coleophora agenjoi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Coleophoridae	BLAST	family	657	1530	Coleophoridae,Depressariidae,Crambidae,Geometridae	BBIOP3377-24_r_1_s_100	Coleophora agenjoi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Coleophoridae	BLAST	family	657	1530	Coleophoridae,Depressariidae,Crambidae,Geometridae	BBIOP3377-24_r_1.3_s_50	Coleophora agenjoi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Coleophoridae	BLAST	family	657	1530	Coleophoridae,Depressariidae,Crambidae,Geometridae	BBIOP3377-24_r_1.3_s_100	Coleophora agenjoi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Coleophoridae	BLAST	family	657	1530	Coleophoridae,Depressariidae,Crambidae,Geometridae	BBIOP3377-24_r_1.5_s_50	Coleophora agenjoi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Coleophoridae	BLAST	family	657	1530	Coleophoridae,Depressariidae,Crambidae,Geometridae	BBIOP3377-24_r_1.5_s_100	Coleophora agenjoi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1527	Oecophoridae,Cosmopterigidae,Autostichidae,Depressariidae,Noctuidae,Erebidae,Geometridae	BBIOP3378-24_r_1_s_50	Symmocoides ferreirae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1527	Oecophoridae,Cosmopterigidae,Autostichidae,Depressariidae,Noctuidae,Erebidae,Geometridae	BBIOP3378-24_r_1_s_100	Symmocoides ferreirae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1527	Oecophoridae,Cosmopterigidae,Autostichidae,Depressariidae,Noctuidae,Erebidae,Geometridae	BBIOP3378-24_r_1.3_s_50	Symmocoides ferreirae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1527	Oecophoridae,Cosmopterigidae,Autostichidae,Depressariidae,Noctuidae,Erebidae,Geometridae	BBIOP3378-24_r_1.3_s_100	Symmocoides ferreirae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1527	Oecophoridae,Cosmopterigidae,Autostichidae,Depressariidae,Noctuidae,Erebidae,Geometridae	BBIOP3378-24_r_1.5_s_50	Symmocoides ferreirae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1527	Oecophoridae,Cosmopterigidae,Autostichidae,Depressariidae,Noctuidae,Erebidae,Geometridae	BBIOP3378-24_r_1.5_s_100	Symmocoides ferreirae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1527	Oecophoridae,Cosmopterigidae,Autostichidae,Depressariidae,Noctuidae,Erebidae,Geometridae	BBIOP3379-24_r_1_s_50	Symmocoides ferreirae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1527	Oecophoridae,Cosmopterigidae,Autostichidae,Depressariidae,Noctuidae,Erebidae,Geometridae	BBIOP3379-24_r_1_s_100	Symmocoides ferreirae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1527	Oecophoridae,Cosmopterigidae,Autostichidae,Depressariidae,Noctuidae,Erebidae,Geometridae	BBIOP3379-24_r_1.3_s_50	Symmocoides ferreirae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1527	Oecophoridae,Cosmopterigidae,Autostichidae,Depressariidae,Noctuidae,Erebidae,Geometridae	BBIOP3379-24_r_1.3_s_100	Symmocoides ferreirae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1527	Oecophoridae,Cosmopterigidae,Autostichidae,Depressariidae,Noctuidae,Erebidae,Geometridae	BBIOP3379-24_r_1.5_s_50	Symmocoides ferreirae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1527	Oecophoridae,Cosmopterigidae,Autostichidae,Depressariidae,Noctuidae,Erebidae,Geometridae	BBIOP3379-24_r_1.5_s_100	Symmocoides ferreirae	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3380-24_r_1_s_50	Euchromius anapiellus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3380-24_r_1_s_100	Euchromius anapiellus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3380-24_r_1.3_s_50	Euchromius anapiellus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3380-24_r_1.3_s_100	Euchromius anapiellus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3380-24_r_1.5_s_50	Euchromius anapiellus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3380-24_r_1.5_s_100	Euchromius anapiellus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1527	Gelechiidae,Depressariidae,Crambidae,Geometridae	BBIOP3381-24_r_1_s_50	Catatinagma agenjoi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1527	Gelechiidae,Depressariidae,Crambidae,Geometridae	BBIOP3381-24_r_1_s_100	Catatinagma agenjoi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1527	Gelechiidae,Depressariidae,Crambidae,Geometridae	BBIOP3381-24_r_1.3_s_50	Catatinagma agenjoi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1527	Gelechiidae,Depressariidae,Crambidae,Geometridae	BBIOP3381-24_r_1.3_s_100	Catatinagma agenjoi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1527	Gelechiidae,Depressariidae,Crambidae,Geometridae	BBIOP3381-24_r_1.5_s_50	Catatinagma agenjoi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1527	Gelechiidae,Depressariidae,Crambidae,Geometridae	BBIOP3381-24_r_1.5_s_100	Catatinagma agenjoi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1527	Gelechiidae,Depressariidae,Crambidae,Geometridae	BBIOP3382-24_r_1_s_50	Catatinagma agenjoi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1527	Gelechiidae,Depressariidae,Crambidae,Geometridae	BBIOP3382-24_r_1_s_100	Catatinagma agenjoi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1527	Gelechiidae,Depressariidae,Crambidae,Geometridae	BBIOP3382-24_r_1.3_s_50	Catatinagma agenjoi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1527	Gelechiidae,Depressariidae,Crambidae,Geometridae	BBIOP3382-24_r_1.3_s_100	Catatinagma agenjoi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1527	Gelechiidae,Depressariidae,Crambidae,Geometridae	BBIOP3382-24_r_1.5_s_50	Catatinagma agenjoi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1527	Gelechiidae,Depressariidae,Crambidae,Geometridae	BBIOP3382-24_r_1.5_s_100	Catatinagma agenjoi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1533	Gelechiidae,Erebidae,Pyralidae,Crambidae	BBIOP3383-24_r_1_s_50	Isophrictis lineatellus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1533	Gelechiidae,Erebidae,Pyralidae,Crambidae	BBIOP3383-24_r_1_s_100	Isophrictis lineatellus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1533	Gelechiidae,Erebidae,Pyralidae,Crambidae	BBIOP3383-24_r_1.3_s_50	Isophrictis lineatellus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1533	Gelechiidae,Erebidae,Pyralidae,Crambidae	BBIOP3383-24_r_1.3_s_100	Isophrictis lineatellus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1533	Gelechiidae,Erebidae,Pyralidae,Crambidae	BBIOP3383-24_r_1.5_s_50	Isophrictis lineatellus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1533	Gelechiidae,Erebidae,Pyralidae,Crambidae	BBIOP3383-24_r_1.5_s_100	Isophrictis lineatellus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1530	Gelechiidae,Crambidae	BBIOP3384-24_r_1_s_50	Teleiodes albidorsella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1530	Gelechiidae,Crambidae	BBIOP3384-24_r_1_s_100	Teleiodes albidorsella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1530	Gelechiidae,Crambidae	BBIOP3384-24_r_1.3_s_50	Teleiodes albidorsella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1530	Gelechiidae,Crambidae	BBIOP3384-24_r_1.3_s_100	Teleiodes albidorsella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1530	Gelechiidae,Crambidae	BBIOP3384-24_r_1.5_s_50	Teleiodes albidorsella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1530	Gelechiidae,Crambidae	BBIOP3384-24_r_1.5_s_100	Teleiodes albidorsella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Psychidae	BLAST	family	657	1548	Batrachedridae,Tortricidae,Brahmaeidae,Geometridae,Drepanidae	BBIOP3385-24_r_1_s_50	Placodoma veletaella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Psychidae	BLAST	family	657	1548	Batrachedridae,Tortricidae,Brahmaeidae,Geometridae,Drepanidae	BBIOP3385-24_r_1_s_100	Placodoma veletaella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Psychidae	BLAST	family	657	1548	Batrachedridae,Tortricidae,Brahmaeidae,Geometridae,Drepanidae	BBIOP3385-24_r_1.3_s_50	Placodoma veletaella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Psychidae	BLAST	family	657	1548	Batrachedridae,Tortricidae,Brahmaeidae,Geometridae,Drepanidae	BBIOP3385-24_r_1.3_s_100	Placodoma veletaella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Psychidae	BLAST	family	657	1485	Batrachedridae,Tortricidae,Limacodidae,Hedylidae,Drepanidae	BBIOP3385-24_r_1.5_s_50	Placodoma veletaella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Psychidae	BLAST	family	657	1422	Batrachedridae,Tortricidae,Limacodidae,Hedylidae,Drepanidae	BBIOP3385-24_r_1.5_s_100	Placodoma veletaella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3386-24_r_1_s_50	Hypsotropa vasquezi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3386-24_r_1_s_100	Hypsotropa vasquezi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3386-24_r_1.3_s_50	Hypsotropa vasquezi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3386-24_r_1.3_s_100	Hypsotropa vasquezi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3386-24_r_1.5_s_50	Hypsotropa vasquezi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3386-24_r_1.5_s_100	Hypsotropa vasquezi	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	656	1530	Tortricidae	BBIOP3387-24_r_1_s_50	Pseudococcyx friedmariana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	656	1530	Tortricidae	BBIOP3387-24_r_1_s_100	Pseudococcyx friedmariana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	656	1530	Tortricidae	BBIOP3387-24_r_1.3_s_50	Pseudococcyx friedmariana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	656	1530	Tortricidae	BBIOP3387-24_r_1.3_s_100	Pseudococcyx friedmariana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	656	1530	Tortricidae	BBIOP3387-24_r_1.5_s_50	Pseudococcyx friedmariana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	656	1530	Tortricidae	BBIOP3387-24_r_1.5_s_100	Pseudococcyx friedmariana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3388-24_r_1_s_50	Pempeliella ardosiella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3388-24_r_1_s_100	Pempeliella ardosiella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3388-24_r_1.3_s_50	Pempeliella ardosiella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3388-24_r_1.3_s_100	Pempeliella ardosiella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3388-24_r_1.5_s_50	Pempeliella ardosiella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3388-24_r_1.5_s_100	Pempeliella ardosiella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3389-24_r_1_s_50	Sciota elegiella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3389-24_r_1_s_100	Sciota elegiella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3389-24_r_1.3_s_50	Sciota elegiella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3389-24_r_1.3_s_100	Sciota elegiella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3389-24_r_1.5_s_50	Sciota elegiella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3389-24_r_1.5_s_100	Sciota elegiella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3390-24_r_1_s_50	Merulempista azrouella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3390-24_r_1_s_100	Merulempista azrouella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3390-24_r_1.3_s_50	Merulempista azrouella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3390-24_r_1.3_s_100	Merulempista azrouella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3390-24_r_1.5_s_50	Merulempista azrouella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3390-24_r_1.5_s_100	Merulempista azrouella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1530	Gelechiidae,Oecophoridae,Noctuidae,Crambidae,Hyblaeidae	BBIOP3391-24_r_1_s_50	Mesophleps ochraceella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1530	Gelechiidae,Oecophoridae,Noctuidae,Crambidae,Hyblaeidae	BBIOP3391-24_r_1_s_100	Mesophleps ochraceella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1530	Gelechiidae,Oecophoridae,Noctuidae,Crambidae,Hyblaeidae	BBIOP3391-24_r_1.3_s_50	Mesophleps ochraceella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1530	Gelechiidae,Oecophoridae,Noctuidae,Crambidae,Hyblaeidae	BBIOP3391-24_r_1.3_s_100	Mesophleps ochraceella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1530	Gelechiidae,Oecophoridae,Noctuidae,Crambidae,Hyblaeidae	BBIOP3391-24_r_1.5_s_50	Mesophleps ochraceella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	656	1530	Gelechiidae,Oecophoridae,Noctuidae,Crambidae,Hyblaeidae	BBIOP3391-24_r_1.5_s_100	Mesophleps ochraceella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3392-24_r_1_s_50	Mesocrambus marabut	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3392-24_r_1_s_100	Mesocrambus marabut	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3392-24_r_1.3_s_50	Mesocrambus marabut	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3392-24_r_1.3_s_100	Mesocrambus marabut	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3392-24_r_1.5_s_50	Mesocrambus marabut	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3392-24_r_1.5_s_100	Mesocrambus marabut	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3393-24_r_1_s_50	Mesocrambus marabut	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3393-24_r_1_s_100	Mesocrambus marabut	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3393-24_r_1.3_s_50	Mesocrambus marabut	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3393-24_r_1.3_s_100	Mesocrambus marabut	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3393-24_r_1.5_s_50	Mesocrambus marabut	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3393-24_r_1.5_s_100	Mesocrambus marabut	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3394-24_r_1_s_50	Mesocrambus marabut	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3394-24_r_1_s_100	Mesocrambus marabut	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3394-24_r_1.3_s_50	Mesocrambus marabut	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3394-24_r_1.3_s_100	Mesocrambus marabut	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3394-24_r_1.5_s_50	Mesocrambus marabut	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Crambidae	BLAST	family	657	1527	Crambidae	BBIOP3394-24_r_1.5_s_100	Mesocrambus marabut	0
+0	3	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Epipyropidae	BLAST	family	657	1578	Lycaenidae,Riodinidae,Crambidae,Hesperiidae,Geometridae	BBIOP3395-24_r_1_s_50	Ommatissopyrops lusitanicus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Epipyropidae	BLAST	family	657	1536	Lycaenidae,Riodinidae,Crambidae,Hesperiidae,Geometridae	BBIOP3395-24_r_1_s_100	Ommatissopyrops lusitanicus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Epipyropidae	BLAST	family	657	1536	Lycaenidae,Riodinidae,Crambidae,Hesperiidae,Geometridae	BBIOP3395-24_r_1.3_s_50	Ommatissopyrops lusitanicus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Epipyropidae	BLAST	family	657	1536	Lycaenidae,Riodinidae,Crambidae,Hesperiidae,Geometridae	BBIOP3395-24_r_1.3_s_100	Ommatissopyrops lusitanicus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Epipyropidae	BLAST	family	651	1455	Erebidae,Lycaenidae,Nymphalidae,Riodinidae,Crambidae,Hesperiidae,Geometridae	BBIOP3395-24_r_1.5_s_50	Ommatissopyrops lusitanicus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Epipyropidae	BLAST	family	651	1443	Erebidae,Lycaenidae,Nymphalidae,Riodinidae,Crambidae,Hesperiidae,Geometridae	BBIOP3395-24_r_1.5_s_100	Ommatissopyrops lusitanicus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Epipyropidae	BLAST	family	657	1572	Lycaenidae,Riodinidae,Crambidae,Hesperiidae,Geometridae	BBIOP3396-24_r_1_s_50	Ommatissopyrops lusitanicus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Epipyropidae	BLAST	family	657	1536	Lycaenidae,Riodinidae,Crambidae,Hesperiidae,Geometridae	BBIOP3396-24_r_1_s_100	Ommatissopyrops lusitanicus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Epipyropidae	BLAST	family	657	1536	Lycaenidae,Riodinidae,Crambidae,Hesperiidae,Geometridae	BBIOP3396-24_r_1.3_s_50	Ommatissopyrops lusitanicus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Epipyropidae	BLAST	family	657	1536	Lycaenidae,Riodinidae,Crambidae,Hesperiidae,Geometridae	BBIOP3396-24_r_1.3_s_100	Ommatissopyrops lusitanicus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Epipyropidae	BLAST	family	657	1467	Lycaenidae,Riodinidae,Crambidae,Hesperiidae,Geometridae	BBIOP3396-24_r_1.5_s_50	Ommatissopyrops lusitanicus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Epipyropidae	BLAST	family	657	1455	Lycaenidae,Riodinidae,Crambidae,Hesperiidae,Geometridae	BBIOP3396-24_r_1.5_s_100	Ommatissopyrops lusitanicus	0
+0	1	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Epipyropidae	BLAST	family	657	1572	Lycaenidae,Riodinidae,Crambidae,Hesperiidae,Geometridae	BBIOP3397-24_r_1_s_50	Ommatissopyrops lusitanicus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Epipyropidae	BLAST	family	657	1545	Lycaenidae,Riodinidae,Crambidae,Hesperiidae,Geometridae	BBIOP3397-24_r_1_s_100	Ommatissopyrops lusitanicus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Epipyropidae	BLAST	family	657	1542	Lycaenidae,Riodinidae,Crambidae,Hesperiidae,Geometridae	BBIOP3397-24_r_1.3_s_50	Ommatissopyrops lusitanicus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Epipyropidae	BLAST	family	657	1536	Lycaenidae,Riodinidae,Crambidae,Hesperiidae,Geometridae	BBIOP3397-24_r_1.3_s_100	Ommatissopyrops lusitanicus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Epipyropidae	BLAST	family	657	1473	Lycaenidae,Nymphalidae,Riodinidae,Crambidae,Hesperiidae,Geometridae	BBIOP3397-24_r_1.5_s_50	Ommatissopyrops lusitanicus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Epipyropidae	BLAST	family	657	1455	Lycaenidae,Nymphalidae,Riodinidae,Crambidae,Hesperiidae,Geometridae	BBIOP3397-24_r_1.5_s_100	Ommatissopyrops lusitanicus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	656	1533	Pyralidae	BBIOP3398-24_r_1_s_50	Ancylosis arenosella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	656	1533	Pyralidae	BBIOP3398-24_r_1_s_100	Ancylosis arenosella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	656	1533	Pyralidae	BBIOP3398-24_r_1.3_s_50	Ancylosis arenosella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	656	1533	Pyralidae	BBIOP3398-24_r_1.3_s_100	Ancylosis arenosella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	656	1533	Pyralidae	BBIOP3398-24_r_1.5_s_50	Ancylosis arenosella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	656	1533	Pyralidae	BBIOP3398-24_r_1.5_s_100	Ancylosis arenosella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Coleophoridae	BLAST	family	657	1530	Coleophoridae,Depressariidae,Noctuidae,Notodontidae,Crambidae	BBIOP3399-24_r_1_s_50	Coleophora sattleri	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Coleophoridae	BLAST	family	657	1530	Coleophoridae,Depressariidae,Noctuidae,Notodontidae,Crambidae	BBIOP3399-24_r_1_s_100	Coleophora sattleri	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Coleophoridae	BLAST	family	657	1530	Coleophoridae,Depressariidae,Noctuidae,Notodontidae,Crambidae	BBIOP3399-24_r_1.3_s_50	Coleophora sattleri	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Coleophoridae	BLAST	family	657	1530	Coleophoridae,Depressariidae,Noctuidae,Notodontidae,Crambidae	BBIOP3399-24_r_1.3_s_100	Coleophora sattleri	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Coleophoridae	BLAST	family	657	1530	Coleophoridae,Depressariidae,Noctuidae,Notodontidae,Crambidae	BBIOP3399-24_r_1.5_s_50	Coleophora sattleri	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Coleophoridae	BLAST	family	657	1530	Coleophoridae,Depressariidae,Noctuidae,Notodontidae,Crambidae	BBIOP3399-24_r_1.5_s_100	Coleophora sattleri	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3400-24_r_1_s_50	Idaea barbuti	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3400-24_r_1_s_100	Idaea barbuti	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3400-24_r_1.3_s_50	Idaea barbuti	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3400-24_r_1.3_s_100	Idaea barbuti	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3400-24_r_1.5_s_50	Idaea barbuti	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3400-24_r_1.5_s_100	Idaea barbuti	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3401-24_r_1_s_50	Idaea barbuti	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3401-24_r_1_s_100	Idaea barbuti	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3401-24_r_1.3_s_50	Idaea barbuti	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3401-24_r_1.3_s_100	Idaea barbuti	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3401-24_r_1.5_s_50	Idaea barbuti	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Geometridae	BLAST	family	657	1533	Geometridae	BBIOP3401-24_r_1.5_s_100	Idaea barbuti	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3402-24_r_1_s_50	Dichrorampha baixerasana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3402-24_r_1_s_100	Dichrorampha baixerasana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3402-24_r_1.3_s_50	Dichrorampha baixerasana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3402-24_r_1.3_s_100	Dichrorampha baixerasana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3402-24_r_1.5_s_50	Dichrorampha baixerasana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3402-24_r_1.5_s_100	Dichrorampha baixerasana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3403-24_r_1_s_50	Gymnancyla sfakesella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3403-24_r_1_s_100	Gymnancyla sfakesella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3403-24_r_1.3_s_50	Gymnancyla sfakesella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3403-24_r_1.3_s_100	Gymnancyla sfakesella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3403-24_r_1.5_s_50	Gymnancyla sfakesella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pyralidae	BLAST	family	657	1533	Pyralidae	BBIOP3403-24_r_1.5_s_100	Gymnancyla sfakesella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1533	Tortricidae	BBIOP3404-24_r_1_s_50	Lobesia	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1533	Tortricidae	BBIOP3404-24_r_1_s_100	Lobesia	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1533	Tortricidae	BBIOP3404-24_r_1.3_s_50	Lobesia	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1533	Tortricidae	BBIOP3404-24_r_1.3_s_100	Lobesia	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1533	Tortricidae	BBIOP3404-24_r_1.5_s_50	Lobesia	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1533	Tortricidae	BBIOP3404-24_r_1.5_s_100	Lobesia	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cosmopterigidae	BLAST	family	657	1527	Cosmopterigidae,Papilionidae,Crambidae,Geometridae	BBIOP3405-24_r_1_s_50	Eteobalea sumptuosella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cosmopterigidae	BLAST	family	657	1527	Cosmopterigidae,Papilionidae,Crambidae,Geometridae	BBIOP3405-24_r_1_s_100	Eteobalea sumptuosella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cosmopterigidae	BLAST	family	657	1527	Cosmopterigidae,Papilionidae,Crambidae,Geometridae	BBIOP3405-24_r_1.3_s_50	Eteobalea sumptuosella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cosmopterigidae	BLAST	family	657	1527	Cosmopterigidae,Papilionidae,Crambidae,Geometridae	BBIOP3405-24_r_1.3_s_100	Eteobalea sumptuosella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cosmopterigidae	BLAST	family	657	1527	Cosmopterigidae,Papilionidae,Crambidae,Geometridae	BBIOP3405-24_r_1.5_s_50	Eteobalea sumptuosella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cosmopterigidae	BLAST	family	657	1527	Cosmopterigidae,Papilionidae,Crambidae,Geometridae	BBIOP3405-24_r_1.5_s_100	Eteobalea sumptuosella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1530	Oecophoridae,Autostichidae,Depressariidae,Tortricidae,Saturniidae,Noctuidae,Crambidae,Geometridae	BBIOP3406-24_r_1_s_50	Donaspastus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1530	Oecophoridae,Autostichidae,Depressariidae,Tortricidae,Saturniidae,Noctuidae,Crambidae,Geometridae	BBIOP3406-24_r_1_s_100	Donaspastus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1530	Oecophoridae,Autostichidae,Depressariidae,Tortricidae,Saturniidae,Noctuidae,Crambidae,Geometridae	BBIOP3406-24_r_1.3_s_50	Donaspastus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1530	Oecophoridae,Autostichidae,Depressariidae,Tortricidae,Saturniidae,Noctuidae,Crambidae,Geometridae	BBIOP3406-24_r_1.3_s_100	Donaspastus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1530	Oecophoridae,Autostichidae,Depressariidae,Tortricidae,Saturniidae,Noctuidae,Crambidae,Geometridae	BBIOP3406-24_r_1.5_s_50	Donaspastus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1530	Oecophoridae,Autostichidae,Depressariidae,Tortricidae,Saturniidae,Noctuidae,Crambidae,Geometridae	BBIOP3406-24_r_1.5_s_100	Donaspastus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1530	Oecophoridae,Autostichidae,Depressariidae,Tortricidae,Saturniidae,Noctuidae,Crambidae,Geometridae	BBIOP3407-24_r_1_s_50	Donaspastus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1530	Oecophoridae,Autostichidae,Depressariidae,Tortricidae,Saturniidae,Noctuidae,Crambidae,Geometridae	BBIOP3407-24_r_1_s_100	Donaspastus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1530	Oecophoridae,Autostichidae,Depressariidae,Tortricidae,Saturniidae,Noctuidae,Crambidae,Geometridae	BBIOP3407-24_r_1.3_s_50	Donaspastus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1530	Oecophoridae,Autostichidae,Depressariidae,Tortricidae,Saturniidae,Noctuidae,Crambidae,Geometridae	BBIOP3407-24_r_1.3_s_100	Donaspastus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1530	Oecophoridae,Autostichidae,Depressariidae,Tortricidae,Saturniidae,Noctuidae,Crambidae,Geometridae	BBIOP3407-24_r_1.5_s_50	Donaspastus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1530	Oecophoridae,Autostichidae,Depressariidae,Tortricidae,Saturniidae,Noctuidae,Crambidae,Geometridae	BBIOP3407-24_r_1.5_s_100	Donaspastus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1533	Gelechiidae,Saturniidae,Crambidae,Geometridae	BBIOP3408-24_r_1_s_50	Megacraspedus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1533	Gelechiidae,Saturniidae,Crambidae,Geometridae	BBIOP3408-24_r_1_s_100	Megacraspedus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1533	Gelechiidae,Saturniidae,Crambidae,Geometridae	BBIOP3408-24_r_1.3_s_50	Megacraspedus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1533	Gelechiidae,Saturniidae,Crambidae,Geometridae	BBIOP3408-24_r_1.3_s_100	Megacraspedus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1533	Gelechiidae,Saturniidae,Crambidae,Geometridae	BBIOP3408-24_r_1.5_s_50	Megacraspedus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1533	Gelechiidae,Saturniidae,Crambidae,Geometridae	BBIOP3408-24_r_1.5_s_100	Megacraspedus	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3409-24_r_1_s_50	Pelochrista	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3409-24_r_1_s_100	Pelochrista	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3409-24_r_1.3_s_50	Pelochrista	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3409-24_r_1.3_s_100	Pelochrista	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3409-24_r_1.5_s_50	Pelochrista	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3409-24_r_1.5_s_100	Pelochrista	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3410-24_r_1_s_50	Pelochrista	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3410-24_r_1_s_100	Pelochrista	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3410-24_r_1.3_s_50	Pelochrista	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3410-24_r_1.3_s_100	Pelochrista	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3410-24_r_1.5_s_50	Pelochrista	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3410-24_r_1.5_s_100	Pelochrista	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Alucitidae	BLAST	family	642	1500	Syrphidae,Crambidae,Alucitidae	BBIOP3411-24_r_1_s_50	Alucita acutata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Alucitidae	BLAST	family	642	1500	Syrphidae,Crambidae,Alucitidae	BBIOP3411-24_r_1_s_100	Alucita acutata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Alucitidae	BLAST	family	642	1500	Syrphidae,Crambidae,Alucitidae	BBIOP3411-24_r_1.3_s_50	Alucita acutata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Alucitidae	BLAST	family	642	1500	Syrphidae,Crambidae,Alucitidae	BBIOP3411-24_r_1.3_s_100	Alucita acutata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Alucitidae	BLAST	family	642	1500	Syrphidae,Crambidae,Alucitidae	BBIOP3411-24_r_1.5_s_50	Alucita acutata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Alucitidae	BLAST	family	642	1500	Syrphidae,Crambidae,Alucitidae	BBIOP3411-24_r_1.5_s_100	Alucita acutata	0
+4	4	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Alucitidae	BLAST	family	654	1527	Geometridae	BBIOP3412-24_r_1_s_50	Alucita acutata	0
+2	2	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Alucitidae	BLAST	family	654	1527	Geometridae	BBIOP3412-24_r_1_s_100	Alucita acutata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Alucitidae	BLAST	family	645	1500	Syrphidae,Drosophilidae,Geometridae	BBIOP3412-24_r_1.3_s_50	Alucita acutata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Alucitidae	BLAST	family	645	1500	Syrphidae,Drosophilidae,Geometridae	BBIOP3412-24_r_1.3_s_100	Alucita acutata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Alucitidae	BLAST	family	645	1500	Syrphidae,Drosophilidae,Noctuidae,Geometridae	BBIOP3412-24_r_1.5_s_50	Alucita acutata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Alucitidae	BLAST	family	645	1500	Syrphidae,Drosophilidae,Noctuidae,Crambidae,Geometridae	BBIOP3412-24_r_1.5_s_100	Alucita acutata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Alucitidae	BLAST	family	642	1500	Syrphidae,Crambidae,Alucitidae	BBIOP3413-24_r_1_s_50	Alucita acutata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Alucitidae	BLAST	family	642	1500	Syrphidae,Crambidae,Alucitidae	BBIOP3413-24_r_1_s_100	Alucita acutata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Alucitidae	BLAST	family	642	1500	Syrphidae,Crambidae,Alucitidae	BBIOP3413-24_r_1.3_s_50	Alucita acutata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Alucitidae	BLAST	family	642	1500	Syrphidae,Crambidae,Alucitidae	BBIOP3413-24_r_1.3_s_100	Alucita acutata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Alucitidae	BLAST	family	642	1500	Syrphidae,Crambidae,Alucitidae	BBIOP3413-24_r_1.5_s_50	Alucita acutata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Alucitidae	BLAST	family	642	1500	Syrphidae,Crambidae,Alucitidae	BBIOP3413-24_r_1.5_s_100	Alucita acutata	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heliozelidae	BLAST	family	656	1533	Tortricidae,Choreutidae,Noctuidae,Prodoxidae,Heliozelidae	BBIOP3414-24_r_1_s_50	Heliozela lithargyrellum	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heliozelidae	BLAST	family	656	1533	Tortricidae,Choreutidae,Noctuidae,Prodoxidae,Heliozelidae	BBIOP3414-24_r_1_s_100	Heliozela lithargyrellum	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heliozelidae	BLAST	family	656	1533	Tortricidae,Choreutidae,Noctuidae,Prodoxidae,Heliozelidae	BBIOP3414-24_r_1.3_s_50	Heliozela lithargyrellum	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heliozelidae	BLAST	family	656	1533	Tortricidae,Choreutidae,Noctuidae,Prodoxidae,Heliozelidae	BBIOP3414-24_r_1.3_s_100	Heliozela lithargyrellum	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heliozelidae	BLAST	family	656	1533	Tortricidae,Choreutidae,Noctuidae,Prodoxidae,Heliozelidae	BBIOP3414-24_r_1.5_s_50	Heliozela lithargyrellum	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heliozelidae	BLAST	family	656	1533	Tortricidae,Choreutidae,Noctuidae,Prodoxidae,Heliozelidae	BBIOP3414-24_r_1.5_s_100	Heliozela lithargyrellum	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3415-24_r_1_s_50	Diceratura ostrinana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3415-24_r_1_s_100	Diceratura ostrinana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3415-24_r_1.3_s_50	Diceratura ostrinana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3415-24_r_1.3_s_100	Diceratura ostrinana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3415-24_r_1.5_s_50	Diceratura ostrinana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Tortricidae	BLAST	family	657	1530	Tortricidae	BBIOP3415-24_r_1.5_s_100	Diceratura ostrinana	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1530	Oecophoridae,Autostichidae,Noctuidae,Erebidae,Crambidae	BBIOP3416-24_r_1_s_50	Symmoca	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1530	Oecophoridae,Autostichidae,Noctuidae,Erebidae,Crambidae	BBIOP3416-24_r_1_s_100	Symmoca	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1530	Oecophoridae,Autostichidae,Noctuidae,Erebidae,Crambidae	BBIOP3416-24_r_1.3_s_50	Symmoca	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1530	Oecophoridae,Autostichidae,Noctuidae,Erebidae,Crambidae	BBIOP3416-24_r_1.3_s_100	Symmoca	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1530	Oecophoridae,Autostichidae,Noctuidae,Erebidae,Crambidae	BBIOP3416-24_r_1.5_s_50	Symmoca	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Autostichidae	BLAST	family	657	1530	Oecophoridae,Autostichidae,Noctuidae,Erebidae,Crambidae	BBIOP3416-24_r_1.5_s_100	Symmoca	0
+0	4	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heterogynidae	BLAST	family	657	1551	Erebidae,Papilionidae,Crambidae	BBIOP3417-24_r_1_s_50	Heterogynis cynetes	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heterogynidae	BLAST	family	657	1545	Erebidae,Papilionidae,Crambidae	BBIOP3417-24_r_1_s_100	Heterogynis cynetes	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heterogynidae	BLAST	family	657	1545	Erebidae,Papilionidae,Crambidae	BBIOP3417-24_r_1.3_s_50	Heterogynis cynetes	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heterogynidae	BLAST	family	657	1545	Erebidae,Papilionidae,Crambidae	BBIOP3417-24_r_1.3_s_100	Heterogynis cynetes	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heterogynidae	BLAST	family	657	1458	Erebidae,Papilionidae,Crambidae	BBIOP3417-24_r_1.5_s_50	Heterogynis cynetes	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Heterogynidae	BLAST	family	657	1413	Erebidae,Papilionidae,Crambidae,Geometridae	BBIOP3417-24_r_1.5_s_100	Heterogynis cynetes	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1530	Gelechiidae,Pyralidae,Crambidae	BBIOP3418-24_r_1_s_50	Filatima algarbiella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1530	Gelechiidae,Pyralidae,Crambidae	BBIOP3418-24_r_1_s_100	Filatima algarbiella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1530	Gelechiidae,Pyralidae,Crambidae	BBIOP3418-24_r_1.3_s_50	Filatima algarbiella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1530	Gelechiidae,Pyralidae,Crambidae	BBIOP3418-24_r_1.3_s_100	Filatima algarbiella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1530	Gelechiidae,Pyralidae,Crambidae	BBIOP3418-24_r_1.5_s_50	Filatima algarbiella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Gelechiidae	BLAST	family	657	1530	Gelechiidae,Pyralidae,Crambidae	BBIOP3418-24_r_1.5_s_100	Filatima algarbiella	0
+4	9	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Depressariidae	BLAST	family	649	1503	Reduviidae,Oecophoridae,Cosmopterigidae,Depressariidae	BBIOP3419-24_r_1_s_50	Ethmia fumidella	0
+3	5	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Depressariidae	BLAST	family	649	1503	Reduviidae,Cosmopterigidae,Depressariidae,Eupterotidae,Noctuidae,Geometridae	BBIOP3419-24_r_1_s_100	Ethmia fumidella	0
+5	10	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Depressariidae	BLAST	family	649	1506	Cosmopterigidae,Depressariidae,Saturniidae	BBIOP3419-24_r_1.3_s_50	Ethmia fumidella	0
+2	3	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Depressariidae	BLAST	family	649	1506	Saturniidae	BBIOP3419-24_r_1.3_s_100	Ethmia fumidella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Depressariidae	BLAST	family	649	1506	Saturniidae	BBIOP3419-24_r_1.5_s_50	Ethmia fumidella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Depressariidae	BLAST	family	649	1506	Saturniidae	BBIOP3419-24_r_1.5_s_100	Ethmia fumidella	0
+23	45	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Depressariidae	BLAST	family	649	1506	Oecophoridae,Depressariidae,Noctuidae,Erebidae	BBIOP3420-24_r_1_s_50	Ethmia fumidella	0
+28	49	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Depressariidae	BLAST	family	649	1506	Gelechiidae,Oecophoridae,Depressariidae,Noctuidae,Nymphalidae	BBIOP3420-24_r_1_s_100	Ethmia fumidella	0
+0	3	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Depressariidae	BLAST	family	643	1500	Cosmopterigidae,Depressariidae	BBIOP3420-24_r_1.3_s_50	Ethmia fumidella	0
+0	1	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Depressariidae	BLAST	family	643	1500	Cosmopterigidae,Depressariidae	BBIOP3420-24_r_1.3_s_100	Ethmia fumidella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Depressariidae	BLAST	family	595	1434	Cosmopterigidae,Depressariidae	BBIOP3420-24_r_1.5_s_50	Ethmia fumidella	0
+0	0	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Depressariidae	BLAST	family	595	1434	Cosmopterigidae,Depressariidae	BBIOP3420-24_r_1.5_s_100	Ethmia fumidella	0
+35	74	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00579-NC not in BOLD	None	BLAST	family	655	1524		BGE00579-NC_r_1_s_50	None	0
+19	40	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00579-NC not in BOLD	None	BLAST	family	656	1482		BGE00579-NC_r_1_s_100	None	0
+30	42	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00579-NC not in BOLD	None	BLAST	family	656	1422		BGE00579-NC_r_1.3_s_50	None	0
+18	23	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00579-NC not in BOLD	None	BLAST	family	656	1386		BGE00579-NC_r_1.3_s_100	None	0
+19	25	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00579-NC not in BOLD	None	BLAST	family	539	1227		BGE00579-NC_r_1.5_s_50	None	0
+3	5	data/BGE00579_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00579-NC not in BOLD	None	BLAST	family	497	1185		BGE00579-NC_r_1.5_s_100	None	0

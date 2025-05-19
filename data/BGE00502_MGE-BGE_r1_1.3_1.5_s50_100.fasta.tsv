@@ -1,0 +1,571 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+8	52	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	517	1362	Pettalidae	BSCRO096-24_r_1_s_50	Neobisium dolicodactylum	0
+15	42	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	522	1098	Ixodidae,Eupodidae	BSCRO096-24_r_1_s_100	Neobisium dolicodactylum	0
+18	25	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	471	894	Hydryphantidae,Chthoniidae	BSCRO096-24_r_1.3_s_50	Neobisium dolicodactylum	0
+16	17	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	161	477	Araneidae,Linyphiidae,Agelenidae	BSCRO096-24_r_1.5_s_50	Neobisium dolicodactylum	0
+16	27	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	197	492	Hydryphantidae,Chthoniidae	BSCRO096-24_r_1.3_s_100	Neobisium dolicodactylum	0
+16	16	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	97	249		BSCRO096-24_r_1.5_s_100	Neobisium dolicodactylum	0
+7	17	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	542	1278	Phytoseiidae,Eriophyidae,Stigmaeidae,Phalangodidae,Phrynidae	BSCRO097-24_r_1_s_50	Neobisium dolicodactylum	0
+2	10	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	263	1179		BSCRO097-24_r_1_s_100	Neobisium dolicodactylum	0
+7	8	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	165	684		BSCRO097-24_r_1.3_s_50	Neobisium dolicodactylum	0
+6	6	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	165	513		BSCRO097-24_r_1.3_s_100	Neobisium dolicodactylum	0
+1	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	89	363	Vaejovidae,Scorpionidae,Antrodiaetidae,Pimoidae,Sparassidae	BSCRO097-24_r_1.5_s_50	Neobisium dolicodactylum	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	76	297	Ixodidae,Parasitidae,Arrenuridae,Rhagidiidae,Oribatellidae,Cosmetidae,Phrynidae	BSCRO097-24_r_1.5_s_100	Neobisium dolicodactylum	0
+0	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	249	1164		BSCRO098-24_r_1_s_50	Neobisium dolicodactylum	0
+0	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	123	936		BSCRO098-24_r_1_s_100	Neobisium dolicodactylum	0
+0	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	144	621		BSCRO098-24_r_1.3_s_50	Neobisium dolicodactylum	0
+0	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	92	390		BSCRO098-24_r_1.3_s_100	Neobisium dolicodactylum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	38	336		BSCRO098-24_r_1.5_s_50	Neobisium dolicodactylum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	1	189		BSCRO098-24_r_1.5_s_100	Neobisium dolicodactylum	0
+4	7	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	551	1230	Oppiidae	BSCRO099-24_r_1_s_50	Neobisium dolicodactylum	0
+2	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	493	978	Oppiidae	BSCRO099-24_r_1_s_100	Neobisium dolicodactylum	0
+0	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	230	606	Argasidae,Oppiidae	BSCRO099-24_r_1.3_s_50	Neobisium dolicodactylum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	227	435	Argasidae,Oppiidae	BSCRO099-24_r_1.3_s_100	Neobisium dolicodactylum	0
+0	6	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	222	432	Mysmenidae,Argasidae,Oppiidae,Zalmoxidae	BSCRO099-24_r_1.5_s_50	Neobisium dolicodactylum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	179	300	Theraphosidae,Salticidae,Zodariidae,Oppiidae	BSCRO099-24_r_1.5_s_100	Neobisium dolicodactylum	0
+17	55	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	620	1464	Neobisiidae	BSCRO100-24_r_1_s_50	Neobisium dolomiticum	0
+9	19	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	606	1296	Neobisiidae	BSCRO100-24_r_1_s_100	Neobisium dolomiticum	0
+6	8	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	609	1365	Argasidae,Ixodidae,Laelapidae,Neobisiidae	BSCRO100-24_r_1.3_s_50	Neobisium dolomiticum	0
+4	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	564	1239	Argasidae,Ixodidae,Laelapidae,Fortuyniidae,Neobisiidae	BSCRO100-24_r_1.3_s_100	Neobisium dolomiticum	0
+0	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	462	1062	Ixodidae,Laelapidae,Gonyleptidae,Manaosbiidae,Neobisiidae	BSCRO100-24_r_1.5_s_50	Neobisium dolomiticum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	633	990	Ixodidae,Laelapidae,Gonyleptidae,Neobisiidae,Olpiidae	BSCRO100-24_r_1.5_s_100	Neobisium dolomiticum	10
+0	12	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO101-24_r_1_s_50	Neobisium dolomiticum	0
+0	15	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1443	Neobisiidae	BSCRO101-24_r_1_s_100	Neobisium dolomiticum	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1485	Neobisiidae	BSCRO101-24_r_1.3_s_50	Neobisium dolomiticum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1386	Neobisiidae	BSCRO101-24_r_1.3_s_100	Neobisium dolomiticum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	579	1293	Ixodidae,Neobisiidae	BSCRO101-24_r_1.5_s_50	Neobisium dolomiticum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	519	1197	Ixodidae,Neobisiidae	BSCRO101-24_r_1.5_s_100	Neobisium dolomiticum	0
+0	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO102-24_r_1_s_50	Neobisium fuscimanum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO102-24_r_1_s_100	Neobisium fuscimanum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1449	Neobisiidae	BSCRO102-24_r_1.3_s_50	Neobisium fuscimanum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1386	Neobisiidae	BSCRO102-24_r_1.3_s_100	Neobisium fuscimanum	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	492	1245	Neobisiidae	BSCRO102-24_r_1.5_s_50	Neobisium fuscimanum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	492	1212	Neobisiidae	BSCRO102-24_r_1.5_s_100	Neobisium fuscimanum	0
+0	16	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO103-24_r_1_s_50	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1443	Neobisiidae	BSCRO103-24_r_1_s_100	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1452	Neobisiidae	BSCRO103-24_r_1.3_s_50	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1413	Neobisiidae	BSCRO103-24_r_1.3_s_100	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	627	1347	Ixodidae,Atemnidae,Neobisiidae	BSCRO103-24_r_1.5_s_50	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	627	1347	Ixodidae,Atemnidae,Neobisiidae	BSCRO103-24_r_1.5_s_100	Neobisium jugorum	0
+0	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO104-24_r_1_s_50	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1473	Neobisiidae	BSCRO104-24_r_1_s_100	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1464	Neobisiidae	BSCRO104-24_r_1.3_s_50	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1428	Neobisiidae	BSCRO104-24_r_1.3_s_100	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	600	1353	Ixodidae,Atemnidae,Neobisiidae	BSCRO104-24_r_1.5_s_50	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	600	1317	Ixodidae,Atemnidae,Neobisiidae	BSCRO104-24_r_1.5_s_100	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO105-24_r_1_s_50	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1506	Neobisiidae	BSCRO105-24_r_1_s_100	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1452	Neobisiidae	BSCRO105-24_r_1.3_s_50	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1413	Neobisiidae	BSCRO105-24_r_1.3_s_100	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1362	Neobisiidae	BSCRO105-24_r_1.5_s_50	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1362	Neobisiidae	BSCRO105-24_r_1.5_s_100	Neobisium jugorum	0
+0	17	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO106-24_r_1_s_50	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1443	Neobisiidae	BSCRO106-24_r_1_s_100	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1401	Neobisiidae	BSCRO106-24_r_1.3_s_50	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1401	Neobisiidae	BSCRO106-24_r_1.3_s_100	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	567	1272	Ixodidae,Atemnidae,Neobisiidae	BSCRO106-24_r_1.5_s_50	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	567	1272	Ixodidae,Atemnidae,Neobisiidae	BSCRO106-24_r_1.5_s_100	Neobisium jugorum	0
+0	9	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO107-24_r_1_s_50	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1485	Neobisiidae	BSCRO107-24_r_1_s_100	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1413	Neobisiidae	BSCRO107-24_r_1.3_s_50	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1374	Neobisiidae	BSCRO107-24_r_1.3_s_100	Neobisium jugorum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	531	1209	Neobisiidae	BSCRO107-24_r_1.5_s_50	Neobisium jugorum	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	528	1194	Neobisiidae	BSCRO107-24_r_1.5_s_100	Neobisium jugorum	0
+14	19	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	547	1284		BSCRO108-24_r_1_s_50	Neobisium martae lombardicum	0
+9	9	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	494	1209	Araneidae,Lycosidae,Pisauridae,Sparassidae,Hypochilidae,Phytoseiidae	BSCRO108-24_r_1_s_100	Neobisium martae lombardicum	0
+0	9	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	274	888	Neobisiidae	BSCRO108-24_r_1.3_s_50	Neobisium martae lombardicum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	232	825	Ixodidae,Bdellidae,Neobisiidae,Syarinidae	BSCRO108-24_r_1.3_s_100	Neobisium martae lombardicum	0
+0	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	55	435	Ixodidae,Neobisiidae	BSCRO108-24_r_1.5_s_50	Neobisium martae lombardicum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	126	372	Ixodidae,Neobisiidae,Syarinidae	BSCRO108-24_r_1.5_s_100	Neobisium martae lombardicum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO110-24_r_1_s_50	Neobisium martae lombardicum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO110-24_r_1_s_100	Neobisium martae lombardicum	0
+0	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1500	Neobisiidae	BSCRO110-24_r_1.3_s_50	Neobisium martae lombardicum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1422	Neobisiidae	BSCRO110-24_r_1.3_s_100	Neobisium martae lombardicum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	618	1350	Ixodidae,Phalangiidae,Chernetidae,Neobisiidae	BSCRO110-24_r_1.5_s_50	Neobisium martae lombardicum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	618	1350	Ixodidae,Phalangiidae,Chernetidae,Neobisiidae	BSCRO110-24_r_1.5_s_100	Neobisium martae lombardicum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO111-24_r_1_s_50	Neobisium martae lombardicum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO111-24_r_1_s_100	Neobisium martae lombardicum	0
+0	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO111-24_r_1.3_s_50	Neobisium martae lombardicum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1452	Neobisiidae	BSCRO111-24_r_1.3_s_100	Neobisium martae lombardicum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1419	Neobisiidae	BSCRO111-24_r_1.5_s_50	Neobisium martae lombardicum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1386	Neobisiidae	BSCRO111-24_r_1.5_s_100	Neobisium martae lombardicum	0
+7	12	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	648	1413		BSCRO112-24_r_1_s_50	Neobisium moreoticum	1
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	597	1215		BSCRO112-24_r_1_s_100	Neobisium moreoticum	0
+0	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	178	684	Cheliferidae	BSCRO112-24_r_1.3_s_50	Neobisium moreoticum	0
+0	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	136	381	Cheliferidae	BSCRO112-24_r_1.3_s_100	Neobisium moreoticum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	225	381	Amphinectidae,Digamasellidae,Cheliferidae,Phrynidae	BSCRO112-24_r_1.5_s_50	Neobisium moreoticum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	187	270	Amphinectidae,Digamasellidae,Cheliferidae,Phrynidae	BSCRO112-24_r_1.5_s_100	Neobisium moreoticum	0
+12	23	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	544	1221	Parasitidae,Ceratozetidae,Oribatellidae,Tenuialidae,Pseudotyrannochthoniidae	BSCRO113-24_r_1_s_50	Neobisium moreoticum	0
+2	9	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	476	1068	Ixodidae,Parasitidae,Ceratozetidae,Tectocepheidae,Oppiidae,Tenuialidae	BSCRO113-24_r_1_s_100	Neobisium moreoticum	0
+8	8	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	158	639		BSCRO113-24_r_1.3_s_50	Neobisium moreoticum	0
+8	8	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	159	489		BSCRO113-24_r_1.3_s_100	Neobisium moreoticum	0
+1	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	115	375	Oppiidae	BSCRO113-24_r_1.5_s_50	Neobisium moreoticum	0
+1	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	107	198	Oppiidae	BSCRO113-24_r_1.5_s_100	Neobisium moreoticum	0
+0	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	173	1020		BSCRO114-24_r_1_s_50	Neobisium nemorense	0
+0	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	86	801		BSCRO114-24_r_1_s_100	Neobisium nemorense	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	32	285	Tetranychidae,Hubbardiidae,Ischyropsalididae	BSCRO114-24_r_1.3_s_50	Neobisium nemorense	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	32	231	Tetranychidae,Hubbardiidae,Ischyropsalididae	BSCRO114-24_r_1.3_s_100	Neobisium nemorense	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	32	285	Tetranychidae,Hubbardiidae,Ischyropsalididae	BSCRO114-24_r_1.5_s_50	Neobisium nemorense	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	32	231	Tetranychidae,Hubbardiidae,Ischyropsalididae	BSCRO114-24_r_1.5_s_100	Neobisium nemorense	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO115-24_r_1_s_50	Neobisium peloponnesiacum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO115-24_r_1_s_100	Neobisium peloponnesiacum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1473	Neobisiidae	BSCRO115-24_r_1.3_s_50	Neobisium peloponnesiacum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1473	Neobisiidae	BSCRO115-24_r_1.3_s_100	Neobisium peloponnesiacum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	651	1410	Neobisiidae	BSCRO115-24_r_1.5_s_50	Neobisium peloponnesiacum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	651	1410	Neobisiidae	BSCRO115-24_r_1.5_s_100	Neobisium peloponnesiacum	0
+1	18	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	210	1110		BSCRO116-24_r_1_s_50	Neobisium peloponnesiacum	0
+0	12	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	93	936		BSCRO116-24_r_1_s_100	Neobisium peloponnesiacum	0
+0	5	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	32	459	Camisiidae	BSCRO116-24_r_1.3_s_50	Neobisium peloponnesiacum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	51	258	Camisiidae	BSCRO116-24_r_1.3_s_100	Neobisium peloponnesiacum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	27	252	Camisiidae	BSCRO116-24_r_1.5_s_50	Neobisium peloponnesiacum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	28	198	Camisiidae	BSCRO116-24_r_1.5_s_100	Neobisium peloponnesiacum	0
+1	15	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	651	1521	Neobisiidae	BSCRO117-24_r_1_s_50	Neobisium ruffoi	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1467	Neobisiidae	BSCRO117-24_r_1_s_100	Neobisium ruffoi	0
+0	5	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	651	1491	Neobisiidae	BSCRO117-24_r_1.3_s_50	Neobisium ruffoi	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1446	Neobisiidae	BSCRO117-24_r_1.3_s_100	Neobisium ruffoi	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	627	1365	Neobisiidae	BSCRO117-24_r_1.5_s_50	Neobisium ruffoi	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	630	1335	Neobisiidae	BSCRO117-24_r_1.5_s_100	Neobisium ruffoi	0
+0	20	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1521	Neobisiidae	BSCRO118-24_r_1_s_50	Neobisium	0
+1	9	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1434	Neobisiidae	BSCRO118-24_r_1_s_100	Neobisium	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1413	Neobisiidae	BSCRO118-24_r_1.3_s_50	Neobisium	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1353	Neobisiidae	BSCRO118-24_r_1.3_s_100	Neobisium	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	483	1182	Ixodidae	BSCRO118-24_r_1.5_s_50	Neobisium	0
+3	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	483	1182	Ixodidae	BSCRO118-24_r_1.5_s_100	Neobisium	0
+23	37	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	652	1527	Neobisiidae	BSCRO119-24_r_1_s_50	Neobisium	0
+21	21	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	653	1446	Neobisiidae	BSCRO119-24_r_1_s_100	Neobisium	0
+12	12	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	653	1431	Neobisiidae	BSCRO119-24_r_1.3_s_50	Neobisium	0
+11	11	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1392	Neobisiidae	BSCRO119-24_r_1.3_s_100	Neobisium	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	519	1218	Ixodidae	BSCRO119-24_r_1.5_s_50	Neobisium	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	483	1182	Ixodidae	BSCRO119-24_r_1.5_s_100	Neobisium	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO120-24_r_1_s_50	Neobisium trentinum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO120-24_r_1_s_100	Neobisium trentinum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1503	Neobisiidae	BSCRO120-24_r_1.3_s_50	Neobisium trentinum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1440	Neobisiidae	BSCRO120-24_r_1.3_s_100	Neobisium trentinum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	615	1353	Chernetidae,Neobisiidae	BSCRO120-24_r_1.5_s_50	Neobisium trentinum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	549	1287	Chernetidae,Neobisiidae	BSCRO120-24_r_1.5_s_100	Neobisium trentinum	0
+1	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiridiidae	BLAST	family	654	1458	Theridiidae,Anapidae,Ixodidae,Nuttalliellidae	BSCRO121-24_r_1_s_50	Apocheiridium ferum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiridiidae	BLAST	family	654	1401	Theridiidae,Anapidae,Ixodidae,Nuttalliellidae	BSCRO121-24_r_1_s_100	Apocheiridium ferum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiridiidae	BLAST	family	552	1221	Theridiidae,Anapidae,Salticidae,Ixodidae,Nuttalliellidae	BSCRO121-24_r_1.3_s_50	Apocheiridium ferum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiridiidae	BLAST	family	469	1113	Theridiidae,Anapidae,Salticidae,Trechaleidae,Nuttalliellidae,Pseudogarypidae	BSCRO121-24_r_1.3_s_100	Apocheiridium ferum	0
+4	7	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiridiidae	BLAST	family	368	990	Anapidae,Thomisidae,Salticidae,Desidae,Trechaleidae,Argasidae,Ixodidae,Nuttalliellidae,Pseudogarypidae	BSCRO121-24_r_1.5_s_50	Apocheiridium ferum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiridiidae	BLAST	family	390	873	Anapidae,Thomisidae,Salticidae,Desidae,Trechaleidae,Argasidae,Ixodidae,Nuttalliellidae,Pseudogarypidae	BSCRO121-24_r_1.5_s_100	Apocheiridium ferum	3
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiridiidae	BLAST	family	654	1434	Theridiidae,Anapidae,Ixodidae,Nuttalliellidae,Pseudogarypidae	BSCRO122-24_r_1_s_50	Apocheiridium ferum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiridiidae	BLAST	family	654	1401	Theridiidae,Anapidae,Ixodidae,Nuttalliellidae,Pseudogarypidae	BSCRO122-24_r_1_s_100	Apocheiridium ferum	0
+0	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiridiidae	BLAST	family	580	1308	Theridiidae,Anapidae,Ixodidae,Nuttalliellidae,Pseudogarypidae	BSCRO122-24_r_1.3_s_50	Apocheiridium ferum	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiridiidae	BLAST	family	549	1191	Theridiidae,Anapidae,Ixodidae,Nuttalliellidae,Pseudogarypidae	BSCRO122-24_r_1.3_s_100	Apocheiridium ferum	0
+6	6	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiridiidae	BLAST	family	379	954	Araneidae,Theridiidae,Salticidae,Zodariidae,Pseudotyrannochthoniidae	BSCRO122-24_r_1.5_s_50	Apocheiridium ferum	0
+6	6	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiridiidae	BLAST	family	348	822	Araneidae,Theridiidae,Salticidae,Zodariidae,Pseudotyrannochthoniidae	BSCRO122-24_r_1.5_s_100	Apocheiridium ferum	0
+14	27	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiridiidae	BLAST	family	657	1419	Tetragnathidae,Theridiidae,Thomisidae,Ixodidae	BSCRO123-24_r_1_s_50	Apocheiridium ferum	0
+6	9	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiridiidae	BLAST	family	654	1380	Theridiidae,Ixodidae	BSCRO123-24_r_1_s_100	Apocheiridium ferum	0
+8	25	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiridiidae	BLAST	family	416	1023	Araneidae,Tetragnathidae,Thomisidae,Trechaleidae,Ixodidae,Nuttalliellidae,Pseudogarypidae	BSCRO123-24_r_1.3_s_50	Apocheiridium ferum	0
+8	18	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiridiidae	BLAST	family	350	762	Ochyroceratidae,Araneidae,Tetragnathidae,Thomisidae,Trechaleidae,Ixodidae,Pseudogarypidae	BSCRO123-24_r_1.3_s_100	Apocheiridium ferum	0
+0	18	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiridiidae	BLAST	family	149	558	Thomisidae,Ixodidae,Neobisiidae	BSCRO123-24_r_1.5_s_50	Apocheiridium ferum	0
+17	17	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiridiidae	BLAST	family	263	405	Thomisidae,Ixodidae,Nuttalliellidae	BSCRO123-24_r_1.5_s_100	Apocheiridium ferum	0
+61	98	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	617	1413	Phytoseiidae,Rhagidiidae,Stigmaeidae,Nanhermanniidae,Oppiidae,Karschiidae,Eremobatidae	BSCRO124-24_r_1_s_50	Rhacochelifer corcyrensis	0
+45	61	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	607	1362	Phytoseiidae,Parasitidae,Stigmaeidae,Nanhermanniidae,Oppiidae,Karschiidae	BSCRO124-24_r_1_s_100	Rhacochelifer corcyrensis	0
+4	24	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	496	1221	Phytoseiidae,Rhagidiidae,Stigmaeidae,Oppiidae,Phalangodidae,Charinidae	BSCRO124-24_r_1.3_s_50	Rhacochelifer corcyrensis	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	499	1092	Phytoseiidae,Rhagidiidae,Stigmaeidae,Oppiidae,Karschiidae,Phalangodidae	BSCRO124-24_r_1.3_s_100	Rhacochelifer corcyrensis	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	247	873	Phytoseiidae,Stigmaeidae,Oppiidae,Phrynidae	BSCRO124-24_r_1.5_s_50	Rhacochelifer corcyrensis	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	241	774	Phytoseiidae,Stigmaeidae,Oppiidae,Phrynidae	BSCRO124-24_r_1.5_s_100	Rhacochelifer corcyrensis	0
+23	65	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1521	Chernetidae,Atemnidae	BSCRO125-24_r_1_s_50	Allochernes phaleratus	0
+18	31	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1521	Chernetidae,Atemnidae	BSCRO125-24_r_1_s_100	Allochernes phaleratus	0
+13	22	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1473	Chernetidae,Atemnidae	BSCRO125-24_r_1.3_s_50	Allochernes phaleratus	0
+9	10	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1413	Chernetidae,Atemnidae	BSCRO125-24_r_1.3_s_100	Allochernes phaleratus	0
+4	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	570	1356	Ixodidae,Chernetidae,Atemnidae	BSCRO125-24_r_1.5_s_50	Allochernes phaleratus	0
+1	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	570	1290	Ixodidae,Chernetidae,Atemnidae	BSCRO125-24_r_1.5_s_100	Allochernes phaleratus	0
+7	26	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	651	1521	Chernetidae,Cheliferidae,Cheiridiidae	BSCRO126-24_r_1_s_50	Pselaphochernes italicus	5
+1	14	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1521	Chernetidae,Cheliferidae,Cheiridiidae	BSCRO126-24_r_1_s_100	Pselaphochernes italicus	5
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1413	Chernetidae,Cheliferidae,Chthoniidae,Cheiridiidae	BSCRO126-24_r_1.3_s_50	Pselaphochernes italicus	7
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1413	Chernetidae,Cheliferidae,Chthoniidae,Cheiridiidae	BSCRO126-24_r_1.3_s_100	Pselaphochernes italicus	7
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	525	1215	Sicariidae,Chernetidae,Cheliferidae,Cheiridiidae	BSCRO126-24_r_1.5_s_50	Pselaphochernes italicus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	484	1161	Sicariidae,Chernetidae,Cheliferidae,Cheiridiidae	BSCRO126-24_r_1.5_s_100	Pselaphochernes italicus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1521	Chernetidae,Cheliferidae,Cheiridiidae	BSCRO127-24_r_1_s_50	Pselaphochernes italicus	7
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1521	Chernetidae,Cheliferidae,Cheiridiidae	BSCRO127-24_r_1_s_100	Pselaphochernes italicus	7
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1485	Chernetidae,Cheliferidae,Cheiridiidae	BSCRO127-24_r_1.3_s_50	Pselaphochernes italicus	7
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1413	Chernetidae,Cheliferidae,Cheiridiidae	BSCRO127-24_r_1.3_s_100	Pselaphochernes italicus	7
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	651	1422	Chernetidae,Cheliferidae,Cheiridiidae	BSCRO127-24_r_1.5_s_50	Pselaphochernes italicus	17
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	642	1383	Chernetidae,Cheliferidae,Chthoniidae,Cheiridiidae	BSCRO127-24_r_1.5_s_100	Pselaphochernes italicus	17
+5	16	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	514	1299	Alycidae,Hubbardiidae,Pseudotyrannochthoniidae	BSCRO128-24_r_1_s_50	Chthonius alpicola	0
+0	13	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	425	1188	Alycidae,Hubbardiidae,Pseudotyrannochthoniidae	BSCRO128-24_r_1_s_100	Chthonius alpicola	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	159	810	Oppiidae,Ricinoididae,Phrynidae	BSCRO128-24_r_1.3_s_50	Chthonius alpicola	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	139	612	Oppiidae,Ricinoididae,Phrynidae	BSCRO128-24_r_1.3_s_100	Chthonius alpicola	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	52	423	Spinturnicidae,Chthoniidae,Tridenchthoniidae,Pseudotyrannochthoniidae	BSCRO128-24_r_1.5_s_50	Chthonius alpicola	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	52	192	Spinturnicidae,Chthoniidae,Tridenchthoniidae,Pseudotyrannochthoniidae	BSCRO128-24_r_1.5_s_100	Chthonius alpicola	0
+1	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	521	1215		BSCRO129-24_r_1_s_50	Chthonius caoduroi	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	428	1095		BSCRO129-24_r_1_s_100	Chthonius caoduroi	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	383	801	Mysmenidae,Hahniidae,Trematuridae,Urodinychidae,Veigaiidae,Rhodacaridae,Blattisociidae,Damaeidae	BSCRO129-24_r_1.3_s_50	Chthonius caoduroi	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	99	462		BSCRO129-24_r_1.3_s_100	Chthonius caoduroi	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	247	351	Vaejovidae,Bothriuridae,Theraphosidae,Lycosidae,Thomisidae,Salticidae,Sparassidae,Trochanteriidae,Cybaeidae	BSCRO129-24_r_1.5_s_50	Chthonius caoduroi	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	147	174	Vaejovidae,Bothriuridae,Ochyroceratidae,Agelenidae,Lycosidae,Zoropsidae,Thomisidae,Salticidae,Corinnidae,Dictynidae	BSCRO129-24_r_1.5_s_100	Chthonius caoduroi	0
+8	15	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	611	1377	Oppiidae,Chthoniidae	BSCRO130-24_r_1_s_50	Chthonius caoduroi	0
+0	5	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	568	1173	Oppiidae	BSCRO130-24_r_1_s_100	Chthonius caoduroi	0
+2	6	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	533	1032	Oppiidae,Chthoniidae	BSCRO130-24_r_1.3_s_50	Chthonius caoduroi	0
+0	6	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	255	762	Oppiidae	BSCRO130-24_r_1.3_s_100	Chthonius caoduroi	0
+0	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	166	420		BSCRO130-24_r_1.5_s_50	Chthonius caoduroi	0
+0	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	141	342		BSCRO130-24_r_1.5_s_100	Chthonius caoduroi	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	537	1188	Oppiidae	BSCRO131-24_r_1_s_50	Chthonius caprai	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	162	996	Phytoseiidae,Stigmaeidae,Oppiidae,Haplozetidae,Hubbardiidae,Phrynichidae	BSCRO131-24_r_1_s_100	Chthonius caprai	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	183	636	Phenopelopidae	BSCRO131-24_r_1.3_s_50	Chthonius caprai	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	109	264		BSCRO131-24_r_1.3_s_100	Chthonius caprai	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	89	210		BSCRO131-24_r_1.5_s_50	Chthonius caprai	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	86	123		BSCRO131-24_r_1.5_s_100	Chthonius caprai	0
+14	17	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	514	1197		BSCRO132-24_r_1_s_50	Chthonius caprai	0
+50	53	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	482	1074		BSCRO132-24_r_1_s_100	Chthonius caprai	0
+0	14	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	104	534	Oppiidae	BSCRO132-24_r_1.3_s_50	Chthonius caprai	0
+0	14	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	103	195		BSCRO132-24_r_1.3_s_100	Chthonius caprai	0
+3	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	98	318		BSCRO132-24_r_1.5_s_50	Chthonius caprai	0
+13	13	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	98	186		BSCRO132-24_r_1.5_s_100	Chthonius caprai	0
+52	53	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1359	Liphistiidae,Veigaiidae,Halacaridae	BSCRO133-24_r_1_s_50	Chthonius caprai	0
+37	37	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1347	Sicariidae,Oppiidae	BSCRO133-24_r_1_s_100	Chthonius caprai	0
+17	19	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	455	903	Galeodidae	BSCRO133-24_r_1.3_s_50	Chthonius caprai	0
+16	18	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	451	690	Galeodidae	BSCRO133-24_r_1.3_s_100	Chthonius caprai	0
+0	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	236	570	Ixodidae,Pseudotyrannochthoniidae	BSCRO133-24_r_1.5_s_50	Chthonius caprai	0
+0	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	181	420	Ixodidae,Pseudotyrannochthoniidae	BSCRO133-24_r_1.5_s_100	Chthonius caprai	0
+2	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	538	1242		BSCRO134-24_r_1_s_50	Chthonius carinthiacus	1
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	295	987		BSCRO134-24_r_1_s_100	Chthonius carinthiacus	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	99	420	Oppiidae,Phrynidae	BSCRO134-24_r_1.3_s_50	Chthonius carinthiacus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	96	309	Oppiidae,Phrynidae	BSCRO134-24_r_1.3_s_100	Chthonius carinthiacus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	39	219		BSCRO134-24_r_1.5_s_50	Chthonius carinthiacus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	27	96		BSCRO134-24_r_1.5_s_100	Chthonius carinthiacus	0
+26	43	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	538	1251	Laelapidae,Oppiidae,Phalangiidae,Phrynidae	BSCRO135-24_r_1_s_50	Chthonius carinthiacus	0
+10	30	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	505	1167	Laelapidae,Aturidae,Oppiidae,Phalangiidae,Gonyleptidae,Phrynidae	BSCRO135-24_r_1_s_100	Chthonius carinthiacus	0
+2	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	197	891	Ixodidae,Unionicolidae,Halacaridae,Oppiidae,Fortuyniidae,Phrynidae	BSCRO135-24_r_1.3_s_50	Chthonius carinthiacus	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	196	735	Ixodidae,Unionicolidae,Halacaridae,Oppiidae,Fortuyniidae,Phrynidae	BSCRO135-24_r_1.3_s_100	Chthonius carinthiacus	0
+1	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	197	411	Oppiidae	BSCRO135-24_r_1.5_s_50	Chthonius carinthiacus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	196	339	Oppiidae	BSCRO135-24_r_1.5_s_100	Chthonius carinthiacus	0
+33	124	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1479	Chthoniidae	BSCRO136-24_r_1_s_50	Chthonius carinthiacus	0
+24	68	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1359	Chthoniidae,Pseudotyrannochthoniidae	BSCRO136-24_r_1_s_100	Chthonius carinthiacus	0
+8	33	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	480	1179	Chthoniidae,Pseudotyrannochthoniidae	BSCRO136-24_r_1.3_s_50	Chthonius carinthiacus	0
+4	11	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	468	1017	Chthoniidae,Pseudotyrannochthoniidae	BSCRO136-24_r_1.3_s_100	Chthonius carinthiacus	0
+7	14	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	366	783	Ochyroceratidae,Tetragnathidae,Agelenidae,Thomisidae,Stigmaeidae,Stygnommatidae	BSCRO136-24_r_1.5_s_50	Chthonius carinthiacus	0
+3	7	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	363	591	Tetragnathidae,Thomisidae,Philodromidae,Zodariidae,Stigmaeidae	BSCRO136-24_r_1.5_s_100	Chthonius carinthiacus	0
+4	13	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1530	Chthoniidae,Pseudotyrannochthoniidae	BSCRO137-24_r_1_s_50	Chthonius comottii	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1368	Chthoniidae,Pseudotyrannochthoniidae	BSCRO137-24_r_1_s_100	Chthonius comottii	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	622	1362	Chthoniidae	BSCRO137-24_r_1.3_s_50	Chthonius comottii	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	619	1323	Argasidae,Chthoniidae	BSCRO137-24_r_1.3_s_100	Chthonius comottii	0
+2	5	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	471	1146	Argasidae,Sperchontidae	BSCRO137-24_r_1.5_s_50	Chthonius comottii	0
+0	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	369	1044	Argasidae,Ixodidae,Sperchontidae	BSCRO137-24_r_1.5_s_100	Chthonius comottii	0
+0	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1533	Chthoniidae,Pseudotyrannochthoniidae	BSCRO138-24_r_1_s_50	Chthonius comottii	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1476	Chthoniidae,Pseudotyrannochthoniidae	BSCRO138-24_r_1_s_100	Chthonius comottii	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1458	Chthoniidae,Pseudotyrannochthoniidae	BSCRO138-24_r_1.3_s_50	Chthonius comottii	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1407	Chthoniidae,Pseudotyrannochthoniidae	BSCRO138-24_r_1.3_s_100	Chthonius comottii	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	550	1269	Argasidae,Ixodidae,Phytoseiidae,Sperchontidae,Chthoniidae	BSCRO138-24_r_1.5_s_50	Chthonius comottii	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	499	1155	Argasidae,Sperchontidae,Tetranychidae,Chthoniidae	BSCRO138-24_r_1.5_s_100	Chthonius comottii	0
+45	112	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1461	Idiopidae,Actinopodidae,Pholcidae,Agelenidae,Neobisiidae	BSCRO139-24_r_1_s_50	Chthonius delmastroi	0
+25	47	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1368	Vaejovidae,Leptonetidae,Macronyssidae,Labidostommatidae,Oppiidae,Ischyropsalididae	BSCRO139-24_r_1_s_100	Chthonius delmastroi	0
+23	45	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	621	1233	Ixodidae,Limnesiidae,Oppiidae,Chthoniidae,Pseudogarypidae	BSCRO139-24_r_1.3_s_50	Chthonius delmastroi	0
+36	48	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	621	1131	Labidostommatidae,Tetranychidae,Oppiidae,Selenoribatidae	BSCRO139-24_r_1.3_s_100	Chthonius delmastroi	0
+6	18	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	261	825	Aturidae,Penthaleidae,Oppiidae,Thelyphonidae	BSCRO139-24_r_1.5_s_50	Chthonius delmastroi	0
+1	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	277	723	Oppiidae,Thelyphonidae	BSCRO139-24_r_1.5_s_100	Chthonius delmastroi	6
+9	31	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	542	1245	Chthoniidae	BSCRO140-24_r_1_s_50	Chthonius delmastroi	0
+0	15	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	459	1101		BSCRO140-24_r_1_s_100	Chthonius delmastroi	0
+0	10	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	189	786	Ixodidae,Cheliferidae,Chthoniidae	BSCRO140-24_r_1.3_s_50	Chthonius delmastroi	0
+0	10	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	155	582	Argasidae,Ixodidae,Phytoseiidae,Chthoniidae	BSCRO140-24_r_1.3_s_100	Chthonius delmastroi	0
+8	13	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	128	576	Penthaleidae,Fortuyniidae,Chthoniidae	BSCRO140-24_r_1.5_s_50	Chthonius delmastroi	0
+13	16	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	127	453	Fortuyniidae,Chthoniidae	BSCRO140-24_r_1.5_s_100	Chthonius delmastroi	0
+29	47	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1410	Ixodidae,Oppiidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO141-24_r_1_s_50	Chthonius delmastroi	0
+22	32	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1410	Oppiidae,Chthoniidae,Pseudotyrannochthoniidae,Phrynichidae	BSCRO141-24_r_1_s_100	Chthonius delmastroi	0
+2	5	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	527	1047	Oppiidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO141-24_r_1.3_s_50	Chthonius delmastroi	0
+0	5	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	377	1029	Oppiidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO141-24_r_1.3_s_100	Chthonius delmastroi	0
+8	11	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	284	672	Argasidae,Lebertiidae,Limnesiidae,Penthalodidae,Oppiidae	BSCRO141-24_r_1.5_s_50	Chthonius delmastroi	2
+7	8	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	195	525	Argasidae,Lebertiidae,Penthalodidae,Eupodidae,Oppiidae,Selenoribatidae	BSCRO141-24_r_1.5_s_100	Chthonius delmastroi	1
+11	30	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	556	1416	Araneidae,Agelenidae,Salticidae,Philodromidae,Selenopidae,Chthoniidae	BSCRO142-24_r_1_s_50	Chthonius guglielmii	0
+2	8	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	548	1221	Zoropsidae,Salticidae,Philodromidae,Selenopidae,Oppiidae	BSCRO142-24_r_1_s_100	Chthonius guglielmii	2
+12	18	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	510	1116	Ixodidae,Oppiidae,Olpiidae	BSCRO142-24_r_1.3_s_50	Chthonius guglielmii	2
+3	5	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	443	1035	Ixodidae,Oppiidae,Olpiidae	BSCRO142-24_r_1.3_s_100	Chthonius guglielmii	1
+6	6	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	164	840	Caraboctonidae,Tetranychidae,Pyroglyphidae,Oppiidae,Selenoribatidae,Eremaeidae,Scutoverticidae	BSCRO142-24_r_1.5_s_50	Chthonius guglielmii	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	193	783	Scorpionidae,Caraboctonidae,Pyroglyphidae,Oppiidae,Selenoribatidae	BSCRO142-24_r_1.5_s_100	Chthonius guglielmii	0
+2	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1491	Chthoniidae,Pseudotyrannochthoniidae	BSCRO143-24_r_1_s_50	Chthonius guglielmii	0
+3	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1398	Chthoniidae,Pseudotyrannochthoniidae	BSCRO143-24_r_1_s_100	Chthonius guglielmii	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	623	1341	Chthoniidae	BSCRO143-24_r_1.3_s_50	Chthonius guglielmii	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	623	1341	Chthoniidae	BSCRO143-24_r_1.3_s_100	Chthonius guglielmii	0
+5	5	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	542	1203	Theridiidae,Salticidae,Ixodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO143-24_r_1.5_s_50	Chthonius guglielmii	0
+13	13	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	414	1101	Theridiidae,Salticidae,Ixodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO143-24_r_1.5_s_100	Chthonius guglielmii	0
+28	57	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1527	Chthoniidae	BSCRO144-24_r_1_s_50	Chthonius guglielmii	0
+28	57	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1512	Chthoniidae	BSCRO144-24_r_1_s_100	Chthonius guglielmii	0
+25	25	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	638	1398	Chthoniidae,Pseudotyrannochthoniidae	BSCRO144-24_r_1.3_s_50	Chthonius guglielmii	0
+19	19	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	639	1359	Chthoniidae,Pseudotyrannochthoniidae	BSCRO144-24_r_1.3_s_100	Chthonius guglielmii	0
+3	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	429	1068	Theridiidae,Salticidae,Argasidae,Tetranychidae	BSCRO144-24_r_1.5_s_50	Chthonius guglielmii	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	426	1026	Theridiidae,Salticidae,Ixodidae,Varroidae,Tetranychidae	BSCRO144-24_r_1.5_s_100	Chthonius guglielmii	0
+10	15	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	581	1272	Oppiidae	BSCRO145-24_r_1_s_50	Chthonius heterodactylus	0
+0	11	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	566	1137	Halolaelapidae,Parasitidae,Oppiidae	BSCRO145-24_r_1_s_100	Chthonius heterodactylus	0
+7	7	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	400	711	Linyphiidae,Halolaelapidae,Phytoseiidae,Hydrodromidae,Mideopsidae,Sclerosomatidae	BSCRO145-24_r_1.3_s_50	Chthonius heterodactylus	0
+6	6	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	395	489	Linyphiidae,Halolaelapidae,Phytoseiidae,Hydrodromidae,Mideopsidae,Sclerosomatidae	BSCRO145-24_r_1.3_s_100	Chthonius heterodactylus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	192	429	Linyphiidae,Ixodidae	BSCRO145-24_r_1.5_s_50	Chthonius heterodactylus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	184	279	Linyphiidae,Ixodidae	BSCRO145-24_r_1.5_s_100	Chthonius heterodactylus	0
+6	7	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	608	1278	Liphistiidae,Oppiidae,Hubbardiidae,Phrynidae	BSCRO146-24_r_1_s_50	Chthonius heterodactylus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	613	1221	Phytoseiidae,Rhagidiidae,Stigmaeidae,Nanhermanniidae,Oppiidae,Karschiidae	BSCRO146-24_r_1_s_100	Chthonius heterodactylus	0
+0	7	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	227	498	Phytoseiidae,Rhagidiidae,Stigmaeidae,Nanhermanniidae,Oppiidae,Karschiidae	BSCRO146-24_r_1.3_s_50	Chthonius heterodactylus	0
+0	6	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	228	444	Phytoseiidae,Rhagidiidae,Stigmaeidae,Nanhermanniidae,Oppiidae,Karschiidae	BSCRO146-24_r_1.3_s_100	Chthonius heterodactylus	0
+1	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	359	441	Phytoseiidae,Rhagidiidae,Stigmaeidae,Nanhermanniidae,Oppiidae,Karschiidae	BSCRO146-24_r_1.5_s_50	Chthonius heterodactylus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	226	387	Phytoseiidae,Rhagidiidae,Stigmaeidae,Nanhermanniidae,Oppiidae,Karschiidae	BSCRO146-24_r_1.5_s_100	Chthonius heterodactylus	0
+2	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1509	Chthoniidae	BSCRO147-24_r_1_s_50	Chthonius horridus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1446	Chthoniidae	BSCRO147-24_r_1_s_100	Chthonius horridus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	647	1383	Ixodidae,Halacaridae,Penthaleidae,Chthoniidae	BSCRO147-24_r_1.3_s_50	Chthonius horridus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	644	1332	Ixodidae,Penthaleidae,Phalangiidae,Chthoniidae	BSCRO147-24_r_1.3_s_100	Chthonius horridus	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	447	1107	Ixodidae,Halacaridae,Penthaleidae,Chthoniidae	BSCRO147-24_r_1.5_s_50	Chthonius horridus	0
+0	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	383	1044	Ixodidae,Halacaridae,Penthaleidae,Bdellidae,Chthoniidae	BSCRO147-24_r_1.5_s_100	Chthonius horridus	0
+50	58	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	604	1329		BSCRO148-24_r_1_s_50	Chthonius horridus	0
+32	32	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	497	1239	Unionicolidae,Pseudotyrannochthoniidae	BSCRO148-24_r_1_s_100	Chthonius horridus	0
+22	22	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	418	1038	Dysderidae	BSCRO148-24_r_1.3_s_50	Chthonius horridus	0
+17	18	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	257	747	Dysderidae	BSCRO148-24_r_1.3_s_100	Chthonius horridus	0
+9	10	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	222	369	Ixodidae,Adamystidae,Tetranychidae,Gonyleptidae,Metasarcidae	BSCRO148-24_r_1.5_s_50	Chthonius horridus	0
+20	20	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	205	285	Ixodidae,Adamystidae,Halacaridae,Tetranychidae,Gonyleptidae,Metasarcidae,Chthoniidae	BSCRO148-24_r_1.5_s_100	Chthonius horridus	0
+0	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1527	Ixodidae,Laelapidae,Chthoniidae	BSCRO149-24_r_1_s_50	Chthonius ilvensis	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1491	Ixodidae,Laelapidae,Chthoniidae	BSCRO149-24_r_1_s_100	Chthonius ilvensis	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1452	Ixodidae,Laelapidae,Chthoniidae	BSCRO149-24_r_1.3_s_50	Chthonius ilvensis	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1413	Ixodidae,Laelapidae,Chthoniidae	BSCRO149-24_r_1.3_s_100	Chthonius ilvensis	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	554	1236	Tetranychidae,Chthoniidae	BSCRO149-24_r_1.5_s_50	Chthonius ilvensis	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	482	1164	Tetranychidae,Chthoniidae	BSCRO149-24_r_1.5_s_100	Chthonius ilvensis	0
+0	12	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1530	Ixodidae,Laelapidae,Chthoniidae	BSCRO150-24_r_1_s_50	Chthonius ilvensis	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1419	Ixodidae,Laelapidae,Chthoniidae	BSCRO150-24_r_1_s_100	Chthonius ilvensis	0
+6	12	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1443	Laelapidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO150-24_r_1.3_s_50	Chthonius ilvensis	0
+8	8	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1398	Laelapidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO150-24_r_1.3_s_100	Chthonius ilvensis	0
+0	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	554	1269	Salticidae,Chthoniidae	BSCRO150-24_r_1.5_s_50	Chthonius ilvensis	0
+0	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	479	1161	Salticidae,Chthoniidae	BSCRO150-24_r_1.5_s_100	Chthonius ilvensis	0
+0	6	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1515	Chthoniidae,Pseudotyrannochthoniidae	BSCRO151-24_r_1_s_50	Chthonius ilvensis	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1455	Chthoniidae,Pseudotyrannochthoniidae	BSCRO151-24_r_1_s_100	Chthonius ilvensis	0
+0	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1488	Chthoniidae,Pseudotyrannochthoniidae	BSCRO151-24_r_1.3_s_50	Chthonius ilvensis	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1422	Chthoniidae,Pseudotyrannochthoniidae	BSCRO151-24_r_1.3_s_100	Chthonius ilvensis	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	545	1263	Ixodidae,Laelapidae,Chthoniidae	BSCRO151-24_r_1.5_s_50	Chthonius ilvensis	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	488	1176	Ixodidae,Laelapidae,Chthoniidae	BSCRO151-24_r_1.5_s_100	Chthonius ilvensis	0
+0	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1530	Ixodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO152-24_r_1_s_50	Chthonius ilvensis	0
+0	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1437	Ixodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO152-24_r_1_s_100	Chthonius ilvensis	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1449	Ixodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO152-24_r_1.3_s_50	Chthonius ilvensis	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1398	Ixodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO152-24_r_1.3_s_100	Chthonius ilvensis	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	504	1212	Ixodidae	BSCRO152-24_r_1.5_s_50	Chthonius ilvensis	0
+1	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	504	1182	Ixodidae	BSCRO152-24_r_1.5_s_100	Chthonius ilvensis	0
+45	64	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1497	Chthoniidae,Pseudotyrannochthoniidae	BSCRO153-24_r_1_s_50	Chthonius jonicus	0
+43	58	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1428	Chthoniidae,Pseudotyrannochthoniidae	BSCRO153-24_r_1_s_100	Chthonius jonicus	0
+2	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1383	Agelenidae,Cheiracanthiidae,Ixodidae,Halacaridae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO153-24_r_1.3_s_50	Chthonius jonicus	0
+2	5	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1350	Agelenidae,Cheiracanthiidae,Ixodidae,Halacaridae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO153-24_r_1.3_s_100	Chthonius jonicus	0
+0	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	481	1137	Theridiidae,Clubionidae,Cheiracanthiidae,Halacaridae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO153-24_r_1.5_s_50	Chthonius jonicus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	482	1098	Theridiidae,Clubionidae,Cheiracanthiidae,Halacaridae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO153-24_r_1.5_s_100	Chthonius jonicus	0
+1	10	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1530	Chthoniidae,Pseudotyrannochthoniidae	BSCRO154-24_r_1_s_50	Chthonius jonicus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1464	Liphistiidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO154-24_r_1_s_100	Chthonius jonicus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1407	Chthoniidae,Pseudotyrannochthoniidae	BSCRO154-24_r_1.3_s_50	Chthonius jonicus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1374	Chthoniidae,Pseudotyrannochthoniidae	BSCRO154-24_r_1.3_s_100	Chthonius jonicus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	475	1176	Ixodidae,Feltriidae,Halacaridae,Bdellidae,Pseudotyrannochthoniidae	BSCRO154-24_r_1.5_s_50	Chthonius jonicus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	421	1074	Ixodidae,Feltriidae,Halacaridae,Achipteriidae	BSCRO154-24_r_1.5_s_100	Chthonius jonicus	0
+1	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1530	Liphistiidae,Laelapidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO155-24_r_1_s_50	Chthonius jonicus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1455	Liphistiidae,Laelapidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO155-24_r_1_s_100	Chthonius jonicus	0
+1	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1398	Neobisiidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO155-24_r_1.3_s_50	Chthonius jonicus	0
+1	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1356	Neobisiidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO155-24_r_1.3_s_100	Chthonius jonicus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	515	1086	Ixodidae,Halacaridae,Tetranychidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO155-24_r_1.5_s_50	Chthonius jonicus	2
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	455	1026	Ixodidae,Halacaridae,Tetranychidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO155-24_r_1.5_s_100	Chthonius jonicus	2
+18	28	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	610	1242		BSCRO156-24_r_1_s_50	Chthonius lessiniensis	0
+14	20	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	524	1107	Argasidae,Rhodacaridae,Zetomimidae	BSCRO156-24_r_1_s_100	Chthonius lessiniensis	0
+16	17	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	154	741		BSCRO156-24_r_1.3_s_50	Chthonius lessiniensis	0
+16	17	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	141	525		BSCRO156-24_r_1.3_s_100	Chthonius lessiniensis	0
+10	10	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	125	270	Theridiidae,Agelenidae,Stiphidiidae,Argasidae,Selenoribatidae,Gonyleptidae	BSCRO156-24_r_1.5_s_50	Chthonius lessiniensis	0
+10	10	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	124	177	Theridiidae,Agelenidae,Stiphidiidae,Argasidae,Selenoribatidae,Gonyleptidae	BSCRO156-24_r_1.5_s_100	Chthonius lessiniensis	0
+8	16	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1530	Ixodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO157-24_r_1_s_50	Chthonius monicae	0
+8	14	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1455	Ixodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO157-24_r_1_s_100	Chthonius monicae	0
+6	9	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1437	Ixodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO157-24_r_1.3_s_50	Chthonius monicae	0
+7	9	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1389	Ixodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO157-24_r_1.3_s_100	Chthonius monicae	0
+3	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	553	1260	Cyatholipidae,Argasidae,Ixodidae,Neothyridae	BSCRO157-24_r_1.5_s_50	Chthonius monicae	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	481	1140	Cyatholipidae,Argasidae,Ixodidae,Neothyridae	BSCRO157-24_r_1.5_s_100	Chthonius monicae	0
+7	22	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1533	Ixodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO158-24_r_1_s_50	Chthonius monicae	0
+7	13	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1455	Ixodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO158-24_r_1_s_100	Chthonius monicae	0
+3	7	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1479	Ixodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO158-24_r_1.3_s_50	Chthonius monicae	0
+3	8	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1398	Ixodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO158-24_r_1.3_s_100	Chthonius monicae	0
+10	17	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	547	1275	Theridiidae,Ixodidae	BSCRO158-24_r_1.5_s_50	Chthonius monicae	0
+3	9	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	547	1212	Theridiidae	BSCRO158-24_r_1.5_s_100	Chthonius monicae	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1533	Ixodidae,Laelapidae,Chthoniidae	BSCRO159-24_r_1_s_50	Chthonius nicolosii	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1500	Ixodidae,Laelapidae,Chthoniidae	BSCRO159-24_r_1_s_100	Chthonius nicolosii	0
+0	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1434	Ixodidae,Laelapidae,Chthoniidae	BSCRO159-24_r_1.3_s_50	Chthonius nicolosii	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1395	Ixodidae,Laelapidae,Chthoniidae	BSCRO159-24_r_1.3_s_100	Chthonius nicolosii	0
+0	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	546	1248	Laelapidae,Stigmaeidae,Alicorhagiidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO159-24_r_1.5_s_50	Chthonius nicolosii	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	525	1224	Laelapidae,Stigmaeidae,Alicorhagiidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO159-24_r_1.5_s_100	Chthonius nicolosii	0
+19	22	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	612	1371	Liphistiidae,Phytoseiidae,Erythraeidae,Sclerosomatidae	BSCRO160-24_r_1_s_50	Chthonius raridentatus	0
+7	7	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	548	1227	Chthoniidae,Pseudotyrannochthoniidae	BSCRO160-24_r_1_s_100	Chthonius raridentatus	0
+22	22	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	504	933	Oppiidae,Chthoniidae	BSCRO160-24_r_1.3_s_50	Chthonius raridentatus	0
+10	10	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	467	771	Oppiidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO160-24_r_1.3_s_100	Chthonius raridentatus	0
+2	7	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	339	651	Chthoniidae,Pseudotyrannochthoniidae	BSCRO160-24_r_1.5_s_50	Chthonius raridentatus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	186	618	Chthoniidae,Pseudotyrannochthoniidae	BSCRO160-24_r_1.5_s_100	Chthonius raridentatus	0
+21	31	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	548	1275		BSCRO161-24_r_1_s_50	Chthonius raridentatus	0
+26	30	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	504	1140		BSCRO161-24_r_1_s_100	Chthonius raridentatus	0
+13	17	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	377	909	Argasidae,Parasitidae	BSCRO161-24_r_1.3_s_50	Chthonius raridentatus	0
+13	21	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	369	684	Buthidae,Argasidae,Ameroseiidae,Anystidae,Bdellidae,Pseudotyrannochthoniidae	BSCRO161-24_r_1.3_s_100	Chthonius raridentatus	0
+0	9	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	132	447	Chthoniidae,Pseudotyrannochthoniidae	BSCRO161-24_r_1.5_s_50	Chthonius raridentatus	0
+0	10	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	160	234		BSCRO161-24_r_1.5_s_100	Chthonius raridentatus	0
+2	15	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	649	1392	Chthoniidae	BSCRO162-24_r_1_s_50	Chthonius raridentatus	0
+0	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	565	1293	Chthoniidae	BSCRO162-24_r_1_s_100	Chthonius raridentatus	0
+1	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	408	1029	Salticidae,Sparassidae,Ixodidae,Parholaspididae,Ischyropsalididae,Chthoniidae	BSCRO162-24_r_1.3_s_50	Chthonius raridentatus	0
+0	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	224	852	Sparassidae,Ixodidae,Eupodidae,Stigmaeidae,Ischyropsalididae	BSCRO162-24_r_1.3_s_100	Chthonius raridentatus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	234	642	Stigmaeidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO162-24_r_1.5_s_50	Chthonius raridentatus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	148	552	Sparassidae,Stigmaeidae,Ischyropsalididae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO162-24_r_1.5_s_100	Chthonius raridentatus	0
+5	14	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	635	1335	Oppiidae	BSCRO163-24_r_1_s_50	Chthonius ressli	0
+3	10	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	651	1335	Liphistiidae,Oppiidae,Haplozetidae,Hubbardiidae,Stygnommatidae,Phrynichidae	BSCRO163-24_r_1_s_100	Chthonius ressli	0
+4	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	472	927	Phytoseiidae,Stigmaeidae,Oppiidae,Haplozetidae,Hubbardiidae,Phrynichidae	BSCRO163-24_r_1.3_s_50	Chthonius ressli	0
+0	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	194	609	Phytoseiidae,Stigmaeidae,Oppiidae,Haplozetidae,Hubbardiidae,Phrynichidae	BSCRO163-24_r_1.3_s_100	Chthonius ressli	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	72	321		BSCRO163-24_r_1.5_s_50	Chthonius ressli	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	67	183		BSCRO163-24_r_1.5_s_100	Chthonius ressli	0
+19	65	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	623	1413	Chthoniidae,Pseudotyrannochthoniidae	BSCRO164-24_r_1_s_50	Chthonius ressli	0
+12	50	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	605	1248	Archaeidae,Phytoseiidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO164-24_r_1_s_100	Chthonius ressli	0
+2	13	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	501	1197	Anamidae,Archaeidae,Phytoseiidae,Pseudotyrannochthoniidae	BSCRO164-24_r_1.3_s_50	Chthonius ressli	0
+18	20	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	446	957	Anamidae,Archaeidae,Phytoseiidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO164-24_r_1.3_s_100	Chthonius ressli	0
+1	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	367	825	Chthoniidae,Pseudotyrannochthoniidae	BSCRO164-24_r_1.5_s_50	Chthonius ressli	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	558	642	Chthoniidae,Pseudotyrannochthoniidae	BSCRO164-24_r_1.5_s_100	Chthonius ressli	2
+25	41	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	563	1311	Chthoniidae	BSCRO165-24_r_1_s_50	Chthonius ressli	0
+4	6	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	554	1203	Chthoniidae,Pseudotyrannochthoniidae	BSCRO165-24_r_1_s_100	Chthonius ressli	0
+4	24	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	495	1110	Ixodidae,Digamasellidae	BSCRO165-24_r_1.3_s_50	Chthonius ressli	0
+7	28	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	475	1017	Chthoniidae,Pseudotyrannochthoniidae	BSCRO165-24_r_1.3_s_100	Chthonius ressli	0
+5	6	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	403	750	Vaejovidae,Lamponidae,Ixodidae,Hydryphantidae,Eupodidae,Eremobatidae	BSCRO165-24_r_1.5_s_50	Chthonius ressli	0
+8	8	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	365	555	Vaejovidae,Lamponidae,Ixodidae,Hydryphantidae,Eupodidae,Eremobatidae	BSCRO165-24_r_1.5_s_100	Chthonius ressli	0
+2	19	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	618	1374		BSCRO166-24_r_1_s_50	Chthonius ressli	0
+3	22	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	566	1263	Chthoniidae	BSCRO166-24_r_1_s_100	Chthonius ressli	0
+5	5	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	447	1125	Chthoniidae	BSCRO166-24_r_1.3_s_50	Chthonius ressli	0
+0	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	240	984	Chthoniidae	BSCRO166-24_r_1.3_s_100	Chthonius ressli	0
+0	5	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	148	705	Malkaridae,Phytoseiidae,Stigmaeidae,Oppiidae,Hubbardiidae,Pseudotyrannochthoniidae,Ricinoididae	BSCRO166-24_r_1.5_s_50	Chthonius ressli	0
+0	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	127	477	Malkaridae,Stigmaeidae,Oppiidae,Hubbardiidae,Pseudotyrannochthoniidae,Ricinoididae	BSCRO166-24_r_1.5_s_100	Chthonius ressli	0
+6	23	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	653	1347	Chthoniidae	BSCRO167-24_r_1_s_50	Chthonius ressli	0
+1	12	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	595	1224	Chthoniidae,Pseudotyrannochthoniidae	BSCRO167-24_r_1_s_100	Chthonius ressli	0
+0	5	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	513	1113	Chthoniidae,Pseudotyrannochthoniidae	BSCRO167-24_r_1.3_s_50	Chthonius ressli	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	401	879	Chthoniidae,Pseudotyrannochthoniidae	BSCRO167-24_r_1.3_s_100	Chthonius ressli	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	486	657	Vaejovidae,Ixodidae,Oxidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO167-24_r_1.5_s_50	Chthonius ressli	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	427	486	Vaejovidae,Ixodidae,Oxidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO167-24_r_1.5_s_100	Chthonius ressli	9
+15	19	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	635	1350	Oppiidae	BSCRO168-24_r_1_s_50	Chthonius ressli	1
+1	6	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	613	1245	Phytoseiidae,Stigmaeidae,Oppiidae,Haplozetidae,Eremobatidae,Phrynichidae	BSCRO168-24_r_1_s_100	Chthonius ressli	0
+8	10	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	443	948	Phytoseiidae,Rhagidiidae,Stigmaeidae,Oppiidae,Suctobelbidae,Haplozetidae,Eremobatidae	BSCRO168-24_r_1.3_s_50	Chthonius ressli	0
+0	7	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	256	678	Phytoseiidae,Rhagidiidae,Stigmaeidae,Oppiidae,Suctobelbidae,Haplozetidae,Eremobatidae	BSCRO168-24_r_1.3_s_100	Chthonius ressli	0
+0	7	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	87	468	Oppiidae,Haplozetidae,Karschiidae,Eremobatidae,Hubbardiidae,Phrynichidae	BSCRO168-24_r_1.5_s_50	Chthonius ressli	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	77	321	Oppiidae,Haplozetidae,Eremobatidae,Hubbardiidae,Phrynichidae	BSCRO168-24_r_1.5_s_100	Chthonius ressli	0
+43	58	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1386	Chthoniidae,Pseudotyrannochthoniidae	BSCRO169-24_r_1_s_50	Chthonius ressli	1
+38	44	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1377	Chthoniidae,Pseudotyrannochthoniidae	BSCRO169-24_r_1_s_100	Chthonius ressli	0
+1	13	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	623	1320	Tetragnathidae,Ixodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO169-24_r_1.3_s_50	Chthonius ressli	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	623	1308	Tetragnathidae,Ixodidae,Ischyropsalididae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO169-24_r_1.3_s_100	Chthonius ressli	0
+1	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	456	1053	Tetragnathidae,Ixodidae,Ischyropsalididae,Chthoniidae	BSCRO169-24_r_1.5_s_50	Chthonius ressli	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	348	867	Ixodidae,Ischyropsalididae,Chthoniidae	BSCRO169-24_r_1.5_s_100	Chthonius ressli	0
+34	54	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1500	Chthoniidae	BSCRO170-24_r_1_s_50	Chthonius stammeri	0
+32	41	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1482	Chthoniidae	BSCRO170-24_r_1_s_100	Chthonius stammeri	0
+7	7	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	642	1410	Allothyridae,Bdellidae,Pyemotidae,Syringophilidae,Stigmaeidae	BSCRO170-24_r_1.3_s_50	Chthonius stammeri	0
+6	6	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	558	1242	Bothriuridae,Bdellidae,Pyemotidae,Tarsonemidae,Syringophilidae,Stigmaeidae,Cosmetidae,Chthoniidae	BSCRO170-24_r_1.3_s_100	Chthonius stammeri	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	389	930	Ixodidae,Halacaridae,Penthaleidae,Ereynetidae,Syringophilidae,Stigmaeidae,Pseudotyrannochthoniidae,Pseudogarypidae	BSCRO170-24_r_1.5_s_50	Chthonius stammeri	4
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	385	813	Ixodidae,Halacaridae,Penthaleidae,Ereynetidae,Pseudotyrannochthoniidae,Pseudogarypidae	BSCRO170-24_r_1.5_s_100	Chthonius stammeri	4
+2	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	537	1269	Ixodidae,Eriophyidae	BSCRO171-24_r_1_s_50	Chthonius stammeri	0
+3	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	546	1209	Eriophyidae	BSCRO171-24_r_1_s_100	Chthonius stammeri	0
+0	26	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	193	696		BSCRO171-24_r_1.3_s_50	Chthonius stammeri	0
+0	27	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	184	537		BSCRO171-24_r_1.3_s_100	Chthonius stammeri	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	174	408	Erythraeidae,Eremaeidae,Gonyleptidae	BSCRO171-24_r_1.5_s_50	Chthonius stammeri	1
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	163	285	Erythraeidae,Eremaeidae	BSCRO171-24_r_1.5_s_100	Chthonius stammeri	0
+4	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	524	1248	Diplogyniidae,Phalangiidae	BSCRO172-24_r_1_s_50	Chthonius submontanus	0
+2	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	458	1092		BSCRO172-24_r_1_s_100	Chthonius submontanus	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	170	456	Diplogyniidae,Phalangiidae	BSCRO172-24_r_1.3_s_50	Chthonius submontanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	167	321		BSCRO172-24_r_1.3_s_100	Chthonius submontanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	126	282	Diplogyniidae,Phalangiidae	BSCRO172-24_r_1.5_s_50	Chthonius submontanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	124	192		BSCRO172-24_r_1.5_s_100	Chthonius submontanus	0
+32	37	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	570	1230	Phytoseiidae,Stigmaeidae	BSCRO173-24_r_1_s_50	Chthonius submontanus	0
+36	37	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	514	1092	Phytoseiidae,Stigmaeidae	BSCRO173-24_r_1_s_100	Chthonius submontanus	0
+1	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	386	690	Phytoseiidae,Stigmaeidae,Suctobelbidae,Karschiidae,Eremobatidae	BSCRO173-24_r_1.3_s_50	Chthonius submontanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	237	510	Liphistiidae,Phytoseiidae,Paratydeidae,Stigmaeidae,Karschiidae,Charinidae	BSCRO173-24_r_1.3_s_100	Chthonius submontanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	196	297	Phytoseiidae,Stigmaeidae,Karschiidae,Eremobatidae	BSCRO173-24_r_1.5_s_50	Chthonius submontanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	175	192	Phytoseiidae,Stigmaeidae,Karschiidae,Eremobatidae	BSCRO173-24_r_1.5_s_100	Chthonius submontanus	0
+0	6	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1527	Laelapidae,Chthoniidae,Tridenchthoniidae,Pseudotyrannochthoniidae	BSCRO174-24_r_1_s_50	Chthonius tenuis	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1449	Laelapidae,Chthoniidae,Tridenchthoniidae,Pseudotyrannochthoniidae	BSCRO174-24_r_1_s_100	Chthonius tenuis	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1419	Laelapidae,Chthoniidae,Tridenchthoniidae,Pseudotyrannochthoniidae	BSCRO174-24_r_1.3_s_50	Chthonius tenuis	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1380	Laelapidae,Chthoniidae,Tridenchthoniidae,Pseudotyrannochthoniidae	BSCRO174-24_r_1.3_s_100	Chthonius tenuis	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	508	1182	Theridiidae,Salticidae,Sperchontidae,Halacaridae	BSCRO174-24_r_1.5_s_50	Chthonius tenuis	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	496	1170	Theridiidae,Salticidae,Sperchontidae,Halacaridae	BSCRO174-24_r_1.5_s_100	Chthonius tenuis	0
+1	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	573	1209	Pseudotyrannochthoniidae	BSCRO175-24_r_1_s_50	Chthonius aeneae	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	271	1023	Pseudotyrannochthoniidae	BSCRO175-24_r_1_s_100	Chthonius aeneae	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	243	639	Agelenidae,Salticidae,Argasidae,Erythraeidae,Stigmaeidae	BSCRO175-24_r_1.3_s_50	Chthonius aeneae	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	139	420	Agelenidae,Salticidae,Argasidae,Erythraeidae,Stigmaeidae	BSCRO175-24_r_1.3_s_100	Chthonius aeneae	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	127	366	Araneidae,Theridiidae,Thomisidae,Metasarcidae	BSCRO175-24_r_1.5_s_50	Chthonius aeneae	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	115	309	Araneidae,Theridiidae,Thomisidae,Metasarcidae	BSCRO175-24_r_1.5_s_100	Chthonius aeneae	0
+65	80	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1383	Tectocepheidae,Hydrozetidae,Haplozetidae	BSCRO176-24_r_1_s_50	Chthonius aeneae	1
+58	60	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1308	Ixodidae,Karschiidae,Galeodidae,Phrynidae,Charinidae	BSCRO176-24_r_1_s_100	Chthonius aeneae	1
+7	9	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	382	927	Bothriuridae,Limnesiidae,Penthalodidae,Eupodidae,Karschiidae,Pseudotyrannochthoniidae	BSCRO176-24_r_1.3_s_50	Chthonius aeneae	0
+7	9	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	375	726	Penthalodidae,Eupodidae	BSCRO176-24_r_1.3_s_100	Chthonius aeneae	0
+7	9	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	217	537	Mimetidae,Blattisociidae,Limnesiidae,Pionidae,Pseudotyrannochthoniidae	BSCRO176-24_r_1.5_s_50	Chthonius aeneae	1
+7	9	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	160	420	Mimetidae,Blattisociidae,Limnesiidae,Pionidae,Pseudotyrannochthoniidae	BSCRO176-24_r_1.5_s_100	Chthonius aeneae	0
+22	50	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1386	Chthoniidae	BSCRO177-24_r_1_s_50	Chthonius aeneae	0
+11	28	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1374	Chthoniidae	BSCRO177-24_r_1_s_100	Chthonius aeneae	0
+1	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	609	1305	Chthoniidae	BSCRO177-24_r_1.3_s_50	Chthonius aeneae	0
+1	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	589	1206	Chthoniidae	BSCRO177-24_r_1.3_s_100	Chthonius aeneae	0
+5	5	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	410	903	Amaurobiidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO177-24_r_1.5_s_50	Chthonius aeneae	16
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	396	849	Amaurobiidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO177-24_r_1.5_s_100	Chthonius aeneae	4
+9	17	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	518	1266		BSCRO178-24_r_1_s_50	Chthonius fuscimanus	0
+0	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	449	1140		BSCRO178-24_r_1_s_100	Chthonius fuscimanus	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	108	627		BSCRO178-24_r_1.3_s_50	Chthonius fuscimanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	110	504		BSCRO178-24_r_1.3_s_100	Chthonius fuscimanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	105	261		BSCRO178-24_r_1.5_s_50	Chthonius fuscimanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	102	186		BSCRO178-24_r_1.5_s_100	Chthonius fuscimanus	0
+53	89	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	654	1509	Ixodidae,Chthoniidae	BSCRO179-24_r_1_s_50	Chthonius fuscimanus	0
+33	67	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1473	Chthoniidae	BSCRO179-24_r_1_s_100	Chthonius fuscimanus	0
+17	19	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	646	1335	Ixodidae,Rhagodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO179-24_r_1.3_s_50	Chthonius fuscimanus	0
+12	14	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	633	1272	Chthoniidae,Pseudotyrannochthoniidae	BSCRO179-24_r_1.3_s_100	Chthonius fuscimanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	332	900	Neothyridae,Tetranychidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO179-24_r_1.5_s_50	Chthonius fuscimanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	323	846	Neothyridae,Tetranychidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO179-24_r_1.5_s_100	Chthonius fuscimanus	0
+0	9	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1515	Laelapidae,Ereynetidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO180-24_r_1_s_50	Chthonius latellai	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1455	Ixodidae,Laelapidae,Ereynetidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO180-24_r_1_s_100	Chthonius latellai	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1359	Laelapidae,Ereynetidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO180-24_r_1.3_s_50	Chthonius latellai	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1359	Laelapidae,Ereynetidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO180-24_r_1.3_s_100	Chthonius latellai	0
+1	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	535	1197	Ixodidae,Lebertiidae,Penthaleidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO180-24_r_1.5_s_50	Chthonius latellai	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	535	1161	Ixodidae,Lebertiidae,Penthaleidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO180-24_r_1.5_s_100	Chthonius latellai	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1530	Ixodidae,Laelapidae,Ereynetidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO181-24_r_1_s_50	Chthonius latellai	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1491	Ixodidae,Laelapidae,Ereynetidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO181-24_r_1_s_100	Chthonius latellai	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1464	Laelapidae,Ereynetidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO181-24_r_1.3_s_50	Chthonius latellai	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1389	Laelapidae,Ereynetidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO181-24_r_1.3_s_100	Chthonius latellai	0
+0	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	541	1269	Ixodidae	BSCRO181-24_r_1.5_s_50	Chthonius latellai	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	541	1236	Ixodidae	BSCRO181-24_r_1.5_s_100	Chthonius latellai	0
+0	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	612	1338	Filistatidae,Halacaridae	BSCRO182-24_r_1_s_50	Chthonius lucanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	530	1179	Sicariidae,Theridiidae,Thomisidae,Philodromidae,Cheiracanthiidae,Oppiidae,Neobisiidae	BSCRO182-24_r_1_s_100	Chthonius lucanus	0
+7	7	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	234	852		BSCRO182-24_r_1.3_s_50	Chthonius lucanus	0
+7	7	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	229	663		BSCRO182-24_r_1.3_s_100	Chthonius lucanus	0
+2	3	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	93	336		BSCRO182-24_r_1.5_s_50	Chthonius lucanus	0
+1	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	92	213		BSCRO182-24_r_1.5_s_100	Chthonius lucanus	0
+18	36	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	650	1356	Laelapidae,Oppiidae	BSCRO183-24_r_1_s_50	Chthonius lucanus	0
+18	36	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	650	1356	Dysderidae,Lycosidae,Sparassidae,Amaurobiidae,Oppiidae	BSCRO183-24_r_1_s_100	Chthonius lucanus	0
+24	27	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	431	1071	Parasitidae	BSCRO183-24_r_1.3_s_50	Chthonius lucanus	0
+24	28	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	384	912	Parasitidae	BSCRO183-24_r_1.3_s_100	Chthonius lucanus	0
+3	5	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	358	645	Eupodidae,Oppiidae,Phrynidae,Phrynichidae	BSCRO183-24_r_1.5_s_50	Chthonius lucanus	0
+3	5	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	207	492	Eupodidae,Oppiidae,Chthoniidae,Phrynidae,Phrynichidae	BSCRO183-24_r_1.5_s_100	Chthonius lucanus	0
+14	18	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	541	1278		BSCRO184-24_r_1_s_50	Chtonius microtuberculatus	0
+6	8	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	469	1149		BSCRO184-24_r_1_s_100	Chtonius microtuberculatus	0
+14	15	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	248	855		BSCRO184-24_r_1.3_s_50	Chtonius microtuberculatus	0
+14	14	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	249	579		BSCRO184-24_r_1.3_s_100	Chtonius microtuberculatus	0
+7	7	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	161	333	Heptathelidae,Bdellidae,Oppiidae,Suctobelbidae	BSCRO184-24_r_1.5_s_50	Chtonius microtuberculatus	0
+6	6	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	160	249	Heptathelidae,Bdellidae,Oppiidae,Suctobelbidae	BSCRO184-24_r_1.5_s_100	Chtonius microtuberculatus	0
+25	52	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	643	1356	Araneidae,Oppiidae	BSCRO185-24_r_1_s_50	Chtonius microtuberculatus	0
+5	18	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	637	1272	Araneidae,Oppiidae	BSCRO185-24_r_1_s_100	Chtonius microtuberculatus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	595	1122	Araneidae,Oppiidae	BSCRO185-24_r_1.3_s_50	Chtonius microtuberculatus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	502	906	Araneidae,Oppiidae	BSCRO185-24_r_1.3_s_100	Chtonius microtuberculatus	0
+7	9	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	288	648	Araneidae,Oppiidae	BSCRO185-24_r_1.5_s_50	Chtonius microtuberculatus	0
+7	10	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	284	594	Araneidae,Oppiidae	BSCRO185-24_r_1.5_s_100	Chtonius microtuberculatus	0
+0	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1512	Laelapidae,Halacaridae,Chthoniidae	BSCRO186-24_r_1_s_50	Chthonius nanus	0
+0	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1476	Laelapidae,Halacaridae,Chthoniidae	BSCRO186-24_r_1_s_100	Chthonius nanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	637	1365	Ixodidae,Laelapidae	BSCRO186-24_r_1.3_s_50	Chthonius nanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	628	1356	Ixodidae,Laelapidae	BSCRO186-24_r_1.3_s_100	Chthonius nanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	406	1092	Ixodidae,Laelapidae	BSCRO186-24_r_1.5_s_50	Chthonius nanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	348	1017	Ixodidae,Laelapidae	BSCRO186-24_r_1.5_s_100	Chthonius nanus	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1515	Laelapidae,Halacaridae,Chthoniidae	BSCRO187-24_r_1_s_50	Chthonius nanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1422	Laelapidae,Halacaridae,Chthoniidae	BSCRO187-24_r_1_s_100	Chthonius nanus	0
+1	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1371	Chthoniidae	BSCRO187-24_r_1.3_s_50	Chthonius nanus	0
+1	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	646	1362	Ixodidae,Laelapidae,Halacaridae,Chthoniidae,Tridenchthoniidae	BSCRO187-24_r_1.3_s_100	Chthonius nanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	435	1053	Ixodidae,Pseudotyrannochthoniidae	BSCRO187-24_r_1.5_s_50	Chthonius nanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	359	945	Ixodidae,Pseudotyrannochthoniidae	BSCRO187-24_r_1.5_s_100	Chthonius nanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1512	Laelapidae,Halacaridae,Chthoniidae	BSCRO188-24_r_1_s_50	Chthonius nanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1476	Laelapidae,Halacaridae,Chthoniidae	BSCRO188-24_r_1_s_100	Chthonius nanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	646	1380	Ixodidae,Laelapidae	BSCRO188-24_r_1.3_s_50	Chthonius nanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	646	1380	Ixodidae,Laelapidae	BSCRO188-24_r_1.3_s_100	Chthonius nanus	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	390	1047	Ixodidae,Laelapidae	BSCRO188-24_r_1.5_s_50	Chthonius nanus	4
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	390	1047	Ixodidae,Laelapidae	BSCRO188-24_r_1.5_s_100	Chthonius nanus	4
+10	37	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1530	Amaurobiidae,Ixodidae,Laelapidae	BSCRO189-24_r_1_s_50	Chthonius nanus	0
+9	18	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1395	Ixodidae,Laelapidae	BSCRO189-24_r_1_s_100	Chthonius nanus	1
+4	8	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	588	1248	Ixodidae,Pseudotyrannochthoniidae	BSCRO189-24_r_1.3_s_50	Chthonius nanus	0
+5	15	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	557	1164	Ixodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO189-24_r_1.3_s_100	Chthonius nanus	0
+4	33	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	455	978	Laelapidae,Oppiidae	BSCRO189-24_r_1.5_s_50	Chthonius nanus	0
+1	27	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	401	924	Laelapidae,Oppiidae	BSCRO189-24_r_1.5_s_100	Chthonius nanus	0
+10	11	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	617	1266	Scutacaridae,Phthiracaridae,Oppiidae	BSCRO190-24_r_1_s_50	Chthonius pieltaini	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	200	1080	Phytoseiidae,Stigmaeidae,Oppiidae,Hubbardiidae,Phrynichidae	BSCRO190-24_r_1_s_100	Chthonius pieltaini	0
+0	2	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	201	693	Phytoseiidae,Stigmaeidae,Oppiidae,Haplozetidae,Eremobatidae,Phrynichidae	BSCRO190-24_r_1.3_s_50	Chthonius pieltaini	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	199	468	Phytoseiidae,Stigmaeidae,Oppiidae,Hubbardiidae,Phrynichidae	BSCRO190-24_r_1.3_s_100	Chthonius pieltaini	0
+0	1	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	89	231		BSCRO190-24_r_1.5_s_50	Chthonius pieltaini	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	86	147		BSCRO190-24_r_1.5_s_100	Chthonius pieltaini	0
+1	18	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00502-NC not in BOLD	None	BLAST	family	590	1311		BGE00502-NC_r_1_s_50	None	0
+0	8	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00502-NC not in BOLD	None	BLAST	family	544	1182		BGE00502-NC_r_1_s_100	None	0
+4	4	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00502-NC not in BOLD	None	BLAST	family	369	906		BGE00502-NC_r_1.3_s_50	None	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00502-NC not in BOLD	None	BLAST	family	169	555		BGE00502-NC_r_1.3_s_100	None	0
+4	5	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00502-NC not in BOLD	None	BLAST	family	358	540		BGE00502-NC_r_1.5_s_50	None	0
+0	0	data/BGE00502_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00502-NC not in BOLD	None	BLAST	family	169	372		BGE00502-NC_r_1.5_s_100	None	0

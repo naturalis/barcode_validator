@@ -1,0 +1,577 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+21	60	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	448	1176	Pseudocerotidae	MUSBA3379-25_r_1_s_50	Pseudoceros	0
+29	69	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	226	954	Pseudocerotidae	MUSBA3379-25_r_1_s_100	Pseudoceros	0
+0	25	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	160	831	Pseudocerotidae,Pericelidae,Nematoplanidae	MUSBA3379-25_r_1.3_s_50	Pseudoceros	0
+0	8	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	145	729	Pseudocerotidae,Pericelidae,Prosthiostomidae,Nematoplanidae	MUSBA3379-25_r_1.3_s_100	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	144	414	Pseudocerotidae,Prosthiostomidae	MUSBA3379-25_r_1.5_s_50	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	145	366	Pseudocerotidae,Prosthiostomidae	MUSBA3379-25_r_1.5_s_100	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	655	1542	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3380-25_r_1_s_50	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	655	1527	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3380-25_r_1_s_100	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	655	1509	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3380-25_r_1.3_s_50	Euryleptidae	0
+0	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	655	1509	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3380-25_r_1.3_s_100	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	541	1305	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3380-25_r_1.5_s_50	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	499	1263	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3380-25_r_1.5_s_100	Euryleptidae	0
+13	18	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1530	Pseudocerotidae,Prosthiostomidae	MUSBA3381-25_r_1_s_50	Pseudoceros paralaticlavus	6
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1530	Pseudocerotidae,Prosthiostomidae	MUSBA3381-25_r_1_s_100	Pseudoceros paralaticlavus	7
+4	12	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	640	1473	Pseudocerotidae,Prosthiostomidae	MUSBA3381-25_r_1.3_s_50	Pseudoceros paralaticlavus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	595	1407	Pseudocerotidae,Prosthiostomidae	MUSBA3381-25_r_1.3_s_100	Pseudoceros paralaticlavus	0
+0	11	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	168	1098	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3381-25_r_1.5_s_50	Pseudoceros paralaticlavus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	210	972	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3381-25_r_1.5_s_100	Pseudoceros paralaticlavus	0
+0	3	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	656	1548	Prosthiostomidae,Notoplanidae,Geoplanidae	MUSBA3382-25_r_1_s_50	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	656	1548	Euryleptidae,Prosthiostomidae,Notoplanidae,Geoplanidae	MUSBA3382-25_r_1_s_100	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	656	1548	Euryleptidae,Prosthiostomidae,Notoplanidae,Geoplanidae	MUSBA3382-25_r_1.3_s_50	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	656	1548	Euryleptidae,Prosthiostomidae,Notoplanidae,Geoplanidae	MUSBA3382-25_r_1.3_s_100	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	656	1548	Euryleptidae,Prosthiostomidae,Notoplanidae,Geoplanidae	MUSBA3382-25_r_1.5_s_50	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	656	1548	Euryleptidae,Prosthiostomidae,Notoplanidae,Geoplanidae	MUSBA3382-25_r_1.5_s_100	Euryleptidae	0
+3	21	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1554	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3383-25_r_1_s_50	Pseudobiceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1539	Pseudocerotidae	MUSBA3383-25_r_1_s_100	Pseudobiceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1485	Pseudocerotidae,Prosthiostomidae	MUSBA3383-25_r_1.3_s_50	Pseudobiceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1458	Pseudocerotidae	MUSBA3383-25_r_1.3_s_100	Pseudobiceros	0
+4	4	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	472	1167	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3383-25_r_1.5_s_50	Pseudobiceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	451	1119	Pseudocerotidae,Geoplanidae	MUSBA3383-25_r_1.5_s_100	Pseudobiceros	0
+6	11	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1539	Pseudocerotidae,Geoplanidae	MUSBA3384-25_r_1_s_50	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1539	Pseudocerotidae	MUSBA3384-25_r_1_s_100	Pseudoceros	0
+2	3	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	598	1428	Pseudocerotidae	MUSBA3384-25_r_1.3_s_50	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	598	1428	Pseudocerotidae	MUSBA3384-25_r_1.3_s_100	Pseudoceros	0
+0	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	537	1254	Pseudocerotidae,Geoplanidae	MUSBA3384-25_r_1.5_s_50	Pseudoceros	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	492	1209	Pseudocerotidae,Geoplanidae	MUSBA3384-25_r_1.5_s_100	Pseudoceros	0
+10	17	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	656	1524	Pseudocerotidae,Geoplanidae	MUSBA3385-25_r_1_s_50	Pseudoceros	2
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	656	1524	Pseudocerotidae	MUSBA3385-25_r_1_s_100	Pseudoceros	2
+2	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	656	1524	Pseudocerotidae,Geoplanidae	MUSBA3385-25_r_1.3_s_50	Pseudoceros	2
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	656	1503	Pseudocerotidae	MUSBA3385-25_r_1.3_s_100	Pseudoceros	2
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	258	990	Pseudocerotidae,Geoplanidae	MUSBA3385-25_r_1.5_s_50	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	258	957	Pseudocerotidae,Geoplanidae	MUSBA3385-25_r_1.5_s_100	Pseudoceros	0
+14	23	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1551	Stylochidae,Hoploplanidae,Ilyplanidae,Diceratocephalidae,Dugesiidae	MUSBA3386-25_r_1_s_50	Leptoplana	0
+8	8	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1545	Stylochidae,Hoploplanidae,Ilyplanidae,Diceratocephalidae,Dugesiidae	MUSBA3386-25_r_1_s_100	Leptoplana	0
+1	8	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1539	Hoploplanidae,Notocomplanidae,Ilyplanidae	MUSBA3386-25_r_1.3_s_50	Leptoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1533	Hoploplanidae,Notocomplanidae,Ilyplanidae	MUSBA3386-25_r_1.3_s_100	Leptoplana	3
+0	3	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1449	Hoploplanidae,Notocomplanidae,Ilyplanidae	MUSBA3386-25_r_1.5_s_50	Leptoplana	3
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1407	Hoploplanidae,Notocomplanidae,Ilyplanidae	MUSBA3386-25_r_1.5_s_100	Leptoplana	3
+3	3	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1551	Pericelidae,Stylochidae,Notocomplanidae,Ilyplanidae,Planariidae	MUSBA3387-25_r_1_s_50	Leptoplana	7
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1545	Pericelidae,Stylochidae,Notocomplanidae,Ilyplanidae,Planariidae	MUSBA3387-25_r_1_s_100	Leptoplana	7
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1524	Pericelidae,Stylochidae,Notocomplanidae,Ilyplanidae,Planariidae	MUSBA3387-25_r_1.3_s_50	Leptoplana	7
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1518	Pericelidae,Stylochidae,Notocomplanidae,Ilyplanidae,Planariidae	MUSBA3387-25_r_1.3_s_100	Leptoplana	7
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	617	1440	Notocomplanidae,Ilyplanidae,Planariidae	MUSBA3387-25_r_1.5_s_50	Leptoplana	6
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	617	1401	Notocomplanidae,Ilyplanidae,Planariidae	MUSBA3387-25_r_1.5_s_100	Leptoplana	6
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1551	Callioplanidae,Stylochidae,Plehniidae,Leptoplanidae,Notoplanidae,Notocomplanidae	MUSBA3388-25_r_1_s_50	Leptoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1548	Callioplanidae,Stylochidae,Plehniidae,Leptoplanidae,Notoplanidae,Notocomplanidae	MUSBA3388-25_r_1_s_100	Leptoplana	0
+0	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1548	Callioplanidae,Stylochidae,Plehniidae,Leptoplanidae,Notoplanidae,Notocomplanidae	MUSBA3388-25_r_1.3_s_50	Leptoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1548	Callioplanidae,Stylochidae,Plehniidae,Leptoplanidae,Notoplanidae,Notocomplanidae	MUSBA3388-25_r_1.3_s_100	Leptoplana	0
+0	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1458	Callioplanidae,Stylochidae,Plehniidae,Leptoplanidae,Notoplanidae,Notocomplanidae	MUSBA3388-25_r_1.5_s_50	Leptoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1458	Callioplanidae,Stylochidae,Plehniidae,Leptoplanidae,Notoplanidae,Notocomplanidae	MUSBA3388-25_r_1.5_s_100	Leptoplana	0
+2	3	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1551	Cestoplanidae,Callioplanidae,Notoplanidae,Notocomplanidae	MUSBA3389-25_r_1_s_50	Leptoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1545	Callioplanidae,Notoplanidae,Stylochoplanidae,Notocomplanidae	MUSBA3389-25_r_1_s_100	Leptoplana	0
+0	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1497	Callioplanidae,Notoplanidae,Stylochoplanidae,Notocomplanidae	MUSBA3389-25_r_1.3_s_50	Leptoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1461	Callioplanidae,Notoplanidae,Stylochoplanidae,Notocomplanidae	MUSBA3389-25_r_1.3_s_100	Leptoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	630	1455	Cestoplanidae,Callioplanidae,Notoplanidae,Stylochoplanidae,Notocomplanidae	MUSBA3389-25_r_1.5_s_50	Leptoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	630	1419	Cestoplanidae,Callioplanidae,Notoplanidae,Stylochoplanidae,Notocomplanidae	MUSBA3389-25_r_1.5_s_100	Leptoplana	0
+47	105	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	654	1539	Pseudocerotidae	MUSBA3390-25_r_1_s_50	Pseudoceros	0
+17	64	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1539	Pseudocerotidae	MUSBA3390-25_r_1_s_100	Pseudoceros	0
+0	12	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1494	Pseudocerotidae,Prosthiostomidae	MUSBA3390-25_r_1.3_s_50	Pseudoceros	0
+0	12	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1494	Pseudocerotidae,Prosthiostomidae	MUSBA3390-25_r_1.3_s_100	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	491	1293	Pseudocerotidae,Euryleptidae,Prosthiostomidae,Notoplanidae,Hoploplanidae	MUSBA3390-25_r_1.5_s_50	Pseudoceros	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	434	1158	Pseudocerotidae,Euryleptidae,Prosthiostomidae,Notoplanidae,Hoploplanidae	MUSBA3390-25_r_1.5_s_100	Pseudoceros	0
+18	26	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	633	1515	Pseudocerotidae,Pericelidae,Callioplanidae,Notoplanidae,Stylochoplanidae	MUSBA3391-25_r_1_s_50	Pseudoceros	0
+2	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	582	1410	Pseudocerotidae,Pericelidae,Callioplanidae,Notoplanidae,Stylochoplanidae	MUSBA3391-25_r_1_s_100	Pseudoceros	0
+3	3	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	510	1269	Pseudocerotidae,Callioplanidae,Notoplanidae,Cryptocelidae	MUSBA3391-25_r_1.3_s_50	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	420	1179	Pseudocerotidae,Euryleptidae,Callioplanidae,Plehniidae,Notoplanidae,Cryptocelidae	MUSBA3391-25_r_1.3_s_100	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	124	996	Pseudocerotidae,Callioplanidae,Plehniidae,Notoplanidae,Cryptocelidae	MUSBA3391-25_r_1.5_s_50	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	168	861	Pseudocerotidae,Callioplanidae,Plehniidae,Notoplanidae,Cryptocelidae	MUSBA3391-25_r_1.5_s_100	Pseudoceros	0
+0	8	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1536	Pseudocerotidae,Prosthiostomidae,Callioplanidae,Geoplanidae	MUSBA3392-25_r_1_s_50	Leptoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	644	1485	Pseudocerotidae,Prosthiostomidae,Callioplanidae,Geoplanidae	MUSBA3392-25_r_1_s_100	Leptoplana	0
+1	6	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	644	1500	Pseudocerotidae,Prosthiostomidae,Callioplanidae,Geoplanidae	MUSBA3392-25_r_1.3_s_50	Leptoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	644	1437	Pseudocerotidae,Prosthiostomidae,Callioplanidae,Geoplanidae	MUSBA3392-25_r_1.3_s_100	Leptoplana	0
+21	24	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	428	1188	Pseudocerotidae,Callioplanidae,Geoplanidae	MUSBA3392-25_r_1.5_s_50	Leptoplana	3
+1	21	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	256	1032	Pseudocerotidae,Callioplanidae,Geoplanidae	MUSBA3392-25_r_1.5_s_100	Leptoplana	0
+5	15	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1551	Planoceridae,Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3393-25_r_1_s_50	Leptoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1545	Planoceridae,Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3393-25_r_1_s_100	Leptoplana	0
+0	4	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1530	Planoceridae,Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3393-25_r_1.3_s_50	Leptoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1488	Planoceridae,Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3393-25_r_1.3_s_100	Leptoplana	0
+0	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	566	1386	Notoplanidae,Geoplanidae	MUSBA3393-25_r_1.5_s_50	Leptoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	566	1380	Notoplanidae,Geoplanidae	MUSBA3393-25_r_1.5_s_100	Leptoplana	0
+0	15	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	630	1512	Prosthiostomidae,Cestoplanidae,Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3394-25_r_1_s_50	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	630	1449	Prosthiostomidae,Cestoplanidae,Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3394-25_r_1_s_100	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	621	1353	Prosthiostomidae,Cestoplanidae,Notoplanidae,Notocomplanidae,Ilyplanidae,Planariidae,Geoplanidae	MUSBA3394-25_r_1.3_s_50	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	519	1212	Prosthiostomidae,Cestoplanidae,Notoplanidae,Notocomplanidae,Ilyplanidae,Planariidae,Geoplanidae	MUSBA3394-25_r_1.3_s_100	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	241	903	Cestoplanidae,Notoplanidae,Notocomplanidae,Ilyplanidae,Planariidae,Geoplanidae	MUSBA3394-25_r_1.5_s_50	Pseudoceros	3
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	188	825	Cestoplanidae,Notoplanidae,Notocomplanidae,Ilyplanidae,Planariidae,Geoplanidae	MUSBA3394-25_r_1.5_s_100	Pseudoceros	1
+8	18	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	656	1548	Pseudocerotidae,Prosthiostomidae,Planoceridae	MUSBA3395-25_r_1_s_50	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	657	1518	Pseudocerotidae,Prosthiostomidae,Planoceridae	MUSBA3395-25_r_1_s_100	Pseudoceros	0
+1	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	656	1542	Pseudocerotidae,Prosthiostomidae,Planoceridae	MUSBA3395-25_r_1.3_s_50	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	657	1509	Pseudocerotidae,Prosthiostomidae,Planoceridae	MUSBA3395-25_r_1.3_s_100	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	633	1473	Pseudocerotidae,Prosthiostomidae,Planoceridae	MUSBA3395-25_r_1.5_s_50	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	633	1437	Pseudocerotidae,Prosthiostomidae,Planoceridae	MUSBA3395-25_r_1.5_s_100	Pseudoceros	0
+3	4	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	656	1548	Pseudocerotidae,Prosthiostomidae	MUSBA3396-25_r_1_s_50	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	657	1545	Pseudocerotidae,Prosthiostomidae	MUSBA3396-25_r_1_s_100	Pseudoceros	0
+1	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	657	1509	Pseudocerotidae,Prosthiostomidae	MUSBA3396-25_r_1.3_s_50	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	657	1509	Pseudocerotidae,Prosthiostomidae	MUSBA3396-25_r_1.3_s_100	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	657	1482	Pseudocerotidae,Prosthiostomidae	MUSBA3396-25_r_1.5_s_50	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	657	1452	Pseudocerotidae,Prosthiostomidae	MUSBA3396-25_r_1.5_s_100	Pseudoceros	0
+5	10	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1554	Notocomplanidae,Ilyplanidae	MUSBA3397-25_r_1_s_50	Leptoplana	4
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1545	Notocomplanidae,Ilyplanidae	MUSBA3397-25_r_1_s_100	Leptoplana	4
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1545	Notocomplanidae,Ilyplanidae	MUSBA3397-25_r_1.3_s_50	Leptoplana	4
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1488	Notocomplanidae,Ilyplanidae	MUSBA3397-25_r_1.3_s_100	Leptoplana	4
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1518	Notocomplanidae,Ilyplanidae	MUSBA3397-25_r_1.5_s_50	Leptoplana	4
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1461	Notocomplanidae,Ilyplanidae	MUSBA3397-25_r_1.5_s_100	Leptoplana	4
+8	31	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	654	1566	Prosthiostomidae,Planoceridae,Geoplanidae	MUSBA3398-25_r_1_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	654	1524	Prosthiostomidae,Planoceridae,Geoplanidae	MUSBA3398-25_r_1_s_100	Polycladida	0
+3	9	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	636	1491	Prosthiostomidae,Planoceridae,Geoplanidae	MUSBA3398-25_r_1.3_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	633	1467	Prosthiostomidae,Planoceridae,Geoplanidae	MUSBA3398-25_r_1.3_s_100	Polycladida	0
+8	10	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	351	1101	Planoceridae,Geoplanidae	MUSBA3398-25_r_1.5_s_50	Polycladida	0
+1	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	181	966	Planoceridae,Geoplanidae	MUSBA3398-25_r_1.5_s_100	Polycladida	6
+15	30	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1584	Planoceridae,Stylochoplanidae	MUSBA3399-25_r_1_s_50	Polycladida	0
+6	6	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1554	Planoceridae,Notoplanidae,Stylochoplanidae	MUSBA3399-25_r_1_s_100	Polycladida	0
+13	17	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1581	Planoceridae,Stylochoplanidae	MUSBA3399-25_r_1.3_s_50	Polycladida	0
+13	13	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1554	Planoceridae,Stylochoplanidae	MUSBA3399-25_r_1.3_s_100	Polycladida	0
+0	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1548	Planoceridae,Callioplanidae,Stylochoplanidae	MUSBA3399-25_r_1.5_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1482	Planoceridae,Callioplanidae,Stylochoplanidae	MUSBA3399-25_r_1.5_s_100	Polycladida	0
+10	22	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1584	Planoceridae,Notoplanidae,Stylochoplanidae,Geoplanidae	MUSBA3400-25_r_1_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1554	Planoceridae,Stylochoplanidae	MUSBA3400-25_r_1_s_100	Polycladida	0
+5	6	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1566	Planoceridae,Stylochoplanidae	MUSBA3400-25_r_1.3_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1554	Planoceridae,Stylochoplanidae	MUSBA3400-25_r_1.3_s_100	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1512	Planoceridae,Stylochoplanidae	MUSBA3400-25_r_1.5_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1506	Planoceridae,Stylochoplanidae	MUSBA3400-25_r_1.5_s_100	Polycladida	0
+9	48	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1530	Pericelidae,Callioplanidae,Notoplanidae,Notocomplanidae,Geoplanidae,Nematoplanidae	MUSBA3401-25_r_1_s_50	Polycladida	0
+10	45	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	652	1476	Pseudocerotidae,Pericelidae,Callioplanidae,Plehniidae,Notoplanidae,Notocomplanidae	MUSBA3401-25_r_1_s_100	Polycladida	0
+4	8	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1458	Pericelidae,Callioplanidae,Plehniidae,Notoplanidae,Notocomplanidae,Geoplanidae,Nematoplanidae	MUSBA3401-25_r_1.3_s_50	Polycladida	0
+3	6	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1437	Pericelidae,Callioplanidae,Plehniidae,Notoplanidae,Notocomplanidae,Geoplanidae,Nematoplanidae	MUSBA3401-25_r_1.3_s_100	Polycladida	0
+3	14	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	612	1254	Pericelidae,Callioplanidae,Plehniidae,Notoplanidae,Notocomplanidae,Geoplanidae,Nematoplanidae	MUSBA3401-25_r_1.5_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	608	1218	Pericelidae,Callioplanidae,Plehniidae,Notoplanidae,Notocomplanidae,Geoplanidae,Nematoplanidae	MUSBA3401-25_r_1.5_s_100	Polycladida	0
+2	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1551	Boniniidae,Planoceridae,Planariidae,Geoplanidae	MUSBA3402-25_r_1_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1551	Boniniidae,Planoceridae,Planariidae,Geoplanidae	MUSBA3402-25_r_1_s_100	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	624	1479	Boniniidae,Planoceridae,Planariidae,Geoplanidae	MUSBA3402-25_r_1.3_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	624	1434	Boniniidae,Planoceridae,Planariidae,Geoplanidae	MUSBA3402-25_r_1.3_s_100	Polycladida	0
+7	7	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	411	1161	Planoceridae,Planariidae,Geoplanidae	MUSBA3402-25_r_1.5_s_50	Polycladida	0
+1	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	357	1077	Planoceridae,Planariidae,Geoplanidae	MUSBA3402-25_r_1.5_s_100	Polycladida	0
+29	70	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1503	Pericelidae,Prosthiostomidae,Geoplanidae	MUSBA3403-25_r_1_s_50	Polycladida	0
+7	16	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	652	1479	Pericelidae,Prosthiostomidae,Planoceridae,Geoplanidae	MUSBA3403-25_r_1_s_100	Polycladida	0
+3	16	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	595	1398	Pericelidae,Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3403-25_r_1.3_s_50	Polycladida	0
+0	17	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	583	1335	Pericelidae,Prosthiostomidae,Planoceridae,Geoplanidae	MUSBA3403-25_r_1.3_s_100	Polycladida	0
+0	4	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	556	1317	Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3403-25_r_1.5_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	556	1308	Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3403-25_r_1.5_s_100	Polycladida	0
+25	69	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	652	1533	Pseudocerotidae	MUSBA3404-25_r_1_s_50	Polycladida	0
+7	34	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	652	1455	Pseudocerotidae	MUSBA3404-25_r_1_s_100	Polycladida	0
+1	7	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	335	1215	Pseudocerotidae	MUSBA3404-25_r_1.3_s_50	Polycladida	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	235	1101	Pseudocerotidae,Prosthiostomidae	MUSBA3404-25_r_1.3_s_100	Polycladida	0
+8	14	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	83	921	Pseudocerotidae,Geoplanidae	MUSBA3404-25_r_1.5_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	73	858	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3404-25_r_1.5_s_100	Polycladida	0
+25	44	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	619	1566	Pseudocerotidae,Stylochoplanidae,Promesostomidae,Geoplanidae	MUSBA3405-25_r_1_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	625	1455	Pseudocerotidae,Stylochoplanidae,Promesostomidae,Geoplanidae	MUSBA3405-25_r_1_s_100	Polycladida	0
+7	10	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	466	1368	Pseudocerotidae,Stylochoplanidae,Promesostomidae,Geoplanidae	MUSBA3405-25_r_1.3_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	463	1293	Pseudocerotidae,Stylochoplanidae,Promesostomidae,Geoplanidae	MUSBA3405-25_r_1.3_s_100	Polycladida	0
+0	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	199	945	Stylochoplanidae,Promesostomidae,Geoplanidae	MUSBA3405-25_r_1.5_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	161	849	Stylochoplanidae,Promesostomidae,Geoplanidae	MUSBA3405-25_r_1.5_s_100	Polycladida	0
+12	17	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pericelidae	BLAST	family	381	1089	Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3406-25_r_1_s_50	Pericelis	0
+12	15	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pericelidae	BLAST	family	314	945	Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3406-25_r_1_s_100	Pericelis	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pericelidae	BLAST	family	140	816	Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3406-25_r_1.3_s_50	Pericelis	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pericelidae	BLAST	family	136	768	Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3406-25_r_1.3_s_100	Pericelis	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pericelidae	BLAST	family	291	396	Planoceridae,Geoplanidae	MUSBA3406-25_r_1.5_s_50	Pericelis	6
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pericelidae	BLAST	family	193	318	Planoceridae,Geoplanidae	MUSBA3406-25_r_1.5_s_100	Pericelis	0
+8	17	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	654	1593	Pericelidae,Cestoplanidae,Planoceridae,Notocomplanidae,Ilyplanidae	MUSBA3407-25_r_1_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	654	1548	Pericelidae,Cestoplanidae,Planoceridae,Notocomplanidae,Ilyplanidae	MUSBA3407-25_r_1_s_100	Polycladida	0
+0	3	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	654	1500	Pericelidae,Cestoplanidae,Planoceridae,Notocomplanidae,Ilyplanidae	MUSBA3407-25_r_1.3_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	654	1485	Pericelidae,Cestoplanidae,Planoceridae,Notocomplanidae,Ilyplanidae	MUSBA3407-25_r_1.3_s_100	Polycladida	0
+0	5	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	645	1488	Cestoplanidae,Planoceridae,Geoplanidae,Nematoplanidae	MUSBA3407-25_r_1.5_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	645	1476	Cestoplanidae,Planoceridae,Geoplanidae,Nematoplanidae	MUSBA3407-25_r_1.5_s_100	Polycladida	0
+6	7	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1587	Planoceridae,Callioplanidae,Notoplanidae,Ilyplanidae	MUSBA3408-25_r_1_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1587	Planoceridae,Callioplanidae,Notoplanidae,Ilyplanidae	MUSBA3408-25_r_1_s_100	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1587	Planoceridae,Callioplanidae,Notoplanidae,Ilyplanidae	MUSBA3408-25_r_1.3_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1587	Planoceridae,Callioplanidae,Notoplanidae,Ilyplanidae	MUSBA3408-25_r_1.3_s_100	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1518	Planoceridae,Callioplanidae,Notoplanidae,Ilyplanidae	MUSBA3408-25_r_1.5_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1494	Planoceridae,Callioplanidae,Notoplanidae,Ilyplanidae	MUSBA3408-25_r_1.5_s_100	Polycladida	0
+0	9	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1587	Boniniidae,Callioplanidae,Planariidae,Geoplanidae	MUSBA3409-25_r_1_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1551	Boniniidae,Callioplanidae,Planariidae,Geoplanidae	MUSBA3409-25_r_1_s_100	Polycladida	0
+0	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	624	1470	Boniniidae,Callioplanidae,Planariidae,Geoplanidae	MUSBA3409-25_r_1.3_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	624	1413	Boniniidae,Callioplanidae,Planariidae,Geoplanidae	MUSBA3409-25_r_1.3_s_100	Polycladida	0
+4	5	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	459	1227	Callioplanidae,Planariidae,Geoplanidae	MUSBA3409-25_r_1.5_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	501	1179	Callioplanidae,Planariidae,Geoplanidae	MUSBA3409-25_r_1.5_s_100	Polycladida	0
+7	15	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	654	1590	Pericelidae,Cestoplanidae,Planoceridae,Callioplanidae,Notocomplanidae,Geoplanidae	MUSBA3410-25_r_1_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	654	1548	Pericelidae,Cestoplanidae,Planoceridae,Callioplanidae,Notocomplanidae,Ilyplanidae	MUSBA3410-25_r_1_s_100	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	654	1584	Pericelidae,Cestoplanidae,Planoceridae,Callioplanidae,Notocomplanidae,Ilyplanidae	MUSBA3410-25_r_1.3_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	654	1548	Pericelidae,Cestoplanidae,Planoceridae,Callioplanidae,Notocomplanidae,Ilyplanidae	MUSBA3410-25_r_1.3_s_100	Polycladida	0
+10	11	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	642	1485	Cestoplanidae,Planoceridae,Callioplanidae,Geoplanidae,Nematoplanidae	MUSBA3410-25_r_1.5_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	642	1464	Cestoplanidae,Planoceridae,Callioplanidae,Geoplanidae,Nematoplanidae	MUSBA3410-25_r_1.5_s_100	Polycladida	0
+5	18	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1581	Planoceridae,Notoplanidae,Stylochoplanidae,Geoplanidae	MUSBA3411-25_r_1_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1554	Planoceridae,Callioplanidae,Stylochoplanidae	MUSBA3411-25_r_1_s_100	Polycladida	0
+0	8	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1581	Planoceridae,Callioplanidae,Stylochoplanidae	MUSBA3411-25_r_1.3_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1554	Planoceridae,Callioplanidae,Stylochoplanidae	MUSBA3411-25_r_1.3_s_100	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1503	Planoceridae,Callioplanidae,Stylochoplanidae	MUSBA3411-25_r_1.5_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1497	Planoceridae,Callioplanidae,Stylochoplanidae	MUSBA3411-25_r_1.5_s_100	Polycladida	0
+6	17	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1584	Planoceridae,Notoplanidae,Stylochoplanidae,Geoplanidae	MUSBA3412-25_r_1_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1554	Planoceridae,Callioplanidae,Stylochoplanidae	MUSBA3412-25_r_1_s_100	Polycladida	0
+0	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1563	Planoceridae,Stylochoplanidae	MUSBA3412-25_r_1.3_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1554	Planoceridae,Callioplanidae,Stylochoplanidae	MUSBA3412-25_r_1.3_s_100	Polycladida	0
+0	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1563	Planoceridae,Callioplanidae,Stylochoplanidae	MUSBA3412-25_r_1.5_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1554	Planoceridae,Callioplanidae,Stylochoplanidae	MUSBA3412-25_r_1.5_s_100	Polycladida	0
+4	4	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Stylochidae	BLAST	family	653	1569	Callioplanidae,Stylochoplanidae,Geoplanidae	MUSBA3413-25_r_1_s_50	Stylochidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Stylochidae	BLAST	family	653	1557	Callioplanidae,Stylochoplanidae,Geoplanidae	MUSBA3413-25_r_1_s_100	Stylochidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Stylochidae	BLAST	family	653	1557	Callioplanidae,Stylochoplanidae,Geoplanidae	MUSBA3413-25_r_1.3_s_50	Stylochidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Stylochidae	BLAST	family	653	1557	Callioplanidae,Stylochoplanidae,Geoplanidae	MUSBA3413-25_r_1.3_s_100	Stylochidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Stylochidae	BLAST	family	653	1485	Callioplanidae,Stylochoplanidae,Geoplanidae	MUSBA3413-25_r_1.5_s_50	Stylochidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Stylochidae	BLAST	family	653	1485	Callioplanidae,Stylochoplanidae,Geoplanidae	MUSBA3413-25_r_1.5_s_100	Stylochidae	0
+7	23	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	654	1569	Planoceridae,Notocomplanidae	MUSBA3414-25_r_1_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	654	1560	Planoceridae,Notocomplanidae	MUSBA3414-25_r_1_s_100	Polycladida	0
+0	9	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	654	1542	Planoceridae,Notocomplanidae	MUSBA3414-25_r_1.3_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	654	1521	Planoceridae,Notocomplanidae	MUSBA3414-25_r_1.3_s_100	Polycladida	0
+1	6	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	654	1506	Planoceridae,Notocomplanidae	MUSBA3414-25_r_1.5_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	654	1464	Planoceridae,Notocomplanidae	MUSBA3414-25_r_1.5_s_100	Polycladida	0
+38	118	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1455	Pseudocerotidae,Leptoplanidae	MUSBA3415-25_r_1_s_50	Pseudoceros	0
+14	90	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	652	1416	Pseudocerotidae,Leptoplanidae	MUSBA3415-25_r_1_s_100	Pseudoceros	0
+15	31	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	634	1416	Pseudocerotidae	MUSBA3415-25_r_1.3_s_50	Pseudoceros	0
+12	26	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	634	1386	Pseudocerotidae	MUSBA3415-25_r_1.3_s_100	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	537	1326	Pseudocerotidae,Euryleptidae,Prosthiostomidae	MUSBA3415-25_r_1.5_s_50	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	487	1206	Pseudocerotidae,Euryleptidae,Prosthiostomidae	MUSBA3415-25_r_1.5_s_100	Pseudoceros	0
+17	30	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1530	Pseudocerotidae,Euryleptidae,Prosthiostomidae	MUSBA3416-25_r_1_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1494	Pseudocerotidae,Prosthiostomidae	MUSBA3416-25_r_1_s_100	Polycladida	0
+5	5	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	512	1317	Pseudocerotidae,Euryleptidae,Prosthiostomidae	MUSBA3416-25_r_1.3_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	447	1173	Pseudocerotidae,Euryleptidae,Prosthiostomidae	MUSBA3416-25_r_1.3_s_100	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	154	1044	Pseudocerotidae,Euryleptidae,Prosthiostomidae,Geoplanidae	MUSBA3416-25_r_1.5_s_50	Polycladida	2
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	204	924	Pseudocerotidae,Euryleptidae,Prosthiostomidae,Geoplanidae	MUSBA3416-25_r_1.5_s_100	Polycladida	0
+2	11	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1593	Cestoplanidae,Planoceridae,Callioplanidae,Hoploplanidae	MUSBA3417-25_r_1_s_50	Polycladida	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1554	Cestoplanidae,Planoceridae,Callioplanidae,Stylochoplanidae,Ilyplanidae	MUSBA3417-25_r_1_s_100	Polycladida	1
+3	3	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1530	Cestoplanidae,Planoceridae,Callioplanidae,Ilyplanidae	MUSBA3417-25_r_1.3_s_50	Polycladida	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1512	Cestoplanidae,Planoceridae,Callioplanidae,Stylochoplanidae,Ilyplanidae	MUSBA3417-25_r_1.3_s_100	Polycladida	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1524	Cestoplanidae,Planoceridae,Callioplanidae,Stylochoplanidae,Ilyplanidae	MUSBA3417-25_r_1.5_s_50	Polycladida	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1491	Cestoplanidae,Planoceridae,Callioplanidae,Stylochoplanidae,Ilyplanidae	MUSBA3417-25_r_1.5_s_100	Polycladida	1
+3	18	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1575	Cestoplanidae,Planoceridae,Callioplanidae,Hoploplanidae,Nematoplanidae	MUSBA3418-25_r_1_s_50	Polycladida	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1554	Cestoplanidae,Planoceridae,Callioplanidae,Hoploplanidae,Nematoplanidae	MUSBA3418-25_r_1_s_100	Polycladida	1
+0	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1560	Cestoplanidae,Planoceridae,Callioplanidae,Hoploplanidae,Nematoplanidae	MUSBA3418-25_r_1.3_s_50	Polycladida	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1539	Cestoplanidae,Planoceridae,Callioplanidae,Hoploplanidae,Nematoplanidae	MUSBA3418-25_r_1.3_s_100	Polycladida	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1545	Cestoplanidae,Planoceridae,Callioplanidae,Hoploplanidae,Nematoplanidae	MUSBA3418-25_r_1.5_s_50	Polycladida	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	653	1491	Cestoplanidae,Planoceridae,Callioplanidae,Hoploplanidae,Nematoplanidae	MUSBA3418-25_r_1.5_s_100	Polycladida	1
+2	19	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	652	1566	Pericelidae,Plehniidae,Geoplanidae	MUSBA3419-25_r_1_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	652	1485	Pericelidae,Planoceridae,Plehniidae,Notocomplanidae,Geoplanidae	MUSBA3419-25_r_1_s_100	Polycladida	0
+0	7	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	652	1533	Pericelidae,Planoceridae,Plehniidae,Geoplanidae	MUSBA3419-25_r_1.3_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	652	1473	Pericelidae,Planoceridae,Plehniidae,Geoplanidae	MUSBA3419-25_r_1.3_s_100	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	598	1341	Pericelidae,Planoceridae,Plehniidae,Geoplanidae	MUSBA3419-25_r_1.5_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	598	1332	Pericelidae,Planoceridae,Plehniidae,Geoplanidae	MUSBA3419-25_r_1.5_s_100	Polycladida	0
+15	35	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	652	1596	Notocomplanidae,Geoplanidae	MUSBA3420-25_r_1_s_50	Polycladida	0
+6	6	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	652	1488	Pericelidae,Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3420-25_r_1_s_100	Polycladida	0
+9	9	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	652	1467	Pericelidae,Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3420-25_r_1.3_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	652	1434	Pericelidae,Planoceridae,Plehniidae,Notocomplanidae,Geoplanidae	MUSBA3420-25_r_1.3_s_100	Polycladida	0
+2	4	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	502	1293	Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3420-25_r_1.5_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	502	1284	Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3420-25_r_1.5_s_100	Polycladida	0
+2	16	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	650	1572	Boniniidae,Planoceridae,Planariidae,Geoplanidae	MUSBA3421-25_r_1_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1500	Boniniidae,Planoceridae,Callioplanidae,Planariidae,Geoplanidae	MUSBA3421-25_r_1_s_100	Polycladida	0
+0	4	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	636	1449	Boniniidae,Planoceridae,Callioplanidae,Planariidae,Geoplanidae	MUSBA3421-25_r_1.3_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	636	1425	Boniniidae,Planoceridae,Callioplanidae,Planariidae,Geoplanidae	MUSBA3421-25_r_1.3_s_100	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	486	1272	Planoceridae,Callioplanidae,Planariidae,Geoplanidae	MUSBA3421-25_r_1.5_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	465	1188	Planoceridae,Callioplanidae,Planariidae,Geoplanidae	MUSBA3421-25_r_1.5_s_100	Polycladida	0
+1	16	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1554	Cestoplanidae,Stylochidae,Notoplanidae,Stylochoplanidae,Hoploplanidae,Notocomplanidae	MUSBA3422-25_r_1_s_50	Leptoplanidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1539	Cestoplanidae,Stylochidae,Notoplanidae,Stylochoplanidae,Hoploplanidae,Notocomplanidae	MUSBA3422-25_r_1_s_100	Leptoplanidae	0
+0	6	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1551	Cestoplanidae,Stylochidae,Notoplanidae,Stylochoplanidae,Hoploplanidae,Notocomplanidae	MUSBA3422-25_r_1.3_s_50	Leptoplanidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1539	Cestoplanidae,Stylochidae,Notoplanidae,Stylochoplanidae,Hoploplanidae,Notocomplanidae	MUSBA3422-25_r_1.3_s_100	Leptoplanidae	0
+0	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1551	Cestoplanidae,Stylochidae,Notoplanidae,Stylochoplanidae,Hoploplanidae,Notocomplanidae	MUSBA3422-25_r_1.5_s_50	Leptoplanidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1539	Cestoplanidae,Stylochidae,Notoplanidae,Stylochoplanidae,Hoploplanidae,Notocomplanidae	MUSBA3422-25_r_1.5_s_100	Leptoplanidae	0
+0	8	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1554	Cestoplanidae,Stylochidae,Notoplanidae,Stylochoplanidae,Hoploplanidae,Notocomplanidae	MUSBA3423-25_r_1_s_50	Leptoplanidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1539	Cestoplanidae,Stylochidae,Notoplanidae,Stylochoplanidae,Hoploplanidae,Notocomplanidae	MUSBA3423-25_r_1_s_100	Leptoplanidae	0
+0	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1551	Cestoplanidae,Stylochidae,Notoplanidae,Stylochoplanidae,Hoploplanidae,Notocomplanidae	MUSBA3423-25_r_1.3_s_50	Leptoplanidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1539	Cestoplanidae,Stylochidae,Notoplanidae,Stylochoplanidae,Hoploplanidae,Notocomplanidae	MUSBA3423-25_r_1.3_s_100	Leptoplanidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1551	Cestoplanidae,Stylochidae,Notoplanidae,Stylochoplanidae,Hoploplanidae,Notocomplanidae	MUSBA3423-25_r_1.5_s_50	Leptoplanidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1539	Cestoplanidae,Stylochidae,Notoplanidae,Stylochoplanidae,Hoploplanidae,Notocomplanidae	MUSBA3423-25_r_1.5_s_100	Leptoplanidae	0
+13	14	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1554	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3424-25_r_1_s_50	Leptoplanidae	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1548	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3424-25_r_1_s_100	Leptoplanidae	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1533	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3424-25_r_1.3_s_50	Leptoplanidae	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1521	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3424-25_r_1.3_s_100	Leptoplanidae	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1455	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3424-25_r_1.5_s_50	Leptoplanidae	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1455	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3424-25_r_1.5_s_100	Leptoplanidae	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1554	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3425-25_r_1_s_50	Leptoplana tremellaris	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1548	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3425-25_r_1_s_100	Leptoplana tremellaris	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1551	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3425-25_r_1.3_s_50	Leptoplana tremellaris	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1548	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3425-25_r_1.3_s_100	Leptoplana tremellaris	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1470	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3425-25_r_1.5_s_50	Leptoplana tremellaris	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1467	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3425-25_r_1.5_s_100	Leptoplana tremellaris	1
+1	4	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1554	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3426-25_r_1_s_50	Leptoplana tremellaris	1
+1	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1548	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3426-25_r_1_s_100	Leptoplana tremellaris	1
+1	5	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1551	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3426-25_r_1.3_s_50	Leptoplana tremellaris	1
+1	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1548	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3426-25_r_1.3_s_100	Leptoplana tremellaris	1
+1	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1512	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3426-25_r_1.5_s_50	Leptoplana tremellaris	1
+1	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1476	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3426-25_r_1.5_s_100	Leptoplana tremellaris	1
+8	11	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1554	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3427-25_r_1_s_50	Leptoplana tremellaris	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1548	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3427-25_r_1_s_100	Leptoplana tremellaris	1
+0	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1554	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3427-25_r_1.3_s_50	Leptoplana tremellaris	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1518	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3427-25_r_1.3_s_100	Leptoplana tremellaris	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1458	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3427-25_r_1.5_s_50	Leptoplana tremellaris	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1455	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3427-25_r_1.5_s_100	Leptoplana tremellaris	1
+5	7	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	653	1554	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3428-25_r_1_s_50	Notoplana	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	653	1548	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3428-25_r_1_s_100	Notoplana	1
+0	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	653	1551	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3428-25_r_1.3_s_50	Notoplana	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	653	1524	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3428-25_r_1.3_s_100	Notoplana	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	653	1485	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3428-25_r_1.5_s_50	Notoplana	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	653	1482	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3428-25_r_1.5_s_100	Notoplana	1
+2	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	653	1554	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3429-25_r_1_s_50	Notoplana	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	653	1548	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae,Notocomplanidae	MUSBA3429-25_r_1_s_100	Notoplana	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	653	1551	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae,Notocomplanidae	MUSBA3429-25_r_1.3_s_50	Notoplana	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	653	1548	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae,Notocomplanidae	MUSBA3429-25_r_1.3_s_100	Notoplana	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	653	1488	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae,Notocomplanidae	MUSBA3429-25_r_1.5_s_50	Notoplana	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	653	1485	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae,Notocomplanidae	MUSBA3429-25_r_1.5_s_100	Notoplana	1
+6	6	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	653	1554	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3430-25_r_1_s_50	Notoplana	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	653	1548	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3430-25_r_1_s_100	Notoplana	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	653	1548	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3430-25_r_1.3_s_50	Notoplana	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	653	1497	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3430-25_r_1.3_s_100	Notoplana	1
+0	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	653	1440	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3430-25_r_1.5_s_50	Notoplana	1
+0	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	653	1437	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3430-25_r_1.5_s_100	Notoplana	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	657	1551	Prosthiostomidae,Planoceridae,Notoplanidae,Notocomplanidae	MUSBA3431-25_r_1_s_50	Prosthiostomum siphunculus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	657	1551	Prosthiostomidae,Planoceridae,Notoplanidae,Notocomplanidae	MUSBA3431-25_r_1_s_100	Prosthiostomum siphunculus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	657	1551	Prosthiostomidae,Planoceridae,Notoplanidae,Notocomplanidae	MUSBA3431-25_r_1.3_s_50	Prosthiostomum siphunculus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	657	1551	Prosthiostomidae,Planoceridae,Notoplanidae,Notocomplanidae	MUSBA3431-25_r_1.3_s_100	Prosthiostomum siphunculus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	657	1551	Prosthiostomidae,Planoceridae,Notoplanidae,Notocomplanidae	MUSBA3431-25_r_1.5_s_50	Prosthiostomum siphunculus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	657	1551	Prosthiostomidae,Planoceridae,Notoplanidae,Notocomplanidae	MUSBA3431-25_r_1.5_s_100	Prosthiostomum siphunculus	0
+0	4	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1533	Pseudocerotidae	MUSBA3432-25_r_1_s_50	Thysanozoon brocchii	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1530	Pseudocerotidae	MUSBA3432-25_r_1_s_100	Thysanozoon brocchii	0
+0	9	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1506	Pseudocerotidae,Euryleptidae	MUSBA3432-25_r_1.3_s_50	Thysanozoon brocchii	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1506	Pseudocerotidae	MUSBA3432-25_r_1.3_s_100	Thysanozoon brocchii	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	559	1323	Euryleptidae,Geoplanidae	MUSBA3432-25_r_1.5_s_50	Thysanozoon brocchii	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	553	1317	Euryleptidae,Geoplanidae	MUSBA3432-25_r_1.5_s_100	Thysanozoon brocchii	0
+0	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1536	Pseudocerotidae	MUSBA3433-25_r_1_s_50	Thysanozoon brocchii	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1530	Pseudocerotidae	MUSBA3433-25_r_1_s_100	Thysanozoon brocchii	0
+0	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1512	Pseudocerotidae,Euryleptidae	MUSBA3433-25_r_1.3_s_50	Thysanozoon brocchii	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1485	Pseudocerotidae,Euryleptidae	MUSBA3433-25_r_1.3_s_100	Thysanozoon brocchii	0
+2	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	514	1260	Euryleptidae,Geoplanidae	MUSBA3433-25_r_1.5_s_50	Thysanozoon brocchii	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	512	1227	Euryleptidae,Geoplanidae	MUSBA3433-25_r_1.5_s_100	Thysanozoon brocchii	0
+6	6	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1554	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3434-25_r_1_s_50	Leptoplanidae	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1548	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3434-25_r_1_s_100	Leptoplanidae	1
+0	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1554	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3434-25_r_1.3_s_50	Leptoplanidae	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1518	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3434-25_r_1.3_s_100	Leptoplanidae	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1491	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3434-25_r_1.5_s_50	Leptoplanidae	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1488	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3434-25_r_1.5_s_100	Leptoplanidae	1
+9	10	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1554	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae,Geoplanidae	MUSBA3435-25_r_1_s_50	Leptoplanidae	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1548	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3435-25_r_1_s_100	Leptoplanidae	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1527	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3435-25_r_1.3_s_50	Leptoplanidae	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1476	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3435-25_r_1.3_s_100	Leptoplanidae	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1455	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3435-25_r_1.5_s_50	Leptoplanidae	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1452	Prosthiostomidae,Planoceridae,Callioplanidae,Pleioplanidae,Notoplanidae	MUSBA3435-25_r_1.5_s_100	Leptoplanidae	1
+0	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	654	1587	Planoceridae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3436-25_r_1_s_50	Discocelis tigrina	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	654	1554	Planoceridae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3436-25_r_1_s_100	Discocelis tigrina	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	654	1563	Planoceridae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3436-25_r_1.3_s_50	Discocelis tigrina	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	654	1554	Planoceridae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3436-25_r_1.3_s_100	Discocelis tigrina	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	654	1527	Planoceridae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3436-25_r_1.5_s_50	Discocelis tigrina	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	654	1512	Planoceridae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3436-25_r_1.5_s_100	Discocelis tigrina	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	651	1551	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3437-25_r_1_s_50	Leptoplana	5
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	651	1545	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3437-25_r_1_s_100	Leptoplana	5
+0	7	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	651	1512	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3437-25_r_1.3_s_50	Leptoplana	5
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	651	1467	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3437-25_r_1.3_s_100	Leptoplana	5
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	651	1479	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3437-25_r_1.5_s_50	Leptoplana	5
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	651	1443	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3437-25_r_1.5_s_100	Leptoplana	5
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	656	1554	Pseudocerotidae,Euryleptidae,Geoplanidae	MUSBA3438-25_r_1_s_50	Prostheceraeus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	656	1536	Pseudocerotidae,Euryleptidae,Geoplanidae	MUSBA3438-25_r_1_s_100	Prostheceraeus	0
+0	5	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	656	1548	Pseudocerotidae,Geoplanidae	MUSBA3438-25_r_1.3_s_50	Prostheceraeus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	656	1515	Pseudocerotidae,Euryleptidae,Geoplanidae	MUSBA3438-25_r_1.3_s_100	Prostheceraeus	0
+2	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	452	1254	Pseudocerotidae,Geoplanidae	MUSBA3438-25_r_1.5_s_50	Prostheceraeus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	431	1116	Pseudocerotidae,Geoplanidae	MUSBA3438-25_r_1.5_s_100	Prostheceraeus	2
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	656	1554	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3439-25_r_1_s_50	Prosthiostomum siphunculus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	656	1554	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3439-25_r_1_s_100	Prosthiostomum siphunculus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	656	1554	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3439-25_r_1.3_s_50	Prosthiostomum siphunculus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	656	1554	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3439-25_r_1.3_s_100	Prosthiostomum siphunculus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	656	1554	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3439-25_r_1.5_s_50	Prosthiostomum siphunculus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	656	1554	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3439-25_r_1.5_s_100	Prosthiostomum siphunculus	0
+17	74	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	625	1428	Pseudocerotidae	MUSBA3440-25_r_1_s_50	Thysanozoon brocchii	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	586	1311	Pseudocerotidae	MUSBA3440-25_r_1_s_100	Thysanozoon brocchii	0
+4	19	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	505	1236	Pseudocerotidae,Geoplanidae	MUSBA3440-25_r_1.3_s_50	Thysanozoon brocchii	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	506	996	Pseudocerotidae,Euryleptidae,Geoplanidae	MUSBA3440-25_r_1.3_s_100	Thysanozoon brocchii	4
+1	14	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	215	777	Pseudocerotidae,Euryleptidae,Geoplanidae	MUSBA3440-25_r_1.5_s_50	Thysanozoon brocchii	2
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	220	639	Euryleptidae,Geoplanidae	MUSBA3440-25_r_1.5_s_100	Thysanozoon brocchii	0
+4	5	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1515	Pseudocerotidae	MUSBA3441-25_r_1_s_50	Thysanozoon brocchii	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1515	Pseudocerotidae	MUSBA3441-25_r_1_s_100	Thysanozoon brocchii	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	655	1494	Pseudocerotidae,Euryleptidae	MUSBA3441-25_r_1.3_s_50	Thysanozoon brocchii	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	652	1491	Pseudocerotidae,Euryleptidae	MUSBA3441-25_r_1.3_s_100	Thysanozoon brocchii	0
+1	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	523	1179	Euryleptidae,Geoplanidae	MUSBA3441-25_r_1.5_s_50	Thysanozoon brocchii	0
+1	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	523	1149	Euryleptidae,Geoplanidae	MUSBA3441-25_r_1.5_s_100	Thysanozoon brocchii	0
+10	10	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Stylochidae	BLAST	family	653	1572	Cestoplanidae,Planoceridae,Stylochidae	MUSBA3442-25_r_1_s_50	Imogine fafai	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Stylochidae	BLAST	family	653	1572	Cestoplanidae,Planoceridae,Stylochidae	MUSBA3442-25_r_1_s_100	Imogine fafai	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Stylochidae	BLAST	family	653	1572	Cestoplanidae,Planoceridae,Stylochidae	MUSBA3442-25_r_1.3_s_50	Imogine fafai	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Stylochidae	BLAST	family	653	1572	Cestoplanidae,Planoceridae,Stylochidae	MUSBA3442-25_r_1.3_s_100	Imogine fafai	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Stylochidae	BLAST	family	653	1572	Cestoplanidae,Planoceridae,Stylochidae	MUSBA3442-25_r_1.5_s_50	Imogine fafai	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Stylochidae	BLAST	family	653	1572	Cestoplanidae,Planoceridae,Stylochidae	MUSBA3442-25_r_1.5_s_100	Imogine fafai	0
+5	8	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	654	1587	Planoceridae,Callioplanidae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3443-25_r_1_s_50	Discocelis tigrina	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	654	1554	Planoceridae,Callioplanidae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3443-25_r_1_s_100	Discocelis tigrina	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	654	1554	Planoceridae,Callioplanidae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3443-25_r_1.3_s_50	Discocelis tigrina	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	654	1554	Planoceridae,Callioplanidae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3443-25_r_1.3_s_100	Discocelis tigrina	1
+0	6	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	654	1533	Planoceridae,Callioplanidae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3443-25_r_1.5_s_50	Discocelis tigrina	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	654	1533	Planoceridae,Callioplanidae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3443-25_r_1.5_s_100	Discocelis tigrina	1
+5	5	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	638	1536	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3444-25_r_1_s_50	Prosthiostomum siphunculus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	638	1536	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3444-25_r_1_s_100	Prosthiostomum siphunculus	0
+3	3	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	638	1536	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3444-25_r_1.3_s_50	Prosthiostomum siphunculus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	638	1536	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3444-25_r_1.3_s_100	Prosthiostomum siphunculus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	638	1536	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3444-25_r_1.5_s_50	Prosthiostomum siphunculus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	638	1536	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3444-25_r_1.5_s_100	Prosthiostomum siphunculus	0
+1	5	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	654	1596	Planoceridae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3445-25_r_1_s_50	Discocelis tigrina	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	654	1554	Planoceridae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3445-25_r_1_s_100	Discocelis tigrina	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	654	1566	Planoceridae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3445-25_r_1.3_s_50	Discocelis tigrina	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	654	1554	Planoceridae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3445-25_r_1.3_s_100	Discocelis tigrina	1
+0	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	654	1545	Planoceridae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3445-25_r_1.5_s_50	Discocelis tigrina	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	654	1533	Planoceridae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3445-25_r_1.5_s_100	Discocelis tigrina	1
+0	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	650	1554	Cestoplanidae,Callioplanidae,Stylochidae,Notoplanidae,Ilyplanidae	MUSBA3446-25_r_1_s_50	Leptoplana	7
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1548	Planoceridae,Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3446-25_r_1_s_100	Leptoplana	1
+0	8	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1554	Planoceridae,Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3446-25_r_1.3_s_50	Leptoplana	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1545	Planoceridae,Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3446-25_r_1.3_s_100	Leptoplana	1
+0	4	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1473	Planoceridae,Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3446-25_r_1.5_s_50	Leptoplana	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1443	Planoceridae,Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3446-25_r_1.5_s_100	Leptoplana	1
+1	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Stylochidae	BLAST	family	653	1569	Planoceridae,Stylochidae	MUSBA3447-25_r_1_s_50	Imogine	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Stylochidae	BLAST	family	653	1569	Planoceridae,Stylochidae	MUSBA3447-25_r_1_s_100	Imogine	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Stylochidae	BLAST	family	653	1569	Planoceridae,Stylochidae	MUSBA3447-25_r_1.3_s_50	Imogine	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Stylochidae	BLAST	family	653	1569	Planoceridae,Stylochidae	MUSBA3447-25_r_1.3_s_100	Imogine	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Stylochidae	BLAST	family	653	1527	Planoceridae,Stylochidae	MUSBA3447-25_r_1.5_s_50	Imogine	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Stylochidae	BLAST	family	653	1521	Planoceridae,Stylochidae	MUSBA3447-25_r_1.5_s_100	Imogine	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	651	1551	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3448-25_r_1_s_50	Leptoplanidae	6
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	651	1545	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3448-25_r_1_s_100	Leptoplanidae	6
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	651	1545	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3448-25_r_1.3_s_50	Leptoplanidae	6
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	651	1518	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3448-25_r_1.3_s_100	Leptoplanidae	6
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	651	1467	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3448-25_r_1.5_s_50	Leptoplanidae	6
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	651	1467	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3448-25_r_1.5_s_100	Leptoplanidae	6
+1	7	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	651	1464	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3449-25_r_1_s_50	Pseudoceros	5
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	651	1410	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3449-25_r_1_s_100	Pseudoceros	5
+1	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	615	1374	Callioplanidae,Gnesiocerotidae,Ilyplanidae,Geoplanidae	MUSBA3449-25_r_1.3_s_50	Pseudoceros	5
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	571	1296	Callioplanidae,Gnesiocerotidae,Ilyplanidae,Geoplanidae	MUSBA3449-25_r_1.3_s_100	Pseudoceros	5
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	168	1032	Callioplanidae,Gnesiocerotidae,Ilyplanidae,Geoplanidae	MUSBA3449-25_r_1.5_s_50	Pseudoceros	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	231	999	Callioplanidae,Gnesiocerotidae,Ilyplanidae,Geoplanidae	MUSBA3449-25_r_1.5_s_100	Pseudoceros	0
+0	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	657	1551	Prosthiostomidae,Planoceridae,Notoplanidae,Notocomplanidae,Geoplanidae	MUSBA3450-25_r_1_s_50	Prosthiostomum siphunculus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	657	1551	Prosthiostomidae,Planoceridae,Notoplanidae,Notocomplanidae,Geoplanidae	MUSBA3450-25_r_1_s_100	Prosthiostomum siphunculus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	657	1551	Prosthiostomidae,Planoceridae,Notoplanidae,Notocomplanidae,Geoplanidae	MUSBA3450-25_r_1.3_s_50	Prosthiostomum siphunculus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	657	1551	Prosthiostomidae,Planoceridae,Notoplanidae,Notocomplanidae,Geoplanidae	MUSBA3450-25_r_1.3_s_100	Prosthiostomum siphunculus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	657	1551	Prosthiostomidae,Planoceridae,Notoplanidae,Notocomplanidae,Geoplanidae	MUSBA3450-25_r_1.5_s_50	Prosthiostomum siphunculus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	657	1551	Prosthiostomidae,Planoceridae,Notoplanidae,Notocomplanidae,Geoplanidae	MUSBA3450-25_r_1.5_s_100	Prosthiostomum siphunculus	0
+3	7	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	654	1584	Planoceridae,Callioplanidae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3451-25_r_1_s_50	Planocera	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	654	1554	Planoceridae,Callioplanidae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3451-25_r_1_s_100	Planocera	1
+0	3	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	654	1584	Planoceridae,Callioplanidae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3451-25_r_1.3_s_50	Planocera	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	654	1554	Planoceridae,Callioplanidae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3451-25_r_1.3_s_100	Planocera	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	654	1473	Planoceridae,Callioplanidae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3451-25_r_1.5_s_50	Planocera	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	654	1452	Planoceridae,Callioplanidae,Notoplanidae,Notocomplanidae,Discocelidae	MUSBA3451-25_r_1.5_s_100	Planocera	1
+3	3	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	653	1593	Planoceridae,Callioplanidae,Hoploplanidae	MUSBA3452-25_r_1_s_50	Planocera	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	653	1593	Planoceridae,Callioplanidae,Hoploplanidae	MUSBA3452-25_r_1_s_100	Planocera	0
+2	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	653	1593	Planoceridae,Callioplanidae,Hoploplanidae	MUSBA3452-25_r_1.3_s_50	Planocera	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	653	1593	Planoceridae,Callioplanidae,Hoploplanidae	MUSBA3452-25_r_1.3_s_100	Planocera	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	653	1593	Planoceridae,Callioplanidae,Hoploplanidae	MUSBA3452-25_r_1.5_s_50	Planocera	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	653	1593	Planoceridae,Callioplanidae,Hoploplanidae	MUSBA3452-25_r_1.5_s_100	Planocera	0
+4	4	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1554	Planoceridae,Callioplanidae,Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3453-25_r_1_s_50	Leptoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1554	Planoceridae,Callioplanidae,Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3453-25_r_1_s_100	Leptoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1554	Planoceridae,Callioplanidae,Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3453-25_r_1.3_s_50	Leptoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1554	Planoceridae,Callioplanidae,Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3453-25_r_1.3_s_100	Leptoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1554	Planoceridae,Callioplanidae,Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3453-25_r_1.5_s_50	Leptoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1554	Planoceridae,Callioplanidae,Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3453-25_r_1.5_s_100	Leptoplana	0
+5	5	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	654	1554	Planoceridae,Callioplanidae,Notoplanidae,Notocomplanidae	MUSBA3454-25_r_1_s_50	Notoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	654	1554	Planoceridae,Callioplanidae,Notoplanidae,Stylochoplanidae,Notocomplanidae	MUSBA3454-25_r_1_s_100	Notoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	654	1554	Planoceridae,Callioplanidae,Notoplanidae,Stylochoplanidae,Notocomplanidae	MUSBA3454-25_r_1.3_s_50	Notoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	654	1554	Planoceridae,Callioplanidae,Notoplanidae,Stylochoplanidae,Notocomplanidae	MUSBA3454-25_r_1.3_s_100	Notoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	654	1554	Planoceridae,Callioplanidae,Notoplanidae,Stylochoplanidae,Notocomplanidae	MUSBA3454-25_r_1.5_s_50	Notoplana	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	654	1554	Planoceridae,Callioplanidae,Notoplanidae,Stylochoplanidae,Notocomplanidae	MUSBA3454-25_r_1.5_s_100	Notoplana	0
+1	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1578	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3455-25_r_1_s_50	Polycladida	4
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1578	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3455-25_r_1_s_100	Polycladida	4
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1578	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3455-25_r_1.3_s_50	Polycladida	4
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1578	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3455-25_r_1.3_s_100	Polycladida	4
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1476	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3455-25_r_1.5_s_50	Polycladida	5
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1476	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3455-25_r_1.5_s_100	Polycladida	5
+48	80	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	590	1521	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3456-25_r_1_s_50	Polycladida	0
+39	68	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	487	1356	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3456-25_r_1_s_100	Polycladida	1
+13	51	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	168	1173	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3456-25_r_1.3_s_50	Polycladida	0
+12	67	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	126	1080	Pseudocerotidae,Prosthiostomidae,Geoplanidae	MUSBA3456-25_r_1.3_s_100	Polycladida	0
+12	19	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	248	939	Prosthiostomidae,Geoplanidae	MUSBA3456-25_r_1.5_s_50	Polycladida	1
+12	14	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	246	849	Prosthiostomidae,Geoplanidae	MUSBA3456-25_r_1.5_s_100	Polycladida	1
+21	25	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1593	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3457-25_r_1_s_50	Polycladida	5
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1563	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3457-25_r_1_s_100	Polycladida	5
+0	5	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1527	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3457-25_r_1.3_s_50	Polycladida	5
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1527	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3457-25_r_1.3_s_100	Polycladida	5
+0	4	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1491	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3457-25_r_1.5_s_50	Polycladida	5
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1491	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3457-25_r_1.5_s_100	Polycladida	5
+6	16	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1578	Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3458-25_r_1_s_50	Polycladida	6
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1545	Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3458-25_r_1_s_100	Polycladida	6
+0	4	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1515	Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3458-25_r_1.3_s_50	Polycladida	6
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1515	Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3458-25_r_1.3_s_100	Polycladida	6
+0	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	639	1431	Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3458-25_r_1.5_s_50	Polycladida	6
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	639	1413	Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3458-25_r_1.5_s_100	Polycladida	6
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	651	1530	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3459-25_r_1_s_50	Pseudocerotidae	5
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	651	1473	Pericelidae,Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3459-25_r_1_s_100	Pseudocerotidae	5
+11	11	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	621	1425	Callioplanidae,Gnesiocerotidae,Ilyplanidae,Geoplanidae	MUSBA3459-25_r_1.3_s_50	Pseudocerotidae	5
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	600	1404	Callioplanidae,Gnesiocerotidae,Ilyplanidae,Geoplanidae	MUSBA3459-25_r_1.3_s_100	Pseudocerotidae	5
+5	5	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	405	1125	Callioplanidae,Gnesiocerotidae,Ilyplanidae,Geoplanidae	MUSBA3459-25_r_1.5_s_50	Pseudocerotidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Pseudocerotidae	BLAST	family	189	1074	Callioplanidae,Gnesiocerotidae,Ilyplanidae,Geoplanidae	MUSBA3459-25_r_1.5_s_100	Pseudocerotidae	0
+5	9	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1587	Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3460-25_r_1_s_50	Polycladida	6
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1578	Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3460-25_r_1_s_100	Polycladida	6
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1587	Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3460-25_r_1.3_s_50	Polycladida	6
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1578	Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3460-25_r_1.3_s_100	Polycladida	6
+0	3	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1521	Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3460-25_r_1.5_s_50	Polycladida	6
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	651	1521	Planoceridae,Callioplanidae,Gnesiocerotidae,Ilyplanidae	MUSBA3460-25_r_1.5_s_100	Polycladida	6
+5	12	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	628	1560	Pseudocerotidae,Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3461-25_r_1_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	628	1437	Pseudocerotidae,Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3461-25_r_1_s_100	Polycladida	0
+3	4	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	544	1380	Pseudocerotidae,Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3461-25_r_1.3_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	544	1353	Pseudocerotidae,Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3461-25_r_1.3_s_100	Polycladida	0
+7	13	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	278	1017	Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3461-25_r_1.5_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	183	939	Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3461-25_r_1.5_s_100	Polycladida	5
+8	12	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	613	1488	Pseudocerotidae,Euryleptidae,Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3462-25_r_1_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	613	1455	Pseudocerotidae,Euryleptidae,Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3462-25_r_1_s_100	Polycladida	0
+0	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	445	1272	Euryleptidae,Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3462-25_r_1.3_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	489	1206	Euryleptidae,Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3462-25_r_1.3_s_100	Polycladida	0
+0	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	167	930	Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3462-25_r_1.5_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	158	822	Planoceridae,Notocomplanidae,Geoplanidae	MUSBA3462-25_r_1.5_s_100	Polycladida	0
+16	42	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	543	1443	Geoplanidae	MUSBA3463-25_r_1_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	532	1215	Geoplanidae	MUSBA3463-25_r_1_s_100	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	484	1212	Geoplanidae	MUSBA3463-25_r_1.3_s_50	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	406	1008	Geoplanidae	MUSBA3463-25_r_1.3_s_100	Polycladida	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	211	924	Geoplanidae	MUSBA3463-25_r_1.5_s_50	Polycladida	2
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	None	BLAST	family	194	705	Geoplanidae	MUSBA3463-25_r_1.5_s_100	Polycladida	2
+4	16	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	651	1593	Planoceridae,Stylochidae,Notoplanidae,Hoploplanidae,Notocomplanidae,Euplanidae,Ilyplanidae	MUSBA3464-25_r_1_s_50	Planocera	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	654	1545	Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3464-25_r_1_s_100	Planocera	1
+1	10	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	654	1584	Planoceridae,Stylochidae,Notoplanidae,Hoploplanidae,Notocomplanidae,Euplanidae,Ilyplanidae	MUSBA3464-25_r_1.3_s_50	Planocera	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	654	1545	Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3464-25_r_1.3_s_100	Planocera	1
+0	3	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	654	1548	Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3464-25_r_1.5_s_50	Planocera	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	654	1545	Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3464-25_r_1.5_s_100	Planocera	1
+1	15	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	653	1524	Planoceridae,Stylochidae,Ilyplanidae,Temnocephalidae,Macrostomidae	MUSBA3465-25_r_1_s_50	Leptoplana tremellaris	4
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1485	Planoceridae,Callioplanidae,Stylochidae,Ilyplanidae,Temnocephalidae,Macrostomidae	MUSBA3465-25_r_1_s_100	Leptoplana tremellaris	4
+0	5	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1485	Planoceridae,Callioplanidae,Stylochidae,Ilyplanidae,Temnocephalidae,Macrostomidae	MUSBA3465-25_r_1.3_s_50	Leptoplana tremellaris	4
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1485	Planoceridae,Callioplanidae,Stylochidae,Ilyplanidae,Temnocephalidae,Macrostomidae	MUSBA3465-25_r_1.3_s_100	Leptoplana tremellaris	4
+0	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1419	Planoceridae,Callioplanidae,Stylochidae,Ilyplanidae,Temnocephalidae,Macrostomidae	MUSBA3465-25_r_1.5_s_50	Leptoplana tremellaris	4
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptoplanidae	BLAST	family	654	1419	Planoceridae,Callioplanidae,Stylochidae,Ilyplanidae,Temnocephalidae,Macrostomidae	MUSBA3465-25_r_1.5_s_100	Leptoplana tremellaris	4
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	655	1551	Pseudocerotidae,Planoceridae	MUSBA3466-25_r_1_s_50	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	655	1539	Pseudocerotidae,Planoceridae	MUSBA3466-25_r_1_s_100	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	652	1536	Pseudocerotidae,Planoceridae,Geoplanidae	MUSBA3466-25_r_1.3_s_50	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	640	1482	Pseudocerotidae,Planoceridae,Geoplanidae	MUSBA3466-25_r_1.3_s_100	Euryleptidae	0
+3	3	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	481	1260	Pseudocerotidae,Planoceridae,Geoplanidae	MUSBA3466-25_r_1.5_s_50	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	469	1125	Pseudocerotidae,Planoceridae,Geoplanidae	MUSBA3466-25_r_1.5_s_100	Euryleptidae	0
+18	71	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	175	993		MUSBA3467-25_r_1_s_50	Prosthiostomidae	0
+23	68	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	186	936		MUSBA3467-25_r_1_s_100	Prosthiostomidae	0
+9	24	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	149	546		MUSBA3467-25_r_1.3_s_50	Prosthiostomidae	0
+0	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	69	492		MUSBA3467-25_r_1.3_s_100	Prosthiostomidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	72	426		MUSBA3467-25_r_1.5_s_50	Prosthiostomidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Prosthiostomidae	BLAST	family	75	270		MUSBA3467-25_r_1.5_s_100	Prosthiostomidae	0
+68	126	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	623	1401		MUSBA3468-25_r_1_s_50	Discocelis tigrina	0
+41	95	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	617	1329		MUSBA3468-25_r_1_s_100	Discocelis tigrina	0
+0	39	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	156	672		MUSBA3468-25_r_1.3_s_50	Discocelis tigrina	0
+0	20	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	166	582		MUSBA3468-25_r_1.3_s_100	Discocelis tigrina	0
+0	6	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	156	519	Dugesiidae	MUSBA3468-25_r_1.5_s_50	Discocelis tigrina	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Discocelidae	BLAST	family	166	369	Dugesiidae	MUSBA3468-25_r_1.5_s_100	Discocelis tigrina	0
+9	31	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	651	1554	Cestoplanidae,Stylochidae,Notoplanidae,Euplanidae,Ilyplanidae	MUSBA3469-25_r_1_s_50	Notoplana	1
+0	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	654	1548	Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3469-25_r_1_s_100	Notoplana	1
+5	5	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	653	1479	Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3469-25_r_1.3_s_50	Notoplana	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	654	1473	Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3469-25_r_1.3_s_100	Notoplana	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	654	1413	Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3469-25_r_1.5_s_50	Notoplana	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Notoplanidae	BLAST	family	654	1410	Notoplanidae,Notocomplanidae,Ilyplanidae	MUSBA3469-25_r_1.5_s_100	Notoplana	1
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	655	1548	Pseudocerotidae,Planoceridae	MUSBA3470-25_r_1_s_50	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	655	1539	Pseudocerotidae,Planoceridae	MUSBA3470-25_r_1_s_100	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	655	1509	Pseudocerotidae,Planoceridae	MUSBA3470-25_r_1.3_s_50	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	655	1497	Pseudocerotidae,Planoceridae	MUSBA3470-25_r_1.3_s_100	Euryleptidae	0
+11	11	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	455	1218	Pseudocerotidae,Planoceridae,Geoplanidae	MUSBA3470-25_r_1.5_s_50	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	400	1161	Pseudocerotidae,Planoceridae,Geoplanidae	MUSBA3470-25_r_1.5_s_100	Euryleptidae	0
+5	5	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	655	1539	Pseudocerotidae,Umagillidae,Geoplanidae	MUSBA3471-25_r_1_s_50	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	655	1539	Pseudocerotidae,Geoplanidae	MUSBA3471-25_r_1_s_100	Euryleptidae	0
+0	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	643	1518	Pseudocerotidae,Umagillidae,Geoplanidae	MUSBA3471-25_r_1.3_s_50	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	643	1467	Pseudocerotidae,Geoplanidae	MUSBA3471-25_r_1.3_s_100	Euryleptidae	0
+0	2	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	169	1080	Umagillidae,Geoplanidae	MUSBA3471-25_r_1.5_s_50	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	192	951	Stylochoplanidae,Umagillidae,Geoplanidae	MUSBA3471-25_r_1.5_s_100	Euryleptidae	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	657	1545	Pseudocerotidae,Euryleptidae,Notocomplanidae,Geoplanidae	MUSBA3472-25_r_1_s_50	Prostheceraeus vittatus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	657	1524	Pseudocerotidae,Euryleptidae,Notocomplanidae,Geoplanidae	MUSBA3472-25_r_1_s_100	Prostheceraeus vittatus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	657	1512	Pseudocerotidae,Euryleptidae,Notocomplanidae,Geoplanidae	MUSBA3472-25_r_1.3_s_50	Prostheceraeus vittatus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	657	1497	Pseudocerotidae,Euryleptidae,Notocomplanidae,Geoplanidae	MUSBA3472-25_r_1.3_s_100	Prostheceraeus vittatus	0
+5	5	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	492	1257	Pseudocerotidae,Euryleptidae,Geoplanidae	MUSBA3472-25_r_1.5_s_50	Prostheceraeus vittatus	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Euryleptidae	BLAST	family	443	1209	Pseudocerotidae,Euryleptidae,Geoplanidae	MUSBA3472-25_r_1.5_s_100	Prostheceraeus vittatus	0
+3	3	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	653	1593	Planoceridae,Callioplanidae,Hoploplanidae	MUSBA3473-25_r_1_s_50	Planocera	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	653	1593	Planoceridae,Callioplanidae,Hoploplanidae	MUSBA3473-25_r_1_s_100	Planocera	0
+1	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	653	1593	Planoceridae,Callioplanidae,Hoploplanidae	MUSBA3473-25_r_1.3_s_50	Planocera	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	653	1593	Planoceridae,Callioplanidae,Hoploplanidae	MUSBA3473-25_r_1.3_s_100	Planocera	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	653	1560	Planoceridae,Callioplanidae,Hoploplanidae	MUSBA3473-25_r_1.5_s_50	Planocera	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Planoceridae	BLAST	family	653	1560	Planoceridae,Callioplanidae,Hoploplanidae	MUSBA3473-25_r_1.5_s_100	Planocera	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00142-NC not in BOLD	None	BLAST	family	577	1350		BGE00142-NC_r_1_s_50	None	0
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00142-NC not in BOLD	None	BLAST	family	577	1344		BGE00142-NC_r_1_s_100	None	0
+1	6	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00142-NC not in BOLD	None	BLAST	family	525	909		BGE00142-NC_r_1.3_s_50	None	7
+1	1	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00142-NC not in BOLD	None	BLAST	family	525	894		BGE00142-NC_r_1.3_s_100	None	7
+0	5	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00142-NC not in BOLD	None	BLAST	family	510	648		BGE00142-NC_r_1.5_s_50	None	7
+0	0	data/BGE00142_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00142-NC not in BOLD	None	BLAST	family	534	630		BGE00142-NC_r_1.5_s_100	None	5

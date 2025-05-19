@@ -1,0 +1,577 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+3	8	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Atemnidae	BLAST	family	575	1377	Atemnidae	BSCRO001-24_r_1_s_50	Atemnus politus	0
+0	7	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Atemnidae	BLAST	family	267	1113	Atemnidae	BSCRO001-24_r_1_s_100	Atemnus politus	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Atemnidae	BLAST	family	479	900	Atemnidae	BSCRO001-24_r_1.3_s_50	Atemnus politus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Atemnidae	BLAST	family	210	501	Atemnidae	BSCRO001-24_r_1.5_s_50	Atemnus politus	0
+1	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Atemnidae	BLAST	family	560	663	Atemnidae	BSCRO001-24_r_1.3_s_100	Atemnus politus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Atemnidae	BLAST	family	214	381	Atemnidae	BSCRO001-24_r_1.5_s_100	Atemnus politus	0
+10	32	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	649	1500	Triophtydeidae,Tetranychidae,Phalangiidae,Cheliferidae,Phrynidae	BSCRO002-24_r_1_s_50	Dactylochelifer falsus	0
+2	19	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	650	1497	Triophtydeidae,Tetranychidae,Phalangiidae,Chernetidae,Cheliferidae,Phrynidae	BSCRO002-24_r_1_s_100	Dactylochelifer falsus	0
+9	9	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	626	1335	Cheliferidae	BSCRO002-24_r_1.3_s_50	Dactylochelifer falsus	0
+3	4	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	627	1335	Cheliferidae	BSCRO002-24_r_1.3_s_100	Dactylochelifer falsus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	487	1101	Lycosidae,Argasidae,Ixodidae,Sabaconidae	BSCRO002-24_r_1.5_s_50	Dactylochelifer falsus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	489	1092	Argasidae,Ixodidae,Sabaconidae	BSCRO002-24_r_1.5_s_100	Dactylochelifer falsus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1527	Cheliferidae	BSCRO003-24_r_1_s_50	Hysterochelifer cyprius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1527	Cheliferidae	BSCRO003-24_r_1_s_100	Hysterochelifer cyprius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1479	Cheliferidae	BSCRO003-24_r_1.3_s_50	Hysterochelifer cyprius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1416	Cheliferidae	BSCRO003-24_r_1.3_s_100	Hysterochelifer cyprius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	627	1389	Cheliferidae	BSCRO003-24_r_1.5_s_50	Hysterochelifer cyprius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	627	1389	Cheliferidae	BSCRO003-24_r_1.5_s_100	Hysterochelifer cyprius	0
+3	29	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	653	1527	Cheliferidae	BSCRO004-24_r_1_s_50	Hysterochelifer cyprius	0
+0	24	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1527	Cheliferidae	BSCRO004-24_r_1_s_100	Hysterochelifer cyprius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1497	Cheliferidae	BSCRO004-24_r_1.3_s_50	Hysterochelifer cyprius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1443	Cheliferidae	BSCRO004-24_r_1.3_s_100	Hysterochelifer cyprius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	588	1311	Araneidae,Cheliferidae,Neobisiidae	BSCRO004-24_r_1.5_s_50	Hysterochelifer cyprius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	540	1263	Araneidae,Ixodidae,Neobisiidae	BSCRO004-24_r_1.5_s_100	Hysterochelifer cyprius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1527	Cheliferidae	BSCRO005-24_r_1_s_50	Hysterochelifer cyprius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1527	Cheliferidae	BSCRO005-24_r_1_s_100	Hysterochelifer cyprius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1512	Cheliferidae	BSCRO005-24_r_1.3_s_50	Hysterochelifer cyprius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1440	Cheliferidae	BSCRO005-24_r_1.3_s_100	Hysterochelifer cyprius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	636	1425	Cheliferidae	BSCRO005-24_r_1.5_s_50	Hysterochelifer cyprius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	636	1398	Cheliferidae	BSCRO005-24_r_1.5_s_100	Hysterochelifer cyprius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1527	Cheliferidae	BSCRO006-24_r_1_s_50	Hysterochelifer meridianus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1527	Cheliferidae	BSCRO006-24_r_1_s_100	Hysterochelifer meridianus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1527	Cheliferidae	BSCRO006-24_r_1.3_s_50	Hysterochelifer meridianus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1509	Cheliferidae	BSCRO006-24_r_1.3_s_100	Hysterochelifer meridianus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1482	Cheliferidae	BSCRO006-24_r_1.5_s_50	Hysterochelifer meridianus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1416	Cheliferidae	BSCRO006-24_r_1.5_s_100	Hysterochelifer meridianus	0
+21	23	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	528	1269	Argasidae,Ixodidae,Oppiidae	BSCRO007-24_r_1_s_50	Hysterochelifer meridianus	0
+18	20	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	536	1116		BSCRO007-24_r_1_s_100	Hysterochelifer meridianus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	166	885	Ixodidae,Sperchontidae,Halacaridae,Tetranychidae,Oppiidae,Sabaconidae,Phrynidae	BSCRO007-24_r_1.3_s_50	Hysterochelifer meridianus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	155	777	Sperchontidae,Oppiidae,Ceratolasmatidae,Phrynidae	BSCRO007-24_r_1.3_s_100	Hysterochelifer meridianus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	132	390	Argasidae,Ixodidae,Phytoseiidae,Oppiidae,Eremaeidae	BSCRO007-24_r_1.5_s_50	Hysterochelifer meridianus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	131	261		BSCRO007-24_r_1.5_s_100	Hysterochelifer meridianus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1527	Chernetidae,Cheliferidae	BSCRO008-24_r_1_s_50	Hysterochelifer tuberculatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1527	Chernetidae,Cheliferidae	BSCRO008-24_r_1_s_100	Hysterochelifer tuberculatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1527	Chernetidae,Cheliferidae	BSCRO008-24_r_1.3_s_50	Hysterochelifer tuberculatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1527	Chernetidae,Cheliferidae	BSCRO008-24_r_1.3_s_100	Hysterochelifer tuberculatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	651	1476	Chernetidae,Cheliferidae	BSCRO008-24_r_1.5_s_50	Hysterochelifer tuberculatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	651	1413	Chernetidae,Cheliferidae	BSCRO008-24_r_1.5_s_100	Hysterochelifer tuberculatus	0
+5	19	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	653	1527	Cheliferidae	BSCRO009-24_r_1_s_50	Hysterochelifer tuberculatus	0
+2	12	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	653	1527	Cheliferidae	BSCRO009-24_r_1_s_100	Hysterochelifer tuberculatus	0
+0	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1527	Chernetidae,Cheliferidae	BSCRO009-24_r_1.3_s_50	Hysterochelifer tuberculatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1527	Chernetidae,Cheliferidae	BSCRO009-24_r_1.3_s_100	Hysterochelifer tuberculatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	525	1296	Theridiidae,Archaeidae,Ixodidae,Chernetidae	BSCRO009-24_r_1.5_s_50	Hysterochelifer tuberculatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	510	1251	Theridiidae,Archaeidae,Ixodidae,Chernetidae	BSCRO009-24_r_1.5_s_100	Hysterochelifer tuberculatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1527	Cheliferidae	BSCRO010-24_r_1_s_50	Hysterochelifer tuberculatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1527	Cheliferidae	BSCRO010-24_r_1_s_100	Hysterochelifer tuberculatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1527	Cheliferidae	BSCRO010-24_r_1.3_s_50	Hysterochelifer tuberculatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1527	Cheliferidae	BSCRO010-24_r_1.3_s_100	Hysterochelifer tuberculatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	654	1491	Cheliferidae	BSCRO010-24_r_1.5_s_50	Hysterochelifer tuberculatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	651	1479	Cheliferidae	BSCRO010-24_r_1.5_s_100	Hysterochelifer tuberculatus	0
+3	11	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	599	1470	Tetranychidae,Chernetidae,Cheliferidae,Withiidae	BSCRO011-24_r_1_s_50	Rhacochelifer corcyrensis	0
+0	3	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	600	1320	Chernetidae,Atemnidae,Cheliferidae,Withiidae	BSCRO011-24_r_1_s_100	Rhacochelifer corcyrensis	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	586	1434	Theridiidae,Salticidae,Chernetidae,Withiidae,Neobisiidae	BSCRO011-24_r_1.3_s_50	Rhacochelifer corcyrensis	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	576	1293	Theridiidae,Lycosidae,Salticidae,Chernetidae,Withiidae,Neobisiidae	BSCRO011-24_r_1.3_s_100	Rhacochelifer corcyrensis	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	442	1059	Pisauridae,Salticidae,Pygmephoridae,Chernetidae,Withiidae	BSCRO011-24_r_1.5_s_50	Rhacochelifer corcyrensis	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	417	1002	Pisauridae,Salticidae,Pygmephoridae,Chernetidae,Withiidae	BSCRO011-24_r_1.5_s_100	Rhacochelifer corcyrensis	0
+0	13	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	182	1092	Araneidae	BSCRO012-24_r_1_s_50	Rhacochelifer corcyrensis	0
+0	4	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	183	1029	Araneidae	BSCRO012-24_r_1_s_100	Rhacochelifer corcyrensis	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	153	513	Araneidae	BSCRO012-24_r_1.3_s_50	Rhacochelifer corcyrensis	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	138	453	Araneidae	BSCRO012-24_r_1.3_s_100	Rhacochelifer corcyrensis	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	153	342	Araneidae	BSCRO012-24_r_1.5_s_50	Rhacochelifer corcyrensis	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	152	291	Araneidae	BSCRO012-24_r_1.5_s_100	Rhacochelifer corcyrensis	0
+0	11	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	197	813		BSCRO013-24_r_1_s_50	Rhacochelifer disjunctus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	212	774		BSCRO013-24_r_1_s_100	Rhacochelifer disjunctus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	125	306		BSCRO013-24_r_1.3_s_50	Rhacochelifer disjunctus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	136	207		BSCRO013-24_r_1.3_s_100	Rhacochelifer disjunctus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	54	129		BSCRO013-24_r_1.5_s_50	Rhacochelifer disjunctus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	1	60		BSCRO013-24_r_1.5_s_100	Rhacochelifer disjunctus	0
+12	23	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	602	1422	Cheliferidae	BSCRO014-24_r_1_s_50	Rhacochelifer maculatus	0
+2	8	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	481	1227	Cheliferidae	BSCRO014-24_r_1_s_100	Rhacochelifer maculatus	0
+1	6	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	360	819	Oppiidae,Cheliferidae	BSCRO014-24_r_1.3_s_50	Rhacochelifer maculatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	335	573	Oppiidae,Cheliferidae	BSCRO014-24_r_1.3_s_100	Rhacochelifer maculatus	0
+0	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	270	630	Oppiidae,Cheliferidae	BSCRO014-24_r_1.5_s_50	Rhacochelifer maculatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	216	471	Oppiidae,Cheliferidae	BSCRO014-24_r_1.5_s_100	Rhacochelifer maculatus	1
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	418	1302	Oppiidae,Cheliferidae,Phrynidae	BSCRO015-24_r_1_s_50	Rhacochelifer maculatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	423	1155	Hydrodromidae,Aturidae,Oppiidae,Gonyleptidae,Phrynidae	BSCRO015-24_r_1_s_100	Rhacochelifer maculatus	0
+3	9	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	412	1005	Salticidae,Sarcoptidae,Hypochthoniidae,Galeodidae,Assamiidae	BSCRO015-24_r_1.3_s_50	Rhacochelifer maculatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	280	747	Salticidae,Ixodidae,Rhinonyssidae,Hypochthoniidae,Galeodidae	BSCRO015-24_r_1.3_s_100	Rhacochelifer maculatus	0
+0	6	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	136	657	Salticidae,Sarcoptidae	BSCRO015-24_r_1.5_s_50	Rhacochelifer maculatus	2
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	76	468	Salticidae,Ixodidae,Rhinonyssidae	BSCRO015-24_r_1.5_s_100	Rhacochelifer maculatus	0
+1	27	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	653	1521	Cheliferidae	BSCRO016-24_r_1_s_50	Rhacochelifer maculatus	0
+0	17	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	653	1455	Cheliferidae	BSCRO016-24_r_1_s_100	Rhacochelifer maculatus	0
+13	13	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	653	1395	Cheliferidae	BSCRO016-24_r_1.3_s_50	Rhacochelifer maculatus	0
+13	13	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	653	1329	Cheliferidae	BSCRO016-24_r_1.3_s_100	Rhacochelifer maculatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	347	1146	Cheliferidae	BSCRO016-24_r_1.5_s_50	Rhacochelifer maculatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheliferidae	BLAST	family	469	1050	Cheliferidae	BSCRO016-24_r_1.5_s_100	Rhacochelifer maculatus	2
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1521	Chernetidae,Cheliferidae,Neobisiidae	BSCRO017-24_r_1_s_50	Allochernes masi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1521	Chernetidae,Cheliferidae,Neobisiidae	BSCRO017-24_r_1_s_100	Allochernes masi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1446	Chernetidae,Cheliferidae,Neobisiidae	BSCRO017-24_r_1.3_s_50	Allochernes masi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1443	Chernetidae,Cheliferidae,Neobisiidae	BSCRO017-24_r_1.3_s_100	Allochernes masi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	633	1425	Chernetidae,Cheliferidae,Neobisiidae	BSCRO017-24_r_1.5_s_50	Allochernes masi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	633	1392	Chernetidae,Cheliferidae,Neobisiidae	BSCRO017-24_r_1.5_s_100	Allochernes masi	0
+12	39	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	650	1470	Chernetidae	BSCRO018-24_r_1_s_50	Allochernes masi	0
+9	31	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	651	1470	Chernetidae	BSCRO018-24_r_1_s_100	Allochernes masi	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1413	Chernetidae,Cheliferidae,Neobisiidae	BSCRO018-24_r_1.3_s_50	Allochernes masi	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1413	Chernetidae,Cheliferidae,Neobisiidae	BSCRO018-24_r_1.3_s_100	Allochernes masi	0
+1	4	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	395	1140	Theridiidae,Amaurobiidae,Ixodidae,Withiidae,Neobisiidae	BSCRO018-24_r_1.5_s_50	Allochernes masi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	384	1074	Theridiidae,Amaurobiidae,Ixodidae,Withiidae,Neobisiidae	BSCRO018-24_r_1.5_s_100	Allochernes masi	0
+7	29	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	641	1434	Chernetidae,Cheliferidae	BSCRO019-24_r_1_s_50	Allochernes masi	0
+8	14	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	641	1422	Chernetidae,Cheliferidae	BSCRO019-24_r_1_s_100	Allochernes masi	0
+1	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	607	1353	Ixodidae,Cheliferidae,Withiidae,Neobisiidae	BSCRO019-24_r_1.3_s_50	Allochernes masi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	547	1290	Ixodidae,Cheliferidae,Withiidae,Neobisiidae	BSCRO019-24_r_1.3_s_100	Allochernes masi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	434	1185	Theridiidae,Amaurobiidae,Ixodidae,Withiidae,Neobisiidae	BSCRO019-24_r_1.5_s_50	Allochernes masi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	426	1092	Theridiidae,Amaurobiidae,Ixodidae,Withiidae,Neobisiidae	BSCRO019-24_r_1.5_s_100	Allochernes masi	0
+0	5	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	252	1080		BSCRO020-24_r_1_s_50	Allochernes solarii	0
+0	4	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	250	858		BSCRO020-24_r_1_s_100	Allochernes solarii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	79	561		BSCRO020-24_r_1.3_s_50	Allochernes solarii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	79	432		BSCRO020-24_r_1.3_s_100	Allochernes solarii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	80	270		BSCRO020-24_r_1.5_s_50	Allochernes solarii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	79	153		BSCRO020-24_r_1.5_s_100	Allochernes solarii	0
+0	7	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1521	Chernetidae	BSCRO021-24_r_1_s_50	Chernes montigenus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1521	Chernetidae	BSCRO021-24_r_1_s_100	Chernes montigenus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1479	Chernetidae	BSCRO021-24_r_1.3_s_50	Chernes montigenus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1413	Chernetidae	BSCRO021-24_r_1.3_s_100	Chernes montigenus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	507	1245	Chernetidae,Atemnidae	BSCRO021-24_r_1.5_s_50	Chernes montigenus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	458	1140	Chernetidae,Atemnidae	BSCRO021-24_r_1.5_s_100	Chernes montigenus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1521	Chernetidae	BSCRO022-24_r_1_s_50	Chernes montigenus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1521	Chernetidae	BSCRO022-24_r_1_s_100	Chernes montigenus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1479	Chernetidae	BSCRO022-24_r_1.3_s_50	Chernes montigenus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1413	Chernetidae	BSCRO022-24_r_1.3_s_100	Chernes montigenus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	606	1338	Chernetidae	BSCRO022-24_r_1.5_s_50	Chernes montigenus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	606	1317	Chernetidae	BSCRO022-24_r_1.5_s_100	Chernes montigenus	0
+0	29	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	479	1239		BSCRO023-24_r_1_s_50	Lasiochernes graecus	0
+0	22	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	444	1080	Phalangodidae	BSCRO023-24_r_1_s_100	Lasiochernes graecus	0
+0	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	166	744	Phalangodidae	BSCRO023-24_r_1.3_s_50	Lasiochernes graecus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	181	525	Phalangodidae	BSCRO023-24_r_1.3_s_100	Lasiochernes graecus	0
+0	4	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	131	456	Phalangodidae	BSCRO023-24_r_1.5_s_50	Lasiochernes graecus	0
+0	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	89	237	Phalangodidae	BSCRO023-24_r_1.5_s_100	Lasiochernes graecus	0
+28	58	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	650	1506	Chernetidae	BSCRO024-24_r_1_s_50	Lasiochernes graecus	0
+22	31	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	650	1440	Chernetidae	BSCRO024-24_r_1_s_100	Lasiochernes graecus	0
+7	8	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1392	Chernetidae	BSCRO024-24_r_1.3_s_50	Lasiochernes graecus	0
+8	8	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1392	Chernetidae	BSCRO024-24_r_1.3_s_100	Lasiochernes graecus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	446	1140	Chernetidae	BSCRO024-24_r_1.5_s_50	Lasiochernes graecus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	430	1080	Chernetidae	BSCRO024-24_r_1.5_s_100	Lasiochernes graecus	0
+1	6	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1521	Chernetidae	BSCRO025-24_r_1_s_50	Lasiochernes graecus	0
+1	6	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1521	Chernetidae	BSCRO025-24_r_1_s_100	Lasiochernes graecus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1455	Chernetidae	BSCRO025-24_r_1.3_s_50	Lasiochernes graecus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1455	Chernetidae	BSCRO025-24_r_1.3_s_100	Lasiochernes graecus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	521	1212	Chernetidae,Atemnidae	BSCRO025-24_r_1.5_s_50	Lasiochernes graecus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	486	1125	Chernetidae	BSCRO025-24_r_1.5_s_100	Lasiochernes graecus	0
+2	5	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	614	1419	Araneidae,Theridiidae,Linyphiidae,Salticidae	BSCRO026-24_r_1_s_50	Lasiochernes graecus	0
+1	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	614	1359	Araneidae,Theridiidae,Salticidae	BSCRO026-24_r_1_s_100	Lasiochernes graecus	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	500	1167	Chernetidae	BSCRO026-24_r_1.3_s_50	Lasiochernes graecus	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	461	1044	Chernetidae	BSCRO026-24_r_1.3_s_100	Lasiochernes graecus	0
+1	11	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	325	894	Vaejovidae,Agelenidae,Chernetidae	BSCRO026-24_r_1.5_s_50	Lasiochernes graecus	0
+1	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	251	741	Vaejovidae,Chernetidae	BSCRO026-24_r_1.5_s_100	Lasiochernes graecus	6
+0	6	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1527	Chernetidae	BSCRO027-24_r_1_s_50	Lasiochernes pilosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1521	Chernetidae	BSCRO027-24_r_1_s_100	Lasiochernes pilosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1470	Chernetidae	BSCRO027-24_r_1.3_s_50	Lasiochernes pilosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1467	Chernetidae	BSCRO027-24_r_1.3_s_100	Lasiochernes pilosus	0
+2	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	434	1146	Salticidae,Trechaleidae,Ixodidae,Chernetidae,Atemnidae,Withiidae	BSCRO027-24_r_1.5_s_50	Lasiochernes pilosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	431	1119	Salticidae,Ixodidae,Chernetidae,Atemnidae	BSCRO027-24_r_1.5_s_100	Lasiochernes pilosus	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1521	Chernetidae	BSCRO028-24_r_1_s_50	Lasiochernes pilosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1521	Chernetidae	BSCRO028-24_r_1_s_100	Lasiochernes pilosus	0
+0	4	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	647	1422	Chernetidae	BSCRO028-24_r_1.3_s_50	Lasiochernes pilosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	604	1341	Chernetidae	BSCRO028-24_r_1.3_s_100	Lasiochernes pilosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	476	1194	Salticidae,Chernetidae,Atemnidae,Withiidae	BSCRO028-24_r_1.5_s_50	Lasiochernes pilosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	476	1161	Salticidae,Trechaleidae,Chernetidae,Atemnidae,Withiidae	BSCRO028-24_r_1.5_s_100	Lasiochernes pilosus	0
+18	65	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	652	1494	Chernetidae	BSCRO029-24_r_1_s_50	Lasiochernes pilosus	0
+2	17	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1392	Chernetidae	BSCRO029-24_r_1_s_100	Lasiochernes pilosus	0
+13	29	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	592	1371	Chernetidae	BSCRO029-24_r_1.3_s_50	Lasiochernes pilosus	6
+4	20	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	548	1254	Chernetidae	BSCRO029-24_r_1.3_s_100	Lasiochernes pilosus	0
+4	4	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	389	1056	Tetragnathidae,Salticidae,Clubionidae,Trechaleidae,Chernetidae,Atemnidae,Withiidae	BSCRO029-24_r_1.5_s_50	Lasiochernes pilosus	0
+1	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	389	1056	Tetragnathidae,Salticidae,Clubionidae,Trechaleidae,Tetranychidae,Atemnidae,Withiidae	BSCRO029-24_r_1.5_s_100	Lasiochernes pilosus	0
+6	66	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	652	1401	Chernetidae	BSCRO030-24_r_1_s_50	Lasiochernes pilosus	0
+3	51	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	646	1302	Chernetidae	BSCRO030-24_r_1_s_100	Lasiochernes pilosus	0
+1	6	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	549	1290	Chernetidae	BSCRO030-24_r_1.3_s_50	Lasiochernes pilosus	0
+1	4	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	543	1161	Chernetidae	BSCRO030-24_r_1.3_s_100	Lasiochernes pilosus	0
+14	14	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	357	930	Thomisidae,Withiidae	BSCRO030-24_r_1.5_s_50	Lasiochernes pilosus	0
+14	14	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	351	879	Thomisidae,Withiidae	BSCRO030-24_r_1.5_s_100	Lasiochernes pilosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1521	Chernetidae	BSCRO031-24_r_1_s_50	Lasiochernes siculus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1521	Chernetidae	BSCRO031-24_r_1_s_100	Lasiochernes siculus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1455	Chernetidae	BSCRO031-24_r_1.3_s_50	Lasiochernes siculus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1455	Chernetidae	BSCRO031-24_r_1.3_s_100	Lasiochernes siculus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	529	1281	Chernetidae	BSCRO031-24_r_1.5_s_50	Lasiochernes siculus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	516	1227	Chernetidae	BSCRO031-24_r_1.5_s_100	Lasiochernes siculus	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1509	Chernetidae	BSCRO032-24_r_1_s_50	Lasiochernes siculus	0
+0	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1443	Chernetidae	BSCRO032-24_r_1_s_100	Lasiochernes siculus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1443	Chernetidae	BSCRO032-24_r_1.3_s_50	Lasiochernes siculus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1443	Chernetidae	BSCRO032-24_r_1.3_s_100	Lasiochernes siculus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	489	1260	Chernetidae	BSCRO032-24_r_1.5_s_50	Lasiochernes siculus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	431	1122	Chernetidae	BSCRO032-24_r_1.5_s_100	Lasiochernes siculus	0
+3	5	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1521	Chernetidae	BSCRO033-24_r_1_s_50	Lasiochernes siculus	0
+3	4	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1482	Chernetidae	BSCRO033-24_r_1_s_100	Lasiochernes siculus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1443	Chernetidae	BSCRO033-24_r_1.3_s_50	Lasiochernes siculus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1443	Chernetidae	BSCRO033-24_r_1.3_s_100	Lasiochernes siculus	0
+1	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	410	1179	Chernetidae	BSCRO033-24_r_1.5_s_50	Lasiochernes siculus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	393	1086	Chernetidae	BSCRO033-24_r_1.5_s_100	Lasiochernes siculus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1521	Chernetidae,Cheliferidae	BSCRO034-24_r_1_s_50	Pselaphochernes anachoreta	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1521	Chernetidae,Cheliferidae	BSCRO034-24_r_1_s_100	Pselaphochernes anachoreta	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1521	Chernetidae,Cheliferidae	BSCRO034-24_r_1.3_s_50	Pselaphochernes anachoreta	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1473	Chernetidae,Cheliferidae	BSCRO034-24_r_1.3_s_100	Pselaphochernes anachoreta	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1425	Chernetidae,Cheliferidae	BSCRO034-24_r_1.5_s_50	Pselaphochernes anachoreta	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1413	Chernetidae,Cheliferidae	BSCRO034-24_r_1.5_s_100	Pselaphochernes anachoreta	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1524	Theridiidae,Pisauridae	BSCRO035-24_r_1_s_50	Pselaphochernes anachoreta	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1521	Theridiidae,Pisauridae	BSCRO035-24_r_1_s_100	Pselaphochernes anachoreta	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1509	Theridiidae,Pisauridae	BSCRO035-24_r_1.3_s_50	Pselaphochernes anachoreta	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1443	Theridiidae,Pisauridae	BSCRO035-24_r_1.3_s_100	Pselaphochernes anachoreta	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1419	Theridiidae,Pisauridae	BSCRO035-24_r_1.5_s_50	Pselaphochernes anachoreta	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	654	1413	Theridiidae,Pisauridae	BSCRO035-24_r_1.5_s_100	Pselaphochernes anachoreta	0
+21	51	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	537	1464	Argasidae	BSCRO036-24_r_1_s_50	Pselaphochernes italicus	0
+10	30	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	549	1289	Ixodidae,Hydryphantidae,Anystidae,Rhagidiidae,Bdellidae,Cheliferidae,Neobisiidae,Olpiidae,Garypinidae	BSCRO036-24_r_1_s_100	Pselaphochernes italicus	0
+18	23	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	553	1305	Antrodiaetidae,Sicariidae,Araneidae,Theridiidae,Thomisidae,Salticidae,Oppiidae	BSCRO036-24_r_1.3_s_50	Pselaphochernes italicus	0
+5	10	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	508	1218	Zoridae,Oppiidae,Olpiidae,Cheiridiidae	BSCRO036-24_r_1.3_s_100	Pselaphochernes italicus	0
+2	9	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	308	990	Linyphiidae,Sparassidae,Zodariidae,Oppiidae,Cheiridiidae	BSCRO036-24_r_1.5_s_50	Pselaphochernes italicus	0
+2	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	345	873	Agelenidae,Archaeidae,Phytoseiidae,Oppiidae,Cheiridiidae	BSCRO036-24_r_1.5_s_100	Pselaphochernes italicus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1521	Chernetidae,Withiidae	BSCRO037-24_r_1_s_50	Pselaphochernes lacertosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1521	Chernetidae,Withiidae	BSCRO037-24_r_1_s_100	Pselaphochernes lacertosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1443	Chernetidae,Withiidae	BSCRO037-24_r_1.3_s_50	Pselaphochernes lacertosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1443	Chernetidae,Withiidae	BSCRO037-24_r_1.3_s_100	Pselaphochernes lacertosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1404	Chernetidae,Withiidae	BSCRO037-24_r_1.5_s_50	Pselaphochernes lacertosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1404	Chernetidae,Withiidae	BSCRO037-24_r_1.5_s_100	Pselaphochernes lacertosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1524	Chernetidae,Withiidae	BSCRO038-24_r_1_s_50	Pselaphochernes lacertosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1524	Chernetidae,Withiidae	BSCRO038-24_r_1_s_100	Pselaphochernes lacertosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1443	Chernetidae,Withiidae	BSCRO038-24_r_1.3_s_50	Pselaphochernes lacertosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1443	Chernetidae,Withiidae	BSCRO038-24_r_1.3_s_100	Pselaphochernes lacertosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1413	Chernetidae,Withiidae	BSCRO038-24_r_1.5_s_50	Pselaphochernes lacertosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1413	Chernetidae,Withiidae	BSCRO038-24_r_1.5_s_100	Pselaphochernes lacertosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1521	Chernetidae,Withiidae	BSCRO039-24_r_1_s_50	Pselaphochernes lacertosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1521	Chernetidae,Withiidae	BSCRO039-24_r_1_s_100	Pselaphochernes lacertosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1458	Chernetidae,Withiidae	BSCRO039-24_r_1.3_s_50	Pselaphochernes lacertosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1458	Chernetidae,Withiidae	BSCRO039-24_r_1.3_s_100	Pselaphochernes lacertosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1413	Chernetidae,Withiidae	BSCRO039-24_r_1.5_s_50	Pselaphochernes lacertosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chernetidae	BLAST	family	653	1413	Chernetidae,Withiidae	BSCRO039-24_r_1.5_s_100	Pselaphochernes lacertosus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1533	Ixodidae,Chthoniidae	BSCRO040-24_r_1_s_50	Chthonius densedentatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1500	Ixodidae,Chthoniidae	BSCRO040-24_r_1_s_100	Chthonius densedentatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1389	Ixodidae,Chthoniidae	BSCRO040-24_r_1.3_s_50	Chthonius densedentatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1389	Ixodidae,Chthoniidae	BSCRO040-24_r_1.3_s_100	Chthonius densedentatus	0
+0	6	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	481	1158	Theridiidae,Salticidae,Hydryphantidae,Halacaridae,Penthaleidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO040-24_r_1.5_s_50	Chthonius densedentatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	481	1149	Theridiidae,Salticidae,Hydryphantidae,Halacaridae,Penthaleidae,Chthoniidae	BSCRO040-24_r_1.5_s_100	Chthonius densedentatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1530	Ixodidae,Chthoniidae	BSCRO041-24_r_1_s_50	Chthonius densedentatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1515	Ixodidae,Chthoniidae	BSCRO041-24_r_1_s_100	Chthonius densedentatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1446	Ixodidae,Chthoniidae	BSCRO041-24_r_1.3_s_50	Chthonius densedentatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1389	Ixodidae,Chthoniidae	BSCRO041-24_r_1.3_s_100	Chthonius densedentatus	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	515	1173	Theridiidae,Salticidae,Ixodidae,Hydryphantidae,Penthaleidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO041-24_r_1.5_s_50	Chthonius densedentatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	515	1173	Theridiidae,Salticidae,Ixodidae,Hydryphantidae,Penthaleidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO041-24_r_1.5_s_100	Chthonius densedentatus	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1530	Ixodidae,Chthoniidae	BSCRO042-24_r_1_s_50	Chthonius densedentatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1494	Ixodidae,Chthoniidae	BSCRO042-24_r_1_s_100	Chthonius densedentatus	0
+5	5	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	648	1401	Ixodidae,Chthoniidae	BSCRO042-24_r_1.3_s_50	Chthonius densedentatus	0
+5	5	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	648	1356	Ixodidae,Chthoniidae	BSCRO042-24_r_1.3_s_100	Chthonius densedentatus	0
+0	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	527	1179	Ixodidae,Penthaleidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO042-24_r_1.5_s_50	Chthonius densedentatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	518	1101	Ixodidae,Penthaleidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO042-24_r_1.5_s_100	Chthonius densedentatus	0
+0	26	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	529	1236		BSCRO043-24_r_1_s_50	Chthonius	0
+0	29	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	465	1116	Ixodidae,Chthoniidae	BSCRO043-24_r_1_s_100	Chthonius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	125	666	Phytoseiidae,Tetranychidae,Hubbardiidae	BSCRO043-24_r_1.3_s_50	Chthonius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	66	327	Limnesiidae,Tetranychidae,Selenoribatidae,Fortuyniidae	BSCRO043-24_r_1.3_s_100	Chthonius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	85	402	Amphinectidae,Sperchontidae	BSCRO043-24_r_1.5_s_50	Chthonius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	69	210	Ochyroceratidae,Amphinectidae	BSCRO043-24_r_1.5_s_100	Chthonius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	444	1137		BSCRO044-24_r_1_s_50	Chthonius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	439	1059		BSCRO044-24_r_1_s_100	Chthonius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	79	216		BSCRO044-24_r_1.3_s_50	Chthonius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	73	165		BSCRO044-24_r_1.3_s_100	Chthonius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	63	123		BSCRO044-24_r_1.5_s_50	Chthonius	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	50	72		BSCRO044-24_r_1.5_s_100	Chthonius	0
+2	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	395	1008		BSCRO045-24_r_1_s_50	Chthonius ischnocheloides	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	207	936		BSCRO045-24_r_1_s_100	Chthonius ischnocheloides	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	76	243		BSCRO045-24_r_1.3_s_50	Chthonius ischnocheloides	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	76	195		BSCRO045-24_r_1.3_s_100	Chthonius ischnocheloides	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	76	102		BSCRO045-24_r_1.5_s_50	Chthonius ischnocheloides	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	76	102		BSCRO045-24_r_1.5_s_100	Chthonius ischnocheloides	0
+1	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	498	1101	Oppiidae	BSCRO046-24_r_1_s_50	Chthonius ischnocheloides	0
+1	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	285	759	Oppiidae	BSCRO046-24_r_1_s_100	Chthonius ischnocheloides	0
+1	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	101	309		BSCRO046-24_r_1.3_s_50	Chthonius ischnocheloides	0
+1	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	83	165		BSCRO046-24_r_1.3_s_100	Chthonius ischnocheloides	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	101	270		BSCRO046-24_r_1.5_s_50	Chthonius ischnocheloides	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	83	165		BSCRO046-24_r_1.5_s_100	Chthonius ischnocheloides	0
+10	25	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	487	1068		BSCRO047-24_r_1_s_50	Chthonius ischnocheloides	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	478	978	Ixodidae	BSCRO047-24_r_1_s_100	Chthonius ischnocheloides	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	109	498		BSCRO047-24_r_1.3_s_50	Chthonius ischnocheloides	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	107	234		BSCRO047-24_r_1.3_s_100	Chthonius ischnocheloides	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	89	234		BSCRO047-24_r_1.5_s_50	Chthonius ischnocheloides	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	86	138		BSCRO047-24_r_1.5_s_100	Chthonius ischnocheloides	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	150	846	Oppiidae	BSCRO048-24_r_1_s_50	Chthonius lanzai	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	148	576		BSCRO048-24_r_1_s_100	Chthonius lanzai	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	162	591		BSCRO048-24_r_1.3_s_50	Chthonius lanzai	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	148	444		BSCRO048-24_r_1.3_s_100	Chthonius lanzai	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	95	201		BSCRO048-24_r_1.5_s_50	Chthonius lanzai	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	86	105		BSCRO048-24_r_1.5_s_100	Chthonius lanzai	0
+0	3	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	560	1161	Oppiidae	BSCRO049-24_r_1_s_50	Chthonius lanzai	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	500	1053	Ixodidae,Oppiidae	BSCRO049-24_r_1_s_100	Chthonius lanzai	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	138	336		BSCRO049-24_r_1.3_s_50	Chthonius lanzai	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	139	285		BSCRO049-24_r_1.3_s_100	Chthonius lanzai	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	11	126		BSCRO049-24_r_1.5_s_50	Chthonius lanzai	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	1	72		BSCRO049-24_r_1.5_s_100	Chthonius lanzai	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1530	Ixodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO050-24_r_1_s_50	Chthonius lessiniensis	0
+0	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1476	Ixodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO050-24_r_1_s_100	Chthonius lessiniensis	0
+1	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1434	Ixodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO050-24_r_1.3_s_50	Chthonius lessiniensis	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1389	Ixodidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO050-24_r_1.3_s_100	Chthonius lessiniensis	0
+0	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	516	1206	Ixodidae,Laelapidae,Chthoniidae	BSCRO050-24_r_1.5_s_50	Chthonius lessiniensis	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	441	1116	Theridiidae,Ixodidae,Laelapidae,Halacaridae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO050-24_r_1.5_s_100	Chthonius lessiniensis	0
+1	6	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	510	1134		BSCRO051-24_r_1_s_50	Chthonius ligusticus	0
+0	5	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	277	840		BSCRO051-24_r_1_s_100	Chthonius ligusticus	0
+2	3	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	139	477	Buthidae,Vaejovidae,Phytoseiidae,Phytoptidae	BSCRO051-24_r_1.3_s_50	Chthonius ligusticus	0
+2	3	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	139	348	Buthidae,Vaejovidae,Phytoseiidae,Phytoptidae	BSCRO051-24_r_1.3_s_100	Chthonius ligusticus	0
+2	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	61	231		BSCRO051-24_r_1.5_s_50	Chthonius ligusticus	0
+2	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	50	99		BSCRO051-24_r_1.5_s_100	Chthonius ligusticus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	626	1290	Oppiidae	BSCRO052-24_r_1_s_50	Chthonius ligusticus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	590	1194	Ixodidae,Oppiidae	BSCRO052-24_r_1_s_100	Chthonius ligusticus	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	146	603	Chernetidae,Garypidae	BSCRO052-24_r_1.3_s_50	Chthonius ligusticus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	81	438	Tydeidae,Pseudotyrannochthoniidae	BSCRO052-24_r_1.3_s_100	Chthonius ligusticus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	96	282		BSCRO052-24_r_1.5_s_50	Chthonius ligusticus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	95	231		BSCRO052-24_r_1.5_s_100	Chthonius ligusticus	0
+5	8	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	587	1062	Laelapidae,Digamasellidae	BSCRO053-24_r_1_s_50	Chthonius ligusticus	0
+1	5	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	515	927	Ixodidae,Digamasellidae,Parasitidae,Hydryphantidae	BSCRO053-24_r_1_s_100	Chthonius ligusticus	0
+1	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	301	582	Ixodidae,Digamasellidae,Parasitidae,Hydryphantidae	BSCRO053-24_r_1.3_s_50	Chthonius ligusticus	0
+1	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	243	450	Ixodidae,Digamasellidae,Parasitidae,Hydryphantidae	BSCRO053-24_r_1.3_s_100	Chthonius ligusticus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	88	288	Phytoseiidae,Rhagidiidae,Eupodidae,Stigmaeidae,Oppiidae,Karschiidae,Nemastomatidae	BSCRO053-24_r_1.5_s_50	Chthonius ligusticus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	94	177	Phytoseiidae,Rhagidiidae,Eupodidae,Stigmaeidae,Oppiidae,Karschiidae,Eremobatidae	BSCRO053-24_r_1.5_s_100	Chthonius ligusticus	0
+4	5	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	510	1113	Laelapidae,Fortuyniidae	BSCRO054-24_r_1_s_50	Chthonius concii	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	431	894	Ixodidae,Laelapidae,Fortuyniidae	BSCRO054-24_r_1_s_100	Chthonius concii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	110	465	Ixodidae,Laelapidae,Penthaleidae,Fortuyniidae	BSCRO054-24_r_1.3_s_50	Chthonius concii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	109	435	Ixodidae,Laelapidae,Penthaleidae,Fortuyniidae	BSCRO054-24_r_1.3_s_100	Chthonius concii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	248	333	Laelapidae,Penthaleidae,Fortuyniidae	BSCRO054-24_r_1.5_s_50	Chthonius concii	1
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	233	303	Laelapidae,Penthaleidae,Fortuyniidae	BSCRO054-24_r_1.5_s_100	Chthonius concii	1
+15	37	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1479	Chthoniidae	BSCRO055-24_r_1_s_50	Chthonius concii	0
+15	34	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	656	1437	Chthoniidae	BSCRO055-24_r_1_s_100	Chthonius concii	0
+15	15	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	629	1362	Ixodidae,Laelapidae,Chthoniidae	BSCRO055-24_r_1.3_s_50	Chthonius concii	0
+12	12	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	623	1332	Laelapidae,Chthoniidae	BSCRO055-24_r_1.3_s_100	Chthonius concii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	381	978	Laelapidae,Tetranychidae,Syringophilidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO055-24_r_1.5_s_50	Chthonius concii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	421	975	Laelapidae,Tetranychidae,Syringophilidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO055-24_r_1.5_s_100	Chthonius concii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1518	Ixodidae,Laelapidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO056-24_r_1_s_50	Chthonius concii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1449	Ixodidae,Laelapidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO056-24_r_1_s_100	Chthonius concii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1386	Laelapidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO056-24_r_1.3_s_50	Chthonius concii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	657	1386	Laelapidae,Chthoniidae,Pseudotyrannochthoniidae	BSCRO056-24_r_1.3_s_100	Chthonius concii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	538	1194	Laelapidae,Tetranychidae,Chthoniidae	BSCRO056-24_r_1.5_s_50	Chthonius concii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	529	1185	Laelapidae,Tetranychidae,Chthoniidae	BSCRO056-24_r_1.5_s_100	Chthonius concii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1530	Ixodidae,Laelapidae,Chthoniidae	BSCRO057-24_r_1_s_50	Chthonius schmalfussi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1512	Ixodidae,Laelapidae,Chthoniidae	BSCRO057-24_r_1_s_100	Chthonius schmalfussi	0
+1	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	646	1425	Ixodidae,Laelapidae	BSCRO057-24_r_1.3_s_50	Chthonius schmalfussi	0
+1	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	646	1383	Ixodidae,Laelapidae	BSCRO057-24_r_1.3_s_100	Chthonius schmalfussi	0
+3	4	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	552	1191	Ixodidae,Laelapidae	BSCRO057-24_r_1.5_s_50	Chthonius schmalfussi	1
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	509	1137	Ixodidae,Laelapidae	BSCRO057-24_r_1.5_s_100	Chthonius schmalfussi	1
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1530	Ixodidae,Laelapidae,Chthoniidae	BSCRO058-24_r_1_s_50	Chthonius schmalfussi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1476	Ixodidae,Laelapidae,Chthoniidae	BSCRO058-24_r_1_s_100	Chthonius schmalfussi	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1449	Ixodidae,Laelapidae,Chthoniidae	BSCRO058-24_r_1.3_s_50	Chthonius schmalfussi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1392	Ixodidae,Laelapidae,Chthoniidae	BSCRO058-24_r_1.3_s_100	Chthonius schmalfussi	0
+0	6	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	622	1281	Ixodidae,Laelapidae	BSCRO058-24_r_1.5_s_50	Chthonius schmalfussi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	622	1269	Ixodidae,Laelapidae	BSCRO058-24_r_1.5_s_100	Chthonius schmalfussi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1533	Ixodidae,Laelapidae,Chthoniidae	BSCRO059-24_r_1_s_50	Chthonius schmalfussi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1506	Ixodidae,Laelapidae,Chthoniidae	BSCRO059-24_r_1_s_100	Chthonius schmalfussi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1461	Ixodidae,Laelapidae,Chthoniidae	BSCRO059-24_r_1.3_s_50	Chthonius schmalfussi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	655	1392	Ixodidae,Laelapidae,Chthoniidae	BSCRO059-24_r_1.3_s_100	Chthonius schmalfussi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	580	1257	Ixodidae,Laelapidae	BSCRO059-24_r_1.5_s_50	Chthonius schmalfussi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Chthoniidae	BLAST	family	580	1257	Ixodidae,Laelapidae	BSCRO059-24_r_1.5_s_100	Chthonius schmalfussi	0
+18	33	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	629	1458	Eupodidae,Neobisiidae	BSCRO060-24_r_1_s_50	Balkanoroncus boldorii	4
+13	20	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	555	1164	Eriorhynchidae,Hubbardiidae,Neobisiidae	BSCRO060-24_r_1_s_100	Balkanoroncus boldorii	1
+5	16	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	383	1068	Euscorpiidae,Araneidae,Anapidae,Neobisiidae,Pseudotyrannochthoniidae	BSCRO060-24_r_1.3_s_50	Balkanoroncus boldorii	2
+2	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	481	726	Euscorpiidae,Anapidae,Cheiracanthiidae,Trouessartiidae,Brachychthoniidae,Neobisiidae,Chthoniidae	BSCRO060-24_r_1.3_s_100	Balkanoroncus boldorii	5
+6	15	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	489	582	Agelenidae,Cheiracanthiidae,Archaeidae,Proctophyllodidae,Trouessartiidae,Brachychthoniidae,Neobisiidae	BSCRO060-24_r_1.5_s_50	Balkanoroncus boldorii	4
+2	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	464	498	Agelenidae,Cheiracanthiidae,Proctophyllodidae,Trouessartiidae,Brachychthoniidae,Neobisiidae,Chthoniidae	BSCRO060-24_r_1.5_s_100	Balkanoroncus boldorii	5
+0	5	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypidae	BLAST	family	654	1485	Ixodidae,Garypidae,Olpiidae	BSCRO061-24_r_1_s_50	Garypus beauvoisii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypidae	BLAST	family	654	1431	Ixodidae,Garypidae,Olpiidae	BSCRO061-24_r_1_s_100	Garypus beauvoisii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypidae	BLAST	family	642	1419	Ixodidae,Garypidae	BSCRO061-24_r_1.3_s_50	Garypus beauvoisii	0
+1	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypidae	BLAST	family	642	1347	Ixodidae,Garypidae	BSCRO061-24_r_1.3_s_100	Garypus beauvoisii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypidae	BLAST	family	443	1038	Syarinidae,Garypidae,Olpiidae	BSCRO061-24_r_1.5_s_50	Garypus beauvoisii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypidae	BLAST	family	443	987	Syarinidae,Garypidae,Olpiidae	BSCRO061-24_r_1.5_s_100	Garypus beauvoisii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypidae	BLAST	family	654	1452	Ixodidae,Garypidae,Olpiidae	BSCRO062-24_r_1_s_50	Garypus levantinus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypidae	BLAST	family	654	1413	Ixodidae,Garypidae,Olpiidae	BSCRO062-24_r_1_s_100	Garypus levantinus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypidae	BLAST	family	654	1410	Ixodidae,Garypidae,Olpiidae	BSCRO062-24_r_1.3_s_50	Garypus levantinus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypidae	BLAST	family	654	1371	Ixodidae,Garypidae,Olpiidae	BSCRO062-24_r_1.3_s_100	Garypus levantinus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypidae	BLAST	family	456	993	Laelapidae,Syarinidae,Garypidae,Olpiidae	BSCRO062-24_r_1.5_s_50	Garypus levantinus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypidae	BLAST	family	429	966	Laelapidae,Syarinidae,Garypidae,Olpiidae	BSCRO062-24_r_1.5_s_100	Garypus levantinus	0
+3	21	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypidae	BLAST	family	654	1410	Laelapidae,Garypidae,Olpiidae	BSCRO063-24_r_1_s_50	Garypus beauvoisii	0
+2	6	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypidae	BLAST	family	654	1407	Ixodidae,Garypidae,Olpiidae	BSCRO063-24_r_1_s_100	Garypus beauvoisii	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypidae	BLAST	family	630	1341	Ixodidae,Laelapidae,Garypidae,Olpiidae	BSCRO063-24_r_1.3_s_50	Garypus beauvoisii	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypidae	BLAST	family	603	1311	Ixodidae,Laelapidae,Garypidae	BSCRO063-24_r_1.3_s_100	Garypus beauvoisii	0
+0	4	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypidae	BLAST	family	411	975	Laelapidae,Syarinidae,Garypidae,Olpiidae	BSCRO063-24_r_1.5_s_50	Garypus beauvoisii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypidae	BLAST	family	387	888	Laelapidae,Syarinidae,Garypidae,Olpiidae	BSCRO063-24_r_1.5_s_100	Garypus beauvoisii	0
+44	45	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypinidae	BLAST	family	599	1392	Ixodidae,Tetranychidae	BSCRO064-24_r_1_s_50	Garypinus dimidiatus	0
+42	43	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypinidae	BLAST	family	581	1305	Philodromidae,Ixodidae,Eriophyidae,Diptilomiopidae,Tetranychidae,Hubbardiidae	BSCRO064-24_r_1_s_100	Garypinus dimidiatus	0
+9	9	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypinidae	BLAST	family	444	1119	Oppiidae,Neobisiidae,Olpiidae	BSCRO064-24_r_1.3_s_50	Garypinus dimidiatus	0
+9	9	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypinidae	BLAST	family	429	1104	Oppiidae,Neobisiidae,Olpiidae	BSCRO064-24_r_1.3_s_100	Garypinus dimidiatus	0
+0	7	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypinidae	BLAST	family	364	459	Neobisiidae,Olpiidae	BSCRO064-24_r_1.5_s_50	Garypinus dimidiatus	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Garypinidae	BLAST	family	284	330	Neobisiidae,Olpiidae	BSCRO064-24_r_1.5_s_100	Garypinus dimidiatus	0
+0	3	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO065-24_r_1_s_50	Balkanoroncus boldorii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1470	Neobisiidae	BSCRO065-24_r_1_s_100	Balkanoroncus boldorii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1467	Neobisiidae	BSCRO065-24_r_1.3_s_50	Balkanoroncus boldorii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1407	Neobisiidae	BSCRO065-24_r_1.3_s_100	Balkanoroncus boldorii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	600	1347	Sparassidae,Philodromidae,Ixodidae,Oxidae,Halacaridae,Chthoniidae	BSCRO065-24_r_1.5_s_50	Balkanoroncus boldorii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	567	1251	Sparassidae,Philodromidae,Ixodidae,Laelapidae,Cosmetidae,Chthoniidae	BSCRO065-24_r_1.5_s_100	Balkanoroncus boldorii	0
+0	5	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO066-24_r_1_s_50	Balkanoroncus boldorii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1470	Neobisiidae	BSCRO066-24_r_1_s_100	Balkanoroncus boldorii	0
+0	4	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1497	Neobisiidae	BSCRO066-24_r_1.3_s_50	Balkanoroncus boldorii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1389	Neobisiidae	BSCRO066-24_r_1.3_s_100	Balkanoroncus boldorii	0
+2	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	462	1200	Ixodidae	BSCRO066-24_r_1.5_s_50	Balkanoroncus boldorii	1
+2	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	462	1137	Sparassidae,Archaeidae,Ixodidae,Laelapidae,Chthoniidae	BSCRO066-24_r_1.5_s_100	Balkanoroncus boldorii	1
+0	3	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO067-24_r_1_s_50	Balkanoroncus boldorii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1473	Neobisiidae	BSCRO067-24_r_1_s_100	Balkanoroncus boldorii	0
+0	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1476	Neobisiidae	BSCRO067-24_r_1.3_s_50	Balkanoroncus boldorii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1407	Neobisiidae	BSCRO067-24_r_1.3_s_100	Balkanoroncus boldorii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	534	1278	Salticidae,Ixodidae	BSCRO067-24_r_1.5_s_50	Balkanoroncus boldorii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	534	1230	Sparassidae,Ixodidae,Chthoniidae	BSCRO067-24_r_1.5_s_100	Balkanoroncus boldorii	0
+0	7	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO068-24_r_1_s_50	Balkanoroncus boldorii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1452	Neobisiidae	BSCRO068-24_r_1_s_100	Balkanoroncus boldorii	0
+1	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1470	Neobisiidae	BSCRO068-24_r_1.3_s_50	Balkanoroncus boldorii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1374	Neobisiidae	BSCRO068-24_r_1.3_s_100	Balkanoroncus boldorii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	555	1281	Ixodidae,Chthoniidae	BSCRO068-24_r_1.5_s_50	Balkanoroncus boldorii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	500	1218	Sparassidae,Philodromidae,Ixodidae,Neobisiidae,Chthoniidae	BSCRO068-24_r_1.5_s_100	Balkanoroncus boldorii	0
+0	5	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO069-24_r_1_s_50	Balkanoroncus boldorii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1512	Hypochilidae,Neobisiidae	BSCRO069-24_r_1_s_100	Balkanoroncus boldorii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1407	Hypochilidae,Neobisiidae	BSCRO069-24_r_1.3_s_50	Balkanoroncus boldorii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1407	Hypochilidae,Neobisiidae	BSCRO069-24_r_1.3_s_100	Balkanoroncus boldorii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	612	1302	Ochyroceratidae,Theridiidae,Nephilidae,Agelenidae,Salticidae,Amaurobiidae,Ixodidae,Neobisiidae	BSCRO069-24_r_1.5_s_50	Balkanoroncus boldorii	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	567	1251	Ochyroceratidae,Theridiidae,Nephilidae,Agelenidae,Salticidae,Amaurobiidae,Ixodidae,Neobisiidae	BSCRO069-24_r_1.5_s_100	Balkanoroncus boldorii	0
+1	14	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	480	1182		BSCRO070-24_r_1_s_50	Neobisium abeillei	0
+0	12	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	224	810		BSCRO070-24_r_1_s_100	Neobisium abeillei	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	79	309		BSCRO070-24_r_1.3_s_50	Neobisium abeillei	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	77	150		BSCRO070-24_r_1.3_s_100	Neobisium abeillei	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	1	201		BSCRO070-24_r_1.5_s_50	Neobisium abeillei	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	1	84		BSCRO070-24_r_1.5_s_100	Neobisium abeillei	0
+5	11	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	167	1017		BSCRO071-24_r_1_s_50	Neobisium abeillei	0
+1	7	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	164	651		BSCRO071-24_r_1_s_100	Neobisium abeillei	0
+0	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	221	438	Araneidae,Uloboridae,Ixodidae,Laelapidae,Cryptomastridae	BSCRO071-24_r_1.3_s_50	Neobisium abeillei	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	221	339	Araneidae,Uloboridae,Ixodidae,Laelapidae,Cryptomastridae	BSCRO071-24_r_1.3_s_100	Neobisium abeillei	0
+2	4	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	49	102		BSCRO071-24_r_1.5_s_50	Neobisium abeillei	0
+None	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Neobisiidae	BLAST	family	None	0		BSCRO071-24_r_1.5_s_100	Neobisium abeillei	0
+0	6	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO072-24_r_1_s_50	Neobisium dinaricum	0
+0	16	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1473	Neobisiidae	BSCRO072-24_r_1_s_100	Neobisium dinaricum	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1446	Neobisiidae	BSCRO072-24_r_1.3_s_50	Neobisium dinaricum	1
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1446	Neobisiidae	BSCRO072-24_r_1.3_s_100	Neobisium dinaricum	1
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	558	1278	Neobisiidae	BSCRO072-24_r_1.5_s_50	Neobisium dinaricum	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	558	1278	Neobisiidae	BSCRO072-24_r_1.5_s_100	Neobisium dinaricum	0
+0	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	164	915		BSCRO073-24_r_1_s_50	Neobisium dinaricum	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	163	693		BSCRO073-24_r_1_s_100	Neobisium dinaricum	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	86	273		BSCRO073-24_r_1.3_s_50	Neobisium dinaricum	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	65	111	Sparassidae,Argasidae,Ixodidae,Phalangiidae	BSCRO073-24_r_1.3_s_100	Neobisium dinaricum	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	1	108		BSCRO073-24_r_1.5_s_50	Neobisium dinaricum	0
+None	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Neobisiidae	BLAST	family	None	0		BSCRO073-24_r_1.5_s_100	Neobisium dinaricum	0
+2	5	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1515	Neobisiidae	BSCRO074-24_r_1_s_50	Neobisium maderi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1422	Neobisiidae	BSCRO074-24_r_1_s_100	Neobisium maderi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1422	Neobisiidae	BSCRO074-24_r_1.3_s_50	Neobisium maderi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1422	Neobisiidae	BSCRO074-24_r_1.3_s_100	Neobisium maderi	0
+1	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	540	1239	Neobisiidae	BSCRO074-24_r_1.5_s_50	Neobisium maderi	0
+3	3	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	510	1206	Neobisiidae	BSCRO074-24_r_1.5_s_100	Neobisium maderi	0
+0	5	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO075-24_r_1_s_50	Neobisium maderi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO075-24_r_1_s_100	Neobisium maderi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1446	Neobisiidae	BSCRO075-24_r_1.3_s_50	Neobisium maderi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1413	Neobisiidae	BSCRO075-24_r_1.3_s_100	Neobisium maderi	0
+0	6	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	513	1251	Neobisiidae	BSCRO075-24_r_1.5_s_50	Neobisium maderi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	513	1218	Neobisiidae	BSCRO075-24_r_1.5_s_100	Neobisium maderi	0
+3	8	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO076-24_r_1_s_50	Neobisium maderi	0
+0	4	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO076-24_r_1_s_100	Neobisium maderi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1461	Neobisiidae	BSCRO076-24_r_1.3_s_50	Neobisium maderi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1404	Neobisiidae	BSCRO076-24_r_1.3_s_100	Neobisium maderi	0
+0	5	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	531	1227	Neobisiidae	BSCRO076-24_r_1.5_s_50	Neobisium maderi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	531	1191	Neobisiidae	BSCRO076-24_r_1.5_s_100	Neobisium maderi	0
+0	3	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	198	1047	Oppiidae	BSCRO077-24_r_1_s_50	Neobisium primitivum	1
+1	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	167	768	Ixodidae,Oppiidae	BSCRO077-24_r_1_s_100	Neobisium primitivum	0
+0	6	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	153	636	Liphistiidae,Ixodidae,Allothyridae,Selenoribatidae	BSCRO077-24_r_1.3_s_50	Neobisium primitivum	1
+3	3	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	168	597	Liphistiidae,Ixodidae,Allothyridae,Oppiidae,Selenoribatidae	BSCRO077-24_r_1.3_s_100	Neobisium primitivum	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	124	264		BSCRO077-24_r_1.5_s_50	Neobisium primitivum	0
+0	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	122	207		BSCRO077-24_r_1.5_s_100	Neobisium primitivum	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	641	1527	Neobisiidae	BSCRO078-24_r_1_s_50	Neobisium princeps	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO078-24_r_1_s_100	Neobisium princeps	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1461	Neobisiidae	BSCRO078-24_r_1.3_s_50	Neobisium princeps	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1422	Neobisiidae	BSCRO078-24_r_1.3_s_100	Neobisium princeps	0
+2	4	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	629	1347	Neobisiidae	BSCRO078-24_r_1.5_s_50	Neobisium princeps	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	624	1308	Neobisiidae	BSCRO078-24_r_1.5_s_100	Neobisium princeps	0
+1	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	641	1527	Neobisiidae	BSCRO079-24_r_1_s_50	Neobisium princeps	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO079-24_r_1_s_100	Neobisium princeps	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1443	Neobisiidae	BSCRO079-24_r_1.3_s_50	Neobisium princeps	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1443	Neobisiidae	BSCRO079-24_r_1.3_s_100	Neobisium princeps	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	621	1338	Ixodidae,Neobisiidae	BSCRO079-24_r_1.5_s_50	Neobisium princeps	0
+6	9	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	621	1338	Ixodidae,Neobisiidae	BSCRO079-24_r_1.5_s_100	Neobisium princeps	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO080-24_r_1_s_50	Neobisium princeps	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO080-24_r_1_s_100	Neobisium princeps	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1500	Neobisiidae	BSCRO080-24_r_1.3_s_50	Neobisium princeps	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1440	Neobisiidae	BSCRO080-24_r_1.3_s_100	Neobisium princeps	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	567	1308	Salticidae,Sparassidae,Ixodidae,Neobisiidae	BSCRO080-24_r_1.5_s_50	Neobisium princeps	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	567	1257	Ixodidae,Neobisiidae	BSCRO080-24_r_1.5_s_100	Neobisium princeps	0
+18	67	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	525	1434	Neobisiidae	BSCRO081-24_r_1_s_50	Neobisium pusillum	0
+9	33	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	549	1230	Neobisiidae	BSCRO081-24_r_1_s_100	Neobisium pusillum	0
+7	40	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	460	1131	Neobisiidae	BSCRO081-24_r_1.3_s_50	Neobisium pusillum	0
+4	15	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	484	1074	Neobisiidae	BSCRO081-24_r_1.3_s_100	Neobisium pusillum	3
+4	11	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	452	954	Neobisiidae	BSCRO081-24_r_1.5_s_50	Neobisium pusillum	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	485	816	Neobisiidae	BSCRO081-24_r_1.5_s_100	Neobisium pusillum	3
+3	23	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO082-24_r_1_s_50	Neobisium spelaeum	0
+0	18	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1488	Neobisiidae	BSCRO082-24_r_1_s_100	Neobisium spelaeum	0
+1	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1482	Neobisiidae	BSCRO082-24_r_1.3_s_50	Neobisium spelaeum	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1422	Neobisiidae	BSCRO082-24_r_1.3_s_100	Neobisium spelaeum	0
+1	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	558	1293	Neobisiidae	BSCRO082-24_r_1.5_s_50	Neobisium spelaeum	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	522	1167	Neobisiidae	BSCRO082-24_r_1.5_s_100	Neobisium spelaeum	0
+1	8	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO083-24_r_1_s_50	Neobisium spelaeum	0
+1	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1470	Neobisiidae	BSCRO083-24_r_1_s_100	Neobisium spelaeum	0
+3	8	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	636	1335	Neobisiidae	BSCRO083-24_r_1.3_s_50	Neobisium spelaeum	0
+1	3	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	636	1335	Neobisiidae	BSCRO083-24_r_1.3_s_100	Neobisium spelaeum	0
+1	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	427	1065	Neobisiidae	BSCRO083-24_r_1.5_s_50	Neobisium spelaeum	0
+1	3	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	409	1038	Neobisiidae	BSCRO083-24_r_1.5_s_100	Neobisium spelaeum	0
+0	4	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1494	Neobisiidae	BSCRO084-24_r_1_s_50	Neobisium spelaeum	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1404	Neobisiidae	BSCRO084-24_r_1_s_100	Neobisium spelaeum	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1389	Neobisiidae	BSCRO084-24_r_1.3_s_50	Neobisium spelaeum	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1350	Neobisiidae	BSCRO084-24_r_1.3_s_100	Neobisium spelaeum	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	495	1230	Ixodidae,Laelapidae,Neobisiidae	BSCRO084-24_r_1.5_s_50	Neobisium spelaeum	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	429	1125	Ixodidae,Laelapidae,Neobisiidae	BSCRO084-24_r_1.5_s_100	Neobisium spelaeum	0
+7	63	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1470	Neobisiidae	BSCRO085-24_r_1_s_50	Neobisium spelaeum	0
+2	35	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1359	Neobisiidae	BSCRO085-24_r_1_s_100	Neobisium spelaeum	0
+7	9	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	531	1236	Ixodidae,Neobisiidae	BSCRO085-24_r_1.3_s_50	Neobisium spelaeum	1
+2	6	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	531	1188	Neobisiidae	BSCRO085-24_r_1.3_s_100	Neobisium spelaeum	1
+7	9	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	441	1068	Neobisiidae	BSCRO085-24_r_1.5_s_50	Neobisium spelaeum	0
+1	3	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	410	1002	Neobisiidae	BSCRO085-24_r_1.5_s_100	Neobisium spelaeum	5
+0	3	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO086-24_r_1_s_50	Neobisium torrei	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO086-24_r_1_s_100	Neobisium torrei	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1446	Neobisiidae	BSCRO086-24_r_1.3_s_50	Neobisium torrei	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1407	Neobisiidae	BSCRO086-24_r_1.3_s_100	Neobisium torrei	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	597	1299	Neobisiidae	BSCRO086-24_r_1.5_s_50	Neobisium torrei	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	597	1299	Neobisiidae	BSCRO086-24_r_1.5_s_100	Neobisium torrei	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO087-24_r_1_s_50	Neobisium caporiaccoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO087-24_r_1_s_100	Neobisium caporiaccoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1479	Neobisiidae	BSCRO087-24_r_1.3_s_50	Neobisium caporiaccoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1452	Neobisiidae	BSCRO087-24_r_1.3_s_100	Neobisium caporiaccoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1389	Neobisiidae	BSCRO087-24_r_1.5_s_50	Neobisium caporiaccoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1389	Neobisiidae	BSCRO087-24_r_1.5_s_100	Neobisium caporiaccoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO088-24_r_1_s_50	Neobisium caporiaccoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO088-24_r_1_s_100	Neobisium caporiaccoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1428	Neobisiidae	BSCRO088-24_r_1.3_s_50	Neobisium caporiaccoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1428	Neobisiidae	BSCRO088-24_r_1.3_s_100	Neobisium caporiaccoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	600	1338	Theridiidae,Palpimanidae,Sabaconidae	BSCRO088-24_r_1.5_s_50	Neobisium caporiaccoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	600	1338	Theridiidae,Palpimanidae,Sabaconidae	BSCRO088-24_r_1.5_s_100	Neobisium caporiaccoi	0
+4	8	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1482	Neobisiidae	BSCRO089-24_r_1_s_50	Neobisium carsicum	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1389	Neobisiidae	BSCRO089-24_r_1_s_100	Neobisium carsicum	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1389	Neobisiidae	BSCRO089-24_r_1.3_s_50	Neobisium carsicum	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1389	Neobisiidae	BSCRO089-24_r_1.3_s_100	Neobisium carsicum	0
+0	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	507	1173	Neobisiidae	BSCRO089-24_r_1.5_s_50	Neobisium carsicum	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	456	1104	Neobisiidae	BSCRO089-24_r_1.5_s_100	Neobisium carsicum	0
+10	75	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	483	1326	Theridiidae,Corinnidae,Stiphidiidae,Tetranychidae	BSCRO090-24_r_1_s_50	Neobisium carsicum	0
+0	35	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	307	990	Chernetidae,Neobisiidae	BSCRO090-24_r_1_s_100	Neobisium carsicum	0
+7	18	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	444	1008	Clubionidae,Ixodidae	BSCRO090-24_r_1.3_s_50	Neobisium carsicum	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	271	795	Theridiidae,Ixodidae	BSCRO090-24_r_1.3_s_100	Neobisium carsicum	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	267	633	Leptonetidae,Theridiidae,Thomisidae,Clubionidae,Corinnidae,Stiphidiidae,Ixodidae	BSCRO090-24_r_1.5_s_50	Neobisium carsicum	2
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	69	375	Ixodidae,Tectocepheidae,Selenoribatidae,Neobisiidae	BSCRO090-24_r_1.5_s_100	Neobisium carsicum	0
+12	64	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	653	1518	Neobisiidae	BSCRO091-24_r_1_s_50	Neobisium carsicum	0
+3	12	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1365	Neobisiidae	BSCRO091-24_r_1_s_100	Neobisium carsicum	0
+25	35	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	531	1305	Ixodidae,Ischyropsalididae,Neobisiidae	BSCRO091-24_r_1.3_s_50	Neobisium carsicum	0
+21	22	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	531	1167	Vaejovidae,Ixodidae,Ischyropsalididae,Neobisiidae	BSCRO091-24_r_1.3_s_100	Neobisium carsicum	0
+13	17	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	391	951	Ixodidae,Neobisiidae	BSCRO091-24_r_1.5_s_50	Neobisium carsicum	0
+9	11	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	187	714	Ixodidae	BSCRO091-24_r_1.5_s_100	Neobisium carsicum	0
+0	25	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	617	1458	Neobisiidae	BSCRO092-24_r_1_s_50	Neobisium doderoi	0
+0	12	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	614	1455	Neobisiidae	BSCRO092-24_r_1_s_100	Neobisium doderoi	0
+5	6	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	599	1281	Neobisiidae	BSCRO092-24_r_1.3_s_50	Neobisium doderoi	0
+5	5	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	596	1185	Neobisiidae	BSCRO092-24_r_1.3_s_100	Neobisium doderoi	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	420	918	Thomisidae,Salticidae,Ixodidae,Syringophilidae,Atemnidae,Neobisiidae	BSCRO092-24_r_1.5_s_50	Neobisium doderoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	420	867	Desidae,Liphistiidae,Ixodidae,Syringophilidae,Atemnidae,Neobisiidae,Pseudotyrannochthoniidae	BSCRO092-24_r_1.5_s_100	Neobisium doderoi	0
+5	25	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	626	1386	Oppiidae,Neobisiidae	BSCRO093-24_r_1_s_50	Neobisium doderoi	0
+2	19	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	521	1239	Oppiidae,Neobisiidae	BSCRO093-24_r_1_s_100	Neobisium doderoi	0
+5	9	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	491	879	Oppiidae,Scutoverticidae,Neobisiidae	BSCRO093-24_r_1.3_s_50	Neobisium doderoi	0
+2	5	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	336	726	Ixodidae,Unionicolidae,Oppiidae,Cymbaeremaeidae,Scutoverticidae,Hubbardiidae	BSCRO093-24_r_1.3_s_100	Neobisium doderoi	0
+0	2	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	67	399	Ixodidae,Lebertiidae,Unionicolidae,Oppiidae,Scutoverticidae,Phalangodidae	BSCRO093-24_r_1.5_s_50	Neobisium doderoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	60	336	Ixodidae,Lebertiidae,Unionicolidae,Oppiidae,Scutoverticidae,Phalangodidae	BSCRO093-24_r_1.5_s_100	Neobisium doderoi	0
+0	6	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO094-24_r_1_s_50	Neobisium doderoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO094-24_r_1_s_100	Neobisium doderoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1506	Neobisiidae	BSCRO094-24_r_1.3_s_50	Neobisium doderoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1440	Neobisiidae	BSCRO094-24_r_1.3_s_100	Neobisium doderoi	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	597	1338	Ixodidae,Laelapidae,Neobisiidae	BSCRO094-24_r_1.5_s_50	Neobisium doderoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	597	1338	Ixodidae,Laelapidae,Neobisiidae	BSCRO094-24_r_1.5_s_100	Neobisium doderoi	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO095-24_r_1_s_50	Neobisium doderoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1527	Neobisiidae	BSCRO095-24_r_1_s_100	Neobisium doderoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1500	Neobisiidae	BSCRO095-24_r_1.3_s_50	Neobisium doderoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	654	1434	Neobisiidae	BSCRO095-24_r_1.3_s_100	Neobisium doderoi	0
+0	1	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	576	1338	Neobisiidae	BSCRO095-24_r_1.5_s_50	Neobisium doderoi	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Neobisiidae	BLAST	family	576	1272	Neobisiidae	BSCRO095-24_r_1.5_s_100	Neobisium doderoi	0
+0	6	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00501-NC not in BOLD	None	BLAST	family	97	893		BGE00501-NC_r_1_s_50	None	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00501-NC not in BOLD	None	BLAST	family	1	627		BGE00501-NC_r_1_s_100	None	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00501-NC not in BOLD	None	BLAST	family	25	210		BGE00501-NC_r_1.3_s_50	None	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00501-NC not in BOLD	None	BLAST	family	5	81		BGE00501-NC_r_1.3_s_100	None	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00501-NC not in BOLD	None	BLAST	family	5	81		BGE00501-NC_r_1.5_s_100	None	0
+0	0	data/BGE00501_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00501-NC not in BOLD	None	BLAST	family	1	144		BGE00501-NC_r_1.5_s_50	None	0

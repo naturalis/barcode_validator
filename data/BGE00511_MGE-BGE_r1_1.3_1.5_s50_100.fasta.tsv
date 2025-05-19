@@ -1,0 +1,571 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+16	26	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1563	Sergestidae,Hippolytidae,Atelecyclidae,Domeciidae,Axiidae,Nannastacidae,Lophogastridae	BSCRO286-24_r_1_s_50	Moserius percoi	0
+10	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	478	1200	Benthesicymidae,Sergestidae,Atelecyclidae,Domeciidae,Axiidae,Nannastacidae	BSCRO286-24_r_1_s_100	Moserius percoi	0
+5	8	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1215	Benthesicymidae,Sergestidae,Hippolytidae,Atelecyclidae,Domeciidae,Axiidae,Nannastacidae,Lophogastridae	BSCRO286-24_r_1.3_s_50	Moserius percoi	0
+4	7	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	478	1092	Benthesicymidae,Sergestidae,Atelecyclidae,Domeciidae,Axiidae,Nannastacidae	BSCRO286-24_r_1.3_s_100	Moserius percoi	0
+4	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	306	828	Sergestidae,Axiidae,Eulimnogammaridae	BSCRO286-24_r_1.5_s_50	Moserius percoi	0
+4	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	306	780	Sergestidae,Axiidae,Eulimnogammaridae	BSCRO286-24_r_1.5_s_100	Moserius percoi	0
+0	18	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	479	1392	Chiltoniidae,Trichoniscidae	BSCRO287-24_r_1_s_50	Calconiscellus karawankianus	0
+0	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1092	Chiltoniidae,Trichoniscidae	BSCRO287-24_r_1_s_100	Calconiscellus karawankianus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1161	Chiltoniidae,Trichoniscidae	BSCRO287-24_r_1.3_s_50	Calconiscellus karawankianus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1065	Chiltoniidae,Trichoniscidae	BSCRO287-24_r_1.3_s_100	Calconiscellus karawankianus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	223	687	Chiltoniidae	BSCRO287-24_r_1.5_s_50	Calconiscellus karawankianus	3
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	165	549	Chiltoniidae	BSCRO287-24_r_1.5_s_100	Calconiscellus karawankianus	0
+0	10	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	479	1419	Chiltoniidae,Trichoniscidae	BSCRO288-24_r_1_s_50	Calconiscellus karawankianus	0
+0	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1089	Chiltoniidae,Trichoniscidae	BSCRO288-24_r_1_s_100	Calconiscellus karawankianus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	464	1161	Chiltoniidae,Trichoniscidae	BSCRO288-24_r_1.3_s_50	Calconiscellus karawankianus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	453	1026	Chiltoniidae,Trichoniscidae	BSCRO288-24_r_1.3_s_100	Calconiscellus karawankianus	0
+0	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	254	759	Chiltoniidae	BSCRO288-24_r_1.5_s_50	Calconiscellus karawankianus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	254	663	Chiltoniidae,Trichoniscidae	BSCRO288-24_r_1.5_s_100	Calconiscellus karawankianus	0
+7	27	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	479	1392	Grapsidae,Sesarmidae,Allocrangonyctidae,Gammaridae,Tylidae,Trichoniscidae	BSCRO289-24_r_1_s_50	Calconiscellus karawankianus	0
+4	9	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1089	Grapsidae,Sesarmidae,Allocrangonyctidae,Gammaridae,Talitridae,Trichoniscidae,Trachelipodidae,Bopyridae	BSCRO289-24_r_1_s_100	Calconiscellus karawankianus	0
+1	7	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1119	Grapsidae,Sesarmidae,Allocrangonyctidae,Gammaridae,Tylidae,Trichoniscidae,Asellidae	BSCRO289-24_r_1.3_s_50	Calconiscellus karawankianus	0
+5	16	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1083	Grapsidae,Sesarmidae,Allocrangonyctidae,Gammaridae,Talitridae,Trichoniscidae,Trachelipodidae,Agnaridae,Bopyridae	BSCRO289-24_r_1.3_s_100	Calconiscellus karawankianus	0
+0	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	114	519	Grapsidae,Sesarmidae,Allocrangonyctidae,Gammaridae,Talitridae,Bopyridae,Parabathynellidae	BSCRO289-24_r_1.5_s_50	Calconiscellus karawankianus	0
+0	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	68	402	Porcellanidae,Sesarmidae,Allocrangonyctidae,Gammaridae,Talitridae,Bopyridae,Parabathynellidae	BSCRO289-24_r_1.5_s_100	Calconiscellus karawankianus	0
+8	34	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	477	1524	Aeglidae	BSCRO290-24_r_1_s_50	Alpioniscus trogirensis	0
+13	19	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1308	Aeglidae	BSCRO290-24_r_1_s_100	Alpioniscus trogirensis	0
+10	36	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1146	Aeglidae	BSCRO290-24_r_1.3_s_50	Alpioniscus trogirensis	0
+0	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	471	1014	Aeglidae	BSCRO290-24_r_1.3_s_100	Alpioniscus trogirensis	0
+0	13	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	153	687	Aeglidae	BSCRO290-24_r_1.5_s_50	Alpioniscus trogirensis	0
+0	8	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	153	618	Aeglidae	BSCRO290-24_r_1.5_s_100	Alpioniscus trogirensis	0
+13	34	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1362	Cambaridae	BSCRO291-24_r_1_s_50	Alpioniscus trogirensis	0
+3	14	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	422	993	Aeglidae	BSCRO291-24_r_1_s_100	Alpioniscus trogirensis	0
+9	17	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	468	1065	Aeglidae,Trachelipodidae	BSCRO291-24_r_1.3_s_50	Alpioniscus trogirensis	0
+3	15	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	422	972	Aeglidae	BSCRO291-24_r_1.3_s_100	Alpioniscus trogirensis	0
+0	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	243	633	Aeglidae	BSCRO291-24_r_1.5_s_50	Alpioniscus trogirensis	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	243	633	Aeglidae	BSCRO291-24_r_1.5_s_100	Alpioniscus trogirensis	0
+9	21	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	472	1122	Aeglidae	BSCRO292-24_r_1_s_50	Alpioniscus trogirensis	0
+4	7	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	439	822	Aeglidae	BSCRO292-24_r_1_s_100	Alpioniscus trogirensis	0
+9	12	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	340	873	Aeglidae	BSCRO292-24_r_1.3_s_50	Alpioniscus trogirensis	1
+0	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	378	711	Aeglidae	BSCRO292-24_r_1.3_s_100	Alpioniscus trogirensis	0
+0	8	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	307	450	Aeglidae	BSCRO292-24_r_1.5_s_50	Alpioniscus trogirensis	5
+0	8	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	307	450	Aeglidae	BSCRO292-24_r_1.5_s_100	Alpioniscus trogirensis	5
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	125	249	Parastacidae,Orithyiidae,Asellidae,Bathynellidae	BSCRO293-24_r_1_s_50	Cyphopleon kratochvili	1
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	36	57	Orithyiidae,Asellidae,Bathynellidae	BSCRO293-24_r_1_s_100	Cyphopleon kratochvili	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	106	153	Parastacidae,Orithyiidae,Asellidae,Bathynellidae	BSCRO293-24_r_1.3_s_50	Cyphopleon kratochvili	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	36	57	Orithyiidae,Asellidae,Bathynellidae	BSCRO293-24_r_1.3_s_100	Cyphopleon kratochvili	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	36	57	Orithyiidae,Asellidae,Bathynellidae	BSCRO293-24_r_1.5_s_50	Cyphopleon kratochvili	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	36	57	Orithyiidae,Asellidae,Bathynellidae	BSCRO293-24_r_1.5_s_100	Cyphopleon kratochvili	0
+21	35	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	482	1449	Trichoniscidae,Idoteidae	BSCRO294-24_r_1_s_50	Cyphopleon kratochvili	0
+5	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	478	1290	Trichoniscidae,Idoteidae	BSCRO294-24_r_1_s_100	Cyphopleon kratochvili	0
+1	7	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	433	1134	Trichoniscidae,Idoteidae	BSCRO294-24_r_1.3_s_50	Cyphopleon kratochvili	0
+0	5	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	412	924	Trichoniscidae,Idoteidae	BSCRO294-24_r_1.3_s_100	Cyphopleon kratochvili	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	207	621	Cambaridae,Leucosiidae,Bathynellidae	BSCRO294-24_r_1.5_s_50	Cyphopleon kratochvili	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	207	621	Cambaridae,Leucosiidae,Bathynellidae	BSCRO294-24_r_1.5_s_100	Cyphopleon kratochvili	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	94	96	Penaeidae,Parastacidae,Nephropidae,Munididae,Niphargidae,Talitridae	BSCRO295-24_r_1_s_50	Cyphopleon kratochvili	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	94	96	Penaeidae,Parastacidae,Nephropidae,Munididae,Niphargidae,Talitridae	BSCRO295-24_r_1_s_100	Cyphopleon kratochvili	0
+None	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Trichoniscidae	BLAST	family	None	0		BSCRO295-24_r_1.3_s_50	Cyphopleon kratochvili	0
+None	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Trichoniscidae	BLAST	family	None	0		BSCRO295-24_r_1.3_s_100	Cyphopleon kratochvili	0
+None	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Trichoniscidae	BLAST	family	None	0		BSCRO295-24_r_1.5_s_50	Cyphopleon kratochvili	0
+None	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Trichoniscidae	BLAST	family	None	0		BSCRO295-24_r_1.5_s_100	Cyphopleon kratochvili	0
+9	33	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	278	1152	Porcellanidae,Grapsidae	BSCRO296-24_r_1_s_50	Haplophthalminae	0
+0	17	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	134	894	Atyidae,Porcellanidae,Grapsidae,Euphausiidae,Gammaridae	BSCRO296-24_r_1_s_100	Haplophthalminae	0
+1	8	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	177	669	Atyidae,Porcellanidae,Grapsidae,Euphausiidae	BSCRO296-24_r_1.3_s_50	Haplophthalminae	0
+1	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	136	507	Atyidae,Porcellanidae,Grapsidae,Euphausiidae	BSCRO296-24_r_1.3_s_100	Haplophthalminae	0
+9	12	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	136	417	Atyidae,Euphausiidae	BSCRO296-24_r_1.5_s_50	Haplophthalminae	0
+10	13	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	136	327	Atyidae,Euphausiidae	BSCRO296-24_r_1.5_s_100	Haplophthalminae	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	483	1482	Chiltoniidae,Bathynellidae	BSCRO297-24_r_1_s_50	Haplophthalminae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1368	Chiltoniidae,Bathynellidae	BSCRO297-24_r_1_s_100	Haplophthalminae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	436	1149	Chiltoniidae,Bathynellidae	BSCRO297-24_r_1.3_s_50	Haplophthalminae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	428	1038	Chiltoniidae,Bathynellidae	BSCRO297-24_r_1.3_s_100	Haplophthalminae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	297	855	Chiltoniidae,Bathynellidae	BSCRO297-24_r_1.5_s_50	Haplophthalminae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	282	705	Chiltoniidae,Bathynellidae	BSCRO297-24_r_1.5_s_100	Haplophthalminae	0
+2	7	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	473	1257	Nephropidae,Porcellanidae,Carcinidae,Grapsidae,Trichoniscidae,Asellidae,Bathynellidae	BSCRO298-24_r_1_s_50	Haplophthalminae	0
+1	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	440	990	Porcellanidae,Carcinidae,Grapsidae,Callianassidae,Trichoniscidae,Asellidae,Bathynellidae	BSCRO298-24_r_1_s_100	Haplophthalminae	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	307	735	Nephropidae,Porcellanidae,Corystidae,Grapsidae,Trichoniscidae,Bathynellidae	BSCRO298-24_r_1.3_s_50	Haplophthalminae	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	307	627	Nephropidae,Porcellanidae,Corystidae,Grapsidae,Trichoniscidae,Bathynellidae	BSCRO298-24_r_1.3_s_100	Haplophthalminae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	136	387	Nephropidae,Porcellanidae,Corystidae,Grapsidae,Bathynellidae	BSCRO298-24_r_1.5_s_50	Haplophthalminae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	136	282	Nephropidae,Porcellanidae,Corystidae,Grapsidae,Bathynellidae	BSCRO298-24_r_1.5_s_100	Haplophthalminae	0
+0	25	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1578	Aeglidae	BSCRO299-24_r_1_s_50	Alpioniscus kratochvili	0
+0	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1434	Aeglidae	BSCRO299-24_r_1_s_100	Alpioniscus kratochvili	0
+0	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1221	Aeglidae	BSCRO299-24_r_1.3_s_50	Alpioniscus kratochvili	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1092	Aeglidae	BSCRO299-24_r_1.3_s_100	Alpioniscus kratochvili	0
+0	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	406	957	Aeglidae	BSCRO299-24_r_1.5_s_50	Alpioniscus kratochvili	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	406	918	Aeglidae	BSCRO299-24_r_1.5_s_100	Alpioniscus kratochvili	0
+1	15	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1614	Aeglidae	BSCRO300-24_r_1_s_50	Alpioniscus kratochvili	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1293	Aeglidae	BSCRO300-24_r_1_s_100	Alpioniscus kratochvili	0
+0	17	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1272	Aeglidae	BSCRO300-24_r_1.3_s_50	Alpioniscus kratochvili	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1173	Aeglidae	BSCRO300-24_r_1.3_s_100	Alpioniscus kratochvili	0
+0	9	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	403	984	Aeglidae	BSCRO300-24_r_1.5_s_50	Alpioniscus kratochvili	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	403	846	Aeglidae	BSCRO300-24_r_1.5_s_100	Alpioniscus kratochvili	0
+9	43	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1515	Ocypodidae,Lysianassidae,Anaspididae	BSCRO301-24_r_1_s_50	Alpioniscus	0
+2	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1314	Ocypodidae,Lysianassidae,Trachelipodidae,Agnaridae,Asellidae,Parabathynellidae,Anaspididae	BSCRO301-24_r_1_s_100	Alpioniscus	0
+1	10	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1149	Ocypodidae,Lysianassidae,Trachelipodidae,Agnaridae,Asellidae,Parabathynellidae,Anaspididae	BSCRO301-24_r_1.3_s_50	Alpioniscus	0
+1	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1089	Ocypodidae,Lysianassidae,Trachelipodidae,Agnaridae,Asellidae,Parabathynellidae,Anaspididae	BSCRO301-24_r_1.3_s_100	Alpioniscus	0
+0	8	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	299	900	Eulimnogammaridae,Trachelipodidae,Agnaridae,Asellidae,Parabathynellidae,Anaspididae	BSCRO301-24_r_1.5_s_50	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	299	840	Eulimnogammaridae,Trachelipodidae,Agnaridae,Asellidae,Parabathynellidae,Anaspididae	BSCRO301-24_r_1.5_s_100	Alpioniscus	0
+0	33	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1545	Ocypodidae,Lysianassidae,Trachelipodidae,Agnaridae,Asellidae,Parabathynellidae,Anaspididae	BSCRO302-24_r_1_s_50	Alpioniscus	0
+4	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1410	Ocypodidae,Lysianassidae,Trachelipodidae,Agnaridae,Asellidae,Parabathynellidae,Anaspididae	BSCRO302-24_r_1_s_100	Alpioniscus	0
+0	9	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1230	Ocypodidae,Lysianassidae,Trachelipodidae,Agnaridae,Asellidae,Parabathynellidae,Anaspididae	BSCRO302-24_r_1.3_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1038	Ocypodidae,Lysianassidae,Trachelipodidae,Agnaridae,Asellidae,Parabathynellidae,Anaspididae	BSCRO302-24_r_1.3_s_100	Alpioniscus	0
+0	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	382	1032	Ocypodidae,Lysianassidae,Trachelipodidae,Agnaridae,Asellidae,Parabathynellidae,Anaspididae	BSCRO302-24_r_1.5_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	375	894	Ocypodidae,Lysianassidae,Trachelipodidae,Agnaridae,Asellidae,Parabathynellidae,Anaspididae	BSCRO302-24_r_1.5_s_100	Alpioniscus	0
+0	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1578	Cambaridae,Aeglidae	BSCRO303-24_r_1_s_50	Alpioniscus drazinae	0
+0	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1434	Cambaridae,Aeglidae	BSCRO303-24_r_1_s_100	Alpioniscus drazinae	0
+0	7	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1248	Cambaridae,Aeglidae	BSCRO303-24_r_1.3_s_50	Alpioniscus drazinae	0
+0	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1164	Cambaridae,Aeglidae	BSCRO303-24_r_1.3_s_100	Alpioniscus drazinae	0
+0	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	406	996	Cambaridae,Aeglidae	BSCRO303-24_r_1.5_s_50	Alpioniscus drazinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	406	966	Cambaridae,Aeglidae	BSCRO303-24_r_1.5_s_100	Alpioniscus drazinae	0
+7	49	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	448	1362	Scyllaridae,Portunidae,Aoridae,Tylidae,Mesoniscidae,Scyphacidae,Agnaridae,Bathynellidae	BSCRO304-24_r_1_s_50	Aegonethes antilocapra	0
+1	26	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	439	1074	Aeglidae,Potamidae,Crangonyctidae,Niphargidae,Lysianassidae,Stenasellidae,Bathynellidae	BSCRO304-24_r_1_s_100	Aegonethes antilocapra	0
+1	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	442	1170	Aeglidae,Potamidae,Crangonyctidae,Niphargidae,Lysianassidae,Bathynellidae	BSCRO304-24_r_1.3_s_50	Aegonethes antilocapra	0
+0	15	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	433	897	Aeglidae,Potamidae,Crangonyctidae,Lysianassidae,Bathynellidae	BSCRO304-24_r_1.3_s_100	Aegonethes antilocapra	0
+0	9	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	269	684	Aeglidae,Potamidae,Crangonyctidae,Niphargidae,Lysianassidae,Bathynellidae	BSCRO304-24_r_1.5_s_50	Aegonethes antilocapra	0
+0	15	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	269	630	Aeglidae,Potamidae,Crangonyctidae,Lysianassidae,Bathynellidae	BSCRO304-24_r_1.5_s_100	Aegonethes antilocapra	0
+1	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1503	Aeglidae,Crangonyctidae,Niphargidae,Lysianassidae,Bathynellidae	BSCRO305-24_r_1_s_50	Aegonethes antilocapra	0
+0	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1308	Aeglidae,Crangonyctidae,Niphargidae,Lysianassidae,Bathynellidae	BSCRO305-24_r_1_s_100	Aegonethes antilocapra	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	462	1230	Aeglidae,Potamidae,Crangonyctidae,Niphargidae,Lysianassidae,Bathynellidae	BSCRO305-24_r_1.3_s_50	Aegonethes antilocapra	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	457	1074	Aeglidae,Potamidae,Crangonyctidae,Niphargidae,Lysianassidae,Bathynellidae	BSCRO305-24_r_1.3_s_100	Aegonethes antilocapra	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	308	864	Aeglidae,Crangonyctidae,Niphargidae,Lysianassidae,Bathynellidae	BSCRO305-24_r_1.5_s_50	Aegonethes antilocapra	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	308	864	Aeglidae,Crangonyctidae,Niphargidae,Lysianassidae,Bathynellidae	BSCRO305-24_r_1.5_s_100	Aegonethes antilocapra	0
+0	13	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1293	Aeglidae,Potamidae,Crangonyctidae,Niphargidae,Lysianassidae,Bathynellidae	BSCRO306-24_r_1_s_50	Aegonethes antilocapra	0
+0	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1293	Scyllaridae,Aeglidae,Potamidae,Crangonyctidae,Niphargidae,Lysianassidae,Bathynellidae	BSCRO306-24_r_1_s_100	Aegonethes antilocapra	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1122	Aeglidae,Crangonyctidae,Niphargidae,Lysianassidae,Bathynellidae	BSCRO306-24_r_1.3_s_50	Aegonethes antilocapra	0
+0	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1083	Aeglidae,Crangonyctidae,Niphargidae,Lysianassidae,Bathynellidae	BSCRO306-24_r_1.3_s_100	Aegonethes antilocapra	0
+3	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	323	897	Scyllaridae,Potamidae,Crangonyctidae,Niphargidae,Lysianassidae,Stenasellidae,Bathynellidae	BSCRO306-24_r_1.5_s_50	Aegonethes antilocapra	0
+3	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	303	834	Scyllaridae,Aeglidae,Potamidae,Crangonyctidae,Niphargidae,Lysianassidae,Stenasellidae,Bathynellidae	BSCRO306-24_r_1.5_s_100	Aegonethes antilocapra	0
+0	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1452	Aeglidae,Chiltoniidae	BSCRO307-24_r_1_s_50	Trichoniscinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1452	Aeglidae,Chiltoniidae	BSCRO307-24_r_1_s_100	Trichoniscinae	0
+1	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1233	Aeglidae,Chiltoniidae	BSCRO307-24_r_1.3_s_50	Trichoniscinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1170	Aeglidae,Chiltoniidae	BSCRO307-24_r_1.3_s_100	Trichoniscinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	398	987	Aeglidae,Chiltoniidae,Trachelipodidae	BSCRO307-24_r_1.5_s_50	Trichoniscinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	398	888	Aeglidae,Chiltoniidae,Trachelipodidae	BSCRO307-24_r_1.5_s_100	Trichoniscinae	0
+5	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1503	Potamidae,Chiltoniidae,Trachelipodidae	BSCRO308-24_r_1_s_50	Trichoniscinae	0
+3	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1350	Aeglidae,Potamidae,Chiltoniidae,Trachelipodidae	BSCRO308-24_r_1_s_100	Trichoniscinae	0
+1	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1188	Aeglidae,Chiltoniidae	BSCRO308-24_r_1.3_s_50	Trichoniscinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1065	Aeglidae,Chiltoniidae	BSCRO308-24_r_1.3_s_100	Trichoniscinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	216	675	Aeglidae	BSCRO308-24_r_1.5_s_50	Trichoniscinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	215	624	Aeglidae	BSCRO308-24_r_1.5_s_100	Trichoniscinae	0
+22	35	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	472	1317	Munididae,Ocypodidae,Callianassidae,Bentheuphausiidae,Allocrangonyctidae	BSCRO309-24_r_1_s_50	Cyphoniscellus herzegowinensis	0
+12	12	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	449	1191	Munididae,Ocypodidae,Callianassidae,Bentheuphausiidae,Allocrangonyctidae	BSCRO309-24_r_1_s_100	Cyphoniscellus herzegowinensis	0
+3	5	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	467	1002	Penaeidae,Porcellanidae,Bentheuphausiidae,Gammaridae,Trachelipodidae,Agnaridae,Asellidae	BSCRO309-24_r_1.3_s_50	Cyphoniscellus herzegowinensis	0
+2	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	449	984	Penaeidae,Atyidae,Porcellanidae,Bentheuphausiidae,Gammaridae,Trachelipodidae,Agnaridae	BSCRO309-24_r_1.3_s_100	Cyphoniscellus herzegowinensis	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	198	636	Penaeidae,Porcellanidae,Bentheuphausiidae,Gammaridae,Trachelipodidae,Agnaridae,Asellidae	BSCRO309-24_r_1.5_s_50	Cyphoniscellus herzegowinensis	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	200	543	Penaeidae,Atyidae,Porcellanidae,Bentheuphausiidae,Trachelipodidae,Agnaridae	BSCRO309-24_r_1.5_s_100	Cyphoniscellus herzegowinensis	0
+9	49	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	484	1392	Philosciidae,Porcellionidae,Idoteidae	BSCRO310-24_r_1_s_50	Cyphoniscellus herzegowinensis	0
+8	36	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	478	1182	Philosciidae,Porcellionidae,Idoteidae	BSCRO310-24_r_1_s_100	Cyphoniscellus herzegowinensis	0
+16	17	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	472	1017	Gammaridae,Philosciidae,Porcellionidae,Trachelipodidae,Agnaridae,Asellidae,Idoteidae	BSCRO310-24_r_1.3_s_50	Cyphoniscellus herzegowinensis	0
+15	15	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	470	828	Penaeidae,Atyidae,Porcellanidae,Gammaridae,Trachelipodidae,Agnaridae,Asellidae	BSCRO310-24_r_1.3_s_100	Cyphoniscellus herzegowinensis	0
+0	7	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	221	735	Penaeidae,Atyidae,Porcellanidae,Bentheuphausiidae,Trachelipodidae,Agnaridae	BSCRO310-24_r_1.5_s_50	Cyphoniscellus herzegowinensis	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	221	669	Penaeidae,Atyidae,Porcellanidae,Bentheuphausiidae,Trachelipodidae,Agnaridae	BSCRO310-24_r_1.5_s_100	Cyphoniscellus herzegowinensis	0
+8	69	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1356	Munididae,Ocypodidae,Callianassidae,Bentheuphausiidae,Allocrangonyctidae	BSCRO311-24_r_1_s_50	Cyphoniscellus herzegowinensis	0
+3	7	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	479	1164	Munididae,Ocypodidae,Callianassidae,Bentheuphausiidae,Allocrangonyctidae,Porcellionidae	BSCRO311-24_r_1_s_100	Cyphoniscellus herzegowinensis	0
+1	22	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	458	957	Munididae,Ocypodidae,Callianassidae,Bentheuphausiidae,Allocrangonyctidae	BSCRO311-24_r_1.3_s_50	Cyphoniscellus herzegowinensis	0
+3	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	413	759	Munididae,Ocypodidae,Callianassidae,Bentheuphausiidae,Allocrangonyctidae	BSCRO311-24_r_1.3_s_100	Cyphoniscellus herzegowinensis	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	303	618	Penaeidae,Porcellanidae,Ocypodidae,Bentheuphausiidae,Gammaridae,Trachelipodidae,Agnaridae	BSCRO311-24_r_1.5_s_50	Cyphoniscellus herzegowinensis	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	213	531	Penaeidae,Porcellanidae,Ocypodidae,Bentheuphausiidae,Gammaridae,Trachelipodidae,Agnaridae	BSCRO311-24_r_1.5_s_100	Cyphoniscellus herzegowinensis	0
+1	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	450	750	Chiltoniidae,Eusiridae,Trichoniscidae	BSCRO312-24_r_1_s_50	Trichoniscinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	420	639	Scyllaridae,Metacrangonyctidae,Chiltoniidae,Eusiridae	BSCRO312-24_r_1_s_100	Trichoniscinae	0
+1	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	450	702	Chiltoniidae,Eusiridae,Trichoniscidae	BSCRO312-24_r_1.3_s_50	Trichoniscinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	420	639	Scyllaridae,Metacrangonyctidae,Chiltoniidae,Eusiridae	BSCRO312-24_r_1.3_s_100	Trichoniscinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	151	333	Scyllaridae,Metacrangonyctidae,Chiltoniidae,Eusiridae	BSCRO312-24_r_1.5_s_50	Trichoniscinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	137	258	Scyllaridae,Metacrangonyctidae,Chiltoniidae,Eusiridae	BSCRO312-24_r_1.5_s_100	Trichoniscinae	0
+0	22	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1428	Aeglidae,Potamidae,Varunidae,Chiltoniidae,Asellidae	BSCRO313-24_r_1_s_50	Trichoniscinae	0
+1	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1278	Aeglidae,Potamidae,Varunidae,Chiltoniidae,Stenothoidae,Asellidae	BSCRO313-24_r_1_s_100	Trichoniscinae	0
+0	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1293	Aeglidae,Potamidae,Varunidae,Chiltoniidae,Eusiridae,Asellidae	BSCRO313-24_r_1.3_s_50	Trichoniscinae	0
+2	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1155	Aeglidae,Potamidae,Varunidae,Chiltoniidae,Asellidae	BSCRO313-24_r_1.3_s_100	Trichoniscinae	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	170	801	Scyllaridae,Potamidae,Varunidae,Stenothoidae,Asellidae	BSCRO313-24_r_1.5_s_50	Trichoniscinae	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	135	702	Scyllaridae,Potamidae,Varunidae,Stenothoidae,Asellidae	BSCRO313-24_r_1.5_s_100	Trichoniscinae	0
+11	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	479	1194	Munidopsidae,Varunidae,Lysianassidae,Trichoniscidae	BSCRO314-24_r_1_s_50	Trichoniscinae	0
+8	9	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	912	Munidopsidae,Varunidae,Lysianassidae,Trichoniscidae	BSCRO314-24_r_1_s_100	Trichoniscinae	0
+8	9	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	461	876	Trichoniscidae	BSCRO314-24_r_1.3_s_50	Trichoniscinae	0
+3	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	456	750	Trichoniscidae	BSCRO314-24_r_1.3_s_100	Trichoniscinae	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	191	447	Scyllaridae,Potamidae,Varunidae,Chiltoniidae,Eusiridae,Asellidae	BSCRO314-24_r_1.5_s_50	Trichoniscinae	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	191	369	Scyllaridae,Potamidae,Varunidae,Chiltoniidae,Eusiridae,Asellidae	BSCRO314-24_r_1.5_s_100	Trichoniscinae	0
+0	25	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1404	Corophiidae,Trichoniscidae,Sphaeromatidae,Spelaeogriphidae	BSCRO315-24_r_1_s_50	Alpioniscus kratochvili	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1167	Corophiidae,Trichoniscidae,Sphaeromatidae,Spelaeogriphidae	BSCRO315-24_r_1_s_100	Alpioniscus kratochvili	0
+0	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1200	Corophiidae,Trichoniscidae,Sphaeromatidae,Spelaeogriphidae	BSCRO315-24_r_1.3_s_50	Alpioniscus kratochvili	0
+0	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1170	Corophiidae,Trichoniscidae,Sphaeromatidae,Spelaeogriphidae	BSCRO315-24_r_1.3_s_100	Alpioniscus kratochvili	0
+1	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	346	918	Aeglidae	BSCRO315-24_r_1.5_s_50	Alpioniscus kratochvili	0
+1	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	239	708	Aeglidae	BSCRO315-24_r_1.5_s_100	Alpioniscus kratochvili	2
+19	26	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1428	Aeglidae	BSCRO316-24_r_1_s_50	Alpioniscus	0
+45	46	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	463	1311	Aeglidae	BSCRO316-24_r_1_s_100	Alpioniscus	0
+25	25	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	429	1131	Aeglidae,Chiltoniidae	BSCRO316-24_r_1.3_s_50	Alpioniscus	0
+44	44	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	386	1017	Aeglidae,Chiltoniidae	BSCRO316-24_r_1.3_s_100	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	271	804	Aeglidae,Chiltoniidae	BSCRO316-24_r_1.5_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	268	771	Aeglidae,Chiltoniidae	BSCRO316-24_r_1.5_s_100	Alpioniscus	0
+0	13	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1602	Cambaridae,Bathynellidae	BSCRO317-24_r_1_s_50	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1473	Cambaridae,Bathynellidae	BSCRO317-24_r_1_s_100	Alpioniscus	0
+0	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1332	Cambaridae,Bathynellidae	BSCRO317-24_r_1.3_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1089	Cambaridae,Bathynellidae	BSCRO317-24_r_1.3_s_100	Alpioniscus	0
+0	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	309	912	Cambaridae,Bathynellidae	BSCRO317-24_r_1.5_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	287	819	Cambaridae,Bathynellidae	BSCRO317-24_r_1.5_s_100	Alpioniscus	0
+0	7	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1581	Cambaridae,Bathynellidae	BSCRO318-24_r_1_s_50	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1473	Cambaridae,Bathynellidae	BSCRO318-24_r_1_s_100	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1281	Cambaridae,Bathynellidae	BSCRO318-24_r_1.3_s_50	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1167	Cambaridae,Bathynellidae	BSCRO318-24_r_1.3_s_100	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	284	798	Cambaridae,Bathynellidae	BSCRO318-24_r_1.5_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	284	798	Cambaridae,Bathynellidae	BSCRO318-24_r_1.5_s_100	Alpioniscus	0
+0	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1551	Cambaridae,Bathynellidae	BSCRO319-24_r_1_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1473	Cambaridae,Bathynellidae	BSCRO319-24_r_1_s_100	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1158	Cambaridae,Bathynellidae	BSCRO319-24_r_1.3_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1089	Cambaridae,Bathynellidae	BSCRO319-24_r_1.3_s_100	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	301	888	Cambaridae,Bathynellidae	BSCRO319-24_r_1.5_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	301	858	Cambaridae,Bathynellidae	BSCRO319-24_r_1.5_s_100	Alpioniscus	0
+0	27	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1416	Sergestidae,Eulimnogammaridae	BSCRO320-24_r_1_s_50	Moserius percoi	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	478	1200	Sergestidae,Eulimnogammaridae	BSCRO320-24_r_1_s_100	Moserius percoi	0
+0	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	478	1170	Sergestidae,Eulimnogammaridae	BSCRO320-24_r_1.3_s_50	Moserius percoi	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	478	1092	Sergestidae,Eulimnogammaridae	BSCRO320-24_r_1.3_s_100	Moserius percoi	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	327	786	Sergestidae,Eulimnogammaridae	BSCRO320-24_r_1.5_s_50	Moserius percoi	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	327	786	Sergestidae,Eulimnogammaridae	BSCRO320-24_r_1.5_s_100	Moserius percoi	0
+0	12	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1593	Cambaridae,Bathynellidae	BSCRO321-24_r_1_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1479	Cambaridae,Bathynellidae	BSCRO321-24_r_1_s_100	Alpioniscus	0
+0	9	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1230	Cambaridae,Bathynellidae	BSCRO321-24_r_1.3_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1089	Cambaridae,Bathynellidae	BSCRO321-24_r_1.3_s_100	Alpioniscus	0
+1	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	302	819	Cambaridae,Bathynellidae	BSCRO321-24_r_1.5_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	296	738	Cambaridae,Bathynellidae	BSCRO321-24_r_1.5_s_100	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	199	927	Lithodidae,Porcellanidae,Grapsidae	BSCRO322-24_r_1_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	212	750	Lithodidae,Porcellanidae,Grapsidae	BSCRO322-24_r_1_s_100	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	213	579	Lithodidae,Porcellanidae,Grapsidae	BSCRO322-24_r_1.3_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	212	543	Lithodidae,Porcellanidae,Grapsidae	BSCRO322-24_r_1.3_s_100	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	212	309	Lithodidae,Porcellanidae,Grapsidae	BSCRO322-24_r_1.5_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	212	246	Lithodidae,Porcellanidae,Grapsidae	BSCRO322-24_r_1.5_s_100	Alpioniscus	0
+7	17	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	366	1086	Hippolytidae,Parastacidae,Aeglidae,Anaspididae	BSCRO323-24_r_1_s_50	Alpioniscus	4
+8	30	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	146	960	Atyidae,Hippolytidae,Parastacidae,Nephropidae,Euphausiidae,Chiltoniidae	BSCRO323-24_r_1_s_100	Alpioniscus	0
+7	12	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	366	999	Hippolytidae,Parastacidae,Aeglidae,Anaspididae	BSCRO323-24_r_1.3_s_50	Alpioniscus	0
+8	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	146	834	Atyidae,Hippolytidae,Parastacidae,Nephropidae,Euphausiidae,Chiltoniidae	BSCRO323-24_r_1.3_s_100	Alpioniscus	0
+2	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	149	570	Hippolytidae,Chiltoniidae,Cymothoidae	BSCRO323-24_r_1.5_s_50	Alpioniscus	0
+2	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	149	453	Hippolytidae,Chiltoniidae,Cymothoidae	BSCRO323-24_r_1.5_s_100	Alpioniscus	0
+0	13	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	488	1554	Lithodidae,Aeglidae,Tetraliidae,Gammaridae,Phoxocephalidae,Sphaeromatidae	BSCRO324-24_r_1_s_50	Androniscus stygius	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1197	Lithodidae,Aeglidae,Tetraliidae,Gammaridae,Phoxocephalidae,Sphaeromatidae	BSCRO324-24_r_1_s_100	Androniscus stygius	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	433	1128	Lithodidae,Aeglidae,Tetraliidae,Gammaridae,Phoxocephalidae,Sphaeromatidae	BSCRO324-24_r_1.3_s_50	Androniscus stygius	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	433	1050	Lithodidae,Aeglidae,Tetraliidae,Gammaridae,Phoxocephalidae,Sphaeromatidae	BSCRO324-24_r_1.3_s_100	Androniscus stygius	0
+0	8	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	186	666	Lithodidae,Aeglidae,Tetraliidae,Gammaridae,Phoxocephalidae,Sphaeromatidae	BSCRO324-24_r_1.5_s_50	Androniscus stygius	0
+0	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	186	624	Lithodidae,Aeglidae,Tetraliidae,Gammaridae,Phoxocephalidae,Sphaeromatidae	BSCRO324-24_r_1.5_s_100	Androniscus stygius	0
+2	36	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	489	1509	Lithodidae,Aeglidae,Tetraliidae,Axiidae,Gammaridae,Phoxocephalidae,Sphaeromatidae,Anaspididae	BSCRO325-24_r_1_s_50	Androniscus stygius	0
+2	16	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	478	1092	Lithodidae,Aeglidae,Tetraliidae,Axiidae,Niphargidae,Gammaridae,Sphaeromatidae,Anaspididae	BSCRO325-24_r_1_s_100	Androniscus stygius	0
+6	16	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	469	1128	Lithodidae,Aeglidae,Tetraliidae,Axiidae,Gammaridae,Phoxocephalidae,Sphaeromatidae,Anaspididae	BSCRO325-24_r_1.3_s_50	Androniscus stygius	0
+3	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	469	1014	Lithodidae,Aeglidae,Tetraliidae,Axiidae,Niphargidae,Gammaridae,Sphaeromatidae,Anaspididae	BSCRO325-24_r_1.3_s_100	Androniscus stygius	0
+4	9	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	317	756	Lithodidae,Potamidae,Tetraliidae,Niphargidae,Gammaridae,Phoxocephalidae,Sphaeromatidae	BSCRO325-24_r_1.5_s_50	Androniscus stygius	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	143	732	Lithodidae,Potamidae,Tetraliidae,Niphargidae,Gammaridae,Phoxocephalidae,Sphaeromatidae	BSCRO325-24_r_1.5_s_100	Androniscus stygius	0
+0	29	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	501	1464	Lithodidae,Aeglidae,Tetraliidae,Axiidae,Gammaridae,Phoxocephalidae,Sphaeromatidae,Anaspididae	BSCRO326-24_r_1_s_50	Androniscus stygius	0
+0	7	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	478	1197	Lithodidae,Aeglidae,Tetraliidae,Axiidae,Gammaridae,Phoxocephalidae,Sphaeromatidae,Anaspididae	BSCRO326-24_r_1_s_100	Androniscus stygius	0
+0	9	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	472	1134	Lithodidae,Aeglidae,Tetraliidae,Axiidae,Gammaridae,Phoxocephalidae,Sphaeromatidae,Anaspididae	BSCRO326-24_r_1.3_s_50	Androniscus stygius	0
+0	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	472	1017	Lithodidae,Aeglidae,Tetraliidae,Axiidae,Gammaridae,Phoxocephalidae,Sphaeromatidae,Anaspididae	BSCRO326-24_r_1.3_s_100	Androniscus stygius	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	367	666	Lithodidae,Aeglidae,Tetraliidae,Axiidae,Gammaridae,Phoxocephalidae,Sphaeromatidae,Anaspididae	BSCRO326-24_r_1.5_s_50	Androniscus stygius	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	367	582	Lithodidae,Aeglidae,Tetraliidae,Axiidae,Gammaridae,Phoxocephalidae,Sphaeromatidae,Anaspididae	BSCRO326-24_r_1.5_s_100	Androniscus stygius	0
+0	13	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1506	Aeglidae,Chiltoniidae	BSCRO327-24_r_1_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	477	1260	Aeglidae,Chiltoniidae	BSCRO327-24_r_1_s_100	Alpioniscus	0
+0	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	477	1197	Aeglidae,Chiltoniidae	BSCRO327-24_r_1.3_s_50	Alpioniscus	0
+0	5	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	477	1089	Aeglidae,Chiltoniidae	BSCRO327-24_r_1.3_s_100	Alpioniscus	0
+2	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	392	894	Aeglidae,Chiltoniidae	BSCRO327-24_r_1.5_s_50	Alpioniscus	0
+2	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	392	894	Aeglidae,Chiltoniidae	BSCRO327-24_r_1.5_s_100	Alpioniscus	0
+1	12	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1500	Atyidae,Pinnotheridae,Glypheidae,Niphargidae,Chiltoniidae,Bathynellidae,Parabathynellidae	BSCRO328-24_r_1_s_50	Androniscus roseus histrianorum	0
+0	5	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1182	Atyidae,Pinnotheridae,Glypheidae,Niphargidae,Chiltoniidae,Bathynellidae,Parabathynellidae	BSCRO328-24_r_1_s_100	Androniscus roseus histrianorum	0
+1	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1119	Atyidae,Pinnotheridae,Glypheidae,Niphargidae,Chiltoniidae,Bathynellidae,Parabathynellidae	BSCRO328-24_r_1.3_s_50	Androniscus roseus histrianorum	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1014	Atyidae,Pinnotheridae,Glypheidae,Niphargidae,Chiltoniidae,Bathynellidae,Parabathynellidae	BSCRO328-24_r_1.3_s_100	Androniscus roseus histrianorum	0
+1	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	349	819	Atyidae,Pinnotheridae,Glypheidae,Niphargidae,Chiltoniidae,Bathynellidae,Parabathynellidae	BSCRO328-24_r_1.5_s_50	Androniscus roseus histrianorum	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	235	642	Atyidae,Pinnotheridae,Glypheidae,Niphargidae,Chiltoniidae,Bathynellidae,Parabathynellidae	BSCRO328-24_r_1.5_s_100	Androniscus roseus histrianorum	0
+0	18	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1509	Atyidae,Pinnotheridae,Glypheidae,Niphargidae,Chiltoniidae,Bathynellidae,Parabathynellidae	BSCRO329-24_r_1_s_50	Androniscus roseus histrianorum	0
+0	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1182	Atyidae,Pinnotheridae,Glypheidae,Niphargidae,Chiltoniidae,Bathynellidae,Parabathynellidae	BSCRO329-24_r_1_s_100	Androniscus roseus histrianorum	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1122	Atyidae,Pinnotheridae,Glypheidae,Niphargidae,Chiltoniidae,Bathynellidae,Parabathynellidae	BSCRO329-24_r_1.3_s_50	Androniscus roseus histrianorum	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1023	Atyidae,Pinnotheridae,Glypheidae,Niphargidae,Chiltoniidae,Bathynellidae,Parabathynellidae	BSCRO329-24_r_1.3_s_100	Androniscus roseus histrianorum	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	194	789	Atyidae,Pinnotheridae,Glypheidae,Niphargidae,Chiltoniidae,Bathynellidae,Parabathynellidae	BSCRO329-24_r_1.5_s_50	Androniscus roseus histrianorum	6
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	194	552	Atyidae,Pinnotheridae,Glypheidae,Niphargidae,Chiltoniidae,Bathynellidae,Parabathynellidae	BSCRO329-24_r_1.5_s_100	Androniscus roseus histrianorum	6
+0	26	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	473	1527	Atyidae,Pinnotheridae,Glypheidae,Niphargidae,Chiltoniidae,Bathynellidae,Parabathynellidae	BSCRO330-24_r_1_s_50	Androniscus roseus histrianorum	0
+1	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	473	1173	Atyidae,Pinnotheridae,Glypheidae,Niphargidae,Chiltoniidae,Bathynellidae,Parabathynellidae	BSCRO330-24_r_1_s_100	Androniscus roseus histrianorum	0
+1	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	470	1176	Atyidae,Pinnotheridae,Glypheidae,Niphargidae,Chiltoniidae,Bathynellidae,Parabathynellidae	BSCRO330-24_r_1.3_s_50	Androniscus roseus histrianorum	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	470	1041	Atyidae,Pinnotheridae,Glypheidae,Niphargidae,Chiltoniidae,Bathynellidae,Parabathynellidae	BSCRO330-24_r_1.3_s_100	Androniscus roseus histrianorum	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	379	960	Atyidae,Pinnotheridae,Glypheidae,Niphargidae,Chiltoniidae,Bathynellidae,Parabathynellidae	BSCRO330-24_r_1.5_s_50	Androniscus roseus histrianorum	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	379	843	Atyidae,Pinnotheridae,Glypheidae,Niphargidae,Chiltoniidae,Bathynellidae,Parabathynellidae	BSCRO330-24_r_1.5_s_100	Androniscus roseus histrianorum	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	482	1440	Cambaridae,Vibiliidae,Trichoniscidae,Trachelipodidae,Agnaridae,Koonungidae	BSCRO331-24_r_1_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1263	Cambaridae,Vibiliidae,Trichoniscidae,Trachelipodidae,Agnaridae,Koonungidae	BSCRO331-24_r_1_s_100	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1164	Cambaridae,Vibiliidae,Trichoniscidae,Trachelipodidae,Agnaridae,Koonungidae	BSCRO331-24_r_1.3_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1089	Cambaridae,Vibiliidae,Trichoniscidae,Trachelipodidae,Agnaridae,Koonungidae	BSCRO331-24_r_1.3_s_100	Alpioniscus	0
+2	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	419	993	Cambaridae,Vibiliidae,Trichoniscidae,Trachelipodidae,Agnaridae,Bathynellidae,Koonungidae	BSCRO331-24_r_1.5_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	419	948	Cambaridae,Vibiliidae,Trichoniscidae,Trachelipodidae,Agnaridae,Bathynellidae,Koonungidae	BSCRO331-24_r_1.5_s_100	Alpioniscus	0
+0	21	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1515	Niphargidae,Ligiidae,Trichoniscidae	BSCRO332-24_r_1_s_50	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1263	Niphargidae,Ligiidae,Trichoniscidae	BSCRO332-24_r_1_s_100	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1185	Cambaridae,Vibiliidae,Trichoniscidae,Trachelipodidae,Agnaridae,Koonungidae	BSCRO332-24_r_1.3_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1089	Cambaridae,Vibiliidae,Trichoniscidae,Trachelipodidae,Agnaridae,Koonungidae	BSCRO332-24_r_1.3_s_100	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	410	930	Cambaridae,Vibiliidae,Trichoniscidae,Trachelipodidae,Agnaridae,Bathynellidae,Koonungidae	BSCRO332-24_r_1.5_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	410	921	Cambaridae,Vibiliidae,Trichoniscidae,Trachelipodidae,Agnaridae,Bathynellidae,Koonungidae	BSCRO332-24_r_1.5_s_100	Alpioniscus	0
+0	16	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	493	1539	Pseudothelphusidae,Potamidae,Metacrangonyctidae,Trachelipodidae	BSCRO333-24_r_1_s_50	Androniscus wolfi	0
+0	5	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	493	1467	Pseudothelphusidae,Potamidae,Metacrangonyctidae,Trachelipodidae	BSCRO333-24_r_1_s_100	Androniscus wolfi	0
+0	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	469	1188	Pseudothelphusidae,Potamidae,Metacrangonyctidae,Trachelipodidae	BSCRO333-24_r_1.3_s_50	Androniscus wolfi	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	451	1116	Pseudothelphusidae,Potamidae,Metacrangonyctidae,Trachelipodidae	BSCRO333-24_r_1.3_s_100	Androniscus wolfi	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	193	762	Porcellanidae,Pseudothelphusidae,Potamidae,Metacrangonyctidae,Trachelipodidae	BSCRO333-24_r_1.5_s_50	Androniscus wolfi	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	192	657	Porcellanidae,Pseudothelphusidae,Potamidae,Metacrangonyctidae,Trachelipodidae	BSCRO333-24_r_1.5_s_100	Androniscus wolfi	0
+8	21	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	493	1551	Potamidae,Metacrangonyctidae,Trachelipodidae	BSCRO334-24_r_1_s_50	Androniscus wolfi	0
+1	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	493	1449	Pseudothelphusidae,Potamidae,Metacrangonyctidae,Trachelipodidae	BSCRO334-24_r_1_s_100	Androniscus wolfi	0
+1	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1248	Pseudothelphusidae,Potamidae,Metacrangonyctidae,Trachelipodidae	BSCRO334-24_r_1.3_s_50	Androniscus wolfi	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1161	Pseudothelphusidae,Potamidae,Metacrangonyctidae,Trachelipodidae	BSCRO334-24_r_1.3_s_100	Androniscus wolfi	0
+0	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	137	693	Pseudothelphusidae,Potamidae,Metacrangonyctidae,Trachelipodidae	BSCRO334-24_r_1.5_s_50	Androniscus wolfi	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	137	627	Pseudothelphusidae,Potamidae,Metacrangonyctidae,Trachelipodidae	BSCRO334-24_r_1.5_s_100	Androniscus wolfi	0
+0	20	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	493	1539	Pseudothelphusidae,Potamidae,Metacrangonyctidae,Trachelipodidae	BSCRO335-24_r_1_s_50	Androniscus wolfi	0
+0	12	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	493	1455	Pseudothelphusidae,Potamidae,Metacrangonyctidae,Trachelipodidae	BSCRO335-24_r_1_s_100	Androniscus wolfi	0
+0	15	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	485	1137	Pseudothelphusidae,Potamidae,Metacrangonyctidae,Trachelipodidae	BSCRO335-24_r_1.3_s_50	Androniscus wolfi	0
+0	12	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1035	Pseudothelphusidae,Potamidae,Metacrangonyctidae,Trachelipodidae	BSCRO335-24_r_1.3_s_100	Androniscus wolfi	0
+0	5	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	137	534	Pseudothelphusidae,Potamidae,Metacrangonyctidae,Trachelipodidae	BSCRO335-24_r_1.5_s_50	Androniscus wolfi	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	137	513	Pseudothelphusidae,Potamidae,Metacrangonyctidae,Trachelipodidae	BSCRO335-24_r_1.5_s_100	Androniscus wolfi	0
+5	15	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	335	1050	Cambaridae,Parastacidae,Porcellanidae,Grapsidae	BSCRO336-24_r_1_s_50	Trichoniscinae	0
+5	14	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	337	852	Psalidopodidae,Parapaguridae,Porcellanidae,Munididae,Munidopsidae,Grapsidae	BSCRO336-24_r_1_s_100	Trichoniscinae	0
+2	12	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	232	663	Cambaridae,Parastacidae,Porcellanidae,Grapsidae,Crangonyctidae,Talitridae	BSCRO336-24_r_1.3_s_50	Trichoniscinae	0
+2	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	221	525	Parastacidae,Porcellanidae,Grapsidae,Crangonyctidae,Gammaridae,Talitridae,Tylidae	BSCRO336-24_r_1.3_s_100	Trichoniscinae	0
+2	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	21	195	Palaemonidae,Cambaridae,Anisogammaridae	BSCRO336-24_r_1.5_s_50	Trichoniscinae	0
+2	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	21	132	Parastacidae	BSCRO336-24_r_1.5_s_100	Trichoniscinae	0
+31	77	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	444	1296	Cambaridae,Crangonyctidae,Niphargidae,Asellidae	BSCRO337-24_r_1_s_50	Trichoniscinae	0
+12	28	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	381	1191	Cambaridae,Crangonyctidae,Niphargidae,Asellidae	BSCRO337-24_r_1_s_100	Trichoniscinae	0
+1	16	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	161	1026	Cambaridae,Crangonyctidae,Niphargidae,Asellidae	BSCRO337-24_r_1.3_s_50	Trichoniscinae	0
+2	16	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	156	867	Cambaridae,Crangonyctidae,Niphargidae,Asellidae	BSCRO337-24_r_1.3_s_100	Trichoniscinae	0
+15	15	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	202	702	Cambaridae,Niphargidae,Asellidae	BSCRO337-24_r_1.5_s_50	Trichoniscinae	1
+18	18	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	190	621	Cambaridae,Niphargidae,Asellidae	BSCRO337-24_r_1.5_s_100	Trichoniscinae	0
+16	16	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	365	1179	Porcellanidae,Grapsidae,Sphaeromatidae	BSCRO338-24_r_1_s_50	Trichoniscinae	0
+16	16	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	409	972	Parastacidae,Trichoniscidae,Asellidae	BSCRO338-24_r_1_s_100	Trichoniscinae	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	403	807	Parastacidae,Trichoniscidae,Asellidae	BSCRO338-24_r_1.3_s_50	Trichoniscinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	400	636	Trichoniscidae,Armadillidiidae,Porcellionidae,Asellidae	BSCRO338-24_r_1.3_s_100	Trichoniscinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	61	222	Luciferidae,Paguridae,Leucosiidae,Lanceolidae,Chiltoniidae,Parabathynellidae	BSCRO338-24_r_1.5_s_50	Trichoniscinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	61	108	Luciferidae,Paguridae,Leucosiidae,Lanceolidae,Chiltoniidae,Parabathynellidae	BSCRO338-24_r_1.5_s_100	Trichoniscinae	0
+11	66	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	471	1260	Cambaridae,Nephropidae,Potamonautidae,Trichoniscidae	BSCRO339-24_r_1_s_50	Alpioniscus	0
+1	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	472	984	Atyidae,Cambaridae,Nephropidae,Potamonautidae,Sesarmidae,Trichoniscidae	BSCRO339-24_r_1_s_100	Alpioniscus	0
+4	49	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	429	1008	Cambaridae,Nephropidae,Potamonautidae,Trichoniscidae,Armadillidiidae	BSCRO339-24_r_1.3_s_50	Alpioniscus	0
+0	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	376	756	Cambaridae,Potamonautidae,Trichoniscidae,Armadillidiidae	BSCRO339-24_r_1.3_s_100	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	108	492	Sergestidae,Cambaridae,Potamidae,Gammaridae,Parabathynellidae	BSCRO339-24_r_1.5_s_50	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	200	270	Sergestidae,Cambaridae,Parabathynellidae	BSCRO339-24_r_1.5_s_100	Alpioniscus	0
+7	37	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1254	Penaeidae,Palaemonidae,Munididae,Sesarmidae,Gammaridae,Lysianassidae,Parabathynellidae	BSCRO340-24_r_1_s_50	Alpioniscus	0
+8	9	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	284	714	Palaemonidae,Munididae,Sesarmidae,Gammaridae,Lysianassidae,Parabathynellidae	BSCRO340-24_r_1_s_100	Alpioniscus	0
+4	5	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	211	573	Palaemonidae,Galatheidae,Sesarmidae,Ocypodidae,Lysianassidae,Parabathynellidae	BSCRO340-24_r_1.3_s_50	Alpioniscus	0
+8	9	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	136	381	Palaemonidae,Munididae,Sesarmidae,Gammaridae,Lysianassidae,Parabathynellidae	BSCRO340-24_r_1.3_s_100	Alpioniscus	0
+3	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	138	219	Penaeidae,Sesarmidae,Parabathynellidae	BSCRO340-24_r_1.5_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	86	126	Penaeidae,Potamidae,Gecarcinidae,Sesarmidae,Parabathynellidae	BSCRO340-24_r_1.5_s_100	Alpioniscus	0
+6	85	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	431	1344	Porcellanidae,Grapsidae	BSCRO341-24_r_1_s_50	Alpioniscus	1
+0	34	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	149	765	Palaemonidae,Alpheidae,Porcellanidae,Grapsidae	BSCRO341-24_r_1_s_100	Alpioniscus	0
+0	36	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	165	885	Palaemonidae,Alpheidae,Porcellanidae,Grapsidae	BSCRO341-24_r_1.3_s_50	Alpioniscus	0
+0	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	149	612	Palaemonidae,Alpheidae,Porcellanidae,Grapsidae	BSCRO341-24_r_1.3_s_100	Alpioniscus	0
+0	30	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	91	552	Aristeidae,Palaemonidae,Porcellanidae,Grapsidae	BSCRO341-24_r_1.5_s_50	Alpioniscus	0
+0	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	91	363	Aristeidae,Hippolytidae,Porcellanidae,Grapsidae	BSCRO341-24_r_1.5_s_100	Alpioniscus	0
+26	65	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	482	1584	Latreilliidae,Geryonidae,Potamonautidae,Sesarmidae,Hyalidae	BSCRO342-24_r_1_s_50	Alpioniscus	0
+8	15	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1464	Latreilliidae,Geryonidae,Tetraliidae,Sesarmidae,Hyalidae,Anaspididae	BSCRO342-24_r_1_s_100	Alpioniscus	0
+1	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1233	Latreilliidae,Geryonidae,Tetraliidae,Sesarmidae,Hyalidae,Anaspididae	BSCRO342-24_r_1.3_s_50	Alpioniscus	0
+1	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	473	1083	Latreilliidae,Geryonidae,Tetraliidae,Sesarmidae,Hyalidae,Anaspididae	BSCRO342-24_r_1.3_s_100	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	383	966	Latreilliidae,Geryonidae,Potamonautidae,Sesarmidae,Hyalidae,Anaspididae	BSCRO342-24_r_1.5_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	362	804	Latreilliidae,Geryonidae,Potamonautidae,Sesarmidae,Hyalidae,Anaspididae	BSCRO342-24_r_1.5_s_100	Alpioniscus	0
+1	14	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1500	Aeglidae	BSCRO344-24_r_1_s_50	Alpioniscus	0
+1	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1479	Aeglidae	BSCRO344-24_r_1_s_100	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	477	1230	Aeglidae	BSCRO344-24_r_1.3_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	477	1155	Aeglidae	BSCRO344-24_r_1.3_s_100	Alpioniscus	0
+2	7	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	296	882	Aeglidae	BSCRO344-24_r_1.5_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	292	765	Aeglidae	BSCRO344-24_r_1.5_s_100	Alpioniscus	0
+5	27	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1578	Cambaridae,Parapaguridae,Majidae,Ocypodidae,Corallanidae	BSCRO345-24_r_1_s_50	Alpioniscus	0
+1	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1482	Aeglidae	BSCRO345-24_r_1_s_100	Alpioniscus	0
+2	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	477	1260	Cambaridae,Parapaguridae,Majidae,Ocypodidae,Corallanidae	BSCRO345-24_r_1.3_s_50	Alpioniscus	0
+1	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	477	1092	Aeglidae	BSCRO345-24_r_1.3_s_100	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	144	618	Aeglidae	BSCRO345-24_r_1.5_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	144	537	Aeglidae	BSCRO345-24_r_1.5_s_100	Alpioniscus	0
+0	14	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1593	Cambaridae,Niphargidae,Lysianassidae,Armadillidiidae,Trachelipodidae	BSCRO346-24_r_1_s_50	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1356	Cambaridae,Niphargidae,Armadillidiidae,Trachelipodidae	BSCRO346-24_r_1_s_100	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1206	Cambaridae,Niphargidae,Armadillidiidae,Trachelipodidae	BSCRO346-24_r_1.3_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1089	Cambaridae,Niphargidae,Armadillidiidae,Trachelipodidae	BSCRO346-24_r_1.3_s_100	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	406	816	Cambaridae,Niphargidae,Lysianassidae,Armadillidiidae,Trachelipodidae	BSCRO346-24_r_1.5_s_50	Alpioniscus	0
+1	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	397	807	Cambaridae,Niphargidae,Lysianassidae,Armadillidiidae,Trachelipodidae	BSCRO346-24_r_1.5_s_100	Alpioniscus	0
+6	28	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1524	Cambaridae,Niphargidae,Lysianassidae,Armadillidiidae,Trachelipodidae	BSCRO347-24_r_1_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1254	Cambaridae,Niphargidae,Armadillidiidae,Trachelipodidae	BSCRO347-24_r_1_s_100	Alpioniscus	0
+0	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1203	Cambaridae,Niphargidae,Armadillidiidae,Trachelipodidae	BSCRO347-24_r_1.3_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1089	Cambaridae,Niphargidae,Armadillidiidae,Trachelipodidae	BSCRO347-24_r_1.3_s_100	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	367	864	Cambaridae,Niphargidae,Lysianassidae,Armadillidiidae,Trachelipodidae	BSCRO347-24_r_1.5_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	358	786	Cambaridae,Niphargidae,Lysianassidae,Armadillidiidae,Trachelipodidae	BSCRO347-24_r_1.5_s_100	Alpioniscus	0
+1	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1524	Cambaridae,Niphargidae,Lysianassidae,Armadillidiidae,Trachelipodidae	BSCRO348-24_r_1_s_50	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1257	Cambaridae,Niphargidae,Armadillidiidae,Trachelipodidae	BSCRO348-24_r_1_s_100	Alpioniscus	0
+1	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1170	Cambaridae,Niphargidae,Lysianassidae,Armadillidiidae,Trachelipodidae	BSCRO348-24_r_1.3_s_50	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1059	Cambaridae,Niphargidae,Armadillidiidae,Trachelipodidae	BSCRO348-24_r_1.3_s_100	Alpioniscus	0
+3	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	385	924	Cambaridae,Niphargidae,Lysianassidae,Armadillidiidae,Trachelipodidae	BSCRO348-24_r_1.5_s_50	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	337	747	Cambaridae,Niphargidae,Lysianassidae,Armadillidiidae,Trachelipodidae	BSCRO348-24_r_1.5_s_100	Alpioniscus	0
+3	15	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1536	Aeglidae,Chiltoniidae	BSCRO349-24_r_1_s_50	Alpioniscus busljetai	0
+2	5	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1377	Aeglidae,Chiltoniidae	BSCRO349-24_r_1_s_100	Alpioniscus busljetai	0
+0	9	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1209	Aeglidae,Chiltoniidae	BSCRO349-24_r_1.3_s_50	Alpioniscus busljetai	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1092	Aeglidae,Chiltoniidae	BSCRO349-24_r_1.3_s_100	Alpioniscus busljetai	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	389	789	Aeglidae,Chiltoniidae	BSCRO349-24_r_1.5_s_50	Alpioniscus busljetai	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	389	789	Aeglidae,Chiltoniidae	BSCRO349-24_r_1.5_s_100	Alpioniscus busljetai	0
+0	18	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1497	Aeglidae,Chiltoniidae	BSCRO350-24_r_1_s_50	Alpioniscus busljetai	0
+0	21	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1356	Aeglidae,Chiltoniidae	BSCRO350-24_r_1_s_100	Alpioniscus busljetai	0
+0	8	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1071	Aeglidae,Chiltoniidae	BSCRO350-24_r_1.3_s_50	Alpioniscus busljetai	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	975	Aeglidae,Chiltoniidae	BSCRO350-24_r_1.3_s_100	Alpioniscus busljetai	0
+2	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	392	825	Cambaridae,Porcellanidae,Aeglidae,Potamidae,Niphargidae	BSCRO350-24_r_1.5_s_50	Alpioniscus busljetai	0
+2	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	392	792	Cambaridae,Porcellanidae,Aeglidae,Potamidae,Niphargidae	BSCRO350-24_r_1.5_s_100	Alpioniscus busljetai	0
+14	93	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1542	Penaeidae,Cambaridae,Aeglidae,Potamidae	BSCRO351-24_r_1_s_50	Alpioniscus busljetai	0
+7	54	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1266	Penaeidae,Cambaridae,Aeglidae,Potamidae	BSCRO351-24_r_1_s_100	Alpioniscus busljetai	0
+7	20	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1185	Penaeidae,Cambaridae,Aeglidae,Potamidae,Parabathynellidae	BSCRO351-24_r_1.3_s_50	Alpioniscus busljetai	0
+5	25	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1086	Penaeidae,Cambaridae,Aeglidae,Potamidae,Parabathynellidae	BSCRO351-24_r_1.3_s_100	Alpioniscus busljetai	0
+8	18	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	363	849	Cambaridae,Aeglidae,Potamidae,Gecarcinucidae,Parabathynellidae	BSCRO351-24_r_1.5_s_50	Alpioniscus busljetai	0
+10	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	363	678	Cambaridae,Aeglidae,Potamidae,Gecarcinucidae,Parabathynellidae	BSCRO351-24_r_1.5_s_100	Alpioniscus busljetai	0
+0	46	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1572	Aeglidae	BSCRO352-24_r_1_s_50	Alpioniscus mandalinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1464	Aeglidae	BSCRO352-24_r_1_s_100	Alpioniscus mandalinae	0
+0	15	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1206	Aeglidae	BSCRO352-24_r_1.3_s_50	Alpioniscus mandalinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1086	Aeglidae	BSCRO352-24_r_1.3_s_100	Alpioniscus mandalinae	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	404	972	Aeglidae	BSCRO352-24_r_1.5_s_50	Alpioniscus mandalinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	404	864	Aeglidae	BSCRO352-24_r_1.5_s_100	Alpioniscus mandalinae	0
+5	49	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1476	Trichoniscidae,Asellidae,Idoteidae,Corallanidae	BSCRO353-24_r_1_s_50	Alpioniscus mandalinae	0
+0	17	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1239	Trichoniscidae,Idoteidae,Corallanidae	BSCRO353-24_r_1_s_100	Alpioniscus mandalinae	0
+0	23	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1185	Aeglidae	BSCRO353-24_r_1.3_s_50	Alpioniscus mandalinae	0
+0	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1149	Aeglidae	BSCRO353-24_r_1.3_s_100	Alpioniscus mandalinae	0
+0	5	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	221	771	Aeglidae	BSCRO353-24_r_1.5_s_50	Alpioniscus mandalinae	1
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	224	612	Aeglidae	BSCRO353-24_r_1.5_s_100	Alpioniscus mandalinae	0
+1	26	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1524	Aeglidae	BSCRO354-24_r_1_s_50	Alpioniscus mandalinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1266	Aeglidae	BSCRO354-24_r_1_s_100	Alpioniscus mandalinae	0
+0	14	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1230	Aeglidae	BSCRO354-24_r_1.3_s_50	Alpioniscus mandalinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1086	Aeglidae	BSCRO354-24_r_1.3_s_100	Alpioniscus mandalinae	0
+0	12	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	407	870	Aeglidae	BSCRO354-24_r_1.5_s_50	Alpioniscus mandalinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	371	705	Aeglidae	BSCRO354-24_r_1.5_s_100	Alpioniscus mandalinae	0
+0	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	483	1464	Penaeidae,Sergestidae,Cambaridae,Pisidae,Sesarmidae,Trichoniscidae	BSCRO355-24_r_1_s_50	Alpioniscus boldorii	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	483	1284	Penaeidae,Sergestidae,Cambaridae,Pisidae,Sesarmidae,Trichoniscidae	BSCRO355-24_r_1_s_100	Alpioniscus boldorii	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	483	1230	Penaeidae,Sergestidae,Cambaridae,Pisidae,Sesarmidae,Trichoniscidae	BSCRO355-24_r_1.3_s_50	Alpioniscus boldorii	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1167	Penaeidae,Sergestidae,Cambaridae,Pisidae,Sesarmidae,Trichoniscidae	BSCRO355-24_r_1.3_s_100	Alpioniscus boldorii	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	385	1008	Penaeidae,Sergestidae,Cambaridae,Pisidae,Sesarmidae,Trichoniscidae	BSCRO355-24_r_1.5_s_50	Alpioniscus boldorii	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	377	966	Penaeidae,Sergestidae,Cambaridae,Pisidae,Sesarmidae,Trichoniscidae	BSCRO355-24_r_1.5_s_100	Alpioniscus boldorii	0
+0	12	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1518	Cambaridae,Sesarmidae,Caprellidae	BSCRO356-24_r_1_s_50	Alpioniscus cf. thracicus	0
+0	8	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1464	Cambaridae,Sesarmidae,Caprellidae	BSCRO356-24_r_1_s_100	Alpioniscus cf. thracicus	0
+0	7	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1299	Cambaridae,Sesarmidae,Caprellidae	BSCRO356-24_r_1.3_s_50	Alpioniscus cf. thracicus	0
+0	7	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1242	Cambaridae,Sesarmidae,Caprellidae	BSCRO356-24_r_1.3_s_100	Alpioniscus cf. thracicus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	201	540	Cambaridae,Sesarmidae,Caprellidae	BSCRO356-24_r_1.5_s_50	Alpioniscus cf. thracicus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	201	444	Cambaridae,Sesarmidae,Caprellidae	BSCRO356-24_r_1.5_s_100	Alpioniscus cf. thracicus	0
+13	21	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1494	Cambaridae,Potamidae,Armadillidiidae,Trachelipodidae,Asellidae	BSCRO357-24_r_1_s_50	Trichoniscinae	0
+8	22	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1386	Potamidae,Trachelipodidae,Asellidae	BSCRO357-24_r_1_s_100	Trichoniscinae	0
+3	5	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1200	Talitridae,Trachelipodidae	BSCRO357-24_r_1.3_s_50	Trichoniscinae	0
+1	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	478	1032	Potamidae,Talitridae,Trachelipodidae	BSCRO357-24_r_1.3_s_100	Trichoniscinae	0
+6	10	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	393	924	Portunidae,Talitridae,Trachelipodidae	BSCRO357-24_r_1.5_s_50	Trichoniscinae	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	382	735	Potamidae,Talitridae,Trachelipodidae	BSCRO357-24_r_1.5_s_100	Trichoniscinae	0
+0	8	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1491	Cambaridae,Aeglidae,Varunidae,Chiltoniidae,Trichoniscidae	BSCRO358-24_r_1_s_50	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1317	Cambaridae,Aeglidae,Varunidae,Chiltoniidae,Trichoniscidae	BSCRO358-24_r_1_s_100	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1170	Cambaridae,Aeglidae,Varunidae,Chiltoniidae,Trichoniscidae	BSCRO358-24_r_1.3_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1074	Cambaridae,Aeglidae,Varunidae,Chiltoniidae,Trichoniscidae	BSCRO358-24_r_1.3_s_100	Alpioniscus	0
+15	15	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	383	903	Cambaridae,Aeglidae,Varunidae,Chiltoniidae	BSCRO358-24_r_1.5_s_50	Alpioniscus	0
+4	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	383	825	Cambaridae,Aeglidae,Varunidae,Chiltoniidae	BSCRO358-24_r_1.5_s_100	Alpioniscus	0
+0	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1527	Cambaridae,Aeglidae	BSCRO359-24_r_1_s_50	Alpioniscus drazinai	0
+0	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1314	Cambaridae,Aeglidae	BSCRO359-24_r_1_s_100	Alpioniscus drazinai	0
+0	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1287	Cambaridae,Aeglidae	BSCRO359-24_r_1.3_s_50	Alpioniscus drazinai	0
+0	26	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1113	Cambaridae,Aeglidae	BSCRO359-24_r_1.3_s_100	Alpioniscus drazinai	0
+3	29	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	406	903	Cambaridae,Aeglidae	BSCRO359-24_r_1.5_s_50	Alpioniscus drazinai	0
+0	26	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	406	798	Cambaridae,Aeglidae	BSCRO359-24_r_1.5_s_100	Alpioniscus drazinai	0
+0	23	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1569	Cambaridae,Aeglidae	BSCRO360-24_r_1_s_50	Alpioniscus drazinai	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1374	Cambaridae,Aeglidae	BSCRO360-24_r_1_s_100	Alpioniscus drazinai	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1344	Cambaridae,Aeglidae,Parabathynellidae	BSCRO360-24_r_1.3_s_50	Alpioniscus drazinai	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1152	Cambaridae,Aeglidae,Parabathynellidae	BSCRO360-24_r_1.3_s_100	Alpioniscus drazinai	0
+1	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	418	1011	Cambaridae,Aeglidae,Parabathynellidae	BSCRO360-24_r_1.5_s_50	Alpioniscus drazinai	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	418	912	Cambaridae,Aeglidae,Parabathynellidae	BSCRO360-24_r_1.5_s_100	Alpioniscus drazinai	0
+17	35	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1566	Potamidae,Anaspididae	BSCRO361-24_r_1_s_50	Alpioniscus	0
+9	9	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	457	1431	Potamidae,Anaspididae	BSCRO361-24_r_1_s_100	Alpioniscus	0
+9	12	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	451	1176	Potamidae,Anaspididae	BSCRO361-24_r_1.3_s_50	Alpioniscus	0
+2	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	451	1125	Potamidae,Anaspididae	BSCRO361-24_r_1.3_s_100	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	206	855	Potamidae,Anaspididae	BSCRO361-24_r_1.5_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	210	726	Aeglidae,Potamidae,Anaspididae	BSCRO361-24_r_1.5_s_100	Alpioniscus	0
+5	32	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	448	1536	Nephropidae,Potamidae,Varunidae,Trachelipodidae	BSCRO362-24_r_1_s_50	Alpioniscus	0
+9	9	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	447	1299	Potamidae,Varunidae	BSCRO362-24_r_1_s_100	Alpioniscus	0
+9	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	448	1233	Nephropidae,Potamidae,Varunidae,Trachelipodidae	BSCRO362-24_r_1.3_s_50	Alpioniscus	0
+8	8	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	442	969	Aeglidae,Potamidae	BSCRO362-24_r_1.3_s_100	Alpioniscus	0
+1	10	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	368	876	Sicyoniidae,Potamidae	BSCRO362-24_r_1.5_s_50	Alpioniscus	0
+1	10	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	326	711	Sicyoniidae,Potamidae	BSCRO362-24_r_1.5_s_100	Alpioniscus	0
+0	49	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1557	Potamidae,Anaspididae	BSCRO363-24_r_1_s_50	Alpioniscus	0
+0	30	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1368	Potamidae,Anaspididae	BSCRO363-24_r_1_s_100	Alpioniscus	0
+0	18	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1263	Potamidae,Anaspididae	BSCRO363-24_r_1.3_s_50	Alpioniscus	0
+1	23	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1152	Potamidae,Anaspididae	BSCRO363-24_r_1.3_s_100	Alpioniscus	0
+0	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	350	849	Potamidae	BSCRO363-24_r_1.5_s_50	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	338	681	Potamidae	BSCRO363-24_r_1.5_s_100	Alpioniscus	0
+5	14	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	482	1551	Latreilliidae,Geryonidae,Potamonautidae,Sesarmidae,Hyalidae,Anaspididae	BSCRO364-24_r_1_s_50	Alpioniscus	0
+2	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	478	1455	Latreilliidae,Geryonidae,Potamonautidae,Sesarmidae,Hyalidae,Anaspididae	BSCRO364-24_r_1_s_100	Alpioniscus	0
+0	7	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1251	Latreilliidae,Geryonidae,Potamonautidae,Sesarmidae,Hyalidae,Anaspididae	BSCRO364-24_r_1.3_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	464	1110	Latreilliidae,Geryonidae,Potamonautidae,Sesarmidae,Hyalidae,Anaspididae	BSCRO364-24_r_1.3_s_100	Alpioniscus	0
+3	10	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	380	894	Potamidae,Potamonautidae,Tetraliidae,Sesarmidae,Hyalidae,Anaspididae	BSCRO364-24_r_1.5_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	380	837	Potamidae,Potamonautidae,Tetraliidae,Sesarmidae,Hyalidae,Anaspididae	BSCRO364-24_r_1.5_s_100	Alpioniscus	0
+1	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1518	Latreilliidae,Geryonidae,Potamonautidae,Sesarmidae,Hyalidae	BSCRO365-24_r_1_s_50	Alpioniscus	0
+0	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1491	Latreilliidae,Geryonidae,Potamonautidae,Sesarmidae,Hyalidae,Anaspididae	BSCRO365-24_r_1_s_100	Alpioniscus	0
+4	7	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1212	Latreilliidae,Geryonidae,Potamonautidae,Sesarmidae,Hyalidae,Anaspididae	BSCRO365-24_r_1.3_s_50	Alpioniscus	0
+4	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1152	Latreilliidae,Geryonidae,Potamonautidae,Sesarmidae,Hyalidae,Anaspididae	BSCRO365-24_r_1.3_s_100	Alpioniscus	0
+1	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	392	969	Latreilliidae,Geryonidae,Potamonautidae,Sesarmidae,Hyalidae,Anaspididae	BSCRO365-24_r_1.5_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	392	891	Latreilliidae,Geryonidae,Potamonautidae,Sesarmidae,Hyalidae,Anaspididae	BSCRO365-24_r_1.5_s_100	Alpioniscus	0
+6	23	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1410	Spongicolidae,Caprellidae,Gammaridae,Trichoniscidae,Trachelipodidae,Agnaridae	BSCRO366-24_r_1_s_50	Aegonethes cervinus	0
+0	25	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1113	Caprellidae,Gammaridae,Trichoniscidae,Trachelipodidae,Agnaridae	BSCRO366-24_r_1_s_100	Aegonethes cervinus	0
+0	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	454	1032	Spongicolidae,Caprellidae,Gammaridae,Hyalellidae,Trachelipodidae,Agnaridae	BSCRO366-24_r_1.3_s_50	Aegonethes cervinus	0
+0	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	448	927	Spongicolidae,Caprellidae,Gammaridae,Hyalellidae,Trachelipodidae,Agnaridae	BSCRO366-24_r_1.3_s_100	Aegonethes cervinus	0
+3	5	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	210	690	Spongicolidae,Caprellidae,Gammaridae,Hyalellidae,Trachelipodidae,Agnaridae	BSCRO366-24_r_1.5_s_50	Aegonethes cervinus	0
+4	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	215	606	Spongicolidae,Caprellidae,Gammaridae,Hyalellidae,Trachelipodidae,Agnaridae	BSCRO366-24_r_1.5_s_100	Aegonethes cervinus	0
+33	73	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	468	1353	Trichoniscidae,Sphaeromatidae,Anaspididae	BSCRO367-24_r_1_s_50	Alpioniscus	0
+11	36	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	443	879	Trichoniscidae,Porcellionidae	BSCRO367-24_r_1_s_100	Alpioniscus	0
+16	45	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	312	1035	Trichoniscidae,Scyphacidae,Idoteidae	BSCRO367-24_r_1.3_s_50	Alpioniscus	0
+15	19	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	303	639	Trichoniscidae,Porcellionidae	BSCRO367-24_r_1.3_s_100	Alpioniscus	0
+0	7	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	155	579	Scyphacidae,Idoteidae,Cirolanidae	BSCRO367-24_r_1.5_s_50	Alpioniscus	0
+0	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	155	369	Cambaridae,Scyphacidae,Idoteidae,Cirolanidae	BSCRO367-24_r_1.5_s_100	Alpioniscus	0
+11	35	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1488	Potamidae,Varunidae,Plagusiidae,Anaspididae	BSCRO368-24_r_1_s_50	Alpioniscus	0
+7	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	414	1128	Cambaridae,Potamidae,Plagusiidae,Caprellidae,Trichoniscidae,Anaspididae	BSCRO368-24_r_1_s_100	Alpioniscus	0
+3	27	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	465	1182	Cambaridae,Potamidae,Plagusiidae,Caprellidae,Trichoniscidae,Anaspididae	BSCRO368-24_r_1.3_s_50	Alpioniscus	0
+7	23	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	399	933	Cambaridae,Potamidae,Plagusiidae,Caprellidae,Trichoniscidae,Anaspididae	BSCRO368-24_r_1.3_s_100	Alpioniscus	0
+19	24	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	371	849	Parastacidae,Munididae	BSCRO368-24_r_1.5_s_50	Alpioniscus	0
+15	18	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	216	675	Parastacidae,Munididae	BSCRO368-24_r_1.5_s_100	Alpioniscus	0
+1	15	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1557	Sergestidae,Potamidae,Ocypodidae,Pinnotheridae,Euphausiidae,Anaspididae	BSCRO369-24_r_1_s_50	Alpioniscus	0
+1	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	477	1314	Sergestidae,Potamidae,Ocypodidae,Pinnotheridae,Euphausiidae,Anaspididae	BSCRO369-24_r_1_s_100	Alpioniscus	0
+2	7	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	477	1239	Sergestidae,Potamidae,Ocypodidae,Pinnotheridae,Euphausiidae,Anaspididae	BSCRO369-24_r_1.3_s_50	Alpioniscus	0
+1	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	477	1158	Sergestidae,Potamidae,Ocypodidae,Pinnotheridae,Euphausiidae,Anaspididae	BSCRO369-24_r_1.3_s_100	Alpioniscus	0
+1	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	404	963	Sergestidae,Potamidae,Pinnotheridae,Euphausiidae,Crangonyctidae,Anaspididae	BSCRO369-24_r_1.5_s_50	Alpioniscus	0
+1	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	404	915	Sergestidae,Potamidae,Pinnotheridae,Euphausiidae,Crangonyctidae,Anaspididae	BSCRO369-24_r_1.5_s_100	Alpioniscus	0
+6	37	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1602	Cambaridae,Nephropidae,Aeglidae,Eulimnogammaridae,Chiltoniidae	BSCRO370-24_r_1_s_50	Alpioniscus	0
+0	23	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1452	Cambaridae,Nephropidae,Aeglidae,Chiltoniidae	BSCRO370-24_r_1_s_100	Alpioniscus	0
+1	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1155	Cambaridae,Nephropidae,Aeglidae,Chiltoniidae	BSCRO370-24_r_1.3_s_50	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	472	1074	Cambaridae,Nephropidae,Aeglidae,Chiltoniidae	BSCRO370-24_r_1.3_s_100	Alpioniscus	0
+6	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	320	873	Cambaridae,Nephropidae,Aeglidae,Chiltoniidae	BSCRO370-24_r_1.5_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	318	840	Cambaridae,Nephropidae,Aeglidae,Chiltoniidae	BSCRO370-24_r_1.5_s_100	Alpioniscus	0
+0	12	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1608	Cambaridae,Nephropidae,Aeglidae	BSCRO371-24_r_1_s_50	Alpioniscus	0
+0	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1461	Cambaridae,Nephropidae,Aeglidae,Chiltoniidae	BSCRO371-24_r_1_s_100	Alpioniscus	0
+0	9	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1194	Cambaridae,Nephropidae,Aeglidae,Chiltoniidae	BSCRO371-24_r_1.3_s_50	Alpioniscus	0
+0	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1089	Cambaridae,Nephropidae,Aeglidae,Chiltoniidae	BSCRO371-24_r_1.3_s_100	Alpioniscus	0
+0	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	243	822	Cambaridae,Nephropidae,Aeglidae,Chiltoniidae	BSCRO371-24_r_1.5_s_50	Alpioniscus	5
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	243	732	Cambaridae,Nephropidae,Aeglidae,Chiltoniidae	BSCRO371-24_r_1.5_s_100	Alpioniscus	5
+6	33	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1569	Cambaridae,Trichoniscidae,Trachelipodidae,Agnaridae,Squillidae	BSCRO372-24_r_1_s_50	Alpioniscus	0
+4	27	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1458	Aeglidae	BSCRO372-24_r_1_s_100	Alpioniscus	0
+0	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1125	Aeglidae	BSCRO372-24_r_1.3_s_50	Alpioniscus	0
+0	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1089	Aeglidae	BSCRO372-24_r_1.3_s_100	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	283	684	Cambaridae,Hyalellidae,Armadillidiidae,Agnaridae	BSCRO372-24_r_1.5_s_50	Alpioniscus	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	283	684	Cambaridae,Hyalellidae,Armadillidiidae,Agnaridae	BSCRO372-24_r_1.5_s_100	Alpioniscus	0
+15	32	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1509	Trichoniscidae	BSCRO373-24_r_1_s_50	Alpioniscus	0
+8	40	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1257	Xanthidae,Niphargidae,Trichoniscidae	BSCRO373-24_r_1_s_100	Alpioniscus	0
+7	11	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1137	Astacidae,Cambaridae,Sesarmidae,Trichoniscidae	BSCRO373-24_r_1.3_s_50	Alpioniscus	0
+6	10	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1089	Astacidae,Sesarmidae,Trichoniscidae	BSCRO373-24_r_1.3_s_100	Alpioniscus	0
+6	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	359	780	Astacidae,Cambaridae,Latreilliidae,Sesarmidae,Pinnotheridae,Vibiliidae,Trachelipodidae,Agnaridae	BSCRO373-24_r_1.5_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	359	765	Astacidae,Cambaridae,Latreilliidae,Sesarmidae,Pinnotheridae,Vibiliidae,Trachelipodidae,Agnaridae	BSCRO373-24_r_1.5_s_100	Alpioniscus	0
+11	38	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	477	1494	Ligiidae,Trichoniscidae,Trachelipodidae	BSCRO374-24_r_1_s_50	Alpioniscus	0
+4	10	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	474	1257	Cambaridae,Trichoniscidae	BSCRO374-24_r_1_s_100	Alpioniscus	0
+4	9	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	455	1191	Astacidae,Cambaridae,Latreilliidae,Potamidae,Sesarmidae,Trichoniscidae	BSCRO374-24_r_1.3_s_50	Alpioniscus	0
+4	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	455	1065	Aeglidae,Potamidae,Sesarmidae,Trichoniscidae	BSCRO374-24_r_1.3_s_100	Alpioniscus	0
+15	25	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	329	813	Cambaridae,Potamidae,Pinnotheridae,Vibiliidae,Trachelipodidae,Agnaridae	BSCRO374-24_r_1.5_s_50	Alpioniscus	0
+4	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	210	621	Astacidae,Cambaridae,Sesarmidae,Pinnotheridae,Vibiliidae,Trachelipodidae,Agnaridae	BSCRO374-24_r_1.5_s_100	Alpioniscus	1
+3	13	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1494	Astacidae,Cambaridae,Latreilliidae,Sesarmidae,Trichoniscidae,Trachelipodidae	BSCRO375-24_r_1_s_50	Alpioniscus	0
+0	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1257	Cambaridae,Pinnotheridae,Vibiliidae,Trichoniscidae,Trachelipodidae,Agnaridae	BSCRO375-24_r_1_s_100	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1161	Cambaridae,Pinnotheridae,Vibiliidae,Trichoniscidae,Trachelipodidae,Agnaridae	BSCRO375-24_r_1.3_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1089	Cambaridae,Pinnotheridae,Vibiliidae,Trichoniscidae,Trachelipodidae,Agnaridae	BSCRO375-24_r_1.3_s_100	Alpioniscus	0
+1	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	392	912	Cambaridae,Latreilliidae,Sesarmidae,Pinnotheridae,Vibiliidae,Trachelipodidae,Agnaridae	BSCRO375-24_r_1.5_s_50	Alpioniscus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	392	834	Cambaridae,Latreilliidae,Sesarmidae,Pinnotheridae,Vibiliidae,Trachelipodidae,Agnaridae	BSCRO375-24_r_1.5_s_100	Alpioniscus	0
+0	6	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1404	Parastacidae,Ampithoidae,Talitridae	BSCRO376-24_r_1_s_50	Macedonethes stankoi	0
+0	7	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1290	Parastacidae,Ampithoidae,Talitridae	BSCRO376-24_r_1_s_100	Macedonethes stankoi	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1251	Parastacidae,Ampithoidae,Talitridae	BSCRO376-24_r_1.3_s_50	Macedonethes stankoi	0
+2	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1158	Ampithoidae,Talitridae,Asellidae	BSCRO376-24_r_1.3_s_100	Macedonethes stankoi	0
+0	7	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	397	1014	Parastacidae,Ampithoidae,Talitridae	BSCRO376-24_r_1.5_s_50	Macedonethes stankoi	0
+1	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	386	954	Parastacidae,Ampithoidae,Talitridae	BSCRO376-24_r_1.5_s_100	Macedonethes stankoi	0
+0	16	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1476	Ampithoidae,Gammaridae,Talitridae,Bathynellidae	BSCRO377-24_r_1_s_50	Macedonethes stankoi	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1410	Ampithoidae,Gammaridae,Talitridae,Bathynellidae	BSCRO377-24_r_1_s_100	Macedonethes stankoi	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1266	Ampithoidae,Gammaridae,Talitridae,Bathynellidae	BSCRO377-24_r_1.3_s_50	Macedonethes stankoi	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1149	Ampithoidae,Gammaridae,Talitridae,Bathynellidae	BSCRO377-24_r_1.3_s_100	Macedonethes stankoi	0
+0	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	407	990	Ampithoidae,Gammaridae,Talitridae,Bathynellidae	BSCRO377-24_r_1.5_s_50	Macedonethes stankoi	0
+0	7	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	407	984	Ampithoidae,Gammaridae,Talitridae,Bathynellidae	BSCRO377-24_r_1.5_s_100	Macedonethes stankoi	0
+0	5	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	480	1476	Cancridae,Ampithoidae,Gammaridae,Bathynellidae	BSCRO378-24_r_1_s_50	Macedonethes stankoi	0
+1	12	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1434	Cancridae,Ampithoidae,Gammaridae,Bathynellidae	BSCRO378-24_r_1_s_100	Macedonethes stankoi	0
+2	2	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1236	Cancridae,Ampithoidae,Gammaridae,Bathynellidae	BSCRO378-24_r_1.3_s_50	Macedonethes stankoi	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	476	1164	Cancridae,Ampithoidae,Gammaridae,Bathynellidae	BSCRO378-24_r_1.3_s_100	Macedonethes stankoi	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	301	948	Ampithoidae,Gammaridae,Bathynellidae	BSCRO378-24_r_1.5_s_50	Macedonethes stankoi	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	301	906	Ampithoidae,Gammaridae,Bathynellidae	BSCRO378-24_r_1.5_s_100	Macedonethes stankoi	0
+0	3	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1578	Aeglidae	BSCRO379-24_r_1_s_50	Alpioniscus tuberculatus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1380	Aeglidae	BSCRO379-24_r_1_s_100	Alpioniscus tuberculatus	0
+2	14	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1230	Aeglidae	BSCRO379-24_r_1.3_s_50	Alpioniscus tuberculatus	0
+0	5	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1077	Aeglidae	BSCRO379-24_r_1.3_s_100	Alpioniscus tuberculatus	0
+5	5	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	290	864	Aeglidae	BSCRO379-24_r_1.5_s_50	Alpioniscus tuberculatus	0
+8	8	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	287	855	Aeglidae	BSCRO379-24_r_1.5_s_100	Alpioniscus tuberculatus	0
+3	26	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	482	1506	Aeglidae	BSCRO380-24_r_1_s_50	Alpioniscus tuberculatus	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	481	1401	Aeglidae	BSCRO380-24_r_1_s_100	Alpioniscus tuberculatus	0
+1	26	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1218	Aeglidae	BSCRO380-24_r_1.3_s_50	Alpioniscus tuberculatus	0
+0	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	475	1152	Aeglidae	BSCRO380-24_r_1.3_s_100	Alpioniscus tuberculatus	0
+2	4	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	186	819	Aeglidae	BSCRO380-24_r_1.5_s_50	Alpioniscus tuberculatus	4
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Trichoniscidae	BLAST	family	137	639	Aeglidae	BSCRO380-24_r_1.5_s_100	Alpioniscus tuberculatus	0
+32	40	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00511-NC not in BOLD	None	BLAST	family	539	1260		BGE00511-NC_r_1_s_50	None	0
+27	34	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00511-NC not in BOLD	None	BLAST	family	447	1218		BGE00511-NC_r_1_s_100	None	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00511-NC not in BOLD	None	BLAST	family	452	945		BGE00511-NC_r_1.3_s_50	None	0
+0	1	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00511-NC not in BOLD	None	BLAST	family	445	831		BGE00511-NC_r_1.3_s_100	None	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00511-NC not in BOLD	None	BLAST	family	168	507		BGE00511-NC_r_1.5_s_50	None	0
+0	0	data/BGE00511_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00511-NC not in BOLD	None	BLAST	family	162	393		BGE00511-NC_r_1.5_s_100	None	0

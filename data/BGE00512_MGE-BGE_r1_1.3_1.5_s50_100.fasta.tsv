@@ -1,0 +1,577 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+None	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Dysderidae	BLAST	family	None	0		BSCRO381-24_r_1_s_50	Folkia	0
+None	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Dysderidae	BLAST	family	None	0		BSCRO381-24_r_1_s_100	Folkia	0
+None	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Dysderidae	BLAST	family	None	0		BSCRO381-24_r_1.3_s_50	Folkia	0
+None	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Dysderidae	BLAST	family	None	0		BSCRO381-24_r_1.3_s_100	Folkia	0
+None	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Dysderidae	BLAST	family	None	0		BSCRO381-24_r_1.5_s_50	Folkia	0
+None	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Dysderidae	BLAST	family	None	0		BSCRO381-24_r_1.5_s_100	Folkia	0
+0	5	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Araneidae,Deinopidae,Desidae,Cheiracanthiidae	BSCRO382-24_r_1_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Araneidae,Deinopidae,Cheiracanthiidae	BSCRO382-24_r_1_s_100	Stalagtia	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Araneidae,Deinopidae,Cheiracanthiidae	BSCRO382-24_r_1.3_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Araneidae,Deinopidae,Cheiracanthiidae	BSCRO382-24_r_1.3_s_100	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1422	Dysderidae,Araneidae,Desidae,Cheiracanthiidae	BSCRO382-24_r_1.5_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1392	Dysderidae,Araneidae,Desidae,Cheiracanthiidae	BSCRO382-24_r_1.5_s_100	Stalagtia	0
+21	58	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Antrodiaetidae	BSCRO383-24_r_1_s_50	Stalagtia	0
+8	19	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Nemesiidae,Antrodiaetidae,Dysderidae	BSCRO383-24_r_1_s_100	Stalagtia	0
+0	2	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Nesticidae,Agelenidae	BSCRO383-24_r_1.3_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Nesticidae	BSCRO383-24_r_1.3_s_100	Stalagtia	0
+0	5	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1374	Dysderidae	BSCRO383-24_r_1.5_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1365	Dysderidae	BSCRO383-24_r_1.5_s_100	Stalagtia	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Pholcidae,Deinopidae,Uloboridae,Agelenidae	BSCRO384-24_r_1_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Araneidae,Deinopidae,Uloboridae	BSCRO384-24_r_1_s_100	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Araneidae,Deinopidae,Uloboridae	BSCRO384-24_r_1.3_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Araneidae,Deinopidae,Uloboridae	BSCRO384-24_r_1.3_s_100	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1425	Dysderidae,Araneidae,Deinopidae,Uloboridae	BSCRO384-24_r_1.5_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1392	Dysderidae,Araneidae,Deinopidae,Uloboridae	BSCRO384-24_r_1.5_s_100	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Amaurobiidae	BSCRO385-24_r_1_s_50	Porrhomma egeria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Amaurobiidae	BSCRO385-24_r_1_s_100	Porrhomma egeria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Amaurobiidae	BSCRO385-24_r_1.3_s_50	Porrhomma egeria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Amaurobiidae	BSCRO385-24_r_1.3_s_100	Porrhomma egeria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Amaurobiidae	BSCRO385-24_r_1.5_s_50	Porrhomma egeria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Amaurobiidae	BSCRO385-24_r_1.5_s_100	Porrhomma egeria	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Oxyopidae,Amaurobiidae,Desidae	BSCRO386-24_r_1_s_50	Porrhomma microps	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Oxyopidae,Amaurobiidae,Desidae	BSCRO386-24_r_1_s_100	Porrhomma microps	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Oxyopidae,Amaurobiidae,Desidae	BSCRO386-24_r_1.3_s_50	Porrhomma microps	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Oxyopidae,Amaurobiidae,Desidae	BSCRO386-24_r_1.3_s_100	Porrhomma microps	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Oxyopidae,Amaurobiidae,Desidae	BSCRO386-24_r_1.5_s_50	Porrhomma microps	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Oxyopidae,Amaurobiidae,Desidae	BSCRO386-24_r_1.5_s_100	Porrhomma microps	0
+22	31	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	644	1374	Aturidae,Oppiidae,Gonyleptidae	BSCRO387-24_r_1_s_50	Troglohyphantes croaticus	0
+14	23	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	641	1371	Linyphiidae,Sparassidae,Cheiracanthiidae,Bdellidae,Oppiidae	BSCRO387-24_r_1_s_100	Troglohyphantes croaticus	0
+9	12	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	626	1269	Sparassidae,Dictynidae,Cheiracanthiidae,Erythraeidae,Bdellidae,Oppiidae	BSCRO387-24_r_1.3_s_50	Troglohyphantes croaticus	0
+6	6	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	623	1254	Sparassidae,Cheiracanthiidae,Bdellidae,Oppiidae	BSCRO387-24_r_1.3_s_100	Troglohyphantes croaticus	0
+3	5	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	126	381	Smarididae,Hermanniellidae	BSCRO387-24_r_1.5_s_50	Troglohyphantes croaticus	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	121	294		BSCRO387-24_r_1.5_s_100	Troglohyphantes croaticus	0
+3	28	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	552	1401		BSCRO388-24_r_1_s_50	Stalagtia	0
+3	12	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	552	1401		BSCRO388-24_r_1_s_100	Stalagtia	0
+0	3	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	552	1185	Phytoseiidae,Tetranychidae,Hypochthoniidae,Oppiidae,Cymbaeremaeidae,Eremaeidae,Ceratolasmatidae	BSCRO388-24_r_1.3_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	553	1170	Phytoseiidae,Tetranychidae,Oppiidae,Selenoribatidae,Cymbaeremaeidae,Eremaeidae,Scutoverticidae	BSCRO388-24_r_1.3_s_100	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	158	726	Phytoseiidae,Tetranychidae,Hypochthoniidae,Oppiidae,Selenoribatidae,Eremaeidae,Scutoverticidae	BSCRO388-24_r_1.5_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	172	669	Phytoseiidae,Tetranychidae,Oppiidae,Selenoribatidae,Cymbaeremaeidae,Eremaeidae,Scutoverticidae	BSCRO388-24_r_1.5_s_100	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Agelenidae,Oxyopidae,Amaurobiidae,Desidae	BSCRO389-24_r_1_s_50	Porrhomma microps	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Agelenidae,Oxyopidae,Amaurobiidae,Desidae	BSCRO389-24_r_1_s_100	Porrhomma microps	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Agelenidae,Oxyopidae,Amaurobiidae,Desidae	BSCRO389-24_r_1.3_s_50	Porrhomma microps	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Agelenidae,Oxyopidae,Amaurobiidae,Desidae	BSCRO389-24_r_1.3_s_100	Porrhomma microps	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Agelenidae,Oxyopidae,Amaurobiidae,Desidae	BSCRO389-24_r_1.5_s_50	Porrhomma microps	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Agelenidae,Oxyopidae,Amaurobiidae,Desidae	BSCRO389-24_r_1.5_s_100	Porrhomma microps	0
+65	161	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1515	Linyphiidae,Nephilidae	BSCRO390-24_r_1_s_50	Porrhomma microps	0
+42	111	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1515	Linyphiidae	BSCRO390-24_r_1_s_100	Porrhomma microps	0
+22	23	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1518	Linyphiidae,Nephilidae,Desidae,Cheiracanthiidae	BSCRO390-24_r_1.3_s_50	Porrhomma microps	0
+35	35	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1518	Araneidae,Linyphiidae,Lycosidae,Salticidae,Cheiracanthiidae	BSCRO390-24_r_1.3_s_100	Porrhomma microps	0
+3	3	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	588	1449	Araneidae,Linyphiidae,Cheiracanthiidae,Archaeidae	BSCRO390-24_r_1.5_s_50	Porrhomma microps	0
+1	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	585	1446	Araneidae,Linyphiidae,Cheiracanthiidae,Archaeidae	BSCRO390-24_r_1.5_s_100	Porrhomma microps	0
+39	69	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	655	1506	Phytoseiidae,Stigmaeidae,Nanhermanniidae,Oppiidae,Haplozetidae,Karschiidae,Phrynichidae	BSCRO391-24_r_1_s_50	Hadites tegenarioides	0
+36	54	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	656	1425	Phytoseiidae,Stigmaeidae,Nanhermanniidae,Oppiidae,Haplozetidae,Karschiidae,Eremobatidae	BSCRO391-24_r_1_s_100	Hadites tegenarioides	0
+9	9	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	620	1161	Phytoseiidae,Stigmaeidae,Nanhermanniidae,Oppiidae,Haplozetidae,Karschiidae,Eremobatidae	BSCRO391-24_r_1.3_s_50	Hadites tegenarioides	0
+8	8	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	617	1122	Phytoseiidae,Stigmaeidae,Nanhermanniidae,Oppiidae,Haplozetidae,Karschiidae,Eremobatidae	BSCRO391-24_r_1.3_s_100	Hadites tegenarioides	0
+2	2	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	491	786	Phytoseiidae,Stigmaeidae,Nanhermanniidae,Oppiidae,Haplozetidae,Karschiidae,Eremobatidae	BSCRO391-24_r_1.5_s_50	Hadites tegenarioides	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	358	756	Phytoseiidae,Stigmaeidae,Nanhermanniidae,Oppiidae,Haplozetidae,Karschiidae,Eremobatidae	BSCRO391-24_r_1.5_s_100	Hadites tegenarioides	0
+90	158	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	654	1530	Araneidae,Theridiidae,Agelenidae,Amaurobiidae,Dictynidae	BSCRO392-24_r_1_s_50	Hadites tegenarioides	0
+71	133	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	656	1530	Araneidae,Agelenidae,Salticidae,Dictynidae,Mecysmaucheniidae	BSCRO392-24_r_1_s_100	Hadites tegenarioides	0
+43	78	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	656	1530	Araneidae,Agelenidae,Salticidae,Desidae,Cheiracanthiidae,Hypochilidae	BSCRO392-24_r_1.3_s_50	Hadites tegenarioides	0
+38	72	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	632	1506	Agelenidae,Lycosidae,Salticidae,Desidae,Cheiracanthiidae,Archaeidae	BSCRO392-24_r_1.3_s_100	Hadites tegenarioides	0
+15	19	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	554	1269	Agelenidae,Salticidae,Archaeidae	BSCRO392-24_r_1.5_s_50	Hadites tegenarioides	0
+10	11	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	554	1221	Agelenidae,Salticidae,Archaeidae	BSCRO392-24_r_1.5_s_100	Hadites tegenarioides	0
+26	69	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1530	Araneidae,Nephilidae,Agelenidae,Sparassidae,Zodariidae	BSCRO393-24_r_1_s_50	Typhlonyphia reimoseri	0
+1	10	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1530	Araneidae,Tetragnathidae,Nephilidae,Desidae	BSCRO393-24_r_1_s_100	Typhlonyphia reimoseri	0
+3	6	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1530	Araneidae,Tetragnathidae,Nephilidae,Desidae	BSCRO393-24_r_1.3_s_50	Typhlonyphia reimoseri	0
+1	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1530	Araneidae,Tetragnathidae,Nephilidae,Desidae	BSCRO393-24_r_1.3_s_100	Typhlonyphia reimoseri	0
+1	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1530	Araneidae,Tetragnathidae,Nephilidae,Desidae	BSCRO393-24_r_1.5_s_50	Typhlonyphia reimoseri	0
+1	2	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1530	Araneidae,Tetragnathidae,Nephilidae,Desidae	BSCRO393-24_r_1.5_s_100	Typhlonyphia reimoseri	0
+39	122	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1530	Linyphiidae	BSCRO394-24_r_1_s_50	Typhlonyphia	0
+26	74	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1485	Linyphiidae	BSCRO394-24_r_1_s_100	Typhlonyphia	0
+26	40	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1527	Araneidae,Linyphiidae,Nephilidae,Desidae	BSCRO394-24_r_1.3_s_50	Typhlonyphia	0
+25	31	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1482	Araneidae,Linyphiidae,Nephilidae,Desidae	BSCRO394-24_r_1.3_s_100	Typhlonyphia	0
+12	18	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	528	1290	Araneidae,Nephilidae,Archaeidae	BSCRO394-24_r_1.5_s_50	Typhlonyphia	0
+10	15	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	528	1290	Araneidae,Nephilidae,Archaeidae	BSCRO394-24_r_1.5_s_100	Typhlonyphia	0
+8	52	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Anapidae	BLAST	family	656	1536	Dysderidae,Pholcidae,Araneidae,Agelenidae	BSCRO395-24_r_1_s_50	Comaroma simoni	0
+0	21	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Anapidae	BLAST	family	656	1530	Dysderidae,Periegopidae,Deinopidae	BSCRO395-24_r_1_s_100	Comaroma simoni	0
+0	4	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Anapidae	BLAST	family	656	1521	Dysderidae,Periegopidae,Deinopidae,Uloboridae	BSCRO395-24_r_1.3_s_50	Comaroma simoni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Anapidae	BLAST	family	656	1515	Dysderidae,Araneidae,Deinopidae,Uloboridae	BSCRO395-24_r_1.3_s_100	Comaroma simoni	0
+0	3	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Anapidae	BLAST	family	629	1389	Antrodiaetidae,Dysderidae,Lycosidae,Salticidae	BSCRO395-24_r_1.5_s_50	Comaroma simoni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Anapidae	BLAST	family	629	1356	Antrodiaetidae,Dysderidae,Lycosidae,Salticidae	BSCRO395-24_r_1.5_s_100	Comaroma simoni	0
+12	15	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1518	Araneidae,Tetragnathidae,Linyphiidae,Nephilidae,Lycosidae,Amaurobiidae,Cheiracanthiidae	BSCRO396-24_r_1_s_50	Porrhomma egeria	0
+9	11	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1518	Araneidae,Linyphiidae,Nephilidae,Amaurobiidae	BSCRO396-24_r_1_s_100	Porrhomma egeria	0
+3	3	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Amaurobiidae	BSCRO396-24_r_1.3_s_50	Porrhomma egeria	0
+1	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Amaurobiidae	BSCRO396-24_r_1.3_s_100	Porrhomma egeria	0
+1	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	635	1497	Araneidae,Theridiidae,Linyphiidae,Nephilidae	BSCRO396-24_r_1.5_s_50	Porrhomma egeria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	635	1497	Araneidae,Theridiidae,Linyphiidae,Nephilidae	BSCRO396-24_r_1.5_s_100	Porrhomma egeria	0
+8	13	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	636	1398		BSCRO397-24_r_1_s_50	Tegenaria bosnica	0
+6	10	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	636	1398		BSCRO397-24_r_1_s_100	Tegenaria bosnica	0
+1	3	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	586	1227	Ixodidae,Oppiidae	BSCRO397-24_r_1.3_s_50	Tegenaria bosnica	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	587	1215	Ixodidae,Oppiidae	BSCRO397-24_r_1.3_s_100	Tegenaria bosnica	0
+0	4	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	167	699	Buthidae,Tetragnathidae,Archaeidae,Hypochilidae,Tetranychidae	BSCRO397-24_r_1.5_s_50	Tegenaria bosnica	0
+0	5	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	162	570	Buthidae,Tetragnathidae,Archaeidae,Hypochilidae,Tetranychidae	BSCRO397-24_r_1.5_s_100	Tegenaria bosnica	0
+0	2	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Araneidae	BSCRO398-24_r_1_s_50	Stalagtia monospina	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1527	Dysderidae,Araneidae	BSCRO398-24_r_1_s_100	Stalagtia monospina	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Araneidae	BSCRO398-24_r_1.3_s_50	Stalagtia monospina	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1527	Dysderidae,Araneidae	BSCRO398-24_r_1.3_s_100	Stalagtia monospina	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1476	Dysderidae,Araneidae	BSCRO398-24_r_1.5_s_50	Stalagtia monospina	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1383	Dysderidae,Araneidae	BSCRO398-24_r_1.5_s_100	Stalagtia monospina	0
+1	8	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Theridiidae	BLAST	family	657	1533	Theridiidae,Agelenidae,Pisauridae,Oxyopidae,Sparassidae,Selenopidae,Desidae,Cheiracanthiidae	BSCRO399-24_r_1_s_50	Episinus cavernicola	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Theridiidae	BLAST	family	657	1530	Theridiidae,Agelenidae,Pisauridae,Sparassidae,Selenopidae,Desidae,Cheiracanthiidae	BSCRO399-24_r_1_s_100	Episinus cavernicola	0
+0	4	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Theridiidae	BLAST	family	657	1530	Theridiidae,Agelenidae,Pisauridae,Oxyopidae,Sparassidae,Selenopidae,Desidae,Cheiracanthiidae	BSCRO399-24_r_1.3_s_50	Episinus cavernicola	0
+0	4	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Theridiidae	BLAST	family	657	1530	Theridiidae,Agelenidae,Pisauridae,Oxyopidae,Sparassidae,Selenopidae,Desidae,Cheiracanthiidae	BSCRO399-24_r_1.3_s_100	Episinus cavernicola	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Theridiidae	BLAST	family	657	1506	Theridiidae,Agelenidae,Pisauridae,Oxyopidae,Sparassidae,Selenopidae,Desidae,Cheiracanthiidae	BSCRO399-24_r_1.5_s_50	Episinus cavernicola	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Theridiidae	BLAST	family	657	1506	Theridiidae,Agelenidae,Pisauridae,Oxyopidae,Sparassidae,Selenopidae,Desidae,Cheiracanthiidae	BSCRO399-24_r_1.5_s_100	Episinus cavernicola	0
+14	21	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	655	1524	Theridiidae,Sparassidae,Amaurobiidae,Archaeidae	BSCRO400-24_r_1_s_50	Cataleptoneta lingulata	0
+10	11	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	655	1416	Theridiidae,Sparassidae,Amaurobiidae,Archaeidae	BSCRO400-24_r_1_s_100	Cataleptoneta lingulata	0
+8	8	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	655	1443	Sparassidae,Amaurobiidae,Archaeidae	BSCRO400-24_r_1.3_s_50	Cataleptoneta lingulata	0
+8	8	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	655	1416	Sparassidae,Amaurobiidae,Archaeidae	BSCRO400-24_r_1.3_s_100	Cataleptoneta lingulata	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	556	1305	Archaeidae	BSCRO400-24_r_1.5_s_50	Cataleptoneta lingulata	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	538	1287	Archaeidae	BSCRO400-24_r_1.5_s_100	Cataleptoneta lingulata	0
+0	3	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1530	Araneidae,Linyphiidae,Agelenidae,Sparassidae,Desidae	BSCRO401-24_r_1_s_50	Harpactea	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1530	Araneidae,Linyphiidae,Agelenidae,Sparassidae,Desidae	BSCRO401-24_r_1_s_100	Harpactea	0
+0	5	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1527	Araneidae,Linyphiidae,Agelenidae,Sparassidae,Desidae	BSCRO401-24_r_1.3_s_50	Harpactea	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1527	Araneidae,Linyphiidae,Agelenidae,Sparassidae,Desidae	BSCRO401-24_r_1.3_s_100	Harpactea	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1494	Araneidae,Linyphiidae,Nephilidae,Agelenidae,Sparassidae,Desidae	BSCRO401-24_r_1.5_s_50	Harpactea	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1386	Araneidae,Linyphiidae,Nephilidae,Agelenidae,Sparassidae,Desidae	BSCRO401-24_r_1.5_s_100	Harpactea	0
+15	56	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	652	1476	Erythraeidae,Oppiidae,Zalmoxidae,Phrynidae	BSCRO402-24_r_1_s_50	Harpactea damini	0
+13	34	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	622	1398	Erythraeidae,Oppiidae,Zalmoxidae,Phrynidae	BSCRO402-24_r_1_s_100	Harpactea damini	0
+2	11	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	466	1062	Erythraeidae,Unionicolidae,Oppiidae,Eremaeidae,Scutoverticidae	BSCRO402-24_r_1.3_s_50	Harpactea damini	0
+2	11	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	412	888	Erythraeidae,Unionicolidae,Oppiidae,Eremaeidae,Scutoverticidae	BSCRO402-24_r_1.3_s_100	Harpactea damini	0
+1	8	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	182	678	Erythraeidae,Oppiidae,Zalmoxidae	BSCRO402-24_r_1.5_s_50	Harpactea damini	0
+1	10	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	179	507	Erythraeidae,Oppiidae,Zalmoxidae	BSCRO402-24_r_1.5_s_100	Harpactea damini	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1527	Theridiidae,Agelenidae,Lycosidae,Salticidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO403-24_r_1_s_50	Harpactea mateparlovi	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1527	Theridiidae,Agelenidae,Lycosidae,Salticidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO403-24_r_1_s_100	Harpactea mateparlovi	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1527	Theridiidae,Agelenidae,Oxyopidae,Salticidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO403-24_r_1.3_s_50	Harpactea mateparlovi	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1527	Theridiidae,Agelenidae,Lycosidae,Salticidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO403-24_r_1.3_s_100	Harpactea mateparlovi	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	606	1422	Theridiidae,Oxyopidae,Salticidae,Amaurobiidae,Cheiracanthiidae,Archaeidae	BSCRO403-24_r_1.5_s_50	Harpactea mateparlovi	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	606	1338	Theridiidae,Lycosidae,Oxyopidae,Salticidae,Amaurobiidae,Cheiracanthiidae,Archaeidae	BSCRO403-24_r_1.5_s_100	Harpactea mateparlovi	0
+0	13	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1530	Theridiidae,Agelenidae,Lycosidae,Salticidae,Desidae,Cheiracanthiidae	BSCRO404-24_r_1_s_50	Harpactea	0
+0	10	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1530	Theridiidae,Agelenidae,Lycosidae,Salticidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO404-24_r_1_s_100	Harpactea	0
+0	3	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1530	Theridiidae,Agelenidae,Oxyopidae,Salticidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO404-24_r_1.3_s_50	Harpactea	0
+0	3	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1530	Theridiidae,Agelenidae,Lycosidae,Salticidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO404-24_r_1.3_s_100	Harpactea	0
+2	8	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	570	1353	Agelenidae,Lycosidae,Oxyopidae,Salticidae,Zodariidae,Nicodamidae,Archaeidae	BSCRO404-24_r_1.5_s_50	Harpactea	0
+2	4	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	570	1290	Salticidae,Archaeidae	BSCRO404-24_r_1.5_s_100	Harpactea	0
+None	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Dysderidae	BLAST	family	None	0		BSCRO405-24_r_1_s_50	Mesostalita comottii	0
+None	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Dysderidae	BLAST	family	None	0		BSCRO405-24_r_1_s_100	Mesostalita comottii	0
+None	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Dysderidae	BLAST	family	None	0		BSCRO405-24_r_1.3_s_50	Mesostalita comottii	0
+None	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Dysderidae	BLAST	family	None	0		BSCRO405-24_r_1.3_s_100	Mesostalita comottii	0
+None	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Dysderidae	BLAST	family	None	0		BSCRO405-24_r_1.5_s_50	Mesostalita comottii	0
+None	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Dysderidae	BLAST	family	None	0		BSCRO405-24_r_1.5_s_100	Mesostalita comottii	0
+40	90	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	651	1488		BSCRO406-24_r_1_s_50	Barusia insulana	0
+34	83	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	653	1377	Cheiracanthiidae,Selenoribatidae,Neobisiidae,Ricinoididae	BSCRO406-24_r_1_s_100	Barusia insulana	0
+23	26	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	654	1320	Theraphosidae,Macrothelidae,Araneidae,Nesticidae	BSCRO406-24_r_1.3_s_50	Barusia insulana	0
+19	20	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	656	1317	Theraphosidae,Macrothelidae,Araneidae,Nesticidae	BSCRO406-24_r_1.3_s_100	Barusia insulana	0
+4	8	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	457	1071	Theraphosidae,Hypochilidae	BSCRO406-24_r_1.5_s_50	Barusia insulana	0
+9	10	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	442	1026	Theraphosidae,Hypochilidae	BSCRO406-24_r_1.5_s_100	Barusia insulana	3
+2	17	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Dictynidae,Hypochilidae	BSCRO407-24_r_1_s_50	Harpactea	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Araneidae,Tetragnathidae,Trochanteriidae,Desidae,Hypochilidae	BSCRO407-24_r_1_s_100	Harpactea	0
+0	5	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Araneidae,Desidae	BSCRO407-24_r_1.3_s_50	Harpactea	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Araneidae,Tetragnathidae,Trochanteriidae,Desidae,Hypochilidae	BSCRO407-24_r_1.3_s_100	Harpactea	0
+0	2	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1515	Dysderidae,Araneidae,Tetragnathidae,Desidae,Hypochilidae	BSCRO407-24_r_1.5_s_50	Harpactea	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1482	Dysderidae,Araneidae,Tetragnathidae,Trochanteriidae,Desidae,Hypochilidae	BSCRO407-24_r_1.5_s_100	Harpactea	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1530	Araneidae,Nephilidae,Desidae	BSCRO408-24_r_1_s_50	Typhlonyphia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1530	Araneidae,Nephilidae,Desidae	BSCRO408-24_r_1_s_100	Typhlonyphia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1530	Araneidae,Nephilidae,Desidae	BSCRO408-24_r_1.3_s_50	Typhlonyphia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1530	Araneidae,Nephilidae,Desidae	BSCRO408-24_r_1.3_s_100	Typhlonyphia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1530	Araneidae,Nephilidae,Desidae	BSCRO408-24_r_1.5_s_50	Typhlonyphia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1530	Araneidae,Nephilidae,Desidae	BSCRO408-24_r_1.5_s_100	Typhlonyphia	0
+0	8	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	655	1530	Dysderidae,Araneidae,Pisauridae,Dictynidae	BSCRO409-24_r_1_s_50	Typhlonyphia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	655	1521	Dysderidae,Araneidae,Pisauridae,Dictynidae	BSCRO409-24_r_1_s_100	Typhlonyphia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	655	1530	Dysderidae,Araneidae,Pisauridae,Dictynidae	BSCRO409-24_r_1.3_s_50	Typhlonyphia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	655	1476	Dysderidae,Araneidae,Pisauridae,Dictynidae	BSCRO409-24_r_1.3_s_100	Typhlonyphia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	655	1428	Araneidae,Tetragnathidae,Agelenidae,Pisauridae,Dictynidae	BSCRO409-24_r_1.5_s_50	Typhlonyphia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	640	1371	Dysderidae,Periegopidae,Araneidae	BSCRO409-24_r_1.5_s_100	Typhlonyphia	0
+5	37	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	651	1407		BSCRO410-24_r_1_s_50	Barusia insulana	0
+2	19	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	651	1404		BSCRO410-24_r_1_s_100	Barusia insulana	0
+9	20	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	621	1305	Nesticidae,Linyphiidae,Agelenidae,Selenopidae,Oppiidae	BSCRO410-24_r_1.3_s_50	Barusia insulana	0
+7	16	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	621	1302	Nesticidae,Linyphiidae,Agelenidae,Salticidae,Selenopidae,Oppiidae,Eremobatidae	BSCRO410-24_r_1.3_s_100	Barusia insulana	0
+0	4	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	452	987	Theridiidae,Linyphiidae,Dictynidae,Palpimanidae	BSCRO410-24_r_1.5_s_50	Barusia insulana	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	447	837	Theraphosidae,Amaurobiidae,Archaeidae	BSCRO410-24_r_1.5_s_100	Barusia insulana	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1536	Tetragnathidae,Theridiidae,Agelenidae,Lycosidae,Salticidae,Desidae,Cheiracanthiidae	BSCRO411-24_r_1_s_50	Hadites tegenarioides	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1530	Tetragnathidae,Theridiidae,Agelenidae,Lycosidae,Salticidae,Desidae,Cheiracanthiidae	BSCRO411-24_r_1_s_100	Hadites tegenarioides	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1536	Tetragnathidae,Theridiidae,Agelenidae,Lycosidae,Salticidae,Desidae,Cheiracanthiidae	BSCRO411-24_r_1.3_s_50	Hadites tegenarioides	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1530	Tetragnathidae,Theridiidae,Agelenidae,Lycosidae,Salticidae,Desidae,Cheiracanthiidae	BSCRO411-24_r_1.3_s_100	Hadites tegenarioides	0
+0	5	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1533	Tetragnathidae,Theridiidae,Agelenidae,Lycosidae,Salticidae,Desidae,Cheiracanthiidae	BSCRO411-24_r_1.5_s_50	Hadites tegenarioides	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1530	Tetragnathidae,Theridiidae,Agelenidae,Lycosidae,Salticidae,Desidae,Cheiracanthiidae	BSCRO411-24_r_1.5_s_100	Hadites tegenarioides	0
+9	20	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1530	Dysderidae,Araneidae,Tetragnathidae,Nesticidae,Agelenidae,Ctenidae	BSCRO412-24_r_1_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1530	Dysderidae,Agelenidae,Ctenidae,Cheiracanthiidae	BSCRO412-24_r_1_s_100	Stalagtia	0
+1	3	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1530	Dysderidae,Tetragnathidae,Ctenidae,Cheiracanthiidae	BSCRO412-24_r_1.3_s_50	Stalagtia	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1530	Dysderidae,Agelenidae,Ctenidae,Cheiracanthiidae	BSCRO412-24_r_1.3_s_100	Stalagtia	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1461	Dysderidae,Agelenidae,Ctenidae,Amaurobiidae,Cheiracanthiidae	BSCRO412-24_r_1.5_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1461	Dysderidae,Agelenidae,Ctenidae,Cheiracanthiidae	BSCRO412-24_r_1.5_s_100	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	552	1395		BSCRO413-24_r_1_s_50	Folkia haasi	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	447	1293		BSCRO413-24_r_1_s_100	Folkia haasi	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	271	1047	Tetragnathidae,Ixodidae,Laelapidae,Spinturnicidae,Allothyridae	BSCRO413-24_r_1.3_s_50	Folkia haasi	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	291	948	Tetragnathidae,Ixodidae,Laelapidae,Spinturnicidae,Allothyridae	BSCRO413-24_r_1.3_s_100	Folkia haasi	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	170	321		BSCRO413-24_r_1.5_s_50	Folkia haasi	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	168	204		BSCRO413-24_r_1.5_s_100	Folkia haasi	0
+0	5	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae	BSCRO414-24_r_1_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Araneidae,Cheiracanthiidae	BSCRO414-24_r_1_s_100	Stalagtia	0
+0	5	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Araneidae,Cheiracanthiidae	BSCRO414-24_r_1.3_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Araneidae,Cheiracanthiidae	BSCRO414-24_r_1.3_s_100	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1497	Dysderidae,Araneidae,Cheiracanthiidae	BSCRO414-24_r_1.5_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1488	Dysderidae,Araneidae,Cheiracanthiidae	BSCRO414-24_r_1.5_s_100	Stalagtia	0
+35	70	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1518	Araneidae,Linyphiidae,Archaeidae	BSCRO415-24_r_1_s_50	Porrhomma microps	0
+29	62	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1518	Araneidae,Linyphiidae	BSCRO415-24_r_1_s_100	Porrhomma microps	0
+11	12	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Oxyopidae,Amaurobiidae	BSCRO415-24_r_1.3_s_50	Porrhomma microps	0
+10	11	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Agelenidae,Oxyopidae,Amaurobiidae	BSCRO415-24_r_1.3_s_100	Porrhomma microps	0
+5	5	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Agelenidae,Oxyopidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO415-24_r_1.5_s_50	Porrhomma microps	0
+6	6	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Agelenidae,Oxyopidae,Amaurobiidae,Desidae	BSCRO415-24_r_1.5_s_100	Porrhomma microps	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	655	1515	Theridiidae,Agelenidae,Salticidae,Sparassidae,Nicodamidae,Cheiracanthiidae	BSCRO416-24_r_1_s_50	Cataleptoneta lingulata	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	655	1416	Theridiidae,Agelenidae,Salticidae,Sparassidae,Nicodamidae,Cheiracanthiidae	BSCRO416-24_r_1_s_100	Cataleptoneta lingulata	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	655	1416	Theridiidae,Agelenidae,Salticidae,Sparassidae,Nicodamidae,Cheiracanthiidae	BSCRO416-24_r_1.3_s_50	Cataleptoneta lingulata	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	655	1416	Theridiidae,Agelenidae,Salticidae,Sparassidae,Nicodamidae,Cheiracanthiidae	BSCRO416-24_r_1.3_s_100	Cataleptoneta lingulata	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	607	1368	Theridiidae,Lycosidae,Salticidae,Anyphaenidae,Amaurobiidae,Cheiracanthiidae,Archaeidae	BSCRO416-24_r_1.5_s_50	Cataleptoneta lingulata	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	559	1278	Theridiidae,Lycosidae,Salticidae,Anyphaenidae,Amaurobiidae,Cheiracanthiidae,Archaeidae	BSCRO416-24_r_1.5_s_100	Cataleptoneta lingulata	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1536	Araneidae,Nesticidae,Linyphiidae,Agelenidae,Salticidae,Amaurobiidae	BSCRO417-24_r_1_s_50	Typhlonesticus	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1536	Araneidae,Nesticidae,Linyphiidae,Agelenidae,Salticidae,Amaurobiidae	BSCRO417-24_r_1_s_100	Typhlonesticus	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1536	Araneidae,Nesticidae,Agelenidae,Salticidae,Amaurobiidae	BSCRO417-24_r_1.3_s_50	Typhlonesticus	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1536	Araneidae,Nesticidae,Linyphiidae,Agelenidae,Salticidae,Amaurobiidae	BSCRO417-24_r_1.3_s_100	Typhlonesticus	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1500	Araneidae,Nesticidae,Agelenidae,Salticidae,Amaurobiidae	BSCRO417-24_r_1.5_s_50	Typhlonesticus	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1458	Araneidae,Nesticidae,Agelenidae,Salticidae,Amaurobiidae	BSCRO417-24_r_1.5_s_100	Typhlonesticus	0
+0	21	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Amaurobiidae	BLAST	family	656	1530	Agelenidae,Amaurobiidae,Archaeidae,Neobisiidae	BSCRO418-24_r_1_s_50	Amaurobius kratochvili	0
+0	13	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Amaurobiidae	BLAST	family	656	1530	Lycosidae,Amaurobiidae,Archaeidae,Neobisiidae	BSCRO418-24_r_1_s_100	Amaurobius kratochvili	0
+4	4	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Amaurobiidae	BLAST	family	657	1533	Oxyopidae,Salticidae,Amaurobiidae,Cheiracanthiidae	BSCRO418-24_r_1.3_s_50	Amaurobius kratochvili	0
+5	6	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Amaurobiidae	BLAST	family	657	1533	Oxyopidae,Salticidae,Amaurobiidae,Cheiracanthiidae	BSCRO418-24_r_1.3_s_100	Amaurobius kratochvili	0
+9	9	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Amaurobiidae	BLAST	family	657	1533	Oxyopidae,Salticidae,Amaurobiidae	BSCRO418-24_r_1.5_s_50	Amaurobius kratochvili	0
+10	10	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Amaurobiidae	BLAST	family	657	1533	Oxyopidae,Salticidae,Amaurobiidae	BSCRO418-24_r_1.5_s_100	Amaurobius kratochvili	0
+18	40	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	511	1230	Araneidae,Phytoseiidae,Achipteriidae	BSCRO419-24_r_1_s_50	Walckenaeria stylifrons	1
+17	26	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	493	990	Araneidae,Phytoseiidae	BSCRO419-24_r_1_s_100	Walckenaeria stylifrons	0
+0	3	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	274	870	Araneidae,Phytoseiidae	BSCRO419-24_r_1.3_s_50	Walckenaeria stylifrons	0
+0	3	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	274	768	Araneidae,Phytoseiidae	BSCRO419-24_r_1.3_s_100	Walckenaeria stylifrons	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	163	465	Oppiidae	BSCRO419-24_r_1.5_s_50	Walckenaeria stylifrons	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	163	375		BSCRO419-24_r_1.5_s_100	Walckenaeria stylifrons	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1521	Dysderidae,Araneidae,Desidae,Nicodamidae	BSCRO420-24_r_1_s_50	Formiphantes lephthyphantiformis	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1521	Dysderidae,Araneidae,Desidae,Nicodamidae	BSCRO420-24_r_1_s_100	Formiphantes lephthyphantiformis	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1419	Dysderidae,Araneidae,Desidae,Nicodamidae	BSCRO420-24_r_1.3_s_50	Formiphantes lephthyphantiformis	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1419	Dysderidae,Araneidae,Desidae,Nicodamidae	BSCRO420-24_r_1.3_s_100	Formiphantes lephthyphantiformis	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1416	Dysderidae,Araneidae,Desidae,Nicodamidae	BSCRO420-24_r_1.5_s_50	Formiphantes lephthyphantiformis	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1416	Dysderidae,Araneidae,Desidae,Nicodamidae	BSCRO420-24_r_1.5_s_100	Formiphantes lephthyphantiformis	0
+3	3	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	636	1404		BSCRO421-24_r_1_s_50	Palliduphantes brignolii	0
+3	3	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	636	1404		BSCRO421-24_r_1_s_100	Palliduphantes brignolii	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	449	1131		BSCRO421-24_r_1.3_s_50	Palliduphantes brignolii	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	446	1077		BSCRO421-24_r_1.3_s_100	Palliduphantes brignolii	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	380	660		BSCRO421-24_r_1.5_s_50	Palliduphantes brignolii	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	377	576		BSCRO421-24_r_1.5_s_100	Palliduphantes brignolii	0
+2	2	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1533	Nesticidae,Desidae	BSCRO422-24_r_1_s_50	Kryptonesticus arenstorffi	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1533	Nesticidae,Desidae	BSCRO422-24_r_1_s_100	Kryptonesticus arenstorffi	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1533	Nesticidae,Nephilidae	BSCRO422-24_r_1.3_s_50	Kryptonesticus arenstorffi	0
+0	2	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1527	Nesticidae,Desidae	BSCRO422-24_r_1.3_s_100	Kryptonesticus arenstorffi	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1416	Nesticidae	BSCRO422-24_r_1.5_s_50	Kryptonesticus arenstorffi	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1416	Nesticidae	BSCRO422-24_r_1.5_s_100	Kryptonesticus arenstorffi	0
+1	4	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1536	Nesticidae	BSCRO423-24_r_1_s_50	Kryptonesticus arenstorffi	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1536	Nesticidae	BSCRO423-24_r_1_s_100	Kryptonesticus arenstorffi	0
+0	2	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1536	Nesticidae	BSCRO423-24_r_1.3_s_50	Kryptonesticus arenstorffi	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1533	Nesticidae	BSCRO423-24_r_1.3_s_100	Kryptonesticus arenstorffi	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1494	Nesticidae	BSCRO423-24_r_1.5_s_50	Kryptonesticus arenstorffi	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1494	Nesticidae	BSCRO423-24_r_1.5_s_100	Kryptonesticus arenstorffi	0
+12	18	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1530	Dysderidae,Araneidae,Tetragnathidae	BSCRO424-24_r_1_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1530	Dysderidae,Agelenidae,Ctenidae,Cheiracanthiidae	BSCRO424-24_r_1_s_100	Stalagtia	0
+2	4	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1530	Dysderidae,Tetragnathidae,Ctenidae,Desidae,Cheiracanthiidae	BSCRO424-24_r_1.3_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1530	Dysderidae,Agelenidae,Ctenidae,Cheiracanthiidae	BSCRO424-24_r_1.3_s_100	Stalagtia	0
+5	6	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1443	Dysderidae,Ctenidae,Amaurobiidae,Cheiracanthiidae	BSCRO424-24_r_1.5_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	657	1392	Dysderidae,Agelenidae,Ctenidae,Cheiracanthiidae	BSCRO424-24_r_1.5_s_100	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	656	1530	Araneidae,Nesticidae,Nephilidae,Agelenidae	BSCRO425-24_r_1_s_50	Typhlonesticus absoloni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	656	1530	Araneidae,Nesticidae,Nephilidae,Agelenidae	BSCRO425-24_r_1_s_100	Typhlonesticus absoloni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	656	1530	Araneidae,Nesticidae,Nephilidae,Agelenidae	BSCRO425-24_r_1.3_s_50	Typhlonesticus absoloni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	656	1530	Araneidae,Nesticidae,Nephilidae,Agelenidae	BSCRO425-24_r_1.3_s_100	Typhlonesticus absoloni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	656	1494	Araneidae,Nesticidae,Nephilidae,Agelenidae	BSCRO425-24_r_1.5_s_50	Typhlonesticus absoloni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	656	1461	Araneidae,Nesticidae,Nephilidae,Agelenidae	BSCRO425-24_r_1.5_s_100	Typhlonesticus absoloni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	656	1536	Araneidae,Nesticidae,Nephilidae,Agelenidae	BSCRO426-24_r_1_s_50	Typhlonesticus absoloni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	656	1530	Araneidae,Nesticidae,Nephilidae,Agelenidae	BSCRO426-24_r_1_s_100	Typhlonesticus absoloni	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	656	1536	Araneidae,Nesticidae,Nephilidae,Agelenidae	BSCRO426-24_r_1.3_s_50	Typhlonesticus absoloni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	656	1530	Araneidae,Nesticidae,Nephilidae,Agelenidae	BSCRO426-24_r_1.3_s_100	Typhlonesticus absoloni	0
+0	2	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	656	1524	Araneidae,Nesticidae,Nephilidae,Agelenidae	BSCRO426-24_r_1.5_s_50	Typhlonesticus absoloni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	656	1497	Araneidae,Nesticidae,Nephilidae,Agelenidae	BSCRO426-24_r_1.5_s_100	Typhlonesticus absoloni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1536	Theridiidae,Agelenidae,Pisauridae,Sparassidae,Selenopidae,Desidae,Cheiracanthiidae	BSCRO427-24_r_1_s_50	Histopona krivosijana	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1536	Theridiidae,Agelenidae,Pisauridae,Sparassidae,Selenopidae,Desidae,Cheiracanthiidae	BSCRO427-24_r_1_s_100	Histopona krivosijana	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1536	Theridiidae,Agelenidae,Pisauridae,Sparassidae,Selenopidae,Desidae,Cheiracanthiidae	BSCRO427-24_r_1.3_s_50	Histopona krivosijana	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1536	Theridiidae,Agelenidae,Pisauridae,Sparassidae,Selenopidae,Desidae,Cheiracanthiidae	BSCRO427-24_r_1.3_s_100	Histopona krivosijana	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1536	Theridiidae,Agelenidae,Pisauridae,Sparassidae,Selenopidae,Desidae,Cheiracanthiidae	BSCRO427-24_r_1.5_s_50	Histopona krivosijana	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1536	Theridiidae,Agelenidae,Pisauridae,Sparassidae,Selenopidae,Desidae,Cheiracanthiidae	BSCRO427-24_r_1.5_s_100	Histopona krivosijana	0
+26	58	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	645	1425		BSCRO428-24_r_1_s_50	Tegenaria animata	0
+17	43	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	645	1410		BSCRO428-24_r_1_s_100	Tegenaria animata	0
+3	4	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	501	1134	Hypochthoniidae,Oppiidae,Phrynidae	BSCRO428-24_r_1.3_s_50	Tegenaria animata	0
+5	6	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	465	1065	Hypochthoniidae,Oppiidae,Phrynidae	BSCRO428-24_r_1.3_s_100	Tegenaria animata	0
+2	2	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	206	765		BSCRO428-24_r_1.5_s_50	Tegenaria animata	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	179	705		BSCRO428-24_r_1.5_s_100	Tegenaria animata	0
+None	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Agelenidae	BLAST	family	None	0		BSCRO429-24_r_1_s_50	Histopona conveniens	0
+None	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Agelenidae	BLAST	family	None	0		BSCRO429-24_r_1_s_100	Histopona conveniens	0
+None	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Agelenidae	BLAST	family	None	0		BSCRO429-24_r_1.3_s_50	Histopona conveniens	0
+None	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Agelenidae	BLAST	family	None	0		BSCRO429-24_r_1.3_s_100	Histopona conveniens	0
+None	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Agelenidae	BLAST	family	None	0		BSCRO429-24_r_1.5_s_50	Histopona conveniens	0
+None	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	Local BLAST failed for sequence ''	Agelenidae	BLAST	family	None	0		BSCRO429-24_r_1.5_s_100	Histopona conveniens	0
+12	64	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1536	Agelenidae,Sparassidae	BSCRO430-24_r_1_s_50	Histopona conveniens	0
+10	23	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1530	Agelenidae,Lycosidae,Salticidae,Selenopidae,Dictynidae	BSCRO430-24_r_1_s_100	Histopona conveniens	0
+9	25	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1530	Araneidae,Tetragnathidae,Agelenidae,Pisauridae,Oxyopidae,Salticidae,Dictynidae	BSCRO430-24_r_1.3_s_50	Histopona conveniens	0
+9	16	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1530	Agelenidae,Pisauridae,Salticidae,Selenopidae,Dictynidae	BSCRO430-24_r_1.3_s_100	Histopona conveniens	0
+4	14	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1425	Agelenidae,Lycosidae,Oxyopidae,Salticidae	BSCRO430-24_r_1.5_s_50	Histopona conveniens	0
+3	8	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1425	Agelenidae,Oxyopidae,Salticidae,Selenopidae	BSCRO430-24_r_1.5_s_100	Histopona conveniens	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1536	Agelenidae,Oxyopidae,Salticidae,Amaurobiidae,Desidae	BSCRO431-24_r_1_s_50	Typhlonesticus absoloni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1530	Agelenidae,Oxyopidae,Salticidae,Amaurobiidae,Desidae	BSCRO431-24_r_1_s_100	Typhlonesticus absoloni	0
+0	2	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1536	Agelenidae,Oxyopidae,Salticidae,Amaurobiidae,Desidae	BSCRO431-24_r_1.3_s_50	Typhlonesticus absoloni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1530	Agelenidae,Oxyopidae,Salticidae,Amaurobiidae,Desidae	BSCRO431-24_r_1.3_s_100	Typhlonesticus absoloni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1530	Agelenidae,Oxyopidae,Salticidae,Amaurobiidae,Desidae	BSCRO431-24_r_1.5_s_50	Typhlonesticus absoloni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1530	Agelenidae,Oxyopidae,Salticidae,Amaurobiidae,Desidae	BSCRO431-24_r_1.5_s_100	Typhlonesticus absoloni	0
+12	39	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	656	1521	Theridiidae,Agelenidae,Lycosidae,Oxyopidae,Amaurobiidae	BSCRO432-24_r_1_s_50	Hadites tegenarioides	0
+5	25	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1515	Theridiidae,Agelenidae,Ctenidae,Lycosidae,Oxyopidae,Salticidae,Sparassidae,Amaurobiidae	BSCRO432-24_r_1_s_100	Hadites tegenarioides	0
+6	19	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1509	Theridiidae,Agelenidae,Pisauridae,Salticidae,Amaurobiidae,Dictynidae,Desidae,Cheiracanthiidae	BSCRO432-24_r_1.3_s_50	Hadites tegenarioides	0
+5	10	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1497	Theridiidae,Agelenidae,Ctenidae,Lycosidae,Salticidae,Sparassidae,Amaurobiidae,Dictynidae,Desidae	BSCRO432-24_r_1.3_s_100	Hadites tegenarioides	0
+6	6	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	639	1389	Theridiidae,Agelenidae,Oxyopidae,Salticidae,Sparassidae,Amaurobiidae,Desidae,Nicodamidae,Cheiracanthiidae	BSCRO432-24_r_1.5_s_50	Hadites tegenarioides	0
+5	5	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	639	1389	Theridiidae,Agelenidae,Oxyopidae,Salticidae,Sparassidae,Amaurobiidae,Desidae,Cheiracanthiidae,Archaeidae	BSCRO432-24_r_1.5_s_100	Hadites tegenarioides	0
+0	27	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	655	1530	Agelenidae,Salticidae	BSCRO433-24_r_1_s_50	Barusia insulana	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	655	1431	Agelenidae,Salticidae	BSCRO433-24_r_1_s_100	Barusia insulana	0
+0	15	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	655	1488	Agelenidae,Salticidae	BSCRO433-24_r_1.3_s_50	Barusia insulana	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	655	1431	Agelenidae,Salticidae	BSCRO433-24_r_1.3_s_100	Barusia insulana	0
+3	4	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	516	1272	Theraphosidae,Deinopidae,Agelenidae,Anyphaenidae	BSCRO433-24_r_1.5_s_50	Barusia insulana	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Leptonetidae	BLAST	family	509	1194	Theraphosidae,Nesticidae,Deinopidae,Agelenidae,Anyphaenidae	BSCRO433-24_r_1.5_s_100	Barusia insulana	0
+5	6	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Agelenidae,Desidae	BSCRO434-24_r_1_s_50	Harpactea rucnerorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Agelenidae,Desidae,Cheiracanthiidae	BSCRO434-24_r_1_s_100	Harpactea rucnerorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Agelenidae,Desidae,Cheiracanthiidae	BSCRO434-24_r_1.3_s_50	Harpactea rucnerorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Agelenidae,Desidae,Cheiracanthiidae	BSCRO434-24_r_1.3_s_100	Harpactea rucnerorum	0
+5	8	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1494	Dysderidae,Periegopidae,Pholcidae,Araneidae,Nesticidae,Agelenidae,Amaurobiidae,Cheiracanthiidae	BSCRO434-24_r_1.5_s_50	Harpactea rucnerorum	0
+4	6	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1395	Dysderidae,Periegopidae,Pholcidae,Araneidae,Nesticidae,Agelenidae,Amaurobiidae,Cheiracanthiidae	BSCRO434-24_r_1.5_s_100	Harpactea rucnerorum	0
+0	8	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	651	1524	Araneidae,Agelenidae	BSCRO435-24_r_1_s_50	Tegenaria animata	0
+0	6	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	651	1524	Araneidae,Agelenidae	BSCRO435-24_r_1_s_100	Tegenaria animata	0
+0	6	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	633	1503	Agelenidae	BSCRO435-24_r_1.3_s_50	Tegenaria animata	0
+0	8	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	633	1503	Agelenidae,Oppiidae	BSCRO435-24_r_1.3_s_100	Tegenaria animata	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	542	1269	Agelenidae	BSCRO435-24_r_1.5_s_50	Tegenaria animata	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	512	1215	Agelenidae	BSCRO435-24_r_1.5_s_100	Tegenaria animata	0
+16	49	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	656	1536	Agelenidae,Salticidae,Sparassidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO436-24_r_1_s_50	Tegenaria annulata	0
+5	27	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	656	1536	Agelenidae,Pisauridae,Oxyopidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO436-24_r_1_s_100	Tegenaria annulata	0
+6	22	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	656	1536	Agelenidae,Pisauridae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO436-24_r_1.3_s_50	Tegenaria annulata	0
+4	19	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	656	1536	Agelenidae,Pisauridae,Salticidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO436-24_r_1.3_s_100	Tegenaria annulata	0
+0	4	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1536	Araneidae,Theridiidae,Agelenidae,Pisauridae,Oxyopidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO436-24_r_1.5_s_50	Tegenaria annulata	0
+0	4	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1536	Theridiidae,Agelenidae,Pisauridae,Oxyopidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO436-24_r_1.5_s_100	Tegenaria annulata	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1536	Nesticidae,Nephilidae	BSCRO437-24_r_1_s_50	Kryptonesticus deelemanae	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1536	Nesticidae,Nephilidae	BSCRO437-24_r_1_s_100	Kryptonesticus deelemanae	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1512	Nesticidae,Nephilidae	BSCRO437-24_r_1.3_s_50	Kryptonesticus deelemanae	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1506	Nesticidae,Nephilidae	BSCRO437-24_r_1.3_s_100	Kryptonesticus deelemanae	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1428	Nesticidae,Linyphiidae	BSCRO437-24_r_1.5_s_50	Kryptonesticus deelemanae	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1428	Nesticidae,Linyphiidae	BSCRO437-24_r_1.5_s_100	Kryptonesticus deelemanae	0
+0	39	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	552	1380		BSCRO438-24_r_1_s_50	Harpactea damini	0
+0	35	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	552	1359	Oppiidae	BSCRO438-24_r_1_s_100	Harpactea damini	0
+2	5	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	411	1086	Argasidae,Pionidae,Oppiidae	BSCRO438-24_r_1.3_s_50	Harpactea damini	0
+2	3	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	405	948	Argasidae,Pionidae,Oppiidae	BSCRO438-24_r_1.3_s_100	Harpactea damini	0
+0	2	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	169	678	Pionidae,Oppiidae	BSCRO438-24_r_1.5_s_50	Harpactea damini	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	169	618	Pionidae,Oppiidae	BSCRO438-24_r_1.5_s_100	Harpactea damini	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1533	Tetragnathidae,Nephilidae,Agelenidae,Oxyopidae,Salticidae,Amaurobiidae,Cheiracanthiidae	BSCRO439-24_r_1_s_50	Tegenaria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1533	Tetragnathidae,Nephilidae,Agelenidae,Oxyopidae,Salticidae,Amaurobiidae,Cheiracanthiidae	BSCRO439-24_r_1_s_100	Tegenaria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1533	Tetragnathidae,Nephilidae,Agelenidae,Oxyopidae,Salticidae,Amaurobiidae,Cheiracanthiidae	BSCRO439-24_r_1.3_s_50	Tegenaria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1533	Tetragnathidae,Nephilidae,Agelenidae,Oxyopidae,Salticidae,Amaurobiidae,Cheiracanthiidae	BSCRO439-24_r_1.3_s_100	Tegenaria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1533	Tetragnathidae,Nephilidae,Agelenidae,Oxyopidae,Salticidae,Amaurobiidae,Cheiracanthiidae	BSCRO439-24_r_1.5_s_50	Tegenaria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1533	Tetragnathidae,Nephilidae,Agelenidae,Oxyopidae,Salticidae,Amaurobiidae,Cheiracanthiidae	BSCRO439-24_r_1.5_s_100	Tegenaria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1536	Nesticidae	BSCRO440-24_r_1_s_50	Kryptonesticus arenstorffi	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1536	Nesticidae	BSCRO440-24_r_1_s_100	Kryptonesticus arenstorffi	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1521	Nesticidae	BSCRO440-24_r_1.3_s_50	Kryptonesticus arenstorffi	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1518	Nesticidae	BSCRO440-24_r_1.3_s_100	Kryptonesticus arenstorffi	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1428	Nesticidae	BSCRO440-24_r_1.5_s_50	Kryptonesticus arenstorffi	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1425	Nesticidae	BSCRO440-24_r_1.5_s_100	Kryptonesticus arenstorffi	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zoropsidae	BLAST	family	657	1533	Lycosidae,Oxyopidae,Zoropsidae,Salticidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO441-24_r_1_s_50	Zoropsis oertzeni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zoropsidae	BLAST	family	657	1533	Lycosidae,Oxyopidae,Zoropsidae,Salticidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO441-24_r_1_s_100	Zoropsis oertzeni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zoropsidae	BLAST	family	657	1533	Lycosidae,Oxyopidae,Zoropsidae,Salticidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO441-24_r_1.3_s_50	Zoropsis oertzeni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zoropsidae	BLAST	family	657	1533	Lycosidae,Oxyopidae,Zoropsidae,Salticidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO441-24_r_1.3_s_100	Zoropsis oertzeni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zoropsidae	BLAST	family	657	1533	Lycosidae,Oxyopidae,Zoropsidae,Salticidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO441-24_r_1.5_s_50	Zoropsis oertzeni	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Zoropsidae	BLAST	family	657	1533	Lycosidae,Oxyopidae,Zoropsidae,Salticidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO441-24_r_1.5_s_100	Zoropsis oertzeni	0
+17	49	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Nemesiidae,Dysderidae,Ochyroceratidae,Dictynidae	BSCRO442-24_r_1_s_50	Stalagtia	0
+21	51	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Nemesiidae,Dysderidae,Ochyroceratidae,Dictynidae	BSCRO442-24_r_1_s_100	Stalagtia	0
+1	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Nemesiidae,Dysderidae	BSCRO442-24_r_1.3_s_50	Stalagtia	0
+1	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae	BSCRO442-24_r_1.3_s_100	Stalagtia	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1452	Nemesiidae,Dysderidae	BSCRO442-24_r_1.5_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1452	Nemesiidae,Dysderidae	BSCRO442-24_r_1.5_s_100	Stalagtia	0
+20	48	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Anapidae	BLAST	family	657	1536	Araneidae,Tetragnathidae,Linyphiidae,Anapidae,Nephilidae,Lycosidae,Salticidae,Amaurobiidae	BSCRO443-24_r_1_s_50	Zangherella	0
+8	22	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Anapidae	BLAST	family	657	1515	Araneidae,Tetragnathidae,Anapidae,Nephilidae,Lycosidae,Salticidae,Amaurobiidae	BSCRO443-24_r_1_s_100	Zangherella	0
+5	29	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Anapidae	BLAST	family	657	1503	Araneidae,Tetragnathidae,Anapidae,Nephilidae,Lycosidae,Salticidae,Amaurobiidae	BSCRO443-24_r_1.3_s_50	Zangherella	0
+5	20	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Anapidae	BLAST	family	657	1500	Araneidae,Tetragnathidae,Linyphiidae,Anapidae,Nephilidae,Lycosidae,Amaurobiidae	BSCRO443-24_r_1.3_s_100	Zangherella	0
+3	6	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Anapidae	BLAST	family	639	1425	Araneidae,Tetragnathidae,Nephilidae,Lycosidae,Oxyopidae,Amaurobiidae	BSCRO443-24_r_1.5_s_50	Zangherella	0
+3	6	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Anapidae	BLAST	family	639	1383	Araneidae,Tetragnathidae,Nephilidae,Lycosidae,Oxyopidae	BSCRO443-24_r_1.5_s_100	Zangherella	0
+6	31	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Anapidae	BLAST	family	657	1521	Araneidae,Tetragnathidae,Theridiidae,Linyphiidae,Nephilidae,Lycosidae	BSCRO444-24_r_1_s_50	Zangherella	0
+8	20	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Anapidae	BLAST	family	657	1455	Araneidae,Tetragnathidae,Linyphiidae,Nephilidae,Agelenidae,Lycosidae,Salticidae	BSCRO444-24_r_1_s_100	Zangherella	0
+6	16	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Anapidae	BLAST	family	657	1422	Araneidae,Tetragnathidae,Theridiidae,Nephilidae,Lycosidae,Amaurobiidae	BSCRO444-24_r_1.3_s_50	Zangherella	0
+8	13	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Anapidae	BLAST	family	657	1365	Araneidae,Tetragnathidae,Theridiidae,Linyphiidae,Nephilidae,Lycosidae,Salticidae	BSCRO444-24_r_1.3_s_100	Zangherella	0
+3	7	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Anapidae	BLAST	family	657	1353	Araneidae,Pisauridae,Amaurobiidae,Dictynidae	BSCRO444-24_r_1.5_s_50	Zangherella	0
+3	4	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Anapidae	BLAST	family	657	1347	Araneidae,Pisauridae,Amaurobiidae,Dictynidae	BSCRO444-24_r_1.5_s_100	Zangherella	0
+1	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1536	Nesticidae,Nephilidae	BSCRO445-24_r_1_s_50	Kryptonesticus deelemanae	0
+1	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1536	Nesticidae,Nephilidae	BSCRO445-24_r_1_s_100	Kryptonesticus deelemanae	0
+1	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1461	Nesticidae,Linyphiidae	BSCRO445-24_r_1.3_s_50	Kryptonesticus deelemanae	0
+1	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1419	Nesticidae,Nephilidae	BSCRO445-24_r_1.3_s_100	Kryptonesticus deelemanae	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	648	1410	Nesticidae,Deinopidae	BSCRO445-24_r_1.5_s_50	Kryptonesticus deelemanae	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	648	1410	Nesticidae,Deinopidae	BSCRO445-24_r_1.5_s_100	Kryptonesticus deelemanae	0
+22	26	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiracanthiidae	BLAST	family	656	1521	Lycosidae,Salticidae,Cheiracanthiidae	BSCRO446-24_r_1_s_50	Cheiracanthium effossum	0
+24	26	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiracanthiidae	BLAST	family	657	1479	Nephilidae,Lycosidae,Salticidae,Cheiracanthiidae	BSCRO446-24_r_1_s_100	Cheiracanthium effossum	0
+4	7	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiracanthiidae	BLAST	family	635	1464	Lycosidae,Anyphaenidae,Selenopidae,Cheiracanthiidae	BSCRO446-24_r_1.3_s_50	Cheiracanthium effossum	0
+7	7	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiracanthiidae	BLAST	family	621	1374	Salticidae,Anyphaenidae,Selenopidae,Cheiracanthiidae	BSCRO446-24_r_1.3_s_100	Cheiracanthium effossum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiracanthiidae	BLAST	family	636	1371	Araneidae,Salticidae,Cheiracanthiidae	BSCRO446-24_r_1.5_s_50	Cheiracanthium effossum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Cheiracanthiidae	BLAST	family	621	1281	Lycosidae,Salticidae,Anyphaenidae,Cheiracanthiidae	BSCRO446-24_r_1.5_s_100	Cheiracanthium effossum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1536	Nesticidae,Nephilidae	BSCRO447-24_r_1_s_50	Kryptonesticus deelemanae	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1536	Nesticidae,Nephilidae	BSCRO447-24_r_1_s_100	Kryptonesticus deelemanae	0
+0	12	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1497	Nesticidae,Linyphiidae	BSCRO447-24_r_1.3_s_50	Kryptonesticus deelemanae	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1425	Nesticidae,Linyphiidae	BSCRO447-24_r_1.3_s_100	Kryptonesticus deelemanae	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1386	Nesticidae,Linyphiidae	BSCRO447-24_r_1.5_s_50	Kryptonesticus deelemanae	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1386	Nesticidae,Linyphiidae	BSCRO447-24_r_1.5_s_100	Kryptonesticus deelemanae	0
+0	2	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Linyphiidae,Sparassidae,Amaurobiidae,Desidae	BSCRO448-24_r_1_s_50	Palliduphantes istrianus	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Linyphiidae,Agelenidae,Amaurobiidae,Desidae	BSCRO448-24_r_1_s_100	Palliduphantes istrianus	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Linyphiidae,Agelenidae,Amaurobiidae,Desidae	BSCRO448-24_r_1.3_s_50	Palliduphantes istrianus	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Linyphiidae,Agelenidae,Amaurobiidae,Desidae	BSCRO448-24_r_1.3_s_100	Palliduphantes istrianus	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Linyphiidae,Agelenidae,Amaurobiidae,Desidae	BSCRO448-24_r_1.5_s_50	Palliduphantes istrianus	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Linyphiidae,Agelenidae,Amaurobiidae,Desidae	BSCRO448-24_r_1.5_s_100	Palliduphantes istrianus	0
+9	11	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	552	1479		BSCRO449-24_r_1_s_50	Stalagtia skadarensis	0
+9	10	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	552	1395		BSCRO449-24_r_1_s_100	Stalagtia skadarensis	0
+1	3	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	437	1098		BSCRO449-24_r_1.3_s_50	Stalagtia skadarensis	0
+1	2	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	371	984		BSCRO449-24_r_1.3_s_100	Stalagtia skadarensis	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	163	516		BSCRO449-24_r_1.5_s_50	Stalagtia skadarensis	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	157	402		BSCRO449-24_r_1.5_s_100	Stalagtia skadarensis	0
+16	39	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	651	1449	Oppiidae	BSCRO450-24_r_1_s_50	Stalagtia skadarensis	0
+18	28	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	651	1422	Oppiidae	BSCRO450-24_r_1_s_100	Stalagtia skadarensis	0
+0	11	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1311	Anyphaenidae,Dictynidae,Oppiidae	BSCRO450-24_r_1.3_s_50	Stalagtia skadarensis	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1305	Anyphaenidae,Dictynidae,Oppiidae	BSCRO450-24_r_1.3_s_100	Stalagtia skadarensis	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	378	765	Hypochthoniidae,Oppiidae,Phrynidae	BSCRO450-24_r_1.5_s_50	Stalagtia skadarensis	0
+0	3	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	372	660	Hypochthoniidae,Oppiidae,Phrynidae	BSCRO450-24_r_1.5_s_100	Stalagtia skadarensis	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1530	Araneidae,Linyphiidae,Agelenidae,Sparassidae,Desidae	BSCRO451-24_r_1_s_50	Typhlonyphia reimoseri	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1530	Araneidae,Linyphiidae,Agelenidae,Sparassidae,Desidae	BSCRO451-24_r_1_s_100	Typhlonyphia reimoseri	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1530	Araneidae,Linyphiidae,Agelenidae,Sparassidae,Desidae	BSCRO451-24_r_1.3_s_50	Typhlonyphia reimoseri	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1530	Araneidae,Linyphiidae,Agelenidae,Sparassidae,Desidae	BSCRO451-24_r_1.3_s_100	Typhlonyphia reimoseri	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1530	Araneidae,Linyphiidae,Agelenidae,Sparassidae,Desidae	BSCRO451-24_r_1.5_s_50	Typhlonyphia reimoseri	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1530	Araneidae,Linyphiidae,Agelenidae,Sparassidae,Desidae	BSCRO451-24_r_1.5_s_100	Typhlonyphia reimoseri	0
+3	3	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1536	Nesticidae,Nephilidae	BSCRO452-24_r_1_s_50	Kryptonesticus deelemanae	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1536	Nesticidae,Nephilidae	BSCRO452-24_r_1_s_100	Kryptonesticus deelemanae	0
+3	13	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1518	Nesticidae,Nephilidae	BSCRO452-24_r_1.3_s_50	Kryptonesticus deelemanae	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1476	Nesticidae,Linyphiidae,Nephilidae	BSCRO452-24_r_1.3_s_100	Kryptonesticus deelemanae	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1425	Nesticidae,Linyphiidae	BSCRO452-24_r_1.5_s_50	Kryptonesticus deelemanae	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Nesticidae	BLAST	family	657	1425	Nesticidae,Linyphiidae	BSCRO452-24_r_1.5_s_100	Kryptonesticus deelemanae	0
+0	7	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae	BSCRO453-24_r_1_s_50	Dysdera dubrovninnii	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae	BSCRO453-24_r_1_s_100	Dysdera dubrovninnii	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae	BSCRO453-24_r_1.3_s_50	Dysdera dubrovninnii	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae	BSCRO453-24_r_1.3_s_100	Dysdera dubrovninnii	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1467	Dysderidae	BSCRO453-24_r_1.5_s_50	Dysdera dubrovninnii	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1461	Dysderidae	BSCRO453-24_r_1.5_s_100	Dysdera dubrovninnii	0
+66	69	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	643	1455		BSCRO454-24_r_1_s_50	Palliduphantes istrianus	0
+53	53	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	642	1410		BSCRO454-24_r_1_s_100	Palliduphantes istrianus	0
+13	15	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	564	1248	Oppiidae	BSCRO454-24_r_1.3_s_50	Palliduphantes istrianus	0
+15	15	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	539	1209	Ixodidae,Oppiidae	BSCRO454-24_r_1.3_s_100	Palliduphantes istrianus	0
+4	6	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	434	975	Oppiidae	BSCRO454-24_r_1.5_s_50	Palliduphantes istrianus	0
+9	9	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	407	858	Oppiidae	BSCRO454-24_r_1.5_s_100	Palliduphantes istrianus	0
+1	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Oxyopidae,Amaurobiidae	BSCRO455-24_r_1_s_50	Porrhomma egeria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Oxyopidae,Amaurobiidae	BSCRO455-24_r_1_s_100	Porrhomma egeria	0
+2	2	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Oxyopidae,Amaurobiidae	BSCRO455-24_r_1.3_s_50	Porrhomma egeria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Oxyopidae,Amaurobiidae	BSCRO455-24_r_1.3_s_100	Porrhomma egeria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Oxyopidae,Amaurobiidae	BSCRO455-24_r_1.5_s_50	Porrhomma egeria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1518	Araneidae,Theridiidae,Linyphiidae,Nephilidae,Oxyopidae,Amaurobiidae	BSCRO455-24_r_1.5_s_100	Porrhomma egeria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Linyphiidae,Agelenidae,Amaurobiidae,Desidae	BSCRO456-24_r_1_s_50	Palliduphantes spelaeorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Linyphiidae,Agelenidae,Amaurobiidae,Desidae	BSCRO456-24_r_1_s_100	Palliduphantes spelaeorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Linyphiidae,Agelenidae,Amaurobiidae,Desidae	BSCRO456-24_r_1.3_s_50	Palliduphantes spelaeorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Linyphiidae,Agelenidae,Amaurobiidae,Desidae	BSCRO456-24_r_1.3_s_100	Palliduphantes spelaeorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Linyphiidae,Agelenidae,Amaurobiidae,Desidae	BSCRO456-24_r_1.5_s_50	Palliduphantes spelaeorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Linyphiidae,Agelenidae,Amaurobiidae,Desidae	BSCRO456-24_r_1.5_s_100	Palliduphantes spelaeorum	0
+7	18	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Agelenidae,Salticidae,Nicodamidae	BSCRO457-24_r_1_s_50	Harpactea	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1527	Dysderidae,Agelenidae,Salticidae,Desidae,Cheiracanthiidae	BSCRO457-24_r_1_s_100	Harpactea	0
+0	7	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1527	Dysderidae,Agelenidae,Salticidae,Desidae,Cheiracanthiidae	BSCRO457-24_r_1.3_s_50	Harpactea	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1488	Dysderidae,Agelenidae,Salticidae,Cheiracanthiidae	BSCRO457-24_r_1.3_s_100	Harpactea	0
+0	4	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	641	1479	Dysderidae,Theridiidae,Lycosidae,Salticidae,Amaurobiidae,Nicodamidae	BSCRO457-24_r_1.5_s_50	Harpactea	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	641	1407	Dysderidae,Salticidae	BSCRO457-24_r_1.5_s_100	Harpactea	0
+0	5	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Periegopidae,Diguetidae	BSCRO458-24_r_1_s_50	Dasumia amoena	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Periegopidae,Desidae	BSCRO458-24_r_1_s_100	Dasumia amoena	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Periegopidae,Diguetidae,Desidae	BSCRO458-24_r_1.3_s_50	Dasumia amoena	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Periegopidae,Desidae	BSCRO458-24_r_1.3_s_100	Dasumia amoena	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1428	Dysderidae,Periegopidae,Diguetidae,Desidae	BSCRO458-24_r_1.5_s_50	Dasumia amoena	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1395	Dysderidae,Periegopidae,Desidae	BSCRO458-24_r_1.5_s_100	Dasumia amoena	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Periegopidae,Diguetidae,Desidae	BSCRO459-24_r_1_s_50	Dasumia amoena	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Periegopidae,Desidae	BSCRO459-24_r_1_s_100	Dasumia amoena	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Periegopidae,Diguetidae,Desidae	BSCRO459-24_r_1.3_s_50	Dasumia amoena	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Periegopidae,Desidae	BSCRO459-24_r_1.3_s_100	Dasumia amoena	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1491	Dysderidae,Periegopidae,Diguetidae,Desidae	BSCRO459-24_r_1.5_s_50	Dasumia amoena	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1389	Dysderidae,Periegopidae,Desidae	BSCRO459-24_r_1.5_s_100	Dasumia amoena	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1533	Araneidae,Linyphiidae,Nephilidae,Oxyopidae,Amaurobiidae,Cheiracanthiidae	BSCRO460-24_r_1_s_50	Troglohyphantes croaticus	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1524	Araneidae,Linyphiidae,Nephilidae,Oxyopidae,Amaurobiidae,Cheiracanthiidae	BSCRO460-24_r_1_s_100	Troglohyphantes croaticus	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1533	Araneidae,Linyphiidae,Nephilidae,Oxyopidae,Amaurobiidae,Cheiracanthiidae	BSCRO460-24_r_1.3_s_50	Troglohyphantes croaticus	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1524	Araneidae,Linyphiidae,Nephilidae,Oxyopidae,Amaurobiidae,Cheiracanthiidae	BSCRO460-24_r_1.3_s_100	Troglohyphantes croaticus	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1533	Araneidae,Linyphiidae,Nephilidae,Oxyopidae,Amaurobiidae,Cheiracanthiidae	BSCRO460-24_r_1.5_s_50	Troglohyphantes croaticus	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1515	Araneidae,Linyphiidae,Nephilidae,Oxyopidae,Amaurobiidae,Cheiracanthiidae	BSCRO460-24_r_1.5_s_100	Troglohyphantes croaticus	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Segestriidae,Dysderidae,Pholcidae,Nesticidae,Agelenidae,Salticidae	BSCRO461-24_r_1_s_50	Harpactea rucnerorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1527	Segestriidae,Dysderidae,Pholcidae,Nesticidae,Agelenidae,Salticidae	BSCRO461-24_r_1_s_100	Harpactea rucnerorum	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1527	Segestriidae,Dysderidae,Pholcidae,Nesticidae,Agelenidae,Salticidae	BSCRO461-24_r_1.3_s_50	Harpactea rucnerorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1527	Segestriidae,Dysderidae,Pholcidae,Nesticidae,Agelenidae,Salticidae	BSCRO461-24_r_1.3_s_100	Harpactea rucnerorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1473	Segestriidae,Dysderidae,Pholcidae,Nesticidae,Agelenidae,Salticidae	BSCRO461-24_r_1.5_s_50	Harpactea rucnerorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1455	Segestriidae,Dysderidae,Pholcidae,Nesticidae,Agelenidae,Salticidae	BSCRO461-24_r_1.5_s_100	Harpactea rucnerorum	0
+20	32	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	654	1492		BSCRO462-24_r_1_s_50	Folkia	0
+4	13	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	654	1491	Limnesiidae	BSCRO462-24_r_1_s_100	Folkia	0
+0	28	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	565	1212		BSCRO462-24_r_1.3_s_50	Folkia	0
+0	12	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	545	1179	Araneidae,Theridiidae,Lycosidae,Thomisidae,Oppiidae	BSCRO462-24_r_1.3_s_100	Folkia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	182	717		BSCRO462-24_r_1.5_s_50	Folkia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	182	603		BSCRO462-24_r_1.5_s_100	Folkia	0
+9	18	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	645	1461		BSCRO463-24_r_1_s_50	Stalagtia	0
+9	15	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	645	1416		BSCRO463-24_r_1_s_100	Stalagtia	0
+0	3	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	471	1161		BSCRO463-24_r_1.3_s_50	Stalagtia	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	471	1161		BSCRO463-24_r_1.3_s_100	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	162	738		BSCRO463-24_r_1.5_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	158	639		BSCRO463-24_r_1.5_s_100	Stalagtia	0
+0	2	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1533	Theridiidae,Agelenidae,Pisauridae,Oxyopidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO464-24_r_1_s_50	Palliduphantes istrianus	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1524	Theridiidae,Agelenidae,Pisauridae,Oxyopidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO464-24_r_1_s_100	Palliduphantes istrianus	0
+0	2	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1533	Theridiidae,Agelenidae,Pisauridae,Oxyopidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO464-24_r_1.3_s_50	Palliduphantes istrianus	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1524	Araneidae,Theridiidae,Agelenidae,Pisauridae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO464-24_r_1.3_s_100	Palliduphantes istrianus	0
+0	4	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1524	Tetragnathidae,Theridiidae,Pisauridae,Oxyopidae,Salticidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO464-24_r_1.5_s_50	Palliduphantes istrianus	0
+9	10	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	657	1476	Tetragnathidae,Theridiidae,Agelenidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO464-24_r_1.5_s_100	Palliduphantes istrianus	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1533	Araneidae,Linyphiidae,Agelenidae,Salticidae,Desidae	BSCRO465-24_r_1_s_50	Palliduphantes brignolii	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Araneidae,Linyphiidae,Agelenidae,Salticidae,Desidae	BSCRO465-24_r_1_s_100	Palliduphantes brignolii	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Araneidae,Linyphiidae,Agelenidae,Salticidae,Desidae	BSCRO465-24_r_1.3_s_50	Palliduphantes brignolii	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Araneidae,Linyphiidae,Agelenidae,Salticidae,Desidae	BSCRO465-24_r_1.3_s_100	Palliduphantes brignolii	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Araneidae,Linyphiidae,Agelenidae,Salticidae,Desidae	BSCRO465-24_r_1.5_s_50	Palliduphantes brignolii	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Araneidae,Linyphiidae,Agelenidae,Salticidae,Desidae	BSCRO465-24_r_1.5_s_100	Palliduphantes brignolii	0
+12	58	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Araneidae,Pimoidae,Deinopidae,Agelenidae,Hypochilidae	BSCRO466-24_r_1_s_50	Harpactea rucnerorum	0
+1	9	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1527	Dysderidae,Linyphiidae,Pisauridae,Salticidae,Dictynidae	BSCRO466-24_r_1_s_100	Harpactea rucnerorum	0
+2	19	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Araneidae,Nesticidae,Linyphiidae,Uloboridae,Agelenidae	BSCRO466-24_r_1.3_s_50	Harpactea rucnerorum	0
+0	3	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1518	Segestriidae,Dysderidae,Linyphiidae,Pisauridae,Salticidae,Dictynidae	BSCRO466-24_r_1.3_s_100	Harpactea rucnerorum	0
+2	12	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1443	Dysderidae,Pholcidae,Linyphiidae,Dictynidae,Cheiracanthiidae	BSCRO466-24_r_1.5_s_50	Harpactea rucnerorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	620	1350	Dysderidae,Leptonetidae,Araneidae,Deinopidae,Corinnidae,Hypochilidae	BSCRO466-24_r_1.5_s_100	Harpactea rucnerorum	0
+0	12	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	656	1533	Nemesiidae,Dysderidae,Periegopidae,Desidae	BSCRO467-24_r_1_s_50	Tegenaria annulata	0
+0	4	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	656	1530	Nemesiidae,Dysderidae,Periegopidae,Desidae	BSCRO467-24_r_1_s_100	Tegenaria annulata	0
+0	3	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	656	1533	Nemesiidae,Dysderidae,Periegopidae,Desidae	BSCRO467-24_r_1.3_s_50	Tegenaria annulata	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	656	1533	Nemesiidae,Dysderidae,Periegopidae,Desidae	BSCRO467-24_r_1.3_s_100	Tegenaria annulata	0
+0	2	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	656	1533	Nemesiidae,Dysderidae,Periegopidae,Desidae	BSCRO467-24_r_1.5_s_50	Tegenaria annulata	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	656	1533	Nemesiidae,Dysderidae,Periegopidae,Desidae	BSCRO467-24_r_1.5_s_100	Tegenaria annulata	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1536	Theridiidae,Agelenidae,Pisauridae,Oxyopidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO468-24_r_1_s_50	Histopona conveniens	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1536	Theridiidae,Agelenidae,Pisauridae,Oxyopidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO468-24_r_1_s_100	Histopona conveniens	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1536	Theridiidae,Agelenidae,Pisauridae,Oxyopidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO468-24_r_1.3_s_50	Histopona conveniens	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1536	Theridiidae,Agelenidae,Pisauridae,Oxyopidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO468-24_r_1.3_s_100	Histopona conveniens	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1521	Theridiidae,Agelenidae,Pisauridae,Oxyopidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO468-24_r_1.5_s_50	Histopona conveniens	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1521	Theridiidae,Agelenidae,Pisauridae,Oxyopidae,Amaurobiidae,Desidae,Cheiracanthiidae	BSCRO468-24_r_1.5_s_100	Histopona conveniens	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1533	Araneidae,Linyphiidae,Agelenidae,Salticidae,Desidae,Cheiracanthiidae	BSCRO469-24_r_1_s_50	Palliduphantes spelaeorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Araneidae,Linyphiidae,Agelenidae,Salticidae,Desidae	BSCRO469-24_r_1_s_100	Palliduphantes spelaeorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1530	Araneidae,Linyphiidae,Agelenidae,Salticidae,Desidae	BSCRO469-24_r_1.3_s_50	Palliduphantes spelaeorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Araneidae,Linyphiidae,Agelenidae,Salticidae,Desidae	BSCRO469-24_r_1.3_s_100	Palliduphantes spelaeorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Araneidae,Linyphiidae,Agelenidae,Salticidae,Desidae	BSCRO469-24_r_1.5_s_50	Palliduphantes spelaeorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1503	Araneidae,Linyphiidae,Agelenidae,Salticidae,Desidae	BSCRO469-24_r_1.5_s_100	Palliduphantes spelaeorum	0
+3	14	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae	BSCRO470-24_r_1_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1530	Dysderidae,Araneidae	BSCRO470-24_r_1_s_100	Stalagtia	0
+0	10	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1500	Dysderidae	BSCRO470-24_r_1.3_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	656	1452	Dysderidae,Araneidae	BSCRO470-24_r_1.3_s_100	Stalagtia	0
+0	2	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	650	1383	Segestriidae,Dysderidae,Ochyroceratidae,Nesticidae,Deinopidae	BSCRO470-24_r_1.5_s_50	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	635	1365	Theraphosidae,Nemesiidae,Antrodiaetidae,Segestriidae,Dysderidae	BSCRO470-24_r_1.5_s_100	Stalagtia	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1536	Tetragnathidae,Theridiidae,Nephilidae,Agelenidae,Salticidae,Desidae,Cheiracanthiidae	BSCRO471-24_r_1_s_50	Tegenaria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1533	Tetragnathidae,Theridiidae,Nephilidae,Agelenidae,Salticidae,Desidae,Cheiracanthiidae	BSCRO471-24_r_1_s_100	Tegenaria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1533	Tetragnathidae,Theridiidae,Nephilidae,Agelenidae,Salticidae,Desidae,Cheiracanthiidae	BSCRO471-24_r_1.3_s_50	Tegenaria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1533	Tetragnathidae,Theridiidae,Nephilidae,Agelenidae,Salticidae,Desidae,Cheiracanthiidae	BSCRO471-24_r_1.3_s_100	Tegenaria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1533	Tetragnathidae,Theridiidae,Nephilidae,Agelenidae,Salticidae,Desidae,Cheiracanthiidae	BSCRO471-24_r_1.5_s_50	Tegenaria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	657	1533	Tetragnathidae,Theridiidae,Nephilidae,Agelenidae,Salticidae,Desidae,Cheiracanthiidae	BSCRO471-24_r_1.5_s_100	Tegenaria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1533	Linyphiidae,Agelenidae,Amaurobiidae,Desidae	BSCRO472-24_r_1_s_50	Palliduphantes spelaeorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Linyphiidae,Agelenidae,Amaurobiidae,Desidae	BSCRO472-24_r_1_s_100	Palliduphantes spelaeorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1530	Linyphiidae,Agelenidae,Amaurobiidae,Desidae	BSCRO472-24_r_1.3_s_50	Palliduphantes spelaeorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Linyphiidae,Agelenidae,Amaurobiidae,Desidae	BSCRO472-24_r_1.3_s_100	Palliduphantes spelaeorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Linyphiidae,Agelenidae,Amaurobiidae,Desidae	BSCRO472-24_r_1.5_s_50	Palliduphantes spelaeorum	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Linyphiidae	BLAST	family	656	1524	Linyphiidae,Agelenidae,Amaurobiidae,Desidae	BSCRO472-24_r_1.5_s_100	Palliduphantes spelaeorum	0
+27	35	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	654	1419	Oppiidae	BSCRO473-24_r_1_s_50	Histopona conveniens	0
+16	22	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	651	1416	Oppiidae	BSCRO473-24_r_1_s_100	Histopona conveniens	0
+2	7	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	613	1245	Oppiidae	BSCRO473-24_r_1.3_s_50	Histopona conveniens	0
+1	4	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	584	1215	Ixodidae,Oppiidae	BSCRO473-24_r_1.3_s_100	Histopona conveniens	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	377	792	Phytoseiidae,Tetranychidae,Hypochthoniidae,Oppiidae,Selenoribatidae,Eremaeidae,Scutoverticidae	BSCRO473-24_r_1.5_s_50	Histopona conveniens	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	177	645	Phytoseiidae,Tetranychidae,Hypochthoniidae,Oppiidae,Selenoribatidae,Eremaeidae,Scutoverticidae	BSCRO473-24_r_1.5_s_100	Histopona conveniens	0
+4	27	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	651	1524		BSCRO474-24_r_1_s_50	Dasumia amoena	0
+4	23	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	651	1524		BSCRO474-24_r_1_s_100	Dasumia amoena	0
+0	12	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	629	1326	Segestriidae,Dysderidae,Araneidae,Salticidae,Amaurobiidae,Cheiracanthiidae	BSCRO474-24_r_1.3_s_50	Dasumia amoena	0
+0	10	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	590	1239	Segestriidae,Dysderidae,Salticidae,Amaurobiidae,Cheiracanthiidae,Hypochilidae	BSCRO474-24_r_1.3_s_100	Dasumia amoena	0
+0	7	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	267	1020	Theraphosidae,Dysderidae	BSCRO474-24_r_1.5_s_50	Dasumia amoena	0
+0	5	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Dysderidae	BLAST	family	267	1020	Theraphosidae,Dysderidae,Agelenidae	BSCRO474-24_r_1.5_s_100	Dasumia amoena	0
+1	18	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	651	1398	Araneidae,Agelenidae	BSCRO475-24_r_1_s_50	Tegenaria	0
+0	15	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	651	1398	Araneidae,Agelenidae	BSCRO475-24_r_1_s_100	Tegenaria	0
+4	5	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	627	1272	Agelenidae,Oppiidae	BSCRO475-24_r_1.3_s_50	Tegenaria	0
+1	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	624	1269	Agelenidae,Oppiidae	BSCRO475-24_r_1.3_s_100	Tegenaria	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	509	885	Nephilidae,Agelenidae,Oppiidae	BSCRO475-24_r_1.5_s_50	Tegenaria	0
+0	0	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	None	Agelenidae	BLAST	family	506	717	Tetragnathidae,Nephilidae,Agelenidae,Pisauridae,Dictynidae,Desidae,Oppiidae	BSCRO475-24_r_1.5_s_100	Tegenaria	0
+8	27	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00512-NC not in BOLD	None	BLAST	family	651	1503		BGE00512-NC_r_1_s_50	None	0
+3	23	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00512-NC not in BOLD	None	BLAST	family	651	1446		BGE00512-NC_r_1_s_100	None	0
+8	17	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00512-NC not in BOLD	None	BLAST	family	563	1293		BGE00512-NC_r_1.3_s_50	None	0
+0	5	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00512-NC not in BOLD	None	BLAST	family	482	1212		BGE00512-NC_r_1.3_s_100	None	0
+1	2	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00512-NC not in BOLD	None	BLAST	family	455	1047		BGE00512-NC_r_1.5_s_50	None	0
+0	1	data/BGE00512_MGE-BGE_r1_1.3_1.5_s50_100.fasta	BGE00512-NC not in BOLD	None	BLAST	family	262	894		BGE00512-NC_r_1.5_s_100	None	0
