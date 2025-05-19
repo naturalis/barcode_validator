@@ -1,0 +1,308 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Libellulidae	BLAST	family	661	664	Cicadellidae,Sciaridae,Agromyzidae,Anthomyiidae,Chrysopidae	BIOSC2377-25_consensus231	Libellula quadrimaculata	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Libellulidae	BLAST	family	662	664	Aeshnidae,Sciaridae,Culicidae,Hybotidae	BIOSC2377-25_consensus6	Libellula quadrimaculata	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Libellulidae	BLAST	family	663	664	Cicadellidae,Mycetophilidae,Cossidae	BIOSC2377-25_consensus39	Libellula quadrimaculata	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Libellulidae	BLAST	family	662	664	Sciaridae,Chironomidae	BIOSC2377-25_consensus55	Libellula quadrimaculata	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Libellulidae	BLAST	family	603	649	Platystictidae,Cicadellidae	BIOSC2377-25_consensus283	Libellula quadrimaculata	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Libellulidae	BLAST	family	659	664	Baetidae,Braconidae	BIOSC2377-25_consensus3	Libellula quadrimaculata	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Naucoridae	BLAST	family	646	647	Notonectidae,Nepidae,Reduviidae	BIOSC2378-25_consensus0	Ilyocoris cimicoides	6
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Naucoridae	BLAST	family	663	670	Notonectidae	BIOSC2378-25_consensus2	Ilyocoris cimicoides	10
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Naucoridae	BLAST	family	652	654		BIOSC2378-25_consensus3	Ilyocoris cimicoides	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Naucoridae	BLAST	family	230	671		BIOSC2378-25_consensus165	Ilyocoris cimicoides	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Naucoridae	BLAST	family	652	654		BIOSC2379-25_consensus1	Ilyocoris cimicoides	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Naucoridae	BLAST	family	646	647	Notonectidae	BIOSC2379-25_consensus0	Ilyocoris cimicoides	7
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Naucoridae	BLAST	family	659	664	Baetidae,Braconidae	BIOSC2379-25_consensus4	Ilyocoris cimicoides	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Naucoridae	BLAST	family	392	757	Reduviidae,Pentatomidae,Psychodidae,Phoridae	BIOSC2379-25_consensus667	Ilyocoris cimicoides	6
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Naucoridae	BLAST	family	646	647	Notonectidae	BIOSC2380-25_consensus16	Ilyocoris cimicoides	7
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Naucoridae	BLAST	family	656	658		BIOSC2380-25_consensus1	Ilyocoris cimicoides	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Naucoridae	BLAST	family	618	620	Notonectidae,Corixidae,Reduviidae	BIOSC2380-25_consensus7	Ilyocoris cimicoides	2
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Naucoridae	BLAST	family	358	690	Micronectidae,Reduviidae,Pentatomidae,Psychodidae	BIOSC2380-25_consensus15	Ilyocoris cimicoides	3
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Naucoridae	BLAST	family	350	710		BIOSC2380-25_consensus173	Ilyocoris cimicoides	3
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Coenagrionidae	BLAST	family	657	658		BIOSC2381-25_consensus1	Coenagrion pulchellum	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Coenagrionidae	BLAST	family	657	658		BIOSC2382-25_consensus0	Coenagrion pulchellum	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Corixidae	BLAST	family	657	658	Corixidae	BIOSC2383-25_consensus0	Corixa affinis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Corixidae	BLAST	family	657	658	Corixidae	BIOSC2384-25_consensus0	Corixa affinis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Aeshnidae	BLAST	family	656	658	Aeshnidae	BIOSC2385-25_consensus1	Anax imperator	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Aeshnidae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BIOSC2385-25_consensus6	Anax imperator	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Aeshnidae	BLAST	family	656	657	Tettigoniidae,Notonemouridae,Ninidae,Psychodidae,Ulidiidae,Vespidae,Hydropsychidae	BIOSC2385-25_consensus18	Anax imperator	1
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Gammaridae	BLAST	family	657	658	Gammaridae	BIOSC2386-25_consensus4	Gammarus lacustris	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Gammaridae	BLAST	family	641	649		BIOSC2386-25_consensus131	Gammarus lacustris	2
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Gammaridae	BLAST	family	659	661	Trichoniscidae	BIOSC2386-25_consensus2	Gammarus lacustris	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	662	664	Carabidae,Noctuidae	BIOSC2388-25_consensus1	Baetis vadimi	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	656	658	Baetidae	BIOSC2388-25_consensus13	Baetis vadimi	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	656	658	Culicidae,Limoniidae,Tephritidae	BIOSC2388-25_consensus11	Baetis vadimi	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	663	664	Cerambycidae,Simuliidae,Tephritidae,Anomosetidae,Chrysopidae	BIOSC2389-25_consensus10	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	663	664	Baetidae,Aphrophoridae,Mycetophilidae,Hepialidae	BIOSC2389-25_consensus1	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	660	663	Sciaridae,Anthomyiidae	BIOSC2389-25_consensus64	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	663	664	Culicidae,Phoridae,Chloropidae,Prodoxidae,Chrysopidae	BIOSC2389-25_consensus6	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	636	652		BIOSC2389-25_consensus164	Baetidae	2
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	657	658	Chironomidae	BIOSC2389-25_consensus114	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	662	664	Culicidae,Tabanidae	BIOSC2389-25_consensus187	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	661	664	Braconidae,Heliozelidae	BIOSC2389-25_consensus4	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	663	664	Gyrinidae,Limoniidae,Corydalidae	BIOSC2389-25_consensus23	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	663	664	Mycetophilidae,Phoridae,Drosophilidae,Calliphoridae,Tachinidae,Chrysopidae	BIOSC2389-25_consensus11	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	662	664	Ceratopogonidae,Hesperiidae	BIOSC2389-25_consensus19	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	662	664	Noctuidae,Notodontidae,Euteliidae,Geometridae	BIOSC2389-25_consensus29	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	661	664	Macromiidae,Mycetophilidae,Culicidae,Drosophilidae	BIOSC2389-25_consensus2	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	656	658	Baetidae	BIOSC2389-25_consensus93	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	662	664	Tingidae,Sciaridae,Keroplatidae,Tabanidae	BIOSC2389-25_consensus9	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	656	657	Cicadidae,Mycetophilidae,Culicidae,Tephritidae	BIOSC2389-25_consensus87	Baetidae	17
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	657	664	Acrididae,Gerridae,Cicadellidae,Dytiscidae,Chloropidae	BIOSC2389-25_consensus159	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	663	664	Mycetophilidae,Geometridae,Chrysopidae	BIOSC2389-25_consensus3	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	655	658	Acrididae,Cicadellidae,Chironomidae,Helicophidae	BIOSC2389-25_consensus282	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	663	664	Mycetophilidae,Cecidomyiidae,Phoridae,Gelechiidae,Pieridae,Riodinidae,Hydropsychidae	BIOSC2389-25_consensus28	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	660	662	Cecidomyiidae,Chironomidae,Tachinidae,Erebidae,Geometridae	BIOSC2389-25_consensus45	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	662	664	Gerridae,Cicadellidae,Mycetophilidae,Milichiidae,Gracillariidae	BIOSC2389-25_consensus24	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	662	664	Sciaridae,Mycetophilidae,Braconidae,Ichneumonidae,Nepticulidae	BIOSC2389-25_consensus8	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Gammaridae	BLAST	family	657	658	Gammaridae	BIOSC2395-25_consensus0	Gammarus lacustris	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Gammaridae	BLAST	family	615	649		BIOSC2395-25_consensus133	Gammarus lacustris	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Gammaridae	BLAST	family	657	658	Gammaridae	BIOSC2396-25_consensus0	Gammarus lacustris	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	656	658	Culicidae,Hybotidae,Phoridae,Scelionidae,Erebidae	BIOSC2397-25_consensus422	Hydropsyche angustipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	670	673		BIOSC2397-25_consensus1	Hydropsyche angustipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	656	658	Mycetophilidae,Tipulidae,Pediciidae,Tabanidae	BIOSC2397-25_consensus62	Hydropsyche angustipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	616	649		BIOSC2397-25_consensus122	Hydropsyche angustipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	642	649		BIOSC2397-25_consensus229	Hydropsyche angustipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	646	649		BIOSC2397-25_consensus158	Hydropsyche angustipennis	4
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	663	664	Cicadidae,Mycetophilidae,Drosophilidae,Tachinidae,Braconidae	BIOSC2397-25_consensus6	Hydropsyche angustipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	657	661		BIOSC2397-25_consensus69	Hydropsyche angustipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	663	664	Aphrophoridae,Mycetophilidae,Hepialidae	BIOSC2397-25_consensus33	Hydropsyche angustipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	657	658	Ceratopogonidae,Dolichopodidae,Drosophilidae,Nymphalidae	BIOSC2397-25_consensus59	Hydropsyche angustipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	663	664	Gyrinidae,Limoniidae,Corydalidae	BIOSC2397-25_consensus4	Hydropsyche angustipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	663	664	Mycetophilidae,Phoridae,Drosophilidae,Calliphoridae,Tachinidae,Chrysopidae	BIOSC2397-25_consensus7	Hydropsyche angustipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	595	649		BIOSC2397-25_consensus128	Hydropsyche angustipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	656	658	Carabidae,Mycetophilidae,Ceratopogonidae	BIOSC2397-25_consensus58	Hydropsyche angustipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	603	649	Platystictidae,Cicadellidae	BIOSC2397-25_consensus102	Hydropsyche angustipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	659	664	Tenebrionidae,Syrphidae	BIOSC2397-25_consensus24	Hydropsyche angustipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	638	664		BIOSC2397-25_consensus8	Hydropsyche angustipennis	4
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	630	649		BIOSC2397-25_consensus115	Hydropsyche angustipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	619	649		BIOSC2397-25_consensus174	Hydropsyche angustipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Tipulidae	BLAST	family	625	649		BIOSC2399-25_consensus96	Tipula caesia	5
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Tipulidae	BLAST	family	630	649		BIOSC2399-25_consensus81	Tipula caesia	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Tipulidae	BLAST	family	603	649	Platystictidae,Cicadellidae	BIOSC2399-25_consensus95	Tipula caesia	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Tipulidae	BLAST	family	661	664	Tephritidae,Tabanidae	BIOSC2399-25_consensus4	Tipula caesia	4
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Tipulidae	BLAST	family	663	664	Carabidae,Cerambycidae,Tephritidae,Anomosetidae,Chrysopidae	BIOSC2399-25_consensus7	Tipula caesia	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Tipulidae	BLAST	family	616	649		BIOSC2399-25_consensus126	Tipula caesia	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Tipulidae	BLAST	family	657	658	Tipulidae	BIOSC2399-25_consensus20	Tipula caesia	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Tipulidae	BLAST	family	664	665	Gyrinidae,Staphylinidae,Calliphoridae,Tachinidae,Hemerobiidae	BIOSC2399-25_consensus2	Tipula caesia	9
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Tipulidae	BLAST	family	595	649		BIOSC2399-25_consensus73	Tipula caesia	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	657	658	Acrididae	BIOSC2400-25_consensus48	Hydropsyche contubernalis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	661	664	Gomphidae,Hepialidae,Elachistidae	BIOSC2400-25_consensus10	Hydropsyche contubernalis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	662	664	Drosophilidae,Sphingidae,Noctuidae,Geometridae	BIOSC2400-25_consensus5	Hydropsyche contubernalis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	631	664		BIOSC2400-25_consensus31	Hydropsyche contubernalis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	657	658	Chironomidae	BIOSC2400-25_consensus50	Hydropsyche contubernalis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	656	658	Mycetophilidae,Tipulidae,Pediciidae,Tabanidae	BIOSC2400-25_consensus56	Hydropsyche contubernalis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	647	652		BIOSC2400-25_consensus85	Hydropsyche contubernalis	3
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	663	664	Culicidae,Eriocraniidae	BIOSC2400-25_consensus7	Hydropsyche contubernalis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	600	649		BIOSC2400-25_consensus108	Hydropsyche contubernalis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	638	664		BIOSC2400-25_consensus11	Hydropsyche contubernalis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	663	664	Aeshnidae,Sciaridae	BIOSC2400-25_consensus29	Hydropsyche contubernalis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	662	664	Curculionidae,Braconidae	BIOSC2400-25_consensus2	Hydropsyche contubernalis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	656	658	Carabidae,Mycetophilidae,Ceratopogonidae	BIOSC2400-25_consensus42	Hydropsyche contubernalis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	663	664	Gyrinidae,Limoniidae,Corydalidae	BIOSC2400-25_consensus14	Hydropsyche contubernalis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	658	661	Chironomidae	BIOSC2400-25_consensus32	Hydropsyche contubernalis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	595	649		BIOSC2400-25_consensus109	Hydropsyche contubernalis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	643	649		BIOSC2400-25_consensus103	Hydropsyche contubernalis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	603	649	Platystictidae,Cicadellidae	BIOSC2400-25_consensus101	Hydropsyche contubernalis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Calopterygidae	BLAST	family	663	664	Carabidae,Sciaridae,Syrphidae,Agromyzidae	BIOSC2401-25_consensus48	Calopteryx splendens	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Calopterygidae	BLAST	family	662	664	Noctuidae,Erebidae,Pyralidae,Hesperiidae	BIOSC2401-25_consensus10	Calopteryx splendens	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Calopterygidae	BLAST	family	661	664	Baetidae,Chrysomelidae	BIOSC2401-25_consensus1	Calopteryx splendens	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Calopterygidae	BLAST	family	662	664	Culicidae,Tabanidae	BIOSC2401-25_consensus5	Calopteryx splendens	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Calopterygidae	BLAST	family	663	664	Mycetophilidae,Phoridae,Drosophilidae,Calliphoridae,Tachinidae,Chrysopidae	BIOSC2401-25_consensus6	Calopteryx splendens	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Calopterygidae	BLAST	family	616	649		BIOSC2401-25_consensus99	Calopteryx splendens	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Calopterygidae	BLAST	family	657	658	Acrididae,Stratiomyidae,Tabanidae,Hepialidae	BIOSC2401-25_consensus35	Calopteryx splendens	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Calopterygidae	BLAST	family	599	652		BIOSC2401-25_consensus72	Calopteryx splendens	6
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Calopterygidae	BLAST	family	650	652	Endomychidae,Ceratopogonidae,Braconidae	BIOSC2401-25_consensus59	Calopteryx splendens	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Calopterygidae	BLAST	family	650	652	Calopterygidae	BIOSC2401-25_consensus85	Calopteryx splendens	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Calopterygidae	BLAST	family	656	658	Notonectidae,Staphylinidae,Ceratopogonidae,Asilidae,Hybotidae	BIOSC2401-25_consensus126	Calopteryx splendens	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Calopterygidae	BLAST	family	660	663	Simuliidae,Braconidae	BIOSC2401-25_consensus34	Calopteryx splendens	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Calopterygidae	BLAST	family	661	664	Lampyridae,Coccinellidae,Phoridae,Oecophoridae,Erebidae,Geometridae	BIOSC2401-25_consensus15	Calopteryx splendens	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Calopterygidae	BLAST	family	658	659	Calopterygidae,Diphlebiidae,Argiolestidae,Coenagrionidae	BIOSC2401-25_consensus42	Calopteryx splendens	2
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Calopterygidae	BLAST	family	630	649		BIOSC2401-25_consensus88	Calopteryx splendens	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Calopterygidae	BLAST	family	662	664	Drosophilidae,Sphingidae,Noctuidae,Geometridae	BIOSC2401-25_consensus3	Calopteryx splendens	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Calopterygidae	BLAST	family	657	658	Chironomidae	BIOSC2401-25_consensus130	Calopteryx splendens	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Calopterygidae	BLAST	family	635	649		BIOSC2401-25_consensus86	Calopteryx splendens	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Caenidae	BLAST	family	656	658	Caenidae	BIOSC2402-25_consensus0	Caenis macrura	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydroptilidae	BLAST	family	655	658	Hydroptilidae	BIOSC2404-25_consensus0	Hydroptila occulta	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydroptilidae	BLAST	family	656	658	Carabidae,Mycetophilidae,Ceratopogonidae	BIOSC2404-25_consensus15	Hydroptila occulta	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Caenidae	BLAST	family	662	664	Curculionidae,Simuliidae,Ephydridae,Noctuidae	BIOSC2405-25_consensus0	Caenis macrura	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Caenidae	BLAST	family	656	658	Caenidae	BIOSC2405-25_consensus6	Caenis macrura	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Caenidae	BLAST	family	656	658	Carabidae,Mycetophilidae,Ceratopogonidae	BIOSC2405-25_consensus22	Caenis macrura	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Psychomyiidae	BLAST	family	660	664	Flatidae	BIOSC2406-25_consensus0	Psychomyia pusilla	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Psychomyiidae	BLAST	family	657	658	Psychomyiidae	BIOSC2406-25_consensus259	Psychomyia pusilla	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	656	657	Tettigoniidae,Notonemouridae,Ninidae,Psychodidae,Ulidiidae,Vespidae,Hydropsychidae	BIOSC2408-25_consensus76	Baetidae	1
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	663	664	Gomphidae,Cicadellidae,Simuliidae,Braconidae,Geometridae	BIOSC2408-25_consensus10	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	662	664	Tingidae,Sciaridae,Keroplatidae,Tabanidae	BIOSC2408-25_consensus12	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	663	664	Carabidae,Limoniidae,Osmylidae,Corydalidae	BIOSC2408-25_consensus11	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	619	649		BIOSC2408-25_consensus93	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	656	658	Carabidae,Mycetophilidae,Ceratopogonidae	BIOSC2408-25_consensus53	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	656	658	Baetidae	BIOSC2410-25_consensus1	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Ephemerellidae	BLAST	family	643	649		BIOSC2414-25_consensus214	Ephemerella	1
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Ephemerellidae	BLAST	family	666	667	Cicadellidae,Milichiidae,Tachinidae,Braconidae,Hepialidae	BIOSC2414-25_consensus1	Ephemerella	1
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Ephemerellidae	BLAST	family	662	664	Culicidae,Tachinidae,Tabanidae	BIOSC2414-25_consensus13	Ephemerella	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Ephemerellidae	BLAST	family	656	658	Ephemerellidae	BIOSC2414-25_consensus26	Ephemerella	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Ephemerellidae	BLAST	family	660	664	Mycetophilidae,Ephydridae,Agromyzidae,Muscidae,Braconidae,Crabronidae	BIOSC2414-25_consensus25	Ephemerella	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Ephemerellidae	BLAST	family	595	649		BIOSC2414-25_consensus137	Ephemerella	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Ephemerellidae	BLAST	family	633	649		BIOSC2414-25_consensus118	Ephemerella	8
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Ephemerellidae	BLAST	family	663	664	Cicadidae,Hydraenidae,Mycetophilidae,Phoridae,Ceratophyllidae,Chrysopidae	BIOSC2414-25_consensus11	Ephemerella	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Ephemerellidae	BLAST	family	315	697	Ephemerellidae	BIOSC2414-25_consensus471	Ephemerella	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Ephemerellidae	BLAST	family	601	649		BIOSC2414-25_consensus115	Ephemerella	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Limnephilidae	BLAST	family	655	658	Limnephilidae	BIOSC2415-25_consensus0	Halesus digitatus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Limnephilidae	BLAST	family	614	649		BIOSC2415-25_consensus60	Halesus digitatus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Corixidae	BLAST	family	657	658	Corixidae	BIOSC2416-25_consensus0	Sigara lateralis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Perlidae	BLAST	family	656	658	Perlidae	BIOSC2417-25_consensus0	Perla	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Perlidae	BLAST	family	659	661	Ptiliidae,Scarabaeidae,Cecidomyiidae,Braconidae,Cynipidae	BIOSC2417-25_consensus79	Perla	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Rhyacophilidae	BLAST	family	646	649		BIOSC2418-25_consensus48	Rhyacophila nubila	4
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Rhyacophilidae	BLAST	family	630	664		BIOSC2418-25_consensus5	Rhyacophila nubila	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Rhyacophilidae	BLAST	family	598	647	Megapodagrionidae,Gomphidae	BIOSC2418-25_consensus54	Rhyacophila nubila	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Rhyacophilidae	BLAST	family	663	664	Braconidae	BIOSC2418-25_consensus22	Rhyacophila nubila	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Rhyacophilidae	BLAST	family	656	658	Simuliidae	BIOSC2418-25_consensus21	Rhyacophila nubila	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Rhyacophilidae	BLAST	family	594	649		BIOSC2418-25_consensus164	Rhyacophila nubila	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Rhyacophilidae	BLAST	family	661	663	Mycetophilidae,Muscidae,Anthomyiidae	BIOSC2418-25_consensus7	Rhyacophila nubila	3
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Rhyacophilidae	BLAST	family	655	658	Acrididae	BIOSC2418-25_consensus23	Rhyacophila nubila	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Rhyacophilidae	BLAST	family	659	661	Cicadellidae,Cecidomyiidae,Braconidae	BIOSC2418-25_consensus11	Rhyacophila nubila	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Rhyacophilidae	BLAST	family	614	649		BIOSC2418-25_consensus20	Rhyacophila nubila	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Rhyacophilidae	BLAST	family	596	650		BIOSC2418-25_consensus55	Rhyacophila nubila	3
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Rhyacophilidae	BLAST	family	662	664	Tabanidae	BIOSC2418-25_consensus9	Rhyacophila nubila	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Rhyacophilidae	BLAST	family	589	649		BIOSC2418-25_consensus281	Rhyacophila nubila	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Rhyacophilidae	BLAST	family	594	649		BIOSC2418-25_consensus87	Rhyacophila nubila	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Rhyacophilidae	BLAST	family	595	649		BIOSC2418-25_consensus44	Rhyacophila nubila	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Rhyacophilidae	BLAST	family	604	649		BIOSC2418-25_consensus70	Rhyacophila nubila	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Rhyacophilidae	BLAST	family	615	651		BIOSC2418-25_consensus46	Rhyacophila nubila	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Rhyacophilidae	BLAST	family	663	664	Pentatomidae,Silphidae,Limoniidae,Braconidae,Corydalidae	BIOSC2418-25_consensus8	Rhyacophila nubila	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	608	649		BIOSC2419-25_consensus206	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	658	661	Sciaridae,Agromyzidae	BIOSC2419-25_consensus83	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	599	648		BIOSC2419-25_consensus196	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	663	664	Tipulidae,Agromyzidae,Pamphiliidae,Notodontidae	BIOSC2419-25_consensus6	Baetidae	3
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	657	658	Schizodactylidae,Simuliidae,Dolichopodidae,Erebidae	BIOSC2419-25_consensus266	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	662	664	Curculionidae,Braconidae	BIOSC2419-25_consensus4	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	637	664		BIOSC2419-25_consensus7	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	663	664	Syrphidae,Drosophilidae,Tachinidae	BIOSC2419-25_consensus12	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	662	664	Tabanidae	BIOSC2419-25_consensus20	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	663	664	Gyrinidae,Silphidae,Limoniidae,Corydalidae	BIOSC2419-25_consensus2	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	600	649	Cicadellidae	BIOSC2419-25_consensus155	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	668	673	Heptageniidae,Acrididae,Cicadellidae	BIOSC2419-25_consensus97	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	589	649		BIOSC2419-25_consensus153	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	610	649	Megapodagrionidae	BIOSC2419-25_consensus151	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	613	649		BIOSC2419-25_consensus170	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	659	664	Coenagrionidae,Aleyrodidae	BIOSC2419-25_consensus86	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	663	664	Hydraenidae,Chironomidae,Ceratopogonidae,Riodinidae	BIOSC2420-25_consensus0	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	660	663	Cicadellidae,Geometridae,Nepticulidae,Osmylidae	BIOSC2420-25_consensus32	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	657	658	Rhyacophilidae	BIOSC2420-25_consensus66	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	661	666	Sciomyzidae,Anthomyiidae	BIOSC2421-25_consensus16	Baetidae	1
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	662	664	Carabidae,Chrysomelidae,Chironomidae,Ceratopogonidae,Erebidae	BIOSC2421-25_consensus1	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BIOSC2421-25_consensus13	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	661	664	Carabidae,Elmidae,Curculionidae,Corylophidae,Eupelmidae,Geometridae,Raphidiidae	BIOSC2421-25_consensus0	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	626	628	Dermestidae,Dolichopodidae	BIOSC2421-25_consensus107	Baetidae	1
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	615	649	Cecidomyiidae,Braconidae,Ichneumonidae	BIOSC2421-25_consensus19	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	662	664	Hesperiidae,Geometridae	BIOSC2421-25_consensus2	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	645	649		BIOSC2421-25_consensus42	Baetidae	2
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	646	649		BIOSC2421-25_consensus28	Baetidae	5
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	593	649		BIOSC2421-25_consensus27	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Limnephilidae	BLAST	family	661	664	Carabidae,Elmidae,Curculionidae,Corylophidae,Eupelmidae,Geometridae,Raphidiidae	BIOSC2422-25_consensus0	Drusus caucasicus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Limnephilidae	BLAST	family	656	658	Baetidae	BIOSC2422-25_consensus4	Drusus caucasicus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Limnephilidae	BLAST	family	656	658	Culicidae,Hybotidae,Phoridae,Scelionidae,Erebidae	BIOSC2422-25_consensus20	Drusus caucasicus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Elmidae	BLAST	family	657	659	Baetidae	BIOSC2423-25_consensus0	Esolus parallelepipedus	4
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Elmidae	BLAST	family	656	658	Simuliidae	BIOSC2423-25_consensus33	Esolus parallelepipedus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Elmidae	BLAST	family	657	658	Chironomidae	BIOSC2423-25_consensus79	Esolus parallelepipedus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Elmidae	BLAST	family	656	658	Limnephilidae	BIOSC2424-25_consensus0	Stenelmis puberula	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Dytiscidae	BLAST	family	657	658	Elmidae	BIOSC2425-25_consensus0	Laccophilus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Heptageniidae	BLAST	family	657	658	Elmidae,Ptilodactylidae	BIOSC2426-25_consensus0	Heptageniidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Heptageniidae	BLAST	family	656	658	Dytiscidae	BIOSC2427-25_consensus0	Heptageniidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Elmidae	BLAST	family	655	658	Heptageniidae	BIOSC2428-25_consensus0	Elmis aenea	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Perlidae	BLAST	family	656	658	Heptageniidae	BIOSC2429-25_consensus0	Perla	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Perlidae	BLAST	family	657	658	Elmidae	BIOSC2430-25_consensus0	Perla	1
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Perlidae	BLAST	family	595	649		BIOSC2430-25_consensus59	Perla	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Perlidae	BLAST	family	595	649		BIOSC2430-25_consensus55	Perla	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Perlidae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BIOSC2430-25_consensus15	Perla	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	665	666	Hydroscaphidae,Mycetophilidae,Muscidae,Anthomyiidae	BIOSC2431-25_consensus1	Brachycentrus	17
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	650	652	Perlidae	BIOSC2431-25_consensus22	Brachycentrus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	659	661	Perlidae	BIOSC2431-25_consensus20	Brachycentrus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	593	648		BIOSC2431-25_consensus57	Brachycentrus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	614	649		BIOSC2431-25_consensus112	Brachycentrus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	656	658	Brachycentridae	BIOSC2433-25_consensus1	Hydropsyche botosaneanui	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	656	658	Carabidae,Mycetophilidae,Ceratopogonidae	BIOSC2434-25_consensus10	Hydropsyche botosaneanui	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	667	673	Cicadellidae,Chrysomelidae	BIOSC2434-25_consensus0	Hydropsyche botosaneanui	1
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	655	658	Limnephilidae,Apataniidae	BIOSC2434-25_consensus23	Hydropsyche botosaneanui	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	660	664	Flatidae	BIOSC2434-25_consensus2	Hydropsyche botosaneanui	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	657	658	Rhyacophilidae	BIOSC2434-25_consensus9	Hydropsyche botosaneanui	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	656	658	Hydropsychidae	BIOSC2435-25_consensus48	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	610	649	Megapodagrionidae	BIOSC2435-25_consensus144	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	650	652	Endomychidae,Ceratopogonidae,Braconidae	BIOSC2435-25_consensus94	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	667	673	Chrysomelidae	BIOSC2435-25_consensus0	Baetidae	1
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	646	649		BIOSC2435-25_consensus223	Baetidae	4
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	661	664	Aeshnidae,Sciaridae,Syrphidae	BIOSC2435-25_consensus24	Baetidae	8
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydroptilidae	BLAST	family	610	649	Megapodagrionidae	BIOSC2436-25_consensus96	Hydroptila occulta	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydroptilidae	BLAST	family	663	664	Carabidae,Cerambycidae,Tephritidae,Tachinidae,Hepialidae,Anomosetidae,Chrysopidae	BIOSC2436-25_consensus13	Hydroptila occulta	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydroptilidae	BLAST	family	667	673	Chrysomelidae	BIOSC2436-25_consensus0	Hydroptila occulta	1
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydroptilidae	BLAST	family	662	664	Mycetophilidae,Tachinidae,Geometridae	BIOSC2436-25_consensus25	Hydroptila occulta	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydroptilidae	BLAST	family	614	649		BIOSC2436-25_consensus125	Hydroptila occulta	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydroptilidae	BLAST	family	663	664	Aphrophoridae,Mycetophilidae,Hepialidae	BIOSC2436-25_consensus12	Hydroptila occulta	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydroptilidae	BLAST	family	663	664	Cicadellidae,Scarabaeidae,Mycetophilidae,Drosophilidae,Tabanidae	BIOSC2436-25_consensus11	Hydroptila occulta	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydroptilidae	BLAST	family	645	649		BIOSC2436-25_consensus272	Hydroptila occulta	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydroptilidae	BLAST	family	603	649	Platystictidae,Cicadellidae	BIOSC2436-25_consensus106	Hydroptila occulta	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydroptilidae	BLAST	family	646	649		BIOSC2436-25_consensus105	Hydroptila occulta	4
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydroptilidae	BLAST	family	633	649		BIOSC2436-25_consensus86	Hydroptila occulta	8
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BIOSC2437-25_consensus10	Micrasema bifoliatum	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	663	664	Carabidae,Cerambycidae,Tephritidae,Tachinidae,Hepialidae,Anomosetidae,Chrysopidae	BIOSC2437-25_consensus0	Micrasema bifoliatum	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	656	658	Chironomidae,Hybotidae	BIOSC2437-25_consensus6	Micrasema bifoliatum	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	652	655	Liposcelididae	BIOSC2437-25_consensus33	Micrasema bifoliatum	17
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	656	658	Baetidae	BIOSC2437-25_consensus7	Micrasema bifoliatum	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	656	657	Tettigoniidae,Notonemouridae,Ninidae,Psychodidae,Ulidiidae,Vespidae,Hydropsychidae	BIOSC2437-25_consensus15	Micrasema bifoliatum	1
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	662	664	Mycetophilidae,Tachinidae,Geometridae	BIOSC2438-25_consensus0	Brachycentrus montanus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	656	658	Hydroptilidae	BIOSC2438-25_consensus4	Brachycentrus montanus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	360	686	Hydroptilidae	BIOSC2438-25_consensus105	Brachycentrus montanus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	656	658	Brachycentridae	BIOSC2439-25_consensus1	Brachycentrus montanus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	656	658	Brachycentridae	BIOSC2440-25_consensus0	Brachycentrus montanus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Nemouridae	BLAST	family	656	658	Brachycentridae	BIOSC2441-25_consensus0	Protonemura vernalis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	656	658	Brachycentridae	BIOSC2442-25_consensus0	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Heptageniidae	BLAST	family	657	658	Nemouridae	BIOSC2443-25_consensus0	Heptageniidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Apataniidae	BLAST	family	656	658	Baetidae	BIOSC2444-25_consensus0	Apatania subtilis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Apataniidae	BLAST	family	656	658	Heptageniidae	BIOSC2445-25_consensus1	Apatania subtilis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Gammaridae	BLAST	family	655	658	Lithodidae,Paguridae,Chirostylidae,Mathildellidae,Pontogeneiidae	BIOSC2446-25_consensus0	Gammarus komareki	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Heptageniidae	BLAST	family	655	658	Limnephilidae,Apataniidae	BIOSC2447-25_consensus0	Heptageniidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BIOSC2448-25_consensus10	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	661	664	Baetidae,Carabidae,Cecidomyiidae	BIOSC2448-25_consensus0	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	656	658	Acrididae,Eriocottidae,Crambidae	BIOSC2448-25_consensus21	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	591	649	Braconidae,Glossosomatidae	BIOSC2448-25_consensus32	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	657	661	Mordellidae,Chironomidae,Simuliidae,Phoridae,Drosophilidae,Crabronidae,Colletidae	BIOSC2448-25_consensus3	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	613	649		BIOSC2448-25_consensus28	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Baetidae	BLAST	family	1	675		BIOSC2448-25_consensus115	Baetidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Glossosomatidae	BLAST	family	656	658	Carabidae,Mycetophilidae,Ceratopogonidae	BIOSC2454-25_consensus0	Glossosoma capitatum	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	654	655	Psychodidae,Syrphidae	BIOSC2455-25_consensus0	Hydropsyche instabilis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	661	664	Rhadalidae,Limoniidae,Syrphidae	BIOSC2457-25_consensus144	Brachycentrus montanus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	667	673	Chrysomelidae	BIOSC2457-25_consensus1	Brachycentrus montanus	1
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	656	658		BIOSC2457-25_consensus34	Brachycentrus montanus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	638	664		BIOSC2457-25_consensus12	Brachycentrus montanus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	663	664	Culicidae,Eriocraniidae	BIOSC2457-25_consensus23	Brachycentrus montanus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	667	671	Carabidae	BIOSC2457-25_consensus9	Brachycentrus montanus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	643	649		BIOSC2457-25_consensus246	Brachycentrus montanus	3
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	610	649	Megapodagrionidae,Gomphidae	BIOSC2457-25_consensus177	Brachycentrus montanus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Brachycentridae	BLAST	family	646	649		BIOSC2457-25_consensus174	Brachycentrus montanus	4
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Heptageniidae	BLAST	family	656	658	Brachycentridae	BIOSC2458-25_consensus0	Heptageniidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Heptageniidae	BLAST	family	644	649		BIOSC2458-25_consensus133	Heptageniidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Limnephilidae	BLAST	family	656	658	Brachycentridae	BIOSC2459-25_consensus0	Potamophylax latipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Goeridae	BLAST	family	658	661	Braconidae,Cynipidae,Platygastridae,Nepticulidae	BIOSC2460-25_consensus0	Lithax niger	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Goeridae	BLAST	family	657	658	Ametropodidae,Heptageniidae,Prosopistomatidae	BIOSC2460-25_consensus2	Lithax niger	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Heptageniidae	BLAST	family	614	649		BIOSC2461-25_consensus196	Heptageniidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Heptageniidae	BLAST	family	659	661	Braconidae	BIOSC2461-25_consensus2	Heptageniidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Heptageniidae	BLAST	family	655	658	Limnephilidae	BIOSC2461-25_consensus82	Heptageniidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Heptageniidae	BLAST	family	660	664	Calopterygidae,Tenebrionidae,Mymaridae,Eucharitidae	BIOSC2462-25_consensus0	Heptageniidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Heptageniidae	BLAST	family	656	658	Goeridae	BIOSC2462-25_consensus7	Heptageniidae	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Blephariceridae	BLAST	family	655	658	Heptageniidae	BIOSC2463-25_consensus0	Blepharicera fasciata	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Hydropsychidae	BLAST	family	655	658	Heptageniidae	BIOSC2464-25_consensus1	Hydropsyche instabilis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Limnephilidae	BLAST	family	656	658	Blephariceridae,Culicidae,Hybotidae,Phoridae,Psilidae,Tabanidae	BIOSC2465-25_consensus0	Halesus digitatus	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Limnephilidae	BLAST	family	667	673	Hydrophilidae,Elateridae,Sciaridae,Ceratopogonidae,Formicidae	BIOSC2466-25_consensus31	Potamophylax latipennis	2
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Limnephilidae	BLAST	family	667	673	Chrysomelidae	BIOSC2466-25_consensus0	Potamophylax latipennis	1
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Limnephilidae	BLAST	family	661	664	Chironomidae,Ceratopogonidae,Empididae,Sciomyzidae,Chrysopidae	BIOSC2466-25_consensus33	Potamophylax latipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Limnephilidae	BLAST	family	622	649		BIOSC2466-25_consensus139	Potamophylax latipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Limnephilidae	BLAST	family	646	649		BIOSC2466-25_consensus125	Potamophylax latipennis	4
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Limnephilidae	BLAST	family	610	649	Megapodagrionidae	BIOSC2466-25_consensus74	Potamophylax latipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Limnephilidae	BLAST	family	655	658	Hydropsychidae	BIOSC2466-25_consensus49	Potamophylax latipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Limnephilidae	BLAST	family	624	649		BIOSC2466-25_consensus73	Potamophylax latipennis	8
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Limnephilidae	BLAST	family	614	649		BIOSC2466-25_consensus84	Potamophylax latipennis	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Meloidae	BLAST	family	659	661	Braconidae	BIOSC2467-25_consensus0	Mylabris quadripunctata	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Meloidae	BLAST	family	603	649	Platystictidae,Cicadellidae	BIOSC2467-25_consensus50	Mylabris quadripunctata	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Meloidae	BLAST	family	655	658	Limnephilidae	BIOSC2467-25_consensus3	Mylabris quadripunctata	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Meloidae	BLAST	family	614	649		BIOSC2467-25_consensus40	Mylabris quadripunctata	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Meloidae	BLAST	family	613	646		BIOSC2467-25_consensus86	Mylabris quadripunctata	0
+0	0	data/BGE00690_nanopore_corrected.fasta	None	Limnephilidae	BLAST	family	657	658	Meloidae	BIOSC2469-25_consensus0	Halesus digitatus	0

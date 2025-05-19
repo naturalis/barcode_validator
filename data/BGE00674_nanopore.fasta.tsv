@@ -1,0 +1,266 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00674_nanopore.fasta	None	Lycosidae	BLAST	family	657	658	Lycosidae	BIOSC1901-25_consensus0	Pardosa palustris	0
+0	0	data/BGE00674_nanopore.fasta	None	Gnaphosidae	BLAST	family	657	658	Gnaphosidae	BIOSC1902-25_consensus0	Micaria micans	0
+0	0	data/BGE00674_nanopore.fasta	None	Gnaphosidae	BLAST	family	661	664	Idiopidae	BIOSC1903-25_consensus0	Micaria micans	0
+0	0	data/BGE00674_nanopore.fasta	None	Gnaphosidae	BLAST	family	657	658	Gnaphosidae	BIOSC1903-25_consensus2	Micaria micans	0
+0	0	data/BGE00674_nanopore.fasta	None	Gnaphosidae	BLAST	family	657	658	Gnaphosidae	BIOSC1904-25_consensus0	Micaria albovittata	0
+0	0	data/BGE00674_nanopore.fasta	None	Theridiidae	BLAST	family	657	658	Theridiidae	BIOSC1905-25_consensus0	Theridion cinereum	0
+0	0	data/BGE00674_nanopore.fasta	None	Theridiidae	BLAST	family	657	658	Theridiidae	BIOSC1906-25_consensus0	Theridion cinereum	0
+0	0	data/BGE00674_nanopore.fasta	None	Theridiidae	BLAST	family	656	658	Theridiidae	BIOSC1907-25_consensus0	Lasaeola prona	0
+0	0	data/BGE00674_nanopore.fasta	None	Gnaphosidae	BLAST	family	657	658	Gnaphosidae	BIOSC1908-25_consensus0	Micaria albovittata	0
+0	0	data/BGE00674_nanopore.fasta	None	Theridiidae	BLAST	family	657	658	Theridiidae	BIOSC1909-25_consensus0	Euryopis quinqueguttata	0
+0	0	data/BGE00674_nanopore.fasta	None	Theridiidae	BLAST	family	585	684	Theridiidae	BIOSC1909-25_consensus1011	Euryopis quinqueguttata	15
+0	0	data/BGE00674_nanopore.fasta	None	Linyphiidae	BLAST	family	654	658	Linyphiidae	BIOSC1910-25_consensus0	Nematogmus sanguinolentus	0
+0	0	data/BGE00674_nanopore.fasta	None	Thomisidae	BLAST	family	657	658	Thomisidae	BIOSC1911-25_consensus0	Xysticus lanio	0
+0	0	data/BGE00674_nanopore.fasta	None	Linyphiidae	BLAST	family	656	658	Linyphiidae	BIOSC1912-25_consensus0	Centromerita bicolor	0
+0	0	data/BGE00674_nanopore.fasta	None	Linyphiidae	BLAST	family	656	658	Linyphiidae	BIOSC1913-25_consensus0	Centromerita bicolor	0
+0	0	data/BGE00674_nanopore.fasta	None	Linyphiidae	BLAST	family	656	658	Linyphiidae	BIOSC1914-25_consensus0	Drapetisca socialis	0
+0	0	data/BGE00674_nanopore.fasta	None	Linyphiidae	BLAST	family	655	658	Linyphiidae	BIOSC1915-25_consensus0	Pelecopsis parallela	0
+0	0	data/BGE00674_nanopore.fasta	None	Segestriidae	BLAST	family	656	658	Segestriidae,Gnaphosidae	BIOSC1916-25_consensus0	Segestria senoculata	0
+0	0	data/BGE00674_nanopore.fasta	None	Phrurolithidae	BLAST	family	657	658	Corinnidae	BIOSC1917-25_consensus76	DGV41	0
+0	0	data/BGE00674_nanopore.fasta	None	Phrurolithidae	BLAST	family	661	664	Diplocentridae,Ctenizidae,Idiopidae,Filistatidae	BIOSC1917-25_consensus0	DGV41	0
+0	0	data/BGE00674_nanopore.fasta	None	Liocranidae	BLAST	family	663	664	Sicariidae,Theridiidae,Salticidae	BIOSC1918-25_consensus0	Liocranidae	0
+0	0	data/BGE00674_nanopore.fasta	None	Liocranidae	BLAST	family	655	658	Salticidae,Ascidae,Rhodacaridae,Bdellidae	BIOSC1918-25_consensus357	Liocranidae	0
+0	0	data/BGE00674_nanopore.fasta	None	Liocranidae	BLAST	family	657	658	Liocranidae	BIOSC1918-25_consensus2	Liocranidae	0
+0	0	data/BGE00674_nanopore.fasta	None	Liocranidae	BLAST	family	657	659	Linyphiidae,Heptathelidae,Ixodidae,Macronyssidae,Ricinoididae	BIOSC1918-25_consensus106	Liocranidae	2
+0	0	data/BGE00674_nanopore.fasta	None	Linyphiidae	BLAST	family	661	664	Theraphosidae,Ctenizidae,Linyphiidae	BIOSC1919-25_consensus0	Tapinopa longidens	0
+0	0	data/BGE00674_nanopore.fasta	None	Linyphiidae	BLAST	family	656	658	Linyphiidae	BIOSC1919-25_consensus19	Tapinopa longidens	0
+0	0	data/BGE00674_nanopore.fasta	None	Linyphiidae	BLAST	family	661	664	Theraphosidae,Ctenizidae,Linyphiidae	BIOSC1920-25_consensus0	Tapinopa longidens	0
+0	0	data/BGE00674_nanopore.fasta	None	Linyphiidae	BLAST	family	656	658	Linyphiidae	BIOSC1920-25_consensus23	Tapinopa longidens	0
+0	0	data/BGE00674_nanopore.fasta	None	Phrurolithidae	BLAST	family	661	664	Diplocentridae,Ctenizidae,Idiopidae,Filistatidae	BIOSC1921-25_consensus1	DGV41	0
+0	0	data/BGE00674_nanopore.fasta	None	Phrurolithidae	BLAST	family	657	658	Ixodidae	BIOSC1921-25_consensus147	DGV41	0
+0	0	data/BGE00674_nanopore.fasta	None	Phrurolithidae	BLAST	family	657	658	Corinnidae	BIOSC1921-25_consensus101	DGV41	0
+0	0	data/BGE00674_nanopore.fasta	None	Araneidae	BLAST	family	656	658	Araneidae	BIOSC1922-25_consensus0	Gibbaranea gibbosa	0
+0	0	data/BGE00674_nanopore.fasta	None	Araneidae	BLAST	family	656	658	Araneidae	BIOSC1923-25_consensus0	Gibbaranea gibbosa	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	633	664		BIOSC1924-25_consensus13	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	606	652		BIOSC1924-25_consensus235	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	601	649		BIOSC1924-25_consensus257	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	656	658	Sphaeriidae	BIOSC1924-25_consensus78	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	1	660		BIOSC1924-25_consensus68	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	629	664		BIOSC1924-25_consensus22	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	667	673		BIOSC1924-25_consensus4	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	647	664		BIOSC1924-25_consensus12	Sphaerium corneum	10
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	638	664		BIOSC1924-25_consensus15	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	630	649		BIOSC1924-25_consensus278	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	123	643		BIOSC1924-25_consensus339	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	594	649		BIOSC1924-25_consensus256	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	662	664	Arcidae	BIOSC1925-25_consensus113	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	638	664		BIOSC1925-25_consensus5	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	123	643		BIOSC1925-25_consensus408	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	656	658	Sphaeriidae	BIOSC1925-25_consensus8	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	663	664	Unionidae,Mycetopodidae	BIOSC1926-25_consensus52	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	667	673		BIOSC1926-25_consensus0	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	663	664	Unionidae,Sphaeriidae	BIOSC1926-25_consensus6	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	635	649	Mactridae	BIOSC1926-25_consensus225	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	602	649		BIOSC1926-25_consensus240	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	633	649		BIOSC1926-25_consensus644	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	630	649		BIOSC1926-25_consensus153	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	656	658	Sphaeriidae	BIOSC1926-25_consensus8	Sphaerium corneum	0
+0	0	data/BGE00674_nanopore.fasta	None	Cochlicopidae	BLAST	family	662	664	Drilliidae,Olividae,Capulidae,Hydrobiidae,Lymnaeidae	BIOSC1927-25_consensus10	Cochlicopa lubricella	0
+0	0	data/BGE00674_nanopore.fasta	None	Cochlicopidae	BLAST	family	637	664	Diplommatinidae	BIOSC1927-25_consensus1	Cochlicopa lubricella	4
+0	0	data/BGE00674_nanopore.fasta	None	Cochlicopidae	BLAST	family	663	664	Costellariidae,Hydrobiidae,Emmericiidae,Asteronotidae,Streptaxidae	BIOSC1927-25_consensus5	Cochlicopa lubricella	0
+0	0	data/BGE00674_nanopore.fasta	None	Cochlicopidae	BLAST	family	632	652		BIOSC1927-25_consensus33	Cochlicopa lubricella	4
+0	0	data/BGE00674_nanopore.fasta	None	Cochlicopidae	BLAST	family	662	664	Muricidae,Provannidae,Haminoeidae	BIOSC1927-25_consensus4	Cochlicopa lubricella	0
+0	0	data/BGE00674_nanopore.fasta	None	Cochlicopidae	BLAST	family	641	652		BIOSC1927-25_consensus20	Cochlicopa lubricella	0
+0	0	data/BGE00674_nanopore.fasta	None	Cochlicopidae	BLAST	family	648	652		BIOSC1927-25_consensus19	Cochlicopa lubricella	8
+0	0	data/BGE00674_nanopore.fasta	None	Cochlicopidae	BLAST	family	613	649		BIOSC1927-25_consensus57	Cochlicopa lubricella	0
+0	0	data/BGE00674_nanopore.fasta	None	Cochlicopidae	BLAST	family	638	664		BIOSC1927-25_consensus9	Cochlicopa lubricella	0
+0	0	data/BGE00674_nanopore.fasta	None	Cochlicopidae	BLAST	family	617	652		BIOSC1927-25_consensus74	Cochlicopa lubricella	0
+0	0	data/BGE00674_nanopore.fasta	None	Cochlicopidae	BLAST	family	592	649		BIOSC1927-25_consensus27	Cochlicopa lubricella	0
+0	0	data/BGE00674_nanopore.fasta	None	Agriolimacidae	BLAST	family	653	655	Agriolimacidae,Ariophantidae,Helicarionidae,Dyakiidae,Euconulidae	BIOSC1929-25_consensus0	Deroceras laeve	0
+0	0	data/BGE00674_nanopore.fasta	None	Agriolimacidae	BLAST	family	611	649		BIOSC1929-25_consensus118	Deroceras laeve	0
+0	0	data/BGE00674_nanopore.fasta	None	Agriolimacidae	BLAST	family	656	658		BIOSC1930-25_consensus0	Deroceras laeve	0
+0	0	data/BGE00674_nanopore.fasta	None	Agriolimacidae	BLAST	family	611	649		BIOSC1930-25_consensus21	Deroceras laeve	0
+0	0	data/BGE00674_nanopore.fasta	None	Bithyniidae	BLAST	family	656	658	Bithyniidae,Hydrobiidae	BIOSC1931-25_consensus2	Gabbiella araxena	0
+0	0	data/BGE00674_nanopore.fasta	None	Hygromiidae	BLAST	family	652	655	Hygromiidae	BIOSC1932-25_consensus0	Diplobursa pisiformis	0
+0	0	data/BGE00674_nanopore.fasta	None	Hygromiidae	BLAST	family	652	655	Hygromiidae	BIOSC1934-25_consensus0	Diplobursa pisiformis	0
+0	0	data/BGE00674_nanopore.fasta	None	Hygromiidae	BLAST	family	653	655	Hygromiidae	BIOSC1936-25_consensus1	Fruticocampylaea narzanensis	0
+0	0	data/BGE00674_nanopore.fasta	None	Hygromiidae	BLAST	family	653	655	Hygromiidae	BIOSC1937-25_consensus0	Fruticocampylaea narzanensis	0
+0	0	data/BGE00674_nanopore.fasta	None	Hygromiidae	BLAST	family	598	653		BIOSC1937-25_consensus103	Fruticocampylaea narzanensis	0
+0	0	data/BGE00674_nanopore.fasta	None	Hygromiidae	BLAST	family	653	655	Hygromiidae	BIOSC1938-25_consensus0	Fruticocampylaea narzanensis	0
+0	0	data/BGE00674_nanopore.fasta	None	Hygromiidae	BLAST	family	597	652		BIOSC1938-25_consensus20	Fruticocampylaea narzanensis	0
+0	0	data/BGE00674_nanopore.fasta	None	Hygromiidae	BLAST	family	653	655	Hygromiidae	BIOSC1939-25_consensus0	Fruticocampylaea narzanensis	0
+0	0	data/BGE00674_nanopore.fasta	None	Hygromiidae	BLAST	family	647	652		BIOSC1939-25_consensus93	Fruticocampylaea narzanensis	0
+0	0	data/BGE00674_nanopore.fasta	None	Succineidae	BLAST	family	653	655	Lymnaeidae	BIOSC1940-25_consensus1	Succinella oblonga	0
+0	0	data/BGE00674_nanopore.fasta	None	Succineidae	BLAST	family	648	652		BIOSC1940-25_consensus212	Succinella oblonga	4
+0	0	data/BGE00674_nanopore.fasta	None	Succineidae	BLAST	family	656	658	Amnicolidae	BIOSC1940-25_consensus135	Succinella oblonga	0
+0	0	data/BGE00674_nanopore.fasta	None	Succineidae	BLAST	family	597	652		BIOSC1940-25_consensus97	Succinella oblonga	1
+0	0	data/BGE00674_nanopore.fasta	None	Succineidae	BLAST	family	647	652		BIOSC1940-25_consensus67	Succinella oblonga	3
+0	0	data/BGE00674_nanopore.fasta	None	Succineidae	BLAST	family	656	661		BIOSC1941-25_consensus41	Succinella oblonga	0
+0	0	data/BGE00674_nanopore.fasta	None	Succineidae	BLAST	family	591	652		BIOSC1941-25_consensus52	Succinella oblonga	1
+0	0	data/BGE00674_nanopore.fasta	None	Succineidae	BLAST	family	653	655	Lymnaeidae	BIOSC1941-25_consensus43	Succinella oblonga	0
+0	0	data/BGE00674_nanopore.fasta	None	Succineidae	BLAST	family	658	664		BIOSC1941-25_consensus12	Succinella oblonga	0
+0	0	data/BGE00674_nanopore.fasta	None	Succineidae	BLAST	family	630	664		BIOSC1941-25_consensus2	Succinella oblonga	0
+0	0	data/BGE00674_nanopore.fasta	None	Succineidae	BLAST	family	664	667		BIOSC1941-25_consensus15	Succinella oblonga	0
+0	0	data/BGE00674_nanopore.fasta	None	Succineidae	BLAST	family	638	664		BIOSC1941-25_consensus9	Succinella oblonga	3
+0	0	data/BGE00674_nanopore.fasta	None	Succineidae	BLAST	family	662	664	Raphitomidae,Ampullariidae,Helicarionidae,Lymnaeidae	BIOSC1941-25_consensus3	Succinella oblonga	0
+0	0	data/BGE00674_nanopore.fasta	None	Succineidae	BLAST	family	646	652		BIOSC1941-25_consensus67	Succinella oblonga	3
+0	0	data/BGE00674_nanopore.fasta	None	Succineidae	BLAST	family	662	664	Cystiscidae,Pachychilidae,Annulariidae	BIOSC1941-25_consensus27	Succinella oblonga	0
+0	0	data/BGE00674_nanopore.fasta	None	Succineidae	BLAST	family	646	652		BIOSC1941-25_consensus66	Succinella oblonga	9
+0	0	data/BGE00674_nanopore.fasta	None	Succineidae	BLAST	family	653	655	Lymnaeidae	BIOSC1942-25_consensus0	Succinella oblonga	0
+0	0	data/BGE00674_nanopore.fasta	None	Succineidae	BLAST	family	653	655	Lymnaeidae	BIOSC1943-25_consensus0	Succinella oblonga	0
+0	0	data/BGE00674_nanopore.fasta	None	Succineidae	BLAST	family	653	655	Lymnaeidae	BIOSC1944-25_consensus0	Succinella oblonga	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	656	658	Sphaeriidae	BIOSC1945-25_consensus76	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	667	673		BIOSC1945-25_consensus0	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	643	649		BIOSC1945-25_consensus99	Sphaerium lacustre	3
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	653	658		BIOSC1945-25_consensus7	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	652	658		BIOSC1945-25_consensus15	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	646	649		BIOSC1945-25_consensus63	Sphaerium lacustre	5
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	614	649		BIOSC1945-25_consensus60	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	654	655	Yoldiidae,Unionidae,Mesodesmatidae	BIOSC1945-25_consensus18	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	662	667		BIOSC1945-25_consensus3	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	637	649		BIOSC1945-25_consensus80	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	607	652		BIOSC1945-25_consensus27	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	664	665	Unionidae,Mutelidae	BIOSC1946-25_consensus1	Sphaerium lacustre	5
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	614	649		BIOSC1946-25_consensus94	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	667	673		BIOSC1946-25_consensus0	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	656	658		BIOSC1946-25_consensus81	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	652	658		BIOSC1946-25_consensus4	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	615	649		BIOSC1946-25_consensus74	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	602	649		BIOSC1946-25_consensus70	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	607	652		BIOSC1946-25_consensus40	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	607	652		BIOSC1947-25_consensus52	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	655	658		BIOSC1947-25_consensus26	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	667	673		BIOSC1947-25_consensus0	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	634	649		BIOSC1947-25_consensus138	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	656	658	Sphaeriidae	BIOSC1947-25_consensus11	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	654	655	Nuculidae,Yoldiidae,Unionidae,Sphaeriidae	BIOSC1947-25_consensus20	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	646	649		BIOSC1947-25_consensus193	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	643	649		BIOSC1947-25_consensus141	Sphaerium lacustre	3
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	645	649		BIOSC1947-25_consensus151	Sphaerium lacustre	6
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	602	649		BIOSC1947-25_consensus171	Sphaerium lacustre	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	644	652		BIOSC1948-25_consensus94	Euglesa obtusalis	7
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	597	652		BIOSC1948-25_consensus78	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	610	649		BIOSC1948-25_consensus85	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	662	664	Galeommatidae,Semelidae	BIOSC1948-25_consensus7	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	631	649		BIOSC1948-25_consensus283	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	662	664	Unionidae,Mutelidae	BIOSC1948-25_consensus2	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	654	655	Nuculidae,Yoldiidae,Unionidae,Sphaeriidae	BIOSC1948-25_consensus37	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	607	652		BIOSC1948-25_consensus49	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	614	652		BIOSC1948-25_consensus246	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	643	649		BIOSC1948-25_consensus106	Euglesa obtusalis	3
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	625	652		BIOSC1948-25_consensus82	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	592	649		BIOSC1948-25_consensus150	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	656	658	Sphaeriidae	BIOSC1948-25_consensus27	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	643	652	Teredinidae	BIOSC1948-25_consensus162	Euglesa obtusalis	5
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	654	655	Nuculidae,Yoldiidae,Unionidae,Sphaeriidae	BIOSC1949-25_consensus78	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	607	652		BIOSC1949-25_consensus95	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	655	658	Unionidae	BIOSC1949-25_consensus19	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	657	658	Solemyidae,Nuculidae,Unionidae,Mesodesmatidae	BIOSC1949-25_consensus29	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	662	664	Unionidae,Mutelidae	BIOSC1949-25_consensus14	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	661	663	Hyriidae,Etheriidae,Iridinidae	BIOSC1949-25_consensus3	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	656	658	Sphaeriidae	BIOSC1949-25_consensus24	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	646	649		BIOSC1950-25_consensus156	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	138	645		BIOSC1950-25_consensus198	Euglesa obtusalis	2
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	656	658	Sphaeriidae	BIOSC1950-25_consensus1	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	662	664		BIOSC1950-25_consensus0	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	654	655	Solemyidae,Nuculidae,Unionidae,Montacutidae,Mesodesmatidae,Sphaeriidae	BIOSC1950-25_consensus35	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	611	649	Teredinidae	BIOSC1950-25_consensus166	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	610	649		BIOSC1950-25_consensus131	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	614	649		BIOSC1950-25_consensus155	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	592	649		BIOSC1950-25_consensus500	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	657	658	Solemyidae,Nuculidae,Unionidae,Mesodesmatidae	BIOSC1950-25_consensus9	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	643	649		BIOSC1950-25_consensus293	Euglesa obtusalis	3
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	607	652		BIOSC1950-25_consensus66	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	646	652		BIOSC1951-25_consensus144	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	592	649		BIOSC1951-25_consensus207	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	638	664		BIOSC1951-25_consensus0	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	630	664		BIOSC1951-25_consensus56	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	657	661		BIOSC1951-25_consensus20	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	629	664		BIOSC1951-25_consensus2	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	656	658	Sphaeriidae	BIOSC1951-25_consensus44	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	607	652		BIOSC1951-25_consensus92	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	647	650		BIOSC1951-25_consensus171	Euglesa obtusalis	3
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	633	649		BIOSC1951-25_consensus173	Euglesa obtusalis	8
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	644	649		BIOSC1951-25_consensus161	Euglesa obtusalis	2
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	663	664	Unionidae,Sphaeriidae	BIOSC1951-25_consensus30	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	629	664		BIOSC1951-25_consensus86	Euglesa obtusalis	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	595	648		BIOSC1951-25_consensus162	Euglesa obtusalis	3
+0	0	data/BGE00674_nanopore.fasta	None	Helicidae	BLAST	family	654	655	Helicidae	BIOSC1956-25_consensus0	Helix albescens	0
+0	0	data/BGE00674_nanopore.fasta	None	Helicidae	BLAST	family	654	655	Helicidae	BIOSC1957-25_consensus0	Helix albescens	0
+0	0	data/BGE00674_nanopore.fasta	None	Hygromiidae	BLAST	family	653	655	Hygromiidae	BIOSC1958-25_consensus0	Hesseola pretensis	0
+0	0	data/BGE00674_nanopore.fasta	None	Hygromiidae	BLAST	family	653	655	Hygromiidae	BIOSC1959-25_consensus0	Hesseola pretensis	0
+0	0	data/BGE00674_nanopore.fasta	None	Agriolimacidae	BLAST	family	653	655	Agriolimacidae,Ariophantidae,Helicarionidae	BIOSC1960-25_consensus0	Deroceras laeve	0
+0	0	data/BGE00674_nanopore.fasta	None	Agriolimacidae	BLAST	family	653	655	Agriolimacidae,Ariophantidae,Helicarionidae	BIOSC1961-25_consensus1	Deroceras laeve	0
+0	0	data/BGE00674_nanopore.fasta	None	Agriolimacidae	BLAST	family	652	655	Limacidae,Ariophantidae,Dyakiidae	BIOSC1961-25_consensus0	Deroceras laeve	0
+0	0	data/BGE00674_nanopore.fasta	None	Agriolimacidae	BLAST	family	653	655	Agriolimacidae,Ariophantidae,Helicarionidae	BIOSC1962-25_consensus0	Deroceras laeve	0
+0	0	data/BGE00674_nanopore.fasta	None	Agriolimacidae	BLAST	family	654	655	Limacidae	BIOSC1963-25_consensus0	Deroceras transcaucasia	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	646	649		BIOSC1964-25_consensus96	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	662	664	Solemyidae,Nuculidae,Mycetopodidae	BIOSC1964-25_consensus5	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	663	664	Pinnidae,Pharidae,Cultellidae,Sphaeriidae	BIOSC1964-25_consensus0	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	656	658	Sphaeriidae	BIOSC1964-25_consensus6	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	630	649		BIOSC1964-25_consensus95	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	660	664		BIOSC1964-25_consensus2	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	643	649		BIOSC1964-25_consensus123	Euglesa subtruncata	3
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	635	649	Mactridae	BIOSC1964-25_consensus105	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	656	658	Solemyidae,Nuculidae,Unionidae,Sphaeriidae	BIOSC1964-25_consensus452	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	1	644		BIOSC1965-25_consensus276	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	641	652		BIOSC1965-25_consensus77	Euglesa subtruncata	2
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	653	655	Nuculidae,Yoldiidae,Lasaeidae,Montacutidae	BIOSC1965-25_consensus33	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	630	649		BIOSC1965-25_consensus111	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	656	658	Sphaeriidae	BIOSC1965-25_consensus4	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	657	658	Nuculidae,Trapezidae	BIOSC1965-25_consensus2	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	615	649		BIOSC1965-25_consensus146	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	656	658	Nuculidae,Unionidae,Trapezidae	BIOSC1965-25_consensus3	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	643	649		BIOSC1965-25_consensus116	Euglesa subtruncata	3
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	656	658	Nuculidae	BIOSC1965-25_consensus89	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	645	649	Cyrenidae	BIOSC1967-25_consensus156	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	660	664		BIOSC1967-25_consensus5	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	663	664	Unionidae	BIOSC1967-25_consensus4	Euglesa subtruncata	3
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	1	652		BIOSC1967-25_consensus275	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	656	658	Sphaeriidae	BIOSC1967-25_consensus12	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	658	661		BIOSC1967-25_consensus23	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	630	649		BIOSC1967-25_consensus57	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	658	661	Unionidae	BIOSC1967-25_consensus9	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	656	658	Nuculidae	BIOSC1967-25_consensus160	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	643	652		BIOSC1967-25_consensus3	Euglesa subtruncata	9
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	646	649		BIOSC1967-25_consensus61	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	616	652		BIOSC1967-25_consensus46	Euglesa subtruncata	3
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	660	663	Ostreidae,Pinnidae,Solecurtidae	BIOSC1967-25_consensus8	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	654	657		BIOSC1968-25_consensus76	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	660	664	Pinnidae	BIOSC1968-25_consensus10	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	606	652		BIOSC1968-25_consensus94	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	662	664	Mytilidae	BIOSC1968-25_consensus5	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	613	649		BIOSC1968-25_consensus361	Euglesa subtruncata	1
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	662	664	Unionidae	BIOSC1968-25_consensus6	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	597	649		BIOSC1968-25_consensus117	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	638	649		BIOSC1968-25_consensus114	Euglesa subtruncata	12
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	631	652		BIOSC1968-25_consensus72	Euglesa subtruncata	11
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	661	664	Pinnidae,Solecurtidae	BIOSC1968-25_consensus4	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	657	658	Unionidae	BIOSC1968-25_consensus39	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	637	664		BIOSC1968-25_consensus7	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	663	664	Solemyidae,Margaritiferidae	BIOSC1968-25_consensus23	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	663	664	Solemyidae,Pinnidae,Cyrenidae	BIOSC1968-25_consensus15	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	601	649		BIOSC1968-25_consensus97	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	661	664	Mytilidae	BIOSC1968-25_consensus18	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	613	649		BIOSC1968-25_consensus203	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	612	652		BIOSC1968-25_consensus105	Euglesa subtruncata	1
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	627	652		BIOSC1968-25_consensus80	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	632	649		BIOSC1968-25_consensus101	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Sphaeriidae	BLAST	family	615	649		BIOSC1968-25_consensus116	Euglesa subtruncata	0
+0	0	data/BGE00674_nanopore.fasta	None	Hygromiidae	BLAST	family	606	652		BIOSC1969-25_consensus0	Diplobursa pisiformis	0
+0	0	data/BGE00674_nanopore.fasta	None	Hygromiidae	BLAST	family	606	652		BIOSC1970-25_consensus0	Diplobursa pisiformis	0
+0	0	data/BGE00674_nanopore.fasta	None	Hygromiidae	BLAST	family	606	652		BIOSC1971-25_consensus0	Diplobursa pisiformis	0
+0	0	data/BGE00674_nanopore.fasta	None	Orculidae	BLAST	family	653	655	Pupillidae	BIOSC1972-25_consensus0	Sphyradium doliolum	0
+0	0	data/BGE00674_nanopore.fasta	None	Orculidae	BLAST	family	653	655	Pupillidae	BIOSC1973-25_consensus0	Sphyradium doliolum	0
+0	0	data/BGE00674_nanopore.fasta	None	Hygromiidae	BLAST	family	653	655	Oxychilidae	BIOSC1974-25_consensus0	Diplobursa pisiformis	0
+0	0	data/BGE00674_nanopore.fasta	None	Hygromiidae	BLAST	family	653	655	Oxychilidae	BIOSC1976-25_consensus1	Diplobursa pisiformis	0
+0	0	data/BGE00674_nanopore.fasta	None	Hygromiidae	BLAST	family	654	655	Hygromiidae	BIOSC1978-25_consensus0	Xeropicta krynickii	0
+0	0	data/BGE00674_nanopore.fasta	None	Cochlicopidae	BLAST	family	654	655	Cochlicopidae	BIOSC1979-25_consensus0	Cochlicopa lubrica	0
+0	0	data/BGE00674_nanopore.fasta	None	Cochlicopidae	BLAST	family	346	687	Cochlicopidae	BIOSC1979-25_consensus500	Cochlicopa lubrica	1
+0	0	data/BGE00674_nanopore.fasta	None	Valloniidae	BLAST	family	635	664	Diplommatinidae	BIOSC1980-25_consensus0	Vallonia costata	3
+0	0	data/BGE00674_nanopore.fasta	None	Valloniidae	BLAST	family	662	664	Columbellidae,Viviparidae,Helicidae	BIOSC1980-25_consensus33	Vallonia costata	0
+0	0	data/BGE00674_nanopore.fasta	None	Valloniidae	BLAST	family	656	658	Drilliidae,Ampullariidae,Pomatiidae,Hydrobiidae,Pomatiopsidae,Hygromiidae	BIOSC1980-25_consensus126	Vallonia costata	0
+0	0	data/BGE00674_nanopore.fasta	None	Valloniidae	BLAST	family	658	661	Cyclophoridae,Naticidae,Lymnaeidae	BIOSC1980-25_consensus44	Vallonia costata	0
+0	0	data/BGE00674_nanopore.fasta	None	Valloniidae	BLAST	family	648	652	Terebridae,Columbellidae,Pomatiidae	BIOSC1980-25_consensus66	Vallonia costata	0
+0	0	data/BGE00674_nanopore.fasta	None	Succineidae	BLAST	family	653	655	Annulariidae,Helicidae	BIOSC1982-25_consensus0	Oxyloma elegans	0
+0	0	data/BGE00674_nanopore.fasta	None	Ligiidae	BLAST	family	656	658	Ligiidae	BIOSC1989-25_consensus0	Caucasoligidium	0
+0	0	data/BGE00674_nanopore.fasta	None	Ligiidae	BLAST	family	656	658	Ligiidae	BIOSC1990-25_consensus0	Caucasoligidium	0
+0	0	data/BGE00674_nanopore.fasta	None	Ligiidae	BLAST	family	656	658	Ligiidae	BIOSC1991-25_consensus0	Caucasoligidium	0
+0	0	data/BGE00674_nanopore.fasta	None	Ligiidae	BLAST	family	629	631	Solenoceridae,Paguridae,Galatheidae,Grapsidae	BIOSC1992-25_consensus41	Caucasoligidium	0
+0	0	data/BGE00674_nanopore.fasta	None	Ligiidae	BLAST	family	656	658	Ligiidae	BIOSC1992-25_consensus0	Caucasoligidium	0
+0	0	data/BGE00674_nanopore.fasta	None	Cossidae	BLAST	family	657	658	Cossidae	BIOSC1993-25_consensus0	Dyspessa alpherakyi	0
+0	0	data/BGE00674_nanopore.fasta	None	Cossidae	BLAST	family	657	658	Cossidae	BIOSC1994-25_consensus0	Dyspessa alpherakyi	0
+0	0	data/BGE00674_nanopore.fasta	None	Cybaeidae	BLAST	family	657	658	Hahniidae	BIOSC1995-25_consensus1	Cybaeidae	0
+0	0	data/BGE00674_nanopore.fasta	None	Cybaeidae	BLAST	family	656	658	Tetragnathidae,Linyphiidae,Ixodidae	BIOSC1995-25_consensus0	Cybaeidae	0
+0	0	data/BGE00674_nanopore.fasta	None	Cybaeidae	BLAST	family	653	656	Pisauridae,Hahniidae	BIOSC1995-25_consensus12	Cybaeidae	13

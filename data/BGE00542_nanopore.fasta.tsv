@@ -1,0 +1,92 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00542_nanopore.fasta	None	Micropterigidae	BLAST	family	660	664	Flatidae	ILECA2186-25_consensus0	Micropterix maschukella	0
+0	0	data/BGE00542_nanopore.fasta	None	Adelidae	BLAST	family	657	658	Crambidae,Prodoxidae,Incurvariidae	ILECA2187-25_consensus0	Adelidae	0
+0	0	data/BGE00542_nanopore.fasta	None	Adelidae	BLAST	family	657	658	Crambidae,Prodoxidae,Incurvariidae	ILECA2188-25_consensus0	Adelidae	0
+0	0	data/BGE00542_nanopore.fasta	None	Adelidae	BLAST	family	657	658	Adelidae	ILECA2189-25_consensus0	Cauchas	0
+0	0	data/BGE00542_nanopore.fasta	None	Adelidae	BLAST	family	657	658	Adelidae	ILECA2190-25_consensus0	Cauchas	0
+0	0	data/BGE00542_nanopore.fasta	None	Adelidae	BLAST	family	657	658	Adelidae	ILECA2191-25_consensus0	Cauchas	0
+0	0	data/BGE00542_nanopore.fasta	None	Adelidae	BLAST	family	657	658	Adelidae	ILECA2192-25_consensus0	Cauchas	0
+0	0	data/BGE00542_nanopore.fasta	None	Adelidae	BLAST	family	656	658	Adelidae	ILECA2193-25_consensus0	Nematopogon	0
+0	0	data/BGE00542_nanopore.fasta	None	Adelidae	BLAST	family	656	658	Adelidae	ILECA2194-25_consensus0	Nematopogon	0
+0	0	data/BGE00542_nanopore.fasta	None	Adelidae	BLAST	family	656	658	Adelidae	ILECA2195-25_consensus0	Nematopogon	0
+0	0	data/BGE00542_nanopore.fasta	None	Tineidae	BLAST	family	657	658	Tineidae	ILECA2196-25_consensus0	Monopis	0
+0	0	data/BGE00542_nanopore.fasta	None	Tineidae	BLAST	family	654	655	Tineidae	ILECA2198-25_consensus0	Morophagoides	0
+0	0	data/BGE00542_nanopore.fasta	None	Tineidae	BLAST	family	657	658	Tineidae	ILECA2199-25_consensus0	Archinemapogon	0
+0	0	data/BGE00542_nanopore.fasta	None	Tineidae	BLAST	family	656	658	Scirtidae	ILECA2201-25_consensus13	Nemapogon	0
+0	0	data/BGE00542_nanopore.fasta	None	Tineidae	BLAST	family	656	658	Tineidae	ILECA2201-25_consensus0	Nemapogon	0
+0	0	data/BGE00542_nanopore.fasta	None	Tineidae	BLAST	family	656	658	Tineidae	ILECA2202-25_consensus0	Nemapogon	0
+0	0	data/BGE00542_nanopore.fasta	None	Tineidae	BLAST	family	657	658	Tineidae	ILECA2203-25_consensus0	Nemapogon	0
+0	0	data/BGE00542_nanopore.fasta	None	Tineidae	BLAST	family	657	658	Tineidae	ILECA2205-25_consensus0	Nemapogon	0
+0	0	data/BGE00542_nanopore.fasta	None	Tineidae	BLAST	family	657	658	Tineidae	ILECA2206-25_consensus6	Tineidae	0
+0	0	data/BGE00542_nanopore.fasta	None	Tineidae	BLAST	family	657	658	Noctuidae,Crambidae	ILECA2207-25_consensus0	Tineidae	0
+0	0	data/BGE00542_nanopore.fasta	None	Tineidae	BLAST	family	657	658	Noctuidae,Crambidae	ILECA2208-25_consensus0	Tineidae	0
+0	0	data/BGE00542_nanopore.fasta	None	Glyphipterigidae	BLAST	family	657	658	Plutellidae,Pyralidae,Crambidae	ILECA2211-25_consensus0	Acrolepiopsis	0
+0	0	data/BGE00542_nanopore.fasta	None	Glyphipterigidae	BLAST	family	657	658	Plutellidae,Pyralidae,Crambidae	ILECA2212-25_consensus2	Acrolepiopsis	0
+0	0	data/BGE00542_nanopore.fasta	None	Bucculatricidae	BLAST	family	657	658	Bucculatricidae	ILECA2213-25_consensus0	Bucculatrix	0
+0	0	data/BGE00542_nanopore.fasta	None	Gracillariidae	BLAST	family	657	658	Gracillariidae	ILECA2214-25_consensus0	Aspilapteryx magna	0
+0	0	data/BGE00542_nanopore.fasta	None	Gracillariidae	BLAST	family	657	658	Gracillariidae	ILECA2216-25_consensus1	Phyllonorycter	0
+0	0	data/BGE00542_nanopore.fasta	None	Pterophoridae	BLAST	family	657	658	Geometridae,Pterophoridae	ILECA2217-25_consensus0	Pterophoridae	0
+0	0	data/BGE00542_nanopore.fasta	None	Pterophoridae	BLAST	family	661	666	Sciomyzidae,Anthomyiidae	ILECA2219-25_consensus1	Pterophoridae	1
+0	0	data/BGE00542_nanopore.fasta	None	Pterophoridae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	ILECA2219-25_consensus5	Pterophoridae	0
+0	0	data/BGE00542_nanopore.fasta	None	Pterophoridae	BLAST	family	656	657	Tettigoniidae,Notonemouridae,Ninidae,Psychodidae,Ulidiidae,Vespidae,Hydropsychidae	ILECA2219-25_consensus11	Pterophoridae	1
+0	0	data/BGE00542_nanopore.fasta	None	Pterophoridae	BLAST	family	627	629	Leptophlebiidae,Dermestidae,Bombyliidae,Dolichopodidae	ILECA2219-25_consensus277	Pterophoridae	0
+0	0	data/BGE00542_nanopore.fasta	None	Pterophoridae	BLAST	family	657	658	Pterophoridae	ILECA2219-25_consensus3	Pterophoridae	0
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	657	658	Tortricidae	ILECA2220-25_consensus1	Dichrorampha	0
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	553	684	Tortricidae	ILECA2220-25_consensus1227	Dichrorampha	6
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	657	658	Tortricidae	ILECA2221-25_consensus1	Dichrorampha	0
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	657	658	Tortricidae	ILECA2222-25_consensus0	Dichrorampha	0
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	657	658	Tortricidae	ILECA2223-25_consensus0	Dichrorampha	0
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	657	658	Tortricidae	ILECA2224-25_consensus0	Dichrorampha	0
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	657	658	Tortricidae	ILECA2225-25_consensus1	Dichrorampha	0
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	657	658	Tortricidae	ILECA2226-25_consensus0	Dichrorampha	0
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	657	658	Tortricidae	ILECA2227-25_consensus1	Dichrorampha	0
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	657	658	Tortricidae	ILECA2228-25_consensus0	Dichrorampha	0
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	591	711	Tortricidae	ILECA2228-25_consensus188	Dichrorampha	1
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	657	658	Tortricidae	ILECA2229-25_consensus1	Dichrorampha	0
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	657	658	Tortricidae	ILECA2230-25_consensus3	Dichrorampha	0
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	657	658	Tortricidae	ILECA2231-25_consensus1	Dichrorampha	0
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	656	658	Chironomidae	ILECA2231-25_consensus345	Dichrorampha	0
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	657	658	Tortricidae	ILECA2232-25_consensus0	Grapholitini	0
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	657	658	Tortricidae	ILECA2233-25_consensus0	Grapholitini	0
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	657	658	Tortricidae	ILECA2234-25_consensus5	Eucosmini	0
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	657	658	Tortricidae	ILECA2235-25_consensus1	Olethreutes	0
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	466	704	Tortricidae	ILECA2235-25_consensus0	Olethreutes	8
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	657	658	Tortricidae	ILECA2236-25_consensus0	Cochylini	0
+0	0	data/BGE00542_nanopore.fasta	None	Tortricidae	BLAST	family	657	658	Tortricidae	ILECA2237-25_consensus0	Cochylini	0
+0	0	data/BGE00542_nanopore.fasta	None	Lypusidae	BLAST	family	657	658	Lypusidae,Depressariidae	ILECA2239-25_consensus0	Agnoea	0
+0	0	data/BGE00542_nanopore.fasta	None	Lypusidae	BLAST	family	655	658	Braconidae	ILECA2239-25_consensus12	Agnoea	0
+0	0	data/BGE00542_nanopore.fasta	None	Depressariidae	BLAST	family	657	658	Oecophoridae	ILECA2240-25_consensus0	Anchinia grandis	0
+0	0	data/BGE00542_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae	ILECA2243-25_consensus0	Megacraspedus	0
+0	0	data/BGE00542_nanopore.fasta	None	Gelechiidae	BLAST	family	655	656	Gelechiidae	ILECA2246-25_consensus0	Scrobipalpa	1
+0	0	data/BGE00542_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae	ILECA2247-25_consensus0	Scrobipalpa	0
+0	0	data/BGE00542_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae	ILECA2248-25_consensus0	Scrobipalpa	0
+0	0	data/BGE00542_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae	ILECA2249-25_consensus1	Scrobipalpa	0
+0	0	data/BGE00542_nanopore.fasta	None	Coleophoridae	BLAST	family	657	658	Coleophoridae	ILECA2250-25_consensus0	Coleophora	0
+0	0	data/BGE00542_nanopore.fasta	None	Coleophoridae	BLAST	family	657	658	Coleophoridae	ILECA2253-25_consensus0	Coleophora	0
+0	0	data/BGE00542_nanopore.fasta	None	Coleophoridae	BLAST	family	559	713	Coleophoridae	ILECA2255-25_consensus0	Coleophora	4
+0	0	data/BGE00542_nanopore.fasta	None	Coleophoridae	BLAST	family	657	658	Coleophoridae	ILECA2255-25_consensus2	Coleophora	0
+0	0	data/BGE00542_nanopore.fasta	None	Coleophoridae	BLAST	family	657	658	Coleophoridae	ILECA2256-25_consensus0	Coleophora	0
+0	0	data/BGE00542_nanopore.fasta	None	Coleophoridae	BLAST	family	657	658	Coleophoridae	ILECA2257-25_consensus3	Coleophora	0
+0	0	data/BGE00542_nanopore.fasta	None	Coleophoridae	BLAST	family	657	658	Coleophoridae	ILECA2258-25_consensus0	Coleophora	0
+0	0	data/BGE00542_nanopore.fasta	None	Coleophoridae	BLAST	family	587	711	Coleophoridae	ILECA2258-25_consensus53	Coleophora	4
+0	0	data/BGE00542_nanopore.fasta	None	Coleophoridae	BLAST	family	657	658	Coleophoridae	ILECA2260-25_consensus0	Coleophora	0
+0	0	data/BGE00542_nanopore.fasta	None	Scythrididae	BLAST	family	657	658	Scythrididae	ILECA2261-25_consensus0	Scythris	0
+0	0	data/BGE00542_nanopore.fasta	None	Pyralidae	BLAST	family	657	658	Oecophoridae,Noctuidae,Erebidae,Pyralidae,Crambidae	ILECA2262-25_consensus0	Hypotia	0
+0	0	data/BGE00542_nanopore.fasta	None	Pyralidae	BLAST	family	657	658	Depressariidae,Erebidae,Pyralidae	ILECA2263-25_consensus0	Myelois	0
+0	0	data/BGE00542_nanopore.fasta	None	Pyralidae	BLAST	family	657	658	Pyralidae	ILECA2264-25_consensus0	Hypochalcia	0
+0	0	data/BGE00542_nanopore.fasta	None	Pyralidae	BLAST	family	656	658	Timematidae,Curculionidae,Drosophilidae,Formicidae,Geometridae	ILECA2265-25_consensus0	Hypochalcia	0
+0	0	data/BGE00542_nanopore.fasta	None	Pyralidae	BLAST	family	657	658	Pyralidae	ILECA2266-25_consensus0	Phycitodes	0
+0	0	data/BGE00542_nanopore.fasta	None	Pyralidae	BLAST	family	657	658	Pyralidae	ILECA2267-25_consensus0	Phycitodes	0
+0	0	data/BGE00542_nanopore.fasta	None	Crambidae	BLAST	family	656	657	Tettigoniidae,Notonemouridae,Ninidae,Psychodidae,Ulidiidae,Vespidae,Hydropsychidae	ILECA2268-25_consensus13	Catoptria laevigatellus	1
+0	0	data/BGE00542_nanopore.fasta	None	Crambidae	BLAST	family	661	666	Sciomyzidae,Anthomyiidae	ILECA2268-25_consensus0	Catoptria laevigatellus	1
+0	0	data/BGE00542_nanopore.fasta	None	Crambidae	BLAST	family	656	658	Crambidae	ILECA2268-25_consensus2	Catoptria laevigatellus	0
+0	0	data/BGE00542_nanopore.fasta	None	Crambidae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	ILECA2268-25_consensus8	Catoptria laevigatellus	0
+0	0	data/BGE00542_nanopore.fasta	None	Crambidae	BLAST	family	656	658	Crambidae	ILECA2269-25_consensus0	Catoptria laevigatellus	0
+0	0	data/BGE00542_nanopore.fasta	None	Crambidae	BLAST	family	657	658	Crambidae	ILECA2270-25_consensus0	Euchromius mouchai	0
+0	0	data/BGE00542_nanopore.fasta	None	Crambidae	BLAST	family	656	658	Crambidae	ILECA2273-25_consensus6	Pyrausta aerealis	0
+0	0	data/BGE00542_nanopore.fasta	None	Crambidae	BLAST	family	657	658	Crambidae	ILECA2274-25_consensus1	Crambidae	0
+0	0	data/BGE00542_nanopore.fasta	None	Crambidae	BLAST	family	657	658	Crambidae	ILECA2275-25_consensus0	Crambidae	0
+0	0	data/BGE00542_nanopore.fasta	None	Crambidae	BLAST	family	657	658	Crambidae	ILECA2276-25_consensus0	Crambidae	0
+0	0	data/BGE00542_nanopore.fasta	None	Crambidae	BLAST	family	657	658	Crambidae	ILECA2277-25_consensus1	Crambidae	0
+0	0	data/BGE00542_nanopore.fasta	None	Geometridae	BLAST	family	657	658	Geometridae	ILECA2279-25_consensus0	Asthena percandidata	0
+0	0	data/BGE00542_nanopore.fasta	None	Erebidae	BLAST	family	657	658	Noctuidae	ILECA2280-25_consensus0	Eublemma	0

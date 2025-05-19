@@ -1,0 +1,185 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	655	658	Pachybolidae,Harpagophoridae,Julidae,Chordeumatidae	BIOSC1806-25_consensus0	Leucogeorgia prometheus	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	655	658	Pachybolidae,Harpagophoridae,Julidae,Chordeumatidae	BIOSC1807-25_consensus0	Leucogeorgia prometheus	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	655	658	Pachybolidae,Harpagophoridae,Julidae,Chordeumatidae	BIOSC1808-25_consensus0	Leucogeorgia prometheus	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	655	658	Pachybolidae,Harpagophoridae,Julidae,Chordeumatidae	BIOSC1809-25_consensus0	Leucogeorgia prometheus	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	655	658	Pachybolidae,Harpagophoridae,Iulomorphidae,Julidae,Chordeumatidae	BIOSC1810-25_consensus0	Leucogeorgia prometheus	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	655	658	Pachybolidae,Harpagophoridae,Julidae,Blaniulidae	BIOSC1811-25_consensus0	Leucogeorgia golovatchi	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	656	658	Julidae	BIOSC1812-25_consensus0	Leucogeorgia golovatchi	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	655	658	Pachybolidae,Harpagophoridae,Julidae,Blaniulidae	BIOSC1812-25_consensus25	Leucogeorgia golovatchi	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	655	658	Pachybolidae,Julidae,Blaniulidae	BIOSC1813-25_consensus0	Leucogeorgia golovatchi	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	655	658	Pachybolidae,Julidae,Blaniulidae	BIOSC1814-25_consensus0	Leucogeorgia golovatchi	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	655	658	Pachybolidae,Harpagophoridae,Julidae,Blaniulidae	BIOSC1815-25_consensus0	Leucogeorgia golovatchi	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	651	652		BIOSC1816-25_consensus113	Diplopoda	4
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	656	658	Glomeridae,Glomeridellidae,Trachysphaeridae	BIOSC1816-25_consensus31	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	662	664	Polyxenidae	BIOSC1816-25_consensus0	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	616	652		BIOSC1816-25_consensus78	Diplopoda	11
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	597	652		BIOSC1816-25_consensus68	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	648	652		BIOSC1816-25_consensus77	Diplopoda	2
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	649	652		BIOSC1816-25_consensus166	Diplopoda	8
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	656	658	Cambalopsidae,Julidae,Megalotylidae,Sphaerotheriidae	BIOSC1816-25_consensus51	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	608	652		BIOSC1816-25_consensus104	Diplopoda	4
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	656	658	Glomeridae,Paradoxosomatidae,Xystodesmidae	BIOSC1816-25_consensus3	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	659	664	Paradoxosomatidae,Xystodesmidae	BIOSC1816-25_consensus80	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	640	652		BIOSC1816-25_consensus211	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	656	658	Glomeridae,Glomeridellidae,Trachysphaeridae	BIOSC1817-25_consensus4	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	633	649		BIOSC1817-25_consensus11	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	663	664	Glomeridae,Harpagophoridae,Polydesmidae	BIOSC1817-25_consensus3	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	661	664		BIOSC1818-25_consensus1	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	650	652	Glomeridae,Polydesmidae,Paradoxosomatidae,Rhachodesmidae	BIOSC1818-25_consensus31	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	655	658	Pachybolidae,Odontopygidae,Paradoxosomatidae	BIOSC1818-25_consensus0	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	649	652		BIOSC1818-25_consensus51	Diplopoda	8
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	656	658	Glomeridae,Glomeridellidae,Trachysphaeridae	BIOSC1818-25_consensus11	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	652	655	Glomeridae,Polydesmidae,Paradoxosomatidae	BIOSC1818-25_consensus19	Diplopoda	14
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	661	664		BIOSC1818-25_consensus15	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	656	658	Cambalopsidae,Julidae,Megalotylidae,Sphaerotheriidae	BIOSC1818-25_consensus14	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	663	664	Polydesmidae,Paradoxosomatidae,Xystodesmidae	BIOSC1818-25_consensus3	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	650	652		BIOSC1818-25_consensus40	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	633	649		BIOSC1818-25_consensus82	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	657	664	Paradoxosomatidae,Xystodesmidae	BIOSC1818-25_consensus103	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	656	658	Pachybolidae	BIOSC1818-25_consensus27	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	662	664	Paradoxosomatidae	BIOSC1818-25_consensus8	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	584	649		BIOSC1818-25_consensus53	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	629	632	Glomeridae,Polydesmidae,Xystodesmidae,Sphaerotheriidae	BIOSC1818-25_consensus140	Diplopoda	11
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	633	649		BIOSC1819-25_consensus1	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	614	649		BIOSC1819-25_consensus82	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	656	658	Glomeridae,Glomeridellidae,Trachysphaeridae	BIOSC1820-25_consensus0	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	622	652		BIOSC1820-25_consensus138	Diplopoda	4
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	646	652		BIOSC1820-25_consensus39	Diplopoda	7
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	656	658	Cambalopsidae,Julidae,Megalotylidae,Sphaerotheriidae	BIOSC1820-25_consensus93	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	602	652		BIOSC1820-25_consensus110	Diplopoda	1
+0	0	data/BGE00671_nanopore.fasta	None	None	BLAST	family	633	649		BIOSC1820-25_consensus47	Diplopoda	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	657	658	Pachybolidae,Pseudospirobolellidae,Spirostreptidae,Julidae	BIOSC1821-25_consensus1	Omobrachyiulus divaricatus	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	656	658		BIOSC1821-25_consensus0	Omobrachyiulus divaricatus	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	655	658	Pachybolidae,Julidae,Craspedosomatidae,Sphaerotheriidae	BIOSC1821-25_consensus2	Omobrachyiulus divaricatus	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	657	658	Trigoniulidae,Paradoxosomatidae,Xystodesmidae	BIOSC1822-25_consensus1	Omobrachyiulus divaricatus	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	657	658	Pachybolidae,Pseudospirobolellidae,Spirostreptidae,Julidae	BIOSC1822-25_consensus0	Omobrachyiulus divaricatus	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	657	658	Polyxenidae,Pachybolidae	BIOSC1822-25_consensus9	Omobrachyiulus divaricatus	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	653	655	Polyxenidae,Paradoxosomatidae	BIOSC1822-25_consensus14	Omobrachyiulus divaricatus	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	655	658	Pachybolidae,Julidae,Craspedosomatidae,Sphaerotheriidae	BIOSC1822-25_consensus24	Omobrachyiulus divaricatus	0
+0	0	data/BGE00671_nanopore.fasta	None	Trichoniscidae	BLAST	family	656	658	Trichoniscidae	BIOSC1825-25_consensus1	Trichoniscidae	0
+0	0	data/BGE00671_nanopore.fasta	None	Trichoniscidae	BLAST	family	656	658	Trichoniscidae	BIOSC1826-25_consensus0	Trichoniscidae	0
+0	0	data/BGE00671_nanopore.fasta	None	Trichoniscidae	BLAST	family	656	658	Trichoniscidae	BIOSC1827-25_consensus0	Trichoniscidae	0
+0	0	data/BGE00671_nanopore.fasta	None	Trichoniscidae	BLAST	family	656	658	Trichoniscidae	BIOSC1828-25_consensus0	Trichoniscidae	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	656	658	Spirostreptidae,Julidae,Xystodesmidae	BIOSC1829-25_consensus0	Chaetoleptophyllum flexum	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	656	658	Spirostreptidae,Julidae,Xystodesmidae	BIOSC1830-25_consensus1	Chaetoleptophyllum flexum	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	656	658	Spirostreptidae,Julidae,Xystodesmidae	BIOSC1831-25_consensus0	Chaetoleptophyllum flexum	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	656	658	Spirostreptidae,Julidae,Xystodesmidae	BIOSC1832-25_consensus0	Chaetoleptophyllum flexum	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	657	658	Julidae	BIOSC1833-25_consensus0	Euxinoiulus colchicus	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	657	658	Julidae	BIOSC1834-25_consensus0	Euxinoiulus colchicus	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	656	658	Julidae	BIOSC1835-25_consensus0	Cylindroiulus parvus	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	656	658	Julidae	BIOSC1836-25_consensus0	Cylindroiulus parvus	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	656	658	Julidae	BIOSC1837-25_consensus0	Cylindroiulus parvus	0
+0	0	data/BGE00671_nanopore.fasta	None	Chthoniidae	BLAST	family	656	658	Chthoniidae	BIOSC1838-25_consensus0	Ephippiochthonius fuscimanus	0
+0	0	data/BGE00671_nanopore.fasta	None	Chthoniidae	BLAST	family	656	658	Chthoniidae	BIOSC1839-25_consensus0	Ephippiochthonius fuscimanus	0
+0	0	data/BGE00671_nanopore.fasta	None	Olpiidae	BLAST	family	654	655	Olpiidae	BIOSC1840-25_consensus0	Minniza babylonica	0
+0	0	data/BGE00671_nanopore.fasta	None	Chthoniidae	BLAST	family	657	658	Chthoniidae	BIOSC1841-25_consensus0	Ephippiochthonius fuscimanus	0
+0	0	data/BGE00671_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BIOSC1842-25_consensus0	Neobisium neobisium cf. labinskyi	0
+0	0	data/BGE00671_nanopore.fasta	None	Neobisiidae	BLAST	family	656	658	Atypidae,Oonopidae,Scytodidae,Leptonetidae,Pholcidae,Agelenidae,Archaeidae,Macronyssidae,Neobisiidae	BIOSC1843-25_consensus0	Neobisium neobisium cf. labinskyi	0
+0	0	data/BGE00671_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BIOSC1843-25_consensus2	Neobisium neobisium cf. labinskyi	0
+0	0	data/BGE00671_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BIOSC1844-25_consensus0	Neobisium neobisium cf. labinskyi	0
+0	0	data/BGE00671_nanopore.fasta	None	Chernetidae	BLAST	family	661	664	Diplocentridae,Ctenizidae,Idiopidae,Filistatidae	BIOSC1845-25_consensus0	Allochernes allochernes cf. wideri	0
+0	0	data/BGE00671_nanopore.fasta	None	Chernetidae	BLAST	family	653	654	Chernetidae	BIOSC1845-25_consensus3	Allochernes allochernes cf. wideri	0
+0	0	data/BGE00671_nanopore.fasta	None	Chernetidae	BLAST	family	656	658	Oonopidae,Scytodidae,Leptonetidae,Agelenidae,Archaeidae,Macronyssidae,Neobisiidae	BIOSC1845-25_consensus8	Allochernes allochernes cf. wideri	0
+0	0	data/BGE00671_nanopore.fasta	None	Chernetidae	BLAST	family	662	664	Chaerilidae,Atypidae,Deinopidae,Hersiliidae	BIOSC1846-25_consensus0	Allochernes allochernes cf. wideri	0
+0	0	data/BGE00671_nanopore.fasta	None	Chernetidae	BLAST	family	662	664	Lebertiidae,Pionidae,Unionicolidae,Eupodidae,Karschiidae,Rhagodidae	BIOSC1846-25_consensus7	Allochernes allochernes cf. wideri	0
+0	0	data/BGE00671_nanopore.fasta	None	Chernetidae	BLAST	family	655	658	Eriophyidae	BIOSC1846-25_consensus92	Allochernes allochernes cf. wideri	0
+0	0	data/BGE00671_nanopore.fasta	None	Chernetidae	BLAST	family	662	664	Theridiidae,Uloboridae,Agelenidae	BIOSC1846-25_consensus40	Allochernes allochernes cf. wideri	0
+0	0	data/BGE00671_nanopore.fasta	None	Cheliferidae	BLAST	family	653	655	Cheliferidae	BIOSC1847-25_consensus0	Dactylochelifer dactylochelifer cf. latreillii	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	655	658	Pachybolidae,Spirobolellidae,Julidae	BIOSC1848-25_consensus0	Leucogeorgia lobata	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	655	658	Pachybolidae,Spirobolellidae,Julidae	BIOSC1849-25_consensus0	Leucogeorgia lobata	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	655	658	Pachybolidae,Spirobolellidae,Julidae	BIOSC1850-25_consensus0	Leucogeorgia lobata	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	655	658	Pachybolidae,Spirobolellidae,Julidae	BIOSC1851-25_consensus0	Leucogeorgia lobata	0
+0	0	data/BGE00671_nanopore.fasta	None	Julidae	BLAST	family	655	658	Pachybolidae,Harpagophoridae,Julidae,Chordeumatidae	BIOSC1852-25_consensus0	Leucogeorgia lobata	0
+0	0	data/BGE00671_nanopore.fasta	None	Anthroleucosomatidae	BLAST	family	657	658	Craspedosomatidae,Mastigophorophyllidae,Megalotylidae,Verhoeffiidae	BIOSC1853-25_consensus0	Metamastigophorophyllon torsivum	0
+0	0	data/BGE00671_nanopore.fasta	None	Anthroleucosomatidae	BLAST	family	657	658	Craspedosomatidae,Mastigophorophyllidae,Megalotylidae,Verhoeffiidae	BIOSC1854-25_consensus0	Metamastigophorophyllon torsivum	0
+0	0	data/BGE00671_nanopore.fasta	None	Anthroleucosomatidae	BLAST	family	657	658	Craspedosomatidae,Mastigophorophyllidae,Megalotylidae,Verhoeffiidae	BIOSC1855-25_consensus0	Metamastigophorophyllon torsivum	0
+0	0	data/BGE00671_nanopore.fasta	None	Anthroleucosomatidae	BLAST	family	657	658	Craspedosomatidae,Mastigophorophyllidae,Megalotylidae,Verhoeffiidae	BIOSC1856-25_consensus0	Metamastigophorophyllon torsivum	0
+0	0	data/BGE00671_nanopore.fasta	None	Anthroleucosomatidae	BLAST	family	657	658	Craspedosomatidae,Mastigophorophyllidae,Megalotylidae,Verhoeffiidae	BIOSC1857-25_consensus0	Metamastigophorophyllon torsivum	0
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	657	658	Nemastomatidae	BIOSC1858-25_consensus0	Nemaspela sp.nov sakinule	0
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	657	658	Nemastomatidae	BIOSC1859-25_consensus0	Nemaspela melouri	0
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	657	658	Nemastomatidae	BIOSC1860-25_consensus0	Nemaspela melouri	0
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	657	658	Nemastomatidae	BIOSC1861-25_consensus0	Nemaspela sp.nov. melia	0
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	656	658	Nemastomatidae,Phalangiidae	BIOSC1862-25_consensus0	Nemaspela sp.nov. Sakavria	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	656	658	Lithobiidae	BIOSC1863-25_consensus0	Lithobius cronebergii	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	656	658	Lithobiidae	BIOSC1864-25_consensus0	Lithobius sectilis	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	30	670		BIOSC1865-25_consensus0	Lithobius sectilis	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	655	658	Scutigeridae,Cryptopidae,Scolopendridae	BIOSC1865-25_consensus11	Lithobius sectilis	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	654	657	Lithobiidae	BIOSC1865-25_consensus15	Lithobius sectilis	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	656	658	Lithobiidae	BIOSC1866-25_consensus0	Lithobius sectilis	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	656	658	Scutigeridae,Lithobiidae,Cryptopidae,Scolopendridae	BIOSC1867-25_consensus5	Lithobius sectilis	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	655	658	Scutigeridae,Scolopendridae	BIOSC1867-25_consensus0	Lithobius sectilis	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	657	658	Lithobiidae,Scolopendridae	BIOSC1867-25_consensus6	Lithobius sectilis	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	657	658	Scutigeridae,Cryptopidae,Scolopendridae,Scolopocryptopidae	BIOSC1867-25_consensus81	Lithobius sectilis	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	655	658	Lithobiidae	BIOSC1867-25_consensus9	Lithobius sectilis	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	652	655	Lithobiidae	BIOSC1868-25_consensus10	Lithobius viriatus	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	656	658	Lithobiidae	BIOSC1868-25_consensus1	Lithobius viriatus	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	656	658	Lithobiidae	BIOSC1869-25_consensus0	Lithobius	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	648	652		BIOSC1870-25_consensus91	Lithobius	8
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	656	658	Lithobiidae	BIOSC1870-25_consensus0	Lithobius	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	648	652		BIOSC1871-25_consensus91	Lithobius	8
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	654	656	Lithobiidae	BIOSC1871-25_consensus0	Lithobius	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	655	658	Lithobiidae	BIOSC1872-25_consensus0	Lithobius viriatus	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	647	652	Lithobiidae,Ethopolyidae	BIOSC1872-25_consensus148	Lithobius viriatus	18
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	656	658	Lithobiidae	BIOSC1873-25_consensus0	Lithobius	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	656	658	Lithobiidae	BIOSC1874-25_consensus0	Lithobius	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	655	658	Lithobiidae	BIOSC1875-25_consensus0	Lithobius viriatus	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	656	658	Lithobiidae	BIOSC1876-25_consensus0	Lithobius cronebergii	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	656	658	Lithobiidae	BIOSC1877-25_consensus0	Lithobius cronebergii	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	657	658	Lithobiidae	BIOSC1878-25_consensus0	Harpolithobius anodus	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	630	645	Lithobiidae,Scolopendridae,Mecistocephalidae	BIOSC1879-25_consensus0	Lithobius reconditus	2
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	656	658	Lithobiidae	BIOSC1879-25_consensus15	Lithobius reconditus	0
+0	0	data/BGE00671_nanopore.fasta	None	Cryptopidae	BLAST	family	657	658	Cryptopidae	BIOSC1880-25_consensus0	Cryptops caucasius	0
+0	0	data/BGE00671_nanopore.fasta	None	Cryptopidae	BLAST	family	657	658	Cryptopidae	BIOSC1881-25_consensus0	Cryptops caucasius	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	657	658	Lithobiidae	BIOSC1882-25_consensus0	Lithobius antipai	0
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	656	658	Nemastomatidae,Phalangiidae	BIOSC1884-25_consensus16	Paranemastoma superbum	0
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	630	664		BIOSC1884-25_consensus1	Paranemastoma superbum	0
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	640	652		BIOSC1884-25_consensus91	Paranemastoma superbum	11
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	640	664		BIOSC1884-25_consensus0	Paranemastoma superbum	10
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	657	658	Linyphiidae,Ixodidae,Nemastomatidae	BIOSC1884-25_consensus36	Paranemastoma superbum	0
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	646	652		BIOSC1884-25_consensus38	Paranemastoma superbum	8
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	657	658	Araneidae,Ixodidae,Rhodacaridae,Sperchontidae,Eupodidae	BIOSC1884-25_consensus19	Paranemastoma superbum	0
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	599	652		BIOSC1884-25_consensus60	Paranemastoma superbum	0
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	597	652		BIOSC1884-25_consensus45	Paranemastoma superbum	1
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	661	664	Ochyroceratidae,Ixodidae,Tectocepheidae,Peloppiidae	BIOSC1884-25_consensus173	Paranemastoma superbum	0
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	638	664		BIOSC1885-25_consensus5	Paranemastoma superbum	0
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	654	664		BIOSC1885-25_consensus0	Paranemastoma superbum	3
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	629	664		BIOSC1885-25_consensus22	Paranemastoma superbum	0
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	646	652		BIOSC1885-25_consensus95	Paranemastoma superbum	8
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	649	652		BIOSC1885-25_consensus216	Paranemastoma superbum	15
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	663	664	Theridiidae,Desidae,Archaeidae,Ixodidae	BIOSC1885-25_consensus4	Paranemastoma superbum	0
+0	0	data/BGE00671_nanopore.fasta	None	Nemastomatidae	BLAST	family	657	658	Nemastomatidae	BIOSC1885-25_consensus11	Paranemastoma superbum	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	655	658	Lithobiidae	BIOSC1886-25_consensus0	Lithobius oblongus	0
+0	0	data/BGE00671_nanopore.fasta	None	Dignathodontidae	BLAST	family	655	658	Geophilidae,Dignathodontidae,Linotaeniidae	BIOSC1888-25_consensus0	Henia brevis	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	655	658	Lithobiidae	BIOSC1889-25_consensus0	Lithobius aeruginosus	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	655	658	Lithobiidae	BIOSC1890-25_consensus0	Lithobius aeruginosus	0
+0	0	data/BGE00671_nanopore.fasta	None	Lithobiidae	BLAST	family	655	658	Lithobiidae	BIOSC1891-25_consensus0	Lithobius aeruginosus	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	657	659	Diogenidae,Trichodactylidae,Ligiidae,Cymothoidae,Bopyridae	BIOSC1892-25_consensus0	Caucasoligidium cavernicola	1
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	611	652		BIOSC1892-25_consensus64	Caucasoligidium cavernicola	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	612	652		BIOSC1892-25_consensus63	Caucasoligidium cavernicola	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	617	652		BIOSC1892-25_consensus104	Caucasoligidium cavernicola	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	584	649		BIOSC1892-25_consensus100	Caucasoligidium cavernicola	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	652	655		BIOSC1893-25_consensus48	Caucasoligidium cavernicola	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	608	652		BIOSC1893-25_consensus232	Caucasoligidium cavernicola	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	657	659	Diogenidae,Trichodactylidae,Ligiidae,Cymothoidae,Bopyridae	BIOSC1893-25_consensus1	Caucasoligidium cavernicola	1
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	584	649		BIOSC1893-25_consensus68	Caucasoligidium cavernicola	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	656	664	Alpheidae	BIOSC1893-25_consensus80	Caucasoligidium cavernicola	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	647	655	Ligiidae,Cymothoidae	BIOSC1894-25_consensus10	Caucasoligidium cavernicola	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	584	649		BIOSC1894-25_consensus75	Caucasoligidium cavernicola	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	657	659	Alpheidae,Xanthidae,Ligiidae	BIOSC1894-25_consensus0	Caucasoligidium cavernicola	1
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	663	664	Squillidae	BIOSC1894-25_consensus22	Caucasoligidium cavernicola	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	661	664	Ligiidae	BIOSC1894-25_consensus133	Caucasoligidium cavernicola	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	356	688	Aeglidae,Chiltoniidae,Tylidae,Trachelipodidae	BIOSC1894-25_consensus337	Caucasoligidium cavernicola	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	662	664	Nebaliidae,Scyllaridae,Hippidae,Hyperiopsidae,Squillidae	BIOSC1895-25_consensus1	Caucasoligidium cavernicola	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	629	652		BIOSC1895-25_consensus5	Caucasoligidium cavernicola	6
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	662	664	Euphausiidae	BIOSC1895-25_consensus0	Caucasoligidium cavernicola	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	657	659	Alpheidae,Xanthidae,Ligiidae	BIOSC1895-25_consensus6	Caucasoligidium cavernicola	1
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	584	649		BIOSC1895-25_consensus12	Caucasoligidium cavernicola	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	621	652		BIOSC1896-25_consensus1	Caucasoligidium cavernicola	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	646	652		BIOSC1896-25_consensus4	Caucasoligidium cavernicola	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	584	649		BIOSC1896-25_consensus7	Caucasoligidium cavernicola	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	648	652		BIOSC1896-25_consensus3	Caucasoligidium cavernicola	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	656	658	Ligiidae	BIOSC1897-25_consensus0	Caucasoligidium	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	656	658	Ligiidae	BIOSC1898-25_consensus0	Caucasoligidium	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	656	658	Ligiidae	BIOSC1899-25_consensus0	Caucasoligidium	0
+0	0	data/BGE00671_nanopore.fasta	None	Ligiidae	BLAST	family	656	658	Ligiidae	BIOSC1900-25_consensus0	Caucasoligidium	0

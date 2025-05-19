@@ -1,0 +1,129 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	657	658	Philopotamidae	BIOSC1711-25_consensus0	Wormaldia kimera	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	657	658	Philopotamidae	BIOSC1712-25_consensus1	Wormaldia kintrisha	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	660	664	Flatidae	BIOSC1713-25_consensus0	Wormaldia kitera	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	657	658	Philopotamidae	BIOSC1713-25_consensus124	Wormaldia kitera	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BIOSC1714-25_consensus0	Wormaldia kokoa	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	657	658	Muscidae	BIOSC1714-25_consensus2	Wormaldia kokoa	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	657	658	Philopotamidae	BIOSC1715-25_consensus0	Wormaldia kulbaka	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	657	658	Philopotamidae	BIOSC1716-25_consensus0	Wormaldia kumanskii	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	657	658	Philopotamidae	BIOSC1717-25_consensus0	Wormaldia kumanskii	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	657	658	Philopotamidae	BIOSC1718-25_consensus0	Wormaldia kumanskii	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	657	658	Philopotamidae	BIOSC1719-25_consensus10	Wormaldia lopota	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	660	664	Flatidae,Formicidae	BIOSC1719-25_consensus0	Wormaldia lopota	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	657	658	Philopotamidae	BIOSC1720-25_consensus0	Wormaldia obola	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	657	658	Philopotamidae	BIOSC1721-25_consensus0	Wormaldia obola	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	657	658	Philopotamidae	BIOSC1722-25_consensus0	Wormaldia obola	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	660	664	Flatidae,Formicidae	BIOSC1723-25_consensus0	Wormaldia sima	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	657	658	Philopotamidae	BIOSC1723-25_consensus35	Wormaldia sima	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	657	658	Philopotamidae	BIOSC1724-25_consensus0	Wormaldia sima	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	657	658	Philopotamidae	BIOSC1725-25_consensus52	Wormaldia sima	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	660	664	Flatidae,Formicidae	BIOSC1725-25_consensus0	Wormaldia sima	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	657	658	Philopotamidae	BIOSC1726-25_consensus0	Wormaldia sima	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	657	658	Philopotamidae	BIOSC1727-25_consensus0	Wormaldia sima	0
+0	0	data/BGE00673_nanopore.fasta	None	Philopotamidae	BLAST	family	656	658	Andrenidae	BIOSC1728-25_consensus0	Wormaldia varjanulia	0
+0	0	data/BGE00673_nanopore.fasta	None	Sericostomatidae	BLAST	family	657	658	Leuctridae	BIOSC1729-25_consensus1	Notidobia 1022632 sp.now	0
+0	0	data/BGE00673_nanopore.fasta	None	Sericostomatidae	BLAST	family	657	658	Sericostomatidae	BIOSC1729-25_consensus0	Notidobia 1022632 sp.now	0
+0	0	data/BGE00673_nanopore.fasta	None	Sericostomatidae	BLAST	family	657	658	Sericostomatidae	BIOSC1730-25_consensus0	Notidobia 1022632 sp.now	0
+0	0	data/BGE00673_nanopore.fasta	None	Sericostomatidae	BLAST	family	657	658	Sericostomatidae	BIOSC1731-25_consensus0	Notidobia 1022632 sp.now	0
+0	0	data/BGE00673_nanopore.fasta	None	Sericostomatidae	BLAST	family	657	658	Sericostomatidae	BIOSC1732-25_consensus1	Notidobia 1022632 sp.now	0
+0	0	data/BGE00673_nanopore.fasta	None	Sericostomatidae	BLAST	family	657	658	Sericostomatidae	BIOSC1733-25_consensus0	Notidobia 1022632 sp.now	0
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	656	658	Dolichopodidae,Tephritidae,Geometridae,Nepticulidae	BIOSC1734-25_consensus41	Ptilocolepus dilatatus	0
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	657	658	Ceratopogonidae,Hydroptilidae	BIOSC1734-25_consensus16	Ptilocolepus dilatatus	0
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	646	649		BIOSC1734-25_consensus168	Ptilocolepus dilatatus	4
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	544	681	Chironomidae,Hydroptilidae	BIOSC1734-25_consensus451	Ptilocolepus dilatatus	3
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	657	658	Ceratopogonidae,Hydroptilidae	BIOSC1735-25_consensus0	Ptilocolepus dilatatus	0
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	614	652		BIOSC1735-25_consensus36	Ptilocolepus dilatatus	0
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	657	658	Ceratopogonidae,Hydroptilidae	BIOSC1736-25_consensus13	Ptilocolepus dilatatus	0
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	668	673	Heptageniidae,Oligotomidae	BIOSC1737-25_consensus0	Ptilocolepus dilatatus	0
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	657	658	Muscidae	BIOSC1737-25_consensus142	Ptilocolepus dilatatus	0
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	656	658	Ceratopogonidae,Hydroptilidae	BIOSC1737-25_consensus7	Ptilocolepus dilatatus	0
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	661	666	Sciomyzidae,Anthomyiidae	BIOSC1737-25_consensus3	Ptilocolepus dilatatus	1
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	528	684	Culicidae,Hydroptilidae	BIOSC1737-25_consensus449	Ptilocolepus dilatatus	2
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	649	664		BIOSC1738-25_consensus0	Ptilocolepus dilatatus	0
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	656	657	Tettigoniidae,Notonemouridae,Ninidae,Psychodidae,Ulidiidae,Vespidae,Hydropsychidae	BIOSC1738-25_consensus36	Ptilocolepus dilatatus	1
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BIOSC1738-25_consensus7	Ptilocolepus dilatatus	0
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	626	628	Dermestidae,Dolichopodidae	BIOSC1738-25_consensus428	Ptilocolepus dilatatus	0
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	657	658	Hydroptilidae	BIOSC1738-25_consensus8	Ptilocolepus dilatatus	0
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	657	658	Hydroptilidae	BIOSC1739-25_consensus0	Ptilocolepus colchicus	0
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	345	700	Curculionidae,Dermestidae,Notodontidae,Geometridae	BIOSC1739-25_consensus139	Ptilocolepus colchicus	0
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	626	628	Dermestidae,Dolichopodidae	BIOSC1739-25_consensus123	Ptilocolepus colchicus	0
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	657	658	Hydroptilidae	BIOSC1741-25_consensus0	Ptilocolepus colchicus	0
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	BIOSC1741-25_consensus4	Ptilocolepus colchicus	0
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	656	658	Xylomyidae	BIOSC1742-25_consensus10	Ptilocolepus colchicus	0
+0	0	data/BGE00673_nanopore.fasta	None	Ptilocolepidae	BLAST	family	658	659	Hepialidae,Hydroptilidae	BIOSC1742-25_consensus1	Ptilocolepus colchicus	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Limnephilidae	BIOSC1744-25_consensus0	Stenophylax clavatus	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Limnephilidae	BIOSC1745-25_consensus1	Stenophylax clavatus	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Limnephilidae	BIOSC1746-25_consensus0	Stenophylax clavatus	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Limnephilidae	BIOSC1747-25_consensus0	Stenophylax clavatus	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	463	684	Limnephilidae	BIOSC1747-25_consensus717	Stenophylax clavatus	3
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	654	656	Limnephilidae	BIOSC1748-25_consensus0	Stenophylax clavatus	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Limnephilidae	BIOSC1749-25_consensus0	Chaetopteryx chaetopteryx1022652 sp now	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Limnephilidae	BIOSC1750-25_consensus0	Chaetopteryx chaetopteryx1022652 sp now	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Limnephilidae	BIOSC1751-25_consensus1	Chaetopteryx chaetopteryx1022652 sp now	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Limnephilidae	BIOSC1752-25_consensus0	Chaetopteryx chaetopteryx1022652 sp now	0
+0	0	data/BGE00673_nanopore.fasta	None	Sericostomatidae	BLAST	family	661	664	Calopterygidae,Tenebrionidae,Mymaridae,Eucharitidae	BIOSC1753-25_consensus0	Sericostoma grusiense	0
+0	0	data/BGE00673_nanopore.fasta	None	Sericostomatidae	BLAST	family	657	658	Sericostomatidae	BIOSC1753-25_consensus347	Sericostoma grusiense	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	661	664	Calopterygidae,Tenebrionidae,Mymaridae,Eucharitidae	BIOSC1754-25_consensus0	Drusus alapos	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Limnephilidae	BIOSC1754-25_consensus93	Drusus alapos	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Limnephilidae	BIOSC1755-25_consensus0	Drusus alapos	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Limnephilidae	BIOSC1756-25_consensus0	Drusus alapos	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Limnephilidae	BIOSC1757-25_consensus0	Drusus alapos	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Limnephilidae	BIOSC1758-25_consensus0	Drusus alapos	0
+0	0	data/BGE00673_nanopore.fasta	None	Beraeidae	BLAST	family	657	658	Beraeidae	BIOSC1760-25_consensus1	Ernodes bakhmarensis	0
+0	0	data/BGE00673_nanopore.fasta	None	Beraeidae	BLAST	family	593	703	Beraeidae	BIOSC1760-25_consensus996	Ernodes bakhmarensis	11
+0	0	data/BGE00673_nanopore.fasta	None	Beraeidae	BLAST	family	657	658	Beraeidae	BIOSC1761-25_consensus0	Ernodes bakhmarensis	0
+0	0	data/BGE00673_nanopore.fasta	None	Beraeidae	BLAST	family	596	707	Beraeidae	BIOSC1761-25_consensus1199	Ernodes bakhmarensis	13
+0	0	data/BGE00673_nanopore.fasta	None	Beraeidae	BLAST	family	657	658	Beraeidae	BIOSC1762-25_consensus0	Ernodes bakhmarensis	0
+0	0	data/BGE00673_nanopore.fasta	None	Beraeidae	BLAST	family	657	658	Beraeidae	BIOSC1763-25_consensus0	Ernodes bakhmarensis	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Limnephilidae	BIOSC1764-25_consensus0	Potamophylax armeniacus	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Limnephilidae	BIOSC1765-25_consensus2	Potamophylax armeniacus	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Limnephilidae	BIOSC1766-25_consensus0	Potamophylax armeniacus	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Limnephilidae	BIOSC1767-25_consensus0	Potamophylax armeniacus	0
+0	0	data/BGE00673_nanopore.fasta	None	Phalangiidae	BLAST	family	661	664	Buthidae,Scorpionidae,Caraboctonidae	BIOSC1768-25_consensus122	Odiellus bieniaszi	0
+0	0	data/BGE00673_nanopore.fasta	None	Phalangiidae	BLAST	family	655	658	Phalangiidae	BIOSC1768-25_consensus3	Odiellus bieniaszi	0
+0	0	data/BGE00673_nanopore.fasta	None	Trogulidae	BLAST	family	657	658	Trogulidae,Phalangiidae	BIOSC1769-25_consensus1	Calathocratus caucasicus	0
+0	0	data/BGE00673_nanopore.fasta	None	Trogulidae	BLAST	family	656	658	Salticidae,Heptathelidae,Ixodidae,Bdellidae,Nemastomatidae,Trogulidae,Phalangiidae,Sclerosomatidae	BIOSC1770-25_consensus1	Trogulus russicus	0
+0	0	data/BGE00673_nanopore.fasta	None	Trogulidae	BLAST	family	657	658	Trogulidae,Phalangiidae	BIOSC1771-25_consensus0	Trogulus russicus	0
+0	0	data/BGE00673_nanopore.fasta	None	Lepidostomatidae	BLAST	family	656	658	Goeridae,Lepidostomatidae	BIOSC1772-25_consensus0	Martynomyia tripartita	0
+0	0	data/BGE00673_nanopore.fasta	None	Psychomyiidae	BLAST	family	657	658	Psychomyiidae	BIOSC1773-25_consensus0	Tinodes difficilis	0
+0	0	data/BGE00673_nanopore.fasta	None	Psychomyiidae	BLAST	family	656	658	Gryllidae,Carabidae,Culicidae,Phoridae,Agromyzidae,Panorpidae	BIOSC1773-25_consensus6	Tinodes difficilis	0
+0	0	data/BGE00673_nanopore.fasta	None	Brachycentridae	BLAST	family	656	658	Brachycentridae	BIOSC1775-25_consensus0	Micrasema kaskadian	0
+0	0	data/BGE00673_nanopore.fasta	None	Brachycentridae	BLAST	family	364	684	Brachycentridae	BIOSC1775-25_consensus1123	Micrasema kaskadian	1
+0	0	data/BGE00673_nanopore.fasta	None	Theridiidae	BLAST	family	656	658	Theridiidae	BIOSC1776-25_consensus0	Lasaeola prona	0
+0	0	data/BGE00673_nanopore.fasta	None	Salticidae	BLAST	family	658	659	Salticidae	BIOSC1777-25_consensus1	Evarcha michailovi	2
+0	0	data/BGE00673_nanopore.fasta	None	Psychomyiidae	BLAST	family	656	658	Psychomyiidae	BIOSC1778-25_consensus0	Tinodes verethraghna	0
+0	0	data/BGE00673_nanopore.fasta	None	Rhyacophilidae	BLAST	family	661	664	Flatidae	BIOSC1779-25_consensus0	Rhyacophila mtirala	0
+0	0	data/BGE00673_nanopore.fasta	None	Rhyacophilidae	BLAST	family	657	658	Rhyacophilidae	BIOSC1779-25_consensus388	Rhyacophila mtirala	0
+0	0	data/BGE00673_nanopore.fasta	None	Apataniidae	BLAST	family	655	658	Limnephilidae,Apataniidae	BIOSC1780-25_consensus0	Apatania subtilis	0
+0	0	data/BGE00673_nanopore.fasta	None	Apataniidae	BLAST	family	655	658	Limnephilidae,Apataniidae	BIOSC1781-25_consensus0	Apatania subtilis	0
+0	0	data/BGE00673_nanopore.fasta	None	Apataniidae	BLAST	family	655	658	Limnephilidae,Apataniidae	BIOSC1782-25_consensus0	Apatania subtilis	0
+0	0	data/BGE00673_nanopore.fasta	None	Apataniidae	BLAST	family	655	658	Limnephilidae,Apataniidae	BIOSC1783-25_consensus0	Apatania subtilis	0
+0	0	data/BGE00673_nanopore.fasta	None	Apataniidae	BLAST	family	655	658	Limnephilidae,Apataniidae	BIOSC1784-25_consensus0	Apatania subtilis	0
+0	0	data/BGE00673_nanopore.fasta	None	Goeridae	BLAST	family	656	658	Goeridae	BIOSC1785-25_consensus0	Lithax incanus	0
+0	0	data/BGE00673_nanopore.fasta	None	Goeridae	BLAST	family	656	658	Goeridae	BIOSC1786-25_consensus0	Lithax incanus	0
+0	0	data/BGE00673_nanopore.fasta	None	Leptoceridae	BLAST	family	657	658	Leptoceridae	BIOSC1787-25_consensus0	Leptoceridae	0
+0	0	data/BGE00673_nanopore.fasta	None	Lepidostomatidae	BLAST	family	655	658	Lepidostomatidae	BIOSC1788-25_consensus0	Dinarthrum chaldyrense	0
+0	0	data/BGE00673_nanopore.fasta	None	Goeridae	BLAST	family	656	658	Goeridae	BIOSC1789-25_consensus0	Silo proximus	0
+0	0	data/BGE00673_nanopore.fasta	None	Goeridae	BLAST	family	655	658	Limnephilidae,Apataniidae	BIOSC1790-25_consensus0	Silo proximus	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Limnephilidae	BIOSC1791-25_consensus0	Limnephilus microdentatus	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Limnephilidae	BIOSC1792-25_consensus0	Limnephilus microdentatus	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	655	658	Limnephilidae	BIOSC1793-25_consensus0	Drusus sukul	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	655	658	Limnephilidae	BIOSC1794-25_consensus0	Drusus sukul	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	655	658	Limnephilidae	BIOSC1795-25_consensus0	Drusus sukul	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	655	658	Limnephilidae	BIOSC1796-25_consensus0	Drusus sukul	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	655	658	Limnephilidae	BIOSC1797-25_consensus0	Drusus sukul	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	657	658	Momphidae,Noctuidae	BIOSC1798-25_consensus1	Chaetopteryx abchazica	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	657	658	Andrenidae	BIOSC1798-25_consensus143	Chaetopteryx abchazica	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	655	658	Limnephilidae	BIOSC1798-25_consensus69	Chaetopteryx abchazica	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	657	658	Perlodidae	BIOSC1798-25_consensus4	Chaetopteryx abchazica	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Limnephilidae	BIOSC1798-25_consensus19	Chaetopteryx abchazica	0
+0	0	data/BGE00673_nanopore.fasta	None	Limnephilidae	BLAST	family	656	658	Nemouridae	BIOSC1798-25_consensus46	Chaetopteryx abchazica	0
+0	0	data/BGE00673_nanopore.fasta	None	Psychomyiidae	BLAST	family	657	658	Psychomyiidae	BIOSC1799-25_consensus0	Tinodes difficilis	0
+0	0	data/BGE00673_nanopore.fasta	None	Rhyacophilidae	BLAST	family	657	658	Rhyacophilidae	BIOSC1800-25_consensus0	Rhyacophila subovata	0
+0	0	data/BGE00673_nanopore.fasta	None	Salticidae	BLAST	family	657	658	Salticidae	BIOSC1801-25_consensus0	Evarcha michailovi	0
+0	0	data/BGE00673_nanopore.fasta	None	Salticidae	BLAST	family	656	658	Phytoseiidae,Stigmaeidae,Oppiidae,Haplozetidae,Karschiidae,Phrynidae	BIOSC1801-25_consensus11	Evarcha michailovi	0
+0	0	data/BGE00673_nanopore.fasta	None	Salticidae	BLAST	family	656	658	Hydryphantidae,Pionidae,Unionicolidae,Penthalodidae	BIOSC1801-25_consensus19	Evarcha michailovi	0
+0	0	data/BGE00673_nanopore.fasta	None	Salticidae	BLAST	family	657	658	Salticidae	BIOSC1802-25_consensus0	Icius hamatus	0
+0	0	data/BGE00673_nanopore.fasta	None	Salticidae	BLAST	family	597	688	Salticidae	BIOSC1802-25_consensus341	Icius hamatus	5
+0	0	data/BGE00673_nanopore.fasta	None	Psychomyiidae	BLAST	family	657	658	Psychomyiidae	BIOSC1803-25_consensus1	Tinodes difficilis	0

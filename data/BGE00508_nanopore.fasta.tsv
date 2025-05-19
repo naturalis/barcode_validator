@@ -1,0 +1,129 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1616-25_consensus0	Roncus	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	657	658	Chthoniidae	BSCRO1617-25_consensus0	Chthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	657	658	Chthoniidae	BSCRO1618-25_consensus2	Chthonius occultus	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	657	658	Idiopidae,Leptonetidae,Gnaphosidae,Macronyssidae,Neobisiidae	BSCRO1618-25_consensus44	Chthonius occultus	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	656	658	Chthoniidae	BSCRO1619-25_consensus0	Chthonius cf. raridentatus	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1620-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1621-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1622-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	657	658	Ixodidae,Anystidae,Cunaxidae	BSCRO1622-25_consensus8	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1623-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	657	658	Chthoniidae	BSCRO1624-25_consensus0	Ephippiochthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1625-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1626-25_consensus1	Neobisium cf. stygium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	653	655	Neobisiidae	BSCRO1627-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1628-25_consensus0	Neobisium cf. stygium	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	657	658	Chthoniidae	BSCRO1629-25_consensus0	Chthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	656	658	Phytoseiidae,Stigmaeidae,Oppiidae,Haplozetidae,Karschiidae,Pyramidopidae,Phrynidae	BSCRO1630-25_consensus1	Roncus dalmatinus	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1630-25_consensus0	Roncus dalmatinus	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1631-25_consensus2	Roncus	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1632-25_consensus0	Roncus	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1633-25_consensus0	Roncus dalmatinus	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1634-25_consensus0	Roncus	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1635-25_consensus0	Roncus	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1636-25_consensus0	Roncus dalmatinus	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1637-25_consensus1	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	653	655		BSCRO1637-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	656	658	Phytoseiidae,Stigmaeidae,Oppiidae,Haplozetidae,Karschiidae,Pyramidopidae,Phrynidae	BSCRO1638-25_consensus10	Neobisium reimoseri	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	653	655	Neobisiidae	BSCRO1638-25_consensus0	Neobisium reimoseri	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1639-25_consensus0	Neobisium spelaeum	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	653	654	Neobisiidae	BSCRO1640-25_consensus0	Neobisium reimoseri	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	656	658	Macronyssidae,Sperchontidae,Phalangiidae	BSCRO1640-25_consensus84	Neobisium reimoseri	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	662	664	Pseudotyrannochthoniidae	BSCRO1642-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1642-25_consensus50	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	47	662		BSCRO1642-25_consensus28	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1643-25_consensus0	Roncus	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	653	655	Neobisiidae	BSCRO1644-25_consensus0	Neobisium reimoseri	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	656	658	Chthoniidae	BSCRO1645-25_consensus0	Chthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1646-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1647-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1648-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1649-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	657	658	Chthoniidae	BSCRO1650-25_consensus0	Chthonius cf. absoloni	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	657	658	Chthoniidae	BSCRO1651-25_consensus0	Chthoniidae	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1652-25_consensus0	Neobisium cf. spelaeum	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1653-25_consensus0	Neobisium cf. spelaeum	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1654-25_consensus0	Neobisium reimoseri	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	655	658	Chthoniidae,Pseudotyrannochthoniidae	BSCRO1656-25_consensus0	Microchthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1657-25_consensus0	Roncus	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1658-25_consensus1	Roncus insularis	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1659-25_consensus0	Roncus insularis	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	657	658	Chthoniidae	BSCRO1660-25_consensus0	Chthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	657	658	Chthoniidae	BSCRO1661-25_consensus0	Chthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	501	671	Chthoniidae	BSCRO1661-25_consensus8	Chthonius	5
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1662-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1663-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1664-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1665-25_consensus0	Roncus	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	653	655	Neobisiidae	BSCRO1666-25_consensus0	Neobisium svetovidi	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	653	655	Neobisiidae	BSCRO1667-25_consensus0	Neobisium svetovidi	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	657	658	Chthoniidae	BSCRO1668-25_consensus1	Chthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	657	658	Chthoniidae	BSCRO1669-25_consensus0	Chthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	657	658	Chthoniidae	BSCRO1670-25_consensus0	Chthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	554	681	Chthoniidae	BSCRO1670-25_consensus865	Chthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Larcidae	BLAST	family	654	655	Neobisiidae,Garypidae,Larcidae,Garypinidae	BSCRO1671-25_consensus0	Larcidae	0
+0	0	data/BGE00508_nanopore.fasta	None	Larcidae	BLAST	family	654	655	Neobisiidae,Garypidae,Larcidae,Garypinidae	BSCRO1672-25_consensus0	Larcidae	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	656	658	Chthoniidae	BSCRO1673-25_consensus0	Ephippiochthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	657	658	Chthoniidae	BSCRO1674-25_consensus0	Chthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	657	658	Chthoniidae	BSCRO1675-25_consensus0	Chthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1676-25_consensus0	Roncus	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	649	652		BSCRO1676-25_consensus60	Roncus	8
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1677-25_consensus0	Roncus	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	649	652		BSCRO1677-25_consensus90	Roncus	8
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	656	658	Chthoniidae	BSCRO1678-25_consensus0	Ephippiochthonius boldorii	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1680-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	648	652		BSCRO1681-25_consensus0	Roncus	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	648	652		BSCRO1682-25_consensus26	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	653	655	Neobisiidae	BSCRO1682-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1683-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	648	652		BSCRO1683-25_consensus43	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	648	652		BSCRO1684-25_consensus1	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	650	652	Neobisiidae	BSCRO1684-25_consensus0	Neobisium	1
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	648	652		BSCRO1685-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	654	656	Chthoniidae	BSCRO1686-25_consensus0	Chthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	656	658	Chthoniidae	BSCRO1687-25_consensus0	Chthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	648	652		BSCRO1687-25_consensus97	Chthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	657	658	Chthoniidae	BSCRO1688-25_consensus0	Chthoniidae	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	648	652		BSCRO1688-25_consensus224	Chthoniidae	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	653	655	Neobisiidae	BSCRO1689-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	656	658	Phytoseiidae,Stigmaeidae,Oppiidae,Haplozetidae,Karschiidae,Pyramidopidae,Phrynidae	BSCRO1689-25_consensus2	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1690-25_consensus13	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	648	652		BSCRO1690-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1691-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	648	652		BSCRO1691-25_consensus22	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1692-25_consensus0	Neobisium staudacheri	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	648	652		BSCRO1692-25_consensus101	Neobisium staudacheri	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	648	652		BSCRO1693-25_consensus0	Neobisium peruni	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1694-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	649	652		BSCRO1694-25_consensus15	Neobisium	8
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	648	652		BSCRO1694-25_consensus14	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	648	652		BSCRO1695-25_consensus10	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1695-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	649	652		BSCRO1695-25_consensus67	Neobisium	8
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	657	658	Chthoniidae	BSCRO1696-25_consensus0	Ephippiochthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	648	652		BSCRO1696-25_consensus2	Ephippiochthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1697-25_consensus0	Roncus	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1698-25_consensus0	Roncus	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	657	658	Chthoniidae	BSCRO1699-25_consensus0	Chthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	656	658	Lamponidae,Ixodidae,Macrochelidae,Rhodacaridae,Phalangiidae	BSCRO1699-25_consensus19	Chthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Chthoniidae	BLAST	family	648	652		BSCRO1699-25_consensus186	Chthonius	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1700-25_consensus0	Roncus	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1701-25_consensus0	Roncus	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1702-25_consensus1	Neobisium absoloni	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	648	652		BSCRO1702-25_consensus57	Neobisium absoloni	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	657	658	Salticidae,Lamponidae,Ixodidae,Macronyssidae,Sperchontidae,Eupodidae,Phalangiidae	BSCRO1702-25_consensus80	Neobisium absoloni	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	657	658	Ixodidae,Anystidae,Cunaxidae	BSCRO1703-25_consensus83	Neobisium sp.	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1703-25_consensus0	Neobisium sp.	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	648	652		BSCRO1703-25_consensus45	Neobisium sp.	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1704-25_consensus1	Neobisium sp.	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	656	658	Digamasellidae,Eupodidae,Cunaxidae	BSCRO1704-25_consensus3	Neobisium sp.	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1705-25_consensus0	Roncus insularis	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	654	655	Neobisiidae	BSCRO1706-25_consensus16	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	656	658	Lamponidae,Ixodidae,Macronyssidae,Eupodidae,Bdellidae,Oribatulidae,Phalangiidae	BSCRO1706-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	648	652		BSCRO1706-25_consensus170	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Chernetidae	BLAST	family	648	652		BSCRO1707-25_consensus1	Lasiochernes	0
+0	0	data/BGE00508_nanopore.fasta	None	Chernetidae	BLAST	family	656	658	Digamasellidae,Phytoseiidae,Lebertiidae,Cocceupodidae,Cunaxidae,Pseudotyrannochthoniidae	BSCRO1707-25_consensus0	Lasiochernes	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	653	655	Neobisiidae	BSCRO1708-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	653	655	Neobisiidae	BSCRO1709-25_consensus0	Neobisium	0
+0	0	data/BGE00508_nanopore.fasta	None	Neobisiidae	BLAST	family	653	655	Neobisiidae	BSCRO1710-25_consensus0	Neobisium	0

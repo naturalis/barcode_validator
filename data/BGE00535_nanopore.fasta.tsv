@@ -1,0 +1,119 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	656	658	Geometridae	ILECA2091-25_consensus0	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	656	658	Geometridae	ILECA2092-25_consensus0	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	656	658	Geometridae	ILECA2093-25_consensus0	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	657	658	Geometridae	ILECA2094-25_consensus1	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	657	658	Geometridae	ILECA2095-25_consensus0	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	ILECA2095-25_consensus97	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	657	658	Geometridae	ILECA2096-25_consensus0	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	657	658	Geometridae	ILECA2097-25_consensus0	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	657	658	Geometridae	ILECA2098-25_consensus0	Eupithecia pseudoicterata	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	ILECA2099-25_consensus0	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	657	658	Geometridae	ILECA2099-25_consensus12	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	657	658	Geometridae	ILECA2100-25_consensus0	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	657	658	Geometridae	ILECA2103-25_consensus0	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	657	658	Geometridae	ILECA2104-25_consensus0	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	657	658	Geometridae	ILECA2105-25_consensus0	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	656	658	Geometridae	ILECA2107-25_consensus0	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Oecophoridae	BLAST	family	657	658	Oecophoridae	ILECA2108-25_consensus0	Pleurota	0
+0	0	data/BGE00535_nanopore.fasta	None	Oecophoridae	BLAST	family	657	658	Oecophoridae	ILECA2109-25_consensus0	Holoscolia	0
+0	0	data/BGE00535_nanopore.fasta	None	Oecophoridae	BLAST	family	657	658	Oecophoridae	ILECA2110-25_consensus0	Holoscolia	0
+0	0	data/BGE00535_nanopore.fasta	None	Oecophoridae	BLAST	family	657	658	Oecophoridae	ILECA2111-25_consensus0	Holoscolia	0
+0	0	data/BGE00535_nanopore.fasta	None	Oecophoridae	BLAST	family	656	658	Oecophoridae	ILECA2112-25_consensus0	Pleurota	0
+0	0	data/BGE00535_nanopore.fasta	None	Oecophoridae	BLAST	family	656	658	Oecophoridae	ILECA2113-25_consensus0	Pleurota	0
+0	0	data/BGE00535_nanopore.fasta	None	Oecophoridae	BLAST	family	656	658	Oecophoridae	ILECA2114-25_consensus0	Pleurota	0
+0	0	data/BGE00535_nanopore.fasta	None	Oecophoridae	BLAST	family	657	658	Oecophoridae	ILECA2115-25_consensus1	Pleurota	0
+0	0	data/BGE00535_nanopore.fasta	None	Oecophoridae	BLAST	family	657	658	Oecophoridae	ILECA2116-25_consensus0	Pleurota	0
+0	0	data/BGE00535_nanopore.fasta	None	Oecophoridae	BLAST	family	657	658	Oecophoridae	ILECA2117-25_consensus0	Pleurota	0
+0	0	data/BGE00535_nanopore.fasta	None	Oecophoridae	BLAST	family	657	658	Oecophoridae	ILECA2118-25_consensus0	Pleurota amaniella	0
+0	0	data/BGE00535_nanopore.fasta	None	Oecophoridae	BLAST	family	657	658	Oecophoridae	ILECA2119-25_consensus0	Pleurota	0
+0	0	data/BGE00535_nanopore.fasta	None	Oecophoridae	BLAST	family	657	658	Oecophoridae	ILECA2120-25_consensus0	Pleurota	0
+0	0	data/BGE00535_nanopore.fasta	None	Oecophoridae	BLAST	family	657	658	Oecophoridae	ILECA2121-25_consensus0	Pleurota	0
+0	0	data/BGE00535_nanopore.fasta	None	Oecophoridae	BLAST	family	657	658	Oecophoridae	ILECA2122-25_consensus0	Pleurota	0
+0	0	data/BGE00535_nanopore.fasta	None	Oecophoridae	BLAST	family	657	658	Oecophoridae	ILECA2123-25_consensus0	Pleurota	0
+0	0	data/BGE00535_nanopore.fasta	None	Oecophoridae	BLAST	family	657	658	Oecophoridae	ILECA2124-25_consensus0	Pleurota	0
+0	0	data/BGE00535_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae	ILECA2125-25_consensus0	Gladiovalva aizpuruai	0
+0	0	data/BGE00535_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae	ILECA2126-25_consensus0	Gladiovalva aizpuruai	0
+0	0	data/BGE00535_nanopore.fasta	None	Coleophoridae	BLAST	family	657	658	Coleophoridae	ILECA2127-25_consensus1	Coleophora breviuscula	0
+0	0	data/BGE00535_nanopore.fasta	None	Coleophoridae	BLAST	family	656	658	Coleophoridae	ILECA2128-25_consensus0	Coleophora iranella	0
+0	0	data/BGE00535_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae	ILECA2129-25_consensus0	Aristotelia	0
+0	0	data/BGE00535_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae	ILECA2130-25_consensus1	Aristotelia	0
+0	0	data/BGE00535_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae	ILECA2131-25_consensus0	Aristotelia	0
+0	0	data/BGE00535_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae	ILECA2132-25_consensus0	Aristotelia	0
+0	0	data/BGE00535_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae,Depressariidae	ILECA2133-25_consensus0	Megacraspedus	0
+0	0	data/BGE00535_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae,Depressariidae	ILECA2134-25_consensus0	Megacraspedus	0
+0	0	data/BGE00535_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae,Depressariidae	ILECA2135-25_consensus0	Megacraspedus	0
+0	0	data/BGE00535_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae	ILECA2136-25_consensus0	Megacraspedus	0
+0	0	data/BGE00535_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae	ILECA2137-25_consensus0	Megacraspedus	0
+0	0	data/BGE00535_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae	ILECA2138-25_consensus0	Megacraspedus	0
+0	0	data/BGE00535_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae	ILECA2139-25_consensus0	Megacraspedus	0
+0	0	data/BGE00535_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae	ILECA2140-25_consensus0	Megacraspedus	0
+0	0	data/BGE00535_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae,Crambidae	ILECA2141-25_consensus0	Megacraspedus	0
+0	0	data/BGE00535_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae	ILECA2142-25_consensus0	Megacraspedus	0
+0	0	data/BGE00535_nanopore.fasta	None	Coleophoridae	BLAST	family	656	658	Coleophoridae	ILECA2143-25_consensus0	Coleophora	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	657	658	Geometridae	ILECA2144-25_consensus0	Eupithecia mystica	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	657	658	Geometridae	ILECA2145-25_consensus0	Eupithecia mystica	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	626	628	Dermestidae,Bombyliidae,Therevidae,Dolichopodidae,Syrphidae	ILECA2145-25_consensus77	Eupithecia mystica	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	657	658	Geometridae	ILECA2146-25_consensus0	Eupithecia antalica	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	657	658	Geometridae	ILECA2147-25_consensus0	Eupithecia antalica	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	657	658	Geometridae	ILECA2150-25_consensus0	Eupithecia sutiliata	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	ILECA2151-25_consensus41	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	657	658	Geometridae	ILECA2151-25_consensus0	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	661	666	Sciomyzidae,Anthomyiidae	ILECA2152-25_consensus0	Eupithecia	1
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	656	657	Tettigoniidae,Notonemouridae,Ninidae,Psychodidae,Ulidiidae,Vespidae,Hydropsychidae	ILECA2152-25_consensus21	Eupithecia	1
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	ILECA2152-25_consensus12	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	645	647	Gonypetidae,Dytiscidae,Scirtidae,Simuliidae,Ceratopogonidae,Dryomyzidae	ILECA2152-25_consensus168	Eupithecia	4
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	627	629	Dermestidae,Dolichopodidae,Hesperiidae	ILECA2152-25_consensus322	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	627	629	Leptophlebiidae,Pentatomidae,Dermestidae,Bombyliidae,Dolichopodidae	ILECA2153-25_consensus152	Eupithecia transacta	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	661	666	Sciomyzidae,Anthomyiidae	ILECA2153-25_consensus0	Eupithecia transacta	1
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	ILECA2153-25_consensus18	Eupithecia transacta	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	656	657	Tettigoniidae,Notonemouridae,Ninidae,Psychodidae,Ulidiidae,Vespidae,Hydropsychidae	ILECA2153-25_consensus24	Eupithecia transacta	1
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	ILECA2154-25_consensus0	Eupithecia transacta	0
+0	0	data/BGE00535_nanopore.fasta	None	Coleophoridae	BLAST	family	657	658	Coleophoridae	ILECA2155-25_consensus1	Coleophora	0
+0	0	data/BGE00535_nanopore.fasta	None	Coleophoridae	BLAST	family	626	628	Dermestidae,Dolichopodidae	ILECA2155-25_consensus143	Coleophora	0
+0	0	data/BGE00535_nanopore.fasta	None	Coleophoridae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	ILECA2155-25_consensus3	Coleophora	0
+0	0	data/BGE00535_nanopore.fasta	None	Gelechiidae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	ILECA2156-25_consensus446	Megacraspedus	0
+0	0	data/BGE00535_nanopore.fasta	None	Gelechiidae	BLAST	family	657	658	Gelechiidae	ILECA2156-25_consensus2	Megacraspedus	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	661	666	Sciomyzidae,Anthomyiidae	ILECA2157-25_consensus1	Eupithecia	1
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	ILECA2157-25_consensus43	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	656	657	Tettigoniidae,Notonemouridae,Ninidae,Psychodidae,Ulidiidae,Vespidae,Hydropsychidae	ILECA2157-25_consensus55	Eupithecia	1
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	657	658	Geometridae	ILECA2157-25_consensus74	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	627	629	Dermestidae,Dolichopodidae	ILECA2157-25_consensus165	Eupithecia	0
+0	0	data/BGE00535_nanopore.fasta	None	Coleophoridae	BLAST	family	657	658	Coleophoridae	ILECA2158-25_consensus0	Coleophora	0
+0	0	data/BGE00535_nanopore.fasta	None	Coleophoridae	BLAST	family	657	658	Coleophoridae	ILECA2159-25_consensus0	Coleophora	0
+0	0	data/BGE00535_nanopore.fasta	None	Coleophoridae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	ILECA2159-25_consensus34	Coleophora	0
+0	0	data/BGE00535_nanopore.fasta	None	Coleophoridae	BLAST	family	661	666	Sciomyzidae,Anthomyiidae	ILECA2160-25_consensus1	Coleophora	1
+0	0	data/BGE00535_nanopore.fasta	None	Coleophoridae	BLAST	family	657	658	Coleophoridae	ILECA2160-25_consensus13	Coleophora	0
+0	0	data/BGE00535_nanopore.fasta	None	Coleophoridae	BLAST	family	626	628	Dermestidae,Dolichopodidae	ILECA2160-25_consensus263	Coleophora	0
+0	0	data/BGE00535_nanopore.fasta	None	Coleophoridae	BLAST	family	656	657	Tettigoniidae,Notonemouridae,Ninidae,Psychodidae,Ulidiidae,Vespidae,Hydropsychidae	ILECA2160-25_consensus11	Coleophora	1
+0	0	data/BGE00535_nanopore.fasta	None	Coleophoridae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	ILECA2160-25_consensus3	Coleophora	0
+0	0	data/BGE00535_nanopore.fasta	None	Noctuidae	BLAST	family	657	658	Noctuidae	ILECA2161-25_consensus2	Agrotis	0
+0	0	data/BGE00535_nanopore.fasta	None	Noctuidae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	ILECA2162-25_consensus172	Anarta farnhami	0
+0	0	data/BGE00535_nanopore.fasta	None	Noctuidae	BLAST	family	661	666	Sciomyzidae,Anthomyiidae	ILECA2162-25_consensus0	Anarta farnhami	1
+0	0	data/BGE00535_nanopore.fasta	None	Noctuidae	BLAST	family	657	658	Noctuidae	ILECA2162-25_consensus3	Anarta farnhami	0
+0	0	data/BGE00535_nanopore.fasta	None	Noctuidae	BLAST	family	656	657	Tettigoniidae,Notonemouridae,Ninidae,Psychodidae,Ulidiidae,Vespidae,Hydropsychidae	ILECA2162-25_consensus161	Anarta farnhami	1
+0	0	data/BGE00535_nanopore.fasta	None	Noctuidae	BLAST	family	657	658	Noctuidae	ILECA2163-25_consensus0	Anarta sabulorum	0
+0	0	data/BGE00535_nanopore.fasta	None	Noctuidae	BLAST	family	657	658	Noctuidae	ILECA2164-25_consensus0	Apamea syriaca	0
+0	0	data/BGE00535_nanopore.fasta	None	Noctuidae	BLAST	family	657	658	Noctuidae	ILECA2165-25_consensus1	Griposia bouveti	0
+0	0	data/BGE00535_nanopore.fasta	None	Cossidae	BLAST	family	657	658	Cossidae	ILECA2166-25_consensus0	Deserticossus	0
+0	0	data/BGE00535_nanopore.fasta	None	Cossidae	BLAST	family	657	658	Cossidae	ILECA2167-25_consensus0	Deserticossus	0
+0	0	data/BGE00535_nanopore.fasta	None	Noctuidae	BLAST	family	657	658	Noctuidae	ILECA2168-25_consensus0	Dichagyris	0
+0	0	data/BGE00535_nanopore.fasta	None	Noctuidae	BLAST	family	657	658	Noctuidae	ILECA2169-25_consensus0	Dichagyris	0
+0	0	data/BGE00535_nanopore.fasta	None	Noctuidae	BLAST	family	657	658	Noctuidae	ILECA2170-25_consensus0	Dichagyris	0
+0	0	data/BGE00535_nanopore.fasta	None	Noctuidae	BLAST	family	657	658	Noctuidae	ILECA2171-25_consensus0	Dichagyris	0
+0	0	data/BGE00535_nanopore.fasta	None	Noctuidae	BLAST	family	657	658	Noctuidae	ILECA2172-25_consensus1	Dichagyris	0
+0	0	data/BGE00535_nanopore.fasta	None	Noctuidae	BLAST	family	656	658	Noctuidae	ILECA2173-25_consensus0	Dichagyris	0
+0	0	data/BGE00535_nanopore.fasta	None	Noctuidae	BLAST	family	657	658	Noctuidae	ILECA2174-25_consensus0	Euxoa birivia	0
+0	0	data/BGE00535_nanopore.fasta	None	Noctuidae	BLAST	family	657	658	Noctuidae	ILECA2175-25_consensus0	Heterophysa	0
+0	0	data/BGE00535_nanopore.fasta	None	Noctuidae	BLAST	family	657	658	Noctuidae	ILECA2176-25_consensus0	Luperina	0
+0	0	data/BGE00535_nanopore.fasta	None	Noctuidae	BLAST	family	657	658	Noctuidae	ILECA2177-25_consensus0	Luteohadena literata	0
+0	0	data/BGE00535_nanopore.fasta	None	Geometridae	BLAST	family	657	658	Geometridae	ILECA2178-25_consensus0	Lycia necessaria	0
+0	0	data/BGE00535_nanopore.fasta	None	Erebidae	BLAST	family	657	658	Erebidae	ILECA2179-25_consensus0	Lygephila	0
+0	0	data/BGE00535_nanopore.fasta	None	Erebidae	BLAST	family	657	658	Erebidae	ILECA2180-25_consensus0	Lygephila	0
+0	0	data/BGE00535_nanopore.fasta	None	Erebidae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	ILECA2180-25_consensus107	Lygephila	0
+0	0	data/BGE00535_nanopore.fasta	None	Erebidae	BLAST	family	657	658	Erebidae	ILECA2181-25_consensus0	Lygephila	0
+0	0	data/BGE00535_nanopore.fasta	None	Erebidae	BLAST	family	656	658	Tettigoniidae,Acrididae,Nitidulidae,Curculionidae,Bostrichidae,Ptinidae,Vespidae,Tetracampidae	ILECA2182-25_consensus5	Lygephila	0
+0	0	data/BGE00535_nanopore.fasta	None	Erebidae	BLAST	family	657	658	Erebidae	ILECA2182-25_consensus0	Lygephila	0
+0	0	data/BGE00535_nanopore.fasta	None	Erebidae	BLAST	family	657	658	Erebidae	ILECA2183-25_consensus0	Lygephila	0
+0	0	data/BGE00535_nanopore.fasta	None	None	BLAST	family	656	658	Noctuidae	ILECA2184-25_consensus0	Lepidoptera	0
+0	0	data/BGE00535_nanopore.fasta	None	Erebidae	BLAST	family	657	658	Erebidae	ILECA2185-25_consensus0	Ocnogyna anatolica	0

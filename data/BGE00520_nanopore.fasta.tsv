@@ -1,0 +1,114 @@
+ambig_basecount	ambig_full_basecount	dataset	error	identification	identification_method	identification_rank	nuc_basecount	nuc_full_basecount	obs_taxon	sequence_id	species	stop_codons
+0	0	data/BGE00520_nanopore.fasta	None	Linyphiidae	BLAST	family	655	658	Phytoseiidae,Eriophyidae,Stigmaeidae,Oppiidae,Karschiidae,Eremobatidae	BSCRO1902-25_consensus1	Troglohyphantes	0
+0	0	data/BGE00520_nanopore.fasta	None	Linyphiidae	BLAST	family	656	658	Linyphiidae	BSCRO1904-25_consensus0	Palliduphantes	0
+0	0	data/BGE00520_nanopore.fasta	None	Linyphiidae	BLAST	family	660	664	Diplocentridae,Theraphosidae,Ctenizidae,Idiopidae,Filistatidae	BSCRO1905-25_consensus0	Lepthyphantes	0
+0	0	data/BGE00520_nanopore.fasta	None	Linyphiidae	BLAST	family	657	658	Linyphiidae	BSCRO1905-25_consensus168	Lepthyphantes	0
+0	0	data/BGE00520_nanopore.fasta	None	Linyphiidae	BLAST	family	660	664	Diplocentridae,Theraphosidae,Ctenizidae,Idiopidae,Filistatidae	BSCRO1906-25_consensus0	Lepthyphantes	0
+0	0	data/BGE00520_nanopore.fasta	None	Linyphiidae	BLAST	family	657	658	Linyphiidae	BSCRO1906-25_consensus87	Lepthyphantes	0
+0	0	data/BGE00520_nanopore.fasta	None	Linyphiidae	BLAST	family	657	658	Linyphiidae	BSCRO1907-25_consensus0	Troglohyphantes	0
+0	0	data/BGE00520_nanopore.fasta	None	Agelenidae	BLAST	family	656	658	Agelenidae	BSCRO1908-25_consensus1	Tegenaria	0
+0	0	data/BGE00520_nanopore.fasta	None	Agelenidae	BLAST	family	656	658	Phytoseiidae,Stigmaeidae,Oppiidae,Haplozetidae,Karschiidae,Phrynidae	BSCRO1908-25_consensus86	Tegenaria	0
+0	0	data/BGE00520_nanopore.fasta	None	Linyphiidae	BLAST	family	654	658	Linyphiidae	BSCRO1909-25_consensus0	Centromerus	0
+0	0	data/BGE00520_nanopore.fasta	None	Linyphiidae	BLAST	family	656	658	Linyphiidae	BSCRO1910-25_consensus0	Centromerus acutidentatus	0
+0	0	data/BGE00520_nanopore.fasta	None	Linyphiidae	BLAST	family	657	658	Ixodidae,Zerconidae,Rhodacaridae	BSCRO1911-25_consensus1	Centromerus acutidentatus	0
+0	0	data/BGE00520_nanopore.fasta	None	Linyphiidae	BLAST	family	656	658	Linyphiidae	BSCRO1911-25_consensus0	Centromerus acutidentatus	0
+0	0	data/BGE00520_nanopore.fasta	None	Linyphiidae	BLAST	family	656	658	Theridiidae,Salticidae,Ixodidae,Rhodacaridae,Eupodidae,Cunaxidae	BSCRO1912-25_consensus0	Centromerus	0
+0	0	data/BGE00520_nanopore.fasta	None	Linyphiidae	BLAST	family	655	658	Linyphiidae	BSCRO1912-25_consensus2	Centromerus	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	657	658	Ligiidae,Armadillidiidae,Scyphacidae,Sphaeromatidae	BSCRO1913-25_consensus0	Trichoniscus	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	658	659	Munididae,Niphargidae,Ligiidae,Armadillidae	BSCRO1913-25_consensus2	Trichoniscus	4
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	646	648	Hyalellidae,Chiltoniidae,Armadillidae	BSCRO1913-25_consensus46	Trichoniscus	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	658	659	Munididae,Niphargidae,Ligiidae,Armadillidae	BSCRO1914-25_consensus10	Trichoniscus	4
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	657	658	Majidae,Armadillidiidae,Scyphacidae,Chaetiliidae,Sphaeromatidae	BSCRO1914-25_consensus2	Trichoniscus	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	647	649	Hyalellidae,Chiltoniidae,Armadillidae	BSCRO1914-25_consensus202	Trichoniscus	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	657	658	Porcellionidae,Trachelipodidae,Scyphacidae,Chaetiliidae	BSCRO1915-25_consensus0	Hyloniscus	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	656	658	Porcellionidae	BSCRO1916-25_consensus0	Trichoniscinae	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	656	658	Galatheidae,Kiwaidae,Ligiidae,Tylidae,Philosciidae,Scyphacidae,Stenoniscidae	BSCRO1916-25_consensus2	Trichoniscinae	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	656	658	Porcellionidae	BSCRO1917-25_consensus1	Trichoniscinae	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	656	658	Kiwaidae,Ligiidae,Tylidae,Philosciidae,Scyphacidae,Stenoniscidae	BSCRO1917-25_consensus175	Trichoniscinae	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	656	658	Scyphacidae	BSCRO1918-25_consensus0	Trichoniscinae	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	663	664	Sesarmidae,Dotillidae,Trachelipodidae,Parabathynellidae	BSCRO1919-25_consensus0	Trichoniscinae	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	656	658	Scyphacidae	BSCRO1919-25_consensus3	Trichoniscinae	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	656	658	Scyphacidae	BSCRO1920-25_consensus0	Trichoniscinae	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	657	658	Porcellionidae,Trachelipodidae,Scyphacidae,Chaetiliidae	BSCRO1923-25_consensus0	Hyloniscus	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	657	658	Porcellionidae,Trachelipodidae,Scyphacidae,Agnaridae,Chaetiliidae	BSCRO1924-25_consensus4	Hyloniscus	0
+0	0	data/BGE00520_nanopore.fasta	None	Tylidae	BLAST	family	653	655	Mysidae,Lophogastridae,Eucopiidae	BSCRO1925-25_consensus343	Tylos ponticus	0
+0	0	data/BGE00520_nanopore.fasta	None	Tylidae	BLAST	family	627	664	Lysianassidae	BSCRO1925-25_consensus1	Tylos ponticus	0
+0	0	data/BGE00520_nanopore.fasta	None	Tylidae	BLAST	family	625	652		BSCRO1925-25_consensus341	Tylos ponticus	0
+0	0	data/BGE00520_nanopore.fasta	None	Tylidae	BLAST	family	660	664	Portunidae,Lysianassidae	BSCRO1925-25_consensus3	Tylos ponticus	0
+0	0	data/BGE00520_nanopore.fasta	None	Tylidae	BLAST	family	652	658	Tylidae,Idoteidae	BSCRO1925-25_consensus201	Tylos ponticus	0
+0	0	data/BGE00520_nanopore.fasta	None	Tylidae	BLAST	family	649	664		BSCRO1926-25_consensus10	Tylos ponticus	0
+0	0	data/BGE00520_nanopore.fasta	None	Tylidae	BLAST	family	619	649		BSCRO1926-25_consensus143	Tylos ponticus	0
+0	0	data/BGE00520_nanopore.fasta	None	Tylidae	BLAST	family	628	664	Lysianassidae	BSCRO1926-25_consensus0	Tylos ponticus	0
+0	0	data/BGE00520_nanopore.fasta	None	Tylidae	BLAST	family	652	658	Tylidae,Idoteidae	BSCRO1926-25_consensus36	Tylos ponticus	0
+0	0	data/BGE00520_nanopore.fasta	None	Tylidae	BLAST	family	654	655	Cambaridae,Aeglidae,Sesarmidae,Mimonecteolidae,Diastylidae,Armadillidae	BSCRO1926-25_consensus79	Tylos ponticus	0
+0	0	data/BGE00520_nanopore.fasta	None	Tylidae	BLAST	family	648	652		BSCRO1926-25_consensus324	Tylos ponticus	6
+0	0	data/BGE00520_nanopore.fasta	None	Tylidae	BLAST	family	658	664		BSCRO1927-25_consensus1	Tylos ponticus	6
+0	0	data/BGE00520_nanopore.fasta	None	Tylidae	BLAST	family	649	664		BSCRO1927-25_consensus6	Tylos ponticus	0
+0	0	data/BGE00520_nanopore.fasta	None	Tylidae	BLAST	family	628	664	Lysianassidae	BSCRO1927-25_consensus4	Tylos ponticus	0
+0	0	data/BGE00520_nanopore.fasta	None	Tylidae	BLAST	family	652	658	Tylidae,Idoteidae	BSCRO1927-25_consensus173	Tylos ponticus	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	656	658	Trichoniscidae,Porcellionidae,Trachelipodidae	BSCRO1928-25_consensus0	Haplophthalminae	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	649	652		BSCRO1928-25_consensus77	Haplophthalminae	10
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	656	658	Trichoniscidae,Porcellionidae,Trachelipodidae,Armadillidae	BSCRO1929-25_consensus0	Haplophthalminae	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	649	652		BSCRO1929-25_consensus98	Haplophthalminae	10
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	656	658	Trichoniscidae,Porcellionidae,Trachelipodidae,Armadillidae	BSCRO1930-25_consensus0	Haplophthalminae	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	649	652		BSCRO1930-25_consensus114	Haplophthalminae	10
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	653	656	Trichoniscidae,Armadillidiidae,Scyphacidae,Idoteidae	BSCRO1931-25_consensus0	Alpioniscus busljetai	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	656	658	Galatheidae,Ligiidae,Trichoniscidae,Trachelipodidae,Asellidae	BSCRO1932-25_consensus1	Trichoniscinae	8
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	657	658	Mathildellidae,Varunidae,Euphausiidae,Trichoniscidae	BSCRO1932-25_consensus0	Trichoniscinae	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	656	658	Trachelipodidae	BSCRO1933-25_consensus0	Trichoniscus	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	657	658	Trichoniscidae	BSCRO1934-25_consensus1	Alpioniscus	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	657	658	Trichoniscidae	BSCRO1935-25_consensus0	Alpioniscus	0
+0	0	data/BGE00520_nanopore.fasta	None	Trichoniscidae	BLAST	family	657	658	Trichoniscidae	BSCRO1936-25_consensus0	Alpioniscus	0
+0	0	data/BGE00520_nanopore.fasta	None	Anthogonidae	BLAST	family	657	658	Mastigophorophyllidae,Megalotylidae,Neoatractosomatidae,Verhoeffiidae	BSCRO1937-25_consensus0	Anthogonidae	0
+0	0	data/BGE00520_nanopore.fasta	None	Anthogonidae	BLAST	family	656	658	Harpagophoridae,Spirostreptidae,Iulomorphidae	BSCRO1937-25_consensus22	Anthogonidae	0
+0	0	data/BGE00520_nanopore.fasta	None	Anthogonidae	BLAST	family	657	658	Craspedosomatidae,Mastigophorophyllidae,Megalotylidae,Verhoeffiidae	BSCRO1938-25_consensus0	Anthogonidae	0
+0	0	data/BGE00520_nanopore.fasta	None	Anthogonidae	BLAST	family	657	658	Anthogonidae,Chordeumatidae,Mastigophorophyllidae	BSCRO1939-25_consensus2	Anthogonidae	0
+0	0	data/BGE00520_nanopore.fasta	None	Glomeridae	BLAST	family	655	656	Glomeridae,Glomeridellidae,Protoglomeridae	BSCRO1940-25_consensus0	Hyleoglomeris	0
+0	0	data/BGE00520_nanopore.fasta	None	Anthogonidae	BLAST	family	657	658	Chordeumatidae,Craspedosomatidae,Mastigophorophyllidae,Verhoeffiidae,Brachychaeteumatidae	BSCRO1941-25_consensus0	Anthogonidae	0
+0	0	data/BGE00520_nanopore.fasta	None	Anthogonidae	BLAST	family	656	658	Harpagophoridae,Spirostreptidae,Iulomorphidae	BSCRO1941-25_consensus117	Anthogonidae	0
+0	0	data/BGE00520_nanopore.fasta	None	Anthogonidae	BLAST	family	657	658	Anthogonidae,Craspedosomatidae,Mastigophorophyllidae	BSCRO1942-25_consensus1	Macrochaetosoma troglomontanum	0
+0	0	data/BGE00520_nanopore.fasta	None	Craspedosomatidae	BLAST	family	660	664		BSCRO1944-25_consensus0	Dyocerasoma	0
+0	0	data/BGE00520_nanopore.fasta	None	Craspedosomatidae	BLAST	family	656	658	Craspedosomatidae	BSCRO1944-25_consensus11	Dyocerasoma	0
+0	0	data/BGE00520_nanopore.fasta	None	Craspedosomatidae	BLAST	family	660	664		BSCRO1945-25_consensus0	Dyocerasoma	0
+0	0	data/BGE00520_nanopore.fasta	None	Craspedosomatidae	BLAST	family	656	658	Craspedosomatidae	BSCRO1945-25_consensus24	Dyocerasoma	0
+0	0	data/BGE00520_nanopore.fasta	None	Anthroleucosomatidae	BLAST	family	656	658	Chordeumatidae,Craspedosomatidae,Mastigophorophyllidae,Brachychaeteumatidae	BSCRO1946-25_consensus0	Anamastigona	0
+0	0	data/BGE00520_nanopore.fasta	None	Anthroleucosomatidae	BLAST	family	656	658	Chordeumatidae,Craspedosomatidae,Mastigophorophyllidae,Brachychaeteumatidae	BSCRO1947-25_consensus0	Anamastigona	0
+0	0	data/BGE00520_nanopore.fasta	None	Julidae	BLAST	family	656	658	Julidae	BSCRO1950-25_consensus0	Typhloiulus	0
+0	0	data/BGE00520_nanopore.fasta	None	Julidae	BLAST	family	626	628	Julidae	BSCRO1950-25_consensus127	Typhloiulus	1
+0	0	data/BGE00520_nanopore.fasta	None	None	BLAST	family	656	658	Paradoxosomatidae	BSCRO1952-25_consensus0	Polydesmida	0
+0	0	data/BGE00520_nanopore.fasta	None	None	BLAST	family	656	658	Harpagophoridae,Spirostreptidae,Iulomorphidae	BSCRO1952-25_consensus3	Polydesmida	0
+0	0	data/BGE00520_nanopore.fasta	None	None	BLAST	family	656	658	Paradoxosomatidae	BSCRO1953-25_consensus0	Polydesmida	0
+0	0	data/BGE00520_nanopore.fasta	None	None	BLAST	family	657	658	Pachybolidae,Julidae,Nemasomatidae,Paradoxosomatidae	BSCRO1953-25_consensus28	Polydesmida	0
+0	0	data/BGE00520_nanopore.fasta	None	None	BLAST	family	656	658	Paradoxosomatidae,Haplodesmidae	BSCRO1958-25_consensus0	Polydesmida	0
+0	0	data/BGE00520_nanopore.fasta	None	None	BLAST	family	657	658	Glomeridae,Trachysphaeridae	BSCRO1960-25_consensus0	Glomerida	0
+0	0	data/BGE00520_nanopore.fasta	None	Julidae	BLAST	family	657	658	Julidae	BSCRO1961-25_consensus0	Julidae	0
+0	0	data/BGE00520_nanopore.fasta	None	Craspedosomatidae	BLAST	family	656	658	Craspedosomatidae	BSCRO1962-25_consensus0	Dyocerasoma	0
+0	0	data/BGE00520_nanopore.fasta	None	Craspedosomatidae	BLAST	family	656	658	Craspedosomatidae	BSCRO1963-25_consensus0	Dyocerasoma	0
+0	0	data/BGE00520_nanopore.fasta	None	Craspedosomatidae	BLAST	family	660	664		BSCRO1964-25_consensus0	Dyocerasoma	0
+0	0	data/BGE00520_nanopore.fasta	None	Craspedosomatidae	BLAST	family	656	658	Craspedosomatidae	BSCRO1964-25_consensus12	Dyocerasoma	0
+0	0	data/BGE00520_nanopore.fasta	None	Craspedosomatidae	BLAST	family	656	658	Craspedosomatidae	BSCRO1965-25_consensus2	Dyocerasoma	0
+0	0	data/BGE00520_nanopore.fasta	None	Attemsiidae	BLAST	family	655	658	Attemsiidae,Mastigophorophyllidae,Megalotylidae,Neoatractosomatidae	BSCRO1970-25_consensus0	Attemsia	0
+0	0	data/BGE00520_nanopore.fasta	None	Attemsiidae	BLAST	family	655	658	Attemsiidae,Craspedosomatidae,Neoatractosomatidae	BSCRO1973-25_consensus0	Attemsia	0
+0	0	data/BGE00520_nanopore.fasta	None	Anthogonidae	BLAST	family	657	658	Anthogonidae,Chordeumatidae,Mastigophorophyllidae	BSCRO1975-25_consensus0	Macrochaetosoma troglomontanum	0
+0	0	data/BGE00520_nanopore.fasta	None	Anthogonidae	BLAST	family	661	664		BSCRO1976-25_consensus0	Anthogonidae	0
+0	0	data/BGE00520_nanopore.fasta	None	Polydesmidae	BLAST	family	657	658	Polydesmidae	BSCRO1977-25_consensus0	Brachydesmus inferus	0
+0	0	data/BGE00520_nanopore.fasta	None	Polydesmidae	BLAST	family	649	652		BSCRO1977-25_consensus78	Brachydesmus inferus	10
+0	0	data/BGE00520_nanopore.fasta	None	Polydesmidae	BLAST	family	656	658	Harpagophoridae,Spirostreptidae,Iulomorphidae	BSCRO1978-25_consensus206	Brachydesmus inferus	0
+0	0	data/BGE00520_nanopore.fasta	None	Polydesmidae	BLAST	family	657	658	Polydesmidae	BSCRO1978-25_consensus0	Brachydesmus inferus	0
+0	0	data/BGE00520_nanopore.fasta	None	Polydesmidae	BLAST	family	657	658	Polydesmidae	BSCRO1979-25_consensus0	Brachydesmus inferus	0
+0	0	data/BGE00520_nanopore.fasta	None	Polydesmidae	BLAST	family	657	658	Polydesmidae	BSCRO1980-25_consensus0	Brachydesmus inferus	0
+0	0	data/BGE00520_nanopore.fasta	None	Anthogonidae	BLAST	family	657	658	Glomeridesmidae,Julidae,Sphaerotheriidae,Andrognathidae	BSCRO1981-25_consensus0	Anthogonidae	0
+0	0	data/BGE00520_nanopore.fasta	None	None	BLAST	family	656	658	Paradoxosomatidae,Xystodesmidae	BSCRO1984-25_consensus0	Polydesmida	0
+0	0	data/BGE00520_nanopore.fasta	None	Stenasellidae	BLAST	family	657	658	Leucosiidae,Asellidae	BSCRO1985-25_consensus0	Stenasellus	0
+0	0	data/BGE00520_nanopore.fasta	None	Geophilidae	BLAST	family	652	654	Geophilidae,Schendylidae,Chilenophilidae,Linotaeniidae	BSCRO1988-25_consensus347	Geophilus	1
+0	0	data/BGE00520_nanopore.fasta	None	Lithobiidae	BLAST	family	657	658	Lithobiidae	BSCRO1989-25_consensus25	Harpolithobius	0
+0	0	data/BGE00520_nanopore.fasta	None	Lithobiidae	BLAST	family	657	658	Lithobiidae	BSCRO1990-25_consensus38	Harpolithobius	0
+0	0	data/BGE00520_nanopore.fasta	None	Lithobiidae	BLAST	family	646	651	Lithobiidae	BSCRO1990-25_consensus141	Harpolithobius	10
+0	0	data/BGE00520_nanopore.fasta	None	Lithobiidae	BLAST	family	658	662	Lithobiidae	BSCRO1991-25_consensus31	Lithobius sp.	12
+0	0	data/BGE00520_nanopore.fasta	None	Lithobiidae	BLAST	family	654	691	Lithobiidae	BSCRO1991-25_consensus14	Lithobius sp.	14
+0	0	data/BGE00520_nanopore.fasta	None	Lithobiidae	BLAST	family	657	658	Lithobiidae	BSCRO1991-25_consensus47	Lithobius sp.	0
+0	0	data/BGE00520_nanopore.fasta	None	Lithobiidae	BLAST	family	656	657	Lithobiidae	BSCRO1992-25_consensus5	Lithobius	0
+0	0	data/BGE00520_nanopore.fasta	None	Lithobiidae	BLAST	family	657	658	Lithobiidae	BSCRO1993-25_consensus0	Lithobius sp.	0
+0	0	data/BGE00520_nanopore.fasta	None	Lithobiidae	BLAST	family	657	658	Lithobiidae	BSCRO1994-25_consensus0	Lithobius sp.	0
+0	0	data/BGE00520_nanopore.fasta	None	Lithobiidae	BLAST	family	655	658	Lithobiidae	BSCRO1995-25_consensus0	Lithobius radjai	0
+0	0	data/BGE00520_nanopore.fasta	None	Lithobiidae	BLAST	family	654	656	Lithobiidae,Henicopidae,Craterostigmidae	BSCRO1995-25_consensus147	Lithobius radjai	0
