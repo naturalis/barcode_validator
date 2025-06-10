@@ -76,9 +76,9 @@ output TSV.
         parser.add_argument("--reflib_taxonomy",
                             help="Path to the taxonomy of the reference library, i.e. NCBI taxdump (tar.gz).")
         parser.add_argument("--exp_taxonomy",
-                            help="Path to the expected taxonomy, e.g. an NSR dump or a BOLD dump spreadsheet.")
-        parser.add_argument("--exp_taxonomy_type", choices=["nsr", "bold"], default="nsr",
-                            help="Type of the expected taxonomy dump (nsr or bold).")
+                            help="Path to the expected taxonomy, e.g. an NSR dump, NCBI dump, or BOLD spreadsheet.")
+        parser.add_argument("--exp_taxonomy_type", choices=["nsr", "bold", "ncbi"], default="nsr",
+                            help="Type of the expected taxonomy dump (nsr, bold or ncbi).")
 
         # Validation and output options
         parser.add_argument("--mode", choices=["structural", "taxonomic", "both"], default="both",
@@ -120,6 +120,9 @@ output TSV.
             config.set("exp_taxonomy", self.args.exp_taxonomy)
             config.set("exp_taxonomy_type", self.args.exp_taxonomy_type)
         elif self.args.exp_taxonomy_type == 'bold':
+            config.set("exp_taxonomy", self.args.exp_taxonomy)
+            config.set("exp_taxonomy_type", self.args.exp_taxonomy_type)
+        elif self.args.exp_taxonomy_type == 'ncbi':
             config.set("exp_taxonomy", self.args.exp_taxonomy)
             config.set("exp_taxonomy_type", self.args.exp_taxonomy_type)
         if self.args.log_level:
