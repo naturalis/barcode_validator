@@ -1,9 +1,12 @@
 import os
 import pathlib
 import sys
+import tempfile
 from pathlib import Path
 
 import pytest
+import requests
+
 from barcode_validator.cli import BarcodeValidatorCLI
 
 
@@ -14,10 +17,27 @@ def data_dir():
     return Path("tests/data")
 
 @pytest.fixture
-def ncbi_taxdump(data_dir):
+def ncbi_taxdump():
     """Fixture to locate the NCBI taxonomy dump"""
-    ncbi_taxdump_archive = data_dir / "taxdump.tar.gz"
-    return ncbi_taxdump_archive
+    tar_path = None
+
+    # URL of the NCBI taxonomy dump
+    url = "http://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz"
+
+    # Create a temporary file
+    with tempfile.NamedTemporaryFile(suffix=".tar.gz", delete=False) as temp_file:
+        # Download the file
+        response = requests.get(url, stream=True)
+        response.raise_for_status()  # Raise an exception for HTTP errors
+
+        # Save the downloaded file
+        for chunk in response.iter_content(chunk_size=8192):
+            temp_file.write(chunk)
+
+        # Get the path of the temporary file
+        tar_path = temp_file.name
+
+    return tar_path
 
 @pytest.fixture
 def structval_ncbi_tsv(data_dir):
