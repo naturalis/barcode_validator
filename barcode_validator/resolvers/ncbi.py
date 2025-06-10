@@ -5,6 +5,8 @@ from Bio.SeqRecord import SeqRecord
 from nbitk.Taxon import Taxon
 from nbitk.config import Config
 from nbitk.Phylo.NCBITaxdmp import Parser
+from tests.test_taxon import taxon
+
 from .taxonomy import TaxonResolver
 from barcode_validator.constants import TaxonomicBackbone
 
@@ -25,7 +27,14 @@ class NCBIResolver(TaxonResolver):
         :param node: Focal node.
         :return:
         """
-        return str(node.guids['taxon']) == id_string
+
+        # There are seem to be two options here. Either we have a sequence record that is parsed from a GenBank file,
+        # and it has a taxon ID in the guids dictionary, or we have a string. If it's a string, it's just a taxon name.
+        # These two scenarios mirror what happens in parse_id().
+        if id_string.isdigit():
+            return int(node.guids['taxon']) == int(id_string)
+        else:
+            return node.name == id_string
 
     def parse_id(self, record: SeqRecord) -> Optional[str]:
         """
@@ -34,13 +43,18 @@ class NCBIResolver(TaxonResolver):
         :return: Taxon ID
         """
         # Assuming you parsed a GenBank format file (not FASTA)
+        taxon_id = None
         for feature in record.features:
             if feature.type == "source":
                 for xref in feature.qualifiers.get("db_xref", []):
                     if xref.startswith("taxon:"):
                         taxon_id = xref.split(":")[1]  # e.g., "taxon:9606" -> "9606"
-                        return taxon_id
-        return None
+
+        if taxon_id is None:
+            self.logger.warning(f"No taxon ID found in record {record.id}.")
+            taxon_id = record.annotations.get('bcdm_fields', {}).get('identification', None)
+
+        return taxon_id
 
     def load_tree(self, file: Path) -> None:
         """
