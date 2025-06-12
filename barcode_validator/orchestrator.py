@@ -12,7 +12,7 @@ from .resolvers.factory import ResolverFactory
 from .idservices.factory import IDServiceFactory
 from .validators.factory import StructureValidatorFactory
 from .validators.taxonomic import TaxonomicValidator
-from .constants import Marker, TaxonomicRank, TaxonomicBackbone
+from .constants import Marker, TaxonomicRank, TaxonomicBackbone, RefDB
 from .criteria import MarkerCriteriaFactory
 
 class ValidationOrchestrator:
@@ -136,7 +136,8 @@ class ValidationOrchestrator:
 
             # Initialize an IDService if needed
             if self.taxonomic_validator.requires_idservice():
-                ids = IDServiceFactory.create_idservice(self.config, self.config.get('reference_taxonomy'))
+                db = RefDB(self.config.get('reference_taxonomy'))
+                ids = IDServiceFactory.create_idservice(self.config, db)
 
                 # There is no way right now that the IDService could have a different
                 # TaxonResolver than the TaxonomicValidator
