@@ -9,5 +9,6 @@ class IDServiceFactory:
     @staticmethod
     def create_idservice(config: Config, refdb: RefDB) -> Optional[IDService]:
         from barcode_validator.idservices.ncbi import NCBI
-        if refdb.value == "ncbi":
+        if refdb == RefDB.NCBI:
             return NCBI(config)
+        return None
