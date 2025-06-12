@@ -210,7 +210,7 @@ class ValidationOrchestrator:
                 self.structural_validator.validate(record, result)
         if self.taxonomic_validator and not result.error:
             constraint_rank = TaxonomicRank(self.config.get('constraint_rank', 'class'))
-            self.taxonomic_validator.validate(record, result, constraint_rank)
+            self.taxonomic_validator.validate_taxonomy(record, result, constraint_rank)
 
         return result
 
