@@ -26,49 +26,67 @@ and to Naturalis's Core Sequence Cloud.
 
 ## Installation
 
-### Using Conda
+The easiest way to install a contained environment for the barcode validator is using  
+[bioconda](https://pypi.org/project/barcode-validator/):
 
 ```bash
-# Create and activate conda environment
-conda env create -f environment.yml
+conda create -n barcode-validator
 conda activate barcode-validator
-
-# Installation of Python dependencies invoked by conda
-# pip install -r requirements.txt
+conda install -c bioconda barcode-validator blast hmmer
 ```
 
-### Manual Installation
+## Configuration
 
-```bash
-# Install required command line tools
-sudo apt-get install hmmer ncbi-blast+
+When setting up the BLAST environment, the following environment variables should be set correctly:
 
-# Install Python package
-pip install .
-```
+- `BLASTDB`: Path to the BLAST database directory. This must be the *directory* within which the BLAST databases are 
+             stored, not the database files themselves. The directory must contain (many) files starting with `nt`. 
+             Furthermore, the directory must contain the files `taxdb.btd`, `taxdb.bti`, and `taxonomy4blast.sqlite3`.
+             (The `nt.*` files are the indexed sequences, the other files help BLAST running taxonomically constrained 
+             queries. All can be fetched into the correct folder using the command `update_blastdb.pl --decompress nt`
+             from the NCBI BLAST+ package.)
+- `BLASTDB_LMDB_MAP_SIZE`: Optionally, set the size of the LMDB map for the BLAST database. This is useful for large 
+             databases and can be set to a value like `1000G` (1 TB RAM) to ensure sufficient RAM for the initial
+             map of the BLAST database. At Naturalis, we discovered that this mostly functions as a threshold: if you
+             set it too low, BLAST will fail to start. Empirically, this is around 512G. Higher values above the 
+             threshold have no effect on performance, they are simply a means to discover you don't have enough RAM 
+             available for the BLAST database.
+
 
 ## Usage
 
 ### Command Line Interface
 
-```bash
-# Using NSR taxonomy, we do this when we validate CSC dumps
-python barcode_validator \
-  --input_file sequences.tsv \
-  --exp_taxonomy nsr.zip \
-  --exp_taxonomy_type nsr \
-  --config config.yml \
-  --output_file results.tsv
+#### Case 1: Validating a FASTA file against BOLD taxonomy to generate a tabular report
 
-# Using BOLD taxonomy, this is the typical process for BGE where we prepare BOLD uploads
-barcode-validator \
-  --input_file sequences.fasta \
-  --exp_taxonomy bold.xlsx \
+```bash
+python barcode_validator \
+  --input_file data/BGE00196_MGE-BGE_r1_1.3_1.5_s50_100.fasta \
+  --exp_taxonomy examples/bold.xlsx \
   --exp_taxonomy_type bold \
-  --config config.yml \
-  --output_file results.tsv \
-  --emit_valid_fasta --output_fasta valid.fasta
+  --config config/config.yml \
+  --output_format tsv \
+  --log_level DEBUG > results.tsv
 ```
+
+- `--input_file`: Path to the input FASTA file containing sequences to validate. The first word in the header line 
+  should be the BOLD process ID, followed by an underscore '_', and then a suffix that makes the sequence unique.
+- `--exp_taxonomy`: Path to the 'expected taxonomy' file, i.e. what the sequences are expected to be. In this case,
+    this is a BOLD spreadsheet in Excel format.
+- `--exp_taxonomy_type`: Type of expected taxonomy, either `nsr` (Nederlands Soortenregister) or `bold`. In this case,
+   we are using `bold` to validate against the BOLD database.
+- `--config`: Path to the configuration file. Almost certainly, you will want to update the `config/config.yml` file
+   to specify the BLAST database name, configuration of the BLAST search, and other parameters, and the location of the
+   NCBI taxonomy database (as *.tar.gz).
+- `--output_format`: Format of the output report. Options are `tsv` (tab-separated values) or `fasta` (filtered FASTA).
+   In this case, we are generating a tabular (tsv) report.
+- `--log_level`: Set the logging level. Options are `DEBUG`, `INFO`, `WARNING`, `ERROR`, or `CRITICAL`. In this case,
+  we are setting it to `DEBUG` for detailed output.
+- `> results.tsv`: Redirects the output to a file named `results.tsv`.
+
+Note: the config file has a parameter `blast_db`. This should be set to the name of the BLAST database you want to use. 
+The *name* of the database is the path to the 'file stem' of the database, without the `.nhr`, `.nin`, etc. So it is
+*not* the name of the directory, but that of the indexed sequence files without the extensions.
 
 ### Galaxy Integration
 
@@ -77,22 +95,6 @@ The tool is available as a Galaxy tool wrapper, enabling web-based usage through
 2. Configure validation parameters through the GUI
 3. Run validations and view results within Galaxy
 4. Download validation reports and filtered sequences
-
-## Configuration
-
-The tool uses YAML configuration files for flexible setup:
-
-```yaml
-# Example config.yml
-marker: COI-5P
-validation_rank: family
-taxonomic_backbone: bold
-blast_db: /path/to/blast/db
-hmm_profile_dir: /path/to/hmm/profiles
-log_level: INFO
-```
-
-See `config/config.yml` for a complete configuration template with documentation.
 
 ## Contributing
 
