@@ -71,6 +71,7 @@ python barcode_validator \
 
 - `--input_file`: Path to the input FASTA file containing sequences to validate. The first word in the header line 
   should be the BOLD process ID, followed by an underscore '_', and then a suffix that makes the sequence unique.
+  (The underscore separator can be changed in the configuration file under `group_id_separator`).
 - `--exp_taxonomy`: Path to the 'expected taxonomy' file, i.e. what the sequences are expected to be. In this case,
     this is a BOLD spreadsheet in Excel format.
 - `--exp_taxonomy_type`: Type of expected taxonomy, either `nsr` (Nederlands Soortenregister) or `bold`. In this case,
