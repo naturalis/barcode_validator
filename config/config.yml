@@ -1,5 +1,4 @@
 marker: COI-5P  # Options: COI-5P, matK, rbcL
-hmm_profile_dir: ../examples/hmm
 
 # Group ID separator: how to parse out the group ID from the sequence ID
 group_id_separator: "_"  # Options: "_", "-", " ", etc.
@@ -12,13 +11,9 @@ validate_structural: true
 validation_rank: family  # Taxonomic level at which to validate identifications
 exp_taxonomy_type: bold  # Options: bold, ncbi, nsr
 reference_taxonomy: ncbi
-min_sequence_length: 500
-max_ambiguities: 6
 
 # Taxonomy sources
 ncbi_file: ../examples/taxdump.tar.gz
-bold_file: ../examples/bold.xlsx  # Required if taxonomic_backbone: bold
-nsr_file: ../examples/nsr-20250207.dwca.zip  # Required if taxonomic_backbone: dwc
 entrez_email: bioinformatics@naturalis.nl
 
 # BLAST configuration
@@ -32,10 +27,3 @@ max_target_seqs: 10
 word_size: 28
 constrain: class        # Higher taxon level to constrain BLAST searches within
 
-# BLAST environment
-BLASTDB: /home/rutger.vos/data/ncbi/nt
-BLASTDB_LMDB_MAP_SIZE: 1000G
-
-# Logging
-log_level: WARNING
-log_file: ../log_file.log
