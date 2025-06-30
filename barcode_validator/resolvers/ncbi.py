@@ -28,8 +28,9 @@ class NCBIResolver(TaxonResolver):
         :return:
         """
 
-        # There are seem to be two options here. Either we have a sequence record that is parsed from a GenBank file,
-        # and it has a taxon ID in the guids dictionary, or we have a string. If it's a string, it's just a taxon name.
+        # There seem to be two options here. Either we have a sequence record that is parsed from a GenBank file or a
+        # BCDM-style file that has a taxon_id field, where in either case we have a taxon_id that is a string of digits,
+        # or we have a string of letters. If it's a string of letters, it's just a taxon name.
         # These two scenarios mirror what happens in parse_id().
         if id_string.isdigit():
             return int(node.guids['taxon']) == int(id_string)
@@ -50,6 +51,12 @@ class NCBIResolver(TaxonResolver):
                     if xref.startswith("taxon:"):
                         taxon_id = xref.split(":")[1]  # e.g., "taxon:9606" -> "9606"
 
+        # Assuming you parsed a BCDM format file with a taxon_id field for NCBI
+        if taxon_id is None:
+            self.logger.warning(f"No taxon ID found in record {record.id}.")
+            taxon_id = record.annotations.get('bcdm_fields', {}).get('taxon_id', None)
+
+        # If still not found, try to get it from the identification field, being the name string fallback
         if taxon_id is None:
             self.logger.warning(f"No taxon ID found in record {record.id}.")
             taxon_id = record.annotations.get('bcdm_fields', {}).get('identification', None)
