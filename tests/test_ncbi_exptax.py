@@ -78,7 +78,7 @@ def test_cli_ncbi(structval_ncbi_tsv, ncbi_taxdump):
         sys.argv = original_argv
         os.chdir(original_dir)
 
-def test_structural_validation_cli_bold(test_cli_ncbi):
+def test_structural_validation_cli_ncbi(test_cli_ncbi):
     dars = test_cli_ncbi.run()
     assert dars is not None, "Validation results should not be None"
     assert len(dars.results) == 4, "Validation results should have 4 records"
