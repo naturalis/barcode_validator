@@ -2,6 +2,7 @@ from enum import Enum
 
 class RefDB(Enum):
     NCBI = "ncbi"
+    BOLD = "bold"
 
 class TaxonomicRank(Enum):
     KINGDOM = "kingdom"
