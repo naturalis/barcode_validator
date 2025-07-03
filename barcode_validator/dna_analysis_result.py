@@ -269,14 +269,18 @@ class DNAAnalysisResult:
         return self.data['obs_taxon']
 
     @obs_taxon.setter
-    def obs_taxon(self, taxa: List[Taxon]) -> None:
+    def obs_taxon(self, taxa) -> None:
         """
         Setter for the observed taxon.
-        :param taxa: A list of strings representing the observed taxon
+        :param taxa: A list or set of Taxon objects representing the observed taxon
         :return:
         """
+        # Handle both list and set inputs
+        if isinstance(taxa, set):
+            taxa = list(taxa)
+
         if not isinstance(taxa, list) or not all(isinstance(item, Taxon) for item in taxa):
-            raise ValueError("obs_taxon must be a list of Taxon objects")
+            raise ValueError("obs_taxon must be a list or set of Taxon objects")
         self.data['obs_taxon'] = taxa
 
     def add_obs_taxon(self, taxon: Taxon) -> None:
