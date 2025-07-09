@@ -1,6 +1,9 @@
 import tempfile
 import os
+from pathlib import Path
+
 from Bio import SeqIO
+from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from typing import Optional, Set
 from nbitk.config import Config
@@ -9,6 +12,7 @@ from nbitk.Taxon import Taxon
 from barcode_validator.resolvers.taxonomy import TaxonResolver
 from barcode_validator.constants import TaxonomicRank
 from .idservice import IDService
+from copy import deepcopy
 
 
 class NCBI(IDService):
@@ -29,6 +33,21 @@ class NCBI(IDService):
         self.taxonomy_resolver: TaxonResolver = Optional[TaxonResolver]
         self.blastn: Blastn = Optional[Blastn]
 
+        # Set the BLASTDB environment variable if not already set and if blast_db is in config
+        blast_db = config.get('blast_db', None)
+
+        if blast_db is not None:
+            # Get the directory containing the blast database files
+            blast_db_dir = str(Path(blast_db).parent)
+
+            # Check if BLASTDB environment variable is set
+            if 'BLASTDB' not in os.environ:
+                # Set BLASTDB to the database directory
+                os.environ['BLASTDB'] = blast_db_dir
+
+        if blast_db is None:
+            self.logger.warning("Config variable `blast_db` is not set. BLAST searches may fail.")
+
     def run_localblast(self, sequence: SeqRecord, constraint: int) -> Optional[str]:
         """
         Run local BLAST search constrained by taxonomy and collect results at specified rank.
@@ -42,7 +61,13 @@ class NCBI(IDService):
 
         # Create temporary files
         with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.fasta') as temp_input:
-            SeqIO.write(sequence, temp_input, "fasta")
+
+            # Clone record and strip dashes from sequence
+            cloned_record = deepcopy(sequence)
+            cleaned_sequence = str(cloned_record.seq).replace('-', '').replace('~', '')
+            cloned_record.seq = Seq(cleaned_sequence)
+
+            SeqIO.write(cloned_record, temp_input, "fasta")
             temp_input_name = temp_input.name
 
         try:
