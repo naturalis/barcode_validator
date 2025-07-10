@@ -45,7 +45,8 @@ class BOLD(IDService):
         self.poll_interval = 5
         self.max_wait_time = 300
 
-    def identify_record(self, record: SeqRecord, level: TaxonomicRank = TaxonomicRank.FAMILY, extent: Taxon = None) -> Set[Taxon]:
+    def identify_record(self, record: SeqRecord, level: TaxonomicRank = TaxonomicRank.FAMILY, extent: Taxon = None) -> \
+    Set[Taxon]:
         """
         Identify the taxonomic classification of a sequence record using BOLD ID service.
 
@@ -104,17 +105,21 @@ class BOLD(IDService):
 
     def _submit_sequences(self, fasta_content: str) -> str:
         """
-        Submit sequences to BOLD ID service.
+        Submit sequences to BOLD ID service with proper line ending handling.
 
         :param fasta_content: FASTA formatted sequence string
         :return: Submission ID for tracking the request
         """
 
-        # Prepare form data
-        files = {
-            'file': ('sequences.fas', fasta_content, 'text/plain')
-        }
+        # Fix line endings - ensure FASTA content uses CRLF to match multipart boundaries
+        normalized_content = fasta_content.replace('\r\n', '\n').replace('\r', '\n')
+        fasta_with_crlf = normalized_content.replace('\n', '\r\n')
 
+        # Ensure content ends with CRLF
+        if not fasta_with_crlf.endswith('\r\n'):
+            fasta_with_crlf += '\r\n'
+
+        # Parameters as query string
         params = {
             'db': self.default_database,
             'mi': str(self.default_min_identity),
@@ -123,23 +128,59 @@ class BOLD(IDService):
             'order': str(self.default_order)
         }
 
-        # Submit to submission endpoint
         url = f"{self.base_url}/submission"
-        response = self.session.post(url, files=files, params=params)
 
-        if response.status_code != 200:
-            try:
-                error_detail = response.json().get('detail', 'Unknown error')
-            except:
-                error_detail = f"HTTP {response.status_code}: {response.text}"
-            raise requests.RequestException(f"BOLD submission failed: {error_detail}")
+        # Try file upload with CRLF line endings
+        try:
+            files = {
+                'file': ('submitted.fas', fasta_with_crlf, 'text/plain')
+            }
 
-        result = response.json()
-        return result['sub_id']
+            response = self.session.post(url, files=files, params=params)
+
+            if response.status_code == 200:
+                result = response.json()
+                self.logger.info("Successfully submitted using file upload with CRLF")
+                return result['sub_id']
+            else:
+                self.logger.debug(f"CRLF method failed: {response.status_code} - {response.text}")
+
+        except Exception as e:
+            self.logger.debug(f"CRLF method failed with exception: {str(e)}")
+
+        # Fallback: Try with LF line endings
+        try:
+            fasta_with_lf = normalized_content
+            if not fasta_with_lf.endswith('\n'):
+                fasta_with_lf += '\n'
+
+            files = {
+                'file': ('submitted.fas', fasta_with_lf, 'text/plain')
+            }
+
+            response = self.session.post(url, files=files, params=params)
+
+            if response.status_code == 200:
+                result = response.json()
+                self.logger.info("Successfully submitted using file upload with LF")
+                return result['sub_id']
+            else:
+                self.logger.debug(f"LF method failed: {response.status_code} - {response.text}")
+
+        except Exception as e:
+            self.logger.debug(f"LF method failed with exception: {str(e)}")
+
+        # If all methods fail, raise the last error
+        try:
+            error_detail = response.json().get('detail', 'Unknown error')
+        except:
+            error_detail = f"HTTP {response.status_code}: {response.text}"
+
+        raise requests.RequestException(f"BOLD submission failed: {error_detail}")
 
     def _wait_for_results(self, sub_id: str) -> Dict[str, Any]:
         """
-        Poll for results until completion or timeout.
+        Poll for results using the processing endpoint.
 
         :param sub_id: Submission ID to track
         :return: Dictionary containing the analysis results
@@ -148,33 +189,33 @@ class BOLD(IDService):
         start_time = time.time()
 
         while time.time() - start_time < self.max_wait_time:
-            # Check status
-            status_url = f"{self.base_url}/status/{sub_id}"
-            response = self.session.get(status_url)
+            # Check the processing page (this might redirect or show status)
+            processing_url = f"{self.base_url}/processing/{sub_id}"
+            response = self.session.get(processing_url)
 
             if response.status_code == 200:
-                status_data = response.json()
+                # The processing page might contain the results or redirect to results
+                # We need to check if results are available
 
-                if status_data.get('status') == 'completed':
-                    # Get results
-                    results_url = f"{self.base_url}/results/{sub_id}"
-                    results_response = self.session.get(results_url)
+                # Try to get results directly
+                results_url = f"{self.base_url}/results/{sub_id}"
+                results_response = self.session.get(results_url)
 
-                    if results_response.status_code == 200:
+                if results_response.status_code == 200:
+                    try:
                         return results_response.json()
-                    else:
-                        raise requests.RequestException(f"Failed to retrieve BOLD results: {results_response.text}")
-
-                elif status_data.get('status') == 'failed':
-                    error_msg = status_data.get('error', 'Unknown error')
-                    raise requests.RequestException(f"BOLD analysis failed: {error_msg}")
-
-                # Still processing, wait and try again
-                self.logger.debug(f"BOLD status: {status_data.get('status', 'processing')}...")
-                time.sleep(self.poll_interval)
-
+                    except:
+                        # Might be HTML or other format
+                        return {'raw_results': results_response.text}
+                elif results_response.status_code == 404:
+                    # Results not ready yet, wait and retry
+                    self.logger.debug(f"Results not ready for {sub_id}, waiting...")
+                    time.sleep(self.poll_interval)
+                    continue
+                else:
+                    raise requests.RequestException(f"Failed to retrieve results: {results_response.text}")
             else:
-                self.logger.warning(f"BOLD status check failed (HTTP {response.status_code}), retrying...")
+                self.logger.warning(f"Processing page check failed (HTTP {response.status_code}), retrying...")
                 time.sleep(self.poll_interval)
 
         raise TimeoutError(f"BOLD results not available within {self.max_wait_time} seconds")
