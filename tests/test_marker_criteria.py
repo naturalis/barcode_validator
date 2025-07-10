@@ -75,7 +75,7 @@ class TestCOI5PCriteria:
         """Test that default initialization sets expected values for COI-5P."""
         criteria = COI5PCriteria()
         assert criteria.min_length == 500
-        assert criteria.max_ambiguities == 6
+        assert criteria.max_ambiguities == 0
         assert criteria.max_stop_codons == 0
         assert criteria.marker_type == Marker.COI_5P
 
