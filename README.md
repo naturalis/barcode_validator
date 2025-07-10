@@ -35,24 +35,6 @@ conda activate barcode-validator
 conda install -c bioconda barcode-validator blast hmmer
 ```
 
-## Configuration
-
-When setting up the BLAST environment, the following environment variables should be set correctly:
-
-- `BLASTDB`: Path to the BLAST database directory. This must be the *directory* within which the BLAST databases are 
-             stored, not the database files themselves. The directory must contain (many) files starting with `nt`. 
-             Furthermore, the directory must contain the files `taxdb.btd`, `taxdb.bti`, and `taxonomy4blast.sqlite3`.
-             (The `nt.*` files are the indexed sequences, the other files help BLAST running taxonomically constrained 
-             queries. All can be fetched into the correct folder using the command `update_blastdb.pl --decompress nt`
-             from the NCBI BLAST+ package.)
-- `BLASTDB_LMDB_MAP_SIZE`: Optionally, set the size of the LMDB map for the BLAST database. This is useful for large 
-             databases and can be set to a value like `1000G` (1 TB RAM) to ensure sufficient RAM for the initial
-             map of the BLAST database. At Naturalis, we discovered that this mostly functions as a threshold: if you
-             set it too low, BLAST will fail to start. Empirically, this is around 512G. Higher values above the 
-             threshold have no effect on performance, they are simply a means to discover you don't have enough RAM 
-             available for the BLAST database.
-
-
 ## Usage
 
 ### Command Line Interface
