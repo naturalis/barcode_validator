@@ -106,7 +106,7 @@ class COI5PCriteria(MarkerCriteria):
         self.marker_type = Marker.COI_5P
         # BOLD defaults for COI-5P:
         self.min_length = 500  # 500 base pairs
-        self.max_ambiguities = 0  # No more than 0 ambiguous bases
+        self.max_ambiguities = config.get("ambiguities", 0)  # No more than 0 ambiguous bases
         self.max_stop_codons = 0  # No stop codons allowed
 
         # Override with any provided configuration
