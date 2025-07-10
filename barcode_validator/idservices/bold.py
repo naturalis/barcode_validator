@@ -1,389 +1,334 @@
-import requests
-import time
 import json
-from typing import Optional, Dict, Any, Union, Set
-from pathlib import Path
-import re
-from io import StringIO
-
+import time
+import datetime
+from typing import Set, Dict, List, Optional
 from Bio.SeqRecord import SeqRecord
-from Bio import SeqIO
+import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+from json.decoder import JSONDecodeError
+
 from nbitk.Taxon import Taxon
 from nbitk.config import Config
 from barcode_validator.constants import TaxonomicRank
-
-from barcode_validator.idservices.idservice import IDService
+from .idservice import IDService
 
 
 class BOLD(IDService):
-    """BOLD Systems implementation of the IDService interface."""
+    """
+    BOLD identification service implementation.
 
-    def __init__(self, config: Config, base_url: str = "https://id.boldsystems.org"):
-        """
-        Initialize the BOLD ID service.
+    This service uses the BOLD Systems identification engine to identify
+    taxonomic information from sequence records. This is a self-contained
+    implementation that doesn't require the id_engine module.
+    """
 
-        :param config: Configuration object
-        :param base_url: Base URL for the BOLD ID service
-        """
+    def __init__(self, config: Config):
         super().__init__(config)
-        self.base_url = base_url.rstrip('/')
-        self.session = requests.Session()
 
-        # Set headers to mimic browser behavior
-        self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (compatible; BOLD-ID-Python-Client/1.0)',
-            'Accept': 'application/json, text/plain, */*',
-            'Accept-Language': 'en-US,en;q=0.9',
+        # Get BOLD-specific configuration with defaults
+        self.database = config.get('bold_database', 1)  # Default to public.bin-tax-derep
+        self.operating_mode = config.get('bold_operating_mode', 1)  # Default to 94% similarity
+        self.timeout = config.get('bold_timeout', 300)  # 5 minutes default timeout
+
+        # Build URL and parameters from config
+        self.base_url, self.params = self._build_url_params()
+
+        self.logger.info(
+            f"Initialized BOLD service with database {self.database}, operating mode {self.operating_mode}")
+
+    def _build_url_params(self) -> tuple:
+        """Build the base URL and parameters for BOLD requests."""
+        # Database mapping
+        idx_to_database = {
+            1: "public.bin-tax-derep",
+            2: "species",
+            3: "all.bin-tax-derep",
+            4: "DS-CANREF22",
+            5: "public.plants",
+            6: "public.fungi",
+            7: "all.animal-alt",
+            8: "DS-IUCNPUB",
+        }
+
+        # Operating mode mapping
+        idx_to_operating_mode = {
+            1: {"mi": 0.94, "maxh": 25},
+            2: {"mi": 0.9, "maxh": 50},
+            3: {"mi": 0.75, "maxh": 100},
+        }
+
+        if self.database not in idx_to_database:
+            raise ValueError(f"Invalid database: {self.database}. Must be 1-8.")
+
+        if self.operating_mode not in idx_to_operating_mode:
+            raise ValueError(f"Invalid operating mode: {self.operating_mode}. Must be 1-3.")
+
+        params = {
+            "db": idx_to_database[self.database],
+            "mi": idx_to_operating_mode[self.operating_mode]["mi"],
+            "mo": 100,
+            "maxh": idx_to_operating_mode[self.operating_mode]["maxh"],
+            "order": 3,
+        }
+
+        base_url = "https://id.boldsystems.org/submission?db={}&mi={}&mo={}&maxh={}&order={}".format(
+            params["db"], params["mi"], params["mo"], params["maxh"], params["order"]
+        )
+
+        return base_url, params
+
+    def _submit_sequence(self, record: SeqRecord) -> str:
+        """Submit a sequence to BOLD and return the submission ID."""
+        # Create session with retry strategy
+        session = requests.Session()
+        session.headers.update({
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36"
         })
+        retry_strategy = Retry(total=10, backoff_factor=1)
+        adapter = HTTPAdapter(max_retries=retry_strategy)
+        session.mount("https://", adapter)
 
-        # Default search parameters
-        self.default_database = "all.tax-derep"  # Animal Library (Public + Private)
-        self.default_min_identity = 0.94
-        self.default_min_overlap = 100
-        self.default_max_hits = 25
-        self.default_order = 3
-        self.poll_interval = 5
-        self.max_wait_time = 300
+        # Format sequence data for submission
+        data = f">{record.id}\n{record.seq}\n"
+        files = {"file": ("submitted.fas", data, "text/plain")}
+
+        try:
+            while True:
+                try:
+                    # Submit the POST request
+                    self.logger.debug(f"Submitting sequence {record.id} to BOLD")
+                    response = session.post(self.base_url, params=self.params, files=files)
+                    response.raise_for_status()
+                    result = json.loads(response.text)
+                    break
+                except (JSONDecodeError, requests.RequestException) as e:
+                    self.logger.warning(f"Request failed: {e}, retrying in 60 seconds")
+                    time.sleep(60)
+
+            sub_id = result['sub_id']
+            self.logger.debug(f"Received submission ID: {sub_id}")
+            return sub_id
+        finally:
+            session.close()
+
+    def _wait_for_and_get_results(self, sub_id: str, record_id: str) -> List[Dict]:
+        """Wait for BOLD processing to complete and return parsed results."""
+        results_url = f"https://id.boldsystems.org/submission/results/{sub_id}"
+
+        # Create session for polling results
+        session = requests.Session()
+        retry_strategy = Retry(total=5, backoff_factor=1)
+        adapter = HTTPAdapter(max_retries=retry_strategy)
+        session.mount("https://", adapter)
+
+        start_time = time.time()
+
+        try:
+            while time.time() - start_time < self.timeout:
+                try:
+                    self.logger.debug(f"Checking BOLD results for submission {sub_id}")
+                    response = session.get(results_url)
+                    response.raise_for_status()
+
+                    # Try to parse JSON response
+                    data = response.json()
+
+                    # Check if processing is complete
+                    # The response should be a dict with 'results', 'seqid', and 'sequence' keys
+                    if (data and isinstance(data, dict) and
+                            'results' in data and 'seqid' in data):
+
+                        # Check if this is our sequence
+                        if data.get("seqid") == record_id:
+                            return self._parse_bold_result(data)
+                        else:
+                            self.logger.warning(
+                                f"Results available but sequence ID mismatch: expected {record_id}, got {data.get('seqid')}")
+                            return []
+
+                    # Results not ready yet, wait and retry
+                    self.logger.debug(f"Results not ready yet for submission {sub_id}, waiting...")
+                    time.sleep(10)
+
+                except requests.RequestException as e:
+                    self.logger.debug(f"Request error while checking results: {e}, retrying...")
+                    time.sleep(10)
+                except json.JSONDecodeError:
+                    # Results might not be ready if we can't parse JSON
+                    self.logger.debug("Results not ready (invalid JSON), waiting...")
+                    time.sleep(10)
+
+            raise TimeoutError(f"BOLD processing timed out after {self.timeout} seconds")
+
+        finally:
+            session.close()
+
+    def _parse_bold_result(self, result_data: Dict) -> List[Dict]:
+        """Parse a BOLD result response into our standard format."""
+        results = []
+        bold_results = result_data.get("results", {})
+
+        if bold_results:
+            for key, result_info in bold_results.items():
+                # Parse the key format: process_id|primer|bin_uri|taxid|etc
+                key_parts = key.split("|")
+                process_id = key_parts[0] if len(key_parts) > 0 else ""
+                primer = key_parts[1] if len(key_parts) > 1 else ""
+                bin_uri = key_parts[2] if len(key_parts) > 2 else ""
+                taxid = key_parts[3] if len(key_parts) > 3 else ""
+
+                # Extract alignment metrics
+                pident = result_info.get("pident", 0.0)
+                bitscore = result_info.get("bitscore", 0.0)
+                evalue = result_info.get("evalue", 1.0)
+
+                # Extract taxonomy information
+                taxonomy = result_info.get("taxonomy", {})
+                result_dict = {
+                    "phylum": taxonomy.get("phylum"),
+                    "class": taxonomy.get("class"),
+                    "order": taxonomy.get("order"),
+                    "family": taxonomy.get("family"),
+                    "subfamily": taxonomy.get("subfamily"),  # Include subfamily if present
+                    "genus": taxonomy.get("genus"),
+                    "species": taxonomy.get("species"),
+                    "pct_identity": pident,
+                    "bitscore": bitscore,
+                    "evalue": evalue,
+                    "process_id": process_id,
+                    "primer": primer,
+                    "bin_uri": bin_uri,
+                    "taxid": taxid,
+                    "taxid_count": taxonomy.get("taxid_count", "")
+                }
+                results.append(result_dict)
+        else:
+            # No matches found
+            self.logger.debug(f"No matches found for sequence {result_data.get('seqid', 'unknown')}")
+
+        return results
+
+    def _build_taxonomic_trees(self, results: List[Dict]) -> List[Taxon]:
+        """Build taxonomic trees from BOLD results, merging taxa with the same name."""
+        # Dictionary to store unique taxa by (name, rank) pairs
+        taxa_registry = {}
+
+        # Define taxonomic levels in order from highest to lowest
+        levels = [
+            ("phylum", TaxonomicRank.PHYLUM),
+            ("class", TaxonomicRank.CLASS),
+            ("order", TaxonomicRank.ORDER),
+            ("family", TaxonomicRank.FAMILY),
+            ("subfamily", TaxonomicRank.FAMILY),  # Treat subfamily as family level for now
+            ("genus", TaxonomicRank.GENUS),
+            ("species", TaxonomicRank.SPECIES)
+        ]
+
+        # Track root taxa (highest level taxa with no parents)
+        root_taxa = set()
+
+        for result in results:
+            previous_taxon = None
+
+            # Build taxonomy chain from highest to lowest level
+            for level_name, rank in levels:
+                taxon_name = result.get(level_name)
+                if not taxon_name or not taxon_name.strip():
+                    continue
+
+                taxon_name = taxon_name.strip()
+                taxon_key = (taxon_name, rank.value)
+
+                # Get or create taxon
+                if taxon_key not in taxa_registry:
+                    confidence = result.get("pct_identity", 0.0) / 100.0
+                    taxon = Taxon(
+                        name=taxon_name,
+                        taxonomic_rank=rank.value,
+                        confidence=confidence
+                    )
+                    taxa_registry[taxon_key] = taxon
+
+                    # If this is the first (highest) level taxon, it's a root
+                    if previous_taxon is None:
+                        root_taxa.add(taxon)
+                else:
+                    taxon = taxa_registry[taxon_key]
+                    # Update confidence if this result has higher confidence
+                    current_confidence = result.get("pct_identity", 0.0) / 100.0
+                    if current_confidence > taxon.confidence:
+                        taxon.confidence = current_confidence
+
+                # Link to parent if exists
+                if previous_taxon is not None:
+                    # Check if this taxon is already a child of the previous taxon
+                    if taxon not in previous_taxon.clades:
+                        previous_taxon.clades.append(taxon)
+
+                previous_taxon = taxon
+
+        return list(root_taxa)
+
+    def _extract_taxa_at_level(self, trees: List[Taxon], level: TaxonomicRank) -> Set[Taxon]:
+        """Extract all taxa at the specified taxonomic level from trees."""
+        taxa_at_level = set()
+
+        def traverse_tree(taxon: Taxon, target_level: str):
+            if taxon.taxonomic_rank == target_level:
+                taxa_at_level.add(taxon)
+
+            # Continue traversing children
+            for child in taxon.clades:
+                traverse_tree(child, target_level)
+
+        for tree in trees:
+            traverse_tree(tree, level.value)
+
+        return taxa_at_level
 
     def identify_record(self, record: SeqRecord, level: TaxonomicRank = TaxonomicRank.FAMILY, extent: Taxon = None) -> \
     Set[Taxon]:
         """
-        Identify the taxonomic classification of a sequence record using BOLD ID service.
+        Identify the taxonomic classification of a sequence record using BOLD.
 
         :param record: A Bio.SeqRecord object containing the sequence to identify
-        :param level: The taxonomic rank at which to return results (default: FAMILY)
-        :param extent: A Taxon object representing the extent of the search (currently unused)
-        :return: Set of Taxon objects representing possible taxonomic classifications at the specified level
+        :param level: The taxonomic rank at which to return results (default: 'family')
+        :param extent: Ignored for BOLD service
+        :return: A set of Taxon objects representing the possible taxonomic classifications
         """
-        self.logger.info(f"Identifying sequence record: {record.id}")
-
         try:
-            # Convert SeqRecord to FASTA format
-            fasta_content = self._seqrecord_to_fasta(record)
+            self.logger.info(f"Identifying sequence {record.id} using BOLD")
 
-            # Submit to BOLD ID service
-            results = self._identify_sequences(fasta_content)
+            # Submit sequence to BOLD and get submission ID
+            sub_id = self._submit_sequence(record)
 
-            # Parse results and extract taxa at the specified level
-            taxa_set = self._parse_results_to_taxa(results, level)
+            # Wait for processing and get results
+            results = self._wait_for_and_get_results(sub_id, record.id)
 
-            self.logger.info(f"Found {len(taxa_set)} taxa at {level.value} level for record {record.id}")
-            return taxa_set
+            if not results:
+                self.logger.warning(f"No BOLD results found for sequence {record.id}")
+                return set()
+
+            # Build taxonomic trees
+            trees = self._build_taxonomic_trees(results)
+
+            # Extract taxa at requested level
+            taxa_at_level = self._extract_taxa_at_level(trees, level)
+
+            self.logger.info(f"Found {len(taxa_at_level)} taxa at {level.value} level for sequence {record.id}")
+            return taxa_at_level
 
         except Exception as e:
-            self.logger.error(f"Error identifying record {record.id}: {str(e)}")
+            self.logger.error(f"Error identifying sequence {record.id}: {str(e)}")
             return set()
-
-    def _seqrecord_to_fasta(self, record: SeqRecord) -> str:
-        """
-        Convert a SeqRecord to FASTA format string.
-
-        :param record: SeqRecord to convert
-        :return: FASTA formatted string
-        """
-        output = StringIO()
-        SeqIO.write(record, output, "fasta")
-        return output.getvalue()
-
-    def _identify_sequences(self, fasta_content: str) -> Dict[str, Any]:
-        """
-        Submit sequences to BOLD ID service and return results.
-
-        :param fasta_content: FASTA formatted sequence string
-        :return: Dictionary containing identification results
-        """
-        # Validate FASTA format
-        if not self._is_valid_fasta(fasta_content):
-            raise ValueError("Invalid FASTA format")
-
-        # Submit sequences
-        sub_id = self._submit_sequences(fasta_content)
-        self.logger.info(f"BOLD submission ID: {sub_id}")
-
-        # Poll for results
-        return self._wait_for_results(sub_id)
-
-    def _submit_sequences(self, fasta_content: str) -> str:
-        """
-        Submit sequences to BOLD ID service with proper line ending handling.
-
-        :param fasta_content: FASTA formatted sequence string
-        :return: Submission ID for tracking the request
-        """
-
-        # Fix line endings - ensure FASTA content uses CRLF to match multipart boundaries
-        normalized_content = fasta_content.replace('\r\n', '\n').replace('\r', '\n')
-        fasta_with_crlf = normalized_content.replace('\n', '\r\n')
-
-        # Ensure content ends with CRLF
-        if not fasta_with_crlf.endswith('\r\n'):
-            fasta_with_crlf += '\r\n'
-
-        # Parameters as query string
-        params = {
-            'db': self.default_database,
-            'mi': str(self.default_min_identity),
-            'mo': str(self.default_min_overlap),
-            'maxh': str(self.default_max_hits),
-            'order': str(self.default_order)
-        }
-
-        url = f"{self.base_url}/submission"
-
-        # Try file upload with CRLF line endings
-        try:
-            files = {
-                'file': ('submitted.fas', fasta_with_crlf, 'text/plain')
-            }
-
-            response = self.session.post(url, files=files, params=params)
-
-            if response.status_code == 200:
-                result = response.json()
-                self.logger.info("Successfully submitted using file upload with CRLF")
-                return result['sub_id']
-            else:
-                self.logger.debug(f"CRLF method failed: {response.status_code} - {response.text}")
-
-        except Exception as e:
-            self.logger.debug(f"CRLF method failed with exception: {str(e)}")
-
-        # Fallback: Try with LF line endings
-        try:
-            fasta_with_lf = normalized_content
-            if not fasta_with_lf.endswith('\n'):
-                fasta_with_lf += '\n'
-
-            files = {
-                'file': ('submitted.fas', fasta_with_lf, 'text/plain')
-            }
-
-            response = self.session.post(url, files=files, params=params)
-
-            if response.status_code == 200:
-                result = response.json()
-                self.logger.info("Successfully submitted using file upload with LF")
-                return result['sub_id']
-            else:
-                self.logger.debug(f"LF method failed: {response.status_code} - {response.text}")
-
-        except Exception as e:
-            self.logger.debug(f"LF method failed with exception: {str(e)}")
-
-        # If all methods fail, raise the last error
-        try:
-            error_detail = response.json().get('detail', 'Unknown error')
-        except:
-            error_detail = f"HTTP {response.status_code}: {response.text}"
-
-        raise requests.RequestException(f"BOLD submission failed: {error_detail}")
-
-    def _wait_for_results(self, sub_id: str) -> Dict[str, Any]:
-        """
-        Poll for results using the processing endpoint.
-
-        :param sub_id: Submission ID to track
-        :return: Dictionary containing the analysis results
-        """
-
-        start_time = time.time()
-
-        while time.time() - start_time < self.max_wait_time:
-            # Check the processing page (this might redirect or show status)
-            processing_url = f"{self.base_url}/processing/{sub_id}"
-            response = self.session.get(processing_url)
-
-            if response.status_code == 200:
-                # The processing page might contain the results or redirect to results
-                # We need to check if results are available
-
-                # Try to get results directly
-                results_url = f"{self.base_url}/results/{sub_id}"
-                results_response = self.session.get(results_url)
-
-                if results_response.status_code == 200:
-                    try:
-                        return results_response.json()
-                    except:
-                        # Might be HTML or other format
-                        return {'raw_results': results_response.text}
-                elif results_response.status_code == 404:
-                    # Results not ready yet, wait and retry
-                    self.logger.debug(f"Results not ready for {sub_id}, waiting...")
-                    time.sleep(self.poll_interval)
-                    continue
-                else:
-                    raise requests.RequestException(f"Failed to retrieve results: {results_response.text}")
-            else:
-                self.logger.warning(f"Processing page check failed (HTTP {response.status_code}), retrying...")
-                time.sleep(self.poll_interval)
-
-        raise TimeoutError(f"BOLD results not available within {self.max_wait_time} seconds")
-
-    def _parse_results_to_taxa(self, results: Dict[str, Any], level: TaxonomicRank) -> Set[Taxon]:
-        """
-        Parse BOLD ID results and extract taxa at the specified taxonomic level.
-
-        :param results: Results dictionary from BOLD ID service
-        :param level: Taxonomic rank to extract
-        :return: Set of Taxon objects at the specified level
-        """
-        taxa_set = set()
-
-        # The exact structure of BOLD results may vary, so this is a best-effort implementation
-        # Based on typical BOLD API responses, results usually contain matches with taxonomic info
-
-        try:
-            # Handle different possible result structures
-            matches = results.get('matches', [])
-            if not matches and 'results' in results:
-                matches = results['results']
-
-            for match in matches:
-                # Extract taxonomic information from the match
-                taxonomy = self._extract_taxonomy_from_match(match)
-
-                if taxonomy:
-                    # Get the taxon at the specified level
-                    taxon_at_level = self._get_taxon_at_level(taxonomy, level)
-                    if taxon_at_level:
-                        taxa_set.add(taxon_at_level)
-
-        except Exception as e:
-            self.logger.warning(f"Error parsing BOLD results: {str(e)}")
-
-        return taxa_set
-
-    def _extract_taxonomy_from_match(self, match: Dict[str, Any]) -> Optional[Dict[str, str]]:
-        """
-        Extract taxonomic information from a BOLD match result.
-
-        :param match: Single match result from BOLD
-        :return: Dictionary of taxonomic classifications or None if not found
-        """
-        taxonomy = {}
-
-        # Common fields in BOLD results
-        taxonomic_fields = [
-            'kingdom', 'phylum', 'class', 'order', 'family', 'genus', 'species',
-            'Kingdom', 'Phylum', 'Class', 'Order', 'Family', 'Genus', 'Species'
-        ]
-
-        for field in taxonomic_fields:
-            if field in match and match[field]:
-                taxonomy[field.lower()] = match[field]
-
-        # Also check for nested taxonomy objects
-        if 'taxonomy' in match:
-            tax_obj = match['taxonomy']
-            for field in taxonomic_fields:
-                if field in tax_obj and tax_obj[field]:
-                    taxonomy[field.lower()] = tax_obj[field]
-
-        return taxonomy if taxonomy else None
-
-    def _get_taxon_at_level(self, taxonomy: Dict[str, str], level: TaxonomicRank) -> Optional[Taxon]:
-        """
-        Extract a Taxon object at the specified taxonomic level.
-
-        :param taxonomy: Dictionary of taxonomic classifications
-        :param level: Desired taxonomic rank
-        :return: Taxon object at the specified level, or None if not found
-        """
-        level_name = level.value.lower()
-
-        if level_name in taxonomy:
-            taxon_name = taxonomy[level_name]
-
-            if self.taxonomy_resolver:
-                # Use the taxonomy resolver if available
-                try:
-                    return self.taxonomy_resolver.resolve_name(taxon_name, level)
-                except Exception as e:
-                    self.logger.warning(f"Could not resolve taxon '{taxon_name}' at level '{level_name}': {str(e)}")
-
-            # Create a basic Taxon object without resolver
-            # Note: This may need adjustment based on your Taxon class implementation
-            return Taxon(name=taxon_name, taxonomic_rank=level.value)
-
-        return None
-
-    def _is_valid_fasta(self, content: str) -> bool:
-        """
-        Check if content is valid FASTA format.
-
-        :param content: String content to validate
-        :return: True if valid FASTA format, False otherwise
-        """
-        content = content.strip()
-        if not content:
-            return False
-
-        lines = content.split('\n')
-        has_header = False
-        has_sequence = False
-
-        for line in lines:
-            line = line.strip()
-            if not line:
-                continue
-            if line.startswith('>'):
-                has_header = True
-            elif has_header and re.match(r'^[ATCGNRYSWKMBDHV\-]+$', line.upper()):
-                has_sequence = True
-
-        return has_header and has_sequence
-
-    def set_search_parameters(self, database: str = None, min_identity: float = None,
-                              min_overlap: int = None, max_hits: int = None):
-        """
-        Set search parameters for BOLD ID service.
-
-        :param database: Database to search against
-        :param min_identity: Minimum similarity threshold (0.70-1.00)
-        :param min_overlap: Minimum overlap length (1-1000)
-        :param max_hits: Maximum hits per sequence (1-1000)
-        """
-        if database is not None:
-            self.default_database = database
-        if min_identity is not None:
-            self.default_min_identity = min_identity
-        if min_overlap is not None:
-            self.default_min_overlap = min_overlap
-        if max_hits is not None:
-            self.default_max_hits = max_hits
-
-    def get_available_databases(self) -> Dict[str, str]:
-        """
-        Get information about available BOLD databases.
-
-        :return: Dictionary mapping database codes to descriptions
-        """
-        return {
-            "public.tax-derep": "Animal Library (Public) - Non-redundant COI sequences",
-            "species": "Animal Species-Level Library (Public + Private) - COI sequences with species designation",
-            "all.tax-derep": "Animal Library (Public + Private) - Non-redundant COI sequences",
-            "DS-CANREF22": "Validated Canadian Arthropod Library - Validated Canadian arthropod records",
-            "public.plants": "Plant Library (Public) - Non-redundant plant rbcL, matK, and ITS sequences",
-            "public.fungi": "Fungi Library (Public) - Non-redundant fungal ITS and 18S sequences",
-            "all.animal-alt": "Animal Secondary Markers (Public) - Non-redundant 18S and 12S sequences",
-            "DS-IUCNPUB": "Validated Animal Red List Library - Validated animal Red List species"
-        }
 
     @staticmethod
     def requires_resolver():
-        """
-        Return True if this service benefits from a taxonomy resolver.
-
-        :return: True, as BOLD service benefits from taxonomy resolution
-        """
-        return True
+        """BOLD service does not require a taxonomy resolver."""
+        return False
 
     @staticmethod
     def requires_blastn():
-        """
-        Return False as BOLD ID service doesn't require local BLAST.
-
-        :return: False, as no local BLAST is needed
-        """
+        """BOLD service does not require BLAST."""
         return False
