@@ -2,9 +2,7 @@ import pytest
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from nbitk.config import Config
-from barcode_validator.constants import TaxonomicRank, RefDB
 from barcode_validator.idservices.bold import BOLD
-from barcode_validator.idservices.factory import IDServiceFactory
 
 @pytest.fixture()
 def config():
