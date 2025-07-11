@@ -245,7 +245,7 @@ class BOLD(IDService):
             ("class", TaxonomicRank.CLASS),
             ("order", TaxonomicRank.ORDER),
             ("family", TaxonomicRank.FAMILY),
-            ("subfamily", TaxonomicRank.FAMILY),  # Treat subfamily as family level for now
+            ("subfamily", TaxonomicRank.SUBFAMILY),
             ("genus", TaxonomicRank.GENUS),
             ("species", TaxonomicRank.SPECIES)
         ]

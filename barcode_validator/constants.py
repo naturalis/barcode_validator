@@ -10,6 +10,7 @@ class TaxonomicRank(Enum):
     CLASS = "class"
     ORDER = "order"
     FAMILY = "family"
+    SUBFAMILY = "subfamily"
     GENUS = "genus"
     SPECIES = "species"
 
