@@ -38,7 +38,11 @@ class BOLD(IDService):
             f"Initialized BOLD service with database {self.database}, operating mode {self.operating_mode}")
 
     def _build_url_params(self) -> tuple:
-        """Build the base URL and parameters for BOLD requests."""
+        """
+        Build the base URL and parameters for BOLD requests.
+
+        :return: A tuple containing the base URL and a dictionary of parameters
+        """
         # Database mapping
         idx_to_database = {
             1: "public.bin-tax-derep",
@@ -79,7 +83,12 @@ class BOLD(IDService):
         return base_url, params
 
     def _submit_sequence(self, record: SeqRecord) -> str:
-        """Submit a sequence to BOLD and return the submission ID."""
+        """
+        Submit a sequence to BOLD and return the submission ID.
+
+        :param record: A Bio.SeqRecord object containing the sequence to submit
+        :return: The submission ID returned by BOLD
+        """
         # Create session with retry strategy
         session = requests.Session()
         session.headers.update({
@@ -113,7 +122,13 @@ class BOLD(IDService):
             session.close()
 
     def _wait_for_and_get_results(self, sub_id: str, record_id: str) -> List[Dict]:
-        """Wait for BOLD processing to complete and return parsed results."""
+        """
+        Wait for BOLD processing to complete and return parsed results.
+
+        :param sub_id: The submission ID returned by BOLD
+        :param record_id: The ID of the sequence record to match results against
+        :return: A list of dictionaries containing the parsed results
+        """
         results_url = f"https://id.boldsystems.org/submission/results/{sub_id}"
 
         # Create session for polling results
@@ -165,7 +180,12 @@ class BOLD(IDService):
             session.close()
 
     def _parse_bold_result(self, result_data: Dict) -> List[Dict]:
-        """Parse a BOLD result response into our standard format."""
+        """
+        Parse a BOLD result response into our standard format.
+
+        :param result_data: The raw result data from BOLD
+        :return: A list of dictionaries containing parsed results
+        """
         results = []
         bold_results = result_data.get("results", {})
 
@@ -210,7 +230,12 @@ class BOLD(IDService):
         return results
 
     def _build_taxonomic_trees(self, results: List[Dict]) -> List[Taxon]:
-        """Build taxonomic trees from BOLD results, merging taxa with the same name."""
+        """
+        Build taxonomic trees from BOLD results, merging taxa with the same name.
+
+        :param results: A list of dictionaries containing BOLD results
+        :return: A list of root Taxon objects representing the taxonomic trees
+        """
         # Dictionary to store unique taxa by (name, rank) pairs
         taxa_registry = {}
 
@@ -271,7 +296,13 @@ class BOLD(IDService):
         return list(root_taxa)
 
     def _extract_taxa_at_level(self, trees: List[Taxon], level: TaxonomicRank) -> Set[Taxon]:
-        """Extract all taxa at the specified taxonomic level from trees."""
+        """
+        Extract all taxa at the specified taxonomic level from trees.
+
+        :param trees: A list of root Taxon objects representing taxonomic trees
+        :param level: The taxonomic rank at which to extract taxa
+        :return: A set of Taxon objects at the specified level
+        """
         taxa_at_level = set()
 
         def traverse_tree(taxon: Taxon, target_level: str):
