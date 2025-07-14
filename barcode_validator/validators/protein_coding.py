@@ -6,6 +6,7 @@ from Bio.Seq import Seq
 from Bio import AlignIO
 from typing import Optional, List, Tuple
 import tempfile
+import re
 
 from nbitk.Taxon import Taxon
 from nbitk.config import Config
@@ -61,7 +62,7 @@ class ProteinCodingValidator(StructuralValidator):
                 return
         trans_table = int(self.get_translation_table(self.marker, result.exp_taxon))
 
-        # Align sequence to HMM
+        # Align sequence to HMM with fragment processing
         aligned_seq = self._align_sequence(record)
         if not aligned_seq:
             result.error = 'HMM alignment failed'
@@ -87,10 +88,16 @@ class ProteinCodingValidator(StructuralValidator):
 
     def _align_sequence(self, record: SeqRecord) -> Optional[SeqRecord]:
         """
-        Align sequence to marker-specific HMM profile.
+        Align sequence to marker-specific HMM profile with fragment processing.
+        
+        Process sequence by:
+        1. Removing tilde characters
+        2. Splitting on gap characters
+        3. Aligning each fragment to HMM
+        4. Recombining aligned fragments while preserving gap structure
 
         :param record: The DNA sequence record to align
-        :return: Aligned sequence record or None if alignment fails
+        :return: Aligned and recombined sequence record or None if alignment fails
         """
         if self.hmm_profile_dir:
             hmm_file = Path(self.hmm_profile_dir) / Path(f"{self.marker.value}.hmm")
@@ -102,16 +109,102 @@ class ProteinCodingValidator(StructuralValidator):
             return None
 
         try:
+            # Step 1: Remove tilde characters
+            seq_str = str(record.seq).replace('~', '')
+            self.logger.debug(f"After tilde removal: {seq_str}")
+            
+            # Step 2: Split sequence on gap characters and track positions
+            fragments_info = self._split_sequence_on_gaps(seq_str)
+            self.logger.debug(f"Found {len(fragments_info)} fragments")
+            
+            # Log each fragment for debugging
+            for i, (fragment, start_pos, end_pos) in enumerate(fragments_info):
+                self.logger.debug(f"Fragment {i+1}: positions {start_pos}-{end_pos}, length {len(fragment)}")
+                self.logger.debug(f"Fragment {i+1} sequence: {fragment}")
+            
+            # Step 3: Align each fragment to HMM
+            aligned_fragments = []
+            for i, (fragment, start_pos, end_pos) in enumerate(fragments_info):
+                if not fragment:  # Skip empty fragments
+                    continue
+                    
+                aligned_fragment = self._align_single_fragment(fragment, f"{record.id}_fragment_{i+1}", hmm_file)
+                if aligned_fragment:
+                    aligned_fragments.append((aligned_fragment, start_pos, end_pos))
+                    self.logger.debug(f"Fragment {i+1} aligned successfully")
+                    self.logger.debug(f"Fragment {i+1} aligned sequence: {aligned_fragment}")
+                else:
+                    self.logger.debug(f"Fragment {i+1} failed to align - discarding")
+            
+            if not aligned_fragments:
+                self.logger.error("No fragments successfully aligned to HMM")
+                return None
+            
+            # Step 4: Recombine aligned fragments preserving gap structure
+            recombined_seq = self._recombine_fragments(seq_str, aligned_fragments)
+            
+            # Create new SeqRecord with recombined sequence
+            recombined_record = SeqRecord(
+                Seq(recombined_seq),
+                id=record.id,
+                description=record.description
+            )
+            
+            self.logger.debug(f"Recombined sequence: {recombined_seq}")
+            return recombined_record
+
+        except Exception as e:
+            self.logger.error(f"Error in HMM alignment with fragment processing: {str(e)}")
+            return None
+
+    def _split_sequence_on_gaps(self, seq_str: str) -> List[Tuple[str, int, int]]:
+        """
+        Split sequence on gap characters and return fragments with their positions.
+        
+        :param seq_str: Input sequence string
+        :return: List of tuples (fragment, start_position, end_position)
+        """
+        fragments_info = []
+        current_fragment = ""
+        start_pos = 0
+        
+        for i, char in enumerate(seq_str):
+            if char == '-':
+                if current_fragment:
+                    # End current fragment
+                    fragments_info.append((current_fragment, start_pos, i))
+                    current_fragment = ""
+                # Find start of next fragment (skip consecutive gaps)
+                start_pos = i + 1
+            else:
+                if not current_fragment:
+                    start_pos = i
+                current_fragment += char
+        
+        # Add final fragment if exists
+        if current_fragment:
+            fragments_info.append((current_fragment, start_pos, len(seq_str)))
+        
+        return fragments_info
+
+    def _align_single_fragment(self, fragment: str, fragment_id: str, hmm_file: Path) -> Optional[str]:
+        """
+        Align a single sequence fragment to the HMM profile.
+        
+        :param fragment: DNA sequence fragment (no gaps)
+        :param fragment_id: Identifier for this fragment
+        :param hmm_file: Path to HMM profile file
+        :return: Aligned sequence string or None if alignment fails
+        """
+        try:
             with tempfile.NamedTemporaryFile(mode='w+', suffix='.fasta', delete=False) as temp_input, \
                     tempfile.NamedTemporaryFile(mode='w+', suffix='.sto', delete=False) as temp_output:
 
-                # Remove any gaps from the sequence
-                seq = record.seq
-                seq = seq.replace('-', '')
-
-                temp_input.write(f">{record.id}\n{str(seq)}\n")
+                # Write fragment to temporary file
+                temp_input.write(f">{fragment_id}\n{fragment}\n")
                 temp_input.flush()
 
+                # Run hmmalign
                 self.hmmalign.set_hmmfile(str(hmm_file))
                 self.hmmalign.set_seqfile(temp_input.name)
                 self.hmmalign.set_output(temp_output.name)
@@ -121,14 +214,58 @@ class ProteinCodingValidator(StructuralValidator):
 
                 return_code = self.hmmalign.run()
                 if return_code != 0:
-                    self.logger.error("hmmalign failed")
                     return None
 
-                return self._parse_stockholm_alignment(temp_output.name, record.id)
+                # Parse alignment result
+                aligned_record = self._parse_stockholm_alignment(temp_output.name, fragment_id)
+                if aligned_record:
+                    return str(aligned_record.seq)
+                return None
 
         except Exception as e:
-            self.logger.error(f"Error in HMM alignment: {str(e)}")
+            self.logger.error(f"Error aligning fragment {fragment_id}: {str(e)}")
             return None
+
+    def _recombine_fragments(self, original_seq: str, aligned_fragments: List[Tuple[str, int, int]]) -> str:
+        """
+        Recombine aligned fragments in HMM coordinate space.
+        
+        The aligned fragments are in HMM coordinate space (COI-5P gene profile).
+        We need to create a consensus sequence representing the best alignment
+        across all fragments to the HMM profile.
+        
+        :param original_seq: Original sequence with gaps (not used for recombination)
+        :param aligned_fragments: List of (aligned_sequence, start_pos, end_pos) tuples
+        :return: Consensus sequence in HMM coordinate space
+        """
+        if not aligned_fragments:
+            return ""
+        
+        # Find the maximum length needed (longest aligned sequence)
+        max_length = 0
+        for aligned_seq, _, _ in aligned_fragments:
+            max_length = max(max_length, len(aligned_seq))
+        
+        # Initialize result with gaps
+        result = ['-'] * max_length
+        
+        # For each position, find the best character from all fragments
+        for pos in range(max_length):
+            candidates = []
+            for aligned_seq, _, _ in aligned_fragments:
+                if pos < len(aligned_seq) and aligned_seq[pos] != '-':
+                    candidates.append(aligned_seq[pos])
+            
+            # Use consensus logic: if multiple fragments agree, use that character
+            if candidates:
+                # For now, use the first non-gap character found
+                # TODO: Could implement more sophisticated consensus (majority vote, quality scores)
+                result[pos] = candidates[0]
+        
+        consensus_seq = ''.join(result)
+        self.logger.debug(f"Consensus from {len(aligned_fragments)} fragments: {consensus_seq}")
+        
+        return consensus_seq
 
     def _parse_stockholm_alignment(self, stockholm_file: str, seq_id: str) -> Optional[SeqRecord]:
         """
