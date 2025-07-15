@@ -288,7 +288,7 @@ class ProteinCodingValidator(StructuralValidator):
             
             # Parse each line of tabular output
             for line in tabular_content.split('\n'):
-                line = line.strip()
+                line = line.strip()                
                 
                 # Skip comments and empty lines
                 if not line or line.startswith('#'):
@@ -296,6 +296,7 @@ class ProteinCodingValidator(StructuralValidator):
                 
                 # Split fields
                 fields = line.split()
+                
                 if len(fields) >= 15:  # Ensure we have all required fields
                     try:
                         target_name = fields[0]
@@ -347,83 +348,6 @@ class ProteinCodingValidator(StructuralValidator):
         
         return fragment_matches
 
-    def _parse_fragment_nhmmer_output(self, nhmmer_output: str, fragments: List[Tuple[str, int, int]], seq_id: str) -> List[dict]:
-        """
-        Parse nhmmer output for fragment matches, extracting HMM coordinates.
-        
-        :param nhmmer_output: Full nhmmer output
-        :param fragments: Original fragment list for reference
-        :param seq_id: Original sequence ID
-        :return: List of fragment matches with HMM coordinates
-        """
-        fragment_matches = []
-        lines = nhmmer_output.split('\n')
-        
-        try:
-            # Parse each fragment's results from the detailed output
-            for i, (fragment_seq, orig_start, orig_end) in enumerate(fragments):
-                fragment_id = f"{seq_id}_fragment_{i+1}"
-                
-                # Find this fragment's annotation section
-                fragment_match = None
-                for j, line in enumerate(lines):
-                    if line.startswith(f'>>{fragment_id}') or fragment_id in line:
-                        # Found the fragment annotation, look for alignment details
-                        for k in range(j+1, min(j+15, len(lines))):
-                            detail_line = lines[k].strip()
-                            
-                            # Look for the alignment details line
-                            if detail_line and not detail_line.startswith('#') and not detail_line.startswith('>>'):
-                                fields = detail_line.split()
-                                if len(fields) >= 10:
-                                    try:
-                                        # Parse alignment details
-                                        score = float(fields[0])
-                                        evalue = float(fields[2])
-                                        hmm_from = int(fields[3])
-                                        hmm_to = int(fields[4])
-                                        
-                                        fragment_match = {
-                                            'fragment_id': fragment_id,
-                                            'fragment_index': i,
-                                            'fragment_seq': fragment_seq,
-                                            'original_start': orig_start,
-                                            'original_end': orig_end,
-                                            'score': score,
-                                            'bias': bias,
-                                            'evalue': evalue,
-                                            'hmm_from': hmm_from,
-                                            'hmm_to': hmm_to
-                                        }
-                                        
-                                        # Only include significant matches
-                                        if evalue <= 1e-3:
-                                            fragment_matches.append(fragment_match)
-                                            self.logger.debug(f"Added fragment match: {fragment_id} → HMM {hmm_from}-{hmm_to}")
-                                        else:
-                                            self.logger.debug(f"Rejected fragment {fragment_id}: E-value {evalue} > threshold")
-                                        
-                                        break
-                                    except (ValueError, IndexError) as e:
-                                        self.logger.warning(f"Could not parse nhmmer data line for {fragment_id}: {detail_line} ({e})")
-                                        continue
-                                else:
-                                    self.logger.debug(f"Insufficient fields in nhmmer data line for {fragment_id}: {detail_line}")
-                            else:
-                                # This is a non-data line, which we expect - don't log as error
-                                continue
-                        break
-                
-                if not fragment_match:
-                    self.logger.debug(f"No significant match found for {fragment_id} (either no alignment or E-value > 1e-3)")
-            
-            # Sort by HMM position for logical ordering
-            fragment_matches.sort(key=lambda x: x['hmm_from'])
-            
-        except Exception as e:
-            self.logger.error(f"Error parsing fragment nhmmer output: {str(e)}")
-        
-        return fragment_matches
 
     def _construct_hmm_space_from_fragments(self, fragment_matches: List[dict]) -> str:
         """
