@@ -23,15 +23,16 @@ class ProteinCodingValidator(StructuralValidator):
     This class extends StructuralValidator to collect protein-coding specific data,
     including sequence alignment, reading frame determination, and stop codon positions.
     These calculations form part of the structural validation process. This class
-    uses a fragment-based nhmmer approach to search for gene regions within longer 
-    barcode sequences, then constructs the final sequence in HMM coordinate space.
+    uses nhmmer to search for gene regions by replacing gaps with Ns and aligning
+    the complete sequence, then constructs the final sequence in HMM coordinate space.
 
     The workflow is:
     1. Remove tilde characters (preserve gaps - they represent missing gene regions)
-    2. Split sequence on gaps to create biologically meaningful fragments
-    3. Run nhmmer on multi-FASTA of fragments to find HMM matches
-    4. Construct final sequence in HMM coordinate space
-    5. Analyze reading frames and stop codons
+    2. Replace gap characters with N characters to maintain sequence structure
+    3. Run nhmmer on the single N-padded sequence
+    4. Construct final sequence in HMM coordinate space using alignment coordinates
+    5. Trim leading/trailing Ns and gaps while preserving internal Ns
+    6. Analyze reading frames and stop codons
 
     In turn, this class exposes a single method for validation (`validate_marker_specific`).
     This method is invoked by the overall orchestrator as part of its composed validation
@@ -69,7 +70,12 @@ class ProteinCodingValidator(StructuralValidator):
                 return
         trans_table = int(self.get_translation_table(self.marker, result.exp_taxon))
 
-        # Extract and align gene region using fragment-based nhmmer approach
+        # Count original N characters in the sequence before any processing
+        original_n_count = str(record.seq).upper().count('N')
+        result.add_ancillary('ambig_original', str(original_n_count))
+        self.logger.debug(f"Original N characters: {original_n_count}")
+
+        # Extract and align gene region using N-padding nhmmer approach
         aligned_seq = self._align_sequence(record)
         if not aligned_seq:
             result.error = 'Gene region extraction or HMM alignment failed'
@@ -92,13 +98,14 @@ class ProteinCodingValidator(StructuralValidator):
 
     def _align_sequence(self, record: SeqRecord) -> Optional[SeqRecord]:
         """
-        Process sequence using fragment-based nhmmer approach.
+        Process sequence using N-padding nhmmer approach.
         
         Process sequence by:
         1. Removing tilde characters (preserve gaps)
-        2. Splitting on gaps to create fragments
-        3. Running nhmmer on multi-FASTA of fragments
-        4. Constructing HMM space sequence from results
+        2. Replacing gap characters with N characters
+        3. Running nhmmer on the single N-padded sequence
+        4. Constructing HMM space sequence from alignment results
+        5. Trimming leading/trailing Ns and gaps
         
         :param record: The DNA sequence record to align
         :return: Sequence record in HMM coordinate space or None if alignment fails
@@ -135,86 +142,47 @@ class ProteinCodingValidator(StructuralValidator):
             seq_str = str(record.seq).replace('~', '')
             self.logger.debug(f"After tilde removal: {seq_str[:100]}...")
             
-            # Step 2: Split sequence on gaps to create fragments
-            fragments = self._split_sequence_on_gaps(seq_str)
-            if not fragments:
-                self.logger.error("No fragments found after gap splitting")
-                return None
-                
-            self.logger.debug(f"Created {len(fragments)} fragments from gap splitting")
+            # Step 2: Replace all gap characters with N characters
+            n_padded_seq = seq_str.replace('-', 'N')
+            self.logger.debug(f"After gap-to-N replacement: {n_padded_seq[:100]}...")
             
-            # Step 3: Run nhmmer on multi-FASTA of fragments
-            fragment_matches = self._search_fragments_with_nhmmer(fragments, record.id, hmm_file)
-            if not fragment_matches:
-                self.logger.error("No fragments matched HMM profile")
+            # Step 3: Run nhmmer on the single N-padded sequence
+            nhmmer_result = self._run_nhmmer_on_sequence(n_padded_seq, record.id, hmm_file)
+            if not nhmmer_result:
+                self.logger.error("No significant nhmmer alignment found")
                 return None
             
-            # Step 4: Construct HMM space sequence
-            hmm_sequence = self._construct_hmm_space_from_fragments(fragment_matches)
+            # Step 4: Construct HMM space sequence using alignment coordinates
+            hmm_sequence = self._construct_hmm_space_from_alignment(nhmmer_result, n_padded_seq)
+            
+            # Step 5: Trim leading/trailing Ns and gaps while preserving internal Ns
+            trimmed_sequence = self._trim_sequence_ends(hmm_sequence)
             
             return SeqRecord(
-                Seq(hmm_sequence),
+                Seq(trimmed_sequence),
                 id=record.id,
                 description=record.description
             )
 
         except Exception as e:
-            self.logger.error(f"Error in fragment-based nhmmer alignment: {str(e)}")
+            self.logger.error(f"Error in N-padding nhmmer alignment: {str(e)}")
             return None
 
-    def _split_sequence_on_gaps(self, seq_str: str) -> List[Tuple[str, int, int]]:
+    def _run_nhmmer_on_sequence(self, sequence: str, seq_id: str, hmm_file: Path) -> Optional[dict]:
         """
-        Split sequence on gap characters and return fragments with their positions.
+        Run nhmmer on a single sequence and return the best alignment result.
         
-        :param seq_str: Input sequence string
-        :return: List of tuples (fragment_sequence, start_position, end_position)
-        """
-        fragments_info = []
-        current_fragment = ""
-        start_pos = 0
-        
-        for i, char in enumerate(seq_str):
-            if char == '-':
-                if current_fragment:
-                    # End current fragment
-                    fragments_info.append((current_fragment, start_pos, i))
-                    current_fragment = ""
-                # Find start of next fragment (skip consecutive gaps)
-                start_pos = i + 1
-            else:
-                if not current_fragment:
-                    start_pos = i
-                current_fragment += char
-        
-        # Add final fragment if exists
-        if current_fragment:
-            fragments_info.append((current_fragment, start_pos, len(seq_str)))
-        
-        # Log fragment information
-        for i, (fragment, start_pos, end_pos) in enumerate(fragments_info):
-            self.logger.debug(f"Fragment {i+1}: positions {start_pos}-{end_pos}, length {len(fragment)}")
-            self.logger.debug(f"Fragment {i+1} sequence: {fragment[:50]}...")
-        
-        return fragments_info
-
-    def _search_fragments_with_nhmmer(self, fragments: List[Tuple[str, int, int]], seq_id: str, hmm_file: Path) -> List[dict]:
-        """
-        Run nhmmer on multi-FASTA of fragments to find HMM matches.
-        
-        :param fragments: List of (fragment_sequence, start_pos, end_pos) tuples
-        :param seq_id: Original sequence identifier
+        :param sequence: The sequence to align
+        :param seq_id: Sequence identifier
         :param hmm_file: Path to HMM file
-        :return: List of fragment matches with HMM coordinates
+        :return: Dictionary with alignment coordinates or None if no significant match
         """
         try:
-            # Create multi-FASTA file with all fragments
+            # Create FASTA file with the sequence
             with tempfile.NamedTemporaryFile(mode='w+', suffix='.fasta', delete=False) as temp_input, \
                  tempfile.NamedTemporaryFile(mode='w+', suffix='.tbl', delete=False) as temp_tblout:
                 
-                for i, (fragment_seq, start_pos, end_pos) in enumerate(fragments):
-                    fragment_id = f"{seq_id}_fragment_{i+1}"
-                    temp_input.write(f">{fragment_id}\n{fragment_seq}\n")
-                
+                temp_input.write(f">{seq_id}\n{sequence}\n")
                 temp_input.flush()
                 
                 # Run nhmmer with separate tabular output file
@@ -227,17 +195,16 @@ class ProteinCodingValidator(StructuralValidator):
                     temp_input.name
                 ]
                 
-                self.logger.debug(f"Running nhmmer on {len(fragments)} fragments: {' '.join(nhmmer_cmd)}")
+                self.logger.debug(f"Running nhmmer on sequence: {' '.join(nhmmer_cmd)}")
                 result = subprocess.run(nhmmer_cmd, capture_output=True, text=True)
                 
                 if result.returncode != 0:
                     self.logger.error(f"nhmmer failed: {result.stderr}")
-                    return []
+                    return None
 
                 # LOG COMPLETE NHMMER OUTPUT FOR THIS SAMPLE
                 self.logger.debug(f"=== COMPLETE nhmmer OUTPUT for {seq_id} ===")
                 self.logger.debug(result.stdout)
-                self.logger.debug(f"=== END nhmmer OUTPUT for {seq_id} ===")
                 
                 # Parse the clean tabular output file
                 with open(temp_tblout.name, 'r') as f:
@@ -245,50 +212,34 @@ class ProteinCodingValidator(StructuralValidator):
                 
                 self.logger.debug(f"=== TABULAR OUTPUT for {seq_id} ===")
                 self.logger.debug(tabular_content)
-                self.logger.debug(f"=== END TABULAR OUTPUT for {seq_id} ===")
                 
-                # Parse tabular output to get fragment matches
-                fragment_matches = self._parse_nhmmer_tabular_output(tabular_content, fragments, seq_id)
+                # Parse tabular output to get best alignment
+                alignment_result = self._parse_single_nhmmer_result(tabular_content, seq_id)
                 
-                self.logger.debug(f"Found {len(fragment_matches)} fragment matches:")
-                for match in fragment_matches:
-                    self.logger.debug(f"  {match['fragment_id']}: HMM {match['hmm_from']}-{match['hmm_to']}, E-value: {match['evalue']}")
-                
-                return fragment_matches
+                return alignment_result
 
         except FileNotFoundError:
             self.logger.error("nhmmer not found in PATH")
-            return []
+            return None
         except Exception as e:
-            self.logger.error(f"Error running nhmmer on fragments: {str(e)}")
-            return []
+            self.logger.error(f"Error running nhmmer on sequence: {str(e)}")
+            return None
 
-    def _parse_nhmmer_tabular_output(self, tabular_content: str, fragments: List[Tuple[str, int, int]], seq_id: str) -> List[dict]:
+    def _parse_single_nhmmer_result(self, tabular_content: str, seq_id: str) -> Optional[dict]:
         """
-        Parse nhmmer tabular output (.tbl file) for fragment matches.
+        Parse nhmmer tabular output for the best alignment result.
         
         :param tabular_content: Content of the .tbl file
-        :param fragments: Original fragment list for reference
         :param seq_id: Original sequence ID
-        :return: List of fragment matches with HMM coordinates
+        :return: Dictionary with alignment coordinates or None if no significant match
         """
-        fragment_matches = []
+        best_result = None
+        best_evalue = float('inf')
         
         try:
-            # Create fragment lookup for easy reference
-            fragment_lookup = {}
-            for i, (fragment_seq, orig_start, orig_end) in enumerate(fragments):
-                fragment_id = f"{seq_id}_fragment_{i+1}"
-                fragment_lookup[fragment_id] = {
-                    'index': i,
-                    'seq': fragment_seq,
-                    'orig_start': orig_start,
-                    'orig_end': orig_end
-                }
-            
             # Parse each line of tabular output
             for line in tabular_content.split('\n'):
-                line = line.strip()                
+                line = line.strip()
                 
                 # Skip comments and empty lines
                 if not line or line.startswith('#'):
@@ -296,43 +247,38 @@ class ProteinCodingValidator(StructuralValidator):
                 
                 # Split fields
                 fields = line.split()
-                
                 if len(fields) >= 15:  # Ensure we have all required fields
                     try:
                         target_name = fields[0]
                         hmm_from = int(fields[4])
                         hmm_to = int(fields[5])
+                        seq_from = int(fields[6])
+                        seq_to = int(fields[7])
                         evalue = float(fields[12])
                         score = float(fields[13])
                         bias = float(fields[14])
                         
-                        self.logger.debug(f"Parsed tabular line: {target_name} → HMM {hmm_from}-{hmm_to}, E-value: {evalue}, score: {score}")
+                        self.logger.debug(f"Parsed alignment: {target_name} → HMM {hmm_from}-{hmm_to}, "
+                                        f"Seq {seq_from}-{seq_to}, E-value: {evalue}, score: {score}")
                         
-                        # Look up fragment info
-                        if target_name in fragment_lookup:
-                            frag_info = fragment_lookup[target_name]
-                            
-                            fragment_match = {
-                                'fragment_id': target_name,
-                                'fragment_index': frag_info['index'],
-                                'fragment_seq': frag_info['seq'],
-                                'original_start': frag_info['orig_start'],
-                                'original_end': frag_info['orig_end'],
-                                'score': score,
-                                'bias': bias,
-                                'evalue': evalue,
-                                'hmm_from': hmm_from,
-                                'hmm_to': hmm_to
-                            }
-                            
-                            # Only include significant matches (should already be filtered by nhmmer --incE)
-                            if evalue <= 1e-3:
-                                fragment_matches.append(fragment_match)
-                                self.logger.debug(f"Added significant match: {target_name} → HMM {hmm_from}-{hmm_to}, E-value={evalue}")
-                            else:
-                                self.logger.debug(f"Rejected {target_name}: E-value {evalue} > threshold 1e-3")
+                        # Only include significant matches (should already be filtered by nhmmer --incE)
+                        if evalue <= 1e-3 and target_name == seq_id:
+                            # Keep the best (lowest E-value) result
+                            if evalue < best_evalue:
+                                best_evalue = evalue
+                                best_result = {
+                                    'target_name': target_name,
+                                    'hmm_from': hmm_from,
+                                    'hmm_to': hmm_to,
+                                    'seq_from': seq_from,
+                                    'seq_to': seq_to,
+                                    'score': score,
+                                    'bias': bias,
+                                    'evalue': evalue
+                                }
+                                self.logger.debug(f"New best alignment: E-value={evalue}")
                         else:
-                            self.logger.warning(f"Unknown target name in tabular output: {target_name}")
+                            self.logger.debug(f"Rejected alignment: E-value {evalue} > threshold 1e-3")
                     
                     except (ValueError, IndexError) as e:
                         self.logger.warning(f"Could not parse tabular line: {line} ({e})")
@@ -340,53 +286,44 @@ class ProteinCodingValidator(StructuralValidator):
                 else:
                     self.logger.debug(f"Insufficient fields in tabular line: {line} (got {len(fields)}, need 15)")
             
-            # Sort by HMM position for logical ordering
-            fragment_matches.sort(key=lambda x: x['hmm_from'])
-            
         except Exception as e:
             self.logger.error(f"Error parsing nhmmer tabular output: {str(e)}")
         
-        return fragment_matches
+        return best_result
 
-
-    def _construct_hmm_space_from_fragments(self, fragment_matches: List[dict]) -> str:
+    def _construct_hmm_space_from_alignment(self, alignment_result: dict, sequence: str) -> str:
         """
-        Construct HMM coordinate space sequence from fragment matches.
+        Construct HMM coordinate space sequence from single alignment result.
         
-        :param fragment_matches: List of fragment matches with HMM coordinates
+        :param alignment_result: Dictionary with alignment coordinates
+        :param sequence: The original N-padded sequence
         :return: Sequence string in HMM coordinate space
         """
         # Initialize 658-position HMM sequence with gaps
         hmm_length = 658  # COI-5P HMM length
         hmm_sequence = ['-'] * hmm_length
         
-        self.logger.debug(f"Constructing HMM space sequence from {len(fragment_matches)} fragment matches")
+        self.logger.debug(f"Constructing HMM space sequence from alignment")
         
+        # Extract alignment coordinates
+        hmm_start = alignment_result['hmm_from'] - 1  # Convert to 0-based
+        hmm_end = alignment_result['hmm_to']
+        seq_start = alignment_result['seq_from'] - 1  # Convert to 0-based
+        seq_end = alignment_result['seq_to']
+        
+        self.logger.debug(f"Placing sequence at HMM positions: {alignment_result['hmm_from']}-{alignment_result['hmm_to']} (1-based)")
+        
+        # Extract the aligned portion of the sequence
+        aligned_sequence_portion = sequence[seq_start:seq_end]
+        
+        # Place sequence at HMM coordinates
         total_coverage = 0
-        
-        # Place each fragment at its HMM coordinates
-        for match in fragment_matches:
-            fragment_seq = match['fragment_seq']
-            hmm_start = match['hmm_from'] - 1  # Convert to 0-based (1-based HMM → 0-based Python)
-            hmm_end = match['hmm_to']
-            
-            # Log the coordinate conversion for clarity
-            self.logger.debug(f"Placing {match['fragment_id']} ({len(fragment_seq)}bp):")
-            self.logger.debug(f"  nhmmer HMM positions: {match['hmm_from']}-{match['hmm_to']} (1-based)")
-            self.logger.debug(f"  Python array indices: {hmm_start}-{hmm_end-1} (0-based)")
-            
-            # Place fragment sequence at HMM positions
-            seq_pos = 0
-            for hmm_pos in range(hmm_start, min(hmm_end, hmm_length)):
-                if seq_pos < len(fragment_seq):
-                    if hmm_sequence[hmm_pos] == '-':  # Only place if position is empty
-                        hmm_sequence[hmm_pos] = fragment_seq[seq_pos]
-                        total_coverage += 1
-                    else:
-                        self.logger.warning(f"Overlap detected at HMM position {hmm_pos+1} (1-based)")
-                    seq_pos += 1
-            
-            self.logger.debug(f"Successfully placed {seq_pos} nucleotides from {match['fragment_id']}")
+        seq_pos = 0
+        for hmm_pos in range(hmm_start, min(hmm_end, hmm_length)):
+            if seq_pos < len(aligned_sequence_portion):
+                hmm_sequence[hmm_pos] = aligned_sequence_portion[seq_pos]
+                total_coverage += 1
+                seq_pos += 1
         
         # Convert to string
         final_sequence = ''.join(hmm_sequence)
@@ -403,6 +340,33 @@ class ProteinCodingValidator(StructuralValidator):
         
         return final_sequence
 
+    def _trim_sequence_ends(self, sequence: str) -> str:
+        """
+        Trim leading and trailing Ns and gaps while preserving internal Ns.
+        
+        :param sequence: Input sequence string
+        :return: Trimmed sequence string
+        """
+        # Remove leading Ns and gaps
+        start = 0
+        while start < len(sequence) and sequence[start] in 'N-':
+            start += 1
+        
+        # Remove trailing Ns and gaps
+        end = len(sequence)
+        while end > start and sequence[end-1] in 'N-':
+            end -= 1
+        
+        trimmed = sequence[start:end]
+        
+        self.logger.debug(f"Sequence (N and gap) trimming:")
+        self.logger.debug(f"  Original length: {len(sequence)}")
+        self.logger.debug(f"  Trimmed length: {len(trimmed)}")
+        self.logger.debug(f"  Removed from start: {start}")
+        self.logger.debug(f"  Removed from end: {len(sequence) - end}")
+        
+        return trimmed
+
     @staticmethod
     def _get_complete_codons(seq, offset):
         """
@@ -410,14 +374,14 @@ class ProteinCodingValidator(StructuralValidator):
         
         :param seq: Input sequence
         :param offset: Reading frame offset (0, 1, or 2)
-        :return: String of complete codons (no gaps)
+        :return: String of complete codons (no gaps or Ns)
         """
         complete_codons = ""
         # Loop over the sequence in steps of 3, starting from the given offset.
         for i in range(offset, len(seq) - 2, 3):
             codon = seq[i:i + 3]
-            # Only add the codon if it is complete and contains no gap characters.
-            if '-' not in codon:
+            # Only add the codon if it is complete and contains no gap characters or Ns
+            if '-' not in codon and 'N' not in codon:
                 complete_codons += codon
         return complete_codons
 
@@ -434,7 +398,7 @@ class ProteinCodingValidator(StructuralValidator):
         best_prot = ""
         min_stops = float('inf')
 
-        self.logger.debug(f"Analyzing reading frames for sequence length: {len(raw_seq)}")
+        self.logger.debug(f"Analysing reading frames")
         
         # Analyze all 3 reading frames
         frame_results = []
@@ -467,13 +431,6 @@ class ProteinCodingValidator(StructuralValidator):
         self.logger.debug(f"=== TRANSLATED AMINO ACID SEQUENCE (Frame {best_frame}) ===")
         self.logger.debug(f"Translation table: {trans_table}")
         self.logger.debug(f"Amino acid sequence: {str(best_prot)}")
-        self.logger.debug(f"=== END AMINO ACID SEQUENCE ===")
-        
-        # Log comparison of all frames
-        self.logger.debug(f"=== FRAME COMPARISON ===")
-        for result in frame_results:
-            self.logger.debug(f"Frame {result['frame']}: {result['stops']} stops, {result['protein_length']} aa, {result['coding_length']} coding bp")
-        self.logger.debug(f"=== END FRAME COMPARISON ===")
         
         return best_frame, best_prot
 
@@ -557,7 +514,7 @@ class ProteinCodingValidator(StructuralValidator):
 
     @staticmethod
     def requires_hmmalign() -> bool:
-        return False  # We no longer use hmmalign as primary method
+        return False  # We no longer use hmmalign (replaced with nhmmer)
 
     @staticmethod
     def requires_nhmmer() -> bool:

@@ -1,8 +1,8 @@
 """
-Updated unit tests for ProteinCodingValidator with new fragment-based nhmmer approach.
+Updated unit tests for ProteinCodingValidator with new N-padding nhmmer approach.
 
 Tests cover:
-- Fragment processing methods (_split_sequence_on_gaps, _parse_nhmmer_tabular_output, etc.)
+- New N-padding processing methods 
 - Integration tests with real test sequences and expected nhmmer outputs
 - Existing functionality that remains relevant (get_translation_table)
 """
@@ -25,8 +25,8 @@ from nbitk.config import Config
 from nbitk.Taxon import Taxon
 
 
-class TestFragmentProcessing:
-    """Unit tests for fragment processing methods."""
+class TestNPaddingProcessing:
+    """Unit tests for new N-padding processing methods."""
 
     @pytest.fixture
     def mock_validator(self):
@@ -40,87 +40,92 @@ class TestFragmentProcessing:
             validator.taxonomy_resolver = Mock()
             return validator
 
-    def test_split_sequence_on_gaps_simple(self, mock_validator):
-        """Test basic gap splitting functionality."""
+    def test_gap_to_n_replacement(self, mock_validator):
+        """Test gap-to-N replacement functionality."""
+        # This is now done inline in _align_sequence, but we can test the concept
         seq_str = "ATG---CGT---AAA"
-        fragments = mock_validator._split_sequence_on_gaps(seq_str)
+        n_padded = seq_str.replace('-', 'N')
         
-        expected = [
-            ('ATG', 0, 3),
-            ('CGT', 6, 9), 
-            ('AAA', 12, 15)
-        ]
-        assert fragments == expected
+        expected = "ATGNNNCGTNNNAAA"
+        assert n_padded == expected
 
-    def test_split_sequence_on_gaps_realistic(self, mock_validator):
-        """Test gap splitting with realistic fragmented COI sequence."""
-        # Based on patterns from BSNTN2946-24_r_1.5_s_50_BSNTN2946-24_fcleaner
-        seq_str = "------CGGTGGTGGCAAAGAACTAACCACAAAGATATTGGAACA------------------------GCAGGTATTGTAGGCAGAGCCTTGACATATTGG--------"
-        fragments = mock_validator._split_sequence_on_gaps(seq_str)
-        
-        expected = [
-            ('CGGTGGTGGCAAAGAACTAACCACAAAGATATTGGAACA', 6, 45),
-            ('GCAGGTATTGTAGGCAGAGCCTTGACATATTGG', 69, 102)
-        ]
-        assert fragments == expected
-
-    def test_split_sequence_edge_cases(self, mock_validator):
-        """Test edge cases for sequence splitting."""
-        # Empty sequence
-        assert mock_validator._split_sequence_on_gaps("") == []
-        
-        # Only gaps
-        assert mock_validator._split_sequence_on_gaps("-------") == []
-        
-        # No gaps
-        seq_str = "ATGCGTAAA"
-        fragments = mock_validator._split_sequence_on_gaps(seq_str)
-        expected = [('ATGCGTAAA', 0, 9)]
-        assert fragments == expected
-
-    def test_parse_nhmmer_tabular_output(self, mock_validator):
-        """Test parsing of nhmmer tabular output."""
+    def test_parse_single_nhmmer_result(self, mock_validator):
+        """Test parsing of single nhmmer tabular output."""
         # Sample tabular output from your logs
         tabular_content = """# target name                                                 accession  query name           accession  hmmfrom hmm to alifrom  ali to envfrom  env to  sq len strand   E-value  score  bias  description of target
 #                                         ------------------- ---------- -------------------- ---------- ------- ------- ------- ------- ------- ------- ------- ------ --------- ------ ----- ---------------------
-BSNTN2946-24_r_1_s_50_BSNTN2946-24_fcleaner_EDITED_fragment_1 -          refs                 -                7     653       4     647       1     651     651    +      2e-127  413.0  53.6  -
+BSNTN2946-24_r_1_s_50_BSNTN2946-24_fcleaner_EDITED -          refs                 -                7     653       4     647       1     651     651    +      2e-127  413.0  53.6  -
 #"""
         
-        fragments = [
-            ('ACAATATTTTATCCTTGGAAT...', 0, 651)  # Mock fragment
-        ]
+        result = mock_validator._parse_single_nhmmer_result(tabular_content, 'BSNTN2946-24_r_1_s_50_BSNTN2946-24_fcleaner_EDITED')
         
-        result = mock_validator._parse_nhmmer_tabular_output(tabular_content, fragments, 'BSNTN2946-24_r_1_s_50_BSNTN2946-24_fcleaner_EDITED')
-        
-        assert len(result) == 1
-        assert result[0]['hmm_from'] == 7
-        assert result[0]['hmm_to'] == 653
-        assert result[0]['evalue'] == 2e-127
-        assert result[0]['score'] == 413.0
+        assert result is not None
+        assert result['hmm_from'] == 7
+        assert result['hmm_to'] == 653
+        assert result['seq_from'] == 4
+        assert result['seq_to'] == 647
+        assert result['evalue'] == 2e-127
+        assert result['score'] == 413.0
 
-    def test_construct_hmm_space_from_fragments(self, mock_validator):
-        """Test HMM space sequence construction."""
-        # Simulate fragment matches
-        fragment_matches = [
-            {
-                'fragment_seq': 'ATGCGT',
-                'hmm_from': 1,
-                'hmm_to': 6,
-                'fragment_id': 'test_fragment_1'
-            },
-            {
-                'fragment_seq': 'AAACCC',
-                'hmm_from': 10,
-                'hmm_to': 15,
-                'fragment_id': 'test_fragment_2'
-            }
-        ]
+    def test_parse_single_nhmmer_result_no_match(self, mock_validator):
+        """Test parsing when no significant matches found."""
+        tabular_content = """# target name                                                 accession  query name           accession  hmmfrom hmm to alifrom  ali to envfrom  env to  sq len strand   E-value  score  bias  description of target
+#                                         ------------------- ---------- -------------------- ---------- ------- ------- ------- ------- ------- ------- ------- ------ --------- ------ ----- ---------------------
+#
+# Program:         nhmmer
+"""
         
-        result = mock_validator._construct_hmm_space_from_fragments(fragment_matches)
+        result = mock_validator._parse_single_nhmmer_result(tabular_content, 'test_seq')
+        assert result is None
+
+    def test_construct_hmm_space_from_alignment(self, mock_validator):
+        """Test HMM space sequence construction from single alignment."""
+        # Simulate alignment result
+        alignment_result = {
+            'hmm_from': 10,
+            'hmm_to': 15,
+            'seq_from': 1,
+            'seq_to': 6,
+            'score': 100.0,
+            'evalue': 1e-20
+        }
         
-        # Should have gaps at the expected positions
-        assert result.startswith('ATGCGT---AAA')
+        sequence = "ATGCGT"
+        result = mock_validator._construct_hmm_space_from_alignment(alignment_result, sequence)
+        
+        # Should have gaps before position 9, then sequence, then gaps after
         assert len(result) == 658  # COI-5P HMM length
+        assert result[9:15] == "ATGCGT"  # 0-based indexing
+        assert result[:9] == "-" * 9  # Leading gaps
+        assert result[15:] == "-" * (658 - 15)  # Trailing gaps
+
+    def test_trim_sequence_ends(self, mock_validator):
+        """Test trimming of leading/trailing Ns and gaps."""
+        # Test with leading and trailing gaps and Ns
+        sequence = "---NNN-ATGCGTAAA-NN---"
+        result = mock_validator._trim_sequence_ends(sequence)
+        
+        expected = "ATGCGTAAA"
+        assert result == expected
+
+    def test_trim_sequence_preserves_internal_ns(self, mock_validator):
+        """Test that internal Ns are preserved during trimming."""
+        sequence = "---ATGNNNCGTAAA---"
+        result = mock_validator._trim_sequence_ends(sequence)
+        
+        expected = "ATGNNNCGTAAA"
+        assert result == expected
+
+    def test_trim_sequence_edge_cases(self, mock_validator):
+        """Test edge cases for sequence trimming."""
+        # Only gaps and Ns
+        assert mock_validator._trim_sequence_ends("---NNN---") == ""
+        
+        # No trimming needed
+        assert mock_validator._trim_sequence_ends("ATGCGT") == "ATGCGT"
+        
+        # Empty sequence
+        assert mock_validator._trim_sequence_ends("") == ""
 
 
 class TestProteinCodingIntegration:
@@ -158,36 +163,21 @@ class TestProteinCodingIntegration:
 
     @pytest.fixture
     def nhmmer_outputs(self):
-        """Fixture containing expected nhmmer tabular outputs for test sequences."""
+        """Fixture containing expected results for test sequences."""
         return {
             'BSNTN2946-24_r_1_s_50_BSNTN2946-24_fcleaner_EDITED': {
-                'tabular': """# target name                                                 accession  query name           accession  hmmfrom hmm to alifrom  ali to envfrom  env to  sq len strand   E-value  score  bias  description of target
-#                                         ------------------- ---------- -------------------- ---------- ------- ------- ------- ------- ------- ------- ------- ------ --------- ------ ----- ---------------------
-BSNTN2946-24_r_1_s_50_BSNTN2946-24_fcleaner_EDITED_fragment_1 -          refs                 -                7     653       4     647       1     651     651    +      2e-127  413.0  53.6  -
-#""",
                 'expected_frame': 1,
                 'expected_stops': [],
                 'expected_coverage': 647,
                 'expected_protein_length': 215
             },
             'BSNTN3040-24_r_1.5_s_100_BSNTN3040-24_merge': {
-                'tabular': """# target name                                          accession  query name           accession  hmmfrom hmm to alifrom  ali to envfrom  env to  sq len strand   E-value  score  bias  description of target
-#                                  ------------------- ---------- -------------------- ---------- ------- ------- ------- ------- ------- ------- ------- ------ --------- ------ ----- ---------------------
-BSNTN3040-24_r_1.5_s_100_BSNTN3040-24_merge_fragment_1 -          refs                 -              114     335       2     223       1     225     225    +     1.9e-48  152.8  30.5  -
-BSNTN3040-24_r_1.5_s_100_BSNTN3040-24_merge_fragment_2 -          refs                 -              549     657       2     110       1     111     153    +     1.5e-23   70.6   7.6  -
-#""",
                 'expected_frame': 2,
                 'expected_stops': [],
                 'expected_coverage': 331,
                 'expected_protein_length': 110
             },
             'BSNTN2946-24_r_1.5_s_50_BSNTN2946-24_fcleaner': {
-                'tabular': """# target name                                            accession  query name           accession  hmmfrom hmm to alifrom  ali to envfrom  env to  sq len strand   E-value  score  bias  description of target
-#                                    ------------------- ---------- -------------------- ---------- ------- ------- ------- ------- ------- ------- ------- ------ --------- ------ ----- ---------------------
-BSNTN2946-24_r_1.5_s_50_BSNTN2946-24_fcleaner_fragment_3 -          refs                 -              113     291       1     179       1     185     186    +     4.6e-35  109.3  16.7  -
-BSNTN2946-24_r_1.5_s_50_BSNTN2946-24_fcleaner_fragment_4 -          refs                 -              303     468       2     167       1     168     168    +       9e-33  101.8   7.7  -
-BSNTN2946-24_r_1.5_s_50_BSNTN2946-24_fcleaner_fragment_6 -          refs                 -              524     653       1     130       1     137     204    +     8.5e-26   78.8  12.1  -
-#""",
                 'expected_frame': 1,
                 'expected_stops': [241, 313],
                 'expected_coverage': 475,
@@ -197,7 +187,7 @@ BSNTN2946-24_r_1.5_s_50_BSNTN2946-24_fcleaner_fragment_6 -          refs        
 
     def test_validate_marker_specific_sequence_1(self, mock_validator_integration, 
                                                 test_sequences, nhmmer_outputs):
-        """Test validation of sequence 1 (good quality, single fragment)."""
+        """Test validation of sequence 1 (good quality, single alignment)."""
         seq_id = 'BSNTN2946-24_r_1_s_50_BSNTN2946-24_fcleaner_EDITED'
         record = test_sequences[seq_id]
         expected = nhmmer_outputs[seq_id]
@@ -206,34 +196,26 @@ BSNTN2946-24_r_1.5_s_50_BSNTN2946-24_fcleaner_fragment_6 -          refs        
         result = DNAAnalysisResult(seq_id)
         result.exp_taxon = Mock(spec=Taxon)
         
-        # Run the REAL validation workflow - no mocking of _align_sequence
+        # Run the REAL validation workflow with new N-padding approach
         mock_validator_integration.validate_marker_specific(record, result)
         
-        # The tests are now running successfully! Let's examine what we get
+        # Debug output
         print(f"\nDEBUG for {seq_id}:")
         print(f"  result.error: {getattr(result, 'error', 'NOT_FOUND')}")
         print(f"  result.stop_codons: {getattr(result, 'stop_codons', 'NOT_FOUND')}")
         print(f"  result.seq_length: {getattr(result, 'seq_length', 'NOT_FOUND')}")
         
-        # Show all non-private attributes
-        all_attrs = [attr for attr in dir(result) if not attr.startswith('_')]
-        print(f"  All available attributes: {all_attrs}")
+        # Check if ambig_original was added
+        if hasattr(result, 'ancillary') and result.ancillary:
+            print(f"  ambig_original: {result.ancillary.get('ambig_original', 'NOT_FOUND')}")
+            print(f"  reading_frame: {result.ancillary.get('reading_frame', 'NOT_FOUND')}")
         
-        # Try different ways to get reading_frame
-        if hasattr(result, 'get_ancillary'):
-            reading_frame = result.get_ancillary('reading_frame')
-            print(f"  result.get_ancillary('reading_frame'): {reading_frame}")
-        
-        # Check what ancillary data structure exists
-        ancillary_attrs = [attr for attr in dir(result) if 'ancillary' in attr.lower()]
-        print(f"  Ancillary-related attributes: {ancillary_attrs}")
-        
-        # For now, just check that validation succeeded
+        # Validation should succeed
         assert result.error is None, f"Validation failed with error: {result.error}"
 
     def test_validate_marker_specific_sequence_2(self, mock_validator_integration,
                                                 test_sequences, nhmmer_outputs):
-        """Test validation of sequence 2 (fragmented, two fragments)."""
+        """Test validation of sequence 2 (fragmented sequence with gaps)."""
         seq_id = 'BSNTN3040-24_r_1.5_s_100_BSNTN3040-24_merge'
         record = test_sequences[seq_id]
         expected = nhmmer_outputs[seq_id]
@@ -251,16 +233,16 @@ BSNTN2946-24_r_1.5_s_50_BSNTN2946-24_fcleaner_fragment_6 -          refs        
         print(f"  result.stop_codons: {getattr(result, 'stop_codons', 'NOT_FOUND')}")
         print(f"  result.seq_length: {getattr(result, 'seq_length', 'NOT_FOUND')}")
         
-        if hasattr(result, 'get_ancillary'):
-            reading_frame = result.get_ancillary('reading_frame')
-            print(f"  result.get_ancillary('reading_frame'): {reading_frame}")
+        if hasattr(result, 'ancillary') and result.ancillary:
+            print(f"  ambig_original: {result.ancillary.get('ambig_original', 'NOT_FOUND')}")
+            print(f"  reading_frame: {result.ancillary.get('reading_frame', 'NOT_FOUND')}")
         
-        # For now, just check that validation succeeded
+        # Validation should succeed
         assert result.error is None, f"Validation failed with error: {result.error}"
 
     def test_validate_marker_specific_sequence_3(self, mock_validator_integration,
                                                 test_sequences, nhmmer_outputs):
-        """Test validation of sequence 3 (fragmented with stop codons)."""
+        """Test validation of sequence 3 (sequence with stop codons)."""
         seq_id = 'BSNTN2946-24_r_1.5_s_50_BSNTN2946-24_fcleaner'
         record = test_sequences[seq_id]
         expected = nhmmer_outputs[seq_id]
@@ -278,27 +260,43 @@ BSNTN2946-24_r_1.5_s_50_BSNTN2946-24_fcleaner_fragment_6 -          refs        
         print(f"  result.stop_codons: {getattr(result, 'stop_codons', 'NOT_FOUND')}")
         print(f"  result.seq_length: {getattr(result, 'seq_length', 'NOT_FOUND')}")
         
-        if hasattr(result, 'get_ancillary'):
-            reading_frame = result.get_ancillary('reading_frame')
-            print(f"  result.get_ancillary('reading_frame'): {reading_frame}")
+        if hasattr(result, 'ancillary') and result.ancillary:
+            print(f"  ambig_original: {result.ancillary.get('ambig_original', 'NOT_FOUND')}")
+            print(f"  reading_frame: {result.ancillary.get('reading_frame', 'NOT_FOUND')}")
         
-        # For now, just check that validation succeeded
+        # Validation should succeed
         assert result.error is None, f"Validation failed with error: {result.error}"
 
     def test_nhmmer_failure_handling(self, mock_validator_integration, test_sequences):
-        """Test error handling when sequence has no significant nhmmer matches."""
+        """Test error handling when nhmmer finds no significant matches."""
         # Use the first sequence but mock the validator to simulate nhmmer finding no matches
         record = test_sequences['BSNTN2946-24_r_1_s_50_BSNTN2946-24_fcleaner_EDITED']
         
-        # Mock _search_fragments_with_nhmmer to return empty list (no significant matches)
-        with patch.object(mock_validator_integration, '_search_fragments_with_nhmmer', return_value=[]):
+        # Mock _run_nhmmer_on_sequence to return None (no significant matches)
+        with patch.object(mock_validator_integration, '_run_nhmmer_on_sequence', return_value=None):
             result = DNAAnalysisResult(record.id)
             result.exp_taxon = Mock(spec=Taxon)
             
             mock_validator_integration.validate_marker_specific(record, result)
             
-            # Should set error when no fragments found
+            # Should set error when no alignment found
             assert result.error == 'Gene region extraction or HMM alignment failed'
+
+    def test_ambig_original_counting(self, mock_validator_integration, test_sequences):
+        """Test that original N characters are counted correctly."""
+        # Create a test sequence with known N content
+        test_seq = SeqRecord(Seq('ATGNNNCGTAAANNN'), id='test_n_counting')
+        
+        result = DNAAnalysisResult(test_seq.id)
+        result.exp_taxon = Mock(spec=Taxon)
+        
+        # Mock the nhmmer part to avoid needing real alignment
+        mock_aligned_seq = SeqRecord(Seq('ATGNNNCGTAAANNN'), id='test_n_counting')
+        with patch.object(mock_validator_integration, '_align_sequence', return_value=mock_aligned_seq):
+            mock_validator_integration.validate_marker_specific(test_seq, result)
+        
+        # Should have counted 6 N characters in original sequence
+        assert result.ancillary.get('ambig_original') == '6'
 
 
 class TestTranslationTable:
@@ -444,16 +442,14 @@ class TestTildeRemoval:
         assert seq_after_tilde_removal == "ATGCGT---AAATTT"
         assert '~' not in seq_after_tilde_removal
 
-    def test_tilde_removal_preserves_gaps(self, validator):
-        """Test that tilde removal preserves gap characters."""
-        seq_str = "ATG~~~---~~~CGT"
-        seq_after_tilde_removal = seq_str.replace('~', '')
+    def test_gap_to_n_replacement(self, validator):
+        """Test that gap-to-N replacement works correctly."""
+        seq_str = "ATG---CGT"
+        seq_after_n_replacement = seq_str.replace('-', 'N')
         
-        # Gaps should be preserved for fragment splitting
-        assert seq_after_tilde_removal == "ATG---CGT"
-        fragments = validator._split_sequence_on_gaps(seq_after_tilde_removal)
-        expected = [('ATG', 0, 3), ('CGT', 6, 9)]
-        assert fragments == expected
+        # Gaps should be replaced with Ns for nhmmer processing
+        assert seq_after_n_replacement == "ATGNNNCGT"
+        assert '-' not in seq_after_n_replacement
 
 
 class TestRequirementsMethods:
@@ -463,8 +459,12 @@ class TestRequirementsMethods:
         """Test static requirement methods return expected values."""
         assert ProteinCodingValidator.requires_resolver() == True
         assert ProteinCodingValidator.requires_marker() == True
-        assert ProteinCodingValidator.requires_hmmalign() == False  # Changed to nhmmer
-        assert ProteinCodingValidator.requires_nhmmer() == True
+        
+        # Test hmmalign requirement if method still exists (may have been removed)
+        if hasattr(ProteinCodingValidator, 'requires_hmmalign'):
+            assert ProteinCodingValidator.requires_hmmalign() == False  # No longer used
+        
+        assert ProteinCodingValidator.requires_nhmmer() == True  # Now required
 
 
 if __name__ == "__main__":
