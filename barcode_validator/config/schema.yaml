@@ -1,0 +1,130 @@
+# Configuration schema for DNA Barcode Validator
+# This file defines all configurable parameters, their types, defaults, and validation rules
+
+# Input/Output Configuration
+input_file:
+  type: Path
+  required: true
+  help: "Path to the input sequence file (FASTA or BCDM/TSV)"
+
+csv_file:
+  type: Path
+  required: false
+  help: "Optional CSV file with record-level analytics to merge as ancillary data"
+
+yaml_file:
+  type: Path
+  required: false
+  help: "Optional YAML file with analysis-level configuration to merge into every result"
+
+output_format:
+  type: str
+  default: "tsv"
+  choices: ["tsv", "fasta"]
+  help: "Whether to output results as TSV or FASTA (default: tsv)"
+
+# Marker Configuration
+marker:
+  type: str
+  default: "COI-5P"
+  choices: ["COI-5P"]
+  help: "Marker type for DNA barcode validation"
+
+# Taxonomy Configuration
+reflib_taxonomy:
+  type: Path
+  required: false
+  help: "Path to the taxonomy of the reference library, i.e. NCBI taxdump (tar.gz)"
+
+exp_taxonomy:
+  type: Path
+  required: false
+  help: "Path to the expected taxonomy, e.g. an NSR dump, NCBI dump, or BOLD spreadsheet"
+
+exp_taxonomy_type:
+  type: str
+  default: "nsr"
+  choices: ["nsr", "bold", "ncbi"]
+  help: "Type of the expected taxonomy dump (nsr, bold or ncbi)"
+
+# Validation Configuration
+mode:
+  type: str
+  default: "both"
+  choices: ["structural", "taxonomic", "both"]
+  help: "Validation mode: structural, taxonomic, or both (default: both)"
+
+validate_structure:
+  type: bool
+  default: true
+  help: "Enable structural validation of sequences (minimum length, ambiguous bases, stop codons)"
+
+validate_taxonomy:
+  type: bool
+  default: true
+  help: "Enable taxonomic validation against reference library and expected taxonomy"
+
+# Processing Configuration
+triage:
+  type: bool
+  default: false
+  help: "Perform triage on the result set to filter out invalid sequences"
+
+# Logging Configuration
+log_level:
+  type: str
+  default: "INFO"
+  choices: ["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"]
+  help: "Set logging verbosity level"
+
+# Taxonomic Validation Parameters
+taxonomic_validation:
+  min_identity:
+    type: float
+    default: 0.85
+    help: "Minimum sequence identity threshold for taxonomic validation"
+
+  max_evalue:
+    type: float
+    default: 1e-5
+    help: "Maximum e-value threshold for reference library search"
+
+  taxonomic_rank:
+    type: str
+    default: "species"
+    choices: ["kingdom", "phylum", "class", "order", "family", "genus", "species"]
+    help: "Taxonomic rank at which to perform validation"
+
+# Reference Library Configuration
+reference_library:
+  database_path:
+    type: Path
+    required: false
+    help: "Path to the reference database for taxonomic validation"
+
+  blast_threads:
+    type: int
+    default: 1
+    help: "Number of threads to use for BLAST searches"
+
+  blast_max_target_seqs:
+    type: int
+    default: 100
+    help: "Maximum number of target sequences to return from BLAST search"
+
+# Triage Configuration
+triage_config:
+  group_by_sample:
+    type: bool
+    default: true
+    help: "Group sequences by sample ID for triage processing"
+
+  prefer_longest_valid:
+    type: bool
+    default: true
+    help: "In triage, prefer the longest valid sequence in each group"
+
+  require_both_validations:
+    type: bool
+    default: false
+    help: "Require both structural and taxonomic validation to pass for triage"
