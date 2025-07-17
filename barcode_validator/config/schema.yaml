@@ -27,7 +27,7 @@ output_format:
 marker:
   type: str
   default: "COI-5P"
-  choices: ["COI-5P"]
+  choices: ["COI-5P", "matK", "rbcL", "ITS", "ITS2"]
   help: "Marker type for DNA barcode validation"
 
 # Taxonomy Configuration
