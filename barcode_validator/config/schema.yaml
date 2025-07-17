@@ -54,16 +54,6 @@ mode:
   choices: ["structural", "taxonomic", "both"]
   help: "Validation mode: structural, taxonomic, or both (default: both)"
 
-validate_structure:
-  type: bool
-  default: true
-  help: "Enable structural validation of sequences (minimum length, ambiguous bases, stop codons)"
-
-validate_taxonomy:
-  type: bool
-  default: true
-  help: "Enable taxonomic validation against reference library and expected taxonomy"
-
 # Processing Configuration
 triage:
   type: bool
