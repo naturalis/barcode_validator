@@ -2,11 +2,10 @@ import argparse
 import sys
 import logging
 from pathlib import Path
-from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 from .orchestrator import ValidationOrchestrator
 from .dna_analysis_result import DNAAnalysisResultSet
-from .constants import ValidationMode
+from barcode_validator.config.schema_config import SchemaConfig
 
 
 class BarcodeValidatorCLI:
@@ -15,37 +14,39 @@ class BarcodeValidatorCLI:
 
     This class exposes the functionality of the barcode_validator package to the command line.
     The overall program flow is as follows:
-    1. Parse command line arguments
-    2. Load configuration from YAML and override with command line arguments
-    3. Instantiate the orchestrator and initialize it with the loaded configuration
-    4. Run the orchestrator and obtain a result set object
-    5. Merge ancillary data from CSV and YAML files into the result set
-    6. Optionally perform triage on the result set, possibly at the sequence group level
-    7. Output the result set as TSV or FASTA to stdout
+    1. Initialize schema-driven configuration
+    2. Parse command line arguments using schema-generated parser
+    3. Update configuration with command line arguments
+    4. Validate required fields
+    5. Instantiate the orchestrator and initialize it with the loaded configuration
+    6. Run the orchestrator and obtain a result set object
+    7. Merge ancillary data from CSV and YAML files into the result set
+    8. Optionally perform triage on the result set, possibly at the sequence group level
+    9. Output the result set as TSV or FASTA to stdout
     """
+
     def __init__(self) -> None:
-        """
-        Initialize the BarcodeValidatorCLI.
-        """
+        """Initialize the BarcodeValidatorCLI."""
+        self.config: SchemaConfig = SchemaConfig()
         self.args: argparse.Namespace = self.parse_args()
-        self.config: Config = self.load_and_override_config()
         self.logger: logging.Logger = get_formatted_logger(__name__, self.config)
         self.logger.info("Starting DNA Barcode Validation CLI")
 
-    @staticmethod
-    def parse_args() -> argparse.Namespace:
+    def create_parser(self) -> argparse.ArgumentParser:
         """
-        Parse command line arguments.
+        Create and configure the argument parser using the schema.
 
-        :return: Parsed command line arguments.
+        :return: Configured ArgumentParser
         """
         parser = argparse.ArgumentParser(
             description="""DNA Barcode Validator
-This tool validates DNA barcode sequence data in FASTA or BCDM/TSV format and validates it. Validation consists of
+
+This tool validates DNA barcode sequence data in FASTA or BCDM/TSV format. Validation consists of
 either or both of the following steps:
 
 1. Structural validation: Check the sequence for minimum length, number of ambiguous bases, and, in the case of
    protein-coding sequences, for the presence of unexpected stop codons.
+
 2. Taxonomic validation: Compare the sequence against a reference library and an expected taxonomy to determine
    whether the sequence is taxonomically valid in the sense that the provided taxon is observed among the results
    of the reference library search. This check can be performed at different taxonomic ranks.
@@ -54,92 +55,49 @@ Optionally, the tool performs a triage on the result set that filters out invali
 results. If input sequences are grouped (e.g., by sample), the triage can be performed at the group level, in which
 case the longest valid sequence in each group is retained.
 
-Optionally, the tool can merge CSV analytics and YAML configuration into each result, which are then returned in the
-output TSV.
+Configuration parameters can be set using command line arguments. For nested parameters, use the format:
+--section-name key=value (e.g., --taxonomic-validation min-identity=0.85)
+
+Examples:
+  # Basic structural validation only
+  barcode_validator --input-file sequences.fasta --mode structural
+
+  # Full validation with custom parameters
+  barcode_validator --input-file sequences.fasta --mode both \\
+    --taxonomic-validation min-identity=0.90 \\
+    --taxonomic-validation taxonomic-rank=genus \\
+    --reference-library database-path=/path/to/db
+
+  # Validation with triage and custom output
+  barcode_validator --input-file sequences.fasta --triage --output-format fasta
 """,
             formatter_class=argparse.RawTextHelpFormatter
         )
 
-        # Input file options.
-        parser.add_argument("--input_file", required=True,
-                            help="Path to the input sequence file (FASTA or BCDM/TSV).")
-        parser.add_argument("--csv_file",
-                            help="Optional CSV file with record-level analytics to merge as ancillary data.")
-        parser.add_argument("--yaml_file",
-                            help="Optional YAML file with analysis-level configuration to merge into every result.")
+        # Let the schema populate the parser
+        self.config.populate_argparse(parser)
 
-        # Marker type options.
-        parser.add_argument("--marker", choices=["COI-5P"], default="COI-5P",
-                            help="Marker type (default: COI-5P).")
+        return parser
 
-        # Taxonomy dump options. The locations are updated the config, which is passed into the system.
-        parser.add_argument("--reflib_taxonomy",
-                            help="Path to the taxonomy of the reference library, i.e. NCBI taxdump (tar.gz).")
-        parser.add_argument("--exp_taxonomy",
-                            help="Path to the expected taxonomy, e.g. an NSR dump, NCBI dump, or BOLD spreadsheet.")
-        parser.add_argument("--exp_taxonomy_type", choices=["nsr", "bold", "ncbi"], default="nsr",
-                            help="Type of the expected taxonomy dump (nsr, bold or ncbi).")
-
-        # Validation and output options
-        parser.add_argument("--mode", choices=["structural", "taxonomic", "both"], default="both",
-                            help="Validation mode: structural, taxonomic, or both (default: both).")
-        parser.add_argument("--output_format", choices=["tsv", "fasta"], default="tsv",
-                            help="Whether to output results as TSV or FASTA (default: tsv).")
-        parser.add_argument("--triage", action="store_true", help="Perform triage on the result set.")
-
-        # Logging and configuration. The log level is updated in the config, and the config is passed into the system.
-        parser.add_argument("--log_level", choices=["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"],
-                            help="Set logging verbosity (overrides config log_level).")
-        parser.add_argument("--config", help="Path to the configuration YAML file (e.g., config.yml).")
-        return parser.parse_args()
-
-    def load_and_override_config(self) -> Config:
+    def parse_args(self) -> argparse.Namespace:
         """
-        Load and override configuration from command line arguments.
+        Parse command line arguments using schema-generated parser.
 
-        :return: Config object.
+        :return: Parsed command line arguments.
         """
-        # Instantiate and loaf config or initialize an empty one
-        config = Config()
-        if self.args.config:
-            try:
-                config.load_config(self.args.config)
-            except Exception as e:
-                sys.exit(f"Error loading config file: {e}")
-        else:
-            config.config_data = {}
-            config.initialized = True
+        parser = self.create_parser()
+        args = parser.parse_args()
 
-        # Set the marker type
-        config.set("marker", self.args.marker)
+        # Update configuration with parsed arguments
+        self.config.update_from_args(args)
 
-        # Handle reference library taxonomy and expected taxonomy
-        if self.args.reflib_taxonomy:
-            config.set("reflib_taxonomy", self.args.reflib_taxonomy)
-        if self.args.exp_taxonomy_type == 'nsr':
-            config.set("exp_taxonomy", self.args.exp_taxonomy)
-            config.set("exp_taxonomy_type", self.args.exp_taxonomy_type)
-        elif self.args.exp_taxonomy_type == 'bold':
-            config.set("exp_taxonomy", self.args.exp_taxonomy)
-            config.set("exp_taxonomy_type", self.args.exp_taxonomy_type)
-        elif self.args.exp_taxonomy_type == 'ncbi':
-            config.set("exp_taxonomy", self.args.exp_taxonomy)
-            config.set("exp_taxonomy_type", self.args.exp_taxonomy_type)
-        if self.args.log_level:
-            config.set("log_level", self.args.log_level)
+        # Validate that all required fields are present
+        try:
+            self.config.validate_required_fields()
+        except Exception as e:
+            parser.error(f"Configuration validation failed: {e}")
 
-        # Set the mode for validation
-        if self.args.mode == 'structural':
-            config.set("validate_structure", True)
-            config.set("validate_taxonomy", False)
-        elif self.args.mode == 'taxonomic':
-            config.set("validate_structure", False)
-            config.set("validate_taxonomy", True)
-        elif self.args.mode == 'both':
-            config.set("validate_structure", True)
-            config.set("validate_taxonomy", True)
-        config.set("mode", ValidationMode(self.args.mode))
-        return config
+        return args
 
     def run(self) -> DNAAnalysisResultSet:
         """Run the validation process."""
@@ -147,21 +105,39 @@ output TSV.
             # Initialize orchestrator
             orchestrator = ValidationOrchestrator(self.config)
 
+            # Get file paths from configuration
+            input_file = self.config.get('input_file')
+            csv_file = self.config.get('csv_file')
+            yaml_file = self.config.get('yaml_file')
+
             # Validate sequences
             results = orchestrator.validate_file(
-                Path(self.args.input_file),
-                Path(self.args.csv_file) if self.args.csv_file else None,
-                Path(self.args.yaml_file) if self.args.yaml_file else None
+                Path(input_file),
+                Path(csv_file) if csv_file else None,
+                Path(yaml_file) if yaml_file else None
             )
 
             # Write results
+            output_format = self.config.get('output_format')
+            triage = self.config.get('triage')
+
             orchestrator.write_results(
                 results,
-                self.args.output_format,
-                self.args.triage
+                output_format,
+                triage
             )
             return results
 
         except Exception as e:
             self.logger.error(f"Validation failed: {e}")
             sys.exit(1)
+
+
+def main():
+    """Main entry point for the CLI."""
+    cli = BarcodeValidatorCLI()
+    cli.run()
+
+
+if __name__ == "__main__":
+    main()
