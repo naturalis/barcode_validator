@@ -12,7 +12,6 @@ CSC_SAMPLE = TEST_DATA_DIR / "csc_sample.tsv"
 BOLD_SAMPLE = TEST_DATA_DIR / "BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta"
 NSR_ARCHIVE = TEST_DATA_DIR / "nsr-20250207.dwca.zip"
 BOLD_SHEET = TEST_DATA_DIR / "bold.xlsx"
-CONFIG_YML = TEST_DATA_DIR / "config.yml"
 OUTPUT_TSV = TEST_DATA_DIR / "output.tsv"
 OUTPUT_FASTA = TEST_DATA_DIR / "valid.fasta"
 
@@ -20,10 +19,7 @@ OUTPUT_FASTA = TEST_DATA_DIR / "valid.fasta"
 @pytest.fixture
 def base_args():
     """Provides base arguments for testing"""
-    return [
-        "--config", str(CONFIG_YML),
-        "--input_file", str(BOLD_SAMPLE)
-    ]
+    return ["--input_file", str(BOLD_SAMPLE)]
 
 
 @pytest.fixture
@@ -37,13 +33,9 @@ def mock_orchestrator():
 
 def test_basic_argument_parsing():
     """Test basic argument parsing with minimal required arguments"""
-    with patch('sys.argv', ['script.py'] + [
-        "--config", str(CONFIG_YML),
-        "--input_file", str(BOLD_SAMPLE)
-    ]):
+    with patch('sys.argv', ['script.py'] + ["--input-file", str(BOLD_SAMPLE)]):
         cli = BarcodeValidatorCLI()
-        assert cli.args.config == str(CONFIG_YML)
-        assert cli.args.input_file == str(BOLD_SAMPLE)
+        assert cli.args.input_file == BOLD_SAMPLE
         assert cli.args.mode == "both"  # Default value
         assert cli.args.exp_taxonomy_type == "nsr"  # Default value
         assert cli.args.output_format == "tsv"  # Default value
@@ -53,26 +45,24 @@ def test_basic_argument_parsing():
 def test_all_arguments():
     """Test parsing of all possible arguments"""
     with patch('sys.argv', ['script.py'] + [
-        "--config", str(CONFIG_YML),
-        "--input_file", str(BOLD_SAMPLE),
-        "--csv_file", "analytics.csv",
-        "--yaml_file", "metadata.yml",
-        "--reflib_taxonomy", "ncbi.tar.gz",
-        "--exp_taxonomy", str(BOLD_SHEET),
-        "--exp_taxonomy_type", "bold",
+        "--input-file", str(BOLD_SAMPLE),
+        "--csv-file", "analytics.csv",
+        "--yaml-file", "metadata.yml",
+        "--reflib-taxonomy", "ncbi.tar.gz",
+        "--exp-taxonomy", str(BOLD_SHEET),
+        "--exp-taxonomy-type", "bold",
         "--mode", "taxonomic",
-        "--output_format", "fasta",
+        "--output-format", "fasta",
         "--triage",
-        "--log_level", "DEBUG"
+        "--log-level", "DEBUG"
     ]):
         cli = BarcodeValidatorCLI()
         args = cli.args
-        assert args.config == str(CONFIG_YML)
-        assert args.input_file == str(BOLD_SAMPLE)
-        assert args.csv_file == "analytics.csv"
-        assert args.yaml_file == "metadata.yml"
-        assert args.reflib_taxonomy == "ncbi.tar.gz"
-        assert args.exp_taxonomy == str(BOLD_SHEET)
+        assert args.input_file == BOLD_SAMPLE
+        assert args.csv_file == Path("analytics.csv")
+        assert args.yaml_file == Path("metadata.yml")
+        assert args.reflib_taxonomy == Path("ncbi.tar.gz")
+        assert args.exp_taxonomy == BOLD_SHEET
         assert args.exp_taxonomy_type == "bold"
         assert args.mode == "taxonomic"
         assert args.output_format == "fasta"
@@ -80,35 +70,12 @@ def test_all_arguments():
         assert args.log_level == "DEBUG"
 
 
-def test_config_loading_and_override(tmp_path):
-    """Test config loading and command line overrides"""
-    # Create a temporary config file
-    config_content = """
-log_level: INFO
-validate_taxonomy: true
-validate_structure: true
-"""
-    config_file = tmp_path / "test_config.yml"
-    config_file.write_text(config_content)
-
-    with patch('sys.argv', ['script.py'] + [
-        "--config", str(config_file),
-        "--input_file", str(BOLD_SAMPLE),
-        "--log_level", "DEBUG",  # Override config
-        "--reflib_taxonomy", "new_ncbi.tar.gz"  # Add new value
-    ]):
-        cli = BarcodeValidatorCLI()
-        assert cli.config.get("log_level") == "DEBUG"  # Overridden
-        assert cli.config.get("reflib_taxonomy") == "new_ncbi.tar.gz"  # Added
-
-
 def test_validation_mode_options():
     """Test different validation mode options"""
     modes = ["structural", "taxonomic", "both"]
     for mode in modes:
         with patch('sys.argv', ['script.py'] + [
-            "--config", str(CONFIG_YML),
-            "--input_file", str(BOLD_SAMPLE),
+            "--input-file", str(BOLD_SAMPLE),
             "--mode", mode
         ]):
             cli = BarcodeValidatorCLI()
@@ -119,21 +86,18 @@ def test_taxonomy_type_validation():
     """Test validation of taxonomy type options"""
     with pytest.raises(SystemExit):
         with patch('sys.argv', ['script.py'] + [
-            "--config", str(CONFIG_YML),
-            "--input_file", str(BOLD_SAMPLE),
-            "--exp_taxonomy_type", "invalid"  # Invalid type
+            "--input-file", str(BOLD_SAMPLE),
+            "--exp-taxonomy-type", "invalid"  # Invalid type
         ]):
             BarcodeValidatorCLI()
 
 
 def test_required_arguments():
     """Test handling of missing required arguments"""
-    required_args = ["--input_file"]
+    required_args = ["--input-file"]
 
     for missing_arg in required_args:
-        args = [
-            "--input_file", str(BOLD_SAMPLE)
-        ]
+        args = ["--input-file", str(BOLD_SAMPLE)]
         # Remove the argument and its value
         idx = args.index(missing_arg)
         test_args = args[:idx] + args[idx + 2:]
@@ -146,10 +110,7 @@ def test_required_arguments():
 def test_file_existence_checking():
     """Test handling of non-existent input files"""
     with pytest.raises(SystemExit):
-        with patch('sys.argv', ['script.py'] + [
-            "--config", "nonexistent.yml",
-            "--input_file", str(BOLD_SAMPLE)
-        ]):
+        with patch('sys.argv', ['script.py'] + ["--input-file", str(BOLD_SAMPLE)]):
             cli = BarcodeValidatorCLI()
             cli.run()
 
@@ -157,8 +118,7 @@ def test_file_existence_checking():
 def test_integration_with_orchestrator(mock_orchestrator):
     """Test integration with ValidationOrchestrator"""
     with patch('sys.argv', ['script.py'] + [
-        "--config", str(CONFIG_YML),
-        "--input_file", str(BOLD_SAMPLE)
+        "--input-file", str(BOLD_SAMPLE)
     ]):
         cli = BarcodeValidatorCLI()
         cli.run()
@@ -180,9 +140,8 @@ def test_log_level_setting():
 
     for level in log_levels:
         with patch('sys.argv', ['script.py'] + [
-            "--config", str(CONFIG_YML),
-            "--input_file", str(BOLD_SAMPLE),
-            "--log_level", level
+            "--input-file", str(BOLD_SAMPLE),
+            "--log-level", level
         ]):
             cli = BarcodeValidatorCLI()
             assert cli.config.get("log_level") == level
@@ -194,8 +153,7 @@ def test_error_handling(mock_orchestrator):
 
     with pytest.raises(SystemExit) as exc_info:
         with patch('sys.argv', ['script.py'] + [
-            "--config", str(CONFIG_YML),
-            "--input_file", str(BOLD_SAMPLE)
+            "--input-file", str(BOLD_SAMPLE)
         ]):
             cli = BarcodeValidatorCLI()
             cli.run()
