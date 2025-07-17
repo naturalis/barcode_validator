@@ -61,17 +61,48 @@ class SchemaConfig(Config):
             if not isinstance(spec, dict):
                 raise ValidationError(f"Schema entry '{key}' must be a dictionary")
 
-            if 'type' not in spec:
-                raise ValidationError(f"Schema entry '{key}' missing required 'type' field")
+            # Check if this is a container (has nested parameters but no type)
+            is_container = self._is_nested_config(spec)
 
-            valid_types = ['str', 'int', 'float', 'bool', 'Path']
-            if spec['type'] not in valid_types:
-                raise ValidationError(f"Schema entry '{key}' has invalid type '{spec['type']}'. "
-                                      f"Valid types: {valid_types}")
+            if is_container:
+                # This is a container - validate its nested parameters
+                self._validate_container_schema(key, spec)
+            else:
+                # This is a regular parameter - validate it has required fields
+                self._validate_parameter_schema(key, spec)
 
-            # Validate choices if present
-            if 'choices' in spec and not isinstance(spec['choices'], list):
-                raise ValidationError(f"Schema entry '{key}' choices must be a list")
+    def _validate_container_schema(self, container_key: str, spec: Dict[str, Any]) -> None:
+        """Validate a container schema entry and its nested parameters."""
+        standard_keys = {'type', 'default', 'choices', 'required', 'help'}
+
+        # Container should not have a type
+        if 'type' in spec:
+            raise ValidationError(f"Container schema entry '{container_key}' should not have a 'type' field")
+
+        # Validate each nested parameter
+        for nested_key, nested_spec in spec.items():
+            if nested_key in standard_keys:
+                continue  # Skip standard keys like 'help'
+
+            if not isinstance(nested_spec, dict):
+                raise ValidationError(f"Nested parameter '{container_key}.{nested_key}' must be a dictionary")
+
+            # Validate the nested parameter
+            self._validate_parameter_schema(f"{container_key}.{nested_key}", nested_spec)
+
+    def _validate_parameter_schema(self, param_key: str, spec: Dict[str, Any]) -> None:
+        """Validate a parameter schema entry."""
+        if 'type' not in spec:
+            raise ValidationError(f"Parameter schema entry '{param_key}' missing required 'type' field")
+
+        valid_types = ['str', 'int', 'float', 'bool', 'Path']
+        if spec['type'] not in valid_types:
+            raise ValidationError(f"Parameter schema entry '{param_key}' has invalid type '{spec['type']}'. "
+                                  f"Valid types: {valid_types}")
+
+        # Validate choices if present
+        if 'choices' in spec and not isinstance(spec['choices'], list):
+            raise ValidationError(f"Parameter schema entry '{param_key}' choices must be a list")
 
     def _initialize_with_defaults(self) -> None:
         """Initialize configuration with default values from schema."""
@@ -291,6 +322,7 @@ class SchemaConfig(Config):
         parser.add_argument(
             f'--{main_key.replace("_", "-")}',
             action=NestedConfigAction,
+            dest=main_key,  # Use original key as destination
             help=help_text,
             metavar='KEY=VALUE'
         )
