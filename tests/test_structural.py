@@ -5,10 +5,10 @@ from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from barcode_validator.orchestrator import ValidationOrchestrator
 from barcode_validator.dna_analysis_result import DNAAnalysisResult
-from nbitk.config import Config
 from barcode_validator.validators.factory import StructureValidatorFactory
 from barcode_validator.constants import Marker
 from barcode_validator.validators.non_coding import NonCodingValidator
+from barcode_validator.config.schema_config import SchemaConfig
 
 # Test data path handling
 TEST_DATA_DIR = Path(__file__).parent / "data"
@@ -18,14 +18,10 @@ BOLD_SAMPLE = TEST_DATA_DIR / "BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta"
 @pytest.fixture
 def config():
     """Test fixture that provides a Config object configured for ITS structural validation"""
-    conf = Config()
-    conf.config_data = {
-        'log_level': 'DEBUG',
-        'validate_taxonomy': False,  # No taxonomy needed
-        'validate_structure': True,  # Enable structural validation
-        'marker': 'ITS'  # Using ITS marker
-    }
-    conf.initialized = True
+    conf = SchemaConfig()
+    conf.set('log_level', 'DEBUG')
+    conf.set('mode', 'structural')
+    conf.set('marker', 'ITS')  # Using ITS marker
     return conf
 
 
@@ -141,3 +137,7 @@ def test_edge_cases(validator, caplog):
     invalid_result = DNAAnalysisResult("invalid_seq")
     validator.validate(invalid_record, invalid_result)
     assert invalid_result.ambiguities == 3  # RYN are ambiguous, X is not
+
+
+if __name__ == '__main__':
+    pytest.main()
