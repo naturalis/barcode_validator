@@ -36,6 +36,12 @@ reflib_taxonomy:
   required: false
   help: "Path to the taxonomy of the reference library, i.e. NCBI taxdump (tar.gz)"
 
+reflib_taxonomy_type:
+  type: str
+  default: "ncbi"
+  choices: ["ncbi", "bold"]
+  help: "Type of the reference library taxonomy (ncbi or bold)"
+
 exp_taxonomy:
   type: Path
   required: false
