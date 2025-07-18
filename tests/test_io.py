@@ -2,7 +2,7 @@ import pytest
 from pathlib import Path
 from Bio.SeqRecord import SeqRecord
 from barcode_validator.orchestrator import ValidationOrchestrator
-from nbitk.config import Config
+from barcode_validator.config.schema_config import SchemaConfig
 
 # Test data path handling
 TEST_DATA_DIR = Path(__file__).parent / "data"
@@ -13,13 +13,8 @@ BOLD_SAMPLE = TEST_DATA_DIR / "BGE00146_MGE-BGE_r1_1.3_1.5_s50_100.fasta"
 @pytest.fixture
 def config():
     """Test fixture that provides a minimal Config object"""
-    conf = Config()
-    conf.config_data = {
-        'log_level': 'DEBUG',
-        'validate_taxonomy': False,  # No taxonomy needed
-        'validate_structure': False  # No structure validation needed
-    }
-    conf.initialized = True
+    conf = SchemaConfig()
+    conf.set('log_level', 'DEBUG')
     return conf
 
 
@@ -132,3 +127,6 @@ def test_bold_sequence_content(orchestrator):
     # Verify sequence characters
     valid_chars = set('ACGTN-')
     assert all(c.upper() in valid_chars for c in seq_str), "Invalid characters in sequence"
+
+if __name__ == '__main__':
+    pytest.main(['-v'])
