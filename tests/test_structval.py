@@ -62,13 +62,13 @@ def test_cli_bold(input_fasta_bold, bold_excel):
         # Replace sys.argv with our test arguments
         sys.argv = [
             "barcode_validator",  # Program name
-            "--input_file", str(input_fasta_bold),
+            "--input-file", input_fasta_bold,
             "--mode", "structural",
             "--marker", "COI-5P",
-            "--exp_taxonomy_type", "bold",
-            "--exp_taxonomy", str(bold_excel),
-            "--output_format", "tsv",
-            "--log_level", "INFO"
+            "--exp-taxonomy-type", "bold",
+            "--exp-taxonomy", bold_excel,
+            "--output-format", "tsv",
+            "--log-level", "INFO"
         ]
         cli = BarcodeValidatorCLI()
         yield cli
@@ -96,13 +96,13 @@ def test_cli_nsr(input_tsv_nsr, nsr_dwca):
         # Replace sys.argv with our test arguments
         sys.argv = [
             "barcode_validator",  # Program name
-            "--input_file", str(input_tsv_nsr),
+            "--input-file", input_tsv_nsr,
             "--mode", "structural",
             "--marker", "COI-5P",
-            "--exp_taxonomy_type", "nsr",
-            "--exp_taxonomy", str(nsr_dwca),
-            "--output_format", "tsv",
-            "--log_level", "INFO"
+            "--exp-taxonomy-type", "nsr",
+            "--exp-taxonomy", nsr_dwca,
+            "--output-format", "tsv",
+            "--log-level", "INFO"
         ]
         cli = BarcodeValidatorCLI()
         yield cli
