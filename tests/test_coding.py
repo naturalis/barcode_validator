@@ -13,7 +13,7 @@ from barcode_validator.resolvers.factory import ResolverFactory
 from barcode_validator.resolvers.taxonomy import TaxonResolver
 from barcode_validator.dna_analysis_result import DNAAnalysisResult
 from barcode_validator.constants import Marker, TaxonomicBackbone, TaxonomicRank
-from nbitk.config import Config
+from barcode_validator.config.schema_config import SchemaConfig
 
 # Test data path handling
 TEST_DATA_DIR = Path(__file__).parent / "data"
@@ -25,14 +25,10 @@ NCBI_TAXDUMP = TEST_DATA_DIR / "taxdump.tar.gz"
 @pytest.fixture
 def config():
     """Test fixture that provides a Config object configured for COI-5P validation"""
-    conf = Config()
-    conf.config_data = {
-        'log_level': 'DEBUG',
-        'validate_taxonomy': False,  # No BLASTing just yet
-        'validate_structure': True,  # Enable structural validation
-        'marker': 'COI-5P',  # Using COI-5P marker
-    }
-    conf.initialized = True
+    conf = SchemaConfig()
+    conf.set('log_level', 'DEBUG')
+    conf.set('mode', 'structural')
+    conf.set('marker', 'COI-5P')  # Using COI-5P marker
     return conf
 
 
@@ -133,7 +129,7 @@ def test_hmm_alignment(validator, fasta_records, hmmalign: Hmmalign):
     assert str(aligned_seq.seq).count('-') >= 0, "Alignment may contain gaps"
 
 @pytest.mark.skipif(not Path(NCBI_TAXDUMP).exists(), reason="NCBI taxonomy does not exist")
-def test_reading_frame_detection(validator, fasta_records, hmmalign: Hmmalign, config: Config):
+def test_reading_frame_detection(validator, fasta_records, hmmalign: Hmmalign, config: SchemaConfig):
     """Test reading frame detection in aligned sequences"""
     record = fasta_records[0]
     result = DNAAnalysisResult(record.id)
@@ -150,7 +146,7 @@ def test_reading_frame_detection(validator, fasta_records, hmmalign: Hmmalign, c
     assert frame[0] == 1, "Most records are offset by 1 with this HMM"
 
 
-def test_stop_codon_detection(validator, fasta_records, hmmalign: Hmmalign, config: Config):
+def test_stop_codon_detection(validator, fasta_records, hmmalign: Hmmalign, config: SchemaConfig):
     """Test stop codon detection in COI-5P sequences"""
     record = fasta_records[0]
     result = DNAAnalysisResult(record.id)
@@ -172,7 +168,7 @@ def test_stop_codon_detection(validator, fasta_records, hmmalign: Hmmalign, conf
     assert len(stops) == 0, "Valid sequence should not have stop codons"
 
 
-def test_complete_validation(validator, fasta_records, bold_resolver, hmmalign: Hmmalign, config: Config):
+def test_complete_validation(validator, fasta_records, bold_resolver, hmmalign: Hmmalign, config: SchemaConfig):
     """Test complete protein-coding validation process"""
     validator.set_hmmalign(hmmalign)
     validator.set_hmm_profile_dir(HMM_DIR)
@@ -193,3 +189,6 @@ def test_complete_validation(validator, fasta_records, bold_resolver, hmmalign: 
         assert isinstance(result.stop_codons, list), "Stop codons not detected"
         frame = int(result.ancillary['reading_frame'])
         assert frame in [0, 1, 2], "Invalid reading frame"
+
+if __name__ == '__main__':
+    pytest.main(['-v'])
