@@ -6,6 +6,7 @@ from nbitk.config import Config
 from barcode_validator.resolvers.factory import ResolverFactory
 from barcode_validator.dna_analysis_result import DNAAnalysisResult
 from barcode_validator.resolvers.taxonomy import TaxonomicBackbone, TaxonomicRank
+from barcode_validator.config.schema_config import SchemaConfig
 
 # Test data path handling
 TEST_DATA_DIR = Path(__file__).parent / "data"
@@ -17,16 +18,12 @@ NCBI_TAXDUMP = TEST_DATA_DIR / "taxdump.tar.gz"
 @pytest.fixture
 def config():
     """Provides base configuration for testing"""
-    conf = Config()
-    conf.config_data = {
-        'log_level': 'DEBUG',
-        'level': 'family',
-        'bold_sheet_file': str(BOLD_SHEET),
-        'taxonomic_backbone': 'bold',
-        'ncbi_taxonomy': str(NCBI_TAXDUMP),
-        'ncbi_taxonomy_url': 'https://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz'
-    }
-    conf.initialized = True
+    conf = SchemaConfig()
+    conf.set('log_level', 'DEBUG')
+    conf.set('taxonomic_validation.taxonomic_rank', 'family')
+    conf.set('exp_taxonomy', BOLD_SHEET)
+    conf.set('exp_taxonomy_type', 'bold')
+    conf.set('reflib_taxonomy', NCBI_TAXDUMP)
     return conf
 
 @pytest.fixture
