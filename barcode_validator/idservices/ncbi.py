@@ -34,7 +34,7 @@ class NCBI(IDService):
         self.blastn: Blastn = Optional[Blastn]
 
         # Set the BLASTDB environment variable if not already set and if blast_db is in config
-        blast_db = config.get('blast_db', None)
+        blast_db = config.get('reference_library.database_path', None)
 
         if blast_db is not None:
             # Get the directory containing the blast database files
