@@ -62,13 +62,13 @@ def test_cli_ncbi(structval_ncbi_tsv, ncbi_taxdump):
         # Replace sys.argv with our test arguments
         sys.argv = [
             "barcode_validator",  # Program name
-            "--input_file", str(structval_ncbi_tsv),
+            "--input-file", str(structval_ncbi_tsv),
             "--mode", "structural",
             "--marker", "COI-5P",
-            "--exp_taxonomy_type", "ncbi",
-            "--exp_taxonomy", str(ncbi_taxdump),
-            "--output_format", "tsv",
-            "--log_level", "INFO"
+            "--exp-taxonomy-type", "ncbi",
+            "--exp-taxonomy", str(ncbi_taxdump),
+            "--output-format", "tsv",
+            "--log-level", "INFO"
         ]
         cli = BarcodeValidatorCLI()
         yield cli
