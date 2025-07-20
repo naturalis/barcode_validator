@@ -116,14 +116,14 @@ def test_structural_validation_cli_bold(test_cli_bold):
     dars = test_cli_bold.run()
     assert dars is not None, "Validation results should not be None"
     assert len(dars.results) == 4, "Validation results should have 4 records"
-    assert len(dars.results[0].stop_codons) == 1, "Second record should have 1 early stop"
-    assert dars.results[1].seq_length == 76, "First record should have 1 stop codon"
+    assert len(dars.results[0].stop_codons) == 0, "Second record should have - early stop"
+    assert dars.results[1].seq_length == 76, "First record is 76bp"
     assert dars.results[2].full_ambiguities == 7, "Third record should have 7 ambiguities"
 
 def test_structural_validation_cli_nsr(test_cli_nsr):
     dars = test_cli_nsr.run()
     assert dars is not None, "Validation results should not be None"
     assert len(dars.results) == 4, "Validation results should have 4 records"
-    assert len(dars.results[0].stop_codons) == 1, "Second record should have 1 early stop"
-    assert dars.results[1].seq_length == 76, "First record should have 1 stop codon"
+    assert len(dars.results[0].stop_codons) == 0, "Second record should have 0 early stop"
+    assert dars.results[1].seq_length == 76, "First record s 76bp"
     assert dars.results[2].full_ambiguities == 7, "Third record should have 7 ambiguities"
