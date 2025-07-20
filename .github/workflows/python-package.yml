@@ -2,7 +2,7 @@ name: Python package
 
 on:
   push:
-    branches: [ "main", "refactor" ]
+    branches: [ "main", "refactor", "schema" ]
     tags:
       - 'v*'  # Trigger on any tag that starts with 'v'
   pull_request:
