@@ -46,9 +46,11 @@ python barcode_validator \
   --input_file data/BGE00196_MGE-BGE_r1_1.3_1.5_s50_100.fasta \
   --exp_taxonomy examples/bold.xlsx \
   --exp_taxonomy_type bold \
-  --config config/config.yml \
   --output_format tsv \
-  --log_level DEBUG > results.tsv
+  --mode both \
+  --log_level WARNING \
+  > results.tsv \
+  2> results.log
 ```
 
 - `--input_file`: Path to the input FASTA file containing sequences to validate. The first word in the header line 
@@ -58,18 +60,14 @@ python barcode_validator \
     this is a BOLD spreadsheet in Excel format.
 - `--exp_taxonomy_type`: Type of expected taxonomy, either `nsr` (Nederlands Soortenregister) or `bold`. In this case,
    we are using `bold` to validate against the BOLD database.
-- `--config`: Path to the configuration file. Almost certainly, you will want to update the `config/config.yml` file
-   to specify the BLAST database name, configuration of the BLAST search, and other parameters, and the location of the
-   NCBI taxonomy database (as *.tar.gz).
 - `--output_format`: Format of the output report. Options are `tsv` (tab-separated values) or `fasta` (filtered FASTA).
    In this case, we are generating a tabular (tsv) report.
+- `--mode`: Validation mode. Options are `structural`, `taxonomic`, or `both`. In this case, we are validating both 
+  structural and taxonomic aspects of the sequences.
 - `--log_level`: Set the logging level. Options are `DEBUG`, `INFO`, `WARNING`, `ERROR`, or `CRITICAL`. In this case,
-  we are setting it to `DEBUG` for detailed output.
+  we are setting it to `WARNING` to only log warnings and errors.
 - `> results.tsv`: Redirects the output to a file named `results.tsv`.
-
-Note: the config file has a parameter `blast_db`. This should be set to the name of the BLAST database you want to use. 
-The *name* of the database is the path to the 'file stem' of the database, without the `.nhr`, `.nin`, etc. So it is
-*not* the name of the directory, but that of the indexed sequence files without the extensions.
+- `2> results.log`: Redirects warnings and error messages to a file named `results.log`.
 
 ### Galaxy Integration
 
