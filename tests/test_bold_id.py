@@ -27,3 +27,5 @@ class TestBOLDSearchs:
         assert isinstance(results, set)
         assert len(results) > 0
 
+if __name__ == '__main__':
+    pytest.main()
