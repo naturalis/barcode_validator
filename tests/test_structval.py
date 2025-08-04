@@ -127,3 +127,6 @@ def test_structural_validation_cli_nsr(test_cli_nsr):
     assert len(dars.results[0].stop_codons) == 0, "Second record should have 0 early stop"
     assert dars.results[1].seq_length == 76, "First record s 76bp"
     assert dars.results[2].full_ambiguities == 7, "Third record should have 7 ambiguities"
+
+if __name__ == '__main__':
+    pytest.main()
