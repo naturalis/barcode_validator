@@ -21,28 +21,28 @@ def data_dir():
 def input_fasta_bold(data_dir):
     """Fixture to create a test FASTA file with sequences."""
     fasta_path = data_dir / "structval_early_stop.fasta"
-    return fasta_path
+    return str(fasta_path)
 
 
 @pytest.fixture
 def input_tsv_nsr(data_dir):
     """Fixture to create a test TSV file with sequences."""
     tsv_path = data_dir / "structval_nsr.tsv"
-    return tsv_path
+    return str(tsv_path)
 
 
 @pytest.fixture
 def bold_excel(data_dir):
     """Fixture to provide a test BOLD Excel file."""
     bold_path = data_dir / "bold.xlsx"
-    return bold_path
+    return str(bold_path)
 
 
 @pytest.fixture
 def nsr_dwca(data_dir):
     """Fixture to provide a test NSR archive."""
     nsr_path = data_dir / "nsr-20250207.dwca.zip"
-    return nsr_path
+    return str(nsr_path)
 
 
 @pytest.fixture
