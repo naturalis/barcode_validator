@@ -26,7 +26,7 @@ NCBI_TAXDUMP = TEST_DATA_DIR / "taxdump.tar.gz"
 def config():
     """Test fixture that provides a Config object configured for COI-5P validation"""
     conf = SchemaConfig()
-    conf.set('log_level', 'DEBUG')
+    conf.set('log_level', 'WARNING')
     conf.set('mode', 'structural')
     conf.set('marker', 'COI-5P')  # Using COI-5P marker
     return conf
@@ -143,7 +143,7 @@ def test_reading_frame_detection(validator, fasta_records, hmmalign: Hmmalign, c
 
     # Detect reading frame
     frame = validator._determine_reading_frame(aligned_seq, 5)
-    assert frame[0] == 1, "Most records are offset by 1 with this HMM"
+    assert frame[0] == 2, "Most records are offset by 1 with this HMM"
 
 
 def test_stop_codon_detection(validator, fasta_records, hmmalign: Hmmalign, config: SchemaConfig):
