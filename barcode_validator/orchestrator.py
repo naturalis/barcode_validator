@@ -70,6 +70,7 @@ class ValidationOrchestrator:
         # Validate records and create result set
         results = []
         for record in self._parse_input(input_path):
+            self.logger.info(f"Validating record {record.id} from {input_path}")
             result = self._validate_record(record, str(input_path), marker_type)
             results.append(result)
         result_set = DNAAnalysisResultSet(results)
@@ -127,8 +128,8 @@ class ValidationOrchestrator:
         if self.taxonomic_validator.requires_resolver():
 
             # Initialize the TaxonResolver for taxonomic validation
-            tvbb = TaxonomicBackbone(self.config.get('reference_taxonomy'))
-            tvpath = self.config.get(tvbb.value + '_file')
+            tvbb = TaxonomicBackbone(self.config.get('reflib_taxonomy_type'))
+            tvpath = self.config.get('reflib_taxonomy')
             tr = ResolverFactory.create_resolver(self.config, tvbb)
             self.logger.info(f"Loading reference taxonomy from {tvpath}")
             tr.load_tree(Path(tvpath))
@@ -136,7 +137,7 @@ class ValidationOrchestrator:
 
             # Initialize an IDService if needed
             if self.taxonomic_validator.requires_idservice():
-                db = RefDB(self.config.get('reference_taxonomy'))
+                db = RefDB(self.config.get('reflib_taxonomy_type'))
                 ids = IDServiceFactory.create_idservice(self.config, db)
 
                 # There is no way right now that the IDService could have a different
@@ -188,10 +189,11 @@ class ValidationOrchestrator:
         :param marker_type: Marker type to use for validation
         :return: DNAAnalysisResult object containing validation results
         """
-        # Extract group ID if present
+        # Extract group ID if grouping is enabled
         group_id = None
-        if self.config.get('group_id_separator'):
-            group_id = record.id.split(self.config.get('group_id_separator'))[0]
+        if self.config.get('triage_config.group_by_sample'):
+            sep = self.config.get('triage_config.group_id_separator')
+            group_id = record.id.split(sep)[0]
 
         # Instantiate result object, annotate target marker at sequence level (CSC) or config level, set validation level
         result = DNAAnalysisResult(record.id, dataset, group_id=group_id)
@@ -209,7 +211,7 @@ class ValidationOrchestrator:
             else:
                 self.structural_validator.validate(record, result)
         if self.taxonomic_validator and not result.error:
-            constraint_rank = TaxonomicRank(self.config.get('constraint_rank', 'class'))
+            constraint_rank = TaxonomicRank(self.config.get('taxon_validation.extent'))
             self.taxonomic_validator.validate_taxonomy(record, result, constraint_rank)
 
         return result
