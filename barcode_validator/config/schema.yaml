@@ -21,7 +21,7 @@ output_format:
   type: str
   default: "tsv"
   choices: ["tsv", "fasta"]
-  help: "Whether to output results as TSV or FASTA (default: tsv)"
+  help: "Whether to write results as TSV or FASTA to STDOUT (default: tsv)"
 
 # Marker Configuration
 marker:
@@ -69,12 +69,18 @@ triage:
 # Logging Configuration
 log_level:
   type: str
-  default: "INFO"
+  default: "WARNING"
   choices: ["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"]
   help: "Set logging verbosity level"
 
 # Taxonomic Validation Parameters
-taxonomic_validation:
+taxon_validation:
+  method:
+    type: str
+    default: "bold"
+    choices: ["bold", "ncbi"]
+    help: "Method for taxonomic validation: local NCBI BLAST or BOLD ID service"
+
   min_identity:
     type: float
     default: 0.85
@@ -85,25 +91,25 @@ taxonomic_validation:
     default: 1e-5
     help: "Maximum e-value threshold for reference library search"
 
-  taxonomic_rank:
+  rank:
     type: str
     default: "species"
     choices: ["kingdom", "phylum", "class", "order", "family", "genus", "species"]
     help: "Taxonomic rank at which to perform validation"
 
 # Reference Library Configuration
-reference_library:
-  database_path:
+local_blast:
+  db:
     type: Path
     required: false
     help: "Path to the reference database for taxonomic validation"
 
-  blast_threads:
+  threads:
     type: int
     default: 1
     help: "Number of threads to use for BLAST searches"
 
-  blast_max_target_seqs:
+  max_target_seqs:
     type: int
     default: 100
     help: "Maximum number of target sequences to return from BLAST search"
