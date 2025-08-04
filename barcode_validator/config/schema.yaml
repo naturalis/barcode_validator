@@ -1,5 +1,21 @@
 # Configuration schema for DNA Barcode Validator
-# This file defines all configurable parameters, their types, defaults, and validation rules
+# This file defines all configurable parameters, their types, defaults, and validation rules. This file is used by
+# the tool to validate user inputs and generate the appropriate command-line interface. Because of this usage, it is
+# also the authorative source of truth for the tool's configuration options and can therefore serve as documentation.
+#
+# How to use this file as documentation:
+#
+# - Every top-level key corresponds to a command-line argument. However, the command-line argument names are
+#   automatically generated as kebab-case from the snake_case keys, so they may not match exactly. For example,
+#   the key `input_file` corresponds to the command-line argument `--input-file <file path>`. Nested below the top-level
+#   key is information about the argument, such as its type, whether it is required, and a help message.
+#
+# - There are also 'nested' keys that define sub-parameters for more complex configurations. These can be recognized
+#   by their indentation level. For example, `taxon_validation` is a nested key that contains parameters for taxonomic
+#   validation, such as `method`, `min_identity`, and `max_evalue`. In this case, the command-line arguments
+#   would be `--taxon-validation method=bold`, `--taxon-validation rank=genus` and so on. I.e. these arguments are
+#   used multiple times, each time with a different key-value pair. (If you are really, really old, like me, you will
+#   notice that this is similar `--define` arguments in GCC compilation.)
 
 # Input/Output Configuration
 input_file:
@@ -93,9 +109,16 @@ taxon_validation:
 
   rank:
     type: str
-    default: "species"
+    default: "family"
     choices: ["kingdom", "phylum", "class", "order", "family", "genus", "species"]
     help: "Taxonomic rank at which to perform validation"
+
+  extent:
+    type: str
+    default: "class"
+    choices: ["kingdom", "phylum", "class", "order", "family", "genus", "species"]
+    help: "Limit the search space within which to query, e.g. only search within the containing class"
+
 
 # Reference Library Configuration
 local_blast:
@@ -120,6 +143,11 @@ triage_config:
     type: bool
     default: true
     help: "Group sequences by sample ID for triage processing"
+
+  group_id_separator:
+    type: str
+    default: "_"
+    help: "Separator used to split sample IDs into groups for triage"
 
   prefer_longest_valid:
     type: bool
