@@ -194,3 +194,6 @@ class TestMarkerCriteriaFactory:
         assert 'ITS' in markers
         assert 'ITS2' in markers
         assert len(markers) == 5  # Update if more markers are added
+
+if __name__ == '__main__':
+    pytest.main()
