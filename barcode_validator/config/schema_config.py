@@ -313,7 +313,7 @@ class SchemaConfig(Config):
                         f"Available keys: {available_keys}")
 
                 # Initialize nested dict if needed
-                if not hasattr(namespace, self.main_key):
+                if getattr(namespace, self.main_key) is None:
                     setattr(namespace, self.main_key, {})
 
                 nested_dict = getattr(namespace, self.main_key)
