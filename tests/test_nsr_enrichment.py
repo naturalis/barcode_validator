@@ -21,7 +21,7 @@ def config():
     """Provides base configuration for testing"""
     conf = SchemaConfig()
     conf.set('log_level', 'DEBUG')
-    conf.set('taxonomic_validation.taxonomic_rank', 'family')
+    conf.set('taxon_validation.rank', 'family')
     conf.set('exp_taxonomy', NSR_ARCHIVE)
     conf.set('exp_taxonomy_type', 'nsr')
     conf.set('reflib_taxonomy', NCBI_TAXDUMP)
