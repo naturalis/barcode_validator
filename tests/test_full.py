@@ -28,7 +28,7 @@ def bold_excel(data_dir):
 @pytest.fixture
 def input_tsv_nsr(data_dir):
     """Fixture to create a test TSV file with sequences."""
-    tsv_path = data_dir / "structval_nsr.tsv"
+    tsv_path = data_dir / "test_full.tsv"
     return str(tsv_path)
 
 @pytest.fixture
@@ -126,13 +126,21 @@ def test_validation_bold_bold(test_cli_bold_bold):
     assert dars.results[0].seq_length == 522, "Length within marker region"
     assert len(dars.results[0].stop_codons) == 0, "No early stop codons"
     assert dars.results[0].full_ambiguities == 0, "No ambiguities in sequence"
-    assert dars.results[0].ambiguities == 0, "Taxon should be resolved"
+    assert dars.results[0].ambiguities == 0, "No ambiguities in marker region"
     assert dars.results[0].obs_taxon[0].name == dars.results[0].exp_taxon.name, "Observed taxon matches expected taxon"
     assert dars.results[0].species.name == "Halesus tessellatus", "Asserted species name"
 
 def test_validation_nsr_bold(test_cli_nsr):
     dars = test_cli_nsr.run()
     assert dars is not None, "Validation results should not be None"
+    assert dars.results[0].full_length == 657, "Total length"
+    assert dars.results[0].seq_length == 653, "Length within marker region"
+    assert len(dars.results[0].stop_codons) == 1, "One stop codon"
+    assert dars.results[0].full_ambiguities == 0, "No ambiguities in sequence"
+    assert dars.results[0].ambiguities == 0, "No ambiguities in marker region"
+    assert dars.results[0].obs_taxon[0].name == dars.results[0].exp_taxon.name, "Observed taxon matches expected taxon"
+    assert dars.results[0].species.name == "Geophilus carpophagus", "Asserted species name"
+
 
 if __name__ == '__main__':
     pytest.main()
