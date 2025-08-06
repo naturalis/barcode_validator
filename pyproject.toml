@@ -12,7 +12,7 @@ description = "A python package for structural and taxonomic validation of DNA b
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
-    "nbitk>=0.6.1",
+    "nbitk>=0.6.2",
     "biopython",
     "requests",
     "PyYAML",
