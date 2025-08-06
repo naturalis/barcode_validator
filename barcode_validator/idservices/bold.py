@@ -1,15 +1,9 @@
-import json
-import time
-import datetime
-from typing import Set, Dict, List, Optional
+from typing import Set, Dict, List
 from Bio.SeqRecord import SeqRecord
-import requests
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
-from json.decoder import JSONDecodeError
 
 from nbitk.Taxon import Taxon
 from nbitk.config import Config
+from nbitk.Services.BOLD.IDService import IDService as BOLDIDService
 from barcode_validator.constants import TaxonomicRank
 from .idservice import IDService
 
@@ -25,209 +19,6 @@ class BOLD(IDService):
 
     def __init__(self, config: Config):
         super().__init__(config)
-
-        # Get BOLD-specific configuration with defaults
-        self.database = config.get('bold_database', 1)  # Default to public.bin-tax-derep
-        self.operating_mode = config.get('bold_operating_mode', 1)  # Default to 94% similarity
-        self.timeout = config.get('bold_timeout', 300)  # 5 minutes default timeout
-
-        # Build URL and parameters from config
-        self.base_url, self.params = self._build_url_params()
-
-        self.logger.info(
-            f"Initialized BOLD service with database {self.database}, operating mode {self.operating_mode}")
-
-    def _build_url_params(self) -> tuple:
-        """
-        Build the base URL and parameters for BOLD requests.
-
-        :return: A tuple containing the base URL and a dictionary of parameters
-        """
-        # Database mapping
-        idx_to_database = {
-            1: "public.bin-tax-derep",
-            2: "species",
-            3: "all.bin-tax-derep",
-            4: "DS-CANREF22",
-            5: "public.plants",
-            6: "public.fungi",
-            7: "all.animal-alt",
-            8: "DS-IUCNPUB",
-        }
-
-        # Operating mode mapping
-        idx_to_operating_mode = {
-            1: {"mi": 0.94, "maxh": 25},
-            2: {"mi": 0.9, "maxh": 50},
-            3: {"mi": 0.75, "maxh": 100},
-        }
-
-        if self.database not in idx_to_database:
-            raise ValueError(f"Invalid database: {self.database}. Must be 1-8.")
-
-        if self.operating_mode not in idx_to_operating_mode:
-            raise ValueError(f"Invalid operating mode: {self.operating_mode}. Must be 1-3.")
-
-        params = {
-            "db": idx_to_database[self.database],
-            "mi": idx_to_operating_mode[self.operating_mode]["mi"],
-            "mo": 100,
-            "maxh": idx_to_operating_mode[self.operating_mode]["maxh"],
-            "order": 3,
-        }
-
-        base_url = "https://id.boldsystems.org/submission?db={}&mi={}&mo={}&maxh={}&order={}".format(
-            params["db"], params["mi"], params["mo"], params["maxh"], params["order"]
-        )
-
-        return base_url, params
-
-    def _submit_sequence(self, record: SeqRecord) -> str:
-        """
-        Submit a sequence to BOLD and return the submission ID.
-
-        :param record: A Bio.SeqRecord object containing the sequence to submit
-        :return: The submission ID returned by BOLD
-        """
-        # Create session with retry strategy
-        session = requests.Session()
-        session.headers.update({
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36"
-        })
-        retry_strategy = Retry(total=10, backoff_factor=1)
-        adapter = HTTPAdapter(max_retries=retry_strategy)
-        session.mount("https://", adapter)
-
-        # Format sequence data for submission
-        data = f">{record.id}\n{record.seq}\n"
-        files = {"file": ("submitted.fas", data, "text/plain")}
-
-        try:
-            while True:
-                try:
-                    # Submit the POST request
-                    self.logger.debug(f"Submitting sequence {record.id} to BOLD")
-                    response = session.post(self.base_url, params=self.params, files=files)
-                    response.raise_for_status()
-                    result = json.loads(response.text)
-                    break
-                except (JSONDecodeError, requests.RequestException) as e:
-                    self.logger.warning(f"Request failed: {e}, retrying in 60 seconds")
-                    time.sleep(60)
-
-            sub_id = result['sub_id']
-            self.logger.debug(f"Received submission ID: {sub_id}")
-            return sub_id
-        finally:
-            session.close()
-
-    def _wait_for_and_get_results(self, sub_id: str, record_id: str) -> List[Dict]:
-        """
-        Wait for BOLD processing to complete and return parsed results.
-
-        :param sub_id: The submission ID returned by BOLD
-        :param record_id: The ID of the sequence record to match results against
-        :return: A list of dictionaries containing the parsed results
-        """
-        results_url = f"https://id.boldsystems.org/submission/results/{sub_id}"
-
-        # Create session for polling results
-        session = requests.Session()
-        retry_strategy = Retry(total=5, backoff_factor=1)
-        adapter = HTTPAdapter(max_retries=retry_strategy)
-        session.mount("https://", adapter)
-
-        start_time = time.time()
-
-        try:
-            while time.time() - start_time < self.timeout:
-                try:
-                    self.logger.debug(f"Checking BOLD results for submission {sub_id}")
-                    response = session.get(results_url)
-                    response.raise_for_status()
-
-                    # Try to parse JSON response
-                    data = response.json()
-
-                    # Check if processing is complete
-                    # The response should be a dict with 'results', 'seqid', and 'sequence' keys
-                    if (data and isinstance(data, dict) and
-                            'results' in data and 'seqid' in data):
-
-                        # Check if this is our sequence
-                        if data.get("seqid") == record_id:
-                            return self._parse_bold_result(data)
-                        else:
-                            self.logger.warning(
-                                f"Results available but sequence ID mismatch: expected {record_id}, got {data.get('seqid')}")
-                            return []
-
-                    # Results not ready yet, wait and retry
-                    self.logger.debug(f"Results not ready yet for submission {sub_id}, waiting...")
-                    time.sleep(10)
-
-                except requests.RequestException as e:
-                    self.logger.debug(f"Request error while checking results: {e}, retrying...")
-                    time.sleep(10)
-                except json.JSONDecodeError:
-                    # Results might not be ready if we can't parse JSON
-                    self.logger.debug("Results not ready (invalid JSON), waiting...")
-                    time.sleep(10)
-
-            raise TimeoutError(f"BOLD processing timed out after {self.timeout} seconds")
-
-        finally:
-            session.close()
-
-    def _parse_bold_result(self, result_data: Dict) -> List[Dict]:
-        """
-        Parse a BOLD result response into our standard format.
-
-        :param result_data: The raw result data from BOLD
-        :return: A list of dictionaries containing parsed results
-        """
-        results = []
-        bold_results = result_data.get("results", {})
-
-        if bold_results:
-            for key, result_info in bold_results.items():
-                # Parse the key format: process_id|primer|bin_uri|taxid|etc
-                key_parts = key.split("|")
-                process_id = key_parts[0] if len(key_parts) > 0 else ""
-                primer = key_parts[1] if len(key_parts) > 1 else ""
-                bin_uri = key_parts[2] if len(key_parts) > 2 else ""
-                taxid = key_parts[3] if len(key_parts) > 3 else ""
-
-                # Extract alignment metrics
-                pident = result_info.get("pident", 0.0)
-                bitscore = result_info.get("bitscore", 0.0)
-                evalue = result_info.get("evalue", 1.0)
-
-                # Extract taxonomy information
-                taxonomy = result_info.get("taxonomy", {})
-                result_dict = {
-                    "phylum": taxonomy.get("phylum"),
-                    "class": taxonomy.get("class"),
-                    "order": taxonomy.get("order"),
-                    "family": taxonomy.get("family"),
-                    "subfamily": taxonomy.get("subfamily"),  # Include subfamily if present
-                    "genus": taxonomy.get("genus"),
-                    "species": taxonomy.get("species"),
-                    "pct_identity": pident,
-                    "bitscore": bitscore,
-                    "evalue": evalue,
-                    "process_id": process_id,
-                    "primer": primer,
-                    "bin_uri": bin_uri,
-                    "taxid": taxid,
-                    "taxid_count": taxonomy.get("taxid_count", "")
-                }
-                results.append(result_dict)
-        else:
-            # No matches found
-            self.logger.debug(f"No matches found for sequence {result_data.get('seqid', 'unknown')}")
-
-        return results
 
     def _build_taxonomic_trees(self, results: List[Dict]) -> List[Taxon]:
         """
@@ -253,7 +44,7 @@ class BOLD(IDService):
         # Track root taxa (highest level taxa with no parents)
         root_taxa = set()
 
-        for result in results:
+        for result in results[0]["results"]:
             previous_taxon = None
 
             # Build taxonomy chain from highest to lowest level
@@ -331,12 +122,21 @@ class BOLD(IDService):
         try:
             self.logger.info(f"Identifying sequence {record.id} using BOLD")
 
-            # Submit sequence to BOLD and get submission ID
-            sub_id = self._submit_sequence(record)
+            # Initialize BOLD ID service with configuration
+            bold_config = Config()
+            bold_config.config_data = {
+                'bold_database': 1,
+                'bold_timeout': 300,
+                'bold_params': {
+                    'mi': 0.8,
+                    'maxh': 100
+                }
+            }
+            bold_config.initialized = True
+            service = BOLDIDService(bold_config)
 
             # Wait for processing and get results
-            results = self._wait_for_and_get_results(sub_id, record.id)
-
+            results = service.identify_seqrecords([record])
             if not results:
                 self.logger.warning(f"No BOLD results found for sequence {record.id}")
                 return set()
