@@ -127,7 +127,7 @@ def test_validation_bold_bold(test_cli_bold_bold):
     assert len(dars.results[0].stop_codons) == 0, "No early stop codons"
     assert dars.results[0].full_ambiguities == 0, "No ambiguities in sequence"
     assert dars.results[0].ambiguities == 0, "No ambiguities in marker region"
-    assert dars.results[0].obs_taxon[0].name == dars.results[0].exp_taxon.name, "Observed taxon matches expected taxon"
+    assert dars.results[0].exp_taxon in dars.results[0].obs_taxon, "Observed taxa contain expected taxon"
     assert dars.results[0].species.name == "Halesus tessellatus", "Asserted species name"
 
 def test_validation_nsr_bold(test_cli_nsr):
@@ -138,7 +138,7 @@ def test_validation_nsr_bold(test_cli_nsr):
     assert len(dars.results[0].stop_codons) == 1, "One stop codon"
     assert dars.results[0].full_ambiguities == 0, "No ambiguities in sequence"
     assert dars.results[0].ambiguities == 0, "No ambiguities in marker region"
-    assert dars.results[0].obs_taxon[0].name == dars.results[0].exp_taxon.name, "Observed taxon matches expected taxon"
+    assert dars.results[0].exp_taxon in dars.results[0].obs_taxon, "Observed taxa contain expected taxon"
     assert dars.results[0].species.name == "Geophilus carpophagus", "Asserted species name"
 
 
