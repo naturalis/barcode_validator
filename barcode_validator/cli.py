@@ -56,20 +56,26 @@ results. If input sequences are grouped (e.g., by sample), the triage can be per
 case the longest valid sequence in each group is retained.
 
 Configuration parameters can be set using command line arguments. For nested parameters, use the format:
---section-name key=value (e.g., --taxonomic-validation min-identity=0.85)
+--section-name key=value
 
-Examples:
-  # Basic structural validation only
-  barcode_validator --input-file sequences.fasta --mode structural
+For example:
 
-  # Full validation with custom parameters
-  barcode_validator --input-file sequences.fasta --mode both \\
-    --taxonomic-validation min-identity=0.90 \\
-    --taxonomic-validation taxonomic-rank=genus \\
-    --reference-library database-path=/path/to/db
+   barcode_validator \
+            --input-file input_fasta_bold \
+            --mode both \
+            --marker COI-5P \
+            --exp-taxonomy-type bold \
+            --exp-taxonomy bold_excel \
+            --reflib-taxonomy-type bold \
+            --reflib-taxonomy bold_excel \
+            --output-format tsv \
+            --taxon-validation method=bold \
+            --taxon-validation rank=family \
+            --taxon-validation extent=class \
+            --triage-config group_id_separator=_ \
+            --triage-config group_by_sample=true \
+            --log-level ERROR > out.tsv
 
-  # Validation with triage and custom output
-  barcode_validator --input-file sequences.fasta --triage --output-format fasta
 """,
             formatter_class=argparse.RawTextHelpFormatter
         )
