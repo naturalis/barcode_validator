@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-INPUT_FILE=tests/data/dan_test.fasta
+
+# Usage: ./run.sh <input_file>
+INPUT_FILE=$1
 BOLD_EXCEL=tests/data/bold.xlsx
 
 python barcode_validator \
