@@ -280,7 +280,7 @@ class ValidationOrchestrator:
             tsv_file.write(results.to_string('tsv'))
 
         # Write FASTA for valid sequences
-        triaged = results.triage(mode)
+        triaged = results.triage(mode, self.config.get('triage_config.group_by_sample', False))
         with open(output_fasta, 'w') as fasta_file:
             fasta_file.write(triaged.to_string('fasta'))
 
