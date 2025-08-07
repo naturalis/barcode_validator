@@ -16,17 +16,17 @@ def data_dir():
 @pytest.fixture
 def input_fasta(data_dir):
     """Fixture to create a test FASTA file with sequences."""
-    fasta_path = data_dir / "mge_fastp_r13s100_nocontam.fasta"
+    fasta_path = data_dir / "five_test_processids.fasta"
     return str(fasta_path)
 
 @pytest.fixture
 def input_csv(data_dir):
-    csv_path = data_dir / "mge_fastp_r13s100_nocontam.csv"
+    csv_path = data_dir / "five_test_processids-stats.csv"
     return str(csv_path)
 
 @pytest.fixture
 def input_yaml(data_dir):
-    yaml_path = data_dir / "mge_fastp_r13s100_nocontam.yaml"
+    yaml_path = data_dir / "input.yaml"
     return str(yaml_path)
 
 @pytest.fixture
@@ -54,7 +54,7 @@ def cli_prepare_coi(input_fasta, bold_excel, input_csv, input_yaml):
             "barcode_validator",  # Program name
             "--input-file", input_fasta,
             "--csv-file", input_csv,
-            "--yaml-file", input_yaml,
+#            "--yaml-file", input_yaml,
             "--mode", "both",
             "--marker", "COI-5P",
             "--input-resolver", "format=bold",
