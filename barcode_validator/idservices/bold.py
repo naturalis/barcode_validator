@@ -128,8 +128,8 @@ class BOLD(IDService):
                 'bold_database': 1,
                 'bold_timeout': 300,
                 'bold_params': {
-                    'mi': 0.8,
-                    'maxh': 100
+                    'mi': self.min_identity,
+                    'maxh': self.max_target_seqs
                 }
             }
             bold_config.initialized = True
