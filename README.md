@@ -13,9 +13,8 @@ and to Naturalis's Core Sequence Cloud.
   - HMM-based alignment for codon phase detection
 
 - Taxonomic validation:
-  - BLAST-based validation against reference databases
-  - Flexible taxonomy mapping (NSR or BOLD)
-  - Integration with NCBI taxonomy
+  - Validation against ID service reference databases
+  - Flexible taxonomy mapping (NSR, NCBI or BOLD)
   - Support for multiple taxonomic ranks
 
 - Input/Output:
@@ -39,35 +38,28 @@ conda install -c bioconda barcode-validator blast hmmer
 
 ### Command Line Interface
 
-#### Case 1: Validating a FASTA file against BOLD taxonomy to generate a tabular report
+#### Case 1: Validating FASTA against BOLD taxonomy and perform triage for BGE submissions 
 
 ```bash
-python barcode_validator \
-  --input_file data/BGE00196_MGE-BGE_r1_1.3_1.5_s50_100.fasta \
-  --exp_taxonomy examples/bold.xlsx \
-  --exp_taxonomy_type bold \
-  --output_format tsv \
-  --mode both \
-  --log_level WARNING \
-  > results.tsv \
-  2> results.log
-```
 
-- `--input_file`: Path to the input FASTA file containing sequences to validate. The first word in the header line 
-  should be the BOLD process ID, followed by an underscore '_', and then a suffix that makes the sequence unique.
-  (The underscore separator can be changed in the configuration file under `group_id_separator`).
-- `--exp_taxonomy`: Path to the 'expected taxonomy' file, i.e. what the sequences are expected to be. In this case,
-    this is a BOLD spreadsheet in Excel format.
-- `--exp_taxonomy_type`: Type of expected taxonomy, either `nsr` (Nederlands Soortenregister) or `bold`. In this case,
-   we are using `bold` to validate against the BOLD database.
-- `--output_format`: Format of the output report. Options are `tsv` (tab-separated values) or `fasta` (filtered FASTA).
-   In this case, we are generating a tabular (tsv) report.
-- `--mode`: Validation mode. Options are `structural`, `taxonomic`, or `both`. In this case, we are validating both 
-  structural and taxonomic aspects of the sequences.
-- `--log_level`: Set the logging level. Options are `DEBUG`, `INFO`, `WARNING`, `ERROR`, or `CRITICAL`. In this case,
-  we are setting it to `WARNING` to only log warnings and errors.
-- `> results.tsv`: Redirects the output to a file named `results.tsv`.
-- `2> results.log`: Redirects warnings and error messages to a file named `results.log`.
+python barcode_validator \
+  --input-file <input_fasta> \
+  --csv-file <input_csv> \
+  --yaml-file <input_yaml> \
+  --mode both \
+  --marker COI-5P \
+  --input-resolver format=bold \
+  --input-resolver file=<bold_excel> \
+  --output-fasta <output_fasta> \
+  --output-tsv <output_tsv> \
+  --taxon-validation method=bold \
+  --taxon-validation rank=family \
+  --taxon-validation min_identity=0.8 \
+  --taxon-validation max_target_seqs=100 \
+  --triage-config group_id_separator=_ \
+  --triage-config group_by_sample=true \
+  --log-level ERROR 2> <log_file>
+```
 
 ### Galaxy Integration
 
