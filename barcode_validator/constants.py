@@ -1,7 +1,15 @@
 from enum import Enum
 
+# This file maintains constants that are passed around through the application.
+# The general flow is that the variables that users provided are anchored on the
+# schema.yaml, and prepared and validated as command line arguments by schema_config.py.
+# There, cli.py picks them up from user input on the command line and passes them on
+# to orchestrator.py. The orchestrator then translates the 'dirty' input from users
+# into the constants that are defined here. Beyond that, other classes should therefore
+# NOT by dealing with dirty strings or config variables (ok, beyond logging verbosity).
+
 class RefDB(Enum):
-    NCBI = "ncbi"
+    BLAST = "blast"
     BOLD = "bold"
 
 class TaxonomicRank(Enum):
@@ -15,7 +23,7 @@ class TaxonomicRank(Enum):
     SPECIES = "species"
 
 class TaxonomicBackbone(Enum):
-    NSR = "nsr"    # NSR taxonomy from DwC-A
+    DWC = "dwc"    # NSR taxonomy from DwC-A
     BOLD = "bold"  # BOLD taxonomy from Excel
     NCBI = "ncbi"  # NCBI taxonomy from taxdump
 
