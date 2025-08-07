@@ -15,7 +15,7 @@ from .idservice import IDService
 from copy import deepcopy
 
 
-class NCBI(IDService):
+class BLAST(IDService):
     """
     Runs BLAST searches and parses results for taxonomic validation.
 
@@ -32,21 +32,6 @@ class NCBI(IDService):
         super().__init__(config)
         self.taxonomy_resolver: TaxonResolver = Optional[TaxonResolver]
         self.blastn: Blastn = Optional[Blastn]
-
-        # Set the BLASTDB environment variable if not already set and if blast_db is in config
-        blast_db = config.get('reference_library.database_path', None)
-
-        if blast_db is not None:
-            # Get the directory containing the blast database files
-            blast_db_dir = str(Path(blast_db).parent)
-
-            # Check if BLASTDB environment variable is set
-            if 'BLASTDB' not in os.environ:
-                # Set BLASTDB to the database directory
-                os.environ['BLASTDB'] = blast_db_dir
-
-        if blast_db is None:
-            self.logger.warning("Config variable `blast_db` is not set. BLAST searches may fail.")
 
     def run_localblast(self, sequence: SeqRecord, constraint: int) -> Optional[str]:
         """
@@ -186,19 +171,7 @@ class NCBI(IDService):
 
     def set_blastn(self, blastn) -> None:
         """
-        Assign BLASTN object to the IDService. Configure it further. Test environment variables.
-        :param blastn: an instance of Blastn class.
+        Assign BLASTN object to the IDService. This must have been configured by the orchestrator.
+        :param blastn: A fully configured instance of Blastn class.
         """
         self.blastn = blastn
-
-        # Configure BLASTN beyond what the orchestrator has done
-        self.blastn.set_task('megablast')
-        self.blastn.set_outfmt("6 qseqid sseqid pident length qstart qend sstart send evalue bitscore staxids")
-
-        # Immediately check for the environment variables
-        blastdb = os.environ.get("BLASTDB")
-        lmdb_map_size = os.environ.get("BLASTDB_LMDB_MAP_SIZE")
-        if not blastdb:
-            self.logger.warning("Environment variable 'BLASTDB' is not set.")
-        if not lmdb_map_size:
-            self.logger.warning("Environment variable 'BLASTDB_LMDB_MAP_SIZE' is not set.")
