@@ -530,7 +530,7 @@ class DNAAnalysisResultSet:
         if output_format.lower() == 'tsv':
             return str(self)
         elif output_format.lower() == 'fasta':
-            return "\n".join([f">{result.sequence_id}\n{result.data['nuc']}" for result in self.results])
+            return "\n".join([f">{result.sequence_id}\n{result.data['ancillary']['nuc']}" for result in self.results])
         else:
             raise ValueError(f"Output format '{output_format}' not supported")
 
