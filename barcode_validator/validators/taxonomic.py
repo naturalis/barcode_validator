@@ -73,7 +73,7 @@ class TaxonomicValidator(AbstractValidator):
             reflib_constraint
         )
         if not observed_taxa:
-            result.error = 'BLAST search failed'
+            result.error = f'ID service {self.idservice} search failed'
             return
 
         # Store observed taxa in result
