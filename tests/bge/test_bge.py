@@ -11,7 +11,7 @@ from barcode_validator.cli import BarcodeValidatorCLI
 def data_dir():
     """Fixture to provide the test data directory."""
     # This assumes tests are run from the project root
-    return Path("new_tests/bge/data")
+    return Path("tests/bge/data")
 
 @pytest.fixture
 def input_fasta(data_dir):
