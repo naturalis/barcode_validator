@@ -4,7 +4,7 @@ import pytest
 from Bio.SeqIO import parse
 from nbitk.config import Config
 from nbitk.Tools import Blastn
-from barcode_validator.idservices.ncbi import NCBI
+from barcode_validator.idservices.ncbi import BLAST
 from barcode_validator.resolvers.factory import ResolverFactory
 from barcode_validator.resolvers.taxonomy import TaxonomicRank, TaxonResolver, TaxonomicBackbone
 
@@ -68,7 +68,7 @@ def taxonomy_resolver(config):
 @pytest.fixture
 def ncbi(config, blastn, taxonomy_resolver):
     """Fixture providing NCBI instance"""
-    ncbi = NCBI(config)
+    ncbi = BLAST(config)
     ncbi.set_blastn(blastn)
     ncbi.set_taxonomy_resolver(taxonomy_resolver)
     return ncbi
