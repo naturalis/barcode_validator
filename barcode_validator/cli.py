@@ -3,6 +3,8 @@ import sys
 import logging
 from pathlib import Path
 from nbitk.logger import get_formatted_logger
+
+from barcode_validator.constants import ValidationMode
 from .orchestrator import ValidationOrchestrator
 from .dna_analysis_result import DNAAnalysisResultSet
 from barcode_validator.config.schema_config import SchemaConfig
@@ -60,21 +62,24 @@ Configuration parameters can be set using command line arguments. For nested par
 
 For example:
 
-   barcode_validator \
-            --input-file input_fasta_bold \
-            --mode both \
-            --marker COI-5P \
-            --exp-taxonomy-type bold \
-            --exp-taxonomy bold_excel \
-            --reflib-taxonomy-type bold \
-            --reflib-taxonomy bold_excel \
-            --output-format tsv \
-            --taxon-validation method=bold \
-            --taxon-validation rank=family \
-            --taxon-validation extent=class \
-            --triage-config group_id_separator=_ \
-            --triage-config group_by_sample=true \
-            --log-level ERROR > out.tsv
+    python barcode_validator \
+      --input-file $INPUT_FILE \
+      # --csv-file $CSV_FILE \ # if you have CSV output from MGE it will join its lines with the input by sequence ID
+      # --yaml-file $YAML_FILE \ # if you have batch-level metadata in YAML format it will paste it across all output lines
+      --mode both \
+      --marker COI-5P \
+      --exp-taxonomy-type bold \
+      --exp-taxonomy $BOLD_EXCEL \
+      # --reflib-taxonomy-type bold \   # this is for when you have a local BLAST DB that needs to be mapped back to taxonomy tree, i.e. not needed for BOLD web service actually
+      # --reflib-taxonomy $BOLD_EXCEL \ # same, see one line above
+      --output-fasta $OUTPUT_FASTA \
+      --output-tsv $OUTPUT_TSV \
+      --taxon-validation method=bold \
+      --taxon-validation rank=family \
+      # --taxon-validation extent=class \ # this is for when you have a local BLAST DB that is taxonomically aware so that you can constrain the search space. Not needed for BOLD
+      --triage-config group_id_separator=_ \
+      --triage-config group_by_sample=true \
+      --log-level ERROR 2> out.log
 
 """,
             formatter_class=argparse.RawTextHelpFormatter
@@ -124,13 +129,14 @@ For example:
             )
 
             # Write results
-            output_format = self.config.get('output_format')
-            triage = self.config.get('triage')
-
+            output_fasta = self.config.get('output_fasta')
+            output_tsv = self.config.get('output_tsv')
+            mode = ValidationMode(self.config.get('mode', 'both'))
             orchestrator.write_results(
                 results,
-                output_format,
-                triage
+                output_fasta,
+                output_tsv,
+                mode
             )
             return results
 
