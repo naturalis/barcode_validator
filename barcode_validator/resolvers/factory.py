@@ -17,11 +17,11 @@ class ResolverFactory:
         :param backbone_type: Enum value of TaxonomicBackbone.
         :return: TaxonResolver object or None if the backbone taxonomy type is not supported.
         """
-        if backbone_type.value == TaxonomicBackbone.NSR.value:
+        if backbone_type == TaxonomicBackbone.DWC:
             tr = NSRResolver(config)
-        elif backbone_type.value == TaxonomicBackbone.BOLD.value:
+        elif backbone_type == TaxonomicBackbone.BOLD:
             tr = BoldResolver(config)
-        elif backbone_type.value == TaxonomicBackbone.NCBI.value:
+        elif backbone_type == TaxonomicBackbone.NCBI:
             tr = NCBIResolver(config)
         else:
             return None
