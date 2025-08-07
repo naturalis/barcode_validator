@@ -530,7 +530,7 @@ class DNAAnalysisResultSet:
         if output_format.lower() == 'tsv':
             return str(self)
         elif output_format.lower() == 'fasta':
-            return "\n".join([f">{result.sequence_id}\n{result.data['sequence']}" for result in self.results])
+            return "\n".join([f">{result.sequence_id}\n{result.data['nuc']}" for result in self.results])
         else:
             raise ValueError(f"Output format '{output_format}' not supported")
 
@@ -581,7 +581,7 @@ class DNAAnalysisResultSet:
                         if key != 'ID':  # Avoid duplicating the process_id
                             result.add_ancillary(key, value)
 
-    def triage(self, mode = ValidationMode) -> 'DNAAnalysisResultSet':
+    def triage(self, mode: ValidationMode, aggregate: bool = False) -> 'DNAAnalysisResultSet':
         """
         Perform triage on the result set.
         :return: A new DNAAnalysisResultSet object containing the triaged results
@@ -593,4 +593,20 @@ class DNAAnalysisResultSet:
         else:
             triaged_results = [result for result in self.results if result.passes_all_checks()]
 
-        return DNAAnalysisResultSet(triaged_results, self.config)
+        if aggregate:
+
+            # Pick the longest sequence for each group_id
+            aggregated = {}
+            for item in triaged_results:
+                group_id = item.group_id
+                if group_id not in aggregated or item.seq_length > aggregated[group_id].seq_length:
+                    aggregated[group_id] = item
+            filtered_results = list(aggregated.values())
+
+            # Specify that this is a BOLD submission
+            for item in filtered_results:
+                item.add_ancillary('BOLD_submission', item.group_id)
+
+            return DNAAnalysisResultSet(filtered_results, self.config)
+        else:
+            return DNAAnalysisResultSet(triaged_results, self.config)
