@@ -11,7 +11,7 @@ class NSRResolver(TaxonResolver):
         self.parser = Parser(None)
 
     def get_type(self) -> TaxonomicBackbone:
-        return TaxonomicBackbone.NSR
+        return TaxonomicBackbone.DWC
 
     def check_id(self, id_string: str, node: Taxon) -> bool:
         """
