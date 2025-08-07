@@ -1,4 +1,7 @@
+# BGE Barcode Validator Tests
+
 These tests are to ensure proper functioning of the application for BGE. This means the following:
+- 
 - input data is [FASTA](data/five_test_processids.fasta) where the first word is the process ID + '_' + assembly attempt ID
 - ancillary input consists of a [CSV](data/five_test_processids-stats.csv) file where the ID column is the process ID
 - input taxonomy is a BOLD spreadsheet with 'Lab Sheet' and 'Taxonomy' tabs in [XLSX](data/bold.xlsx) format
@@ -28,19 +31,22 @@ python barcode_validator \
   --log-level ERROR 2> <log_file>
 ```
 
-Questions:
+This produces a [FASTA](data/bge_out.fasta) file with the longest valid sequence for each process ID, and a 
+[TSV](data/bge_out.tsv) file with the validation results, including the taxonomic validation results from BOLD.
 
-# Are the ancillary input files required?
+# Questions:
 
-The CSV and YAML files can be omitted but it is strongly recommended that they are there for consistency's sake.
+## Are the ancillary input files required?
 
-# Is the BOLD spreadsheet required?
+The CSV file can be omitted but it is strongly recommended that it is there for consistency's sake.
+
+## Is the BOLD spreadsheet required?
 
 Yes, and it must be up to date.  Attempting to validate specimens that have not yet been registered will fail.
-A theoretical fallback option is to Frankenstein a BOLD spreadsheet like file with your own 'Lab Sheet' and
+A theoretical fallback option is to Frankenstein a BOLD spreadsheet-like file with your own 'Lab Sheet' and
 'Taxonomy' tabs with the intended lineages. Thoughts and prayers for those that attempt this manually.
 
-# What's the roadmap for other markers?
+## What's the roadmap for other markers?
 
 For protein-coding markers (e.g. matK, rbcL), additional HMMs need to be produced and added to the hmm_files folder,
 with the naming convention matK.hmm, rbcL.hmm, and so on.
@@ -52,7 +58,7 @@ For both coding and non-coding markers, the validation criteria will need to be 
 placeholder settings for sequence length, number of ambiguities, and so on. Whether these are appropriate is to
 be determined. This will mean sticking some numbers in criteria.py in the right place so it is fairly painless.
 
-# How about other taxon validation services?
+## How about other taxon validation services?
 
 Local BLAST is hard to get right and make it perform well enough. It works but since BOLD works better in basically
 all aspects we don't plan to spend time on it.
@@ -60,7 +66,7 @@ all aspects we don't plan to spend time on it.
 Remote BLAST is an option that may be fairly easy to implement because the BLASTN wrapper from nbitk can be set to
 remote, but this is untested and doesn't seem needed, for reasons stated above.
 
-# How is triaging done?
+## How is triaging done?
 
 Within each group of assembly attempts, we simply pick the longest valid sequence. Arguably there are more 
 sophisticated criteria but how to rank them (e.g. is the next longest one with fewer ambiguities better) is
