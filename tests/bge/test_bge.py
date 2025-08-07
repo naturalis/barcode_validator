@@ -36,7 +36,7 @@ def bold_excel(data_dir):
     return str(bold_path)
 
 @pytest.fixture
-def cli_prepare_coi(input_fasta, bold_excel, input_csv, input_yaml):
+def cli_prepare_coi(input_fasta, bold_excel, input_csv, input_yaml, data_dir):
     """Fixture to run the CLI command."""
 
     # Save the original environment
@@ -59,8 +59,8 @@ def cli_prepare_coi(input_fasta, bold_excel, input_csv, input_yaml):
             "--marker", "COI-5P",
             "--input-resolver", "format=bold",
             "--input-resolver", f"file={bold_excel}",
-            "--output-fasta", "bge_out.fasta",
-            "--output-tsv", "bge_out.tsv",
+            "--output-fasta", f"{data_dir}/bge_out.fasta",
+            "--output-tsv", f"{data_dir}/bge_out.tsv",
             "--taxon-validation", "method=bold",
             "--taxon-validation", "rank=family",
             "--taxon-validation", "min_identity=0.8",
