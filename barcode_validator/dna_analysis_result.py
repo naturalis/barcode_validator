@@ -566,7 +566,7 @@ class DNAAnalysisResultSet:
         with open(file, 'r', newline='') as csvfile:
             reader = csv.DictReader(csvfile)
             # Update columns first with all possible fields from CSV
-            columns.update(field for field in reader.fieldnames if field != 'Process ID')
+            columns.update(field for field in reader.fieldnames if field != 'ID')
 
             # Reset file pointer to start
             csvfile.seek(0)
@@ -574,11 +574,11 @@ class DNAAnalysisResultSet:
 
             # Then add data to each result
             for row in reader:
-                process_id = row['Process ID']
+                process_id = row['ID']
                 if process_id in process_id_to_result:
                     result = process_id_to_result[process_id]
                     for key, value in row.items():
-                        if key != 'Process ID':  # Avoid duplicating the process_id
+                        if key != 'ID':  # Avoid duplicating the process_id
                             result.add_ancillary(key, value)
 
     def triage(self, mode = ValidationMode) -> 'DNAAnalysisResultSet':
