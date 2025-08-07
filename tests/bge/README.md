@@ -1,6 +1,6 @@
 These tests are to ensure proper functioning of the application for BGE. This means the following:
 - input data is [FASTA](data/five_test_processids.fasta) where the first word is the process ID + '_' + assembly attempt ID
-- ancillary input consists of [CSV](data/five_test_processids-stats.csv) files and YAML files
+- ancillary input consists of a [CSV](data/five_test_processids-stats.csv) file where the ID column is the process ID
 - input taxonomy is a BOLD spreadsheet with 'Lab Sheet' and 'Taxonomy' tabs in [XLSX](data/bold.xlsx) format
 - structural validation is performed, initially for COI, and soon for other markers
 - taxonomic validation is performed with the BOLD web service
@@ -13,7 +13,6 @@ The invocation of the tool as applied to this use case is as follows:
 python barcode_validator \
   --input-file <input_fasta> \
   --csv-file <input_csv> \
-  --yaml-file <input_yaml> \
   --mode both \
   --marker COI-5P \
   --input-resolver format=bold \
