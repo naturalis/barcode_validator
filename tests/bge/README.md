@@ -1,7 +1,7 @@
 These tests are to ensure proper functioning of the application for BGE. This means the following:
-- input data is FASTA where the first word is the process ID + '_' + assembly attempt ID
-- ancillary input consists of CSV files and YAML filess
-- input taxonomy is a BOLD spreadsheet with 'Lab Sheet' and 'Taxonomy' tabs in XLSX format
+- input data is [FASTA](data/mge_fastp_r13s100_nocontam.fasta) where the first word is the process ID + '_' + assembly attempt ID
+- ancillary input consists of [CSV](data/mge_fastp_r13s100_nocontam.csv) files and [YAML](data/mge_fastp_r13s100_nocontam.yaml) filess
+- input taxonomy is a BOLD spreadsheet with 'Lab Sheet' and 'Taxonomy' tabs in [XLSX](data/bold.xlsx) format
 - structural validation is performed, initially for COI, and soon for other markers
 - taxonomic validation is performed with the BOLD web service
 - triage is performed with grouping by assembly attempt IDs
