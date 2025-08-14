@@ -4,6 +4,7 @@ from barcode_validator.idservices.idservice import IDService
 from barcode_validator.constants import RefDB
 from barcode_validator.idservices.blast import BLAST
 from barcode_validator.idservices.bold import BOLD
+from barcode_validator.idservices.galaxy_blast import GalaxyBLAST
 
 class IDServiceFactory:
 
@@ -13,4 +14,6 @@ class IDServiceFactory:
             return BLAST(config)
         elif refdb == RefDB.BOLD:
             return BOLD(config)
+        elif refdb == RefDB.GALAXY:
+            return GalaxyBLAST(config)
         return None
