@@ -115,8 +115,8 @@ taxon_validation:
   method:
     type: str
     default: "bold"
-    choices: ["bold", "blast"]
-    help: "Method for taxonomic validation: local NCBI BLAST or BOLD ID service"
+    choices: ["bold", "blast", "galaxy"]
+    help: "Method for taxonomic validation: local NCBI BLAST, Galaxy or BOLD ID service"
 
 # If there are any returned matches where the ancestor at this rank matches the input, then the sequence is considered
 # valid. So, by default, if the same family is among any of the hits, we assume that the input sequence wasn't a
