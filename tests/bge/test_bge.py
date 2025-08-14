@@ -6,6 +6,7 @@ import sys
 
 from barcode_validator.cli import BarcodeValidatorCLI
 
+# do I still work?
 
 @pytest.fixture
 def data_dir():
