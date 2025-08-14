@@ -11,6 +11,7 @@ from enum import Enum
 class RefDB(Enum):
     BLAST = "blast"
     BOLD = "bold"
+    GALAXY = "galaxy"
 
 class TaxonomicRank(Enum):
     KINGDOM = "kingdom"
