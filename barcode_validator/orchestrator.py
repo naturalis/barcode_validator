@@ -211,7 +211,7 @@ class ValidationOrchestrator:
         """
         suffix = file_path.suffix.lower()
 
-        if suffix in ['.fa', '.fasta', '.fna']:
+        if suffix in ['.fa', '.fasta', '.fna', '.fas']:
             self.logger.info(f"Parsing FASTA file: {file_path}")
             yield from SeqIO.parse(file_path, 'fasta')
 
