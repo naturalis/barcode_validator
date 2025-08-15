@@ -43,7 +43,7 @@ def bold_excel(data_dir):
     return str(bold_path)
 
 @pytest.fixture
-def taxdump(data_dir):
+def taxdump():
     # URL of the NCBI taxonomy dump
     url = "http://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz"
 
@@ -59,7 +59,9 @@ def taxdump(data_dir):
 
         # Get the path of the temporary file
         tar_path = temp_file.name
-        yield tar_path
+
+    # Yield the opened tar file
+    yield tar_path
 
     # Clean up
     os.unlink(tar_path)
@@ -107,7 +109,7 @@ def cli_prepare_coi(input_fasta, bold_excel, data_dir, taxdump):
         sys.argv = original_argv
         os.chdir(original_dir)
 
-def test_arise_coi(cli_prepare_coi):
+def test_galaxy_coi(cli_prepare_coi):
     """Test struct/taxon validation with BOLD data against BOLD web service."""
     dars = cli_prepare_coi.run()
     assert dars is not None, "Validation results should not be None"
