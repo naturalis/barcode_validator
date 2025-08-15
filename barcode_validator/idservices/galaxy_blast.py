@@ -1,7 +1,8 @@
 import tempfile
 import os
 from pathlib import Path
-
+import requests
+import json
 from Bio import SeqIO
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
@@ -64,7 +65,7 @@ class GalaxyBLAST(BLAST):
                 input_file = temp_input_name,
                 databases = ["Genbank CO1 (2023-11-15)"],
                 max_target_seqs = self.max_target_seqs,
-                output_format = OutputFormat.TABULAR,
+                output_format = OutputFormat.CUSTOM_TAXONOMY,
                 taxonomy_method = TaxonomyMethod.DEFAULT,
                 coverage = 80.0,
                 identity = self.min_identity * 100
@@ -75,7 +76,7 @@ class GalaxyBLAST(BLAST):
             self.logger.error(f"Error running BLAST: {e}")
             return None
 
-    def parse_blast_result(self, blast_result: str) -> Set[int]:
+    def parse_blast_result(self, blast_result: str) -> Set[str]:
         """
         Parse BLAST results and collect distinct taxa at specified rank.
 
@@ -84,53 +85,68 @@ class GalaxyBLAST(BLAST):
         """
 
         # Parse BLAST results
-        distinct_taxids = set()
+        distinct_names = set()
         with open(blast_result, 'r') as file:
             for line in file:
                 columns = line.strip().split('\t')
                 if columns:
-                    taxid_field = columns[-1]
-                    taxids = taxid_field.split(';')
-                    distinct_taxids.update(int(taxid.strip()) for taxid in taxids if taxid.strip())
+                    lineage_field = columns[-1]
+                    if lineage_field.startswith('#'):
+                        # Skip header lines
+                        continue
+                    lineage = lineage_field.split(' / ')
+                    family = lineage[-3]
+                    distinct_names.add(family.strip())
 
-        self.logger.info(f'{len(distinct_taxids)} distinct taxids found in BLAST result')
-        self.logger.debug(distinct_taxids)
+        self.logger.info(f'{len(distinct_names)} distinct family names found in BLAST result')
+        self.logger.debug(distinct_names)
 
-        return distinct_taxids
+        return distinct_names
 
-    def collect_higher_taxa(self, taxids: Set[int], level: TaxonomicRank) -> Set[Taxon]:
+    def get_taxon_id_by_family(self, family_name):
+        # Search for the family name in NCBI Taxonomy
+        base_url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
+
+        # Step 1: Search for the family
+        search_url = f"{base_url}esearch.fcgi"
+        search_params = {
+            'db': 'taxonomy',
+            'term': f'{family_name}[family]',
+            'retmode': 'json',
+            'retmax': 10  # Limit results
+        }
+        response = requests.get(search_url, params=search_params)
+        search_data = response.json()
+        self.logger.debug(f"Search response for family '{family_name}': {search_data}")
+
+        # Parse the search results
+        if 'esearchresult' in search_data and search_data['esearchresult']['idlist']:
+            taxon_ids = search_data['esearchresult']['idlist']
+
+            return taxon_ids
+
+        return None
+
+    def collect_higher_taxa(self, families: Set[str], level: TaxonomicRank) -> Set[Taxon]:
         """
         Collect distinct higher taxa at specified rank from set of taxids.
 
-        :param taxids: Set of NCBI taxonomy IDs
+        :param families: Set of NCBI family names
         :param level: Taxonomic level to collect
         :return: List of distinct taxa at specified rank
         """
         # Collect tips with matching taxids
-        tips = []
-        for taxon_id in taxids:
-            taxon = self.taxonomy_resolver.find_nodes(str(taxon_id))
-            if len(taxon) == 0:
-                self.logger.warning(f"No taxon found for taxon ID '{taxon_id}'")
-                continue
-            elif len(taxon) > 1:
-                self.logger.warning(f"Multiple taxons found for taxon ID '{taxon_id}': {taxon}")
-                continue
-            else:
-                taxon = taxon[0]
-                self.logger.debug(f"Found taxon '{taxon}' for taxon ID '{taxon_id}'")
-                tips.append(taxon)
-        self.logger.info(f'Found {len(tips)} tips for {len(taxids)} taxids in tree')
-
-        # Collect distinct taxa at specified rank
         taxa = set()
-        for tip in tips:
-            taxon = self.taxonomy_resolver.find_ancestor_at_rank(tip, level)
-            if taxon:
-                taxa.add(taxon)
-                self.logger.debug(f"Found ancestor '{taxon}' for '{tip}'")
+        for name in families:
+            taxon_ids = self.get_taxon_id_by_family(name)
+            if not taxon_ids:
+                self.logger.warning(f"Could not find taxon ID for family '{name}'")
+                continue
             else:
-                self.logger.warning(f"No {level} ancestor found for '{tip}'")
+                for taxon_id in taxon_ids:
+                    taxa.add(Taxon(name=name, taxonomic_rank=level.value, guids={'taxon': taxon_id}))
+
+
         self.logger.info(f'Collected {len(taxa)} higher taxa')
         return taxa
 
@@ -155,13 +171,13 @@ class GalaxyBLAST(BLAST):
         # Run BLAST
         results = self.run_localblast(record, constraint)
         blast_report = results['blast_output_fasta']
-        distinct_taxids = self.parse_blast_result(f"{blast_report}.tsv")
-        higher_taxa = self.collect_higher_taxa(distinct_taxids, level)
+        distinct_names = self.parse_blast_result(blast_report)
+        higher_taxa = self.collect_higher_taxa(distinct_names, level)
 
         # Clean up temporary files
         try:
-            os.unlink(blast_report)
-            os.unlink(f"{blast_report}.tsv")
+            os.unlink(results['blast_output_fasta'])
+            os.unlink(results['log_output'])
         except OSError as e:
             self.logger.warning(f"Error cleaning up temporary files: {e}")
 
