@@ -485,7 +485,7 @@ class ProteinCodingValidator(StructuralValidator):
             if phylum == 'Chordata':
                 if tax_class == 'Ascidiacea':
                     return 13
-                elif tax_class in ['Actinopteri', 'Amphibia', 'Mammalia', 'Aves', 'Reptilia']:
+                elif tax_class in ['Actinopteri', 'Actinopterygii', 'Amphibia', 'Mammalia', 'Aves', 'Reptilia']:
                     return 2
 
             elif phylum == 'Hemichordata':
