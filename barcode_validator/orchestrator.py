@@ -274,14 +274,17 @@ class ValidationOrchestrator:
         :param output_tsv: Output TSV file path for results
         :param mode: Validation mode (e.g., 'both', 'taxonomic', 'structural')
         """
+        # We do the triage first so that the TSV output will contain any applicable descriptive error
+        # Write FASTA for valid sequences
+        triaged = results.triage(mode, self.config.get('triage_config.group_by_sample', False))
+        with open(output_fasta, 'w') as fasta_file:
+            fasta_file.write(triaged.to_string('fasta'))
+
         # Write TSV results
         self.logger.info(f"Writing results")
         with open(output_tsv, 'w', newline='\n') as tsv_file:
             tsv_file.write(results.to_string('tsv'))
 
-        # Write FASTA for valid sequences
-        triaged = results.triage(mode, self.config.get('triage_config.group_by_sample', False))
-        with open(output_fasta, 'w') as fasta_file:
-            fasta_file.write(triaged.to_string('fasta'))
+
 
 
