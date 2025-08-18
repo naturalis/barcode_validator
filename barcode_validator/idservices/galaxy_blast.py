@@ -63,7 +63,7 @@ class GalaxyBLAST(BLAST):
             # Run BLAST using nbitk wrapper
             result = self.blastn.run_blast(
                 input_file = temp_input_name,
-                databases = ["Genbank CO1 (2023-11-15)"],
+                databases = ["BOLD species only no duplicates"],
                 max_target_seqs = self.max_target_seqs,
                 output_format = OutputFormat.CUSTOM_TAXONOMY,
                 taxonomy_method = TaxonomyMethod.DEFAULT,
