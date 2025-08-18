@@ -406,14 +406,48 @@ class DNAAnalysisResult:
         """
         if self.marker_criteria is None:
             raise ValueError("Marker criteria is not set")
-        return self.seq_length >= int(self.marker_criteria.min_length) if self.seq_length is not None else False
+        sequence_ok = False
+        error = None
+        if self.seq_length is None:
+            error = "Sequence length was not computed, could not perform length check."
+            sequence_ok = False
+        elif self.seq_length < int(self.marker_criteria.min_length):
+            error = f"Sequence length is less than the minimum required length ({self.marker_criteria.min_length}). "
+            sequence_ok = False
+        else:
+            sequence_ok = True
+        if not sequence_ok:
+            msg = self.error
+            if msg is None:
+                msg = ""
+            self.error = msg + error
+        return sequence_ok
 
     def check_taxonomy(self) -> bool:
         """
         Check if expected taxon is in the observed taxon list.
         :return: A boolean indicating whether the taxonomy check passed
         """
-        return self.exp_taxon in [taxon for taxon in self.obs_taxon] if self.obs_taxon and self.exp_taxon else False
+        error = None
+        sequence_ok = False
+        if not self.exp_taxon:
+            error = "Expected taxon is not set, cannot perform taxonomy check."
+            sequence_ok = False
+        elif not self.obs_taxon:
+            error = "No taxa observed via ID service, cannot perform taxonomy check."
+            sequence_ok = False
+        elif self.exp_taxon not in self.obs_taxon:
+            error = f"Expected taxon not found in observed taxa."
+            sequence_ok = False
+        else:
+            sequence_ok = True
+        if not sequence_ok:
+            msg = self.error
+            if msg is None:
+                msg = ""
+            self.error = msg + error
+        return sequence_ok
+
 
     def check_pseudogene(self) -> bool:
         """
@@ -422,7 +456,13 @@ class DNAAnalysisResult:
         """
         if self.marker_criteria is None:
             raise ValueError("Marker criteria is not set")
-        return len(self.stop_codons) <= self.marker_criteria.max_stop_codons
+        sequence_ok = len(self.stop_codons) <= self.marker_criteria.max_stop_codons
+        if not sequence_ok:
+            msg = self.error
+            if msg is None:
+                msg = ""
+            self.error = msg + f"Number of stop codons exceeds the maximum allowed ({self.marker_criteria.max_stop_codons}). "
+        return sequence_ok
 
     def check_ambiguities(self) -> bool:
         """
@@ -431,7 +471,22 @@ class DNAAnalysisResult:
         """
         if self.marker_criteria is None:
             raise ValueError("Marker criteria is not set")
-        return self.ambiguities <= self.marker_criteria.max_ambiguities
+        error = None
+        sequence_ok = False
+        if self.ambiguities is None:
+            error = "Number of ambiguities was not computed, could not perform ambiguity check."
+            sequence_ok = False
+        elif self.ambiguities > self.marker_criteria.max_ambiguities:
+            error = f"Number of ambiguities exceeds the maximum allowed ({self.marker_criteria.max_ambiguities}). "
+            sequence_ok = False
+        else:
+            sequence_ok = True
+        if not sequence_ok:
+            msg = self.error
+            if msg is None:
+                msg = ""
+            self.error = msg + error
+        return sequence_ok
 
     def check_seq_quality(self) -> bool:
         """
