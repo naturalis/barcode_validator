@@ -489,7 +489,7 @@ class DNAAnalysisResult:
             sequence_ok = False
 
         # Too many. Make this configurable. Generate error message.
-        elif ambiguities > self.marker_criteria.max_ambiguities:
+        elif int(ambiguities) > self.marker_criteria.max_ambiguities:
             error = f"Number of ambiguities exceeds the maximum allowed ({self.marker_criteria.max_ambiguities}). "
             sequence_ok = False
         else:
