@@ -55,6 +55,7 @@ def cli_prepare_coi(input_fasta, bold_excel, data_dir):
             "--taxon-validation", "min_identity=0.8",
             "--taxon-validation", "max_target_seqs=100",
             "--triage-config", "group_by_sample=false",
+            "--criteria", "max_ambiguities=6",
             "--log-level", "ERROR"
         ]
         cli = BarcodeValidatorCLI()
