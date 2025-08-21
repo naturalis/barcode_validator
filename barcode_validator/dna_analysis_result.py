@@ -467,16 +467,29 @@ class DNAAnalysisResult:
     def check_ambiguities(self) -> bool:
         """
         Check if the sequence contains ambiguities, i.e. if the number of ambiguities is zero.
+        Note that here we may need to check the original ambiguities in the input sequence.
+        When the assembly is somehow segmented or falls short of the barcode region, yet is
+        aligned against an HMM, the alignment is padded with Ns, which mustn't be counted.
         :return: A boolean indicating whether the sequence contains ambiguities
         """
         if self.marker_criteria is None:
             raise ValueError("Marker criteria is not set")
         error = None
-        sequence_ok = False
-        if self.ambiguities is None:
+
+        # Check if original ambiguities were stored separately before handling
+        # segmented HMMs, else use the property, for non-coding genes
+        if 'ambig_original' in self.data['ancillary']:
+            ambiguities = self.data['ancillary']['ambig_original']
+        else:
+            ambiguities = self.ambiguities
+
+        # Ambiguities not set
+        if ambiguities is None:
             error = "Number of ambiguities was not computed, could not perform ambiguity check."
             sequence_ok = False
-        elif self.ambiguities > self.marker_criteria.max_ambiguities:
+
+        # Too many. Make this configurable. Generate error message.
+        elif ambiguities > self.marker_criteria.max_ambiguities:
             error = f"Number of ambiguities exceeds the maximum allowed ({self.marker_criteria.max_ambiguities}). "
             sequence_ok = False
         else:
