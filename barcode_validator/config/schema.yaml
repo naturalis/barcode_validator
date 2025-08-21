@@ -58,6 +58,26 @@ marker:
   choices: ["COI-5P", "matK", "rbcL", "ITS", "ITS2"]
   help: "Marker type for DNA barcode validation"
 
+# Validation criteria
+criteria:
+
+  # Programmer hint: these correspond with the fields in the config object that is
+  # passed to the MarkerCriteria constructor
+  min_length:
+    type: int
+    required: false
+    help: "Sets a minimum length criterion other than the marker default"
+
+  max_ambiguities:
+    type: int
+    required: false
+    help: "Sets a maximum number of ambiguous bases other than the marker default"
+
+  max_stop_codons:
+    type: int
+    required: false
+    help: "Sets a maximum number of stop codons other than the marker default"
+
 # Input Taxonomy Configuration. The input taxonomy is used to resolve the taxonomic lineage of the sequences in the
 # input file. This is a local taxonomy dump, such as an NCBI taxonomy (-compatible) dump, a BOLD spreadsheet, or a
 # DwC archive.
