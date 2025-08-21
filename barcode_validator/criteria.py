@@ -46,12 +46,15 @@ class MarkerCriteria:
 
         :param config: Config object containing configuration data
         """
-        if 'min_length' in config.config_data:
-            self.min_length = int(config.get('min_length'))
-        if 'max_ambiguities' in config:
-            self.max_ambiguities = int(config.get('max_ambiguities'))
-        if 'max_stop_codons' in config:
-            self.max_stop_codons = int(config.get('max_stop_codons'))
+        if 'criteria' in config.config_data:
+            criteria = config.config_data['criteria']
+
+            if 'min_length' in criteria:
+                self.min_length = int(criteria.get('min_length'))
+            if 'max_ambiguities' in criteria:
+                self.max_ambiguities = int(criteria.get('max_ambiguities'))
+            if 'max_stop_codons' in criteria:
+                self.max_stop_codons = int(criteria.get('max_stop_codons'))
 
     def to_dict(self) -> Dict[str, Any]:
         """
