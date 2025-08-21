@@ -2,8 +2,8 @@
 
 These tests are to ensure proper functioning of the application for BGE. This means the following:
 - 
-- input data is [FASTA](data/five_test_processids.fasta) where the first word is the process ID + '_' + assembly attempt ID
-- ancillary input consists of a [CSV](data/five_test_processids-stats.csv) file where the ID column is the process ID
+- input data is [FASTA](data/test_bgee_fasta.fasta) where the first word is the process ID + '_' + assembly attempt ID
+- ancillary input consists of a [CSV](data/test_bgee_output.csv) file where the ID column is the process ID
 - input taxonomy is a BOLD spreadsheet with 'Lab Sheet' and 'Taxonomy' tabs in [XLSX](data/bold.xlsx) format
 - structural validation is performed, initially for COI, and soon for other markers
 - taxonomic validation is performed with the BOLD web service
