@@ -485,7 +485,10 @@ class ProteinCodingValidator(StructuralValidator):
             if phylum == 'Chordata':
                 if tax_class == 'Ascidiacea':
                     return 13
-                elif tax_class in ['Actinopteri', 'Actinopterygii', 'Amphibia', 'Mammalia', 'Aves', 'Reptilia']:
+
+                # This list was gradually arrived at through the discovery of mismatches between BOLD and NCBI
+                # taxonomies at class level. Desparately needs a generic solution.
+                elif tax_class in ['Actinopteri', 'Actinopterygii', 'Myxini', 'Elasmobranchii', 'Petromyzonti', 'Amphibia', 'Mammalia', 'Aves', 'Reptilia']:
                     return 2
 
             elif phylum == 'Hemichordata':
