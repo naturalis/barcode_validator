@@ -1,4 +1,7 @@
+from typing import Tuple, List
+
 from Bio.SeqRecord import SeqRecord
+from nbitk.Taxon import Taxon
 from nbitk.config import Config
 from barcode_validator.dna_analysis_result import DNAAnalysisResult
 from barcode_validator.validators.validator import AbstractValidator
@@ -33,6 +36,44 @@ class TaxonomicValidator(AbstractValidator):
 
     def __init__(self, config: Config):
         super().__init__(config)
+
+    def validate_batch(self, batch: List[Tuple[DNAAnalysisResult,SeqRecord]], constraint: TaxonomicRank = TaxonomicRank.CLASS):
+        """
+        Validates taxonomic assignments by comparing expected taxa against observed in BLAST results.
+        :param batch: A list of tuples of result objects, sequence records, and query extents
+        """
+        batch = self._annotate_batch(batch, constraint)
+        self.idservice.identify_batch(batch)
+
+    def _annotate_batch(self, batch: List[Tuple[DNAAnalysisResult,SeqRecord]], constraint: TaxonomicRank = TaxonomicRank.CLASS) -> List[Tuple[DNAAnalysisResult,SeqRecord,Taxon]]:
+        """
+        Attempt to find constraint Taxon at provided TaxonomicRank for each input Tuple.
+        :param batch: A list of tuples containing (DNAAnalysisResult, SeqRecord) objects
+        :param constraint: A TaxonomicRank.CLASS
+        :return: A list of tuples containing (DNAAnalysisResult, SeqRecord, Taxon) objects
+        """
+        annotated_batch = []
+        for item in batch:
+            result = item[0]
+            record = item[1]
+
+            # Get taxon at validation rank in reflib taxonomy
+            reflib_matches = self.taxonomy_resolver.match_nodes(result.exp_taxon, {"name", "taxonomic_rank"})
+            if len(reflib_matches) == 0:
+                result.error = f'Could not reconcile expected taxon {result.exp_taxon} at rank {result.level} with reflib taxonomy'
+            elif len(reflib_matches) > 1:
+                result.error = f'Multiple taxa found in reflib taxonomy for expected taxon {result.exp_taxon} at rank {result.level}: {reflib_matches}'
+            reflib_valid = reflib_matches[0]
+
+            # Get constraint taxon ID for BLAST
+            if result.error is None:
+                reflib_constraint = self.taxonomy_resolver.find_ancestor_at_rank(reflib_valid, constraint)
+                if reflib_constraint is None:
+                    result.error = f'Could not get constraint taxon ID for {reflib_valid} at rank {constraint}'
+
+                if result.error is None:
+                    annotated_batch.append((result, record, reflib_constraint))
+        return annotated_batch
 
     def validate_taxonomy(self, record: SeqRecord, result: DNAAnalysisResult, constraint_rank: TaxonomicRank = TaxonomicRank.CLASS) -> None:
         """
