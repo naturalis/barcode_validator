@@ -68,7 +68,7 @@ class ValidationOrchestrator:
         # Validate records and create result set
         result_set = DNAAnalysisResultSet([])
         records = self._parse_input(input_path)
-        self.logger.info(f"Validating record {len(records)} from {input_path}")
+        self.logger.info(f"Validating {len(records)} records from {input_path}")
         self._validate_records(records, str(input_path), marker_type, result_set)
 
         # Add additional data if provided
