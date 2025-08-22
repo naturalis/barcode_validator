@@ -1,9 +1,11 @@
-from typing import Set
+from typing import Set, List, Tuple
 from Bio.SeqRecord import SeqRecord
 from nbitk.Taxon import Taxon
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 from barcode_validator.constants import TaxonomicRank
+from barcode_validator.dna_analysis_result import DNAAnalysisResult
+
 
 class IDService:
     """
@@ -42,6 +44,14 @@ class IDService:
         :param level: The taxonomic rank at which to return results (default: 'family')
         :param extent: A Taxon object representing the extent of the search (default: None)
         :return: A list of Taxon objects representing the possible taxonomic classifications
+        """
+        pass
+
+    def identify_batch(self, batch: List[Tuple[DNAAnalysisResult,SeqRecord,Taxon]]) -> None:
+        """
+        Identify the taxonomic classification of a batch of sequence records, each by looking
+        within the provided higher Taxon. Populate the respective result objects.
+        :param batch: A list of tuples of result objects, sequence records, and query extents
         """
         pass
 
