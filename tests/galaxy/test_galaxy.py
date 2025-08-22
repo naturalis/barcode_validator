@@ -43,33 +43,7 @@ def bold_excel(data_dir):
     return str(bold_path)
 
 @pytest.fixture
-def taxdump():
-    # URL of the NCBI taxonomy dump
-    url = "http://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz"
-
-    # Create a temporary file
-    with tempfile.NamedTemporaryFile(suffix=".tar.gz", delete=False) as temp_file:
-        # Download the file
-        response = requests.get(url, stream=True)
-        response.raise_for_status()  # Raise an exception for HTTP errors
-
-        # Save the downloaded file
-        for chunk in response.iter_content(chunk_size=8192):
-            temp_file.write(chunk)
-
-        # Get the path of the temporary file
-        tar_path = temp_file.name
-
-    # Yield the opened tar file
-    yield tar_path
-
-    # Clean up
-    os.unlink(tar_path)
-
-
-
-@pytest.fixture
-def cli_prepare_coi(input_fasta, bold_excel, data_dir, taxdump):
+def cli_prepare_coi(input_fasta, bold_excel, data_dir):
     """Fixture to run the CLI command."""
 
     # Save the original environment
@@ -90,8 +64,6 @@ def cli_prepare_coi(input_fasta, bold_excel, data_dir, taxdump):
             "--marker", "COI-5P",
             "--input-resolver", "format=bold",
             "--input-resolver", f"file={bold_excel}",
-            "--reflib-resolver", "format=ncbi",
-            "--reflib-resolver", f"file={taxdump}",
             "--output-fasta", f"{data_dir}/arise_out.fasta",
             "--output-tsv", f"{data_dir}/arise_out.tsv",
             "--taxon-validation", "method=galaxy",
