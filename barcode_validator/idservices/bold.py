@@ -1,4 +1,4 @@
-from typing import Set, Dict, List
+from typing import Set, Dict, List, Tuple
 from Bio.SeqRecord import SeqRecord
 
 from nbitk.Taxon import Taxon
@@ -6,6 +6,7 @@ from nbitk.config import Config
 from nbitk.Services.BOLD.IDService import IDService as BOLDIDService
 from barcode_validator.constants import TaxonomicRank
 from .idservice import IDService
+from ..dna_analysis_result import DNAAnalysisResult
 
 
 class BOLD(IDService):
@@ -109,18 +110,13 @@ class BOLD(IDService):
 
         return taxa_at_level
 
-    def identify_record(self, record: SeqRecord, level: TaxonomicRank = TaxonomicRank.FAMILY, extent: Taxon = None) -> \
-    Set[Taxon]:
+    def identify_batch(self, batch: List[Tuple[DNAAnalysisResult, SeqRecord, Taxon]]) -> None:
         """
-        Identify the taxonomic classification of a sequence record using BOLD.
-
-        :param record: A Bio.SeqRecord object containing the sequence to identify
-        :param level: The taxonomic rank at which to return results (default: 'family')
-        :param extent: Ignored for BOLD service
-        :return: A set of Taxon objects representing the possible taxonomic classifications
+        Identify the taxonomic classification of a batch of sequence records.
+        :param batch: List of tuples containing (DNAAnalysisResult, SeqRecord, Taxon)
         """
         try:
-            self.logger.info(f"Identifying sequence {record.id} using BOLD")
+            self.logger.info(f"Identifying batch of {len(batch)} sequences using BOLD")
 
             # Initialize BOLD ID service with configuration
             bold_config = Config()
@@ -135,24 +131,34 @@ class BOLD(IDService):
             bold_config.initialized = True
             service = BOLDIDService(bold_config)
 
+            # Extract records from batch
+            records = [item[1] for item in batch]
+
             # Wait for processing and get results
-            results = service.identify_seqrecords([record])
+            results = service.identify_seqrecords(records)
             if not results:
-                self.logger.warning(f"No BOLD results found for sequence {record.id}")
-                return set()
+                self.logger.warning("No BOLD results found for batch")
+                return
 
-            # Build taxonomic trees
-            trees = self._build_taxonomic_trees(results)
+            # Post-process results to build taxonomic trees and extract taxa
+            for item in batch:
+                result = item[0]
+                record = item[1]
 
-            # Extract taxa at requested level
-            taxa_at_level = self._extract_taxa_at_level(trees, level)
+                # Filter results for the current record
+                subset = [r for r in results if r['seqid'] == record.id]
 
-            self.logger.info(f"Found {len(taxa_at_level)} taxa at {level.value} level for sequence {record.id}")
-            return taxa_at_level
+                # Build taxonomic trees from the subset of results
+                trees = self._build_taxonomic_trees(subset)
+
+                # Extract taxa at requested level for each record in the batch
+                taxa_at_level = self._extract_taxa_at_level(trees, TaxonomicRank(result.level))
+                result.taxa = taxa_at_level
 
         except Exception as e:
-            self.logger.error(f"Error identifying sequence {record.id}: {str(e)}")
-            return set()
+            self.logger.error(f"Error identifying batch with BOLD: {e}")
+            for item in batch:
+                item[0].error = str(e)
 
     @staticmethod
     def requires_resolver():
