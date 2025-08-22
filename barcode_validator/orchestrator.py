@@ -1,7 +1,7 @@
 import csv
 import os
 from pathlib import Path
-from typing import Optional, Iterator
+from typing import Optional, Iterator, List
 from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
 from nbitk.config import Config
@@ -66,12 +66,10 @@ class ValidationOrchestrator:
         self._initialize(marker_type, mode)
 
         # Validate records and create result set
-        results = []
-        for record in self._parse_input(input_path):
-            self.logger.info(f"Validating record {record.id} from {input_path}")
-            result = self._validate_record(record, str(input_path), marker_type)
-            results.append(result)
-        result_set = DNAAnalysisResultSet(results)
+        result_set = DNAAnalysisResultSet([])
+        records = self._parse_input(input_path)
+        self.logger.info(f"Validating record {len(records)} from {input_path}")
+        self._validate_records(records, str(input_path), marker_type, result_set)
 
         # Add additional data if provided
         if csv_path:
@@ -201,68 +199,105 @@ class ValidationOrchestrator:
 
         return blastn
 
-    def _parse_input(self, file_path: Path) -> Iterator[SeqRecord]:
+    def _parse_input(self, file_path: Path) -> List[SeqRecord]:
         """
         Parse input file in FASTA or TSV format.
 
         :param file_path: Path to input file
-        :return: Iterator of SeqRecord objects
+        :return: List of SeqRecord objects
         :raises ValueError: If file format not supported
         """
         suffix = file_path.suffix.lower()
+        records = []
 
         if suffix in ['.fa', '.fasta', '.fna', '.fas']:
             self.logger.info(f"Parsing FASTA file: {file_path}")
-            yield from SeqIO.parse(file_path, 'fasta')
+            for record in SeqIO.parse(file_path, 'fasta'):
+                records.append(record)
 
         elif suffix in ['.tsv', '.txt']:
             self.logger.info(f"Parsing TSV file: {file_path}")
             with open(file_path) as handle:
-                yield from SeqIO.parse(handle, 'bcdm-tsv')
-
+                for record in SeqIO.parse(handle, 'bcdm-tsv'):
+                    records.append(record)
         else:
             raise ValueError(f"Unsupported file format: {suffix}")
 
-    def _validate_record(self, record: SeqRecord, dataset: str, marker_type: Marker) -> Optional[DNAAnalysisResult]:
+        return records
+
+    def _validate_records(self, records: List[SeqRecord], dataset: str, marker: Marker, rs: DNAAnalysisResultSet):
         """
         Validate a single sequence record.
 
-        :param record: The sequence record to validate
+        :param records: A list of sequence record to validate
         :param dataset: Dataset identifier (e.g., source file name)
-        :param marker_type: Marker type to use for validation
-        :return: DNAAnalysisResult object containing validation results
+        :param marker: Marker type to use for validation
+        :param rs: DNAAnalysisResultSet object to be populated with validation results
         """
-        # Extract group ID if grouping is enabled. Otherwise the output will simply state 'None' in this column.
-        group_id = None
-        if self.config.get('triage_config.group_by_sample'):
-            sep = self.config.get('triage_config.group_id_separator')
-            group_id = record.id.split(sep)[0]
+        self._populate_resultset(dataset, marker, records, rs)
 
-        # Instantiate result object, annotate target marker at sequence level (CSC) or config level, set validation level
-        result = DNAAnalysisResult(record.id, dataset, group_id=group_id)
-        marker_code = record.annotations.get('bcdm_fields', {}).get('marker_code') # may be in CSC/BCDM
-        if marker_code is not None:
-            marker_type = Marker(marker_code)
-        result.add_ancillary('marker_code', marker_type.value)
-        result.marker_criteria = MarkerCriteriaFactory.get_criteria(marker_type, self.config)
-
-        # Perform structural validation
+        # Perform structural validation if requested. This is quick so can be done sequentially.
         if self.structural_validator:
-            if self.structural_validator.marker != marker_type:
-                result.error = f"Marker type mismatch: expected {self.structural_validator.marker_type.value}, got {marker_type.value}"
-                return None
-            else:
-                self.structural_validator.validate(record, result)
+            for result, record in zip(rs.results, records):
+                if result.criteria.marker_type !=  self.structural_validator.marker:
+                    result.error = f"Marker type mismatch: expected {self.structural_validator.marker_type.value}, got {marker.value}"
+                else:
+                    self.structural_validator.validate(record, result)
 
         # If taxonomic validation is requested and there were no errors thus far, perform the validation.
         # To speed things up, we don't do this on errors or if the sequence was structurally invalid.
-        if self.taxonomic_validator and not result.error and result.check_seq_quality():
+        if self.taxonomic_validator:
+
+            # Set up batch and constraint rank
+            batch = []
             constraint_rank = TaxonomicRank.CLASS
             if self.config.get('local_blast.extent') is not None:
                 constraint_rank = TaxonomicRank(self.config.get('local_blast.extent'))
-            self.taxonomic_validator.validate_taxonomy(record, result, constraint_rank)
 
-        return result
+            # Iterate over records and results
+            for result, record in zip(rs.results, records):
+
+                # Add to batch if no problems so far
+                if self.structural_validator and not result.error and result.check_seq_quality():
+                    batch.append((result,record))
+
+                # Process batch
+                if len(batch) == 100:
+                        self.taxonomic_validator.validate_batch(batch, constraint_rank)
+
+            # Process final batch
+            if len(batch) > 0:
+                self.taxonomic_validator.validate_batch(batch, constraint_rank)
+
+    def _populate_resultset(self, dataset: str, marker: Marker, records: List[SeqRecord], rs: DNAAnalysisResultSet):
+        """
+        Populate resultset with initial sequence metadata
+        :param dataset: Dataset identifier (e.g., source file name)
+        :param marker: Marker type to use for validation
+        :param records: List of SeqRecord objects
+        :param rs: DNAAnalysisResultSet object to be populated with validation results
+        """
+
+        for record in records:
+
+            # Parse out group ID if needed
+            group_id = None
+            if self.config.get('triage_config.group_by_sample'):
+                sep = self.config.get('triage_config.group_id_separator')
+                group_id = record.id.split(sep)[0]
+
+            # Overwrite marker type at record level if provided
+            marker_code = record.annotations.get('bcdm_fields', {}).get('marker_code')  # may be in CSC/BCDM
+            if marker_code is not None:
+                marker = Marker(marker_code)
+
+            # Instantiate result
+            criteria = MarkerCriteriaFactory.get_criteria(marker, self.config)
+            result = DNAAnalysisResult(record.id, dataset=dataset, group_id=group_id, criteria=criteria)
+            result.add_ancillary('marker_code', str(marker.value))
+
+            # Add to result set
+            rs.results.append(result)
 
     def write_results(self, results: DNAAnalysisResultSet,
                      output_fasta: Path, output_tsv: Path, mode: ValidationMode) -> None:
