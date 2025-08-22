@@ -59,7 +59,7 @@ class GalaxyBLAST(IDService):
                 cleaned.append(cloned_record)
 
             # Prepare input FASTA file
-            SeqIO.write(cleaned, temp_input, "fasta")
+            SeqIO.write(cleaned, temp_input.name, "fasta")
             temp_input_name = temp_input.name
 
             try:
