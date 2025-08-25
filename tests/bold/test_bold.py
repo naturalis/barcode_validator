@@ -12,18 +12,6 @@ from barcode_validator.cli import BarcodeValidatorCLI
 
 # do I still work?
 
-@pytest.fixture(autouse=True)
-def check_galaxy_key():
-    """Verify Galaxy API key is available"""
-    if not os.environ.get('GALAXY_API_KEY'):
-        pytest.skip("GALAXY_API_KEY not set in environment")
-
-@pytest.fixture(autouse=True)
-def check_galaxy_domain():
-    """Verify Galaxy API key is available"""
-    if not os.environ.get('GALAXY_DOMAIN'):
-        pytest.skip("GALAXY_DOMAIN not set in environment")
-
 @pytest.fixture
 def data_dir():
     """Fixture to provide the test data directory."""
@@ -66,7 +54,7 @@ def cli_prepare_coi(input_fasta, bold_excel, data_dir):
             "--input-resolver", f"file={bold_excel}",
             "--output-fasta", f"{data_dir}/arise_out.fasta",
             "--output-tsv", f"{data_dir}/arise_out.tsv",
-            "--taxon-validation", "method=galaxy",
+            "--taxon-validation", "method=bold",
             "--taxon-validation", "rank=family",
             "--taxon-validation", "min_identity=0.8",
             "--taxon-validation", "max_target_seqs=100",
@@ -81,7 +69,7 @@ def cli_prepare_coi(input_fasta, bold_excel, data_dir):
         sys.argv = original_argv
         os.chdir(original_dir)
 
-def test_galaxy_coi(cli_prepare_coi):
+def test_bold_coi(cli_prepare_coi):
     """Test struct/taxon validation with BOLD data against BOLD web service."""
     dars = cli_prepare_coi.run()
     assert dars is not None, "Validation results should not be None"

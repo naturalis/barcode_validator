@@ -56,7 +56,7 @@ def cli_prepare_coi(input_fasta, bold_excel, input_csv, data_dir):
             "--input-resolver", f"file={bold_excel}",
             "--output-fasta", f"{data_dir}/bge_out.fasta",
             "--output-tsv", f"{data_dir}/bge_out.tsv",
-            "--taxon-validation", "method=bold",
+            "--taxon-validation", "method=galaxy",
             "--taxon-validation", "rank=family",
             "--taxon-validation", "min_identity=0.8",
             "--taxon-validation", "max_target_seqs=100",
