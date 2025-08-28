@@ -197,7 +197,8 @@ class ProteinCodingValidator(StructuralValidator):
                 
                 self.logger.debug(f"Running nhmmer on sequence: {' '.join(nhmmer_cmd)}")
                 result = subprocess.run(nhmmer_cmd, capture_output=True, text=True)
-                
+
+                # TODO: strip result.stderr as it contains multiple blank lines
                 if result.returncode != 0:
                     self.logger.error(f"nhmmer failed: {result.stderr}")
                     return None
