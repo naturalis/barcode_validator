@@ -163,7 +163,7 @@ class ValidationOrchestrator:
         """
         tvbb = TaxonomicBackbone(file_format)
         tr = ResolverFactory.create_resolver(self.config, tvbb)
-        self.logger.debug(f"Loading reference taxonomy from {file}")
+        self.logger.info(f"Loading {file_format} reference taxonomy from {file}")
         tr.load_tree(file)
         return tr
 
@@ -242,32 +242,48 @@ class ValidationOrchestrator:
                 if result.criteria.marker_type !=  self.structural_validator.marker:
                     result.error = f"Marker type mismatch: expected {self.structural_validator.marker_type.value}, got {marker.value}"
                 else:
+                    self.logger.info(f"Structurally validating record {record.id}")
                     self.structural_validator.validate(record, result)
 
         # If taxonomic validation is requested and there were no errors thus far, perform the validation.
         # To speed things up, we don't do this on errors or if the sequence was structurally invalid.
         if self.taxonomic_validator:
 
-            # Set up batch and constraint rank
-            batch = []
+            # Set up constraint rank
             constraint_rank = TaxonomicRank.CLASS
             if self.config.get('local_blast.extent') is not None:
                 constraint_rank = TaxonomicRank(self.config.get('local_blast.extent'))
 
-            # Iterate over records and results
+            # Iterate over records and results, aggregate structurally valid ones into batches
+            batch = []
             for result, record in zip(rs.results, records):
 
-                # Add to batch if no problems so far
-                if self.structural_validator and not result.error and result.check_seq_quality():
-                    batch.append((result,record))
+                # Add to batch if no problems so far in structural validation
+                if self.structural_validator:
+                    if not result.error and result.check_seq_quality():
+                        batch.append((result,record))
+                    else:
+                        self.logger.warning(f"Skipping {record.id} for taxonomic validation due to prior errors: {result.error}")
 
-                # Process batch
-                if len(batch) == 100:
-                        self.taxonomic_validator.validate_batch(batch, constraint_rank)
+                # Otherwise, if no structural validation done yet, add all records without errors
+                elif not self.structural_validator:
+                    if not result.error:
+                        # Make sure that result.exp_taxon is assigned through tr.enrich_result() because this may not have been done
+                        # if we aren't doing taxonomic validation
+                        if result.exp_taxon is None:
+                            self.taxonomic_validator.taxonomy_resolver.enrich_result(record, result)
+                            if result.error:
+                                continue
+                        batch.append((result,record))
+                    else:
+                        self.logger.warning(f"Skipping {record.id} for taxonomic validation due to prior errors: {result.error}")
 
-            # Process final batch
-            if len(batch) > 0:
-                self.taxonomic_validator.validate_batch(batch, constraint_rank)
+            # Process batches
+            self.logger.info(f"Going to taxonomically validate {len(batch)} records")
+            for i in range(0, len(batch), 100):
+                batch_slice = batch[i:i + 100]
+                self.logger.info(f"Taxonomically validating batch {i//100 + 1} containing {len(batch_slice)} records")
+                self.taxonomic_validator.validate_batch(batch_slice, constraint_rank)
 
     def _populate_resultset(self, dataset: str, marker: Marker, records: List[SeqRecord], rs: DNAAnalysisResultSet):
         """
