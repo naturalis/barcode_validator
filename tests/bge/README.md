@@ -24,7 +24,7 @@ export PYTHONPATH=$PYTHONPATH:$(pwd)/../../
 ```
 ## Specify input and output files for structural validation
 
-Here we specify the input file from MGEE, as well is its analytics. We also specify the BOLD spreadsheet with the
+Here we specify the FASTA file from MGEE, as well is its analytics CSV. We also specify the BOLD spreadsheet with the
 intended taxonomic lineages. Finally, we specify the output files for structural validation, including the log file.
 
 ```bash
@@ -43,7 +43,7 @@ the tool as a module so that we don't have to worry about the PATH. However, thi
 up correctly as shown above. In this run we specify the input files, the marker (COI-5P), the output files, and
 triaging options. The log level is set to INFO to get a reasonable amount of detail in the log file. We resolve sequence
 IDs to taxa using the BOLD spreadsheet. We need to do this here because we need to know the higher taxa to infer the
-genetic code for translation.
+genetic code table for amino acid translation.
 
 ```bash
 python -m barcode_validator \
@@ -63,7 +63,7 @@ python -m barcode_validator \
 ## Set up Galaxy parameters
 
 In the next run we will use the Galaxy BLAST web service for taxonomic validation. This requires setting up the Galaxy
-API key and domain. The API key has been redacted here for security reasons. You will need to set this to your own key.
+API key and domain. **API key has been redacted here for security reasons. You will need to set this to your own key.**
 
 ```bash
 export GALAXY_API_KEY=******************************** # set your Galaxy API key
@@ -83,12 +83,12 @@ TAXVAL_LOG=data/taxval.log
 ```
 ## Execute taxonomic validation
 
-Here we invoke the taxonomic validation step, which uses the Galaxy BLAST web service. We run
-the tool as a module so that we don't have to worry about the PATH. However, this assumes that the PYTHONPATH is set
-up correctly as shown above. In this run we specify the input files, the marker (COI-5P), the output files, and
-the taxonomic validation options. The log level is set to INFO to get a reasonable amount of detail in the log file. 
-We resolve sequence IDs to taxa using the BOLD spreadsheet. We need to do this here because we check the observed 
-taxonomic lineages against the intended ones from the BOLD sheet.
+Here we invoke the taxonomic validation step, which uses the Galaxy BLAST web service. We run the tool as a module so 
+that we don't have to worry about the PATH. However, this assumes that the PYTHONPATH is set up correctly as shown 
+above. In this run we specify the input files, the marker (COI-5P), the output files, and the taxonomic validation 
+options. The log level is set to INFO to get a reasonable amount of detail in the log file. We resolve sequence IDs to 
+taxa using the BOLD spreadsheet. We need to do this here because we check the observed taxonomic lineages against the 
+intended ones from the BOLD sheet.
 
 ```bash
 python -m barcode_validator \
@@ -109,6 +109,33 @@ python -m barcode_validator \
 
 This produces a [FASTA](data/taxval_out.fasta) file with the best, structurally and taxonomically valid sequence for 
 each process ID, and a [TSV](data/taxval_out.tsv) file with the taxon validation results.
+
+## Doing it the thorough way
+
+The above steps can be combined into a single run by setting `--mode both`. This will do structural validation and
+taxonomic validation in one go. This means that triaging comes at the end, after both structural and taxonomic
+validation. We do this if we are worried that the 'best' structurally valid sequence coming out of early triage 
+might actually be a contaminant, so we have to brute force check all structurally valid ones. With the above input
+data we then end up blasting 2221 sequences, i.e. substantially more.
+
+The command is as follows:
+
+```bash
+python -m barcode_validator \
+  --input-file $INPUT_FASTA \
+  --csv-file $INPUT_CSV \
+  --mode both \
+  --marker COI-5P \
+  --input-resolver format=bold \
+  --input-resolver file=$BOLD_EXCEL \
+  --output-fasta $TAXVAL_FASTA \
+  --output-tsv $TAXVAL_TSV \
+  --taxon-validation method=galaxy \
+  --taxon-validation rank=family \
+  --taxon-validation min_identity=0.8 \
+  --taxon-validation max_target_seqs=100 \
+  --log-level INFO 2> data/full.log
+```
 
 # Questions:
 
