@@ -274,6 +274,7 @@ class ValidationOrchestrator:
                             self.taxonomic_validator.taxonomy_resolver.enrich_result(record, result)
                             if result.error:
                                 continue
+                            result.add_ancillary('nuc', str(record.seq))
                         batch.append((result,record))
                     else:
                         self.logger.warning(f"Skipping {record.id} for taxonomic validation due to prior errors: {result.error}")
