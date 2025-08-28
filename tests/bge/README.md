@@ -121,6 +121,10 @@ data we then end up blasting 2221 sequences, i.e. substantially more.
 The command is as follows:
 
 ```bash
+FULL_FASTA=data/full_out.fasta
+FULL_TSV=data/full_out.tsv
+FULL_LOG=data/full.log
+
 python -m barcode_validator \
   --input-file $INPUT_FASTA \
   --csv-file $INPUT_CSV \
@@ -128,13 +132,15 @@ python -m barcode_validator \
   --marker COI-5P \
   --input-resolver format=bold \
   --input-resolver file=$BOLD_EXCEL \
-  --output-fasta $TAXVAL_FASTA \
-  --output-tsv $TAXVAL_TSV \
+  --output-fasta $FULL_FASTA \
+  --output-tsv $FULL_TSV \
   --taxon-validation method=galaxy \
   --taxon-validation rank=family \
   --taxon-validation min_identity=0.8 \
   --taxon-validation max_target_seqs=100 \
-  --log-level INFO 2> data/full.log
+  --triage-config group_id_separator=_ \
+  --triage-config group_by_sample=true \
+  --log-level INFO 2> $FULL_LOG
 ```
 
 # Questions:
