@@ -77,9 +77,9 @@ $INPUT_CSV and $BOLD_EXCEL files from above. So here we just specify the output 
 including the log file, and assume that the other locations (CSV, BOLD sheet) are still defined in our environment.
 
 ```bash
-TAXVAL_FASTA=data/taxval_out.fasta
-TAXVAL_TSV=data/taxval_out.tsv
-TAXVAL_LOG=data/taxval.log
+TAXVAL_FASTA=data/taxonval_out.fasta
+TAXVAL_TSV=data/taxonval_out.tsv
+TAXVAL_LOG=data/taxonval.log
 ```
 ## Execute taxonomic validation
 
@@ -107,8 +107,8 @@ python -m barcode_validator \
   --log-level INFO 2> $TAXVAL_LOG
 ```
 
-This produces a [FASTA](data/taxval_out.fasta) file with the best, structurally and taxonomically valid sequence for 
-each process ID, and a [TSV](data/taxval_out.tsv) file with the taxon validation results.
+This produces a [FASTA](data/taxonval_out.fasta) file with the best, structurally and taxonomically valid sequence for 
+each process ID, and a [TSV](data/taxonval_out.tsv) file with the taxon validation results.
 
 ## Doing it the thorough way
 
