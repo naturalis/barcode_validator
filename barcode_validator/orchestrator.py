@@ -261,6 +261,12 @@ class ValidationOrchestrator:
                 # Add to batch if no problems so far in structural validation
                 if self.structural_validator:
                     if not result.error and result.check_seq_quality():
+
+                        # We've already done structural validation, so we may have the spliced sequence in ancillary.
+                        # If so, we need to update the record.seq to contain the spliced sequence. This is because
+                        # BLASTing against BOLD with the full sequence (>658bp) can lead to 0 results.
+                        if 'nuc' in result.ancillary and result.ancillary['nuc'] is not None:
+                            record.seq = result.ancillary['nuc']
                         batch.append((result,record))
                     else:
                         self.logger.warning(f"Skipping {record.id} for taxonomic validation due to prior errors: {result.error}")
@@ -274,6 +280,8 @@ class ValidationOrchestrator:
                             self.taxonomic_validator.taxonomy_resolver.enrich_result(record, result)
                             if result.error:
                                 continue
+
+                            # We have not yet done the spliced alignment, so we need to add the sequence here.
                             result.add_ancillary('nuc', str(record.seq))
                         batch.append((result,record))
                     else:
