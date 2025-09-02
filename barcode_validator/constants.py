@@ -12,6 +12,7 @@ class RefDB(Enum):
     BLAST = "blast"
     BOLD = "bold"
     GALAXY = "galaxy"
+    BOLDDISTILLED = "bolddistilled"
 
 class TaxonomicRank(Enum):
     KINGDOM = "kingdom"
@@ -27,6 +28,7 @@ class TaxonomicBackbone(Enum):
     DWC = "dwc"    # NSR taxonomy from DwC-A
     BOLD = "bold"  # BOLD taxonomy from Excel
     NCBI = "ncbi"  # NCBI taxonomy from taxdump
+    BOLDDISTILLED = "bolddistilled"  # BOLD distilled taxonomy from TSV
 
 class Marker(Enum):
     COI_5P = "COI-5P"
