@@ -5,6 +5,7 @@ from barcode_validator.resolvers.ncbi import NCBIResolver
 from barcode_validator.resolvers.nsr import NSRResolver
 from barcode_validator.resolvers.taxonomy import TaxonResolver
 from barcode_validator.constants import TaxonomicBackbone
+from barcode_validator.resolvers.bolddistilled import BoldDistilledResolver
 
 
 class ResolverFactory:
@@ -23,6 +24,8 @@ class ResolverFactory:
             tr = BoldResolver(config)
         elif backbone_type == TaxonomicBackbone.NCBI:
             tr = NCBIResolver(config)
+        elif backbone_type == TaxonomicBackbone.BOLDDISTILLED:
+            tr = BoldDistilledResolver(config)
         else:
             return None
         return tr
