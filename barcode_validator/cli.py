@@ -1,6 +1,7 @@
 import argparse
 import sys
 import logging
+import traceback
 from pathlib import Path
 from nbitk.logger import get_formatted_logger
 
@@ -121,6 +122,8 @@ Configuration parameters can be set using command line arguments. For nested par
 
         except Exception as e:
             self.logger.error(f"Validation failed: {e}")
+            stack_trace = traceback.format_exc()
+            self.logger.error(stack_trace)
             sys.exit(1)
 
 
