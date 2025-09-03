@@ -110,7 +110,7 @@ reflib_resolver:
   format:
     type: str
     default: "ncbi"
-    choices: ["ncbi", "bold", "dwc"]
+    choices: ["ncbi", "bold", "dwc", "bolddistilled"]
     help: "Format of the reference library resolver file (ncbi, bold, or dwc)"
 
 # What to validate. This parameter determines whether the validation will check the structural properties of the
