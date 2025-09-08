@@ -65,11 +65,14 @@ class ValidationOrchestrator:
         mode = ValidationMode(self.config.get('mode'))
         self._initialize(marker_type, mode)
 
-        # Validate records and create result set
-        result_set = DNAAnalysisResultSet([])
-        records = self._parse_input(input_path)
+        # Parse records and populate result set
+        records = self.parse_input(input_path)
+        result_set = DNAAnalysisResultSet([], self.config)
+        result_set.populate(records=records, dataset=str(input_path), marker=marker_type)
+
+        # Validate the result set
         self.logger.info(f"Validating {len(records)} records from {input_path}")
-        self._validate_records(records, str(input_path), marker_type, result_set)
+        self.validate(resultset=result_set)
 
         # Add additional data if provided
         if csv_path:
@@ -84,13 +87,14 @@ class ValidationOrchestrator:
         Initialize validators and other resources.
         """
 
-        # Instantiate taxonomic validator if reverse taxonomy is required
-        if mode == ValidationMode.TAXONOMIC or mode == ValidationMode.BOTH:
-            self._initialize_tv()
 
         # Instantiate structural validator subclass if structural validation is required
         if mode == ValidationMode.STRUCTURAL or mode == ValidationMode.BOTH:
             self._initialize_sv(marker_type)
+
+        # Instantiate taxonomic validator if reverse taxonomy is required
+        if mode == ValidationMode.TAXONOMIC or mode == ValidationMode.BOTH:
+            self._initialize_tv()
 
     def _initialize_sv(self, marker_type) -> None:
         """
@@ -199,7 +203,7 @@ class ValidationOrchestrator:
 
         return blastn
 
-    def _parse_input(self, file_path: Path) -> List[SeqRecord]:
+    def parse_input(self, file_path: Path) -> List[SeqRecord]:
         """
         Parse input file in FASTA or TSV format.
 
@@ -225,25 +229,16 @@ class ValidationOrchestrator:
 
         return records
 
-    def _validate_records(self, records: List[SeqRecord], dataset: str, marker: Marker, rs: DNAAnalysisResultSet):
+    def validate(self, resultset: DNAAnalysisResultSet):
         """
-        Validate a single sequence record.
+        Validate a result set
 
-        :param records: A list of sequence record to validate
-        :param dataset: Dataset identifier (e.g., source file name)
-        :param marker: Marker type to use for validation
-        :param rs: DNAAnalysisResultSet object to be populated with validation results
+        :param resultset: DNAAnalysisResultSet object to be populated with validation results
         """
-        self._populate_resultset(dataset, marker, records, rs)
 
         # Perform structural validation if requested. This is quick so can be done sequentially.
         if self.structural_validator:
-            for result, record in zip(rs.results, records):
-                if result.criteria.marker_type !=  self.structural_validator.marker:
-                    result.error = f"Marker type mismatch: expected {self.structural_validator.marker_type.value}, got {marker.value}"
-                else:
-                    self.logger.info(f"Structurally validating record {record.id}")
-                    self.structural_validator.validate(record, result)
+            self.structural_validator.validate(resultset)
 
         # If taxonomic validation is requested and there were no errors thus far, perform the validation.
         # To speed things up, we don't do this on errors or if the sequence was structurally invalid.
@@ -256,33 +251,26 @@ class ValidationOrchestrator:
 
             # Iterate over records and results, aggregate structurally valid ones into batches
             batch = []
-            for result, record in zip(rs.results, records):
+            for result in resultset.results:
+                record = result.seq_record
 
                 # Add to batch if no problems so far in structural validation
                 if self.structural_validator:
                     if not result.error and result.check_seq_quality():
-
-                        # We've already done structural validation, so we may have the spliced sequence in ancillary.
-                        # If so, we need to update the record.seq to contain the spliced sequence. This is because
-                        # BLASTing against BOLD with the full sequence (>658bp) can lead to 0 results.
-                        if 'nuc' in result.ancillary and result.ancillary['nuc'] is not None:
-                            record.seq = result.ancillary['nuc']
                         batch.append((result,record))
                     else:
                         self.logger.warning(f"Skipping {record.id} for taxonomic validation due to prior errors: {result.error}")
 
                 # Otherwise, if no structural validation done yet, add all records without errors
-                elif not self.structural_validator:
+                else:
                     if not result.error:
-                        # Make sure that result.exp_taxon is assigned through tr.enrich_result() because this may not have been done
-                        # if we aren't doing taxonomic validation
+
+                        # Make sure that result.exp_taxon is assigned through tr.enrich_result() because this may not
+                        # have been done if we aren't doing structural validation
                         if result.exp_taxon is None:
                             self.taxonomic_validator.taxonomy_resolver.enrich_result(record, result)
                             if result.error:
                                 continue
-
-                            # We have not yet done the spliced alignment, so we need to add the sequence here.
-                            result.add_ancillary('nuc', str(record.seq))
                         batch.append((result,record))
                     else:
                         self.logger.warning(f"Skipping {record.id} for taxonomic validation due to prior errors: {result.error}")
@@ -293,36 +281,6 @@ class ValidationOrchestrator:
                 batch_slice = batch[i:i + 100]
                 self.logger.info(f"Taxonomically validating batch {i//100 + 1} containing {len(batch_slice)} records")
                 self.taxonomic_validator.validate_batch(batch_slice, constraint_rank)
-
-    def _populate_resultset(self, dataset: str, marker: Marker, records: List[SeqRecord], rs: DNAAnalysisResultSet):
-        """
-        Populate resultset with initial sequence metadata
-        :param dataset: Dataset identifier (e.g., source file name)
-        :param marker: Marker type to use for validation
-        :param records: List of SeqRecord objects
-        :param rs: DNAAnalysisResultSet object to be populated with validation results
-        """
-
-        for record in records:
-
-            # Parse out group ID if needed
-            group_id = None
-            if self.config.get('triage_config.group_by_sample'):
-                sep = self.config.get('triage_config.group_id_separator')
-                group_id = record.id.split(sep)[0]
-
-            # Overwrite marker type at record level if provided
-            marker_code = record.annotations.get('bcdm_fields', {}).get('marker_code')  # may be in CSC/BCDM
-            if marker_code is not None:
-                marker = Marker(marker_code)
-
-            # Instantiate result
-            criteria = MarkerCriteriaFactory.get_criteria(marker, self.config)
-            result = DNAAnalysisResult(record.id, dataset=dataset, group_id=group_id, criteria=criteria)
-            result.add_ancillary('marker_code', str(marker.value))
-
-            # Add to result set
-            rs.results.append(result)
 
     def write_results(self, results: DNAAnalysisResultSet,
                      output_fasta: Path, output_tsv: Path, mode: ValidationMode) -> None:
