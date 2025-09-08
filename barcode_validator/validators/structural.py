@@ -42,9 +42,11 @@ class StructuralValidator(AbstractValidator):
 
         :param resultset: Populated DNA analysis result object
         """
-
+        i = 1
         for result in resultset.results:
             record = result.seq_record
+            self.logger.info(f"Validating record {i}/{len(resultset.results)}: {record.id}")
+            i += 1
 
             # Check marker type
             if result.criteria.marker_type != self.marker:
