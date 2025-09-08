@@ -101,14 +101,14 @@ class ProteinCodingValidator(StructuralValidator):
     def _align_sequence(self, record: SeqRecord) -> Optional[SeqRecord]:
         """
         Process sequence using N-padding nhmmer approach.
-        
+
         Process sequence by:
         1. Removing tilde characters (preserve gaps)
         2. Replacing gap characters with N characters
         3. Running nhmmer on the single N-padded sequence
         4. Constructing HMM space sequence from alignment results
         5. Trimming leading/trailing Ns and gaps
-        
+
         :param record: The DNA sequence record to align
         :return: Sequence record in HMM coordinate space or None if alignment fails
         """
@@ -124,7 +124,7 @@ class ProteinCodingValidator(StructuralValidator):
         except (TypeError, AttributeError, ValueError) as e:
             self.logger.debug(f"Could not use hmm_profile_dir ({self.hmm_profile_dir}): {e}")
             hmm_file = None
-        
+
         # Fallback to bundled HMM files
         if hmm_file is None or not hmm_file.exists():
             try:
@@ -143,23 +143,23 @@ class ProteinCodingValidator(StructuralValidator):
             # Step 1: Remove tilde characters (preserve gaps - they're biologically meaningful!)
             seq_str = str(record.seq).replace('~', '')
             self.logger.debug(f"After tilde removal: {seq_str[:100]}...")
-            
+
             # Step 2: Replace all gap characters with N characters
             n_padded_seq = seq_str.replace('-', 'N')
             self.logger.debug(f"After gap-to-N replacement: {n_padded_seq[:100]}...")
-            
+
             # Step 3: Run nhmmer on the single N-padded sequence
             nhmmer_result = self._run_nhmmer_on_sequence(n_padded_seq, record.id, hmm_file)
             if not nhmmer_result:
                 self.logger.error("No significant nhmmer alignment found")
                 return None
-            
+
             # Step 4: Construct HMM space sequence using alignment coordinates
             hmm_sequence = self._construct_hmm_space_from_alignment(nhmmer_result, n_padded_seq)
-            
+
             # Step 5: Trim leading/trailing Ns and gaps while preserving internal Ns
             trimmed_sequence = self._trim_sequence_ends(hmm_sequence)
-            
+
             return SeqRecord(
                 Seq(trimmed_sequence),
                 id=record.id,
@@ -173,7 +173,7 @@ class ProteinCodingValidator(StructuralValidator):
     def _run_nhmmer_on_sequence(self, sequence: str, seq_id: str, hmm_file: Path) -> Optional[dict]:
         """
         Run nhmmer on a single sequence and return the best alignment result.
-        
+
         :param sequence: The sequence to align
         :param seq_id: Sequence identifier
         :param hmm_file: Path to HMM file
@@ -182,11 +182,11 @@ class ProteinCodingValidator(StructuralValidator):
         try:
             # Create FASTA file with the sequence
             with tempfile.NamedTemporaryFile(mode='w+', suffix='.fasta', delete=False) as temp_input, \
-                 tempfile.NamedTemporaryFile(mode='w+', suffix='.tbl', delete=False) as temp_tblout:
-                
+                    tempfile.NamedTemporaryFile(mode='w+', suffix='.tbl', delete=False) as temp_tblout:
+
                 temp_input.write(f">{seq_id}\n{sequence}\n")
                 temp_input.flush()
-                
+
                 # Run nhmmer with separate tabular output file
                 nhmmer_cmd = [
                     'nhmmer',
@@ -196,29 +196,29 @@ class ProteinCodingValidator(StructuralValidator):
                     str(hmm_file),
                     temp_input.name
                 ]
-                
+
                 self.logger.debug(f"Running nhmmer on sequence: {' '.join(nhmmer_cmd)}")
                 result = subprocess.run(nhmmer_cmd, capture_output=True, text=True)
 
-                # TODO: strip result.stderr as it contains multiple blank lines
+                # Program failed
                 if result.returncode != 0:
-                    self.logger.error(f"nhmmer failed: {result.stderr}")
+                    self.logger.error(f"nhmmer failed: {result.stderr.strip()}")
                     return None
 
                 # LOG COMPLETE NHMMER OUTPUT FOR THIS SAMPLE
                 self.logger.debug(f"=== COMPLETE nhmmer OUTPUT for {seq_id} ===")
                 self.logger.debug(result.stdout)
-                
+
                 # Parse the clean tabular output file
                 with open(temp_tblout.name, 'r') as f:
                     tabular_content = f.read()
-                
+
                 self.logger.debug(f"=== TABULAR OUTPUT for {seq_id} ===")
                 self.logger.debug(tabular_content)
-                
+
                 # Parse tabular output to get best alignment
                 alignment_result = self._parse_single_nhmmer_result(tabular_content, seq_id)
-                
+
                 return alignment_result
 
         except FileNotFoundError:
@@ -231,23 +231,23 @@ class ProteinCodingValidator(StructuralValidator):
     def _parse_single_nhmmer_result(self, tabular_content: str, seq_id: str) -> Optional[dict]:
         """
         Parse nhmmer tabular output for the best alignment result.
-        
+
         :param tabular_content: Content of the .tbl file
         :param seq_id: Original sequence ID
         :return: Dictionary with alignment coordinates or None if no significant match
         """
         best_result = None
         best_evalue = float('inf')
-        
+
         try:
             # Parse each line of tabular output
             for line in tabular_content.split('\n'):
                 line = line.strip()
-                
+
                 # Skip comments and empty lines
                 if not line or line.startswith('#'):
                     continue
-                
+
                 # Split fields
                 fields = line.split()
                 if len(fields) >= 15:  # Ensure we have all required fields
@@ -260,10 +260,10 @@ class ProteinCodingValidator(StructuralValidator):
                         evalue = float(fields[12])
                         score = float(fields[13])
                         bias = float(fields[14])
-                        
+
                         self.logger.debug(f"Parsed alignment: {target_name} → HMM {hmm_from}-{hmm_to}, "
-                                        f"Seq {seq_from}-{seq_to}, E-value: {evalue}, score: {score}")
-                        
+                                          f"Seq {seq_from}-{seq_to}, E-value: {evalue}, score: {score}")
+
                         # Only include significant matches (should already be filtered by nhmmer --incE)
                         if evalue <= 1e-3 and target_name == seq_id:
                             # Keep the best (lowest E-value) result
@@ -282,22 +282,22 @@ class ProteinCodingValidator(StructuralValidator):
                                 self.logger.debug(f"New best alignment: E-value={evalue}")
                         else:
                             self.logger.debug(f"Rejected alignment: E-value {evalue} > threshold 1e-3")
-                    
+
                     except (ValueError, IndexError) as e:
                         self.logger.warning(f"Could not parse tabular line: {line} ({e})")
                         continue
                 else:
                     self.logger.debug(f"Insufficient fields in tabular line: {line} (got {len(fields)}, need 15)")
-            
+
         except Exception as e:
             self.logger.error(f"Error parsing nhmmer tabular output: {str(e)}")
-        
+
         return best_result
 
     def _construct_hmm_space_from_alignment(self, alignment_result: dict, sequence: str) -> str:
         """
         Construct HMM coordinate space sequence from single alignment result.
-        
+
         :param alignment_result: Dictionary with alignment coordinates
         :param sequence: The original N-padded sequence
         :return: Sequence string in HMM coordinate space
@@ -305,20 +305,21 @@ class ProteinCodingValidator(StructuralValidator):
         # Initialize 658-position HMM sequence with gaps
         hmm_length = 658  # COI-5P HMM length
         hmm_sequence = ['-'] * hmm_length
-        
+
         self.logger.debug(f"Constructing HMM space sequence from alignment")
-        
+
         # Extract alignment coordinates
         hmm_start = alignment_result['hmm_from'] - 1  # Convert to 0-based
         hmm_end = alignment_result['hmm_to']
         seq_start = alignment_result['seq_from'] - 1  # Convert to 0-based
         seq_end = alignment_result['seq_to']
-        
-        self.logger.debug(f"Placing sequence at HMM positions: {alignment_result['hmm_from']}-{alignment_result['hmm_to']} (1-based)")
-        
+
+        self.logger.debug(
+            f"Placing sequence at HMM positions: {alignment_result['hmm_from']}-{alignment_result['hmm_to']} (1-based)")
+
         # Extract the aligned portion of the sequence
         aligned_sequence_portion = sequence[seq_start:seq_end]
-        
+
         # Place sequence at HMM coordinates
         total_coverage = 0
         seq_pos = 0
@@ -327,26 +328,26 @@ class ProteinCodingValidator(StructuralValidator):
                 hmm_sequence[hmm_pos] = aligned_sequence_portion[seq_pos]
                 total_coverage += 1
                 seq_pos += 1
-        
+
         # Convert to string
         final_sequence = ''.join(hmm_sequence)
-        
+
         # Log coverage statistics
         coverage_percentage = (total_coverage / hmm_length) * 100
-        
+
         self.logger.debug(f"HMM space sequence construction complete:")
         self.logger.debug(f"  Total HMM length: {hmm_length} positions")
         self.logger.debug(f"  Covered positions: {total_coverage} ({coverage_percentage:.1f}%)")
-        self.logger.debug(f"  Missing positions: {hmm_length - total_coverage} ({100-coverage_percentage:.1f}%)")
+        self.logger.debug(f"  Missing positions: {hmm_length - total_coverage} ({100 - coverage_percentage:.1f}%)")
         self.logger.debug(f"  Final sequence length: {len(final_sequence)}")
         self.logger.debug(f"  Final sequence preview: {final_sequence[:100]}...")
-        
+
         return final_sequence
 
     def _trim_sequence_ends(self, sequence: str) -> str:
         """
         Trim leading and trailing Ns and gaps while preserving internal Ns.
-        
+
         :param sequence: Input sequence string
         :return: Trimmed sequence string
         """
@@ -354,27 +355,27 @@ class ProteinCodingValidator(StructuralValidator):
         start = 0
         while start < len(sequence) and sequence[start] in 'N-':
             start += 1
-        
+
         # Remove trailing Ns and gaps
         end = len(sequence)
-        while end > start and sequence[end-1] in 'N-':
+        while end > start and sequence[end - 1] in 'N-':
             end -= 1
-        
+
         trimmed = sequence[start:end]
-        
+
         self.logger.debug(f"Sequence (N and gap) trimming:")
         self.logger.debug(f"  Original length: {len(sequence)}")
         self.logger.debug(f"  Trimmed length: {len(trimmed)}")
         self.logger.debug(f"  Removed from start: {start}")
         self.logger.debug(f"  Removed from end: {len(sequence) - end}")
-        
+
         return trimmed
 
     @staticmethod
     def _get_complete_codons(seq, offset):
         """
         Extract complete codons from sequence starting at given offset.
-        
+
         :param seq: Input sequence
         :param offset: Reading frame offset (0, 1, or 2)
         :return: String of complete codons (no gaps or Ns)
@@ -402,22 +403,23 @@ class ProteinCodingValidator(StructuralValidator):
         min_stops = float('inf')
 
         self.logger.debug(f"Analysing reading frames")
-        
+
         # Analyze all 3 reading frames
         frame_results = []
         for frame in range(3):
             coding_seq = Seq("".join(self._get_complete_codons(raw_seq, frame)))
             protein = coding_seq.translate(table=trans_table)
             stops = protein.count('*')
-            
+
             frame_results.append({
                 'frame': frame,
                 'stops': stops,
                 'protein_length': len(protein),
                 'coding_length': len(coding_seq)
             })
-            
-            self.logger.debug(f"Frame {frame}: {stops} stop codons, {len(protein)} amino acids, {len(coding_seq)} coding nucleotides")
+
+            self.logger.debug(
+                f"Frame {frame}: {stops} stop codons, {len(protein)} amino acids, {len(coding_seq)} coding nucleotides")
 
             if stops < min_stops:
                 min_stops = stops
@@ -429,12 +431,12 @@ class ProteinCodingValidator(StructuralValidator):
         self.logger.debug(f"Best reading frame: {best_frame}")
         self.logger.debug(f"Stop codons in best frame: {min_stops}")
         self.logger.debug(f"Protein length: {len(best_prot)} amino acids")
-        
+
         # LOG COMPLETE AMINO ACID SEQUENCE FOR BEST FRAME
         self.logger.debug(f"=== TRANSLATED AMINO ACID SEQUENCE (Frame {best_frame}) ===")
         self.logger.debug(f"Translation table: {trans_table}")
         self.logger.debug(f"Amino acid sequence: {str(best_prot)}")
-        
+
         return best_frame, best_prot
 
     def _find_stop_codons(self, reading_frame, protein) -> List[int]:
@@ -446,9 +448,9 @@ class ProteinCodingValidator(StructuralValidator):
         :return: List of stop codon positions in nucleotide coordinates
         """
         stop_positions = []
-        
+
         self.logger.debug(f"Searching for stop codons in protein sequence (length: {len(protein)})")
-        
+
         # Find all stop codons (excluding the natural terminal stop)
         for i, aa in enumerate(protein[:-1]):  # Exclude last amino acid (natural terminal)
             if aa == '*':
@@ -462,7 +464,7 @@ class ProteinCodingValidator(StructuralValidator):
         self.logger.debug(f"Total stop codons found: {len(stop_positions)}")
         self.logger.debug(f"Stop codon positions (nucleotide coordinates): {stop_positions}")
         self.logger.debug(f"=== END STOP CODON ANALYSIS ===")
-        
+
         return stop_positions
 
     def get_translation_table(self, marker: Marker, taxon: Taxon) -> int:
@@ -491,7 +493,8 @@ class ProteinCodingValidator(StructuralValidator):
 
                 # This list was gradually arrived at through the discovery of mismatches between BOLD and NCBI
                 # taxonomies at class level. Desparately needs a generic solution.
-                elif tax_class in ['Actinopteri', 'Actinopterygii', 'Myxini', 'Elasmobranchii', 'Petromyzonti', 'Amphibia', 'Mammalia', 'Aves', 'Reptilia']:
+                elif tax_class in ['Actinopteri', 'Actinopterygii', 'Myxini', 'Elasmobranchii', 'Petromyzonti',
+                                   'Amphibia', 'Mammalia', 'Aves', 'Reptilia']:
                     return 2
 
             elif phylum == 'Hemichordata':
