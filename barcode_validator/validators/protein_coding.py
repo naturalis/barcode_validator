@@ -80,7 +80,9 @@ class ProteinCodingValidator(StructuralValidator):
         if not aligned_seq:
             result.error = 'Gene region extraction or HMM alignment failed'
             return
-        result.add_ancillary('nuc', str(aligned_seq.seq))
+
+        # Note: this is part of the refactoring to fix the 'nuc' mess
+        result.seq_record.seq = aligned_seq.seq  # Update the sequence in the result object
 
         # Recalculate marker length and ambiguities after HMM alignment
         result.ambiguities = self._calc_ambiguities(aligned_seq.seq)

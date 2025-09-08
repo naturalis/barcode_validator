@@ -6,7 +6,7 @@ from nbitk.Tools import Hmmalign
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 
-from barcode_validator.dna_analysis_result import DNAAnalysisResult
+from barcode_validator.dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet
 from barcode_validator.idservices.idservice import IDService
 from barcode_validator.resolvers.taxonomy import TaxonResolver
 from barcode_validator.constants import Marker
@@ -65,6 +65,6 @@ class AbstractValidator:
         """Override to declare if validator needs a hmmalign wrapper."""
         return False
 
-    def validate(self, record: SeqRecord, result: DNAAnalysisResult) -> None:
-        """Validate a sequence record. Must be implemented by subclasses."""
+    def validate(self, resultset: DNAAnalysisResultSet) -> None:
+        """Validate a DNA analysis result set. Must be implemented by subclasses."""
         raise NotImplementedError

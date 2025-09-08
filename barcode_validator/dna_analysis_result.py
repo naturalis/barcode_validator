@@ -1,7 +1,8 @@
 from nbitk.Taxon import Taxon
 from nbitk.config import Config
+from Bio.SeqRecord import SeqRecord
 from barcode_validator.constants import TaxonomicRank, Marker, ValidationMode
-from barcode_validator.criteria import MarkerCriteria
+from barcode_validator.criteria import MarkerCriteria, MarkerCriteriaFactory
 from typing import List, Optional, Tuple
 import yaml
 import csv
@@ -240,6 +241,23 @@ class DNAAnalysisResult:
         if not isinstance(value, int) or value < 0:
             raise ValueError("seq_length must be a positive integer")
         self.data['nuc_basecount'] = value
+
+    @property
+    def seq_record(self) -> Optional[SeqRecord]:
+        """
+        Getter for the sequence as a SeqRecord.
+        :return: A SeqRecord object
+        """
+        return self.data['sequence']
+
+    @seq_record.setter
+    def seq_record(self, value: SeqRecord) -> None:
+        """
+        Setter for the sequence from a SeqRecord.
+        :param value: A SeqRecord object
+        :return:
+        """
+        self.data['sequence'] = value
 
     @property
     def full_length(self) -> Optional[int]:
@@ -530,9 +548,13 @@ class DNAAnalysisResult:
                 values.append(species_name)
             elif key == 'obs_taxon':
                 obs = [taxon.name for taxon in self.obs_taxon]
+                obs.sort()
                 values.append(",".join(obs))
             elif key == 'stop_codons':
                 values.append(len(self.stop_codons))
+            elif key == 'sequence':
+                seq = self.seq_record.seq if self.seq_record else None
+                values.append(str(seq) if seq else None)
             elif key in self.data['ancillary']:
                 anc = self.data.get('ancillary')[key]
                 values.append(str(anc))
@@ -567,14 +589,17 @@ class DNAAnalysisResultSet:
         # Set the configuration object
         if config is None:
             config = Config()
-            config.config_data = { 'group_id_separator': '_' }
+            config.config_data = { 'triage_config.group_id_separator': '_' }
             config.initialized = True
         self.config = config
 
+        # Set the results
+        if results is None:
+            results = []
         self.results = results
 
         # Update columns based on all results in the set
-        for result in results:
+        for result in self.results:
             # Add any ancillary columns from existing results
             if result.data['ancillary']:
                 columns.update(result.data['ancillary'].keys())
@@ -598,7 +623,21 @@ class DNAAnalysisResultSet:
         if output_format.lower() == 'tsv':
             return str(self)
         elif output_format.lower() == 'fasta':
-            return "\n".join([f">{result.sequence_id}\n{result.data['ancillary']['nuc']}" for result in self.results])
+            fasta = []
+            for result in self.results:
+
+                # Generate the definition line. Use sequence ID if available, else use hash.
+                if result.sequence_id is not None:
+                    fasta.append(f">{result.sequence_id}")
+                else:
+                    fasta.append(f">{result.__hash__()}")
+
+                # Append the sequence if available
+                if result.seq_record is not None and result.seq_record.seq is not None:
+                    fasta.append(str(result.seq_record.seq))
+
+            # Join and return, separated by newlines, so every sequence is on one line
+            return "\n".join(fasta)
         else:
             raise ValueError(f"Output format '{output_format}' not supported")
 
@@ -617,6 +656,40 @@ class DNAAnalysisResultSet:
             for result in self.results:
                 for key, value in yaml_data.items():
                     result.add_ancillary(key, value)
+
+    def populate(self, records: List[SeqRecord], dataset: str, marker: Marker) -> None:
+        """
+        Populate the result set with sequences from the provided records.
+        :param records: A list of SeqRecord objects
+        :param dataset: The dataset name (e.g. the multifasta file name)
+        :param marker: A Marker object representing the marker criteria
+        :return:
+        """
+
+        # Note: this is a direct copy from orchestrator._populate_resultset()
+        for record in records:
+
+            # Parse out group ID if needed
+            group_id = None
+            if self.config.get('triage_config.group_by_sample'):
+                sep = self.config.get('triage_config.group_id_separator')
+                group_id = record.id.split(sep)[0]
+
+            # Overwrite marker type at record level if provided
+            marker_code = record.annotations.get('bcdm_fields', {}).get('marker_code')  # may be in CSC/BCDM
+            if marker_code is not None:
+                marker = Marker(marker_code)
+
+            # Instantiate result
+            criteria = MarkerCriteriaFactory.get_criteria(marker, self.config)
+            result = DNAAnalysisResult(record.id, dataset=dataset, group_id=group_id, criteria=criteria)
+            result.add_ancillary('marker_code', str(marker.value))
+            result.seq_record = record
+
+            # Add to result set
+            self.results.append(result)
+
+
 
     def add_csv_file(self, file: str):
         """
