@@ -3,7 +3,7 @@ from typing import Tuple, List
 from Bio.SeqRecord import SeqRecord
 from nbitk.Taxon import Taxon
 from nbitk.config import Config
-from barcode_validator.dna_analysis_result import DNAAnalysisResult
+from barcode_validator.dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet
 from barcode_validator.validators.validator import AbstractValidator
 from barcode_validator.constants import TaxonomicRank
 
@@ -36,6 +36,53 @@ class TaxonomicValidator(AbstractValidator):
 
     def __init__(self, config: Config):
         super().__init__(config)
+        self.config = config
+
+    def validate(self, resultset: DNAAnalysisResultSet, is_struct_validated: bool = False) -> None:
+        """
+        Validate a batch of DNA sequence records taxonomically. Populates the provided
+        result object with validation outcomes.
+        :param resultset: Populated DNA analysis result object
+        :param is_struct_validated: Whether structural validation has already been performed
+        """
+        # Set up constraint rank
+        constraint_rank = TaxonomicRank.CLASS
+        if self.config.get('local_blast.extent') is not None:
+            constraint_rank = TaxonomicRank(self.config.get('local_blast.extent'))
+
+        # Iterate over records and results, aggregate structurally valid ones into batches
+        batch = []
+        for result in resultset.results:
+            record = result.seq_record
+
+            # Add to batch if no problems so far in structural validation
+            if is_struct_validated:
+                if not result.error and result.check_seq_quality():
+                    batch.append((result, record))
+                else:
+                    self.logger.warning(f"Skipping {record.id} for due to prior errors: {result.error}")
+
+            # Otherwise, if no structural validation done yet, add all records without errors
+            else:
+                if not result.error:
+
+                    # Make sure that result.exp_taxon is assigned through tr.enrich_result() because this may not
+                    # have been done if we aren't doing structural validation
+                    if result.exp_taxon is None:
+                        self.taxonomy_resolver.enrich_result(record, result)
+                        if result.error:
+                            continue
+                    batch.append((result, record))
+                else:
+                    self.logger.warning(f"Skipping {record.id} due to prior errors: {result.error}")
+
+        # Process batches
+        self.logger.info(f"Going to taxonomically validate {len(batch)} records")
+        for i in range(0, len(batch), 100):
+            batch_slice = batch[i:i + 100]
+            self.logger.info(f"Taxonomically validating batch {i // 100 + 1} containing {len(batch_slice)} records")
+            self.validate_batch(batch_slice, constraint_rank)
+
 
     def validate_batch(self, batch: List[Tuple[DNAAnalysisResult,SeqRecord]], constraint: TaxonomicRank = TaxonomicRank.CLASS):
         """
