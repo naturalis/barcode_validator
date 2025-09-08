@@ -1,20 +1,20 @@
-import csv
 import os
 from pathlib import Path
-from typing import Optional, Iterator, List
+from typing import Optional, List
 from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 from nbitk.SeqIO.BCDM import BCDMIterator
 from nbitk.Tools import Blastn, Hmmalign
-from .dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet
+from .dna_analysis_result import DNAAnalysisResultSet
+from .idservices.idservice import IDService
 from .resolvers.factory import ResolverFactory
 from .idservices.factory import IDServiceFactory
+from .resolvers.taxonomy import TaxonResolver
 from .validators.factory import StructureValidatorFactory
 from .validators.taxonomic import TaxonomicValidator
-from .constants import Marker, TaxonomicRank, TaxonomicBackbone, RefDB, ValidationMode
-from .criteria import MarkerCriteriaFactory
+from .constants import Marker, TaxonomicBackbone, RefDB, ValidationMode
 
 class ValidationOrchestrator:
     """
@@ -152,7 +152,7 @@ class ValidationOrchestrator:
                 ids = self.prepare_id_service()
                 self.taxonomic_validator.set_idservice(ids)
 
-    def prepare_id_service(self) -> 'IDService':
+    def prepare_id_service(self) -> IDService:
         """
         Prepares an IDService instance based on configuration settings. This may involve setting up
         a BLASTN instance and a TaxonResolver if the IDService requires them. This is a potentially
@@ -178,7 +178,7 @@ class ValidationOrchestrator:
             ids.set_blastn(self.prepare_blastn())
         return ids
 
-    def prepare_taxon_resolver(self, file_format: str, file: Path) -> 'TaxonResolver':
+    def prepare_taxon_resolver(self, file_format: str, file: Path) -> TaxonResolver:
         """
         Instantiates a taxon resolver for a particular file format and loads the taxonomy dump into memory.
         For large taxonomies (e.g. NCBI), this can be a costly operation, so it should only be done once.
