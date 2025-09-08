@@ -1,7 +1,7 @@
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from nbitk.config import Config
-from barcode_validator.dna_analysis_result import DNAAnalysisResult
+from barcode_validator.dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet
 from barcode_validator.validators.validator import AbstractValidator
 
 class StructuralValidator(AbstractValidator):
@@ -35,22 +35,31 @@ class StructuralValidator(AbstractValidator):
     def __init__(self, config: Config):
         super().__init__(config)
 
-    def validate(self, record: SeqRecord, result: DNAAnalysisResult) -> None:
+    def validate(self, resultset: DNAAnalysisResultSet) -> None:
         """
-        Validate a DNA sequence record structurally. Populates the provided
+        Validate DNA sequence records structurally. Populates the provided
         result object with validation outcomes.
 
-        :param record: The DNA sequence record to validate
-        :param result: DNAAnalysisResult object to populate with validation results
+        :param resultset: Populated DNA analysis result object
         """
-        # Validate sequence length
-        self.validate_length(record, result)
 
-        # Validate ambiguous bases
-        self.validate_ambiguities(record, result)
+        for result in resultset.results:
+            record = result.seq_record
 
-        # Perform marker-specific validation
-        self.validate_marker_specific(record, result)
+            # Check marker type
+            if result.criteria.marker_type != self.marker:
+                marker = result.criteria.marker_type
+                result.error = f"Marker type mismatch: expected {self.marker.value}, got {marker.value}"
+                continue
+
+            # Validate sequence length
+            self.validate_length(record, result)
+
+            # Validate ambiguous bases
+            self.validate_ambiguities(record, result)
+
+            # Perform marker-specific validation
+            self.validate_marker_specific(record, result)
 
     def validate_length(self, record: SeqRecord, result: DNAAnalysisResult) -> None:
         """
