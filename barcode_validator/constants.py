@@ -23,6 +23,40 @@ class TaxonomicRank(Enum):
     SUBFAMILY = "subfamily"
     GENUS = "genus"
     SPECIES = "species"
+    SUBSPECIES = "subspecies"
+
+def index_for_rank(rank: TaxonomicRank) -> int:
+    """Return the index for a given taxonomic rank."""
+    rank_order = [
+        TaxonomicRank.KINGDOM,
+        TaxonomicRank.PHYLUM,
+        TaxonomicRank.CLASS,
+        TaxonomicRank.ORDER,
+        TaxonomicRank.FAMILY,
+        TaxonomicRank.SUBFAMILY,
+        TaxonomicRank.GENUS,
+        TaxonomicRank.SPECIES,
+        TaxonomicRank.SUBSPECIES
+    ]
+    return rank_order.index(rank)
+
+def rank_by_index(index: int) -> TaxonomicRank:
+    """Return the taxonomic rank for a given index."""
+    rank_order = [
+        TaxonomicRank.KINGDOM,
+        TaxonomicRank.PHYLUM,
+        TaxonomicRank.CLASS,
+        TaxonomicRank.ORDER,
+        TaxonomicRank.FAMILY,
+        TaxonomicRank.SUBFAMILY,
+        TaxonomicRank.GENUS,
+        TaxonomicRank.SPECIES,
+        TaxonomicRank.SUBSPECIES
+    ]
+    if 0 <= index < len(rank_order):
+        return rank_order[index]
+    else:
+        raise ValueError(f"Index {index} is out of range for taxonomic ranks.")
 
 class TaxonomicBackbone(Enum):
     DWC = "dwc"    # NSR taxonomy from DwC-A
