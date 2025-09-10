@@ -313,7 +313,7 @@ class DNAAnalysisResult:
             self.data['obs_taxon'].append(taxon)
 
     @property
-    def exp_taxon(self) -> Optional[Taxon]:
+    def exp_taxon(self) -> Optional[List[Taxon]]:
         """
         Getter for the expected taxon.
         :return: A Taxon object representing the expected taxon
@@ -321,18 +321,22 @@ class DNAAnalysisResult:
         return self.data['identification']
 
     @exp_taxon.setter
-    def exp_taxon(self, taxon: Taxon) -> None:
+    def exp_taxon(self, taxa: List[Taxon]) -> None:
         """
         Setter for the expected taxon.
-        :param taxon: A Taxon object representing the expected taxon
+        :param taxa: A Taxon object representing the expected taxon
         :return:
         """
-        if not isinstance(taxon, Taxon):
-            raise ValueError("exp_taxon must be a Taxon object")
-        self.data['identification'] = taxon
+        # Handle both list and set inputs
+        if isinstance(taxa, set):
+            taxa = list(taxa)
+
+        if not isinstance(taxa, list) or not all(isinstance(item, Taxon) for item in taxa):
+            raise ValueError("exp_taxon must be a list or set of Taxon objects")
+        self.data['identification'] = taxa
 
     @property
-    def species(self) -> Optional[Taxon]:
+    def species(self) -> Optional[List[Taxon]]:
         """
         Getter for the species name.
         :return: A Taxon object representing the species name
@@ -340,14 +344,18 @@ class DNAAnalysisResult:
         return self.data['species']
 
     @species.setter
-    def species(self, species: Taxon) -> None:
+    def species(self, species: List[Taxon]) -> None:
         """
         Setter for the species name.
         :param species: A Taxon object representing the species name
         :return:
         """
-        if not isinstance(species, Taxon):
-            raise ValueError("species must be a Taxon object")
+        # Handle both list and set inputs
+        if isinstance(species, set):
+            species = list(species)
+
+        if not isinstance(species, list) or not all(isinstance(item, Taxon) for item in species):
+            raise ValueError("species must be a list or set of Taxon objects")
         self.data['species'] = species
 
     @property
@@ -448,14 +456,16 @@ class DNAAnalysisResult:
         """
         error = None
         sequence_ok = False
+        if self.error:
+            return sequence_ok
         if not self.exp_taxon:
             error = "Expected taxon is not set, cannot perform taxonomy check."
             sequence_ok = False
         elif not self.obs_taxon:
             error = "No taxa observed via ID service, cannot perform taxonomy check."
             sequence_ok = False
-        elif self.exp_taxon not in self.obs_taxon:
-            error = f"Expected taxon not found in observed taxa."
+        elif not any(item in self.obs_taxon for item in self.exp_taxon):
+            error = f"None of expected taxa found in observed taxa."
             sequence_ok = False
         else:
             sequence_ok = True
@@ -524,7 +534,7 @@ class DNAAnalysisResult:
         Check if the sequence passes the quality checks for ambiguities and early stop codons
         :return: A boolean indicating whether the sequence passes all checks
         """
-        return self.check_pseudogene() and self.check_ambiguities() and self.check_length()
+        return self.check_pseudogene() and self.check_ambiguities() and self.check_length() and not self.error
 
     def passes_all_checks(self) -> bool:
         """
@@ -541,11 +551,13 @@ class DNAAnalysisResult:
         values = []
         for key in self.result_fields():
             if key == 'identification':
-                exp_taxon_name = self.exp_taxon.name if self.exp_taxon else None
-                values.append(exp_taxon_name)
+                exp = [taxon.name for taxon in self.exp_taxon]
+                exp.sort()
+                values.append(",".join(exp))
             elif key == 'species':
-                species_name = self.species.name if self.species else None
-                values.append(species_name)
+                species = [species.name for species in self.species]
+                species.sort()
+                values.append(",".join(species))
             elif key == 'obs_taxon':
                 obs = [taxon.name for taxon in self.obs_taxon]
                 obs.sort()
