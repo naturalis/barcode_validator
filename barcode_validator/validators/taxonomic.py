@@ -103,23 +103,25 @@ class TaxonomicValidator(AbstractValidator):
         for item in batch:
             result = item[0]
             record = item[1]
+            constraint = None
+            annotated_batch.append((result, record, constraint))
 
-            # Get taxon at validation rank in reflib taxonomy
-            reflib_matches = self.taxonomy_resolver.match_nodes(result.exp_taxon, {"name", "taxonomic_rank"})
-            if len(reflib_matches) == 0:
-                result.error = f'Could not reconcile expected taxon {result.exp_taxon} at rank {result.level} with reflib taxonomy'
-            elif len(reflib_matches) > 1:
-                result.error = f'Multiple taxa found in reflib taxonomy for expected taxon {result.exp_taxon} at rank {result.level}: {reflib_matches}'
-            reflib_valid = reflib_matches[0]
-
-            # Get constraint taxon ID for BLAST
-            if result.error is None:
-                reflib_constraint = self.taxonomy_resolver.find_ancestor_at_rank(reflib_valid, constraint)
-                if reflib_constraint is None:
-                    result.error = f'Could not get constraint taxon ID for {reflib_valid} at rank {constraint}'
-
-                if result.error is None:
-                    annotated_batch.append((result, record, reflib_constraint))
+            # # Get taxon at validation rank in reflib taxonomy
+            # reflib_matches = self.taxonomy_resolver.match_nodes(result.exp_taxon, {"name", "taxonomic_rank"})
+            # if len(reflib_matches) == 0:
+            #     result.error = f'Could not reconcile expected taxon {result.exp_taxon} at rank {result.level} with reflib taxonomy'
+            # elif len(reflib_matches) > 1:
+            #     result.error = f'Multiple taxa found in reflib taxonomy for expected taxon {result.exp_taxon} at rank {result.level}: {reflib_matches}'
+            # reflib_valid = reflib_matches[0]
+            #
+            # # Get constraint taxon ID for BLAST
+            # if result.error is None:
+            #     reflib_constraint = self.taxonomy_resolver.find_ancestor_at_rank(reflib_valid, constraint)
+            #     if reflib_constraint is None:
+            #         result.error = f'Could not get constraint taxon ID for {reflib_valid} at rank {constraint}'
+            #
+            #     if result.error is None:
+            #         annotated_batch.append((result, record, reflib_constraint))
         return annotated_batch
 
     def validate_taxonomy(self, record: SeqRecord, result: DNAAnalysisResult, constraint_rank: TaxonomicRank = TaxonomicRank.CLASS) -> None:
