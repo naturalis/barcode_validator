@@ -5,7 +5,7 @@ from nbitk.Taxon import Taxon
 from nbitk.logger import get_formatted_logger
 from nbitk.config import Config
 from Bio.Phylo import BaseTree
-from barcode_validator.constants import TaxonomicRank, TaxonomicBackbone
+from barcode_validator.constants import TaxonomicRank, TaxonomicBackbone, index_for_rank, rank_by_index
 
 from barcode_validator.dna_analysis_result import DNAAnalysisResult
 
@@ -84,18 +84,33 @@ class TaxonResolver:
             self.logger.warning(result.error)
             return
         elif len(nodes) > 1:
-            result.error = f"Found multiple nodes for ID {tid}: {nodes}"
-            self.logger.warning(result.error)
-            return
-        result.species = nodes[0]
+
+            # This is not ideal, e.g. if there are homonyms, but we can try to proceed
+            self.logger.warning(f"Found multiple nodes for ID {tid}: {nodes}")
+        result.species = nodes
 
         # Attempt to find the validation taxon
-        exp_taxon = self.find_ancestor_at_rank(result.species, rank)
-        if exp_taxon is None:
-            result.error = f"Could not find ancestor of species {result.species} at rank {rank}"
-            self.logger.warning(result.error)
-            return
-        result.exp_taxon = exp_taxon
+        exp_taxa = []
+        for species in result.species:
+
+            # There may be cases where the provided identification is at a higher rank than the validation rank.
+            # For example, some specimens are identified as 'Lepidoptera (order)' only, but we may want to validate
+            # at family rank. In such cases, we validate at the provided rank instead and issue a warning.
+            validation_rank = rank
+            provided_rank = TaxonomicRank(species.taxonomic_rank.lower())
+            if index_for_rank(provided_rank) < index_for_rank(validation_rank):
+                self.logger.warning(f"{species.name} is rank '{provided_rank.value}', i.e. higher than '{rank.value}'")
+                validation_rank = provided_rank
+                result.level = validation_rank
+
+            # Now find the ancestor at the desired rank
+            exp_taxon = self.find_ancestor_at_rank(species, validation_rank)
+            if exp_taxon is None:
+                self.logger.warning(f"Could not find ancestor of species {result.species} at rank {validation_rank}")
+                continue
+            exp_taxa.append(exp_taxon)
+
+        result.exp_taxon = exp_taxa
 
     def find_nodes(self, id_string: str) -> List[Taxon]:
         """
@@ -158,16 +173,20 @@ class TaxonResolver:
                 return node
         return None
 
-    def get_lineage_dict(self, node: Taxon, ranks: Optional[List[TaxonomicRank]] = None) -> Dict[str, str]:
+    def get_lineage_dict(self, nodes: List[Taxon], ranks: Optional[List[TaxonomicRank]] = None) -> Dict[str, str]:
         """
         Get a dictionary of rank:name pairs along the path to root.
-        :param node: The node whose lineage to retrieve
+        :param nodes: The nodes whose lineage to retrieve
         :param ranks: Optional list of ranks to include. If None, include all.
         :return: Dictionary mapping ranks to names along the path to root
         """
         lineage = {}
-        for ancestor in self.tree.root.get_path(node):
-            rank = str(ancestor.taxonomic_rank).lower()
-            if not ranks or rank in ranks:
-                lineage[rank] = ancestor.name
+
+        for node in nodes:
+            for ancestor in self.tree.root.get_path(node):
+                rank = str(ancestor.taxonomic_rank).lower()
+                if not ranks or rank in ranks:
+                    if rank not in lineage:
+                        lineage[rank] = []
+                    lineage[rank].append(ancestor.name)
         return lineage
