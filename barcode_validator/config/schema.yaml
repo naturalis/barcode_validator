@@ -163,7 +163,7 @@ taxon_validation:
 # about the coverage and quality of your reference library.
   max_target_seqs:
     type: int
-    default: 100
+    default: 1000
     help: "Maximum number of target sequences to return from BLAST search"
 
 # Configuration for local BLAST.

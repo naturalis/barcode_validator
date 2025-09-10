@@ -108,7 +108,7 @@ def cli_taxonomic_coi(bold_excel, input_csv, data_dir):
             "--taxon-validation", "method=galaxy",
             "--taxon-validation", "rank=family",
             "--taxon-validation", "min_identity=0.8",
-            "--taxon-validation", "max_target_seqs=100",
+            "--taxon-validation", "max_target_seqs=1000",
             "--log-level", "INFO"
         ]
         cli = BarcodeValidatorCLI()
