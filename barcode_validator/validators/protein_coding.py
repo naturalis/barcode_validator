@@ -467,7 +467,7 @@ class ProteinCodingValidator(StructuralValidator):
 
         return stop_positions
 
-    def get_translation_table(self, marker: Marker, taxon: Taxon) -> int:
+    def get_translation_table(self, marker: Marker, taxon: List[Taxon]) -> int:
         """
         Determine the appropriate translation table based on marker and taxonomy.
 
@@ -478,36 +478,44 @@ class ProteinCodingValidator(StructuralValidator):
         taxonomy_dict = self.taxonomy_resolver.get_lineage_dict(taxon)
 
         if marker in [Marker.MATK, Marker.RBCL]:
-            if taxonomy_dict.get('family') == 'Balanophoraceae':
+            if 'Balanophoraceae' in taxonomy_dict.get('family'):
+                if len(taxonomy_dict.get('family')) > 1:
+                    self.logger.warning("Multiple families found, including Balanophoraceae; using translation table 32")
                 return 32
             return 11
 
         elif marker == Marker.COI_5P:
             phylum = taxonomy_dict.get('phylum')
+            if phylum is not None and len(phylum) > 1:
+                self.logger.warning(f"Multiple phyla found: {phylum}; check translation table assignment")
             tax_class = taxonomy_dict.get('class')
+            if tax_class is not None and len(tax_class) > 1:
+                self.logger.warning(f"Multiple classes found: {tax_class}; check translation table assignment")
             family = taxonomy_dict.get('family')
+            if family is not None and len(family) > 1:
+                self.logger.warning(f"Multiple families found: {family}; check translation table assignment")
 
-            if phylum == 'Chordata':
-                if tax_class == 'Ascidiacea':
+            if 'Chordata' in phylum:
+                if 'Ascidiacea' in tax_class:
                     return 13
 
                 # This list was gradually arrived at through the discovery of mismatches between BOLD and NCBI
                 # taxonomies at class level. Desparately needs a generic solution.
-                elif tax_class in ['Actinopteri', 'Actinopterygii', 'Myxini', 'Elasmobranchii', 'Petromyzonti',
-                                   'Amphibia', 'Mammalia', 'Aves', 'Reptilia']:
+                elif any(item in ['Actinopteri', 'Actinopterygii', 'Myxini', 'Elasmobranchii', 'Petromyzonti',
+                                   'Amphibia', 'Mammalia', 'Aves', 'Reptilia'] for item in tax_class):
                     return 2
 
-            elif phylum == 'Hemichordata':
-                if family == 'Cephalodiscidae':
+            elif 'Hemichordata' in phylum:
+                if 'Cephalodiscidae' in family:
                     return 33
-                elif family == 'Rhabdopleuridae':
+                elif 'Rhabdopleuridae' in family:
                     return 24
 
-            elif phylum in ['Echinodermata', 'Platyhelminthes']:
+            elif any(item in ['Echinodermata', 'Platyhelminthes'] for item in phylum):
                 return 9
 
             # Default invertebrate mitochondrial code for other invertebrates
-            if phylum != 'Chordata':
+            if not 'Chordata' in phylum:
                 return 5
 
         # Fall back to standard code if no specific rules match
