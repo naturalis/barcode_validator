@@ -179,8 +179,8 @@ class RBCLCriteria(MarkerCriteria):
         super().__init__(config)
         self.marker_type = Marker.RBCL
         # Default criteria for rbcL (these are example values)
-        self.min_length = 550  # 550 base pairs
-        self.max_ambiguities = 15  # Plant sequences often have more ambiguities
+        self.min_length = 200  # min length for BOLD
+        self.max_ambiguities = 0  # Skims must have no ambiguities
         self.max_stop_codons = 0  # No stop codons allowed
 
         # Override with any provided configuration
