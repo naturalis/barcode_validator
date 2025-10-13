@@ -1,7 +1,8 @@
 from nbitk.Taxon import Taxon
 from nbitk.config import Config
+from Bio.SeqRecord import SeqRecord
 from barcode_validator.constants import TaxonomicRank, Marker, ValidationMode
-from barcode_validator.criteria import MarkerCriteria
+from barcode_validator.criteria import MarkerCriteria, MarkerCriteriaFactory
 from typing import List, Optional, Tuple
 import yaml
 import csv
@@ -242,6 +243,23 @@ class DNAAnalysisResult:
         self.data['nuc_basecount'] = value
 
     @property
+    def seq_record(self) -> Optional[SeqRecord]:
+        """
+        Getter for the sequence as a SeqRecord.
+        :return: A SeqRecord object
+        """
+        return self.data['sequence']
+
+    @seq_record.setter
+    def seq_record(self, value: SeqRecord) -> None:
+        """
+        Setter for the sequence from a SeqRecord.
+        :param value: A SeqRecord object
+        :return:
+        """
+        self.data['sequence'] = value
+
+    @property
     def full_length(self) -> Optional[int]:
         """
         Getter for the full sequence length.
@@ -295,7 +313,7 @@ class DNAAnalysisResult:
             self.data['obs_taxon'].append(taxon)
 
     @property
-    def exp_taxon(self) -> Optional[Taxon]:
+    def exp_taxon(self) -> Optional[List[Taxon]]:
         """
         Getter for the expected taxon.
         :return: A Taxon object representing the expected taxon
@@ -303,18 +321,22 @@ class DNAAnalysisResult:
         return self.data['identification']
 
     @exp_taxon.setter
-    def exp_taxon(self, taxon: Taxon) -> None:
+    def exp_taxon(self, taxa: List[Taxon]) -> None:
         """
         Setter for the expected taxon.
-        :param taxon: A Taxon object representing the expected taxon
+        :param taxa: A Taxon object representing the expected taxon
         :return:
         """
-        if not isinstance(taxon, Taxon):
-            raise ValueError("exp_taxon must be a Taxon object")
-        self.data['identification'] = taxon
+        # Handle both list and set inputs
+        if isinstance(taxa, set):
+            taxa = list(taxa)
+
+        if not isinstance(taxa, list) or not all(isinstance(item, Taxon) for item in taxa):
+            raise ValueError("exp_taxon must be a list or set of Taxon objects")
+        self.data['identification'] = taxa
 
     @property
-    def species(self) -> Optional[Taxon]:
+    def species(self) -> Optional[List[Taxon]]:
         """
         Getter for the species name.
         :return: A Taxon object representing the species name
@@ -322,14 +344,18 @@ class DNAAnalysisResult:
         return self.data['species']
 
     @species.setter
-    def species(self, species: Taxon) -> None:
+    def species(self, species: List[Taxon]) -> None:
         """
         Setter for the species name.
         :param species: A Taxon object representing the species name
         :return:
         """
-        if not isinstance(species, Taxon):
-            raise ValueError("species must be a Taxon object")
+        # Handle both list and set inputs
+        if isinstance(species, set):
+            species = list(species)
+
+        if not isinstance(species, list) or not all(isinstance(item, Taxon) for item in species):
+            raise ValueError("species must be a list or set of Taxon objects")
         self.data['species'] = species
 
     @property
@@ -406,14 +432,50 @@ class DNAAnalysisResult:
         """
         if self.marker_criteria is None:
             raise ValueError("Marker criteria is not set")
-        return self.seq_length >= int(self.marker_criteria.min_length) if self.seq_length is not None else False
+        sequence_ok = False
+        error = None
+        if self.seq_length is None:
+            error = "Sequence length was not computed, could not perform length check."
+            sequence_ok = False
+        elif self.seq_length < int(self.marker_criteria.min_length):
+            error = f"Sequence length is less than the minimum required length ({self.marker_criteria.min_length}). "
+            sequence_ok = False
+        else:
+            sequence_ok = True
+        if not sequence_ok:
+            msg = self.error
+            if msg is None:
+                msg = ""
+            self.error = msg + error
+        return sequence_ok
 
     def check_taxonomy(self) -> bool:
         """
         Check if expected taxon is in the observed taxon list.
         :return: A boolean indicating whether the taxonomy check passed
         """
-        return self.exp_taxon in [taxon for taxon in self.obs_taxon] if self.obs_taxon and self.exp_taxon else False
+        error = None
+        sequence_ok = False
+        if self.error:
+            return sequence_ok
+        if not self.exp_taxon:
+            error = "Expected taxon is not set, cannot perform taxonomy check."
+            sequence_ok = False
+        elif not self.obs_taxon:
+            error = "No taxa observed via ID service, cannot perform taxonomy check."
+            sequence_ok = False
+        elif not any(item in self.obs_taxon for item in self.exp_taxon):
+            error = f"None of expected taxa found in observed taxa."
+            sequence_ok = False
+        else:
+            sequence_ok = True
+        if not sequence_ok:
+            msg = self.error
+            if msg is None:
+                msg = ""
+            self.error = msg + error
+        return sequence_ok
+
 
     def check_pseudogene(self) -> bool:
         """
@@ -422,23 +484,57 @@ class DNAAnalysisResult:
         """
         if self.marker_criteria is None:
             raise ValueError("Marker criteria is not set")
-        return len(self.stop_codons) <= self.marker_criteria.max_stop_codons
+        sequence_ok = len(self.stop_codons) <= self.marker_criteria.max_stop_codons
+        if not sequence_ok:
+            msg = self.error
+            if msg is None:
+                msg = ""
+            self.error = msg + f"Number of stop codons exceeds the maximum allowed ({self.marker_criteria.max_stop_codons}). "
+        return sequence_ok
 
     def check_ambiguities(self) -> bool:
         """
         Check if the sequence contains ambiguities, i.e. if the number of ambiguities is zero.
+        Note that here we may need to check the original ambiguities in the input sequence.
+        When the assembly is somehow segmented or falls short of the barcode region, yet is
+        aligned against an HMM, the alignment is padded with Ns, which mustn't be counted.
         :return: A boolean indicating whether the sequence contains ambiguities
         """
         if self.marker_criteria is None:
             raise ValueError("Marker criteria is not set")
-        return self.ambiguities <= self.marker_criteria.max_ambiguities
+        error = None
+
+        # Check if original ambiguities were stored separately before handling
+        # segmented HMMs, else use the property, for non-coding genes
+        if 'ambig_original' in self.data['ancillary']:
+            ambiguities = self.data['ancillary']['ambig_original']
+        else:
+            ambiguities = self.ambiguities
+
+        # Ambiguities not set
+        if ambiguities is None:
+            error = "Number of ambiguities was not computed, could not perform ambiguity check."
+            sequence_ok = False
+
+        # Too many. Make this configurable. Generate error message.
+        elif int(ambiguities) > self.marker_criteria.max_ambiguities:
+            error = f"Number of ambiguities exceeds the maximum allowed ({self.marker_criteria.max_ambiguities}). "
+            sequence_ok = False
+        else:
+            sequence_ok = True
+        if not sequence_ok:
+            msg = self.error
+            if msg is None:
+                msg = ""
+            self.error = msg + error
+        return sequence_ok
 
     def check_seq_quality(self) -> bool:
         """
         Check if the sequence passes the quality checks for ambiguities and early stop codons
         :return: A boolean indicating whether the sequence passes all checks
         """
-        return self.check_pseudogene() and self.check_ambiguities() and self.check_length()
+        return self.check_pseudogene() and self.check_ambiguities() and self.check_length() and not self.error
 
     def passes_all_checks(self) -> bool:
         """
@@ -455,16 +551,22 @@ class DNAAnalysisResult:
         values = []
         for key in self.result_fields():
             if key == 'identification':
-                exp_taxon_name = self.exp_taxon.name if self.exp_taxon else None
-                values.append(exp_taxon_name)
+                exp = [taxon.name for taxon in self.exp_taxon]
+                exp.sort()
+                values.append(",".join(exp))
             elif key == 'species':
-                species_name = self.species.name if self.species else None
-                values.append(species_name)
+                species = [species.name for species in self.species]
+                species.sort()
+                values.append(",".join(species))
             elif key == 'obs_taxon':
                 obs = [taxon.name for taxon in self.obs_taxon]
+                obs.sort()
                 values.append(",".join(obs))
             elif key == 'stop_codons':
                 values.append(len(self.stop_codons))
+            elif key == 'sequence':
+                seq = self.seq_record.seq if self.seq_record else None
+                values.append(str(seq) if seq else None)
             elif key in self.data['ancillary']:
                 anc = self.data.get('ancillary')[key]
                 values.append(str(anc))
@@ -499,14 +601,17 @@ class DNAAnalysisResultSet:
         # Set the configuration object
         if config is None:
             config = Config()
-            config.config_data = { 'group_id_separator': '_' }
+            config.config_data = { 'triage_config.group_id_separator': '_' }
             config.initialized = True
         self.config = config
 
+        # Set the results
+        if results is None:
+            results = []
         self.results = results
 
         # Update columns based on all results in the set
-        for result in results:
+        for result in self.results:
             # Add any ancillary columns from existing results
             if result.data['ancillary']:
                 columns.update(result.data['ancillary'].keys())
@@ -530,7 +635,21 @@ class DNAAnalysisResultSet:
         if output_format.lower() == 'tsv':
             return str(self)
         elif output_format.lower() == 'fasta':
-            return "\n".join([f">{result.sequence_id}\n{result.data['sequence']}" for result in self.results])
+            fasta = []
+            for result in self.results:
+
+                # Generate the definition line. Use sequence ID if available, else use hash.
+                if result.sequence_id is not None:
+                    fasta.append(f">{result.sequence_id}")
+                else:
+                    fasta.append(f">{result.__hash__()}")
+
+                # Append the sequence if available
+                if result.seq_record is not None and result.seq_record.seq is not None:
+                    fasta.append(str(result.seq_record.seq))
+
+            # Join and return, separated by newlines, so every sequence is on one line
+            return "\n".join(fasta)
         else:
             raise ValueError(f"Output format '{output_format}' not supported")
 
@@ -550,6 +669,40 @@ class DNAAnalysisResultSet:
                 for key, value in yaml_data.items():
                     result.add_ancillary(key, value)
 
+    def populate(self, records: List[SeqRecord], dataset: str, marker: Marker) -> None:
+        """
+        Populate the result set with sequences from the provided records.
+        :param records: A list of SeqRecord objects
+        :param dataset: The dataset name (e.g. the multifasta file name)
+        :param marker: A Marker object representing the marker criteria
+        :return:
+        """
+
+        # Note: this is a direct copy from orchestrator._populate_resultset()
+        for record in records:
+
+            # Parse out group ID if needed
+            group_id = None
+            if self.config.get('triage_config.group_by_sample'):
+                sep = self.config.get('triage_config.group_id_separator')
+                group_id = record.id.split(sep)[0]
+
+            # Overwrite marker type at record level if provided
+            marker_code = record.annotations.get('bcdm_fields', {}).get('marker_code')  # may be in CSC/BCDM
+            if marker_code is not None:
+                marker = Marker(marker_code)
+
+            # Instantiate result
+            criteria = MarkerCriteriaFactory.get_criteria(marker, self.config)
+            result = DNAAnalysisResult(record.id, dataset=dataset, group_id=group_id, criteria=criteria)
+            result.add_ancillary('marker_code', str(marker.value))
+            result.seq_record = record
+
+            # Add to result set
+            self.results.append(result)
+
+
+
     def add_csv_file(self, file: str):
         """
         Join the CSV file to the results.
@@ -560,13 +713,12 @@ class DNAAnalysisResultSet:
         process_id_to_result = {}
         for result in self.results:
             seqid = result.sequence_id
-            process_id = seqid.split(self.config.get('group_id_separator'))[0]
-            process_id_to_result[process_id] = result
+            process_id_to_result[seqid] = result
 
         with open(file, 'r', newline='') as csvfile:
             reader = csv.DictReader(csvfile)
             # Update columns first with all possible fields from CSV
-            columns.update(field for field in reader.fieldnames if field != 'Process ID')
+            columns.update(field for field in reader.fieldnames)
 
             # Reset file pointer to start
             csvfile.seek(0)
@@ -574,14 +726,13 @@ class DNAAnalysisResultSet:
 
             # Then add data to each result
             for row in reader:
-                process_id = row['Process ID']
-                if process_id in process_id_to_result:
-                    result = process_id_to_result[process_id]
+                seqid = row['fasta_header'].lstrip('>')
+                if seqid in process_id_to_result:
+                    result = process_id_to_result[seqid]
                     for key, value in row.items():
-                        if key != 'Process ID':  # Avoid duplicating the process_id
-                            result.add_ancillary(key, value)
+                        result.add_ancillary(key, value)
 
-    def triage(self, mode = ValidationMode) -> 'DNAAnalysisResultSet':
+    def triage(self, mode: ValidationMode, aggregate: bool = False) -> 'DNAAnalysisResultSet':
         """
         Perform triage on the result set.
         :return: A new DNAAnalysisResultSet object containing the triaged results
@@ -593,4 +744,20 @@ class DNAAnalysisResultSet:
         else:
             triaged_results = [result for result in self.results if result.passes_all_checks()]
 
-        return DNAAnalysisResultSet(triaged_results, self.config)
+        if aggregate:
+
+            # Pick the longest sequence for each group_id
+            aggregated = {}
+            for item in triaged_results:
+                group_id = item.group_id
+                if group_id not in aggregated or item.seq_length > aggregated[group_id].seq_length:
+                    aggregated[group_id] = item
+            filtered_results = list(aggregated.values())
+
+            # Specify that this is a BOLD submission
+            for item in filtered_results:
+                item.add_ancillary('BOLD_submission', item.group_id)
+
+            return DNAAnalysisResultSet(filtered_results, self.config)
+        else:
+            return DNAAnalysisResultSet(triaged_results, self.config)

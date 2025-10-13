@@ -13,9 +13,8 @@ and to Naturalis's Core Sequence Cloud.
   - HMM-based alignment for codon phase detection
 
 - Taxonomic validation:
-  - BLAST-based validation against reference databases
-  - Flexible taxonomy mapping (NSR or BOLD)
-  - Integration with NCBI taxonomy
+  - Validation against ID service reference databases
+  - Flexible taxonomy mapping (NSR, NCBI or BOLD)
   - Support for multiple taxonomic ranks
 
 - Input/Output:
@@ -39,37 +38,28 @@ conda install -c bioconda barcode-validator blast hmmer
 
 ### Command Line Interface
 
-#### Case 1: Validating a FASTA file against BOLD taxonomy to generate a tabular report
+#### Case 1: Validating FASTA against BOLD taxonomy and perform triage for BGE submissions 
 
 ```bash
+
 python barcode_validator \
-  --input_file data/BGE00196_MGE-BGE_r1_1.3_1.5_s50_100.fasta \
-  --exp_taxonomy examples/bold.xlsx \
-  --exp_taxonomy_type bold \
-  --config config/config.yml \
-  --output_format tsv \
-  --log_level DEBUG > results.tsv
+  --input-file <input_fasta> \
+  --csv-file <input_csv> \
+  --yaml-file <input_yaml> \
+  --mode both \
+  --marker COI-5P \
+  --input-resolver format=bold \
+  --input-resolver file=<bold_excel> \
+  --output-fasta <output_fasta> \
+  --output-tsv <output_tsv> \
+  --taxon-validation method=bold \
+  --taxon-validation rank=family \
+  --taxon-validation min_identity=0.8 \
+  --taxon-validation max_target_seqs=100 \
+  --triage-config group_id_separator=_ \
+  --triage-config group_by_sample=true \
+  --log-level ERROR 2> <log_file>
 ```
-
-- `--input_file`: Path to the input FASTA file containing sequences to validate. The first word in the header line 
-  should be the BOLD process ID, followed by an underscore '_', and then a suffix that makes the sequence unique.
-  (The underscore separator can be changed in the configuration file under `group_id_separator`).
-- `--exp_taxonomy`: Path to the 'expected taxonomy' file, i.e. what the sequences are expected to be. In this case,
-    this is a BOLD spreadsheet in Excel format.
-- `--exp_taxonomy_type`: Type of expected taxonomy, either `nsr` (Nederlands Soortenregister) or `bold`. In this case,
-   we are using `bold` to validate against the BOLD database.
-- `--config`: Path to the configuration file. Almost certainly, you will want to update the `config/config.yml` file
-   to specify the BLAST database name, configuration of the BLAST search, and other parameters, and the location of the
-   NCBI taxonomy database (as *.tar.gz).
-- `--output_format`: Format of the output report. Options are `tsv` (tab-separated values) or `fasta` (filtered FASTA).
-   In this case, we are generating a tabular (tsv) report.
-- `--log_level`: Set the logging level. Options are `DEBUG`, `INFO`, `WARNING`, `ERROR`, or `CRITICAL`. In this case,
-  we are setting it to `DEBUG` for detailed output.
-- `> results.tsv`: Redirects the output to a file named `results.tsv`.
-
-Note: the config file has a parameter `blast_db`. This should be set to the name of the BLAST database you want to use. 
-The *name* of the database is the path to the 'file stem' of the database, without the `.nhr`, `.nin`, etc. So it is
-*not* the name of the directory, but that of the indexed sequence files without the extensions.
 
 ### Galaxy Integration
 

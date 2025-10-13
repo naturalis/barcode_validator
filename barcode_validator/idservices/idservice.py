@@ -1,9 +1,11 @@
-from typing import Set
+from typing import Set, List, Tuple
 from Bio.SeqRecord import SeqRecord
 from nbitk.Taxon import Taxon
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 from barcode_validator.constants import TaxonomicRank
+from barcode_validator.dna_analysis_result import DNAAnalysisResult
+
 
 class IDService:
     """
@@ -19,6 +21,8 @@ class IDService:
         self.logger = get_formatted_logger(self.__class__.__name__, config)
         self.blastn = None
         self.taxonomy_resolver = None
+        self.min_identity = 80
+        self.max_target_seqs = 100
 
     def identify_record(self, record: SeqRecord, level: TaxonomicRank = TaxonomicRank.FAMILY, extent: Taxon = None) -> Set[Taxon]:
         """
@@ -43,6 +47,14 @@ class IDService:
         """
         pass
 
+    def identify_batch(self, batch: List[Tuple[DNAAnalysisResult,SeqRecord,Taxon]]) -> None:
+        """
+        Identify the taxonomic classification of a batch of sequence records, each by looking
+        within the provided higher Taxon. Populate the respective result objects.
+        :param batch: A list of tuples of result objects, sequence records, and query extents
+        """
+        pass
+
     @staticmethod
     def requires_resolver():
         return False
@@ -55,5 +67,20 @@ class IDService:
         return False
 
     def set_blastn(self, blastn):
+        blastn.set_max_target_seqs(self.max_target_seqs)
+        blastn.set_perc_identity(self.min_identity * 100) # BLAST uses percentages
+
+        # Options that are hardcoded or else things won't work, so users can't touch this
+        blastn.set_task('megablast')
+        blastn.set_outfmt("6 qseqid sseqid pident length qstart qend sstart send evalue bitscore staxids")
+
         self.blastn = blastn
+
+    def set_min_identity(self, min_identity: float):
+        self.min_identity = min_identity
+
+    def set_max_target_seqs(self, max_target_seqs: int):
+        self.max_target_seqs =  max_target_seqs
+
+
 

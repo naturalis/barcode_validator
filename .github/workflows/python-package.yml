@@ -2,7 +2,7 @@ name: Python package
 
 on:
   push:
-    branches: [ "main", "refactor" ]
+    branches: [ "main", "refactor", "schema", "batched", "in-place-record-trimming" ]
     tags:
       - 'v*'  # Trigger on any tag that starts with 'v'
   pull_request:
@@ -53,6 +53,9 @@ jobs:
 
     - name: Test with pytest
       shell: bash -l {0}
+      env:
+        GALAXY_DOMAIN: ${{ secrets.GALAXY_DOMAIN }}
+        GALAXY_API_KEY: ${{ secrets.GALAXY_API_KEY }}
       run: |
         conda activate barcode_validator
         pytest --cov=barcode_validator --cov-report=xml

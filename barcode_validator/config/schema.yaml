@@ -1,0 +1,251 @@
+# Configuration schema for DNA Barcode Validator
+# This file defines all configurable parameters, their types, defaults, and validation rules. This file is used by
+# the tool to validate user inputs and generate the appropriate command-line interface. Because of this usage, it is
+# also the authorative source of truth for the tool's configuration options and can therefore serve as documentation.
+#
+# How to use this file as documentation:
+#
+# - Every top-level key corresponds to a command-line argument. However, the command-line argument names are
+#   automatically generated as kebab-case from the snake_case keys, so they may not match exactly. For example,
+#   the key `input_file` corresponds to the command-line argument `--input-file <file path>`. Nested below the top-level
+#   key is information about the argument, such as its type, whether it is required, and a help message.
+#
+# - There are also 'nested' keys that define sub-parameters for more complex configurations. These can be recognized
+#   by their indentation level. For example, `taxon_validation` is a nested key that contains parameters for taxonomic
+#   validation, such as `method`, `min_identity`, and `max_evalue`. In this case, the command-line arguments
+#   would be `--taxon-validation method=bold`, `--taxon-validation rank=genus` and so on. I.e. these arguments are
+#   used multiple times, each time with a different key-value pair. (If you are really, really old, like me, you will
+#   notice that this is similar to the `--define` arguments in GCC compilation.)
+
+# Input/Output Configuration. The input file can be a FASTA file or a BCDM/TSV file, which is a tab-separated
+# file with sequence records.
+input_file:
+  type: Path
+  required: true
+  help: "Path to the input sequence file (FASTA or BCDM/TSV)"
+
+# Optional ancillary data files. These can be used to merge additional information into the validation results. If
+# provided, the CSV file will be merged at the record level, and the YAML file will be merged at the analysis level.
+csv_file:
+  type: Path
+  required: false
+  help: "Optional CSV file with record-level analytics to merge as ancillary data"
+
+yaml_file:
+  type: Path
+  required: false
+  help: "Optional YAML file with analysis-level configuration to merge into every result"
+
+# Output Configuration. The output files will contain the results of the validation process. The output FASTA
+# file will contain only the valid sequences, while the output TSV file will contain the validation results for each
+# sequence, including any ancillary data that was provided.
+output_fasta:
+  type: Path
+  required: true
+  help: "Path to the output FASTA file with valid sequences"
+
+output_tsv:
+  type: Path
+  required: true
+  help: "Path to the output TSV file with validation results"
+
+# Marker Configuration. The marker type is used to determine a number of things:
+# - Whether the marker is coding or non-coding, which affects how the sequences are processed
+# - The validation criteria, such as the minimum length of the sequence. These are set in criteria.py
+marker:
+  type: str
+  default: "COI-5P"
+  choices: ["COI-5P", "matK", "rbcL", "ITS", "ITS2"]
+  help: "Marker type for DNA barcode validation"
+
+# Validation criteria
+criteria:
+
+  # Programmer hint: these correspond with the fields in the config object that is
+  # passed to the MarkerCriteria constructor
+  min_length:
+    type: int
+    required: false
+    help: "Sets a minimum length criterion other than the marker default"
+
+  max_ambiguities:
+    type: int
+    required: false
+    help: "Sets a maximum number of ambiguous bases other than the marker default"
+
+  max_stop_codons:
+    type: int
+    required: false
+    help: "Sets a maximum number of stop codons other than the marker default"
+
+# Input Taxonomy Configuration. The input taxonomy is used to resolve the taxonomic lineage of the sequences in the
+# input file. This is a local taxonomy dump, such as an NCBI taxonomy (-compatible) dump, a BOLD spreadsheet, or a
+# DwC archive.
+input_resolver:
+  file:
+    type: Path
+    required: true
+    help: "Path to the input taxonomy, e.g. an NSR dump as DwC-A, NCBI-compatible dump, or BOLD spreadsheet"
+
+  # Programmer hint: Corresponds with the TaxonomicBackbone enum in constants.py
+  format:
+    type: str
+    default: "bold"
+    choices: ["dwc", "bold", "ncbi"]
+    help: "Type of the expected taxonomy dump (dwc, bold or ncbi)"
+
+# Configuration of the reference library resolver. Its role is as follows: a barcode sequence is validated against a
+# a reference library, which is a collection of sequences that are known to be valid for the marker in question. The
+# hits will have some kind of taxonomic information associated with them, but perhaps this is just limited to the
+# focal taxon level with no information above it. The reference library resolver will then take these hits and resolve
+# them to a full taxonomic lineage, which is then used for validation. If you use the BOLD ID service, this is done
+# automatically, but if you use a local BLAST reference library, you need to provide a reference library resolver file
+# that contains the taxonomic information for the sequences in the reference library.
+reflib_resolver:
+  file:
+    type: Path
+    required: false
+    help: "Path to the reference library resolver file (e.g. DwC archive, BOLD spreadsheet, or NCBI taxonomy dump)"
+
+  format:
+    type: str
+    default: "ncbi"
+    choices: ["ncbi", "bold", "dwc", "bolddistilled"]
+    help: "Format of the reference library resolver file (ncbi, bold, or dwc)"
+
+# What to validate. This parameter determines whether the validation will check the structural properties of the
+# sequences (e.g. length, ambiguous bases, stop codons), the taxonomic properties (e.g. whether the sequence is
+# taxonomically valid), or both. Structural validation is generally much faster than taxonomic validation. If you
+# set mode to 'both', the tool will first perform structural validation and then taxonomic validation on the
+# structurally valid sequences.
+mode:
+  type: str
+  default: "both"
+  choices: ["structural", "taxonomic", "both"]
+  help: "Validation mode: structural, taxonomic, or both (default: both)"
+
+# Taxonomic Validation Parameters
+taxon_validation:
+
+# Sets the taxon validation method. This can be either a local NCBI BLAST search against a reference library, or a BOLD
+# ID service query. The BOLD ID service has lower taxonomic coverage but generally cleaner data unless you BLAST against
+# a well-curated reference library. The local NCBI BLAST search is more flexible and can be used with any reference
+# library, but requires a local BLAST database to be set up. When BLASTing against a full NCBI database (i.e. `nt`),
+# processing may be very slow. Programmer hint: corresponds with RefDB enum in constants.py
+  method:
+    type: str
+    default: "bold"
+    choices: ["bold", "blast", "galaxy", "bolddistilled"]
+    help: "Method for taxonomic validation: local NCBI BLAST, Galaxy, BOLD ID service or BOLD Distilled"
+
+# If there are any returned matches where the ancestor at this rank matches the input, then the sequence is considered
+# valid. So, by default, if the same family is among any of the hits, we assume that the input sequence wasn't a
+# contaminant, parasite, endosymbiont or other off-target source.
+  rank:
+    type: str
+    default: "family"
+    choices: ["kingdom", "phylum", "class", "order", "family", "genus", "species"]
+    help: "Taxonomic rank at which to perform validation"
+
+# Minimum sequence identity threshold for taxonomic validation. Because this application is intended to validate
+# sequences for gap filling projects, the default is set to 80% identity. The intent is that this loosely corresponds
+# to hits within the same family. Note that this makes querying relatively slow. If you know that your sequences are
+# already in the reference library, you will accomplish significantly faster validation by setting this to a much
+# higher value, such as 95% or 97%.
+  min_identity:
+    type: float
+    default: 0.80
+    help: "Minimum sequence identity threshold for taxonomic validation"
+
+# The number of top hits to consider for taxonomic validation. In the same spirit as the minimum identity threshold,
+# this is intended as a scattershot approach among which we hope the find at least one hit within the same family.
+# Here, too, processing times can be significantly reduced if you set this to a smaller number if you are confident
+# about the coverage and quality of your reference library.
+  max_target_seqs:
+    type: int
+    default: 1000
+    help: "Maximum number of target sequences to return from BLAST search"
+
+# Configuration for local BLAST.
+local_blast:
+
+# The location of the BLAST database. When indexing a BLAST database from a FASTA file /path/to/input.fasta using
+# makeblastdb, the process will produce a number of indexes and other files that will have a variety of suffixes, such
+# as /path/to/input.fasta.ndb, /path/to/input.fasta.nhr, etc. Then, when you query this database with, say, blastn,
+# the database "name" needs to be provided (the '-db' argument). This is the path to the original input, i.e.
+# /path/to/input.fasta
+  db:
+    type: Path
+    required: false
+    help: "Path to the reference database for local BLAST-based taxonomic validation"
+
+# The number of threads to used for BLAST querying. The default value of 4 is a very small value, suitable for laptops
+# and such. On an HPC node this can be considerably larger, though it must not exceed the number of cores. For example,
+# on an HPC node with 64 cores you might go for 60. In benchmarking, we noticed speed increases with higher numbers,
+# but diminishing returns above 48-ish. If performance is key, it is a good idea to benchmark this on your own system.
+  threads:
+    type: int
+    default: 4
+    help: "Number of threads to use for BLAST searches"
+
+# The taxonomic 'extent' within which to search. This option only does something with BLAST databases provided by NCBI,
+# which are accompanied by a magical little SQLite database file. That database allows BLAST to limit its search within
+# a higher taxon, yielding speed increases. This extent MUST be above the rank at which we validate. For example,
+# within the class to which the input belongs (like insects) we look for hits of the right family.
+  extent:
+    type: str
+    default: "class"
+    choices: ["kingdom", "phylum", "class", "order", "family", "genus", "species"]
+    help: "Limit the search space within which to query, e.g. only search within the containing class"
+
+# This limits the hits to those with an E-value smaller than this value (the smaller the value, the 'more significant'
+# the hit). Smaller values should yield speed increases.
+  max_evalue:
+    type: float
+    default: 1e-5
+    help: "Maximum e-value threshold for reference library search"
+
+  word_size:
+    type: int
+    default: 28
+    help: "Length of the initial exact match that BLAST uses to find potential alignment regions"
+
+# Triage Configuration. This refers to the filtering of valid sequences. Depending on the 'mode', these are either
+# only structurally valid, taxonomically valid, or both.
+triage_config:
+
+# A typical use case we encountered is that multiple assembly attempts are produced for the same input specimen (e.g.
+# under different parameter settings of the assembly pipeline). The aim is then to pick the best sequence within that
+# group. We take this grouping as the default option. How sequences are grouped is determined by the separator. For
+# example, if we have the following:
+#
+# >foo_attempt1
+# agctaagcagatcgaggca
+# >foo_attempt2
+# tagcatcatgcatgcaagca
+# >bar_attempt1
+# gatcatcgatcagcatcac
+# >bar_attempt2
+# aatacgatctagcagcgagcg
+#
+# then we will group the sequences as 'foo' and 'bar', and then will pick the best attempt within each of these. The
+# best attempt is the longest sequence among the valid ones within the group.
+  group_by_sample:
+    type: bool
+    default: true
+    help: "Group sequences by sample ID for triage processing"
+
+  group_id_separator:
+    type: str
+    default: "_"
+    help: "Separator used to split sample IDs into groups for triage"
+
+# Logging Configuration. This sets the verbosity level of the logging output. The default is "WARNING", which means
+# that only warnings and more severe messages will be logged. You can set it to "DEBUG" to see more detailed output, or
+# "INFO" to see informational messages as well. The logging output will be written to STDERR, so you can redirect it to
+# a file if you want to keep a record of the validation process (by appending `2> logfile.txt` to the command line).
+log_level:
+  type: str
+  default: "WARNING"
+  choices: ["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"]
+  help: "Set logging verbosity level"

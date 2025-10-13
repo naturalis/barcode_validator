@@ -1,19 +1,20 @@
-import csv
+import os
 from pathlib import Path
-from typing import Optional, Iterator
+from typing import Optional, List
 from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
 from nbitk.config import Config
 from nbitk.logger import get_formatted_logger
 from nbitk.SeqIO.BCDM import BCDMIterator
 from nbitk.Tools import Blastn, Hmmalign
-from .dna_analysis_result import DNAAnalysisResult, DNAAnalysisResultSet
+from .dna_analysis_result import DNAAnalysisResultSet
+from .idservices.idservice import IDService
 from .resolvers.factory import ResolverFactory
 from .idservices.factory import IDServiceFactory
+from .resolvers.taxonomy import TaxonResolver
 from .validators.factory import StructureValidatorFactory
 from .validators.taxonomic import TaxonomicValidator
-from .constants import Marker, TaxonomicRank, TaxonomicBackbone, RefDB
-from .criteria import MarkerCriteriaFactory
+from .constants import Marker, TaxonomicBackbone, RefDB, ValidationMode
 
 class ValidationOrchestrator:
     """
@@ -27,15 +28,11 @@ class ValidationOrchestrator:
     - Output generation
 
     The orchestrator maintains responsibility for the entire validation
-    lifecycle to ensure consistent data flow and error handling.
-
-    Examples:
-        >>> from nbitk.config import Config
-        >>> config = Config()
-        >>> config.load_config('/path/to/config.yaml')
-        >>> orchestrator = ValidationOrchestrator(config)
-        >>> results = orchestrator.validate_file(Path('sequences.fasta'))
-        >>> orchestrator.write_results(results, Path('output.tsv'))
+    lifecycle to ensure consistent data flow and error handling. It is
+    therefore solely responsible for translating configuration settings
+    from the CLI to internal variables (ideally Enums or other boxed types).
+    If you find yourself fiddling with config options in deeper classes
+    this should be considered a major red flag that will impede maintainability.
     """
 
     def __init__(self, config: Config):
@@ -65,14 +62,17 @@ class ValidationOrchestrator:
         # We defer initialization until we definitely need it, because some of the validators
         # need assets and setup time that are quite costly.
         marker_type = Marker(self.config.get('marker'))
-        self._initialize(marker_type)
+        mode = ValidationMode(self.config.get('mode'))
+        self.initialize(marker_type, mode)
 
-        # Validate records and create result set
-        results = []
-        for record in self._parse_input(input_path):
-            result = self._validate_record(record, str(input_path), marker_type)
-            results.append(result)
-        result_set = DNAAnalysisResultSet(results)
+        # Parse records and populate result set
+        records = self.parse_input(input_path)
+        result_set = DNAAnalysisResultSet([], self.config)
+        result_set.populate(records=records, dataset=str(input_path), marker=marker_type)
+
+        # Validate the result set
+        self.logger.info(f"Validating {len(records)} records from {input_path}")
+        self.validate(resultset=result_set)
 
         # Add additional data if provided
         if csv_path:
@@ -82,22 +82,30 @@ class ValidationOrchestrator:
 
         return result_set
 
-    def _initialize(self, marker_type: Marker) -> None:
+    def initialize(self, marker_type: Marker, mode: ValidationMode) -> None:
         """
-        Initialize validators and other resources.
+        Initialize structural and/or taxonomic validators based on configuration. Note that this is
+        a potentially costly operation because it may involve loading HMM profiles, setting up
+        BLAST databases, and loading taxonomic backbones. Therefore, it should only be done once and only if needed.
+        :param marker_type: Marker type to use for validation
+        :param mode: Validation mode (e.g., 'both', 'taxonomic', 'structural')
         """
 
-        # Instantiate taxonomic validator if reverse taxonomy is required
-        if self.config.get('validate_taxonomy', True):
-            self._initialize_tv()
 
         # Instantiate structural validator subclass if structural validation is required
-        if self.config.get('validate_structure', True):
-            self._initialize_sv(marker_type)
+        if mode == ValidationMode.STRUCTURAL or mode == ValidationMode.BOTH:
+            self.initialize_structural_validator(marker_type)
 
-    def _initialize_sv(self, marker_type) -> None:
+        # Instantiate taxonomic validator if reverse taxonomy is required
+        if mode == ValidationMode.TAXONOMIC or mode == ValidationMode.BOTH:
+            self.initialize_taxonomic_validator()
+
+    def initialize_structural_validator(self, marker_type) -> None:
         """
-        Initialize structural validator.
+        Initialize structural validator. This may involve setting up HMM profiles and a taxonomy resolver if
+        the structural validator requires them, e.g. when validating protein-coding markers. This is a
+        potentially costly operation because it may involve loading a taxonomic backbone into memory.
+        Therefore, it should only be done once and only if structural validation is requested.
         :param marker_type: Marker type to use for validation
         """
         sv = StructureValidatorFactory.create_validator(self.config, marker_type)
@@ -110,127 +118,176 @@ class ValidationOrchestrator:
 
         # Set up resolver if needed
         if sv.requires_resolver():
-            svbb = TaxonomicBackbone(self.config.get('exp_taxonomy_type'))
-            svpath = self.config.get('exp_taxonomy')
-            sr = ResolverFactory.create_resolver(self.config, svbb)
-            self.logger.info(f"Loading input taxonomy from {svpath}")
-            sr.load_tree(Path(svpath))
+
+            # Initialize the TaxonResolver for the input. For every input sequence, this resolver
+            # is able to figure out its intended taxon (e.g. from the BOLD process ID) and higher
+            # lineage. This is both to compare higher taxa in this lineage against those returned
+            # by the ID service, and to infer the translation table.
+            sr = self.prepare_taxon_resolver(self.config.get('input_resolver.format'),
+                                             self.config.get('input_resolver.file'))
+
             sv.set_taxonomy_resolver(sr)
 
-    def _initialize_tv(self) -> None:
+    def initialize_taxonomic_validator(self) -> None:
         """
-        Initialize taxonomic validator.
+        Initialize taxonomic validator. This may involve setting up an IDService and a taxonomy resolver. This is a
+        potentially costly operation because it may involve loading a taxonomic backbone into memory.
+        Therefore, it should only be done once and only if taxonomic validation is requested.
         """
         self.taxonomic_validator = TaxonomicValidator(self.config)
 
         # Set up the resolver for taxonomic validation
         if self.taxonomic_validator.requires_resolver():
 
-            # Initialize the TaxonResolver for taxonomic validation
-            tvbb = TaxonomicBackbone(self.config.get('reference_taxonomy'))
-            tvpath = self.config.get(tvbb.value + '_file')
-            tr = ResolverFactory.create_resolver(self.config, tvbb)
-            self.logger.info(f"Loading reference taxonomy from {tvpath}")
-            tr.load_tree(Path(tvpath))
+            # Initialize the TaxonResolver for the input. For every input sequence, this resolver
+            # is able to figure out its intended taxon (e.g. from the BOLD process ID) and higher
+            # lineage. This is both to compare higher taxa in this lineage against those returned
+            # by the ID service, and to infer the translation table.
+            tr = self.prepare_taxon_resolver(self.config.get('input_resolver.format'),
+                                             self.config.get('input_resolver.file'))
             self.taxonomic_validator.set_taxonomy_resolver(tr)
 
             # Initialize an IDService if needed
             if self.taxonomic_validator.requires_idservice():
-                db = RefDB(self.config.get('reference_taxonomy'))
-                ids = IDServiceFactory.create_idservice(self.config, db)
-
-                # There is no way right now that the IDService could have a different
-                # TaxonResolver than the TaxonomicValidator
-                if ids.requires_resolver():
-                    ids.set_taxonomy_resolver(tr)
-
-                # If the IDService needs BLASTN, all externally configurable settings
-                # are injected here
-                if ids.requires_blastn():
-                    blastn = Blastn(self.config)
-                    blastn.set_db(self.config.get('blast_db'))
-                    blastn.set_num_threads(self.config.get('num_threads'))
-                    blastn.set_evalue(self.config.get('evalue'))
-                    blastn.set_outfmt(self.config.get('outfmt'))
-                    blastn.set_max_target_seqs(self.config.get('max_target_seqs'))
-                    blastn.set_word_size(self.config.get('word_size'))
-                    ids.set_blastn(blastn)
+                ids = self.prepare_id_service()
                 self.taxonomic_validator.set_idservice(ids)
 
-    def _parse_input(self, file_path: Path) -> Iterator[SeqRecord]:
+    def prepare_id_service(self) -> IDService:
+        """
+        Prepares an IDService instance based on configuration settings. This may involve setting up
+        a BLASTN instance and a TaxonResolver if the IDService requires them. This is a potentially
+        costly operation because it may involve loading a taxonomic backbone into memory.
+        Therefore, it should only be done once and only if taxonomic validation is requested.
+        :return: Configured IDService instance
+        """
+        db = RefDB(self.config.get('taxon_validation.method'))
+        ids = IDServiceFactory.create_idservice(self.config, db)
+        ids.set_min_identity(self.config.get('taxon_validation.min_identity'))
+        ids.set_max_target_seqs(self.config.get('taxon_validation.max_target_seqs'))
+
+        # Initialize the TaxonResolver for the ID Service. Local BLAST needs this to
+        # construct the higher lineage for the hits.
+        if ids.requires_resolver():
+            rdbr = self.prepare_taxon_resolver(self.config.get('reflib_resolver.format'),
+                                               self.config.get('reflib_resolver.file'))
+            ids.set_taxonomy_resolver(rdbr)
+
+        # If the IDService needs BLASTN, all externally configurable settings
+        # are injected here
+        if ids.requires_blastn():
+            ids.set_blastn(self.prepare_blastn())
+        return ids
+
+    def prepare_taxon_resolver(self, file_format: str, file: Path) -> TaxonResolver:
+        """
+        Instantiates a taxon resolver for a particular file format and loads the taxonomy dump into memory.
+        For large taxonomies (e.g. NCBI), this can be a costly operation, so it should only be done once.
+        :param file_format: A value of TaxonomicBackbone
+        :param file: Path to a taxonomy dump
+        :return: A TaxonResolver instance with the taxonomy loaded
+        """
+        tvbb = TaxonomicBackbone(file_format)
+        tr = ResolverFactory.create_resolver(self.config, tvbb)
+        self.logger.info(f"Loading {file_format} reference taxonomy from {file}")
+        tr.load_tree(file)
+        return tr
+
+    def prepare_blastn(self):
+        """
+        Configures the blastn instance with user provided variables
+        :return: A configured blastn instance
+        """
+
+        # These options are system specific for when users run a local blast database, which needs
+        # a location. The system also will have system specific, optimal thread numbers and user
+        # settable values for the maximum E and the starting word size.
+        blastn = Blastn(self.config)
+        blastn.set_db(self.config.get('local_blast.db'))
+        blastn.set_num_threads(self.config.get('local_blast.threads'))
+        blastn.set_evalue(self.config.get('local_blast.max_evalue'))
+        blastn.set_word_size(self.config.get('local_blast.word_size'))
+
+        # Set the BLASTDB environment variable if not already set and if blast_db is in config
+        blast_db = self.config.get('local_blast.db')
+        if blast_db is not None:
+
+            # Get the directory containing the blast database files
+            blast_db_dir = str(Path(blast_db).parent)
+
+            # Check if BLASTDB environment variable is set
+            if 'BLASTDB' not in os.environ:
+                # Set BLASTDB to the database directory
+                os.environ['BLASTDB'] = blast_db_dir
+        if blast_db is None:
+            self.logger.warning(
+                "Command line variable `--local-blast db=<path>` is not set. Local BLAST searches will fail.")
+
+        return blastn
+
+    def parse_input(self, file_path: Path) -> List[SeqRecord]:
         """
         Parse input file in FASTA or TSV format.
 
         :param file_path: Path to input file
-        :return: Iterator of SeqRecord objects
+        :return: List of SeqRecord objects
         :raises ValueError: If file format not supported
         """
         suffix = file_path.suffix.lower()
+        records = []
 
-        if suffix in ['.fa', '.fasta', '.fna']:
+        if suffix in ['.fa', '.fasta', '.fna', '.fas']:
             self.logger.info(f"Parsing FASTA file: {file_path}")
-            yield from SeqIO.parse(file_path, 'fasta')
+            for record in SeqIO.parse(file_path, 'fasta'):
+                records.append(record)
 
         elif suffix in ['.tsv', '.txt']:
             self.logger.info(f"Parsing TSV file: {file_path}")
             with open(file_path) as handle:
-                yield from SeqIO.parse(handle, 'bcdm-tsv')
-
+                for record in SeqIO.parse(handle, 'bcdm-tsv'):
+                    records.append(record)
         else:
             raise ValueError(f"Unsupported file format: {suffix}")
 
-    def _validate_record(self, record: SeqRecord, dataset: str, marker_type: Marker) -> Optional[DNAAnalysisResult]:
+        return records
+
+    def validate(self, resultset: DNAAnalysisResultSet) -> None:
         """
-        Validate a single sequence record.
+        Validate a result set, coordinating structural and taxonomic validators as configured.
 
-        :param record: The sequence record to validate
-        :param dataset: Dataset identifier (e.g., source file name)
-        :param marker_type: Marker type to use for validation
-        :return: DNAAnalysisResult object containing validation results
+        :param resultset: DNAAnalysisResultSet object to be populated with validation results
         """
-        # Extract group ID if present
-        group_id = None
-        if self.config.get('group_id_separator'):
-            group_id = record.id.split(self.config.get('group_id_separator'))[0]
 
-        # Instantiate result object, annotate target marker at sequence level (CSC) or config level, set validation level
-        result = DNAAnalysisResult(record.id, dataset, group_id=group_id)
-        marker_code = record.annotations.get('bcdm_fields', {}).get('marker_code') # may be in CSC/BCDM
-        if marker_code is not None:
-            marker_type = Marker(marker_code)
-        result.add_ancillary('marker_code', marker_type.value)
-        result.marker_criteria = MarkerCriteriaFactory.get_criteria(marker_type, self.config)
-
-        # Perform validations
+        # Perform structural validation if requested. This is quick so can be done sequentially.
         if self.structural_validator:
-            if self.structural_validator.marker != marker_type:
-                result.error = f"Marker type mismatch: expected {self.structural_validator.marker_type.value}, got {marker_type.value}"
-                return None
-            else:
-                self.structural_validator.validate(record, result)
-        if self.taxonomic_validator and not result.error:
-            constraint_rank = TaxonomicRank(self.config.get('constraint_rank', 'class'))
-            self.taxonomic_validator.validate_taxonomy(record, result, constraint_rank)
+            self.structural_validator.validate(resultset)
 
-        return result
+        # If taxonomic validation is requested and there were no errors thus far, perform the validation.
+        # To speed things up, we don't do this on errors or if the sequence was structurally invalid.
+        if self.taxonomic_validator:
+            is_struct_validated = self.structural_validator is not None
+            self.taxonomic_validator.validate(resultset, is_struct_validated)
 
     def write_results(self, results: DNAAnalysisResultSet,
-                     output_format: str = 'tsv', triage: bool = False) -> None:
+                     output_fasta: Path, output_tsv: Path, mode: ValidationMode) -> None:
         """
         Write validation results.
 
         :param results: Validation result set
-        :param output_format: Output format (tsv or fasta, default: tsv)
-        :param triage: Perform triage on the result set (default: false)
+        :param output_fasta: Output FASTA file path for valid sequences
+        :param output_tsv: Output TSV file path for results
+        :param mode: Validation mode (e.g., 'both', 'taxonomic', 'structural')
         """
+        # We do the triage first so that the TSV output will contain any applicable descriptive error
+        # Write FASTA for valid sequences
+        triaged = results.triage(mode, self.config.get('triage_config.group_by_sample', False))
+        with open(output_fasta, 'w') as fasta_file:
+            fasta_file.write(triaged.to_string('fasta'))
+
         # Write TSV results
         self.logger.info(f"Writing results")
+        with open(output_tsv, 'w', newline='\n') as tsv_file:
+            tsv_file.write(results.to_string('tsv'))
 
-        # Triage the results
-        if triage:
-            results = results.triage(mode = self.config.get('mode'))
 
-        # Write the results
-        print(results.to_string(output_format))
 
 
