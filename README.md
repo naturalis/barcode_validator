@@ -2,7 +2,7 @@
 
 A Python-based toolkit for validating DNA barcode sequences through structural and taxonomic validation. This tool 
 helps ensure sequence quality and taxonomic accuracy for submissions to the Barcode of Life Data System (BOLD)
-and to Naturalis's Core Sequence Cloud.
+and to Naturalis's DNA domain within the BioCloud.
 
 ## Features
 
@@ -65,13 +65,13 @@ The barcode validator can be run as a Python module:
 python -m barcode_validator [options]
 ```
 
-Below are detailed examples for common use cases, particularly for the **BGE (Bioscan Genomics Europe)** and 
+Below are detailed examples for common use cases, particularly for the **BGE (Biodiversity Genomics Europe)** and 
 **ARISE** projects.
 
 #### BGE Use Case: Structural and Taxonomic Validation with Assembly Triage
 
-The BGE use case involves validating sequences from multiple assembly attempts per specimen, selecting the best valid 
-sequence per specimen, and performing taxonomic validation using the Galaxy BLAST web service.
+The BGE use case involves validating sequences from multiple genome skimming assembly attempts per specimen, selecting 
+the best valid sequence per specimen, and performing taxonomic validation using the Galaxy BLAST web service.
 
 **Input requirements:**
 - FASTA file with sequences where IDs are formatted as `processID_assemblyAttemptID`
@@ -160,7 +160,8 @@ python -m barcode_validator \
 #### ARISE Use Case: Simple Validation Without Assembly Grouping
 
 The ARISE use case involves validating individual sequences (one per specimen) with both structural and taxonomic 
-validation using the BOLD web service.
+validation using the BOLD web service. This case is focused on fresh specimen sequencing, either by ONT or Sanger,
+which lacks the brute forcing that BGE requires.
 
 **Input requirements:**
 - FASTA file with sequences where the first word of the definition line is the process ID
@@ -260,9 +261,8 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE.md](LIC
 
 ## Citation
 
-If you use this software in your research, please cite:
-
-[Citation information to be added]
+If you use this software in your research, please cite this repository. An application note (to JOSS) that 
+describes the software is in preparation.
 
 ## Contact
 
@@ -272,5 +272,5 @@ For questions, issues, or contributions:
 
 ## Acknowledgments
 
-This tool was developed to support the Bioscan Genomics Europe (BGE) and ARISE projects, as well as general DNA 
+This tool was developed to support the Biodiversity Genomics Europe (BGE) and ARISE projects, as well as general DNA 
 barcoding initiatives at Naturalis Biodiversity Center.
