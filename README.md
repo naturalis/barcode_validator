@@ -225,6 +225,11 @@ To use the tool in Galaxy:
 
 For taxonomic validation through Galaxy, the tool can connect to Galaxy's BLAST web service using API credentials.
 
+## Architecture
+
+For detailed information about the software architecture, including class hierarchies and process flow diagrams, 
+see [Architecture Documentation](ARCHITECTURE.md).
+
 ## Contributing
 
 We welcome contributions! Please see:
