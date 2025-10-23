@@ -204,7 +204,7 @@ This produces a FASTA file with valid sequences and a TSV file with detailed val
 - `--taxon-validation max_target_seqs=<int>`: Maximum number of BLAST hits to consider
 - `--triage-config group_id_separator=<char>`: Separator for parsing group IDs
 - `--triage-config group_by_sample=<true|false>`: Enable/disable assembly attempt grouping
-- `--log-level`: Logging level (`ERROR`, `INFO`, `DEBUG`)
+- `--log-level`: Logging level (`DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL`)
 
 ### Galaxy Integration
 
