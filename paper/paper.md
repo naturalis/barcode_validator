@@ -42,7 +42,7 @@ The Barcode Validator addresses these gaps by providing:
 
 5. **Workflow integration**: Command-line interface suitable for automated pipelines, with Galaxy tool integration for web-based access.
 
-The software has been deployed in production workflows at Naturalis Biodiversity Center for the BGE project, processing thousands of arthropod COI sequences from genome skimming experiments, and the ARISE project for validation of freshly sequenced specimens. Its design supports the quality assurance requirements of modern DNA barcoding initiatives while remaining flexible enough to accommodate diverse project-specific workflows.
+The software has been deployed in production workflows at Naturalis Biodiversity Center (the Netherlands) and the Natural History Museum (United Kingdom) for the BGE project, processing thousands of arthropod COI sequences from genome skimming experiments, and the ARISE project for validation of freshly sequenced specimens. Its design supports the quality assurance requirements of modern DNA barcoding initiatives while remaining flexible enough to accommodate diverse project-specific workflows.
 
 # Implementation
 
