@@ -64,6 +64,6 @@ The source code is available on GitHub at https://github.com/naturalis/barcode_v
 
 # Acknowledgements
 
-This work was supported by the Biodiversity Genomics Europe (BGE) project, which has received funding from the European Union's Horizon Europe Research and Innovation Programme under grant agreement No. 101059492, and the ARISE project. We acknowledge the Naturalis Biodiversity Center for institutional support and infrastructure.
+This work was supported by the Biodiversity Genomics Europe (BGE) project, which has received funding from the European Union's Horizon Europe Research and Innovation Programme under grant agreement No. 101059492, and the ARISE project. The author acknowledges the Naturalis Biodiversity Center for institutional support and infrastructure, and Dick Groenenberg, Dan Parsons and Ben Price for extensive testing, feedback, and improvement suggestions over the course of this project.
 
 # References
