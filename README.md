@@ -1,3 +1,5 @@
+[![status](https://joss.theoj.org/papers/62a4e1902c74fc953677a993fb2c1854/status.svg)](https://joss.theoj.org/papers/62a4e1902c74fc953677a993fb2c1854)
+
 # DNA Barcode Validator
 
 A Python-based toolkit for validating DNA barcode sequences through structural and taxonomic validation. This tool 
