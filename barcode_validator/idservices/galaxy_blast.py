@@ -5,7 +5,7 @@ from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from typing import Optional, Set, List, Tuple
 from nbitk.config import Config
-from nbitk.Services.Galaxy.BLASTN import BLASTNClient, OutputFormat, TaxonomyMethod
+from nbitk.Services.Galaxy.BLASTN import BLASTNClient
 from nbitk.Taxon import Taxon
 from barcode_validator.resolvers.taxonomy import TaxonResolver
 from copy import deepcopy
@@ -69,8 +69,8 @@ class GalaxyBLAST(IDService):
                     input_file = temp_input_name,
                     databases = [self.database],
                     max_target_seqs = self.max_target_seqs,
-                    output_format = OutputFormat.CUSTOM_TAXONOMY,
-                    taxonomy_method = TaxonomyMethod.DEFAULT,
+                    output_format = BLASTNClient.OutputFormat.CUSTOM_TAXONOMY,
+                    taxonomy_method = BLASTNClient.TaxonomyMethod.DEFAULT,
                     coverage = 80.0,
                     identity = self.min_identity * 100
                 )

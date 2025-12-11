@@ -6,6 +6,18 @@ import sys
 
 from barcode_validator.cli import BarcodeValidatorCLI
 
+@pytest.fixture(autouse=True)
+def check_galaxy_key():
+    """Verify Galaxy API key is available"""
+    if not os.environ.get('GALAXY_API_KEY'):
+        pytest.skip("GALAXY_API_KEY not set in environment")
+
+@pytest.fixture(autouse=True)
+def check_galaxy_domain():
+    """Verify Galaxy domain is available"""
+    if not os.environ.get('GALAXY_DOMAIN'):
+        pytest.skip("GALAXY_DOMAIN not set in environment")
+
 @pytest.fixture
 def data_dir():
     """Fixture to provide the test data directory."""
