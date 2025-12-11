@@ -5,6 +5,12 @@ data/fail
 env.sh
 .idea
 
+# Test output files
+tests/bge/data/rbcl_structval_out.fasta
+tests/bge/data/rbcl_structval_out.tsv
+tests/bge/data/rbcl_taxonval_out.fasta
+tests/bge/data/rbcl_taxonval_out.tsv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -34,6 +34,7 @@ class GalaxyBLAST(IDService):
         super().__init__(config)
         self.taxonomy_resolver: TaxonResolver = Optional[TaxonResolver]
         self.blastn: BLASTNClient = BLASTNClient(config, self.logger)
+        self.database = config.get('galaxy_blast.database', 'BOLD species only no duplicates')
 
     def run_galaxy_blast(self, sequences: List[SeqRecord]) -> Optional[dict]:
         """
@@ -66,7 +67,7 @@ class GalaxyBLAST(IDService):
                 # Run BLAST using nbitk wrapper
                 result = self.blastn.run_blast(
                     input_file = temp_input_name,
-                    databases = ["BOLD species only no duplicates"],
+                    databases = [self.database],
                     max_target_seqs = self.max_target_seqs,
                     output_format = OutputFormat.CUSTOM_TAXONOMY,
                     taxonomy_method = TaxonomyMethod.DEFAULT,
