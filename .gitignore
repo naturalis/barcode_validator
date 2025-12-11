@@ -5,6 +5,9 @@ data/fail
 env.sh
 .idea
 
+# Auto-generated version file
+barcode_validator/_version.py
+
 # Test output files
 tests/bge/data/rbcl_structval_out.fasta
 tests/bge/data/rbcl_structval_out.tsv
