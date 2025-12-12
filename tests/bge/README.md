@@ -180,3 +180,24 @@ remote, but this is untested and doesn't seem needed, for reasons stated above.
 Within each group of assembly attempts, we simply pick the longest valid sequence. Arguably there are more 
 sophisticated criteria but how to rank them (e.g. is the next longest one with fewer ambiguities better) is
 not all that straightforward.
+
+## rbcL Test (test_rbcL.py)
+
+A separate test file (`test_rbcL.py`) has been created to test rbcL marker validation. This test:
+
+- Uses the rbcL multi-fasta file (`data/rbcl_barcodes_YG-4378.fasta`) with 72 sequences
+- Sets marker to `rbcL` 
+- Configures taxonomic validation to use the Galaxy BLAST service with database `Genbank rbcL (2023-11-15)`
+- Tests both structural and taxonomic validation
+
+To run this test:
+
+```bash
+# With Galaxy credentials (actual BLAST will run):
+GALAXY_API_KEY=<your_key> GALAXY_DOMAIN=galaxy.naturalis.nl pytest tests/bge/test_rbcL.py -v
+
+# Without credentials (test will skip, which is expected):
+pytest tests/bge/test_rbcL.py -v
+```
+
+The test demonstrates the new configurable Galaxy BLAST database feature, allowing different databases to be specified for different markers via the `--galaxy-blast database=<name>` option.

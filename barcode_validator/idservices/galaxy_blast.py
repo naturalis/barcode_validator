@@ -5,7 +5,14 @@ from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from typing import Optional, Set, List, Tuple
 from nbitk.config import Config
-from nbitk.Services.Galaxy.BLASTN import BLASTNClient, OutputFormat, TaxonomyMethod
+from nbitk.Services.Galaxy.BLASTN import BLASTNClient
+try:
+    # Try importing from module level (older nbitk versions)
+    from nbitk.Services.Galaxy.BLASTN import OutputFormat, TaxonomyMethod
+except ImportError:
+    # Fall back to class attributes (newer nbitk versions)
+    OutputFormat = BLASTNClient.OutputFormat
+    TaxonomyMethod = BLASTNClient.TaxonomyMethod
 from nbitk.Taxon import Taxon
 from barcode_validator.resolvers.taxonomy import TaxonResolver
 from copy import deepcopy
@@ -34,6 +41,7 @@ class GalaxyBLAST(IDService):
         super().__init__(config)
         self.taxonomy_resolver: TaxonResolver = Optional[TaxonResolver]
         self.blastn: BLASTNClient = BLASTNClient(config, self.logger)
+        self.database = config.get('galaxy_blast.database', 'BOLD species only no duplicates')
 
     def run_galaxy_blast(self, sequences: List[SeqRecord]) -> Optional[dict]:
         """
@@ -66,7 +74,7 @@ class GalaxyBLAST(IDService):
                 # Run BLAST using nbitk wrapper
                 result = self.blastn.run_blast(
                     input_file = temp_input_name,
-                    databases = ["BOLD species only no duplicates"],
+                    databases = [self.database],
                     max_target_seqs = self.max_target_seqs,
                     output_format = OutputFormat.CUSTOM_TAXONOMY,
                     taxonomy_method = TaxonomyMethod.DEFAULT,

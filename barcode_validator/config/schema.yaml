@@ -166,6 +166,18 @@ taxon_validation:
     default: 1000
     help: "Maximum number of target sequences to return from BLAST search"
 
+# Configuration for Galaxy BLAST.
+galaxy_blast:
+
+# The Galaxy BLAST database to use for taxonomic validation. This is the name of the database as it appears in
+# the Galaxy BLAST service. Different databases are available for different markers. For example, for COI-5P, the
+# default is "BOLD species only no duplicates", and for rbcL, you might use "Genbank rbcL (2023-11-15)".
+  database:
+    type: str
+    default: "BOLD species only no duplicates"
+    required: false
+    help: "Galaxy BLAST database to use for taxonomic validation"
+
 # Configuration for local BLAST.
 local_blast:
 
