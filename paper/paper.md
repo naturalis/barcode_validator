@@ -16,7 +16,7 @@ authors:
 affiliations:
  - name: Naturalis Biodiversity Center, Leiden, The Netherlands
    index: 1
-date: 23 October 2024
+date: 22 January 2026
 bibliography: paper.bib
 ---
 
@@ -58,6 +58,20 @@ The software integrates with established bioinformatics tools including BLAST+ [
 
 Input data can be provided as FASTA files with optional CSV metadata and BOLD Excel spreadsheets containing specimen and taxonomic information. Validation results are output in both human-readable TSV format (with detailed pass/fail status for each validation criterion) and filtered FASTA format (containing only sequences meeting all validation requirements).
 
+# Software Design
+
+The Barcode Validator architecture reflects deliberate trade-offs between flexibility and complexity. The central design decision was to separate validation logic (what measurements to collect) from validity adjudication (what thresholds constitute pass/fail). This separation enables the same codebase to serve diverse projects with different quality requirements—genome skimming workflows demanding zero ambiguous bases versus Sanger sequencing tolerating several—without code modifications.
+
+The Strategy pattern for validators and Factory pattern for services enable runtime selection of validation approaches and identification backends. While this introduces abstraction overhead, it proved essential for accommodating the consortium's heterogeneous infrastructure: some partners operate local BLAST databases, others rely on Galaxy web services, and still others use BOLD's identification API directly.
+
+**Build vs. Contribute Justification**: Existing tools address fragments of this workflow but none integrate them. FastQC [@Andrews2010] assesses raw read quality, not assembled barcodes. BOLD's identification engine provides taxonomic matching but lacks structural validation. Standalone BLAST offers sequence similarity searches without quality metrics integration. Biopython provides translation capabilities but not marker-specific HMM alignment for reading frame detection. The Barcode Validator's contribution lies precisely in this integration: combining HMM-based codon phase detection, taxon-aware translation table selection, multi-backend taxonomic validation, and assembly triage into a single configurable pipeline. No existing package provided extension points suitable for adding this functionality; the unique combination of requirements necessitated new software.
+
+# Research Impact Statement
+
+The Barcode Validator has demonstrated substantial realized impact through its deployment in the Biodiversity Genomics Europe (BGE) project. As documented in BGE Deliverable D8.4, the toolkit processed sequences from over 18,500 specimens across 68 taxonomic orders, enabling the submission of more than 47,000 validated DNA barcode sequences to BOLD and the European Nucleotide Archive by October 2025. The validation framework identified systematic issues including plate-swap errors that would otherwise have corrupted database submissions, and revealed taxonomic patterns in validation success rates ranging from 0% to 100% across orders—insights that directly informed protocol optimizations.
+
+The software is deployed in production workflows at Naturalis Biodiversity Center (Netherlands) and the Natural History Museum (United Kingdom), with the ARISE project using it for validation of freshly sequenced vertebrate and invertebrate specimens. Community readiness is evidenced by: distribution through PyPI and Bioconda channels; availability as a Galaxy tool wrapper enabling web-based access for non-technical users; comprehensive documentation including architecture diagrams and use-case examples; an Apache 2.0 license; and a public GitHub repository with contribution guidelines. The toolkit's analytical outputs informed the BGE consortium's understanding of genome skimming assembly parameter optimization, demonstrating that the combination of specific preprocessing steps (*fcleaner*=TRUE, *merge*=FALSE) with alignment thresholds (*r*=1.0, *s*=50) maximizes barcode recovery while maintaining stringent quality standards.
+
 # Availability
 
 The source code is available on GitHub at https://github.com/naturalis/barcode_validator under the Apache License 2.0. The software can be installed via PyPI (`pip install barcode-validator`) or Bioconda (`conda install -c bioconda barcode-validator`). A Galaxy tool wrapper is available in the Galaxy ToolShed for web-based access. Documentation, including detailed usage examples for common workflows, is provided in the repository README and architecture documentation.
@@ -65,5 +79,11 @@ The source code is available on GitHub at https://github.com/naturalis/barcode_v
 # Acknowledgements
 
 This work was supported by the Biodiversity Genomics Europe (BGE) project, which has received funding from the European Union's Horizon Europe Research and Innovation Programme under grant agreement No. 101059492, and the ARISE project. The author acknowledges the Naturalis Biodiversity Center for institutional support and infrastructure, and Dick Groenenberg, Dan Parsons and Ben Price for extensive testing, feedback, and improvement suggestions over the course of this project.
+
+# AI Usage Disclosure
+
+The overall software architecture—including the Strategy pattern for validators, Factory pattern for services, and the separation of validation logic from criteria-based adjudication—was conceived by the author prior to the widespread availability of usable large language models, drawing on established object-oriented design principles. The parameterization of validation logic, including marker-specific thresholds, taxonomic validation levels, and quality criteria, was determined through iterative discussions among consortium users based on empirical analysis of validation outcomes.
+
+However, portions of the implementation benefited from generative AI assistance. Specifically, Claude (Anthropic) and ChatGPT (OpenAI) were used to accelerate code syntax generation for routine operations, produce initial drafts of docstrings and inline documentation, and refine error handling patterns. The author reviewed, tested, and modified all AI-generated content before incorporation. This manuscript was drafted by the author with AI assistance for prose refinement and structural suggestions.
 
 # References
