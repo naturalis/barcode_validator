@@ -9,6 +9,10 @@ tags:
   - BOLD
   - bioinformatics
 authors:
+  - name: D.S.J. Groenenberg
+    orcid: 0000-0003-4383-8148
+    corresponding: false
+    affiliation: 1
   - name: Rutger A. Vos
     orcid: 0000-0001-9254-7318
     corresponding: true
