@@ -13,6 +13,14 @@ authors:
     orcid: 0000-0003-4383-8148
     corresponding: false
     affiliation: 1
+  - name: Daniel A. J. Parsons
+    orcid: 0000-0002-5246-0725
+    corresponding: false
+    affiliation: 2
+  - name: Ben Price
+    orcid: 0000-0001-5497-4087
+    corresponding: false
+    affiliation: 2
   - name: Rutger A. Vos
     orcid: 0000-0001-9254-7318
     corresponding: true
@@ -20,6 +28,8 @@ authors:
 affiliations:
  - name: Naturalis Biodiversity Center, Leiden, The Netherlands
    index: 1
+ - name: Natural History Museum, London, United Kingdom
+   index: 2
 date: 22 January 2026
 bibliography: paper.bib
 ---
