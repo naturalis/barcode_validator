@@ -9,6 +9,10 @@ tags:
   - BOLD
   - bioinformatics
 authors:
+  - name: Rutger A. Vos
+    orcid: 0000-0001-9254-7318
+    corresponding: true
+    affiliation: 1
   - name: D.S.J. Groenenberg
     orcid: 0000-0003-4383-8148
     corresponding: false
@@ -21,10 +25,6 @@ authors:
     orcid: 0000-0001-5497-4087
     corresponding: false
     affiliation: 2
-  - name: Rutger A. Vos
-    orcid: 0000-0001-9254-7318
-    corresponding: true
-    affiliation: 1
 affiliations:
  - name: Naturalis Biodiversity Center, Leiden, The Netherlands
    index: 1
