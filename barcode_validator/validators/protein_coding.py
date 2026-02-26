@@ -494,6 +494,9 @@ class ProteinCodingValidator(StructuralValidator):
             family = taxonomy_dict.get('family')
             if family is not None and len(family) > 1:
                 self.logger.warning(f"Multiple families found: {family}; check translation table assignment")
+            if phylum is None:
+                self.logger.warning("Phylum is None, cannot determine translation table, using default")
+                return 5  # or whatever a sensible default is
 
             if 'Chordata' in phylum:
                 if 'Ascidiacea' in tax_class:
