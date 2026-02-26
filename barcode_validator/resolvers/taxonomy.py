@@ -97,7 +97,12 @@ class TaxonResolver:
             # For example, some specimens are identified as 'Lepidoptera (order)' only, but we may want to validate
             # at family rank. In such cases, we validate at the provided rank instead and issue a warning.
             validation_rank = rank
-            provided_rank = TaxonomicRank(species.taxonomic_rank.lower())
+            # use try except to prevent crashing in cases of unknown rank (ie. subfamily, tribe)
+            try:
+                provided_rank = TaxonomicRank(species.taxonomic_rank.lower())
+            except ValueError:
+                self.logger.warning(f"Unknown taxonomic rank '{species.taxonomic_rank}', skipping rank validation")
+                continue  # skip this species instead of setting provided_rank = None
             if index_for_rank(provided_rank) < index_for_rank(validation_rank):
                 self.logger.warning(f"{species.name} is rank '{provided_rank.value}', i.e. higher than '{rank.value}'")
                 validation_rank = provided_rank
