@@ -551,15 +551,15 @@ class DNAAnalysisResult:
         values = []
         for key in self.result_fields():
             if key == 'identification':
-                exp = [taxon.name for taxon in self.exp_taxon]
+                exp = [taxon.name for taxon in self.exp_taxon] if self.exp_taxon else []
                 exp.sort()
                 values.append(",".join(exp))
             elif key == 'species':
-                species = [species.name for species in self.species]
+                species = [species.name for species in self.species] if self.species else []
                 species.sort()
                 values.append(",".join(species))
             elif key == 'obs_taxon':
-                obs = [taxon.name for taxon in self.obs_taxon]
+                obs = [taxon.name for taxon in self.obs_taxon] if self.obs_taxon else []
                 obs.sort()
                 values.append(",".join(obs))
             elif key == 'stop_codons':
