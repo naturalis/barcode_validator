@@ -16,7 +16,7 @@ Before you begin:
 
 ### Reporting Bugs
 
-If you've found a bug, please create an issue on our GitLab repository. Be sure to 
+If you've found a bug, please create an issue on our GitHub repository. Be sure to 
 include:
 
 - A clear title and description
@@ -74,7 +74,7 @@ isn't showing any activity.
 
 ## Community
 
-Keep an eye on the GitLab issues for questions from other community members. If you know 
+Keep an eye on the GitHub issues for questions from other community members. If you know 
 the answer, please don't hesitate to share your expertise!
 
 Thank you for contributing to the Naturalis Bioinformatics Toolkit. Your efforts help 
