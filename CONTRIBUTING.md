@@ -74,7 +74,7 @@ isn't showing any activity.
 
 ## Community
 
-Keep an eye on the GitLab issues for questions from other community members. If you know 
+Keep an eye on the GitHub issues for questions from other community members. If you know 
 the answer, please don't hesitate to share your expertise!
 
 Thank you for contributing to the Naturalis Bioinformatics Toolkit. Your efforts help 
