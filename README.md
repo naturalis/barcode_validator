@@ -210,22 +210,55 @@ This produces a FASTA file with valid sequences and a TSV file with detailed val
 
 ### Galaxy Integration
 
-The structural validation functionality is also available through the Galaxy platform:
+Galaxy features in two distinct ways, which have different requirements. They are easily confused, so they are
+described separately here.
 
-- **Galaxy Toolshed**: The barcode validator structural validation tool is available in the Galaxy Toolshed, 
-  enabling easy installation into any Galaxy instance.
-- **Web-based interface**: Users can upload sequence files, configure validation parameters through the GUI, 
-  run validations, and download results.
-- **Workflow integration**: The tool can be incorporated into Galaxy workflows for automated processing pipelines.
+#### Barcode Validator as a Galaxy Tool
 
-To use the tool in Galaxy:
-1. Install the tool from the Galaxy Toolshed (search for "barcode validator")
-2. Upload your sequence files to your Galaxy history
-3. Configure validation parameters through the GUI
-4. Run the validation
-5. View results and download validation reports and filtered sequences
+Structural validation is wrapped as a Galaxy tool and published on the
+[Galaxy Toolshed](https://toolshed.g2.bx.psu.edu/) as `rvosa/barcode_validator_structural`, and as the suite
+`rvosa/suite_barcode_validator`. This lets non-technical users validate sequences from their Galaxy history
+through a web form, and lets the validation be embedded in Galaxy workflows.
 
-For taxonomic validation through Galaxy, the tool can connect to Galaxy's BLAST web service using API credentials.
+Installing a tool from the Toolshed requires **administrator privileges** on the target Galaxy instance; ordinary
+users cannot do this themselves. The tool is not preinstalled on the large public servers, so searching for
+"barcode validator" in the tool panel of usegalaxy.org or usegalaxy.eu will return nothing. To use it, either ask
+the administrator of your institutional instance to install it, or run your own instance.
+
+Once installed:
+1. Upload your sequence files to your Galaxy history
+2. Configure validation parameters through the GUI
+3. Run the validation
+4. View results and download validation reports and filtered sequences
+
+#### Galaxy as a Taxonomic Validation Backend
+
+This is a separate feature. `--taxon-validation method=galaxy` does *not* run this package on a Galaxy server.
+Instead, it submits your sequences to a different tool, "Identify reads with blastn and find taxonomy", on a
+remote Galaxy instance, and parses the taxonomic lineages that come back.
+
+> **Only `galaxy.naturalis.nl` is supported at present.** That tool, and the curated reference databases it
+> searches (e.g. "BOLD species only no duplicates"), are deployed on the Naturalis instance only. An API key from
+> another server will not work: the run fails with
+> `Tool 'Identify reads with blastn and find taxonomy' not found`.
+
+The instance and the credentials are read from the environment:
+
+```bash
+export GALAXY_DOMAIN=galaxy.naturalis.nl   # currently the only instance hosting the required tool
+export GALAXY_API_KEY=your_galaxy_api_key  # User -> Preferences -> Manage API Key
+```
+
+If you do not have an account on galaxy.naturalis.nl, use one of the backends that needs no Galaxy credentials:
+
+- `--taxon-validation method=bold` or `method=bolddistilled`: the BOLD identification service, which needs only an
+  internet connection. This is the backend used in the ARISE example above.
+- `--taxon-validation method=blast` combined with `--local-blast db=/path/to/db`: a local BLAST+ database that you
+  supply yourself.
+
+Accounts on galaxy.naturalis.nl are available by default to Naturalis staff. Furthermore, access can be requested in 
+specific cases for scientists connected to institutions that are members of SURF, the Dutch cooperative for academic
+computing. If you qualify, you can apply for access via bioinformatics@naturalis.nl
 
 ## Architecture
 
