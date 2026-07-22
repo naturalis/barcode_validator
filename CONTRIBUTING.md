@@ -38,7 +38,7 @@ We actively welcome your pull requests. Here's the process:
 
 1. Fork the repo and create your branch from `main`.
 2. If you've added code that should be tested, add tests.
-3. Ensure the test suite passes.
+3. Ensure the test suite passes. Use `pytest -m "not galaxy"` if you have no account on galaxy.naturalis.nl; see [Testing](README.md#testing).
 4. Make sure your code lints.
 5. Issue that pull request!
 
@@ -58,7 +58,10 @@ We can't stress enough how important tests are. When contributing:
 2. Aim for high test coverage (we recommend at least 80%).
 3. Make sure all tests pass before submitting a pull request.
 4. If you're fixing a bug, write a test that exposes the bug and fails before your fix.
-
+5. Tests that depend on an external service must **skip** with an explanatory message when that service is
+   unavailable, rather than fail. The shared `galaxy_credentials` fixture in `tests/conftest.py` does this for
+   the Galaxy backend; mark such tests `galaxy` so they can be deselected with `pytest -m "not galaxy"`.
+   
 ## Pull Request Process
 
 1. Ensure any install or build dependencies are removed before the end of the layer when doing a build.
