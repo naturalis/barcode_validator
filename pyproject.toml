@@ -28,3 +28,11 @@ include = ["barcode_validator*"]
 
 [tool.setuptools.package-data]
 "barcode_validator" = ["hmm_files/*.hmm"]
+
+[tool.pytest.ini_options]
+# Tests marked 'galaxy' exercise taxonomic validation against the one Galaxy instance that hosts the
+# required BLASTN tool, and are skipped unless GALAXY_DOMAIN and GALAXY_API_KEY point at it. Deselect them
+# entirely with: pytest -m "not galaxy"
+markers = [
+    "galaxy: requires an account on galaxy.naturalis.nl (see 'Galaxy Integration' in README.md)",
+]
