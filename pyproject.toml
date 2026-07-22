@@ -16,6 +16,7 @@ dependencies = [
     "biopython",
     "requests",
     "PyYAML",
+    "pytest",
 ]
 
 [tool.setuptools_scm]
