@@ -295,6 +295,24 @@ pytest tests/arise/
 
 The test suite includes comprehensive examples for BGE and ARISE use cases.
 
+### Tests That Require a Galaxy Account
+
+The end-to-end tests in `tests/arise/`, `tests/bge/` and `tests/galaxy/` perform taxonomic validation through the
+backend described under [Galaxy Integration](#galaxy-integration). They are marked `galaxy` and are **skipped**
+unless all of the following hold:
+
+1. `GALAXY_DOMAIN` and `GALAXY_API_KEY` are set in the environment;
+2. `GALAXY_DOMAIN` is `galaxy.naturalis.nl`, currently the only instance hosting the required tool;
+3. the API key authenticates against that instance.
+
+Each check reports why it skipped, so a skip tells you which condition was not met. Skipped Galaxy tests are the
+expected outcome for anyone without an account on that instance and do not indicate a broken installation. To
+deselect them altogether:
+
+```bash
+pytest -m "not galaxy"
+```
+
 ## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE.md](LICENSE.md) file for details.
