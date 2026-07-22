@@ -1,28 +1,20 @@
 import os
 import pathlib
-import tempfile
 
 import pytest
 from pathlib import Path
 import sys
 
-import requests
-
 from barcode_validator.cli import BarcodeValidatorCLI
 
-# do I still work?
-
-@pytest.fixture(autouse=True)
-def check_galaxy_key():
-    """Verify Galaxy API key is available"""
-    if not os.environ.get('GALAXY_API_KEY'):
-        pytest.skip("GALAXY_API_KEY not set in environment")
-
-@pytest.fixture(autouse=True)
-def check_galaxy_domain():
-    """Verify Galaxy API key is available"""
-    if not os.environ.get('GALAXY_DOMAIN'):
-        pytest.skip("GALAXY_DOMAIN not set in environment")
+# Every test in this module drives taxonomic validation through the Galaxy backend, which is currently
+# available on one instance only. The shared `galaxy_credentials` fixture in tests/conftest.py skips them
+# unless a usable instance and API key are configured, and the marker allows the whole module to be
+# deselected with `pytest -m "not galaxy"`.
+pytestmark = [
+    pytest.mark.galaxy,
+    pytest.mark.usefixtures('galaxy_credentials'),
+]
 
 @pytest.fixture
 def data_dir():
