@@ -79,7 +79,7 @@ the best valid sequence per specimen, and performing taxonomic validation using 
 - FASTA file with sequences where IDs are formatted as `processID_assemblyAttemptID`
 - CSV file with assembly metrics (optional but recommended)
 - BOLD Excel spreadsheet with 'Lab Sheet' and 'Taxonomy' tabs
-- Galaxy API credentials for taxonomic validation
+- Galaxy API credentials for taxonomic validation (galaxy.naturalis.nl only; see [Galaxy Integration](#galaxy-integration))
 
 **Example: Two-stage validation**
 
@@ -111,7 +111,8 @@ python -m barcode_validator \
 Then, perform taxonomic validation on the triaged results:
 
 ```bash
-# Set Galaxy credentials
+# Set Galaxy credentials. galaxy.naturalis.nl is currently the only instance hosting the required
+# BLASTN tool; see the Galaxy Integration section below for the alternatives.
 export GALAXY_API_KEY=your_galaxy_api_key
 export GALAXY_DOMAIN=galaxy.naturalis.nl
 
@@ -200,7 +201,9 @@ This produces a FASTA file with valid sequences and a TSV file with detailed val
 - `--input-resolver file=<path>`: Path to BOLD Excel spreadsheet
 - `--output-fasta`: Output FASTA file with valid sequences
 - `--output-tsv`: Output TSV file with validation results
-- `--taxon-validation method=<bold|galaxy>`: Taxonomic validation service
+- `--taxon-validation method=<bold|bolddistilled|blast|galaxy>`: Taxonomic validation service. `galaxy` requires an
+  account on galaxy.naturalis.nl (see [Galaxy Integration](#galaxy-integration)); `blast` requires a local BLAST
+  database supplied via `--local-blast db=<path>`
 - `--taxon-validation rank=<rank>`: Taxonomic rank to validate at
 - `--taxon-validation min_identity=<float>`: Minimum identity threshold (0-1)
 - `--taxon-validation max_target_seqs=<int>`: Maximum number of BLAST hits to consider
