@@ -6,7 +6,14 @@ import sys
 
 from barcode_validator.cli import BarcodeValidatorCLI
 
-# do I still work?
+# This module drives taxonomic validation through the Galaxy backend, which is currently available on one
+# instance only. The shared `galaxy_credentials` fixture in tests/conftest.py skips these tests unless a
+# usable instance and API key are configured, and the marker allows them to be deselected with
+# `pytest -m "not galaxy"`.
+pytestmark = [
+    pytest.mark.galaxy,
+    pytest.mark.usefixtures('galaxy_credentials'),
+]
 
 @pytest.fixture
 def data_dir():
