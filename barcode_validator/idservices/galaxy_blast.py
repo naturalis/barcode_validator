@@ -31,10 +31,17 @@ class GalaxyBLAST(IDService):
     to obtain a set of distinct Taxon objects. In the overall logic of barcode validation via reverse taxonomy,
     this set is checked to see if it contains the expected taxon (i.e. that which was provided by the collector).
 
+    The searches are run by the Galaxy tool 'Identify reads with blastn and find taxonomy' which, together with
+    the curated reference databases it searches, is at present deployed on galaxy.naturalis.nl only. This service
+    can therefore not be pointed at an arbitrary Galaxy instance: on any other server the run fails with
+    `Tool 'Identify reads with blastn and find taxonomy' not found`, however valid the API key for it may be.
+    Where no account on that instance is available, use the BOLD or local BLAST implementations of IDService
+    instead. See the 'Galaxy Integration' section of README.md.
+
     Requires the following environment variables to be set:
 
-    GALAXY_DOMAIN: The domain of the Galaxy instance to use for BLAST searches, e.g. galaxy.naturalis.nl
-    GALAXY_API_KEY: The API key for the Galaxy instance, used for authentication
+    GALAXY_DOMAIN: The domain of the Galaxy instance, currently galaxy.naturalis.nl (the only supported instance)
+    GALAXY_API_KEY: The API key for that Galaxy instance, used for authentication
     """
 
     def __init__(self, config: Config):
